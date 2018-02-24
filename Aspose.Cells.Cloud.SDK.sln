@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Cells.Cloud.SDK", "Aspose.Cells.Cloud.SDK\Aspose.Cells.Cloud.SDK.csproj", "{CCFC6447-7804-4C73-B5BE-6444ACBEF9A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Cells.Cloud.SDK.Test", "Aspose.Cells.Cloud.SDK.Test\Aspose.Cells.Cloud.SDK.Test.csproj", "{19F1DEBC-DE5E-4517-8062-F000CD499087}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCFC6447-7804-4C73-B5BE-6444ACBEF9A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCFC6447-7804-4C73-B5BE-6444ACBEF9A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCFC6447-7804-4C73-B5BE-6444ACBEF9A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCFC6447-7804-4C73-B5BE-6444ACBEF9A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E76E1B0F-B2E2-4E5A-9A9F-67F666A05A98}
+	EndGlobalSection
+EndGlobal
