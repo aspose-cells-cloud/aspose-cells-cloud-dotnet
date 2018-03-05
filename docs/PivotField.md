@@ -1,0 +1,47 @@
+# Aspose.Cells.Cloud.SDK.Model.PivotField
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**AutoShowCount** | **int?** |  | [optional] 
+**AutoShowField** | **int?** |  | [optional] 
+**AutoSortField** | **int?** |  | [optional] 
+**BaseField** | **int?** |  | [optional] 
+**BaseIndex** | **int?** |  | [optional] 
+**BaseItem** | **int?** |  | [optional] 
+**BaseItemPosition** | **string** |  | [optional] 
+**CurrentPageItem** | **int?** |  | [optional] 
+**DataDisplayFormat** | **string** |  | [optional] 
+**DisplayName** | **string** |  | [optional] 
+**DragToColumn** | **bool?** |  | [optional] 
+**DragToData** | **bool?** |  | [optional] 
+**DragToHide** | **bool?** |  | [optional] 
+**DragToPage** | **bool?** |  | [optional] 
+**DragToRow** | **bool?** |  | [optional] 
+**Function** | **string** |  | [optional] 
+**InsertBlankRow** | **bool?** |  | [optional] 
+**IsAscendShow** | **bool?** |  | [optional] 
+**IsAscendSort** | **bool?** |  | [optional] 
+**IsAutoShow** | **bool?** |  | [optional] 
+**IsAutoSort** | **bool?** |  | [optional] 
+**IsAutoSubtotals** | **bool?** |  | [optional] 
+**IsCalculatedField** | **bool?** |  | [optional] 
+**IsIncludeNewItemsInFilter** | **bool?** |  | [optional] 
+**IsInsertPageBreaksBetweenItems** | **bool?** |  | [optional] 
+**IsMultipleItemSelectionAllowed** | **bool?** |  | [optional] 
+**IsRepeatItemLabels** | **bool?** |  | [optional] 
+**ItemCount** | **int?** |  | [optional] 
+**Items** | **List&lt;string&gt;** |  | [optional] 
+**Name** | **string** |  | [optional] 
+**Number** | **int?** |  | [optional] 
+**NumberFormat** | **string** |  | [optional] 
+**OriginalItems** | **List&lt;string&gt;** |  | [optional] 
+**PivotItems** | [**List&lt;PivotItem&gt;**](PivotItem.md) |  | [optional] 
+**Position** | **int?** |  | [optional] 
+**ShowAllItems** | **bool?** |  | [optional] 
+**ShowCompact** | **bool?** |  | [optional] 
+**ShowInOutlineForm** | **bool?** |  | [optional] 
+**ShowSubtotalAtTop** | **bool?** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
