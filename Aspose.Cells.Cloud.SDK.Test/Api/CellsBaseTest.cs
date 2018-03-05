@@ -15,8 +15,8 @@ namespace Aspose.Cells.Cloud.SDK.Test
         protected Configuration config;
         protected static OAuthApi oauth2 =null;
         protected string grantType = "client_credentials";
-        protected string clientId = "66164C51-693E-4904-A121-545961673EC1";
-        protected string clientSecret = "536e76768419db9585afdd37bb5f7533";
+        protected string clientId = "your clientId";
+        protected string clientSecret = "your clientSecret";
         protected static string accesstoken;
         protected string refreshtoken;
         protected string BOOK1 = "Book1.xlsx";
