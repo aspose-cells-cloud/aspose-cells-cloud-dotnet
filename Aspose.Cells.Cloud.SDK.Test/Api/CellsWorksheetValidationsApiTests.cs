@@ -124,6 +124,8 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET1;
             int? validationIndex = 0;
             Validation validation = new Validation();
+            validation.Formula1 = "=(OR(A1=\"Yes\",A1=\"No\"))";
+            validation.Type = "Custom";
             validation.IgnoreBlank = true;
             string folder = TEMPFOLDER;
             UpdateDataFile(folder, name);

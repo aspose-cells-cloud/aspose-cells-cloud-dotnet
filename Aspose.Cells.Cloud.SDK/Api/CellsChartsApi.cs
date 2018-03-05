@@ -140,9 +140,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartNumber">The chart number.</param>
+        /// <param name="format">The exported file format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        System.IO.Stream CellsChartsGetWorksheetChart (string name, string sheetName, int? chartNumber, string folder = null);
+        System.IO.Stream CellsChartsGetWorksheetChart (string name, string sheetName, int? chartNumber, string format = null, string folder = null);
 
         /// <summary>
         /// Get chart info.
@@ -154,9 +155,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartNumber">The chart number.</param>
+        /// <param name="format">The exported file format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        ApiResponse<System.IO.Stream> CellsChartsGetWorksheetChartWithHttpInfo (string name, string sheetName, int? chartNumber, string folder = null);
+        ApiResponse<System.IO.Stream> CellsChartsGetWorksheetChartWithHttpInfo (string name, string sheetName, int? chartNumber, string format = null, string folder = null);
         /// <summary>
         /// Get chart legend
         /// </summary>
@@ -542,9 +544,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartNumber">The chart number.</param>
+        /// <param name="format">The exported file format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <returns>Task of System.IO.Stream</returns>
-        System.Threading.Tasks.Task<System.IO.Stream> CellsChartsGetWorksheetChartAsync (string name, string sheetName, int? chartNumber, string folder = null);
+        System.Threading.Tasks.Task<System.IO.Stream> CellsChartsGetWorksheetChartAsync (string name, string sheetName, int? chartNumber, string format = null, string folder = null);
 
         /// <summary>
         /// Get chart info.
@@ -556,9 +559,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartNumber">The chart number.</param>
+        /// <param name="format">The exported file format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsChartsGetWorksheetChartAsyncWithHttpInfo (string name, string sheetName, int? chartNumber, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsChartsGetWorksheetChartAsyncWithHttpInfo (string name, string sheetName, int? chartNumber, string format = null, string folder = null);
         /// <summary>
         /// Get chart legend
         /// </summary>
@@ -1593,11 +1597,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartNumber">The chart number.</param>
+        /// <param name="format">The exported file format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        public System.IO.Stream CellsChartsGetWorksheetChart (string name, string sheetName, int? chartNumber, string folder = null)
+        public System.IO.Stream CellsChartsGetWorksheetChart (string name, string sheetName, int? chartNumber, string format = null, string folder = null)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = CellsChartsGetWorksheetChartWithHttpInfo(name, sheetName, chartNumber, folder);
+             ApiResponse<System.IO.Stream> localVarResponse = CellsChartsGetWorksheetChartWithHttpInfo(name, sheetName, chartNumber, format, folder);
              return localVarResponse.Data;
         }
 
@@ -1608,9 +1613,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartNumber">The chart number.</param>
+        /// <param name="format">The exported file format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        public ApiResponse< System.IO.Stream > CellsChartsGetWorksheetChartWithHttpInfo (string name, string sheetName, int? chartNumber, string folder = null)
+        public ApiResponse< System.IO.Stream > CellsChartsGetWorksheetChartWithHttpInfo (string name, string sheetName, int? chartNumber, string format = null, string folder = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1647,6 +1653,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (chartNumber != null) localVarPathParams.Add("chartNumber", Configuration.ApiClient.ParameterToString(chartNumber)); // path parameter
+            if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
 
 
@@ -1675,11 +1682,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartNumber">The chart number.</param>
+        /// <param name="format">The exported file format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <returns>Task of System.IO.Stream</returns>
-        public async System.Threading.Tasks.Task<System.IO.Stream> CellsChartsGetWorksheetChartAsync (string name, string sheetName, int? chartNumber, string folder = null)
+        public async System.Threading.Tasks.Task<System.IO.Stream> CellsChartsGetWorksheetChartAsync (string name, string sheetName, int? chartNumber, string format = null, string folder = null)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = await CellsChartsGetWorksheetChartAsyncWithHttpInfo(name, sheetName, chartNumber, folder);
+             ApiResponse<System.IO.Stream> localVarResponse = await CellsChartsGetWorksheetChartAsyncWithHttpInfo(name, sheetName, chartNumber, format, folder);
              return localVarResponse.Data;
 
         }
@@ -1691,9 +1699,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartNumber">The chart number.</param>
+        /// <param name="format">The exported file format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsChartsGetWorksheetChartAsyncWithHttpInfo (string name, string sheetName, int? chartNumber, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsChartsGetWorksheetChartAsyncWithHttpInfo (string name, string sheetName, int? chartNumber, string format = null, string folder = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1730,6 +1739,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (chartNumber != null) localVarPathParams.Add("chartNumber", Configuration.ApiClient.ParameterToString(chartNumber)); // path parameter
+            if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
 
 

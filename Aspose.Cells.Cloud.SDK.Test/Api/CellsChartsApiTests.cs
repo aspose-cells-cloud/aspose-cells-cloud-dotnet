@@ -141,8 +141,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET3;
             int? chartNumber = 0;
             string folder = TEMPFOLDER;
+            string format = "png";
             UpdateDataFile(folder, name);
-            var response = instance.CellsChartsGetWorksheetChart(name, sheetName, chartNumber, folder);
+            var response = instance.CellsChartsGetWorksheetChart(name, sheetName, chartNumber, format, folder);
             Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
         }
         
