@@ -124,6 +124,13 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET1;
             int? validationIndex = 0;
             Validation validation = new Validation();
+            CellArea area = new CellArea();
+            area.StartRow = 0;
+            area.EndRow = 0;
+            area.StartColumn = 0;
+            area.EndColumn = 0;
+            validation.AreaList = new List<CellArea>();
+            validation.AreaList.Add(area);
             validation.Formula1 = "=(OR(A1=\"Yes\",A1=\"No\"))";
             validation.Type = "Custom";
             validation.IgnoreBlank = true;
