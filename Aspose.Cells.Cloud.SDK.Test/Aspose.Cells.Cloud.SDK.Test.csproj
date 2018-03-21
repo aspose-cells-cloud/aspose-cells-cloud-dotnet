@@ -37,12 +37,6 @@ OpenAPI spec version: 1.0
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.3.9.0\lib\net45\nunit.framework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,23 +46,35 @@ OpenAPI spec version: 1.0
     <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml" />
-    <Reference Include="RestSharp">
-      <HintPath>..\packages\RestSharp.105.1.0\lib\net45\RestSharp.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath Condition="Exists('..\packages')">..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath Condition="Exists('..\..\packages')">..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Storage-Cloud, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Storage-Cloud.1.0.10\lib\Aspose.Storage-Cloud.dll</HintPath>
+    <Reference Include="RestSharp">
+      <HintPath Condition="Exists('..\packages')">..\packages\RestSharp.105.1.0\lib\net45\RestSharp.dll</HintPath>
+      <HintPath Condition="Exists('..\..\packages')">..\..\packages\RestSharp.105.1.0\lib\net45\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath Condition="Exists('..\packages')">..\packages\NUnit.3.9.0\lib\net45\nunit.framework.dll</HintPath>
+      <HintPath Condition="Exists('..\..\packages')">..\..\packages\NUnit.3.9.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Storage-Cloud">
+      <HintPath Condition="Exists('..\packages')">..\packages\Aspose.Storage-Cloud.1.0.10\lib\Aspose.Storage-Cloud.dll</HintPath>
+      <HintPath Condition="Exists('..\..\packages')">..\..\packages\Aspose.Storage-Cloud.1.0.10\lib\Aspose.Storage-Cloud.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="**\*.cs" Exclude="obj\**" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Aspose.Cells.Cloud.SDK\Aspose.Cells.Cloud.SDK.csproj">
-      <Project>{CCFC6447-7804-4C73-B5BE-6444ACBEF9A3}</Project>
+      <Project>{65E2C3A4-B992-494E-866E-1063BEE3E065}</Project>
       <Name>Aspose.Cells.Cloud.SDK</Name>
     </ProjectReference>
   </ItemGroup>

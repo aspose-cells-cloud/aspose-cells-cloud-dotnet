@@ -132,7 +132,11 @@ namespace Aspose.Cells.Cloud.SDK.Client
             // add file parameter, if any
             foreach(var param in fileParams)
             {
+#if NETCOREAPP2_0
+                request.AddFile(param.Value.Name, param.Value.Writer, param.Value.FileName, param.Value.ContentLength, param.Value.ContentType);
+#else
                 request.AddFile(param.Value.Name, param.Value.Writer, param.Value.FileName, param.Value.ContentType);
+#endif
             }
 
             if (postBody != null) // http body (model or byte[]) parameter
