@@ -4,6 +4,7 @@ All URIs are relative to *https://api.aspose.cloud/v1.1/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**CellsRangesGetWorksheetCellsRangeValue**](CellsRangesApi.md#cellsrangesgetworksheetcellsrangevalue) | **GET** /cells/{name}/worksheets/{sheetName}/ranges/value | Get cells list in a range by range name or row column indexes  
 [**CellsRangesPostWorksheetCellsRangeColumnWidth**](CellsRangesApi.md#cellsrangespostworksheetcellsrangecolumnwidth) | **POST** /cells/{name}/worksheets/{sheetName}/ranges/columnWidth | Set column width of range
 [**CellsRangesPostWorksheetCellsRangeMerge**](CellsRangesApi.md#cellsrangespostworksheetcellsrangemerge) | **POST** /cells/{name}/worksheets/{sheetName}/ranges/merge | Combines a range of cells into a single cell.              
 [**CellsRangesPostWorksheetCellsRangeMoveTo**](CellsRangesApi.md#cellsrangespostworksheetcellsrangemoveto) | **POST** /cells/{name}/worksheets/{sheetName}/ranges/moveto | Move the current range to the dest range.             
@@ -14,6 +15,79 @@ Method | HTTP request | Description
 [**CellsRangesPostWorksheetCellsRangeValue**](CellsRangesApi.md#cellsrangespostworksheetcellsrangevalue) | **POST** /cells/{name}/worksheets/{sheetName}/ranges/value | Puts a value into the range, if appropriate the value will be converted to other data type and cell&#39;s number format will be reset.             
 [**CellsRangesPostWorksheetCellsRanges**](CellsRangesApi.md#cellsrangespostworksheetcellsranges) | **POST** /cells/{name}/worksheets/{sheetName}/ranges | copy range in the worksheet
 
+
+<a name="cellsrangesgetworksheetcellsrangevalue"></a>
+# **CellsRangesGetWorksheetCellsRangeValue**
+> RangeValueResponse CellsRangesGetWorksheetCellsRangeValue (string name, string sheetName, string namerange = null, int? firstRow = null, int? firstColumn = null, int? rowCount = null, int? columnCount = null, string folder = null)
+
+Get cells list in a range by range name or row column indexes  
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+namespace Example
+{
+    public class CellsRangesGetWorksheetCellsRangeValueExample
+    {
+        public void main()
+        {
+            var apiInstance = new CellsRangesApi();
+            var name = name_example;  // string | workbook name
+            var sheetName = sheetName_example;  // string | worksheet name
+            var namerange = namerange_example;  // string | range name, for example: 'A1:B2' or 'range_name1' (optional) 
+            var firstRow = 56;  // int? | the first row of the range (optional) 
+            var firstColumn = 56;  // int? | the first column of the range (optional) 
+            var rowCount = 56;  // int? | the count of rows in the range (optional) 
+            var columnCount = 56;  // int? | the count of columns in the range (optional) 
+            var folder = folder_example;  // string | Workbook folder. (optional) 
+
+            try
+            {
+                // Get cells list in a range by range name or row column indexes  
+                RangeValueResponse result = apiInstance.CellsRangesGetWorksheetCellsRangeValue(name, sheetName, namerange, firstRow, firstColumn, rowCount, columnCount, folder);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CellsRangesApi.CellsRangesGetWorksheetCellsRangeValue: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| workbook name | 
+ **sheetName** | **string**| worksheet name | 
+ **namerange** | **string**| range name, for example: &#39;A1:B2&#39; or &#39;range_name1&#39; | [optional] 
+ **firstRow** | **int?**| the first row of the range | [optional] 
+ **firstColumn** | **int?**| the first column of the range | [optional] 
+ **rowCount** | **int?**| the count of rows in the range | [optional] 
+ **columnCount** | **int?**| the count of columns in the range | [optional] 
+ **folder** | **string**| Workbook folder. | [optional] 
+
+### Return type
+
+[**RangeValueResponse**](RangeValueResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="cellsrangespostworksheetcellsrangecolumnwidth"></a>
 # **CellsRangesPostWorksheetCellsRangeColumnWidth**

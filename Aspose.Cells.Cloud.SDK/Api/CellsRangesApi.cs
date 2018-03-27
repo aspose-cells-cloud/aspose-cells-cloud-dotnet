@@ -25,6 +25,41 @@ namespace Aspose.Cells.Cloud.SDK.Api
     {
         #region Synchronous Operations
         /// <summary>
+        /// Get cells list in a range by range name or row column indexes  
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">workbook name</param>
+        /// <param name="sheetName">worksheet name</param>
+        /// <param name="namerange">range name, for example: &#39;A1:B2&#39; or &#39;range_name1&#39; (optional)</param>
+        /// <param name="firstRow">the first row of the range (optional)</param>
+        /// <param name="firstColumn">the first column of the range (optional)</param>
+        /// <param name="rowCount">the count of rows in the range (optional)</param>
+        /// <param name="columnCount">the count of columns in the range (optional)</param>
+        /// <param name="folder">Workbook folder. (optional)</param>
+        /// <returns>RangeValueResponse</returns>
+        RangeValueResponse CellsRangesGetWorksheetCellsRangeValue (string name, string sheetName, string namerange = null, int? firstRow = null, int? firstColumn = null, int? rowCount = null, int? columnCount = null, string folder = null);
+
+        /// <summary>
+        /// Get cells list in a range by range name or row column indexes  
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">workbook name</param>
+        /// <param name="sheetName">worksheet name</param>
+        /// <param name="namerange">range name, for example: &#39;A1:B2&#39; or &#39;range_name1&#39; (optional)</param>
+        /// <param name="firstRow">the first row of the range (optional)</param>
+        /// <param name="firstColumn">the first column of the range (optional)</param>
+        /// <param name="rowCount">the count of rows in the range (optional)</param>
+        /// <param name="columnCount">the count of columns in the range (optional)</param>
+        /// <param name="folder">Workbook folder. (optional)</param>
+        /// <returns>ApiResponse of RangeValueResponse</returns>
+        ApiResponse<RangeValueResponse> CellsRangesGetWorksheetCellsRangeValueWithHttpInfo (string name, string sheetName, string namerange = null, int? firstRow = null, int? firstColumn = null, int? rowCount = null, int? columnCount = null, string folder = null);
+        /// <summary>
         /// Set column width of range
         /// </summary>
         /// <remarks>
@@ -283,6 +318,41 @@ namespace Aspose.Cells.Cloud.SDK.Api
         ApiResponse<SaaSposeResponse> CellsRangesPostWorksheetCellsRangesWithHttpInfo (string name, string sheetName, RangeCopyRequest rangeOperate = null, string folder = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
+        /// <summary>
+        /// Get cells list in a range by range name or row column indexes  
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">workbook name</param>
+        /// <param name="sheetName">worksheet name</param>
+        /// <param name="namerange">range name, for example: &#39;A1:B2&#39; or &#39;range_name1&#39; (optional)</param>
+        /// <param name="firstRow">the first row of the range (optional)</param>
+        /// <param name="firstColumn">the first column of the range (optional)</param>
+        /// <param name="rowCount">the count of rows in the range (optional)</param>
+        /// <param name="columnCount">the count of columns in the range (optional)</param>
+        /// <param name="folder">Workbook folder. (optional)</param>
+        /// <returns>Task of RangeValueResponse</returns>
+        System.Threading.Tasks.Task<RangeValueResponse> CellsRangesGetWorksheetCellsRangeValueAsync (string name, string sheetName, string namerange = null, int? firstRow = null, int? firstColumn = null, int? rowCount = null, int? columnCount = null, string folder = null);
+
+        /// <summary>
+        /// Get cells list in a range by range name or row column indexes  
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">workbook name</param>
+        /// <param name="sheetName">worksheet name</param>
+        /// <param name="namerange">range name, for example: &#39;A1:B2&#39; or &#39;range_name1&#39; (optional)</param>
+        /// <param name="firstRow">the first row of the range (optional)</param>
+        /// <param name="firstColumn">the first column of the range (optional)</param>
+        /// <param name="rowCount">the count of rows in the range (optional)</param>
+        /// <param name="columnCount">the count of columns in the range (optional)</param>
+        /// <param name="folder">Workbook folder. (optional)</param>
+        /// <returns>Task of ApiResponse (RangeValueResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<RangeValueResponse>> CellsRangesGetWorksheetCellsRangeValueAsyncWithHttpInfo (string name, string sheetName, string namerange = null, int? firstRow = null, int? firstColumn = null, int? rowCount = null, int? columnCount = null, string folder = null);
         /// <summary>
         /// Set column width of range
         /// </summary>
@@ -650,6 +720,189 @@ namespace Aspose.Cells.Cloud.SDK.Api
         public void AddDefaultHeader(string key, string value)
         {
             this.Configuration.AddDefaultHeader(key, value);
+        }
+
+        /// <summary>
+        /// Get cells list in a range by range name or row column indexes   
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">workbook name</param>
+        /// <param name="sheetName">worksheet name</param>
+        /// <param name="namerange">range name, for example: &#39;A1:B2&#39; or &#39;range_name1&#39; (optional)</param>
+        /// <param name="firstRow">the first row of the range (optional)</param>
+        /// <param name="firstColumn">the first column of the range (optional)</param>
+        /// <param name="rowCount">the count of rows in the range (optional)</param>
+        /// <param name="columnCount">the count of columns in the range (optional)</param>
+        /// <param name="folder">Workbook folder. (optional)</param>
+        /// <returns>RangeValueResponse</returns>
+        public RangeValueResponse CellsRangesGetWorksheetCellsRangeValue (string name, string sheetName, string namerange = null, int? firstRow = null, int? firstColumn = null, int? rowCount = null, int? columnCount = null, string folder = null)
+        {
+             ApiResponse<RangeValueResponse> localVarResponse = CellsRangesGetWorksheetCellsRangeValueWithHttpInfo(name, sheetName, namerange, firstRow, firstColumn, rowCount, columnCount, folder);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get cells list in a range by range name or row column indexes   
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">workbook name</param>
+        /// <param name="sheetName">worksheet name</param>
+        /// <param name="namerange">range name, for example: &#39;A1:B2&#39; or &#39;range_name1&#39; (optional)</param>
+        /// <param name="firstRow">the first row of the range (optional)</param>
+        /// <param name="firstColumn">the first column of the range (optional)</param>
+        /// <param name="rowCount">the count of rows in the range (optional)</param>
+        /// <param name="columnCount">the count of columns in the range (optional)</param>
+        /// <param name="folder">Workbook folder. (optional)</param>
+        /// <returns>ApiResponse of RangeValueResponse</returns>
+        public ApiResponse< RangeValueResponse > CellsRangesGetWorksheetCellsRangeValueWithHttpInfo (string name, string sheetName, string namerange = null, int? firstRow = null, int? firstColumn = null, int? rowCount = null, int? columnCount = null, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsRangesApi->CellsRangesGetWorksheetCellsRangeValue");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsRangesApi->CellsRangesGetWorksheetCellsRangeValue");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/ranges/value";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (namerange != null) localVarQueryParams.Add("namerange", Configuration.ApiClient.ParameterToString(namerange)); // query parameter
+            if (firstRow != null) localVarQueryParams.Add("firstRow", Configuration.ApiClient.ParameterToString(firstRow)); // query parameter
+            if (firstColumn != null) localVarQueryParams.Add("firstColumn", Configuration.ApiClient.ParameterToString(firstColumn)); // query parameter
+            if (rowCount != null) localVarQueryParams.Add("rowCount", Configuration.ApiClient.ParameterToString(rowCount)); // query parameter
+            if (columnCount != null) localVarQueryParams.Add("columnCount", Configuration.ApiClient.ParameterToString(columnCount)); // query parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsRangesGetWorksheetCellsRangeValue", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<RangeValueResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (RangeValueResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(RangeValueResponse)));
+        }
+
+        /// <summary>
+        /// Get cells list in a range by range name or row column indexes   
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">workbook name</param>
+        /// <param name="sheetName">worksheet name</param>
+        /// <param name="namerange">range name, for example: &#39;A1:B2&#39; or &#39;range_name1&#39; (optional)</param>
+        /// <param name="firstRow">the first row of the range (optional)</param>
+        /// <param name="firstColumn">the first column of the range (optional)</param>
+        /// <param name="rowCount">the count of rows in the range (optional)</param>
+        /// <param name="columnCount">the count of columns in the range (optional)</param>
+        /// <param name="folder">Workbook folder. (optional)</param>
+        /// <returns>Task of RangeValueResponse</returns>
+        public async System.Threading.Tasks.Task<RangeValueResponse> CellsRangesGetWorksheetCellsRangeValueAsync (string name, string sheetName, string namerange = null, int? firstRow = null, int? firstColumn = null, int? rowCount = null, int? columnCount = null, string folder = null)
+        {
+             ApiResponse<RangeValueResponse> localVarResponse = await CellsRangesGetWorksheetCellsRangeValueAsyncWithHttpInfo(name, sheetName, namerange, firstRow, firstColumn, rowCount, columnCount, folder);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get cells list in a range by range name or row column indexes   
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">workbook name</param>
+        /// <param name="sheetName">worksheet name</param>
+        /// <param name="namerange">range name, for example: &#39;A1:B2&#39; or &#39;range_name1&#39; (optional)</param>
+        /// <param name="firstRow">the first row of the range (optional)</param>
+        /// <param name="firstColumn">the first column of the range (optional)</param>
+        /// <param name="rowCount">the count of rows in the range (optional)</param>
+        /// <param name="columnCount">the count of columns in the range (optional)</param>
+        /// <param name="folder">Workbook folder. (optional)</param>
+        /// <returns>Task of ApiResponse (RangeValueResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<RangeValueResponse>> CellsRangesGetWorksheetCellsRangeValueAsyncWithHttpInfo (string name, string sheetName, string namerange = null, int? firstRow = null, int? firstColumn = null, int? rowCount = null, int? columnCount = null, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsRangesApi->CellsRangesGetWorksheetCellsRangeValue");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsRangesApi->CellsRangesGetWorksheetCellsRangeValue");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/ranges/value";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (namerange != null) localVarQueryParams.Add("namerange", Configuration.ApiClient.ParameterToString(namerange)); // query parameter
+            if (firstRow != null) localVarQueryParams.Add("firstRow", Configuration.ApiClient.ParameterToString(firstRow)); // query parameter
+            if (firstColumn != null) localVarQueryParams.Add("firstColumn", Configuration.ApiClient.ParameterToString(firstColumn)); // query parameter
+            if (rowCount != null) localVarQueryParams.Add("rowCount", Configuration.ApiClient.ParameterToString(rowCount)); // query parameter
+            if (columnCount != null) localVarQueryParams.Add("columnCount", Configuration.ApiClient.ParameterToString(columnCount)); // query parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsRangesGetWorksheetCellsRangeValue", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<RangeValueResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (RangeValueResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(RangeValueResponse)));
         }
 
         /// <summary>

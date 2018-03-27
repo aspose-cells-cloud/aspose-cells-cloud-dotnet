@@ -61,6 +61,35 @@ namespace Aspose.Cells.Cloud.SDK.Test
             // TODO uncomment below to test 'IsInstanceOfType' CellsRangesApi
             Assert.IsInstanceOf(typeof(CellsRangesApi), instance, "instance is a CellsRangesApi");
         }
+        
+        /// <summary>
+        /// Test CellsRangesGetWorksheetCellsRangeValue
+        /// </summary>
+        [Test]
+        public void CellsRangesGetWorksheetCellsRangeValueTest()
+        {
+            string name = BOOK1;
+            string sheetName = SHEET1;
+            string folder = TEMPFOLDER;
+            UpdateDataFile(folder, name);
+            int? firstRow = 0;
+            int? firstColumn = 0;
+            int? rowCount = 3;
+            int? columnCount = 2;
+            var response = instance.CellsRangesGetWorksheetCellsRangeValue(name, sheetName, null, firstRow, firstColumn, rowCount, columnCount, folder);
+            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.AreEqual(response.Code, 200);
+
+            var rangeName = "A1:B3";
+            response = instance.CellsRangesGetWorksheetCellsRangeValue(name, sheetName, rangeName, null, null, null, null, folder);
+            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.AreEqual(response.Code, 200);
+
+            rangeName = "Name_2";
+            response = instance.CellsRangesGetWorksheetCellsRangeValue(name, sheetName, rangeName, null, null, null, null, folder);
+            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.AreEqual(response.Code, 200);
+        }
 
         
         /// <summary>
