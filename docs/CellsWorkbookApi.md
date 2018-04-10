@@ -7,9 +7,12 @@ Method | HTTP request | Description
 [**CellsWorkbookDeleteDecryptDocument**](CellsWorkbookApi.md#cellsworkbookdeletedecryptdocument) | **DELETE** /cells/{name}/encryption | Decrypt document.
 [**CellsWorkbookDeleteDocumentUnprotectFromChanges**](CellsWorkbookApi.md#cellsworkbookdeletedocumentunprotectfromchanges) | **DELETE** /cells/{name}/writeProtection | Unprotect document from changes.
 [**CellsWorkbookDeleteUnprotectDocument**](CellsWorkbookApi.md#cellsworkbookdeleteunprotectdocument) | **DELETE** /cells/{name}/protection | Unprotect document.
+[**CellsWorkbookDeleteWorkbookName**](CellsWorkbookApi.md#cellsworkbookdeleteworkbookname) | **DELETE** /cells/{name}/names/{nameName} | Clean workbook&#39;s names.
+[**CellsWorkbookDeleteWorkbookNames**](CellsWorkbookApi.md#cellsworkbookdeleteworkbooknames) | **DELETE** /cells/{name}/names | Clean workbook&#39;s names.
 [**CellsWorkbookGetWorkbook**](CellsWorkbookApi.md#cellsworkbookgetworkbook) | **GET** /cells/{name} | Read workbook info or export.
 [**CellsWorkbookGetWorkbookDefaultStyle**](CellsWorkbookApi.md#cellsworkbookgetworkbookdefaultstyle) | **GET** /cells/{name}/defaultstyle | Read workbook default style info.
 [**CellsWorkbookGetWorkbookName**](CellsWorkbookApi.md#cellsworkbookgetworkbookname) | **GET** /cells/{name}/names/{nameName} | Read workbook&#39;s name.
+[**CellsWorkbookGetWorkbookNameValue**](CellsWorkbookApi.md#cellsworkbookgetworkbooknamevalue) | **GET** /cells/{name}/names/{nameName}/value | Get workbook&#39;s name value.
 [**CellsWorkbookGetWorkbookNames**](CellsWorkbookApi.md#cellsworkbookgetworkbooknames) | **GET** /cells/{name}/names | Read workbook&#39;s names.
 [**CellsWorkbookGetWorkbookSettings**](CellsWorkbookApi.md#cellsworkbookgetworkbooksettings) | **GET** /cells/{name}/settings | Get Workbook Settings DTO
 [**CellsWorkbookGetWorkbookTextItems**](CellsWorkbookApi.md#cellsworkbookgetworkbooktextitems) | **GET** /cells/{name}/textItems | Read workbook&#39;s text items.
@@ -216,6 +219,130 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="cellsworkbookdeleteworkbookname"></a>
+# **CellsWorkbookDeleteWorkbookName**
+> SaaSposeResponse CellsWorkbookDeleteWorkbookName (string name, string nameName, string folder = null)
+
+Clean workbook's names.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+namespace Example
+{
+    public class CellsWorkbookDeleteWorkbookNameExample
+    {
+        public void main()
+        {
+            var apiInstance = new CellsWorkbookApi();
+            var name = name_example;  // string | The workbook name.
+            var nameName = nameName_example;  // string | The name.
+            var folder = folder_example;  // string | The workbook folder. (optional) 
+
+            try
+            {
+                // Clean workbook's names.
+                SaaSposeResponse result = apiInstance.CellsWorkbookDeleteWorkbookName(name, nameName, folder);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CellsWorkbookApi.CellsWorkbookDeleteWorkbookName: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| The workbook name. | 
+ **nameName** | **string**| The name. | 
+ **folder** | **string**| The workbook folder. | [optional] 
+
+### Return type
+
+[**SaaSposeResponse**](SaaSposeResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="cellsworkbookdeleteworkbooknames"></a>
+# **CellsWorkbookDeleteWorkbookNames**
+> SaaSposeResponse CellsWorkbookDeleteWorkbookNames (string name, string folder = null)
+
+Clean workbook's names.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+namespace Example
+{
+    public class CellsWorkbookDeleteWorkbookNamesExample
+    {
+        public void main()
+        {
+            var apiInstance = new CellsWorkbookApi();
+            var name = name_example;  // string | The workbook name.
+            var folder = folder_example;  // string | The workbook folder. (optional) 
+
+            try
+            {
+                // Clean workbook's names.
+                SaaSposeResponse result = apiInstance.CellsWorkbookDeleteWorkbookNames(name, folder);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CellsWorkbookApi.CellsWorkbookDeleteWorkbookNames: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| The workbook name. | 
+ **folder** | **string**| The workbook folder. | [optional] 
+
+### Return type
+
+[**SaaSposeResponse**](SaaSposeResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="cellsworkbookgetworkbook"></a>
 # **CellsWorkbookGetWorkbook**
 > System.IO.Stream CellsWorkbookGetWorkbook (string name, string password = null, bool? isAutoFit = null, string folder = null)
@@ -393,6 +520,69 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**NameResponse**](NameResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="cellsworkbookgetworkbooknamevalue"></a>
+# **CellsWorkbookGetWorkbookNameValue**
+> RangeValueResponse CellsWorkbookGetWorkbookNameValue (string name, string nameName, string folder = null)
+
+Get workbook's name value.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+namespace Example
+{
+    public class CellsWorkbookGetWorkbookNameValueExample
+    {
+        public void main()
+        {
+            var apiInstance = new CellsWorkbookApi();
+            var name = name_example;  // string | The workbook name.
+            var nameName = nameName_example;  // string | The name.
+            var folder = folder_example;  // string | The workbook folder. (optional) 
+
+            try
+            {
+                // Get workbook's name value.
+                RangeValueResponse result = apiInstance.CellsWorkbookGetWorkbookNameValue(name, nameName, folder);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CellsWorkbookApi.CellsWorkbookGetWorkbookNameValue: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| The workbook name. | 
+ **nameName** | **string**| The name. | 
+ **folder** | **string**| The workbook folder. | [optional] 
+
+### Return type
+
+[**RangeValueResponse**](RangeValueResponse.md)
 
 ### Authorization
 

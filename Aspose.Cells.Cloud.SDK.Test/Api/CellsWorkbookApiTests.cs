@@ -114,7 +114,49 @@ namespace Aspose.Cells.Cloud.SDK.Test
             Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
             Assert.AreEqual(response.Code, 200);
         }
-        
+
+        /// <summary>
+        /// Test CellsWorkbookDeleteWorkbookName
+        /// </summary>
+        [Test]
+        public void CellsWorkbookDeleteWorkbookNameTest()
+        {
+            string name = BOOK1;
+            string folder = TEMPFOLDER;
+            UpdateDataFile(folder, name);
+            var response = instance.CellsWorkbookDeleteWorkbookName(name, "Name_2", folder);
+            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.AreEqual(response.Code, 200);
+        }
+
+        /// <summary>
+        /// Test CellsWorkbookDeleteWorkbookNames
+        /// </summary>
+        [Test]
+        public void CellsWorkbookDeleteWorkbookNamesTest()
+        {
+            string name = BOOK1;
+            string folder = TEMPFOLDER;
+            UpdateDataFile(folder, name);
+            var response = instance.CellsWorkbookDeleteWorkbookNames(name, folder);
+            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.AreEqual(response.Code, 200);
+        }
+
+        /// <summary>
+        /// Test CellsWorkbookGetWorkbookNameValue
+        /// </summary>
+        [Test]
+        public void CellsWorkbookGetWorkbookNameValueTest()
+        {
+            string name = BOOK1;
+            string folder = TEMPFOLDER;
+            UpdateDataFile(folder, name);
+            var response = instance.CellsWorkbookGetWorkbookNameValue(name, "Name_2", folder);
+            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.AreEqual(response.Code, 200);
+        }
+
         /// <summary>
         /// Test CellsWorkbookGetWorkBook
         /// </summary>

@@ -98,6 +98,54 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ApiResponse of SaaSposeResponse</returns>
         ApiResponse<SaaSposeResponse> CellsWorkbookDeleteUnprotectDocumentWithHttpInfo (string name, WorkbookProtectionRequest protection = null, string folder = null);
         /// <summary>
+        /// Clean workbook&#39;s names.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="nameName">The name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>SaaSposeResponse</returns>
+        SaaSposeResponse CellsWorkbookDeleteWorkbookName (string name, string nameName, string folder = null);
+
+        /// <summary>
+        /// Clean workbook&#39;s names.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="nameName">The name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>ApiResponse of SaaSposeResponse</returns>
+        ApiResponse<SaaSposeResponse> CellsWorkbookDeleteWorkbookNameWithHttpInfo (string name, string nameName, string folder = null);
+        /// <summary>
+        /// Clean workbook&#39;s names.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>SaaSposeResponse</returns>
+        SaaSposeResponse CellsWorkbookDeleteWorkbookNames (string name, string folder = null);
+
+        /// <summary>
+        /// Clean workbook&#39;s names.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>ApiResponse of SaaSposeResponse</returns>
+        ApiResponse<SaaSposeResponse> CellsWorkbookDeleteWorkbookNamesWithHttpInfo (string name, string folder = null);
+        /// <summary>
         /// Read workbook info or export.
         /// </summary>
         /// <remarks>
@@ -172,6 +220,31 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="folder">The workbook folder. (optional)</param>
         /// <returns>ApiResponse of NameResponse</returns>
         ApiResponse<NameResponse> CellsWorkbookGetWorkbookNameWithHttpInfo (string name, string nameName, string folder = null);
+        /// <summary>
+        /// Get workbook&#39;s name value.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="nameName">The name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>RangeValueResponse</returns>
+        RangeValueResponse CellsWorkbookGetWorkbookNameValue (string name, string nameName, string folder = null);
+
+        /// <summary>
+        /// Get workbook&#39;s name value.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="nameName">The name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>ApiResponse of RangeValueResponse</returns>
+        ApiResponse<RangeValueResponse> CellsWorkbookGetWorkbookNameValueWithHttpInfo (string name, string nameName, string folder = null);
         /// <summary>
         /// Read workbook&#39;s names.
         /// </summary>
@@ -689,6 +762,54 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsWorkbookDeleteUnprotectDocumentAsyncWithHttpInfo (string name, WorkbookProtectionRequest protection = null, string folder = null);
         /// <summary>
+        /// Clean workbook&#39;s names.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="nameName">The name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>Task of SaaSposeResponse</returns>
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsWorkbookDeleteWorkbookNameAsync (string name, string nameName, string folder = null);
+
+        /// <summary>
+        /// Clean workbook&#39;s names.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="nameName">The name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsWorkbookDeleteWorkbookNameAsyncWithHttpInfo (string name, string nameName, string folder = null);
+        /// <summary>
+        /// Clean workbook&#39;s names.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>Task of SaaSposeResponse</returns>
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsWorkbookDeleteWorkbookNamesAsync (string name, string folder = null);
+
+        /// <summary>
+        /// Clean workbook&#39;s names.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsWorkbookDeleteWorkbookNamesAsyncWithHttpInfo (string name, string folder = null);
+        /// <summary>
         /// Read workbook info or export.
         /// </summary>
         /// <remarks>
@@ -763,6 +884,31 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="folder">The workbook folder. (optional)</param>
         /// <returns>Task of ApiResponse (NameResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<NameResponse>> CellsWorkbookGetWorkbookNameAsyncWithHttpInfo (string name, string nameName, string folder = null);
+        /// <summary>
+        /// Get workbook&#39;s name value.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="nameName">The name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>Task of RangeValueResponse</returns>
+        System.Threading.Tasks.Task<RangeValueResponse> CellsWorkbookGetWorkbookNameValueAsync (string name, string nameName, string folder = null);
+
+        /// <summary>
+        /// Get workbook&#39;s name value.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="nameName">The name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>Task of ApiResponse (RangeValueResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<RangeValueResponse>> CellsWorkbookGetWorkbookNameValueAsyncWithHttpInfo (string name, string nameName, string folder = null);
         /// <summary>
         /// Read workbook&#39;s names.
         /// </summary>
@@ -1780,6 +1926,300 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
         /// <summary>
+        /// Clean workbook&#39;s names. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="nameName">The name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>SaaSposeResponse</returns>
+        public SaaSposeResponse CellsWorkbookDeleteWorkbookName (string name, string nameName, string folder = null)
+        {
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsWorkbookDeleteWorkbookNameWithHttpInfo(name, nameName, folder);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Clean workbook&#39;s names. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="nameName">The name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>ApiResponse of SaaSposeResponse</returns>
+        public ApiResponse< SaaSposeResponse > CellsWorkbookDeleteWorkbookNameWithHttpInfo (string name, string nameName, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsWorkbookApi->CellsWorkbookDeleteWorkbookName");
+            // verify the required parameter 'nameName' is set
+            if (nameName == null)
+                throw new ApiException(400, "Missing required parameter 'nameName' when calling CellsWorkbookApi->CellsWorkbookDeleteWorkbookName");
+
+            var localVarPath = "/cells/{name}/names/{nameName}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (nameName != null) localVarPathParams.Add("nameName", Configuration.ApiClient.ParameterToString(nameName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsWorkbookDeleteWorkbookName", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<SaaSposeResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (SaaSposeResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(SaaSposeResponse)));
+        }
+
+        /// <summary>
+        /// Clean workbook&#39;s names. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="nameName">The name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>Task of SaaSposeResponse</returns>
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsWorkbookDeleteWorkbookNameAsync (string name, string nameName, string folder = null)
+        {
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsWorkbookDeleteWorkbookNameAsyncWithHttpInfo(name, nameName, folder);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Clean workbook&#39;s names. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="nameName">The name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsWorkbookDeleteWorkbookNameAsyncWithHttpInfo (string name, string nameName, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsWorkbookApi->CellsWorkbookDeleteWorkbookName");
+            // verify the required parameter 'nameName' is set
+            if (nameName == null)
+                throw new ApiException(400, "Missing required parameter 'nameName' when calling CellsWorkbookApi->CellsWorkbookDeleteWorkbookName");
+
+            var localVarPath = "/cells/{name}/names/{nameName}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (nameName != null) localVarPathParams.Add("nameName", Configuration.ApiClient.ParameterToString(nameName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsWorkbookDeleteWorkbookName", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<SaaSposeResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (SaaSposeResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(SaaSposeResponse)));
+        }
+
+        /// <summary>
+        /// Clean workbook&#39;s names. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>SaaSposeResponse</returns>
+        public SaaSposeResponse CellsWorkbookDeleteWorkbookNames (string name, string folder = null)
+        {
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsWorkbookDeleteWorkbookNamesWithHttpInfo(name, folder);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Clean workbook&#39;s names. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>ApiResponse of SaaSposeResponse</returns>
+        public ApiResponse< SaaSposeResponse > CellsWorkbookDeleteWorkbookNamesWithHttpInfo (string name, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsWorkbookApi->CellsWorkbookDeleteWorkbookNames");
+
+            var localVarPath = "/cells/{name}/names";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsWorkbookDeleteWorkbookNames", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<SaaSposeResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (SaaSposeResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(SaaSposeResponse)));
+        }
+
+        /// <summary>
+        /// Clean workbook&#39;s names. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>Task of SaaSposeResponse</returns>
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsWorkbookDeleteWorkbookNamesAsync (string name, string folder = null)
+        {
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsWorkbookDeleteWorkbookNamesAsyncWithHttpInfo(name, folder);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Clean workbook&#39;s names. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsWorkbookDeleteWorkbookNamesAsyncWithHttpInfo (string name, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsWorkbookApi->CellsWorkbookDeleteWorkbookNames");
+
+            var localVarPath = "/cells/{name}/names";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsWorkbookDeleteWorkbookNames", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<SaaSposeResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (SaaSposeResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(SaaSposeResponse)));
+        }
+
+        /// <summary>
         /// Read workbook info or export. 
         /// </summary>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2224,6 +2664,159 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return new ApiResponse<NameResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (NameResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(NameResponse)));
+        }
+
+        /// <summary>
+        /// Get workbook&#39;s name value. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="nameName">The name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>RangeValueResponse</returns>
+        public RangeValueResponse CellsWorkbookGetWorkbookNameValue (string name, string nameName, string folder = null)
+        {
+             ApiResponse<RangeValueResponse> localVarResponse = CellsWorkbookGetWorkbookNameValueWithHttpInfo(name, nameName, folder);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get workbook&#39;s name value. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="nameName">The name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>ApiResponse of RangeValueResponse</returns>
+        public ApiResponse< RangeValueResponse > CellsWorkbookGetWorkbookNameValueWithHttpInfo (string name, string nameName, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsWorkbookApi->CellsWorkbookGetWorkbookNameValue");
+            // verify the required parameter 'nameName' is set
+            if (nameName == null)
+                throw new ApiException(400, "Missing required parameter 'nameName' when calling CellsWorkbookApi->CellsWorkbookGetWorkbookNameValue");
+
+            var localVarPath = "/cells/{name}/names/{nameName}/value";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (nameName != null) localVarPathParams.Add("nameName", Configuration.ApiClient.ParameterToString(nameName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsWorkbookGetWorkbookNameValue", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<RangeValueResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (RangeValueResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(RangeValueResponse)));
+        }
+
+        /// <summary>
+        /// Get workbook&#39;s name value. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="nameName">The name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>Task of RangeValueResponse</returns>
+        public async System.Threading.Tasks.Task<RangeValueResponse> CellsWorkbookGetWorkbookNameValueAsync (string name, string nameName, string folder = null)
+        {
+             ApiResponse<RangeValueResponse> localVarResponse = await CellsWorkbookGetWorkbookNameValueAsyncWithHttpInfo(name, nameName, folder);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get workbook&#39;s name value. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="nameName">The name.</param>
+        /// <param name="folder">The workbook folder. (optional)</param>
+        /// <returns>Task of ApiResponse (RangeValueResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<RangeValueResponse>> CellsWorkbookGetWorkbookNameValueAsyncWithHttpInfo (string name, string nameName, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsWorkbookApi->CellsWorkbookGetWorkbookNameValue");
+            // verify the required parameter 'nameName' is set
+            if (nameName == null)
+                throw new ApiException(400, "Missing required parameter 'nameName' when calling CellsWorkbookApi->CellsWorkbookGetWorkbookNameValue");
+
+            var localVarPath = "/cells/{name}/names/{nameName}/value";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (nameName != null) localVarPathParams.Add("nameName", Configuration.ApiClient.ParameterToString(nameName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsWorkbookGetWorkbookNameValue", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<RangeValueResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (RangeValueResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(RangeValueResponse)));
         }
 
         /// <summary>
