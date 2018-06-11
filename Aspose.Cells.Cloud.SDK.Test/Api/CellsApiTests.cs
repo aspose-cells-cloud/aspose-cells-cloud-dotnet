@@ -530,7 +530,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
         /// </summary>
         [TestCase("1", "int")]
         [TestCase("12345", "String")]
-        [TestCase("2017-10-1", "Date")]
+        [TestCase("2017-10-1", "DateTime")]
         public void CellsPostSetCellRangeValueTest(string Value, string Type)
         {
             // TODO uncomment below to test the method and replace null with proper value
