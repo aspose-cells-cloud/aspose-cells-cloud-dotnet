@@ -80,7 +80,25 @@ namespace Aspose.Cells.Cloud.SDK.Test
             var response = instance.CellsSaveAsPostDocumentSaveAs(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder);
             Assert.IsInstanceOf<SaveResponse>(response, "response is SaveResponse");
         }
-        
+        /// <summary>
+        /// Test CellsSaveAsPostDocumentSaveAs
+        /// </summary>
+        [Test]
+        public void CellsSaveAsPostDocumentSaveAsPDFTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            string name = BOOK1;
+            PdfSaveOptions saveOptions = new PdfSaveOptions();
+            saveOptions.OnePagePerSheet = true;
+            saveOptions.SaveFormat = "pdf";
+            string newfilename = "newbook.xlsx";
+            bool? isAutoFitRows = true;
+            bool? isAutoFitColumns = true;
+            string folder = TEMPFOLDER;
+            UpdateDataFile(folder, name);
+            var response = instance.CellsSaveAsPostDocumentSaveAs(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder);
+            Assert.IsInstanceOf<SaveResponse>(response, "response is SaveResponse");
+        }
     }
 
 }

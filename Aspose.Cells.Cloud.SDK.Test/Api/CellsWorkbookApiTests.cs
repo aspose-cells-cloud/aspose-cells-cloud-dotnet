@@ -359,6 +359,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             string outPath = null;
             UpdateDataFile(folder, name);
+            UpdateDataFile("", xmlFile);
             var response = instance.CellsWorkbookPostWorkbookGetSmartMarkerResult(name, xmlFile, folder, outPath);
             Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
         }
@@ -411,6 +412,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string mergeWith = "myDocument.xlsx";
             string folder = TEMPFOLDER;
             UpdateDataFile(folder, name);
+            UpdateDataFile("", mergeWith);
             var response = instance.CellsWorkbookPostWorkbooksMerge(name, mergeWith, folder);
             Assert.IsInstanceOf<WorkbookResponse>(response, "response is WorkbookResponse");
             Assert.AreEqual(response.Code, 200);

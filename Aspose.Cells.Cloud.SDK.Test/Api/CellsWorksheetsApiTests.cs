@@ -193,9 +193,10 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET1;
             int? verticalResolution = 100;
             int? horizontalResolution = 90;
+            string format = "png";
             string folder = TEMPFOLDER;
             UpdateDataFile(folder, name);
-            var response = instance.CellsWorksheetsGetWorksheet(name, sheetName, verticalResolution, horizontalResolution, folder);
+            var response = instance.CellsWorksheetsGetWorksheet(name, sheetName, format, verticalResolution, horizontalResolution, folder);
             Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
 
         }

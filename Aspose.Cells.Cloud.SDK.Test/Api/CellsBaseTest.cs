@@ -15,8 +15,8 @@ namespace Aspose.Cells.Cloud.SDK.Test
         protected Configuration config;
         protected static OAuthApi oauth2 =null;
         protected string grantType = "client_credentials";
-        protected string clientId = "your clientId";
-        protected string clientSecret = "your clientSecret";
+        protected string clientId = "66164C51-693E-4904-A121-545961673EC1";
+        protected string clientSecret = "536e76768419db9585afdd37bb5f7533";
         protected static string accesstoken;
         protected string refreshtoken;
         protected string BOOK1 = "Book1.xlsx";
@@ -35,25 +35,35 @@ namespace Aspose.Cells.Cloud.SDK.Test
         protected string RANGE = "A1:C10";
         protected string CELLAREA = "A1:C10";
         protected StorageApi storageApi;
-        private string TestDataFolder = "../../../TestData/";
+        private string TestDataFolder = @"D:\Projects\Aspose\Aspose for Cloud\Aspose.Cells for Cloud SDK\src\TestData\";
         protected void UpdateDataFile( string folder, string filename)
         {
             this.storageApi = new StorageApi( clientSecret, clientId, "https://api.aspose.cloud/v1.1");
-            this.storageApi.DeleteFile(folder + "/" + filename, null, null);
-            this.storageApi.PutCreate(folder + "/" + filename, null, null, File.ReadAllBytes(System.AppDomain.CurrentDomain.BaseDirectory + TestDataFolder + filename));
+            if(string.IsNullOrEmpty(folder))
+            {
+                this.storageApi.DeleteFile( filename, null, null);
+                this.storageApi.PutCreate(filename, null, null, File.ReadAllBytes(TestDataFolder + filename));
+
+            }
+            else
+            {
+                this.storageApi.DeleteFile(folder + "/" + filename, null, null);
+                this.storageApi.PutCreate(folder + "/" + filename, null, null, File.ReadAllBytes(TestDataFolder + filename));
+
+            }
         }
         protected Stream GetTestDataStream( string filename)
         {
             MemoryStream ms = new MemoryStream();
             StreamWriter writer = new StreamWriter(ms);
-            writer.Write(System.Text.Encoding.Default.GetString(File.ReadAllBytes(System.AppDomain.CurrentDomain.BaseDirectory + TestDataFolder + filename)));
+            writer.Write(System.Text.Encoding.Default.GetString(File.ReadAllBytes(TestDataFolder + filename)));
             writer.Flush();
             ms.Position = 0;
             return ms;
         }
         protected byte[] GetTestDataByteArray(string filename)
         {
-            return File.ReadAllBytes(System.AppDomain.CurrentDomain.BaseDirectory + TestDataFolder + filename);
+            return File.ReadAllBytes(TestDataFolder + filename);
         }
         protected Configuration GetConfiguration()
         {
