@@ -218,11 +218,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="format">The exported file format. (optional)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        System.IO.Stream CellsWorksheetsGetWorksheet (string name, string sheetName, int? verticalResolution = null, int? horizontalResolution = null, string folder = null);
+        System.IO.Stream CellsWorksheetsGetWorksheet (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string folder = null);
 
         /// <summary>
         /// Read worksheet info or export.
@@ -233,11 +234,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="format">The exported file format. (optional)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        ApiResponse<System.IO.Stream> CellsWorksheetsGetWorksheetWithHttpInfo (string name, string sheetName, int? verticalResolution = null, int? horizontalResolution = null, string folder = null);
+        ApiResponse<System.IO.Stream> CellsWorksheetsGetWorksheetWithHttpInfo (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string folder = null);
         /// <summary>
         /// Calculate formula value.
         /// </summary>
@@ -1141,11 +1143,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="format">The exported file format. (optional)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <returns>Task of System.IO.Stream</returns>
-        System.Threading.Tasks.Task<System.IO.Stream> CellsWorksheetsGetWorksheetAsync (string name, string sheetName, int? verticalResolution = null, int? horizontalResolution = null, string folder = null);
+        System.Threading.Tasks.Task<System.IO.Stream> CellsWorksheetsGetWorksheetAsync (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string folder = null);
 
         /// <summary>
         /// Read worksheet info or export.
@@ -1156,11 +1159,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="format">The exported file format. (optional)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorksheetsGetWorksheetAsyncWithHttpInfo (string name, string sheetName, int? verticalResolution = null, int? horizontalResolution = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorksheetsGetWorksheetAsyncWithHttpInfo (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string folder = null);
         /// <summary>
         /// Calculate formula value.
         /// </summary>
@@ -3125,13 +3129,14 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="format">The exported file format. (optional)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        public System.IO.Stream CellsWorksheetsGetWorksheet (string name, string sheetName, int? verticalResolution = null, int? horizontalResolution = null, string folder = null)
+        public System.IO.Stream CellsWorksheetsGetWorksheet (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string folder = null)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = CellsWorksheetsGetWorksheetWithHttpInfo(name, sheetName, verticalResolution, horizontalResolution, folder);
+             ApiResponse<System.IO.Stream> localVarResponse = CellsWorksheetsGetWorksheetWithHttpInfo(name, sheetName, format, verticalResolution, horizontalResolution, folder);
              return localVarResponse.Data;
         }
 
@@ -3141,11 +3146,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="format">The exported file format. (optional)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        public ApiResponse< System.IO.Stream > CellsWorksheetsGetWorksheetWithHttpInfo (string name, string sheetName, int? verticalResolution = null, int? horizontalResolution = null, string folder = null)
+        public ApiResponse< System.IO.Stream > CellsWorksheetsGetWorksheetWithHttpInfo (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string folder = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3178,6 +3184,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
             if (verticalResolution != null) localVarQueryParams.Add("verticalResolution", Configuration.ApiClient.ParameterToString(verticalResolution)); // query parameter
             if (horizontalResolution != null) localVarQueryParams.Add("horizontalResolution", Configuration.ApiClient.ParameterToString(horizontalResolution)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
@@ -3207,13 +3214,14 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="format">The exported file format. (optional)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <returns>Task of System.IO.Stream</returns>
-        public async System.Threading.Tasks.Task<System.IO.Stream> CellsWorksheetsGetWorksheetAsync (string name, string sheetName, int? verticalResolution = null, int? horizontalResolution = null, string folder = null)
+        public async System.Threading.Tasks.Task<System.IO.Stream> CellsWorksheetsGetWorksheetAsync (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string folder = null)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = await CellsWorksheetsGetWorksheetAsyncWithHttpInfo(name, sheetName, verticalResolution, horizontalResolution, folder);
+             ApiResponse<System.IO.Stream> localVarResponse = await CellsWorksheetsGetWorksheetAsyncWithHttpInfo(name, sheetName, format, verticalResolution, horizontalResolution, folder);
              return localVarResponse.Data;
 
         }
@@ -3224,11 +3232,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="format">The exported file format. (optional)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorksheetsGetWorksheetAsyncWithHttpInfo (string name, string sheetName, int? verticalResolution = null, int? horizontalResolution = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorksheetsGetWorksheetAsyncWithHttpInfo (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string folder = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3261,6 +3270,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
             if (verticalResolution != null) localVarQueryParams.Add("verticalResolution", Configuration.ApiClient.ParameterToString(verticalResolution)); // query parameter
             if (horizontalResolution != null) localVarQueryParams.Add("horizontalResolution", Configuration.ApiClient.ParameterToString(horizontalResolution)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter

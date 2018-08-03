@@ -40,22 +40,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class PageBreakOperateParameter : OperateParameter 
   {                       
         /// <summary>
-        /// Gets or sets PageBreakType
-        /// </summary>  
-		[DataMember(Name="PageBreakType", EmitDefaultValue=false)]
-        public string PageBreakType { get; set; }
-
-        /// <summary>
         /// Gets or sets Index
         /// </summary>  
 		[DataMember(Name="Index", EmitDefaultValue=false)]
         public int? Index { get; set; }
 
         /// <summary>
-        /// Gets or sets Row
+        /// Gets or sets EndIndex
         /// </summary>  
-		[DataMember(Name="Row", EmitDefaultValue=false)]
-        public int? Row { get; set; }
+		[DataMember(Name="EndIndex", EmitDefaultValue=false)]
+        public int? EndIndex { get; set; }
 
         /// <summary>
         /// Gets or sets Column
@@ -70,10 +64,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public int? StartIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets EndIndex
+        /// Gets or sets PageBreakType
         /// </summary>  
-		[DataMember(Name="EndIndex", EmitDefaultValue=false)]
-        public int? EndIndex { get; set; }
+		[DataMember(Name="PageBreakType", EmitDefaultValue=false)]
+        public string PageBreakType { get; set; }
+
+        /// <summary>
+        /// Gets or sets Row
+        /// </summary>  
+		[DataMember(Name="Row", EmitDefaultValue=false)]
+        public int? Row { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -83,12 +83,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class PageBreakOperateParameter {\n");
-          sb.Append("  PageBreakType: ").Append(this.PageBreakType).Append("\n");
           sb.Append("  Index: ").Append(this.Index).Append("\n");
-          sb.Append("  Row: ").Append(this.Row).Append("\n");
+          sb.Append("  EndIndex: ").Append(this.EndIndex).Append("\n");
           sb.Append("  Column: ").Append(this.Column).Append("\n");
           sb.Append("  StartIndex: ").Append(this.StartIndex).Append("\n");
-          sb.Append("  EndIndex: ").Append(this.EndIndex).Append("\n");
+          sb.Append("  PageBreakType: ").Append(this.PageBreakType).Append("\n");
+          sb.Append("  Row: ").Append(this.Row).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

@@ -40,28 +40,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class SplitWorkbookTaskParameter : TaskParameter 
   {                       
         /// <summary>
-        /// Gets or sets Workbook
-        /// </summary>  
-		[DataMember(Name="Workbook", EmitDefaultValue=false)]
-        public FileSource Workbook { get; set; }
-
-        /// <summary>
-        /// Gets or sets DestinationFilePosition
-        /// </summary>  
-		[DataMember(Name="DestinationFilePosition", EmitDefaultValue=false)]
-        public FileSource DestinationFilePosition { get; set; }
-
-        /// <summary>
         /// Gets or sets DestinationFileFormat
         /// </summary>  
 		[DataMember(Name="DestinationFileFormat", EmitDefaultValue=false)]
         public string DestinationFileFormat { get; set; }
 
         /// <summary>
-        /// Gets or sets SplitNameRule
+        /// Gets or sets DestinationFilePosition
         /// </summary>  
-		[DataMember(Name="SplitNameRule", EmitDefaultValue=false)]
-        public string SplitNameRule { get; set; }
+		[DataMember(Name="DestinationFilePosition", EmitDefaultValue=false)]
+        public FileSource DestinationFilePosition { get; set; }
 
         /// <summary>
         /// Gets or sets VerticalResolution
@@ -76,6 +64,18 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public int? HorizontalResolution { get; set; }
 
         /// <summary>
+        /// Gets or sets SplitNameRule
+        /// </summary>  
+		[DataMember(Name="SplitNameRule", EmitDefaultValue=false)]
+        public string SplitNameRule { get; set; }
+
+        /// <summary>
+        /// Gets or sets Workbook
+        /// </summary>  
+		[DataMember(Name="Workbook", EmitDefaultValue=false)]
+        public FileSource Workbook { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -83,12 +83,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class SplitWorkbookTaskParameter {\n");
-          sb.Append("  Workbook: ").Append(this.Workbook).Append("\n");
-          sb.Append("  DestinationFilePosition: ").Append(this.DestinationFilePosition).Append("\n");
           sb.Append("  DestinationFileFormat: ").Append(this.DestinationFileFormat).Append("\n");
-          sb.Append("  SplitNameRule: ").Append(this.SplitNameRule).Append("\n");
+          sb.Append("  DestinationFilePosition: ").Append(this.DestinationFilePosition).Append("\n");
           sb.Append("  VerticalResolution: ").Append(this.VerticalResolution).Append("\n");
           sb.Append("  HorizontalResolution: ").Append(this.HorizontalResolution).Append("\n");
+          sb.Append("  SplitNameRule: ").Append(this.SplitNameRule).Append("\n");
+          sb.Append("  Workbook: ").Append(this.Workbook).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

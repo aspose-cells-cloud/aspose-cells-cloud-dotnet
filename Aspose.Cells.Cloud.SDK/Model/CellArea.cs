@@ -40,6 +40,18 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class CellArea 
   {                       
         /// <summary>
+        /// Gets or sets StartRow
+        /// </summary>  
+		[DataMember(Name="StartRow", EmitDefaultValue=false)]
+        public int? StartRow { get; set; }
+
+        /// <summary>
+        /// Gets or sets StartColumn
+        /// </summary>  
+		[DataMember(Name="StartColumn", EmitDefaultValue=false)]
+        public int? StartColumn { get; set; }
+
+        /// <summary>
         /// Gets or sets EndColumn
         /// </summary>  
 		[DataMember(Name="EndColumn", EmitDefaultValue=false)]
@@ -52,18 +64,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public int? EndRow { get; set; }
 
         /// <summary>
-        /// Gets or sets StartColumn
-        /// </summary>  
-		[DataMember(Name="StartColumn", EmitDefaultValue=false)]
-        public int? StartColumn { get; set; }
-
-        /// <summary>
-        /// Gets or sets StartRow
-        /// </summary>  
-		[DataMember(Name="StartRow", EmitDefaultValue=false)]
-        public int? StartRow { get; set; }
-
-        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -71,10 +71,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class CellArea {\n");
+          sb.Append("  StartRow: ").Append(this.StartRow).Append("\n");
+          sb.Append("  StartColumn: ").Append(this.StartColumn).Append("\n");
           sb.Append("  EndColumn: ").Append(this.EndColumn).Append("\n");
           sb.Append("  EndRow: ").Append(this.EndRow).Append("\n");
-          sb.Append("  StartColumn: ").Append(this.StartColumn).Append("\n");
-          sb.Append("  StartRow: ").Append(this.StartRow).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

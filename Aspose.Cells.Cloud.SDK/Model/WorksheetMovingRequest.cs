@@ -40,16 +40,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class WorksheetMovingRequest 
   {                       
         /// <summary>
-        /// Destination worksheet name.  
-        /// </summary>  
-		[DataMember(Name="DestinationWorksheet", EmitDefaultValue=false)]
-        public string DestinationWorksheet { get; set; }
-
-        /// <summary>
         /// Position to move. Can be BEFORE or AFTER.
         /// </summary>  
 		[DataMember(Name="Position", EmitDefaultValue=false)]
         public string Position { get; set; }
+
+        /// <summary>
+        /// Destination worksheet name.  
+        /// </summary>  
+		[DataMember(Name="DestinationWorksheet", EmitDefaultValue=false)]
+        public string DestinationWorksheet { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -59,8 +59,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class WorksheetMovingRequest {\n");
-          sb.Append("  DestinationWorksheet: ").Append(this.DestinationWorksheet).Append("\n");
           sb.Append("  Position: ").Append(this.Position).Append("\n");
+          sb.Append("  DestinationWorksheet: ").Append(this.DestinationWorksheet).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

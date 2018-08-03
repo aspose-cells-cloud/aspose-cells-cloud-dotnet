@@ -46,12 +46,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string FillType { get; set; }
 
         /// <summary>
-        /// Gets or sets DirectionType
-        /// </summary>  
-		[DataMember(Name="DirectionType", EmitDefaultValue=false)]
-        public string DirectionType { get; set; }
-
-        /// <summary>
         /// Gets or sets Angle
         /// </summary>  
 		[DataMember(Name="Angle", EmitDefaultValue=false)]
@@ -64,6 +58,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public List<GradientFillStop> GradientStops { get; set; }
 
         /// <summary>
+        /// Gets or sets DirectionType
+        /// </summary>  
+		[DataMember(Name="DirectionType", EmitDefaultValue=false)]
+        public string DirectionType { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -72,9 +72,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class GradientFill {\n");
           sb.Append("  FillType: ").Append(this.FillType).Append("\n");
-          sb.Append("  DirectionType: ").Append(this.DirectionType).Append("\n");
           sb.Append("  Angle: ").Append(this.Angle).Append("\n");
           sb.Append("  GradientStops: ").Append(this.GradientStops).Append("\n");
+          sb.Append("  DirectionType: ").Append(this.DirectionType).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

@@ -40,10 +40,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class TextOptions 
   {                       
         /// <summary>
-        /// Gets or sets Color
+        /// Gets or sets IsItalic
         /// </summary>  
-		[DataMember(Name="Color", EmitDefaultValue=false)]
-        public Color Color { get; set; }
+		[DataMember(Name="IsItalic", EmitDefaultValue=false)]
+        public bool? IsItalic { get; set; }
+
+        /// <summary>
+        /// Gets or sets Name
+        /// </summary>  
+		[DataMember(Name="Name", EmitDefaultValue=false)]
+        public string Name { get; set; }
 
         /// <summary>
         /// Gets or sets DoubleSize
@@ -52,22 +58,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public double? DoubleSize { get; set; }
 
         /// <summary>
+        /// Gets or sets Color
+        /// </summary>  
+		[DataMember(Name="Color", EmitDefaultValue=false)]
+        public Color Color { get; set; }
+
+        /// <summary>
         /// Gets or sets IsBold
         /// </summary>  
 		[DataMember(Name="IsBold", EmitDefaultValue=false)]
         public bool? IsBold { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsItalic
-        /// </summary>  
-		[DataMember(Name="IsItalic", EmitDefaultValue=false)]
-        public bool? IsItalic { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsStrikeout
-        /// </summary>  
-		[DataMember(Name="IsStrikeout", EmitDefaultValue=false)]
-        public bool? IsStrikeout { get; set; }
 
         /// <summary>
         /// Gets or sets IsSubscript
@@ -82,16 +82,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public bool? IsSuperscript { get; set; }
 
         /// <summary>
-        /// Gets or sets Name
+        /// Gets or sets IsStrikeout
         /// </summary>  
-		[DataMember(Name="Name", EmitDefaultValue=false)]
-        public string Name { get; set; }
-
-        /// <summary>
-        /// Gets or sets Size
-        /// </summary>  
-		[DataMember(Name="Size", EmitDefaultValue=false)]
-        public int? Size { get; set; }
+		[DataMember(Name="IsStrikeout", EmitDefaultValue=false)]
+        public bool? IsStrikeout { get; set; }
 
         /// <summary>
         /// Gets or sets Underline
@@ -100,16 +94,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string Underline { get; set; }
 
         /// <summary>
-        /// Gets or sets Fill
+        /// Gets or sets Size
         /// </summary>  
-		[DataMember(Name="Fill", EmitDefaultValue=false)]
-        public FillFormat Fill { get; set; }
-
-        /// <summary>
-        /// Gets or sets Kerning
-        /// </summary>  
-		[DataMember(Name="Kerning", EmitDefaultValue=false)]
-        public double? Kerning { get; set; }
+		[DataMember(Name="Size", EmitDefaultValue=false)]
+        public int? Size { get; set; }
 
         /// <summary>
         /// Gets or sets Outline
@@ -118,16 +106,28 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public LineFormat Outline { get; set; }
 
         /// <summary>
+        /// Gets or sets Spacing
+        /// </summary>  
+		[DataMember(Name="Spacing", EmitDefaultValue=false)]
+        public double? Spacing { get; set; }
+
+        /// <summary>
+        /// Gets or sets Kerning
+        /// </summary>  
+		[DataMember(Name="Kerning", EmitDefaultValue=false)]
+        public double? Kerning { get; set; }
+
+        /// <summary>
         /// Gets or sets Shadow
         /// </summary>  
 		[DataMember(Name="Shadow", EmitDefaultValue=false)]
         public ShadowEffect Shadow { get; set; }
 
         /// <summary>
-        /// Gets or sets Spacing
+        /// Gets or sets Fill
         /// </summary>  
-		[DataMember(Name="Spacing", EmitDefaultValue=false)]
-        public double? Spacing { get; set; }
+		[DataMember(Name="Fill", EmitDefaultValue=false)]
+        public FillFormat Fill { get; set; }
 
         /// <summary>
         /// Gets or sets UnderlineColor
@@ -143,21 +143,21 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class TextOptions {\n");
-          sb.Append("  Color: ").Append(this.Color).Append("\n");
-          sb.Append("  DoubleSize: ").Append(this.DoubleSize).Append("\n");
-          sb.Append("  IsBold: ").Append(this.IsBold).Append("\n");
           sb.Append("  IsItalic: ").Append(this.IsItalic).Append("\n");
-          sb.Append("  IsStrikeout: ").Append(this.IsStrikeout).Append("\n");
+          sb.Append("  Name: ").Append(this.Name).Append("\n");
+          sb.Append("  DoubleSize: ").Append(this.DoubleSize).Append("\n");
+          sb.Append("  Color: ").Append(this.Color).Append("\n");
+          sb.Append("  IsBold: ").Append(this.IsBold).Append("\n");
           sb.Append("  IsSubscript: ").Append(this.IsSubscript).Append("\n");
           sb.Append("  IsSuperscript: ").Append(this.IsSuperscript).Append("\n");
-          sb.Append("  Name: ").Append(this.Name).Append("\n");
-          sb.Append("  Size: ").Append(this.Size).Append("\n");
+          sb.Append("  IsStrikeout: ").Append(this.IsStrikeout).Append("\n");
           sb.Append("  Underline: ").Append(this.Underline).Append("\n");
-          sb.Append("  Fill: ").Append(this.Fill).Append("\n");
-          sb.Append("  Kerning: ").Append(this.Kerning).Append("\n");
+          sb.Append("  Size: ").Append(this.Size).Append("\n");
           sb.Append("  Outline: ").Append(this.Outline).Append("\n");
-          sb.Append("  Shadow: ").Append(this.Shadow).Append("\n");
           sb.Append("  Spacing: ").Append(this.Spacing).Append("\n");
+          sb.Append("  Kerning: ").Append(this.Kerning).Append("\n");
+          sb.Append("  Shadow: ").Append(this.Shadow).Append("\n");
+          sb.Append("  Fill: ").Append(this.Fill).Append("\n");
           sb.Append("  UnderlineColor: ").Append(this.UnderlineColor).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

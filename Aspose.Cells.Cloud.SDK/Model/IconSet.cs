@@ -40,6 +40,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class IconSet 
   {                       
         /// <summary>
+        /// Get or set the flag indicating whether to reverses the default order of the   icons in this icon set.  Default value is false.             
+        /// </summary>  
+		[DataMember(Name="Reverse", EmitDefaultValue=false)]
+        public bool? Reverse { get; set; }
+
+        /// <summary>
         /// Get theAspose.Cells.ConditionalFormattingIcon from the collection
         /// </summary>  
 		[DataMember(Name="CfIcons", EmitDefaultValue=false)]
@@ -52,28 +58,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public List<ConditionalFormattingValue> Cfvos { get; set; }
 
         /// <summary>
+        /// Get or Set the icon set type to display.  Setting the type will auto check    if the current Cfvos's count is accord with the new type. If not accord,    old Cfvos will be cleaned and default Cfvos will be added.             
+        /// </summary>  
+		[DataMember(Name="IconSetType", EmitDefaultValue=false)]
+        public string IconSetType { get; set; }
+
+        /// <summary>
         /// Indicates whether the icon set is custom.  Default value is false.
         /// </summary>  
 		[DataMember(Name="IsCustom", EmitDefaultValue=false)]
         public bool? IsCustom { get; set; }
 
         /// <summary>
-        /// Get or set the flag indicating whether to reverses the default order of the   icons in this icon set.  Default value is false.             
-        /// </summary>  
-		[DataMember(Name="Reverse", EmitDefaultValue=false)]
-        public bool? Reverse { get; set; }
-
-        /// <summary>
         /// Get or set the flag indicating whether to show the values of the cells on    which this icon set is applied.  Default value is true.             
         /// </summary>  
 		[DataMember(Name="ShowValue", EmitDefaultValue=false)]
         public bool? ShowValue { get; set; }
-
-        /// <summary>
-        /// Get or Set the icon set type to display.  Setting the type will auto check    if the current Cfvos's count is accord with the new type. If not accord,    old Cfvos will be cleaned and default Cfvos will be added.             
-        /// </summary>  
-		[DataMember(Name="IconSetType", EmitDefaultValue=false)]
-        public string IconSetType { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -83,12 +83,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class IconSet {\n");
+          sb.Append("  Reverse: ").Append(this.Reverse).Append("\n");
           sb.Append("  CfIcons: ").Append(this.CfIcons).Append("\n");
           sb.Append("  Cfvos: ").Append(this.Cfvos).Append("\n");
-          sb.Append("  IsCustom: ").Append(this.IsCustom).Append("\n");
-          sb.Append("  Reverse: ").Append(this.Reverse).Append("\n");
-          sb.Append("  ShowValue: ").Append(this.ShowValue).Append("\n");
           sb.Append("  IconSetType: ").Append(this.IconSetType).Append("\n");
+          sb.Append("  IsCustom: ").Append(this.IsCustom).Append("\n");
+          sb.Append("  ShowValue: ").Append(this.ShowValue).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

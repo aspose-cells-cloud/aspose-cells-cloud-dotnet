@@ -40,16 +40,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class MultipleFilters 
   {                       
         /// <summary>
-        /// Gets or sets MatchBlank
-        /// </summary>  
-		[DataMember(Name="MatchBlank", EmitDefaultValue=false)]
-        public bool? MatchBlank { get; set; }
-
-        /// <summary>
         /// Gets or sets MultipleFilterList
         /// </summary>  
 		[DataMember(Name="MultipleFilterList", EmitDefaultValue=false)]
         public List<MultipleFilter> MultipleFilterList { get; set; }
+
+        /// <summary>
+        /// Gets or sets MatchBlank
+        /// </summary>  
+		[DataMember(Name="MatchBlank", EmitDefaultValue=false)]
+        public bool? MatchBlank { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -59,8 +59,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class MultipleFilters {\n");
-          sb.Append("  MatchBlank: ").Append(this.MatchBlank).Append("\n");
           sb.Append("  MultipleFilterList: ").Append(this.MultipleFilterList).Append("\n");
+          sb.Append("  MatchBlank: ").Append(this.MatchBlank).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

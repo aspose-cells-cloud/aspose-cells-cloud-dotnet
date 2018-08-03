@@ -40,16 +40,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class RangeSetOutlineBorderRequest 
   {                       
         /// <summary>
+        /// Gets or sets BorderColor
+        /// </summary>  
+		[DataMember(Name="borderColor", EmitDefaultValue=false)]
+        public Color BorderColor { get; set; }
+
+        /// <summary>
         /// Gets or sets Range
         /// </summary>  
 		[DataMember(Name="Range", EmitDefaultValue=false)]
         public Range Range { get; set; }
-
-        /// <summary>
-        /// Gets or sets BorderEdge
-        /// </summary>  
-		[DataMember(Name="borderEdge", EmitDefaultValue=false)]
-        public string BorderEdge { get; set; }
 
         /// <summary>
         /// Gets or sets BorderStyle
@@ -58,10 +58,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string BorderStyle { get; set; }
 
         /// <summary>
-        /// Gets or sets BorderColor
+        /// Gets or sets BorderEdge
         /// </summary>  
-		[DataMember(Name="borderColor", EmitDefaultValue=false)]
-        public Color BorderColor { get; set; }
+		[DataMember(Name="borderEdge", EmitDefaultValue=false)]
+        public string BorderEdge { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -71,10 +71,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class RangeSetOutlineBorderRequest {\n");
-          sb.Append("  Range: ").Append(this.Range).Append("\n");
-          sb.Append("  BorderEdge: ").Append(this.BorderEdge).Append("\n");
-          sb.Append("  BorderStyle: ").Append(this.BorderStyle).Append("\n");
           sb.Append("  BorderColor: ").Append(this.BorderColor).Append("\n");
+          sb.Append("  Range: ").Append(this.Range).Append("\n");
+          sb.Append("  BorderStyle: ").Append(this.BorderStyle).Append("\n");
+          sb.Append("  BorderEdge: ").Append(this.BorderEdge).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

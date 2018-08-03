@@ -52,6 +52,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public int? ColumnIndex { get; set; }
 
         /// <summary>
+        /// Gets or sets Style
+        /// </summary>  
+		[DataMember(Name="style", EmitDefaultValue=false)]
+        public Style Style { get; set; }
+
+        /// <summary>
         /// Gets or sets Type
         /// </summary>  
 		[DataMember(Name="type", EmitDefaultValue=false)]
@@ -64,12 +70,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string Value { get; set; }
 
         /// <summary>
-        /// Gets or sets Style
-        /// </summary>  
-		[DataMember(Name="style", EmitDefaultValue=false)]
-        public Style Style { get; set; }
-
-        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -79,9 +79,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
           sb.Append("class CellValue {\n");
           sb.Append("  RowIndex: ").Append(this.RowIndex).Append("\n");
           sb.Append("  ColumnIndex: ").Append(this.ColumnIndex).Append("\n");
+          sb.Append("  Style: ").Append(this.Style).Append("\n");
           sb.Append("  Type: ").Append(this.Type).Append("\n");
           sb.Append("  Value: ").Append(this.Value).Append("\n");
-          sb.Append("  Style: ").Append(this.Style).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

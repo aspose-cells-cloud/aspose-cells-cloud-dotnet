@@ -40,28 +40,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class PatternFill 
   {                       
         /// <summary>
-        /// Gets or sets Pattern
-        /// </summary>  
-		[DataMember(Name="Pattern", EmitDefaultValue=false)]
-        public string Pattern { get; set; }
-
-        /// <summary>
-        /// Gets or sets BackgroundCellsColor
-        /// </summary>  
-		[DataMember(Name="BackgroundCellsColor", EmitDefaultValue=false)]
-        public CellsColor BackgroundCellsColor { get; set; }
-
-        /// <summary>
-        /// Gets or sets ForegroundCellsColor
-        /// </summary>  
-		[DataMember(Name="ForegroundCellsColor", EmitDefaultValue=false)]
-        public CellsColor ForegroundCellsColor { get; set; }
-
-        /// <summary>
         /// Gets or sets ForegroundColor
         /// </summary>  
 		[DataMember(Name="ForegroundColor", EmitDefaultValue=false)]
         public Color ForegroundColor { get; set; }
+
+        /// <summary>
+        /// Gets or sets Pattern
+        /// </summary>  
+		[DataMember(Name="Pattern", EmitDefaultValue=false)]
+        public string Pattern { get; set; }
 
         /// <summary>
         /// Gets or sets BackgroundColor
@@ -76,10 +64,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public double? BackTransparency { get; set; }
 
         /// <summary>
+        /// Gets or sets BackgroundCellsColor
+        /// </summary>  
+		[DataMember(Name="BackgroundCellsColor", EmitDefaultValue=false)]
+        public CellsColor BackgroundCellsColor { get; set; }
+
+        /// <summary>
         /// Gets or sets ForeTransparency
         /// </summary>  
 		[DataMember(Name="ForeTransparency", EmitDefaultValue=false)]
         public double? ForeTransparency { get; set; }
+
+        /// <summary>
+        /// Gets or sets ForegroundCellsColor
+        /// </summary>  
+		[DataMember(Name="ForegroundCellsColor", EmitDefaultValue=false)]
+        public CellsColor ForegroundCellsColor { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -89,13 +89,13 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class PatternFill {\n");
-          sb.Append("  Pattern: ").Append(this.Pattern).Append("\n");
-          sb.Append("  BackgroundCellsColor: ").Append(this.BackgroundCellsColor).Append("\n");
-          sb.Append("  ForegroundCellsColor: ").Append(this.ForegroundCellsColor).Append("\n");
           sb.Append("  ForegroundColor: ").Append(this.ForegroundColor).Append("\n");
+          sb.Append("  Pattern: ").Append(this.Pattern).Append("\n");
           sb.Append("  BackgroundColor: ").Append(this.BackgroundColor).Append("\n");
           sb.Append("  BackTransparency: ").Append(this.BackTransparency).Append("\n");
+          sb.Append("  BackgroundCellsColor: ").Append(this.BackgroundCellsColor).Append("\n");
           sb.Append("  ForeTransparency: ").Append(this.ForeTransparency).Append("\n");
+          sb.Append("  ForegroundCellsColor: ").Append(this.ForegroundCellsColor).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

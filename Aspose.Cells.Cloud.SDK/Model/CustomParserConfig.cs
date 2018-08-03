@@ -46,16 +46,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public int? ColumnIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets ParseMethod
-        /// </summary>  
-		[DataMember(Name="ParseMethod", EmitDefaultValue=false)]
-        public string ParseMethod { get; set; }
-
-        /// <summary>
         /// Gets or sets CustomStyle
         /// </summary>  
 		[DataMember(Name="CustomStyle", EmitDefaultValue=false)]
         public string CustomStyle { get; set; }
+
+        /// <summary>
+        /// Gets or sets ParseMethod
+        /// </summary>  
+		[DataMember(Name="ParseMethod", EmitDefaultValue=false)]
+        public string ParseMethod { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -66,8 +66,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class CustomParserConfig {\n");
           sb.Append("  ColumnIndex: ").Append(this.ColumnIndex).Append("\n");
-          sb.Append("  ParseMethod: ").Append(this.ParseMethod).Append("\n");
           sb.Append("  CustomStyle: ").Append(this.CustomStyle).Append("\n");
+          sb.Append("  ParseMethod: ").Append(this.ParseMethod).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

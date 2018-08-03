@@ -40,16 +40,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class WorkbookProtectionRequest 
   {                       
         /// <summary>
-        /// Protection type. Can be ALL, CONTENTS, NONE, OBJECTS, SCENARIOS, STRUCTURE, WINDOWS  
-        /// </summary>  
-		[DataMember(Name="ProtectionType", EmitDefaultValue=false)]
-        public string ProtectionType { get; set; }
-
-        /// <summary>
         /// Encription password.
         /// </summary>  
 		[DataMember(Name="Password", EmitDefaultValue=false)]
         public string Password { get; set; }
+
+        /// <summary>
+        /// Protection type. Can be ALL, CONTENTS, NONE, OBJECTS, SCENARIOS, STRUCTURE, WINDOWS  
+        /// </summary>  
+		[DataMember(Name="ProtectionType", EmitDefaultValue=false)]
+        public string ProtectionType { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -59,8 +59,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class WorkbookProtectionRequest {\n");
-          sb.Append("  ProtectionType: ").Append(this.ProtectionType).Append("\n");
           sb.Append("  Password: ").Append(this.Password).Append("\n");
+          sb.Append("  ProtectionType: ").Append(this.ProtectionType).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

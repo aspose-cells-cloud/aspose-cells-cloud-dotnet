@@ -40,22 +40,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class OperateObjectPosition 
   {                       
         /// <summary>
-        /// Gets or sets Workbook
+        /// Gets or sets ChartIndex
         /// </summary>  
-		[DataMember(Name="Workbook", EmitDefaultValue=false)]
-        public FileSource Workbook { get; set; }
+		[DataMember(Name="ChartIndex", EmitDefaultValue=false)]
+        public int? ChartIndex { get; set; }
+
+        /// <summary>
+        /// Gets or sets ListObjectIndex
+        /// </summary>  
+		[DataMember(Name="ListObjectIndex", EmitDefaultValue=false)]
+        public int? ListObjectIndex { get; set; }
 
         /// <summary>
         /// Gets or sets SheetName
         /// </summary>  
 		[DataMember(Name="SheetName", EmitDefaultValue=false)]
         public string SheetName { get; set; }
-
-        /// <summary>
-        /// Gets or sets ChartIndex
-        /// </summary>  
-		[DataMember(Name="ChartIndex", EmitDefaultValue=false)]
-        public int? ChartIndex { get; set; }
 
         /// <summary>
         /// Gets or sets ShapeIndex
@@ -70,10 +70,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string CellName { get; set; }
 
         /// <summary>
-        /// Gets or sets ListObjectIndex
+        /// Gets or sets Workbook
         /// </summary>  
-		[DataMember(Name="ListObjectIndex", EmitDefaultValue=false)]
-        public int? ListObjectIndex { get; set; }
+		[DataMember(Name="Workbook", EmitDefaultValue=false)]
+        public FileSource Workbook { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -83,12 +83,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class OperateObjectPosition {\n");
-          sb.Append("  Workbook: ").Append(this.Workbook).Append("\n");
-          sb.Append("  SheetName: ").Append(this.SheetName).Append("\n");
           sb.Append("  ChartIndex: ").Append(this.ChartIndex).Append("\n");
+          sb.Append("  ListObjectIndex: ").Append(this.ListObjectIndex).Append("\n");
+          sb.Append("  SheetName: ").Append(this.SheetName).Append("\n");
           sb.Append("  ShapeIndex: ").Append(this.ShapeIndex).Append("\n");
           sb.Append("  CellName: ").Append(this.CellName).Append("\n");
-          sb.Append("  ListObjectIndex: ").Append(this.ListObjectIndex).Append("\n");
+          sb.Append("  Workbook: ").Append(this.Workbook).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

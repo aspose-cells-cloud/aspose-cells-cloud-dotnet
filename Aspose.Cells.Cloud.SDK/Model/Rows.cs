@@ -52,16 +52,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public int? MaxRow { get; set; }
 
         /// <summary>
-        /// Gets or sets RowsCount
-        /// </summary>  
-		[DataMember(Name="RowsCount", EmitDefaultValue=false)]
-        public int? RowsCount { get; set; }
-
-        /// <summary>
         /// Gets or sets RowsList
         /// </summary>  
 		[DataMember(Name="RowsList", EmitDefaultValue=false)]
         public List<LinkElement> RowsList { get; set; }
+
+        /// <summary>
+        /// Gets or sets RowsCount
+        /// </summary>  
+		[DataMember(Name="RowsCount", EmitDefaultValue=false)]
+        public int? RowsCount { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -73,8 +73,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
           sb.Append("class Rows {\n");
           sb.Append("  Link: ").Append(this.Link).Append("\n");
           sb.Append("  MaxRow: ").Append(this.MaxRow).Append("\n");
-          sb.Append("  RowsCount: ").Append(this.RowsCount).Append("\n");
           sb.Append("  RowsList: ").Append(this.RowsList).Append("\n");
+          sb.Append("  RowsCount: ").Append(this.RowsCount).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

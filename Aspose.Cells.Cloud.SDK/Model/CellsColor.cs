@@ -46,16 +46,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public Color Color { get; set; }
 
         /// <summary>
-        /// Gets or sets ColorIndex
+        /// Gets or sets Type
         /// </summary>  
-		[DataMember(Name="ColorIndex", EmitDefaultValue=false)]
-        public int? ColorIndex { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsShapeColor
-        /// </summary>  
-		[DataMember(Name="IsShapeColor", EmitDefaultValue=false)]
-        public bool? IsShapeColor { get; set; }
+		[DataMember(Name="Type", EmitDefaultValue=false)]
+        public string Type { get; set; }
 
         /// <summary>
         /// Gets or sets ThemeColor
@@ -64,10 +58,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public ThemeColor ThemeColor { get; set; }
 
         /// <summary>
-        /// Gets or sets Type
+        /// Gets or sets IsShapeColor
         /// </summary>  
-		[DataMember(Name="Type", EmitDefaultValue=false)]
-        public string Type { get; set; }
+		[DataMember(Name="IsShapeColor", EmitDefaultValue=false)]
+        public bool? IsShapeColor { get; set; }
+
+        /// <summary>
+        /// Gets or sets ColorIndex
+        /// </summary>  
+		[DataMember(Name="ColorIndex", EmitDefaultValue=false)]
+        public int? ColorIndex { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -78,10 +78,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class CellsColor {\n");
           sb.Append("  Color: ").Append(this.Color).Append("\n");
-          sb.Append("  ColorIndex: ").Append(this.ColorIndex).Append("\n");
-          sb.Append("  IsShapeColor: ").Append(this.IsShapeColor).Append("\n");
-          sb.Append("  ThemeColor: ").Append(this.ThemeColor).Append("\n");
           sb.Append("  Type: ").Append(this.Type).Append("\n");
+          sb.Append("  ThemeColor: ").Append(this.ThemeColor).Append("\n");
+          sb.Append("  IsShapeColor: ").Append(this.IsShapeColor).Append("\n");
+          sb.Append("  ColorIndex: ").Append(this.ColorIndex).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

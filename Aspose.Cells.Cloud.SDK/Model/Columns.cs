@@ -46,16 +46,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public Link Link { get; set; }
 
         /// <summary>
-        /// Gets or sets MaxColumn
-        /// </summary>  
-		[DataMember(Name="MaxColumn", EmitDefaultValue=false)]
-        public int? MaxColumn { get; set; }
-
-        /// <summary>
         /// Gets or sets ColumnsCount
         /// </summary>  
 		[DataMember(Name="ColumnsCount", EmitDefaultValue=false)]
         public int? ColumnsCount { get; set; }
+
+        /// <summary>
+        /// Gets or sets MaxColumn
+        /// </summary>  
+		[DataMember(Name="MaxColumn", EmitDefaultValue=false)]
+        public int? MaxColumn { get; set; }
 
         /// <summary>
         /// Gets or sets ColumnsList
@@ -72,8 +72,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class Columns {\n");
           sb.Append("  Link: ").Append(this.Link).Append("\n");
-          sb.Append("  MaxColumn: ").Append(this.MaxColumn).Append("\n");
           sb.Append("  ColumnsCount: ").Append(this.ColumnsCount).Append("\n");
+          sb.Append("  MaxColumn: ").Append(this.MaxColumn).Append("\n");
           sb.Append("  ColumnsList: ").Append(this.ColumnsList).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

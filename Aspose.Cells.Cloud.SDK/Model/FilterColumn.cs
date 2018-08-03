@@ -40,12 +40,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class FilterColumn 
   {                       
         /// <summary>
-        /// Gets or sets FieldIndex
-        /// </summary>  
-		[DataMember(Name="FieldIndex", EmitDefaultValue=false)]
-        public int? FieldIndex { get; set; }
-
-        /// <summary>
         /// Gets or sets FilterType
         /// </summary>  
 		[DataMember(Name="FilterType", EmitDefaultValue=false)]
@@ -56,12 +50,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// </summary>  
 		[DataMember(Name="MultipleFilters", EmitDefaultValue=false)]
         public MultipleFilters MultipleFilters { get; set; }
-
-        /// <summary>
-        /// Gets or sets ColorFilter
-        /// </summary>  
-		[DataMember(Name="ColorFilter", EmitDefaultValue=false)]
-        public ColorFilter ColorFilter { get; set; }
 
         /// <summary>
         /// Gets or sets CustomFilters
@@ -76,16 +64,28 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public DynamicFilter DynamicFilter { get; set; }
 
         /// <summary>
-        /// Gets or sets IconFilter
+        /// Gets or sets ColorFilter
         /// </summary>  
-		[DataMember(Name="IconFilter", EmitDefaultValue=false)]
-        public IconFilter IconFilter { get; set; }
+		[DataMember(Name="ColorFilter", EmitDefaultValue=false)]
+        public ColorFilter ColorFilter { get; set; }
+
+        /// <summary>
+        /// Gets or sets FieldIndex
+        /// </summary>  
+		[DataMember(Name="FieldIndex", EmitDefaultValue=false)]
+        public int? FieldIndex { get; set; }
 
         /// <summary>
         /// Gets or sets Top10Filter
         /// </summary>  
 		[DataMember(Name="Top10Filter", EmitDefaultValue=false)]
         public Top10Filter Top10Filter { get; set; }
+
+        /// <summary>
+        /// Gets or sets IconFilter
+        /// </summary>  
+		[DataMember(Name="IconFilter", EmitDefaultValue=false)]
+        public IconFilter IconFilter { get; set; }
 
         /// <summary>
         /// Gets or sets Visibledropdown
@@ -101,14 +101,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class FilterColumn {\n");
-          sb.Append("  FieldIndex: ").Append(this.FieldIndex).Append("\n");
           sb.Append("  FilterType: ").Append(this.FilterType).Append("\n");
           sb.Append("  MultipleFilters: ").Append(this.MultipleFilters).Append("\n");
-          sb.Append("  ColorFilter: ").Append(this.ColorFilter).Append("\n");
           sb.Append("  CustomFilters: ").Append(this.CustomFilters).Append("\n");
           sb.Append("  DynamicFilter: ").Append(this.DynamicFilter).Append("\n");
-          sb.Append("  IconFilter: ").Append(this.IconFilter).Append("\n");
+          sb.Append("  ColorFilter: ").Append(this.ColorFilter).Append("\n");
+          sb.Append("  FieldIndex: ").Append(this.FieldIndex).Append("\n");
           sb.Append("  Top10Filter: ").Append(this.Top10Filter).Append("\n");
+          sb.Append("  IconFilter: ").Append(this.IconFilter).Append("\n");
           sb.Append("  Visibledropdown: ").Append(this.Visibledropdown).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

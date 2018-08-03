@@ -40,16 +40,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class TaskDescription 
   {                       
         /// <summary>
-        /// Gets or sets TaskType
-        /// </summary>  
-		[DataMember(Name="TaskType", EmitDefaultValue=false)]
-        public string TaskType { get; set; }
-
-        /// <summary>
         /// Gets or sets TaskParameter
         /// </summary>  
 		[DataMember(Name="TaskParameter", EmitDefaultValue=false)]
         public TaskParameter TaskParameter { get; set; }
+
+        /// <summary>
+        /// Gets or sets TaskType
+        /// </summary>  
+		[DataMember(Name="TaskType", EmitDefaultValue=false)]
+        public string TaskType { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -59,8 +59,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class TaskDescription {\n");
-          sb.Append("  TaskType: ").Append(this.TaskType).Append("\n");
           sb.Append("  TaskParameter: ").Append(this.TaskParameter).Append("\n");
+          sb.Append("  TaskType: ").Append(this.TaskType).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

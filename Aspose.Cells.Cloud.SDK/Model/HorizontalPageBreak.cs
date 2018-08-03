@@ -40,10 +40,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class HorizontalPageBreak 
   {                       
         /// <summary>
-        /// Gets or sets Row
+        /// Gets or sets StartColumn
         /// </summary>  
-		[DataMember(Name="Row", EmitDefaultValue=false)]
-        public int? Row { get; set; }
+		[DataMember(Name="StartColumn", EmitDefaultValue=false)]
+        public int? StartColumn { get; set; }
 
         /// <summary>
         /// Gets or sets EndColumn
@@ -52,10 +52,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public int? EndColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets StartColumn
+        /// Gets or sets Row
         /// </summary>  
-		[DataMember(Name="StartColumn", EmitDefaultValue=false)]
-        public int? StartColumn { get; set; }
+		[DataMember(Name="Row", EmitDefaultValue=false)]
+        public int? Row { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -65,9 +65,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class HorizontalPageBreak {\n");
-          sb.Append("  Row: ").Append(this.Row).Append("\n");
-          sb.Append("  EndColumn: ").Append(this.EndColumn).Append("\n");
           sb.Append("  StartColumn: ").Append(this.StartColumn).Append("\n");
+          sb.Append("  EndColumn: ").Append(this.EndColumn).Append("\n");
+          sb.Append("  Row: ").Append(this.Row).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

@@ -40,10 +40,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class SortKey 
   {                       
         /// <summary>
-        /// Gets or sets Key
+        /// Gets or sets CustomList
         /// </summary>  
-		[DataMember(Name="Key", EmitDefaultValue=false)]
-        public int? Key { get; set; }
+		[DataMember(Name="CustomList", EmitDefaultValue=false)]
+        public string CustomList { get; set; }
 
         /// <summary>
         /// Gets or sets SortOrder
@@ -52,10 +52,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string SortOrder { get; set; }
 
         /// <summary>
-        /// Gets or sets CustomList
+        /// Gets or sets Key
         /// </summary>  
-		[DataMember(Name="CustomList", EmitDefaultValue=false)]
-        public string CustomList { get; set; }
+		[DataMember(Name="Key", EmitDefaultValue=false)]
+        public int? Key { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -65,9 +65,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class SortKey {\n");
-          sb.Append("  Key: ").Append(this.Key).Append("\n");
-          sb.Append("  SortOrder: ").Append(this.SortOrder).Append("\n");
           sb.Append("  CustomList: ").Append(this.CustomList).Append("\n");
+          sb.Append("  SortOrder: ").Append(this.SortOrder).Append("\n");
+          sb.Append("  Key: ").Append(this.Key).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

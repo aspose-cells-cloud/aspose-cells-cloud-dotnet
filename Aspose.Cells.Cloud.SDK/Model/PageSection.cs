@@ -40,28 +40,28 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class PageSection 
   {                       
         /// <summary>
-        /// 0,1,2  left , middle ,right
-        /// </summary>  
-		[DataMember(Name="Section", EmitDefaultValue=false)]
-        public int? Section { get; set; }
-
-        /// <summary>
-        /// page context script             
-        /// </summary>  
-		[DataMember(Name="Context", EmitDefaultValue=false)]
-        public string Context { get; set; }
-
-        /// <summary>
         /// Gets or sets Picture
         /// </summary>  
 		[DataMember(Name="Picture", EmitDefaultValue=false)]
         public byte[] Picture { get; set; }
 
         /// <summary>
+        /// 0,1,2  left , middle ,right
+        /// </summary>  
+		[DataMember(Name="Section", EmitDefaultValue=false)]
+        public int? Section { get; set; }
+
+        /// <summary>
         /// fisrt page context script
         /// </summary>  
 		[DataMember(Name="FisrtPageContext", EmitDefaultValue=false)]
         public string FisrtPageContext { get; set; }
+
+        /// <summary>
+        /// page context script             
+        /// </summary>  
+		[DataMember(Name="Context", EmitDefaultValue=false)]
+        public string Context { get; set; }
 
         /// <summary>
         /// Even page context script
@@ -77,10 +77,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class PageSection {\n");
-          sb.Append("  Section: ").Append(this.Section).Append("\n");
-          sb.Append("  Context: ").Append(this.Context).Append("\n");
           sb.Append("  Picture: ").Append(this.Picture).Append("\n");
+          sb.Append("  Section: ").Append(this.Section).Append("\n");
           sb.Append("  FisrtPageContext: ").Append(this.FisrtPageContext).Append("\n");
+          sb.Append("  Context: ").Append(this.Context).Append("\n");
           sb.Append("  EvenPageContext: ").Append(this.EvenPageContext).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

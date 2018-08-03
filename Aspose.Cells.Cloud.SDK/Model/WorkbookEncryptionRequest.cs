@@ -40,10 +40,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class WorkbookEncryptionRequest 
   {                       
         /// <summary>
-        /// Workbook encription type.
+        /// Encription password.
         /// </summary>  
-		[DataMember(Name="EncryptionType", EmitDefaultValue=false)]
-        public string EncryptionType { get; set; }
+		[DataMember(Name="Password", EmitDefaultValue=false)]
+        public string Password { get; set; }
 
         /// <summary>
         /// Encription key length.
@@ -52,10 +52,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public int? KeyLength { get; set; }
 
         /// <summary>
-        /// Encription password.
+        /// Workbook encription type.
         /// </summary>  
-		[DataMember(Name="Password", EmitDefaultValue=false)]
-        public string Password { get; set; }
+		[DataMember(Name="EncryptionType", EmitDefaultValue=false)]
+        public string EncryptionType { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -65,9 +65,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class WorkbookEncryptionRequest {\n");
-          sb.Append("  EncryptionType: ").Append(this.EncryptionType).Append("\n");
-          sb.Append("  KeyLength: ").Append(this.KeyLength).Append("\n");
           sb.Append("  Password: ").Append(this.Password).Append("\n");
+          sb.Append("  KeyLength: ").Append(this.KeyLength).Append("\n");
+          sb.Append("  EncryptionType: ").Append(this.EncryptionType).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

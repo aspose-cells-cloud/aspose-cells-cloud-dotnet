@@ -46,16 +46,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public Link Link { get; set; }
 
         /// <summary>
-        /// Gets or sets MaxRow
+        /// Gets or sets Rows
         /// </summary>  
-		[DataMember(Name="MaxRow", EmitDefaultValue=false)]
-        public int? MaxRow { get; set; }
-
-        /// <summary>
-        /// Maximum column index of cell which contains data.             
-        /// </summary>  
-		[DataMember(Name="MaxColumn", EmitDefaultValue=false)]
-        public int? MaxColumn { get; set; }
+		[DataMember(Name="Rows", EmitDefaultValue=false)]
+        public LinkElement Rows { get; set; }
 
         /// <summary>
         /// Gets or sets CellCount
@@ -64,22 +58,28 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public int? CellCount { get; set; }
 
         /// <summary>
-        /// Gets or sets Rows
+        /// Gets or sets MaxRow
         /// </summary>  
-		[DataMember(Name="Rows", EmitDefaultValue=false)]
-        public LinkElement Rows { get; set; }
-
-        /// <summary>
-        /// Gets or sets Columns
-        /// </summary>  
-		[DataMember(Name="Columns", EmitDefaultValue=false)]
-        public LinkElement Columns { get; set; }
+		[DataMember(Name="MaxRow", EmitDefaultValue=false)]
+        public int? MaxRow { get; set; }
 
         /// <summary>
         /// Gets or sets CellList
         /// </summary>  
 		[DataMember(Name="CellList", EmitDefaultValue=false)]
         public List<LinkElement> CellList { get; set; }
+
+        /// <summary>
+        /// Maximum column index of cell which contains data.             
+        /// </summary>  
+		[DataMember(Name="MaxColumn", EmitDefaultValue=false)]
+        public int? MaxColumn { get; set; }
+
+        /// <summary>
+        /// Gets or sets Columns
+        /// </summary>  
+		[DataMember(Name="Columns", EmitDefaultValue=false)]
+        public LinkElement Columns { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -90,12 +90,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class Cells {\n");
           sb.Append("  Link: ").Append(this.Link).Append("\n");
-          sb.Append("  MaxRow: ").Append(this.MaxRow).Append("\n");
-          sb.Append("  MaxColumn: ").Append(this.MaxColumn).Append("\n");
-          sb.Append("  CellCount: ").Append(this.CellCount).Append("\n");
           sb.Append("  Rows: ").Append(this.Rows).Append("\n");
-          sb.Append("  Columns: ").Append(this.Columns).Append("\n");
+          sb.Append("  CellCount: ").Append(this.CellCount).Append("\n");
+          sb.Append("  MaxRow: ").Append(this.MaxRow).Append("\n");
           sb.Append("  CellList: ").Append(this.CellList).Append("\n");
+          sb.Append("  MaxColumn: ").Append(this.MaxColumn).Append("\n");
+          sb.Append("  Columns: ").Append(this.Columns).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

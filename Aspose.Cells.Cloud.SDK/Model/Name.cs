@@ -52,22 +52,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string Comment { get; set; }
 
         /// <summary>
+        /// Gets or sets Text
+        /// </summary>  
+		[DataMember(Name="Text", EmitDefaultValue=false)]
+        public string Text { get; set; }
+
+        /// <summary>
         /// Gets or sets WorksheetIndex
         /// </summary>  
 		[DataMember(Name="WorksheetIndex", EmitDefaultValue=false)]
         public int? WorksheetIndex { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsReferred
-        /// </summary>  
-		[DataMember(Name="IsReferred", EmitDefaultValue=false)]
-        public bool? IsReferred { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsVisible
-        /// </summary>  
-		[DataMember(Name="IsVisible", EmitDefaultValue=false)]
-        public bool? IsVisible { get; set; }
 
         /// <summary>
         /// Gets or sets R1C1RefersTo
@@ -82,10 +76,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string RefersTo { get; set; }
 
         /// <summary>
-        /// Gets or sets Text
+        /// Gets or sets IsReferred
         /// </summary>  
-		[DataMember(Name="Text", EmitDefaultValue=false)]
-        public string Text { get; set; }
+		[DataMember(Name="IsReferred", EmitDefaultValue=false)]
+        public bool? IsReferred { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsVisible
+        /// </summary>  
+		[DataMember(Name="IsVisible", EmitDefaultValue=false)]
+        public bool? IsVisible { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -97,12 +97,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
           sb.Append("class Name {\n");
           sb.Append("  Link: ").Append(this.Link).Append("\n");
           sb.Append("  Comment: ").Append(this.Comment).Append("\n");
+          sb.Append("  Text: ").Append(this.Text).Append("\n");
           sb.Append("  WorksheetIndex: ").Append(this.WorksheetIndex).Append("\n");
-          sb.Append("  IsReferred: ").Append(this.IsReferred).Append("\n");
-          sb.Append("  IsVisible: ").Append(this.IsVisible).Append("\n");
           sb.Append("  R1C1RefersTo: ").Append(this.R1C1RefersTo).Append("\n");
           sb.Append("  RefersTo: ").Append(this.RefersTo).Append("\n");
-          sb.Append("  Text: ").Append(this.Text).Append("\n");
+          sb.Append("  IsReferred: ").Append(this.IsReferred).Append("\n");
+          sb.Append("  IsVisible: ").Append(this.IsVisible).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

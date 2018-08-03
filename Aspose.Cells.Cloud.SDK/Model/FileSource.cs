@@ -40,16 +40,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class FileSource 
   {                       
         /// <summary>
-        /// Gets or sets FileSourceType
-        /// </summary>  
-		[DataMember(Name="FileSourceType", EmitDefaultValue=false)]
-        public string FileSourceType { get; set; }
-
-        /// <summary>
         /// Gets or sets FilePath
         /// </summary>  
 		[DataMember(Name="FilePath", EmitDefaultValue=false)]
         public string FilePath { get; set; }
+
+        /// <summary>
+        /// Gets or sets FileSourceType
+        /// </summary>  
+		[DataMember(Name="FileSourceType", EmitDefaultValue=false)]
+        public string FileSourceType { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -59,8 +59,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class FileSource {\n");
-          sb.Append("  FileSourceType: ").Append(this.FileSourceType).Append("\n");
           sb.Append("  FilePath: ").Append(this.FilePath).Append("\n");
+          sb.Append("  FileSourceType: ").Append(this.FileSourceType).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

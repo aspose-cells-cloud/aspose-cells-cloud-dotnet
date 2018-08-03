@@ -40,16 +40,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class ThemeColor 
   {                       
         /// <summary>
-        /// Gets or sets ColorType
-        /// </summary>  
-		[DataMember(Name="ColorType", EmitDefaultValue=false)]
-        public string ColorType { get; set; }
-
-        /// <summary>
         /// Gets or sets Tint
         /// </summary>  
 		[DataMember(Name="Tint", EmitDefaultValue=false)]
         public double? Tint { get; set; }
+
+        /// <summary>
+        /// Gets or sets ColorType
+        /// </summary>  
+		[DataMember(Name="ColorType", EmitDefaultValue=false)]
+        public string ColorType { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -59,8 +59,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class ThemeColor {\n");
-          sb.Append("  ColorType: ").Append(this.ColorType).Append("\n");
           sb.Append("  Tint: ").Append(this.Tint).Append("\n");
+          sb.Append("  ColorType: ").Append(this.ColorType).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

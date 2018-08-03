@@ -40,16 +40,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class PivotTableOperateParameter : OperateParameter 
   {                       
         /// <summary>
-        /// Gets or sets SourceData
+        /// Gets or sets PivotFieldColumns
         /// </summary>  
-		[DataMember(Name="SourceData", EmitDefaultValue=false)]
-        public string SourceData { get; set; }
+		[DataMember(Name="PivotFieldColumns", EmitDefaultValue=false)]
+        public List<int?> PivotFieldColumns { get; set; }
 
         /// <summary>
-        /// Gets or sets DestCellName
+        /// Gets or sets PivotTableIndex
         /// </summary>  
-		[DataMember(Name="DestCellName", EmitDefaultValue=false)]
-        public string DestCellName { get; set; }
+		[DataMember(Name="PivotTableIndex", EmitDefaultValue=false)]
+        public int? PivotTableIndex { get; set; }
 
         /// <summary>
         /// Gets or sets TableName
@@ -64,10 +64,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public bool? UseSameSource { get; set; }
 
         /// <summary>
-        /// Gets or sets PivotTableIndex
+        /// Gets or sets PivotFieldData
         /// </summary>  
-		[DataMember(Name="PivotTableIndex", EmitDefaultValue=false)]
-        public int? PivotTableIndex { get; set; }
+		[DataMember(Name="PivotFieldData", EmitDefaultValue=false)]
+        public List<int?> PivotFieldData { get; set; }
 
         /// <summary>
         /// Gets or sets PivotFieldRows
@@ -76,16 +76,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public List<int?> PivotFieldRows { get; set; }
 
         /// <summary>
-        /// Gets or sets PivotFieldColumns
+        /// Gets or sets DestCellName
         /// </summary>  
-		[DataMember(Name="PivotFieldColumns", EmitDefaultValue=false)]
-        public List<int?> PivotFieldColumns { get; set; }
+		[DataMember(Name="DestCellName", EmitDefaultValue=false)]
+        public string DestCellName { get; set; }
 
         /// <summary>
-        /// Gets or sets PivotFieldData
+        /// Gets or sets SourceData
         /// </summary>  
-		[DataMember(Name="PivotFieldData", EmitDefaultValue=false)]
-        public List<int?> PivotFieldData { get; set; }
+		[DataMember(Name="SourceData", EmitDefaultValue=false)]
+        public string SourceData { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -95,14 +95,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class PivotTableOperateParameter {\n");
-          sb.Append("  SourceData: ").Append(this.SourceData).Append("\n");
-          sb.Append("  DestCellName: ").Append(this.DestCellName).Append("\n");
+          sb.Append("  PivotFieldColumns: ").Append(this.PivotFieldColumns).Append("\n");
+          sb.Append("  PivotTableIndex: ").Append(this.PivotTableIndex).Append("\n");
           sb.Append("  TableName: ").Append(this.TableName).Append("\n");
           sb.Append("  UseSameSource: ").Append(this.UseSameSource).Append("\n");
-          sb.Append("  PivotTableIndex: ").Append(this.PivotTableIndex).Append("\n");
-          sb.Append("  PivotFieldRows: ").Append(this.PivotFieldRows).Append("\n");
-          sb.Append("  PivotFieldColumns: ").Append(this.PivotFieldColumns).Append("\n");
           sb.Append("  PivotFieldData: ").Append(this.PivotFieldData).Append("\n");
+          sb.Append("  PivotFieldRows: ").Append(this.PivotFieldRows).Append("\n");
+          sb.Append("  DestCellName: ").Append(this.DestCellName).Append("\n");
+          sb.Append("  SourceData: ").Append(this.SourceData).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

@@ -46,10 +46,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public int? ColumnCount { get; set; }
 
         /// <summary>
-        /// Sets or gets the column width of this range
+        /// Sets or gets the height of rows in this range
         /// </summary>  
-		[DataMember(Name="ColumnWidth", EmitDefaultValue=false)]
-        public double? ColumnWidth { get; set; }
+		[DataMember(Name="RowHeight", EmitDefaultValue=false)]
+        public double? RowHeight { get; set; }
+
+        /// <summary>
+        /// Gets or sets the name of the range.
+        /// </summary>  
+		[DataMember(Name="Name", EmitDefaultValue=false)]
+        public string Name { get; set; }
 
         /// <summary>
         /// Gets the index of the first column of the range.
@@ -58,16 +64,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public int? FirstColumn { get; set; }
 
         /// <summary>
-        /// Gets the index of the first row of the range.
+        /// Sets or gets the column width of this range
         /// </summary>  
-		[DataMember(Name="FirstRow", EmitDefaultValue=false)]
-        public int? FirstRow { get; set; }
-
-        /// <summary>
-        /// Gets or sets the name of the range.
-        /// </summary>  
-		[DataMember(Name="Name", EmitDefaultValue=false)]
-        public string Name { get; set; }
+		[DataMember(Name="ColumnWidth", EmitDefaultValue=false)]
+        public double? ColumnWidth { get; set; }
 
         /// <summary>
         /// Gets the range's refers to.
@@ -82,10 +82,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public int? RowCount { get; set; }
 
         /// <summary>
-        /// Sets or gets the height of rows in this range
+        /// Gets the index of the first row of the range.
         /// </summary>  
-		[DataMember(Name="RowHeight", EmitDefaultValue=false)]
-        public double? RowHeight { get; set; }
+		[DataMember(Name="FirstRow", EmitDefaultValue=false)]
+        public int? FirstRow { get; set; }
 
         /// <summary>
         /// Gets the Aspose.Cells.Range.Worksheetobject which contains this range.
@@ -102,13 +102,13 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class Range {\n");
           sb.Append("  ColumnCount: ").Append(this.ColumnCount).Append("\n");
-          sb.Append("  ColumnWidth: ").Append(this.ColumnWidth).Append("\n");
-          sb.Append("  FirstColumn: ").Append(this.FirstColumn).Append("\n");
-          sb.Append("  FirstRow: ").Append(this.FirstRow).Append("\n");
+          sb.Append("  RowHeight: ").Append(this.RowHeight).Append("\n");
           sb.Append("  Name: ").Append(this.Name).Append("\n");
+          sb.Append("  FirstColumn: ").Append(this.FirstColumn).Append("\n");
+          sb.Append("  ColumnWidth: ").Append(this.ColumnWidth).Append("\n");
           sb.Append("  RefersTo: ").Append(this.RefersTo).Append("\n");
           sb.Append("  RowCount: ").Append(this.RowCount).Append("\n");
-          sb.Append("  RowHeight: ").Append(this.RowHeight).Append("\n");
+          sb.Append("  FirstRow: ").Append(this.FirstRow).Append("\n");
           sb.Append("  Worksheet: ").Append(this.Worksheet).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

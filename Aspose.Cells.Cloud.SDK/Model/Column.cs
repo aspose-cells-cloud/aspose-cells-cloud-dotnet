@@ -46,16 +46,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public Link Link { get; set; }
 
         /// <summary>
-        /// Gets or sets GroupLevel
-        /// </summary>  
-		[DataMember(Name="GroupLevel", EmitDefaultValue=false)]
-        public int? GroupLevel { get; set; }
-
-        /// <summary>
         /// Gets or sets Index
         /// </summary>  
 		[DataMember(Name="Index", EmitDefaultValue=false)]
         public int? Index { get; set; }
+
+        /// <summary>
+        /// Gets or sets Style
+        /// </summary>  
+		[DataMember(Name="Style", EmitDefaultValue=false)]
+        public LinkElement Style { get; set; }
+
+        /// <summary>
+        /// Gets or sets GroupLevel
+        /// </summary>  
+		[DataMember(Name="GroupLevel", EmitDefaultValue=false)]
+        public int? GroupLevel { get; set; }
 
         /// <summary>
         /// Gets or sets IsHidden
@@ -70,12 +76,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public double? Width { get; set; }
 
         /// <summary>
-        /// Gets or sets Style
-        /// </summary>  
-		[DataMember(Name="Style", EmitDefaultValue=false)]
-        public LinkElement Style { get; set; }
-
-        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -84,11 +84,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class Column {\n");
           sb.Append("  Link: ").Append(this.Link).Append("\n");
-          sb.Append("  GroupLevel: ").Append(this.GroupLevel).Append("\n");
           sb.Append("  Index: ").Append(this.Index).Append("\n");
+          sb.Append("  Style: ").Append(this.Style).Append("\n");
+          sb.Append("  GroupLevel: ").Append(this.GroupLevel).Append("\n");
           sb.Append("  IsHidden: ").Append(this.IsHidden).Append("\n");
           sb.Append("  Width: ").Append(this.Width).Append("\n");
-          sb.Append("  Style: ").Append(this.Style).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

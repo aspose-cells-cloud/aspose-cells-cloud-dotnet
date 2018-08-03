@@ -40,6 +40,18 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class ImportStringArrayOption : ImportOption 
   {                       
         /// <summary>
+        /// Gets or sets Data
+        /// </summary>  
+		[DataMember(Name="Data", EmitDefaultValue=false)]
+        public List<string> Data { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsVertical
+        /// </summary>  
+		[DataMember(Name="IsVertical", EmitDefaultValue=false)]
+        public bool? IsVertical { get; set; }
+
+        /// <summary>
         /// Gets or sets FirstRow
         /// </summary>  
 		[DataMember(Name="FirstRow", EmitDefaultValue=false)]
@@ -52,18 +64,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public int? FirstColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets IsVertical
-        /// </summary>  
-		[DataMember(Name="IsVertical", EmitDefaultValue=false)]
-        public bool? IsVertical { get; set; }
-
-        /// <summary>
-        /// Gets or sets Data
-        /// </summary>  
-		[DataMember(Name="Data", EmitDefaultValue=false)]
-        public List<string> Data { get; set; }
-
-        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -71,10 +71,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class ImportStringArrayOption {\n");
+          sb.Append("  Data: ").Append(this.Data).Append("\n");
+          sb.Append("  IsVertical: ").Append(this.IsVertical).Append("\n");
           sb.Append("  FirstRow: ").Append(this.FirstRow).Append("\n");
           sb.Append("  FirstColumn: ").Append(this.FirstColumn).Append("\n");
-          sb.Append("  IsVertical: ").Append(this.IsVertical).Append("\n");
-          sb.Append("  Data: ").Append(this.Data).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

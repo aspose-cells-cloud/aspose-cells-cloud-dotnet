@@ -46,16 +46,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public int? Column { get; set; }
 
         /// <summary>
-        /// Gets or sets EndRow
-        /// </summary>  
-		[DataMember(Name="EndRow", EmitDefaultValue=false)]
-        public int? EndRow { get; set; }
-
-        /// <summary>
         /// Gets or sets StartRow
         /// </summary>  
 		[DataMember(Name="StartRow", EmitDefaultValue=false)]
         public int? StartRow { get; set; }
+
+        /// <summary>
+        /// Gets or sets EndRow
+        /// </summary>  
+		[DataMember(Name="EndRow", EmitDefaultValue=false)]
+        public int? EndRow { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -66,8 +66,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class VerticalPageBreak {\n");
           sb.Append("  Column: ").Append(this.Column).Append("\n");
-          sb.Append("  EndRow: ").Append(this.EndRow).Append("\n");
           sb.Append("  StartRow: ").Append(this.StartRow).Append("\n");
+          sb.Append("  EndRow: ").Append(this.EndRow).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

@@ -46,6 +46,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public int? A { get; set; }
 
         /// <summary>
+        /// Gets or sets B
+        /// </summary>  
+		[DataMember(Name="B", EmitDefaultValue=false)]
+        public int? B { get; set; }
+
+        /// <summary>
         /// Gets or sets R
         /// </summary>  
 		[DataMember(Name="R", EmitDefaultValue=false)]
@@ -58,12 +64,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public int? G { get; set; }
 
         /// <summary>
-        /// Gets or sets B
-        /// </summary>  
-		[DataMember(Name="B", EmitDefaultValue=false)]
-        public int? B { get; set; }
-
-        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -72,9 +72,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class Color {\n");
           sb.Append("  A: ").Append(this.A).Append("\n");
+          sb.Append("  B: ").Append(this.B).Append("\n");
           sb.Append("  R: ").Append(this.R).Append("\n");
           sb.Append("  G: ").Append(this.G).Append("\n");
-          sb.Append("  B: ").Append(this.B).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

@@ -40,12 +40,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class PasteOptions 
   {                       
         /// <summary>
-        /// Gets or sets OnlyVisibleCells
-        /// </summary>  
-		[DataMember(Name="OnlyVisibleCells", EmitDefaultValue=false)]
-        public bool? OnlyVisibleCells { get; set; }
-
-        /// <summary>
         /// Gets or sets PasteType
         /// </summary>  
 		[DataMember(Name="PasteType", EmitDefaultValue=false)]
@@ -56,6 +50,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// </summary>  
 		[DataMember(Name="SkipBlanks", EmitDefaultValue=false)]
         public bool? SkipBlanks { get; set; }
+
+        /// <summary>
+        /// Gets or sets OnlyVisibleCells
+        /// </summary>  
+		[DataMember(Name="OnlyVisibleCells", EmitDefaultValue=false)]
+        public bool? OnlyVisibleCells { get; set; }
 
         /// <summary>
         /// Gets or sets Transpose
@@ -71,9 +71,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class PasteOptions {\n");
-          sb.Append("  OnlyVisibleCells: ").Append(this.OnlyVisibleCells).Append("\n");
           sb.Append("  PasteType: ").Append(this.PasteType).Append("\n");
           sb.Append("  SkipBlanks: ").Append(this.SkipBlanks).Append("\n");
+          sb.Append("  OnlyVisibleCells: ").Append(this.OnlyVisibleCells).Append("\n");
           sb.Append("  Transpose: ").Append(this.Transpose).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

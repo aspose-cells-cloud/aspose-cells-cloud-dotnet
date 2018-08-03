@@ -46,16 +46,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public FileSource SourceWorkbook { get; set; }
 
         /// <summary>
-        /// Gets or sets DestinationWorkbook
-        /// </summary>  
-		[DataMember(Name="DestinationWorkbook", EmitDefaultValue=false)]
-        public FileSource DestinationWorkbook { get; set; }
-
-        /// <summary>
         /// Gets or sets XmlFile
         /// </summary>  
 		[DataMember(Name="xmlFile", EmitDefaultValue=false)]
         public FileSource XmlFile { get; set; }
+
+        /// <summary>
+        /// Gets or sets DestinationWorkbook
+        /// </summary>  
+		[DataMember(Name="DestinationWorkbook", EmitDefaultValue=false)]
+        public FileSource DestinationWorkbook { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -66,8 +66,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class SmartMarkerTaskParameter {\n");
           sb.Append("  SourceWorkbook: ").Append(this.SourceWorkbook).Append("\n");
-          sb.Append("  DestinationWorkbook: ").Append(this.DestinationWorkbook).Append("\n");
           sb.Append("  XmlFile: ").Append(this.XmlFile).Append("\n");
+          sb.Append("  DestinationWorkbook: ").Append(this.DestinationWorkbook).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

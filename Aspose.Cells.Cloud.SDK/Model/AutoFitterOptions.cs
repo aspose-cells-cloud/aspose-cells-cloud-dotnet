@@ -40,12 +40,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class AutoFitterOptions 
   {                       
         /// <summary>
-        /// Gets or sets AutoFitMergedCells
-        /// </summary>  
-		[DataMember(Name="AutoFitMergedCells", EmitDefaultValue=false)]
-        public bool? AutoFitMergedCells { get; set; }
-
-        /// <summary>
         /// Gets or sets IgnoreHidden
         /// </summary>  
 		[DataMember(Name="IgnoreHidden", EmitDefaultValue=false)]
@@ -58,6 +52,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public bool? OnlyAuto { get; set; }
 
         /// <summary>
+        /// Gets or sets AutoFitMergedCells
+        /// </summary>  
+		[DataMember(Name="AutoFitMergedCells", EmitDefaultValue=false)]
+        public bool? AutoFitMergedCells { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -65,9 +65,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class AutoFitterOptions {\n");
-          sb.Append("  AutoFitMergedCells: ").Append(this.AutoFitMergedCells).Append("\n");
           sb.Append("  IgnoreHidden: ").Append(this.IgnoreHidden).Append("\n");
           sb.Append("  OnlyAuto: ").Append(this.OnlyAuto).Append("\n");
+          sb.Append("  AutoFitMergedCells: ").Append(this.AutoFitMergedCells).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

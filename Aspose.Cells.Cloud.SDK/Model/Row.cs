@@ -46,6 +46,18 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public Link Link { get; set; }
 
         /// <summary>
+        /// Gets or sets Index
+        /// </summary>  
+		[DataMember(Name="Index", EmitDefaultValue=false)]
+        public int? Index { get; set; }
+
+        /// <summary>
+        /// Gets or sets Style
+        /// </summary>  
+		[DataMember(Name="Style", EmitDefaultValue=false)]
+        public LinkElement Style { get; set; }
+
+        /// <summary>
         /// Gets or sets GroupLevel
         /// </summary>  
 		[DataMember(Name="GroupLevel", EmitDefaultValue=false)]
@@ -56,18 +68,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// </summary>  
 		[DataMember(Name="Height", EmitDefaultValue=false)]
         public double? Height { get; set; }
-
-        /// <summary>
-        /// Gets or sets Index
-        /// </summary>  
-		[DataMember(Name="Index", EmitDefaultValue=false)]
-        public int? Index { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsBlank
-        /// </summary>  
-		[DataMember(Name="IsBlank", EmitDefaultValue=false)]
-        public bool? IsBlank { get; set; }
 
         /// <summary>
         /// Gets or sets IsHeightMatched
@@ -82,10 +82,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public bool? IsHidden { get; set; }
 
         /// <summary>
-        /// Gets or sets Style
+        /// Gets or sets IsBlank
         /// </summary>  
-		[DataMember(Name="Style", EmitDefaultValue=false)]
-        public LinkElement Style { get; set; }
+		[DataMember(Name="IsBlank", EmitDefaultValue=false)]
+        public bool? IsBlank { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -96,13 +96,13 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class Row {\n");
           sb.Append("  Link: ").Append(this.Link).Append("\n");
+          sb.Append("  Index: ").Append(this.Index).Append("\n");
+          sb.Append("  Style: ").Append(this.Style).Append("\n");
           sb.Append("  GroupLevel: ").Append(this.GroupLevel).Append("\n");
           sb.Append("  Height: ").Append(this.Height).Append("\n");
-          sb.Append("  Index: ").Append(this.Index).Append("\n");
-          sb.Append("  IsBlank: ").Append(this.IsBlank).Append("\n");
           sb.Append("  IsHeightMatched: ").Append(this.IsHeightMatched).Append("\n");
           sb.Append("  IsHidden: ").Append(this.IsHidden).Append("\n");
-          sb.Append("  Style: ").Append(this.Style).Append("\n");
+          sb.Append("  IsBlank: ").Append(this.IsBlank).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

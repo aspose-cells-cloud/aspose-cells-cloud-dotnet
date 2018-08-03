@@ -46,10 +46,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public Link Link { get; set; }
 
         /// <summary>
-        /// Gets or sets CellName
+        /// Gets or sets AutoSize
         /// </summary>  
-		[DataMember(Name="CellName", EmitDefaultValue=false)]
-        public string CellName { get; set; }
+		[DataMember(Name="AutoSize", EmitDefaultValue=false)]
+        public bool? AutoSize { get; set; }
 
         /// <summary>
         /// Gets or sets Author
@@ -58,46 +58,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string Author { get; set; }
 
         /// <summary>
-        /// Gets or sets HtmlNote
-        /// </summary>  
-		[DataMember(Name="HtmlNote", EmitDefaultValue=false)]
-        public string HtmlNote { get; set; }
-
-        /// <summary>
-        /// Gets or sets Note
-        /// </summary>  
-		[DataMember(Name="Note", EmitDefaultValue=false)]
-        public string Note { get; set; }
-
-        /// <summary>
-        /// Gets or sets AutoSize
-        /// </summary>  
-		[DataMember(Name="AutoSize", EmitDefaultValue=false)]
-        public bool? AutoSize { get; set; }
-
-        /// <summary>
         /// Gets or sets IsVisible
         /// </summary>  
 		[DataMember(Name="IsVisible", EmitDefaultValue=false)]
         public bool? IsVisible { get; set; }
-
-        /// <summary>
-        /// Gets or sets Width
-        /// </summary>  
-		[DataMember(Name="Width", EmitDefaultValue=false)]
-        public int? Width { get; set; }
-
-        /// <summary>
-        /// Gets or sets Height
-        /// </summary>  
-		[DataMember(Name="Height", EmitDefaultValue=false)]
-        public int? Height { get; set; }
-
-        /// <summary>
-        /// Gets or sets TextHorizontalAlignment
-        /// </summary>  
-		[DataMember(Name="TextHorizontalAlignment", EmitDefaultValue=false)]
-        public string TextHorizontalAlignment { get; set; }
 
         /// <summary>
         /// Gets or sets TextOrientationType
@@ -106,10 +70,46 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string TextOrientationType { get; set; }
 
         /// <summary>
+        /// Gets or sets Height
+        /// </summary>  
+		[DataMember(Name="Height", EmitDefaultValue=false)]
+        public int? Height { get; set; }
+
+        /// <summary>
+        /// Gets or sets Note
+        /// </summary>  
+		[DataMember(Name="Note", EmitDefaultValue=false)]
+        public string Note { get; set; }
+
+        /// <summary>
+        /// Gets or sets Width
+        /// </summary>  
+		[DataMember(Name="Width", EmitDefaultValue=false)]
+        public int? Width { get; set; }
+
+        /// <summary>
         /// Gets or sets TextVerticalAlignment
         /// </summary>  
 		[DataMember(Name="TextVerticalAlignment", EmitDefaultValue=false)]
         public string TextVerticalAlignment { get; set; }
+
+        /// <summary>
+        /// Gets or sets CellName
+        /// </summary>  
+		[DataMember(Name="CellName", EmitDefaultValue=false)]
+        public string CellName { get; set; }
+
+        /// <summary>
+        /// Gets or sets HtmlNote
+        /// </summary>  
+		[DataMember(Name="HtmlNote", EmitDefaultValue=false)]
+        public string HtmlNote { get; set; }
+
+        /// <summary>
+        /// Gets or sets TextHorizontalAlignment
+        /// </summary>  
+		[DataMember(Name="TextHorizontalAlignment", EmitDefaultValue=false)]
+        public string TextHorizontalAlignment { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -120,17 +120,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class Comment {\n");
           sb.Append("  Link: ").Append(this.Link).Append("\n");
-          sb.Append("  CellName: ").Append(this.CellName).Append("\n");
-          sb.Append("  Author: ").Append(this.Author).Append("\n");
-          sb.Append("  HtmlNote: ").Append(this.HtmlNote).Append("\n");
-          sb.Append("  Note: ").Append(this.Note).Append("\n");
           sb.Append("  AutoSize: ").Append(this.AutoSize).Append("\n");
+          sb.Append("  Author: ").Append(this.Author).Append("\n");
           sb.Append("  IsVisible: ").Append(this.IsVisible).Append("\n");
-          sb.Append("  Width: ").Append(this.Width).Append("\n");
-          sb.Append("  Height: ").Append(this.Height).Append("\n");
-          sb.Append("  TextHorizontalAlignment: ").Append(this.TextHorizontalAlignment).Append("\n");
           sb.Append("  TextOrientationType: ").Append(this.TextOrientationType).Append("\n");
+          sb.Append("  Height: ").Append(this.Height).Append("\n");
+          sb.Append("  Note: ").Append(this.Note).Append("\n");
+          sb.Append("  Width: ").Append(this.Width).Append("\n");
           sb.Append("  TextVerticalAlignment: ").Append(this.TextVerticalAlignment).Append("\n");
+          sb.Append("  CellName: ").Append(this.CellName).Append("\n");
+          sb.Append("  HtmlNote: ").Append(this.HtmlNote).Append("\n");
+          sb.Append("  TextHorizontalAlignment: ").Append(this.TextHorizontalAlignment).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

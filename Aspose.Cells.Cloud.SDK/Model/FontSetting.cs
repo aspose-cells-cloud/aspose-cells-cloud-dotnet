@@ -40,10 +40,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class FontSetting 
   {                       
         /// <summary>
-        /// Gets or sets Font
+        /// Gets or sets TextOptions
         /// </summary>  
-		[DataMember(Name="Font", EmitDefaultValue=false)]
-        public Font Font { get; set; }
+		[DataMember(Name="TextOptions", EmitDefaultValue=false)]
+        public TextOptions TextOptions { get; set; }
 
         /// <summary>
         /// Gets or sets Length
@@ -52,22 +52,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public int? Length { get; set; }
 
         /// <summary>
-        /// Gets or sets StartIndex
+        /// Gets or sets Font
         /// </summary>  
-		[DataMember(Name="StartIndex", EmitDefaultValue=false)]
-        public int? StartIndex { get; set; }
-
-        /// <summary>
-        /// Gets or sets TextOptions
-        /// </summary>  
-		[DataMember(Name="TextOptions", EmitDefaultValue=false)]
-        public TextOptions TextOptions { get; set; }
+		[DataMember(Name="Font", EmitDefaultValue=false)]
+        public Font Font { get; set; }
 
         /// <summary>
         /// Gets or sets Type
         /// </summary>  
 		[DataMember(Name="Type", EmitDefaultValue=false)]
         public string Type { get; set; }
+
+        /// <summary>
+        /// Gets or sets StartIndex
+        /// </summary>  
+		[DataMember(Name="StartIndex", EmitDefaultValue=false)]
+        public int? StartIndex { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -77,11 +77,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class FontSetting {\n");
-          sb.Append("  Font: ").Append(this.Font).Append("\n");
-          sb.Append("  Length: ").Append(this.Length).Append("\n");
-          sb.Append("  StartIndex: ").Append(this.StartIndex).Append("\n");
           sb.Append("  TextOptions: ").Append(this.TextOptions).Append("\n");
+          sb.Append("  Length: ").Append(this.Length).Append("\n");
+          sb.Append("  Font: ").Append(this.Font).Append("\n");
           sb.Append("  Type: ").Append(this.Type).Append("\n");
+          sb.Append("  StartIndex: ").Append(this.StartIndex).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

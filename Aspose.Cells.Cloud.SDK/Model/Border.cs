@@ -40,12 +40,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class Border 
   {                       
         /// <summary>
-        /// Gets or sets LineStyle
-        /// </summary>  
-		[DataMember(Name="LineStyle", EmitDefaultValue=false)]
-        public string LineStyle { get; set; }
-
-        /// <summary>
         /// Gets or sets Color
         /// </summary>  
 		[DataMember(Name="Color", EmitDefaultValue=false)]
@@ -58,6 +52,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string BorderType { get; set; }
 
         /// <summary>
+        /// Gets or sets LineStyle
+        /// </summary>  
+		[DataMember(Name="LineStyle", EmitDefaultValue=false)]
+        public string LineStyle { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -65,9 +65,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class Border {\n");
-          sb.Append("  LineStyle: ").Append(this.LineStyle).Append("\n");
           sb.Append("  Color: ").Append(this.Color).Append("\n");
           sb.Append("  BorderType: ").Append(this.BorderType).Append("\n");
+          sb.Append("  LineStyle: ").Append(this.LineStyle).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

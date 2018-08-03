@@ -46,10 +46,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public ConditionalFormattingValue MaxCfvo { get; set; }
 
         /// <summary>
-        /// Get or set the max value object's corresponding color.
+        /// Get or set the mid value object's corresponding color.             
         /// </summary>  
-		[DataMember(Name="MaxColor", EmitDefaultValue=false)]
-        public Color MaxColor { get; set; }
+		[DataMember(Name="MidColor", EmitDefaultValue=false)]
+        public Color MidColor { get; set; }
+
+        /// <summary>
+        /// Get or set the min value object's corresponding color.
+        /// </summary>  
+		[DataMember(Name="MinColor", EmitDefaultValue=false)]
+        public Color MinColor { get; set; }
 
         /// <summary>
         /// Get or set this ColorScale's mid value object.  Cannot set CFValueObject    with type FormatConditionValueType.Max or FormatConditionValueType.Min to    it.             
@@ -58,22 +64,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public ConditionalFormattingValue MidCfvo { get; set; }
 
         /// <summary>
-        /// Get or set the mid value object's corresponding color.             
-        /// </summary>  
-		[DataMember(Name="MidColor", EmitDefaultValue=false)]
-        public Color MidColor { get; set; }
-
-        /// <summary>
         /// Get or set this ColorScale's min value object.  Cannot set null or CFValueObject    with type FormatConditionValueType.Max to it.             
         /// </summary>  
 		[DataMember(Name="MinCfvo", EmitDefaultValue=false)]
         public ConditionalFormattingValue MinCfvo { get; set; }
 
         /// <summary>
-        /// Get or set the min value object's corresponding color.
+        /// Get or set the max value object's corresponding color.
         /// </summary>  
-		[DataMember(Name="MinColor", EmitDefaultValue=false)]
-        public Color MinColor { get; set; }
+		[DataMember(Name="MaxColor", EmitDefaultValue=false)]
+        public Color MaxColor { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -84,11 +84,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class ColorScale {\n");
           sb.Append("  MaxCfvo: ").Append(this.MaxCfvo).Append("\n");
-          sb.Append("  MaxColor: ").Append(this.MaxColor).Append("\n");
-          sb.Append("  MidCfvo: ").Append(this.MidCfvo).Append("\n");
           sb.Append("  MidColor: ").Append(this.MidColor).Append("\n");
-          sb.Append("  MinCfvo: ").Append(this.MinCfvo).Append("\n");
           sb.Append("  MinColor: ").Append(this.MinColor).Append("\n");
+          sb.Append("  MidCfvo: ").Append(this.MidCfvo).Append("\n");
+          sb.Append("  MinCfvo: ").Append(this.MinCfvo).Append("\n");
+          sb.Append("  MaxColor: ").Append(this.MaxColor).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

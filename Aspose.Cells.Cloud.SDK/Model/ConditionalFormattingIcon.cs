@@ -40,12 +40,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class ConditionalFormattingIcon 
   {                       
         /// <summary>
-        /// Gets the icon set data.             
-        /// </summary>  
-		[DataMember(Name="ImageData", EmitDefaultValue=false)]
-        public byte[] ImageData { get; set; }
-
-        /// <summary>
         /// Gets and sets the icon's index in the icon set.             
         /// </summary>  
 		[DataMember(Name="Index", EmitDefaultValue=false)]
@@ -58,6 +52,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string Type { get; set; }
 
         /// <summary>
+        /// Gets the icon set data.             
+        /// </summary>  
+		[DataMember(Name="ImageData", EmitDefaultValue=false)]
+        public byte[] ImageData { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -65,9 +65,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class ConditionalFormattingIcon {\n");
-          sb.Append("  ImageData: ").Append(this.ImageData).Append("\n");
           sb.Append("  Index: ").Append(this.Index).Append("\n");
           sb.Append("  Type: ").Append(this.Type).Append("\n");
+          sb.Append("  ImageData: ").Append(this.ImageData).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

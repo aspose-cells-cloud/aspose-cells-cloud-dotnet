@@ -46,16 +46,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public bool? CaseSensitive { get; set; }
 
         /// <summary>
-        /// Gets or sets HasHeaders
-        /// </summary>  
-		[DataMember(Name="HasHeaders", EmitDefaultValue=false)]
-        public bool? HasHeaders { get; set; }
-
-        /// <summary>
         /// Gets or sets KeyList
         /// </summary>  
 		[DataMember(Name="KeyList", EmitDefaultValue=false)]
         public List<SortKey> KeyList { get; set; }
+
+        /// <summary>
+        /// Gets or sets HasHeaders
+        /// </summary>  
+		[DataMember(Name="HasHeaders", EmitDefaultValue=false)]
+        public bool? HasHeaders { get; set; }
 
         /// <summary>
         /// Gets or sets SortLeftToRight
@@ -72,8 +72,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class DataSorter {\n");
           sb.Append("  CaseSensitive: ").Append(this.CaseSensitive).Append("\n");
-          sb.Append("  HasHeaders: ").Append(this.HasHeaders).Append("\n");
           sb.Append("  KeyList: ").Append(this.KeyList).Append("\n");
+          sb.Append("  HasHeaders: ").Append(this.HasHeaders).Append("\n");
           sb.Append("  SortLeftToRight: ").Append(this.SortLeftToRight).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

@@ -40,28 +40,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class PicFormatOption 
   {                       
         /// <summary>
-        /// Gets or sets Type
-        /// </summary>  
-		[DataMember(Name="Type", EmitDefaultValue=false)]
-        public string Type { get; set; }
-
-        /// <summary>
-        /// Gets or sets Scale
-        /// </summary>  
-		[DataMember(Name="Scale", EmitDefaultValue=false)]
-        public double? Scale { get; set; }
-
-        /// <summary>
-        /// Gets or sets Left
-        /// </summary>  
-		[DataMember(Name="Left", EmitDefaultValue=false)]
-        public double? Left { get; set; }
-
-        /// <summary>
         /// Gets or sets Right
         /// </summary>  
 		[DataMember(Name="Right", EmitDefaultValue=false)]
         public double? Right { get; set; }
+
+        /// <summary>
+        /// Gets or sets Bottom
+        /// </summary>  
+		[DataMember(Name="Bottom", EmitDefaultValue=false)]
+        public double? Bottom { get; set; }
 
         /// <summary>
         /// Gets or sets Top
@@ -70,10 +58,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public double? Top { get; set; }
 
         /// <summary>
-        /// Gets or sets Bottom
+        /// Gets or sets Scale
         /// </summary>  
-		[DataMember(Name="Bottom", EmitDefaultValue=false)]
-        public double? Bottom { get; set; }
+		[DataMember(Name="Scale", EmitDefaultValue=false)]
+        public double? Scale { get; set; }
+
+        /// <summary>
+        /// Gets or sets Type
+        /// </summary>  
+		[DataMember(Name="Type", EmitDefaultValue=false)]
+        public string Type { get; set; }
+
+        /// <summary>
+        /// Gets or sets Left
+        /// </summary>  
+		[DataMember(Name="Left", EmitDefaultValue=false)]
+        public double? Left { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -83,12 +83,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class PicFormatOption {\n");
-          sb.Append("  Type: ").Append(this.Type).Append("\n");
-          sb.Append("  Scale: ").Append(this.Scale).Append("\n");
-          sb.Append("  Left: ").Append(this.Left).Append("\n");
           sb.Append("  Right: ").Append(this.Right).Append("\n");
-          sb.Append("  Top: ").Append(this.Top).Append("\n");
           sb.Append("  Bottom: ").Append(this.Bottom).Append("\n");
+          sb.Append("  Top: ").Append(this.Top).Append("\n");
+          sb.Append("  Scale: ").Append(this.Scale).Append("\n");
+          sb.Append("  Type: ").Append(this.Type).Append("\n");
+          sb.Append("  Left: ").Append(this.Left).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

@@ -46,6 +46,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public Link Link { get; set; }
 
         /// <summary>
+        /// Gets or sets BuiltIn
+        /// </summary>  
+		[DataMember(Name="BuiltIn", EmitDefaultValue=false)]
+        public string BuiltIn { get; set; }
+
+        /// <summary>
         /// Gets or sets Name
         /// </summary>  
 		[DataMember(Name="Name", EmitDefaultValue=false)]
@@ -58,12 +64,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string Value { get; set; }
 
         /// <summary>
-        /// Gets or sets BuiltIn
-        /// </summary>  
-		[DataMember(Name="BuiltIn", EmitDefaultValue=false)]
-        public string BuiltIn { get; set; }
-
-        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -72,9 +72,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class CellsDocumentProperty {\n");
           sb.Append("  Link: ").Append(this.Link).Append("\n");
+          sb.Append("  BuiltIn: ").Append(this.BuiltIn).Append("\n");
           sb.Append("  Name: ").Append(this.Name).Append("\n");
           sb.Append("  Value: ").Append(this.Value).Append("\n");
-          sb.Append("  BuiltIn: ").Append(this.BuiltIn).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

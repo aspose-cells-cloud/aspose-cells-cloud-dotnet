@@ -40,10 +40,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class ResultDestination 
   {                       
         /// <summary>
-        /// Gets or sets DestinationType
+        /// Gets or sets OutputFile
         /// </summary>  
-		[DataMember(Name="DestinationType", EmitDefaultValue=false)]
-        public string DestinationType { get; set; }
+		[DataMember(Name="OutputFile", EmitDefaultValue=false)]
+        public string OutputFile { get; set; }
 
         /// <summary>
         /// Gets or sets InputFile
@@ -52,10 +52,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string InputFile { get; set; }
 
         /// <summary>
-        /// Gets or sets OutputFile
+        /// Gets or sets DestinationType
         /// </summary>  
-		[DataMember(Name="OutputFile", EmitDefaultValue=false)]
-        public string OutputFile { get; set; }
+		[DataMember(Name="DestinationType", EmitDefaultValue=false)]
+        public string DestinationType { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -65,9 +65,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class ResultDestination {\n");
-          sb.Append("  DestinationType: ").Append(this.DestinationType).Append("\n");
-          sb.Append("  InputFile: ").Append(this.InputFile).Append("\n");
           sb.Append("  OutputFile: ").Append(this.OutputFile).Append("\n");
+          sb.Append("  InputFile: ").Append(this.InputFile).Append("\n");
+          sb.Append("  DestinationType: ").Append(this.DestinationType).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

@@ -46,16 +46,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public Color BorderColor { get; set; }
 
         /// <summary>
-        /// Gets whether to use the same border color as positive data bars.             
-        /// </summary>  
-		[DataMember(Name="BorderColorType", EmitDefaultValue=false)]
-        public string BorderColorType { get; set; }
-
-        /// <summary>
         /// Gets or sets a FormatColor object that you can use to specify the fill color    for negative data bars.             
         /// </summary>  
 		[DataMember(Name="Color", EmitDefaultValue=false)]
         public Color Color { get; set; }
+
+        /// <summary>
+        /// Gets whether to use the same border color as positive data bars.             
+        /// </summary>  
+		[DataMember(Name="BorderColorType", EmitDefaultValue=false)]
+        public string BorderColorType { get; set; }
 
         /// <summary>
         /// Gets or sets whether to use the same fill color as positive data bars.
@@ -72,8 +72,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class NegativeBarFormat {\n");
           sb.Append("  BorderColor: ").Append(this.BorderColor).Append("\n");
-          sb.Append("  BorderColorType: ").Append(this.BorderColorType).Append("\n");
           sb.Append("  Color: ").Append(this.Color).Append("\n");
+          sb.Append("  BorderColorType: ").Append(this.BorderColorType).Append("\n");
           sb.Append("  ColorType: ").Append(this.ColorType).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

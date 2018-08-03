@@ -40,40 +40,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class AccessTokenResponse 
   {                       
         /// <summary>
+        /// Gets or sets Expires
+        /// </summary>  
+		[DataMember(Name=".expires", EmitDefaultValue=false)]
+        public string Expires { get; set; }
+
+        /// <summary>
         /// Gets or sets AccessToken
         /// </summary>  
 		[DataMember(Name="access_token", EmitDefaultValue=false)]
         public string AccessToken { get; set; }
-
-        /// <summary>
-        /// Gets or sets TokenType
-        /// </summary>  
-		[DataMember(Name="token_type", EmitDefaultValue=false)]
-        public string TokenType { get; set; }
-
-        /// <summary>
-        /// Gets or sets ExpiresIn
-        /// </summary>  
-		[DataMember(Name="expires_in", EmitDefaultValue=false)]
-        public long? ExpiresIn { get; set; }
-
-        /// <summary>
-        /// Gets or sets RefreshToken
-        /// </summary>  
-		[DataMember(Name="refresh_token", EmitDefaultValue=false)]
-        public string RefreshToken { get; set; }
-
-        /// <summary>
-        /// Gets or sets ClientId
-        /// </summary>  
-		[DataMember(Name="client_id", EmitDefaultValue=false)]
-        public string ClientId { get; set; }
-
-        /// <summary>
-        /// Gets or sets ClientRefreshTokenLifeTimeInMinutes
-        /// </summary>  
-		[DataMember(Name="clientRefreshTokenLifeTimeInMinutes", EmitDefaultValue=false)]
-        public string ClientRefreshTokenLifeTimeInMinutes { get; set; }
 
         /// <summary>
         /// Gets or sets Issued
@@ -82,10 +58,34 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string Issued { get; set; }
 
         /// <summary>
-        /// Gets or sets Expires
+        /// Gets or sets ClientRefreshTokenLifeTimeInMinutes
         /// </summary>  
-		[DataMember(Name=".expires", EmitDefaultValue=false)]
-        public string Expires { get; set; }
+		[DataMember(Name="clientRefreshTokenLifeTimeInMinutes", EmitDefaultValue=false)]
+        public string ClientRefreshTokenLifeTimeInMinutes { get; set; }
+
+        /// <summary>
+        /// Gets or sets ExpiresIn
+        /// </summary>  
+		[DataMember(Name="expires_in", EmitDefaultValue=false)]
+        public long? ExpiresIn { get; set; }
+
+        /// <summary>
+        /// Gets or sets TokenType
+        /// </summary>  
+		[DataMember(Name="token_type", EmitDefaultValue=false)]
+        public string TokenType { get; set; }
+
+        /// <summary>
+        /// Gets or sets ClientId
+        /// </summary>  
+		[DataMember(Name="client_id", EmitDefaultValue=false)]
+        public string ClientId { get; set; }
+
+        /// <summary>
+        /// Gets or sets RefreshToken
+        /// </summary>  
+		[DataMember(Name="refresh_token", EmitDefaultValue=false)]
+        public string RefreshToken { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -95,14 +95,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class AccessTokenResponse {\n");
-          sb.Append("  AccessToken: ").Append(this.AccessToken).Append("\n");
-          sb.Append("  TokenType: ").Append(this.TokenType).Append("\n");
-          sb.Append("  ExpiresIn: ").Append(this.ExpiresIn).Append("\n");
-          sb.Append("  RefreshToken: ").Append(this.RefreshToken).Append("\n");
-          sb.Append("  ClientId: ").Append(this.ClientId).Append("\n");
-          sb.Append("  ClientRefreshTokenLifeTimeInMinutes: ").Append(this.ClientRefreshTokenLifeTimeInMinutes).Append("\n");
-          sb.Append("  Issued: ").Append(this.Issued).Append("\n");
           sb.Append("  Expires: ").Append(this.Expires).Append("\n");
+          sb.Append("  AccessToken: ").Append(this.AccessToken).Append("\n");
+          sb.Append("  Issued: ").Append(this.Issued).Append("\n");
+          sb.Append("  ClientRefreshTokenLifeTimeInMinutes: ").Append(this.ClientRefreshTokenLifeTimeInMinutes).Append("\n");
+          sb.Append("  ExpiresIn: ").Append(this.ExpiresIn).Append("\n");
+          sb.Append("  TokenType: ").Append(this.TokenType).Append("\n");
+          sb.Append("  ClientId: ").Append(this.ClientId).Append("\n");
+          sb.Append("  RefreshToken: ").Append(this.RefreshToken).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

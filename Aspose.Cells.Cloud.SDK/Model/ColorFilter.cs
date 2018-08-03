@@ -40,10 +40,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class ColorFilter 
   {                       
         /// <summary>
-        /// Gets or sets FilterByFillColor
+        /// Gets or sets Color
         /// </summary>  
-		[DataMember(Name="FilterByFillColor", EmitDefaultValue=false)]
-        public string FilterByFillColor { get; set; }
+		[DataMember(Name="Color", EmitDefaultValue=false)]
+        public CellsColor Color { get; set; }
 
         /// <summary>
         /// Gets or sets Pattern
@@ -52,10 +52,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string Pattern { get; set; }
 
         /// <summary>
-        /// Gets or sets Color
+        /// Gets or sets BackgroundColor
         /// </summary>  
-		[DataMember(Name="Color", EmitDefaultValue=false)]
-        public CellsColor Color { get; set; }
+		[DataMember(Name="BackgroundColor", EmitDefaultValue=false)]
+        public CellsColor BackgroundColor { get; set; }
 
         /// <summary>
         /// Gets or sets ForegroundColorColor
@@ -64,10 +64,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public CellsColor ForegroundColorColor { get; set; }
 
         /// <summary>
-        /// Gets or sets BackgroundColor
+        /// Gets or sets FilterByFillColor
         /// </summary>  
-		[DataMember(Name="BackgroundColor", EmitDefaultValue=false)]
-        public CellsColor BackgroundColor { get; set; }
+		[DataMember(Name="FilterByFillColor", EmitDefaultValue=false)]
+        public string FilterByFillColor { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -77,11 +77,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class ColorFilter {\n");
-          sb.Append("  FilterByFillColor: ").Append(this.FilterByFillColor).Append("\n");
-          sb.Append("  Pattern: ").Append(this.Pattern).Append("\n");
           sb.Append("  Color: ").Append(this.Color).Append("\n");
-          sb.Append("  ForegroundColorColor: ").Append(this.ForegroundColorColor).Append("\n");
+          sb.Append("  Pattern: ").Append(this.Pattern).Append("\n");
           sb.Append("  BackgroundColor: ").Append(this.BackgroundColor).Append("\n");
+          sb.Append("  ForegroundColorColor: ").Append(this.ForegroundColorColor).Append("\n");
+          sb.Append("  FilterByFillColor: ").Append(this.FilterByFillColor).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

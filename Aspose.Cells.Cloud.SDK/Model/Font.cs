@@ -40,10 +40,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class Font 
   {                       
         /// <summary>
-        /// Gets or sets Color
+        /// Gets or sets IsItalic
         /// </summary>  
-		[DataMember(Name="Color", EmitDefaultValue=false)]
-        public Color Color { get; set; }
+		[DataMember(Name="IsItalic", EmitDefaultValue=false)]
+        public bool? IsItalic { get; set; }
+
+        /// <summary>
+        /// Gets or sets Name
+        /// </summary>  
+		[DataMember(Name="Name", EmitDefaultValue=false)]
+        public string Name { get; set; }
 
         /// <summary>
         /// Gets or sets DoubleSize
@@ -52,22 +58,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public double? DoubleSize { get; set; }
 
         /// <summary>
+        /// Gets or sets Color
+        /// </summary>  
+		[DataMember(Name="Color", EmitDefaultValue=false)]
+        public Color Color { get; set; }
+
+        /// <summary>
         /// Gets or sets IsBold
         /// </summary>  
 		[DataMember(Name="IsBold", EmitDefaultValue=false)]
         public bool? IsBold { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsItalic
-        /// </summary>  
-		[DataMember(Name="IsItalic", EmitDefaultValue=false)]
-        public bool? IsItalic { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsStrikeout
-        /// </summary>  
-		[DataMember(Name="IsStrikeout", EmitDefaultValue=false)]
-        public bool? IsStrikeout { get; set; }
 
         /// <summary>
         /// Gets or sets IsSubscript
@@ -82,22 +82,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public bool? IsSuperscript { get; set; }
 
         /// <summary>
-        /// Gets or sets Name
+        /// Gets or sets IsStrikeout
         /// </summary>  
-		[DataMember(Name="Name", EmitDefaultValue=false)]
-        public string Name { get; set; }
-
-        /// <summary>
-        /// Gets or sets Size
-        /// </summary>  
-		[DataMember(Name="Size", EmitDefaultValue=false)]
-        public int? Size { get; set; }
+		[DataMember(Name="IsStrikeout", EmitDefaultValue=false)]
+        public bool? IsStrikeout { get; set; }
 
         /// <summary>
         /// Gets or sets Underline
         /// </summary>  
 		[DataMember(Name="Underline", EmitDefaultValue=false)]
         public string Underline { get; set; }
+
+        /// <summary>
+        /// Gets or sets Size
+        /// </summary>  
+		[DataMember(Name="Size", EmitDefaultValue=false)]
+        public int? Size { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -107,16 +107,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class Font {\n");
-          sb.Append("  Color: ").Append(this.Color).Append("\n");
-          sb.Append("  DoubleSize: ").Append(this.DoubleSize).Append("\n");
-          sb.Append("  IsBold: ").Append(this.IsBold).Append("\n");
           sb.Append("  IsItalic: ").Append(this.IsItalic).Append("\n");
-          sb.Append("  IsStrikeout: ").Append(this.IsStrikeout).Append("\n");
+          sb.Append("  Name: ").Append(this.Name).Append("\n");
+          sb.Append("  DoubleSize: ").Append(this.DoubleSize).Append("\n");
+          sb.Append("  Color: ").Append(this.Color).Append("\n");
+          sb.Append("  IsBold: ").Append(this.IsBold).Append("\n");
           sb.Append("  IsSubscript: ").Append(this.IsSubscript).Append("\n");
           sb.Append("  IsSuperscript: ").Append(this.IsSuperscript).Append("\n");
-          sb.Append("  Name: ").Append(this.Name).Append("\n");
-          sb.Append("  Size: ").Append(this.Size).Append("\n");
+          sb.Append("  IsStrikeout: ").Append(this.IsStrikeout).Append("\n");
           sb.Append("  Underline: ").Append(this.Underline).Append("\n");
+          sb.Append("  Size: ").Append(this.Size).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

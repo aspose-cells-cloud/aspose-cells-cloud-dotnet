@@ -40,12 +40,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class CellsObjectOperateTaskParameter : TaskParameter 
   {                       
         /// <summary>
-        /// Gets or sets OperateObject
-        /// </summary>  
-		[DataMember(Name="OperateObject", EmitDefaultValue=false)]
-        public OperateObject OperateObject { get; set; }
-
-        /// <summary>
         /// Gets or sets OperateParameter
         /// </summary>  
 		[DataMember(Name="OperateParameter", EmitDefaultValue=false)]
@@ -58,6 +52,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public FileSource DestinationWorkbook { get; set; }
 
         /// <summary>
+        /// Gets or sets OperateObject
+        /// </summary>  
+		[DataMember(Name="OperateObject", EmitDefaultValue=false)]
+        public OperateObject OperateObject { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -65,9 +65,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class CellsObjectOperateTaskParameter {\n");
-          sb.Append("  OperateObject: ").Append(this.OperateObject).Append("\n");
           sb.Append("  OperateParameter: ").Append(this.OperateParameter).Append("\n");
           sb.Append("  DestinationWorkbook: ").Append(this.DestinationWorkbook).Append("\n");
+          sb.Append("  OperateObject: ").Append(this.OperateObject).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

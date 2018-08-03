@@ -40,22 +40,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class ImportCSVDataOption : ImportOption 
   {                       
         /// <summary>
-        /// Gets or sets SeparatorString
-        /// </summary>  
-		[DataMember(Name="SeparatorString", EmitDefaultValue=false)]
-        public string SeparatorString { get; set; }
-
-        /// <summary>
         /// Gets or sets ConvertNumericData
         /// </summary>  
 		[DataMember(Name="ConvertNumericData", EmitDefaultValue=false)]
         public bool? ConvertNumericData { get; set; }
-
-        /// <summary>
-        /// Gets or sets FirstRow
-        /// </summary>  
-		[DataMember(Name="FirstRow", EmitDefaultValue=false)]
-        public int? FirstRow { get; set; }
 
         /// <summary>
         /// Gets or sets FirstColumn
@@ -68,6 +56,18 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// </summary>  
 		[DataMember(Name="SourceFile", EmitDefaultValue=false)]
         public string SourceFile { get; set; }
+
+        /// <summary>
+        /// Gets or sets FirstRow
+        /// </summary>  
+		[DataMember(Name="FirstRow", EmitDefaultValue=false)]
+        public int? FirstRow { get; set; }
+
+        /// <summary>
+        /// Gets or sets SeparatorString
+        /// </summary>  
+		[DataMember(Name="SeparatorString", EmitDefaultValue=false)]
+        public string SeparatorString { get; set; }
 
         /// <summary>
         /// Gets or sets CustomParsers
@@ -83,11 +83,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class ImportCSVDataOption {\n");
-          sb.Append("  SeparatorString: ").Append(this.SeparatorString).Append("\n");
           sb.Append("  ConvertNumericData: ").Append(this.ConvertNumericData).Append("\n");
-          sb.Append("  FirstRow: ").Append(this.FirstRow).Append("\n");
           sb.Append("  FirstColumn: ").Append(this.FirstColumn).Append("\n");
           sb.Append("  SourceFile: ").Append(this.SourceFile).Append("\n");
+          sb.Append("  FirstRow: ").Append(this.FirstRow).Append("\n");
+          sb.Append("  SeparatorString: ").Append(this.SeparatorString).Append("\n");
           sb.Append("  CustomParsers: ").Append(this.CustomParsers).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

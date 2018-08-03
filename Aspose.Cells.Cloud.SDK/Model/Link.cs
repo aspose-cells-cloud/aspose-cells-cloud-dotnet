@@ -46,6 +46,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string Href { get; set; }
 
         /// <summary>
+        /// Gets or sets Type
+        /// </summary>  
+		[DataMember(Name="Type", EmitDefaultValue=false)]
+        public string Type { get; set; }
+
+        /// <summary>
         /// Gets or sets Rel
         /// </summary>  
 		[DataMember(Name="Rel", EmitDefaultValue=false)]
@@ -58,12 +64,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string Title { get; set; }
 
         /// <summary>
-        /// Gets or sets Type
-        /// </summary>  
-		[DataMember(Name="Type", EmitDefaultValue=false)]
-        public string Type { get; set; }
-
-        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -72,9 +72,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class Link {\n");
           sb.Append("  Href: ").Append(this.Href).Append("\n");
+          sb.Append("  Type: ").Append(this.Type).Append("\n");
           sb.Append("  Rel: ").Append(this.Rel).Append("\n");
           sb.Append("  Title: ").Append(this.Title).Append("\n");
-          sb.Append("  Type: ").Append(this.Type).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

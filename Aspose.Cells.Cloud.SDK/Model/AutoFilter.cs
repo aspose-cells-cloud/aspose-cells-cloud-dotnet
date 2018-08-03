@@ -46,16 +46,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public Link Link { get; set; }
 
         /// <summary>
-        /// Gets or sets FilterColumns
-        /// </summary>  
-		[DataMember(Name="FilterColumns", EmitDefaultValue=false)]
-        public List<FilterColumn> FilterColumns { get; set; }
-
-        /// <summary>
         /// Gets or sets Range
         /// </summary>  
 		[DataMember(Name="Range", EmitDefaultValue=false)]
         public string Range { get; set; }
+
+        /// <summary>
+        /// Gets or sets FilterColumns
+        /// </summary>  
+		[DataMember(Name="FilterColumns", EmitDefaultValue=false)]
+        public List<FilterColumn> FilterColumns { get; set; }
 
         /// <summary>
         /// Gets or sets Sorter
@@ -72,8 +72,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class AutoFilter {\n");
           sb.Append("  Link: ").Append(this.Link).Append("\n");
-          sb.Append("  FilterColumns: ").Append(this.FilterColumns).Append("\n");
           sb.Append("  Range: ").Append(this.Range).Append("\n");
+          sb.Append("  FilterColumns: ").Append(this.FilterColumns).Append("\n");
           sb.Append("  Sorter: ").Append(this.Sorter).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

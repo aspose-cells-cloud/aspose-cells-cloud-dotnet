@@ -40,28 +40,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class TextureFill 
   {                       
         /// <summary>
-        /// Gets or sets Type
-        /// </summary>  
-		[DataMember(Name="Type", EmitDefaultValue=false)]
-        public string Type { get; set; }
-
-        /// <summary>
-        /// Gets or sets Transparency
-        /// </summary>  
-		[DataMember(Name="Transparency", EmitDefaultValue=false)]
-        public double? Transparency { get; set; }
-
-        /// <summary>
         /// Gets or sets Scale
         /// </summary>  
 		[DataMember(Name="Scale", EmitDefaultValue=false)]
         public double? Scale { get; set; }
 
         /// <summary>
-        /// Gets or sets TilePicOption
+        /// Gets or sets Image
         /// </summary>  
-		[DataMember(Name="TilePicOption", EmitDefaultValue=false)]
-        public TilePicOption TilePicOption { get; set; }
+		[DataMember(Name="Image", EmitDefaultValue=false)]
+        public LinkElement Image { get; set; }
 
         /// <summary>
         /// Gets or sets PicFormatOption
@@ -70,10 +58,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public PicFormatOption PicFormatOption { get; set; }
 
         /// <summary>
-        /// Gets or sets Image
+        /// Gets or sets TilePicOption
         /// </summary>  
-		[DataMember(Name="Image", EmitDefaultValue=false)]
-        public LinkElement Image { get; set; }
+		[DataMember(Name="TilePicOption", EmitDefaultValue=false)]
+        public TilePicOption TilePicOption { get; set; }
+
+        /// <summary>
+        /// Gets or sets Transparency
+        /// </summary>  
+		[DataMember(Name="Transparency", EmitDefaultValue=false)]
+        public double? Transparency { get; set; }
+
+        /// <summary>
+        /// Gets or sets Type
+        /// </summary>  
+		[DataMember(Name="Type", EmitDefaultValue=false)]
+        public string Type { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -83,12 +83,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class TextureFill {\n");
-          sb.Append("  Type: ").Append(this.Type).Append("\n");
-          sb.Append("  Transparency: ").Append(this.Transparency).Append("\n");
           sb.Append("  Scale: ").Append(this.Scale).Append("\n");
-          sb.Append("  TilePicOption: ").Append(this.TilePicOption).Append("\n");
-          sb.Append("  PicFormatOption: ").Append(this.PicFormatOption).Append("\n");
           sb.Append("  Image: ").Append(this.Image).Append("\n");
+          sb.Append("  PicFormatOption: ").Append(this.PicFormatOption).Append("\n");
+          sb.Append("  TilePicOption: ").Append(this.TilePicOption).Append("\n");
+          sb.Append("  Transparency: ").Append(this.Transparency).Append("\n");
+          sb.Append("  Type: ").Append(this.Type).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

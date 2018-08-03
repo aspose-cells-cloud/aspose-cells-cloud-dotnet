@@ -40,16 +40,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class ListColumn 
   {                       
         /// <summary>
-        /// Gets and sets the name of the column.
-        /// </summary>  
-		[DataMember(Name="Name", EmitDefaultValue=false)]
-        public string Name { get; set; }
-
-        /// <summary>
         /// Gets and sets the type of calculation in the Totals row of the list column.
         /// </summary>  
 		[DataMember(Name="TotalsCalculation", EmitDefaultValue=false)]
         public string TotalsCalculation { get; set; }
+
+        /// <summary>
+        /// Gets and sets the name of the column.
+        /// </summary>  
+		[DataMember(Name="Name", EmitDefaultValue=false)]
+        public string Name { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -59,8 +59,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class ListColumn {\n");
-          sb.Append("  Name: ").Append(this.Name).Append("\n");
           sb.Append("  TotalsCalculation: ").Append(this.TotalsCalculation).Append("\n");
+          sb.Append("  Name: ").Append(this.Name).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

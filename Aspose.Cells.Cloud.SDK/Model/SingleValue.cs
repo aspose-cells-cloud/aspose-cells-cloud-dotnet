@@ -40,16 +40,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class SingleValue 
   {                       
         /// <summary>
-        /// Gets or sets Value
-        /// </summary>  
-		[DataMember(Name="Value", EmitDefaultValue=false)]
-        public string Value { get; set; }
-
-        /// <summary>
         /// Gets or sets ValueType
         /// </summary>  
 		[DataMember(Name="ValueType", EmitDefaultValue=false)]
         public ValueType ValueType { get; set; }
+
+        /// <summary>
+        /// Gets or sets Value
+        /// </summary>  
+		[DataMember(Name="Value", EmitDefaultValue=false)]
+        public string Value { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -59,8 +59,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class SingleValue {\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("  ValueType: ").Append(this.ValueType).Append("\n");
+          sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

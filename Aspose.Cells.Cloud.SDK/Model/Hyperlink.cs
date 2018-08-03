@@ -46,10 +46,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public Link Link { get; set; }
 
         /// <summary>
-        /// Gets or sets Address
+        /// Gets or sets ScreenTip
         /// </summary>  
-		[DataMember(Name="Address", EmitDefaultValue=false)]
-        public string Address { get; set; }
+		[DataMember(Name="ScreenTip", EmitDefaultValue=false)]
+        public string ScreenTip { get; set; }
 
         /// <summary>
         /// Gets or sets Area
@@ -58,16 +58,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public CellArea Area { get; set; }
 
         /// <summary>
-        /// Gets or sets ScreenTip
-        /// </summary>  
-		[DataMember(Name="ScreenTip", EmitDefaultValue=false)]
-        public string ScreenTip { get; set; }
-
-        /// <summary>
         /// Gets or sets TextToDisplay
         /// </summary>  
 		[DataMember(Name="TextToDisplay", EmitDefaultValue=false)]
         public string TextToDisplay { get; set; }
+
+        /// <summary>
+        /// Gets or sets Address
+        /// </summary>  
+		[DataMember(Name="Address", EmitDefaultValue=false)]
+        public string Address { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -78,10 +78,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class Hyperlink {\n");
           sb.Append("  Link: ").Append(this.Link).Append("\n");
-          sb.Append("  Address: ").Append(this.Address).Append("\n");
-          sb.Append("  Area: ").Append(this.Area).Append("\n");
           sb.Append("  ScreenTip: ").Append(this.ScreenTip).Append("\n");
+          sb.Append("  Area: ").Append(this.Area).Append("\n");
           sb.Append("  TextToDisplay: ").Append(this.TextToDisplay).Append("\n");
+          sb.Append("  Address: ").Append(this.Address).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

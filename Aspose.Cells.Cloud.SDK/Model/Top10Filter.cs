@@ -40,10 +40,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class Top10Filter 
   {                       
         /// <summary>
-        /// Gets or sets Criteria
+        /// Gets or sets Items
         /// </summary>  
-		[DataMember(Name="Criteria", EmitDefaultValue=false)]
-        public string Criteria { get; set; }
+		[DataMember(Name="Items", EmitDefaultValue=false)]
+        public int? Items { get; set; }
 
         /// <summary>
         /// Gets or sets IsPercent
@@ -58,10 +58,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public bool? IsTop { get; set; }
 
         /// <summary>
-        /// Gets or sets Items
+        /// Gets or sets Criteria
         /// </summary>  
-		[DataMember(Name="Items", EmitDefaultValue=false)]
-        public int? Items { get; set; }
+		[DataMember(Name="Criteria", EmitDefaultValue=false)]
+        public string Criteria { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -71,10 +71,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class Top10Filter {\n");
-          sb.Append("  Criteria: ").Append(this.Criteria).Append("\n");
+          sb.Append("  Items: ").Append(this.Items).Append("\n");
           sb.Append("  IsPercent: ").Append(this.IsPercent).Append("\n");
           sb.Append("  IsTop: ").Append(this.IsTop).Append("\n");
-          sb.Append("  Items: ").Append(this.Items).Append("\n");
+          sb.Append("  Criteria: ").Append(this.Criteria).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

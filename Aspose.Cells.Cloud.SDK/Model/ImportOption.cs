@@ -40,6 +40,18 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class ImportOption 
   {                       
         /// <summary>
+        /// Gets or sets Source
+        /// </summary>  
+		[DataMember(Name="Source", EmitDefaultValue=false)]
+        public FileSource Source { get; set; }
+
+        /// <summary>
+        /// Gets or sets ImportDataType
+        /// </summary>  
+		[DataMember(Name="ImportDataType", EmitDefaultValue=false)]
+        public string ImportDataType { get; set; }
+
+        /// <summary>
         /// Gets or sets DestinationWorksheet
         /// </summary>  
 		[DataMember(Name="DestinationWorksheet", EmitDefaultValue=false)]
@@ -52,18 +64,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public bool? IsInsert { get; set; }
 
         /// <summary>
-        /// Gets or sets ImportDataType
-        /// </summary>  
-		[DataMember(Name="ImportDataType", EmitDefaultValue=false)]
-        public string ImportDataType { get; set; }
-
-        /// <summary>
-        /// Gets or sets Source
-        /// </summary>  
-		[DataMember(Name="Source", EmitDefaultValue=false)]
-        public FileSource Source { get; set; }
-
-        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -71,10 +71,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class ImportOption {\n");
+          sb.Append("  Source: ").Append(this.Source).Append("\n");
+          sb.Append("  ImportDataType: ").Append(this.ImportDataType).Append("\n");
           sb.Append("  DestinationWorksheet: ").Append(this.DestinationWorksheet).Append("\n");
           sb.Append("  IsInsert: ").Append(this.IsInsert).Append("\n");
-          sb.Append("  ImportDataType: ").Append(this.ImportDataType).Append("\n");
-          sb.Append("  Source: ").Append(this.Source).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

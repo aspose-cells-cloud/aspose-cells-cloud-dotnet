@@ -40,52 +40,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class ChartArea 
   {                       
         /// <summary>
-        /// Gets or sets Area
-        /// </summary>  
-		[DataMember(Name="Area", EmitDefaultValue=false)]
-        public Area Area { get; set; }
-
-        /// <summary>
-        /// Gets or sets AutoScaleFont
-        /// </summary>  
-		[DataMember(Name="AutoScaleFont", EmitDefaultValue=false)]
-        public bool? AutoScaleFont { get; set; }
-
-        /// <summary>
-        /// Gets or sets BackgroundMode
-        /// </summary>  
-		[DataMember(Name="BackgroundMode", EmitDefaultValue=false)]
-        public string BackgroundMode { get; set; }
-
-        /// <summary>
-        /// Gets or sets Border
-        /// </summary>  
-		[DataMember(Name="Border", EmitDefaultValue=false)]
-        public Line Border { get; set; }
-
-        /// <summary>
-        /// Gets or sets Font
-        /// </summary>  
-		[DataMember(Name="Font", EmitDefaultValue=false)]
-        public Font Font { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsAutomaticSize
-        /// </summary>  
-		[DataMember(Name="IsAutomaticSize", EmitDefaultValue=false)]
-        public bool? IsAutomaticSize { get; set; }
-
-        /// <summary>
         /// Gets or sets IsInnerMode
         /// </summary>  
 		[DataMember(Name="IsInnerMode", EmitDefaultValue=false)]
         public bool? IsInnerMode { get; set; }
-
-        /// <summary>
-        /// Gets or sets Shadow
-        /// </summary>  
-		[DataMember(Name="Shadow", EmitDefaultValue=false)]
-        public bool? Shadow { get; set; }
 
         /// <summary>
         /// Gets or sets ShapeProperties
@@ -94,10 +52,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public List<LinkElement> ShapeProperties { get; set; }
 
         /// <summary>
-        /// Gets or sets Width
+        /// Gets or sets AutoScaleFont
         /// </summary>  
-		[DataMember(Name="Width", EmitDefaultValue=false)]
-        public int? Width { get; set; }
+		[DataMember(Name="AutoScaleFont", EmitDefaultValue=false)]
+        public bool? AutoScaleFont { get; set; }
+
+        /// <summary>
+        /// Gets or sets Area
+        /// </summary>  
+		[DataMember(Name="Area", EmitDefaultValue=false)]
+        public Area Area { get; set; }
 
         /// <summary>
         /// Gets or sets Height
@@ -106,16 +70,52 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public int? Height { get; set; }
 
         /// <summary>
-        /// Gets or sets X
+        /// Gets or sets Width
         /// </summary>  
-		[DataMember(Name="X", EmitDefaultValue=false)]
-        public int? X { get; set; }
+		[DataMember(Name="Width", EmitDefaultValue=false)]
+        public int? Width { get; set; }
+
+        /// <summary>
+        /// Gets or sets BackgroundMode
+        /// </summary>  
+		[DataMember(Name="BackgroundMode", EmitDefaultValue=false)]
+        public string BackgroundMode { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsAutomaticSize
+        /// </summary>  
+		[DataMember(Name="IsAutomaticSize", EmitDefaultValue=false)]
+        public bool? IsAutomaticSize { get; set; }
 
         /// <summary>
         /// Gets or sets Y
         /// </summary>  
 		[DataMember(Name="Y", EmitDefaultValue=false)]
         public int? Y { get; set; }
+
+        /// <summary>
+        /// Gets or sets X
+        /// </summary>  
+		[DataMember(Name="X", EmitDefaultValue=false)]
+        public int? X { get; set; }
+
+        /// <summary>
+        /// Gets or sets Shadow
+        /// </summary>  
+		[DataMember(Name="Shadow", EmitDefaultValue=false)]
+        public bool? Shadow { get; set; }
+
+        /// <summary>
+        /// Gets or sets Font
+        /// </summary>  
+		[DataMember(Name="Font", EmitDefaultValue=false)]
+        public Font Font { get; set; }
+
+        /// <summary>
+        /// Gets or sets Border
+        /// </summary>  
+		[DataMember(Name="Border", EmitDefaultValue=false)]
+        public Line Border { get; set; }
 
         /// <summary>
         /// Gets or sets Link
@@ -131,19 +131,19 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class ChartArea {\n");
-          sb.Append("  Area: ").Append(this.Area).Append("\n");
-          sb.Append("  AutoScaleFont: ").Append(this.AutoScaleFont).Append("\n");
-          sb.Append("  BackgroundMode: ").Append(this.BackgroundMode).Append("\n");
-          sb.Append("  Border: ").Append(this.Border).Append("\n");
-          sb.Append("  Font: ").Append(this.Font).Append("\n");
-          sb.Append("  IsAutomaticSize: ").Append(this.IsAutomaticSize).Append("\n");
           sb.Append("  IsInnerMode: ").Append(this.IsInnerMode).Append("\n");
-          sb.Append("  Shadow: ").Append(this.Shadow).Append("\n");
           sb.Append("  ShapeProperties: ").Append(this.ShapeProperties).Append("\n");
-          sb.Append("  Width: ").Append(this.Width).Append("\n");
+          sb.Append("  AutoScaleFont: ").Append(this.AutoScaleFont).Append("\n");
+          sb.Append("  Area: ").Append(this.Area).Append("\n");
           sb.Append("  Height: ").Append(this.Height).Append("\n");
-          sb.Append("  X: ").Append(this.X).Append("\n");
+          sb.Append("  Width: ").Append(this.Width).Append("\n");
+          sb.Append("  BackgroundMode: ").Append(this.BackgroundMode).Append("\n");
+          sb.Append("  IsAutomaticSize: ").Append(this.IsAutomaticSize).Append("\n");
           sb.Append("  Y: ").Append(this.Y).Append("\n");
+          sb.Append("  X: ").Append(this.X).Append("\n");
+          sb.Append("  Shadow: ").Append(this.Shadow).Append("\n");
+          sb.Append("  Font: ").Append(this.Font).Append("\n");
+          sb.Append("  Border: ").Append(this.Border).Append("\n");
           sb.Append("  Link: ").Append(this.Link).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

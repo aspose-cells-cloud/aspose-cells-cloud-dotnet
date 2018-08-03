@@ -40,6 +40,24 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class CopyOptions 
   {                       
         /// <summary>
+        /// When copying the range in the same file and the chart refers to the source sheet,   False means the copied chart's data source will not be changed. True means the   copied chart's data source refers to the destination sheet.             
+        /// </summary>  
+		[DataMember(Name="ReferToDestinationSheet", EmitDefaultValue=false)]
+        public bool? ReferToDestinationSheet { get; set; }
+
+        /// <summary>
+        /// Indicates whether copying the names.
+        /// </summary>  
+		[DataMember(Name="CopyNames", EmitDefaultValue=false)]
+        public bool? CopyNames { get; set; }
+
+        /// <summary>
+        /// Gets or sets ReferToSheetWithSameName
+        /// </summary>  
+		[DataMember(Name="ReferToSheetWithSameName", EmitDefaultValue=false)]
+        public bool? ReferToSheetWithSameName { get; set; }
+
+        /// <summary>
         /// Indicates whether copying column width in unit of characters.
         /// </summary>  
 		[DataMember(Name="ColumnCharacterWidth", EmitDefaultValue=false)]
@@ -52,28 +70,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public bool? CopyInvalidFormulasAsValues { get; set; }
 
         /// <summary>
-        /// Indicates whether copying the names.
-        /// </summary>  
-		[DataMember(Name="CopyNames", EmitDefaultValue=false)]
-        public bool? CopyNames { get; set; }
-
-        /// <summary>
         /// Indicates whether extend ranges when copying the range to adjacent range.
         /// </summary>  
 		[DataMember(Name="ExtendToAdjacentRange", EmitDefaultValue=false)]
         public bool? ExtendToAdjacentRange { get; set; }
-
-        /// <summary>
-        /// When copying the range in the same file and the chart refers to the source sheet,   False means the copied chart's data source will not be changed. True means the   copied chart's data source refers to the destination sheet.             
-        /// </summary>  
-		[DataMember(Name="ReferToDestinationSheet", EmitDefaultValue=false)]
-        public bool? ReferToDestinationSheet { get; set; }
-
-        /// <summary>
-        /// Gets or sets ReferToSheetWithSameName
-        /// </summary>  
-		[DataMember(Name="ReferToSheetWithSameName", EmitDefaultValue=false)]
-        public bool? ReferToSheetWithSameName { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -83,12 +83,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class CopyOptions {\n");
+          sb.Append("  ReferToDestinationSheet: ").Append(this.ReferToDestinationSheet).Append("\n");
+          sb.Append("  CopyNames: ").Append(this.CopyNames).Append("\n");
+          sb.Append("  ReferToSheetWithSameName: ").Append(this.ReferToSheetWithSameName).Append("\n");
           sb.Append("  ColumnCharacterWidth: ").Append(this.ColumnCharacterWidth).Append("\n");
           sb.Append("  CopyInvalidFormulasAsValues: ").Append(this.CopyInvalidFormulasAsValues).Append("\n");
-          sb.Append("  CopyNames: ").Append(this.CopyNames).Append("\n");
           sb.Append("  ExtendToAdjacentRange: ").Append(this.ExtendToAdjacentRange).Append("\n");
-          sb.Append("  ReferToDestinationSheet: ").Append(this.ReferToDestinationSheet).Append("\n");
-          sb.Append("  ReferToSheetWithSameName: ").Append(this.ReferToSheetWithSameName).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

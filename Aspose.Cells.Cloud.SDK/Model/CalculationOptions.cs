@@ -40,10 +40,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class CalculationOptions 
   {                       
         /// <summary>
-        /// Gets or sets CalcStackSize
+        /// Gets or sets PrecisionStrategy
         /// </summary>  
-		[DataMember(Name="CalcStackSize", EmitDefaultValue=false)]
-        public int? CalcStackSize { get; set; }
+		[DataMember(Name="PrecisionStrategy", EmitDefaultValue=false)]
+        public string PrecisionStrategy { get; set; }
 
         /// <summary>
         /// Gets or sets IgnoreError
@@ -52,16 +52,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public bool? IgnoreError { get; set; }
 
         /// <summary>
-        /// Gets or sets PrecisionStrategy
-        /// </summary>  
-		[DataMember(Name="PrecisionStrategy", EmitDefaultValue=false)]
-        public string PrecisionStrategy { get; set; }
-
-        /// <summary>
         /// Gets or sets Recursive
         /// </summary>  
 		[DataMember(Name="Recursive", EmitDefaultValue=false)]
         public bool? Recursive { get; set; }
+
+        /// <summary>
+        /// Gets or sets CalcStackSize
+        /// </summary>  
+		[DataMember(Name="CalcStackSize", EmitDefaultValue=false)]
+        public int? CalcStackSize { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -71,10 +71,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class CalculationOptions {\n");
-          sb.Append("  CalcStackSize: ").Append(this.CalcStackSize).Append("\n");
-          sb.Append("  IgnoreError: ").Append(this.IgnoreError).Append("\n");
           sb.Append("  PrecisionStrategy: ").Append(this.PrecisionStrategy).Append("\n");
+          sb.Append("  IgnoreError: ").Append(this.IgnoreError).Append("\n");
           sb.Append("  Recursive: ").Append(this.Recursive).Append("\n");
+          sb.Append("  CalcStackSize: ").Append(this.CalcStackSize).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

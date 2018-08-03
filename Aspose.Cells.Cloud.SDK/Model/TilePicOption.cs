@@ -40,16 +40,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class TilePicOption 
   {                       
         /// <summary>
+        /// Gets or sets AlignmentType
+        /// </summary>  
+		[DataMember(Name="AlignmentType", EmitDefaultValue=false)]
+        public string AlignmentType { get; set; }
+
+        /// <summary>
         /// Gets or sets OffsetX
         /// </summary>  
 		[DataMember(Name="OffsetX", EmitDefaultValue=false)]
         public double? OffsetX { get; set; }
-
-        /// <summary>
-        /// Gets or sets OffsetY
-        /// </summary>  
-		[DataMember(Name="OffsetY", EmitDefaultValue=false)]
-        public double? OffsetY { get; set; }
 
         /// <summary>
         /// Gets or sets ScaleX
@@ -58,16 +58,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public double? ScaleX { get; set; }
 
         /// <summary>
+        /// Gets or sets OffsetY
+        /// </summary>  
+		[DataMember(Name="OffsetY", EmitDefaultValue=false)]
+        public double? OffsetY { get; set; }
+
+        /// <summary>
         /// Gets or sets ScaleY
         /// </summary>  
 		[DataMember(Name="ScaleY", EmitDefaultValue=false)]
         public double? ScaleY { get; set; }
-
-        /// <summary>
-        /// Gets or sets AlignmentType
-        /// </summary>  
-		[DataMember(Name="AlignmentType", EmitDefaultValue=false)]
-        public string AlignmentType { get; set; }
 
         /// <summary>
         /// Gets or sets MirrorType
@@ -83,11 +83,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class TilePicOption {\n");
-          sb.Append("  OffsetX: ").Append(this.OffsetX).Append("\n");
-          sb.Append("  OffsetY: ").Append(this.OffsetY).Append("\n");
-          sb.Append("  ScaleX: ").Append(this.ScaleX).Append("\n");
-          sb.Append("  ScaleY: ").Append(this.ScaleY).Append("\n");
           sb.Append("  AlignmentType: ").Append(this.AlignmentType).Append("\n");
+          sb.Append("  OffsetX: ").Append(this.OffsetX).Append("\n");
+          sb.Append("  ScaleX: ").Append(this.ScaleX).Append("\n");
+          sb.Append("  OffsetY: ").Append(this.OffsetY).Append("\n");
+          sb.Append("  ScaleY: ").Append(this.ScaleY).Append("\n");
           sb.Append("  MirrorType: ").Append(this.MirrorType).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

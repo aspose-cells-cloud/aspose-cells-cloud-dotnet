@@ -40,16 +40,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class RangeCopyRequest 
   {                       
         /// <summary>
-        /// Gets or sets Operate
-        /// </summary>  
-		[DataMember(Name="Operate", EmitDefaultValue=false)]
-        public string Operate { get; set; }
-
-        /// <summary>
         /// Gets or sets Source
         /// </summary>  
 		[DataMember(Name="Source", EmitDefaultValue=false)]
         public Range Source { get; set; }
+
+        /// <summary>
+        /// Gets or sets Operate
+        /// </summary>  
+		[DataMember(Name="Operate", EmitDefaultValue=false)]
+        public string Operate { get; set; }
 
         /// <summary>
         /// Gets or sets Target
@@ -71,8 +71,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class RangeCopyRequest {\n");
-          sb.Append("  Operate: ").Append(this.Operate).Append("\n");
           sb.Append("  Source: ").Append(this.Source).Append("\n");
+          sb.Append("  Operate: ").Append(this.Operate).Append("\n");
           sb.Append("  Target: ").Append(this.Target).Append("\n");
           sb.Append("  PasteOptions: ").Append(this.PasteOptions).Append("\n");
           sb.Append("}\n");

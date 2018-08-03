@@ -46,16 +46,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public FileSource Workbook { get; set; }
 
         /// <summary>
-        /// Gets or sets DestinationFile
-        /// </summary>  
-		[DataMember(Name="DestinationFile", EmitDefaultValue=false)]
-        public string DestinationFile { get; set; }
-
-        /// <summary>
         /// Gets or sets SaveOptions
         /// </summary>  
 		[DataMember(Name="SaveOptions", EmitDefaultValue=false)]
         public SaveOptions SaveOptions { get; set; }
+
+        /// <summary>
+        /// Gets or sets DestinationFile
+        /// </summary>  
+		[DataMember(Name="DestinationFile", EmitDefaultValue=false)]
+        public string DestinationFile { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -66,8 +66,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class ConvertTaskParameter {\n");
           sb.Append("  Workbook: ").Append(this.Workbook).Append("\n");
-          sb.Append("  DestinationFile: ").Append(this.DestinationFile).Append("\n");
           sb.Append("  SaveOptions: ").Append(this.SaveOptions).Append("\n");
+          sb.Append("  DestinationFile: ").Append(this.DestinationFile).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }
