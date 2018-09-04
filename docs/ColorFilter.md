@@ -3,11 +3,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**FilterByFillColor** | **string** |  | [optional] 
-**Pattern** | **string** |  | [optional] 
 **Color** | [**CellsColor**](CellsColor.md) |  | [optional] 
-**ForegroundColorColor** | [**CellsColor**](CellsColor.md) |  | [optional] 
+**Pattern** | **string** |  | [optional] 
 **BackgroundColor** | [**CellsColor**](CellsColor.md) |  | [optional] 
+**ForegroundColorColor** | [**CellsColor**](CellsColor.md) |  | [optional] 
+**FilterByFillColor** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

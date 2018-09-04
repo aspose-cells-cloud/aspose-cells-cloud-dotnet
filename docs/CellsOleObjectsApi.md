@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 <a name="cellsoleobjectsdeleteworksheetoleobject"></a>
 # **CellsOleObjectsDeleteWorksheetOleObject**
-> SaaSposeResponse CellsOleObjectsDeleteWorksheetOleObject (string name, string sheetName, int? oleObjectIndex, string folder = null)
+> SaaSposeResponse CellsOleObjectsDeleteWorksheetOleObject (string name, string sheetName, int? oleObjectIndex, string folder = null, string storage = null)
 
 Delete OLE object.
 
@@ -37,11 +37,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | The worsheet name.
             var oleObjectIndex = 56;  // int? | Ole object index
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Delete OLE object.
-                SaaSposeResponse result = apiInstance.CellsOleObjectsDeleteWorksheetOleObject(name, sheetName, oleObjectIndex, folder);
+                SaaSposeResponse result = apiInstance.CellsOleObjectsDeleteWorksheetOleObject(name, sheetName, oleObjectIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -61,6 +62,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| The worsheet name. | 
  **oleObjectIndex** | **int?**| Ole object index | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -79,7 +81,7 @@ No authorization required
 
 <a name="cellsoleobjectsdeleteworksheetoleobjects"></a>
 # **CellsOleObjectsDeleteWorksheetOleObjects**
-> SaaSposeResponse CellsOleObjectsDeleteWorksheetOleObjects (string name, string sheetName, string folder = null)
+> SaaSposeResponse CellsOleObjectsDeleteWorksheetOleObjects (string name, string sheetName, string folder = null, string storage = null)
 
 Delete all OLE objects.
 
@@ -101,11 +103,12 @@ namespace Example
             var name = name_example;  // string | The workbook name.
             var sheetName = sheetName_example;  // string | The worsheet name.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Delete all OLE objects.
-                SaaSposeResponse result = apiInstance.CellsOleObjectsDeleteWorksheetOleObjects(name, sheetName, folder);
+                SaaSposeResponse result = apiInstance.CellsOleObjectsDeleteWorksheetOleObjects(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -124,6 +127,7 @@ Name | Type | Description  | Notes
  **name** | **string**| The workbook name. | 
  **sheetName** | **string**| The worsheet name. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -142,7 +146,7 @@ No authorization required
 
 <a name="cellsoleobjectsgetworksheetoleobject"></a>
 # **CellsOleObjectsGetWorksheetOleObject**
-> System.IO.Stream CellsOleObjectsGetWorksheetOleObject (string name, string sheetName, int? objectNumber, string folder = null)
+> System.IO.Stream CellsOleObjectsGetWorksheetOleObject (string name, string sheetName, int? objectNumber, string folder = null, string storage = null)
 
 Get OLE object info.
 
@@ -165,11 +169,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | Worksheet name.
             var objectNumber = 56;  // int? | The object number.
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get OLE object info.
-                System.IO.Stream result = apiInstance.CellsOleObjectsGetWorksheetOleObject(name, sheetName, objectNumber, folder);
+                System.IO.Stream result = apiInstance.CellsOleObjectsGetWorksheetOleObject(name, sheetName, objectNumber, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -189,6 +194,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| Worksheet name. | 
  **objectNumber** | **int?**| The object number. | 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -207,7 +213,7 @@ No authorization required
 
 <a name="cellsoleobjectsgetworksheetoleobjects"></a>
 # **CellsOleObjectsGetWorksheetOleObjects**
-> OleObjectsResponse CellsOleObjectsGetWorksheetOleObjects (string name, string sheetName, string folder = null)
+> OleObjectsResponse CellsOleObjectsGetWorksheetOleObjects (string name, string sheetName, string folder = null, string storage = null)
 
 Get worksheet OLE objects info.
 
@@ -229,11 +235,12 @@ namespace Example
             var name = name_example;  // string | Document name.
             var sheetName = sheetName_example;  // string | The worksheet name.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get worksheet OLE objects info.
-                OleObjectsResponse result = apiInstance.CellsOleObjectsGetWorksheetOleObjects(name, sheetName, folder);
+                OleObjectsResponse result = apiInstance.CellsOleObjectsGetWorksheetOleObjects(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -252,6 +259,7 @@ Name | Type | Description  | Notes
  **name** | **string**| Document name. | 
  **sheetName** | **string**| The worksheet name. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -270,7 +278,7 @@ No authorization required
 
 <a name="cellsoleobjectspostupdateworksheetoleobject"></a>
 # **CellsOleObjectsPostUpdateWorksheetOleObject**
-> SaaSposeResponse CellsOleObjectsPostUpdateWorksheetOleObject (string name, string sheetName, int? oleObjectIndex, OleObject ole = null, string folder = null)
+> SaaSposeResponse CellsOleObjectsPostUpdateWorksheetOleObject (string name, string sheetName, int? oleObjectIndex, OleObject ole = null, string folder = null, string storage = null)
 
 Update OLE object.
 
@@ -294,11 +302,12 @@ namespace Example
             var oleObjectIndex = 56;  // int? | Ole object index
             var ole = new OleObject(); // OleObject | Ole Object (optional) 
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Update OLE object.
-                SaaSposeResponse result = apiInstance.CellsOleObjectsPostUpdateWorksheetOleObject(name, sheetName, oleObjectIndex, ole, folder);
+                SaaSposeResponse result = apiInstance.CellsOleObjectsPostUpdateWorksheetOleObject(name, sheetName, oleObjectIndex, ole, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -319,6 +328,7 @@ Name | Type | Description  | Notes
  **oleObjectIndex** | **int?**| Ole object index | 
  **ole** | [**OleObject**](OleObject.md)| Ole Object | [optional] 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -337,7 +347,7 @@ No authorization required
 
 <a name="cellsoleobjectsputworksheetoleobject"></a>
 # **CellsOleObjectsPutWorksheetOleObject**
-> OleObjectResponse CellsOleObjectsPutWorksheetOleObject (string name, string sheetName, OleObject oleObject = null, int? upperLeftRow = null, int? upperLeftColumn = null, int? height = null, int? width = null, string oleFile = null, string imageFile = null, string folder = null)
+> OleObjectResponse CellsOleObjectsPutWorksheetOleObject (string name, string sheetName, OleObject oleObject = null, int? upperLeftRow = null, int? upperLeftColumn = null, int? height = null, int? width = null, string oleFile = null, string imageFile = null, string folder = null, string storage = null)
 
 Add OLE object
 
@@ -366,11 +376,12 @@ namespace Example
             var oleFile = oleFile_example;  // string | OLE filename (optional) 
             var imageFile = imageFile_example;  // string | Image filename (optional) 
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Add OLE object
-                OleObjectResponse result = apiInstance.CellsOleObjectsPutWorksheetOleObject(name, sheetName, oleObject, upperLeftRow, upperLeftColumn, height, width, oleFile, imageFile, folder);
+                OleObjectResponse result = apiInstance.CellsOleObjectsPutWorksheetOleObject(name, sheetName, oleObject, upperLeftRow, upperLeftColumn, height, width, oleFile, imageFile, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -396,6 +407,7 @@ Name | Type | Description  | Notes
  **oleFile** | **string**| OLE filename | [optional] 
  **imageFile** | **string**| Image filename | [optional] 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 

@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="cellstaskpostruntask"></a>
 # **CellsTaskPostRunTask**
-> System.IO.Stream CellsTaskPostRunTask (TaskData taskData)
+> Object CellsTaskPostRunTask (TaskData taskData)
 
 Run tasks  
 
@@ -33,7 +33,7 @@ namespace Example
             try
             {
                 // Run tasks  
-                System.IO.Stream result = apiInstance.CellsTaskPostRunTask(taskData);
+                Object result = apiInstance.CellsTaskPostRunTask(taskData);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**System.IO.Stream**
+**Object**
 
 ### Authorization
 

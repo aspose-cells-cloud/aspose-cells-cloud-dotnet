@@ -3,10 +3,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**CalcStackSize** | **int?** |  | [optional] 
-**IgnoreError** | **bool?** |  | [optional] 
 **PrecisionStrategy** | **string** |  | [optional] 
+**IgnoreError** | **bool?** |  | [optional] 
 **Recursive** | **bool?** |  | [optional] 
+**CalcStackSize** | **int?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

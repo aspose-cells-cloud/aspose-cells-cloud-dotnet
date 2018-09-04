@@ -34,9 +34,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="autoshapeNumber">The autoshape number.</param>
+        /// <param name="format">Exported format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        System.IO.Stream CellsAutoshapesGetWorksheetAutoshape (string name, string sheetName, int? autoshapeNumber, string folder = null);
+        System.IO.Stream CellsAutoshapesGetWorksheetAutoshape (string name, string sheetName, int? autoshapeNumber, string format = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Get autoshape info.
@@ -48,9 +50,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="autoshapeNumber">The autoshape number.</param>
+        /// <param name="format">Exported format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        ApiResponse<System.IO.Stream> CellsAutoshapesGetWorksheetAutoshapeWithHttpInfo (string name, string sheetName, int? autoshapeNumber, string folder = null);
+        ApiResponse<System.IO.Stream> CellsAutoshapesGetWorksheetAutoshapeWithHttpInfo (string name, string sheetName, int? autoshapeNumber, string format = null, string folder = null, string storage = null);
         /// <summary>
         /// Get worksheet autoshapes info.
         /// </summary>
@@ -61,8 +65,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>AutoShapesResponse</returns>
-        AutoShapesResponse CellsAutoshapesGetWorksheetAutoshapes (string name, string sheetName, string folder = null);
+        AutoShapesResponse CellsAutoshapesGetWorksheetAutoshapes (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Get worksheet autoshapes info.
@@ -74,8 +79,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of AutoShapesResponse</returns>
-        ApiResponse<AutoShapesResponse> CellsAutoshapesGetWorksheetAutoshapesWithHttpInfo (string name, string sheetName, string folder = null);
+        ApiResponse<AutoShapesResponse> CellsAutoshapesGetWorksheetAutoshapesWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -88,9 +94,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="autoshapeNumber">The autoshape number.</param>
+        /// <param name="format">Exported format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of System.IO.Stream</returns>
-        System.Threading.Tasks.Task<System.IO.Stream> CellsAutoshapesGetWorksheetAutoshapeAsync (string name, string sheetName, int? autoshapeNumber, string folder = null);
+        System.Threading.Tasks.Task<System.IO.Stream> CellsAutoshapesGetWorksheetAutoshapeAsync (string name, string sheetName, int? autoshapeNumber, string format = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Get autoshape info.
@@ -102,9 +110,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="autoshapeNumber">The autoshape number.</param>
+        /// <param name="format">Exported format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsAutoshapesGetWorksheetAutoshapeAsyncWithHttpInfo (string name, string sheetName, int? autoshapeNumber, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsAutoshapesGetWorksheetAutoshapeAsyncWithHttpInfo (string name, string sheetName, int? autoshapeNumber, string format = null, string folder = null, string storage = null);
         /// <summary>
         /// Get worksheet autoshapes info.
         /// </summary>
@@ -115,8 +125,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of AutoShapesResponse</returns>
-        System.Threading.Tasks.Task<AutoShapesResponse> CellsAutoshapesGetWorksheetAutoshapesAsync (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<AutoShapesResponse> CellsAutoshapesGetWorksheetAutoshapesAsync (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Get worksheet autoshapes info.
@@ -128,8 +139,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (AutoShapesResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AutoShapesResponse>> CellsAutoshapesGetWorksheetAutoshapesAsyncWithHttpInfo (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<AutoShapesResponse>> CellsAutoshapesGetWorksheetAutoshapesAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         #endregion Asynchronous Operations
     }
 
@@ -156,6 +168,25 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 this.Configuration.ApiClient.Configuration = this.Configuration;
             }
         }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsAutoshapesApi"/> class.
+        /// </summary>
+        /// <returns></returns>
+        public CellsAutoshapesApi(String basePath, String accesstoken)
+        {
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + accesstoken);
+            this.Configuration = new Configuration(new ApiClient(basePath),headerParameters);
+
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CellsAutoshapesApi"/> class
@@ -170,6 +201,28 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
                 this.Configuration = configuration;
 
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsAutoshapesApi"/> class
+        /// using Configuration object
+        /// </summary>
+        /// <param name="configuration">An instance of Configuration</param>
+        /// <returns></returns>
+        public CellsAutoshapesApi(String grantType,String appSID,String appKey)
+        {
+            OAuthApi oauth2 = new OAuthApi("https://api.aspose.cloud");
+            var oauth2response = oauth2.OAuthPost(grantType, appSID, appKey);
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + oauth2response.AccessToken);
+            this.Configuration =  new Configuration(new ApiClient(), headerParameters);
             ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
@@ -249,11 +302,13 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="autoshapeNumber">The autoshape number.</param>
+        /// <param name="format">Exported format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        public System.IO.Stream CellsAutoshapesGetWorksheetAutoshape (string name, string sheetName, int? autoshapeNumber, string folder = null)
+        public System.IO.Stream CellsAutoshapesGetWorksheetAutoshape (string name, string sheetName, int? autoshapeNumber, string format = null, string folder = null, string storage = null)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = CellsAutoshapesGetWorksheetAutoshapeWithHttpInfo(name, sheetName, autoshapeNumber, folder);
+             ApiResponse<System.IO.Stream> localVarResponse = CellsAutoshapesGetWorksheetAutoshapeWithHttpInfo(name, sheetName, autoshapeNumber, format, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -264,9 +319,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="autoshapeNumber">The autoshape number.</param>
+        /// <param name="format">Exported format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        public ApiResponse< System.IO.Stream > CellsAutoshapesGetWorksheetAutoshapeWithHttpInfo (string name, string sheetName, int? autoshapeNumber, string folder = null)
+        public ApiResponse< System.IO.Stream > CellsAutoshapesGetWorksheetAutoshapeWithHttpInfo (string name, string sheetName, int? autoshapeNumber, string format = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -303,7 +360,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (autoshapeNumber != null) localVarPathParams.Add("autoshapeNumber", Configuration.ApiClient.ParameterToString(autoshapeNumber)); // path parameter
+            if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -331,11 +390,13 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="autoshapeNumber">The autoshape number.</param>
+        /// <param name="format">Exported format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of System.IO.Stream</returns>
-        public async System.Threading.Tasks.Task<System.IO.Stream> CellsAutoshapesGetWorksheetAutoshapeAsync (string name, string sheetName, int? autoshapeNumber, string folder = null)
+        public async System.Threading.Tasks.Task<System.IO.Stream> CellsAutoshapesGetWorksheetAutoshapeAsync (string name, string sheetName, int? autoshapeNumber, string format = null, string folder = null, string storage = null)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = await CellsAutoshapesGetWorksheetAutoshapeAsyncWithHttpInfo(name, sheetName, autoshapeNumber, folder);
+             ApiResponse<System.IO.Stream> localVarResponse = await CellsAutoshapesGetWorksheetAutoshapeAsyncWithHttpInfo(name, sheetName, autoshapeNumber, format, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -347,9 +408,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="autoshapeNumber">The autoshape number.</param>
+        /// <param name="format">Exported format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsAutoshapesGetWorksheetAutoshapeAsyncWithHttpInfo (string name, string sheetName, int? autoshapeNumber, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsAutoshapesGetWorksheetAutoshapeAsyncWithHttpInfo (string name, string sheetName, int? autoshapeNumber, string format = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -386,7 +449,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (autoshapeNumber != null) localVarPathParams.Add("autoshapeNumber", Configuration.ApiClient.ParameterToString(autoshapeNumber)); // path parameter
+            if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -414,10 +479,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>AutoShapesResponse</returns>
-        public AutoShapesResponse CellsAutoshapesGetWorksheetAutoshapes (string name, string sheetName, string folder = null)
+        public AutoShapesResponse CellsAutoshapesGetWorksheetAutoshapes (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<AutoShapesResponse> localVarResponse = CellsAutoshapesGetWorksheetAutoshapesWithHttpInfo(name, sheetName, folder);
+             ApiResponse<AutoShapesResponse> localVarResponse = CellsAutoshapesGetWorksheetAutoshapesWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -428,8 +494,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of AutoShapesResponse</returns>
-        public ApiResponse< AutoShapesResponse > CellsAutoshapesGetWorksheetAutoshapesWithHttpInfo (string name, string sheetName, string folder = null)
+        public ApiResponse< AutoShapesResponse > CellsAutoshapesGetWorksheetAutoshapesWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -463,6 +530,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -490,10 +558,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of AutoShapesResponse</returns>
-        public async System.Threading.Tasks.Task<AutoShapesResponse> CellsAutoshapesGetWorksheetAutoshapesAsync (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<AutoShapesResponse> CellsAutoshapesGetWorksheetAutoshapesAsync (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<AutoShapesResponse> localVarResponse = await CellsAutoshapesGetWorksheetAutoshapesAsyncWithHttpInfo(name, sheetName, folder);
+             ApiResponse<AutoShapesResponse> localVarResponse = await CellsAutoshapesGetWorksheetAutoshapesAsyncWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -505,8 +574,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (AutoShapesResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<AutoShapesResponse>> CellsAutoshapesGetWorksheetAutoshapesAsyncWithHttpInfo (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<AutoShapesResponse>> CellsAutoshapesGetWorksheetAutoshapesAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -540,6 +610,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request

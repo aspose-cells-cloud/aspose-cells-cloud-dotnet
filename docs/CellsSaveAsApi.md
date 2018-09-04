@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="cellssaveaspostdocumentsaveas"></a>
 # **CellsSaveAsPostDocumentSaveAs**
-> SaveResponse CellsSaveAsPostDocumentSaveAs (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null)
+> SaveResponse CellsSaveAsPostDocumentSaveAs (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storage = null)
 
 Convert document and save result to storage.
 
@@ -34,11 +34,12 @@ namespace Example
             var isAutoFitRows = true;  // bool? | Autofit rows. (optional)  (default to false)
             var isAutoFitColumns = true;  // bool? | Autofit columns. (optional)  (default to false)
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Convert document and save result to storage.
-                SaveResponse result = apiInstance.CellsSaveAsPostDocumentSaveAs(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder);
+                SaveResponse result = apiInstance.CellsSaveAsPostDocumentSaveAs(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -60,6 +61,7 @@ Name | Type | Description  | Notes
  **isAutoFitRows** | **bool?**| Autofit rows. | [optional] [default to false]
  **isAutoFitColumns** | **bool?**| Autofit columns. | [optional] [default to false]
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 

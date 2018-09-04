@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 <a name="cellsworksheetvalidationsdeleteworksheetvalidation"></a>
 # **CellsWorksheetValidationsDeleteWorksheetValidation**
-> ValidationResponse CellsWorksheetValidationsDeleteWorksheetValidation (string name, string sheetName, int? validationIndex, string folder = null)
+> ValidationResponse CellsWorksheetValidationsDeleteWorksheetValidation (string name, string sheetName, int? validationIndex, string folder = null, string storage = null)
 
 Delete worksheet validation by index.
 
@@ -36,11 +36,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | Worksheet name.
             var validationIndex = 56;  // int? | The validation index.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Delete worksheet validation by index.
-                ValidationResponse result = apiInstance.CellsWorksheetValidationsDeleteWorksheetValidation(name, sheetName, validationIndex, folder);
+                ValidationResponse result = apiInstance.CellsWorksheetValidationsDeleteWorksheetValidation(name, sheetName, validationIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -60,6 +61,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| Worksheet name. | 
  **validationIndex** | **int?**| The validation index. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -78,7 +80,7 @@ No authorization required
 
 <a name="cellsworksheetvalidationsgetworksheetvalidation"></a>
 # **CellsWorksheetValidationsGetWorksheetValidation**
-> ValidationResponse CellsWorksheetValidationsGetWorksheetValidation (string name, string sheetName, int? validationIndex, string folder = null)
+> ValidationResponse CellsWorksheetValidationsGetWorksheetValidation (string name, string sheetName, int? validationIndex, string folder = null, string storage = null)
 
 Get worksheet validation by index.
 
@@ -101,11 +103,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | Worksheet name.
             var validationIndex = 56;  // int? | The validation index.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get worksheet validation by index.
-                ValidationResponse result = apiInstance.CellsWorksheetValidationsGetWorksheetValidation(name, sheetName, validationIndex, folder);
+                ValidationResponse result = apiInstance.CellsWorksheetValidationsGetWorksheetValidation(name, sheetName, validationIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -125,6 +128,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| Worksheet name. | 
  **validationIndex** | **int?**| The validation index. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -143,7 +147,7 @@ No authorization required
 
 <a name="cellsworksheetvalidationsgetworksheetvalidations"></a>
 # **CellsWorksheetValidationsGetWorksheetValidations**
-> ValidationsResponse CellsWorksheetValidationsGetWorksheetValidations (string name, string sheetName, string folder = null)
+> ValidationsResponse CellsWorksheetValidationsGetWorksheetValidations (string name, string sheetName, string folder = null, string storage = null)
 
 Get worksheet validations.
 
@@ -165,11 +169,12 @@ namespace Example
             var name = name_example;  // string | Document name.
             var sheetName = sheetName_example;  // string | Worksheet name.
             var folder = folder_example;  // string | Document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get worksheet validations.
-                ValidationsResponse result = apiInstance.CellsWorksheetValidationsGetWorksheetValidations(name, sheetName, folder);
+                ValidationsResponse result = apiInstance.CellsWorksheetValidationsGetWorksheetValidations(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -188,6 +193,7 @@ Name | Type | Description  | Notes
  **name** | **string**| Document name. | 
  **sheetName** | **string**| Worksheet name. | 
  **folder** | **string**| Document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -206,7 +212,7 @@ No authorization required
 
 <a name="cellsworksheetvalidationspostworksheetvalidation"></a>
 # **CellsWorksheetValidationsPostWorksheetValidation**
-> ValidationResponse CellsWorksheetValidationsPostWorksheetValidation (string name, string sheetName, int? validationIndex, Validation validation = null, string folder = null)
+> ValidationResponse CellsWorksheetValidationsPostWorksheetValidation (string name, string sheetName, int? validationIndex, Validation validation = null, string folder = null, string storage = null)
 
 Update worksheet validation by index.
 
@@ -230,11 +236,12 @@ namespace Example
             var validationIndex = 56;  // int? | The validation index.
             var validation = new Validation(); // Validation |  (optional) 
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Update worksheet validation by index.
-                ValidationResponse result = apiInstance.CellsWorksheetValidationsPostWorksheetValidation(name, sheetName, validationIndex, validation, folder);
+                ValidationResponse result = apiInstance.CellsWorksheetValidationsPostWorksheetValidation(name, sheetName, validationIndex, validation, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -255,6 +262,7 @@ Name | Type | Description  | Notes
  **validationIndex** | **int?**| The validation index. | 
  **validation** | [**Validation**](Validation.md)|  | [optional] 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -273,7 +281,7 @@ No authorization required
 
 <a name="cellsworksheetvalidationsputworksheetvalidation"></a>
 # **CellsWorksheetValidationsPutWorksheetValidation**
-> ValidationResponse CellsWorksheetValidationsPutWorksheetValidation (string name, string sheetName, string range = null, string folder = null)
+> ValidationResponse CellsWorksheetValidationsPutWorksheetValidation (string name, string sheetName, string range = null, string folder = null, string storage = null)
 
 Add worksheet validation at index.
 
@@ -296,11 +304,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | Worksheet name.
             var range = range_example;  // string | Specified cells area (optional) 
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Add worksheet validation at index.
-                ValidationResponse result = apiInstance.CellsWorksheetValidationsPutWorksheetValidation(name, sheetName, range, folder);
+                ValidationResponse result = apiInstance.CellsWorksheetValidationsPutWorksheetValidation(name, sheetName, range, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -320,6 +329,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| Worksheet name. | 
  **range** | **string**| Specified cells area | [optional] 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 

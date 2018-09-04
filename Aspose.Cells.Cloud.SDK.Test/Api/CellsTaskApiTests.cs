@@ -91,7 +91,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             task1.TaskParameter = param1;
             taskData.Tasks.Add(task1);
             var response = instance.CellsTaskPostRunTask(taskData);
-            Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
+            Assert.IsInstanceOf<Object>(response, "response is System.IO.Stream");
         }
         
     }

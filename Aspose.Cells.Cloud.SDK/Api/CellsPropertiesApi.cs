@@ -33,8 +33,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>CellsDocumentPropertiesResponse</returns>
-        CellsDocumentPropertiesResponse CellsPropertiesDeleteDocumentProperties (string name, string folder = null);
+        CellsDocumentPropertiesResponse CellsPropertiesDeleteDocumentProperties (string name, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete all custom document properties and clean built-in ones.
@@ -45,8 +46,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of CellsDocumentPropertiesResponse</returns>
-        ApiResponse<CellsDocumentPropertiesResponse> CellsPropertiesDeleteDocumentPropertiesWithHttpInfo (string name, string folder = null);
+        ApiResponse<CellsDocumentPropertiesResponse> CellsPropertiesDeleteDocumentPropertiesWithHttpInfo (string name, string folder = null, string storage = null);
         /// <summary>
         /// Delete document property.
         /// </summary>
@@ -57,8 +59,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The document name.</param>
         /// <param name="propertyName">The property name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>CellsDocumentPropertiesResponse</returns>
-        CellsDocumentPropertiesResponse CellsPropertiesDeleteDocumentProperty (string name, string propertyName, string folder = null);
+        CellsDocumentPropertiesResponse CellsPropertiesDeleteDocumentProperty (string name, string propertyName, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete document property.
@@ -70,8 +73,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The document name.</param>
         /// <param name="propertyName">The property name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of CellsDocumentPropertiesResponse</returns>
-        ApiResponse<CellsDocumentPropertiesResponse> CellsPropertiesDeleteDocumentPropertyWithHttpInfo (string name, string propertyName, string folder = null);
+        ApiResponse<CellsDocumentPropertiesResponse> CellsPropertiesDeleteDocumentPropertyWithHttpInfo (string name, string propertyName, string folder = null, string storage = null);
         /// <summary>
         /// Read document properties.
         /// </summary>
@@ -81,8 +85,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>CellsDocumentPropertiesResponse</returns>
-        CellsDocumentPropertiesResponse CellsPropertiesGetDocumentProperties (string name, string folder = null);
+        CellsDocumentPropertiesResponse CellsPropertiesGetDocumentProperties (string name, string folder = null, string storage = null);
 
         /// <summary>
         /// Read document properties.
@@ -93,8 +98,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of CellsDocumentPropertiesResponse</returns>
-        ApiResponse<CellsDocumentPropertiesResponse> CellsPropertiesGetDocumentPropertiesWithHttpInfo (string name, string folder = null);
+        ApiResponse<CellsDocumentPropertiesResponse> CellsPropertiesGetDocumentPropertiesWithHttpInfo (string name, string folder = null, string storage = null);
         /// <summary>
         /// Read document property by name.
         /// </summary>
@@ -105,8 +111,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The document name.</param>
         /// <param name="propertyName">The property name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>CellsDocumentPropertyResponse</returns>
-        CellsDocumentPropertyResponse CellsPropertiesGetDocumentProperty (string name, string propertyName, string folder = null);
+        CellsDocumentPropertyResponse CellsPropertiesGetDocumentProperty (string name, string propertyName, string folder = null, string storage = null);
 
         /// <summary>
         /// Read document property by name.
@@ -118,8 +125,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The document name.</param>
         /// <param name="propertyName">The property name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of CellsDocumentPropertyResponse</returns>
-        ApiResponse<CellsDocumentPropertyResponse> CellsPropertiesGetDocumentPropertyWithHttpInfo (string name, string propertyName, string folder = null);
+        ApiResponse<CellsDocumentPropertyResponse> CellsPropertiesGetDocumentPropertyWithHttpInfo (string name, string propertyName, string folder = null, string storage = null);
         /// <summary>
         /// Set/create document property.
         /// </summary>
@@ -131,8 +139,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="propertyName">The property name.</param>
         /// <param name="property">with new property value. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>CellsDocumentPropertyResponse</returns>
-        CellsDocumentPropertyResponse CellsPropertiesPutDocumentProperty (string name, string propertyName, CellsDocumentProperty property = null, string folder = null);
+        CellsDocumentPropertyResponse CellsPropertiesPutDocumentProperty (string name, string propertyName, CellsDocumentProperty property = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Set/create document property.
@@ -145,8 +154,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="propertyName">The property name.</param>
         /// <param name="property">with new property value. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of CellsDocumentPropertyResponse</returns>
-        ApiResponse<CellsDocumentPropertyResponse> CellsPropertiesPutDocumentPropertyWithHttpInfo (string name, string propertyName, CellsDocumentProperty property = null, string folder = null);
+        ApiResponse<CellsDocumentPropertyResponse> CellsPropertiesPutDocumentPropertyWithHttpInfo (string name, string propertyName, CellsDocumentProperty property = null, string folder = null, string storage = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -158,8 +168,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of CellsDocumentPropertiesResponse</returns>
-        System.Threading.Tasks.Task<CellsDocumentPropertiesResponse> CellsPropertiesDeleteDocumentPropertiesAsync (string name, string folder = null);
+        System.Threading.Tasks.Task<CellsDocumentPropertiesResponse> CellsPropertiesDeleteDocumentPropertiesAsync (string name, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete all custom document properties and clean built-in ones.
@@ -170,8 +181,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (CellsDocumentPropertiesResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CellsDocumentPropertiesResponse>> CellsPropertiesDeleteDocumentPropertiesAsyncWithHttpInfo (string name, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<CellsDocumentPropertiesResponse>> CellsPropertiesDeleteDocumentPropertiesAsyncWithHttpInfo (string name, string folder = null, string storage = null);
         /// <summary>
         /// Delete document property.
         /// </summary>
@@ -182,8 +194,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The document name.</param>
         /// <param name="propertyName">The property name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of CellsDocumentPropertiesResponse</returns>
-        System.Threading.Tasks.Task<CellsDocumentPropertiesResponse> CellsPropertiesDeleteDocumentPropertyAsync (string name, string propertyName, string folder = null);
+        System.Threading.Tasks.Task<CellsDocumentPropertiesResponse> CellsPropertiesDeleteDocumentPropertyAsync (string name, string propertyName, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete document property.
@@ -195,8 +208,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The document name.</param>
         /// <param name="propertyName">The property name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (CellsDocumentPropertiesResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CellsDocumentPropertiesResponse>> CellsPropertiesDeleteDocumentPropertyAsyncWithHttpInfo (string name, string propertyName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<CellsDocumentPropertiesResponse>> CellsPropertiesDeleteDocumentPropertyAsyncWithHttpInfo (string name, string propertyName, string folder = null, string storage = null);
         /// <summary>
         /// Read document properties.
         /// </summary>
@@ -206,8 +220,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of CellsDocumentPropertiesResponse</returns>
-        System.Threading.Tasks.Task<CellsDocumentPropertiesResponse> CellsPropertiesGetDocumentPropertiesAsync (string name, string folder = null);
+        System.Threading.Tasks.Task<CellsDocumentPropertiesResponse> CellsPropertiesGetDocumentPropertiesAsync (string name, string folder = null, string storage = null);
 
         /// <summary>
         /// Read document properties.
@@ -218,8 +233,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (CellsDocumentPropertiesResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CellsDocumentPropertiesResponse>> CellsPropertiesGetDocumentPropertiesAsyncWithHttpInfo (string name, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<CellsDocumentPropertiesResponse>> CellsPropertiesGetDocumentPropertiesAsyncWithHttpInfo (string name, string folder = null, string storage = null);
         /// <summary>
         /// Read document property by name.
         /// </summary>
@@ -230,8 +246,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The document name.</param>
         /// <param name="propertyName">The property name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of CellsDocumentPropertyResponse</returns>
-        System.Threading.Tasks.Task<CellsDocumentPropertyResponse> CellsPropertiesGetDocumentPropertyAsync (string name, string propertyName, string folder = null);
+        System.Threading.Tasks.Task<CellsDocumentPropertyResponse> CellsPropertiesGetDocumentPropertyAsync (string name, string propertyName, string folder = null, string storage = null);
 
         /// <summary>
         /// Read document property by name.
@@ -243,8 +260,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The document name.</param>
         /// <param name="propertyName">The property name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (CellsDocumentPropertyResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CellsDocumentPropertyResponse>> CellsPropertiesGetDocumentPropertyAsyncWithHttpInfo (string name, string propertyName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<CellsDocumentPropertyResponse>> CellsPropertiesGetDocumentPropertyAsyncWithHttpInfo (string name, string propertyName, string folder = null, string storage = null);
         /// <summary>
         /// Set/create document property.
         /// </summary>
@@ -256,8 +274,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="propertyName">The property name.</param>
         /// <param name="property">with new property value. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of CellsDocumentPropertyResponse</returns>
-        System.Threading.Tasks.Task<CellsDocumentPropertyResponse> CellsPropertiesPutDocumentPropertyAsync (string name, string propertyName, CellsDocumentProperty property = null, string folder = null);
+        System.Threading.Tasks.Task<CellsDocumentPropertyResponse> CellsPropertiesPutDocumentPropertyAsync (string name, string propertyName, CellsDocumentProperty property = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Set/create document property.
@@ -270,8 +289,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="propertyName">The property name.</param>
         /// <param name="property">with new property value. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (CellsDocumentPropertyResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CellsDocumentPropertyResponse>> CellsPropertiesPutDocumentPropertyAsyncWithHttpInfo (string name, string propertyName, CellsDocumentProperty property = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<CellsDocumentPropertyResponse>> CellsPropertiesPutDocumentPropertyAsyncWithHttpInfo (string name, string propertyName, CellsDocumentProperty property = null, string folder = null, string storage = null);
         #endregion Asynchronous Operations
     }
 
@@ -298,6 +318,25 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 this.Configuration.ApiClient.Configuration = this.Configuration;
             }
         }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsPropertiesApi"/> class.
+        /// </summary>
+        /// <returns></returns>
+        public CellsPropertiesApi(String basePath, String accesstoken)
+        {
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + accesstoken);
+            this.Configuration = new Configuration(new ApiClient(basePath),headerParameters);
+
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CellsPropertiesApi"/> class
@@ -312,6 +351,28 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
                 this.Configuration = configuration;
 
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsPropertiesApi"/> class
+        /// using Configuration object
+        /// </summary>
+        /// <param name="configuration">An instance of Configuration</param>
+        /// <returns></returns>
+        public CellsPropertiesApi(String grantType,String appSID,String appKey)
+        {
+            OAuthApi oauth2 = new OAuthApi("https://api.aspose.cloud");
+            var oauth2response = oauth2.OAuthPost(grantType, appSID, appKey);
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + oauth2response.AccessToken);
+            this.Configuration =  new Configuration(new ApiClient(), headerParameters);
             ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
@@ -390,10 +451,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>CellsDocumentPropertiesResponse</returns>
-        public CellsDocumentPropertiesResponse CellsPropertiesDeleteDocumentProperties (string name, string folder = null)
+        public CellsDocumentPropertiesResponse CellsPropertiesDeleteDocumentProperties (string name, string folder = null, string storage = null)
         {
-             ApiResponse<CellsDocumentPropertiesResponse> localVarResponse = CellsPropertiesDeleteDocumentPropertiesWithHttpInfo(name, folder);
+             ApiResponse<CellsDocumentPropertiesResponse> localVarResponse = CellsPropertiesDeleteDocumentPropertiesWithHttpInfo(name, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -403,8 +465,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of CellsDocumentPropertiesResponse</returns>
-        public ApiResponse< CellsDocumentPropertiesResponse > CellsPropertiesDeleteDocumentPropertiesWithHttpInfo (string name, string folder = null)
+        public ApiResponse< CellsDocumentPropertiesResponse > CellsPropertiesDeleteDocumentPropertiesWithHttpInfo (string name, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -434,6 +497,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -460,10 +524,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of CellsDocumentPropertiesResponse</returns>
-        public async System.Threading.Tasks.Task<CellsDocumentPropertiesResponse> CellsPropertiesDeleteDocumentPropertiesAsync (string name, string folder = null)
+        public async System.Threading.Tasks.Task<CellsDocumentPropertiesResponse> CellsPropertiesDeleteDocumentPropertiesAsync (string name, string folder = null, string storage = null)
         {
-             ApiResponse<CellsDocumentPropertiesResponse> localVarResponse = await CellsPropertiesDeleteDocumentPropertiesAsyncWithHttpInfo(name, folder);
+             ApiResponse<CellsDocumentPropertiesResponse> localVarResponse = await CellsPropertiesDeleteDocumentPropertiesAsyncWithHttpInfo(name, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -474,8 +539,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (CellsDocumentPropertiesResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CellsDocumentPropertiesResponse>> CellsPropertiesDeleteDocumentPropertiesAsyncWithHttpInfo (string name, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<CellsDocumentPropertiesResponse>> CellsPropertiesDeleteDocumentPropertiesAsyncWithHttpInfo (string name, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -505,6 +571,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -532,10 +599,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The document name.</param>
         /// <param name="propertyName">The property name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>CellsDocumentPropertiesResponse</returns>
-        public CellsDocumentPropertiesResponse CellsPropertiesDeleteDocumentProperty (string name, string propertyName, string folder = null)
+        public CellsDocumentPropertiesResponse CellsPropertiesDeleteDocumentProperty (string name, string propertyName, string folder = null, string storage = null)
         {
-             ApiResponse<CellsDocumentPropertiesResponse> localVarResponse = CellsPropertiesDeleteDocumentPropertyWithHttpInfo(name, propertyName, folder);
+             ApiResponse<CellsDocumentPropertiesResponse> localVarResponse = CellsPropertiesDeleteDocumentPropertyWithHttpInfo(name, propertyName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -546,8 +614,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The document name.</param>
         /// <param name="propertyName">The property name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of CellsDocumentPropertiesResponse</returns>
-        public ApiResponse< CellsDocumentPropertiesResponse > CellsPropertiesDeleteDocumentPropertyWithHttpInfo (string name, string propertyName, string folder = null)
+        public ApiResponse< CellsDocumentPropertiesResponse > CellsPropertiesDeleteDocumentPropertyWithHttpInfo (string name, string propertyName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -581,6 +650,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (propertyName != null) localVarPathParams.Add("propertyName", Configuration.ApiClient.ParameterToString(propertyName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -608,10 +678,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The document name.</param>
         /// <param name="propertyName">The property name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of CellsDocumentPropertiesResponse</returns>
-        public async System.Threading.Tasks.Task<CellsDocumentPropertiesResponse> CellsPropertiesDeleteDocumentPropertyAsync (string name, string propertyName, string folder = null)
+        public async System.Threading.Tasks.Task<CellsDocumentPropertiesResponse> CellsPropertiesDeleteDocumentPropertyAsync (string name, string propertyName, string folder = null, string storage = null)
         {
-             ApiResponse<CellsDocumentPropertiesResponse> localVarResponse = await CellsPropertiesDeleteDocumentPropertyAsyncWithHttpInfo(name, propertyName, folder);
+             ApiResponse<CellsDocumentPropertiesResponse> localVarResponse = await CellsPropertiesDeleteDocumentPropertyAsyncWithHttpInfo(name, propertyName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -623,8 +694,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The document name.</param>
         /// <param name="propertyName">The property name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (CellsDocumentPropertiesResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CellsDocumentPropertiesResponse>> CellsPropertiesDeleteDocumentPropertyAsyncWithHttpInfo (string name, string propertyName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<CellsDocumentPropertiesResponse>> CellsPropertiesDeleteDocumentPropertyAsyncWithHttpInfo (string name, string propertyName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -658,6 +730,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (propertyName != null) localVarPathParams.Add("propertyName", Configuration.ApiClient.ParameterToString(propertyName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -684,10 +757,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>CellsDocumentPropertiesResponse</returns>
-        public CellsDocumentPropertiesResponse CellsPropertiesGetDocumentProperties (string name, string folder = null)
+        public CellsDocumentPropertiesResponse CellsPropertiesGetDocumentProperties (string name, string folder = null, string storage = null)
         {
-             ApiResponse<CellsDocumentPropertiesResponse> localVarResponse = CellsPropertiesGetDocumentPropertiesWithHttpInfo(name, folder);
+             ApiResponse<CellsDocumentPropertiesResponse> localVarResponse = CellsPropertiesGetDocumentPropertiesWithHttpInfo(name, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -697,8 +771,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of CellsDocumentPropertiesResponse</returns>
-        public ApiResponse< CellsDocumentPropertiesResponse > CellsPropertiesGetDocumentPropertiesWithHttpInfo (string name, string folder = null)
+        public ApiResponse< CellsDocumentPropertiesResponse > CellsPropertiesGetDocumentPropertiesWithHttpInfo (string name, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -728,6 +803,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -754,10 +830,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of CellsDocumentPropertiesResponse</returns>
-        public async System.Threading.Tasks.Task<CellsDocumentPropertiesResponse> CellsPropertiesGetDocumentPropertiesAsync (string name, string folder = null)
+        public async System.Threading.Tasks.Task<CellsDocumentPropertiesResponse> CellsPropertiesGetDocumentPropertiesAsync (string name, string folder = null, string storage = null)
         {
-             ApiResponse<CellsDocumentPropertiesResponse> localVarResponse = await CellsPropertiesGetDocumentPropertiesAsyncWithHttpInfo(name, folder);
+             ApiResponse<CellsDocumentPropertiesResponse> localVarResponse = await CellsPropertiesGetDocumentPropertiesAsyncWithHttpInfo(name, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -768,8 +845,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The document name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (CellsDocumentPropertiesResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CellsDocumentPropertiesResponse>> CellsPropertiesGetDocumentPropertiesAsyncWithHttpInfo (string name, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<CellsDocumentPropertiesResponse>> CellsPropertiesGetDocumentPropertiesAsyncWithHttpInfo (string name, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -799,6 +877,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -826,10 +905,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The document name.</param>
         /// <param name="propertyName">The property name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>CellsDocumentPropertyResponse</returns>
-        public CellsDocumentPropertyResponse CellsPropertiesGetDocumentProperty (string name, string propertyName, string folder = null)
+        public CellsDocumentPropertyResponse CellsPropertiesGetDocumentProperty (string name, string propertyName, string folder = null, string storage = null)
         {
-             ApiResponse<CellsDocumentPropertyResponse> localVarResponse = CellsPropertiesGetDocumentPropertyWithHttpInfo(name, propertyName, folder);
+             ApiResponse<CellsDocumentPropertyResponse> localVarResponse = CellsPropertiesGetDocumentPropertyWithHttpInfo(name, propertyName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -840,8 +920,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The document name.</param>
         /// <param name="propertyName">The property name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of CellsDocumentPropertyResponse</returns>
-        public ApiResponse< CellsDocumentPropertyResponse > CellsPropertiesGetDocumentPropertyWithHttpInfo (string name, string propertyName, string folder = null)
+        public ApiResponse< CellsDocumentPropertyResponse > CellsPropertiesGetDocumentPropertyWithHttpInfo (string name, string propertyName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -875,6 +956,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (propertyName != null) localVarPathParams.Add("propertyName", Configuration.ApiClient.ParameterToString(propertyName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -902,10 +984,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The document name.</param>
         /// <param name="propertyName">The property name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of CellsDocumentPropertyResponse</returns>
-        public async System.Threading.Tasks.Task<CellsDocumentPropertyResponse> CellsPropertiesGetDocumentPropertyAsync (string name, string propertyName, string folder = null)
+        public async System.Threading.Tasks.Task<CellsDocumentPropertyResponse> CellsPropertiesGetDocumentPropertyAsync (string name, string propertyName, string folder = null, string storage = null)
         {
-             ApiResponse<CellsDocumentPropertyResponse> localVarResponse = await CellsPropertiesGetDocumentPropertyAsyncWithHttpInfo(name, propertyName, folder);
+             ApiResponse<CellsDocumentPropertyResponse> localVarResponse = await CellsPropertiesGetDocumentPropertyAsyncWithHttpInfo(name, propertyName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -917,8 +1000,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The document name.</param>
         /// <param name="propertyName">The property name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (CellsDocumentPropertyResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CellsDocumentPropertyResponse>> CellsPropertiesGetDocumentPropertyAsyncWithHttpInfo (string name, string propertyName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<CellsDocumentPropertyResponse>> CellsPropertiesGetDocumentPropertyAsyncWithHttpInfo (string name, string propertyName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -952,6 +1036,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (propertyName != null) localVarPathParams.Add("propertyName", Configuration.ApiClient.ParameterToString(propertyName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -980,10 +1065,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="propertyName">The property name.</param>
         /// <param name="property">with new property value. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>CellsDocumentPropertyResponse</returns>
-        public CellsDocumentPropertyResponse CellsPropertiesPutDocumentProperty (string name, string propertyName, CellsDocumentProperty property = null, string folder = null)
+        public CellsDocumentPropertyResponse CellsPropertiesPutDocumentProperty (string name, string propertyName, CellsDocumentProperty property = null, string folder = null, string storage = null)
         {
-             ApiResponse<CellsDocumentPropertyResponse> localVarResponse = CellsPropertiesPutDocumentPropertyWithHttpInfo(name, propertyName, property, folder);
+             ApiResponse<CellsDocumentPropertyResponse> localVarResponse = CellsPropertiesPutDocumentPropertyWithHttpInfo(name, propertyName, property, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -995,8 +1081,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="propertyName">The property name.</param>
         /// <param name="property">with new property value. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of CellsDocumentPropertyResponse</returns>
-        public ApiResponse< CellsDocumentPropertyResponse > CellsPropertiesPutDocumentPropertyWithHttpInfo (string name, string propertyName, CellsDocumentProperty property = null, string folder = null)
+        public ApiResponse< CellsDocumentPropertyResponse > CellsPropertiesPutDocumentPropertyWithHttpInfo (string name, string propertyName, CellsDocumentProperty property = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1030,6 +1117,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (propertyName != null) localVarPathParams.Add("propertyName", Configuration.ApiClient.ParameterToString(propertyName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (property != null && property.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(property); // http body (model) parameter
@@ -1066,10 +1154,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="propertyName">The property name.</param>
         /// <param name="property">with new property value. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of CellsDocumentPropertyResponse</returns>
-        public async System.Threading.Tasks.Task<CellsDocumentPropertyResponse> CellsPropertiesPutDocumentPropertyAsync (string name, string propertyName, CellsDocumentProperty property = null, string folder = null)
+        public async System.Threading.Tasks.Task<CellsDocumentPropertyResponse> CellsPropertiesPutDocumentPropertyAsync (string name, string propertyName, CellsDocumentProperty property = null, string folder = null, string storage = null)
         {
-             ApiResponse<CellsDocumentPropertyResponse> localVarResponse = await CellsPropertiesPutDocumentPropertyAsyncWithHttpInfo(name, propertyName, property, folder);
+             ApiResponse<CellsDocumentPropertyResponse> localVarResponse = await CellsPropertiesPutDocumentPropertyAsyncWithHttpInfo(name, propertyName, property, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1082,8 +1171,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="propertyName">The property name.</param>
         /// <param name="property">with new property value. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (CellsDocumentPropertyResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CellsDocumentPropertyResponse>> CellsPropertiesPutDocumentPropertyAsyncWithHttpInfo (string name, string propertyName, CellsDocumentProperty property = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<CellsDocumentPropertyResponse>> CellsPropertiesPutDocumentPropertyAsyncWithHttpInfo (string name, string propertyName, CellsDocumentProperty property = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1117,6 +1207,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (propertyName != null) localVarPathParams.Add("propertyName", Configuration.ApiClient.ParameterToString(propertyName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (property != null && property.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(property); // http body (model) parameter

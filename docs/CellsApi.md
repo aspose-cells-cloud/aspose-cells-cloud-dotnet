@@ -47,7 +47,7 @@ Method | HTTP request | Description
 
 <a name="cellsdeleteworksheetcolumns"></a>
 # **CellsDeleteWorksheetColumns**
-> ColumnsResponse CellsDeleteWorksheetColumns (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null)
+> ColumnsResponse CellsDeleteWorksheetColumns (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null, string storage = null)
 
 Delete worksheet columns.
 
@@ -72,11 +72,12 @@ namespace Example
             var columns = 56;  // int? | The columns.
             var updateReference = true;  // bool? | The update reference.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Delete worksheet columns.
-                ColumnsResponse result = apiInstance.CellsDeleteWorksheetColumns(name, sheetName, columnIndex, columns, updateReference, folder);
+                ColumnsResponse result = apiInstance.CellsDeleteWorksheetColumns(name, sheetName, columnIndex, columns, updateReference, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -98,6 +99,7 @@ Name | Type | Description  | Notes
  **columns** | **int?**| The columns. | 
  **updateReference** | **bool?**| The update reference. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -116,7 +118,7 @@ No authorization required
 
 <a name="cellsdeleteworksheetrow"></a>
 # **CellsDeleteWorksheetRow**
-> SaaSposeResponse CellsDeleteWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null)
+> SaaSposeResponse CellsDeleteWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null, string storage = null)
 
 Delete worksheet row.
 
@@ -139,11 +141,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | The worksheet bame.
             var rowIndex = 56;  // int? | The row index.
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Delete worksheet row.
-                SaaSposeResponse result = apiInstance.CellsDeleteWorksheetRow(name, sheetName, rowIndex, folder);
+                SaaSposeResponse result = apiInstance.CellsDeleteWorksheetRow(name, sheetName, rowIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -163,6 +166,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| The worksheet bame. | 
  **rowIndex** | **int?**| The row index. | 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -181,7 +185,7 @@ No authorization required
 
 <a name="cellsdeleteworksheetrows"></a>
 # **CellsDeleteWorksheetRows**
-> SaaSposeResponse CellsDeleteWorksheetRows (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null)
+> SaaSposeResponse CellsDeleteWorksheetRows (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null)
 
 Delete several worksheet rows.
 
@@ -206,11 +210,12 @@ namespace Example
             var totalRows = 56;  // int? | Number of rows to be operated. (optional)  (default to 1)
             var updateReference = true;  // bool? | Indicates if update references in other worksheets. (optional)  (default to true)
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Delete several worksheet rows.
-                SaaSposeResponse result = apiInstance.CellsDeleteWorksheetRows(name, sheetName, startrow, totalRows, updateReference, folder);
+                SaaSposeResponse result = apiInstance.CellsDeleteWorksheetRows(name, sheetName, startrow, totalRows, updateReference, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -232,6 +237,7 @@ Name | Type | Description  | Notes
  **totalRows** | **int?**| Number of rows to be operated. | [optional] [default to 1]
  **updateReference** | **bool?**| Indicates if update references in other worksheets. | [optional] [default to true]
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -250,7 +256,7 @@ No authorization required
 
 <a name="cellsgetworksheetcell"></a>
 # **CellsGetWorksheetCell**
-> System.IO.Stream CellsGetWorksheetCell (string name, string sheetName, string cellOrMethodName, string folder = null)
+> Object CellsGetWorksheetCell (string name, string sheetName, string cellOrMethodName, string folder = null, string storage = null)
 
 Read cell data by cell's name.
 
@@ -273,11 +279,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | Worksheet name.
             var cellOrMethodName = cellOrMethodName_example;  // string | The cell's or method name. (Method name like firstcell, endcell etc.)
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Read cell data by cell's name.
-                System.IO.Stream result = apiInstance.CellsGetWorksheetCell(name, sheetName, cellOrMethodName, folder);
+                Object result = apiInstance.CellsGetWorksheetCell(name, sheetName, cellOrMethodName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -297,10 +304,11 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| Worksheet name. | 
  **cellOrMethodName** | **string**| The cell&#39;s or method name. (Method name like firstcell, endcell etc.) | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
-**System.IO.Stream**
+**Object**
 
 ### Authorization
 
@@ -315,7 +323,7 @@ No authorization required
 
 <a name="cellsgetworksheetcellstyle"></a>
 # **CellsGetWorksheetCellStyle**
-> StyleResponse CellsGetWorksheetCellStyle (string name, string sheetName, string cellName, string folder = null)
+> StyleResponse CellsGetWorksheetCellStyle (string name, string sheetName, string cellName, string folder = null, string storage = null)
 
 Read cell's style info.
 
@@ -338,11 +346,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | Worksheet name.
             var cellName = cellName_example;  // string | Cell's name.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Read cell's style info.
-                StyleResponse result = apiInstance.CellsGetWorksheetCellStyle(name, sheetName, cellName, folder);
+                StyleResponse result = apiInstance.CellsGetWorksheetCellStyle(name, sheetName, cellName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -362,6 +371,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| Worksheet name. | 
  **cellName** | **string**| Cell&#39;s name. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -380,7 +390,7 @@ No authorization required
 
 <a name="cellsgetworksheetcells"></a>
 # **CellsGetWorksheetCells**
-> CellsResponse CellsGetWorksheetCells (string name, string sheetName, int? offest = null, int? count = null, string folder = null)
+> CellsResponse CellsGetWorksheetCells (string name, string sheetName, int? offest = null, int? count = null, string folder = null, string storage = null)
 
 Get cells info.
 
@@ -404,11 +414,12 @@ namespace Example
             var offest = 56;  // int? | Begginig offset. (optional)  (default to 0)
             var count = 56;  // int? | Maximum amount of cells in the response. (optional)  (default to 0)
             var folder = folder_example;  // string | Document's folder name. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get cells info.
-                CellsResponse result = apiInstance.CellsGetWorksheetCells(name, sheetName, offest, count, folder);
+                CellsResponse result = apiInstance.CellsGetWorksheetCells(name, sheetName, offest, count, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -429,6 +440,7 @@ Name | Type | Description  | Notes
  **offest** | **int?**| Begginig offset. | [optional] [default to 0]
  **count** | **int?**| Maximum amount of cells in the response. | [optional] [default to 0]
  **folder** | **string**| Document&#39;s folder name. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -447,7 +459,7 @@ No authorization required
 
 <a name="cellsgetworksheetcolumn"></a>
 # **CellsGetWorksheetColumn**
-> ColumnResponse CellsGetWorksheetColumn (string name, string sheetName, int? columnIndex, string folder = null)
+> ColumnResponse CellsGetWorksheetColumn (string name, string sheetName, int? columnIndex, string folder = null, string storage = null)
 
 Read worksheet column data by column's index.
 
@@ -470,11 +482,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | The worksheet name.
             var columnIndex = 56;  // int? | The column index.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Read worksheet column data by column's index.
-                ColumnResponse result = apiInstance.CellsGetWorksheetColumn(name, sheetName, columnIndex, folder);
+                ColumnResponse result = apiInstance.CellsGetWorksheetColumn(name, sheetName, columnIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -494,6 +507,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| The worksheet name. | 
  **columnIndex** | **int?**| The column index. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -512,7 +526,7 @@ No authorization required
 
 <a name="cellsgetworksheetcolumns"></a>
 # **CellsGetWorksheetColumns**
-> ColumnsResponse CellsGetWorksheetColumns (string name, string sheetName, string folder = null)
+> ColumnsResponse CellsGetWorksheetColumns (string name, string sheetName, string folder = null, string storage = null)
 
 Read worksheet columns info.
 
@@ -534,11 +548,12 @@ namespace Example
             var name = name_example;  // string | The workbook name.
             var sheetName = sheetName_example;  // string | The worksheet name.
             var folder = folder_example;  // string | The workdook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Read worksheet columns info.
-                ColumnsResponse result = apiInstance.CellsGetWorksheetColumns(name, sheetName, folder);
+                ColumnsResponse result = apiInstance.CellsGetWorksheetColumns(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -557,6 +572,7 @@ Name | Type | Description  | Notes
  **name** | **string**| The workbook name. | 
  **sheetName** | **string**| The worksheet name. | 
  **folder** | **string**| The workdook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -575,7 +591,7 @@ No authorization required
 
 <a name="cellsgetworksheetrow"></a>
 # **CellsGetWorksheetRow**
-> RowResponse CellsGetWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null)
+> RowResponse CellsGetWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null, string storage = null)
 
 Read worksheet row data by row's index.
 
@@ -598,11 +614,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | The worksheet name.
             var rowIndex = 56;  // int? | The row index.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Read worksheet row data by row's index.
-                RowResponse result = apiInstance.CellsGetWorksheetRow(name, sheetName, rowIndex, folder);
+                RowResponse result = apiInstance.CellsGetWorksheetRow(name, sheetName, rowIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -622,6 +639,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| The worksheet name. | 
  **rowIndex** | **int?**| The row index. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -640,7 +658,7 @@ No authorization required
 
 <a name="cellsgetworksheetrows"></a>
 # **CellsGetWorksheetRows**
-> RowsResponse CellsGetWorksheetRows (string name, string sheetName, string folder = null)
+> RowsResponse CellsGetWorksheetRows (string name, string sheetName, string folder = null, string storage = null)
 
 Read worksheet rows info.
 
@@ -662,11 +680,12 @@ namespace Example
             var name = name_example;  // string | The workbook name.
             var sheetName = sheetName_example;  // string | The worksheet name.
             var folder = folder_example;  // string | The workdook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Read worksheet rows info.
-                RowsResponse result = apiInstance.CellsGetWorksheetRows(name, sheetName, folder);
+                RowsResponse result = apiInstance.CellsGetWorksheetRows(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -685,6 +704,7 @@ Name | Type | Description  | Notes
  **name** | **string**| The workbook name. | 
  **sheetName** | **string**| The worksheet name. | 
  **folder** | **string**| The workdook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -703,7 +723,7 @@ No authorization required
 
 <a name="cellspostcellcalculate"></a>
 # **CellsPostCellCalculate**
-> SaaSposeResponse CellsPostCellCalculate (string name, string sheetName, string cellName, CalculationOptions options = null, string folder = null)
+> SaaSposeResponse CellsPostCellCalculate (string name, string sheetName, string cellName, CalculationOptions options = null, string folder = null, string storage = null)
 
 Cell calculate formula
 
@@ -727,11 +747,12 @@ namespace Example
             var cellName = cellName_example;  // string | 
             var options = new CalculationOptions(); // CalculationOptions |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Cell calculate formula
-                SaaSposeResponse result = apiInstance.CellsPostCellCalculate(name, sheetName, cellName, options, folder);
+                SaaSposeResponse result = apiInstance.CellsPostCellCalculate(name, sheetName, cellName, options, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -752,6 +773,7 @@ Name | Type | Description  | Notes
  **cellName** | **string**|  | 
  **options** | [**CalculationOptions**](CalculationOptions.md)|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -770,7 +792,7 @@ No authorization required
 
 <a name="cellspostcellcharacters"></a>
 # **CellsPostCellCharacters**
-> SaaSposeResponse CellsPostCellCharacters (string name, string sheetName, string cellName, List<FontSetting> options = null, string folder = null)
+> SaaSposeResponse CellsPostCellCharacters (string name, string sheetName, string cellName, List<FontSetting> options = null, string folder = null, string storage = null)
 
 Set cell characters 
 
@@ -794,11 +816,12 @@ namespace Example
             var cellName = cellName_example;  // string | 
             var options = new List<FontSetting>(); // List<FontSetting> |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Set cell characters 
-                SaaSposeResponse result = apiInstance.CellsPostCellCharacters(name, sheetName, cellName, options, folder);
+                SaaSposeResponse result = apiInstance.CellsPostCellCharacters(name, sheetName, cellName, options, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -819,6 +842,7 @@ Name | Type | Description  | Notes
  **cellName** | **string**|  | 
  **options** | [**List&lt;FontSetting&gt;**](FontSetting.md)|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -837,7 +861,7 @@ No authorization required
 
 <a name="cellspostclearcontents"></a>
 # **CellsPostClearContents**
-> SaaSposeResponse CellsPostClearContents (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null)
+> SaaSposeResponse CellsPostClearContents (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storage = null)
 
 Clear cells contents.
 
@@ -864,11 +888,12 @@ namespace Example
             var endRow = 56;  // int? | The end row. (optional) 
             var endColumn = 56;  // int? | The end column. (optional) 
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Clear cells contents.
-                SaaSposeResponse result = apiInstance.CellsPostClearContents(name, sheetName, range, startRow, startColumn, endRow, endColumn, folder);
+                SaaSposeResponse result = apiInstance.CellsPostClearContents(name, sheetName, range, startRow, startColumn, endRow, endColumn, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -892,6 +917,7 @@ Name | Type | Description  | Notes
  **endRow** | **int?**| The end row. | [optional] 
  **endColumn** | **int?**| The end column. | [optional] 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -910,7 +936,7 @@ No authorization required
 
 <a name="cellspostclearformats"></a>
 # **CellsPostClearFormats**
-> SaaSposeResponse CellsPostClearFormats (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null)
+> SaaSposeResponse CellsPostClearFormats (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storage = null)
 
 Clear cells contents.
 
@@ -937,11 +963,12 @@ namespace Example
             var endRow = 56;  // int? | The end row. (optional) 
             var endColumn = 56;  // int? | The end column. (optional) 
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Clear cells contents.
-                SaaSposeResponse result = apiInstance.CellsPostClearFormats(name, sheetName, range, startRow, startColumn, endRow, endColumn, folder);
+                SaaSposeResponse result = apiInstance.CellsPostClearFormats(name, sheetName, range, startRow, startColumn, endRow, endColumn, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -965,6 +992,7 @@ Name | Type | Description  | Notes
  **endRow** | **int?**| The end row. | [optional] 
  **endColumn** | **int?**| The end column. | [optional] 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -983,7 +1011,7 @@ No authorization required
 
 <a name="cellspostcolumnstyle"></a>
 # **CellsPostColumnStyle**
-> SaaSposeResponse CellsPostColumnStyle (string name, string sheetName, int? columnIndex, Style style = null, string folder = null)
+> SaaSposeResponse CellsPostColumnStyle (string name, string sheetName, int? columnIndex, Style style = null, string folder = null, string storage = null)
 
 Set column style
 
@@ -1007,11 +1035,12 @@ namespace Example
             var columnIndex = 56;  // int? | The column index.
             var style = new Style(); // Style | Style dto (optional) 
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Set column style
-                SaaSposeResponse result = apiInstance.CellsPostColumnStyle(name, sheetName, columnIndex, style, folder);
+                SaaSposeResponse result = apiInstance.CellsPostColumnStyle(name, sheetName, columnIndex, style, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1032,6 +1061,7 @@ Name | Type | Description  | Notes
  **columnIndex** | **int?**| The column index. | 
  **style** | [**Style**](Style.md)| Style dto | [optional] 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1050,7 +1080,7 @@ No authorization required
 
 <a name="cellspostcopycellintocell"></a>
 # **CellsPostCopyCellIntoCell**
-> SaaSposeResponse CellsPostCopyCellIntoCell (string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null)
+> SaaSposeResponse CellsPostCopyCellIntoCell (string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null, string storage = null)
 
 Copy cell into cell
 
@@ -1077,11 +1107,12 @@ namespace Example
             var row = 56;  // int? | Source row (optional) 
             var column = 56;  // int? | Source column (optional) 
             var folder = folder_example;  // string | Folder name (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Copy cell into cell
-                SaaSposeResponse result = apiInstance.CellsPostCopyCellIntoCell(name, destCellName, sheetName, worksheet, cellname, row, column, folder);
+                SaaSposeResponse result = apiInstance.CellsPostCopyCellIntoCell(name, destCellName, sheetName, worksheet, cellname, row, column, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1105,6 +1136,7 @@ Name | Type | Description  | Notes
  **row** | **int?**| Source row | [optional] 
  **column** | **int?**| Source column | [optional] 
  **folder** | **string**| Folder name | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1123,7 +1155,7 @@ No authorization required
 
 <a name="cellspostcopyworksheetcolumns"></a>
 # **CellsPostCopyWorksheetColumns**
-> SaaSposeResponse CellsPostCopyWorksheetColumns (string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null)
+> SaaSposeResponse CellsPostCopyWorksheetColumns (string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null, string storage = null)
 
 Copy worksheet columns.
 
@@ -1149,11 +1181,12 @@ namespace Example
             var columnNumber = 56;  // int? | The copied column number
             var worksheet = worksheet_example;  // string | The Worksheet (optional)  (default to )
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Copy worksheet columns.
-                SaaSposeResponse result = apiInstance.CellsPostCopyWorksheetColumns(name, sheetName, sourceColumnIndex, destinationColumnIndex, columnNumber, worksheet, folder);
+                SaaSposeResponse result = apiInstance.CellsPostCopyWorksheetColumns(name, sheetName, sourceColumnIndex, destinationColumnIndex, columnNumber, worksheet, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1176,6 +1209,7 @@ Name | Type | Description  | Notes
  **columnNumber** | **int?**| The copied column number | 
  **worksheet** | **string**| The Worksheet | [optional] [default to ]
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1194,7 +1228,7 @@ No authorization required
 
 <a name="cellspostcopyworksheetrows"></a>
 # **CellsPostCopyWorksheetRows**
-> SaaSposeResponse CellsPostCopyWorksheetRows (string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null)
+> SaaSposeResponse CellsPostCopyWorksheetRows (string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null, string storage = null)
 
 Copy worksheet rows.
 
@@ -1220,11 +1254,12 @@ namespace Example
             var rowNumber = 56;  // int? | The copied row number
             var worksheet = worksheet_example;  // string | worksheet (optional) 
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Copy worksheet rows.
-                SaaSposeResponse result = apiInstance.CellsPostCopyWorksheetRows(name, sheetName, sourceRowIndex, destinationRowIndex, rowNumber, worksheet, folder);
+                SaaSposeResponse result = apiInstance.CellsPostCopyWorksheetRows(name, sheetName, sourceRowIndex, destinationRowIndex, rowNumber, worksheet, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1247,6 +1282,7 @@ Name | Type | Description  | Notes
  **rowNumber** | **int?**| The copied row number | 
  **worksheet** | **string**| worksheet | [optional] 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1265,7 +1301,7 @@ No authorization required
 
 <a name="cellspostgroupworksheetcolumns"></a>
 # **CellsPostGroupWorksheetColumns**
-> SaaSposeResponse CellsPostGroupWorksheetColumns (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null)
+> SaaSposeResponse CellsPostGroupWorksheetColumns (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storage = null)
 
 Group worksheet columns.
 
@@ -1290,11 +1326,12 @@ namespace Example
             var lastIndex = 56;  // int? | The last column index to be operated.
             var hide = true;  // bool? | columns visible state (optional) 
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Group worksheet columns.
-                SaaSposeResponse result = apiInstance.CellsPostGroupWorksheetColumns(name, sheetName, firstIndex, lastIndex, hide, folder);
+                SaaSposeResponse result = apiInstance.CellsPostGroupWorksheetColumns(name, sheetName, firstIndex, lastIndex, hide, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1316,6 +1353,7 @@ Name | Type | Description  | Notes
  **lastIndex** | **int?**| The last column index to be operated. | 
  **hide** | **bool?**| columns visible state | [optional] 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1334,7 +1372,7 @@ No authorization required
 
 <a name="cellspostgroupworksheetrows"></a>
 # **CellsPostGroupWorksheetRows**
-> SaaSposeResponse CellsPostGroupWorksheetRows (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null)
+> SaaSposeResponse CellsPostGroupWorksheetRows (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storage = null)
 
 Group worksheet rows.
 
@@ -1359,11 +1397,12 @@ namespace Example
             var lastIndex = 56;  // int? | The last row index to be operated.
             var hide = true;  // bool? | rows visible state (optional) 
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Group worksheet rows.
-                SaaSposeResponse result = apiInstance.CellsPostGroupWorksheetRows(name, sheetName, firstIndex, lastIndex, hide, folder);
+                SaaSposeResponse result = apiInstance.CellsPostGroupWorksheetRows(name, sheetName, firstIndex, lastIndex, hide, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1385,6 +1424,7 @@ Name | Type | Description  | Notes
  **lastIndex** | **int?**| The last row index to be operated. | 
  **hide** | **bool?**| rows visible state | [optional] 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1403,7 +1443,7 @@ No authorization required
 
 <a name="cellsposthideworksheetcolumns"></a>
 # **CellsPostHideWorksheetColumns**
-> SaaSposeResponse CellsPostHideWorksheetColumns (string name, string sheetName, int? startColumn, int? totalColumns, string folder = null)
+> SaaSposeResponse CellsPostHideWorksheetColumns (string name, string sheetName, int? startColumn, int? totalColumns, string folder = null, string storage = null)
 
 Hide worksheet columns.
 
@@ -1427,11 +1467,12 @@ namespace Example
             var startColumn = 56;  // int? | The begin column index to be operated.
             var totalColumns = 56;  // int? | Number of columns to be operated.
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Hide worksheet columns.
-                SaaSposeResponse result = apiInstance.CellsPostHideWorksheetColumns(name, sheetName, startColumn, totalColumns, folder);
+                SaaSposeResponse result = apiInstance.CellsPostHideWorksheetColumns(name, sheetName, startColumn, totalColumns, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1452,6 +1493,7 @@ Name | Type | Description  | Notes
  **startColumn** | **int?**| The begin column index to be operated. | 
  **totalColumns** | **int?**| Number of columns to be operated. | 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1470,7 +1512,7 @@ No authorization required
 
 <a name="cellsposthideworksheetrows"></a>
 # **CellsPostHideWorksheetRows**
-> SaaSposeResponse CellsPostHideWorksheetRows (string name, string sheetName, int? startrow, int? totalRows, string folder = null)
+> SaaSposeResponse CellsPostHideWorksheetRows (string name, string sheetName, int? startrow, int? totalRows, string folder = null, string storage = null)
 
 Hide worksheet rows.
 
@@ -1494,11 +1536,12 @@ namespace Example
             var startrow = 56;  // int? | The begin row index to be operated.
             var totalRows = 56;  // int? | Number of rows to be operated.
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Hide worksheet rows.
-                SaaSposeResponse result = apiInstance.CellsPostHideWorksheetRows(name, sheetName, startrow, totalRows, folder);
+                SaaSposeResponse result = apiInstance.CellsPostHideWorksheetRows(name, sheetName, startrow, totalRows, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1519,6 +1562,7 @@ Name | Type | Description  | Notes
  **startrow** | **int?**| The begin row index to be operated. | 
  **totalRows** | **int?**| Number of rows to be operated. | 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1537,7 +1581,7 @@ No authorization required
 
 <a name="cellspostrowstyle"></a>
 # **CellsPostRowStyle**
-> SaaSposeResponse CellsPostRowStyle (string name, string sheetName, int? rowIndex, Style style = null, string folder = null)
+> SaaSposeResponse CellsPostRowStyle (string name, string sheetName, int? rowIndex, Style style = null, string folder = null, string storage = null)
 
 Set row style.
 
@@ -1561,11 +1605,12 @@ namespace Example
             var rowIndex = 56;  // int? | The row index.
             var style = new Style(); // Style | Style dto (optional) 
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Set row style.
-                SaaSposeResponse result = apiInstance.CellsPostRowStyle(name, sheetName, rowIndex, style, folder);
+                SaaSposeResponse result = apiInstance.CellsPostRowStyle(name, sheetName, rowIndex, style, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1586,6 +1631,7 @@ Name | Type | Description  | Notes
  **rowIndex** | **int?**| The row index. | 
  **style** | [**Style**](Style.md)| Style dto | [optional] 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1604,7 +1650,7 @@ No authorization required
 
 <a name="cellspostsetcellhtmlstring"></a>
 # **CellsPostSetCellHtmlString**
-> CellResponse CellsPostSetCellHtmlString (string name, string sheetName, string cellName, string folder = null)
+> CellResponse CellsPostSetCellHtmlString (string name, string sheetName, string cellName, string folder = null, string storage = null)
 
 Set htmlstring value into cell
 
@@ -1627,11 +1673,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | Worksheet name.
             var cellName = cellName_example;  // string | The cell name.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Set htmlstring value into cell
-                CellResponse result = apiInstance.CellsPostSetCellHtmlString(name, sheetName, cellName, folder);
+                CellResponse result = apiInstance.CellsPostSetCellHtmlString(name, sheetName, cellName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1651,6 +1698,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| Worksheet name. | 
  **cellName** | **string**| The cell name. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1669,7 +1717,7 @@ No authorization required
 
 <a name="cellspostsetcellrangevalue"></a>
 # **CellsPostSetCellRangeValue**
-> SaaSposeResponse CellsPostSetCellRangeValue (string name, string sheetName, string cellarea, string value, string type, string folder = null)
+> SaaSposeResponse CellsPostSetCellRangeValue (string name, string sheetName, string cellarea, string value, string type, string folder = null, string storage = null)
 
 Set cell range value 
 
@@ -1694,11 +1742,12 @@ namespace Example
             var value = value_example;  // string | Range value
             var type = type_example;  // string | Value data type (like \"int\")
             var folder = folder_example;  // string | Folder name (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Set cell range value 
-                SaaSposeResponse result = apiInstance.CellsPostSetCellRangeValue(name, sheetName, cellarea, value, type, folder);
+                SaaSposeResponse result = apiInstance.CellsPostSetCellRangeValue(name, sheetName, cellarea, value, type, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1720,6 +1769,7 @@ Name | Type | Description  | Notes
  **value** | **string**| Range value | 
  **type** | **string**| Value data type (like \&quot;int\&quot;) | 
  **folder** | **string**| Folder name | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1738,7 +1788,7 @@ No authorization required
 
 <a name="cellspostsetworksheetcolumnwidth"></a>
 # **CellsPostSetWorksheetColumnWidth**
-> ColumnResponse CellsPostSetWorksheetColumnWidth (string name, string sheetName, int? columnIndex, double? width, string folder = null)
+> ColumnResponse CellsPostSetWorksheetColumnWidth (string name, string sheetName, int? columnIndex, double? width, string folder = null, string storage = null)
 
 Set worksheet column width.
 
@@ -1762,11 +1812,12 @@ namespace Example
             var columnIndex = 56;  // int? | The column index.
             var width = 1.2;  // double? | The width.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Set worksheet column width.
-                ColumnResponse result = apiInstance.CellsPostSetWorksheetColumnWidth(name, sheetName, columnIndex, width, folder);
+                ColumnResponse result = apiInstance.CellsPostSetWorksheetColumnWidth(name, sheetName, columnIndex, width, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1787,6 +1838,7 @@ Name | Type | Description  | Notes
  **columnIndex** | **int?**| The column index. | 
  **width** | **double?**| The width. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1805,7 +1857,7 @@ No authorization required
 
 <a name="cellspostungroupworksheetcolumns"></a>
 # **CellsPostUngroupWorksheetColumns**
-> SaaSposeResponse CellsPostUngroupWorksheetColumns (string name, string sheetName, int? firstIndex, int? lastIndex, string folder = null)
+> SaaSposeResponse CellsPostUngroupWorksheetColumns (string name, string sheetName, int? firstIndex, int? lastIndex, string folder = null, string storage = null)
 
 Ungroup worksheet columns.
 
@@ -1829,11 +1881,12 @@ namespace Example
             var firstIndex = 56;  // int? | The first column index to be operated.
             var lastIndex = 56;  // int? | The last column index to be operated.
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Ungroup worksheet columns.
-                SaaSposeResponse result = apiInstance.CellsPostUngroupWorksheetColumns(name, sheetName, firstIndex, lastIndex, folder);
+                SaaSposeResponse result = apiInstance.CellsPostUngroupWorksheetColumns(name, sheetName, firstIndex, lastIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1854,6 +1907,7 @@ Name | Type | Description  | Notes
  **firstIndex** | **int?**| The first column index to be operated. | 
  **lastIndex** | **int?**| The last column index to be operated. | 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1872,7 +1926,7 @@ No authorization required
 
 <a name="cellspostungroupworksheetrows"></a>
 # **CellsPostUngroupWorksheetRows**
-> SaaSposeResponse CellsPostUngroupWorksheetRows (string name, string sheetName, int? firstIndex, int? lastIndex, bool? isAll = null, string folder = null)
+> SaaSposeResponse CellsPostUngroupWorksheetRows (string name, string sheetName, int? firstIndex, int? lastIndex, bool? isAll = null, string folder = null, string storage = null)
 
 Ungroup worksheet rows.
 
@@ -1897,11 +1951,12 @@ namespace Example
             var lastIndex = 56;  // int? | The last row index to be operated.
             var isAll = true;  // bool? | Is all row to be operated (optional) 
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Ungroup worksheet rows.
-                SaaSposeResponse result = apiInstance.CellsPostUngroupWorksheetRows(name, sheetName, firstIndex, lastIndex, isAll, folder);
+                SaaSposeResponse result = apiInstance.CellsPostUngroupWorksheetRows(name, sheetName, firstIndex, lastIndex, isAll, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1923,6 +1978,7 @@ Name | Type | Description  | Notes
  **lastIndex** | **int?**| The last row index to be operated. | 
  **isAll** | **bool?**| Is all row to be operated | [optional] 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1941,7 +1997,7 @@ No authorization required
 
 <a name="cellspostunhideworksheetcolumns"></a>
 # **CellsPostUnhideWorksheetColumns**
-> SaaSposeResponse CellsPostUnhideWorksheetColumns (string name, string sheetName, int? startcolumn, int? totalColumns, double? width = null, string folder = null)
+> SaaSposeResponse CellsPostUnhideWorksheetColumns (string name, string sheetName, int? startcolumn, int? totalColumns, double? width = null, string folder = null, string storage = null)
 
 Unhide worksheet columns.
 
@@ -1966,11 +2022,12 @@ namespace Example
             var totalColumns = 56;  // int? | Number of columns to be operated.
             var width = 1.2;  // double? | The new column width. (optional)  (default to 50.0)
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Unhide worksheet columns.
-                SaaSposeResponse result = apiInstance.CellsPostUnhideWorksheetColumns(name, sheetName, startcolumn, totalColumns, width, folder);
+                SaaSposeResponse result = apiInstance.CellsPostUnhideWorksheetColumns(name, sheetName, startcolumn, totalColumns, width, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1992,6 +2049,7 @@ Name | Type | Description  | Notes
  **totalColumns** | **int?**| Number of columns to be operated. | 
  **width** | **double?**| The new column width. | [optional] [default to 50.0]
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -2010,7 +2068,7 @@ No authorization required
 
 <a name="cellspostunhideworksheetrows"></a>
 # **CellsPostUnhideWorksheetRows**
-> SaaSposeResponse CellsPostUnhideWorksheetRows (string name, string sheetName, int? startrow, int? totalRows, double? height = null, string folder = null)
+> SaaSposeResponse CellsPostUnhideWorksheetRows (string name, string sheetName, int? startrow, int? totalRows, double? height = null, string folder = null, string storage = null)
 
 Unhide worksheet rows.
 
@@ -2035,11 +2093,12 @@ namespace Example
             var totalRows = 56;  // int? | Number of rows to be operated.
             var height = 1.2;  // double? | The new row height. (optional)  (default to 15.0)
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Unhide worksheet rows.
-                SaaSposeResponse result = apiInstance.CellsPostUnhideWorksheetRows(name, sheetName, startrow, totalRows, height, folder);
+                SaaSposeResponse result = apiInstance.CellsPostUnhideWorksheetRows(name, sheetName, startrow, totalRows, height, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2061,6 +2120,7 @@ Name | Type | Description  | Notes
  **totalRows** | **int?**| Number of rows to be operated. | 
  **height** | **double?**| The new row height. | [optional] [default to 15.0]
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -2079,7 +2139,7 @@ No authorization required
 
 <a name="cellspostupdateworksheetcellstyle"></a>
 # **CellsPostUpdateWorksheetCellStyle**
-> StyleResponse CellsPostUpdateWorksheetCellStyle (string name, string sheetName, string cellName, Style style = null, string folder = null)
+> StyleResponse CellsPostUpdateWorksheetCellStyle (string name, string sheetName, string cellName, Style style = null, string folder = null, string storage = null)
 
 Update cell's style.
 
@@ -2103,11 +2163,12 @@ namespace Example
             var cellName = cellName_example;  // string | The cell name.
             var style = new Style(); // Style | with update style settings. (optional) 
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Update cell's style.
-                StyleResponse result = apiInstance.CellsPostUpdateWorksheetCellStyle(name, sheetName, cellName, style, folder);
+                StyleResponse result = apiInstance.CellsPostUpdateWorksheetCellStyle(name, sheetName, cellName, style, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2128,6 +2189,7 @@ Name | Type | Description  | Notes
  **cellName** | **string**| The cell name. | 
  **style** | [**Style**](Style.md)| with update style settings. | [optional] 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -2146,7 +2208,7 @@ No authorization required
 
 <a name="cellspostupdateworksheetrangestyle"></a>
 # **CellsPostUpdateWorksheetRangeStyle**
-> SaaSposeResponse CellsPostUpdateWorksheetRangeStyle (string name, string sheetName, string range, Style style = null, string folder = null)
+> SaaSposeResponse CellsPostUpdateWorksheetRangeStyle (string name, string sheetName, string range, Style style = null, string folder = null, string storage = null)
 
 Update cell's range style.
 
@@ -2170,11 +2232,12 @@ namespace Example
             var range = range_example;  // string | The range.
             var style = new Style(); // Style | with update style settings. (optional) 
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Update cell's range style.
-                SaaSposeResponse result = apiInstance.CellsPostUpdateWorksheetRangeStyle(name, sheetName, range, style, folder);
+                SaaSposeResponse result = apiInstance.CellsPostUpdateWorksheetRangeStyle(name, sheetName, range, style, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2195,6 +2258,7 @@ Name | Type | Description  | Notes
  **range** | **string**| The range. | 
  **style** | [**Style**](Style.md)| with update style settings. | [optional] 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -2213,7 +2277,7 @@ No authorization required
 
 <a name="cellspostupdateworksheetrow"></a>
 # **CellsPostUpdateWorksheetRow**
-> RowResponse CellsPostUpdateWorksheetRow (string name, string sheetName, int? rowIndex, double? height = null, string folder = null)
+> RowResponse CellsPostUpdateWorksheetRow (string name, string sheetName, int? rowIndex, double? height = null, string folder = null, string storage = null)
 
 Update worksheet row.
 
@@ -2237,11 +2301,12 @@ namespace Example
             var rowIndex = 56;  // int? | The row index.
             var height = 1.2;  // double? | The new row height. (optional)  (default to 0.0)
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Update worksheet row.
-                RowResponse result = apiInstance.CellsPostUpdateWorksheetRow(name, sheetName, rowIndex, height, folder);
+                RowResponse result = apiInstance.CellsPostUpdateWorksheetRow(name, sheetName, rowIndex, height, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2262,6 +2327,7 @@ Name | Type | Description  | Notes
  **rowIndex** | **int?**| The row index. | 
  **height** | **double?**| The new row height. | [optional] [default to 0.0]
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -2280,7 +2346,7 @@ No authorization required
 
 <a name="cellspostworksheetcellsetvalue"></a>
 # **CellsPostWorksheetCellSetValue**
-> CellResponse CellsPostWorksheetCellSetValue (string name, string sheetName, string cellName, string value = null, string type = null, string formula = null, string folder = null)
+> CellResponse CellsPostWorksheetCellSetValue (string name, string sheetName, string cellName, string value = null, string type = null, string formula = null, string folder = null, string storage = null)
 
 Set cell value.
 
@@ -2306,11 +2372,12 @@ namespace Example
             var type = type_example;  // string | The value type. (optional) 
             var formula = formula_example;  // string | Formula for cell (optional) 
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Set cell value.
-                CellResponse result = apiInstance.CellsPostWorksheetCellSetValue(name, sheetName, cellName, value, type, formula, folder);
+                CellResponse result = apiInstance.CellsPostWorksheetCellSetValue(name, sheetName, cellName, value, type, formula, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2333,6 +2400,7 @@ Name | Type | Description  | Notes
  **type** | **string**| The value type. | [optional] 
  **formula** | **string**| Formula for cell | [optional] 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -2351,7 +2419,7 @@ No authorization required
 
 <a name="cellspostworksheetmerge"></a>
 # **CellsPostWorksheetMerge**
-> SaaSposeResponse CellsPostWorksheetMerge (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null)
+> SaaSposeResponse CellsPostWorksheetMerge (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null)
 
 Merge cells.
 
@@ -2377,11 +2445,12 @@ namespace Example
             var totalRows = 56;  // int? | The total rows
             var totalColumns = 56;  // int? | The total columns.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Merge cells.
-                SaaSposeResponse result = apiInstance.CellsPostWorksheetMerge(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder);
+                SaaSposeResponse result = apiInstance.CellsPostWorksheetMerge(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2404,6 +2473,7 @@ Name | Type | Description  | Notes
  **totalRows** | **int?**| The total rows | 
  **totalColumns** | **int?**| The total columns. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -2422,7 +2492,7 @@ No authorization required
 
 <a name="cellspostworksheetunmerge"></a>
 # **CellsPostWorksheetUnmerge**
-> SaaSposeResponse CellsPostWorksheetUnmerge (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null)
+> SaaSposeResponse CellsPostWorksheetUnmerge (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null)
 
 Unmerge cells.
 
@@ -2448,11 +2518,12 @@ namespace Example
             var totalRows = 56;  // int? | The total rows
             var totalColumns = 56;  // int? | The total columns.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Unmerge cells.
-                SaaSposeResponse result = apiInstance.CellsPostWorksheetUnmerge(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder);
+                SaaSposeResponse result = apiInstance.CellsPostWorksheetUnmerge(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2475,6 +2546,7 @@ Name | Type | Description  | Notes
  **totalRows** | **int?**| The total rows | 
  **totalColumns** | **int?**| The total columns. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -2493,7 +2565,7 @@ No authorization required
 
 <a name="cellsputinsertworksheetcolumns"></a>
 # **CellsPutInsertWorksheetColumns**
-> ColumnsResponse CellsPutInsertWorksheetColumns (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null)
+> ColumnsResponse CellsPutInsertWorksheetColumns (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null, string storage = null)
 
 Insert worksheet columns.
 
@@ -2518,11 +2590,12 @@ namespace Example
             var columns = 56;  // int? | The columns.
             var updateReference = true;  // bool? | The update reference. (optional)  (default to true)
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Insert worksheet columns.
-                ColumnsResponse result = apiInstance.CellsPutInsertWorksheetColumns(name, sheetName, columnIndex, columns, updateReference, folder);
+                ColumnsResponse result = apiInstance.CellsPutInsertWorksheetColumns(name, sheetName, columnIndex, columns, updateReference, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2544,6 +2617,7 @@ Name | Type | Description  | Notes
  **columns** | **int?**| The columns. | 
  **updateReference** | **bool?**| The update reference. | [optional] [default to true]
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -2562,7 +2636,7 @@ No authorization required
 
 <a name="cellsputinsertworksheetrow"></a>
 # **CellsPutInsertWorksheetRow**
-> RowResponse CellsPutInsertWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null)
+> RowResponse CellsPutInsertWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null, string storage = null)
 
 Insert new worksheet row.
 
@@ -2585,11 +2659,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | The worksheet name.
             var rowIndex = 56;  // int? | The new row index.
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Insert new worksheet row.
-                RowResponse result = apiInstance.CellsPutInsertWorksheetRow(name, sheetName, rowIndex, folder);
+                RowResponse result = apiInstance.CellsPutInsertWorksheetRow(name, sheetName, rowIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2609,6 +2684,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| The worksheet name. | 
  **rowIndex** | **int?**| The new row index. | 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -2627,7 +2703,7 @@ No authorization required
 
 <a name="cellsputinsertworksheetrows"></a>
 # **CellsPutInsertWorksheetRows**
-> SaaSposeResponse CellsPutInsertWorksheetRows (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null)
+> SaaSposeResponse CellsPutInsertWorksheetRows (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null)
 
 Insert several new worksheet rows.
 
@@ -2652,11 +2728,12 @@ namespace Example
             var totalRows = 56;  // int? | Number of rows to be operated. (optional)  (default to 1)
             var updateReference = true;  // bool? | Indicates if update references in other worksheets. (optional)  (default to true)
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Insert several new worksheet rows.
-                SaaSposeResponse result = apiInstance.CellsPutInsertWorksheetRows(name, sheetName, startrow, totalRows, updateReference, folder);
+                SaaSposeResponse result = apiInstance.CellsPutInsertWorksheetRows(name, sheetName, startrow, totalRows, updateReference, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2678,6 +2755,7 @@ Name | Type | Description  | Notes
  **totalRows** | **int?**| Number of rows to be operated. | [optional] [default to 1]
  **updateReference** | **bool?**| Indicates if update references in other worksheets. | [optional] [default to true]
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 

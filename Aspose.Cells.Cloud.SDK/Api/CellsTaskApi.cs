@@ -32,8 +32,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </remarks>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="taskData"></param>
-        /// <returns>System.IO.Stream</returns>
-        System.IO.Stream CellsTaskPostRunTask (TaskData taskData);
+        /// <returns>Object</returns>
+        Object CellsTaskPostRunTask (TaskData taskData);
 
         /// <summary>
         /// Run tasks  
@@ -43,8 +43,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </remarks>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="taskData"></param>
-        /// <returns>ApiResponse of System.IO.Stream</returns>
-        ApiResponse<System.IO.Stream> CellsTaskPostRunTaskWithHttpInfo (TaskData taskData);
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> CellsTaskPostRunTaskWithHttpInfo (TaskData taskData);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -55,8 +55,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </remarks>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="taskData"></param>
-        /// <returns>Task of System.IO.Stream</returns>
-        System.Threading.Tasks.Task<System.IO.Stream> CellsTaskPostRunTaskAsync (TaskData taskData);
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> CellsTaskPostRunTaskAsync (TaskData taskData);
 
         /// <summary>
         /// Run tasks  
@@ -66,8 +66,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </remarks>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="taskData"></param>
-        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsTaskPostRunTaskAsyncWithHttpInfo (TaskData taskData);
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> CellsTaskPostRunTaskAsyncWithHttpInfo (TaskData taskData);
         #endregion Asynchronous Operations
     }
 
@@ -94,6 +94,25 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 this.Configuration.ApiClient.Configuration = this.Configuration;
             }
         }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsTaskApi"/> class.
+        /// </summary>
+        /// <returns></returns>
+        public CellsTaskApi(String basePath, String accesstoken)
+        {
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + accesstoken);
+            this.Configuration = new Configuration(new ApiClient(basePath),headerParameters);
+
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CellsTaskApi"/> class
@@ -108,6 +127,28 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
                 this.Configuration = configuration;
 
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsTaskApi"/> class
+        /// using Configuration object
+        /// </summary>
+        /// <param name="configuration">An instance of Configuration</param>
+        /// <returns></returns>
+        public CellsTaskApi(String grantType,String appSID,String appKey)
+        {
+            OAuthApi oauth2 = new OAuthApi("https://api.aspose.cloud");
+            var oauth2response = oauth2.OAuthPost(grantType, appSID, appKey);
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + oauth2response.AccessToken);
+            this.Configuration =  new Configuration(new ApiClient(), headerParameters);
             ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
@@ -185,10 +226,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </summary>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="taskData"></param>
-        /// <returns>System.IO.Stream</returns>
-        public System.IO.Stream CellsTaskPostRunTask (TaskData taskData)
+        /// <returns>Object</returns>
+        public Object CellsTaskPostRunTask (TaskData taskData)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = CellsTaskPostRunTaskWithHttpInfo(taskData);
+             ApiResponse<Object> localVarResponse = CellsTaskPostRunTaskWithHttpInfo(taskData);
              return localVarResponse.Data;
         }
 
@@ -197,8 +238,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </summary>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="taskData"></param>
-        /// <returns>ApiResponse of System.IO.Stream</returns>
-        public ApiResponse< System.IO.Stream > CellsTaskPostRunTaskWithHttpInfo (TaskData taskData)
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse< Object > CellsTaskPostRunTaskWithHttpInfo (TaskData taskData)
         {
             // verify the required parameter 'taskData' is set
             if (taskData == null)
@@ -249,9 +290,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (System.IO.Stream) Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
+                (Object) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -259,10 +300,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </summary>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="taskData"></param>
-        /// <returns>Task of System.IO.Stream</returns>
-        public async System.Threading.Tasks.Task<System.IO.Stream> CellsTaskPostRunTaskAsync (TaskData taskData)
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> CellsTaskPostRunTaskAsync (TaskData taskData)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = await CellsTaskPostRunTaskAsyncWithHttpInfo(taskData);
+             ApiResponse<Object> localVarResponse = await CellsTaskPostRunTaskAsyncWithHttpInfo(taskData);
              return localVarResponse.Data;
 
         }
@@ -272,8 +313,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </summary>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="taskData"></param>
-        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsTaskPostRunTaskAsyncWithHttpInfo (TaskData taskData)
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> CellsTaskPostRunTaskAsyncWithHttpInfo (TaskData taskData)
         {
             // verify the required parameter 'taskData' is set
             if (taskData == null)
@@ -324,9 +365,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (System.IO.Stream) Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
+                (Object) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
     }

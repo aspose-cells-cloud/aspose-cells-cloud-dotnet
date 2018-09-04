@@ -35,8 +35,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsHypelinksDeleteWorksheetHyperlink (string name, string sheetName, int? hyperlinkIndex, string folder = null);
+        SaaSposeResponse CellsHypelinksDeleteWorksheetHyperlink (string name, string sheetName, int? hyperlinkIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete worksheet hyperlink by index.
@@ -49,8 +50,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsHypelinksDeleteWorksheetHyperlinkWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsHypelinksDeleteWorksheetHyperlinkWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, string folder = null, string storage = null);
         /// <summary>
         /// Delete all hyperlinks in worksheet.
         /// </summary>
@@ -61,8 +63,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsHypelinksDeleteWorksheetHyperlinks (string name, string sheetName, string folder = null);
+        SaaSposeResponse CellsHypelinksDeleteWorksheetHyperlinks (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete all hyperlinks in worksheet.
@@ -74,8 +77,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsHypelinksDeleteWorksheetHyperlinksWithHttpInfo (string name, string sheetName, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsHypelinksDeleteWorksheetHyperlinksWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Get worksheet hyperlink by index.
         /// </summary>
@@ -87,8 +91,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>HyperlinkResponse</returns>
-        HyperlinkResponse CellsHypelinksGetWorksheetHyperlink (string name, string sheetName, int? hyperlinkIndex, string folder = null);
+        HyperlinkResponse CellsHypelinksGetWorksheetHyperlink (string name, string sheetName, int? hyperlinkIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Get worksheet hyperlink by index.
@@ -101,8 +106,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of HyperlinkResponse</returns>
-        ApiResponse<HyperlinkResponse> CellsHypelinksGetWorksheetHyperlinkWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, string folder = null);
+        ApiResponse<HyperlinkResponse> CellsHypelinksGetWorksheetHyperlinkWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, string folder = null, string storage = null);
         /// <summary>
         /// Get worksheet hyperlinks.
         /// </summary>
@@ -113,8 +119,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>HyperlinksResponse</returns>
-        HyperlinksResponse CellsHypelinksGetWorksheetHyperlinks (string name, string sheetName, string folder = null);
+        HyperlinksResponse CellsHypelinksGetWorksheetHyperlinks (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Get worksheet hyperlinks.
@@ -126,8 +133,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of HyperlinksResponse</returns>
-        ApiResponse<HyperlinksResponse> CellsHypelinksGetWorksheetHyperlinksWithHttpInfo (string name, string sheetName, string folder = null);
+        ApiResponse<HyperlinksResponse> CellsHypelinksGetWorksheetHyperlinksWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Update worksheet hyperlink by index.
         /// </summary>
@@ -140,8 +148,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="hyperlink">Hyperlink object (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>HyperlinkResponse</returns>
-        HyperlinkResponse CellsHypelinksPostWorksheetHyperlink (string name, string sheetName, int? hyperlinkIndex, Hyperlink hyperlink = null, string folder = null);
+        HyperlinkResponse CellsHypelinksPostWorksheetHyperlink (string name, string sheetName, int? hyperlinkIndex, Hyperlink hyperlink = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Update worksheet hyperlink by index.
@@ -155,8 +164,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="hyperlink">Hyperlink object (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of HyperlinkResponse</returns>
-        ApiResponse<HyperlinkResponse> CellsHypelinksPostWorksheetHyperlinkWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, Hyperlink hyperlink = null, string folder = null);
+        ApiResponse<HyperlinkResponse> CellsHypelinksPostWorksheetHyperlinkWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, Hyperlink hyperlink = null, string folder = null, string storage = null);
         /// <summary>
         /// Add worksheet hyperlink.
         /// </summary>
@@ -172,8 +182,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalColumns"></param>
         /// <param name="address"></param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>HyperlinkResponse</returns>
-        HyperlinkResponse CellsHypelinksPutWorksheetHyperlink (string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null);
+        HyperlinkResponse CellsHypelinksPutWorksheetHyperlink (string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null, string storage = null);
 
         /// <summary>
         /// Add worksheet hyperlink.
@@ -190,8 +201,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalColumns"></param>
         /// <param name="address"></param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of HyperlinkResponse</returns>
-        ApiResponse<HyperlinkResponse> CellsHypelinksPutWorksheetHyperlinkWithHttpInfo (string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null);
+        ApiResponse<HyperlinkResponse> CellsHypelinksPutWorksheetHyperlinkWithHttpInfo (string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null, string storage = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -205,8 +217,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsHypelinksDeleteWorksheetHyperlinkAsync (string name, string sheetName, int? hyperlinkIndex, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsHypelinksDeleteWorksheetHyperlinkAsync (string name, string sheetName, int? hyperlinkIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete worksheet hyperlink by index.
@@ -219,8 +232,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsHypelinksDeleteWorksheetHyperlinkAsyncWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsHypelinksDeleteWorksheetHyperlinkAsyncWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, string folder = null, string storage = null);
         /// <summary>
         /// Delete all hyperlinks in worksheet.
         /// </summary>
@@ -231,8 +245,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsHypelinksDeleteWorksheetHyperlinksAsync (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsHypelinksDeleteWorksheetHyperlinksAsync (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete all hyperlinks in worksheet.
@@ -244,8 +259,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsHypelinksDeleteWorksheetHyperlinksAsyncWithHttpInfo (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsHypelinksDeleteWorksheetHyperlinksAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Get worksheet hyperlink by index.
         /// </summary>
@@ -257,8 +273,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of HyperlinkResponse</returns>
-        System.Threading.Tasks.Task<HyperlinkResponse> CellsHypelinksGetWorksheetHyperlinkAsync (string name, string sheetName, int? hyperlinkIndex, string folder = null);
+        System.Threading.Tasks.Task<HyperlinkResponse> CellsHypelinksGetWorksheetHyperlinkAsync (string name, string sheetName, int? hyperlinkIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Get worksheet hyperlink by index.
@@ -271,8 +288,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (HyperlinkResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<HyperlinkResponse>> CellsHypelinksGetWorksheetHyperlinkAsyncWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<HyperlinkResponse>> CellsHypelinksGetWorksheetHyperlinkAsyncWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, string folder = null, string storage = null);
         /// <summary>
         /// Get worksheet hyperlinks.
         /// </summary>
@@ -283,8 +301,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of HyperlinksResponse</returns>
-        System.Threading.Tasks.Task<HyperlinksResponse> CellsHypelinksGetWorksheetHyperlinksAsync (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<HyperlinksResponse> CellsHypelinksGetWorksheetHyperlinksAsync (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Get worksheet hyperlinks.
@@ -296,8 +315,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (HyperlinksResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<HyperlinksResponse>> CellsHypelinksGetWorksheetHyperlinksAsyncWithHttpInfo (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<HyperlinksResponse>> CellsHypelinksGetWorksheetHyperlinksAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Update worksheet hyperlink by index.
         /// </summary>
@@ -310,8 +330,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="hyperlink">Hyperlink object (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of HyperlinkResponse</returns>
-        System.Threading.Tasks.Task<HyperlinkResponse> CellsHypelinksPostWorksheetHyperlinkAsync (string name, string sheetName, int? hyperlinkIndex, Hyperlink hyperlink = null, string folder = null);
+        System.Threading.Tasks.Task<HyperlinkResponse> CellsHypelinksPostWorksheetHyperlinkAsync (string name, string sheetName, int? hyperlinkIndex, Hyperlink hyperlink = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Update worksheet hyperlink by index.
@@ -325,8 +346,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="hyperlink">Hyperlink object (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (HyperlinkResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<HyperlinkResponse>> CellsHypelinksPostWorksheetHyperlinkAsyncWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, Hyperlink hyperlink = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<HyperlinkResponse>> CellsHypelinksPostWorksheetHyperlinkAsyncWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, Hyperlink hyperlink = null, string folder = null, string storage = null);
         /// <summary>
         /// Add worksheet hyperlink.
         /// </summary>
@@ -342,8 +364,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalColumns"></param>
         /// <param name="address"></param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of HyperlinkResponse</returns>
-        System.Threading.Tasks.Task<HyperlinkResponse> CellsHypelinksPutWorksheetHyperlinkAsync (string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null);
+        System.Threading.Tasks.Task<HyperlinkResponse> CellsHypelinksPutWorksheetHyperlinkAsync (string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null, string storage = null);
 
         /// <summary>
         /// Add worksheet hyperlink.
@@ -360,8 +383,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalColumns"></param>
         /// <param name="address"></param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (HyperlinkResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<HyperlinkResponse>> CellsHypelinksPutWorksheetHyperlinkAsyncWithHttpInfo (string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<HyperlinkResponse>> CellsHypelinksPutWorksheetHyperlinkAsyncWithHttpInfo (string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null, string storage = null);
         #endregion Asynchronous Operations
     }
 
@@ -388,6 +412,25 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 this.Configuration.ApiClient.Configuration = this.Configuration;
             }
         }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsHypelinksApi"/> class.
+        /// </summary>
+        /// <returns></returns>
+        public CellsHypelinksApi(String basePath, String accesstoken)
+        {
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + accesstoken);
+            this.Configuration = new Configuration(new ApiClient(basePath),headerParameters);
+
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CellsHypelinksApi"/> class
@@ -402,6 +445,28 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
                 this.Configuration = configuration;
 
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsHypelinksApi"/> class
+        /// using Configuration object
+        /// </summary>
+        /// <param name="configuration">An instance of Configuration</param>
+        /// <returns></returns>
+        public CellsHypelinksApi(String grantType,String appSID,String appKey)
+        {
+            OAuthApi oauth2 = new OAuthApi("https://api.aspose.cloud");
+            var oauth2response = oauth2.OAuthPost(grantType, appSID, appKey);
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + oauth2response.AccessToken);
+            this.Configuration =  new Configuration(new ApiClient(), headerParameters);
             ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
@@ -482,10 +547,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsHypelinksDeleteWorksheetHyperlink (string name, string sheetName, int? hyperlinkIndex, string folder = null)
+        public SaaSposeResponse CellsHypelinksDeleteWorksheetHyperlink (string name, string sheetName, int? hyperlinkIndex, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsHypelinksDeleteWorksheetHyperlinkWithHttpInfo(name, sheetName, hyperlinkIndex, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsHypelinksDeleteWorksheetHyperlinkWithHttpInfo(name, sheetName, hyperlinkIndex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -497,8 +563,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsHypelinksDeleteWorksheetHyperlinkWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsHypelinksDeleteWorksheetHyperlinkWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -536,6 +603,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (hyperlinkIndex != null) localVarPathParams.Add("hyperlinkIndex", Configuration.ApiClient.ParameterToString(hyperlinkIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -564,10 +632,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsHypelinksDeleteWorksheetHyperlinkAsync (string name, string sheetName, int? hyperlinkIndex, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsHypelinksDeleteWorksheetHyperlinkAsync (string name, string sheetName, int? hyperlinkIndex, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsHypelinksDeleteWorksheetHyperlinkAsyncWithHttpInfo(name, sheetName, hyperlinkIndex, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsHypelinksDeleteWorksheetHyperlinkAsyncWithHttpInfo(name, sheetName, hyperlinkIndex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -580,8 +649,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsHypelinksDeleteWorksheetHyperlinkAsyncWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsHypelinksDeleteWorksheetHyperlinkAsyncWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -619,6 +689,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (hyperlinkIndex != null) localVarPathParams.Add("hyperlinkIndex", Configuration.ApiClient.ParameterToString(hyperlinkIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -646,10 +717,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsHypelinksDeleteWorksheetHyperlinks (string name, string sheetName, string folder = null)
+        public SaaSposeResponse CellsHypelinksDeleteWorksheetHyperlinks (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsHypelinksDeleteWorksheetHyperlinksWithHttpInfo(name, sheetName, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsHypelinksDeleteWorksheetHyperlinksWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -660,8 +732,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsHypelinksDeleteWorksheetHyperlinksWithHttpInfo (string name, string sheetName, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsHypelinksDeleteWorksheetHyperlinksWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -695,6 +768,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -722,10 +796,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsHypelinksDeleteWorksheetHyperlinksAsync (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsHypelinksDeleteWorksheetHyperlinksAsync (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsHypelinksDeleteWorksheetHyperlinksAsyncWithHttpInfo(name, sheetName, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsHypelinksDeleteWorksheetHyperlinksAsyncWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -737,8 +812,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsHypelinksDeleteWorksheetHyperlinksAsyncWithHttpInfo (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsHypelinksDeleteWorksheetHyperlinksAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -772,6 +848,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -800,10 +877,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>HyperlinkResponse</returns>
-        public HyperlinkResponse CellsHypelinksGetWorksheetHyperlink (string name, string sheetName, int? hyperlinkIndex, string folder = null)
+        public HyperlinkResponse CellsHypelinksGetWorksheetHyperlink (string name, string sheetName, int? hyperlinkIndex, string folder = null, string storage = null)
         {
-             ApiResponse<HyperlinkResponse> localVarResponse = CellsHypelinksGetWorksheetHyperlinkWithHttpInfo(name, sheetName, hyperlinkIndex, folder);
+             ApiResponse<HyperlinkResponse> localVarResponse = CellsHypelinksGetWorksheetHyperlinkWithHttpInfo(name, sheetName, hyperlinkIndex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -815,8 +893,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of HyperlinkResponse</returns>
-        public ApiResponse< HyperlinkResponse > CellsHypelinksGetWorksheetHyperlinkWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, string folder = null)
+        public ApiResponse< HyperlinkResponse > CellsHypelinksGetWorksheetHyperlinkWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -854,6 +933,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (hyperlinkIndex != null) localVarPathParams.Add("hyperlinkIndex", Configuration.ApiClient.ParameterToString(hyperlinkIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -882,10 +962,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of HyperlinkResponse</returns>
-        public async System.Threading.Tasks.Task<HyperlinkResponse> CellsHypelinksGetWorksheetHyperlinkAsync (string name, string sheetName, int? hyperlinkIndex, string folder = null)
+        public async System.Threading.Tasks.Task<HyperlinkResponse> CellsHypelinksGetWorksheetHyperlinkAsync (string name, string sheetName, int? hyperlinkIndex, string folder = null, string storage = null)
         {
-             ApiResponse<HyperlinkResponse> localVarResponse = await CellsHypelinksGetWorksheetHyperlinkAsyncWithHttpInfo(name, sheetName, hyperlinkIndex, folder);
+             ApiResponse<HyperlinkResponse> localVarResponse = await CellsHypelinksGetWorksheetHyperlinkAsyncWithHttpInfo(name, sheetName, hyperlinkIndex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -898,8 +979,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (HyperlinkResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<HyperlinkResponse>> CellsHypelinksGetWorksheetHyperlinkAsyncWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<HyperlinkResponse>> CellsHypelinksGetWorksheetHyperlinkAsyncWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -937,6 +1019,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (hyperlinkIndex != null) localVarPathParams.Add("hyperlinkIndex", Configuration.ApiClient.ParameterToString(hyperlinkIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -964,10 +1047,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>HyperlinksResponse</returns>
-        public HyperlinksResponse CellsHypelinksGetWorksheetHyperlinks (string name, string sheetName, string folder = null)
+        public HyperlinksResponse CellsHypelinksGetWorksheetHyperlinks (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<HyperlinksResponse> localVarResponse = CellsHypelinksGetWorksheetHyperlinksWithHttpInfo(name, sheetName, folder);
+             ApiResponse<HyperlinksResponse> localVarResponse = CellsHypelinksGetWorksheetHyperlinksWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -978,8 +1062,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of HyperlinksResponse</returns>
-        public ApiResponse< HyperlinksResponse > CellsHypelinksGetWorksheetHyperlinksWithHttpInfo (string name, string sheetName, string folder = null)
+        public ApiResponse< HyperlinksResponse > CellsHypelinksGetWorksheetHyperlinksWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1013,6 +1098,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1040,10 +1126,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of HyperlinksResponse</returns>
-        public async System.Threading.Tasks.Task<HyperlinksResponse> CellsHypelinksGetWorksheetHyperlinksAsync (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<HyperlinksResponse> CellsHypelinksGetWorksheetHyperlinksAsync (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<HyperlinksResponse> localVarResponse = await CellsHypelinksGetWorksheetHyperlinksAsyncWithHttpInfo(name, sheetName, folder);
+             ApiResponse<HyperlinksResponse> localVarResponse = await CellsHypelinksGetWorksheetHyperlinksAsyncWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1055,8 +1142,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (HyperlinksResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<HyperlinksResponse>> CellsHypelinksGetWorksheetHyperlinksAsyncWithHttpInfo (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<HyperlinksResponse>> CellsHypelinksGetWorksheetHyperlinksAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1090,6 +1178,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1119,10 +1208,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="hyperlink">Hyperlink object (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>HyperlinkResponse</returns>
-        public HyperlinkResponse CellsHypelinksPostWorksheetHyperlink (string name, string sheetName, int? hyperlinkIndex, Hyperlink hyperlink = null, string folder = null)
+        public HyperlinkResponse CellsHypelinksPostWorksheetHyperlink (string name, string sheetName, int? hyperlinkIndex, Hyperlink hyperlink = null, string folder = null, string storage = null)
         {
-             ApiResponse<HyperlinkResponse> localVarResponse = CellsHypelinksPostWorksheetHyperlinkWithHttpInfo(name, sheetName, hyperlinkIndex, hyperlink, folder);
+             ApiResponse<HyperlinkResponse> localVarResponse = CellsHypelinksPostWorksheetHyperlinkWithHttpInfo(name, sheetName, hyperlinkIndex, hyperlink, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1135,8 +1225,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="hyperlink">Hyperlink object (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of HyperlinkResponse</returns>
-        public ApiResponse< HyperlinkResponse > CellsHypelinksPostWorksheetHyperlinkWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, Hyperlink hyperlink = null, string folder = null)
+        public ApiResponse< HyperlinkResponse > CellsHypelinksPostWorksheetHyperlinkWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, Hyperlink hyperlink = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1174,6 +1265,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (hyperlinkIndex != null) localVarPathParams.Add("hyperlinkIndex", Configuration.ApiClient.ParameterToString(hyperlinkIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (hyperlink != null && hyperlink.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(hyperlink); // http body (model) parameter
@@ -1211,10 +1303,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="hyperlink">Hyperlink object (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of HyperlinkResponse</returns>
-        public async System.Threading.Tasks.Task<HyperlinkResponse> CellsHypelinksPostWorksheetHyperlinkAsync (string name, string sheetName, int? hyperlinkIndex, Hyperlink hyperlink = null, string folder = null)
+        public async System.Threading.Tasks.Task<HyperlinkResponse> CellsHypelinksPostWorksheetHyperlinkAsync (string name, string sheetName, int? hyperlinkIndex, Hyperlink hyperlink = null, string folder = null, string storage = null)
         {
-             ApiResponse<HyperlinkResponse> localVarResponse = await CellsHypelinksPostWorksheetHyperlinkAsyncWithHttpInfo(name, sheetName, hyperlinkIndex, hyperlink, folder);
+             ApiResponse<HyperlinkResponse> localVarResponse = await CellsHypelinksPostWorksheetHyperlinkAsyncWithHttpInfo(name, sheetName, hyperlinkIndex, hyperlink, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1228,8 +1321,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="hyperlinkIndex">The hyperlink&#39;s index.</param>
         /// <param name="hyperlink">Hyperlink object (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (HyperlinkResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<HyperlinkResponse>> CellsHypelinksPostWorksheetHyperlinkAsyncWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, Hyperlink hyperlink = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<HyperlinkResponse>> CellsHypelinksPostWorksheetHyperlinkAsyncWithHttpInfo (string name, string sheetName, int? hyperlinkIndex, Hyperlink hyperlink = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1267,6 +1361,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (hyperlinkIndex != null) localVarPathParams.Add("hyperlinkIndex", Configuration.ApiClient.ParameterToString(hyperlinkIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (hyperlink != null && hyperlink.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(hyperlink); // http body (model) parameter
@@ -1307,10 +1402,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalColumns"></param>
         /// <param name="address"></param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>HyperlinkResponse</returns>
-        public HyperlinkResponse CellsHypelinksPutWorksheetHyperlink (string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null)
+        public HyperlinkResponse CellsHypelinksPutWorksheetHyperlink (string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null, string storage = null)
         {
-             ApiResponse<HyperlinkResponse> localVarResponse = CellsHypelinksPutWorksheetHyperlinkWithHttpInfo(name, sheetName, firstRow, firstColumn, totalRows, totalColumns, address, folder);
+             ApiResponse<HyperlinkResponse> localVarResponse = CellsHypelinksPutWorksheetHyperlinkWithHttpInfo(name, sheetName, firstRow, firstColumn, totalRows, totalColumns, address, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1326,8 +1422,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalColumns"></param>
         /// <param name="address"></param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of HyperlinkResponse</returns>
-        public ApiResponse< HyperlinkResponse > CellsHypelinksPutWorksheetHyperlinkWithHttpInfo (string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null)
+        public ApiResponse< HyperlinkResponse > CellsHypelinksPutWorksheetHyperlinkWithHttpInfo (string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1381,6 +1478,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (totalColumns != null) localVarQueryParams.Add("totalColumns", Configuration.ApiClient.ParameterToString(totalColumns)); // query parameter
             if (address != null) localVarQueryParams.Add("address", Configuration.ApiClient.ParameterToString(address)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1413,10 +1511,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalColumns"></param>
         /// <param name="address"></param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of HyperlinkResponse</returns>
-        public async System.Threading.Tasks.Task<HyperlinkResponse> CellsHypelinksPutWorksheetHyperlinkAsync (string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null)
+        public async System.Threading.Tasks.Task<HyperlinkResponse> CellsHypelinksPutWorksheetHyperlinkAsync (string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null, string storage = null)
         {
-             ApiResponse<HyperlinkResponse> localVarResponse = await CellsHypelinksPutWorksheetHyperlinkAsyncWithHttpInfo(name, sheetName, firstRow, firstColumn, totalRows, totalColumns, address, folder);
+             ApiResponse<HyperlinkResponse> localVarResponse = await CellsHypelinksPutWorksheetHyperlinkAsyncWithHttpInfo(name, sheetName, firstRow, firstColumn, totalRows, totalColumns, address, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1433,8 +1532,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalColumns"></param>
         /// <param name="address"></param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (HyperlinkResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<HyperlinkResponse>> CellsHypelinksPutWorksheetHyperlinkAsyncWithHttpInfo (string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<HyperlinkResponse>> CellsHypelinksPutWorksheetHyperlinkAsyncWithHttpInfo (string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1488,6 +1588,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (totalColumns != null) localVarQueryParams.Add("totalColumns", Configuration.ApiClient.ParameterToString(totalColumns)); // query parameter
             if (address != null) localVarQueryParams.Add("address", Configuration.ApiClient.ParameterToString(address)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request

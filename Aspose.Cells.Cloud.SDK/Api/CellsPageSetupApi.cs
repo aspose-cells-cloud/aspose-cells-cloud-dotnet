@@ -34,8 +34,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPageSetupDeleteHeaderFooter (string name, string sheetName, string folder = null);
+        SaaSposeResponse CellsPageSetupDeleteHeaderFooter (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// clear header footer
@@ -47,8 +48,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPageSetupDeleteHeaderFooterWithHttpInfo (string name, string sheetName, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPageSetupDeleteHeaderFooterWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// get page footer information
         /// </summary>
@@ -59,8 +61,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>PageSectionsResponse</returns>
-        PageSectionsResponse CellsPageSetupGetFooter (string name, string sheetName, string folder = null);
+        PageSectionsResponse CellsPageSetupGetFooter (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// get page footer information
@@ -72,8 +75,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of PageSectionsResponse</returns>
-        ApiResponse<PageSectionsResponse> CellsPageSetupGetFooterWithHttpInfo (string name, string sheetName, string folder = null);
+        ApiResponse<PageSectionsResponse> CellsPageSetupGetFooterWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// get page header information
         /// </summary>
@@ -84,8 +88,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>PageSectionsResponse</returns>
-        PageSectionsResponse CellsPageSetupGetHeader (string name, string sheetName, string folder = null);
+        PageSectionsResponse CellsPageSetupGetHeader (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// get page header information
@@ -97,8 +102,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of PageSectionsResponse</returns>
-        ApiResponse<PageSectionsResponse> CellsPageSetupGetHeaderWithHttpInfo (string name, string sheetName, string folder = null);
+        ApiResponse<PageSectionsResponse> CellsPageSetupGetHeaderWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Get Page Setup information.             
         /// </summary>
@@ -109,8 +115,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>PageSetupResponse</returns>
-        PageSetupResponse CellsPageSetupGetPageSetup (string name, string sheetName, string folder = null);
+        PageSetupResponse CellsPageSetupGetPageSetup (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Get Page Setup information.             
@@ -122,8 +129,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of PageSetupResponse</returns>
-        ApiResponse<PageSetupResponse> CellsPageSetupGetPageSetupWithHttpInfo (string name, string sheetName, string folder = null);
+        ApiResponse<PageSetupResponse> CellsPageSetupGetPageSetupWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// update  page footer information 
         /// </summary>
@@ -137,8 +145,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="script"></param>
         /// <param name="isFirstPage"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPageSetupPostFooter (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null);
+        SaaSposeResponse CellsPageSetupPostFooter (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storage = null);
 
         /// <summary>
         /// update  page footer information 
@@ -153,8 +162,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="script"></param>
         /// <param name="isFirstPage"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPageSetupPostFooterWithHttpInfo (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPageSetupPostFooterWithHttpInfo (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storage = null);
         /// <summary>
         /// update  page header information 
         /// </summary>
@@ -168,8 +178,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="script"></param>
         /// <param name="isFirstPage"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPageSetupPostHeader (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null);
+        SaaSposeResponse CellsPageSetupPostHeader (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storage = null);
 
         /// <summary>
         /// update  page header information 
@@ -184,8 +195,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="script"></param>
         /// <param name="isFirstPage"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPageSetupPostHeaderWithHttpInfo (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPageSetupPostHeaderWithHttpInfo (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storage = null);
         /// <summary>
         /// Update Page Setup information.
         /// </summary>
@@ -197,8 +209,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="pageSetup"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPageSetupPostPageSetup (string name, string sheetName, PageSetup pageSetup = null, string folder = null);
+        SaaSposeResponse CellsPageSetupPostPageSetup (string name, string sheetName, PageSetup pageSetup = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Update Page Setup information.
@@ -211,8 +224,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="pageSetup"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPageSetupPostPageSetupWithHttpInfo (string name, string sheetName, PageSetup pageSetup = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPageSetupPostPageSetupWithHttpInfo (string name, string sheetName, PageSetup pageSetup = null, string folder = null, string storage = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -225,8 +239,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPageSetupDeleteHeaderFooterAsync (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPageSetupDeleteHeaderFooterAsync (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// clear header footer
@@ -238,8 +253,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageSetupDeleteHeaderFooterAsyncWithHttpInfo (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageSetupDeleteHeaderFooterAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// get page footer information
         /// </summary>
@@ -250,8 +266,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of PageSectionsResponse</returns>
-        System.Threading.Tasks.Task<PageSectionsResponse> CellsPageSetupGetFooterAsync (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<PageSectionsResponse> CellsPageSetupGetFooterAsync (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// get page footer information
@@ -263,8 +280,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (PageSectionsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PageSectionsResponse>> CellsPageSetupGetFooterAsyncWithHttpInfo (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<PageSectionsResponse>> CellsPageSetupGetFooterAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// get page header information
         /// </summary>
@@ -275,8 +293,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of PageSectionsResponse</returns>
-        System.Threading.Tasks.Task<PageSectionsResponse> CellsPageSetupGetHeaderAsync (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<PageSectionsResponse> CellsPageSetupGetHeaderAsync (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// get page header information
@@ -288,8 +307,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (PageSectionsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PageSectionsResponse>> CellsPageSetupGetHeaderAsyncWithHttpInfo (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<PageSectionsResponse>> CellsPageSetupGetHeaderAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Get Page Setup information.             
         /// </summary>
@@ -300,8 +320,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of PageSetupResponse</returns>
-        System.Threading.Tasks.Task<PageSetupResponse> CellsPageSetupGetPageSetupAsync (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<PageSetupResponse> CellsPageSetupGetPageSetupAsync (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Get Page Setup information.             
@@ -313,8 +334,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (PageSetupResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PageSetupResponse>> CellsPageSetupGetPageSetupAsyncWithHttpInfo (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<PageSetupResponse>> CellsPageSetupGetPageSetupAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// update  page footer information 
         /// </summary>
@@ -328,8 +350,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="script"></param>
         /// <param name="isFirstPage"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPageSetupPostFooterAsync (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPageSetupPostFooterAsync (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storage = null);
 
         /// <summary>
         /// update  page footer information 
@@ -344,8 +367,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="script"></param>
         /// <param name="isFirstPage"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageSetupPostFooterAsyncWithHttpInfo (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageSetupPostFooterAsyncWithHttpInfo (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storage = null);
         /// <summary>
         /// update  page header information 
         /// </summary>
@@ -359,8 +383,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="script"></param>
         /// <param name="isFirstPage"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPageSetupPostHeaderAsync (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPageSetupPostHeaderAsync (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storage = null);
 
         /// <summary>
         /// update  page header information 
@@ -375,8 +400,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="script"></param>
         /// <param name="isFirstPage"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageSetupPostHeaderAsyncWithHttpInfo (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageSetupPostHeaderAsyncWithHttpInfo (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storage = null);
         /// <summary>
         /// Update Page Setup information.
         /// </summary>
@@ -388,8 +414,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="pageSetup"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPageSetupPostPageSetupAsync (string name, string sheetName, PageSetup pageSetup = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPageSetupPostPageSetupAsync (string name, string sheetName, PageSetup pageSetup = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Update Page Setup information.
@@ -402,8 +429,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="pageSetup"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageSetupPostPageSetupAsyncWithHttpInfo (string name, string sheetName, PageSetup pageSetup = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageSetupPostPageSetupAsyncWithHttpInfo (string name, string sheetName, PageSetup pageSetup = null, string folder = null, string storage = null);
         #endregion Asynchronous Operations
     }
 
@@ -430,6 +458,25 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 this.Configuration.ApiClient.Configuration = this.Configuration;
             }
         }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsPageSetupApi"/> class.
+        /// </summary>
+        /// <returns></returns>
+        public CellsPageSetupApi(String basePath, String accesstoken)
+        {
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + accesstoken);
+            this.Configuration = new Configuration(new ApiClient(basePath),headerParameters);
+
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CellsPageSetupApi"/> class
@@ -444,6 +491,28 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
                 this.Configuration = configuration;
 
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsPageSetupApi"/> class
+        /// using Configuration object
+        /// </summary>
+        /// <param name="configuration">An instance of Configuration</param>
+        /// <returns></returns>
+        public CellsPageSetupApi(String grantType,String appSID,String appKey)
+        {
+            OAuthApi oauth2 = new OAuthApi("https://api.aspose.cloud");
+            var oauth2response = oauth2.OAuthPost(grantType, appSID, appKey);
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + oauth2response.AccessToken);
+            this.Configuration =  new Configuration(new ApiClient(), headerParameters);
             ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
@@ -523,10 +592,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPageSetupDeleteHeaderFooter (string name, string sheetName, string folder = null)
+        public SaaSposeResponse CellsPageSetupDeleteHeaderFooter (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPageSetupDeleteHeaderFooterWithHttpInfo(name, sheetName, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPageSetupDeleteHeaderFooterWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -537,8 +607,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPageSetupDeleteHeaderFooterWithHttpInfo (string name, string sheetName, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPageSetupDeleteHeaderFooterWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -572,6 +643,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -599,10 +671,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPageSetupDeleteHeaderFooterAsync (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPageSetupDeleteHeaderFooterAsync (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPageSetupDeleteHeaderFooterAsyncWithHttpInfo(name, sheetName, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPageSetupDeleteHeaderFooterAsyncWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -614,8 +687,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageSetupDeleteHeaderFooterAsyncWithHttpInfo (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageSetupDeleteHeaderFooterAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -649,6 +723,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -676,10 +751,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>PageSectionsResponse</returns>
-        public PageSectionsResponse CellsPageSetupGetFooter (string name, string sheetName, string folder = null)
+        public PageSectionsResponse CellsPageSetupGetFooter (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<PageSectionsResponse> localVarResponse = CellsPageSetupGetFooterWithHttpInfo(name, sheetName, folder);
+             ApiResponse<PageSectionsResponse> localVarResponse = CellsPageSetupGetFooterWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -690,8 +766,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of PageSectionsResponse</returns>
-        public ApiResponse< PageSectionsResponse > CellsPageSetupGetFooterWithHttpInfo (string name, string sheetName, string folder = null)
+        public ApiResponse< PageSectionsResponse > CellsPageSetupGetFooterWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -725,6 +802,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -752,10 +830,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of PageSectionsResponse</returns>
-        public async System.Threading.Tasks.Task<PageSectionsResponse> CellsPageSetupGetFooterAsync (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<PageSectionsResponse> CellsPageSetupGetFooterAsync (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<PageSectionsResponse> localVarResponse = await CellsPageSetupGetFooterAsyncWithHttpInfo(name, sheetName, folder);
+             ApiResponse<PageSectionsResponse> localVarResponse = await CellsPageSetupGetFooterAsyncWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -767,8 +846,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (PageSectionsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<PageSectionsResponse>> CellsPageSetupGetFooterAsyncWithHttpInfo (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<PageSectionsResponse>> CellsPageSetupGetFooterAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -802,6 +882,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -829,10 +910,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>PageSectionsResponse</returns>
-        public PageSectionsResponse CellsPageSetupGetHeader (string name, string sheetName, string folder = null)
+        public PageSectionsResponse CellsPageSetupGetHeader (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<PageSectionsResponse> localVarResponse = CellsPageSetupGetHeaderWithHttpInfo(name, sheetName, folder);
+             ApiResponse<PageSectionsResponse> localVarResponse = CellsPageSetupGetHeaderWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -843,8 +925,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of PageSectionsResponse</returns>
-        public ApiResponse< PageSectionsResponse > CellsPageSetupGetHeaderWithHttpInfo (string name, string sheetName, string folder = null)
+        public ApiResponse< PageSectionsResponse > CellsPageSetupGetHeaderWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -878,6 +961,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -905,10 +989,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of PageSectionsResponse</returns>
-        public async System.Threading.Tasks.Task<PageSectionsResponse> CellsPageSetupGetHeaderAsync (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<PageSectionsResponse> CellsPageSetupGetHeaderAsync (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<PageSectionsResponse> localVarResponse = await CellsPageSetupGetHeaderAsyncWithHttpInfo(name, sheetName, folder);
+             ApiResponse<PageSectionsResponse> localVarResponse = await CellsPageSetupGetHeaderAsyncWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -920,8 +1005,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (PageSectionsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<PageSectionsResponse>> CellsPageSetupGetHeaderAsyncWithHttpInfo (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<PageSectionsResponse>> CellsPageSetupGetHeaderAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -955,6 +1041,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -982,10 +1069,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>PageSetupResponse</returns>
-        public PageSetupResponse CellsPageSetupGetPageSetup (string name, string sheetName, string folder = null)
+        public PageSetupResponse CellsPageSetupGetPageSetup (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<PageSetupResponse> localVarResponse = CellsPageSetupGetPageSetupWithHttpInfo(name, sheetName, folder);
+             ApiResponse<PageSetupResponse> localVarResponse = CellsPageSetupGetPageSetupWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -996,8 +1084,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of PageSetupResponse</returns>
-        public ApiResponse< PageSetupResponse > CellsPageSetupGetPageSetupWithHttpInfo (string name, string sheetName, string folder = null)
+        public ApiResponse< PageSetupResponse > CellsPageSetupGetPageSetupWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1031,6 +1120,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1058,10 +1148,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of PageSetupResponse</returns>
-        public async System.Threading.Tasks.Task<PageSetupResponse> CellsPageSetupGetPageSetupAsync (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<PageSetupResponse> CellsPageSetupGetPageSetupAsync (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<PageSetupResponse> localVarResponse = await CellsPageSetupGetPageSetupAsyncWithHttpInfo(name, sheetName, folder);
+             ApiResponse<PageSetupResponse> localVarResponse = await CellsPageSetupGetPageSetupAsyncWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1073,8 +1164,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (PageSetupResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<PageSetupResponse>> CellsPageSetupGetPageSetupAsyncWithHttpInfo (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<PageSetupResponse>> CellsPageSetupGetPageSetupAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1108,6 +1200,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1138,10 +1231,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="script"></param>
         /// <param name="isFirstPage"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPageSetupPostFooter (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null)
+        public SaaSposeResponse CellsPageSetupPostFooter (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPageSetupPostFooterWithHttpInfo(name, sheetName, section, script, isFirstPage, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPageSetupPostFooterWithHttpInfo(name, sheetName, section, script, isFirstPage, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1155,8 +1249,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="script"></param>
         /// <param name="isFirstPage"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPageSetupPostFooterWithHttpInfo (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPageSetupPostFooterWithHttpInfo (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1202,6 +1297,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (script != null) localVarQueryParams.Add("script", Configuration.ApiClient.ParameterToString(script)); // query parameter
             if (isFirstPage != null) localVarQueryParams.Add("isFirstPage", Configuration.ApiClient.ParameterToString(isFirstPage)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1232,10 +1328,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="script"></param>
         /// <param name="isFirstPage"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPageSetupPostFooterAsync (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPageSetupPostFooterAsync (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPageSetupPostFooterAsyncWithHttpInfo(name, sheetName, section, script, isFirstPage, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPageSetupPostFooterAsyncWithHttpInfo(name, sheetName, section, script, isFirstPage, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1250,8 +1347,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="script"></param>
         /// <param name="isFirstPage"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageSetupPostFooterAsyncWithHttpInfo (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageSetupPostFooterAsyncWithHttpInfo (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1297,6 +1395,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (script != null) localVarQueryParams.Add("script", Configuration.ApiClient.ParameterToString(script)); // query parameter
             if (isFirstPage != null) localVarQueryParams.Add("isFirstPage", Configuration.ApiClient.ParameterToString(isFirstPage)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1327,10 +1426,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="script"></param>
         /// <param name="isFirstPage"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPageSetupPostHeader (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null)
+        public SaaSposeResponse CellsPageSetupPostHeader (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPageSetupPostHeaderWithHttpInfo(name, sheetName, section, script, isFirstPage, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPageSetupPostHeaderWithHttpInfo(name, sheetName, section, script, isFirstPage, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1344,8 +1444,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="script"></param>
         /// <param name="isFirstPage"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPageSetupPostHeaderWithHttpInfo (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPageSetupPostHeaderWithHttpInfo (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1391,6 +1492,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (script != null) localVarQueryParams.Add("script", Configuration.ApiClient.ParameterToString(script)); // query parameter
             if (isFirstPage != null) localVarQueryParams.Add("isFirstPage", Configuration.ApiClient.ParameterToString(isFirstPage)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1421,10 +1523,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="script"></param>
         /// <param name="isFirstPage"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPageSetupPostHeaderAsync (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPageSetupPostHeaderAsync (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPageSetupPostHeaderAsyncWithHttpInfo(name, sheetName, section, script, isFirstPage, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPageSetupPostHeaderAsyncWithHttpInfo(name, sheetName, section, script, isFirstPage, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1439,8 +1542,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="script"></param>
         /// <param name="isFirstPage"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageSetupPostHeaderAsyncWithHttpInfo (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageSetupPostHeaderAsyncWithHttpInfo (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1486,6 +1590,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (script != null) localVarQueryParams.Add("script", Configuration.ApiClient.ParameterToString(script)); // query parameter
             if (isFirstPage != null) localVarQueryParams.Add("isFirstPage", Configuration.ApiClient.ParameterToString(isFirstPage)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1514,10 +1619,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="pageSetup"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPageSetupPostPageSetup (string name, string sheetName, PageSetup pageSetup = null, string folder = null)
+        public SaaSposeResponse CellsPageSetupPostPageSetup (string name, string sheetName, PageSetup pageSetup = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPageSetupPostPageSetupWithHttpInfo(name, sheetName, pageSetup, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPageSetupPostPageSetupWithHttpInfo(name, sheetName, pageSetup, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1529,8 +1635,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="pageSetup"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPageSetupPostPageSetupWithHttpInfo (string name, string sheetName, PageSetup pageSetup = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPageSetupPostPageSetupWithHttpInfo (string name, string sheetName, PageSetup pageSetup = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1564,6 +1671,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (pageSetup != null && pageSetup.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(pageSetup); // http body (model) parameter
@@ -1600,10 +1708,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="pageSetup"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPageSetupPostPageSetupAsync (string name, string sheetName, PageSetup pageSetup = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPageSetupPostPageSetupAsync (string name, string sheetName, PageSetup pageSetup = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPageSetupPostPageSetupAsyncWithHttpInfo(name, sheetName, pageSetup, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPageSetupPostPageSetupAsyncWithHttpInfo(name, sheetName, pageSetup, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1616,8 +1725,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="pageSetup"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageSetupPostPageSetupAsyncWithHttpInfo (string name, string sheetName, PageSetup pageSetup = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageSetupPostPageSetupAsyncWithHttpInfo (string name, string sheetName, PageSetup pageSetup = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1651,6 +1761,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (pageSetup != null && pageSetup.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(pageSetup); // http body (model) parameter

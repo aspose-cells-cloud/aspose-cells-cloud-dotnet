@@ -41,7 +41,7 @@ Method | HTTP request | Description
 
 <a name="cellsworksheetsdeleteunprotectworksheet"></a>
 # **CellsWorksheetsDeleteUnprotectWorksheet**
-> WorksheetResponse CellsWorksheetsDeleteUnprotectWorksheet (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null)
+> WorksheetResponse CellsWorksheetsDeleteUnprotectWorksheet (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storage = null)
 
 Unprotect worksheet.
 
@@ -64,11 +64,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | The worksheet name.
             var protectParameter = new ProtectSheetParameter(); // ProtectSheetParameter | with protection settings. Only password is used here. (optional) 
             var folder = folder_example;  // string | Document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Unprotect worksheet.
-                WorksheetResponse result = apiInstance.CellsWorksheetsDeleteUnprotectWorksheet(name, sheetName, protectParameter, folder);
+                WorksheetResponse result = apiInstance.CellsWorksheetsDeleteUnprotectWorksheet(name, sheetName, protectParameter, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -88,6 +89,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| The worksheet name. | 
  **protectParameter** | [**ProtectSheetParameter**](ProtectSheetParameter.md)| with protection settings. Only password is used here. | [optional] 
  **folder** | **string**| Document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -106,7 +108,7 @@ No authorization required
 
 <a name="cellsworksheetsdeleteworksheet"></a>
 # **CellsWorksheetsDeleteWorksheet**
-> WorksheetsResponse CellsWorksheetsDeleteWorksheet (string name, string sheetName, string folder = null)
+> WorksheetsResponse CellsWorksheetsDeleteWorksheet (string name, string sheetName, string folder = null, string storage = null)
 
 Delete worksheet.
 
@@ -128,11 +130,12 @@ namespace Example
             var name = name_example;  // string | Document name.
             var sheetName = sheetName_example;  // string | The worksheet name.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Delete worksheet.
-                WorksheetsResponse result = apiInstance.CellsWorksheetsDeleteWorksheet(name, sheetName, folder);
+                WorksheetsResponse result = apiInstance.CellsWorksheetsDeleteWorksheet(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -151,6 +154,7 @@ Name | Type | Description  | Notes
  **name** | **string**| Document name. | 
  **sheetName** | **string**| The worksheet name. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -169,7 +173,7 @@ No authorization required
 
 <a name="cellsworksheetsdeleteworksheetbackground"></a>
 # **CellsWorksheetsDeleteWorksheetBackground**
-> SaaSposeResponse CellsWorksheetsDeleteWorksheetBackground (string name, string sheetName, string folder = null)
+> SaaSposeResponse CellsWorksheetsDeleteWorksheetBackground (string name, string sheetName, string folder = null, string storage = null)
 
 Set worksheet background image.
 
@@ -191,11 +195,12 @@ namespace Example
             var name = name_example;  // string | 
             var sheetName = sheetName_example;  // string | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Set worksheet background image.
-                SaaSposeResponse result = apiInstance.CellsWorksheetsDeleteWorksheetBackground(name, sheetName, folder);
+                SaaSposeResponse result = apiInstance.CellsWorksheetsDeleteWorksheetBackground(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -214,6 +219,7 @@ Name | Type | Description  | Notes
  **name** | **string**|  | 
  **sheetName** | **string**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -232,7 +238,7 @@ No authorization required
 
 <a name="cellsworksheetsdeleteworksheetcomment"></a>
 # **CellsWorksheetsDeleteWorksheetComment**
-> SaaSposeResponse CellsWorksheetsDeleteWorksheetComment (string name, string sheetName, string cellName, string folder = null)
+> SaaSposeResponse CellsWorksheetsDeleteWorksheetComment (string name, string sheetName, string cellName, string folder = null, string storage = null)
 
 Delete worksheet's cell comment.
 
@@ -255,11 +261,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | The worksheet name.
             var cellName = cellName_example;  // string | The cell name
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Delete worksheet's cell comment.
-                SaaSposeResponse result = apiInstance.CellsWorksheetsDeleteWorksheetComment(name, sheetName, cellName, folder);
+                SaaSposeResponse result = apiInstance.CellsWorksheetsDeleteWorksheetComment(name, sheetName, cellName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -279,6 +286,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| The worksheet name. | 
  **cellName** | **string**| The cell name | 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -297,7 +305,7 @@ No authorization required
 
 <a name="cellsworksheetsdeleteworksheetcomments"></a>
 # **CellsWorksheetsDeleteWorksheetComments**
-> SaaSposeResponse CellsWorksheetsDeleteWorksheetComments (string name, string sheetName, string folder = null)
+> SaaSposeResponse CellsWorksheetsDeleteWorksheetComments (string name, string sheetName, string folder = null, string storage = null)
 
 Delete all comments for worksheet.
 
@@ -319,11 +327,12 @@ namespace Example
             var name = name_example;  // string | 
             var sheetName = sheetName_example;  // string | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Delete all comments for worksheet.
-                SaaSposeResponse result = apiInstance.CellsWorksheetsDeleteWorksheetComments(name, sheetName, folder);
+                SaaSposeResponse result = apiInstance.CellsWorksheetsDeleteWorksheetComments(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -342,6 +351,7 @@ Name | Type | Description  | Notes
  **name** | **string**|  | 
  **sheetName** | **string**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -360,7 +370,7 @@ No authorization required
 
 <a name="cellsworksheetsdeleteworksheetfreezepanes"></a>
 # **CellsWorksheetsDeleteWorksheetFreezePanes**
-> SaaSposeResponse CellsWorksheetsDeleteWorksheetFreezePanes (string name, string sheetName, int? row, int? column, int? freezedRows, int? freezedColumns, string folder = null)
+> SaaSposeResponse CellsWorksheetsDeleteWorksheetFreezePanes (string name, string sheetName, int? row, int? column, int? freezedRows, int? freezedColumns, string folder = null, string storage = null)
 
 Unfreeze panes
 
@@ -386,11 +396,12 @@ namespace Example
             var freezedRows = 56;  // int? | 
             var freezedColumns = 56;  // int? | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Unfreeze panes
-                SaaSposeResponse result = apiInstance.CellsWorksheetsDeleteWorksheetFreezePanes(name, sheetName, row, column, freezedRows, freezedColumns, folder);
+                SaaSposeResponse result = apiInstance.CellsWorksheetsDeleteWorksheetFreezePanes(name, sheetName, row, column, freezedRows, freezedColumns, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -413,6 +424,7 @@ Name | Type | Description  | Notes
  **freezedRows** | **int?**|  | 
  **freezedColumns** | **int?**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -431,7 +443,7 @@ No authorization required
 
 <a name="cellsworksheetsgetnamedranges"></a>
 # **CellsWorksheetsGetNamedRanges**
-> RangesResponse CellsWorksheetsGetNamedRanges (string name, string folder = null)
+> RangesResponse CellsWorksheetsGetNamedRanges (string name, string folder = null, string storage = null)
 
 Read worksheets ranges info.
 
@@ -452,11 +464,12 @@ namespace Example
             var apiInstance = new CellsWorksheetsApi();
             var name = name_example;  // string | Document name.
             var folder = folder_example;  // string | Document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Read worksheets ranges info.
-                RangesResponse result = apiInstance.CellsWorksheetsGetNamedRanges(name, folder);
+                RangesResponse result = apiInstance.CellsWorksheetsGetNamedRanges(name, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -474,6 +487,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| Document name. | 
  **folder** | **string**| Document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -492,7 +506,7 @@ No authorization required
 
 <a name="cellsworksheetsgetworksheet"></a>
 # **CellsWorksheetsGetWorksheet**
-> System.IO.Stream CellsWorksheetsGetWorksheet (string name, string sheetName, int? verticalResolution = null, int? horizontalResolution = null, string folder = null)
+> System.IO.Stream CellsWorksheetsGetWorksheet (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string folder = null, string storage = null)
 
 Read worksheet info or export.
 
@@ -513,14 +527,16 @@ namespace Example
             var apiInstance = new CellsWorksheetsApi();
             var name = name_example;  // string | The document name.
             var sheetName = sheetName_example;  // string | The worksheet name.
+            var format = format_example;  // string | The exported file format. (optional) 
             var verticalResolution = 56;  // int? | Image vertical resolution. (optional)  (default to 0)
             var horizontalResolution = 56;  // int? | Image horizontal resolution. (optional)  (default to 0)
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Read worksheet info or export.
-                System.IO.Stream result = apiInstance.CellsWorksheetsGetWorksheet(name, sheetName, verticalResolution, horizontalResolution, folder);
+                System.IO.Stream result = apiInstance.CellsWorksheetsGetWorksheet(name, sheetName, format, verticalResolution, horizontalResolution, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -538,9 +554,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| The document name. | 
  **sheetName** | **string**| The worksheet name. | 
+ **format** | **string**| The exported file format. | [optional] 
  **verticalResolution** | **int?**| Image vertical resolution. | [optional] [default to 0]
  **horizontalResolution** | **int?**| Image horizontal resolution. | [optional] [default to 0]
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -559,7 +577,7 @@ No authorization required
 
 <a name="cellsworksheetsgetworksheetcalculateformula"></a>
 # **CellsWorksheetsGetWorksheetCalculateFormula**
-> SingleValueResponse CellsWorksheetsGetWorksheetCalculateFormula (string name, string sheetName, string formula, string folder = null)
+> SingleValueResponse CellsWorksheetsGetWorksheetCalculateFormula (string name, string sheetName, string formula, string folder = null, string storage = null)
 
 Calculate formula value.
 
@@ -582,11 +600,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | Worksheet name.
             var formula = formula_example;  // string | The formula.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Calculate formula value.
-                SingleValueResponse result = apiInstance.CellsWorksheetsGetWorksheetCalculateFormula(name, sheetName, formula, folder);
+                SingleValueResponse result = apiInstance.CellsWorksheetsGetWorksheetCalculateFormula(name, sheetName, formula, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -606,6 +625,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| Worksheet name. | 
  **formula** | **string**| The formula. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -624,7 +644,7 @@ No authorization required
 
 <a name="cellsworksheetsgetworksheetcomment"></a>
 # **CellsWorksheetsGetWorksheetComment**
-> CommentResponse CellsWorksheetsGetWorksheetComment (string name, string sheetName, string cellName, string folder = null)
+> CommentResponse CellsWorksheetsGetWorksheetComment (string name, string sheetName, string cellName, string folder = null, string storage = null)
 
 Get worksheet comment by cell name.
 
@@ -647,11 +667,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | The worksheet name.
             var cellName = cellName_example;  // string | The cell name
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get worksheet comment by cell name.
-                CommentResponse result = apiInstance.CellsWorksheetsGetWorksheetComment(name, sheetName, cellName, folder);
+                CommentResponse result = apiInstance.CellsWorksheetsGetWorksheetComment(name, sheetName, cellName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -671,6 +692,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| The worksheet name. | 
  **cellName** | **string**| The cell name | 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -689,7 +711,7 @@ No authorization required
 
 <a name="cellsworksheetsgetworksheetcomments"></a>
 # **CellsWorksheetsGetWorksheetComments**
-> CommentsResponse CellsWorksheetsGetWorksheetComments (string name, string sheetName, string folder = null)
+> CommentsResponse CellsWorksheetsGetWorksheetComments (string name, string sheetName, string folder = null, string storage = null)
 
 Get worksheet comments.
 
@@ -711,11 +733,12 @@ namespace Example
             var name = name_example;  // string | Workbook name.
             var sheetName = sheetName_example;  // string | The worksheet name.
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get worksheet comments.
-                CommentsResponse result = apiInstance.CellsWorksheetsGetWorksheetComments(name, sheetName, folder);
+                CommentsResponse result = apiInstance.CellsWorksheetsGetWorksheetComments(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -734,6 +757,7 @@ Name | Type | Description  | Notes
  **name** | **string**| Workbook name. | 
  **sheetName** | **string**| The worksheet name. | 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -752,7 +776,7 @@ No authorization required
 
 <a name="cellsworksheetsgetworksheetmergedcell"></a>
 # **CellsWorksheetsGetWorksheetMergedCell**
-> MergedCellResponse CellsWorksheetsGetWorksheetMergedCell (string name, string sheetName, int? mergedCellIndex, string folder = null)
+> MergedCellResponse CellsWorksheetsGetWorksheetMergedCell (string name, string sheetName, int? mergedCellIndex, string folder = null, string storage = null)
 
 Get worksheet merged cell by its index.
 
@@ -775,11 +799,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | Worksheet name.
             var mergedCellIndex = 56;  // int? | Merged cell index.
             var folder = folder_example;  // string | Document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get worksheet merged cell by its index.
-                MergedCellResponse result = apiInstance.CellsWorksheetsGetWorksheetMergedCell(name, sheetName, mergedCellIndex, folder);
+                MergedCellResponse result = apiInstance.CellsWorksheetsGetWorksheetMergedCell(name, sheetName, mergedCellIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -799,6 +824,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| Worksheet name. | 
  **mergedCellIndex** | **int?**| Merged cell index. | 
  **folder** | **string**| Document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -817,7 +843,7 @@ No authorization required
 
 <a name="cellsworksheetsgetworksheetmergedcells"></a>
 # **CellsWorksheetsGetWorksheetMergedCells**
-> MergedCellsResponse CellsWorksheetsGetWorksheetMergedCells (string name, string sheetName, string folder = null)
+> MergedCellsResponse CellsWorksheetsGetWorksheetMergedCells (string name, string sheetName, string folder = null, string storage = null)
 
 Get worksheet merged cells.
 
@@ -839,11 +865,12 @@ namespace Example
             var name = name_example;  // string | Document name.
             var sheetName = sheetName_example;  // string | The workseet name.
             var folder = folder_example;  // string | Document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get worksheet merged cells.
-                MergedCellsResponse result = apiInstance.CellsWorksheetsGetWorksheetMergedCells(name, sheetName, folder);
+                MergedCellsResponse result = apiInstance.CellsWorksheetsGetWorksheetMergedCells(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -862,6 +889,7 @@ Name | Type | Description  | Notes
  **name** | **string**| Document name. | 
  **sheetName** | **string**| The workseet name. | 
  **folder** | **string**| Document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -880,7 +908,7 @@ No authorization required
 
 <a name="cellsworksheetsgetworksheettextitems"></a>
 # **CellsWorksheetsGetWorksheetTextItems**
-> TextItemsResponse CellsWorksheetsGetWorksheetTextItems (string name, string sheetName, string folder = null)
+> TextItemsResponse CellsWorksheetsGetWorksheetTextItems (string name, string sheetName, string folder = null, string storage = null)
 
 Get worksheet text items.
 
@@ -902,11 +930,12 @@ namespace Example
             var name = name_example;  // string | Workbook name.
             var sheetName = sheetName_example;  // string | The worksheet name.
             var folder = folder_example;  // string | The workbook's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get worksheet text items.
-                TextItemsResponse result = apiInstance.CellsWorksheetsGetWorksheetTextItems(name, sheetName, folder);
+                TextItemsResponse result = apiInstance.CellsWorksheetsGetWorksheetTextItems(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -925,6 +954,7 @@ Name | Type | Description  | Notes
  **name** | **string**| Workbook name. | 
  **sheetName** | **string**| The worksheet name. | 
  **folder** | **string**| The workbook&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -943,7 +973,7 @@ No authorization required
 
 <a name="cellsworksheetsgetworksheets"></a>
 # **CellsWorksheetsGetWorksheets**
-> WorksheetsResponse CellsWorksheetsGetWorksheets (string name, string folder = null)
+> WorksheetsResponse CellsWorksheetsGetWorksheets (string name, string folder = null, string storage = null)
 
 Read worksheets info.
 
@@ -964,11 +994,12 @@ namespace Example
             var apiInstance = new CellsWorksheetsApi();
             var name = name_example;  // string | Document name.
             var folder = folder_example;  // string | Document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Read worksheets info.
-                WorksheetsResponse result = apiInstance.CellsWorksheetsGetWorksheets(name, folder);
+                WorksheetsResponse result = apiInstance.CellsWorksheetsGetWorksheets(name, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -986,6 +1017,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| Document name. | 
  **folder** | **string**| Document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1004,7 +1036,7 @@ No authorization required
 
 <a name="cellsworksheetspostautofitworksheetcolumns"></a>
 # **CellsWorksheetsPostAutofitWorksheetColumns**
-> SaaSposeResponse CellsWorksheetsPostAutofitWorksheetColumns (string name, string sheetName, int? firstColumn, int? lastColumn, AutoFitterOptions autoFitterOptions = null, int? firstRow = null, int? lastRow = null, string folder = null)
+> SaaSposeResponse CellsWorksheetsPostAutofitWorksheetColumns (string name, string sheetName, int? firstColumn, int? lastColumn, AutoFitterOptions autoFitterOptions = null, int? firstRow = null, int? lastRow = null, string folder = null, string storage = null)
 
 
 
@@ -1031,10 +1063,11 @@ namespace Example
             var firstRow = 56;  // int? |  (optional) 
             var lastRow = 56;  // int? |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                SaaSposeResponse result = apiInstance.CellsWorksheetsPostAutofitWorksheetColumns(name, sheetName, firstColumn, lastColumn, autoFitterOptions, firstRow, lastRow, folder);
+                SaaSposeResponse result = apiInstance.CellsWorksheetsPostAutofitWorksheetColumns(name, sheetName, firstColumn, lastColumn, autoFitterOptions, firstRow, lastRow, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1058,6 +1091,7 @@ Name | Type | Description  | Notes
  **firstRow** | **int?**|  | [optional] 
  **lastRow** | **int?**|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1076,7 +1110,7 @@ No authorization required
 
 <a name="cellsworksheetspostautofitworksheetrow"></a>
 # **CellsWorksheetsPostAutofitWorksheetRow**
-> SaaSposeResponse CellsWorksheetsPostAutofitWorksheetRow (string name, string sheetName, int? rowIndex, int? firstColumn, int? lastColumn, AutoFitterOptions autoFitterOptions = null, string folder = null)
+> SaaSposeResponse CellsWorksheetsPostAutofitWorksheetRow (string name, string sheetName, int? rowIndex, int? firstColumn, int? lastColumn, AutoFitterOptions autoFitterOptions = null, string folder = null, string storage = null)
 
 
 
@@ -1102,10 +1136,11 @@ namespace Example
             var lastColumn = 56;  // int? | 
             var autoFitterOptions = new AutoFitterOptions(); // AutoFitterOptions |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                SaaSposeResponse result = apiInstance.CellsWorksheetsPostAutofitWorksheetRow(name, sheetName, rowIndex, firstColumn, lastColumn, autoFitterOptions, folder);
+                SaaSposeResponse result = apiInstance.CellsWorksheetsPostAutofitWorksheetRow(name, sheetName, rowIndex, firstColumn, lastColumn, autoFitterOptions, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1128,6 +1163,7 @@ Name | Type | Description  | Notes
  **lastColumn** | **int?**|  | 
  **autoFitterOptions** | [**AutoFitterOptions**](AutoFitterOptions.md)|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1146,7 +1182,7 @@ No authorization required
 
 <a name="cellsworksheetspostautofitworksheetrows"></a>
 # **CellsWorksheetsPostAutofitWorksheetRows**
-> SaaSposeResponse CellsWorksheetsPostAutofitWorksheetRows (string name, string sheetName, AutoFitterOptions autoFitterOptions = null, int? startRow = null, int? endRow = null, bool? onlyAuto = null, string folder = null)
+> SaaSposeResponse CellsWorksheetsPostAutofitWorksheetRows (string name, string sheetName, AutoFitterOptions autoFitterOptions = null, int? startRow = null, int? endRow = null, bool? onlyAuto = null, string folder = null, string storage = null)
 
 Autofit worksheet rows.
 
@@ -1172,11 +1208,12 @@ namespace Example
             var endRow = 56;  // int? | End row. (optional) 
             var onlyAuto = true;  // bool? | Only auto. (optional)  (default to false)
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Autofit worksheet rows.
-                SaaSposeResponse result = apiInstance.CellsWorksheetsPostAutofitWorksheetRows(name, sheetName, autoFitterOptions, startRow, endRow, onlyAuto, folder);
+                SaaSposeResponse result = apiInstance.CellsWorksheetsPostAutofitWorksheetRows(name, sheetName, autoFitterOptions, startRow, endRow, onlyAuto, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1199,6 +1236,7 @@ Name | Type | Description  | Notes
  **endRow** | **int?**| End row. | [optional] 
  **onlyAuto** | **bool?**| Only auto. | [optional] [default to false]
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1217,7 +1255,7 @@ No authorization required
 
 <a name="cellsworksheetspostcopyworksheet"></a>
 # **CellsWorksheetsPostCopyWorksheet**
-> SaaSposeResponse CellsWorksheetsPostCopyWorksheet (string name, string sheetName, string sourceSheet, CopyOptions options = null, string sourceWorkbook = null, string sourceFolder = null, string folder = null)
+> SaaSposeResponse CellsWorksheetsPostCopyWorksheet (string name, string sheetName, string sourceSheet, CopyOptions options = null, string sourceWorkbook = null, string sourceFolder = null, string folder = null, string storage = null)
 
 
 
@@ -1243,10 +1281,11 @@ namespace Example
             var sourceWorkbook = sourceWorkbook_example;  // string |  (optional) 
             var sourceFolder = sourceFolder_example;  // string |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                SaaSposeResponse result = apiInstance.CellsWorksheetsPostCopyWorksheet(name, sheetName, sourceSheet, options, sourceWorkbook, sourceFolder, folder);
+                SaaSposeResponse result = apiInstance.CellsWorksheetsPostCopyWorksheet(name, sheetName, sourceSheet, options, sourceWorkbook, sourceFolder, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1269,6 +1308,7 @@ Name | Type | Description  | Notes
  **sourceWorkbook** | **string**|  | [optional] 
  **sourceFolder** | **string**|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1287,7 +1327,7 @@ No authorization required
 
 <a name="cellsworksheetspostmoveworksheet"></a>
 # **CellsWorksheetsPostMoveWorksheet**
-> WorksheetsResponse CellsWorksheetsPostMoveWorksheet (string name, string sheetName, WorksheetMovingRequest moving = null, string folder = null)
+> WorksheetsResponse CellsWorksheetsPostMoveWorksheet (string name, string sheetName, WorksheetMovingRequest moving = null, string folder = null, string storage = null)
 
 Move worksheet.
 
@@ -1310,11 +1350,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | The worksheet name.
             var moving = new WorksheetMovingRequest(); // WorksheetMovingRequest | with moving parameters. (optional) 
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Move worksheet.
-                WorksheetsResponse result = apiInstance.CellsWorksheetsPostMoveWorksheet(name, sheetName, moving, folder);
+                WorksheetsResponse result = apiInstance.CellsWorksheetsPostMoveWorksheet(name, sheetName, moving, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1334,6 +1375,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| The worksheet name. | 
  **moving** | [**WorksheetMovingRequest**](WorksheetMovingRequest.md)| with moving parameters. | [optional] 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1352,7 +1394,7 @@ No authorization required
 
 <a name="cellsworksheetspostrenameworksheet"></a>
 # **CellsWorksheetsPostRenameWorksheet**
-> SaaSposeResponse CellsWorksheetsPostRenameWorksheet (string name, string sheetName, string newname, string folder = null)
+> SaaSposeResponse CellsWorksheetsPostRenameWorksheet (string name, string sheetName, string newname, string folder = null, string storage = null)
 
 Rename worksheet
 
@@ -1375,11 +1417,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | 
             var newname = newname_example;  // string | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Rename worksheet
-                SaaSposeResponse result = apiInstance.CellsWorksheetsPostRenameWorksheet(name, sheetName, newname, folder);
+                SaaSposeResponse result = apiInstance.CellsWorksheetsPostRenameWorksheet(name, sheetName, newname, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1399,6 +1442,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**|  | 
  **newname** | **string**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1417,7 +1461,7 @@ No authorization required
 
 <a name="cellsworksheetspostupdateworksheetproperty"></a>
 # **CellsWorksheetsPostUpdateWorksheetProperty**
-> WorksheetResponse CellsWorksheetsPostUpdateWorksheetProperty (string name, string sheetName, Worksheet sheet = null, string folder = null)
+> WorksheetResponse CellsWorksheetsPostUpdateWorksheetProperty (string name, string sheetName, Worksheet sheet = null, string folder = null, string storage = null)
 
 Update worksheet property
 
@@ -1440,11 +1484,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | 
             var sheet = new Worksheet(); // Worksheet |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Update worksheet property
-                WorksheetResponse result = apiInstance.CellsWorksheetsPostUpdateWorksheetProperty(name, sheetName, sheet, folder);
+                WorksheetResponse result = apiInstance.CellsWorksheetsPostUpdateWorksheetProperty(name, sheetName, sheet, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1464,6 +1509,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**|  | 
  **sheet** | [**Worksheet**](Worksheet.md)|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1482,7 +1528,7 @@ No authorization required
 
 <a name="cellsworksheetspostupdateworksheetzoom"></a>
 # **CellsWorksheetsPostUpdateWorksheetZoom**
-> SaaSposeResponse CellsWorksheetsPostUpdateWorksheetZoom (string name, string sheetName, int? value, string folder = null)
+> SaaSposeResponse CellsWorksheetsPostUpdateWorksheetZoom (string name, string sheetName, int? value, string folder = null, string storage = null)
 
 
 
@@ -1505,10 +1551,11 @@ namespace Example
             var sheetName = sheetName_example;  // string | 
             var value = 56;  // int? | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                SaaSposeResponse result = apiInstance.CellsWorksheetsPostUpdateWorksheetZoom(name, sheetName, value, folder);
+                SaaSposeResponse result = apiInstance.CellsWorksheetsPostUpdateWorksheetZoom(name, sheetName, value, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1528,6 +1575,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**|  | 
  **value** | **int?**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1546,7 +1594,7 @@ No authorization required
 
 <a name="cellsworksheetspostworksheetcomment"></a>
 # **CellsWorksheetsPostWorksheetComment**
-> SaaSposeResponse CellsWorksheetsPostWorksheetComment (string name, string sheetName, string cellName, Comment comment = null, string folder = null)
+> SaaSposeResponse CellsWorksheetsPostWorksheetComment (string name, string sheetName, string cellName, Comment comment = null, string folder = null, string storage = null)
 
 Update worksheet's cell comment.
 
@@ -1570,11 +1618,12 @@ namespace Example
             var cellName = cellName_example;  // string | The cell name
             var comment = new Comment(); // Comment | Comment object (optional) 
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Update worksheet's cell comment.
-                SaaSposeResponse result = apiInstance.CellsWorksheetsPostWorksheetComment(name, sheetName, cellName, comment, folder);
+                SaaSposeResponse result = apiInstance.CellsWorksheetsPostWorksheetComment(name, sheetName, cellName, comment, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1595,6 +1644,7 @@ Name | Type | Description  | Notes
  **cellName** | **string**| The cell name | 
  **comment** | [**Comment**](Comment.md)| Comment object | [optional] 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1613,7 +1663,7 @@ No authorization required
 
 <a name="cellsworksheetspostworksheetrangesort"></a>
 # **CellsWorksheetsPostWorksheetRangeSort**
-> SaaSposeResponse CellsWorksheetsPostWorksheetRangeSort (string name, string sheetName, string cellArea, DataSorter dataSorter = null, string folder = null)
+> SaaSposeResponse CellsWorksheetsPostWorksheetRangeSort (string name, string sheetName, string cellArea, DataSorter dataSorter = null, string folder = null, string storage = null)
 
 Sort worksheet range.
 
@@ -1637,11 +1687,12 @@ namespace Example
             var cellArea = cellArea_example;  // string | The range to sort.
             var dataSorter = new DataSorter(); // DataSorter | with sorting settings. (optional) 
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Sort worksheet range.
-                SaaSposeResponse result = apiInstance.CellsWorksheetsPostWorksheetRangeSort(name, sheetName, cellArea, dataSorter, folder);
+                SaaSposeResponse result = apiInstance.CellsWorksheetsPostWorksheetRangeSort(name, sheetName, cellArea, dataSorter, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1662,6 +1713,7 @@ Name | Type | Description  | Notes
  **cellArea** | **string**| The range to sort. | 
  **dataSorter** | [**DataSorter**](DataSorter.md)| with sorting settings. | [optional] 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1680,7 +1732,7 @@ No authorization required
 
 <a name="cellsworksheetspostworksheettextsearch"></a>
 # **CellsWorksheetsPostWorksheetTextSearch**
-> TextItemsResponse CellsWorksheetsPostWorksheetTextSearch (string name, string sheetName, string text, string folder = null)
+> TextItemsResponse CellsWorksheetsPostWorksheetTextSearch (string name, string sheetName, string text, string folder = null, string storage = null)
 
 Search text.
 
@@ -1703,11 +1755,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | The worksheet name.
             var text = text_example;  // string | Text to search.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Search text.
-                TextItemsResponse result = apiInstance.CellsWorksheetsPostWorksheetTextSearch(name, sheetName, text, folder);
+                TextItemsResponse result = apiInstance.CellsWorksheetsPostWorksheetTextSearch(name, sheetName, text, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1727,6 +1780,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| The worksheet name. | 
  **text** | **string**| Text to search. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1745,7 +1799,7 @@ No authorization required
 
 <a name="cellsworksheetspostworsheettextreplace"></a>
 # **CellsWorksheetsPostWorsheetTextReplace**
-> WorksheetReplaceResponse CellsWorksheetsPostWorsheetTextReplace (string name, string sheetName, string oldValue, string newValue, string folder = null)
+> WorksheetReplaceResponse CellsWorksheetsPostWorsheetTextReplace (string name, string sheetName, string oldValue, string newValue, string folder = null, string storage = null)
 
 Replace text.
 
@@ -1769,11 +1823,12 @@ namespace Example
             var oldValue = oldValue_example;  // string | The old text to replace.
             var newValue = newValue_example;  // string | The new text to replace by.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Replace text.
-                WorksheetReplaceResponse result = apiInstance.CellsWorksheetsPostWorsheetTextReplace(name, sheetName, oldValue, newValue, folder);
+                WorksheetReplaceResponse result = apiInstance.CellsWorksheetsPostWorsheetTextReplace(name, sheetName, oldValue, newValue, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1794,6 +1849,7 @@ Name | Type | Description  | Notes
  **oldValue** | **string**| The old text to replace. | 
  **newValue** | **string**| The new text to replace by. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1812,7 +1868,7 @@ No authorization required
 
 <a name="cellsworksheetsputaddnewworksheet"></a>
 # **CellsWorksheetsPutAddNewWorksheet**
-> WorksheetsResponse CellsWorksheetsPutAddNewWorksheet (string name, string sheetName, int? position = null, string sheettype = null, string folder = null)
+> WorksheetsResponse CellsWorksheetsPutAddNewWorksheet (string name, string sheetName, int? position = null, string sheettype = null, string folder = null, string storage = null)
 
 Add new worksheet.
 
@@ -1836,11 +1892,12 @@ namespace Example
             var position = 56;  // int? | The new sheet position. (optional) 
             var sheettype = sheettype_example;  // string | The new sheet type. (optional) 
             var folder = folder_example;  // string | Document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Add new worksheet.
-                WorksheetsResponse result = apiInstance.CellsWorksheetsPutAddNewWorksheet(name, sheetName, position, sheettype, folder);
+                WorksheetsResponse result = apiInstance.CellsWorksheetsPutAddNewWorksheet(name, sheetName, position, sheettype, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1861,6 +1918,7 @@ Name | Type | Description  | Notes
  **position** | **int?**| The new sheet position. | [optional] 
  **sheettype** | **string**| The new sheet type. | [optional] 
  **folder** | **string**| Document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1879,7 +1937,7 @@ No authorization required
 
 <a name="cellsworksheetsputchangevisibilityworksheet"></a>
 # **CellsWorksheetsPutChangeVisibilityWorksheet**
-> WorksheetResponse CellsWorksheetsPutChangeVisibilityWorksheet (string name, string sheetName, bool? isVisible, string folder = null)
+> WorksheetResponse CellsWorksheetsPutChangeVisibilityWorksheet (string name, string sheetName, bool? isVisible, string folder = null, string storage = null)
 
 Change worksheet visibility.
 
@@ -1902,11 +1960,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | Worksheet name.
             var isVisible = true;  // bool? | New worksheet visibility value.
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Change worksheet visibility.
-                WorksheetResponse result = apiInstance.CellsWorksheetsPutChangeVisibilityWorksheet(name, sheetName, isVisible, folder);
+                WorksheetResponse result = apiInstance.CellsWorksheetsPutChangeVisibilityWorksheet(name, sheetName, isVisible, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1926,6 +1985,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| Worksheet name. | 
  **isVisible** | **bool?**| New worksheet visibility value. | 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1944,7 +2004,7 @@ No authorization required
 
 <a name="cellsworksheetsputprotectworksheet"></a>
 # **CellsWorksheetsPutProtectWorksheet**
-> WorksheetResponse CellsWorksheetsPutProtectWorksheet (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null)
+> WorksheetResponse CellsWorksheetsPutProtectWorksheet (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storage = null)
 
 Protect worksheet.
 
@@ -1967,11 +2027,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | The worksheet name.
             var protectParameter = new ProtectSheetParameter(); // ProtectSheetParameter | with protection settings. (optional) 
             var folder = folder_example;  // string | Document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Protect worksheet.
-                WorksheetResponse result = apiInstance.CellsWorksheetsPutProtectWorksheet(name, sheetName, protectParameter, folder);
+                WorksheetResponse result = apiInstance.CellsWorksheetsPutProtectWorksheet(name, sheetName, protectParameter, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1991,6 +2052,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| The worksheet name. | 
  **protectParameter** | [**ProtectSheetParameter**](ProtectSheetParameter.md)| with protection settings. | [optional] 
  **folder** | **string**| Document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -2009,7 +2071,7 @@ No authorization required
 
 <a name="cellsworksheetsputworksheetbackground"></a>
 # **CellsWorksheetsPutWorksheetBackground**
-> SaaSposeResponse CellsWorksheetsPutWorksheetBackground (string name, string sheetName, byte[] png, string folder = null)
+> SaaSposeResponse CellsWorksheetsPutWorksheetBackground (string name, string sheetName, byte[] png, string folder = null, string storage = null)
 
 Set worksheet background image.
 
@@ -2032,11 +2094,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | 
             var png = BINARY_DATA_HERE;  // byte[] | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Set worksheet background image.
-                SaaSposeResponse result = apiInstance.CellsWorksheetsPutWorksheetBackground(name, sheetName, png, folder);
+                SaaSposeResponse result = apiInstance.CellsWorksheetsPutWorksheetBackground(name, sheetName, png, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2056,6 +2119,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**|  | 
  **png** | **byte[]**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -2074,7 +2138,7 @@ No authorization required
 
 <a name="cellsworksheetsputworksheetcomment"></a>
 # **CellsWorksheetsPutWorksheetComment**
-> CommentResponse CellsWorksheetsPutWorksheetComment (string name, string sheetName, string cellName, Comment comment = null, string folder = null)
+> CommentResponse CellsWorksheetsPutWorksheetComment (string name, string sheetName, string cellName, Comment comment = null, string folder = null, string storage = null)
 
 Add worksheet's cell comment.
 
@@ -2098,11 +2162,12 @@ namespace Example
             var cellName = cellName_example;  // string | The cell name
             var comment = new Comment(); // Comment | Comment object (optional) 
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Add worksheet's cell comment.
-                CommentResponse result = apiInstance.CellsWorksheetsPutWorksheetComment(name, sheetName, cellName, comment, folder);
+                CommentResponse result = apiInstance.CellsWorksheetsPutWorksheetComment(name, sheetName, cellName, comment, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2123,6 +2188,7 @@ Name | Type | Description  | Notes
  **cellName** | **string**| The cell name | 
  **comment** | [**Comment**](Comment.md)| Comment object | [optional] 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -2141,7 +2207,7 @@ No authorization required
 
 <a name="cellsworksheetsputworksheetfreezepanes"></a>
 # **CellsWorksheetsPutWorksheetFreezePanes**
-> SaaSposeResponse CellsWorksheetsPutWorksheetFreezePanes (string name, string sheetName, int? row, int? column, int? freezedRows, int? freezedColumns, string folder = null)
+> SaaSposeResponse CellsWorksheetsPutWorksheetFreezePanes (string name, string sheetName, int? row, int? column, int? freezedRows, int? freezedColumns, string folder = null, string storage = null)
 
 Set freeze panes
 
@@ -2167,11 +2233,12 @@ namespace Example
             var freezedRows = 56;  // int? | 
             var freezedColumns = 56;  // int? | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Set freeze panes
-                SaaSposeResponse result = apiInstance.CellsWorksheetsPutWorksheetFreezePanes(name, sheetName, row, column, freezedRows, freezedColumns, folder);
+                SaaSposeResponse result = apiInstance.CellsWorksheetsPutWorksheetFreezePanes(name, sheetName, row, column, freezedRows, freezedColumns, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2194,6 +2261,7 @@ Name | Type | Description  | Notes
  **freezedRows** | **int?**|  | 
  **freezedColumns** | **int?**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 

@@ -35,8 +35,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ChartAreaResponse</returns>
-        ChartAreaResponse CellsChartAreaGetChartArea (string name, string sheetName, int? chartIndex, string folder = null);
+        ChartAreaResponse CellsChartAreaGetChartArea (string name, string sheetName, int? chartIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Get chart area info.
@@ -49,8 +50,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ChartAreaResponse</returns>
-        ApiResponse<ChartAreaResponse> CellsChartAreaGetChartAreaWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null);
+        ApiResponse<ChartAreaResponse> CellsChartAreaGetChartAreaWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null, string storage = null);
         /// <summary>
         /// Get chart area border info.
         /// </summary>
@@ -62,8 +64,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>LineResponse</returns>
-        LineResponse CellsChartAreaGetChartAreaBorder (string name, string sheetName, int? chartIndex, string folder = null);
+        LineResponse CellsChartAreaGetChartAreaBorder (string name, string sheetName, int? chartIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Get chart area border info.
@@ -76,8 +79,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of LineResponse</returns>
-        ApiResponse<LineResponse> CellsChartAreaGetChartAreaBorderWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null);
+        ApiResponse<LineResponse> CellsChartAreaGetChartAreaBorderWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null, string storage = null);
         /// <summary>
         /// Get chart area fill format info.
         /// </summary>
@@ -89,8 +93,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>FillFormatResponse</returns>
-        FillFormatResponse CellsChartAreaGetChartAreaFillFormat (string name, string sheetName, int? chartIndex, string folder = null);
+        FillFormatResponse CellsChartAreaGetChartAreaFillFormat (string name, string sheetName, int? chartIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Get chart area fill format info.
@@ -103,8 +108,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of FillFormatResponse</returns>
-        ApiResponse<FillFormatResponse> CellsChartAreaGetChartAreaFillFormatWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null);
+        ApiResponse<FillFormatResponse> CellsChartAreaGetChartAreaFillFormatWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null, string storage = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -118,8 +124,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ChartAreaResponse</returns>
-        System.Threading.Tasks.Task<ChartAreaResponse> CellsChartAreaGetChartAreaAsync (string name, string sheetName, int? chartIndex, string folder = null);
+        System.Threading.Tasks.Task<ChartAreaResponse> CellsChartAreaGetChartAreaAsync (string name, string sheetName, int? chartIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Get chart area info.
@@ -132,8 +139,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ChartAreaResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ChartAreaResponse>> CellsChartAreaGetChartAreaAsyncWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<ChartAreaResponse>> CellsChartAreaGetChartAreaAsyncWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null, string storage = null);
         /// <summary>
         /// Get chart area border info.
         /// </summary>
@@ -145,8 +153,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of LineResponse</returns>
-        System.Threading.Tasks.Task<LineResponse> CellsChartAreaGetChartAreaBorderAsync (string name, string sheetName, int? chartIndex, string folder = null);
+        System.Threading.Tasks.Task<LineResponse> CellsChartAreaGetChartAreaBorderAsync (string name, string sheetName, int? chartIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Get chart area border info.
@@ -159,8 +168,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (LineResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<LineResponse>> CellsChartAreaGetChartAreaBorderAsyncWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<LineResponse>> CellsChartAreaGetChartAreaBorderAsyncWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null, string storage = null);
         /// <summary>
         /// Get chart area fill format info.
         /// </summary>
@@ -172,8 +182,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of FillFormatResponse</returns>
-        System.Threading.Tasks.Task<FillFormatResponse> CellsChartAreaGetChartAreaFillFormatAsync (string name, string sheetName, int? chartIndex, string folder = null);
+        System.Threading.Tasks.Task<FillFormatResponse> CellsChartAreaGetChartAreaFillFormatAsync (string name, string sheetName, int? chartIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Get chart area fill format info.
@@ -186,8 +197,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (FillFormatResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<FillFormatResponse>> CellsChartAreaGetChartAreaFillFormatAsyncWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<FillFormatResponse>> CellsChartAreaGetChartAreaFillFormatAsyncWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null, string storage = null);
         #endregion Asynchronous Operations
     }
 
@@ -214,6 +226,25 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 this.Configuration.ApiClient.Configuration = this.Configuration;
             }
         }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsChartAreaApi"/> class.
+        /// </summary>
+        /// <returns></returns>
+        public CellsChartAreaApi(String basePath, String accesstoken)
+        {
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + accesstoken);
+            this.Configuration = new Configuration(new ApiClient(basePath),headerParameters);
+
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CellsChartAreaApi"/> class
@@ -228,6 +259,28 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
                 this.Configuration = configuration;
 
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsChartAreaApi"/> class
+        /// using Configuration object
+        /// </summary>
+        /// <param name="configuration">An instance of Configuration</param>
+        /// <returns></returns>
+        public CellsChartAreaApi(String grantType,String appSID,String appKey)
+        {
+            OAuthApi oauth2 = new OAuthApi("https://api.aspose.cloud");
+            var oauth2response = oauth2.OAuthPost(grantType, appSID, appKey);
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + oauth2response.AccessToken);
+            this.Configuration =  new Configuration(new ApiClient(), headerParameters);
             ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
@@ -308,10 +361,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ChartAreaResponse</returns>
-        public ChartAreaResponse CellsChartAreaGetChartArea (string name, string sheetName, int? chartIndex, string folder = null)
+        public ChartAreaResponse CellsChartAreaGetChartArea (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
-             ApiResponse<ChartAreaResponse> localVarResponse = CellsChartAreaGetChartAreaWithHttpInfo(name, sheetName, chartIndex, folder);
+             ApiResponse<ChartAreaResponse> localVarResponse = CellsChartAreaGetChartAreaWithHttpInfo(name, sheetName, chartIndex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -323,8 +377,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ChartAreaResponse</returns>
-        public ApiResponse< ChartAreaResponse > CellsChartAreaGetChartAreaWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null)
+        public ApiResponse< ChartAreaResponse > CellsChartAreaGetChartAreaWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -362,6 +417,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (chartIndex != null) localVarPathParams.Add("chartIndex", Configuration.ApiClient.ParameterToString(chartIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -390,10 +446,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ChartAreaResponse</returns>
-        public async System.Threading.Tasks.Task<ChartAreaResponse> CellsChartAreaGetChartAreaAsync (string name, string sheetName, int? chartIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ChartAreaResponse> CellsChartAreaGetChartAreaAsync (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
-             ApiResponse<ChartAreaResponse> localVarResponse = await CellsChartAreaGetChartAreaAsyncWithHttpInfo(name, sheetName, chartIndex, folder);
+             ApiResponse<ChartAreaResponse> localVarResponse = await CellsChartAreaGetChartAreaAsyncWithHttpInfo(name, sheetName, chartIndex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -406,8 +463,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ChartAreaResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ChartAreaResponse>> CellsChartAreaGetChartAreaAsyncWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ChartAreaResponse>> CellsChartAreaGetChartAreaAsyncWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -445,6 +503,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (chartIndex != null) localVarPathParams.Add("chartIndex", Configuration.ApiClient.ParameterToString(chartIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -473,10 +532,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>LineResponse</returns>
-        public LineResponse CellsChartAreaGetChartAreaBorder (string name, string sheetName, int? chartIndex, string folder = null)
+        public LineResponse CellsChartAreaGetChartAreaBorder (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
-             ApiResponse<LineResponse> localVarResponse = CellsChartAreaGetChartAreaBorderWithHttpInfo(name, sheetName, chartIndex, folder);
+             ApiResponse<LineResponse> localVarResponse = CellsChartAreaGetChartAreaBorderWithHttpInfo(name, sheetName, chartIndex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -488,8 +548,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of LineResponse</returns>
-        public ApiResponse< LineResponse > CellsChartAreaGetChartAreaBorderWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null)
+        public ApiResponse< LineResponse > CellsChartAreaGetChartAreaBorderWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -527,6 +588,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (chartIndex != null) localVarPathParams.Add("chartIndex", Configuration.ApiClient.ParameterToString(chartIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -555,10 +617,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of LineResponse</returns>
-        public async System.Threading.Tasks.Task<LineResponse> CellsChartAreaGetChartAreaBorderAsync (string name, string sheetName, int? chartIndex, string folder = null)
+        public async System.Threading.Tasks.Task<LineResponse> CellsChartAreaGetChartAreaBorderAsync (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
-             ApiResponse<LineResponse> localVarResponse = await CellsChartAreaGetChartAreaBorderAsyncWithHttpInfo(name, sheetName, chartIndex, folder);
+             ApiResponse<LineResponse> localVarResponse = await CellsChartAreaGetChartAreaBorderAsyncWithHttpInfo(name, sheetName, chartIndex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -571,8 +634,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (LineResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<LineResponse>> CellsChartAreaGetChartAreaBorderAsyncWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<LineResponse>> CellsChartAreaGetChartAreaBorderAsyncWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -610,6 +674,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (chartIndex != null) localVarPathParams.Add("chartIndex", Configuration.ApiClient.ParameterToString(chartIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -638,10 +703,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>FillFormatResponse</returns>
-        public FillFormatResponse CellsChartAreaGetChartAreaFillFormat (string name, string sheetName, int? chartIndex, string folder = null)
+        public FillFormatResponse CellsChartAreaGetChartAreaFillFormat (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
-             ApiResponse<FillFormatResponse> localVarResponse = CellsChartAreaGetChartAreaFillFormatWithHttpInfo(name, sheetName, chartIndex, folder);
+             ApiResponse<FillFormatResponse> localVarResponse = CellsChartAreaGetChartAreaFillFormatWithHttpInfo(name, sheetName, chartIndex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -653,8 +719,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of FillFormatResponse</returns>
-        public ApiResponse< FillFormatResponse > CellsChartAreaGetChartAreaFillFormatWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null)
+        public ApiResponse< FillFormatResponse > CellsChartAreaGetChartAreaFillFormatWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -692,6 +759,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (chartIndex != null) localVarPathParams.Add("chartIndex", Configuration.ApiClient.ParameterToString(chartIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -720,10 +788,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of FillFormatResponse</returns>
-        public async System.Threading.Tasks.Task<FillFormatResponse> CellsChartAreaGetChartAreaFillFormatAsync (string name, string sheetName, int? chartIndex, string folder = null)
+        public async System.Threading.Tasks.Task<FillFormatResponse> CellsChartAreaGetChartAreaFillFormatAsync (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
-             ApiResponse<FillFormatResponse> localVarResponse = await CellsChartAreaGetChartAreaFillFormatAsyncWithHttpInfo(name, sheetName, chartIndex, folder);
+             ApiResponse<FillFormatResponse> localVarResponse = await CellsChartAreaGetChartAreaFillFormatAsyncWithHttpInfo(name, sheetName, chartIndex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -736,8 +805,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
         /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (FillFormatResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<FillFormatResponse>> CellsChartAreaGetChartAreaFillFormatAsyncWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<FillFormatResponse>> CellsChartAreaGetChartAreaFillFormatAsyncWithHttpInfo (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -775,6 +845,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (chartIndex != null) localVarPathParams.Add("chartIndex", Configuration.ApiClient.ParameterToString(chartIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request

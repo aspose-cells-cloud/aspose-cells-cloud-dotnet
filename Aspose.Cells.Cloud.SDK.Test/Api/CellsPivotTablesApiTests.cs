@@ -427,7 +427,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string tableName = "TestPivot";
             bool? useSameSource = true;
             UpdateDataFile(folder, name);
-            var response = instance.CellsPivotTablesPutWorksheetPivotTable(name, sheetName, null, folder, sourceData, destCellName, tableName, useSameSource);
+            var response = instance.CellsPivotTablesPutWorksheetPivotTable(name, sheetName, null, folder, null, sourceData, destCellName, tableName, useSameSource);
             Assert.IsInstanceOf<PivotTableResponse>(response, "response is PivotTableResponse");
             Assert.AreEqual(response.Code, 200);
         }

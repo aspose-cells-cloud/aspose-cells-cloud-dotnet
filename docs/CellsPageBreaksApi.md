@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 <a name="cellspagebreaksdeletehorizontalpagebreak"></a>
 # **CellsPageBreaksDeleteHorizontalPageBreak**
-> SaaSposeResponse CellsPageBreaksDeleteHorizontalPageBreak (string name, string sheetName, int? index, string folder = null)
+> SaaSposeResponse CellsPageBreaksDeleteHorizontalPageBreak (string name, string sheetName, int? index, string folder = null, string storage = null)
 
 
 
@@ -41,10 +41,11 @@ namespace Example
             var sheetName = sheetName_example;  // string | 
             var index = 56;  // int? | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                SaaSposeResponse result = apiInstance.CellsPageBreaksDeleteHorizontalPageBreak(name, sheetName, index, folder);
+                SaaSposeResponse result = apiInstance.CellsPageBreaksDeleteHorizontalPageBreak(name, sheetName, index, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -64,6 +65,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**|  | 
  **index** | **int?**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -82,7 +84,7 @@ No authorization required
 
 <a name="cellspagebreaksdeletehorizontalpagebreaks"></a>
 # **CellsPageBreaksDeleteHorizontalPageBreaks**
-> SaaSposeResponse CellsPageBreaksDeleteHorizontalPageBreaks (string name, string sheetName, int? row = null, string folder = null)
+> SaaSposeResponse CellsPageBreaksDeleteHorizontalPageBreaks (string name, string sheetName, int? row = null, string folder = null, string storage = null)
 
 
 
@@ -105,10 +107,11 @@ namespace Example
             var sheetName = sheetName_example;  // string | 
             var row = 56;  // int? |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                SaaSposeResponse result = apiInstance.CellsPageBreaksDeleteHorizontalPageBreaks(name, sheetName, row, folder);
+                SaaSposeResponse result = apiInstance.CellsPageBreaksDeleteHorizontalPageBreaks(name, sheetName, row, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -128,6 +131,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**|  | 
  **row** | **int?**|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -146,7 +150,7 @@ No authorization required
 
 <a name="cellspagebreaksdeleteverticalpagebreak"></a>
 # **CellsPageBreaksDeleteVerticalPageBreak**
-> SaaSposeResponse CellsPageBreaksDeleteVerticalPageBreak (string name, string sheetName, int? index, string folder = null)
+> SaaSposeResponse CellsPageBreaksDeleteVerticalPageBreak (string name, string sheetName, int? index, string folder = null, string storage = null)
 
 
 
@@ -169,10 +173,11 @@ namespace Example
             var sheetName = sheetName_example;  // string | 
             var index = 56;  // int? | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                SaaSposeResponse result = apiInstance.CellsPageBreaksDeleteVerticalPageBreak(name, sheetName, index, folder);
+                SaaSposeResponse result = apiInstance.CellsPageBreaksDeleteVerticalPageBreak(name, sheetName, index, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -192,6 +197,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**|  | 
  **index** | **int?**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -210,7 +216,7 @@ No authorization required
 
 <a name="cellspagebreaksdeleteverticalpagebreaks"></a>
 # **CellsPageBreaksDeleteVerticalPageBreaks**
-> SaaSposeResponse CellsPageBreaksDeleteVerticalPageBreaks (string name, string sheetName, int? column = null, string folder = null)
+> SaaSposeResponse CellsPageBreaksDeleteVerticalPageBreaks (string name, string sheetName, int? column = null, string folder = null, string storage = null)
 
 
 
@@ -233,10 +239,11 @@ namespace Example
             var sheetName = sheetName_example;  // string | 
             var column = 56;  // int? |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                SaaSposeResponse result = apiInstance.CellsPageBreaksDeleteVerticalPageBreaks(name, sheetName, column, folder);
+                SaaSposeResponse result = apiInstance.CellsPageBreaksDeleteVerticalPageBreaks(name, sheetName, column, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -256,6 +263,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**|  | 
  **column** | **int?**|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -274,7 +282,7 @@ No authorization required
 
 <a name="cellspagebreaksgethorizontalpagebreak"></a>
 # **CellsPageBreaksGetHorizontalPageBreak**
-> HorizontalPageBreakResponse CellsPageBreaksGetHorizontalPageBreak (string name, string sheetName, int? index, string folder = null)
+> HorizontalPageBreakResponse CellsPageBreaksGetHorizontalPageBreak (string name, string sheetName, int? index, string folder = null, string storage = null)
 
 
 
@@ -297,10 +305,11 @@ namespace Example
             var sheetName = sheetName_example;  // string | 
             var index = 56;  // int? | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                HorizontalPageBreakResponse result = apiInstance.CellsPageBreaksGetHorizontalPageBreak(name, sheetName, index, folder);
+                HorizontalPageBreakResponse result = apiInstance.CellsPageBreaksGetHorizontalPageBreak(name, sheetName, index, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -320,6 +329,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**|  | 
  **index** | **int?**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -338,7 +348,7 @@ No authorization required
 
 <a name="cellspagebreaksgethorizontalpagebreaks"></a>
 # **CellsPageBreaksGetHorizontalPageBreaks**
-> HorizontalPageBreaksResponse CellsPageBreaksGetHorizontalPageBreaks (string name, string sheetName, string folder = null)
+> HorizontalPageBreaksResponse CellsPageBreaksGetHorizontalPageBreaks (string name, string sheetName, string folder = null, string storage = null)
 
 
 
@@ -360,10 +370,11 @@ namespace Example
             var name = name_example;  // string | 
             var sheetName = sheetName_example;  // string | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                HorizontalPageBreaksResponse result = apiInstance.CellsPageBreaksGetHorizontalPageBreaks(name, sheetName, folder);
+                HorizontalPageBreaksResponse result = apiInstance.CellsPageBreaksGetHorizontalPageBreaks(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -382,6 +393,7 @@ Name | Type | Description  | Notes
  **name** | **string**|  | 
  **sheetName** | **string**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -400,7 +412,7 @@ No authorization required
 
 <a name="cellspagebreaksgetverticalpagebreak"></a>
 # **CellsPageBreaksGetVerticalPageBreak**
-> VerticalPageBreakResponse CellsPageBreaksGetVerticalPageBreak (string name, string sheetName, int? index, string folder = null)
+> VerticalPageBreakResponse CellsPageBreaksGetVerticalPageBreak (string name, string sheetName, int? index, string folder = null, string storage = null)
 
 
 
@@ -423,10 +435,11 @@ namespace Example
             var sheetName = sheetName_example;  // string | 
             var index = 56;  // int? | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                VerticalPageBreakResponse result = apiInstance.CellsPageBreaksGetVerticalPageBreak(name, sheetName, index, folder);
+                VerticalPageBreakResponse result = apiInstance.CellsPageBreaksGetVerticalPageBreak(name, sheetName, index, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -446,6 +459,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**|  | 
  **index** | **int?**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -464,7 +478,7 @@ No authorization required
 
 <a name="cellspagebreaksgetverticalpagebreaks"></a>
 # **CellsPageBreaksGetVerticalPageBreaks**
-> VerticalPageBreaksResponse CellsPageBreaksGetVerticalPageBreaks (string name, string sheetName, string folder = null)
+> VerticalPageBreaksResponse CellsPageBreaksGetVerticalPageBreaks (string name, string sheetName, string folder = null, string storage = null)
 
 
 
@@ -486,10 +500,11 @@ namespace Example
             var name = name_example;  // string | 
             var sheetName = sheetName_example;  // string | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                VerticalPageBreaksResponse result = apiInstance.CellsPageBreaksGetVerticalPageBreaks(name, sheetName, folder);
+                VerticalPageBreaksResponse result = apiInstance.CellsPageBreaksGetVerticalPageBreaks(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -508,6 +523,7 @@ Name | Type | Description  | Notes
  **name** | **string**|  | 
  **sheetName** | **string**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -526,7 +542,7 @@ No authorization required
 
 <a name="cellspagebreaksputhorizontalpagebreak"></a>
 # **CellsPageBreaksPutHorizontalPageBreak**
-> SaaSposeResponse CellsPageBreaksPutHorizontalPageBreak (string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null)
+> SaaSposeResponse CellsPageBreaksPutHorizontalPageBreak (string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null, string storage = null)
 
 
 
@@ -553,10 +569,11 @@ namespace Example
             var startColumn = 56;  // int? |  (optional) 
             var endColumn = 56;  // int? |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                SaaSposeResponse result = apiInstance.CellsPageBreaksPutHorizontalPageBreak(name, sheetName, cellname, row, column, startColumn, endColumn, folder);
+                SaaSposeResponse result = apiInstance.CellsPageBreaksPutHorizontalPageBreak(name, sheetName, cellname, row, column, startColumn, endColumn, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -580,6 +597,7 @@ Name | Type | Description  | Notes
  **startColumn** | **int?**|  | [optional] 
  **endColumn** | **int?**|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -598,7 +616,7 @@ No authorization required
 
 <a name="cellspagebreaksputverticalpagebreak"></a>
 # **CellsPageBreaksPutVerticalPageBreak**
-> SaaSposeResponse CellsPageBreaksPutVerticalPageBreak (string name, string sheetName, string cellname = null, int? column = null, int? row = null, int? startRow = null, int? endRow = null, string folder = null)
+> SaaSposeResponse CellsPageBreaksPutVerticalPageBreak (string name, string sheetName, string cellname = null, int? column = null, int? row = null, int? startRow = null, int? endRow = null, string folder = null, string storage = null)
 
 
 
@@ -625,10 +643,11 @@ namespace Example
             var startRow = 56;  // int? |  (optional) 
             var endRow = 56;  // int? |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                SaaSposeResponse result = apiInstance.CellsPageBreaksPutVerticalPageBreak(name, sheetName, cellname, column, row, startRow, endRow, folder);
+                SaaSposeResponse result = apiInstance.CellsPageBreaksPutVerticalPageBreak(name, sheetName, cellname, column, row, startRow, endRow, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -652,6 +671,7 @@ Name | Type | Description  | Notes
  **startRow** | **int?**|  | [optional] 
  **endRow** | **int?**|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 

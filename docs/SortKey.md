@@ -3,9 +3,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Key** | **int?** |  | 
-**SortOrder** | **string** |  | [optional] 
 **CustomList** | **string** |  | [optional] 
+**SortOrder** | **string** |  | [optional] 
+**Key** | **int?** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 <a name="cellspicturesdeleteworksheetpicture"></a>
 # **CellsPicturesDeleteWorksheetPicture**
-> SaaSposeResponse CellsPicturesDeleteWorksheetPicture (string name, string sheetName, int? pictureIndex, string folder = null)
+> SaaSposeResponse CellsPicturesDeleteWorksheetPicture (string name, string sheetName, int? pictureIndex, string folder = null, string storage = null)
 
 Delete a picture object in worksheet
 
@@ -37,11 +37,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | The worsheet name.
             var pictureIndex = 56;  // int? | Picture index
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Delete a picture object in worksheet
-                SaaSposeResponse result = apiInstance.CellsPicturesDeleteWorksheetPicture(name, sheetName, pictureIndex, folder);
+                SaaSposeResponse result = apiInstance.CellsPicturesDeleteWorksheetPicture(name, sheetName, pictureIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -61,6 +62,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| The worsheet name. | 
  **pictureIndex** | **int?**| Picture index | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -79,7 +81,7 @@ No authorization required
 
 <a name="cellspicturesdeleteworksheetpictures"></a>
 # **CellsPicturesDeleteWorksheetPictures**
-> SaaSposeResponse CellsPicturesDeleteWorksheetPictures (string name, string sheetName, string folder = null)
+> SaaSposeResponse CellsPicturesDeleteWorksheetPictures (string name, string sheetName, string folder = null, string storage = null)
 
 Delete all pictures in worksheet.
 
@@ -101,11 +103,12 @@ namespace Example
             var name = name_example;  // string | Document name.
             var sheetName = sheetName_example;  // string | Worksheet name.
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Delete all pictures in worksheet.
-                SaaSposeResponse result = apiInstance.CellsPicturesDeleteWorksheetPictures(name, sheetName, folder);
+                SaaSposeResponse result = apiInstance.CellsPicturesDeleteWorksheetPictures(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -124,6 +127,7 @@ Name | Type | Description  | Notes
  **name** | **string**| Document name. | 
  **sheetName** | **string**| Worksheet name. | 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -142,7 +146,7 @@ No authorization required
 
 <a name="cellspicturesgetworksheetpicture"></a>
 # **CellsPicturesGetWorksheetPicture**
-> System.IO.Stream CellsPicturesGetWorksheetPicture (string name, string sheetName, int? pictureNumber, string folder = null)
+> System.IO.Stream CellsPicturesGetWorksheetPicture (string name, string sheetName, int? pictureNumber, string folder = null, string storage = null)
 
 GRead worksheet picture by number.
 
@@ -165,11 +169,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | Worksheet name.
             var pictureNumber = 56;  // int? | The picture number.
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // GRead worksheet picture by number.
-                System.IO.Stream result = apiInstance.CellsPicturesGetWorksheetPicture(name, sheetName, pictureNumber, folder);
+                System.IO.Stream result = apiInstance.CellsPicturesGetWorksheetPicture(name, sheetName, pictureNumber, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -189,6 +194,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| Worksheet name. | 
  **pictureNumber** | **int?**| The picture number. | 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -207,7 +213,7 @@ No authorization required
 
 <a name="cellspicturesgetworksheetpictures"></a>
 # **CellsPicturesGetWorksheetPictures**
-> PicturesResponse CellsPicturesGetWorksheetPictures (string name, string sheetName, string folder = null)
+> PicturesResponse CellsPicturesGetWorksheetPictures (string name, string sheetName, string folder = null, string storage = null)
 
 Read worksheet pictures.
 
@@ -229,11 +235,12 @@ namespace Example
             var name = name_example;  // string | Document name.
             var sheetName = sheetName_example;  // string | The worksheet name.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Read worksheet pictures.
-                PicturesResponse result = apiInstance.CellsPicturesGetWorksheetPictures(name, sheetName, folder);
+                PicturesResponse result = apiInstance.CellsPicturesGetWorksheetPictures(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -252,6 +259,7 @@ Name | Type | Description  | Notes
  **name** | **string**| Document name. | 
  **sheetName** | **string**| The worksheet name. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -270,7 +278,7 @@ No authorization required
 
 <a name="cellspicturespostworksheetpicture"></a>
 # **CellsPicturesPostWorksheetPicture**
-> PictureResponse CellsPicturesPostWorksheetPicture (string name, string sheetName, int? pictureIndex, Picture picture = null, string folder = null)
+> PictureResponse CellsPicturesPostWorksheetPicture (string name, string sheetName, int? pictureIndex, Picture picture = null, string folder = null, string storage = null)
 
 Update worksheet picture by index.
 
@@ -294,11 +302,12 @@ namespace Example
             var pictureIndex = 56;  // int? | The picture's index.
             var picture = new Picture(); // Picture | Picture object (optional) 
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Update worksheet picture by index.
-                PictureResponse result = apiInstance.CellsPicturesPostWorksheetPicture(name, sheetName, pictureIndex, picture, folder);
+                PictureResponse result = apiInstance.CellsPicturesPostWorksheetPicture(name, sheetName, pictureIndex, picture, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -319,6 +328,7 @@ Name | Type | Description  | Notes
  **pictureIndex** | **int?**| The picture&#39;s index. | 
  **picture** | [**Picture**](Picture.md)| Picture object | [optional] 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -337,7 +347,7 @@ No authorization required
 
 <a name="cellspicturesputworksheetaddpicture"></a>
 # **CellsPicturesPutWorksheetAddPicture**
-> PicturesResponse CellsPicturesPutWorksheetAddPicture (string name, string sheetName, Picture picture = null, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string picturePath = null, string folder = null)
+> PicturesResponse CellsPicturesPutWorksheetAddPicture (string name, string sheetName, Picture picture = null, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string picturePath = null, string folder = null, string storage = null)
 
 Add a new worksheet picture.
 
@@ -365,11 +375,12 @@ namespace Example
             var lowerRightColumn = 56;  // int? | The image low right column. (optional)  (default to 0)
             var picturePath = picturePath_example;  // string | The picture path, if not provided the picture data is inspected in the request body. (optional) 
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Add a new worksheet picture.
-                PicturesResponse result = apiInstance.CellsPicturesPutWorksheetAddPicture(name, sheetName, picture, upperLeftRow, upperLeftColumn, lowerRightRow, lowerRightColumn, picturePath, folder);
+                PicturesResponse result = apiInstance.CellsPicturesPutWorksheetAddPicture(name, sheetName, picture, upperLeftRow, upperLeftColumn, lowerRightRow, lowerRightColumn, picturePath, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -394,6 +405,7 @@ Name | Type | Description  | Notes
  **lowerRightColumn** | **int?**| The image low right column. | [optional] [default to 0]
  **picturePath** | **string**| The picture path, if not provided the picture data is inspected in the request body. | [optional] 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 

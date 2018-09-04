@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="cellsautoshapesgetworksheetautoshape"></a>
 # **CellsAutoshapesGetWorksheetAutoshape**
-> System.IO.Stream CellsAutoshapesGetWorksheetAutoshape (string name, string sheetName, int? autoshapeNumber, string folder = null)
+> System.IO.Stream CellsAutoshapesGetWorksheetAutoshape (string name, string sheetName, int? autoshapeNumber, string format = null, string folder = null, string storage = null)
 
 Get autoshape info.
 
@@ -32,12 +32,14 @@ namespace Example
             var name = name_example;  // string | Document name.
             var sheetName = sheetName_example;  // string | Worksheet name.
             var autoshapeNumber = 56;  // int? | The autoshape number.
+            var format = format_example;  // string | Exported format. (optional) 
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get autoshape info.
-                System.IO.Stream result = apiInstance.CellsAutoshapesGetWorksheetAutoshape(name, sheetName, autoshapeNumber, folder);
+                System.IO.Stream result = apiInstance.CellsAutoshapesGetWorksheetAutoshape(name, sheetName, autoshapeNumber, format, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -56,7 +58,9 @@ Name | Type | Description  | Notes
  **name** | **string**| Document name. | 
  **sheetName** | **string**| Worksheet name. | 
  **autoshapeNumber** | **int?**| The autoshape number. | 
+ **format** | **string**| Exported format. | [optional] 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -75,7 +79,7 @@ No authorization required
 
 <a name="cellsautoshapesgetworksheetautoshapes"></a>
 # **CellsAutoshapesGetWorksheetAutoshapes**
-> AutoShapesResponse CellsAutoshapesGetWorksheetAutoshapes (string name, string sheetName, string folder = null)
+> AutoShapesResponse CellsAutoshapesGetWorksheetAutoshapes (string name, string sheetName, string folder = null, string storage = null)
 
 Get worksheet autoshapes info.
 
@@ -97,11 +101,12 @@ namespace Example
             var name = name_example;  // string | Document name.
             var sheetName = sheetName_example;  // string | The worksheet name.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get worksheet autoshapes info.
-                AutoShapesResponse result = apiInstance.CellsAutoshapesGetWorksheetAutoshapes(name, sheetName, folder);
+                AutoShapesResponse result = apiInstance.CellsAutoshapesGetWorksheetAutoshapes(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -120,6 +125,7 @@ Name | Type | Description  | Notes
  **name** | **string**| Document name. | 
  **sheetName** | **string**| The worksheet name. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 

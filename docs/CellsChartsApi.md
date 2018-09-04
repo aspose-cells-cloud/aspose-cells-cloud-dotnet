@@ -22,7 +22,7 @@ Method | HTTP request | Description
 
 <a name="cellschartsdeleteworksheetchartlegend"></a>
 # **CellsChartsDeleteWorksheetChartLegend**
-> SaaSposeResponse CellsChartsDeleteWorksheetChartLegend (string name, string sheetName, int? chartIndex, string folder = null)
+> SaaSposeResponse CellsChartsDeleteWorksheetChartLegend (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
 
 Hide legend in chart
 
@@ -45,11 +45,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | Worksheet name.
             var chartIndex = 56;  // int? | The chart index.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Hide legend in chart
-                SaaSposeResponse result = apiInstance.CellsChartsDeleteWorksheetChartLegend(name, sheetName, chartIndex, folder);
+                SaaSposeResponse result = apiInstance.CellsChartsDeleteWorksheetChartLegend(name, sheetName, chartIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -69,6 +70,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| Worksheet name. | 
  **chartIndex** | **int?**| The chart index. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -87,7 +89,7 @@ No authorization required
 
 <a name="cellschartsdeleteworksheetcharttitle"></a>
 # **CellsChartsDeleteWorksheetChartTitle**
-> SaaSposeResponse CellsChartsDeleteWorksheetChartTitle (string name, string sheetName, int? chartIndex, string folder = null)
+> SaaSposeResponse CellsChartsDeleteWorksheetChartTitle (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
 
 Hide title in chart
 
@@ -110,11 +112,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | Worksheet name.
             var chartIndex = 56;  // int? | The chart index.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Hide title in chart
-                SaaSposeResponse result = apiInstance.CellsChartsDeleteWorksheetChartTitle(name, sheetName, chartIndex, folder);
+                SaaSposeResponse result = apiInstance.CellsChartsDeleteWorksheetChartTitle(name, sheetName, chartIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -134,6 +137,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| Worksheet name. | 
  **chartIndex** | **int?**| The chart index. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -152,7 +156,7 @@ No authorization required
 
 <a name="cellschartsdeleteworksheetclearcharts"></a>
 # **CellsChartsDeleteWorksheetClearCharts**
-> SaaSposeResponse CellsChartsDeleteWorksheetClearCharts (string name, string sheetName, string folder = null)
+> SaaSposeResponse CellsChartsDeleteWorksheetClearCharts (string name, string sheetName, string folder = null, string storage = null)
 
 Clear the charts.
 
@@ -174,11 +178,12 @@ namespace Example
             var name = name_example;  // string | Workbook name.
             var sheetName = sheetName_example;  // string | The worksheet name.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Clear the charts.
-                SaaSposeResponse result = apiInstance.CellsChartsDeleteWorksheetClearCharts(name, sheetName, folder);
+                SaaSposeResponse result = apiInstance.CellsChartsDeleteWorksheetClearCharts(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -197,6 +202,7 @@ Name | Type | Description  | Notes
  **name** | **string**| Workbook name. | 
  **sheetName** | **string**| The worksheet name. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -215,7 +221,7 @@ No authorization required
 
 <a name="cellschartsdeleteworksheetdeletechart"></a>
 # **CellsChartsDeleteWorksheetDeleteChart**
-> ChartsResponse CellsChartsDeleteWorksheetDeleteChart (string name, string sheetName, int? chartIndex, string folder = null)
+> ChartsResponse CellsChartsDeleteWorksheetDeleteChart (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
 
 Delete worksheet chart by index.
 
@@ -238,11 +244,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | Worksheet name.
             var chartIndex = 56;  // int? | The chart index.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Delete worksheet chart by index.
-                ChartsResponse result = apiInstance.CellsChartsDeleteWorksheetDeleteChart(name, sheetName, chartIndex, folder);
+                ChartsResponse result = apiInstance.CellsChartsDeleteWorksheetDeleteChart(name, sheetName, chartIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -262,6 +269,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| Worksheet name. | 
  **chartIndex** | **int?**| The chart index. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -280,7 +288,7 @@ No authorization required
 
 <a name="cellschartsgetworksheetchart"></a>
 # **CellsChartsGetWorksheetChart**
-> System.IO.Stream CellsChartsGetWorksheetChart (string name, string sheetName, int? chartNumber, string format = null, string folder = null)
+> System.IO.Stream CellsChartsGetWorksheetChart (string name, string sheetName, int? chartNumber, string format = null, string folder = null, string storage = null)
 
 Get chart info.
 
@@ -304,11 +312,12 @@ namespace Example
             var chartNumber = 56;  // int? | The chart number.
             var format = format_example;  // string | The exported file format. (optional) 
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get chart info.
-                System.IO.Stream result = apiInstance.CellsChartsGetWorksheetChart(name, sheetName, chartNumber, format, folder);
+                System.IO.Stream result = apiInstance.CellsChartsGetWorksheetChart(name, sheetName, chartNumber, format, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -329,6 +338,7 @@ Name | Type | Description  | Notes
  **chartNumber** | **int?**| The chart number. | 
  **format** | **string**| The exported file format. | [optional] 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -347,7 +357,7 @@ No authorization required
 
 <a name="cellschartsgetworksheetchartlegend"></a>
 # **CellsChartsGetWorksheetChartLegend**
-> LegendResponse CellsChartsGetWorksheetChartLegend (string name, string sheetName, int? chartIndex, string folder = null)
+> LegendResponse CellsChartsGetWorksheetChartLegend (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
 
 Get chart legend
 
@@ -370,11 +380,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | Worksheet name.
             var chartIndex = 56;  // int? | The chart index.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get chart legend
-                LegendResponse result = apiInstance.CellsChartsGetWorksheetChartLegend(name, sheetName, chartIndex, folder);
+                LegendResponse result = apiInstance.CellsChartsGetWorksheetChartLegend(name, sheetName, chartIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -394,6 +405,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| Worksheet name. | 
  **chartIndex** | **int?**| The chart index. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -412,7 +424,7 @@ No authorization required
 
 <a name="cellschartsgetworksheetcharttitle"></a>
 # **CellsChartsGetWorksheetChartTitle**
-> TitleResponse CellsChartsGetWorksheetChartTitle (string name, string sheetName, int? chartIndex, string folder = null)
+> TitleResponse CellsChartsGetWorksheetChartTitle (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
 
 Get chart title
 
@@ -435,11 +447,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | Worksheet name.
             var chartIndex = 56;  // int? | The chart index.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get chart title
-                TitleResponse result = apiInstance.CellsChartsGetWorksheetChartTitle(name, sheetName, chartIndex, folder);
+                TitleResponse result = apiInstance.CellsChartsGetWorksheetChartTitle(name, sheetName, chartIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -459,6 +472,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| Worksheet name. | 
  **chartIndex** | **int?**| The chart index. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -477,7 +491,7 @@ No authorization required
 
 <a name="cellschartsgetworksheetcharts"></a>
 # **CellsChartsGetWorksheetCharts**
-> ChartsResponse CellsChartsGetWorksheetCharts (string name, string sheetName, string folder = null)
+> ChartsResponse CellsChartsGetWorksheetCharts (string name, string sheetName, string folder = null, string storage = null)
 
 Get worksheet charts info.
 
@@ -499,11 +513,12 @@ namespace Example
             var name = name_example;  // string | Document name.
             var sheetName = sheetName_example;  // string | The worksheet name.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get worksheet charts info.
-                ChartsResponse result = apiInstance.CellsChartsGetWorksheetCharts(name, sheetName, folder);
+                ChartsResponse result = apiInstance.CellsChartsGetWorksheetCharts(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -522,6 +537,7 @@ Name | Type | Description  | Notes
  **name** | **string**| Document name. | 
  **sheetName** | **string**| The worksheet name. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -540,7 +556,7 @@ No authorization required
 
 <a name="cellschartspostworksheetchart"></a>
 # **CellsChartsPostWorksheetChart**
-> SaaSposeResponse CellsChartsPostWorksheetChart (string name, string sheetName, int? chartIndex, Chart chart = null, string folder = null)
+> SaaSposeResponse CellsChartsPostWorksheetChart (string name, string sheetName, int? chartIndex, Chart chart = null, string folder = null, string storage = null)
 
 Update chart propreties
 
@@ -564,11 +580,12 @@ namespace Example
             var chartIndex = 56;  // int? | 
             var chart = new Chart(); // Chart |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Update chart propreties
-                SaaSposeResponse result = apiInstance.CellsChartsPostWorksheetChart(name, sheetName, chartIndex, chart, folder);
+                SaaSposeResponse result = apiInstance.CellsChartsPostWorksheetChart(name, sheetName, chartIndex, chart, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -589,6 +606,7 @@ Name | Type | Description  | Notes
  **chartIndex** | **int?**|  | 
  **chart** | [**Chart**](Chart.md)|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -607,7 +625,7 @@ No authorization required
 
 <a name="cellschartspostworksheetchartlegend"></a>
 # **CellsChartsPostWorksheetChartLegend**
-> LegendResponse CellsChartsPostWorksheetChartLegend (string name, string sheetName, int? chartIndex, Legend legend = null, string folder = null)
+> LegendResponse CellsChartsPostWorksheetChartLegend (string name, string sheetName, int? chartIndex, Legend legend = null, string folder = null, string storage = null)
 
 Update chart legend
 
@@ -631,11 +649,12 @@ namespace Example
             var chartIndex = 56;  // int? | The chart index.
             var legend = new Legend(); // Legend |  (optional) 
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Update chart legend
-                LegendResponse result = apiInstance.CellsChartsPostWorksheetChartLegend(name, sheetName, chartIndex, legend, folder);
+                LegendResponse result = apiInstance.CellsChartsPostWorksheetChartLegend(name, sheetName, chartIndex, legend, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -656,6 +675,7 @@ Name | Type | Description  | Notes
  **chartIndex** | **int?**| The chart index. | 
  **legend** | [**Legend**](Legend.md)|  | [optional] 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -674,7 +694,7 @@ No authorization required
 
 <a name="cellschartspostworksheetcharttitle"></a>
 # **CellsChartsPostWorksheetChartTitle**
-> TitleResponse CellsChartsPostWorksheetChartTitle (string name, string sheetName, int? chartIndex, Title title = null, string folder = null)
+> TitleResponse CellsChartsPostWorksheetChartTitle (string name, string sheetName, int? chartIndex, Title title = null, string folder = null, string storage = null)
 
 Update chart title
 
@@ -698,11 +718,12 @@ namespace Example
             var chartIndex = 56;  // int? | The chart index.
             var title = new Title(); // Title | Chart title (optional) 
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Update chart title
-                TitleResponse result = apiInstance.CellsChartsPostWorksheetChartTitle(name, sheetName, chartIndex, title, folder);
+                TitleResponse result = apiInstance.CellsChartsPostWorksheetChartTitle(name, sheetName, chartIndex, title, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -723,6 +744,7 @@ Name | Type | Description  | Notes
  **chartIndex** | **int?**| The chart index. | 
  **title** | [**Title**](Title.md)| Chart title | [optional] 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -741,7 +763,7 @@ No authorization required
 
 <a name="cellschartsputworksheetaddchart"></a>
 # **CellsChartsPutWorksheetAddChart**
-> ChartsResponse CellsChartsPutWorksheetAddChart (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null)
+> ChartsResponse CellsChartsPutWorksheetAddChart (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, string storage = null)
 
 Add new chart to worksheet.
 
@@ -773,11 +795,12 @@ namespace Example
             var isAutoGetSerialName = true;  // bool? | Specifies whether auto update serial name.  (optional)  (default to true)
             var title = title_example;  // string | Specifies chart title name. (optional) 
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Add new chart to worksheet.
-                ChartsResponse result = apiInstance.CellsChartsPutWorksheetAddChart(name, sheetName, chartType, upperLeftRow, upperLeftColumn, lowerRightRow, lowerRightColumn, area, isVertical, categoryData, isAutoGetSerialName, title, folder);
+                ChartsResponse result = apiInstance.CellsChartsPutWorksheetAddChart(name, sheetName, chartType, upperLeftRow, upperLeftColumn, lowerRightRow, lowerRightColumn, area, isVertical, categoryData, isAutoGetSerialName, title, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -806,6 +829,7 @@ Name | Type | Description  | Notes
  **isAutoGetSerialName** | **bool?**| Specifies whether auto update serial name.  | [optional] [default to true]
  **title** | **string**| Specifies chart title name. | [optional] 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -824,7 +848,7 @@ No authorization required
 
 <a name="cellschartsputworksheetchartlegend"></a>
 # **CellsChartsPutWorksheetChartLegend**
-> SaaSposeResponse CellsChartsPutWorksheetChartLegend (string name, string sheetName, int? chartIndex, string folder = null)
+> SaaSposeResponse CellsChartsPutWorksheetChartLegend (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
 
 Show legend in chart
 
@@ -847,11 +871,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | Worksheet name.
             var chartIndex = 56;  // int? | The chart index.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Show legend in chart
-                SaaSposeResponse result = apiInstance.CellsChartsPutWorksheetChartLegend(name, sheetName, chartIndex, folder);
+                SaaSposeResponse result = apiInstance.CellsChartsPutWorksheetChartLegend(name, sheetName, chartIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -871,6 +896,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| Worksheet name. | 
  **chartIndex** | **int?**| The chart index. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -889,7 +915,7 @@ No authorization required
 
 <a name="cellschartsputworksheetcharttitle"></a>
 # **CellsChartsPutWorksheetChartTitle**
-> TitleResponse CellsChartsPutWorksheetChartTitle (string name, string sheetName, int? chartIndex, Title title = null, string folder = null)
+> TitleResponse CellsChartsPutWorksheetChartTitle (string name, string sheetName, int? chartIndex, Title title = null, string folder = null, string storage = null)
 
 Add chart title / Set chart title visible
 
@@ -913,11 +939,12 @@ namespace Example
             var chartIndex = 56;  // int? | The chart index.
             var title = new Title(); // Title | Chart title. (optional) 
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Add chart title / Set chart title visible
-                TitleResponse result = apiInstance.CellsChartsPutWorksheetChartTitle(name, sheetName, chartIndex, title, folder);
+                TitleResponse result = apiInstance.CellsChartsPutWorksheetChartTitle(name, sheetName, chartIndex, title, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -938,6 +965,7 @@ Name | Type | Description  | Notes
  **chartIndex** | **int?**| The chart index. | 
  **title** | [**Title**](Title.md)| Chart title. | [optional] 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 

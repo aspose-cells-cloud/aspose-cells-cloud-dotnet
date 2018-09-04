@@ -15,8 +15,8 @@ namespace Aspose.Cells.Cloud.SDK.Test
         protected Configuration config;
         protected static OAuthApi oauth2 =null;
         protected string grantType = "client_credentials";
-        protected string clientId = "66164C51-693E-4904-A121-545961673EC1";
-        protected string clientSecret = "536e76768419db9585afdd37bb5f7533";
+        protected string clientId = "xxxxx-xxxx-xxxx-xxxx-xxxxxxx";
+        protected string clientSecret = "xxxxxxxxxxxxxxxxxxx";
         protected static string accesstoken;
         protected string refreshtoken;
         protected string BOOK1 = "Book1.xlsx";
@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
         protected string RANGE = "A1:C10";
         protected string CELLAREA = "A1:C10";
         protected StorageApi storageApi;
-        private string TestDataFolder = @"D:\Projects\Aspose\Aspose for Cloud\Aspose.Cells for Cloud SDK\src\TestData\";
+        private string TestDataFolder = @"xxxxxxxxx";
         protected void UpdateDataFile( string folder, string filename)
         {
             this.storageApi = new StorageApi( clientSecret, clientId, "https://api.aspose.cloud/v1.1");
@@ -49,6 +49,22 @@ namespace Aspose.Cells.Cloud.SDK.Test
             {
                 this.storageApi.DeleteFile(folder + "/" + filename, null, null);
                 this.storageApi.PutCreate(folder + "/" + filename, null, null, File.ReadAllBytes(TestDataFolder + filename));
+
+            }
+        }
+        protected void UpdateDataFileForDropBox(string folder, string filename)
+        {
+            this.storageApi = new StorageApi(clientSecret, clientId, "https://api.aspose.cloud/v1.1");
+            if (string.IsNullOrEmpty(folder))
+            {
+                this.storageApi.DeleteFile(filename, null, "DropBox");
+                this.storageApi.PutCreate(filename, null, "DropBox", File.ReadAllBytes(TestDataFolder + filename));
+
+            }
+            else
+            {
+                this.storageApi.DeleteFile(folder + "/" + filename, null, "DropBox");
+                this.storageApi.PutCreate(folder + "/" + filename, null, "DropBox", File.ReadAllBytes(TestDataFolder + filename));
 
             }
         }

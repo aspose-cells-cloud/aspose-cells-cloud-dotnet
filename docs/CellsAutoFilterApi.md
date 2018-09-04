@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 <a name="cellsautofilterdeleteworksheetdatefilter"></a>
 # **CellsAutoFilterDeleteWorksheetDateFilter**
-> SaaSposeResponse CellsAutoFilterDeleteWorksheetDateFilter (string name, string sheetName, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, string folder = null)
+> SaaSposeResponse CellsAutoFilterDeleteWorksheetDateFilter (string name, string sheetName, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, string folder = null, string storage = null)
 
 Removes a date filter.             
 
@@ -51,11 +51,12 @@ namespace Example
             var minute = 56;  // int? |  (optional)  (default to 0)
             var second = 56;  // int? |  (optional)  (default to 0)
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Removes a date filter.             
-                SaaSposeResponse result = apiInstance.CellsAutoFilterDeleteWorksheetDateFilter(name, sheetName, fieldIndex, dateTimeGroupingType, year, month, day, hour, minute, second, folder);
+                SaaSposeResponse result = apiInstance.CellsAutoFilterDeleteWorksheetDateFilter(name, sheetName, fieldIndex, dateTimeGroupingType, year, month, day, hour, minute, second, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -82,6 +83,7 @@ Name | Type | Description  | Notes
  **minute** | **int?**|  | [optional] [default to 0]
  **second** | **int?**|  | [optional] [default to 0]
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -100,7 +102,7 @@ No authorization required
 
 <a name="cellsautofilterdeleteworksheetfilter"></a>
 # **CellsAutoFilterDeleteWorksheetFilter**
-> SaaSposeResponse CellsAutoFilterDeleteWorksheetFilter (string name, string sheetName, int? fieldIndex, string criteria = null, string folder = null)
+> SaaSposeResponse CellsAutoFilterDeleteWorksheetFilter (string name, string sheetName, int? fieldIndex, string criteria = null, string folder = null, string storage = null)
 
 Delete a filter for a filter column.             
 
@@ -124,11 +126,12 @@ namespace Example
             var fieldIndex = 56;  // int? | 
             var criteria = criteria_example;  // string |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Delete a filter for a filter column.             
-                SaaSposeResponse result = apiInstance.CellsAutoFilterDeleteWorksheetFilter(name, sheetName, fieldIndex, criteria, folder);
+                SaaSposeResponse result = apiInstance.CellsAutoFilterDeleteWorksheetFilter(name, sheetName, fieldIndex, criteria, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -149,6 +152,7 @@ Name | Type | Description  | Notes
  **fieldIndex** | **int?**|  | 
  **criteria** | **string**|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -167,7 +171,7 @@ No authorization required
 
 <a name="cellsautofiltergetworksheetautofilter"></a>
 # **CellsAutoFilterGetWorksheetAutoFilter**
-> AutoFilterResponse CellsAutoFilterGetWorksheetAutoFilter (string name, string sheetName, string folder = null)
+> AutoFilterResponse CellsAutoFilterGetWorksheetAutoFilter (string name, string sheetName, string folder = null, string storage = null)
 
 Get Auto filter Description
 
@@ -189,11 +193,12 @@ namespace Example
             var name = name_example;  // string | 
             var sheetName = sheetName_example;  // string | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get Auto filter Description
-                AutoFilterResponse result = apiInstance.CellsAutoFilterGetWorksheetAutoFilter(name, sheetName, folder);
+                AutoFilterResponse result = apiInstance.CellsAutoFilterGetWorksheetAutoFilter(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -212,6 +217,7 @@ Name | Type | Description  | Notes
  **name** | **string**|  | 
  **sheetName** | **string**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -230,7 +236,7 @@ No authorization required
 
 <a name="cellsautofilterpostworksheetautofilterrefresh"></a>
 # **CellsAutoFilterPostWorksheetAutoFilterRefresh**
-> SaaSposeResponse CellsAutoFilterPostWorksheetAutoFilterRefresh (string name, string sheetName, string folder = null)
+> SaaSposeResponse CellsAutoFilterPostWorksheetAutoFilterRefresh (string name, string sheetName, string folder = null, string storage = null)
 
 
 
@@ -252,10 +258,11 @@ namespace Example
             var name = name_example;  // string | 
             var sheetName = sheetName_example;  // string | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                SaaSposeResponse result = apiInstance.CellsAutoFilterPostWorksheetAutoFilterRefresh(name, sheetName, folder);
+                SaaSposeResponse result = apiInstance.CellsAutoFilterPostWorksheetAutoFilterRefresh(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -274,6 +281,7 @@ Name | Type | Description  | Notes
  **name** | **string**|  | 
  **sheetName** | **string**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -292,7 +300,7 @@ No authorization required
 
 <a name="cellsautofilterpostworksheetmatchblanks"></a>
 # **CellsAutoFilterPostWorksheetMatchBlanks**
-> SaaSposeResponse CellsAutoFilterPostWorksheetMatchBlanks (string name, string sheetName, int? fieldIndex, string folder = null)
+> SaaSposeResponse CellsAutoFilterPostWorksheetMatchBlanks (string name, string sheetName, int? fieldIndex, string folder = null, string storage = null)
 
 Match all blank cell in the list.
 
@@ -315,11 +323,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | 
             var fieldIndex = 56;  // int? | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Match all blank cell in the list.
-                SaaSposeResponse result = apiInstance.CellsAutoFilterPostWorksheetMatchBlanks(name, sheetName, fieldIndex, folder);
+                SaaSposeResponse result = apiInstance.CellsAutoFilterPostWorksheetMatchBlanks(name, sheetName, fieldIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -339,6 +348,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**|  | 
  **fieldIndex** | **int?**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -357,7 +367,7 @@ No authorization required
 
 <a name="cellsautofilterpostworksheetmatchnonblanks"></a>
 # **CellsAutoFilterPostWorksheetMatchNonBlanks**
-> SaaSposeResponse CellsAutoFilterPostWorksheetMatchNonBlanks (string name, string sheetName, int? fieldIndex, string folder = null)
+> SaaSposeResponse CellsAutoFilterPostWorksheetMatchNonBlanks (string name, string sheetName, int? fieldIndex, string folder = null, string storage = null)
 
 Match all not blank cell in the list.             
 
@@ -380,11 +390,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | 
             var fieldIndex = 56;  // int? | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Match all not blank cell in the list.             
-                SaaSposeResponse result = apiInstance.CellsAutoFilterPostWorksheetMatchNonBlanks(name, sheetName, fieldIndex, folder);
+                SaaSposeResponse result = apiInstance.CellsAutoFilterPostWorksheetMatchNonBlanks(name, sheetName, fieldIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -404,6 +415,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**|  | 
  **fieldIndex** | **int?**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -422,7 +434,7 @@ No authorization required
 
 <a name="cellsautofilterputworksheetcolorfilter"></a>
 # **CellsAutoFilterPutWorksheetColorFilter**
-> SaaSposeResponse CellsAutoFilterPutWorksheetColorFilter (string name, string sheetName, string range, int? fieldIndex, ColorFilterRequest colorFilter = null, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+> SaaSposeResponse CellsAutoFilterPutWorksheetColorFilter (string name, string sheetName, string range, int? fieldIndex, ColorFilterRequest colorFilter = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
 
 
 
@@ -449,10 +461,11 @@ namespace Example
             var matchBlanks = true;  // bool? |  (optional) 
             var refresh = true;  // bool? |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                SaaSposeResponse result = apiInstance.CellsAutoFilterPutWorksheetColorFilter(name, sheetName, range, fieldIndex, colorFilter, matchBlanks, refresh, folder);
+                SaaSposeResponse result = apiInstance.CellsAutoFilterPutWorksheetColorFilter(name, sheetName, range, fieldIndex, colorFilter, matchBlanks, refresh, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -476,6 +489,7 @@ Name | Type | Description  | Notes
  **matchBlanks** | **bool?**|  | [optional] 
  **refresh** | **bool?**|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -494,7 +508,7 @@ No authorization required
 
 <a name="cellsautofilterputworksheetcustomfilter"></a>
 # **CellsAutoFilterPutWorksheetCustomFilter**
-> SaaSposeResponse CellsAutoFilterPutWorksheetCustomFilter (string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+> SaaSposeResponse CellsAutoFilterPutWorksheetCustomFilter (string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
 
 Filters a list with a custom criteria.             
 
@@ -525,11 +539,12 @@ namespace Example
             var matchBlanks = true;  // bool? |  (optional) 
             var refresh = true;  // bool? |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Filters a list with a custom criteria.             
-                SaaSposeResponse result = apiInstance.CellsAutoFilterPutWorksheetCustomFilter(name, sheetName, range, fieldIndex, operatorType1, criteria1, isAnd, operatorType2, criteria2, matchBlanks, refresh, folder);
+                SaaSposeResponse result = apiInstance.CellsAutoFilterPutWorksheetCustomFilter(name, sheetName, range, fieldIndex, operatorType1, criteria1, isAnd, operatorType2, criteria2, matchBlanks, refresh, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -557,6 +572,7 @@ Name | Type | Description  | Notes
  **matchBlanks** | **bool?**|  | [optional] 
  **refresh** | **bool?**|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -575,7 +591,7 @@ No authorization required
 
 <a name="cellsautofilterputworksheetdatefilter"></a>
 # **CellsAutoFilterPutWorksheetDateFilter**
-> SaaSposeResponse CellsAutoFilterPutWorksheetDateFilter (string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+> SaaSposeResponse CellsAutoFilterPutWorksheetDateFilter (string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
 
 add date filter in worksheet 
 
@@ -608,11 +624,12 @@ namespace Example
             var matchBlanks = true;  // bool? |  (optional) 
             var refresh = true;  // bool? |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // add date filter in worksheet 
-                SaaSposeResponse result = apiInstance.CellsAutoFilterPutWorksheetDateFilter(name, sheetName, range, fieldIndex, dateTimeGroupingType, year, month, day, hour, minute, second, matchBlanks, refresh, folder);
+                SaaSposeResponse result = apiInstance.CellsAutoFilterPutWorksheetDateFilter(name, sheetName, range, fieldIndex, dateTimeGroupingType, year, month, day, hour, minute, second, matchBlanks, refresh, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -642,6 +659,7 @@ Name | Type | Description  | Notes
  **matchBlanks** | **bool?**|  | [optional] 
  **refresh** | **bool?**|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -660,7 +678,7 @@ No authorization required
 
 <a name="cellsautofilterputworksheetdynamicfilter"></a>
 # **CellsAutoFilterPutWorksheetDynamicFilter**
-> SaaSposeResponse CellsAutoFilterPutWorksheetDynamicFilter (string name, string sheetName, string range, int? fieldIndex, string dynamicFilterType, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+> SaaSposeResponse CellsAutoFilterPutWorksheetDynamicFilter (string name, string sheetName, string range, int? fieldIndex, string dynamicFilterType, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
 
 
 
@@ -687,10 +705,11 @@ namespace Example
             var matchBlanks = true;  // bool? |  (optional) 
             var refresh = true;  // bool? |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                SaaSposeResponse result = apiInstance.CellsAutoFilterPutWorksheetDynamicFilter(name, sheetName, range, fieldIndex, dynamicFilterType, matchBlanks, refresh, folder);
+                SaaSposeResponse result = apiInstance.CellsAutoFilterPutWorksheetDynamicFilter(name, sheetName, range, fieldIndex, dynamicFilterType, matchBlanks, refresh, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -714,6 +733,7 @@ Name | Type | Description  | Notes
  **matchBlanks** | **bool?**|  | [optional] 
  **refresh** | **bool?**|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -732,7 +752,7 @@ No authorization required
 
 <a name="cellsautofilterputworksheetfilter"></a>
 # **CellsAutoFilterPutWorksheetFilter**
-> SaaSposeResponse CellsAutoFilterPutWorksheetFilter (string name, string sheetName, string range, int? fieldIndex, string criteria, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+> SaaSposeResponse CellsAutoFilterPutWorksheetFilter (string name, string sheetName, string range, int? fieldIndex, string criteria, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
 
 Adds a filter for a filter column.             
 
@@ -759,11 +779,12 @@ namespace Example
             var matchBlanks = true;  // bool? |  (optional) 
             var refresh = true;  // bool? |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Adds a filter for a filter column.             
-                SaaSposeResponse result = apiInstance.CellsAutoFilterPutWorksheetFilter(name, sheetName, range, fieldIndex, criteria, matchBlanks, refresh, folder);
+                SaaSposeResponse result = apiInstance.CellsAutoFilterPutWorksheetFilter(name, sheetName, range, fieldIndex, criteria, matchBlanks, refresh, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -787,6 +808,7 @@ Name | Type | Description  | Notes
  **matchBlanks** | **bool?**|  | [optional] 
  **refresh** | **bool?**|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -805,7 +827,7 @@ No authorization required
 
 <a name="cellsautofilterputworksheetfiltertop10"></a>
 # **CellsAutoFilterPutWorksheetFilterTop10**
-> SaaSposeResponse CellsAutoFilterPutWorksheetFilterTop10 (string name, string sheetName, string range, int? fieldIndex, bool? isTop, bool? isPercent, int? itemCount, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+> SaaSposeResponse CellsAutoFilterPutWorksheetFilterTop10 (string name, string sheetName, string range, int? fieldIndex, bool? isTop, bool? isPercent, int? itemCount, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
 
 Filter the top 10 item in the list
 
@@ -834,11 +856,12 @@ namespace Example
             var matchBlanks = true;  // bool? |  (optional) 
             var refresh = true;  // bool? |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Filter the top 10 item in the list
-                SaaSposeResponse result = apiInstance.CellsAutoFilterPutWorksheetFilterTop10(name, sheetName, range, fieldIndex, isTop, isPercent, itemCount, matchBlanks, refresh, folder);
+                SaaSposeResponse result = apiInstance.CellsAutoFilterPutWorksheetFilterTop10(name, sheetName, range, fieldIndex, isTop, isPercent, itemCount, matchBlanks, refresh, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -864,6 +887,7 @@ Name | Type | Description  | Notes
  **matchBlanks** | **bool?**|  | [optional] 
  **refresh** | **bool?**|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -882,7 +906,7 @@ No authorization required
 
 <a name="cellsautofilterputworksheeticonfilter"></a>
 # **CellsAutoFilterPutWorksheetIconFilter**
-> SaaSposeResponse CellsAutoFilterPutWorksheetIconFilter (string name, string sheetName, string range, int? fieldIndex, string iconSetType, int? iconId, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+> SaaSposeResponse CellsAutoFilterPutWorksheetIconFilter (string name, string sheetName, string range, int? fieldIndex, string iconSetType, int? iconId, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
 
 Adds an icon filter.
 
@@ -910,11 +934,12 @@ namespace Example
             var matchBlanks = true;  // bool? |  (optional) 
             var refresh = true;  // bool? |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Adds an icon filter.
-                SaaSposeResponse result = apiInstance.CellsAutoFilterPutWorksheetIconFilter(name, sheetName, range, fieldIndex, iconSetType, iconId, matchBlanks, refresh, folder);
+                SaaSposeResponse result = apiInstance.CellsAutoFilterPutWorksheetIconFilter(name, sheetName, range, fieldIndex, iconSetType, iconId, matchBlanks, refresh, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -939,6 +964,7 @@ Name | Type | Description  | Notes
  **matchBlanks** | **bool?**|  | [optional] 
  **refresh** | **bool?**|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 

@@ -3,10 +3,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**BackgroundColor** | [**Color**](Color.md) |  | [optional] 
-**FillFormat** | [**FillFormat**](FillFormat.md) |  | [optional] 
 **ForegroundColor** | [**Color**](Color.md) |  | [optional] 
+**BackgroundColor** | [**Color**](Color.md) |  | [optional] 
 **Format** | **string** |  | [optional] 
+**FillFormat** | [**FillFormat**](FillFormat.md) |  | [optional] 
 **InvertIfNegative** | **bool?** |  | [optional] 
 **Transparency** | **double?** |  | [optional] 
 

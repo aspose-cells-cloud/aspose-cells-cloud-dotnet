@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 <a name="cellslistobjectsdeleteworksheetlistobject"></a>
 # **CellsListObjectsDeleteWorksheetListObject**
-> SaaSposeResponse CellsListObjectsDeleteWorksheetListObject (string name, string sheetName, int? listObjectIndex, string folder = null)
+> SaaSposeResponse CellsListObjectsDeleteWorksheetListObject (string name, string sheetName, int? listObjectIndex, string folder = null, string storage = null)
 
 Delete worksheet list object by index
 
@@ -40,11 +40,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | The worksheet name.
             var listObjectIndex = 56;  // int? | List object index
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Delete worksheet list object by index
-                SaaSposeResponse result = apiInstance.CellsListObjectsDeleteWorksheetListObject(name, sheetName, listObjectIndex, folder);
+                SaaSposeResponse result = apiInstance.CellsListObjectsDeleteWorksheetListObject(name, sheetName, listObjectIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -64,6 +65,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| The worksheet name. | 
  **listObjectIndex** | **int?**| List object index | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -82,7 +84,7 @@ No authorization required
 
 <a name="cellslistobjectsdeleteworksheetlistobjects"></a>
 # **CellsListObjectsDeleteWorksheetListObjects**
-> SaaSposeResponse CellsListObjectsDeleteWorksheetListObjects (string name, string sheetName, string folder = null)
+> SaaSposeResponse CellsListObjectsDeleteWorksheetListObjects (string name, string sheetName, string folder = null, string storage = null)
 
 Delete worksheet list objects
 
@@ -104,11 +106,12 @@ namespace Example
             var name = name_example;  // string | Document name.
             var sheetName = sheetName_example;  // string | The worksheet name.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Delete worksheet list objects
-                SaaSposeResponse result = apiInstance.CellsListObjectsDeleteWorksheetListObjects(name, sheetName, folder);
+                SaaSposeResponse result = apiInstance.CellsListObjectsDeleteWorksheetListObjects(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -127,6 +130,7 @@ Name | Type | Description  | Notes
  **name** | **string**| Document name. | 
  **sheetName** | **string**| The worksheet name. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -145,7 +149,7 @@ No authorization required
 
 <a name="cellslistobjectsgetworksheetlistobject"></a>
 # **CellsListObjectsGetWorksheetListObject**
-> ListObjectResponse CellsListObjectsGetWorksheetListObject (string name, string sheetName, int? listobjectindex, string folder = null)
+> ListObjectResponse CellsListObjectsGetWorksheetListObject (string name, string sheetName, int? listobjectindex, string folder = null, string storage = null)
 
 Get worksheet list object info by index.
 
@@ -168,11 +172,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | The worksheet name.
             var listobjectindex = 56;  // int? | list object index.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get worksheet list object info by index.
-                ListObjectResponse result = apiInstance.CellsListObjectsGetWorksheetListObject(name, sheetName, listobjectindex, folder);
+                ListObjectResponse result = apiInstance.CellsListObjectsGetWorksheetListObject(name, sheetName, listobjectindex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -192,6 +197,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| The worksheet name. | 
  **listobjectindex** | **int?**| list object index. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -210,7 +216,7 @@ No authorization required
 
 <a name="cellslistobjectsgetworksheetlistobjects"></a>
 # **CellsListObjectsGetWorksheetListObjects**
-> ListObjectsResponse CellsListObjectsGetWorksheetListObjects (string name, string sheetName, string folder = null)
+> ListObjectsResponse CellsListObjectsGetWorksheetListObjects (string name, string sheetName, string folder = null, string storage = null)
 
 Get worksheet listobjects info.
 
@@ -232,11 +238,12 @@ namespace Example
             var name = name_example;  // string | Document name.
             var sheetName = sheetName_example;  // string | The worksheet name.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get worksheet listobjects info.
-                ListObjectsResponse result = apiInstance.CellsListObjectsGetWorksheetListObjects(name, sheetName, folder);
+                ListObjectsResponse result = apiInstance.CellsListObjectsGetWorksheetListObjects(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -255,6 +262,7 @@ Name | Type | Description  | Notes
  **name** | **string**| Document name. | 
  **sheetName** | **string**| The worksheet name. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -273,7 +281,7 @@ No authorization required
 
 <a name="cellslistobjectspostworksheetlistobject"></a>
 # **CellsListObjectsPostWorksheetListObject**
-> SaaSposeResponse CellsListObjectsPostWorksheetListObject (string name, string sheetName, int? listObjectIndex, ListObject listObject = null, string folder = null)
+> SaaSposeResponse CellsListObjectsPostWorksheetListObject (string name, string sheetName, int? listObjectIndex, ListObject listObject = null, string folder = null, string storage = null)
 
 Update  list object 
 
@@ -297,11 +305,12 @@ namespace Example
             var listObjectIndex = 56;  // int? | list Object index
             var listObject = new ListObject(); // ListObject | listObject dto in request body. (optional) 
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Update  list object 
-                SaaSposeResponse result = apiInstance.CellsListObjectsPostWorksheetListObject(name, sheetName, listObjectIndex, listObject, folder);
+                SaaSposeResponse result = apiInstance.CellsListObjectsPostWorksheetListObject(name, sheetName, listObjectIndex, listObject, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -322,6 +331,7 @@ Name | Type | Description  | Notes
  **listObjectIndex** | **int?**| list Object index | 
  **listObject** | [**ListObject**](ListObject.md)| listObject dto in request body. | [optional] 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -340,7 +350,7 @@ No authorization required
 
 <a name="cellslistobjectspostworksheetlistobjectconverttorange"></a>
 # **CellsListObjectsPostWorksheetListObjectConvertToRange**
-> SaaSposeResponse CellsListObjectsPostWorksheetListObjectConvertToRange (string name, string sheetName, int? listObjectIndex, string folder = null)
+> SaaSposeResponse CellsListObjectsPostWorksheetListObjectConvertToRange (string name, string sheetName, int? listObjectIndex, string folder = null, string storage = null)
 
 
 
@@ -363,10 +373,11 @@ namespace Example
             var sheetName = sheetName_example;  // string | 
             var listObjectIndex = 56;  // int? | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                SaaSposeResponse result = apiInstance.CellsListObjectsPostWorksheetListObjectConvertToRange(name, sheetName, listObjectIndex, folder);
+                SaaSposeResponse result = apiInstance.CellsListObjectsPostWorksheetListObjectConvertToRange(name, sheetName, listObjectIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -386,6 +397,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**|  | 
  **listObjectIndex** | **int?**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -404,7 +416,7 @@ No authorization required
 
 <a name="cellslistobjectspostworksheetlistobjectsorttable"></a>
 # **CellsListObjectsPostWorksheetListObjectSortTable**
-> SaaSposeResponse CellsListObjectsPostWorksheetListObjectSortTable (string name, string sheetName, int? listObjectIndex, DataSorter dataSorter = null, string folder = null)
+> SaaSposeResponse CellsListObjectsPostWorksheetListObjectSortTable (string name, string sheetName, int? listObjectIndex, DataSorter dataSorter = null, string folder = null, string storage = null)
 
 
 
@@ -428,10 +440,11 @@ namespace Example
             var listObjectIndex = 56;  // int? | 
             var dataSorter = new DataSorter(); // DataSorter |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                SaaSposeResponse result = apiInstance.CellsListObjectsPostWorksheetListObjectSortTable(name, sheetName, listObjectIndex, dataSorter, folder);
+                SaaSposeResponse result = apiInstance.CellsListObjectsPostWorksheetListObjectSortTable(name, sheetName, listObjectIndex, dataSorter, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -452,6 +465,7 @@ Name | Type | Description  | Notes
  **listObjectIndex** | **int?**|  | 
  **dataSorter** | [**DataSorter**](DataSorter.md)|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -470,7 +484,7 @@ No authorization required
 
 <a name="cellslistobjectspostworksheetlistobjectsummarizewithpivottable"></a>
 # **CellsListObjectsPostWorksheetListObjectSummarizeWithPivotTable**
-> SaaSposeResponse CellsListObjectsPostWorksheetListObjectSummarizeWithPivotTable (string name, string sheetName, int? listObjectIndex, string destsheetName, CreatePivotTableRequest request = null, string folder = null)
+> SaaSposeResponse CellsListObjectsPostWorksheetListObjectSummarizeWithPivotTable (string name, string sheetName, int? listObjectIndex, string destsheetName, CreatePivotTableRequest request = null, string folder = null, string storage = null)
 
 
 
@@ -495,10 +509,11 @@ namespace Example
             var destsheetName = destsheetName_example;  // string | 
             var request = new CreatePivotTableRequest(); // CreatePivotTableRequest |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                SaaSposeResponse result = apiInstance.CellsListObjectsPostWorksheetListObjectSummarizeWithPivotTable(name, sheetName, listObjectIndex, destsheetName, request, folder);
+                SaaSposeResponse result = apiInstance.CellsListObjectsPostWorksheetListObjectSummarizeWithPivotTable(name, sheetName, listObjectIndex, destsheetName, request, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -520,6 +535,7 @@ Name | Type | Description  | Notes
  **destsheetName** | **string**|  | 
  **request** | [**CreatePivotTableRequest**](CreatePivotTableRequest.md)|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -538,7 +554,7 @@ No authorization required
 
 <a name="cellslistobjectsputworksheetlistobject"></a>
 # **CellsListObjectsPutWorksheetListObject**
-> ListObjectResponse CellsListObjectsPutWorksheetListObject (string name, string sheetName, int? startRow, int? startColumn, int? endRow, int? endColumn, string folder = null, bool? hasHeaders = null)
+> ListObjectResponse CellsListObjectsPutWorksheetListObject (string name, string sheetName, int? startRow, int? startColumn, int? endRow, int? endColumn, string folder = null, string storage = null, bool? hasHeaders = null)
 
 Add a list object into worksheet.
 
@@ -564,12 +580,13 @@ namespace Example
             var endRow = 56;  // int? | The start row of the list range.
             var endColumn = 56;  // int? | The start row of the list range.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
             var hasHeaders = true;  // bool? | Whether the range has headers. (optional)  (default to true)
 
             try
             {
                 // Add a list object into worksheet.
-                ListObjectResponse result = apiInstance.CellsListObjectsPutWorksheetListObject(name, sheetName, startRow, startColumn, endRow, endColumn, folder, hasHeaders);
+                ListObjectResponse result = apiInstance.CellsListObjectsPutWorksheetListObject(name, sheetName, startRow, startColumn, endRow, endColumn, folder, storage, hasHeaders);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -592,6 +609,7 @@ Name | Type | Description  | Notes
  **endRow** | **int?**| The start row of the list range. | 
  **endColumn** | **int?**| The start row of the list range. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
  **hasHeaders** | **bool?**| Whether the range has headers. | [optional] [default to true]
 
 ### Return type

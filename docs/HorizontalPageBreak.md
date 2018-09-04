@@ -3,9 +3,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Row** | **int?** |  | 
-**EndColumn** | **int?** |  | 
 **StartColumn** | **int?** |  | 
+**EndColumn** | **int?** |  | 
+**Row** | **int?** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

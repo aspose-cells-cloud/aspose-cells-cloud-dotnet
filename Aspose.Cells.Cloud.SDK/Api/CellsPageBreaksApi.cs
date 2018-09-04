@@ -35,8 +35,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPageBreaksDeleteHorizontalPageBreak (string name, string sheetName, int? index, string folder = null);
+        SaaSposeResponse CellsPageBreaksDeleteHorizontalPageBreak (string name, string sheetName, int? index, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -49,8 +50,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPageBreaksDeleteHorizontalPageBreakWithHttpInfo (string name, string sheetName, int? index, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPageBreaksDeleteHorizontalPageBreakWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -62,8 +64,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="row"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPageBreaksDeleteHorizontalPageBreaks (string name, string sheetName, int? row = null, string folder = null);
+        SaaSposeResponse CellsPageBreaksDeleteHorizontalPageBreaks (string name, string sheetName, int? row = null, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -76,8 +79,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="row"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPageBreaksDeleteHorizontalPageBreaksWithHttpInfo (string name, string sheetName, int? row = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPageBreaksDeleteHorizontalPageBreaksWithHttpInfo (string name, string sheetName, int? row = null, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -89,8 +93,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPageBreaksDeleteVerticalPageBreak (string name, string sheetName, int? index, string folder = null);
+        SaaSposeResponse CellsPageBreaksDeleteVerticalPageBreak (string name, string sheetName, int? index, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -103,8 +108,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPageBreaksDeleteVerticalPageBreakWithHttpInfo (string name, string sheetName, int? index, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPageBreaksDeleteVerticalPageBreakWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -116,8 +122,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="column"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPageBreaksDeleteVerticalPageBreaks (string name, string sheetName, int? column = null, string folder = null);
+        SaaSposeResponse CellsPageBreaksDeleteVerticalPageBreaks (string name, string sheetName, int? column = null, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -130,8 +137,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="column"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPageBreaksDeleteVerticalPageBreaksWithHttpInfo (string name, string sheetName, int? column = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPageBreaksDeleteVerticalPageBreaksWithHttpInfo (string name, string sheetName, int? column = null, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -143,8 +151,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>HorizontalPageBreakResponse</returns>
-        HorizontalPageBreakResponse CellsPageBreaksGetHorizontalPageBreak (string name, string sheetName, int? index, string folder = null);
+        HorizontalPageBreakResponse CellsPageBreaksGetHorizontalPageBreak (string name, string sheetName, int? index, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -157,8 +166,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of HorizontalPageBreakResponse</returns>
-        ApiResponse<HorizontalPageBreakResponse> CellsPageBreaksGetHorizontalPageBreakWithHttpInfo (string name, string sheetName, int? index, string folder = null);
+        ApiResponse<HorizontalPageBreakResponse> CellsPageBreaksGetHorizontalPageBreakWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -169,8 +179,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>HorizontalPageBreaksResponse</returns>
-        HorizontalPageBreaksResponse CellsPageBreaksGetHorizontalPageBreaks (string name, string sheetName, string folder = null);
+        HorizontalPageBreaksResponse CellsPageBreaksGetHorizontalPageBreaks (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -182,8 +193,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of HorizontalPageBreaksResponse</returns>
-        ApiResponse<HorizontalPageBreaksResponse> CellsPageBreaksGetHorizontalPageBreaksWithHttpInfo (string name, string sheetName, string folder = null);
+        ApiResponse<HorizontalPageBreaksResponse> CellsPageBreaksGetHorizontalPageBreaksWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -195,8 +207,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>VerticalPageBreakResponse</returns>
-        VerticalPageBreakResponse CellsPageBreaksGetVerticalPageBreak (string name, string sheetName, int? index, string folder = null);
+        VerticalPageBreakResponse CellsPageBreaksGetVerticalPageBreak (string name, string sheetName, int? index, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -209,8 +222,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of VerticalPageBreakResponse</returns>
-        ApiResponse<VerticalPageBreakResponse> CellsPageBreaksGetVerticalPageBreakWithHttpInfo (string name, string sheetName, int? index, string folder = null);
+        ApiResponse<VerticalPageBreakResponse> CellsPageBreaksGetVerticalPageBreakWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -221,8 +235,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>VerticalPageBreaksResponse</returns>
-        VerticalPageBreaksResponse CellsPageBreaksGetVerticalPageBreaks (string name, string sheetName, string folder = null);
+        VerticalPageBreaksResponse CellsPageBreaksGetVerticalPageBreaks (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -234,8 +249,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of VerticalPageBreaksResponse</returns>
-        ApiResponse<VerticalPageBreaksResponse> CellsPageBreaksGetVerticalPageBreaksWithHttpInfo (string name, string sheetName, string folder = null);
+        ApiResponse<VerticalPageBreaksResponse> CellsPageBreaksGetVerticalPageBreaksWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -251,8 +267,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startColumn"> (optional)</param>
         /// <param name="endColumn"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPageBreaksPutHorizontalPageBreak (string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null);
+        SaaSposeResponse CellsPageBreaksPutHorizontalPageBreak (string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -269,8 +286,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startColumn"> (optional)</param>
         /// <param name="endColumn"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPageBreaksPutHorizontalPageBreakWithHttpInfo (string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPageBreaksPutHorizontalPageBreakWithHttpInfo (string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -286,8 +304,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startRow"> (optional)</param>
         /// <param name="endRow"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPageBreaksPutVerticalPageBreak (string name, string sheetName, string cellname = null, int? column = null, int? row = null, int? startRow = null, int? endRow = null, string folder = null);
+        SaaSposeResponse CellsPageBreaksPutVerticalPageBreak (string name, string sheetName, string cellname = null, int? column = null, int? row = null, int? startRow = null, int? endRow = null, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -304,8 +323,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startRow"> (optional)</param>
         /// <param name="endRow"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPageBreaksPutVerticalPageBreakWithHttpInfo (string name, string sheetName, string cellname = null, int? column = null, int? row = null, int? startRow = null, int? endRow = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPageBreaksPutVerticalPageBreakWithHttpInfo (string name, string sheetName, string cellname = null, int? column = null, int? row = null, int? startRow = null, int? endRow = null, string folder = null, string storage = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -319,8 +339,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksDeleteHorizontalPageBreakAsync (string name, string sheetName, int? index, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksDeleteHorizontalPageBreakAsync (string name, string sheetName, int? index, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -333,8 +354,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksDeleteHorizontalPageBreakAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksDeleteHorizontalPageBreakAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -346,8 +368,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="row"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksDeleteHorizontalPageBreaksAsync (string name, string sheetName, int? row = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksDeleteHorizontalPageBreaksAsync (string name, string sheetName, int? row = null, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -360,8 +383,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="row"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksDeleteHorizontalPageBreaksAsyncWithHttpInfo (string name, string sheetName, int? row = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksDeleteHorizontalPageBreaksAsyncWithHttpInfo (string name, string sheetName, int? row = null, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -373,8 +397,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksDeleteVerticalPageBreakAsync (string name, string sheetName, int? index, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksDeleteVerticalPageBreakAsync (string name, string sheetName, int? index, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -387,8 +412,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksDeleteVerticalPageBreakAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksDeleteVerticalPageBreakAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -400,8 +426,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="column"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksDeleteVerticalPageBreaksAsync (string name, string sheetName, int? column = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksDeleteVerticalPageBreaksAsync (string name, string sheetName, int? column = null, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -414,8 +441,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="column"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksDeleteVerticalPageBreaksAsyncWithHttpInfo (string name, string sheetName, int? column = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksDeleteVerticalPageBreaksAsyncWithHttpInfo (string name, string sheetName, int? column = null, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -427,8 +455,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of HorizontalPageBreakResponse</returns>
-        System.Threading.Tasks.Task<HorizontalPageBreakResponse> CellsPageBreaksGetHorizontalPageBreakAsync (string name, string sheetName, int? index, string folder = null);
+        System.Threading.Tasks.Task<HorizontalPageBreakResponse> CellsPageBreaksGetHorizontalPageBreakAsync (string name, string sheetName, int? index, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -441,8 +470,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (HorizontalPageBreakResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<HorizontalPageBreakResponse>> CellsPageBreaksGetHorizontalPageBreakAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<HorizontalPageBreakResponse>> CellsPageBreaksGetHorizontalPageBreakAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -453,8 +483,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of HorizontalPageBreaksResponse</returns>
-        System.Threading.Tasks.Task<HorizontalPageBreaksResponse> CellsPageBreaksGetHorizontalPageBreaksAsync (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<HorizontalPageBreaksResponse> CellsPageBreaksGetHorizontalPageBreaksAsync (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -466,8 +497,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (HorizontalPageBreaksResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<HorizontalPageBreaksResponse>> CellsPageBreaksGetHorizontalPageBreaksAsyncWithHttpInfo (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<HorizontalPageBreaksResponse>> CellsPageBreaksGetHorizontalPageBreaksAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -479,8 +511,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of VerticalPageBreakResponse</returns>
-        System.Threading.Tasks.Task<VerticalPageBreakResponse> CellsPageBreaksGetVerticalPageBreakAsync (string name, string sheetName, int? index, string folder = null);
+        System.Threading.Tasks.Task<VerticalPageBreakResponse> CellsPageBreaksGetVerticalPageBreakAsync (string name, string sheetName, int? index, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -493,8 +526,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (VerticalPageBreakResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<VerticalPageBreakResponse>> CellsPageBreaksGetVerticalPageBreakAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<VerticalPageBreakResponse>> CellsPageBreaksGetVerticalPageBreakAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -505,8 +539,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of VerticalPageBreaksResponse</returns>
-        System.Threading.Tasks.Task<VerticalPageBreaksResponse> CellsPageBreaksGetVerticalPageBreaksAsync (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<VerticalPageBreaksResponse> CellsPageBreaksGetVerticalPageBreaksAsync (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -518,8 +553,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (VerticalPageBreaksResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<VerticalPageBreaksResponse>> CellsPageBreaksGetVerticalPageBreaksAsyncWithHttpInfo (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<VerticalPageBreaksResponse>> CellsPageBreaksGetVerticalPageBreaksAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -535,8 +571,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startColumn"> (optional)</param>
         /// <param name="endColumn"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksPutHorizontalPageBreakAsync (string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksPutHorizontalPageBreakAsync (string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -553,8 +590,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startColumn"> (optional)</param>
         /// <param name="endColumn"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksPutHorizontalPageBreakAsyncWithHttpInfo (string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksPutHorizontalPageBreakAsyncWithHttpInfo (string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -570,8 +608,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startRow"> (optional)</param>
         /// <param name="endRow"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksPutVerticalPageBreakAsync (string name, string sheetName, string cellname = null, int? column = null, int? row = null, int? startRow = null, int? endRow = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksPutVerticalPageBreakAsync (string name, string sheetName, string cellname = null, int? column = null, int? row = null, int? startRow = null, int? endRow = null, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -588,8 +627,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startRow"> (optional)</param>
         /// <param name="endRow"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksPutVerticalPageBreakAsyncWithHttpInfo (string name, string sheetName, string cellname = null, int? column = null, int? row = null, int? startRow = null, int? endRow = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksPutVerticalPageBreakAsyncWithHttpInfo (string name, string sheetName, string cellname = null, int? column = null, int? row = null, int? startRow = null, int? endRow = null, string folder = null, string storage = null);
         #endregion Asynchronous Operations
     }
 
@@ -616,6 +656,25 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 this.Configuration.ApiClient.Configuration = this.Configuration;
             }
         }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsPageBreaksApi"/> class.
+        /// </summary>
+        /// <returns></returns>
+        public CellsPageBreaksApi(String basePath, String accesstoken)
+        {
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + accesstoken);
+            this.Configuration = new Configuration(new ApiClient(basePath),headerParameters);
+
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CellsPageBreaksApi"/> class
@@ -630,6 +689,28 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
                 this.Configuration = configuration;
 
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsPageBreaksApi"/> class
+        /// using Configuration object
+        /// </summary>
+        /// <param name="configuration">An instance of Configuration</param>
+        /// <returns></returns>
+        public CellsPageBreaksApi(String grantType,String appSID,String appKey)
+        {
+            OAuthApi oauth2 = new OAuthApi("https://api.aspose.cloud");
+            var oauth2response = oauth2.OAuthPost(grantType, appSID, appKey);
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + oauth2response.AccessToken);
+            this.Configuration =  new Configuration(new ApiClient(), headerParameters);
             ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
@@ -710,10 +791,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPageBreaksDeleteHorizontalPageBreak (string name, string sheetName, int? index, string folder = null)
+        public SaaSposeResponse CellsPageBreaksDeleteHorizontalPageBreak (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPageBreaksDeleteHorizontalPageBreakWithHttpInfo(name, sheetName, index, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPageBreaksDeleteHorizontalPageBreakWithHttpInfo(name, sheetName, index, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -725,8 +807,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPageBreaksDeleteHorizontalPageBreakWithHttpInfo (string name, string sheetName, int? index, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPageBreaksDeleteHorizontalPageBreakWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -764,6 +847,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (index != null) localVarPathParams.Add("index", Configuration.ApiClient.ParameterToString(index)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -792,10 +876,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksDeleteHorizontalPageBreakAsync (string name, string sheetName, int? index, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksDeleteHorizontalPageBreakAsync (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPageBreaksDeleteHorizontalPageBreakAsyncWithHttpInfo(name, sheetName, index, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPageBreaksDeleteHorizontalPageBreakAsyncWithHttpInfo(name, sheetName, index, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -808,8 +893,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksDeleteHorizontalPageBreakAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksDeleteHorizontalPageBreakAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -847,6 +933,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (index != null) localVarPathParams.Add("index", Configuration.ApiClient.ParameterToString(index)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -875,10 +962,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="row"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPageBreaksDeleteHorizontalPageBreaks (string name, string sheetName, int? row = null, string folder = null)
+        public SaaSposeResponse CellsPageBreaksDeleteHorizontalPageBreaks (string name, string sheetName, int? row = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPageBreaksDeleteHorizontalPageBreaksWithHttpInfo(name, sheetName, row, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPageBreaksDeleteHorizontalPageBreaksWithHttpInfo(name, sheetName, row, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -890,8 +978,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="row"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPageBreaksDeleteHorizontalPageBreaksWithHttpInfo (string name, string sheetName, int? row = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPageBreaksDeleteHorizontalPageBreaksWithHttpInfo (string name, string sheetName, int? row = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -926,6 +1015,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (row != null) localVarQueryParams.Add("row", Configuration.ApiClient.ParameterToString(row)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -954,10 +1044,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="row"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksDeleteHorizontalPageBreaksAsync (string name, string sheetName, int? row = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksDeleteHorizontalPageBreaksAsync (string name, string sheetName, int? row = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPageBreaksDeleteHorizontalPageBreaksAsyncWithHttpInfo(name, sheetName, row, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPageBreaksDeleteHorizontalPageBreaksAsyncWithHttpInfo(name, sheetName, row, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -970,8 +1061,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="row"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksDeleteHorizontalPageBreaksAsyncWithHttpInfo (string name, string sheetName, int? row = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksDeleteHorizontalPageBreaksAsyncWithHttpInfo (string name, string sheetName, int? row = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1006,6 +1098,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (row != null) localVarQueryParams.Add("row", Configuration.ApiClient.ParameterToString(row)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1034,10 +1127,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPageBreaksDeleteVerticalPageBreak (string name, string sheetName, int? index, string folder = null)
+        public SaaSposeResponse CellsPageBreaksDeleteVerticalPageBreak (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPageBreaksDeleteVerticalPageBreakWithHttpInfo(name, sheetName, index, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPageBreaksDeleteVerticalPageBreakWithHttpInfo(name, sheetName, index, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1049,8 +1143,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPageBreaksDeleteVerticalPageBreakWithHttpInfo (string name, string sheetName, int? index, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPageBreaksDeleteVerticalPageBreakWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1088,6 +1183,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (index != null) localVarPathParams.Add("index", Configuration.ApiClient.ParameterToString(index)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1116,10 +1212,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksDeleteVerticalPageBreakAsync (string name, string sheetName, int? index, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksDeleteVerticalPageBreakAsync (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPageBreaksDeleteVerticalPageBreakAsyncWithHttpInfo(name, sheetName, index, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPageBreaksDeleteVerticalPageBreakAsyncWithHttpInfo(name, sheetName, index, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1132,8 +1229,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksDeleteVerticalPageBreakAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksDeleteVerticalPageBreakAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1171,6 +1269,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (index != null) localVarPathParams.Add("index", Configuration.ApiClient.ParameterToString(index)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1199,10 +1298,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="column"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPageBreaksDeleteVerticalPageBreaks (string name, string sheetName, int? column = null, string folder = null)
+        public SaaSposeResponse CellsPageBreaksDeleteVerticalPageBreaks (string name, string sheetName, int? column = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPageBreaksDeleteVerticalPageBreaksWithHttpInfo(name, sheetName, column, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPageBreaksDeleteVerticalPageBreaksWithHttpInfo(name, sheetName, column, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1214,8 +1314,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="column"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPageBreaksDeleteVerticalPageBreaksWithHttpInfo (string name, string sheetName, int? column = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPageBreaksDeleteVerticalPageBreaksWithHttpInfo (string name, string sheetName, int? column = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1250,6 +1351,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (column != null) localVarQueryParams.Add("column", Configuration.ApiClient.ParameterToString(column)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1278,10 +1380,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="column"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksDeleteVerticalPageBreaksAsync (string name, string sheetName, int? column = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksDeleteVerticalPageBreaksAsync (string name, string sheetName, int? column = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPageBreaksDeleteVerticalPageBreaksAsyncWithHttpInfo(name, sheetName, column, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPageBreaksDeleteVerticalPageBreaksAsyncWithHttpInfo(name, sheetName, column, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1294,8 +1397,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="column"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksDeleteVerticalPageBreaksAsyncWithHttpInfo (string name, string sheetName, int? column = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksDeleteVerticalPageBreaksAsyncWithHttpInfo (string name, string sheetName, int? column = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1330,6 +1434,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (column != null) localVarQueryParams.Add("column", Configuration.ApiClient.ParameterToString(column)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1358,10 +1463,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>HorizontalPageBreakResponse</returns>
-        public HorizontalPageBreakResponse CellsPageBreaksGetHorizontalPageBreak (string name, string sheetName, int? index, string folder = null)
+        public HorizontalPageBreakResponse CellsPageBreaksGetHorizontalPageBreak (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
-             ApiResponse<HorizontalPageBreakResponse> localVarResponse = CellsPageBreaksGetHorizontalPageBreakWithHttpInfo(name, sheetName, index, folder);
+             ApiResponse<HorizontalPageBreakResponse> localVarResponse = CellsPageBreaksGetHorizontalPageBreakWithHttpInfo(name, sheetName, index, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1373,8 +1479,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of HorizontalPageBreakResponse</returns>
-        public ApiResponse< HorizontalPageBreakResponse > CellsPageBreaksGetHorizontalPageBreakWithHttpInfo (string name, string sheetName, int? index, string folder = null)
+        public ApiResponse< HorizontalPageBreakResponse > CellsPageBreaksGetHorizontalPageBreakWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1412,6 +1519,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (index != null) localVarPathParams.Add("index", Configuration.ApiClient.ParameterToString(index)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1440,10 +1548,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of HorizontalPageBreakResponse</returns>
-        public async System.Threading.Tasks.Task<HorizontalPageBreakResponse> CellsPageBreaksGetHorizontalPageBreakAsync (string name, string sheetName, int? index, string folder = null)
+        public async System.Threading.Tasks.Task<HorizontalPageBreakResponse> CellsPageBreaksGetHorizontalPageBreakAsync (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
-             ApiResponse<HorizontalPageBreakResponse> localVarResponse = await CellsPageBreaksGetHorizontalPageBreakAsyncWithHttpInfo(name, sheetName, index, folder);
+             ApiResponse<HorizontalPageBreakResponse> localVarResponse = await CellsPageBreaksGetHorizontalPageBreakAsyncWithHttpInfo(name, sheetName, index, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1456,8 +1565,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (HorizontalPageBreakResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<HorizontalPageBreakResponse>> CellsPageBreaksGetHorizontalPageBreakAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<HorizontalPageBreakResponse>> CellsPageBreaksGetHorizontalPageBreakAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1495,6 +1605,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (index != null) localVarPathParams.Add("index", Configuration.ApiClient.ParameterToString(index)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1522,10 +1633,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>HorizontalPageBreaksResponse</returns>
-        public HorizontalPageBreaksResponse CellsPageBreaksGetHorizontalPageBreaks (string name, string sheetName, string folder = null)
+        public HorizontalPageBreaksResponse CellsPageBreaksGetHorizontalPageBreaks (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<HorizontalPageBreaksResponse> localVarResponse = CellsPageBreaksGetHorizontalPageBreaksWithHttpInfo(name, sheetName, folder);
+             ApiResponse<HorizontalPageBreaksResponse> localVarResponse = CellsPageBreaksGetHorizontalPageBreaksWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1536,8 +1648,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of HorizontalPageBreaksResponse</returns>
-        public ApiResponse< HorizontalPageBreaksResponse > CellsPageBreaksGetHorizontalPageBreaksWithHttpInfo (string name, string sheetName, string folder = null)
+        public ApiResponse< HorizontalPageBreaksResponse > CellsPageBreaksGetHorizontalPageBreaksWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1571,6 +1684,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1598,10 +1712,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of HorizontalPageBreaksResponse</returns>
-        public async System.Threading.Tasks.Task<HorizontalPageBreaksResponse> CellsPageBreaksGetHorizontalPageBreaksAsync (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<HorizontalPageBreaksResponse> CellsPageBreaksGetHorizontalPageBreaksAsync (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<HorizontalPageBreaksResponse> localVarResponse = await CellsPageBreaksGetHorizontalPageBreaksAsyncWithHttpInfo(name, sheetName, folder);
+             ApiResponse<HorizontalPageBreaksResponse> localVarResponse = await CellsPageBreaksGetHorizontalPageBreaksAsyncWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1613,8 +1728,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (HorizontalPageBreaksResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<HorizontalPageBreaksResponse>> CellsPageBreaksGetHorizontalPageBreaksAsyncWithHttpInfo (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<HorizontalPageBreaksResponse>> CellsPageBreaksGetHorizontalPageBreaksAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1648,6 +1764,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1676,10 +1793,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>VerticalPageBreakResponse</returns>
-        public VerticalPageBreakResponse CellsPageBreaksGetVerticalPageBreak (string name, string sheetName, int? index, string folder = null)
+        public VerticalPageBreakResponse CellsPageBreaksGetVerticalPageBreak (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
-             ApiResponse<VerticalPageBreakResponse> localVarResponse = CellsPageBreaksGetVerticalPageBreakWithHttpInfo(name, sheetName, index, folder);
+             ApiResponse<VerticalPageBreakResponse> localVarResponse = CellsPageBreaksGetVerticalPageBreakWithHttpInfo(name, sheetName, index, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1691,8 +1809,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of VerticalPageBreakResponse</returns>
-        public ApiResponse< VerticalPageBreakResponse > CellsPageBreaksGetVerticalPageBreakWithHttpInfo (string name, string sheetName, int? index, string folder = null)
+        public ApiResponse< VerticalPageBreakResponse > CellsPageBreaksGetVerticalPageBreakWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1730,6 +1849,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (index != null) localVarPathParams.Add("index", Configuration.ApiClient.ParameterToString(index)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1758,10 +1878,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of VerticalPageBreakResponse</returns>
-        public async System.Threading.Tasks.Task<VerticalPageBreakResponse> CellsPageBreaksGetVerticalPageBreakAsync (string name, string sheetName, int? index, string folder = null)
+        public async System.Threading.Tasks.Task<VerticalPageBreakResponse> CellsPageBreaksGetVerticalPageBreakAsync (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
-             ApiResponse<VerticalPageBreakResponse> localVarResponse = await CellsPageBreaksGetVerticalPageBreakAsyncWithHttpInfo(name, sheetName, index, folder);
+             ApiResponse<VerticalPageBreakResponse> localVarResponse = await CellsPageBreaksGetVerticalPageBreakAsyncWithHttpInfo(name, sheetName, index, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1774,8 +1895,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (VerticalPageBreakResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<VerticalPageBreakResponse>> CellsPageBreaksGetVerticalPageBreakAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<VerticalPageBreakResponse>> CellsPageBreaksGetVerticalPageBreakAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1813,6 +1935,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (index != null) localVarPathParams.Add("index", Configuration.ApiClient.ParameterToString(index)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1840,10 +1963,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>VerticalPageBreaksResponse</returns>
-        public VerticalPageBreaksResponse CellsPageBreaksGetVerticalPageBreaks (string name, string sheetName, string folder = null)
+        public VerticalPageBreaksResponse CellsPageBreaksGetVerticalPageBreaks (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<VerticalPageBreaksResponse> localVarResponse = CellsPageBreaksGetVerticalPageBreaksWithHttpInfo(name, sheetName, folder);
+             ApiResponse<VerticalPageBreaksResponse> localVarResponse = CellsPageBreaksGetVerticalPageBreaksWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1854,8 +1978,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of VerticalPageBreaksResponse</returns>
-        public ApiResponse< VerticalPageBreaksResponse > CellsPageBreaksGetVerticalPageBreaksWithHttpInfo (string name, string sheetName, string folder = null)
+        public ApiResponse< VerticalPageBreaksResponse > CellsPageBreaksGetVerticalPageBreaksWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1889,6 +2014,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1916,10 +2042,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of VerticalPageBreaksResponse</returns>
-        public async System.Threading.Tasks.Task<VerticalPageBreaksResponse> CellsPageBreaksGetVerticalPageBreaksAsync (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<VerticalPageBreaksResponse> CellsPageBreaksGetVerticalPageBreaksAsync (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<VerticalPageBreaksResponse> localVarResponse = await CellsPageBreaksGetVerticalPageBreaksAsyncWithHttpInfo(name, sheetName, folder);
+             ApiResponse<VerticalPageBreaksResponse> localVarResponse = await CellsPageBreaksGetVerticalPageBreaksAsyncWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1931,8 +2058,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (VerticalPageBreaksResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<VerticalPageBreaksResponse>> CellsPageBreaksGetVerticalPageBreaksAsyncWithHttpInfo (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<VerticalPageBreaksResponse>> CellsPageBreaksGetVerticalPageBreaksAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1966,6 +2094,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1998,10 +2127,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startColumn"> (optional)</param>
         /// <param name="endColumn"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPageBreaksPutHorizontalPageBreak (string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null)
+        public SaaSposeResponse CellsPageBreaksPutHorizontalPageBreak (string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPageBreaksPutHorizontalPageBreakWithHttpInfo(name, sheetName, cellname, row, column, startColumn, endColumn, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPageBreaksPutHorizontalPageBreakWithHttpInfo(name, sheetName, cellname, row, column, startColumn, endColumn, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -2017,8 +2147,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startColumn"> (optional)</param>
         /// <param name="endColumn"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPageBreaksPutHorizontalPageBreakWithHttpInfo (string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPageBreaksPutHorizontalPageBreakWithHttpInfo (string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2057,6 +2188,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (startColumn != null) localVarQueryParams.Add("startColumn", Configuration.ApiClient.ParameterToString(startColumn)); // query parameter
             if (endColumn != null) localVarQueryParams.Add("endColumn", Configuration.ApiClient.ParameterToString(endColumn)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2089,10 +2221,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startColumn"> (optional)</param>
         /// <param name="endColumn"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksPutHorizontalPageBreakAsync (string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksPutHorizontalPageBreakAsync (string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPageBreaksPutHorizontalPageBreakAsyncWithHttpInfo(name, sheetName, cellname, row, column, startColumn, endColumn, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPageBreaksPutHorizontalPageBreakAsyncWithHttpInfo(name, sheetName, cellname, row, column, startColumn, endColumn, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -2109,8 +2242,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startColumn"> (optional)</param>
         /// <param name="endColumn"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksPutHorizontalPageBreakAsyncWithHttpInfo (string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksPutHorizontalPageBreakAsyncWithHttpInfo (string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2149,6 +2283,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (startColumn != null) localVarQueryParams.Add("startColumn", Configuration.ApiClient.ParameterToString(startColumn)); // query parameter
             if (endColumn != null) localVarQueryParams.Add("endColumn", Configuration.ApiClient.ParameterToString(endColumn)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2181,10 +2316,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startRow"> (optional)</param>
         /// <param name="endRow"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPageBreaksPutVerticalPageBreak (string name, string sheetName, string cellname = null, int? column = null, int? row = null, int? startRow = null, int? endRow = null, string folder = null)
+        public SaaSposeResponse CellsPageBreaksPutVerticalPageBreak (string name, string sheetName, string cellname = null, int? column = null, int? row = null, int? startRow = null, int? endRow = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPageBreaksPutVerticalPageBreakWithHttpInfo(name, sheetName, cellname, column, row, startRow, endRow, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPageBreaksPutVerticalPageBreakWithHttpInfo(name, sheetName, cellname, column, row, startRow, endRow, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -2200,8 +2336,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startRow"> (optional)</param>
         /// <param name="endRow"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPageBreaksPutVerticalPageBreakWithHttpInfo (string name, string sheetName, string cellname = null, int? column = null, int? row = null, int? startRow = null, int? endRow = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPageBreaksPutVerticalPageBreakWithHttpInfo (string name, string sheetName, string cellname = null, int? column = null, int? row = null, int? startRow = null, int? endRow = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2240,6 +2377,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (startRow != null) localVarQueryParams.Add("startRow", Configuration.ApiClient.ParameterToString(startRow)); // query parameter
             if (endRow != null) localVarQueryParams.Add("endRow", Configuration.ApiClient.ParameterToString(endRow)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2272,10 +2410,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startRow"> (optional)</param>
         /// <param name="endRow"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksPutVerticalPageBreakAsync (string name, string sheetName, string cellname = null, int? column = null, int? row = null, int? startRow = null, int? endRow = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPageBreaksPutVerticalPageBreakAsync (string name, string sheetName, string cellname = null, int? column = null, int? row = null, int? startRow = null, int? endRow = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPageBreaksPutVerticalPageBreakAsyncWithHttpInfo(name, sheetName, cellname, column, row, startRow, endRow, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPageBreaksPutVerticalPageBreakAsyncWithHttpInfo(name, sheetName, cellname, column, row, startRow, endRow, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -2292,8 +2431,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startRow"> (optional)</param>
         /// <param name="endRow"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksPutVerticalPageBreakAsyncWithHttpInfo (string name, string sheetName, string cellname = null, int? column = null, int? row = null, int? startRow = null, int? endRow = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPageBreaksPutVerticalPageBreakAsyncWithHttpInfo (string name, string sheetName, string cellname = null, int? column = null, int? row = null, int? startRow = null, int? endRow = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2332,6 +2472,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (startRow != null) localVarQueryParams.Add("startRow", Configuration.ApiClient.ParameterToString(startRow)); // query parameter
             if (endRow != null) localVarQueryParams.Add("endRow", Configuration.ApiClient.ParameterToString(endRow)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request

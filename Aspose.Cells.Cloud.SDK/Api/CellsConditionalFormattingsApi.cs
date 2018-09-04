@@ -35,8 +35,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormatting (string name, string sheetName, int? index, string folder = null);
+        SaaSposeResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormatting (string name, string sheetName, int? index, string folder = null, string storage = null);
 
         /// <summary>
         /// Remove conditional formatting
@@ -49,8 +50,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingWithHttpInfo (string name, string sheetName, int? index, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null);
         /// <summary>
         /// Remove cell area from conditional formatting.
         /// </summary>
@@ -65,8 +67,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows"></param>
         /// <param name="totalColumns"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormattingArea (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null);
+        SaaSposeResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormattingArea (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null);
 
         /// <summary>
         /// Remove cell area from conditional formatting.
@@ -82,8 +85,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows"></param>
         /// <param name="totalColumns"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAreaWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAreaWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null);
         /// <summary>
         /// Clear all condition formattings
         /// </summary>
@@ -94,8 +98,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormattings (string name, string sheetName, string folder = null);
+        SaaSposeResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormattings (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Clear all condition formattings
@@ -107,8 +112,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingsWithHttpInfo (string name, string sheetName, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingsWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Get conditional formatting
         /// </summary>
@@ -120,8 +126,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ConditionalFormattingResponse</returns>
-        ConditionalFormattingResponse CellsConditionalFormattingsGetWorksheetConditionalFormatting (string name, string sheetName, int? index, string folder = null);
+        ConditionalFormattingResponse CellsConditionalFormattingsGetWorksheetConditionalFormatting (string name, string sheetName, int? index, string folder = null, string storage = null);
 
         /// <summary>
         /// Get conditional formatting
@@ -134,8 +141,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ConditionalFormattingResponse</returns>
-        ApiResponse<ConditionalFormattingResponse> CellsConditionalFormattingsGetWorksheetConditionalFormattingWithHttpInfo (string name, string sheetName, int? index, string folder = null);
+        ApiResponse<ConditionalFormattingResponse> CellsConditionalFormattingsGetWorksheetConditionalFormattingWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null);
         /// <summary>
         /// Get conditional formattings 
         /// </summary>
@@ -146,8 +154,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ConditionalFormattingsResponse</returns>
-        ConditionalFormattingsResponse CellsConditionalFormattingsGetWorksheetConditionalFormattings (string name, string sheetName, string folder = null);
+        ConditionalFormattingsResponse CellsConditionalFormattingsGetWorksheetConditionalFormattings (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Get conditional formattings 
@@ -159,8 +168,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ConditionalFormattingsResponse</returns>
-        ApiResponse<ConditionalFormattingsResponse> CellsConditionalFormattingsGetWorksheetConditionalFormattingsWithHttpInfo (string name, string sheetName, string folder = null);
+        ApiResponse<ConditionalFormattingsResponse> CellsConditionalFormattingsGetWorksheetConditionalFormattingsWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Add a condition formatting.
         /// </summary>
@@ -173,8 +183,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellArea"></param>
         /// <param name="formatcondition"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsConditionalFormattingsPutWorksheetConditionalFormatting (string name, string sheetName, string cellArea, FormatCondition formatcondition = null, string folder = null);
+        SaaSposeResponse CellsConditionalFormattingsPutWorksheetConditionalFormatting (string name, string sheetName, string cellArea, FormatCondition formatcondition = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Add a condition formatting.
@@ -188,8 +199,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellArea"></param>
         /// <param name="formatcondition"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetConditionalFormattingWithHttpInfo (string name, string sheetName, string cellArea, FormatCondition formatcondition = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetConditionalFormattingWithHttpInfo (string name, string sheetName, string cellArea, FormatCondition formatcondition = null, string folder = null, string storage = null);
         /// <summary>
         /// Add a format condition.
         /// </summary>
@@ -206,8 +218,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="formula1"></param>
         /// <param name="formula2"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsConditionalFormattingsPutWorksheetFormatCondition (string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null);
+        SaaSposeResponse CellsConditionalFormattingsPutWorksheetFormatCondition (string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null, string storage = null);
 
         /// <summary>
         /// Add a format condition.
@@ -225,8 +238,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="formula1"></param>
         /// <param name="formula2"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetFormatConditionWithHttpInfo (string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetFormatConditionWithHttpInfo (string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null, string storage = null);
         /// <summary>
         /// add a cell area for format condition             
         /// </summary>
@@ -239,8 +253,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="index"></param>
         /// <param name="cellArea"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsConditionalFormattingsPutWorksheetFormatConditionArea (string name, string sheetName, int? index, string cellArea, string folder = null);
+        SaaSposeResponse CellsConditionalFormattingsPutWorksheetFormatConditionArea (string name, string sheetName, int? index, string cellArea, string folder = null, string storage = null);
 
         /// <summary>
         /// add a cell area for format condition             
@@ -254,8 +269,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="index"></param>
         /// <param name="cellArea"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetFormatConditionAreaWithHttpInfo (string name, string sheetName, int? index, string cellArea, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetFormatConditionAreaWithHttpInfo (string name, string sheetName, int? index, string cellArea, string folder = null, string storage = null);
         /// <summary>
         /// Add a condition for format condition.
         /// </summary>
@@ -271,8 +287,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="formula1"></param>
         /// <param name="formula2"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsConditionalFormattingsPutWorksheetFormatConditionCondition (string name, string sheetName, int? index, string type, string operatorType, string formula1, string formula2, string folder = null);
+        SaaSposeResponse CellsConditionalFormattingsPutWorksheetFormatConditionCondition (string name, string sheetName, int? index, string type, string operatorType, string formula1, string formula2, string folder = null, string storage = null);
 
         /// <summary>
         /// Add a condition for format condition.
@@ -289,8 +306,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="formula1"></param>
         /// <param name="formula2"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetFormatConditionConditionWithHttpInfo (string name, string sheetName, int? index, string type, string operatorType, string formula1, string formula2, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetFormatConditionConditionWithHttpInfo (string name, string sheetName, int? index, string type, string operatorType, string formula1, string formula2, string folder = null, string storage = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -304,8 +322,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAsync (string name, string sheetName, int? index, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAsync (string name, string sheetName, int? index, string folder = null, string storage = null);
 
         /// <summary>
         /// Remove conditional formatting
@@ -318,8 +337,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null);
         /// <summary>
         /// Remove cell area from conditional formatting.
         /// </summary>
@@ -334,8 +354,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows"></param>
         /// <param name="totalColumns"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAreaAsync (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAreaAsync (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null);
 
         /// <summary>
         /// Remove cell area from conditional formatting.
@@ -351,8 +372,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows"></param>
         /// <param name="totalColumns"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAreaAsyncWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAreaAsyncWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null);
         /// <summary>
         /// Clear all condition formattings
         /// </summary>
@@ -363,8 +385,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingsAsync (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingsAsync (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Clear all condition formattings
@@ -376,8 +399,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingsAsyncWithHttpInfo (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingsAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Get conditional formatting
         /// </summary>
@@ -389,8 +413,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ConditionalFormattingResponse</returns>
-        System.Threading.Tasks.Task<ConditionalFormattingResponse> CellsConditionalFormattingsGetWorksheetConditionalFormattingAsync (string name, string sheetName, int? index, string folder = null);
+        System.Threading.Tasks.Task<ConditionalFormattingResponse> CellsConditionalFormattingsGetWorksheetConditionalFormattingAsync (string name, string sheetName, int? index, string folder = null, string storage = null);
 
         /// <summary>
         /// Get conditional formatting
@@ -403,8 +428,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ConditionalFormattingResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ConditionalFormattingResponse>> CellsConditionalFormattingsGetWorksheetConditionalFormattingAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<ConditionalFormattingResponse>> CellsConditionalFormattingsGetWorksheetConditionalFormattingAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null);
         /// <summary>
         /// Get conditional formattings 
         /// </summary>
@@ -415,8 +441,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ConditionalFormattingsResponse</returns>
-        System.Threading.Tasks.Task<ConditionalFormattingsResponse> CellsConditionalFormattingsGetWorksheetConditionalFormattingsAsync (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ConditionalFormattingsResponse> CellsConditionalFormattingsGetWorksheetConditionalFormattingsAsync (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Get conditional formattings 
@@ -428,8 +455,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ConditionalFormattingsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ConditionalFormattingsResponse>> CellsConditionalFormattingsGetWorksheetConditionalFormattingsAsyncWithHttpInfo (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<ConditionalFormattingsResponse>> CellsConditionalFormattingsGetWorksheetConditionalFormattingsAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Add a condition formatting.
         /// </summary>
@@ -442,8 +470,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellArea"></param>
         /// <param name="formatcondition"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetConditionalFormattingAsync (string name, string sheetName, string cellArea, FormatCondition formatcondition = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetConditionalFormattingAsync (string name, string sheetName, string cellArea, FormatCondition formatcondition = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Add a condition formatting.
@@ -457,8 +486,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellArea"></param>
         /// <param name="formatcondition"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsPutWorksheetConditionalFormattingAsyncWithHttpInfo (string name, string sheetName, string cellArea, FormatCondition formatcondition = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsPutWorksheetConditionalFormattingAsyncWithHttpInfo (string name, string sheetName, string cellArea, FormatCondition formatcondition = null, string folder = null, string storage = null);
         /// <summary>
         /// Add a format condition.
         /// </summary>
@@ -475,8 +505,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="formula1"></param>
         /// <param name="formula2"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetFormatConditionAsync (string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetFormatConditionAsync (string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null, string storage = null);
 
         /// <summary>
         /// Add a format condition.
@@ -494,8 +525,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="formula1"></param>
         /// <param name="formula2"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsPutWorksheetFormatConditionAsyncWithHttpInfo (string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsPutWorksheetFormatConditionAsyncWithHttpInfo (string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null, string storage = null);
         /// <summary>
         /// add a cell area for format condition             
         /// </summary>
@@ -508,8 +540,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="index"></param>
         /// <param name="cellArea"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetFormatConditionAreaAsync (string name, string sheetName, int? index, string cellArea, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetFormatConditionAreaAsync (string name, string sheetName, int? index, string cellArea, string folder = null, string storage = null);
 
         /// <summary>
         /// add a cell area for format condition             
@@ -523,8 +556,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="index"></param>
         /// <param name="cellArea"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsPutWorksheetFormatConditionAreaAsyncWithHttpInfo (string name, string sheetName, int? index, string cellArea, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsPutWorksheetFormatConditionAreaAsyncWithHttpInfo (string name, string sheetName, int? index, string cellArea, string folder = null, string storage = null);
         /// <summary>
         /// Add a condition for format condition.
         /// </summary>
@@ -540,8 +574,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="formula1"></param>
         /// <param name="formula2"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetFormatConditionConditionAsync (string name, string sheetName, int? index, string type, string operatorType, string formula1, string formula2, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetFormatConditionConditionAsync (string name, string sheetName, int? index, string type, string operatorType, string formula1, string formula2, string folder = null, string storage = null);
 
         /// <summary>
         /// Add a condition for format condition.
@@ -558,8 +593,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="formula1"></param>
         /// <param name="formula2"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsPutWorksheetFormatConditionConditionAsyncWithHttpInfo (string name, string sheetName, int? index, string type, string operatorType, string formula1, string formula2, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsPutWorksheetFormatConditionConditionAsyncWithHttpInfo (string name, string sheetName, int? index, string type, string operatorType, string formula1, string formula2, string folder = null, string storage = null);
         #endregion Asynchronous Operations
     }
 
@@ -586,6 +622,25 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 this.Configuration.ApiClient.Configuration = this.Configuration;
             }
         }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsConditionalFormattingsApi"/> class.
+        /// </summary>
+        /// <returns></returns>
+        public CellsConditionalFormattingsApi(String basePath, String accesstoken)
+        {
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + accesstoken);
+            this.Configuration = new Configuration(new ApiClient(basePath),headerParameters);
+
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CellsConditionalFormattingsApi"/> class
@@ -600,6 +655,28 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
                 this.Configuration = configuration;
 
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsConditionalFormattingsApi"/> class
+        /// using Configuration object
+        /// </summary>
+        /// <param name="configuration">An instance of Configuration</param>
+        /// <returns></returns>
+        public CellsConditionalFormattingsApi(String grantType,String appSID,String appKey)
+        {
+            OAuthApi oauth2 = new OAuthApi("https://api.aspose.cloud");
+            var oauth2response = oauth2.OAuthPost(grantType, appSID, appKey);
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + oauth2response.AccessToken);
+            this.Configuration =  new Configuration(new ApiClient(), headerParameters);
             ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
@@ -680,10 +757,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormatting (string name, string sheetName, int? index, string folder = null)
+        public SaaSposeResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormatting (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsConditionalFormattingsDeleteWorksheetConditionalFormattingWithHttpInfo(name, sheetName, index, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsConditionalFormattingsDeleteWorksheetConditionalFormattingWithHttpInfo(name, sheetName, index, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -695,8 +773,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsConditionalFormattingsDeleteWorksheetConditionalFormattingWithHttpInfo (string name, string sheetName, int? index, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsConditionalFormattingsDeleteWorksheetConditionalFormattingWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -734,6 +813,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (index != null) localVarPathParams.Add("index", Configuration.ApiClient.ParameterToString(index)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -762,10 +842,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAsync (string name, string sheetName, int? index, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAsync (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAsyncWithHttpInfo(name, sheetName, index, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAsyncWithHttpInfo(name, sheetName, index, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -778,8 +859,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -817,6 +899,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (index != null) localVarPathParams.Add("index", Configuration.ApiClient.ParameterToString(index)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -848,10 +931,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows"></param>
         /// <param name="totalColumns"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormattingArea (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null)
+        public SaaSposeResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormattingArea (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAreaWithHttpInfo(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAreaWithHttpInfo(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -866,8 +950,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows"></param>
         /// <param name="totalColumns"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAreaWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAreaWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -917,6 +1002,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (totalRows != null) localVarQueryParams.Add("totalRows", Configuration.ApiClient.ParameterToString(totalRows)); // query parameter
             if (totalColumns != null) localVarQueryParams.Add("totalColumns", Configuration.ApiClient.ParameterToString(totalColumns)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -948,10 +1034,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows"></param>
         /// <param name="totalColumns"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAreaAsync (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAreaAsync (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAreaAsyncWithHttpInfo(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAreaAsyncWithHttpInfo(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -967,8 +1054,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows"></param>
         /// <param name="totalColumns"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAreaAsyncWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAreaAsyncWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1018,6 +1106,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (totalRows != null) localVarQueryParams.Add("totalRows", Configuration.ApiClient.ParameterToString(totalRows)); // query parameter
             if (totalColumns != null) localVarQueryParams.Add("totalColumns", Configuration.ApiClient.ParameterToString(totalColumns)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1045,10 +1134,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormattings (string name, string sheetName, string folder = null)
+        public SaaSposeResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormattings (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsConditionalFormattingsDeleteWorksheetConditionalFormattingsWithHttpInfo(name, sheetName, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsConditionalFormattingsDeleteWorksheetConditionalFormattingsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1059,8 +1149,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsConditionalFormattingsDeleteWorksheetConditionalFormattingsWithHttpInfo (string name, string sheetName, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsConditionalFormattingsDeleteWorksheetConditionalFormattingsWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1094,6 +1185,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1121,10 +1213,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingsAsync (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingsAsync (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsConditionalFormattingsDeleteWorksheetConditionalFormattingsAsyncWithHttpInfo(name, sheetName, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsConditionalFormattingsDeleteWorksheetConditionalFormattingsAsyncWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1136,8 +1229,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingsAsyncWithHttpInfo (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsDeleteWorksheetConditionalFormattingsAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1171,6 +1265,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1199,10 +1294,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ConditionalFormattingResponse</returns>
-        public ConditionalFormattingResponse CellsConditionalFormattingsGetWorksheetConditionalFormatting (string name, string sheetName, int? index, string folder = null)
+        public ConditionalFormattingResponse CellsConditionalFormattingsGetWorksheetConditionalFormatting (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
-             ApiResponse<ConditionalFormattingResponse> localVarResponse = CellsConditionalFormattingsGetWorksheetConditionalFormattingWithHttpInfo(name, sheetName, index, folder);
+             ApiResponse<ConditionalFormattingResponse> localVarResponse = CellsConditionalFormattingsGetWorksheetConditionalFormattingWithHttpInfo(name, sheetName, index, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1214,8 +1310,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ConditionalFormattingResponse</returns>
-        public ApiResponse< ConditionalFormattingResponse > CellsConditionalFormattingsGetWorksheetConditionalFormattingWithHttpInfo (string name, string sheetName, int? index, string folder = null)
+        public ApiResponse< ConditionalFormattingResponse > CellsConditionalFormattingsGetWorksheetConditionalFormattingWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1253,6 +1350,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (index != null) localVarPathParams.Add("index", Configuration.ApiClient.ParameterToString(index)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1281,10 +1379,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ConditionalFormattingResponse</returns>
-        public async System.Threading.Tasks.Task<ConditionalFormattingResponse> CellsConditionalFormattingsGetWorksheetConditionalFormattingAsync (string name, string sheetName, int? index, string folder = null)
+        public async System.Threading.Tasks.Task<ConditionalFormattingResponse> CellsConditionalFormattingsGetWorksheetConditionalFormattingAsync (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
-             ApiResponse<ConditionalFormattingResponse> localVarResponse = await CellsConditionalFormattingsGetWorksheetConditionalFormattingAsyncWithHttpInfo(name, sheetName, index, folder);
+             ApiResponse<ConditionalFormattingResponse> localVarResponse = await CellsConditionalFormattingsGetWorksheetConditionalFormattingAsyncWithHttpInfo(name, sheetName, index, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1297,8 +1396,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="index"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ConditionalFormattingResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ConditionalFormattingResponse>> CellsConditionalFormattingsGetWorksheetConditionalFormattingAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ConditionalFormattingResponse>> CellsConditionalFormattingsGetWorksheetConditionalFormattingAsyncWithHttpInfo (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1336,6 +1436,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (index != null) localVarPathParams.Add("index", Configuration.ApiClient.ParameterToString(index)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1363,10 +1464,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ConditionalFormattingsResponse</returns>
-        public ConditionalFormattingsResponse CellsConditionalFormattingsGetWorksheetConditionalFormattings (string name, string sheetName, string folder = null)
+        public ConditionalFormattingsResponse CellsConditionalFormattingsGetWorksheetConditionalFormattings (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<ConditionalFormattingsResponse> localVarResponse = CellsConditionalFormattingsGetWorksheetConditionalFormattingsWithHttpInfo(name, sheetName, folder);
+             ApiResponse<ConditionalFormattingsResponse> localVarResponse = CellsConditionalFormattingsGetWorksheetConditionalFormattingsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1377,8 +1479,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ConditionalFormattingsResponse</returns>
-        public ApiResponse< ConditionalFormattingsResponse > CellsConditionalFormattingsGetWorksheetConditionalFormattingsWithHttpInfo (string name, string sheetName, string folder = null)
+        public ApiResponse< ConditionalFormattingsResponse > CellsConditionalFormattingsGetWorksheetConditionalFormattingsWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1412,6 +1515,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1439,10 +1543,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ConditionalFormattingsResponse</returns>
-        public async System.Threading.Tasks.Task<ConditionalFormattingsResponse> CellsConditionalFormattingsGetWorksheetConditionalFormattingsAsync (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ConditionalFormattingsResponse> CellsConditionalFormattingsGetWorksheetConditionalFormattingsAsync (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<ConditionalFormattingsResponse> localVarResponse = await CellsConditionalFormattingsGetWorksheetConditionalFormattingsAsyncWithHttpInfo(name, sheetName, folder);
+             ApiResponse<ConditionalFormattingsResponse> localVarResponse = await CellsConditionalFormattingsGetWorksheetConditionalFormattingsAsyncWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1454,8 +1559,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ConditionalFormattingsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ConditionalFormattingsResponse>> CellsConditionalFormattingsGetWorksheetConditionalFormattingsAsyncWithHttpInfo (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ConditionalFormattingsResponse>> CellsConditionalFormattingsGetWorksheetConditionalFormattingsAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1489,6 +1595,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1518,10 +1625,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellArea"></param>
         /// <param name="formatcondition"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsConditionalFormattingsPutWorksheetConditionalFormatting (string name, string sheetName, string cellArea, FormatCondition formatcondition = null, string folder = null)
+        public SaaSposeResponse CellsConditionalFormattingsPutWorksheetConditionalFormatting (string name, string sheetName, string cellArea, FormatCondition formatcondition = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsConditionalFormattingsPutWorksheetConditionalFormattingWithHttpInfo(name, sheetName, cellArea, formatcondition, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsConditionalFormattingsPutWorksheetConditionalFormattingWithHttpInfo(name, sheetName, cellArea, formatcondition, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1534,8 +1642,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellArea"></param>
         /// <param name="formatcondition"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsConditionalFormattingsPutWorksheetConditionalFormattingWithHttpInfo (string name, string sheetName, string cellArea, FormatCondition formatcondition = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsConditionalFormattingsPutWorksheetConditionalFormattingWithHttpInfo (string name, string sheetName, string cellArea, FormatCondition formatcondition = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1573,6 +1682,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (cellArea != null) localVarQueryParams.Add("cellArea", Configuration.ApiClient.ParameterToString(cellArea)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (formatcondition != null && formatcondition.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(formatcondition); // http body (model) parameter
@@ -1610,10 +1720,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellArea"></param>
         /// <param name="formatcondition"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetConditionalFormattingAsync (string name, string sheetName, string cellArea, FormatCondition formatcondition = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetConditionalFormattingAsync (string name, string sheetName, string cellArea, FormatCondition formatcondition = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsConditionalFormattingsPutWorksheetConditionalFormattingAsyncWithHttpInfo(name, sheetName, cellArea, formatcondition, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsConditionalFormattingsPutWorksheetConditionalFormattingAsyncWithHttpInfo(name, sheetName, cellArea, formatcondition, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1627,8 +1738,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellArea"></param>
         /// <param name="formatcondition"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsPutWorksheetConditionalFormattingAsyncWithHttpInfo (string name, string sheetName, string cellArea, FormatCondition formatcondition = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsPutWorksheetConditionalFormattingAsyncWithHttpInfo (string name, string sheetName, string cellArea, FormatCondition formatcondition = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1666,6 +1778,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (cellArea != null) localVarQueryParams.Add("cellArea", Configuration.ApiClient.ParameterToString(cellArea)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (formatcondition != null && formatcondition.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(formatcondition); // http body (model) parameter
@@ -1707,10 +1820,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="formula1"></param>
         /// <param name="formula2"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsConditionalFormattingsPutWorksheetFormatCondition (string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null)
+        public SaaSposeResponse CellsConditionalFormattingsPutWorksheetFormatCondition (string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsConditionalFormattingsPutWorksheetFormatConditionWithHttpInfo(name, sheetName, index, cellArea, type, operatorType, formula1, formula2, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsConditionalFormattingsPutWorksheetFormatConditionWithHttpInfo(name, sheetName, index, cellArea, type, operatorType, formula1, formula2, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1727,8 +1841,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="formula1"></param>
         /// <param name="formula2"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsConditionalFormattingsPutWorksheetFormatConditionWithHttpInfo (string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsConditionalFormattingsPutWorksheetFormatConditionWithHttpInfo (string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1786,6 +1901,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (formula1 != null) localVarQueryParams.Add("formula1", Configuration.ApiClient.ParameterToString(formula1)); // query parameter
             if (formula2 != null) localVarQueryParams.Add("formula2", Configuration.ApiClient.ParameterToString(formula2)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1819,10 +1935,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="formula1"></param>
         /// <param name="formula2"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetFormatConditionAsync (string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetFormatConditionAsync (string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsConditionalFormattingsPutWorksheetFormatConditionAsyncWithHttpInfo(name, sheetName, index, cellArea, type, operatorType, formula1, formula2, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsConditionalFormattingsPutWorksheetFormatConditionAsyncWithHttpInfo(name, sheetName, index, cellArea, type, operatorType, formula1, formula2, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1840,8 +1957,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="formula1"></param>
         /// <param name="formula2"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsPutWorksheetFormatConditionAsyncWithHttpInfo (string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsPutWorksheetFormatConditionAsyncWithHttpInfo (string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1899,6 +2017,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (formula1 != null) localVarQueryParams.Add("formula1", Configuration.ApiClient.ParameterToString(formula1)); // query parameter
             if (formula2 != null) localVarQueryParams.Add("formula2", Configuration.ApiClient.ParameterToString(formula2)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1928,10 +2047,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="index"></param>
         /// <param name="cellArea"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsConditionalFormattingsPutWorksheetFormatConditionArea (string name, string sheetName, int? index, string cellArea, string folder = null)
+        public SaaSposeResponse CellsConditionalFormattingsPutWorksheetFormatConditionArea (string name, string sheetName, int? index, string cellArea, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsConditionalFormattingsPutWorksheetFormatConditionAreaWithHttpInfo(name, sheetName, index, cellArea, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsConditionalFormattingsPutWorksheetFormatConditionAreaWithHttpInfo(name, sheetName, index, cellArea, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1944,8 +2064,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="index"></param>
         /// <param name="cellArea"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsConditionalFormattingsPutWorksheetFormatConditionAreaWithHttpInfo (string name, string sheetName, int? index, string cellArea, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsConditionalFormattingsPutWorksheetFormatConditionAreaWithHttpInfo (string name, string sheetName, int? index, string cellArea, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1987,6 +2108,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (index != null) localVarPathParams.Add("index", Configuration.ApiClient.ParameterToString(index)); // path parameter
             if (cellArea != null) localVarQueryParams.Add("cellArea", Configuration.ApiClient.ParameterToString(cellArea)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2016,10 +2138,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="index"></param>
         /// <param name="cellArea"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetFormatConditionAreaAsync (string name, string sheetName, int? index, string cellArea, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetFormatConditionAreaAsync (string name, string sheetName, int? index, string cellArea, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsConditionalFormattingsPutWorksheetFormatConditionAreaAsyncWithHttpInfo(name, sheetName, index, cellArea, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsConditionalFormattingsPutWorksheetFormatConditionAreaAsyncWithHttpInfo(name, sheetName, index, cellArea, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -2033,8 +2156,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="index"></param>
         /// <param name="cellArea"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsPutWorksheetFormatConditionAreaAsyncWithHttpInfo (string name, string sheetName, int? index, string cellArea, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsPutWorksheetFormatConditionAreaAsyncWithHttpInfo (string name, string sheetName, int? index, string cellArea, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2076,6 +2200,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (index != null) localVarPathParams.Add("index", Configuration.ApiClient.ParameterToString(index)); // path parameter
             if (cellArea != null) localVarQueryParams.Add("cellArea", Configuration.ApiClient.ParameterToString(cellArea)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2108,10 +2233,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="formula1"></param>
         /// <param name="formula2"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsConditionalFormattingsPutWorksheetFormatConditionCondition (string name, string sheetName, int? index, string type, string operatorType, string formula1, string formula2, string folder = null)
+        public SaaSposeResponse CellsConditionalFormattingsPutWorksheetFormatConditionCondition (string name, string sheetName, int? index, string type, string operatorType, string formula1, string formula2, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsConditionalFormattingsPutWorksheetFormatConditionConditionWithHttpInfo(name, sheetName, index, type, operatorType, formula1, formula2, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsConditionalFormattingsPutWorksheetFormatConditionConditionWithHttpInfo(name, sheetName, index, type, operatorType, formula1, formula2, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -2127,8 +2253,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="formula1"></param>
         /// <param name="formula2"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsConditionalFormattingsPutWorksheetFormatConditionConditionWithHttpInfo (string name, string sheetName, int? index, string type, string operatorType, string formula1, string formula2, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsConditionalFormattingsPutWorksheetFormatConditionConditionWithHttpInfo (string name, string sheetName, int? index, string type, string operatorType, string formula1, string formula2, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2182,6 +2309,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (formula1 != null) localVarQueryParams.Add("formula1", Configuration.ApiClient.ParameterToString(formula1)); // query parameter
             if (formula2 != null) localVarQueryParams.Add("formula2", Configuration.ApiClient.ParameterToString(formula2)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2214,10 +2342,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="formula1"></param>
         /// <param name="formula2"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetFormatConditionConditionAsync (string name, string sheetName, int? index, string type, string operatorType, string formula1, string formula2, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsConditionalFormattingsPutWorksheetFormatConditionConditionAsync (string name, string sheetName, int? index, string type, string operatorType, string formula1, string formula2, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsConditionalFormattingsPutWorksheetFormatConditionConditionAsyncWithHttpInfo(name, sheetName, index, type, operatorType, formula1, formula2, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsConditionalFormattingsPutWorksheetFormatConditionConditionAsyncWithHttpInfo(name, sheetName, index, type, operatorType, formula1, formula2, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -2234,8 +2363,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="formula1"></param>
         /// <param name="formula2"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsPutWorksheetFormatConditionConditionAsyncWithHttpInfo (string name, string sheetName, int? index, string type, string operatorType, string formula1, string formula2, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsConditionalFormattingsPutWorksheetFormatConditionConditionAsyncWithHttpInfo (string name, string sheetName, int? index, string type, string operatorType, string formula1, string formula2, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2289,6 +2419,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (formula1 != null) localVarQueryParams.Add("formula1", Configuration.ApiClient.ParameterToString(formula1)); // query parameter
             if (formula2 != null) localVarQueryParams.Add("formula2", Configuration.ApiClient.ParameterToString(formula2)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request

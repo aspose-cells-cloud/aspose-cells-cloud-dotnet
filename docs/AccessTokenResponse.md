@@ -3,14 +3,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**AccessToken** | **string** |  | [optional] 
-**TokenType** | **string** |  | [optional] 
-**ExpiresIn** | **long?** |  | [optional] 
-**RefreshToken** | **string** |  | [optional] 
-**ClientId** | **string** |  | [optional] 
-**ClientRefreshTokenLifeTimeInMinutes** | **string** |  | [optional] 
-**Issued** | **string** |  | [optional] 
 **Expires** | **string** |  | [optional] 
+**AccessToken** | **string** |  | [optional] 
+**Issued** | **string** |  | [optional] 
+**ClientRefreshTokenLifeTimeInMinutes** | **string** |  | [optional] 
+**ExpiresIn** | **long?** |  | [optional] 
+**TokenType** | **string** |  | [optional] 
+**ClientId** | **string** |  | [optional] 
+**RefreshToken** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

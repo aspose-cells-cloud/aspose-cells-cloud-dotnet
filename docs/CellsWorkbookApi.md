@@ -34,7 +34,7 @@ Method | HTTP request | Description
 
 <a name="cellsworkbookdeletedecryptdocument"></a>
 # **CellsWorkbookDeleteDecryptDocument**
-> SaaSposeResponse CellsWorkbookDeleteDecryptDocument (string name, WorkbookEncryptionRequest encryption = null, string folder = null)
+> SaaSposeResponse CellsWorkbookDeleteDecryptDocument (string name, WorkbookEncryptionRequest encryption = null, string folder = null, string storage = null)
 
 Decrypt document.
 
@@ -56,11 +56,12 @@ namespace Example
             var name = name_example;  // string | The document name.
             var encryption = new WorkbookEncryptionRequest(); // WorkbookEncryptionRequest | Encryption settings, only password can be specified. (optional) 
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Decrypt document.
-                SaaSposeResponse result = apiInstance.CellsWorkbookDeleteDecryptDocument(name, encryption, folder);
+                SaaSposeResponse result = apiInstance.CellsWorkbookDeleteDecryptDocument(name, encryption, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -79,6 +80,7 @@ Name | Type | Description  | Notes
  **name** | **string**| The document name. | 
  **encryption** | [**WorkbookEncryptionRequest**](WorkbookEncryptionRequest.md)| Encryption settings, only password can be specified. | [optional] 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -97,7 +99,7 @@ No authorization required
 
 <a name="cellsworkbookdeletedocumentunprotectfromchanges"></a>
 # **CellsWorkbookDeleteDocumentUnprotectFromChanges**
-> SaaSposeResponse CellsWorkbookDeleteDocumentUnprotectFromChanges (string name, string folder = null)
+> SaaSposeResponse CellsWorkbookDeleteDocumentUnprotectFromChanges (string name, string folder = null, string storage = null)
 
 Unprotect document from changes.
 
@@ -118,11 +120,12 @@ namespace Example
             var apiInstance = new CellsWorkbookApi();
             var name = name_example;  // string | The document name.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Unprotect document from changes.
-                SaaSposeResponse result = apiInstance.CellsWorkbookDeleteDocumentUnprotectFromChanges(name, folder);
+                SaaSposeResponse result = apiInstance.CellsWorkbookDeleteDocumentUnprotectFromChanges(name, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -140,6 +143,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| The document name. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -158,7 +162,7 @@ No authorization required
 
 <a name="cellsworkbookdeleteunprotectdocument"></a>
 # **CellsWorkbookDeleteUnprotectDocument**
-> SaaSposeResponse CellsWorkbookDeleteUnprotectDocument (string name, WorkbookProtectionRequest protection = null, string folder = null)
+> SaaSposeResponse CellsWorkbookDeleteUnprotectDocument (string name, WorkbookProtectionRequest protection = null, string folder = null, string storage = null)
 
 Unprotect document.
 
@@ -180,11 +184,12 @@ namespace Example
             var name = name_example;  // string | The document name.
             var protection = new WorkbookProtectionRequest(); // WorkbookProtectionRequest | Protection settings, only password can be specified. (optional) 
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Unprotect document.
-                SaaSposeResponse result = apiInstance.CellsWorkbookDeleteUnprotectDocument(name, protection, folder);
+                SaaSposeResponse result = apiInstance.CellsWorkbookDeleteUnprotectDocument(name, protection, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -203,6 +208,7 @@ Name | Type | Description  | Notes
  **name** | **string**| The document name. | 
  **protection** | [**WorkbookProtectionRequest**](WorkbookProtectionRequest.md)| Protection settings, only password can be specified. | [optional] 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -221,7 +227,7 @@ No authorization required
 
 <a name="cellsworkbookdeleteworkbookname"></a>
 # **CellsWorkbookDeleteWorkbookName**
-> SaaSposeResponse CellsWorkbookDeleteWorkbookName (string name, string nameName, string folder = null)
+> SaaSposeResponse CellsWorkbookDeleteWorkbookName (string name, string nameName, string folder = null, string storage = null)
 
 Clean workbook's names.
 
@@ -243,11 +249,12 @@ namespace Example
             var name = name_example;  // string | The workbook name.
             var nameName = nameName_example;  // string | The name.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Clean workbook's names.
-                SaaSposeResponse result = apiInstance.CellsWorkbookDeleteWorkbookName(name, nameName, folder);
+                SaaSposeResponse result = apiInstance.CellsWorkbookDeleteWorkbookName(name, nameName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -266,6 +273,7 @@ Name | Type | Description  | Notes
  **name** | **string**| The workbook name. | 
  **nameName** | **string**| The name. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -284,7 +292,7 @@ No authorization required
 
 <a name="cellsworkbookdeleteworkbooknames"></a>
 # **CellsWorkbookDeleteWorkbookNames**
-> SaaSposeResponse CellsWorkbookDeleteWorkbookNames (string name, string folder = null)
+> SaaSposeResponse CellsWorkbookDeleteWorkbookNames (string name, string folder = null, string storage = null)
 
 Clean workbook's names.
 
@@ -305,11 +313,12 @@ namespace Example
             var apiInstance = new CellsWorkbookApi();
             var name = name_example;  // string | The workbook name.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Clean workbook's names.
-                SaaSposeResponse result = apiInstance.CellsWorkbookDeleteWorkbookNames(name, folder);
+                SaaSposeResponse result = apiInstance.CellsWorkbookDeleteWorkbookNames(name, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -327,6 +336,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| The workbook name. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -345,7 +355,7 @@ No authorization required
 
 <a name="cellsworkbookgetworkbook"></a>
 # **CellsWorkbookGetWorkbook**
-> System.IO.Stream CellsWorkbookGetWorkbook (string name, string password = null, bool? isAutoFit = null, string folder = null)
+> System.IO.Stream CellsWorkbookGetWorkbook (string name, string password = null, string format = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string storage = null, string outPath = null)
 
 Read workbook info or export.
 
@@ -366,13 +376,17 @@ namespace Example
             var apiInstance = new CellsWorkbookApi();
             var name = name_example;  // string | The document name.
             var password = password_example;  // string | The document password. (optional) 
+            var format = format_example;  // string | The exported file format. (optional) 
             var isAutoFit = true;  // bool? | Set document rows to be autofit. (optional)  (default to false)
+            var onlySaveTable = true;  // bool? | Only save table data. (optional)  (default to false)
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
+            var outPath = outPath_example;  // string | The document output folder. (optional) 
 
             try
             {
                 // Read workbook info or export.
-                System.IO.Stream result = apiInstance.CellsWorkbookGetWorkbook(name, password, isAutoFit, folder);
+                System.IO.Stream result = apiInstance.CellsWorkbookGetWorkbook(name, password, format, isAutoFit, onlySaveTable, folder, storage, outPath);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -390,8 +404,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| The document name. | 
  **password** | **string**| The document password. | [optional] 
+ **format** | **string**| The exported file format. | [optional] 
  **isAutoFit** | **bool?**| Set document rows to be autofit. | [optional] [default to false]
+ **onlySaveTable** | **bool?**| Only save table data. | [optional] [default to false]
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
+ **outPath** | **string**| The document output folder. | [optional] 
 
 ### Return type
 
@@ -410,7 +428,7 @@ No authorization required
 
 <a name="cellsworkbookgetworkbookdefaultstyle"></a>
 # **CellsWorkbookGetWorkbookDefaultStyle**
-> StyleResponse CellsWorkbookGetWorkbookDefaultStyle (string name, string folder = null)
+> StyleResponse CellsWorkbookGetWorkbookDefaultStyle (string name, string folder = null, string storage = null)
 
 Read workbook default style info.
 
@@ -431,11 +449,12 @@ namespace Example
             var apiInstance = new CellsWorkbookApi();
             var name = name_example;  // string | The workbook name.
             var folder = folder_example;  // string | The document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Read workbook default style info.
-                StyleResponse result = apiInstance.CellsWorkbookGetWorkbookDefaultStyle(name, folder);
+                StyleResponse result = apiInstance.CellsWorkbookGetWorkbookDefaultStyle(name, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -453,6 +472,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| The workbook name. | 
  **folder** | **string**| The document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -471,7 +491,7 @@ No authorization required
 
 <a name="cellsworkbookgetworkbookname"></a>
 # **CellsWorkbookGetWorkbookName**
-> NameResponse CellsWorkbookGetWorkbookName (string name, string nameName, string folder = null)
+> NameResponse CellsWorkbookGetWorkbookName (string name, string nameName, string folder = null, string storage = null)
 
 Read workbook's name.
 
@@ -493,11 +513,12 @@ namespace Example
             var name = name_example;  // string | The workbook name.
             var nameName = nameName_example;  // string | The name.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Read workbook's name.
-                NameResponse result = apiInstance.CellsWorkbookGetWorkbookName(name, nameName, folder);
+                NameResponse result = apiInstance.CellsWorkbookGetWorkbookName(name, nameName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -516,6 +537,7 @@ Name | Type | Description  | Notes
  **name** | **string**| The workbook name. | 
  **nameName** | **string**| The name. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -534,7 +556,7 @@ No authorization required
 
 <a name="cellsworkbookgetworkbooknamevalue"></a>
 # **CellsWorkbookGetWorkbookNameValue**
-> RangeValueResponse CellsWorkbookGetWorkbookNameValue (string name, string nameName, string folder = null)
+> RangeValueResponse CellsWorkbookGetWorkbookNameValue (string name, string nameName, string folder = null, string storage = null)
 
 Get workbook's name value.
 
@@ -556,11 +578,12 @@ namespace Example
             var name = name_example;  // string | The workbook name.
             var nameName = nameName_example;  // string | The name.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get workbook's name value.
-                RangeValueResponse result = apiInstance.CellsWorkbookGetWorkbookNameValue(name, nameName, folder);
+                RangeValueResponse result = apiInstance.CellsWorkbookGetWorkbookNameValue(name, nameName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -579,6 +602,7 @@ Name | Type | Description  | Notes
  **name** | **string**| The workbook name. | 
  **nameName** | **string**| The name. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -597,7 +621,7 @@ No authorization required
 
 <a name="cellsworkbookgetworkbooknames"></a>
 # **CellsWorkbookGetWorkbookNames**
-> NamesResponse CellsWorkbookGetWorkbookNames (string name, string folder = null)
+> NamesResponse CellsWorkbookGetWorkbookNames (string name, string folder = null, string storage = null)
 
 Read workbook's names.
 
@@ -618,11 +642,12 @@ namespace Example
             var apiInstance = new CellsWorkbookApi();
             var name = name_example;  // string | The workbook name.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Read workbook's names.
-                NamesResponse result = apiInstance.CellsWorkbookGetWorkbookNames(name, folder);
+                NamesResponse result = apiInstance.CellsWorkbookGetWorkbookNames(name, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -640,6 +665,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| The workbook name. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -658,7 +684,7 @@ No authorization required
 
 <a name="cellsworkbookgetworkbooksettings"></a>
 # **CellsWorkbookGetWorkbookSettings**
-> WorkbookSettingsResponse CellsWorkbookGetWorkbookSettings (string name, string folder = null)
+> WorkbookSettingsResponse CellsWorkbookGetWorkbookSettings (string name, string folder = null, string storage = null)
 
 Get Workbook Settings DTO
 
@@ -679,11 +705,12 @@ namespace Example
             var apiInstance = new CellsWorkbookApi();
             var name = name_example;  // string | Document name.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get Workbook Settings DTO
-                WorkbookSettingsResponse result = apiInstance.CellsWorkbookGetWorkbookSettings(name, folder);
+                WorkbookSettingsResponse result = apiInstance.CellsWorkbookGetWorkbookSettings(name, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -701,6 +728,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| Document name. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -719,7 +747,7 @@ No authorization required
 
 <a name="cellsworkbookgetworkbooktextitems"></a>
 # **CellsWorkbookGetWorkbookTextItems**
-> TextItemsResponse CellsWorkbookGetWorkbookTextItems (string name, string folder = null)
+> TextItemsResponse CellsWorkbookGetWorkbookTextItems (string name, string folder = null, string storage = null)
 
 Read workbook's text items.
 
@@ -740,11 +768,12 @@ namespace Example
             var apiInstance = new CellsWorkbookApi();
             var name = name_example;  // string | The workbook name.
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Read workbook's text items.
-                TextItemsResponse result = apiInstance.CellsWorkbookGetWorkbookTextItems(name, folder);
+                TextItemsResponse result = apiInstance.CellsWorkbookGetWorkbookTextItems(name, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -762,6 +791,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| The workbook name. | 
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -780,7 +810,7 @@ No authorization required
 
 <a name="cellsworkbookpostautofitworkbookrows"></a>
 # **CellsWorkbookPostAutofitWorkbookRows**
-> SaaSposeResponse CellsWorkbookPostAutofitWorkbookRows (string name, AutoFitterOptions autoFitterOptions = null, int? startRow = null, int? endRow = null, bool? onlyAuto = null, string folder = null)
+> SaaSposeResponse CellsWorkbookPostAutofitWorkbookRows (string name, AutoFitterOptions autoFitterOptions = null, int? startRow = null, int? endRow = null, bool? onlyAuto = null, string folder = null, string storage = null)
 
 Autofit workbook rows.
 
@@ -805,11 +835,12 @@ namespace Example
             var endRow = 56;  // int? | End row. (optional) 
             var onlyAuto = true;  // bool? | Only auto. (optional)  (default to false)
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Autofit workbook rows.
-                SaaSposeResponse result = apiInstance.CellsWorkbookPostAutofitWorkbookRows(name, autoFitterOptions, startRow, endRow, onlyAuto, folder);
+                SaaSposeResponse result = apiInstance.CellsWorkbookPostAutofitWorkbookRows(name, autoFitterOptions, startRow, endRow, onlyAuto, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -831,6 +862,7 @@ Name | Type | Description  | Notes
  **endRow** | **int?**| End row. | [optional] 
  **onlyAuto** | **bool?**| Only auto. | [optional] [default to false]
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -849,7 +881,7 @@ No authorization required
 
 <a name="cellsworkbookpostencryptdocument"></a>
 # **CellsWorkbookPostEncryptDocument**
-> SaaSposeResponse CellsWorkbookPostEncryptDocument (string name, WorkbookEncryptionRequest encryption = null, string folder = null)
+> SaaSposeResponse CellsWorkbookPostEncryptDocument (string name, WorkbookEncryptionRequest encryption = null, string folder = null, string storage = null)
 
 Encript document.
 
@@ -871,11 +903,12 @@ namespace Example
             var name = name_example;  // string | The document name.
             var encryption = new WorkbookEncryptionRequest(); // WorkbookEncryptionRequest | Encryption parameters. (optional) 
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Encript document.
-                SaaSposeResponse result = apiInstance.CellsWorkbookPostEncryptDocument(name, encryption, folder);
+                SaaSposeResponse result = apiInstance.CellsWorkbookPostEncryptDocument(name, encryption, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -894,6 +927,7 @@ Name | Type | Description  | Notes
  **name** | **string**| The document name. | 
  **encryption** | [**WorkbookEncryptionRequest**](WorkbookEncryptionRequest.md)| Encryption parameters. | [optional] 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -912,7 +946,7 @@ No authorization required
 
 <a name="cellsworkbookpostimportdata"></a>
 # **CellsWorkbookPostImportData**
-> SaaSposeResponse CellsWorkbookPostImportData (string name, ImportOption importdata, string folder = null)
+> SaaSposeResponse CellsWorkbookPostImportData (string name, ImportOption importdata, string folder = null, string storage = null)
 
 
 
@@ -934,10 +968,11 @@ namespace Example
             var name = name_example;  // string | 
             var importdata = new ImportOption(); // ImportOption | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                SaaSposeResponse result = apiInstance.CellsWorkbookPostImportData(name, importdata, folder);
+                SaaSposeResponse result = apiInstance.CellsWorkbookPostImportData(name, importdata, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -956,6 +991,7 @@ Name | Type | Description  | Notes
  **name** | **string**|  | 
  **importdata** | [**ImportOption**](ImportOption.md)|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -974,7 +1010,7 @@ No authorization required
 
 <a name="cellsworkbookpostprotectdocument"></a>
 # **CellsWorkbookPostProtectDocument**
-> SaaSposeResponse CellsWorkbookPostProtectDocument (string name, WorkbookProtectionRequest protection = null, string folder = null)
+> SaaSposeResponse CellsWorkbookPostProtectDocument (string name, WorkbookProtectionRequest protection = null, string folder = null, string storage = null)
 
 Protect document.
 
@@ -996,11 +1032,12 @@ namespace Example
             var name = name_example;  // string | The document name.
             var protection = new WorkbookProtectionRequest(); // WorkbookProtectionRequest | The protection settings. (optional) 
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Protect document.
-                SaaSposeResponse result = apiInstance.CellsWorkbookPostProtectDocument(name, protection, folder);
+                SaaSposeResponse result = apiInstance.CellsWorkbookPostProtectDocument(name, protection, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1019,6 +1056,7 @@ Name | Type | Description  | Notes
  **name** | **string**| The document name. | 
  **protection** | [**WorkbookProtectionRequest**](WorkbookProtectionRequest.md)| The protection settings. | [optional] 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1037,7 +1075,7 @@ No authorization required
 
 <a name="cellsworkbookpostworkbookcalculateformula"></a>
 # **CellsWorkbookPostWorkbookCalculateFormula**
-> SaaSposeResponse CellsWorkbookPostWorkbookCalculateFormula (string name, CalculationOptions options = null, bool? ignoreError = null, string folder = null)
+> SaaSposeResponse CellsWorkbookPostWorkbookCalculateFormula (string name, CalculationOptions options = null, bool? ignoreError = null, string folder = null, string storage = null)
 
 Calculate all formulas in workbook.
 
@@ -1060,11 +1098,12 @@ namespace Example
             var options = new CalculationOptions(); // CalculationOptions | Calculation Options. (optional) 
             var ignoreError = true;  // bool? | ignore Error. (optional) 
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Calculate all formulas in workbook.
-                SaaSposeResponse result = apiInstance.CellsWorkbookPostWorkbookCalculateFormula(name, options, ignoreError, folder);
+                SaaSposeResponse result = apiInstance.CellsWorkbookPostWorkbookCalculateFormula(name, options, ignoreError, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1084,6 +1123,7 @@ Name | Type | Description  | Notes
  **options** | [**CalculationOptions**](CalculationOptions.md)| Calculation Options. | [optional] 
  **ignoreError** | **bool?**| ignore Error. | [optional] 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1102,7 +1142,7 @@ No authorization required
 
 <a name="cellsworkbookpostworkbookgetsmartmarkerresult"></a>
 # **CellsWorkbookPostWorkbookGetSmartMarkerResult**
-> System.IO.Stream CellsWorkbookPostWorkbookGetSmartMarkerResult (string name, string xmlFile = null, string folder = null, string outPath = null)
+> System.IO.Stream CellsWorkbookPostWorkbookGetSmartMarkerResult (string name, string xmlFile = null, string folder = null, string storage = null, string outPath = null)
 
 Smart marker processing result.
 
@@ -1124,12 +1164,13 @@ namespace Example
             var name = name_example;  // string | The workbook name.
             var xmlFile = xmlFile_example;  // string | The xml file full path, if empty the data is read from request body. (optional) 
             var folder = folder_example;  // string | The workbook folder full path. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
             var outPath = outPath_example;  // string | Path to save result (optional) 
 
             try
             {
                 // Smart marker processing result.
-                System.IO.Stream result = apiInstance.CellsWorkbookPostWorkbookGetSmartMarkerResult(name, xmlFile, folder, outPath);
+                System.IO.Stream result = apiInstance.CellsWorkbookPostWorkbookGetSmartMarkerResult(name, xmlFile, folder, storage, outPath);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1148,6 +1189,7 @@ Name | Type | Description  | Notes
  **name** | **string**| The workbook name. | 
  **xmlFile** | **string**| The xml file full path, if empty the data is read from request body. | [optional] 
  **folder** | **string**| The workbook folder full path. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
  **outPath** | **string**| Path to save result | [optional] 
 
 ### Return type
@@ -1167,7 +1209,7 @@ No authorization required
 
 <a name="cellsworkbookpostworkbooksettings"></a>
 # **CellsWorkbookPostWorkbookSettings**
-> SaaSposeResponse CellsWorkbookPostWorkbookSettings (string name, WorkbookSettings settings = null, string folder = null)
+> SaaSposeResponse CellsWorkbookPostWorkbookSettings (string name, WorkbookSettings settings = null, string folder = null, string storage = null)
 
 Update Workbook setting 
 
@@ -1189,11 +1231,12 @@ namespace Example
             var name = name_example;  // string | Document name.
             var settings = new WorkbookSettings(); // WorkbookSettings | Workbook Setting DTO (optional) 
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Update Workbook setting 
-                SaaSposeResponse result = apiInstance.CellsWorkbookPostWorkbookSettings(name, settings, folder);
+                SaaSposeResponse result = apiInstance.CellsWorkbookPostWorkbookSettings(name, settings, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1212,6 +1255,7 @@ Name | Type | Description  | Notes
  **name** | **string**| Document name. | 
  **settings** | [**WorkbookSettings**](WorkbookSettings.md)| Workbook Setting DTO | [optional] 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1230,7 +1274,7 @@ No authorization required
 
 <a name="cellsworkbookpostworkbooksplit"></a>
 # **CellsWorkbookPostWorkbookSplit**
-> SplitResultResponse CellsWorkbookPostWorkbookSplit (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null)
+> SplitResultResponse CellsWorkbookPostWorkbookSplit (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null, string storage = null)
 
 Split workbook.
 
@@ -1256,11 +1300,12 @@ namespace Example
             var horizontalResolution = 56;  // int? | Image horizontal resolution. (optional)  (default to 0)
             var verticalResolution = 56;  // int? | Image vertical resolution. (optional)  (default to 0)
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Split workbook.
-                SplitResultResponse result = apiInstance.CellsWorkbookPostWorkbookSplit(name, format, from, to, horizontalResolution, verticalResolution, folder);
+                SplitResultResponse result = apiInstance.CellsWorkbookPostWorkbookSplit(name, format, from, to, horizontalResolution, verticalResolution, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1283,6 +1328,7 @@ Name | Type | Description  | Notes
  **horizontalResolution** | **int?**| Image horizontal resolution. | [optional] [default to 0]
  **verticalResolution** | **int?**| Image vertical resolution. | [optional] [default to 0]
  **folder** | **string**| The workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1301,7 +1347,7 @@ No authorization required
 
 <a name="cellsworkbookpostworkbooksmerge"></a>
 # **CellsWorkbookPostWorkbooksMerge**
-> WorkbookResponse CellsWorkbookPostWorkbooksMerge (string name, string mergeWith, string folder = null)
+> WorkbookResponse CellsWorkbookPostWorkbooksMerge (string name, string mergeWith, string folder = null, string storage = null)
 
 Merge workbooks.
 
@@ -1323,11 +1369,12 @@ namespace Example
             var name = name_example;  // string | Workbook name.
             var mergeWith = mergeWith_example;  // string | The workbook to merge with.
             var folder = folder_example;  // string | Source workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Merge workbooks.
-                WorkbookResponse result = apiInstance.CellsWorkbookPostWorkbooksMerge(name, mergeWith, folder);
+                WorkbookResponse result = apiInstance.CellsWorkbookPostWorkbooksMerge(name, mergeWith, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1346,6 +1393,7 @@ Name | Type | Description  | Notes
  **name** | **string**| Workbook name. | 
  **mergeWith** | **string**| The workbook to merge with. | 
  **folder** | **string**| Source workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1364,7 +1412,7 @@ No authorization required
 
 <a name="cellsworkbookpostworkbookstextreplace"></a>
 # **CellsWorkbookPostWorkbooksTextReplace**
-> WorkbookReplaceResponse CellsWorkbookPostWorkbooksTextReplace (string name, string oldValue, string newValue, string folder = null)
+> WorkbookReplaceResponse CellsWorkbookPostWorkbooksTextReplace (string name, string oldValue, string newValue, string folder = null, string storage = null)
 
 Replace text.
 
@@ -1387,11 +1435,12 @@ namespace Example
             var oldValue = oldValue_example;  // string | The old value.
             var newValue = newValue_example;  // string | The new value.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Replace text.
-                WorkbookReplaceResponse result = apiInstance.CellsWorkbookPostWorkbooksTextReplace(name, oldValue, newValue, folder);
+                WorkbookReplaceResponse result = apiInstance.CellsWorkbookPostWorkbooksTextReplace(name, oldValue, newValue, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1411,6 +1460,7 @@ Name | Type | Description  | Notes
  **oldValue** | **string**| The old value. | 
  **newValue** | **string**| The new value. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1429,7 +1479,7 @@ No authorization required
 
 <a name="cellsworkbookpostworkbookstextsearch"></a>
 # **CellsWorkbookPostWorkbooksTextSearch**
-> TextItemsResponse CellsWorkbookPostWorkbooksTextSearch (string name, string text, string folder = null)
+> TextItemsResponse CellsWorkbookPostWorkbooksTextSearch (string name, string text, string folder = null, string storage = null)
 
 Search text.
 
@@ -1451,11 +1501,12 @@ namespace Example
             var name = name_example;  // string | Document name.
             var text = text_example;  // string | Text sample.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Search text.
-                TextItemsResponse result = apiInstance.CellsWorkbookPostWorkbooksTextSearch(name, text, folder);
+                TextItemsResponse result = apiInstance.CellsWorkbookPostWorkbooksTextSearch(name, text, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1474,6 +1525,7 @@ Name | Type | Description  | Notes
  **name** | **string**| Document name. | 
  **text** | **string**| Text sample. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1555,7 +1607,7 @@ No authorization required
 
 <a name="cellsworkbookputdocumentprotectfromchanges"></a>
 # **CellsWorkbookPutDocumentProtectFromChanges**
-> SaaSposeResponse CellsWorkbookPutDocumentProtectFromChanges (string name, PasswordRequest password = null, string folder = null)
+> SaaSposeResponse CellsWorkbookPutDocumentProtectFromChanges (string name, PasswordRequest password = null, string folder = null, string storage = null)
 
 Protect document from changes.
 
@@ -1577,11 +1629,12 @@ namespace Example
             var name = name_example;  // string | Document name.
             var password = new PasswordRequest(); // PasswordRequest | Modification password. (optional) 
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Protect document from changes.
-                SaaSposeResponse result = apiInstance.CellsWorkbookPutDocumentProtectFromChanges(name, password, folder);
+                SaaSposeResponse result = apiInstance.CellsWorkbookPutDocumentProtectFromChanges(name, password, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1600,6 +1653,7 @@ Name | Type | Description  | Notes
  **name** | **string**| Document name. | 
  **password** | [**PasswordRequest**](PasswordRequest.md)| Modification password. | [optional] 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -1618,7 +1672,7 @@ No authorization required
 
 <a name="cellsworkbookputworkbookcreate"></a>
 # **CellsWorkbookPutWorkbookCreate**
-> WorkbookResponse CellsWorkbookPutWorkbookCreate (string name, string templateFile = null, string dataFile = null, string folder = null)
+> WorkbookResponse CellsWorkbookPutWorkbookCreate (string name, string templateFile = null, string dataFile = null, string folder = null, string storage = null)
 
 Create new workbook using deferent methods.
 
@@ -1641,11 +1695,12 @@ namespace Example
             var templateFile = templateFile_example;  // string | The template file, if the data not provided default workbook is created. (optional) 
             var dataFile = dataFile_example;  // string | Smart marker data file, if the data not provided the request content is checked for the data. (optional) 
             var folder = folder_example;  // string | The new document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Create new workbook using deferent methods.
-                WorkbookResponse result = apiInstance.CellsWorkbookPutWorkbookCreate(name, templateFile, dataFile, folder);
+                WorkbookResponse result = apiInstance.CellsWorkbookPutWorkbookCreate(name, templateFile, dataFile, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1665,6 +1720,7 @@ Name | Type | Description  | Notes
  **templateFile** | **string**| The template file, if the data not provided default workbook is created. | [optional] 
  **dataFile** | **string**| Smart marker data file, if the data not provided the request content is checked for the data. | [optional] 
  **folder** | **string**| The new document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 

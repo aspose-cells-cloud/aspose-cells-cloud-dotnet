@@ -3,12 +3,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Workbook** | [**FileSource**](FileSource.md) |  | [optional] 
-**SheetName** | **string** |  | [optional] 
 **ChartIndex** | **int?** |  | [optional] 
+**ListObjectIndex** | **int?** |  | [optional] 
+**SheetName** | **string** |  | [optional] 
 **ShapeIndex** | **int?** |  | [optional] 
 **CellName** | **string** |  | [optional] 
-**ListObjectIndex** | **int?** |  | [optional] 
+**Workbook** | [**FileSource**](FileSource.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -76,10 +76,24 @@ namespace Aspose.Cells.Cloud.SDK.Test
             int? autoshapeNumber = 4;
             string folder = TEMPFOLDER;
             UpdateDataFile(folder, name);
-            var response = instance.CellsAutoshapesGetWorksheetAutoshape(name, sheetName, autoshapeNumber, folder);
+            var response = instance.CellsAutoshapesGetWorksheetAutoshape(name, sheetName, autoshapeNumber, "PNG", folder);
             Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
         }
-        
+        /// <summary>
+        /// Test CellsAutoshapesGetWorksheetAutoshape
+        /// </summary>
+        [Test]
+        public void CellsAutoshapesGetWorksheetAutoshapeDTOTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            string name = MYDOC;
+            string sheetName = SHEET2;
+            int? autoshapeNumber = 4;
+            string folder = TEMPFOLDER;
+            UpdateDataFile(folder, name);
+            var response = instance.CellsAutoshapesGetWorksheetAutoshape(name, sheetName, autoshapeNumber, null, folder);
+            Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
+        }
         /// <summary>
         /// Test CellsAutoshapesGetWorksheetAutoshapes
         /// </summary>

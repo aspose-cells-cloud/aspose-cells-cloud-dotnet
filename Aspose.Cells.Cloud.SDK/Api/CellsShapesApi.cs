@@ -35,8 +35,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsShapesDeleteWorksheetShape (string name, string sheetName, int? shapeindex, string folder = null);
+        SaaSposeResponse CellsShapesDeleteWorksheetShape (string name, string sheetName, int? shapeindex, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete a shape in worksheet
@@ -49,8 +50,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsShapesDeleteWorksheetShapeWithHttpInfo (string name, string sheetName, int? shapeindex, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsShapesDeleteWorksheetShapeWithHttpInfo (string name, string sheetName, int? shapeindex, string folder = null, string storage = null);
         /// <summary>
         /// delete all shapes in worksheet
         /// </summary>
@@ -61,8 +63,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsShapesDeleteWorksheetShapes (string name, string sheetName, string folder = null);
+        SaaSposeResponse CellsShapesDeleteWorksheetShapes (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// delete all shapes in worksheet
@@ -74,8 +77,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsShapesDeleteWorksheetShapesWithHttpInfo (string name, string sheetName, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsShapesDeleteWorksheetShapesWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Get worksheet shape
         /// </summary>
@@ -87,8 +91,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ShapeResponse</returns>
-        ShapeResponse CellsShapesGetWorksheetShape (string name, string sheetName, int? shapeindex, string folder = null);
+        ShapeResponse CellsShapesGetWorksheetShape (string name, string sheetName, int? shapeindex, string folder = null, string storage = null);
 
         /// <summary>
         /// Get worksheet shape
@@ -101,8 +106,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ShapeResponse</returns>
-        ApiResponse<ShapeResponse> CellsShapesGetWorksheetShapeWithHttpInfo (string name, string sheetName, int? shapeindex, string folder = null);
+        ApiResponse<ShapeResponse> CellsShapesGetWorksheetShapeWithHttpInfo (string name, string sheetName, int? shapeindex, string folder = null, string storage = null);
         /// <summary>
         /// Get worksheet shapes 
         /// </summary>
@@ -113,8 +119,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ShapesResponse</returns>
-        ShapesResponse CellsShapesGetWorksheetShapes (string name, string sheetName, string folder = null);
+        ShapesResponse CellsShapesGetWorksheetShapes (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Get worksheet shapes 
@@ -126,8 +133,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ShapesResponse</returns>
-        ApiResponse<ShapesResponse> CellsShapesGetWorksheetShapesWithHttpInfo (string name, string sheetName, string folder = null);
+        ApiResponse<ShapesResponse> CellsShapesGetWorksheetShapesWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Update a shape in worksheet
         /// </summary>
@@ -140,8 +148,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="dto"> (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsShapesPostWorksheetShape (string name, string sheetName, int? shapeindex, Shape dto = null, string folder = null);
+        SaaSposeResponse CellsShapesPostWorksheetShape (string name, string sheetName, int? shapeindex, Shape dto = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Update a shape in worksheet
@@ -155,8 +164,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="dto"> (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsShapesPostWorksheetShapeWithHttpInfo (string name, string sheetName, int? shapeindex, Shape dto = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsShapesPostWorksheetShapeWithHttpInfo (string name, string sheetName, int? shapeindex, Shape dto = null, string folder = null, string storage = null);
         /// <summary>
         /// Add shape in worksheet
         /// </summary>
@@ -174,8 +184,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="width">Represents the height of Spinner, in unit of pixel.</param>
         /// <param name="height">Represents the width of Spinner, in unit of pixel.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ShapeResponse</returns>
-        ShapeResponse CellsShapesPutWorksheetShape (string name, string sheetName, string drawingType, int? upperLeftRow, int? upperLeftColumn, int? top, int? left, int? width, int? height, string folder = null);
+        ShapeResponse CellsShapesPutWorksheetShape (string name, string sheetName, string drawingType, int? upperLeftRow, int? upperLeftColumn, int? top, int? left, int? width, int? height, string folder = null, string storage = null);
 
         /// <summary>
         /// Add shape in worksheet
@@ -194,8 +205,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="width">Represents the height of Spinner, in unit of pixel.</param>
         /// <param name="height">Represents the width of Spinner, in unit of pixel.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ShapeResponse</returns>
-        ApiResponse<ShapeResponse> CellsShapesPutWorksheetShapeWithHttpInfo (string name, string sheetName, string drawingType, int? upperLeftRow, int? upperLeftColumn, int? top, int? left, int? width, int? height, string folder = null);
+        ApiResponse<ShapeResponse> CellsShapesPutWorksheetShapeWithHttpInfo (string name, string sheetName, string drawingType, int? upperLeftRow, int? upperLeftColumn, int? top, int? left, int? width, int? height, string folder = null, string storage = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -209,8 +221,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsShapesDeleteWorksheetShapeAsync (string name, string sheetName, int? shapeindex, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsShapesDeleteWorksheetShapeAsync (string name, string sheetName, int? shapeindex, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete a shape in worksheet
@@ -223,8 +236,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsShapesDeleteWorksheetShapeAsyncWithHttpInfo (string name, string sheetName, int? shapeindex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsShapesDeleteWorksheetShapeAsyncWithHttpInfo (string name, string sheetName, int? shapeindex, string folder = null, string storage = null);
         /// <summary>
         /// delete all shapes in worksheet
         /// </summary>
@@ -235,8 +249,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsShapesDeleteWorksheetShapesAsync (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsShapesDeleteWorksheetShapesAsync (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// delete all shapes in worksheet
@@ -248,8 +263,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsShapesDeleteWorksheetShapesAsyncWithHttpInfo (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsShapesDeleteWorksheetShapesAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Get worksheet shape
         /// </summary>
@@ -261,8 +277,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ShapeResponse</returns>
-        System.Threading.Tasks.Task<ShapeResponse> CellsShapesGetWorksheetShapeAsync (string name, string sheetName, int? shapeindex, string folder = null);
+        System.Threading.Tasks.Task<ShapeResponse> CellsShapesGetWorksheetShapeAsync (string name, string sheetName, int? shapeindex, string folder = null, string storage = null);
 
         /// <summary>
         /// Get worksheet shape
@@ -275,8 +292,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ShapeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ShapeResponse>> CellsShapesGetWorksheetShapeAsyncWithHttpInfo (string name, string sheetName, int? shapeindex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<ShapeResponse>> CellsShapesGetWorksheetShapeAsyncWithHttpInfo (string name, string sheetName, int? shapeindex, string folder = null, string storage = null);
         /// <summary>
         /// Get worksheet shapes 
         /// </summary>
@@ -287,8 +305,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ShapesResponse</returns>
-        System.Threading.Tasks.Task<ShapesResponse> CellsShapesGetWorksheetShapesAsync (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ShapesResponse> CellsShapesGetWorksheetShapesAsync (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Get worksheet shapes 
@@ -300,8 +319,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ShapesResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ShapesResponse>> CellsShapesGetWorksheetShapesAsyncWithHttpInfo (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<ShapesResponse>> CellsShapesGetWorksheetShapesAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Update a shape in worksheet
         /// </summary>
@@ -314,8 +334,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="dto"> (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsShapesPostWorksheetShapeAsync (string name, string sheetName, int? shapeindex, Shape dto = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsShapesPostWorksheetShapeAsync (string name, string sheetName, int? shapeindex, Shape dto = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Update a shape in worksheet
@@ -329,8 +350,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="dto"> (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsShapesPostWorksheetShapeAsyncWithHttpInfo (string name, string sheetName, int? shapeindex, Shape dto = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsShapesPostWorksheetShapeAsyncWithHttpInfo (string name, string sheetName, int? shapeindex, Shape dto = null, string folder = null, string storage = null);
         /// <summary>
         /// Add shape in worksheet
         /// </summary>
@@ -348,8 +370,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="width">Represents the height of Spinner, in unit of pixel.</param>
         /// <param name="height">Represents the width of Spinner, in unit of pixel.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ShapeResponse</returns>
-        System.Threading.Tasks.Task<ShapeResponse> CellsShapesPutWorksheetShapeAsync (string name, string sheetName, string drawingType, int? upperLeftRow, int? upperLeftColumn, int? top, int? left, int? width, int? height, string folder = null);
+        System.Threading.Tasks.Task<ShapeResponse> CellsShapesPutWorksheetShapeAsync (string name, string sheetName, string drawingType, int? upperLeftRow, int? upperLeftColumn, int? top, int? left, int? width, int? height, string folder = null, string storage = null);
 
         /// <summary>
         /// Add shape in worksheet
@@ -368,8 +391,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="width">Represents the height of Spinner, in unit of pixel.</param>
         /// <param name="height">Represents the width of Spinner, in unit of pixel.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ShapeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ShapeResponse>> CellsShapesPutWorksheetShapeAsyncWithHttpInfo (string name, string sheetName, string drawingType, int? upperLeftRow, int? upperLeftColumn, int? top, int? left, int? width, int? height, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<ShapeResponse>> CellsShapesPutWorksheetShapeAsyncWithHttpInfo (string name, string sheetName, string drawingType, int? upperLeftRow, int? upperLeftColumn, int? top, int? left, int? width, int? height, string folder = null, string storage = null);
         #endregion Asynchronous Operations
     }
 
@@ -396,6 +420,25 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 this.Configuration.ApiClient.Configuration = this.Configuration;
             }
         }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsShapesApi"/> class.
+        /// </summary>
+        /// <returns></returns>
+        public CellsShapesApi(String basePath, String accesstoken)
+        {
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + accesstoken);
+            this.Configuration = new Configuration(new ApiClient(basePath),headerParameters);
+
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CellsShapesApi"/> class
@@ -410,6 +453,28 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
                 this.Configuration = configuration;
 
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsShapesApi"/> class
+        /// using Configuration object
+        /// </summary>
+        /// <param name="configuration">An instance of Configuration</param>
+        /// <returns></returns>
+        public CellsShapesApi(String grantType,String appSID,String appKey)
+        {
+            OAuthApi oauth2 = new OAuthApi("https://api.aspose.cloud");
+            var oauth2response = oauth2.OAuthPost(grantType, appSID, appKey);
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + oauth2response.AccessToken);
+            this.Configuration =  new Configuration(new ApiClient(), headerParameters);
             ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
@@ -490,10 +555,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsShapesDeleteWorksheetShape (string name, string sheetName, int? shapeindex, string folder = null)
+        public SaaSposeResponse CellsShapesDeleteWorksheetShape (string name, string sheetName, int? shapeindex, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsShapesDeleteWorksheetShapeWithHttpInfo(name, sheetName, shapeindex, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsShapesDeleteWorksheetShapeWithHttpInfo(name, sheetName, shapeindex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -505,8 +571,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsShapesDeleteWorksheetShapeWithHttpInfo (string name, string sheetName, int? shapeindex, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsShapesDeleteWorksheetShapeWithHttpInfo (string name, string sheetName, int? shapeindex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -544,6 +611,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (shapeindex != null) localVarPathParams.Add("shapeindex", Configuration.ApiClient.ParameterToString(shapeindex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -572,10 +640,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsShapesDeleteWorksheetShapeAsync (string name, string sheetName, int? shapeindex, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsShapesDeleteWorksheetShapeAsync (string name, string sheetName, int? shapeindex, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsShapesDeleteWorksheetShapeAsyncWithHttpInfo(name, sheetName, shapeindex, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsShapesDeleteWorksheetShapeAsyncWithHttpInfo(name, sheetName, shapeindex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -588,8 +657,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsShapesDeleteWorksheetShapeAsyncWithHttpInfo (string name, string sheetName, int? shapeindex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsShapesDeleteWorksheetShapeAsyncWithHttpInfo (string name, string sheetName, int? shapeindex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -627,6 +697,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (shapeindex != null) localVarPathParams.Add("shapeindex", Configuration.ApiClient.ParameterToString(shapeindex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -654,10 +725,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsShapesDeleteWorksheetShapes (string name, string sheetName, string folder = null)
+        public SaaSposeResponse CellsShapesDeleteWorksheetShapes (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsShapesDeleteWorksheetShapesWithHttpInfo(name, sheetName, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsShapesDeleteWorksheetShapesWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -668,8 +740,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsShapesDeleteWorksheetShapesWithHttpInfo (string name, string sheetName, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsShapesDeleteWorksheetShapesWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -703,6 +776,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -730,10 +804,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsShapesDeleteWorksheetShapesAsync (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsShapesDeleteWorksheetShapesAsync (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsShapesDeleteWorksheetShapesAsyncWithHttpInfo(name, sheetName, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsShapesDeleteWorksheetShapesAsyncWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -745,8 +820,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsShapesDeleteWorksheetShapesAsyncWithHttpInfo (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsShapesDeleteWorksheetShapesAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -780,6 +856,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -808,10 +885,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ShapeResponse</returns>
-        public ShapeResponse CellsShapesGetWorksheetShape (string name, string sheetName, int? shapeindex, string folder = null)
+        public ShapeResponse CellsShapesGetWorksheetShape (string name, string sheetName, int? shapeindex, string folder = null, string storage = null)
         {
-             ApiResponse<ShapeResponse> localVarResponse = CellsShapesGetWorksheetShapeWithHttpInfo(name, sheetName, shapeindex, folder);
+             ApiResponse<ShapeResponse> localVarResponse = CellsShapesGetWorksheetShapeWithHttpInfo(name, sheetName, shapeindex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -823,8 +901,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ShapeResponse</returns>
-        public ApiResponse< ShapeResponse > CellsShapesGetWorksheetShapeWithHttpInfo (string name, string sheetName, int? shapeindex, string folder = null)
+        public ApiResponse< ShapeResponse > CellsShapesGetWorksheetShapeWithHttpInfo (string name, string sheetName, int? shapeindex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -862,6 +941,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (shapeindex != null) localVarPathParams.Add("shapeindex", Configuration.ApiClient.ParameterToString(shapeindex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -890,10 +970,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ShapeResponse</returns>
-        public async System.Threading.Tasks.Task<ShapeResponse> CellsShapesGetWorksheetShapeAsync (string name, string sheetName, int? shapeindex, string folder = null)
+        public async System.Threading.Tasks.Task<ShapeResponse> CellsShapesGetWorksheetShapeAsync (string name, string sheetName, int? shapeindex, string folder = null, string storage = null)
         {
-             ApiResponse<ShapeResponse> localVarResponse = await CellsShapesGetWorksheetShapeAsyncWithHttpInfo(name, sheetName, shapeindex, folder);
+             ApiResponse<ShapeResponse> localVarResponse = await CellsShapesGetWorksheetShapeAsyncWithHttpInfo(name, sheetName, shapeindex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -906,8 +987,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ShapeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ShapeResponse>> CellsShapesGetWorksheetShapeAsyncWithHttpInfo (string name, string sheetName, int? shapeindex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ShapeResponse>> CellsShapesGetWorksheetShapeAsyncWithHttpInfo (string name, string sheetName, int? shapeindex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -945,6 +1027,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (shapeindex != null) localVarPathParams.Add("shapeindex", Configuration.ApiClient.ParameterToString(shapeindex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -972,10 +1055,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ShapesResponse</returns>
-        public ShapesResponse CellsShapesGetWorksheetShapes (string name, string sheetName, string folder = null)
+        public ShapesResponse CellsShapesGetWorksheetShapes (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<ShapesResponse> localVarResponse = CellsShapesGetWorksheetShapesWithHttpInfo(name, sheetName, folder);
+             ApiResponse<ShapesResponse> localVarResponse = CellsShapesGetWorksheetShapesWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -986,8 +1070,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ShapesResponse</returns>
-        public ApiResponse< ShapesResponse > CellsShapesGetWorksheetShapesWithHttpInfo (string name, string sheetName, string folder = null)
+        public ApiResponse< ShapesResponse > CellsShapesGetWorksheetShapesWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1021,6 +1106,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1048,10 +1134,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ShapesResponse</returns>
-        public async System.Threading.Tasks.Task<ShapesResponse> CellsShapesGetWorksheetShapesAsync (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ShapesResponse> CellsShapesGetWorksheetShapesAsync (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<ShapesResponse> localVarResponse = await CellsShapesGetWorksheetShapesAsyncWithHttpInfo(name, sheetName, folder);
+             ApiResponse<ShapesResponse> localVarResponse = await CellsShapesGetWorksheetShapesAsyncWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1063,8 +1150,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ShapesResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ShapesResponse>> CellsShapesGetWorksheetShapesAsyncWithHttpInfo (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ShapesResponse>> CellsShapesGetWorksheetShapesAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1098,6 +1186,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1127,10 +1216,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="dto"> (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsShapesPostWorksheetShape (string name, string sheetName, int? shapeindex, Shape dto = null, string folder = null)
+        public SaaSposeResponse CellsShapesPostWorksheetShape (string name, string sheetName, int? shapeindex, Shape dto = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsShapesPostWorksheetShapeWithHttpInfo(name, sheetName, shapeindex, dto, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsShapesPostWorksheetShapeWithHttpInfo(name, sheetName, shapeindex, dto, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1143,8 +1233,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="dto"> (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsShapesPostWorksheetShapeWithHttpInfo (string name, string sheetName, int? shapeindex, Shape dto = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsShapesPostWorksheetShapeWithHttpInfo (string name, string sheetName, int? shapeindex, Shape dto = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1182,6 +1273,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (shapeindex != null) localVarPathParams.Add("shapeindex", Configuration.ApiClient.ParameterToString(shapeindex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (dto != null && dto.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(dto); // http body (model) parameter
@@ -1219,10 +1311,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="dto"> (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsShapesPostWorksheetShapeAsync (string name, string sheetName, int? shapeindex, Shape dto = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsShapesPostWorksheetShapeAsync (string name, string sheetName, int? shapeindex, Shape dto = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsShapesPostWorksheetShapeAsyncWithHttpInfo(name, sheetName, shapeindex, dto, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsShapesPostWorksheetShapeAsyncWithHttpInfo(name, sheetName, shapeindex, dto, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1236,8 +1329,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="dto"> (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsShapesPostWorksheetShapeAsyncWithHttpInfo (string name, string sheetName, int? shapeindex, Shape dto = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsShapesPostWorksheetShapeAsyncWithHttpInfo (string name, string sheetName, int? shapeindex, Shape dto = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1275,6 +1369,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (shapeindex != null) localVarPathParams.Add("shapeindex", Configuration.ApiClient.ParameterToString(shapeindex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (dto != null && dto.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(dto); // http body (model) parameter
@@ -1317,10 +1412,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="width">Represents the height of Spinner, in unit of pixel.</param>
         /// <param name="height">Represents the width of Spinner, in unit of pixel.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ShapeResponse</returns>
-        public ShapeResponse CellsShapesPutWorksheetShape (string name, string sheetName, string drawingType, int? upperLeftRow, int? upperLeftColumn, int? top, int? left, int? width, int? height, string folder = null)
+        public ShapeResponse CellsShapesPutWorksheetShape (string name, string sheetName, string drawingType, int? upperLeftRow, int? upperLeftColumn, int? top, int? left, int? width, int? height, string folder = null, string storage = null)
         {
-             ApiResponse<ShapeResponse> localVarResponse = CellsShapesPutWorksheetShapeWithHttpInfo(name, sheetName, drawingType, upperLeftRow, upperLeftColumn, top, left, width, height, folder);
+             ApiResponse<ShapeResponse> localVarResponse = CellsShapesPutWorksheetShapeWithHttpInfo(name, sheetName, drawingType, upperLeftRow, upperLeftColumn, top, left, width, height, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1338,8 +1434,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="width">Represents the height of Spinner, in unit of pixel.</param>
         /// <param name="height">Represents the width of Spinner, in unit of pixel.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ShapeResponse</returns>
-        public ApiResponse< ShapeResponse > CellsShapesPutWorksheetShapeWithHttpInfo (string name, string sheetName, string drawingType, int? upperLeftRow, int? upperLeftColumn, int? top, int? left, int? width, int? height, string folder = null)
+        public ApiResponse< ShapeResponse > CellsShapesPutWorksheetShapeWithHttpInfo (string name, string sheetName, string drawingType, int? upperLeftRow, int? upperLeftColumn, int? top, int? left, int? width, int? height, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1401,6 +1498,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (width != null) localVarQueryParams.Add("width", Configuration.ApiClient.ParameterToString(width)); // query parameter
             if (height != null) localVarQueryParams.Add("height", Configuration.ApiClient.ParameterToString(height)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1435,10 +1533,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="width">Represents the height of Spinner, in unit of pixel.</param>
         /// <param name="height">Represents the width of Spinner, in unit of pixel.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ShapeResponse</returns>
-        public async System.Threading.Tasks.Task<ShapeResponse> CellsShapesPutWorksheetShapeAsync (string name, string sheetName, string drawingType, int? upperLeftRow, int? upperLeftColumn, int? top, int? left, int? width, int? height, string folder = null)
+        public async System.Threading.Tasks.Task<ShapeResponse> CellsShapesPutWorksheetShapeAsync (string name, string sheetName, string drawingType, int? upperLeftRow, int? upperLeftColumn, int? top, int? left, int? width, int? height, string folder = null, string storage = null)
         {
-             ApiResponse<ShapeResponse> localVarResponse = await CellsShapesPutWorksheetShapeAsyncWithHttpInfo(name, sheetName, drawingType, upperLeftRow, upperLeftColumn, top, left, width, height, folder);
+             ApiResponse<ShapeResponse> localVarResponse = await CellsShapesPutWorksheetShapeAsyncWithHttpInfo(name, sheetName, drawingType, upperLeftRow, upperLeftColumn, top, left, width, height, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1457,8 +1556,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="width">Represents the height of Spinner, in unit of pixel.</param>
         /// <param name="height">Represents the width of Spinner, in unit of pixel.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ShapeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ShapeResponse>> CellsShapesPutWorksheetShapeAsyncWithHttpInfo (string name, string sheetName, string drawingType, int? upperLeftRow, int? upperLeftColumn, int? top, int? left, int? width, int? height, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ShapeResponse>> CellsShapesPutWorksheetShapeAsyncWithHttpInfo (string name, string sheetName, string drawingType, int? upperLeftRow, int? upperLeftColumn, int? top, int? left, int? width, int? height, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1520,6 +1620,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (width != null) localVarQueryParams.Add("width", Configuration.ApiClient.ParameterToString(width)); // query parameter
             if (height != null) localVarQueryParams.Add("height", Configuration.ApiClient.ParameterToString(height)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request

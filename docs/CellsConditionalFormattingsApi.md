@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 <a name="cellsconditionalformattingsdeleteworksheetconditionalformatting"></a>
 # **CellsConditionalFormattingsDeleteWorksheetConditionalFormatting**
-> SaaSposeResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormatting (string name, string sheetName, int? index, string folder = null)
+> SaaSposeResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormatting (string name, string sheetName, int? index, string folder = null, string storage = null)
 
 Remove conditional formatting
 
@@ -40,11 +40,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | 
             var index = 56;  // int? | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Remove conditional formatting
-                SaaSposeResponse result = apiInstance.CellsConditionalFormattingsDeleteWorksheetConditionalFormatting(name, sheetName, index, folder);
+                SaaSposeResponse result = apiInstance.CellsConditionalFormattingsDeleteWorksheetConditionalFormatting(name, sheetName, index, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -64,6 +65,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**|  | 
  **index** | **int?**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -82,7 +84,7 @@ No authorization required
 
 <a name="cellsconditionalformattingsdeleteworksheetconditionalformattingarea"></a>
 # **CellsConditionalFormattingsDeleteWorksheetConditionalFormattingArea**
-> SaaSposeResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormattingArea (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null)
+> SaaSposeResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormattingArea (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null)
 
 Remove cell area from conditional formatting.
 
@@ -108,11 +110,12 @@ namespace Example
             var totalRows = 56;  // int? | 
             var totalColumns = 56;  // int? | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Remove cell area from conditional formatting.
-                SaaSposeResponse result = apiInstance.CellsConditionalFormattingsDeleteWorksheetConditionalFormattingArea(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder);
+                SaaSposeResponse result = apiInstance.CellsConditionalFormattingsDeleteWorksheetConditionalFormattingArea(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -135,6 +138,7 @@ Name | Type | Description  | Notes
  **totalRows** | **int?**|  | 
  **totalColumns** | **int?**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -153,7 +157,7 @@ No authorization required
 
 <a name="cellsconditionalformattingsdeleteworksheetconditionalformattings"></a>
 # **CellsConditionalFormattingsDeleteWorksheetConditionalFormattings**
-> SaaSposeResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormattings (string name, string sheetName, string folder = null)
+> SaaSposeResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormattings (string name, string sheetName, string folder = null, string storage = null)
 
 Clear all condition formattings
 
@@ -175,11 +179,12 @@ namespace Example
             var name = name_example;  // string | 
             var sheetName = sheetName_example;  // string | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Clear all condition formattings
-                SaaSposeResponse result = apiInstance.CellsConditionalFormattingsDeleteWorksheetConditionalFormattings(name, sheetName, folder);
+                SaaSposeResponse result = apiInstance.CellsConditionalFormattingsDeleteWorksheetConditionalFormattings(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -198,6 +203,7 @@ Name | Type | Description  | Notes
  **name** | **string**|  | 
  **sheetName** | **string**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -216,7 +222,7 @@ No authorization required
 
 <a name="cellsconditionalformattingsgetworksheetconditionalformatting"></a>
 # **CellsConditionalFormattingsGetWorksheetConditionalFormatting**
-> ConditionalFormattingResponse CellsConditionalFormattingsGetWorksheetConditionalFormatting (string name, string sheetName, int? index, string folder = null)
+> ConditionalFormattingResponse CellsConditionalFormattingsGetWorksheetConditionalFormatting (string name, string sheetName, int? index, string folder = null, string storage = null)
 
 Get conditional formatting
 
@@ -239,11 +245,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | 
             var index = 56;  // int? | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get conditional formatting
-                ConditionalFormattingResponse result = apiInstance.CellsConditionalFormattingsGetWorksheetConditionalFormatting(name, sheetName, index, folder);
+                ConditionalFormattingResponse result = apiInstance.CellsConditionalFormattingsGetWorksheetConditionalFormatting(name, sheetName, index, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -263,6 +270,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**|  | 
  **index** | **int?**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -281,7 +289,7 @@ No authorization required
 
 <a name="cellsconditionalformattingsgetworksheetconditionalformattings"></a>
 # **CellsConditionalFormattingsGetWorksheetConditionalFormattings**
-> ConditionalFormattingsResponse CellsConditionalFormattingsGetWorksheetConditionalFormattings (string name, string sheetName, string folder = null)
+> ConditionalFormattingsResponse CellsConditionalFormattingsGetWorksheetConditionalFormattings (string name, string sheetName, string folder = null, string storage = null)
 
 Get conditional formattings 
 
@@ -303,11 +311,12 @@ namespace Example
             var name = name_example;  // string | 
             var sheetName = sheetName_example;  // string | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get conditional formattings 
-                ConditionalFormattingsResponse result = apiInstance.CellsConditionalFormattingsGetWorksheetConditionalFormattings(name, sheetName, folder);
+                ConditionalFormattingsResponse result = apiInstance.CellsConditionalFormattingsGetWorksheetConditionalFormattings(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -326,6 +335,7 @@ Name | Type | Description  | Notes
  **name** | **string**|  | 
  **sheetName** | **string**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -344,7 +354,7 @@ No authorization required
 
 <a name="cellsconditionalformattingsputworksheetconditionalformatting"></a>
 # **CellsConditionalFormattingsPutWorksheetConditionalFormatting**
-> SaaSposeResponse CellsConditionalFormattingsPutWorksheetConditionalFormatting (string name, string sheetName, string cellArea, FormatCondition formatcondition = null, string folder = null)
+> SaaSposeResponse CellsConditionalFormattingsPutWorksheetConditionalFormatting (string name, string sheetName, string cellArea, FormatCondition formatcondition = null, string folder = null, string storage = null)
 
 Add a condition formatting.
 
@@ -368,11 +378,12 @@ namespace Example
             var cellArea = cellArea_example;  // string | 
             var formatcondition = new FormatCondition(); // FormatCondition |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Add a condition formatting.
-                SaaSposeResponse result = apiInstance.CellsConditionalFormattingsPutWorksheetConditionalFormatting(name, sheetName, cellArea, formatcondition, folder);
+                SaaSposeResponse result = apiInstance.CellsConditionalFormattingsPutWorksheetConditionalFormatting(name, sheetName, cellArea, formatcondition, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -393,6 +404,7 @@ Name | Type | Description  | Notes
  **cellArea** | **string**|  | 
  **formatcondition** | [**FormatCondition**](FormatCondition.md)|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -411,7 +423,7 @@ No authorization required
 
 <a name="cellsconditionalformattingsputworksheetformatcondition"></a>
 # **CellsConditionalFormattingsPutWorksheetFormatCondition**
-> SaaSposeResponse CellsConditionalFormattingsPutWorksheetFormatCondition (string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null)
+> SaaSposeResponse CellsConditionalFormattingsPutWorksheetFormatCondition (string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null, string storage = null)
 
 Add a format condition.
 
@@ -439,11 +451,12 @@ namespace Example
             var formula1 = formula1_example;  // string | 
             var formula2 = formula2_example;  // string | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Add a format condition.
-                SaaSposeResponse result = apiInstance.CellsConditionalFormattingsPutWorksheetFormatCondition(name, sheetName, index, cellArea, type, operatorType, formula1, formula2, folder);
+                SaaSposeResponse result = apiInstance.CellsConditionalFormattingsPutWorksheetFormatCondition(name, sheetName, index, cellArea, type, operatorType, formula1, formula2, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -468,6 +481,7 @@ Name | Type | Description  | Notes
  **formula1** | **string**|  | 
  **formula2** | **string**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -486,7 +500,7 @@ No authorization required
 
 <a name="cellsconditionalformattingsputworksheetformatconditionarea"></a>
 # **CellsConditionalFormattingsPutWorksheetFormatConditionArea**
-> SaaSposeResponse CellsConditionalFormattingsPutWorksheetFormatConditionArea (string name, string sheetName, int? index, string cellArea, string folder = null)
+> SaaSposeResponse CellsConditionalFormattingsPutWorksheetFormatConditionArea (string name, string sheetName, int? index, string cellArea, string folder = null, string storage = null)
 
 add a cell area for format condition             
 
@@ -510,11 +524,12 @@ namespace Example
             var index = 56;  // int? | 
             var cellArea = cellArea_example;  // string | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // add a cell area for format condition             
-                SaaSposeResponse result = apiInstance.CellsConditionalFormattingsPutWorksheetFormatConditionArea(name, sheetName, index, cellArea, folder);
+                SaaSposeResponse result = apiInstance.CellsConditionalFormattingsPutWorksheetFormatConditionArea(name, sheetName, index, cellArea, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -535,6 +550,7 @@ Name | Type | Description  | Notes
  **index** | **int?**|  | 
  **cellArea** | **string**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -553,7 +569,7 @@ No authorization required
 
 <a name="cellsconditionalformattingsputworksheetformatconditioncondition"></a>
 # **CellsConditionalFormattingsPutWorksheetFormatConditionCondition**
-> SaaSposeResponse CellsConditionalFormattingsPutWorksheetFormatConditionCondition (string name, string sheetName, int? index, string type, string operatorType, string formula1, string formula2, string folder = null)
+> SaaSposeResponse CellsConditionalFormattingsPutWorksheetFormatConditionCondition (string name, string sheetName, int? index, string type, string operatorType, string formula1, string formula2, string folder = null, string storage = null)
 
 Add a condition for format condition.
 
@@ -580,11 +596,12 @@ namespace Example
             var formula1 = formula1_example;  // string | 
             var formula2 = formula2_example;  // string | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Add a condition for format condition.
-                SaaSposeResponse result = apiInstance.CellsConditionalFormattingsPutWorksheetFormatConditionCondition(name, sheetName, index, type, operatorType, formula1, formula2, folder);
+                SaaSposeResponse result = apiInstance.CellsConditionalFormattingsPutWorksheetFormatConditionCondition(name, sheetName, index, type, operatorType, formula1, formula2, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -608,6 +625,7 @@ Name | Type | Description  | Notes
  **formula1** | **string**|  | 
  **formula2** | **string**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 

@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 <a name="cellspropertiesdeletedocumentproperties"></a>
 # **CellsPropertiesDeleteDocumentProperties**
-> CellsDocumentPropertiesResponse CellsPropertiesDeleteDocumentProperties (string name, string folder = null)
+> CellsDocumentPropertiesResponse CellsPropertiesDeleteDocumentProperties (string name, string folder = null, string storage = null)
 
 Delete all custom document properties and clean built-in ones.
 
@@ -34,11 +34,12 @@ namespace Example
             var apiInstance = new CellsPropertiesApi();
             var name = name_example;  // string | The document name.
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Delete all custom document properties and clean built-in ones.
-                CellsDocumentPropertiesResponse result = apiInstance.CellsPropertiesDeleteDocumentProperties(name, folder);
+                CellsDocumentPropertiesResponse result = apiInstance.CellsPropertiesDeleteDocumentProperties(name, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -56,6 +57,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| The document name. | 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -74,7 +76,7 @@ No authorization required
 
 <a name="cellspropertiesdeletedocumentproperty"></a>
 # **CellsPropertiesDeleteDocumentProperty**
-> CellsDocumentPropertiesResponse CellsPropertiesDeleteDocumentProperty (string name, string propertyName, string folder = null)
+> CellsDocumentPropertiesResponse CellsPropertiesDeleteDocumentProperty (string name, string propertyName, string folder = null, string storage = null)
 
 Delete document property.
 
@@ -96,11 +98,12 @@ namespace Example
             var name = name_example;  // string | The document name.
             var propertyName = propertyName_example;  // string | The property name.
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Delete document property.
-                CellsDocumentPropertiesResponse result = apiInstance.CellsPropertiesDeleteDocumentProperty(name, propertyName, folder);
+                CellsDocumentPropertiesResponse result = apiInstance.CellsPropertiesDeleteDocumentProperty(name, propertyName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -119,6 +122,7 @@ Name | Type | Description  | Notes
  **name** | **string**| The document name. | 
  **propertyName** | **string**| The property name. | 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -137,7 +141,7 @@ No authorization required
 
 <a name="cellspropertiesgetdocumentproperties"></a>
 # **CellsPropertiesGetDocumentProperties**
-> CellsDocumentPropertiesResponse CellsPropertiesGetDocumentProperties (string name, string folder = null)
+> CellsDocumentPropertiesResponse CellsPropertiesGetDocumentProperties (string name, string folder = null, string storage = null)
 
 Read document properties.
 
@@ -158,11 +162,12 @@ namespace Example
             var apiInstance = new CellsPropertiesApi();
             var name = name_example;  // string | The document name.
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Read document properties.
-                CellsDocumentPropertiesResponse result = apiInstance.CellsPropertiesGetDocumentProperties(name, folder);
+                CellsDocumentPropertiesResponse result = apiInstance.CellsPropertiesGetDocumentProperties(name, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -180,6 +185,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| The document name. | 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -198,7 +204,7 @@ No authorization required
 
 <a name="cellspropertiesgetdocumentproperty"></a>
 # **CellsPropertiesGetDocumentProperty**
-> CellsDocumentPropertyResponse CellsPropertiesGetDocumentProperty (string name, string propertyName, string folder = null)
+> CellsDocumentPropertyResponse CellsPropertiesGetDocumentProperty (string name, string propertyName, string folder = null, string storage = null)
 
 Read document property by name.
 
@@ -220,11 +226,12 @@ namespace Example
             var name = name_example;  // string | The document name.
             var propertyName = propertyName_example;  // string | The property name.
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Read document property by name.
-                CellsDocumentPropertyResponse result = apiInstance.CellsPropertiesGetDocumentProperty(name, propertyName, folder);
+                CellsDocumentPropertyResponse result = apiInstance.CellsPropertiesGetDocumentProperty(name, propertyName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -243,6 +250,7 @@ Name | Type | Description  | Notes
  **name** | **string**| The document name. | 
  **propertyName** | **string**| The property name. | 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -261,7 +269,7 @@ No authorization required
 
 <a name="cellspropertiesputdocumentproperty"></a>
 # **CellsPropertiesPutDocumentProperty**
-> CellsDocumentPropertyResponse CellsPropertiesPutDocumentProperty (string name, string propertyName, CellsDocumentProperty property = null, string folder = null)
+> CellsDocumentPropertyResponse CellsPropertiesPutDocumentProperty (string name, string propertyName, CellsDocumentProperty property = null, string folder = null, string storage = null)
 
 Set/create document property.
 
@@ -284,11 +292,12 @@ namespace Example
             var propertyName = propertyName_example;  // string | The property name.
             var property = new CellsDocumentProperty(); // CellsDocumentProperty | with new property value. (optional) 
             var folder = folder_example;  // string | The document folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Set/create document property.
-                CellsDocumentPropertyResponse result = apiInstance.CellsPropertiesPutDocumentProperty(name, propertyName, property, folder);
+                CellsDocumentPropertyResponse result = apiInstance.CellsPropertiesPutDocumentProperty(name, propertyName, property, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -308,6 +317,7 @@ Name | Type | Description  | Notes
  **propertyName** | **string**| The property name. | 
  **property** | [**CellsDocumentProperty**](CellsDocumentProperty.md)| with new property value. | [optional] 
  **folder** | **string**| The document folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 

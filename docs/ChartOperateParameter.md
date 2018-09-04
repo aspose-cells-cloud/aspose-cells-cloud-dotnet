@@ -3,15 +3,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ChartType** | **string** |  | [optional] 
-**UpperLeftRow** | **int?** |  | [optional] 
-**LowerRightRow** | **int?** |  | [optional] 
-**LowerRightColumn** | **int?** |  | [optional] 
-**Area** | **string** |  | [optional] 
-**IsVertical** | **bool?** |  | [optional] 
-**CategoryData** | **string** |  | [optional] 
-**IsAutoGetSerialName** | **bool?** |  | [optional] 
 **_String** | **string** |  | [optional] 
+**Area** | **string** |  | [optional] 
+**CategoryData** | **string** |  | [optional] 
+**UpperLeftRow** | **int?** |  | [optional] 
+**LowerRightColumn** | **int?** |  | [optional] 
+**LowerRightRow** | **int?** |  | [optional] 
+**IsAutoGetSerialName** | **bool?** |  | [optional] 
+**ChartType** | **string** |  | [optional] 
+**IsVertical** | **bool?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

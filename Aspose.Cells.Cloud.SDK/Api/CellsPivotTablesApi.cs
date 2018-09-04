@@ -37,8 +37,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotFieldType">The fields area type.</param>
         /// <param name="request">Dto that conrains field indexes (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPivotTablesDeletePivotTableField (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, string folder = null);
+        SaaSposeResponse CellsPivotTablesDeletePivotTableField (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete pivot field into into pivot table
@@ -53,8 +54,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotFieldType">The fields area type.</param>
         /// <param name="request">Dto that conrains field indexes (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPivotTablesDeletePivotTableFieldWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPivotTablesDeletePivotTableFieldWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, string folder = null, string storage = null);
         /// <summary>
         /// Delete worksheet pivot table by index
         /// </summary>
@@ -66,8 +68,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivotTableIndex">Pivot table index</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPivotTablesDeleteWorksheetPivotTable (string name, string sheetName, int? pivotTableIndex, string folder = null);
+        SaaSposeResponse CellsPivotTablesDeleteWorksheetPivotTable (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete worksheet pivot table by index
@@ -80,8 +83,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivotTableIndex">Pivot table index</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTableWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTableWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null);
         /// <summary>
         /// delete  pivot filter for piovt table             
         /// </summary>
@@ -95,8 +99,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="fieldIndex"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPivotTablesDeleteWorksheetPivotTableFilter (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, bool? needReCalculate = null, string folder = null);
+        SaaSposeResponse CellsPivotTablesDeleteWorksheetPivotTableFilter (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, bool? needReCalculate = null, string folder = null, string storage = null);
 
         /// <summary>
         /// delete  pivot filter for piovt table             
@@ -111,8 +116,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="fieldIndex"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTableFilterWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, bool? needReCalculate = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTableFilterWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, bool? needReCalculate = null, string folder = null, string storage = null);
         /// <summary>
         /// delete all pivot filters for piovt table
         /// </summary>
@@ -125,8 +131,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotTableIndex"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPivotTablesDeleteWorksheetPivotTableFilters (string name, string sheetName, int? pivotTableIndex, bool? needReCalculate = null, string folder = null);
+        SaaSposeResponse CellsPivotTablesDeleteWorksheetPivotTableFilters (string name, string sheetName, int? pivotTableIndex, bool? needReCalculate = null, string folder = null, string storage = null);
 
         /// <summary>
         /// delete all pivot filters for piovt table
@@ -140,8 +147,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotTableIndex"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTableFiltersWithHttpInfo (string name, string sheetName, int? pivotTableIndex, bool? needReCalculate = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTableFiltersWithHttpInfo (string name, string sheetName, int? pivotTableIndex, bool? needReCalculate = null, string folder = null, string storage = null);
         /// <summary>
         /// Delete worksheet pivot tables
         /// </summary>
@@ -152,8 +160,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPivotTablesDeleteWorksheetPivotTables (string name, string sheetName, string folder = null);
+        SaaSposeResponse CellsPivotTablesDeleteWorksheetPivotTables (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete worksheet pivot tables
@@ -165,8 +174,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTablesWithHttpInfo (string name, string sheetName, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTablesWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Get pivot field into into pivot table
         /// </summary>
@@ -180,8 +190,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotFieldIndex">The field index in the base fields.</param>
         /// <param name="pivotFieldType">The fields area type.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>PivotFieldResponse</returns>
-        PivotFieldResponse CellsPivotTablesGetPivotTableField (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, string folder = null);
+        PivotFieldResponse CellsPivotTablesGetPivotTableField (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, string folder = null, string storage = null);
 
         /// <summary>
         /// Get pivot field into into pivot table
@@ -196,8 +207,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotFieldIndex">The field index in the base fields.</param>
         /// <param name="pivotFieldType">The fields area type.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of PivotFieldResponse</returns>
-        ApiResponse<PivotFieldResponse> CellsPivotTablesGetPivotTableFieldWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, string folder = null);
+        ApiResponse<PivotFieldResponse> CellsPivotTablesGetPivotTableFieldWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, string folder = null, string storage = null);
         /// <summary>
         /// Get worksheet pivottable info by index.
         /// </summary>
@@ -209,8 +221,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivottableIndex"></param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>PivotTableResponse</returns>
-        PivotTableResponse CellsPivotTablesGetWorksheetPivotTable (string name, string sheetName, int? pivottableIndex, string folder = null);
+        PivotTableResponse CellsPivotTablesGetWorksheetPivotTable (string name, string sheetName, int? pivottableIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Get worksheet pivottable info by index.
@@ -223,8 +236,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivottableIndex"></param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of PivotTableResponse</returns>
-        ApiResponse<PivotTableResponse> CellsPivotTablesGetWorksheetPivotTableWithHttpInfo (string name, string sheetName, int? pivottableIndex, string folder = null);
+        ApiResponse<PivotTableResponse> CellsPivotTablesGetWorksheetPivotTableWithHttpInfo (string name, string sheetName, int? pivottableIndex, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -237,8 +251,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotTableIndex"></param>
         /// <param name="filterIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>PivotFilterResponse</returns>
-        PivotFilterResponse CellsPivotTablesGetWorksheetPivotTableFilter (string name, string sheetName, int? pivotTableIndex, int? filterIndex, string folder = null);
+        PivotFilterResponse CellsPivotTablesGetWorksheetPivotTableFilter (string name, string sheetName, int? pivotTableIndex, int? filterIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -252,8 +267,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotTableIndex"></param>
         /// <param name="filterIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of PivotFilterResponse</returns>
-        ApiResponse<PivotFilterResponse> CellsPivotTablesGetWorksheetPivotTableFilterWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? filterIndex, string folder = null);
+        ApiResponse<PivotFilterResponse> CellsPivotTablesGetWorksheetPivotTableFilterWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? filterIndex, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -265,8 +281,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="pivotTableIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>PivotFiltersResponse</returns>
-        PivotFiltersResponse CellsPivotTablesGetWorksheetPivotTableFilters (string name, string sheetName, int? pivotTableIndex, string folder = null);
+        PivotFiltersResponse CellsPivotTablesGetWorksheetPivotTableFilters (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -279,8 +296,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="pivotTableIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of PivotFiltersResponse</returns>
-        ApiResponse<PivotFiltersResponse> CellsPivotTablesGetWorksheetPivotTableFiltersWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null);
+        ApiResponse<PivotFiltersResponse> CellsPivotTablesGetWorksheetPivotTableFiltersWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null);
         /// <summary>
         /// Get worksheet pivottables info.
         /// </summary>
@@ -291,8 +309,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>PivotTablesResponse</returns>
-        PivotTablesResponse CellsPivotTablesGetWorksheetPivotTables (string name, string sheetName, string folder = null);
+        PivotTablesResponse CellsPivotTablesGetWorksheetPivotTables (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Get worksheet pivottables info.
@@ -304,8 +323,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of PivotTablesResponse</returns>
-        ApiResponse<PivotTablesResponse> CellsPivotTablesGetWorksheetPivotTablesWithHttpInfo (string name, string sheetName, string folder = null);
+        ApiResponse<PivotTablesResponse> CellsPivotTablesGetWorksheetPivotTablesWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Update cell style for pivot table
         /// </summary>
@@ -321,8 +341,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="style">Style dto in request body. (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPivotTablesPostPivotTableCellStyle (string name, string sheetName, int? pivotTableIndex, int? column, int? row, Style style = null, bool? needReCalculate = null, string folder = null);
+        SaaSposeResponse CellsPivotTablesPostPivotTableCellStyle (string name, string sheetName, int? pivotTableIndex, int? column, int? row, Style style = null, bool? needReCalculate = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Update cell style for pivot table
@@ -339,8 +360,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="style">Style dto in request body. (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPivotTablesPostPivotTableCellStyleWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? column, int? row, Style style = null, bool? needReCalculate = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPivotTablesPostPivotTableCellStyleWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? column, int? row, Style style = null, bool? needReCalculate = null, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -357,8 +379,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isHide"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPivotTablesPostPivotTableFieldHideItem (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, int? fieldIndex, int? itemIndex, bool? isHide, bool? needReCalculate = null, string folder = null);
+        SaaSposeResponse CellsPivotTablesPostPivotTableFieldHideItem (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, int? fieldIndex, int? itemIndex, bool? isHide, bool? needReCalculate = null, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -376,8 +399,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isHide"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPivotTablesPostPivotTableFieldHideItemWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, int? fieldIndex, int? itemIndex, bool? isHide, bool? needReCalculate = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPivotTablesPostPivotTableFieldHideItemWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, int? fieldIndex, int? itemIndex, bool? isHide, bool? needReCalculate = null, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -392,8 +416,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="from"></param>
         /// <param name="to"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPivotTablesPostPivotTableFieldMoveTo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, string from, string to, string folder = null);
+        SaaSposeResponse CellsPivotTablesPostPivotTableFieldMoveTo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, string from, string to, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -409,8 +434,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="from"></param>
         /// <param name="to"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPivotTablesPostPivotTableFieldMoveToWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, string from, string to, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPivotTablesPostPivotTableFieldMoveToWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, string from, string to, string folder = null, string storage = null);
         /// <summary>
         /// Update style for pivot table
         /// </summary>
@@ -424,8 +450,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="style">Style dto in request body. (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPivotTablesPostPivotTableStyle (string name, string sheetName, int? pivotTableIndex, Style style = null, bool? needReCalculate = null, string folder = null);
+        SaaSposeResponse CellsPivotTablesPostPivotTableStyle (string name, string sheetName, int? pivotTableIndex, Style style = null, bool? needReCalculate = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Update style for pivot table
@@ -440,8 +467,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="style">Style dto in request body. (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPivotTablesPostPivotTableStyleWithHttpInfo (string name, string sheetName, int? pivotTableIndex, Style style = null, bool? needReCalculate = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPivotTablesPostPivotTableStyleWithHttpInfo (string name, string sheetName, int? pivotTableIndex, Style style = null, bool? needReCalculate = null, string folder = null, string storage = null);
         /// <summary>
         /// Calculates pivottable&#39;s data to cells.
         /// </summary>
@@ -453,8 +481,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivotTableIndex">Pivot table index</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPivotTablesPostWorksheetPivotTableCalculate (string name, string sheetName, int? pivotTableIndex, string folder = null);
+        SaaSposeResponse CellsPivotTablesPostWorksheetPivotTableCalculate (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Calculates pivottable&#39;s data to cells.
@@ -467,8 +496,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivotTableIndex">Pivot table index</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPivotTablesPostWorksheetPivotTableCalculateWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPivotTablesPostWorksheetPivotTableCalculateWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -483,8 +513,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="column"> (optional)</param>
         /// <param name="destCellName"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPivotTablesPostWorksheetPivotTableMove (string name, string sheetName, int? pivotTableIndex, int? row = null, int? column = null, string destCellName = null, string folder = null);
+        SaaSposeResponse CellsPivotTablesPostWorksheetPivotTableMove (string name, string sheetName, int? pivotTableIndex, int? row = null, int? column = null, string destCellName = null, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -500,8 +531,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="column"> (optional)</param>
         /// <param name="destCellName"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPivotTablesPostWorksheetPivotTableMoveWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? row = null, int? column = null, string destCellName = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPivotTablesPostWorksheetPivotTableMoveWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? row = null, int? column = null, string destCellName = null, string folder = null, string storage = null);
         /// <summary>
         /// Add pivot field into into pivot table
         /// </summary>
@@ -516,8 +548,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="request">Dto that conrains field indexes (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPivotTablesPutPivotTableField (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, bool? needReCalculate = null, string folder = null);
+        SaaSposeResponse CellsPivotTablesPutPivotTableField (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, bool? needReCalculate = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Add pivot field into into pivot table
@@ -533,8 +566,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="request">Dto that conrains field indexes (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPivotTablesPutPivotTableFieldWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, bool? needReCalculate = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPivotTablesPutPivotTableFieldWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, bool? needReCalculate = null, string folder = null, string storage = null);
         /// <summary>
         /// Add a pivot table into worksheet.
         /// </summary>
@@ -546,12 +580,13 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="request">CreatePivotTableRequest dto in request body. (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <param name="sourceData">The data for the new PivotTable cache. (optional)</param>
         /// <param name="destCellName">The cell in the upper-left corner of the PivotTable report&#39;s destination range. (optional)</param>
         /// <param name="tableName">The name of the new PivotTable report. (optional)</param>
         /// <param name="useSameSource">Indicates whether using same data source when another existing pivot table has used this data source. If the property is true, it will save memory. (optional)</param>
         /// <returns>PivotTableResponse</returns>
-        PivotTableResponse CellsPivotTablesPutWorksheetPivotTable (string name, string sheetName, CreatePivotTableRequest request = null, string folder = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null);
+        PivotTableResponse CellsPivotTablesPutWorksheetPivotTable (string name, string sheetName, CreatePivotTableRequest request = null, string folder = null, string storage = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null);
 
         /// <summary>
         /// Add a pivot table into worksheet.
@@ -564,12 +599,13 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="request">CreatePivotTableRequest dto in request body. (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <param name="sourceData">The data for the new PivotTable cache. (optional)</param>
         /// <param name="destCellName">The cell in the upper-left corner of the PivotTable report&#39;s destination range. (optional)</param>
         /// <param name="tableName">The name of the new PivotTable report. (optional)</param>
         /// <param name="useSameSource">Indicates whether using same data source when another existing pivot table has used this data source. If the property is true, it will save memory. (optional)</param>
         /// <returns>ApiResponse of PivotTableResponse</returns>
-        ApiResponse<PivotTableResponse> CellsPivotTablesPutWorksheetPivotTableWithHttpInfo (string name, string sheetName, CreatePivotTableRequest request = null, string folder = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null);
+        ApiResponse<PivotTableResponse> CellsPivotTablesPutWorksheetPivotTableWithHttpInfo (string name, string sheetName, CreatePivotTableRequest request = null, string folder = null, string storage = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null);
         /// <summary>
         /// Add pivot filter for piovt table index
         /// </summary>
@@ -583,8 +619,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="filter"> (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPivotTablesPutWorksheetPivotTableFilter (string name, string sheetName, int? pivotTableIndex, PivotFilter filter = null, bool? needReCalculate = null, string folder = null);
+        SaaSposeResponse CellsPivotTablesPutWorksheetPivotTableFilter (string name, string sheetName, int? pivotTableIndex, PivotFilter filter = null, bool? needReCalculate = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Add pivot filter for piovt table index
@@ -599,8 +636,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="filter"> (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPivotTablesPutWorksheetPivotTableFilterWithHttpInfo (string name, string sheetName, int? pivotTableIndex, PivotFilter filter = null, bool? needReCalculate = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPivotTablesPutWorksheetPivotTableFilterWithHttpInfo (string name, string sheetName, int? pivotTableIndex, PivotFilter filter = null, bool? needReCalculate = null, string folder = null, string storage = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -616,8 +654,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotFieldType">The fields area type.</param>
         /// <param name="request">Dto that conrains field indexes (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesDeletePivotTableFieldAsync (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesDeletePivotTableFieldAsync (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete pivot field into into pivot table
@@ -632,8 +671,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotFieldType">The fields area type.</param>
         /// <param name="request">Dto that conrains field indexes (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesDeletePivotTableFieldAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesDeletePivotTableFieldAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, string folder = null, string storage = null);
         /// <summary>
         /// Delete worksheet pivot table by index
         /// </summary>
@@ -645,8 +685,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivotTableIndex">Pivot table index</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTableAsync (string name, string sheetName, int? pivotTableIndex, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTableAsync (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete worksheet pivot table by index
@@ -659,8 +700,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivotTableIndex">Pivot table index</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesDeleteWorksheetPivotTableAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesDeleteWorksheetPivotTableAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null);
         /// <summary>
         /// delete  pivot filter for piovt table             
         /// </summary>
@@ -674,8 +716,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="fieldIndex"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTableFilterAsync (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, bool? needReCalculate = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTableFilterAsync (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, bool? needReCalculate = null, string folder = null, string storage = null);
 
         /// <summary>
         /// delete  pivot filter for piovt table             
@@ -690,8 +733,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="fieldIndex"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesDeleteWorksheetPivotTableFilterAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, bool? needReCalculate = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesDeleteWorksheetPivotTableFilterAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, bool? needReCalculate = null, string folder = null, string storage = null);
         /// <summary>
         /// delete all pivot filters for piovt table
         /// </summary>
@@ -704,8 +748,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotTableIndex"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTableFiltersAsync (string name, string sheetName, int? pivotTableIndex, bool? needReCalculate = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTableFiltersAsync (string name, string sheetName, int? pivotTableIndex, bool? needReCalculate = null, string folder = null, string storage = null);
 
         /// <summary>
         /// delete all pivot filters for piovt table
@@ -719,8 +764,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotTableIndex"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesDeleteWorksheetPivotTableFiltersAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, bool? needReCalculate = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesDeleteWorksheetPivotTableFiltersAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, bool? needReCalculate = null, string folder = null, string storage = null);
         /// <summary>
         /// Delete worksheet pivot tables
         /// </summary>
@@ -731,8 +777,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTablesAsync (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTablesAsync (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete worksheet pivot tables
@@ -744,8 +791,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesDeleteWorksheetPivotTablesAsyncWithHttpInfo (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesDeleteWorksheetPivotTablesAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Get pivot field into into pivot table
         /// </summary>
@@ -759,8 +807,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotFieldIndex">The field index in the base fields.</param>
         /// <param name="pivotFieldType">The fields area type.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of PivotFieldResponse</returns>
-        System.Threading.Tasks.Task<PivotFieldResponse> CellsPivotTablesGetPivotTableFieldAsync (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, string folder = null);
+        System.Threading.Tasks.Task<PivotFieldResponse> CellsPivotTablesGetPivotTableFieldAsync (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, string folder = null, string storage = null);
 
         /// <summary>
         /// Get pivot field into into pivot table
@@ -775,8 +824,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotFieldIndex">The field index in the base fields.</param>
         /// <param name="pivotFieldType">The fields area type.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (PivotFieldResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PivotFieldResponse>> CellsPivotTablesGetPivotTableFieldAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<PivotFieldResponse>> CellsPivotTablesGetPivotTableFieldAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, string folder = null, string storage = null);
         /// <summary>
         /// Get worksheet pivottable info by index.
         /// </summary>
@@ -788,8 +838,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivottableIndex"></param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of PivotTableResponse</returns>
-        System.Threading.Tasks.Task<PivotTableResponse> CellsPivotTablesGetWorksheetPivotTableAsync (string name, string sheetName, int? pivottableIndex, string folder = null);
+        System.Threading.Tasks.Task<PivotTableResponse> CellsPivotTablesGetWorksheetPivotTableAsync (string name, string sheetName, int? pivottableIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Get worksheet pivottable info by index.
@@ -802,8 +853,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivottableIndex"></param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (PivotTableResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PivotTableResponse>> CellsPivotTablesGetWorksheetPivotTableAsyncWithHttpInfo (string name, string sheetName, int? pivottableIndex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<PivotTableResponse>> CellsPivotTablesGetWorksheetPivotTableAsyncWithHttpInfo (string name, string sheetName, int? pivottableIndex, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -816,8 +868,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotTableIndex"></param>
         /// <param name="filterIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of PivotFilterResponse</returns>
-        System.Threading.Tasks.Task<PivotFilterResponse> CellsPivotTablesGetWorksheetPivotTableFilterAsync (string name, string sheetName, int? pivotTableIndex, int? filterIndex, string folder = null);
+        System.Threading.Tasks.Task<PivotFilterResponse> CellsPivotTablesGetWorksheetPivotTableFilterAsync (string name, string sheetName, int? pivotTableIndex, int? filterIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -831,8 +884,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotTableIndex"></param>
         /// <param name="filterIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (PivotFilterResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PivotFilterResponse>> CellsPivotTablesGetWorksheetPivotTableFilterAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? filterIndex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<PivotFilterResponse>> CellsPivotTablesGetWorksheetPivotTableFilterAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? filterIndex, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -844,8 +898,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="pivotTableIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of PivotFiltersResponse</returns>
-        System.Threading.Tasks.Task<PivotFiltersResponse> CellsPivotTablesGetWorksheetPivotTableFiltersAsync (string name, string sheetName, int? pivotTableIndex, string folder = null);
+        System.Threading.Tasks.Task<PivotFiltersResponse> CellsPivotTablesGetWorksheetPivotTableFiltersAsync (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -858,8 +913,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="pivotTableIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (PivotFiltersResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PivotFiltersResponse>> CellsPivotTablesGetWorksheetPivotTableFiltersAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<PivotFiltersResponse>> CellsPivotTablesGetWorksheetPivotTableFiltersAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null);
         /// <summary>
         /// Get worksheet pivottables info.
         /// </summary>
@@ -870,8 +926,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of PivotTablesResponse</returns>
-        System.Threading.Tasks.Task<PivotTablesResponse> CellsPivotTablesGetWorksheetPivotTablesAsync (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<PivotTablesResponse> CellsPivotTablesGetWorksheetPivotTablesAsync (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Get worksheet pivottables info.
@@ -883,8 +940,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (PivotTablesResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PivotTablesResponse>> CellsPivotTablesGetWorksheetPivotTablesAsyncWithHttpInfo (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<PivotTablesResponse>> CellsPivotTablesGetWorksheetPivotTablesAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Update cell style for pivot table
         /// </summary>
@@ -900,8 +958,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="style">Style dto in request body. (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostPivotTableCellStyleAsync (string name, string sheetName, int? pivotTableIndex, int? column, int? row, Style style = null, bool? needReCalculate = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostPivotTableCellStyleAsync (string name, string sheetName, int? pivotTableIndex, int? column, int? row, Style style = null, bool? needReCalculate = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Update cell style for pivot table
@@ -918,8 +977,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="style">Style dto in request body. (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostPivotTableCellStyleAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? column, int? row, Style style = null, bool? needReCalculate = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostPivotTableCellStyleAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? column, int? row, Style style = null, bool? needReCalculate = null, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -936,8 +996,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isHide"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostPivotTableFieldHideItemAsync (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, int? fieldIndex, int? itemIndex, bool? isHide, bool? needReCalculate = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostPivotTableFieldHideItemAsync (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, int? fieldIndex, int? itemIndex, bool? isHide, bool? needReCalculate = null, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -955,8 +1016,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isHide"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostPivotTableFieldHideItemAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, int? fieldIndex, int? itemIndex, bool? isHide, bool? needReCalculate = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostPivotTableFieldHideItemAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, int? fieldIndex, int? itemIndex, bool? isHide, bool? needReCalculate = null, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -971,8 +1033,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="from"></param>
         /// <param name="to"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostPivotTableFieldMoveToAsync (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, string from, string to, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostPivotTableFieldMoveToAsync (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, string from, string to, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -988,8 +1051,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="from"></param>
         /// <param name="to"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostPivotTableFieldMoveToAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, string from, string to, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostPivotTableFieldMoveToAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, string from, string to, string folder = null, string storage = null);
         /// <summary>
         /// Update style for pivot table
         /// </summary>
@@ -1003,8 +1067,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="style">Style dto in request body. (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostPivotTableStyleAsync (string name, string sheetName, int? pivotTableIndex, Style style = null, bool? needReCalculate = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostPivotTableStyleAsync (string name, string sheetName, int? pivotTableIndex, Style style = null, bool? needReCalculate = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Update style for pivot table
@@ -1019,8 +1084,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="style">Style dto in request body. (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostPivotTableStyleAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, Style style = null, bool? needReCalculate = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostPivotTableStyleAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, Style style = null, bool? needReCalculate = null, string folder = null, string storage = null);
         /// <summary>
         /// Calculates pivottable&#39;s data to cells.
         /// </summary>
@@ -1032,8 +1098,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivotTableIndex">Pivot table index</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostWorksheetPivotTableCalculateAsync (string name, string sheetName, int? pivotTableIndex, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostWorksheetPivotTableCalculateAsync (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Calculates pivottable&#39;s data to cells.
@@ -1046,8 +1113,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivotTableIndex">Pivot table index</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostWorksheetPivotTableCalculateAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostWorksheetPivotTableCalculateAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -1062,8 +1130,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="column"> (optional)</param>
         /// <param name="destCellName"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostWorksheetPivotTableMoveAsync (string name, string sheetName, int? pivotTableIndex, int? row = null, int? column = null, string destCellName = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostWorksheetPivotTableMoveAsync (string name, string sheetName, int? pivotTableIndex, int? row = null, int? column = null, string destCellName = null, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -1079,8 +1148,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="column"> (optional)</param>
         /// <param name="destCellName"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostWorksheetPivotTableMoveAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? row = null, int? column = null, string destCellName = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostWorksheetPivotTableMoveAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? row = null, int? column = null, string destCellName = null, string folder = null, string storage = null);
         /// <summary>
         /// Add pivot field into into pivot table
         /// </summary>
@@ -1095,8 +1165,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="request">Dto that conrains field indexes (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPutPivotTableFieldAsync (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, bool? needReCalculate = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPutPivotTableFieldAsync (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, bool? needReCalculate = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Add pivot field into into pivot table
@@ -1112,8 +1183,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="request">Dto that conrains field indexes (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPutPivotTableFieldAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, bool? needReCalculate = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPutPivotTableFieldAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, bool? needReCalculate = null, string folder = null, string storage = null);
         /// <summary>
         /// Add a pivot table into worksheet.
         /// </summary>
@@ -1125,12 +1197,13 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="request">CreatePivotTableRequest dto in request body. (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <param name="sourceData">The data for the new PivotTable cache. (optional)</param>
         /// <param name="destCellName">The cell in the upper-left corner of the PivotTable report&#39;s destination range. (optional)</param>
         /// <param name="tableName">The name of the new PivotTable report. (optional)</param>
         /// <param name="useSameSource">Indicates whether using same data source when another existing pivot table has used this data source. If the property is true, it will save memory. (optional)</param>
         /// <returns>Task of PivotTableResponse</returns>
-        System.Threading.Tasks.Task<PivotTableResponse> CellsPivotTablesPutWorksheetPivotTableAsync (string name, string sheetName, CreatePivotTableRequest request = null, string folder = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null);
+        System.Threading.Tasks.Task<PivotTableResponse> CellsPivotTablesPutWorksheetPivotTableAsync (string name, string sheetName, CreatePivotTableRequest request = null, string folder = null, string storage = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null);
 
         /// <summary>
         /// Add a pivot table into worksheet.
@@ -1143,12 +1216,13 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="request">CreatePivotTableRequest dto in request body. (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <param name="sourceData">The data for the new PivotTable cache. (optional)</param>
         /// <param name="destCellName">The cell in the upper-left corner of the PivotTable report&#39;s destination range. (optional)</param>
         /// <param name="tableName">The name of the new PivotTable report. (optional)</param>
         /// <param name="useSameSource">Indicates whether using same data source when another existing pivot table has used this data source. If the property is true, it will save memory. (optional)</param>
         /// <returns>Task of ApiResponse (PivotTableResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PivotTableResponse>> CellsPivotTablesPutWorksheetPivotTableAsyncWithHttpInfo (string name, string sheetName, CreatePivotTableRequest request = null, string folder = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null);
+        System.Threading.Tasks.Task<ApiResponse<PivotTableResponse>> CellsPivotTablesPutWorksheetPivotTableAsyncWithHttpInfo (string name, string sheetName, CreatePivotTableRequest request = null, string folder = null, string storage = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null);
         /// <summary>
         /// Add pivot filter for piovt table index
         /// </summary>
@@ -1162,8 +1236,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="filter"> (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPutWorksheetPivotTableFilterAsync (string name, string sheetName, int? pivotTableIndex, PivotFilter filter = null, bool? needReCalculate = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPutWorksheetPivotTableFilterAsync (string name, string sheetName, int? pivotTableIndex, PivotFilter filter = null, bool? needReCalculate = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Add pivot filter for piovt table index
@@ -1178,8 +1253,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="filter"> (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPutWorksheetPivotTableFilterAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, PivotFilter filter = null, bool? needReCalculate = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPutWorksheetPivotTableFilterAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, PivotFilter filter = null, bool? needReCalculate = null, string folder = null, string storage = null);
         #endregion Asynchronous Operations
     }
 
@@ -1206,6 +1282,25 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 this.Configuration.ApiClient.Configuration = this.Configuration;
             }
         }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsPivotTablesApi"/> class.
+        /// </summary>
+        /// <returns></returns>
+        public CellsPivotTablesApi(String basePath, String accesstoken)
+        {
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + accesstoken);
+            this.Configuration = new Configuration(new ApiClient(basePath),headerParameters);
+
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CellsPivotTablesApi"/> class
@@ -1220,6 +1315,28 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
                 this.Configuration = configuration;
 
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsPivotTablesApi"/> class
+        /// using Configuration object
+        /// </summary>
+        /// <param name="configuration">An instance of Configuration</param>
+        /// <returns></returns>
+        public CellsPivotTablesApi(String grantType,String appSID,String appKey)
+        {
+            OAuthApi oauth2 = new OAuthApi("https://api.aspose.cloud");
+            var oauth2response = oauth2.OAuthPost(grantType, appSID, appKey);
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + oauth2response.AccessToken);
+            this.Configuration =  new Configuration(new ApiClient(), headerParameters);
             ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
@@ -1302,10 +1419,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotFieldType">The fields area type.</param>
         /// <param name="request">Dto that conrains field indexes (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPivotTablesDeletePivotTableField (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, string folder = null)
+        public SaaSposeResponse CellsPivotTablesDeletePivotTableField (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesDeletePivotTableFieldWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldType, request, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesDeletePivotTableFieldWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldType, request, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1319,8 +1437,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotFieldType">The fields area type.</param>
         /// <param name="request">Dto that conrains field indexes (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPivotTablesDeletePivotTableFieldWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPivotTablesDeletePivotTableFieldWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1362,6 +1481,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (pivotTableIndex != null) localVarPathParams.Add("pivotTableIndex", Configuration.ApiClient.ParameterToString(pivotTableIndex)); // path parameter
             if (pivotFieldType != null) localVarQueryParams.Add("pivotFieldType", Configuration.ApiClient.ParameterToString(pivotFieldType)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (request != null && request.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(request); // http body (model) parameter
@@ -1400,10 +1520,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotFieldType">The fields area type.</param>
         /// <param name="request">Dto that conrains field indexes (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesDeletePivotTableFieldAsync (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesDeletePivotTableFieldAsync (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesDeletePivotTableFieldAsyncWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldType, request, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesDeletePivotTableFieldAsyncWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldType, request, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1418,8 +1539,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotFieldType">The fields area type.</param>
         /// <param name="request">Dto that conrains field indexes (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesDeletePivotTableFieldAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesDeletePivotTableFieldAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1461,6 +1583,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (pivotTableIndex != null) localVarPathParams.Add("pivotTableIndex", Configuration.ApiClient.ParameterToString(pivotTableIndex)); // path parameter
             if (pivotFieldType != null) localVarQueryParams.Add("pivotFieldType", Configuration.ApiClient.ParameterToString(pivotFieldType)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (request != null && request.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(request); // http body (model) parameter
@@ -1497,10 +1620,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivotTableIndex">Pivot table index</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPivotTablesDeleteWorksheetPivotTable (string name, string sheetName, int? pivotTableIndex, string folder = null)
+        public SaaSposeResponse CellsPivotTablesDeleteWorksheetPivotTable (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesDeleteWorksheetPivotTableWithHttpInfo(name, sheetName, pivotTableIndex, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesDeleteWorksheetPivotTableWithHttpInfo(name, sheetName, pivotTableIndex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1512,8 +1636,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivotTableIndex">Pivot table index</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPivotTablesDeleteWorksheetPivotTableWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPivotTablesDeleteWorksheetPivotTableWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1551,6 +1676,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (pivotTableIndex != null) localVarPathParams.Add("pivotTableIndex", Configuration.ApiClient.ParameterToString(pivotTableIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1579,10 +1705,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivotTableIndex">Pivot table index</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTableAsync (string name, string sheetName, int? pivotTableIndex, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTableAsync (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesDeleteWorksheetPivotTableAsyncWithHttpInfo(name, sheetName, pivotTableIndex, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesDeleteWorksheetPivotTableAsyncWithHttpInfo(name, sheetName, pivotTableIndex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1595,8 +1722,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivotTableIndex">Pivot table index</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesDeleteWorksheetPivotTableAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesDeleteWorksheetPivotTableAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1634,6 +1762,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (pivotTableIndex != null) localVarPathParams.Add("pivotTableIndex", Configuration.ApiClient.ParameterToString(pivotTableIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1664,10 +1793,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="fieldIndex"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPivotTablesDeleteWorksheetPivotTableFilter (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, bool? needReCalculate = null, string folder = null)
+        public SaaSposeResponse CellsPivotTablesDeleteWorksheetPivotTableFilter (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, bool? needReCalculate = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesDeleteWorksheetPivotTableFilterWithHttpInfo(name, sheetName, pivotTableIndex, fieldIndex, needReCalculate, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesDeleteWorksheetPivotTableFilterWithHttpInfo(name, sheetName, pivotTableIndex, fieldIndex, needReCalculate, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1681,8 +1811,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="fieldIndex"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPivotTablesDeleteWorksheetPivotTableFilterWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, bool? needReCalculate = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPivotTablesDeleteWorksheetPivotTableFilterWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, bool? needReCalculate = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1725,6 +1856,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (fieldIndex != null) localVarPathParams.Add("fieldIndex", Configuration.ApiClient.ParameterToString(fieldIndex)); // path parameter
             if (needReCalculate != null) localVarQueryParams.Add("needReCalculate", Configuration.ApiClient.ParameterToString(needReCalculate)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1755,10 +1887,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="fieldIndex"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTableFilterAsync (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, bool? needReCalculate = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTableFilterAsync (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, bool? needReCalculate = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesDeleteWorksheetPivotTableFilterAsyncWithHttpInfo(name, sheetName, pivotTableIndex, fieldIndex, needReCalculate, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesDeleteWorksheetPivotTableFilterAsyncWithHttpInfo(name, sheetName, pivotTableIndex, fieldIndex, needReCalculate, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1773,8 +1906,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="fieldIndex"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesDeleteWorksheetPivotTableFilterAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, bool? needReCalculate = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesDeleteWorksheetPivotTableFilterAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, bool? needReCalculate = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1817,6 +1951,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (fieldIndex != null) localVarPathParams.Add("fieldIndex", Configuration.ApiClient.ParameterToString(fieldIndex)); // path parameter
             if (needReCalculate != null) localVarQueryParams.Add("needReCalculate", Configuration.ApiClient.ParameterToString(needReCalculate)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1846,10 +1981,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotTableIndex"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPivotTablesDeleteWorksheetPivotTableFilters (string name, string sheetName, int? pivotTableIndex, bool? needReCalculate = null, string folder = null)
+        public SaaSposeResponse CellsPivotTablesDeleteWorksheetPivotTableFilters (string name, string sheetName, int? pivotTableIndex, bool? needReCalculate = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesDeleteWorksheetPivotTableFiltersWithHttpInfo(name, sheetName, pivotTableIndex, needReCalculate, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesDeleteWorksheetPivotTableFiltersWithHttpInfo(name, sheetName, pivotTableIndex, needReCalculate, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1862,8 +1998,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotTableIndex"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPivotTablesDeleteWorksheetPivotTableFiltersWithHttpInfo (string name, string sheetName, int? pivotTableIndex, bool? needReCalculate = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPivotTablesDeleteWorksheetPivotTableFiltersWithHttpInfo (string name, string sheetName, int? pivotTableIndex, bool? needReCalculate = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1902,6 +2039,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (pivotTableIndex != null) localVarPathParams.Add("pivotTableIndex", Configuration.ApiClient.ParameterToString(pivotTableIndex)); // path parameter
             if (needReCalculate != null) localVarQueryParams.Add("needReCalculate", Configuration.ApiClient.ParameterToString(needReCalculate)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1931,10 +2069,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotTableIndex"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTableFiltersAsync (string name, string sheetName, int? pivotTableIndex, bool? needReCalculate = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTableFiltersAsync (string name, string sheetName, int? pivotTableIndex, bool? needReCalculate = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesDeleteWorksheetPivotTableFiltersAsyncWithHttpInfo(name, sheetName, pivotTableIndex, needReCalculate, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesDeleteWorksheetPivotTableFiltersAsyncWithHttpInfo(name, sheetName, pivotTableIndex, needReCalculate, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1948,8 +2087,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotTableIndex"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesDeleteWorksheetPivotTableFiltersAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, bool? needReCalculate = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesDeleteWorksheetPivotTableFiltersAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, bool? needReCalculate = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1988,6 +2128,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (pivotTableIndex != null) localVarPathParams.Add("pivotTableIndex", Configuration.ApiClient.ParameterToString(pivotTableIndex)); // path parameter
             if (needReCalculate != null) localVarQueryParams.Add("needReCalculate", Configuration.ApiClient.ParameterToString(needReCalculate)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2015,10 +2156,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPivotTablesDeleteWorksheetPivotTables (string name, string sheetName, string folder = null)
+        public SaaSposeResponse CellsPivotTablesDeleteWorksheetPivotTables (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesDeleteWorksheetPivotTablesWithHttpInfo(name, sheetName, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesDeleteWorksheetPivotTablesWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -2029,8 +2171,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPivotTablesDeleteWorksheetPivotTablesWithHttpInfo (string name, string sheetName, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPivotTablesDeleteWorksheetPivotTablesWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2064,6 +2207,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2091,10 +2235,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTablesAsync (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesDeleteWorksheetPivotTablesAsync (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesDeleteWorksheetPivotTablesAsyncWithHttpInfo(name, sheetName, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesDeleteWorksheetPivotTablesAsyncWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -2106,8 +2251,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesDeleteWorksheetPivotTablesAsyncWithHttpInfo (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesDeleteWorksheetPivotTablesAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2141,6 +2287,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2171,10 +2318,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotFieldIndex">The field index in the base fields.</param>
         /// <param name="pivotFieldType">The fields area type.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>PivotFieldResponse</returns>
-        public PivotFieldResponse CellsPivotTablesGetPivotTableField (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, string folder = null)
+        public PivotFieldResponse CellsPivotTablesGetPivotTableField (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, string folder = null, string storage = null)
         {
-             ApiResponse<PivotFieldResponse> localVarResponse = CellsPivotTablesGetPivotTableFieldWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldIndex, pivotFieldType, folder);
+             ApiResponse<PivotFieldResponse> localVarResponse = CellsPivotTablesGetPivotTableFieldWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldIndex, pivotFieldType, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -2188,8 +2336,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotFieldIndex">The field index in the base fields.</param>
         /// <param name="pivotFieldType">The fields area type.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of PivotFieldResponse</returns>
-        public ApiResponse< PivotFieldResponse > CellsPivotTablesGetPivotTableFieldWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, string folder = null)
+        public ApiResponse< PivotFieldResponse > CellsPivotTablesGetPivotTableFieldWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2235,6 +2384,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (pivotFieldIndex != null) localVarQueryParams.Add("pivotFieldIndex", Configuration.ApiClient.ParameterToString(pivotFieldIndex)); // query parameter
             if (pivotFieldType != null) localVarQueryParams.Add("pivotFieldType", Configuration.ApiClient.ParameterToString(pivotFieldType)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2265,10 +2415,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotFieldIndex">The field index in the base fields.</param>
         /// <param name="pivotFieldType">The fields area type.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of PivotFieldResponse</returns>
-        public async System.Threading.Tasks.Task<PivotFieldResponse> CellsPivotTablesGetPivotTableFieldAsync (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, string folder = null)
+        public async System.Threading.Tasks.Task<PivotFieldResponse> CellsPivotTablesGetPivotTableFieldAsync (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, string folder = null, string storage = null)
         {
-             ApiResponse<PivotFieldResponse> localVarResponse = await CellsPivotTablesGetPivotTableFieldAsyncWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldIndex, pivotFieldType, folder);
+             ApiResponse<PivotFieldResponse> localVarResponse = await CellsPivotTablesGetPivotTableFieldAsyncWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldIndex, pivotFieldType, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -2283,8 +2434,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotFieldIndex">The field index in the base fields.</param>
         /// <param name="pivotFieldType">The fields area type.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (PivotFieldResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<PivotFieldResponse>> CellsPivotTablesGetPivotTableFieldAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<PivotFieldResponse>> CellsPivotTablesGetPivotTableFieldAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2330,6 +2482,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (pivotFieldIndex != null) localVarQueryParams.Add("pivotFieldIndex", Configuration.ApiClient.ParameterToString(pivotFieldIndex)); // query parameter
             if (pivotFieldType != null) localVarQueryParams.Add("pivotFieldType", Configuration.ApiClient.ParameterToString(pivotFieldType)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2358,10 +2511,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivottableIndex"></param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>PivotTableResponse</returns>
-        public PivotTableResponse CellsPivotTablesGetWorksheetPivotTable (string name, string sheetName, int? pivottableIndex, string folder = null)
+        public PivotTableResponse CellsPivotTablesGetWorksheetPivotTable (string name, string sheetName, int? pivottableIndex, string folder = null, string storage = null)
         {
-             ApiResponse<PivotTableResponse> localVarResponse = CellsPivotTablesGetWorksheetPivotTableWithHttpInfo(name, sheetName, pivottableIndex, folder);
+             ApiResponse<PivotTableResponse> localVarResponse = CellsPivotTablesGetWorksheetPivotTableWithHttpInfo(name, sheetName, pivottableIndex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -2373,8 +2527,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivottableIndex"></param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of PivotTableResponse</returns>
-        public ApiResponse< PivotTableResponse > CellsPivotTablesGetWorksheetPivotTableWithHttpInfo (string name, string sheetName, int? pivottableIndex, string folder = null)
+        public ApiResponse< PivotTableResponse > CellsPivotTablesGetWorksheetPivotTableWithHttpInfo (string name, string sheetName, int? pivottableIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2412,6 +2567,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (pivottableIndex != null) localVarPathParams.Add("pivottableIndex", Configuration.ApiClient.ParameterToString(pivottableIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2440,10 +2596,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivottableIndex"></param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of PivotTableResponse</returns>
-        public async System.Threading.Tasks.Task<PivotTableResponse> CellsPivotTablesGetWorksheetPivotTableAsync (string name, string sheetName, int? pivottableIndex, string folder = null)
+        public async System.Threading.Tasks.Task<PivotTableResponse> CellsPivotTablesGetWorksheetPivotTableAsync (string name, string sheetName, int? pivottableIndex, string folder = null, string storage = null)
         {
-             ApiResponse<PivotTableResponse> localVarResponse = await CellsPivotTablesGetWorksheetPivotTableAsyncWithHttpInfo(name, sheetName, pivottableIndex, folder);
+             ApiResponse<PivotTableResponse> localVarResponse = await CellsPivotTablesGetWorksheetPivotTableAsyncWithHttpInfo(name, sheetName, pivottableIndex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -2456,8 +2613,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivottableIndex"></param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (PivotTableResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<PivotTableResponse>> CellsPivotTablesGetWorksheetPivotTableAsyncWithHttpInfo (string name, string sheetName, int? pivottableIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<PivotTableResponse>> CellsPivotTablesGetWorksheetPivotTableAsyncWithHttpInfo (string name, string sheetName, int? pivottableIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2495,6 +2653,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (pivottableIndex != null) localVarPathParams.Add("pivottableIndex", Configuration.ApiClient.ParameterToString(pivottableIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2524,10 +2683,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotTableIndex"></param>
         /// <param name="filterIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>PivotFilterResponse</returns>
-        public PivotFilterResponse CellsPivotTablesGetWorksheetPivotTableFilter (string name, string sheetName, int? pivotTableIndex, int? filterIndex, string folder = null)
+        public PivotFilterResponse CellsPivotTablesGetWorksheetPivotTableFilter (string name, string sheetName, int? pivotTableIndex, int? filterIndex, string folder = null, string storage = null)
         {
-             ApiResponse<PivotFilterResponse> localVarResponse = CellsPivotTablesGetWorksheetPivotTableFilterWithHttpInfo(name, sheetName, pivotTableIndex, filterIndex, folder);
+             ApiResponse<PivotFilterResponse> localVarResponse = CellsPivotTablesGetWorksheetPivotTableFilterWithHttpInfo(name, sheetName, pivotTableIndex, filterIndex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -2540,8 +2700,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotTableIndex"></param>
         /// <param name="filterIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of PivotFilterResponse</returns>
-        public ApiResponse< PivotFilterResponse > CellsPivotTablesGetWorksheetPivotTableFilterWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? filterIndex, string folder = null)
+        public ApiResponse< PivotFilterResponse > CellsPivotTablesGetWorksheetPivotTableFilterWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? filterIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2583,6 +2744,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (pivotTableIndex != null) localVarPathParams.Add("pivotTableIndex", Configuration.ApiClient.ParameterToString(pivotTableIndex)); // path parameter
             if (filterIndex != null) localVarPathParams.Add("filterIndex", Configuration.ApiClient.ParameterToString(filterIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2612,10 +2774,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotTableIndex"></param>
         /// <param name="filterIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of PivotFilterResponse</returns>
-        public async System.Threading.Tasks.Task<PivotFilterResponse> CellsPivotTablesGetWorksheetPivotTableFilterAsync (string name, string sheetName, int? pivotTableIndex, int? filterIndex, string folder = null)
+        public async System.Threading.Tasks.Task<PivotFilterResponse> CellsPivotTablesGetWorksheetPivotTableFilterAsync (string name, string sheetName, int? pivotTableIndex, int? filterIndex, string folder = null, string storage = null)
         {
-             ApiResponse<PivotFilterResponse> localVarResponse = await CellsPivotTablesGetWorksheetPivotTableFilterAsyncWithHttpInfo(name, sheetName, pivotTableIndex, filterIndex, folder);
+             ApiResponse<PivotFilterResponse> localVarResponse = await CellsPivotTablesGetWorksheetPivotTableFilterAsyncWithHttpInfo(name, sheetName, pivotTableIndex, filterIndex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -2629,8 +2792,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="pivotTableIndex"></param>
         /// <param name="filterIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (PivotFilterResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<PivotFilterResponse>> CellsPivotTablesGetWorksheetPivotTableFilterAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? filterIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<PivotFilterResponse>> CellsPivotTablesGetWorksheetPivotTableFilterAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? filterIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2672,6 +2836,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (pivotTableIndex != null) localVarPathParams.Add("pivotTableIndex", Configuration.ApiClient.ParameterToString(pivotTableIndex)); // path parameter
             if (filterIndex != null) localVarPathParams.Add("filterIndex", Configuration.ApiClient.ParameterToString(filterIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2700,10 +2865,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="pivotTableIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>PivotFiltersResponse</returns>
-        public PivotFiltersResponse CellsPivotTablesGetWorksheetPivotTableFilters (string name, string sheetName, int? pivotTableIndex, string folder = null)
+        public PivotFiltersResponse CellsPivotTablesGetWorksheetPivotTableFilters (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null)
         {
-             ApiResponse<PivotFiltersResponse> localVarResponse = CellsPivotTablesGetWorksheetPivotTableFiltersWithHttpInfo(name, sheetName, pivotTableIndex, folder);
+             ApiResponse<PivotFiltersResponse> localVarResponse = CellsPivotTablesGetWorksheetPivotTableFiltersWithHttpInfo(name, sheetName, pivotTableIndex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -2715,8 +2881,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="pivotTableIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of PivotFiltersResponse</returns>
-        public ApiResponse< PivotFiltersResponse > CellsPivotTablesGetWorksheetPivotTableFiltersWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null)
+        public ApiResponse< PivotFiltersResponse > CellsPivotTablesGetWorksheetPivotTableFiltersWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2754,6 +2921,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (pivotTableIndex != null) localVarPathParams.Add("pivotTableIndex", Configuration.ApiClient.ParameterToString(pivotTableIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2782,10 +2950,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="pivotTableIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of PivotFiltersResponse</returns>
-        public async System.Threading.Tasks.Task<PivotFiltersResponse> CellsPivotTablesGetWorksheetPivotTableFiltersAsync (string name, string sheetName, int? pivotTableIndex, string folder = null)
+        public async System.Threading.Tasks.Task<PivotFiltersResponse> CellsPivotTablesGetWorksheetPivotTableFiltersAsync (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null)
         {
-             ApiResponse<PivotFiltersResponse> localVarResponse = await CellsPivotTablesGetWorksheetPivotTableFiltersAsyncWithHttpInfo(name, sheetName, pivotTableIndex, folder);
+             ApiResponse<PivotFiltersResponse> localVarResponse = await CellsPivotTablesGetWorksheetPivotTableFiltersAsyncWithHttpInfo(name, sheetName, pivotTableIndex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -2798,8 +2967,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="pivotTableIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (PivotFiltersResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<PivotFiltersResponse>> CellsPivotTablesGetWorksheetPivotTableFiltersAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<PivotFiltersResponse>> CellsPivotTablesGetWorksheetPivotTableFiltersAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2837,6 +3007,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (pivotTableIndex != null) localVarPathParams.Add("pivotTableIndex", Configuration.ApiClient.ParameterToString(pivotTableIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2864,10 +3035,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>PivotTablesResponse</returns>
-        public PivotTablesResponse CellsPivotTablesGetWorksheetPivotTables (string name, string sheetName, string folder = null)
+        public PivotTablesResponse CellsPivotTablesGetWorksheetPivotTables (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<PivotTablesResponse> localVarResponse = CellsPivotTablesGetWorksheetPivotTablesWithHttpInfo(name, sheetName, folder);
+             ApiResponse<PivotTablesResponse> localVarResponse = CellsPivotTablesGetWorksheetPivotTablesWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -2878,8 +3050,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of PivotTablesResponse</returns>
-        public ApiResponse< PivotTablesResponse > CellsPivotTablesGetWorksheetPivotTablesWithHttpInfo (string name, string sheetName, string folder = null)
+        public ApiResponse< PivotTablesResponse > CellsPivotTablesGetWorksheetPivotTablesWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2913,6 +3086,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2940,10 +3114,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of PivotTablesResponse</returns>
-        public async System.Threading.Tasks.Task<PivotTablesResponse> CellsPivotTablesGetWorksheetPivotTablesAsync (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<PivotTablesResponse> CellsPivotTablesGetWorksheetPivotTablesAsync (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<PivotTablesResponse> localVarResponse = await CellsPivotTablesGetWorksheetPivotTablesAsyncWithHttpInfo(name, sheetName, folder);
+             ApiResponse<PivotTablesResponse> localVarResponse = await CellsPivotTablesGetWorksheetPivotTablesAsyncWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -2955,8 +3130,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (PivotTablesResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<PivotTablesResponse>> CellsPivotTablesGetWorksheetPivotTablesAsyncWithHttpInfo (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<PivotTablesResponse>> CellsPivotTablesGetWorksheetPivotTablesAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2990,6 +3166,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3022,10 +3199,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="style">Style dto in request body. (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPivotTablesPostPivotTableCellStyle (string name, string sheetName, int? pivotTableIndex, int? column, int? row, Style style = null, bool? needReCalculate = null, string folder = null)
+        public SaaSposeResponse CellsPivotTablesPostPivotTableCellStyle (string name, string sheetName, int? pivotTableIndex, int? column, int? row, Style style = null, bool? needReCalculate = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesPostPivotTableCellStyleWithHttpInfo(name, sheetName, pivotTableIndex, column, row, style, needReCalculate, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesPostPivotTableCellStyleWithHttpInfo(name, sheetName, pivotTableIndex, column, row, style, needReCalculate, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -3041,8 +3219,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="style">Style dto in request body. (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPivotTablesPostPivotTableCellStyleWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? column, int? row, Style style = null, bool? needReCalculate = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPivotTablesPostPivotTableCellStyleWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? column, int? row, Style style = null, bool? needReCalculate = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3089,6 +3268,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (row != null) localVarQueryParams.Add("row", Configuration.ApiClient.ParameterToString(row)); // query parameter
             if (needReCalculate != null) localVarQueryParams.Add("needReCalculate", Configuration.ApiClient.ParameterToString(needReCalculate)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (style != null && style.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(style); // http body (model) parameter
@@ -3129,10 +3309,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="style">Style dto in request body. (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostPivotTableCellStyleAsync (string name, string sheetName, int? pivotTableIndex, int? column, int? row, Style style = null, bool? needReCalculate = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostPivotTableCellStyleAsync (string name, string sheetName, int? pivotTableIndex, int? column, int? row, Style style = null, bool? needReCalculate = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesPostPivotTableCellStyleAsyncWithHttpInfo(name, sheetName, pivotTableIndex, column, row, style, needReCalculate, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesPostPivotTableCellStyleAsyncWithHttpInfo(name, sheetName, pivotTableIndex, column, row, style, needReCalculate, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -3149,8 +3330,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="style">Style dto in request body. (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostPivotTableCellStyleAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? column, int? row, Style style = null, bool? needReCalculate = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostPivotTableCellStyleAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? column, int? row, Style style = null, bool? needReCalculate = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3197,6 +3379,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (row != null) localVarQueryParams.Add("row", Configuration.ApiClient.ParameterToString(row)); // query parameter
             if (needReCalculate != null) localVarQueryParams.Add("needReCalculate", Configuration.ApiClient.ParameterToString(needReCalculate)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (style != null && style.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(style); // http body (model) parameter
@@ -3238,10 +3421,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isHide"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPivotTablesPostPivotTableFieldHideItem (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, int? fieldIndex, int? itemIndex, bool? isHide, bool? needReCalculate = null, string folder = null)
+        public SaaSposeResponse CellsPivotTablesPostPivotTableFieldHideItem (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, int? fieldIndex, int? itemIndex, bool? isHide, bool? needReCalculate = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesPostPivotTableFieldHideItemWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldType, fieldIndex, itemIndex, isHide, needReCalculate, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesPostPivotTableFieldHideItemWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldType, fieldIndex, itemIndex, isHide, needReCalculate, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -3258,8 +3442,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isHide"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPivotTablesPostPivotTableFieldHideItemWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, int? fieldIndex, int? itemIndex, bool? isHide, bool? needReCalculate = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPivotTablesPostPivotTableFieldHideItemWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, int? fieldIndex, int? itemIndex, bool? isHide, bool? needReCalculate = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3314,6 +3499,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (isHide != null) localVarQueryParams.Add("isHide", Configuration.ApiClient.ParameterToString(isHide)); // query parameter
             if (needReCalculate != null) localVarQueryParams.Add("needReCalculate", Configuration.ApiClient.ParameterToString(needReCalculate)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3347,10 +3533,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isHide"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostPivotTableFieldHideItemAsync (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, int? fieldIndex, int? itemIndex, bool? isHide, bool? needReCalculate = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostPivotTableFieldHideItemAsync (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, int? fieldIndex, int? itemIndex, bool? isHide, bool? needReCalculate = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesPostPivotTableFieldHideItemAsyncWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldType, fieldIndex, itemIndex, isHide, needReCalculate, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesPostPivotTableFieldHideItemAsyncWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldType, fieldIndex, itemIndex, isHide, needReCalculate, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -3368,8 +3555,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isHide"></param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostPivotTableFieldHideItemAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, int? fieldIndex, int? itemIndex, bool? isHide, bool? needReCalculate = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostPivotTableFieldHideItemAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, int? fieldIndex, int? itemIndex, bool? isHide, bool? needReCalculate = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3424,6 +3612,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (isHide != null) localVarQueryParams.Add("isHide", Configuration.ApiClient.ParameterToString(isHide)); // query parameter
             if (needReCalculate != null) localVarQueryParams.Add("needReCalculate", Configuration.ApiClient.ParameterToString(needReCalculate)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3455,10 +3644,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="from"></param>
         /// <param name="to"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPivotTablesPostPivotTableFieldMoveTo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, string from, string to, string folder = null)
+        public SaaSposeResponse CellsPivotTablesPostPivotTableFieldMoveTo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, string from, string to, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesPostPivotTableFieldMoveToWithHttpInfo(name, sheetName, pivotTableIndex, fieldIndex, from, to, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesPostPivotTableFieldMoveToWithHttpInfo(name, sheetName, pivotTableIndex, fieldIndex, from, to, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -3473,8 +3663,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="from"></param>
         /// <param name="to"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPivotTablesPostPivotTableFieldMoveToWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, string from, string to, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPivotTablesPostPivotTableFieldMoveToWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, string from, string to, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3524,6 +3715,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (from != null) localVarQueryParams.Add("from", Configuration.ApiClient.ParameterToString(from)); // query parameter
             if (to != null) localVarQueryParams.Add("to", Configuration.ApiClient.ParameterToString(to)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3555,10 +3747,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="from"></param>
         /// <param name="to"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostPivotTableFieldMoveToAsync (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, string from, string to, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostPivotTableFieldMoveToAsync (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, string from, string to, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesPostPivotTableFieldMoveToAsyncWithHttpInfo(name, sheetName, pivotTableIndex, fieldIndex, from, to, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesPostPivotTableFieldMoveToAsyncWithHttpInfo(name, sheetName, pivotTableIndex, fieldIndex, from, to, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -3574,8 +3767,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="from"></param>
         /// <param name="to"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostPivotTableFieldMoveToAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, string from, string to, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostPivotTableFieldMoveToAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, string from, string to, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3625,6 +3819,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (from != null) localVarQueryParams.Add("from", Configuration.ApiClient.ParameterToString(from)); // query parameter
             if (to != null) localVarQueryParams.Add("to", Configuration.ApiClient.ParameterToString(to)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3655,10 +3850,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="style">Style dto in request body. (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPivotTablesPostPivotTableStyle (string name, string sheetName, int? pivotTableIndex, Style style = null, bool? needReCalculate = null, string folder = null)
+        public SaaSposeResponse CellsPivotTablesPostPivotTableStyle (string name, string sheetName, int? pivotTableIndex, Style style = null, bool? needReCalculate = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesPostPivotTableStyleWithHttpInfo(name, sheetName, pivotTableIndex, style, needReCalculate, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesPostPivotTableStyleWithHttpInfo(name, sheetName, pivotTableIndex, style, needReCalculate, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -3672,8 +3868,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="style">Style dto in request body. (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPivotTablesPostPivotTableStyleWithHttpInfo (string name, string sheetName, int? pivotTableIndex, Style style = null, bool? needReCalculate = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPivotTablesPostPivotTableStyleWithHttpInfo (string name, string sheetName, int? pivotTableIndex, Style style = null, bool? needReCalculate = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3712,6 +3909,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (pivotTableIndex != null) localVarPathParams.Add("pivotTableIndex", Configuration.ApiClient.ParameterToString(pivotTableIndex)); // path parameter
             if (needReCalculate != null) localVarQueryParams.Add("needReCalculate", Configuration.ApiClient.ParameterToString(needReCalculate)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (style != null && style.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(style); // http body (model) parameter
@@ -3750,10 +3948,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="style">Style dto in request body. (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostPivotTableStyleAsync (string name, string sheetName, int? pivotTableIndex, Style style = null, bool? needReCalculate = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostPivotTableStyleAsync (string name, string sheetName, int? pivotTableIndex, Style style = null, bool? needReCalculate = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesPostPivotTableStyleAsyncWithHttpInfo(name, sheetName, pivotTableIndex, style, needReCalculate, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesPostPivotTableStyleAsyncWithHttpInfo(name, sheetName, pivotTableIndex, style, needReCalculate, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -3768,8 +3967,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="style">Style dto in request body. (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostPivotTableStyleAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, Style style = null, bool? needReCalculate = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostPivotTableStyleAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, Style style = null, bool? needReCalculate = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3808,6 +4008,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (pivotTableIndex != null) localVarPathParams.Add("pivotTableIndex", Configuration.ApiClient.ParameterToString(pivotTableIndex)); // path parameter
             if (needReCalculate != null) localVarQueryParams.Add("needReCalculate", Configuration.ApiClient.ParameterToString(needReCalculate)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (style != null && style.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(style); // http body (model) parameter
@@ -3844,10 +4045,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivotTableIndex">Pivot table index</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPivotTablesPostWorksheetPivotTableCalculate (string name, string sheetName, int? pivotTableIndex, string folder = null)
+        public SaaSposeResponse CellsPivotTablesPostWorksheetPivotTableCalculate (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesPostWorksheetPivotTableCalculateWithHttpInfo(name, sheetName, pivotTableIndex, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesPostWorksheetPivotTableCalculateWithHttpInfo(name, sheetName, pivotTableIndex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -3859,8 +4061,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivotTableIndex">Pivot table index</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPivotTablesPostWorksheetPivotTableCalculateWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPivotTablesPostWorksheetPivotTableCalculateWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3898,6 +4101,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (pivotTableIndex != null) localVarPathParams.Add("pivotTableIndex", Configuration.ApiClient.ParameterToString(pivotTableIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3926,10 +4130,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivotTableIndex">Pivot table index</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostWorksheetPivotTableCalculateAsync (string name, string sheetName, int? pivotTableIndex, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostWorksheetPivotTableCalculateAsync (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesPostWorksheetPivotTableCalculateAsyncWithHttpInfo(name, sheetName, pivotTableIndex, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesPostWorksheetPivotTableCalculateAsyncWithHttpInfo(name, sheetName, pivotTableIndex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -3942,8 +4147,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivotTableIndex">Pivot table index</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostWorksheetPivotTableCalculateAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostWorksheetPivotTableCalculateAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3981,6 +4187,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (pivotTableIndex != null) localVarPathParams.Add("pivotTableIndex", Configuration.ApiClient.ParameterToString(pivotTableIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -4012,10 +4219,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="column"> (optional)</param>
         /// <param name="destCellName"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPivotTablesPostWorksheetPivotTableMove (string name, string sheetName, int? pivotTableIndex, int? row = null, int? column = null, string destCellName = null, string folder = null)
+        public SaaSposeResponse CellsPivotTablesPostWorksheetPivotTableMove (string name, string sheetName, int? pivotTableIndex, int? row = null, int? column = null, string destCellName = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesPostWorksheetPivotTableMoveWithHttpInfo(name, sheetName, pivotTableIndex, row, column, destCellName, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesPostWorksheetPivotTableMoveWithHttpInfo(name, sheetName, pivotTableIndex, row, column, destCellName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -4030,8 +4238,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="column"> (optional)</param>
         /// <param name="destCellName"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPivotTablesPostWorksheetPivotTableMoveWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? row = null, int? column = null, string destCellName = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPivotTablesPostWorksheetPivotTableMoveWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? row = null, int? column = null, string destCellName = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -4072,6 +4281,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (column != null) localVarQueryParams.Add("column", Configuration.ApiClient.ParameterToString(column)); // query parameter
             if (destCellName != null) localVarQueryParams.Add("destCellName", Configuration.ApiClient.ParameterToString(destCellName)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -4103,10 +4313,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="column"> (optional)</param>
         /// <param name="destCellName"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostWorksheetPivotTableMoveAsync (string name, string sheetName, int? pivotTableIndex, int? row = null, int? column = null, string destCellName = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPostWorksheetPivotTableMoveAsync (string name, string sheetName, int? pivotTableIndex, int? row = null, int? column = null, string destCellName = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesPostWorksheetPivotTableMoveAsyncWithHttpInfo(name, sheetName, pivotTableIndex, row, column, destCellName, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesPostWorksheetPivotTableMoveAsyncWithHttpInfo(name, sheetName, pivotTableIndex, row, column, destCellName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -4122,8 +4333,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="column"> (optional)</param>
         /// <param name="destCellName"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostWorksheetPivotTableMoveAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? row = null, int? column = null, string destCellName = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPostWorksheetPivotTableMoveAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? row = null, int? column = null, string destCellName = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -4164,6 +4376,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (column != null) localVarQueryParams.Add("column", Configuration.ApiClient.ParameterToString(column)); // query parameter
             if (destCellName != null) localVarQueryParams.Add("destCellName", Configuration.ApiClient.ParameterToString(destCellName)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -4195,10 +4408,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="request">Dto that conrains field indexes (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPivotTablesPutPivotTableField (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, bool? needReCalculate = null, string folder = null)
+        public SaaSposeResponse CellsPivotTablesPutPivotTableField (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, bool? needReCalculate = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesPutPivotTableFieldWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldType, request, needReCalculate, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesPutPivotTableFieldWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldType, request, needReCalculate, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -4213,8 +4427,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="request">Dto that conrains field indexes (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPivotTablesPutPivotTableFieldWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, bool? needReCalculate = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPivotTablesPutPivotTableFieldWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, bool? needReCalculate = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -4257,6 +4472,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (pivotFieldType != null) localVarQueryParams.Add("pivotFieldType", Configuration.ApiClient.ParameterToString(pivotFieldType)); // query parameter
             if (needReCalculate != null) localVarQueryParams.Add("needReCalculate", Configuration.ApiClient.ParameterToString(needReCalculate)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (request != null && request.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(request); // http body (model) parameter
@@ -4296,10 +4512,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="request">Dto that conrains field indexes (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPutPivotTableFieldAsync (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, bool? needReCalculate = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPutPivotTableFieldAsync (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, bool? needReCalculate = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesPutPivotTableFieldAsyncWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldType, request, needReCalculate, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesPutPivotTableFieldAsyncWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldType, request, needReCalculate, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -4315,8 +4532,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="request">Dto that conrains field indexes (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPutPivotTableFieldAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, bool? needReCalculate = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPutPivotTableFieldAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, bool? needReCalculate = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -4359,6 +4577,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (pivotFieldType != null) localVarQueryParams.Add("pivotFieldType", Configuration.ApiClient.ParameterToString(pivotFieldType)); // query parameter
             if (needReCalculate != null) localVarQueryParams.Add("needReCalculate", Configuration.ApiClient.ParameterToString(needReCalculate)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (request != null && request.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(request); // http body (model) parameter
@@ -4395,14 +4614,15 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="request">CreatePivotTableRequest dto in request body. (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <param name="sourceData">The data for the new PivotTable cache. (optional)</param>
         /// <param name="destCellName">The cell in the upper-left corner of the PivotTable report&#39;s destination range. (optional)</param>
         /// <param name="tableName">The name of the new PivotTable report. (optional)</param>
         /// <param name="useSameSource">Indicates whether using same data source when another existing pivot table has used this data source. If the property is true, it will save memory. (optional)</param>
         /// <returns>PivotTableResponse</returns>
-        public PivotTableResponse CellsPivotTablesPutWorksheetPivotTable (string name, string sheetName, CreatePivotTableRequest request = null, string folder = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null)
+        public PivotTableResponse CellsPivotTablesPutWorksheetPivotTable (string name, string sheetName, CreatePivotTableRequest request = null, string folder = null, string storage = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null)
         {
-             ApiResponse<PivotTableResponse> localVarResponse = CellsPivotTablesPutWorksheetPivotTableWithHttpInfo(name, sheetName, request, folder, sourceData, destCellName, tableName, useSameSource);
+             ApiResponse<PivotTableResponse> localVarResponse = CellsPivotTablesPutWorksheetPivotTableWithHttpInfo(name, sheetName, request, folder, storage, sourceData, destCellName, tableName, useSameSource);
              return localVarResponse.Data;
         }
 
@@ -4414,12 +4634,13 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="request">CreatePivotTableRequest dto in request body. (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <param name="sourceData">The data for the new PivotTable cache. (optional)</param>
         /// <param name="destCellName">The cell in the upper-left corner of the PivotTable report&#39;s destination range. (optional)</param>
         /// <param name="tableName">The name of the new PivotTable report. (optional)</param>
         /// <param name="useSameSource">Indicates whether using same data source when another existing pivot table has used this data source. If the property is true, it will save memory. (optional)</param>
         /// <returns>ApiResponse of PivotTableResponse</returns>
-        public ApiResponse< PivotTableResponse > CellsPivotTablesPutWorksheetPivotTableWithHttpInfo (string name, string sheetName, CreatePivotTableRequest request = null, string folder = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null)
+        public ApiResponse< PivotTableResponse > CellsPivotTablesPutWorksheetPivotTableWithHttpInfo (string name, string sheetName, CreatePivotTableRequest request = null, string folder = null, string storage = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -4453,6 +4674,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (sourceData != null) localVarQueryParams.Add("sourceData", Configuration.ApiClient.ParameterToString(sourceData)); // query parameter
             if (destCellName != null) localVarQueryParams.Add("destCellName", Configuration.ApiClient.ParameterToString(destCellName)); // query parameter
             if (tableName != null) localVarQueryParams.Add("tableName", Configuration.ApiClient.ParameterToString(tableName)); // query parameter
@@ -4493,14 +4715,15 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="request">CreatePivotTableRequest dto in request body. (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <param name="sourceData">The data for the new PivotTable cache. (optional)</param>
         /// <param name="destCellName">The cell in the upper-left corner of the PivotTable report&#39;s destination range. (optional)</param>
         /// <param name="tableName">The name of the new PivotTable report. (optional)</param>
         /// <param name="useSameSource">Indicates whether using same data source when another existing pivot table has used this data source. If the property is true, it will save memory. (optional)</param>
         /// <returns>Task of PivotTableResponse</returns>
-        public async System.Threading.Tasks.Task<PivotTableResponse> CellsPivotTablesPutWorksheetPivotTableAsync (string name, string sheetName, CreatePivotTableRequest request = null, string folder = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null)
+        public async System.Threading.Tasks.Task<PivotTableResponse> CellsPivotTablesPutWorksheetPivotTableAsync (string name, string sheetName, CreatePivotTableRequest request = null, string folder = null, string storage = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null)
         {
-             ApiResponse<PivotTableResponse> localVarResponse = await CellsPivotTablesPutWorksheetPivotTableAsyncWithHttpInfo(name, sheetName, request, folder, sourceData, destCellName, tableName, useSameSource);
+             ApiResponse<PivotTableResponse> localVarResponse = await CellsPivotTablesPutWorksheetPivotTableAsyncWithHttpInfo(name, sheetName, request, folder, storage, sourceData, destCellName, tableName, useSameSource);
              return localVarResponse.Data;
 
         }
@@ -4513,12 +4736,13 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="request">CreatePivotTableRequest dto in request body. (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <param name="sourceData">The data for the new PivotTable cache. (optional)</param>
         /// <param name="destCellName">The cell in the upper-left corner of the PivotTable report&#39;s destination range. (optional)</param>
         /// <param name="tableName">The name of the new PivotTable report. (optional)</param>
         /// <param name="useSameSource">Indicates whether using same data source when another existing pivot table has used this data source. If the property is true, it will save memory. (optional)</param>
         /// <returns>Task of ApiResponse (PivotTableResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<PivotTableResponse>> CellsPivotTablesPutWorksheetPivotTableAsyncWithHttpInfo (string name, string sheetName, CreatePivotTableRequest request = null, string folder = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null)
+        public async System.Threading.Tasks.Task<ApiResponse<PivotTableResponse>> CellsPivotTablesPutWorksheetPivotTableAsyncWithHttpInfo (string name, string sheetName, CreatePivotTableRequest request = null, string folder = null, string storage = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -4552,6 +4776,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (sourceData != null) localVarQueryParams.Add("sourceData", Configuration.ApiClient.ParameterToString(sourceData)); // query parameter
             if (destCellName != null) localVarQueryParams.Add("destCellName", Configuration.ApiClient.ParameterToString(destCellName)); // query parameter
             if (tableName != null) localVarQueryParams.Add("tableName", Configuration.ApiClient.ParameterToString(tableName)); // query parameter
@@ -4594,10 +4819,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="filter"> (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPivotTablesPutWorksheetPivotTableFilter (string name, string sheetName, int? pivotTableIndex, PivotFilter filter = null, bool? needReCalculate = null, string folder = null)
+        public SaaSposeResponse CellsPivotTablesPutWorksheetPivotTableFilter (string name, string sheetName, int? pivotTableIndex, PivotFilter filter = null, bool? needReCalculate = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesPutWorksheetPivotTableFilterWithHttpInfo(name, sheetName, pivotTableIndex, filter, needReCalculate, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPivotTablesPutWorksheetPivotTableFilterWithHttpInfo(name, sheetName, pivotTableIndex, filter, needReCalculate, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -4611,8 +4837,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="filter"> (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPivotTablesPutWorksheetPivotTableFilterWithHttpInfo (string name, string sheetName, int? pivotTableIndex, PivotFilter filter = null, bool? needReCalculate = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPivotTablesPutWorksheetPivotTableFilterWithHttpInfo (string name, string sheetName, int? pivotTableIndex, PivotFilter filter = null, bool? needReCalculate = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -4651,6 +4878,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (pivotTableIndex != null) localVarPathParams.Add("pivotTableIndex", Configuration.ApiClient.ParameterToString(pivotTableIndex)); // path parameter
             if (needReCalculate != null) localVarQueryParams.Add("needReCalculate", Configuration.ApiClient.ParameterToString(needReCalculate)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (filter != null && filter.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(filter); // http body (model) parameter
@@ -4689,10 +4917,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="filter"> (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPutWorksheetPivotTableFilterAsync (string name, string sheetName, int? pivotTableIndex, PivotFilter filter = null, bool? needReCalculate = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPivotTablesPutWorksheetPivotTableFilterAsync (string name, string sheetName, int? pivotTableIndex, PivotFilter filter = null, bool? needReCalculate = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesPutWorksheetPivotTableFilterAsyncWithHttpInfo(name, sheetName, pivotTableIndex, filter, needReCalculate, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPivotTablesPutWorksheetPivotTableFilterAsyncWithHttpInfo(name, sheetName, pivotTableIndex, filter, needReCalculate, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -4707,8 +4936,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="filter"> (optional)</param>
         /// <param name="needReCalculate"> (optional, default to false)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPutWorksheetPivotTableFilterAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, PivotFilter filter = null, bool? needReCalculate = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPivotTablesPutWorksheetPivotTableFilterAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, PivotFilter filter = null, bool? needReCalculate = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -4747,6 +4977,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (pivotTableIndex != null) localVarPathParams.Add("pivotTableIndex", Configuration.ApiClient.ParameterToString(pivotTableIndex)); // path parameter
             if (needReCalculate != null) localVarQueryParams.Add("needReCalculate", Configuration.ApiClient.ParameterToString(needReCalculate)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (filter != null && filter.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(filter); // http body (model) parameter

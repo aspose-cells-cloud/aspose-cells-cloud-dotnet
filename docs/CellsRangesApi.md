@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 <a name="cellsrangesgetworksheetcellsrangevalue"></a>
 # **CellsRangesGetWorksheetCellsRangeValue**
-> RangeValueResponse CellsRangesGetWorksheetCellsRangeValue (string name, string sheetName, string namerange = null, int? firstRow = null, int? firstColumn = null, int? rowCount = null, int? columnCount = null, string folder = null)
+> RangeValueResponse CellsRangesGetWorksheetCellsRangeValue (string name, string sheetName, string namerange = null, int? firstRow = null, int? firstColumn = null, int? rowCount = null, int? columnCount = null, string folder = null, string storage = null)
 
 Get cells list in a range by range name or row column indexes  
 
@@ -45,11 +45,12 @@ namespace Example
             var rowCount = 56;  // int? | the count of rows in the range (optional) 
             var columnCount = 56;  // int? | the count of columns in the range (optional) 
             var folder = folder_example;  // string | Workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get cells list in a range by range name or row column indexes  
-                RangeValueResponse result = apiInstance.CellsRangesGetWorksheetCellsRangeValue(name, sheetName, namerange, firstRow, firstColumn, rowCount, columnCount, folder);
+                RangeValueResponse result = apiInstance.CellsRangesGetWorksheetCellsRangeValue(name, sheetName, namerange, firstRow, firstColumn, rowCount, columnCount, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -73,6 +74,7 @@ Name | Type | Description  | Notes
  **rowCount** | **int?**| the count of rows in the range | [optional] 
  **columnCount** | **int?**| the count of columns in the range | [optional] 
  **folder** | **string**| Workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -91,7 +93,7 @@ No authorization required
 
 <a name="cellsrangespostworksheetcellsrangecolumnwidth"></a>
 # **CellsRangesPostWorksheetCellsRangeColumnWidth**
-> SaaSposeResponse CellsRangesPostWorksheetCellsRangeColumnWidth (string name, string sheetName, double? value, Range range = null, string folder = null)
+> SaaSposeResponse CellsRangesPostWorksheetCellsRangeColumnWidth (string name, string sheetName, double? value, Range range = null, string folder = null, string storage = null)
 
 Set column width of range
 
@@ -115,11 +117,12 @@ namespace Example
             var value = 1.2;  // double? | 
             var range = new Range(); // Range |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Set column width of range
-                SaaSposeResponse result = apiInstance.CellsRangesPostWorksheetCellsRangeColumnWidth(name, sheetName, value, range, folder);
+                SaaSposeResponse result = apiInstance.CellsRangesPostWorksheetCellsRangeColumnWidth(name, sheetName, value, range, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -140,6 +143,7 @@ Name | Type | Description  | Notes
  **value** | **double?**|  | 
  **range** | [**Range**](Range.md)|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -158,7 +162,7 @@ No authorization required
 
 <a name="cellsrangespostworksheetcellsrangemerge"></a>
 # **CellsRangesPostWorksheetCellsRangeMerge**
-> SaaSposeResponse CellsRangesPostWorksheetCellsRangeMerge (string name, string sheetName, Range range = null, string folder = null)
+> SaaSposeResponse CellsRangesPostWorksheetCellsRangeMerge (string name, string sheetName, Range range = null, string folder = null, string storage = null)
 
 Combines a range of cells into a single cell.              
 
@@ -181,11 +185,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | worksheet name
             var range = new Range(); // Range | range in worksheet  (optional) 
             var folder = folder_example;  // string | Workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Combines a range of cells into a single cell.              
-                SaaSposeResponse result = apiInstance.CellsRangesPostWorksheetCellsRangeMerge(name, sheetName, range, folder);
+                SaaSposeResponse result = apiInstance.CellsRangesPostWorksheetCellsRangeMerge(name, sheetName, range, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -205,6 +210,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| worksheet name | 
  **range** | [**Range**](Range.md)| range in worksheet  | [optional] 
  **folder** | **string**| Workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -223,7 +229,7 @@ No authorization required
 
 <a name="cellsrangespostworksheetcellsrangemoveto"></a>
 # **CellsRangesPostWorksheetCellsRangeMoveTo**
-> SaaSposeResponse CellsRangesPostWorksheetCellsRangeMoveTo (string name, string sheetName, int? destRow, int? destColumn, Range range = null, string folder = null)
+> SaaSposeResponse CellsRangesPostWorksheetCellsRangeMoveTo (string name, string sheetName, int? destRow, int? destColumn, Range range = null, string folder = null, string storage = null)
 
 Move the current range to the dest range.             
 
@@ -248,11 +254,12 @@ namespace Example
             var destColumn = 56;  // int? | The start column of the dest range.
             var range = new Range(); // Range | range in worksheet  (optional) 
             var folder = folder_example;  // string | Workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Move the current range to the dest range.             
-                SaaSposeResponse result = apiInstance.CellsRangesPostWorksheetCellsRangeMoveTo(name, sheetName, destRow, destColumn, range, folder);
+                SaaSposeResponse result = apiInstance.CellsRangesPostWorksheetCellsRangeMoveTo(name, sheetName, destRow, destColumn, range, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -274,6 +281,7 @@ Name | Type | Description  | Notes
  **destColumn** | **int?**| The start column of the dest range. | 
  **range** | [**Range**](Range.md)| range in worksheet  | [optional] 
  **folder** | **string**| Workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -292,7 +300,7 @@ No authorization required
 
 <a name="cellsrangespostworksheetcellsrangeoutlineborder"></a>
 # **CellsRangesPostWorksheetCellsRangeOutlineBorder**
-> SaaSposeResponse CellsRangesPostWorksheetCellsRangeOutlineBorder (string name, string sheetName, RangeSetOutlineBorderRequest rangeOperate = null, string folder = null)
+> SaaSposeResponse CellsRangesPostWorksheetCellsRangeOutlineBorder (string name, string sheetName, RangeSetOutlineBorderRequest rangeOperate = null, string folder = null, string storage = null)
 
 Sets outline border around a range of cells.
 
@@ -315,11 +323,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | worksheet name
             var rangeOperate = new RangeSetOutlineBorderRequest(); // RangeSetOutlineBorderRequest | Range Set OutlineBorder Request  (optional) 
             var folder = folder_example;  // string | Workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Sets outline border around a range of cells.
-                SaaSposeResponse result = apiInstance.CellsRangesPostWorksheetCellsRangeOutlineBorder(name, sheetName, rangeOperate, folder);
+                SaaSposeResponse result = apiInstance.CellsRangesPostWorksheetCellsRangeOutlineBorder(name, sheetName, rangeOperate, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -339,6 +348,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| worksheet name | 
  **rangeOperate** | [**RangeSetOutlineBorderRequest**](RangeSetOutlineBorderRequest.md)| Range Set OutlineBorder Request  | [optional] 
  **folder** | **string**| Workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -357,7 +367,7 @@ No authorization required
 
 <a name="cellsrangespostworksheetcellsrangerowheight"></a>
 # **CellsRangesPostWorksheetCellsRangeRowHeight**
-> SaaSposeResponse CellsRangesPostWorksheetCellsRangeRowHeight (string name, string sheetName, double? value, Range range = null, string folder = null)
+> SaaSposeResponse CellsRangesPostWorksheetCellsRangeRowHeight (string name, string sheetName, double? value, Range range = null, string folder = null, string storage = null)
 
 set row height of range
 
@@ -381,11 +391,12 @@ namespace Example
             var value = 1.2;  // double? | 
             var range = new Range(); // Range |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // set row height of range
-                SaaSposeResponse result = apiInstance.CellsRangesPostWorksheetCellsRangeRowHeight(name, sheetName, value, range, folder);
+                SaaSposeResponse result = apiInstance.CellsRangesPostWorksheetCellsRangeRowHeight(name, sheetName, value, range, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -406,6 +417,7 @@ Name | Type | Description  | Notes
  **value** | **double?**|  | 
  **range** | [**Range**](Range.md)|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -424,7 +436,7 @@ No authorization required
 
 <a name="cellsrangespostworksheetcellsrangestyle"></a>
 # **CellsRangesPostWorksheetCellsRangeStyle**
-> SaaSposeResponse CellsRangesPostWorksheetCellsRangeStyle (string name, string sheetName, RangeSetStyleRequest rangeOperate = null, string folder = null)
+> SaaSposeResponse CellsRangesPostWorksheetCellsRangeStyle (string name, string sheetName, RangeSetStyleRequest rangeOperate = null, string folder = null, string storage = null)
 
 Sets the style of the range.             
 
@@ -447,11 +459,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | worksheet name
             var rangeOperate = new RangeSetStyleRequest(); // RangeSetStyleRequest | Range Set Style Request  (optional) 
             var folder = folder_example;  // string | Workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Sets the style of the range.             
-                SaaSposeResponse result = apiInstance.CellsRangesPostWorksheetCellsRangeStyle(name, sheetName, rangeOperate, folder);
+                SaaSposeResponse result = apiInstance.CellsRangesPostWorksheetCellsRangeStyle(name, sheetName, rangeOperate, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -471,6 +484,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| worksheet name | 
  **rangeOperate** | [**RangeSetStyleRequest**](RangeSetStyleRequest.md)| Range Set Style Request  | [optional] 
  **folder** | **string**| Workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -489,7 +503,7 @@ No authorization required
 
 <a name="cellsrangespostworksheetcellsrangeunmerge"></a>
 # **CellsRangesPostWorksheetCellsRangeUnmerge**
-> SaaSposeResponse CellsRangesPostWorksheetCellsRangeUnmerge (string name, string sheetName, Range range = null, string folder = null)
+> SaaSposeResponse CellsRangesPostWorksheetCellsRangeUnmerge (string name, string sheetName, Range range = null, string folder = null, string storage = null)
 
 Unmerges merged cells of this range.             
 
@@ -512,11 +526,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | worksheet name
             var range = new Range(); // Range | range in worksheet  (optional) 
             var folder = folder_example;  // string | Workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Unmerges merged cells of this range.             
-                SaaSposeResponse result = apiInstance.CellsRangesPostWorksheetCellsRangeUnmerge(name, sheetName, range, folder);
+                SaaSposeResponse result = apiInstance.CellsRangesPostWorksheetCellsRangeUnmerge(name, sheetName, range, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -536,6 +551,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| worksheet name | 
  **range** | [**Range**](Range.md)| range in worksheet  | [optional] 
  **folder** | **string**| Workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -554,7 +570,7 @@ No authorization required
 
 <a name="cellsrangespostworksheetcellsrangevalue"></a>
 # **CellsRangesPostWorksheetCellsRangeValue**
-> SaaSposeResponse CellsRangesPostWorksheetCellsRangeValue (string name, string sheetName, string value, Range range = null, bool? isConverted = null, bool? setStyle = null, string folder = null)
+> SaaSposeResponse CellsRangesPostWorksheetCellsRangeValue (string name, string sheetName, string value, Range range = null, bool? isConverted = null, bool? setStyle = null, string folder = null, string storage = null)
 
 Puts a value into the range, if appropriate the value will be converted to other data type and cell's number format will be reset.             
 
@@ -580,11 +596,12 @@ namespace Example
             var isConverted = true;  // bool? | True: converted to other data type if appropriate. (optional)  (default to false)
             var setStyle = true;  // bool? | True: set the number format to cell's style when converting to other data type (optional)  (default to false)
             var folder = folder_example;  // string | Workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Puts a value into the range, if appropriate the value will be converted to other data type and cell's number format will be reset.             
-                SaaSposeResponse result = apiInstance.CellsRangesPostWorksheetCellsRangeValue(name, sheetName, value, range, isConverted, setStyle, folder);
+                SaaSposeResponse result = apiInstance.CellsRangesPostWorksheetCellsRangeValue(name, sheetName, value, range, isConverted, setStyle, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -607,6 +624,7 @@ Name | Type | Description  | Notes
  **isConverted** | **bool?**| True: converted to other data type if appropriate. | [optional] [default to false]
  **setStyle** | **bool?**| True: set the number format to cell&#39;s style when converting to other data type | [optional] [default to false]
  **folder** | **string**| Workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -625,7 +643,7 @@ No authorization required
 
 <a name="cellsrangespostworksheetcellsranges"></a>
 # **CellsRangesPostWorksheetCellsRanges**
-> SaaSposeResponse CellsRangesPostWorksheetCellsRanges (string name, string sheetName, RangeCopyRequest rangeOperate = null, string folder = null)
+> SaaSposeResponse CellsRangesPostWorksheetCellsRanges (string name, string sheetName, RangeCopyRequest rangeOperate = null, string folder = null, string storage = null)
 
 copy range in the worksheet
 
@@ -648,11 +666,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | worksheet name
             var rangeOperate = new RangeCopyRequest(); // RangeCopyRequest | copydata,copystyle,copyto,copyvalue (optional) 
             var folder = folder_example;  // string | Workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // copy range in the worksheet
-                SaaSposeResponse result = apiInstance.CellsRangesPostWorksheetCellsRanges(name, sheetName, rangeOperate, folder);
+                SaaSposeResponse result = apiInstance.CellsRangesPostWorksheetCellsRanges(name, sheetName, rangeOperate, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -672,6 +691,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| worksheet name | 
  **rangeOperate** | [**RangeCopyRequest**](RangeCopyRequest.md)| copydata,copystyle,copyto,copyvalue | [optional] 
  **folder** | **string**| Workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 

@@ -3,12 +3,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Workbook** | [**FileSource**](FileSource.md) |  | [optional] 
-**DestinationFilePosition** | [**FileSource**](FileSource.md) |  | [optional] 
 **DestinationFileFormat** | **string** |  | [optional] 
-**SplitNameRule** | **string** |  | [optional] 
+**DestinationFilePosition** | [**FileSource**](FileSource.md) |  | [optional] 
 **VerticalResolution** | **int?** |  | [optional] 
 **HorizontalResolution** | **int?** |  | [optional] 
+**SplitNameRule** | **string** |  | [optional] 
+**Workbook** | [**FileSource**](FileSource.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

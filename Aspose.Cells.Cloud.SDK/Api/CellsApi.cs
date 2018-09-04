@@ -37,8 +37,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columns">The columns.</param>
         /// <param name="updateReference">The update reference.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ColumnsResponse</returns>
-        ColumnsResponse CellsDeleteWorksheetColumns (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null);
+        ColumnsResponse CellsDeleteWorksheetColumns (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete worksheet columns.
@@ -53,8 +54,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columns">The columns.</param>
         /// <param name="updateReference">The update reference.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ColumnsResponse</returns>
-        ApiResponse<ColumnsResponse> CellsDeleteWorksheetColumnsWithHttpInfo (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null);
+        ApiResponse<ColumnsResponse> CellsDeleteWorksheetColumnsWithHttpInfo (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null, string storage = null);
         /// <summary>
         /// Delete worksheet row.
         /// </summary>
@@ -66,8 +68,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet bame.</param>
         /// <param name="rowIndex">The row index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsDeleteWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null);
+        SaaSposeResponse CellsDeleteWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete worksheet row.
@@ -80,8 +83,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet bame.</param>
         /// <param name="rowIndex">The row index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsDeleteWorksheetRowWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsDeleteWorksheetRowWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null, string storage = null);
         /// <summary>
         /// Delete several worksheet rows.
         /// </summary>
@@ -95,8 +99,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated. (optional, default to 1)</param>
         /// <param name="updateReference">Indicates if update references in other worksheets. (optional, default to true)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsDeleteWorksheetRows (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null);
+        SaaSposeResponse CellsDeleteWorksheetRows (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete several worksheet rows.
@@ -111,8 +116,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated. (optional, default to 1)</param>
         /// <param name="updateReference">Indicates if update references in other worksheets. (optional, default to true)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsDeleteWorksheetRowsWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsDeleteWorksheetRowsWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null);
         /// <summary>
         /// Read cell data by cell&#39;s name.
         /// </summary>
@@ -124,8 +130,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellOrMethodName">The cell&#39;s or method name. (Method name like firstcell, endcell etc.)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
-        /// <returns>System.IO.Stream</returns>
-        System.IO.Stream CellsGetWorksheetCell (string name, string sheetName, string cellOrMethodName, string folder = null);
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>Object</returns>
+        Object CellsGetWorksheetCell (string name, string sheetName, string cellOrMethodName, string folder = null, string storage = null);
 
         /// <summary>
         /// Read cell data by cell&#39;s name.
@@ -138,8 +145,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellOrMethodName">The cell&#39;s or method name. (Method name like firstcell, endcell etc.)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
-        /// <returns>ApiResponse of System.IO.Stream</returns>
-        ApiResponse<System.IO.Stream> CellsGetWorksheetCellWithHttpInfo (string name, string sheetName, string cellOrMethodName, string folder = null);
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> CellsGetWorksheetCellWithHttpInfo (string name, string sheetName, string cellOrMethodName, string folder = null, string storage = null);
         /// <summary>
         /// Read cell&#39;s style info.
         /// </summary>
@@ -151,8 +159,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellName">Cell&#39;s name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>StyleResponse</returns>
-        StyleResponse CellsGetWorksheetCellStyle (string name, string sheetName, string cellName, string folder = null);
+        StyleResponse CellsGetWorksheetCellStyle (string name, string sheetName, string cellName, string folder = null, string storage = null);
 
         /// <summary>
         /// Read cell&#39;s style info.
@@ -165,8 +174,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellName">Cell&#39;s name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of StyleResponse</returns>
-        ApiResponse<StyleResponse> CellsGetWorksheetCellStyleWithHttpInfo (string name, string sheetName, string cellName, string folder = null);
+        ApiResponse<StyleResponse> CellsGetWorksheetCellStyleWithHttpInfo (string name, string sheetName, string cellName, string folder = null, string storage = null);
         /// <summary>
         /// Get cells info.
         /// </summary>
@@ -179,8 +189,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="offest">Begginig offset. (optional, default to 0)</param>
         /// <param name="count">Maximum amount of cells in the response. (optional, default to 0)</param>
         /// <param name="folder">Document&#39;s folder name. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>CellsResponse</returns>
-        CellsResponse CellsGetWorksheetCells (string name, string sheetName, int? offest = null, int? count = null, string folder = null);
+        CellsResponse CellsGetWorksheetCells (string name, string sheetName, int? offest = null, int? count = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Get cells info.
@@ -194,8 +205,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="offest">Begginig offset. (optional, default to 0)</param>
         /// <param name="count">Maximum amount of cells in the response. (optional, default to 0)</param>
         /// <param name="folder">Document&#39;s folder name. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of CellsResponse</returns>
-        ApiResponse<CellsResponse> CellsGetWorksheetCellsWithHttpInfo (string name, string sheetName, int? offest = null, int? count = null, string folder = null);
+        ApiResponse<CellsResponse> CellsGetWorksheetCellsWithHttpInfo (string name, string sheetName, int? offest = null, int? count = null, string folder = null, string storage = null);
         /// <summary>
         /// Read worksheet column data by column&#39;s index.
         /// </summary>
@@ -207,8 +219,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="columnIndex">The column index.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ColumnResponse</returns>
-        ColumnResponse CellsGetWorksheetColumn (string name, string sheetName, int? columnIndex, string folder = null);
+        ColumnResponse CellsGetWorksheetColumn (string name, string sheetName, int? columnIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Read worksheet column data by column&#39;s index.
@@ -221,8 +234,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="columnIndex">The column index.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ColumnResponse</returns>
-        ApiResponse<ColumnResponse> CellsGetWorksheetColumnWithHttpInfo (string name, string sheetName, int? columnIndex, string folder = null);
+        ApiResponse<ColumnResponse> CellsGetWorksheetColumnWithHttpInfo (string name, string sheetName, int? columnIndex, string folder = null, string storage = null);
         /// <summary>
         /// Read worksheet columns info.
         /// </summary>
@@ -233,8 +247,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">The workdook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ColumnsResponse</returns>
-        ColumnsResponse CellsGetWorksheetColumns (string name, string sheetName, string folder = null);
+        ColumnsResponse CellsGetWorksheetColumns (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Read worksheet columns info.
@@ -246,8 +261,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">The workdook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ColumnsResponse</returns>
-        ApiResponse<ColumnsResponse> CellsGetWorksheetColumnsWithHttpInfo (string name, string sheetName, string folder = null);
+        ApiResponse<ColumnsResponse> CellsGetWorksheetColumnsWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Read worksheet row data by row&#39;s index.
         /// </summary>
@@ -259,8 +275,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="rowIndex">The row index.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>RowResponse</returns>
-        RowResponse CellsGetWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null);
+        RowResponse CellsGetWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Read worksheet row data by row&#39;s index.
@@ -273,8 +290,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="rowIndex">The row index.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of RowResponse</returns>
-        ApiResponse<RowResponse> CellsGetWorksheetRowWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null);
+        ApiResponse<RowResponse> CellsGetWorksheetRowWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null, string storage = null);
         /// <summary>
         /// Read worksheet rows info.
         /// </summary>
@@ -285,8 +303,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">The workdook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>RowsResponse</returns>
-        RowsResponse CellsGetWorksheetRows (string name, string sheetName, string folder = null);
+        RowsResponse CellsGetWorksheetRows (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Read worksheet rows info.
@@ -298,8 +317,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">The workdook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of RowsResponse</returns>
-        ApiResponse<RowsResponse> CellsGetWorksheetRowsWithHttpInfo (string name, string sheetName, string folder = null);
+        ApiResponse<RowsResponse> CellsGetWorksheetRowsWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Cell calculate formula
         /// </summary>
@@ -312,8 +332,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName"></param>
         /// <param name="options"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostCellCalculate (string name, string sheetName, string cellName, CalculationOptions options = null, string folder = null);
+        SaaSposeResponse CellsPostCellCalculate (string name, string sheetName, string cellName, CalculationOptions options = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Cell calculate formula
@@ -327,8 +348,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName"></param>
         /// <param name="options"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostCellCalculateWithHttpInfo (string name, string sheetName, string cellName, CalculationOptions options = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostCellCalculateWithHttpInfo (string name, string sheetName, string cellName, CalculationOptions options = null, string folder = null, string storage = null);
         /// <summary>
         /// Set cell characters 
         /// </summary>
@@ -341,8 +363,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName"></param>
         /// <param name="options"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostCellCharacters (string name, string sheetName, string cellName, List<FontSetting> options = null, string folder = null);
+        SaaSposeResponse CellsPostCellCharacters (string name, string sheetName, string cellName, List<FontSetting> options = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Set cell characters 
@@ -356,8 +379,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName"></param>
         /// <param name="options"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostCellCharactersWithHttpInfo (string name, string sheetName, string cellName, List<FontSetting> options = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostCellCharactersWithHttpInfo (string name, string sheetName, string cellName, List<FontSetting> options = null, string folder = null, string storage = null);
         /// <summary>
         /// Clear cells contents.
         /// </summary>
@@ -373,8 +397,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="endRow">The end row. (optional)</param>
         /// <param name="endColumn">The end column. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostClearContents (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null);
+        SaaSposeResponse CellsPostClearContents (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Clear cells contents.
@@ -391,8 +416,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="endRow">The end row. (optional)</param>
         /// <param name="endColumn">The end column. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostClearContentsWithHttpInfo (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostClearContentsWithHttpInfo (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storage = null);
         /// <summary>
         /// Clear cells contents.
         /// </summary>
@@ -408,8 +434,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="endRow">The end row. (optional)</param>
         /// <param name="endColumn">The end column. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostClearFormats (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null);
+        SaaSposeResponse CellsPostClearFormats (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Clear cells contents.
@@ -426,8 +453,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="endRow">The end row. (optional)</param>
         /// <param name="endColumn">The end column. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostClearFormatsWithHttpInfo (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostClearFormatsWithHttpInfo (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storage = null);
         /// <summary>
         /// Set column style
         /// </summary>
@@ -440,8 +468,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnIndex">The column index.</param>
         /// <param name="style">Style dto (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostColumnStyle (string name, string sheetName, int? columnIndex, Style style = null, string folder = null);
+        SaaSposeResponse CellsPostColumnStyle (string name, string sheetName, int? columnIndex, Style style = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Set column style
@@ -455,8 +484,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnIndex">The column index.</param>
         /// <param name="style">Style dto (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostColumnStyleWithHttpInfo (string name, string sheetName, int? columnIndex, Style style = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostColumnStyleWithHttpInfo (string name, string sheetName, int? columnIndex, Style style = null, string folder = null, string storage = null);
         /// <summary>
         /// Copy cell into cell
         /// </summary>
@@ -472,8 +502,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="row">Source row (optional)</param>
         /// <param name="column">Source column (optional)</param>
         /// <param name="folder">Folder name (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostCopyCellIntoCell (string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null);
+        SaaSposeResponse CellsPostCopyCellIntoCell (string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Copy cell into cell
@@ -490,8 +521,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="row">Source row (optional)</param>
         /// <param name="column">Source column (optional)</param>
         /// <param name="folder">Folder name (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostCopyCellIntoCellWithHttpInfo (string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostCopyCellIntoCellWithHttpInfo (string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null, string storage = null);
         /// <summary>
         /// Copy worksheet columns.
         /// </summary>
@@ -506,8 +538,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnNumber">The copied column number</param>
         /// <param name="worksheet">The Worksheet (optional, default to )</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostCopyWorksheetColumns (string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null);
+        SaaSposeResponse CellsPostCopyWorksheetColumns (string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Copy worksheet columns.
@@ -523,8 +556,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnNumber">The copied column number</param>
         /// <param name="worksheet">The Worksheet (optional, default to )</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostCopyWorksheetColumnsWithHttpInfo (string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostCopyWorksheetColumnsWithHttpInfo (string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null, string storage = null);
         /// <summary>
         /// Copy worksheet rows.
         /// </summary>
@@ -539,8 +573,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowNumber">The copied row number</param>
         /// <param name="worksheet">worksheet (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostCopyWorksheetRows (string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null);
+        SaaSposeResponse CellsPostCopyWorksheetRows (string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Copy worksheet rows.
@@ -556,8 +591,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowNumber">The copied row number</param>
         /// <param name="worksheet">worksheet (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostCopyWorksheetRowsWithHttpInfo (string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostCopyWorksheetRowsWithHttpInfo (string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null, string storage = null);
         /// <summary>
         /// Group worksheet columns.
         /// </summary>
@@ -571,8 +607,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last column index to be operated.</param>
         /// <param name="hide">columns visible state (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostGroupWorksheetColumns (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null);
+        SaaSposeResponse CellsPostGroupWorksheetColumns (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Group worksheet columns.
@@ -587,8 +624,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last column index to be operated.</param>
         /// <param name="hide">columns visible state (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostGroupWorksheetColumnsWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostGroupWorksheetColumnsWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storage = null);
         /// <summary>
         /// Group worksheet rows.
         /// </summary>
@@ -602,8 +640,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last row index to be operated.</param>
         /// <param name="hide">rows visible state (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostGroupWorksheetRows (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null);
+        SaaSposeResponse CellsPostGroupWorksheetRows (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Group worksheet rows.
@@ -618,8 +657,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last row index to be operated.</param>
         /// <param name="hide">rows visible state (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostGroupWorksheetRowsWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostGroupWorksheetRowsWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storage = null);
         /// <summary>
         /// Hide worksheet columns.
         /// </summary>
@@ -632,8 +672,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startColumn">The begin column index to be operated.</param>
         /// <param name="totalColumns">Number of columns to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostHideWorksheetColumns (string name, string sheetName, int? startColumn, int? totalColumns, string folder = null);
+        SaaSposeResponse CellsPostHideWorksheetColumns (string name, string sheetName, int? startColumn, int? totalColumns, string folder = null, string storage = null);
 
         /// <summary>
         /// Hide worksheet columns.
@@ -647,8 +688,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startColumn">The begin column index to be operated.</param>
         /// <param name="totalColumns">Number of columns to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostHideWorksheetColumnsWithHttpInfo (string name, string sheetName, int? startColumn, int? totalColumns, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostHideWorksheetColumnsWithHttpInfo (string name, string sheetName, int? startColumn, int? totalColumns, string folder = null, string storage = null);
         /// <summary>
         /// Hide worksheet rows.
         /// </summary>
@@ -661,8 +703,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startrow">The begin row index to be operated.</param>
         /// <param name="totalRows">Number of rows to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostHideWorksheetRows (string name, string sheetName, int? startrow, int? totalRows, string folder = null);
+        SaaSposeResponse CellsPostHideWorksheetRows (string name, string sheetName, int? startrow, int? totalRows, string folder = null, string storage = null);
 
         /// <summary>
         /// Hide worksheet rows.
@@ -676,8 +719,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startrow">The begin row index to be operated.</param>
         /// <param name="totalRows">Number of rows to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostHideWorksheetRowsWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostHideWorksheetRowsWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows, string folder = null, string storage = null);
         /// <summary>
         /// Set row style.
         /// </summary>
@@ -690,8 +734,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowIndex">The row index.</param>
         /// <param name="style">Style dto (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostRowStyle (string name, string sheetName, int? rowIndex, Style style = null, string folder = null);
+        SaaSposeResponse CellsPostRowStyle (string name, string sheetName, int? rowIndex, Style style = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Set row style.
@@ -705,8 +750,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowIndex">The row index.</param>
         /// <param name="style">Style dto (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostRowStyleWithHttpInfo (string name, string sheetName, int? rowIndex, Style style = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostRowStyleWithHttpInfo (string name, string sheetName, int? rowIndex, Style style = null, string folder = null, string storage = null);
         /// <summary>
         /// Set htmlstring value into cell
         /// </summary>
@@ -718,8 +764,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellName">The cell name.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>CellResponse</returns>
-        CellResponse CellsPostSetCellHtmlString (string name, string sheetName, string cellName, string folder = null);
+        CellResponse CellsPostSetCellHtmlString (string name, string sheetName, string cellName, string folder = null, string storage = null);
 
         /// <summary>
         /// Set htmlstring value into cell
@@ -732,8 +779,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellName">The cell name.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of CellResponse</returns>
-        ApiResponse<CellResponse> CellsPostSetCellHtmlStringWithHttpInfo (string name, string sheetName, string cellName, string folder = null);
+        ApiResponse<CellResponse> CellsPostSetCellHtmlStringWithHttpInfo (string name, string sheetName, string cellName, string folder = null, string storage = null);
         /// <summary>
         /// Set cell range value 
         /// </summary>
@@ -747,8 +795,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="value">Range value</param>
         /// <param name="type">Value data type (like \&quot;int\&quot;)</param>
         /// <param name="folder">Folder name (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostSetCellRangeValue (string name, string sheetName, string cellarea, string value, string type, string folder = null);
+        SaaSposeResponse CellsPostSetCellRangeValue (string name, string sheetName, string cellarea, string value, string type, string folder = null, string storage = null);
 
         /// <summary>
         /// Set cell range value 
@@ -763,8 +812,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="value">Range value</param>
         /// <param name="type">Value data type (like \&quot;int\&quot;)</param>
         /// <param name="folder">Folder name (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostSetCellRangeValueWithHttpInfo (string name, string sheetName, string cellarea, string value, string type, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostSetCellRangeValueWithHttpInfo (string name, string sheetName, string cellarea, string value, string type, string folder = null, string storage = null);
         /// <summary>
         /// Set worksheet column width.
         /// </summary>
@@ -777,8 +827,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnIndex">The column index.</param>
         /// <param name="width">The width.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ColumnResponse</returns>
-        ColumnResponse CellsPostSetWorksheetColumnWidth (string name, string sheetName, int? columnIndex, double? width, string folder = null);
+        ColumnResponse CellsPostSetWorksheetColumnWidth (string name, string sheetName, int? columnIndex, double? width, string folder = null, string storage = null);
 
         /// <summary>
         /// Set worksheet column width.
@@ -792,8 +843,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnIndex">The column index.</param>
         /// <param name="width">The width.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ColumnResponse</returns>
-        ApiResponse<ColumnResponse> CellsPostSetWorksheetColumnWidthWithHttpInfo (string name, string sheetName, int? columnIndex, double? width, string folder = null);
+        ApiResponse<ColumnResponse> CellsPostSetWorksheetColumnWidthWithHttpInfo (string name, string sheetName, int? columnIndex, double? width, string folder = null, string storage = null);
         /// <summary>
         /// Ungroup worksheet columns.
         /// </summary>
@@ -806,8 +858,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="firstIndex">The first column index to be operated.</param>
         /// <param name="lastIndex">The last column index to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostUngroupWorksheetColumns (string name, string sheetName, int? firstIndex, int? lastIndex, string folder = null);
+        SaaSposeResponse CellsPostUngroupWorksheetColumns (string name, string sheetName, int? firstIndex, int? lastIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Ungroup worksheet columns.
@@ -821,8 +874,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="firstIndex">The first column index to be operated.</param>
         /// <param name="lastIndex">The last column index to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostUngroupWorksheetColumnsWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostUngroupWorksheetColumnsWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, string folder = null, string storage = null);
         /// <summary>
         /// Ungroup worksheet rows.
         /// </summary>
@@ -836,8 +890,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last row index to be operated.</param>
         /// <param name="isAll">Is all row to be operated (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostUngroupWorksheetRows (string name, string sheetName, int? firstIndex, int? lastIndex, bool? isAll = null, string folder = null);
+        SaaSposeResponse CellsPostUngroupWorksheetRows (string name, string sheetName, int? firstIndex, int? lastIndex, bool? isAll = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Ungroup worksheet rows.
@@ -852,8 +907,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last row index to be operated.</param>
         /// <param name="isAll">Is all row to be operated (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostUngroupWorksheetRowsWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? isAll = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostUngroupWorksheetRowsWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? isAll = null, string folder = null, string storage = null);
         /// <summary>
         /// Unhide worksheet columns.
         /// </summary>
@@ -867,8 +923,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalColumns">Number of columns to be operated.</param>
         /// <param name="width">The new column width. (optional, default to 50.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostUnhideWorksheetColumns (string name, string sheetName, int? startcolumn, int? totalColumns, double? width = null, string folder = null);
+        SaaSposeResponse CellsPostUnhideWorksheetColumns (string name, string sheetName, int? startcolumn, int? totalColumns, double? width = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Unhide worksheet columns.
@@ -883,8 +940,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalColumns">Number of columns to be operated.</param>
         /// <param name="width">The new column width. (optional, default to 50.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostUnhideWorksheetColumnsWithHttpInfo (string name, string sheetName, int? startcolumn, int? totalColumns, double? width = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostUnhideWorksheetColumnsWithHttpInfo (string name, string sheetName, int? startcolumn, int? totalColumns, double? width = null, string folder = null, string storage = null);
         /// <summary>
         /// Unhide worksheet rows.
         /// </summary>
@@ -898,8 +956,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated.</param>
         /// <param name="height">The new row height. (optional, default to 15.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostUnhideWorksheetRows (string name, string sheetName, int? startrow, int? totalRows, double? height = null, string folder = null);
+        SaaSposeResponse CellsPostUnhideWorksheetRows (string name, string sheetName, int? startrow, int? totalRows, double? height = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Unhide worksheet rows.
@@ -914,8 +973,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated.</param>
         /// <param name="height">The new row height. (optional, default to 15.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostUnhideWorksheetRowsWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows, double? height = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostUnhideWorksheetRowsWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows, double? height = null, string folder = null, string storage = null);
         /// <summary>
         /// Update cell&#39;s style.
         /// </summary>
@@ -928,8 +988,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName">The cell name.</param>
         /// <param name="style">with update style settings. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>StyleResponse</returns>
-        StyleResponse CellsPostUpdateWorksheetCellStyle (string name, string sheetName, string cellName, Style style = null, string folder = null);
+        StyleResponse CellsPostUpdateWorksheetCellStyle (string name, string sheetName, string cellName, Style style = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Update cell&#39;s style.
@@ -943,8 +1004,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName">The cell name.</param>
         /// <param name="style">with update style settings. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of StyleResponse</returns>
-        ApiResponse<StyleResponse> CellsPostUpdateWorksheetCellStyleWithHttpInfo (string name, string sheetName, string cellName, Style style = null, string folder = null);
+        ApiResponse<StyleResponse> CellsPostUpdateWorksheetCellStyleWithHttpInfo (string name, string sheetName, string cellName, Style style = null, string folder = null, string storage = null);
         /// <summary>
         /// Update cell&#39;s range style.
         /// </summary>
@@ -957,8 +1019,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="range">The range.</param>
         /// <param name="style">with update style settings. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostUpdateWorksheetRangeStyle (string name, string sheetName, string range, Style style = null, string folder = null);
+        SaaSposeResponse CellsPostUpdateWorksheetRangeStyle (string name, string sheetName, string range, Style style = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Update cell&#39;s range style.
@@ -972,8 +1035,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="range">The range.</param>
         /// <param name="style">with update style settings. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostUpdateWorksheetRangeStyleWithHttpInfo (string name, string sheetName, string range, Style style = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostUpdateWorksheetRangeStyleWithHttpInfo (string name, string sheetName, string range, Style style = null, string folder = null, string storage = null);
         /// <summary>
         /// Update worksheet row.
         /// </summary>
@@ -986,8 +1050,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowIndex">The row index.</param>
         /// <param name="height">The new row height. (optional, default to 0.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>RowResponse</returns>
-        RowResponse CellsPostUpdateWorksheetRow (string name, string sheetName, int? rowIndex, double? height = null, string folder = null);
+        RowResponse CellsPostUpdateWorksheetRow (string name, string sheetName, int? rowIndex, double? height = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Update worksheet row.
@@ -1001,8 +1066,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowIndex">The row index.</param>
         /// <param name="height">The new row height. (optional, default to 0.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of RowResponse</returns>
-        ApiResponse<RowResponse> CellsPostUpdateWorksheetRowWithHttpInfo (string name, string sheetName, int? rowIndex, double? height = null, string folder = null);
+        ApiResponse<RowResponse> CellsPostUpdateWorksheetRowWithHttpInfo (string name, string sheetName, int? rowIndex, double? height = null, string folder = null, string storage = null);
         /// <summary>
         /// Set cell value.
         /// </summary>
@@ -1017,8 +1083,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="type">The value type. (optional)</param>
         /// <param name="formula">Formula for cell (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>CellResponse</returns>
-        CellResponse CellsPostWorksheetCellSetValue (string name, string sheetName, string cellName, string value = null, string type = null, string formula = null, string folder = null);
+        CellResponse CellsPostWorksheetCellSetValue (string name, string sheetName, string cellName, string value = null, string type = null, string formula = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Set cell value.
@@ -1034,8 +1101,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="type">The value type. (optional)</param>
         /// <param name="formula">Formula for cell (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of CellResponse</returns>
-        ApiResponse<CellResponse> CellsPostWorksheetCellSetValueWithHttpInfo (string name, string sheetName, string cellName, string value = null, string type = null, string formula = null, string folder = null);
+        ApiResponse<CellResponse> CellsPostWorksheetCellSetValueWithHttpInfo (string name, string sheetName, string cellName, string value = null, string type = null, string formula = null, string folder = null, string storage = null);
         /// <summary>
         /// Merge cells.
         /// </summary>
@@ -1050,8 +1118,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">The total rows</param>
         /// <param name="totalColumns">The total columns.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostWorksheetMerge (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null);
+        SaaSposeResponse CellsPostWorksheetMerge (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null);
 
         /// <summary>
         /// Merge cells.
@@ -1067,8 +1136,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">The total rows</param>
         /// <param name="totalColumns">The total columns.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostWorksheetMergeWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostWorksheetMergeWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null);
         /// <summary>
         /// Unmerge cells.
         /// </summary>
@@ -1083,8 +1153,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">The total rows</param>
         /// <param name="totalColumns">The total columns.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPostWorksheetUnmerge (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null);
+        SaaSposeResponse CellsPostWorksheetUnmerge (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null);
 
         /// <summary>
         /// Unmerge cells.
@@ -1100,8 +1171,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">The total rows</param>
         /// <param name="totalColumns">The total columns.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPostWorksheetUnmergeWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPostWorksheetUnmergeWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null);
         /// <summary>
         /// Insert worksheet columns.
         /// </summary>
@@ -1115,8 +1187,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columns">The columns.</param>
         /// <param name="updateReference">The update reference. (optional, default to true)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ColumnsResponse</returns>
-        ColumnsResponse CellsPutInsertWorksheetColumns (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null);
+        ColumnsResponse CellsPutInsertWorksheetColumns (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Insert worksheet columns.
@@ -1131,8 +1204,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columns">The columns.</param>
         /// <param name="updateReference">The update reference. (optional, default to true)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ColumnsResponse</returns>
-        ApiResponse<ColumnsResponse> CellsPutInsertWorksheetColumnsWithHttpInfo (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null);
+        ApiResponse<ColumnsResponse> CellsPutInsertWorksheetColumnsWithHttpInfo (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null, string storage = null);
         /// <summary>
         /// Insert new worksheet row.
         /// </summary>
@@ -1144,8 +1218,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="rowIndex">The new row index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>RowResponse</returns>
-        RowResponse CellsPutInsertWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null);
+        RowResponse CellsPutInsertWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Insert new worksheet row.
@@ -1158,8 +1233,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="rowIndex">The new row index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of RowResponse</returns>
-        ApiResponse<RowResponse> CellsPutInsertWorksheetRowWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null);
+        ApiResponse<RowResponse> CellsPutInsertWorksheetRowWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null, string storage = null);
         /// <summary>
         /// Insert several new worksheet rows.
         /// </summary>
@@ -1173,8 +1249,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated. (optional, default to 1)</param>
         /// <param name="updateReference">Indicates if update references in other worksheets. (optional, default to true)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsPutInsertWorksheetRows (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null);
+        SaaSposeResponse CellsPutInsertWorksheetRows (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Insert several new worksheet rows.
@@ -1189,8 +1266,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated. (optional, default to 1)</param>
         /// <param name="updateReference">Indicates if update references in other worksheets. (optional, default to true)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsPutInsertWorksheetRowsWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsPutInsertWorksheetRowsWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -1206,8 +1284,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columns">The columns.</param>
         /// <param name="updateReference">The update reference.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ColumnsResponse</returns>
-        System.Threading.Tasks.Task<ColumnsResponse> CellsDeleteWorksheetColumnsAsync (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null);
+        System.Threading.Tasks.Task<ColumnsResponse> CellsDeleteWorksheetColumnsAsync (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete worksheet columns.
@@ -1222,8 +1301,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columns">The columns.</param>
         /// <param name="updateReference">The update reference.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ColumnsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ColumnsResponse>> CellsDeleteWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<ColumnsResponse>> CellsDeleteWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null, string storage = null);
         /// <summary>
         /// Delete worksheet row.
         /// </summary>
@@ -1235,8 +1315,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet bame.</param>
         /// <param name="rowIndex">The row index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsDeleteWorksheetRowAsync (string name, string sheetName, int? rowIndex, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsDeleteWorksheetRowAsync (string name, string sheetName, int? rowIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete worksheet row.
@@ -1249,8 +1330,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet bame.</param>
         /// <param name="rowIndex">The row index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsDeleteWorksheetRowAsyncWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsDeleteWorksheetRowAsyncWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null, string storage = null);
         /// <summary>
         /// Delete several worksheet rows.
         /// </summary>
@@ -1264,8 +1346,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated. (optional, default to 1)</param>
         /// <param name="updateReference">Indicates if update references in other worksheets. (optional, default to true)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsDeleteWorksheetRowsAsync (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsDeleteWorksheetRowsAsync (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete several worksheet rows.
@@ -1280,8 +1363,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated. (optional, default to 1)</param>
         /// <param name="updateReference">Indicates if update references in other worksheets. (optional, default to true)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsDeleteWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsDeleteWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null);
         /// <summary>
         /// Read cell data by cell&#39;s name.
         /// </summary>
@@ -1293,8 +1377,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellOrMethodName">The cell&#39;s or method name. (Method name like firstcell, endcell etc.)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
-        /// <returns>Task of System.IO.Stream</returns>
-        System.Threading.Tasks.Task<System.IO.Stream> CellsGetWorksheetCellAsync (string name, string sheetName, string cellOrMethodName, string folder = null);
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> CellsGetWorksheetCellAsync (string name, string sheetName, string cellOrMethodName, string folder = null, string storage = null);
 
         /// <summary>
         /// Read cell data by cell&#39;s name.
@@ -1307,8 +1392,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellOrMethodName">The cell&#39;s or method name. (Method name like firstcell, endcell etc.)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
-        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsGetWorksheetCellAsyncWithHttpInfo (string name, string sheetName, string cellOrMethodName, string folder = null);
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> CellsGetWorksheetCellAsyncWithHttpInfo (string name, string sheetName, string cellOrMethodName, string folder = null, string storage = null);
         /// <summary>
         /// Read cell&#39;s style info.
         /// </summary>
@@ -1320,8 +1406,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellName">Cell&#39;s name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of StyleResponse</returns>
-        System.Threading.Tasks.Task<StyleResponse> CellsGetWorksheetCellStyleAsync (string name, string sheetName, string cellName, string folder = null);
+        System.Threading.Tasks.Task<StyleResponse> CellsGetWorksheetCellStyleAsync (string name, string sheetName, string cellName, string folder = null, string storage = null);
 
         /// <summary>
         /// Read cell&#39;s style info.
@@ -1334,8 +1421,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellName">Cell&#39;s name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (StyleResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<StyleResponse>> CellsGetWorksheetCellStyleAsyncWithHttpInfo (string name, string sheetName, string cellName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<StyleResponse>> CellsGetWorksheetCellStyleAsyncWithHttpInfo (string name, string sheetName, string cellName, string folder = null, string storage = null);
         /// <summary>
         /// Get cells info.
         /// </summary>
@@ -1348,8 +1436,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="offest">Begginig offset. (optional, default to 0)</param>
         /// <param name="count">Maximum amount of cells in the response. (optional, default to 0)</param>
         /// <param name="folder">Document&#39;s folder name. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of CellsResponse</returns>
-        System.Threading.Tasks.Task<CellsResponse> CellsGetWorksheetCellsAsync (string name, string sheetName, int? offest = null, int? count = null, string folder = null);
+        System.Threading.Tasks.Task<CellsResponse> CellsGetWorksheetCellsAsync (string name, string sheetName, int? offest = null, int? count = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Get cells info.
@@ -1363,8 +1452,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="offest">Begginig offset. (optional, default to 0)</param>
         /// <param name="count">Maximum amount of cells in the response. (optional, default to 0)</param>
         /// <param name="folder">Document&#39;s folder name. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (CellsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CellsResponse>> CellsGetWorksheetCellsAsyncWithHttpInfo (string name, string sheetName, int? offest = null, int? count = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<CellsResponse>> CellsGetWorksheetCellsAsyncWithHttpInfo (string name, string sheetName, int? offest = null, int? count = null, string folder = null, string storage = null);
         /// <summary>
         /// Read worksheet column data by column&#39;s index.
         /// </summary>
@@ -1376,8 +1466,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="columnIndex">The column index.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ColumnResponse</returns>
-        System.Threading.Tasks.Task<ColumnResponse> CellsGetWorksheetColumnAsync (string name, string sheetName, int? columnIndex, string folder = null);
+        System.Threading.Tasks.Task<ColumnResponse> CellsGetWorksheetColumnAsync (string name, string sheetName, int? columnIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Read worksheet column data by column&#39;s index.
@@ -1390,8 +1481,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="columnIndex">The column index.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ColumnResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ColumnResponse>> CellsGetWorksheetColumnAsyncWithHttpInfo (string name, string sheetName, int? columnIndex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<ColumnResponse>> CellsGetWorksheetColumnAsyncWithHttpInfo (string name, string sheetName, int? columnIndex, string folder = null, string storage = null);
         /// <summary>
         /// Read worksheet columns info.
         /// </summary>
@@ -1402,8 +1494,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">The workdook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ColumnsResponse</returns>
-        System.Threading.Tasks.Task<ColumnsResponse> CellsGetWorksheetColumnsAsync (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ColumnsResponse> CellsGetWorksheetColumnsAsync (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Read worksheet columns info.
@@ -1415,8 +1508,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">The workdook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ColumnsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ColumnsResponse>> CellsGetWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<ColumnsResponse>> CellsGetWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Read worksheet row data by row&#39;s index.
         /// </summary>
@@ -1428,8 +1522,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="rowIndex">The row index.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of RowResponse</returns>
-        System.Threading.Tasks.Task<RowResponse> CellsGetWorksheetRowAsync (string name, string sheetName, int? rowIndex, string folder = null);
+        System.Threading.Tasks.Task<RowResponse> CellsGetWorksheetRowAsync (string name, string sheetName, int? rowIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Read worksheet row data by row&#39;s index.
@@ -1442,8 +1537,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="rowIndex">The row index.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (RowResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RowResponse>> CellsGetWorksheetRowAsyncWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<RowResponse>> CellsGetWorksheetRowAsyncWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null, string storage = null);
         /// <summary>
         /// Read worksheet rows info.
         /// </summary>
@@ -1454,8 +1550,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">The workdook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of RowsResponse</returns>
-        System.Threading.Tasks.Task<RowsResponse> CellsGetWorksheetRowsAsync (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<RowsResponse> CellsGetWorksheetRowsAsync (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Read worksheet rows info.
@@ -1467,8 +1564,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">The workdook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (RowsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RowsResponse>> CellsGetWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<RowsResponse>> CellsGetWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Cell calculate formula
         /// </summary>
@@ -1481,8 +1579,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName"></param>
         /// <param name="options"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostCellCalculateAsync (string name, string sheetName, string cellName, CalculationOptions options = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostCellCalculateAsync (string name, string sheetName, string cellName, CalculationOptions options = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Cell calculate formula
@@ -1496,8 +1595,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName"></param>
         /// <param name="options"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostCellCalculateAsyncWithHttpInfo (string name, string sheetName, string cellName, CalculationOptions options = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostCellCalculateAsyncWithHttpInfo (string name, string sheetName, string cellName, CalculationOptions options = null, string folder = null, string storage = null);
         /// <summary>
         /// Set cell characters 
         /// </summary>
@@ -1510,8 +1610,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName"></param>
         /// <param name="options"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostCellCharactersAsync (string name, string sheetName, string cellName, List<FontSetting> options = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostCellCharactersAsync (string name, string sheetName, string cellName, List<FontSetting> options = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Set cell characters 
@@ -1525,8 +1626,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName"></param>
         /// <param name="options"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostCellCharactersAsyncWithHttpInfo (string name, string sheetName, string cellName, List<FontSetting> options = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostCellCharactersAsyncWithHttpInfo (string name, string sheetName, string cellName, List<FontSetting> options = null, string folder = null, string storage = null);
         /// <summary>
         /// Clear cells contents.
         /// </summary>
@@ -1542,8 +1644,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="endRow">The end row. (optional)</param>
         /// <param name="endColumn">The end column. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostClearContentsAsync (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostClearContentsAsync (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Clear cells contents.
@@ -1560,8 +1663,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="endRow">The end row. (optional)</param>
         /// <param name="endColumn">The end column. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostClearContentsAsyncWithHttpInfo (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostClearContentsAsyncWithHttpInfo (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storage = null);
         /// <summary>
         /// Clear cells contents.
         /// </summary>
@@ -1577,8 +1681,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="endRow">The end row. (optional)</param>
         /// <param name="endColumn">The end column. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostClearFormatsAsync (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostClearFormatsAsync (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Clear cells contents.
@@ -1595,8 +1700,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="endRow">The end row. (optional)</param>
         /// <param name="endColumn">The end column. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostClearFormatsAsyncWithHttpInfo (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostClearFormatsAsyncWithHttpInfo (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storage = null);
         /// <summary>
         /// Set column style
         /// </summary>
@@ -1609,8 +1715,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnIndex">The column index.</param>
         /// <param name="style">Style dto (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostColumnStyleAsync (string name, string sheetName, int? columnIndex, Style style = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostColumnStyleAsync (string name, string sheetName, int? columnIndex, Style style = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Set column style
@@ -1624,8 +1731,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnIndex">The column index.</param>
         /// <param name="style">Style dto (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostColumnStyleAsyncWithHttpInfo (string name, string sheetName, int? columnIndex, Style style = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostColumnStyleAsyncWithHttpInfo (string name, string sheetName, int? columnIndex, Style style = null, string folder = null, string storage = null);
         /// <summary>
         /// Copy cell into cell
         /// </summary>
@@ -1641,8 +1749,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="row">Source row (optional)</param>
         /// <param name="column">Source column (optional)</param>
         /// <param name="folder">Folder name (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostCopyCellIntoCellAsync (string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostCopyCellIntoCellAsync (string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Copy cell into cell
@@ -1659,8 +1768,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="row">Source row (optional)</param>
         /// <param name="column">Source column (optional)</param>
         /// <param name="folder">Folder name (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostCopyCellIntoCellAsyncWithHttpInfo (string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostCopyCellIntoCellAsyncWithHttpInfo (string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null, string storage = null);
         /// <summary>
         /// Copy worksheet columns.
         /// </summary>
@@ -1675,8 +1785,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnNumber">The copied column number</param>
         /// <param name="worksheet">The Worksheet (optional, default to )</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostCopyWorksheetColumnsAsync (string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostCopyWorksheetColumnsAsync (string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Copy worksheet columns.
@@ -1692,8 +1803,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnNumber">The copied column number</param>
         /// <param name="worksheet">The Worksheet (optional, default to )</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostCopyWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostCopyWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null, string storage = null);
         /// <summary>
         /// Copy worksheet rows.
         /// </summary>
@@ -1708,8 +1820,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowNumber">The copied row number</param>
         /// <param name="worksheet">worksheet (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostCopyWorksheetRowsAsync (string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostCopyWorksheetRowsAsync (string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Copy worksheet rows.
@@ -1725,8 +1838,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowNumber">The copied row number</param>
         /// <param name="worksheet">worksheet (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostCopyWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostCopyWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null, string storage = null);
         /// <summary>
         /// Group worksheet columns.
         /// </summary>
@@ -1740,8 +1854,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last column index to be operated.</param>
         /// <param name="hide">columns visible state (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostGroupWorksheetColumnsAsync (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostGroupWorksheetColumnsAsync (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Group worksheet columns.
@@ -1756,8 +1871,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last column index to be operated.</param>
         /// <param name="hide">columns visible state (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostGroupWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostGroupWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storage = null);
         /// <summary>
         /// Group worksheet rows.
         /// </summary>
@@ -1771,8 +1887,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last row index to be operated.</param>
         /// <param name="hide">rows visible state (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostGroupWorksheetRowsAsync (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostGroupWorksheetRowsAsync (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Group worksheet rows.
@@ -1787,8 +1904,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last row index to be operated.</param>
         /// <param name="hide">rows visible state (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostGroupWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostGroupWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storage = null);
         /// <summary>
         /// Hide worksheet columns.
         /// </summary>
@@ -1801,8 +1919,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startColumn">The begin column index to be operated.</param>
         /// <param name="totalColumns">Number of columns to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostHideWorksheetColumnsAsync (string name, string sheetName, int? startColumn, int? totalColumns, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostHideWorksheetColumnsAsync (string name, string sheetName, int? startColumn, int? totalColumns, string folder = null, string storage = null);
 
         /// <summary>
         /// Hide worksheet columns.
@@ -1816,8 +1935,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startColumn">The begin column index to be operated.</param>
         /// <param name="totalColumns">Number of columns to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostHideWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? startColumn, int? totalColumns, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostHideWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? startColumn, int? totalColumns, string folder = null, string storage = null);
         /// <summary>
         /// Hide worksheet rows.
         /// </summary>
@@ -1830,8 +1950,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startrow">The begin row index to be operated.</param>
         /// <param name="totalRows">Number of rows to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostHideWorksheetRowsAsync (string name, string sheetName, int? startrow, int? totalRows, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostHideWorksheetRowsAsync (string name, string sheetName, int? startrow, int? totalRows, string folder = null, string storage = null);
 
         /// <summary>
         /// Hide worksheet rows.
@@ -1845,8 +1966,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startrow">The begin row index to be operated.</param>
         /// <param name="totalRows">Number of rows to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostHideWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostHideWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows, string folder = null, string storage = null);
         /// <summary>
         /// Set row style.
         /// </summary>
@@ -1859,8 +1981,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowIndex">The row index.</param>
         /// <param name="style">Style dto (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostRowStyleAsync (string name, string sheetName, int? rowIndex, Style style = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostRowStyleAsync (string name, string sheetName, int? rowIndex, Style style = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Set row style.
@@ -1874,8 +1997,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowIndex">The row index.</param>
         /// <param name="style">Style dto (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostRowStyleAsyncWithHttpInfo (string name, string sheetName, int? rowIndex, Style style = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostRowStyleAsyncWithHttpInfo (string name, string sheetName, int? rowIndex, Style style = null, string folder = null, string storage = null);
         /// <summary>
         /// Set htmlstring value into cell
         /// </summary>
@@ -1887,8 +2011,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellName">The cell name.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of CellResponse</returns>
-        System.Threading.Tasks.Task<CellResponse> CellsPostSetCellHtmlStringAsync (string name, string sheetName, string cellName, string folder = null);
+        System.Threading.Tasks.Task<CellResponse> CellsPostSetCellHtmlStringAsync (string name, string sheetName, string cellName, string folder = null, string storage = null);
 
         /// <summary>
         /// Set htmlstring value into cell
@@ -1901,8 +2026,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellName">The cell name.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (CellResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CellResponse>> CellsPostSetCellHtmlStringAsyncWithHttpInfo (string name, string sheetName, string cellName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<CellResponse>> CellsPostSetCellHtmlStringAsyncWithHttpInfo (string name, string sheetName, string cellName, string folder = null, string storage = null);
         /// <summary>
         /// Set cell range value 
         /// </summary>
@@ -1916,8 +2042,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="value">Range value</param>
         /// <param name="type">Value data type (like \&quot;int\&quot;)</param>
         /// <param name="folder">Folder name (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostSetCellRangeValueAsync (string name, string sheetName, string cellarea, string value, string type, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostSetCellRangeValueAsync (string name, string sheetName, string cellarea, string value, string type, string folder = null, string storage = null);
 
         /// <summary>
         /// Set cell range value 
@@ -1932,8 +2059,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="value">Range value</param>
         /// <param name="type">Value data type (like \&quot;int\&quot;)</param>
         /// <param name="folder">Folder name (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostSetCellRangeValueAsyncWithHttpInfo (string name, string sheetName, string cellarea, string value, string type, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostSetCellRangeValueAsyncWithHttpInfo (string name, string sheetName, string cellarea, string value, string type, string folder = null, string storage = null);
         /// <summary>
         /// Set worksheet column width.
         /// </summary>
@@ -1946,8 +2074,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnIndex">The column index.</param>
         /// <param name="width">The width.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ColumnResponse</returns>
-        System.Threading.Tasks.Task<ColumnResponse> CellsPostSetWorksheetColumnWidthAsync (string name, string sheetName, int? columnIndex, double? width, string folder = null);
+        System.Threading.Tasks.Task<ColumnResponse> CellsPostSetWorksheetColumnWidthAsync (string name, string sheetName, int? columnIndex, double? width, string folder = null, string storage = null);
 
         /// <summary>
         /// Set worksheet column width.
@@ -1961,8 +2090,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnIndex">The column index.</param>
         /// <param name="width">The width.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ColumnResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ColumnResponse>> CellsPostSetWorksheetColumnWidthAsyncWithHttpInfo (string name, string sheetName, int? columnIndex, double? width, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<ColumnResponse>> CellsPostSetWorksheetColumnWidthAsyncWithHttpInfo (string name, string sheetName, int? columnIndex, double? width, string folder = null, string storage = null);
         /// <summary>
         /// Ungroup worksheet columns.
         /// </summary>
@@ -1975,8 +2105,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="firstIndex">The first column index to be operated.</param>
         /// <param name="lastIndex">The last column index to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostUngroupWorksheetColumnsAsync (string name, string sheetName, int? firstIndex, int? lastIndex, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostUngroupWorksheetColumnsAsync (string name, string sheetName, int? firstIndex, int? lastIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Ungroup worksheet columns.
@@ -1990,8 +2121,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="firstIndex">The first column index to be operated.</param>
         /// <param name="lastIndex">The last column index to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostUngroupWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostUngroupWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, string folder = null, string storage = null);
         /// <summary>
         /// Ungroup worksheet rows.
         /// </summary>
@@ -2005,8 +2137,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last row index to be operated.</param>
         /// <param name="isAll">Is all row to be operated (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostUngroupWorksheetRowsAsync (string name, string sheetName, int? firstIndex, int? lastIndex, bool? isAll = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostUngroupWorksheetRowsAsync (string name, string sheetName, int? firstIndex, int? lastIndex, bool? isAll = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Ungroup worksheet rows.
@@ -2021,8 +2154,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last row index to be operated.</param>
         /// <param name="isAll">Is all row to be operated (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostUngroupWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? isAll = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostUngroupWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? isAll = null, string folder = null, string storage = null);
         /// <summary>
         /// Unhide worksheet columns.
         /// </summary>
@@ -2036,8 +2170,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalColumns">Number of columns to be operated.</param>
         /// <param name="width">The new column width. (optional, default to 50.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostUnhideWorksheetColumnsAsync (string name, string sheetName, int? startcolumn, int? totalColumns, double? width = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostUnhideWorksheetColumnsAsync (string name, string sheetName, int? startcolumn, int? totalColumns, double? width = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Unhide worksheet columns.
@@ -2052,8 +2187,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalColumns">Number of columns to be operated.</param>
         /// <param name="width">The new column width. (optional, default to 50.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostUnhideWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? startcolumn, int? totalColumns, double? width = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostUnhideWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? startcolumn, int? totalColumns, double? width = null, string folder = null, string storage = null);
         /// <summary>
         /// Unhide worksheet rows.
         /// </summary>
@@ -2067,8 +2203,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated.</param>
         /// <param name="height">The new row height. (optional, default to 15.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostUnhideWorksheetRowsAsync (string name, string sheetName, int? startrow, int? totalRows, double? height = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostUnhideWorksheetRowsAsync (string name, string sheetName, int? startrow, int? totalRows, double? height = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Unhide worksheet rows.
@@ -2083,8 +2220,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated.</param>
         /// <param name="height">The new row height. (optional, default to 15.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostUnhideWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows, double? height = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostUnhideWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows, double? height = null, string folder = null, string storage = null);
         /// <summary>
         /// Update cell&#39;s style.
         /// </summary>
@@ -2097,8 +2235,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName">The cell name.</param>
         /// <param name="style">with update style settings. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of StyleResponse</returns>
-        System.Threading.Tasks.Task<StyleResponse> CellsPostUpdateWorksheetCellStyleAsync (string name, string sheetName, string cellName, Style style = null, string folder = null);
+        System.Threading.Tasks.Task<StyleResponse> CellsPostUpdateWorksheetCellStyleAsync (string name, string sheetName, string cellName, Style style = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Update cell&#39;s style.
@@ -2112,8 +2251,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName">The cell name.</param>
         /// <param name="style">with update style settings. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (StyleResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<StyleResponse>> CellsPostUpdateWorksheetCellStyleAsyncWithHttpInfo (string name, string sheetName, string cellName, Style style = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<StyleResponse>> CellsPostUpdateWorksheetCellStyleAsyncWithHttpInfo (string name, string sheetName, string cellName, Style style = null, string folder = null, string storage = null);
         /// <summary>
         /// Update cell&#39;s range style.
         /// </summary>
@@ -2126,8 +2266,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="range">The range.</param>
         /// <param name="style">with update style settings. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostUpdateWorksheetRangeStyleAsync (string name, string sheetName, string range, Style style = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostUpdateWorksheetRangeStyleAsync (string name, string sheetName, string range, Style style = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Update cell&#39;s range style.
@@ -2141,8 +2282,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="range">The range.</param>
         /// <param name="style">with update style settings. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostUpdateWorksheetRangeStyleAsyncWithHttpInfo (string name, string sheetName, string range, Style style = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostUpdateWorksheetRangeStyleAsyncWithHttpInfo (string name, string sheetName, string range, Style style = null, string folder = null, string storage = null);
         /// <summary>
         /// Update worksheet row.
         /// </summary>
@@ -2155,8 +2297,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowIndex">The row index.</param>
         /// <param name="height">The new row height. (optional, default to 0.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of RowResponse</returns>
-        System.Threading.Tasks.Task<RowResponse> CellsPostUpdateWorksheetRowAsync (string name, string sheetName, int? rowIndex, double? height = null, string folder = null);
+        System.Threading.Tasks.Task<RowResponse> CellsPostUpdateWorksheetRowAsync (string name, string sheetName, int? rowIndex, double? height = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Update worksheet row.
@@ -2170,8 +2313,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowIndex">The row index.</param>
         /// <param name="height">The new row height. (optional, default to 0.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (RowResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RowResponse>> CellsPostUpdateWorksheetRowAsyncWithHttpInfo (string name, string sheetName, int? rowIndex, double? height = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<RowResponse>> CellsPostUpdateWorksheetRowAsyncWithHttpInfo (string name, string sheetName, int? rowIndex, double? height = null, string folder = null, string storage = null);
         /// <summary>
         /// Set cell value.
         /// </summary>
@@ -2186,8 +2330,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="type">The value type. (optional)</param>
         /// <param name="formula">Formula for cell (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of CellResponse</returns>
-        System.Threading.Tasks.Task<CellResponse> CellsPostWorksheetCellSetValueAsync (string name, string sheetName, string cellName, string value = null, string type = null, string formula = null, string folder = null);
+        System.Threading.Tasks.Task<CellResponse> CellsPostWorksheetCellSetValueAsync (string name, string sheetName, string cellName, string value = null, string type = null, string formula = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Set cell value.
@@ -2203,8 +2348,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="type">The value type. (optional)</param>
         /// <param name="formula">Formula for cell (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (CellResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CellResponse>> CellsPostWorksheetCellSetValueAsyncWithHttpInfo (string name, string sheetName, string cellName, string value = null, string type = null, string formula = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<CellResponse>> CellsPostWorksheetCellSetValueAsyncWithHttpInfo (string name, string sheetName, string cellName, string value = null, string type = null, string formula = null, string folder = null, string storage = null);
         /// <summary>
         /// Merge cells.
         /// </summary>
@@ -2219,8 +2365,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">The total rows</param>
         /// <param name="totalColumns">The total columns.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostWorksheetMergeAsync (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostWorksheetMergeAsync (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null);
 
         /// <summary>
         /// Merge cells.
@@ -2236,8 +2383,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">The total rows</param>
         /// <param name="totalColumns">The total columns.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostWorksheetMergeAsyncWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostWorksheetMergeAsyncWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null);
         /// <summary>
         /// Unmerge cells.
         /// </summary>
@@ -2252,8 +2400,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">The total rows</param>
         /// <param name="totalColumns">The total columns.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostWorksheetUnmergeAsync (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPostWorksheetUnmergeAsync (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null);
 
         /// <summary>
         /// Unmerge cells.
@@ -2269,8 +2418,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">The total rows</param>
         /// <param name="totalColumns">The total columns.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostWorksheetUnmergeAsyncWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostWorksheetUnmergeAsyncWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null);
         /// <summary>
         /// Insert worksheet columns.
         /// </summary>
@@ -2284,8 +2434,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columns">The columns.</param>
         /// <param name="updateReference">The update reference. (optional, default to true)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ColumnsResponse</returns>
-        System.Threading.Tasks.Task<ColumnsResponse> CellsPutInsertWorksheetColumnsAsync (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null);
+        System.Threading.Tasks.Task<ColumnsResponse> CellsPutInsertWorksheetColumnsAsync (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Insert worksheet columns.
@@ -2300,8 +2451,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columns">The columns.</param>
         /// <param name="updateReference">The update reference. (optional, default to true)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ColumnsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ColumnsResponse>> CellsPutInsertWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<ColumnsResponse>> CellsPutInsertWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null, string storage = null);
         /// <summary>
         /// Insert new worksheet row.
         /// </summary>
@@ -2313,8 +2465,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="rowIndex">The new row index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of RowResponse</returns>
-        System.Threading.Tasks.Task<RowResponse> CellsPutInsertWorksheetRowAsync (string name, string sheetName, int? rowIndex, string folder = null);
+        System.Threading.Tasks.Task<RowResponse> CellsPutInsertWorksheetRowAsync (string name, string sheetName, int? rowIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Insert new worksheet row.
@@ -2327,8 +2480,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="rowIndex">The new row index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (RowResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RowResponse>> CellsPutInsertWorksheetRowAsyncWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<RowResponse>> CellsPutInsertWorksheetRowAsyncWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null, string storage = null);
         /// <summary>
         /// Insert several new worksheet rows.
         /// </summary>
@@ -2342,8 +2496,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated. (optional, default to 1)</param>
         /// <param name="updateReference">Indicates if update references in other worksheets. (optional, default to true)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsPutInsertWorksheetRowsAsync (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsPutInsertWorksheetRowsAsync (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Insert several new worksheet rows.
@@ -2358,8 +2513,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated. (optional, default to 1)</param>
         /// <param name="updateReference">Indicates if update references in other worksheets. (optional, default to true)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPutInsertWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPutInsertWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null);
         #endregion Asynchronous Operations
     }
 
@@ -2386,6 +2542,25 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 this.Configuration.ApiClient.Configuration = this.Configuration;
             }
         }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsApi"/> class.
+        /// </summary>
+        /// <returns></returns>
+        public CellsApi(String basePath, String accesstoken)
+        {
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + accesstoken);
+            this.Configuration = new Configuration(new ApiClient(basePath),headerParameters);
+
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CellsApi"/> class
@@ -2400,6 +2575,28 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
                 this.Configuration = configuration;
 
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsApi"/> class
+        /// using Configuration object
+        /// </summary>
+        /// <param name="configuration">An instance of Configuration</param>
+        /// <returns></returns>
+        public CellsApi(String grantType,String appSID,String appKey)
+        {
+            OAuthApi oauth2 = new OAuthApi("https://api.aspose.cloud");
+            var oauth2response = oauth2.OAuthPost(grantType, appSID, appKey);
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + oauth2response.AccessToken);
+            this.Configuration =  new Configuration(new ApiClient(), headerParameters);
             ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
@@ -2482,10 +2679,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columns">The columns.</param>
         /// <param name="updateReference">The update reference.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ColumnsResponse</returns>
-        public ColumnsResponse CellsDeleteWorksheetColumns (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null)
+        public ColumnsResponse CellsDeleteWorksheetColumns (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null, string storage = null)
         {
-             ApiResponse<ColumnsResponse> localVarResponse = CellsDeleteWorksheetColumnsWithHttpInfo(name, sheetName, columnIndex, columns, updateReference, folder);
+             ApiResponse<ColumnsResponse> localVarResponse = CellsDeleteWorksheetColumnsWithHttpInfo(name, sheetName, columnIndex, columns, updateReference, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -2499,8 +2697,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columns">The columns.</param>
         /// <param name="updateReference">The update reference.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ColumnsResponse</returns>
-        public ApiResponse< ColumnsResponse > CellsDeleteWorksheetColumnsWithHttpInfo (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null)
+        public ApiResponse< ColumnsResponse > CellsDeleteWorksheetColumnsWithHttpInfo (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2546,6 +2745,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (columns != null) localVarQueryParams.Add("columns", Configuration.ApiClient.ParameterToString(columns)); // query parameter
             if (updateReference != null) localVarQueryParams.Add("updateReference", Configuration.ApiClient.ParameterToString(updateReference)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2576,10 +2776,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columns">The columns.</param>
         /// <param name="updateReference">The update reference.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ColumnsResponse</returns>
-        public async System.Threading.Tasks.Task<ColumnsResponse> CellsDeleteWorksheetColumnsAsync (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null)
+        public async System.Threading.Tasks.Task<ColumnsResponse> CellsDeleteWorksheetColumnsAsync (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null, string storage = null)
         {
-             ApiResponse<ColumnsResponse> localVarResponse = await CellsDeleteWorksheetColumnsAsyncWithHttpInfo(name, sheetName, columnIndex, columns, updateReference, folder);
+             ApiResponse<ColumnsResponse> localVarResponse = await CellsDeleteWorksheetColumnsAsyncWithHttpInfo(name, sheetName, columnIndex, columns, updateReference, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -2594,8 +2795,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columns">The columns.</param>
         /// <param name="updateReference">The update reference.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ColumnsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ColumnsResponse>> CellsDeleteWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ColumnsResponse>> CellsDeleteWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2641,6 +2843,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (columns != null) localVarQueryParams.Add("columns", Configuration.ApiClient.ParameterToString(columns)); // query parameter
             if (updateReference != null) localVarQueryParams.Add("updateReference", Configuration.ApiClient.ParameterToString(updateReference)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2669,10 +2872,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet bame.</param>
         /// <param name="rowIndex">The row index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsDeleteWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null)
+        public SaaSposeResponse CellsDeleteWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsDeleteWorksheetRowWithHttpInfo(name, sheetName, rowIndex, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsDeleteWorksheetRowWithHttpInfo(name, sheetName, rowIndex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -2684,8 +2888,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet bame.</param>
         /// <param name="rowIndex">The row index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsDeleteWorksheetRowWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsDeleteWorksheetRowWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2723,6 +2928,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (rowIndex != null) localVarPathParams.Add("rowIndex", Configuration.ApiClient.ParameterToString(rowIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2751,10 +2957,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet bame.</param>
         /// <param name="rowIndex">The row index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsDeleteWorksheetRowAsync (string name, string sheetName, int? rowIndex, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsDeleteWorksheetRowAsync (string name, string sheetName, int? rowIndex, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsDeleteWorksheetRowAsyncWithHttpInfo(name, sheetName, rowIndex, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsDeleteWorksheetRowAsyncWithHttpInfo(name, sheetName, rowIndex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -2767,8 +2974,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet bame.</param>
         /// <param name="rowIndex">The row index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsDeleteWorksheetRowAsyncWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsDeleteWorksheetRowAsyncWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2806,6 +3014,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (rowIndex != null) localVarPathParams.Add("rowIndex", Configuration.ApiClient.ParameterToString(rowIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2836,10 +3045,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated. (optional, default to 1)</param>
         /// <param name="updateReference">Indicates if update references in other worksheets. (optional, default to true)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsDeleteWorksheetRows (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null)
+        public SaaSposeResponse CellsDeleteWorksheetRows (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsDeleteWorksheetRowsWithHttpInfo(name, sheetName, startrow, totalRows, updateReference, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsDeleteWorksheetRowsWithHttpInfo(name, sheetName, startrow, totalRows, updateReference, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -2853,8 +3063,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated. (optional, default to 1)</param>
         /// <param name="updateReference">Indicates if update references in other worksheets. (optional, default to true)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsDeleteWorksheetRowsWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsDeleteWorksheetRowsWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2894,6 +3105,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (totalRows != null) localVarQueryParams.Add("totalRows", Configuration.ApiClient.ParameterToString(totalRows)); // query parameter
             if (updateReference != null) localVarQueryParams.Add("updateReference", Configuration.ApiClient.ParameterToString(updateReference)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2924,10 +3136,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated. (optional, default to 1)</param>
         /// <param name="updateReference">Indicates if update references in other worksheets. (optional, default to true)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsDeleteWorksheetRowsAsync (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsDeleteWorksheetRowsAsync (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsDeleteWorksheetRowsAsyncWithHttpInfo(name, sheetName, startrow, totalRows, updateReference, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsDeleteWorksheetRowsAsyncWithHttpInfo(name, sheetName, startrow, totalRows, updateReference, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -2942,8 +3155,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated. (optional, default to 1)</param>
         /// <param name="updateReference">Indicates if update references in other worksheets. (optional, default to true)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsDeleteWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsDeleteWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2983,6 +3197,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (totalRows != null) localVarQueryParams.Add("totalRows", Configuration.ApiClient.ParameterToString(totalRows)); // query parameter
             if (updateReference != null) localVarQueryParams.Add("updateReference", Configuration.ApiClient.ParameterToString(updateReference)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3011,10 +3226,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellOrMethodName">The cell&#39;s or method name. (Method name like firstcell, endcell etc.)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
-        /// <returns>System.IO.Stream</returns>
-        public System.IO.Stream CellsGetWorksheetCell (string name, string sheetName, string cellOrMethodName, string folder = null)
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>Object</returns>
+        public Object CellsGetWorksheetCell (string name, string sheetName, string cellOrMethodName, string folder = null, string storage = null)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = CellsGetWorksheetCellWithHttpInfo(name, sheetName, cellOrMethodName, folder);
+             ApiResponse<Object> localVarResponse = CellsGetWorksheetCellWithHttpInfo(name, sheetName, cellOrMethodName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -3026,8 +3242,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellOrMethodName">The cell&#39;s or method name. (Method name like firstcell, endcell etc.)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
-        /// <returns>ApiResponse of System.IO.Stream</returns>
-        public ApiResponse< System.IO.Stream > CellsGetWorksheetCellWithHttpInfo (string name, string sheetName, string cellOrMethodName, string folder = null)
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse< Object > CellsGetWorksheetCellWithHttpInfo (string name, string sheetName, string cellOrMethodName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3065,6 +3282,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (cellOrMethodName != null) localVarPathParams.Add("cellOrMethodName", Configuration.ApiClient.ParameterToString(cellOrMethodName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3080,9 +3298,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (System.IO.Stream) Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
+                (Object) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -3093,10 +3311,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellOrMethodName">The cell&#39;s or method name. (Method name like firstcell, endcell etc.)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
-        /// <returns>Task of System.IO.Stream</returns>
-        public async System.Threading.Tasks.Task<System.IO.Stream> CellsGetWorksheetCellAsync (string name, string sheetName, string cellOrMethodName, string folder = null)
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> CellsGetWorksheetCellAsync (string name, string sheetName, string cellOrMethodName, string folder = null, string storage = null)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = await CellsGetWorksheetCellAsyncWithHttpInfo(name, sheetName, cellOrMethodName, folder);
+             ApiResponse<Object> localVarResponse = await CellsGetWorksheetCellAsyncWithHttpInfo(name, sheetName, cellOrMethodName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -3109,8 +3328,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellOrMethodName">The cell&#39;s or method name. (Method name like firstcell, endcell etc.)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
-        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsGetWorksheetCellAsyncWithHttpInfo (string name, string sheetName, string cellOrMethodName, string folder = null)
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> CellsGetWorksheetCellAsyncWithHttpInfo (string name, string sheetName, string cellOrMethodName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3148,6 +3368,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (cellOrMethodName != null) localVarPathParams.Add("cellOrMethodName", Configuration.ApiClient.ParameterToString(cellOrMethodName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3163,9 +3384,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (System.IO.Stream) Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
+                (Object) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -3176,10 +3397,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellName">Cell&#39;s name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>StyleResponse</returns>
-        public StyleResponse CellsGetWorksheetCellStyle (string name, string sheetName, string cellName, string folder = null)
+        public StyleResponse CellsGetWorksheetCellStyle (string name, string sheetName, string cellName, string folder = null, string storage = null)
         {
-             ApiResponse<StyleResponse> localVarResponse = CellsGetWorksheetCellStyleWithHttpInfo(name, sheetName, cellName, folder);
+             ApiResponse<StyleResponse> localVarResponse = CellsGetWorksheetCellStyleWithHttpInfo(name, sheetName, cellName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -3191,8 +3413,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellName">Cell&#39;s name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of StyleResponse</returns>
-        public ApiResponse< StyleResponse > CellsGetWorksheetCellStyleWithHttpInfo (string name, string sheetName, string cellName, string folder = null)
+        public ApiResponse< StyleResponse > CellsGetWorksheetCellStyleWithHttpInfo (string name, string sheetName, string cellName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3230,6 +3453,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (cellName != null) localVarPathParams.Add("cellName", Configuration.ApiClient.ParameterToString(cellName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3258,10 +3482,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellName">Cell&#39;s name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of StyleResponse</returns>
-        public async System.Threading.Tasks.Task<StyleResponse> CellsGetWorksheetCellStyleAsync (string name, string sheetName, string cellName, string folder = null)
+        public async System.Threading.Tasks.Task<StyleResponse> CellsGetWorksheetCellStyleAsync (string name, string sheetName, string cellName, string folder = null, string storage = null)
         {
-             ApiResponse<StyleResponse> localVarResponse = await CellsGetWorksheetCellStyleAsyncWithHttpInfo(name, sheetName, cellName, folder);
+             ApiResponse<StyleResponse> localVarResponse = await CellsGetWorksheetCellStyleAsyncWithHttpInfo(name, sheetName, cellName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -3274,8 +3499,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellName">Cell&#39;s name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (StyleResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<StyleResponse>> CellsGetWorksheetCellStyleAsyncWithHttpInfo (string name, string sheetName, string cellName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<StyleResponse>> CellsGetWorksheetCellStyleAsyncWithHttpInfo (string name, string sheetName, string cellName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3313,6 +3539,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (cellName != null) localVarPathParams.Add("cellName", Configuration.ApiClient.ParameterToString(cellName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3342,10 +3569,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="offest">Begginig offset. (optional, default to 0)</param>
         /// <param name="count">Maximum amount of cells in the response. (optional, default to 0)</param>
         /// <param name="folder">Document&#39;s folder name. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>CellsResponse</returns>
-        public CellsResponse CellsGetWorksheetCells (string name, string sheetName, int? offest = null, int? count = null, string folder = null)
+        public CellsResponse CellsGetWorksheetCells (string name, string sheetName, int? offest = null, int? count = null, string folder = null, string storage = null)
         {
-             ApiResponse<CellsResponse> localVarResponse = CellsGetWorksheetCellsWithHttpInfo(name, sheetName, offest, count, folder);
+             ApiResponse<CellsResponse> localVarResponse = CellsGetWorksheetCellsWithHttpInfo(name, sheetName, offest, count, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -3358,8 +3586,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="offest">Begginig offset. (optional, default to 0)</param>
         /// <param name="count">Maximum amount of cells in the response. (optional, default to 0)</param>
         /// <param name="folder">Document&#39;s folder name. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of CellsResponse</returns>
-        public ApiResponse< CellsResponse > CellsGetWorksheetCellsWithHttpInfo (string name, string sheetName, int? offest = null, int? count = null, string folder = null)
+        public ApiResponse< CellsResponse > CellsGetWorksheetCellsWithHttpInfo (string name, string sheetName, int? offest = null, int? count = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3395,6 +3624,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (offest != null) localVarQueryParams.Add("offest", Configuration.ApiClient.ParameterToString(offest)); // query parameter
             if (count != null) localVarQueryParams.Add("count", Configuration.ApiClient.ParameterToString(count)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3424,10 +3654,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="offest">Begginig offset. (optional, default to 0)</param>
         /// <param name="count">Maximum amount of cells in the response. (optional, default to 0)</param>
         /// <param name="folder">Document&#39;s folder name. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of CellsResponse</returns>
-        public async System.Threading.Tasks.Task<CellsResponse> CellsGetWorksheetCellsAsync (string name, string sheetName, int? offest = null, int? count = null, string folder = null)
+        public async System.Threading.Tasks.Task<CellsResponse> CellsGetWorksheetCellsAsync (string name, string sheetName, int? offest = null, int? count = null, string folder = null, string storage = null)
         {
-             ApiResponse<CellsResponse> localVarResponse = await CellsGetWorksheetCellsAsyncWithHttpInfo(name, sheetName, offest, count, folder);
+             ApiResponse<CellsResponse> localVarResponse = await CellsGetWorksheetCellsAsyncWithHttpInfo(name, sheetName, offest, count, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -3441,8 +3672,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="offest">Begginig offset. (optional, default to 0)</param>
         /// <param name="count">Maximum amount of cells in the response. (optional, default to 0)</param>
         /// <param name="folder">Document&#39;s folder name. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (CellsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CellsResponse>> CellsGetWorksheetCellsAsyncWithHttpInfo (string name, string sheetName, int? offest = null, int? count = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<CellsResponse>> CellsGetWorksheetCellsAsyncWithHttpInfo (string name, string sheetName, int? offest = null, int? count = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3478,6 +3710,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (offest != null) localVarQueryParams.Add("offest", Configuration.ApiClient.ParameterToString(offest)); // query parameter
             if (count != null) localVarQueryParams.Add("count", Configuration.ApiClient.ParameterToString(count)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3506,10 +3739,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="columnIndex">The column index.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ColumnResponse</returns>
-        public ColumnResponse CellsGetWorksheetColumn (string name, string sheetName, int? columnIndex, string folder = null)
+        public ColumnResponse CellsGetWorksheetColumn (string name, string sheetName, int? columnIndex, string folder = null, string storage = null)
         {
-             ApiResponse<ColumnResponse> localVarResponse = CellsGetWorksheetColumnWithHttpInfo(name, sheetName, columnIndex, folder);
+             ApiResponse<ColumnResponse> localVarResponse = CellsGetWorksheetColumnWithHttpInfo(name, sheetName, columnIndex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -3521,8 +3755,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="columnIndex">The column index.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ColumnResponse</returns>
-        public ApiResponse< ColumnResponse > CellsGetWorksheetColumnWithHttpInfo (string name, string sheetName, int? columnIndex, string folder = null)
+        public ApiResponse< ColumnResponse > CellsGetWorksheetColumnWithHttpInfo (string name, string sheetName, int? columnIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3560,6 +3795,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (columnIndex != null) localVarPathParams.Add("columnIndex", Configuration.ApiClient.ParameterToString(columnIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3588,10 +3824,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="columnIndex">The column index.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ColumnResponse</returns>
-        public async System.Threading.Tasks.Task<ColumnResponse> CellsGetWorksheetColumnAsync (string name, string sheetName, int? columnIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ColumnResponse> CellsGetWorksheetColumnAsync (string name, string sheetName, int? columnIndex, string folder = null, string storage = null)
         {
-             ApiResponse<ColumnResponse> localVarResponse = await CellsGetWorksheetColumnAsyncWithHttpInfo(name, sheetName, columnIndex, folder);
+             ApiResponse<ColumnResponse> localVarResponse = await CellsGetWorksheetColumnAsyncWithHttpInfo(name, sheetName, columnIndex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -3604,8 +3841,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="columnIndex">The column index.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ColumnResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ColumnResponse>> CellsGetWorksheetColumnAsyncWithHttpInfo (string name, string sheetName, int? columnIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ColumnResponse>> CellsGetWorksheetColumnAsyncWithHttpInfo (string name, string sheetName, int? columnIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3643,6 +3881,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (columnIndex != null) localVarPathParams.Add("columnIndex", Configuration.ApiClient.ParameterToString(columnIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3670,10 +3909,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">The workdook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ColumnsResponse</returns>
-        public ColumnsResponse CellsGetWorksheetColumns (string name, string sheetName, string folder = null)
+        public ColumnsResponse CellsGetWorksheetColumns (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<ColumnsResponse> localVarResponse = CellsGetWorksheetColumnsWithHttpInfo(name, sheetName, folder);
+             ApiResponse<ColumnsResponse> localVarResponse = CellsGetWorksheetColumnsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -3684,8 +3924,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">The workdook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ColumnsResponse</returns>
-        public ApiResponse< ColumnsResponse > CellsGetWorksheetColumnsWithHttpInfo (string name, string sheetName, string folder = null)
+        public ApiResponse< ColumnsResponse > CellsGetWorksheetColumnsWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3719,6 +3960,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3746,10 +3988,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">The workdook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ColumnsResponse</returns>
-        public async System.Threading.Tasks.Task<ColumnsResponse> CellsGetWorksheetColumnsAsync (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ColumnsResponse> CellsGetWorksheetColumnsAsync (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<ColumnsResponse> localVarResponse = await CellsGetWorksheetColumnsAsyncWithHttpInfo(name, sheetName, folder);
+             ApiResponse<ColumnsResponse> localVarResponse = await CellsGetWorksheetColumnsAsyncWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -3761,8 +4004,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">The workdook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ColumnsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ColumnsResponse>> CellsGetWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ColumnsResponse>> CellsGetWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3796,6 +4040,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3824,10 +4069,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="rowIndex">The row index.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>RowResponse</returns>
-        public RowResponse CellsGetWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null)
+        public RowResponse CellsGetWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null, string storage = null)
         {
-             ApiResponse<RowResponse> localVarResponse = CellsGetWorksheetRowWithHttpInfo(name, sheetName, rowIndex, folder);
+             ApiResponse<RowResponse> localVarResponse = CellsGetWorksheetRowWithHttpInfo(name, sheetName, rowIndex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -3839,8 +4085,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="rowIndex">The row index.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of RowResponse</returns>
-        public ApiResponse< RowResponse > CellsGetWorksheetRowWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null)
+        public ApiResponse< RowResponse > CellsGetWorksheetRowWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3878,6 +4125,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (rowIndex != null) localVarPathParams.Add("rowIndex", Configuration.ApiClient.ParameterToString(rowIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3906,10 +4154,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="rowIndex">The row index.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of RowResponse</returns>
-        public async System.Threading.Tasks.Task<RowResponse> CellsGetWorksheetRowAsync (string name, string sheetName, int? rowIndex, string folder = null)
+        public async System.Threading.Tasks.Task<RowResponse> CellsGetWorksheetRowAsync (string name, string sheetName, int? rowIndex, string folder = null, string storage = null)
         {
-             ApiResponse<RowResponse> localVarResponse = await CellsGetWorksheetRowAsyncWithHttpInfo(name, sheetName, rowIndex, folder);
+             ApiResponse<RowResponse> localVarResponse = await CellsGetWorksheetRowAsyncWithHttpInfo(name, sheetName, rowIndex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -3922,8 +4171,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="rowIndex">The row index.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (RowResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<RowResponse>> CellsGetWorksheetRowAsyncWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<RowResponse>> CellsGetWorksheetRowAsyncWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3961,6 +4211,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (rowIndex != null) localVarPathParams.Add("rowIndex", Configuration.ApiClient.ParameterToString(rowIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3988,10 +4239,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">The workdook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>RowsResponse</returns>
-        public RowsResponse CellsGetWorksheetRows (string name, string sheetName, string folder = null)
+        public RowsResponse CellsGetWorksheetRows (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<RowsResponse> localVarResponse = CellsGetWorksheetRowsWithHttpInfo(name, sheetName, folder);
+             ApiResponse<RowsResponse> localVarResponse = CellsGetWorksheetRowsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -4002,8 +4254,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">The workdook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of RowsResponse</returns>
-        public ApiResponse< RowsResponse > CellsGetWorksheetRowsWithHttpInfo (string name, string sheetName, string folder = null)
+        public ApiResponse< RowsResponse > CellsGetWorksheetRowsWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -4037,6 +4290,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -4064,10 +4318,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">The workdook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of RowsResponse</returns>
-        public async System.Threading.Tasks.Task<RowsResponse> CellsGetWorksheetRowsAsync (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<RowsResponse> CellsGetWorksheetRowsAsync (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<RowsResponse> localVarResponse = await CellsGetWorksheetRowsAsyncWithHttpInfo(name, sheetName, folder);
+             ApiResponse<RowsResponse> localVarResponse = await CellsGetWorksheetRowsAsyncWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -4079,8 +4334,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">The workdook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (RowsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<RowsResponse>> CellsGetWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<RowsResponse>> CellsGetWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -4114,6 +4370,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -4143,10 +4400,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName"></param>
         /// <param name="options"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostCellCalculate (string name, string sheetName, string cellName, CalculationOptions options = null, string folder = null)
+        public SaaSposeResponse CellsPostCellCalculate (string name, string sheetName, string cellName, CalculationOptions options = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostCellCalculateWithHttpInfo(name, sheetName, cellName, options, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostCellCalculateWithHttpInfo(name, sheetName, cellName, options, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -4159,8 +4417,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName"></param>
         /// <param name="options"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostCellCalculateWithHttpInfo (string name, string sheetName, string cellName, CalculationOptions options = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostCellCalculateWithHttpInfo (string name, string sheetName, string cellName, CalculationOptions options = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -4198,6 +4457,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (cellName != null) localVarPathParams.Add("cellName", Configuration.ApiClient.ParameterToString(cellName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (options != null && options.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(options); // http body (model) parameter
@@ -4235,10 +4495,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName"></param>
         /// <param name="options"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostCellCalculateAsync (string name, string sheetName, string cellName, CalculationOptions options = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostCellCalculateAsync (string name, string sheetName, string cellName, CalculationOptions options = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostCellCalculateAsyncWithHttpInfo(name, sheetName, cellName, options, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostCellCalculateAsyncWithHttpInfo(name, sheetName, cellName, options, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -4252,8 +4513,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName"></param>
         /// <param name="options"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostCellCalculateAsyncWithHttpInfo (string name, string sheetName, string cellName, CalculationOptions options = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostCellCalculateAsyncWithHttpInfo (string name, string sheetName, string cellName, CalculationOptions options = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -4291,6 +4553,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (cellName != null) localVarPathParams.Add("cellName", Configuration.ApiClient.ParameterToString(cellName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (options != null && options.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(options); // http body (model) parameter
@@ -4328,10 +4591,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName"></param>
         /// <param name="options"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostCellCharacters (string name, string sheetName, string cellName, List<FontSetting> options = null, string folder = null)
+        public SaaSposeResponse CellsPostCellCharacters (string name, string sheetName, string cellName, List<FontSetting> options = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostCellCharactersWithHttpInfo(name, sheetName, cellName, options, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostCellCharactersWithHttpInfo(name, sheetName, cellName, options, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -4344,8 +4608,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName"></param>
         /// <param name="options"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostCellCharactersWithHttpInfo (string name, string sheetName, string cellName, List<FontSetting> options = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostCellCharactersWithHttpInfo (string name, string sheetName, string cellName, List<FontSetting> options = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -4383,6 +4648,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (cellName != null) localVarPathParams.Add("cellName", Configuration.ApiClient.ParameterToString(cellName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (options != null && options.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(options); // http body (model) parameter
@@ -4420,10 +4686,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName"></param>
         /// <param name="options"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostCellCharactersAsync (string name, string sheetName, string cellName, List<FontSetting> options = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostCellCharactersAsync (string name, string sheetName, string cellName, List<FontSetting> options = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostCellCharactersAsyncWithHttpInfo(name, sheetName, cellName, options, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostCellCharactersAsyncWithHttpInfo(name, sheetName, cellName, options, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -4437,8 +4704,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName"></param>
         /// <param name="options"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostCellCharactersAsyncWithHttpInfo (string name, string sheetName, string cellName, List<FontSetting> options = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostCellCharactersAsyncWithHttpInfo (string name, string sheetName, string cellName, List<FontSetting> options = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -4476,6 +4744,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (cellName != null) localVarPathParams.Add("cellName", Configuration.ApiClient.ParameterToString(cellName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (options != null && options.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(options); // http body (model) parameter
@@ -4516,10 +4785,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="endRow">The end row. (optional)</param>
         /// <param name="endColumn">The end column. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostClearContents (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null)
+        public SaaSposeResponse CellsPostClearContents (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostClearContentsWithHttpInfo(name, sheetName, range, startRow, startColumn, endRow, endColumn, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostClearContentsWithHttpInfo(name, sheetName, range, startRow, startColumn, endRow, endColumn, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -4535,8 +4805,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="endRow">The end row. (optional)</param>
         /// <param name="endColumn">The end column. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostClearContentsWithHttpInfo (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostClearContentsWithHttpInfo (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -4575,6 +4846,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (endRow != null) localVarQueryParams.Add("endRow", Configuration.ApiClient.ParameterToString(endRow)); // query parameter
             if (endColumn != null) localVarQueryParams.Add("endColumn", Configuration.ApiClient.ParameterToString(endColumn)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -4607,10 +4879,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="endRow">The end row. (optional)</param>
         /// <param name="endColumn">The end column. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostClearContentsAsync (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostClearContentsAsync (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostClearContentsAsyncWithHttpInfo(name, sheetName, range, startRow, startColumn, endRow, endColumn, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostClearContentsAsyncWithHttpInfo(name, sheetName, range, startRow, startColumn, endRow, endColumn, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -4627,8 +4900,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="endRow">The end row. (optional)</param>
         /// <param name="endColumn">The end column. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostClearContentsAsyncWithHttpInfo (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostClearContentsAsyncWithHttpInfo (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -4667,6 +4941,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (endRow != null) localVarQueryParams.Add("endRow", Configuration.ApiClient.ParameterToString(endRow)); // query parameter
             if (endColumn != null) localVarQueryParams.Add("endColumn", Configuration.ApiClient.ParameterToString(endColumn)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -4699,10 +4974,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="endRow">The end row. (optional)</param>
         /// <param name="endColumn">The end column. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostClearFormats (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null)
+        public SaaSposeResponse CellsPostClearFormats (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostClearFormatsWithHttpInfo(name, sheetName, range, startRow, startColumn, endRow, endColumn, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostClearFormatsWithHttpInfo(name, sheetName, range, startRow, startColumn, endRow, endColumn, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -4718,8 +4994,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="endRow">The end row. (optional)</param>
         /// <param name="endColumn">The end column. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostClearFormatsWithHttpInfo (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostClearFormatsWithHttpInfo (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -4758,6 +5035,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (endRow != null) localVarQueryParams.Add("endRow", Configuration.ApiClient.ParameterToString(endRow)); // query parameter
             if (endColumn != null) localVarQueryParams.Add("endColumn", Configuration.ApiClient.ParameterToString(endColumn)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -4790,10 +5068,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="endRow">The end row. (optional)</param>
         /// <param name="endColumn">The end column. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostClearFormatsAsync (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostClearFormatsAsync (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostClearFormatsAsyncWithHttpInfo(name, sheetName, range, startRow, startColumn, endRow, endColumn, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostClearFormatsAsyncWithHttpInfo(name, sheetName, range, startRow, startColumn, endRow, endColumn, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -4810,8 +5089,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="endRow">The end row. (optional)</param>
         /// <param name="endColumn">The end column. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostClearFormatsAsyncWithHttpInfo (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostClearFormatsAsyncWithHttpInfo (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -4850,6 +5130,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (endRow != null) localVarQueryParams.Add("endRow", Configuration.ApiClient.ParameterToString(endRow)); // query parameter
             if (endColumn != null) localVarQueryParams.Add("endColumn", Configuration.ApiClient.ParameterToString(endColumn)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -4879,10 +5160,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnIndex">The column index.</param>
         /// <param name="style">Style dto (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostColumnStyle (string name, string sheetName, int? columnIndex, Style style = null, string folder = null)
+        public SaaSposeResponse CellsPostColumnStyle (string name, string sheetName, int? columnIndex, Style style = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostColumnStyleWithHttpInfo(name, sheetName, columnIndex, style, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostColumnStyleWithHttpInfo(name, sheetName, columnIndex, style, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -4895,8 +5177,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnIndex">The column index.</param>
         /// <param name="style">Style dto (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostColumnStyleWithHttpInfo (string name, string sheetName, int? columnIndex, Style style = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostColumnStyleWithHttpInfo (string name, string sheetName, int? columnIndex, Style style = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -4934,6 +5217,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (columnIndex != null) localVarPathParams.Add("columnIndex", Configuration.ApiClient.ParameterToString(columnIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (style != null && style.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(style); // http body (model) parameter
@@ -4971,10 +5255,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnIndex">The column index.</param>
         /// <param name="style">Style dto (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostColumnStyleAsync (string name, string sheetName, int? columnIndex, Style style = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostColumnStyleAsync (string name, string sheetName, int? columnIndex, Style style = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostColumnStyleAsyncWithHttpInfo(name, sheetName, columnIndex, style, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostColumnStyleAsyncWithHttpInfo(name, sheetName, columnIndex, style, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -4988,8 +5273,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnIndex">The column index.</param>
         /// <param name="style">Style dto (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostColumnStyleAsyncWithHttpInfo (string name, string sheetName, int? columnIndex, Style style = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostColumnStyleAsyncWithHttpInfo (string name, string sheetName, int? columnIndex, Style style = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -5027,6 +5313,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (columnIndex != null) localVarPathParams.Add("columnIndex", Configuration.ApiClient.ParameterToString(columnIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (style != null && style.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(style); // http body (model) parameter
@@ -5067,10 +5354,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="row">Source row (optional)</param>
         /// <param name="column">Source column (optional)</param>
         /// <param name="folder">Folder name (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostCopyCellIntoCell (string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null)
+        public SaaSposeResponse CellsPostCopyCellIntoCell (string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostCopyCellIntoCellWithHttpInfo(name, destCellName, sheetName, worksheet, cellname, row, column, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostCopyCellIntoCellWithHttpInfo(name, destCellName, sheetName, worksheet, cellname, row, column, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -5086,8 +5374,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="row">Source row (optional)</param>
         /// <param name="column">Source column (optional)</param>
         /// <param name="folder">Folder name (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostCopyCellIntoCellWithHttpInfo (string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostCopyCellIntoCellWithHttpInfo (string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -5132,6 +5421,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (row != null) localVarQueryParams.Add("row", Configuration.ApiClient.ParameterToString(row)); // query parameter
             if (column != null) localVarQueryParams.Add("column", Configuration.ApiClient.ParameterToString(column)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -5164,10 +5454,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="row">Source row (optional)</param>
         /// <param name="column">Source column (optional)</param>
         /// <param name="folder">Folder name (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostCopyCellIntoCellAsync (string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostCopyCellIntoCellAsync (string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostCopyCellIntoCellAsyncWithHttpInfo(name, destCellName, sheetName, worksheet, cellname, row, column, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostCopyCellIntoCellAsyncWithHttpInfo(name, destCellName, sheetName, worksheet, cellname, row, column, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -5184,8 +5475,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="row">Source row (optional)</param>
         /// <param name="column">Source column (optional)</param>
         /// <param name="folder">Folder name (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostCopyCellIntoCellAsyncWithHttpInfo (string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostCopyCellIntoCellAsyncWithHttpInfo (string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -5230,6 +5522,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (row != null) localVarQueryParams.Add("row", Configuration.ApiClient.ParameterToString(row)); // query parameter
             if (column != null) localVarQueryParams.Add("column", Configuration.ApiClient.ParameterToString(column)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -5261,10 +5554,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnNumber">The copied column number</param>
         /// <param name="worksheet">The Worksheet (optional, default to )</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostCopyWorksheetColumns (string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null)
+        public SaaSposeResponse CellsPostCopyWorksheetColumns (string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostCopyWorksheetColumnsWithHttpInfo(name, sheetName, sourceColumnIndex, destinationColumnIndex, columnNumber, worksheet, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostCopyWorksheetColumnsWithHttpInfo(name, sheetName, sourceColumnIndex, destinationColumnIndex, columnNumber, worksheet, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -5279,8 +5573,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnNumber">The copied column number</param>
         /// <param name="worksheet">The Worksheet (optional, default to )</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostCopyWorksheetColumnsWithHttpInfo (string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostCopyWorksheetColumnsWithHttpInfo (string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -5327,6 +5622,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (columnNumber != null) localVarQueryParams.Add("columnNumber", Configuration.ApiClient.ParameterToString(columnNumber)); // query parameter
             if (worksheet != null) localVarQueryParams.Add("worksheet", Configuration.ApiClient.ParameterToString(worksheet)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -5358,10 +5654,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnNumber">The copied column number</param>
         /// <param name="worksheet">The Worksheet (optional, default to )</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostCopyWorksheetColumnsAsync (string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostCopyWorksheetColumnsAsync (string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostCopyWorksheetColumnsAsyncWithHttpInfo(name, sheetName, sourceColumnIndex, destinationColumnIndex, columnNumber, worksheet, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostCopyWorksheetColumnsAsyncWithHttpInfo(name, sheetName, sourceColumnIndex, destinationColumnIndex, columnNumber, worksheet, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -5377,8 +5674,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnNumber">The copied column number</param>
         /// <param name="worksheet">The Worksheet (optional, default to )</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostCopyWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostCopyWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -5425,6 +5723,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (columnNumber != null) localVarQueryParams.Add("columnNumber", Configuration.ApiClient.ParameterToString(columnNumber)); // query parameter
             if (worksheet != null) localVarQueryParams.Add("worksheet", Configuration.ApiClient.ParameterToString(worksheet)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -5456,10 +5755,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowNumber">The copied row number</param>
         /// <param name="worksheet">worksheet (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostCopyWorksheetRows (string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null)
+        public SaaSposeResponse CellsPostCopyWorksheetRows (string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostCopyWorksheetRowsWithHttpInfo(name, sheetName, sourceRowIndex, destinationRowIndex, rowNumber, worksheet, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostCopyWorksheetRowsWithHttpInfo(name, sheetName, sourceRowIndex, destinationRowIndex, rowNumber, worksheet, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -5474,8 +5774,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowNumber">The copied row number</param>
         /// <param name="worksheet">worksheet (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostCopyWorksheetRowsWithHttpInfo (string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostCopyWorksheetRowsWithHttpInfo (string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -5522,6 +5823,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (rowNumber != null) localVarQueryParams.Add("rowNumber", Configuration.ApiClient.ParameterToString(rowNumber)); // query parameter
             if (worksheet != null) localVarQueryParams.Add("worksheet", Configuration.ApiClient.ParameterToString(worksheet)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -5553,10 +5855,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowNumber">The copied row number</param>
         /// <param name="worksheet">worksheet (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostCopyWorksheetRowsAsync (string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostCopyWorksheetRowsAsync (string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostCopyWorksheetRowsAsyncWithHttpInfo(name, sheetName, sourceRowIndex, destinationRowIndex, rowNumber, worksheet, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostCopyWorksheetRowsAsyncWithHttpInfo(name, sheetName, sourceRowIndex, destinationRowIndex, rowNumber, worksheet, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -5572,8 +5875,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowNumber">The copied row number</param>
         /// <param name="worksheet">worksheet (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostCopyWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostCopyWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -5620,6 +5924,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (rowNumber != null) localVarQueryParams.Add("rowNumber", Configuration.ApiClient.ParameterToString(rowNumber)); // query parameter
             if (worksheet != null) localVarQueryParams.Add("worksheet", Configuration.ApiClient.ParameterToString(worksheet)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -5650,10 +5955,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last column index to be operated.</param>
         /// <param name="hide">columns visible state (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostGroupWorksheetColumns (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null)
+        public SaaSposeResponse CellsPostGroupWorksheetColumns (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostGroupWorksheetColumnsWithHttpInfo(name, sheetName, firstIndex, lastIndex, hide, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostGroupWorksheetColumnsWithHttpInfo(name, sheetName, firstIndex, lastIndex, hide, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -5667,8 +5973,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last column index to be operated.</param>
         /// <param name="hide">columns visible state (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostGroupWorksheetColumnsWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostGroupWorksheetColumnsWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -5711,6 +6018,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (lastIndex != null) localVarQueryParams.Add("lastIndex", Configuration.ApiClient.ParameterToString(lastIndex)); // query parameter
             if (hide != null) localVarQueryParams.Add("hide", Configuration.ApiClient.ParameterToString(hide)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -5741,10 +6049,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last column index to be operated.</param>
         /// <param name="hide">columns visible state (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostGroupWorksheetColumnsAsync (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostGroupWorksheetColumnsAsync (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostGroupWorksheetColumnsAsyncWithHttpInfo(name, sheetName, firstIndex, lastIndex, hide, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostGroupWorksheetColumnsAsyncWithHttpInfo(name, sheetName, firstIndex, lastIndex, hide, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -5759,8 +6068,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last column index to be operated.</param>
         /// <param name="hide">columns visible state (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostGroupWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostGroupWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -5803,6 +6113,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (lastIndex != null) localVarQueryParams.Add("lastIndex", Configuration.ApiClient.ParameterToString(lastIndex)); // query parameter
             if (hide != null) localVarQueryParams.Add("hide", Configuration.ApiClient.ParameterToString(hide)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -5833,10 +6144,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last row index to be operated.</param>
         /// <param name="hide">rows visible state (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostGroupWorksheetRows (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null)
+        public SaaSposeResponse CellsPostGroupWorksheetRows (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostGroupWorksheetRowsWithHttpInfo(name, sheetName, firstIndex, lastIndex, hide, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostGroupWorksheetRowsWithHttpInfo(name, sheetName, firstIndex, lastIndex, hide, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -5850,8 +6162,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last row index to be operated.</param>
         /// <param name="hide">rows visible state (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostGroupWorksheetRowsWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostGroupWorksheetRowsWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -5894,6 +6207,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (lastIndex != null) localVarQueryParams.Add("lastIndex", Configuration.ApiClient.ParameterToString(lastIndex)); // query parameter
             if (hide != null) localVarQueryParams.Add("hide", Configuration.ApiClient.ParameterToString(hide)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -5924,10 +6238,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last row index to be operated.</param>
         /// <param name="hide">rows visible state (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostGroupWorksheetRowsAsync (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostGroupWorksheetRowsAsync (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostGroupWorksheetRowsAsyncWithHttpInfo(name, sheetName, firstIndex, lastIndex, hide, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostGroupWorksheetRowsAsyncWithHttpInfo(name, sheetName, firstIndex, lastIndex, hide, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -5942,8 +6257,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last row index to be operated.</param>
         /// <param name="hide">rows visible state (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostGroupWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostGroupWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -5986,6 +6302,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (lastIndex != null) localVarQueryParams.Add("lastIndex", Configuration.ApiClient.ParameterToString(lastIndex)); // query parameter
             if (hide != null) localVarQueryParams.Add("hide", Configuration.ApiClient.ParameterToString(hide)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -6015,10 +6332,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startColumn">The begin column index to be operated.</param>
         /// <param name="totalColumns">Number of columns to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostHideWorksheetColumns (string name, string sheetName, int? startColumn, int? totalColumns, string folder = null)
+        public SaaSposeResponse CellsPostHideWorksheetColumns (string name, string sheetName, int? startColumn, int? totalColumns, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostHideWorksheetColumnsWithHttpInfo(name, sheetName, startColumn, totalColumns, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostHideWorksheetColumnsWithHttpInfo(name, sheetName, startColumn, totalColumns, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -6031,8 +6349,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startColumn">The begin column index to be operated.</param>
         /// <param name="totalColumns">Number of columns to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostHideWorksheetColumnsWithHttpInfo (string name, string sheetName, int? startColumn, int? totalColumns, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostHideWorksheetColumnsWithHttpInfo (string name, string sheetName, int? startColumn, int? totalColumns, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -6074,6 +6393,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (startColumn != null) localVarQueryParams.Add("startColumn", Configuration.ApiClient.ParameterToString(startColumn)); // query parameter
             if (totalColumns != null) localVarQueryParams.Add("totalColumns", Configuration.ApiClient.ParameterToString(totalColumns)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -6103,10 +6423,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startColumn">The begin column index to be operated.</param>
         /// <param name="totalColumns">Number of columns to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostHideWorksheetColumnsAsync (string name, string sheetName, int? startColumn, int? totalColumns, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostHideWorksheetColumnsAsync (string name, string sheetName, int? startColumn, int? totalColumns, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostHideWorksheetColumnsAsyncWithHttpInfo(name, sheetName, startColumn, totalColumns, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostHideWorksheetColumnsAsyncWithHttpInfo(name, sheetName, startColumn, totalColumns, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -6120,8 +6441,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startColumn">The begin column index to be operated.</param>
         /// <param name="totalColumns">Number of columns to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostHideWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? startColumn, int? totalColumns, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostHideWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? startColumn, int? totalColumns, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -6163,6 +6485,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (startColumn != null) localVarQueryParams.Add("startColumn", Configuration.ApiClient.ParameterToString(startColumn)); // query parameter
             if (totalColumns != null) localVarQueryParams.Add("totalColumns", Configuration.ApiClient.ParameterToString(totalColumns)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -6192,10 +6515,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startrow">The begin row index to be operated.</param>
         /// <param name="totalRows">Number of rows to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostHideWorksheetRows (string name, string sheetName, int? startrow, int? totalRows, string folder = null)
+        public SaaSposeResponse CellsPostHideWorksheetRows (string name, string sheetName, int? startrow, int? totalRows, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostHideWorksheetRowsWithHttpInfo(name, sheetName, startrow, totalRows, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostHideWorksheetRowsWithHttpInfo(name, sheetName, startrow, totalRows, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -6208,8 +6532,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startrow">The begin row index to be operated.</param>
         /// <param name="totalRows">Number of rows to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostHideWorksheetRowsWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostHideWorksheetRowsWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -6251,6 +6576,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (startrow != null) localVarQueryParams.Add("startrow", Configuration.ApiClient.ParameterToString(startrow)); // query parameter
             if (totalRows != null) localVarQueryParams.Add("totalRows", Configuration.ApiClient.ParameterToString(totalRows)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -6280,10 +6606,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startrow">The begin row index to be operated.</param>
         /// <param name="totalRows">Number of rows to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostHideWorksheetRowsAsync (string name, string sheetName, int? startrow, int? totalRows, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostHideWorksheetRowsAsync (string name, string sheetName, int? startrow, int? totalRows, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostHideWorksheetRowsAsyncWithHttpInfo(name, sheetName, startrow, totalRows, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostHideWorksheetRowsAsyncWithHttpInfo(name, sheetName, startrow, totalRows, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -6297,8 +6624,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="startrow">The begin row index to be operated.</param>
         /// <param name="totalRows">Number of rows to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostHideWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostHideWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -6340,6 +6668,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (startrow != null) localVarQueryParams.Add("startrow", Configuration.ApiClient.ParameterToString(startrow)); // query parameter
             if (totalRows != null) localVarQueryParams.Add("totalRows", Configuration.ApiClient.ParameterToString(totalRows)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -6369,10 +6698,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowIndex">The row index.</param>
         /// <param name="style">Style dto (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostRowStyle (string name, string sheetName, int? rowIndex, Style style = null, string folder = null)
+        public SaaSposeResponse CellsPostRowStyle (string name, string sheetName, int? rowIndex, Style style = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostRowStyleWithHttpInfo(name, sheetName, rowIndex, style, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostRowStyleWithHttpInfo(name, sheetName, rowIndex, style, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -6385,8 +6715,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowIndex">The row index.</param>
         /// <param name="style">Style dto (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostRowStyleWithHttpInfo (string name, string sheetName, int? rowIndex, Style style = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostRowStyleWithHttpInfo (string name, string sheetName, int? rowIndex, Style style = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -6424,6 +6755,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (rowIndex != null) localVarPathParams.Add("rowIndex", Configuration.ApiClient.ParameterToString(rowIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (style != null && style.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(style); // http body (model) parameter
@@ -6461,10 +6793,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowIndex">The row index.</param>
         /// <param name="style">Style dto (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostRowStyleAsync (string name, string sheetName, int? rowIndex, Style style = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostRowStyleAsync (string name, string sheetName, int? rowIndex, Style style = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostRowStyleAsyncWithHttpInfo(name, sheetName, rowIndex, style, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostRowStyleAsyncWithHttpInfo(name, sheetName, rowIndex, style, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -6478,8 +6811,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowIndex">The row index.</param>
         /// <param name="style">Style dto (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostRowStyleAsyncWithHttpInfo (string name, string sheetName, int? rowIndex, Style style = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostRowStyleAsyncWithHttpInfo (string name, string sheetName, int? rowIndex, Style style = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -6517,6 +6851,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (rowIndex != null) localVarPathParams.Add("rowIndex", Configuration.ApiClient.ParameterToString(rowIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (style != null && style.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(style); // http body (model) parameter
@@ -6553,10 +6888,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellName">The cell name.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>CellResponse</returns>
-        public CellResponse CellsPostSetCellHtmlString (string name, string sheetName, string cellName, string folder = null)
+        public CellResponse CellsPostSetCellHtmlString (string name, string sheetName, string cellName, string folder = null, string storage = null)
         {
-             ApiResponse<CellResponse> localVarResponse = CellsPostSetCellHtmlStringWithHttpInfo(name, sheetName, cellName, folder);
+             ApiResponse<CellResponse> localVarResponse = CellsPostSetCellHtmlStringWithHttpInfo(name, sheetName, cellName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -6568,8 +6904,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellName">The cell name.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of CellResponse</returns>
-        public ApiResponse< CellResponse > CellsPostSetCellHtmlStringWithHttpInfo (string name, string sheetName, string cellName, string folder = null)
+        public ApiResponse< CellResponse > CellsPostSetCellHtmlStringWithHttpInfo (string name, string sheetName, string cellName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -6607,6 +6944,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (cellName != null) localVarPathParams.Add("cellName", Configuration.ApiClient.ParameterToString(cellName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -6635,10 +6973,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellName">The cell name.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of CellResponse</returns>
-        public async System.Threading.Tasks.Task<CellResponse> CellsPostSetCellHtmlStringAsync (string name, string sheetName, string cellName, string folder = null)
+        public async System.Threading.Tasks.Task<CellResponse> CellsPostSetCellHtmlStringAsync (string name, string sheetName, string cellName, string folder = null, string storage = null)
         {
-             ApiResponse<CellResponse> localVarResponse = await CellsPostSetCellHtmlStringAsyncWithHttpInfo(name, sheetName, cellName, folder);
+             ApiResponse<CellResponse> localVarResponse = await CellsPostSetCellHtmlStringAsyncWithHttpInfo(name, sheetName, cellName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -6651,8 +6990,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellName">The cell name.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (CellResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CellResponse>> CellsPostSetCellHtmlStringAsyncWithHttpInfo (string name, string sheetName, string cellName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<CellResponse>> CellsPostSetCellHtmlStringAsyncWithHttpInfo (string name, string sheetName, string cellName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -6690,6 +7030,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (cellName != null) localVarPathParams.Add("cellName", Configuration.ApiClient.ParameterToString(cellName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -6720,10 +7061,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="value">Range value</param>
         /// <param name="type">Value data type (like \&quot;int\&quot;)</param>
         /// <param name="folder">Folder name (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostSetCellRangeValue (string name, string sheetName, string cellarea, string value, string type, string folder = null)
+        public SaaSposeResponse CellsPostSetCellRangeValue (string name, string sheetName, string cellarea, string value, string type, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostSetCellRangeValueWithHttpInfo(name, sheetName, cellarea, value, type, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostSetCellRangeValueWithHttpInfo(name, sheetName, cellarea, value, type, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -6737,8 +7079,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="value">Range value</param>
         /// <param name="type">Value data type (like \&quot;int\&quot;)</param>
         /// <param name="folder">Folder name (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostSetCellRangeValueWithHttpInfo (string name, string sheetName, string cellarea, string value, string type, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostSetCellRangeValueWithHttpInfo (string name, string sheetName, string cellarea, string value, string type, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -6784,6 +7127,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (value != null) localVarQueryParams.Add("value", Configuration.ApiClient.ParameterToString(value)); // query parameter
             if (type != null) localVarQueryParams.Add("type", Configuration.ApiClient.ParameterToString(type)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -6814,10 +7158,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="value">Range value</param>
         /// <param name="type">Value data type (like \&quot;int\&quot;)</param>
         /// <param name="folder">Folder name (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostSetCellRangeValueAsync (string name, string sheetName, string cellarea, string value, string type, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostSetCellRangeValueAsync (string name, string sheetName, string cellarea, string value, string type, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostSetCellRangeValueAsyncWithHttpInfo(name, sheetName, cellarea, value, type, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostSetCellRangeValueAsyncWithHttpInfo(name, sheetName, cellarea, value, type, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -6832,8 +7177,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="value">Range value</param>
         /// <param name="type">Value data type (like \&quot;int\&quot;)</param>
         /// <param name="folder">Folder name (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostSetCellRangeValueAsyncWithHttpInfo (string name, string sheetName, string cellarea, string value, string type, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostSetCellRangeValueAsyncWithHttpInfo (string name, string sheetName, string cellarea, string value, string type, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -6879,6 +7225,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (value != null) localVarQueryParams.Add("value", Configuration.ApiClient.ParameterToString(value)); // query parameter
             if (type != null) localVarQueryParams.Add("type", Configuration.ApiClient.ParameterToString(type)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -6908,10 +7255,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnIndex">The column index.</param>
         /// <param name="width">The width.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ColumnResponse</returns>
-        public ColumnResponse CellsPostSetWorksheetColumnWidth (string name, string sheetName, int? columnIndex, double? width, string folder = null)
+        public ColumnResponse CellsPostSetWorksheetColumnWidth (string name, string sheetName, int? columnIndex, double? width, string folder = null, string storage = null)
         {
-             ApiResponse<ColumnResponse> localVarResponse = CellsPostSetWorksheetColumnWidthWithHttpInfo(name, sheetName, columnIndex, width, folder);
+             ApiResponse<ColumnResponse> localVarResponse = CellsPostSetWorksheetColumnWidthWithHttpInfo(name, sheetName, columnIndex, width, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -6924,8 +7272,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnIndex">The column index.</param>
         /// <param name="width">The width.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ColumnResponse</returns>
-        public ApiResponse< ColumnResponse > CellsPostSetWorksheetColumnWidthWithHttpInfo (string name, string sheetName, int? columnIndex, double? width, string folder = null)
+        public ApiResponse< ColumnResponse > CellsPostSetWorksheetColumnWidthWithHttpInfo (string name, string sheetName, int? columnIndex, double? width, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -6967,6 +7316,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (columnIndex != null) localVarPathParams.Add("columnIndex", Configuration.ApiClient.ParameterToString(columnIndex)); // path parameter
             if (width != null) localVarQueryParams.Add("width", Configuration.ApiClient.ParameterToString(width)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -6996,10 +7346,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnIndex">The column index.</param>
         /// <param name="width">The width.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ColumnResponse</returns>
-        public async System.Threading.Tasks.Task<ColumnResponse> CellsPostSetWorksheetColumnWidthAsync (string name, string sheetName, int? columnIndex, double? width, string folder = null)
+        public async System.Threading.Tasks.Task<ColumnResponse> CellsPostSetWorksheetColumnWidthAsync (string name, string sheetName, int? columnIndex, double? width, string folder = null, string storage = null)
         {
-             ApiResponse<ColumnResponse> localVarResponse = await CellsPostSetWorksheetColumnWidthAsyncWithHttpInfo(name, sheetName, columnIndex, width, folder);
+             ApiResponse<ColumnResponse> localVarResponse = await CellsPostSetWorksheetColumnWidthAsyncWithHttpInfo(name, sheetName, columnIndex, width, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -7013,8 +7364,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columnIndex">The column index.</param>
         /// <param name="width">The width.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ColumnResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ColumnResponse>> CellsPostSetWorksheetColumnWidthAsyncWithHttpInfo (string name, string sheetName, int? columnIndex, double? width, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ColumnResponse>> CellsPostSetWorksheetColumnWidthAsyncWithHttpInfo (string name, string sheetName, int? columnIndex, double? width, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -7056,6 +7408,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (columnIndex != null) localVarPathParams.Add("columnIndex", Configuration.ApiClient.ParameterToString(columnIndex)); // path parameter
             if (width != null) localVarQueryParams.Add("width", Configuration.ApiClient.ParameterToString(width)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -7085,10 +7438,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="firstIndex">The first column index to be operated.</param>
         /// <param name="lastIndex">The last column index to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostUngroupWorksheetColumns (string name, string sheetName, int? firstIndex, int? lastIndex, string folder = null)
+        public SaaSposeResponse CellsPostUngroupWorksheetColumns (string name, string sheetName, int? firstIndex, int? lastIndex, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostUngroupWorksheetColumnsWithHttpInfo(name, sheetName, firstIndex, lastIndex, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostUngroupWorksheetColumnsWithHttpInfo(name, sheetName, firstIndex, lastIndex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -7101,8 +7455,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="firstIndex">The first column index to be operated.</param>
         /// <param name="lastIndex">The last column index to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostUngroupWorksheetColumnsWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostUngroupWorksheetColumnsWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -7144,6 +7499,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (firstIndex != null) localVarQueryParams.Add("firstIndex", Configuration.ApiClient.ParameterToString(firstIndex)); // query parameter
             if (lastIndex != null) localVarQueryParams.Add("lastIndex", Configuration.ApiClient.ParameterToString(lastIndex)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -7173,10 +7529,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="firstIndex">The first column index to be operated.</param>
         /// <param name="lastIndex">The last column index to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostUngroupWorksheetColumnsAsync (string name, string sheetName, int? firstIndex, int? lastIndex, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostUngroupWorksheetColumnsAsync (string name, string sheetName, int? firstIndex, int? lastIndex, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostUngroupWorksheetColumnsAsyncWithHttpInfo(name, sheetName, firstIndex, lastIndex, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostUngroupWorksheetColumnsAsyncWithHttpInfo(name, sheetName, firstIndex, lastIndex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -7190,8 +7547,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="firstIndex">The first column index to be operated.</param>
         /// <param name="lastIndex">The last column index to be operated.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostUngroupWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostUngroupWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -7233,6 +7591,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (firstIndex != null) localVarQueryParams.Add("firstIndex", Configuration.ApiClient.ParameterToString(firstIndex)); // query parameter
             if (lastIndex != null) localVarQueryParams.Add("lastIndex", Configuration.ApiClient.ParameterToString(lastIndex)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -7263,10 +7622,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last row index to be operated.</param>
         /// <param name="isAll">Is all row to be operated (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostUngroupWorksheetRows (string name, string sheetName, int? firstIndex, int? lastIndex, bool? isAll = null, string folder = null)
+        public SaaSposeResponse CellsPostUngroupWorksheetRows (string name, string sheetName, int? firstIndex, int? lastIndex, bool? isAll = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostUngroupWorksheetRowsWithHttpInfo(name, sheetName, firstIndex, lastIndex, isAll, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostUngroupWorksheetRowsWithHttpInfo(name, sheetName, firstIndex, lastIndex, isAll, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -7280,8 +7640,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last row index to be operated.</param>
         /// <param name="isAll">Is all row to be operated (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostUngroupWorksheetRowsWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? isAll = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostUngroupWorksheetRowsWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? isAll = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -7324,6 +7685,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (lastIndex != null) localVarQueryParams.Add("lastIndex", Configuration.ApiClient.ParameterToString(lastIndex)); // query parameter
             if (isAll != null) localVarQueryParams.Add("isAll", Configuration.ApiClient.ParameterToString(isAll)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -7354,10 +7716,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last row index to be operated.</param>
         /// <param name="isAll">Is all row to be operated (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostUngroupWorksheetRowsAsync (string name, string sheetName, int? firstIndex, int? lastIndex, bool? isAll = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostUngroupWorksheetRowsAsync (string name, string sheetName, int? firstIndex, int? lastIndex, bool? isAll = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostUngroupWorksheetRowsAsyncWithHttpInfo(name, sheetName, firstIndex, lastIndex, isAll, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostUngroupWorksheetRowsAsyncWithHttpInfo(name, sheetName, firstIndex, lastIndex, isAll, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -7372,8 +7735,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="lastIndex">The last row index to be operated.</param>
         /// <param name="isAll">Is all row to be operated (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostUngroupWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? isAll = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostUngroupWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? firstIndex, int? lastIndex, bool? isAll = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -7416,6 +7780,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (lastIndex != null) localVarQueryParams.Add("lastIndex", Configuration.ApiClient.ParameterToString(lastIndex)); // query parameter
             if (isAll != null) localVarQueryParams.Add("isAll", Configuration.ApiClient.ParameterToString(isAll)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -7446,10 +7811,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalColumns">Number of columns to be operated.</param>
         /// <param name="width">The new column width. (optional, default to 50.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostUnhideWorksheetColumns (string name, string sheetName, int? startcolumn, int? totalColumns, double? width = null, string folder = null)
+        public SaaSposeResponse CellsPostUnhideWorksheetColumns (string name, string sheetName, int? startcolumn, int? totalColumns, double? width = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostUnhideWorksheetColumnsWithHttpInfo(name, sheetName, startcolumn, totalColumns, width, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostUnhideWorksheetColumnsWithHttpInfo(name, sheetName, startcolumn, totalColumns, width, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -7463,8 +7829,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalColumns">Number of columns to be operated.</param>
         /// <param name="width">The new column width. (optional, default to 50.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostUnhideWorksheetColumnsWithHttpInfo (string name, string sheetName, int? startcolumn, int? totalColumns, double? width = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostUnhideWorksheetColumnsWithHttpInfo (string name, string sheetName, int? startcolumn, int? totalColumns, double? width = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -7507,6 +7874,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (totalColumns != null) localVarQueryParams.Add("totalColumns", Configuration.ApiClient.ParameterToString(totalColumns)); // query parameter
             if (width != null) localVarQueryParams.Add("width", Configuration.ApiClient.ParameterToString(width)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -7537,10 +7905,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalColumns">Number of columns to be operated.</param>
         /// <param name="width">The new column width. (optional, default to 50.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostUnhideWorksheetColumnsAsync (string name, string sheetName, int? startcolumn, int? totalColumns, double? width = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostUnhideWorksheetColumnsAsync (string name, string sheetName, int? startcolumn, int? totalColumns, double? width = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostUnhideWorksheetColumnsAsyncWithHttpInfo(name, sheetName, startcolumn, totalColumns, width, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostUnhideWorksheetColumnsAsyncWithHttpInfo(name, sheetName, startcolumn, totalColumns, width, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -7555,8 +7924,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalColumns">Number of columns to be operated.</param>
         /// <param name="width">The new column width. (optional, default to 50.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostUnhideWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? startcolumn, int? totalColumns, double? width = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostUnhideWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? startcolumn, int? totalColumns, double? width = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -7599,6 +7969,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (totalColumns != null) localVarQueryParams.Add("totalColumns", Configuration.ApiClient.ParameterToString(totalColumns)); // query parameter
             if (width != null) localVarQueryParams.Add("width", Configuration.ApiClient.ParameterToString(width)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -7629,10 +8000,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated.</param>
         /// <param name="height">The new row height. (optional, default to 15.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostUnhideWorksheetRows (string name, string sheetName, int? startrow, int? totalRows, double? height = null, string folder = null)
+        public SaaSposeResponse CellsPostUnhideWorksheetRows (string name, string sheetName, int? startrow, int? totalRows, double? height = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostUnhideWorksheetRowsWithHttpInfo(name, sheetName, startrow, totalRows, height, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostUnhideWorksheetRowsWithHttpInfo(name, sheetName, startrow, totalRows, height, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -7646,8 +8018,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated.</param>
         /// <param name="height">The new row height. (optional, default to 15.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostUnhideWorksheetRowsWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows, double? height = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostUnhideWorksheetRowsWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows, double? height = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -7690,6 +8063,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (totalRows != null) localVarQueryParams.Add("totalRows", Configuration.ApiClient.ParameterToString(totalRows)); // query parameter
             if (height != null) localVarQueryParams.Add("height", Configuration.ApiClient.ParameterToString(height)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -7720,10 +8094,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated.</param>
         /// <param name="height">The new row height. (optional, default to 15.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostUnhideWorksheetRowsAsync (string name, string sheetName, int? startrow, int? totalRows, double? height = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostUnhideWorksheetRowsAsync (string name, string sheetName, int? startrow, int? totalRows, double? height = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostUnhideWorksheetRowsAsyncWithHttpInfo(name, sheetName, startrow, totalRows, height, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostUnhideWorksheetRowsAsyncWithHttpInfo(name, sheetName, startrow, totalRows, height, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -7738,8 +8113,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated.</param>
         /// <param name="height">The new row height. (optional, default to 15.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostUnhideWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows, double? height = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostUnhideWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows, double? height = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -7782,6 +8158,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (totalRows != null) localVarQueryParams.Add("totalRows", Configuration.ApiClient.ParameterToString(totalRows)); // query parameter
             if (height != null) localVarQueryParams.Add("height", Configuration.ApiClient.ParameterToString(height)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -7811,10 +8188,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName">The cell name.</param>
         /// <param name="style">with update style settings. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>StyleResponse</returns>
-        public StyleResponse CellsPostUpdateWorksheetCellStyle (string name, string sheetName, string cellName, Style style = null, string folder = null)
+        public StyleResponse CellsPostUpdateWorksheetCellStyle (string name, string sheetName, string cellName, Style style = null, string folder = null, string storage = null)
         {
-             ApiResponse<StyleResponse> localVarResponse = CellsPostUpdateWorksheetCellStyleWithHttpInfo(name, sheetName, cellName, style, folder);
+             ApiResponse<StyleResponse> localVarResponse = CellsPostUpdateWorksheetCellStyleWithHttpInfo(name, sheetName, cellName, style, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -7827,8 +8205,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName">The cell name.</param>
         /// <param name="style">with update style settings. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of StyleResponse</returns>
-        public ApiResponse< StyleResponse > CellsPostUpdateWorksheetCellStyleWithHttpInfo (string name, string sheetName, string cellName, Style style = null, string folder = null)
+        public ApiResponse< StyleResponse > CellsPostUpdateWorksheetCellStyleWithHttpInfo (string name, string sheetName, string cellName, Style style = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -7866,6 +8245,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (cellName != null) localVarPathParams.Add("cellName", Configuration.ApiClient.ParameterToString(cellName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (style != null && style.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(style); // http body (model) parameter
@@ -7903,10 +8283,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName">The cell name.</param>
         /// <param name="style">with update style settings. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of StyleResponse</returns>
-        public async System.Threading.Tasks.Task<StyleResponse> CellsPostUpdateWorksheetCellStyleAsync (string name, string sheetName, string cellName, Style style = null, string folder = null)
+        public async System.Threading.Tasks.Task<StyleResponse> CellsPostUpdateWorksheetCellStyleAsync (string name, string sheetName, string cellName, Style style = null, string folder = null, string storage = null)
         {
-             ApiResponse<StyleResponse> localVarResponse = await CellsPostUpdateWorksheetCellStyleAsyncWithHttpInfo(name, sheetName, cellName, style, folder);
+             ApiResponse<StyleResponse> localVarResponse = await CellsPostUpdateWorksheetCellStyleAsyncWithHttpInfo(name, sheetName, cellName, style, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -7920,8 +8301,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="cellName">The cell name.</param>
         /// <param name="style">with update style settings. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (StyleResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<StyleResponse>> CellsPostUpdateWorksheetCellStyleAsyncWithHttpInfo (string name, string sheetName, string cellName, Style style = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<StyleResponse>> CellsPostUpdateWorksheetCellStyleAsyncWithHttpInfo (string name, string sheetName, string cellName, Style style = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -7959,6 +8341,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (cellName != null) localVarPathParams.Add("cellName", Configuration.ApiClient.ParameterToString(cellName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (style != null && style.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(style); // http body (model) parameter
@@ -7996,10 +8379,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="range">The range.</param>
         /// <param name="style">with update style settings. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostUpdateWorksheetRangeStyle (string name, string sheetName, string range, Style style = null, string folder = null)
+        public SaaSposeResponse CellsPostUpdateWorksheetRangeStyle (string name, string sheetName, string range, Style style = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostUpdateWorksheetRangeStyleWithHttpInfo(name, sheetName, range, style, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostUpdateWorksheetRangeStyleWithHttpInfo(name, sheetName, range, style, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -8012,8 +8396,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="range">The range.</param>
         /// <param name="style">with update style settings. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostUpdateWorksheetRangeStyleWithHttpInfo (string name, string sheetName, string range, Style style = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostUpdateWorksheetRangeStyleWithHttpInfo (string name, string sheetName, string range, Style style = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -8051,6 +8436,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (range != null) localVarQueryParams.Add("range", Configuration.ApiClient.ParameterToString(range)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (style != null && style.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(style); // http body (model) parameter
@@ -8088,10 +8474,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="range">The range.</param>
         /// <param name="style">with update style settings. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostUpdateWorksheetRangeStyleAsync (string name, string sheetName, string range, Style style = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostUpdateWorksheetRangeStyleAsync (string name, string sheetName, string range, Style style = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostUpdateWorksheetRangeStyleAsyncWithHttpInfo(name, sheetName, range, style, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostUpdateWorksheetRangeStyleAsyncWithHttpInfo(name, sheetName, range, style, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -8105,8 +8492,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="range">The range.</param>
         /// <param name="style">with update style settings. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostUpdateWorksheetRangeStyleAsyncWithHttpInfo (string name, string sheetName, string range, Style style = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostUpdateWorksheetRangeStyleAsyncWithHttpInfo (string name, string sheetName, string range, Style style = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -8144,6 +8532,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (range != null) localVarQueryParams.Add("range", Configuration.ApiClient.ParameterToString(range)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (style != null && style.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(style); // http body (model) parameter
@@ -8181,10 +8570,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowIndex">The row index.</param>
         /// <param name="height">The new row height. (optional, default to 0.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>RowResponse</returns>
-        public RowResponse CellsPostUpdateWorksheetRow (string name, string sheetName, int? rowIndex, double? height = null, string folder = null)
+        public RowResponse CellsPostUpdateWorksheetRow (string name, string sheetName, int? rowIndex, double? height = null, string folder = null, string storage = null)
         {
-             ApiResponse<RowResponse> localVarResponse = CellsPostUpdateWorksheetRowWithHttpInfo(name, sheetName, rowIndex, height, folder);
+             ApiResponse<RowResponse> localVarResponse = CellsPostUpdateWorksheetRowWithHttpInfo(name, sheetName, rowIndex, height, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -8197,8 +8587,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowIndex">The row index.</param>
         /// <param name="height">The new row height. (optional, default to 0.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of RowResponse</returns>
-        public ApiResponse< RowResponse > CellsPostUpdateWorksheetRowWithHttpInfo (string name, string sheetName, int? rowIndex, double? height = null, string folder = null)
+        public ApiResponse< RowResponse > CellsPostUpdateWorksheetRowWithHttpInfo (string name, string sheetName, int? rowIndex, double? height = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -8237,6 +8628,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (rowIndex != null) localVarPathParams.Add("rowIndex", Configuration.ApiClient.ParameterToString(rowIndex)); // path parameter
             if (height != null) localVarQueryParams.Add("height", Configuration.ApiClient.ParameterToString(height)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -8266,10 +8658,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowIndex">The row index.</param>
         /// <param name="height">The new row height. (optional, default to 0.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of RowResponse</returns>
-        public async System.Threading.Tasks.Task<RowResponse> CellsPostUpdateWorksheetRowAsync (string name, string sheetName, int? rowIndex, double? height = null, string folder = null)
+        public async System.Threading.Tasks.Task<RowResponse> CellsPostUpdateWorksheetRowAsync (string name, string sheetName, int? rowIndex, double? height = null, string folder = null, string storage = null)
         {
-             ApiResponse<RowResponse> localVarResponse = await CellsPostUpdateWorksheetRowAsyncWithHttpInfo(name, sheetName, rowIndex, height, folder);
+             ApiResponse<RowResponse> localVarResponse = await CellsPostUpdateWorksheetRowAsyncWithHttpInfo(name, sheetName, rowIndex, height, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -8283,8 +8676,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rowIndex">The row index.</param>
         /// <param name="height">The new row height. (optional, default to 0.0)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (RowResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<RowResponse>> CellsPostUpdateWorksheetRowAsyncWithHttpInfo (string name, string sheetName, int? rowIndex, double? height = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<RowResponse>> CellsPostUpdateWorksheetRowAsyncWithHttpInfo (string name, string sheetName, int? rowIndex, double? height = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -8323,6 +8717,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (rowIndex != null) localVarPathParams.Add("rowIndex", Configuration.ApiClient.ParameterToString(rowIndex)); // path parameter
             if (height != null) localVarQueryParams.Add("height", Configuration.ApiClient.ParameterToString(height)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -8354,10 +8749,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="type">The value type. (optional)</param>
         /// <param name="formula">Formula for cell (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>CellResponse</returns>
-        public CellResponse CellsPostWorksheetCellSetValue (string name, string sheetName, string cellName, string value = null, string type = null, string formula = null, string folder = null)
+        public CellResponse CellsPostWorksheetCellSetValue (string name, string sheetName, string cellName, string value = null, string type = null, string formula = null, string folder = null, string storage = null)
         {
-             ApiResponse<CellResponse> localVarResponse = CellsPostWorksheetCellSetValueWithHttpInfo(name, sheetName, cellName, value, type, formula, folder);
+             ApiResponse<CellResponse> localVarResponse = CellsPostWorksheetCellSetValueWithHttpInfo(name, sheetName, cellName, value, type, formula, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -8372,8 +8768,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="type">The value type. (optional)</param>
         /// <param name="formula">Formula for cell (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of CellResponse</returns>
-        public ApiResponse< CellResponse > CellsPostWorksheetCellSetValueWithHttpInfo (string name, string sheetName, string cellName, string value = null, string type = null, string formula = null, string folder = null)
+        public ApiResponse< CellResponse > CellsPostWorksheetCellSetValueWithHttpInfo (string name, string sheetName, string cellName, string value = null, string type = null, string formula = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -8414,6 +8811,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (type != null) localVarQueryParams.Add("type", Configuration.ApiClient.ParameterToString(type)); // query parameter
             if (formula != null) localVarQueryParams.Add("formula", Configuration.ApiClient.ParameterToString(formula)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -8445,10 +8843,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="type">The value type. (optional)</param>
         /// <param name="formula">Formula for cell (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of CellResponse</returns>
-        public async System.Threading.Tasks.Task<CellResponse> CellsPostWorksheetCellSetValueAsync (string name, string sheetName, string cellName, string value = null, string type = null, string formula = null, string folder = null)
+        public async System.Threading.Tasks.Task<CellResponse> CellsPostWorksheetCellSetValueAsync (string name, string sheetName, string cellName, string value = null, string type = null, string formula = null, string folder = null, string storage = null)
         {
-             ApiResponse<CellResponse> localVarResponse = await CellsPostWorksheetCellSetValueAsyncWithHttpInfo(name, sheetName, cellName, value, type, formula, folder);
+             ApiResponse<CellResponse> localVarResponse = await CellsPostWorksheetCellSetValueAsyncWithHttpInfo(name, sheetName, cellName, value, type, formula, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -8464,8 +8863,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="type">The value type. (optional)</param>
         /// <param name="formula">Formula for cell (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (CellResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CellResponse>> CellsPostWorksheetCellSetValueAsyncWithHttpInfo (string name, string sheetName, string cellName, string value = null, string type = null, string formula = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<CellResponse>> CellsPostWorksheetCellSetValueAsyncWithHttpInfo (string name, string sheetName, string cellName, string value = null, string type = null, string formula = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -8506,6 +8906,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (type != null) localVarQueryParams.Add("type", Configuration.ApiClient.ParameterToString(type)); // query parameter
             if (formula != null) localVarQueryParams.Add("formula", Configuration.ApiClient.ParameterToString(formula)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -8537,10 +8938,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">The total rows</param>
         /// <param name="totalColumns">The total columns.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostWorksheetMerge (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null)
+        public SaaSposeResponse CellsPostWorksheetMerge (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostWorksheetMergeWithHttpInfo(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostWorksheetMergeWithHttpInfo(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -8555,8 +8957,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">The total rows</param>
         /// <param name="totalColumns">The total columns.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostWorksheetMergeWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostWorksheetMergeWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -8606,6 +9009,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (totalRows != null) localVarQueryParams.Add("totalRows", Configuration.ApiClient.ParameterToString(totalRows)); // query parameter
             if (totalColumns != null) localVarQueryParams.Add("totalColumns", Configuration.ApiClient.ParameterToString(totalColumns)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -8637,10 +9041,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">The total rows</param>
         /// <param name="totalColumns">The total columns.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostWorksheetMergeAsync (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostWorksheetMergeAsync (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostWorksheetMergeAsyncWithHttpInfo(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostWorksheetMergeAsyncWithHttpInfo(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -8656,8 +9061,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">The total rows</param>
         /// <param name="totalColumns">The total columns.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostWorksheetMergeAsyncWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostWorksheetMergeAsyncWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -8707,6 +9113,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (totalRows != null) localVarQueryParams.Add("totalRows", Configuration.ApiClient.ParameterToString(totalRows)); // query parameter
             if (totalColumns != null) localVarQueryParams.Add("totalColumns", Configuration.ApiClient.ParameterToString(totalColumns)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -8738,10 +9145,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">The total rows</param>
         /// <param name="totalColumns">The total columns.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPostWorksheetUnmerge (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null)
+        public SaaSposeResponse CellsPostWorksheetUnmerge (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostWorksheetUnmergeWithHttpInfo(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPostWorksheetUnmergeWithHttpInfo(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -8756,8 +9164,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">The total rows</param>
         /// <param name="totalColumns">The total columns.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPostWorksheetUnmergeWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPostWorksheetUnmergeWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -8807,6 +9216,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (totalRows != null) localVarQueryParams.Add("totalRows", Configuration.ApiClient.ParameterToString(totalRows)); // query parameter
             if (totalColumns != null) localVarQueryParams.Add("totalColumns", Configuration.ApiClient.ParameterToString(totalColumns)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -8838,10 +9248,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">The total rows</param>
         /// <param name="totalColumns">The total columns.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostWorksheetUnmergeAsync (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPostWorksheetUnmergeAsync (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostWorksheetUnmergeAsyncWithHttpInfo(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPostWorksheetUnmergeAsyncWithHttpInfo(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -8857,8 +9268,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">The total rows</param>
         /// <param name="totalColumns">The total columns.</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostWorksheetUnmergeAsyncWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPostWorksheetUnmergeAsyncWithHttpInfo (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -8908,6 +9320,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (totalRows != null) localVarQueryParams.Add("totalRows", Configuration.ApiClient.ParameterToString(totalRows)); // query parameter
             if (totalColumns != null) localVarQueryParams.Add("totalColumns", Configuration.ApiClient.ParameterToString(totalColumns)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -8938,10 +9351,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columns">The columns.</param>
         /// <param name="updateReference">The update reference. (optional, default to true)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ColumnsResponse</returns>
-        public ColumnsResponse CellsPutInsertWorksheetColumns (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null)
+        public ColumnsResponse CellsPutInsertWorksheetColumns (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null, string storage = null)
         {
-             ApiResponse<ColumnsResponse> localVarResponse = CellsPutInsertWorksheetColumnsWithHttpInfo(name, sheetName, columnIndex, columns, updateReference, folder);
+             ApiResponse<ColumnsResponse> localVarResponse = CellsPutInsertWorksheetColumnsWithHttpInfo(name, sheetName, columnIndex, columns, updateReference, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -8955,8 +9369,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columns">The columns.</param>
         /// <param name="updateReference">The update reference. (optional, default to true)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ColumnsResponse</returns>
-        public ApiResponse< ColumnsResponse > CellsPutInsertWorksheetColumnsWithHttpInfo (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null)
+        public ApiResponse< ColumnsResponse > CellsPutInsertWorksheetColumnsWithHttpInfo (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -8999,6 +9414,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (columns != null) localVarQueryParams.Add("columns", Configuration.ApiClient.ParameterToString(columns)); // query parameter
             if (updateReference != null) localVarQueryParams.Add("updateReference", Configuration.ApiClient.ParameterToString(updateReference)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -9029,10 +9445,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columns">The columns.</param>
         /// <param name="updateReference">The update reference. (optional, default to true)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ColumnsResponse</returns>
-        public async System.Threading.Tasks.Task<ColumnsResponse> CellsPutInsertWorksheetColumnsAsync (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null)
+        public async System.Threading.Tasks.Task<ColumnsResponse> CellsPutInsertWorksheetColumnsAsync (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null, string storage = null)
         {
-             ApiResponse<ColumnsResponse> localVarResponse = await CellsPutInsertWorksheetColumnsAsyncWithHttpInfo(name, sheetName, columnIndex, columns, updateReference, folder);
+             ApiResponse<ColumnsResponse> localVarResponse = await CellsPutInsertWorksheetColumnsAsyncWithHttpInfo(name, sheetName, columnIndex, columns, updateReference, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -9047,8 +9464,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="columns">The columns.</param>
         /// <param name="updateReference">The update reference. (optional, default to true)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ColumnsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ColumnsResponse>> CellsPutInsertWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ColumnsResponse>> CellsPutInsertWorksheetColumnsAsyncWithHttpInfo (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -9091,6 +9509,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (columns != null) localVarQueryParams.Add("columns", Configuration.ApiClient.ParameterToString(columns)); // query parameter
             if (updateReference != null) localVarQueryParams.Add("updateReference", Configuration.ApiClient.ParameterToString(updateReference)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -9119,10 +9538,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="rowIndex">The new row index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>RowResponse</returns>
-        public RowResponse CellsPutInsertWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null)
+        public RowResponse CellsPutInsertWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null, string storage = null)
         {
-             ApiResponse<RowResponse> localVarResponse = CellsPutInsertWorksheetRowWithHttpInfo(name, sheetName, rowIndex, folder);
+             ApiResponse<RowResponse> localVarResponse = CellsPutInsertWorksheetRowWithHttpInfo(name, sheetName, rowIndex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -9134,8 +9554,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="rowIndex">The new row index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of RowResponse</returns>
-        public ApiResponse< RowResponse > CellsPutInsertWorksheetRowWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null)
+        public ApiResponse< RowResponse > CellsPutInsertWorksheetRowWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -9173,6 +9594,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (rowIndex != null) localVarPathParams.Add("rowIndex", Configuration.ApiClient.ParameterToString(rowIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -9201,10 +9623,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="rowIndex">The new row index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of RowResponse</returns>
-        public async System.Threading.Tasks.Task<RowResponse> CellsPutInsertWorksheetRowAsync (string name, string sheetName, int? rowIndex, string folder = null)
+        public async System.Threading.Tasks.Task<RowResponse> CellsPutInsertWorksheetRowAsync (string name, string sheetName, int? rowIndex, string folder = null, string storage = null)
         {
-             ApiResponse<RowResponse> localVarResponse = await CellsPutInsertWorksheetRowAsyncWithHttpInfo(name, sheetName, rowIndex, folder);
+             ApiResponse<RowResponse> localVarResponse = await CellsPutInsertWorksheetRowAsyncWithHttpInfo(name, sheetName, rowIndex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -9217,8 +9640,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="rowIndex">The new row index.</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (RowResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<RowResponse>> CellsPutInsertWorksheetRowAsyncWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<RowResponse>> CellsPutInsertWorksheetRowAsyncWithHttpInfo (string name, string sheetName, int? rowIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -9256,6 +9680,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (rowIndex != null) localVarPathParams.Add("rowIndex", Configuration.ApiClient.ParameterToString(rowIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -9286,10 +9711,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated. (optional, default to 1)</param>
         /// <param name="updateReference">Indicates if update references in other worksheets. (optional, default to true)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsPutInsertWorksheetRows (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null)
+        public SaaSposeResponse CellsPutInsertWorksheetRows (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsPutInsertWorksheetRowsWithHttpInfo(name, sheetName, startrow, totalRows, updateReference, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsPutInsertWorksheetRowsWithHttpInfo(name, sheetName, startrow, totalRows, updateReference, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -9303,8 +9729,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated. (optional, default to 1)</param>
         /// <param name="updateReference">Indicates if update references in other worksheets. (optional, default to true)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsPutInsertWorksheetRowsWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsPutInsertWorksheetRowsWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -9344,6 +9771,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (totalRows != null) localVarQueryParams.Add("totalRows", Configuration.ApiClient.ParameterToString(totalRows)); // query parameter
             if (updateReference != null) localVarQueryParams.Add("updateReference", Configuration.ApiClient.ParameterToString(updateReference)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -9374,10 +9802,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated. (optional, default to 1)</param>
         /// <param name="updateReference">Indicates if update references in other worksheets. (optional, default to true)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPutInsertWorksheetRowsAsync (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsPutInsertWorksheetRowsAsync (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPutInsertWorksheetRowsAsyncWithHttpInfo(name, sheetName, startrow, totalRows, updateReference, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsPutInsertWorksheetRowsAsyncWithHttpInfo(name, sheetName, startrow, totalRows, updateReference, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -9392,8 +9821,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="totalRows">Number of rows to be operated. (optional, default to 1)</param>
         /// <param name="updateReference">Indicates if update references in other worksheets. (optional, default to true)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPutInsertWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsPutInsertWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -9433,6 +9863,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (totalRows != null) localVarQueryParams.Add("totalRows", Configuration.ApiClient.ParameterToString(totalRows)); // query parameter
             if (updateReference != null) localVarQueryParams.Add("updateReference", Configuration.ApiClient.ParameterToString(updateReference)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request

@@ -166,10 +166,13 @@ namespace Aspose.Cells.Cloud.SDK.Test
             // TODO uncomment below to test the method and replace null with proper value
             string name = BOOK1;
             string password = null;
+            string format = "XPS";
             bool? isAutoFit = true;
+            bool? onlySaveTable = true;
             string folder = TEMPFOLDER;
+            string outPath = null;
             UpdateDataFile(folder, name);
-            var response = instance.CellsWorkbookGetWorkbook(name, password, isAutoFit, folder);
+            var response = instance.CellsWorkbookGetWorkbook(name, password, format, isAutoFit, onlySaveTable, folder,null, outPath);
             Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
         }
         
@@ -502,6 +505,18 @@ namespace Aspose.Cells.Cloud.SDK.Test
             Assert.IsInstanceOf<WorkbookResponse>(response, "response is WorkbookResponse");
             Assert.AreEqual(response.Code, 200);
 
+        }
+
+        [Test]
+        public void CellsWorkbookPostWorkbooksTextSearchTestForDropBox()
+        {
+            string name = BOOK1;
+            string text = "test";
+            string folder = TEMPFOLDER;
+            UpdateDataFileForDropBox(folder, name);
+            var response = instance.CellsWorkbookPostWorkbooksTextSearch(name, text, folder, "DropBox");
+            Assert.IsInstanceOf<TextItemsResponse>(response, "response is TextItemsResponse");
+            Assert.AreEqual(response.Code, 200);
         }
 
     }

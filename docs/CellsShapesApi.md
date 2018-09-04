@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 <a name="cellsshapesdeleteworksheetshape"></a>
 # **CellsShapesDeleteWorksheetShape**
-> SaaSposeResponse CellsShapesDeleteWorksheetShape (string name, string sheetName, int? shapeindex, string folder = null)
+> SaaSposeResponse CellsShapesDeleteWorksheetShape (string name, string sheetName, int? shapeindex, string folder = null, string storage = null)
 
 Delete a shape in worksheet
 
@@ -37,11 +37,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | worksheet name.
             var shapeindex = 56;  // int? | shape index in worksheet shapes.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Delete a shape in worksheet
-                SaaSposeResponse result = apiInstance.CellsShapesDeleteWorksheetShape(name, sheetName, shapeindex, folder);
+                SaaSposeResponse result = apiInstance.CellsShapesDeleteWorksheetShape(name, sheetName, shapeindex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -61,6 +62,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| worksheet name. | 
  **shapeindex** | **int?**| shape index in worksheet shapes. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -79,7 +81,7 @@ No authorization required
 
 <a name="cellsshapesdeleteworksheetshapes"></a>
 # **CellsShapesDeleteWorksheetShapes**
-> SaaSposeResponse CellsShapesDeleteWorksheetShapes (string name, string sheetName, string folder = null)
+> SaaSposeResponse CellsShapesDeleteWorksheetShapes (string name, string sheetName, string folder = null, string storage = null)
 
 delete all shapes in worksheet
 
@@ -101,11 +103,12 @@ namespace Example
             var name = name_example;  // string | document name.
             var sheetName = sheetName_example;  // string | worksheet name.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // delete all shapes in worksheet
-                SaaSposeResponse result = apiInstance.CellsShapesDeleteWorksheetShapes(name, sheetName, folder);
+                SaaSposeResponse result = apiInstance.CellsShapesDeleteWorksheetShapes(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -124,6 +127,7 @@ Name | Type | Description  | Notes
  **name** | **string**| document name. | 
  **sheetName** | **string**| worksheet name. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -142,7 +146,7 @@ No authorization required
 
 <a name="cellsshapesgetworksheetshape"></a>
 # **CellsShapesGetWorksheetShape**
-> ShapeResponse CellsShapesGetWorksheetShape (string name, string sheetName, int? shapeindex, string folder = null)
+> ShapeResponse CellsShapesGetWorksheetShape (string name, string sheetName, int? shapeindex, string folder = null, string storage = null)
 
 Get worksheet shape
 
@@ -165,11 +169,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | worksheet name.
             var shapeindex = 56;  // int? | shape index in worksheet shapes.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get worksheet shape
-                ShapeResponse result = apiInstance.CellsShapesGetWorksheetShape(name, sheetName, shapeindex, folder);
+                ShapeResponse result = apiInstance.CellsShapesGetWorksheetShape(name, sheetName, shapeindex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -189,6 +194,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| worksheet name. | 
  **shapeindex** | **int?**| shape index in worksheet shapes. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -207,7 +213,7 @@ No authorization required
 
 <a name="cellsshapesgetworksheetshapes"></a>
 # **CellsShapesGetWorksheetShapes**
-> ShapesResponse CellsShapesGetWorksheetShapes (string name, string sheetName, string folder = null)
+> ShapesResponse CellsShapesGetWorksheetShapes (string name, string sheetName, string folder = null, string storage = null)
 
 Get worksheet shapes 
 
@@ -229,11 +235,12 @@ namespace Example
             var name = name_example;  // string | document name.
             var sheetName = sheetName_example;  // string | worksheet name.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get worksheet shapes 
-                ShapesResponse result = apiInstance.CellsShapesGetWorksheetShapes(name, sheetName, folder);
+                ShapesResponse result = apiInstance.CellsShapesGetWorksheetShapes(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -252,6 +259,7 @@ Name | Type | Description  | Notes
  **name** | **string**| document name. | 
  **sheetName** | **string**| worksheet name. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -270,7 +278,7 @@ No authorization required
 
 <a name="cellsshapespostworksheetshape"></a>
 # **CellsShapesPostWorksheetShape**
-> SaaSposeResponse CellsShapesPostWorksheetShape (string name, string sheetName, int? shapeindex, Shape dto = null, string folder = null)
+> SaaSposeResponse CellsShapesPostWorksheetShape (string name, string sheetName, int? shapeindex, Shape dto = null, string folder = null, string storage = null)
 
 Update a shape in worksheet
 
@@ -294,11 +302,12 @@ namespace Example
             var shapeindex = 56;  // int? | shape index in worksheet shapes.
             var dto = new Shape(); // Shape |  (optional) 
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Update a shape in worksheet
-                SaaSposeResponse result = apiInstance.CellsShapesPostWorksheetShape(name, sheetName, shapeindex, dto, folder);
+                SaaSposeResponse result = apiInstance.CellsShapesPostWorksheetShape(name, sheetName, shapeindex, dto, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -319,6 +328,7 @@ Name | Type | Description  | Notes
  **shapeindex** | **int?**| shape index in worksheet shapes. | 
  **dto** | [**Shape**](Shape.md)|  | [optional] 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -337,7 +347,7 @@ No authorization required
 
 <a name="cellsshapesputworksheetshape"></a>
 # **CellsShapesPutWorksheetShape**
-> ShapeResponse CellsShapesPutWorksheetShape (string name, string sheetName, string drawingType, int? upperLeftRow, int? upperLeftColumn, int? top, int? left, int? width, int? height, string folder = null)
+> ShapeResponse CellsShapesPutWorksheetShape (string name, string sheetName, string drawingType, int? upperLeftRow, int? upperLeftColumn, int? top, int? left, int? width, int? height, string folder = null, string storage = null)
 
 Add shape in worksheet
 
@@ -366,11 +376,12 @@ namespace Example
             var width = 56;  // int? | Represents the height of Spinner, in unit of pixel.
             var height = 56;  // int? | Represents the width of Spinner, in unit of pixel.
             var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Add shape in worksheet
-                ShapeResponse result = apiInstance.CellsShapesPutWorksheetShape(name, sheetName, drawingType, upperLeftRow, upperLeftColumn, top, left, width, height, folder);
+                ShapeResponse result = apiInstance.CellsShapesPutWorksheetShape(name, sheetName, drawingType, upperLeftRow, upperLeftColumn, top, left, width, height, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -396,6 +407,7 @@ Name | Type | Description  | Notes
  **width** | **int?**| Represents the height of Spinner, in unit of pixel. | 
  **height** | **int?**| Represents the width of Spinner, in unit of pixel. | 
  **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 

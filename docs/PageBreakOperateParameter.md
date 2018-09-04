@@ -3,12 +3,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**PageBreakType** | **string** |  | [optional] 
 **Index** | **int?** |  | [optional] 
-**Row** | **int?** |  | [optional] 
+**EndIndex** | **int?** |  | [optional] 
 **Column** | **int?** |  | [optional] 
 **StartIndex** | **int?** |  | [optional] 
-**EndIndex** | **int?** |  | [optional] 
+**PageBreakType** | **string** |  | [optional] 
+**Row** | **int?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

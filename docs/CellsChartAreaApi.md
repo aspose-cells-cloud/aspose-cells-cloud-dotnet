@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="cellschartareagetchartarea"></a>
 # **CellsChartAreaGetChartArea**
-> ChartAreaResponse CellsChartAreaGetChartArea (string name, string sheetName, int? chartIndex, string folder = null)
+> ChartAreaResponse CellsChartAreaGetChartArea (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
 
 Get chart area info.
 
@@ -34,11 +34,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | Worksheet name.
             var chartIndex = 56;  // int? | The chart index.
             var folder = folder_example;  // string | Workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get chart area info.
-                ChartAreaResponse result = apiInstance.CellsChartAreaGetChartArea(name, sheetName, chartIndex, folder);
+                ChartAreaResponse result = apiInstance.CellsChartAreaGetChartArea(name, sheetName, chartIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -58,6 +59,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| Worksheet name. | 
  **chartIndex** | **int?**| The chart index. | 
  **folder** | **string**| Workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -76,7 +78,7 @@ No authorization required
 
 <a name="cellschartareagetchartareaborder"></a>
 # **CellsChartAreaGetChartAreaBorder**
-> LineResponse CellsChartAreaGetChartAreaBorder (string name, string sheetName, int? chartIndex, string folder = null)
+> LineResponse CellsChartAreaGetChartAreaBorder (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
 
 Get chart area border info.
 
@@ -99,11 +101,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | Worksheet name.
             var chartIndex = 56;  // int? | The chart index.
             var folder = folder_example;  // string | Workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get chart area border info.
-                LineResponse result = apiInstance.CellsChartAreaGetChartAreaBorder(name, sheetName, chartIndex, folder);
+                LineResponse result = apiInstance.CellsChartAreaGetChartAreaBorder(name, sheetName, chartIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -123,6 +126,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| Worksheet name. | 
  **chartIndex** | **int?**| The chart index. | 
  **folder** | **string**| Workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -141,7 +145,7 @@ No authorization required
 
 <a name="cellschartareagetchartareafillformat"></a>
 # **CellsChartAreaGetChartAreaFillFormat**
-> FillFormatResponse CellsChartAreaGetChartAreaFillFormat (string name, string sheetName, int? chartIndex, string folder = null)
+> FillFormatResponse CellsChartAreaGetChartAreaFillFormat (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
 
 Get chart area fill format info.
 
@@ -164,11 +168,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | Worksheet name.
             var chartIndex = 56;  // int? | The chart index.
             var folder = folder_example;  // string | Workbook folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get chart area fill format info.
-                FillFormatResponse result = apiInstance.CellsChartAreaGetChartAreaFillFormat(name, sheetName, chartIndex, folder);
+                FillFormatResponse result = apiInstance.CellsChartAreaGetChartAreaFillFormat(name, sheetName, chartIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -188,6 +193,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**| Worksheet name. | 
  **chartIndex** | **int?**| The chart index. | 
  **folder** | **string**| Workbook folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 

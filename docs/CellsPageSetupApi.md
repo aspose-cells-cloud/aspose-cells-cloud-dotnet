@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 <a name="cellspagesetupdeleteheaderfooter"></a>
 # **CellsPageSetupDeleteHeaderFooter**
-> SaaSposeResponse CellsPageSetupDeleteHeaderFooter (string name, string sheetName, string folder = null)
+> SaaSposeResponse CellsPageSetupDeleteHeaderFooter (string name, string sheetName, string folder = null, string storage = null)
 
 clear header footer
 
@@ -37,11 +37,12 @@ namespace Example
             var name = name_example;  // string | 
             var sheetName = sheetName_example;  // string | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // clear header footer
-                SaaSposeResponse result = apiInstance.CellsPageSetupDeleteHeaderFooter(name, sheetName, folder);
+                SaaSposeResponse result = apiInstance.CellsPageSetupDeleteHeaderFooter(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -60,6 +61,7 @@ Name | Type | Description  | Notes
  **name** | **string**|  | 
  **sheetName** | **string**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -78,7 +80,7 @@ No authorization required
 
 <a name="cellspagesetupgetfooter"></a>
 # **CellsPageSetupGetFooter**
-> PageSectionsResponse CellsPageSetupGetFooter (string name, string sheetName, string folder = null)
+> PageSectionsResponse CellsPageSetupGetFooter (string name, string sheetName, string folder = null, string storage = null)
 
 get page footer information
 
@@ -100,11 +102,12 @@ namespace Example
             var name = name_example;  // string | 
             var sheetName = sheetName_example;  // string | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // get page footer information
-                PageSectionsResponse result = apiInstance.CellsPageSetupGetFooter(name, sheetName, folder);
+                PageSectionsResponse result = apiInstance.CellsPageSetupGetFooter(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -123,6 +126,7 @@ Name | Type | Description  | Notes
  **name** | **string**|  | 
  **sheetName** | **string**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -141,7 +145,7 @@ No authorization required
 
 <a name="cellspagesetupgetheader"></a>
 # **CellsPageSetupGetHeader**
-> PageSectionsResponse CellsPageSetupGetHeader (string name, string sheetName, string folder = null)
+> PageSectionsResponse CellsPageSetupGetHeader (string name, string sheetName, string folder = null, string storage = null)
 
 get page header information
 
@@ -163,11 +167,12 @@ namespace Example
             var name = name_example;  // string | 
             var sheetName = sheetName_example;  // string | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // get page header information
-                PageSectionsResponse result = apiInstance.CellsPageSetupGetHeader(name, sheetName, folder);
+                PageSectionsResponse result = apiInstance.CellsPageSetupGetHeader(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -186,6 +191,7 @@ Name | Type | Description  | Notes
  **name** | **string**|  | 
  **sheetName** | **string**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -204,7 +210,7 @@ No authorization required
 
 <a name="cellspagesetupgetpagesetup"></a>
 # **CellsPageSetupGetPageSetup**
-> PageSetupResponse CellsPageSetupGetPageSetup (string name, string sheetName, string folder = null)
+> PageSetupResponse CellsPageSetupGetPageSetup (string name, string sheetName, string folder = null, string storage = null)
 
 Get Page Setup information.             
 
@@ -226,11 +232,12 @@ namespace Example
             var name = name_example;  // string | 
             var sheetName = sheetName_example;  // string | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get Page Setup information.             
-                PageSetupResponse result = apiInstance.CellsPageSetupGetPageSetup(name, sheetName, folder);
+                PageSetupResponse result = apiInstance.CellsPageSetupGetPageSetup(name, sheetName, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -249,6 +256,7 @@ Name | Type | Description  | Notes
  **name** | **string**|  | 
  **sheetName** | **string**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -267,7 +275,7 @@ No authorization required
 
 <a name="cellspagesetuppostfooter"></a>
 # **CellsPageSetupPostFooter**
-> SaaSposeResponse CellsPageSetupPostFooter (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null)
+> SaaSposeResponse CellsPageSetupPostFooter (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storage = null)
 
 update  page footer information 
 
@@ -292,11 +300,12 @@ namespace Example
             var script = script_example;  // string | 
             var isFirstPage = true;  // bool? | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // update  page footer information 
-                SaaSposeResponse result = apiInstance.CellsPageSetupPostFooter(name, sheetName, section, script, isFirstPage, folder);
+                SaaSposeResponse result = apiInstance.CellsPageSetupPostFooter(name, sheetName, section, script, isFirstPage, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -318,6 +327,7 @@ Name | Type | Description  | Notes
  **script** | **string**|  | 
  **isFirstPage** | **bool?**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -336,7 +346,7 @@ No authorization required
 
 <a name="cellspagesetuppostheader"></a>
 # **CellsPageSetupPostHeader**
-> SaaSposeResponse CellsPageSetupPostHeader (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null)
+> SaaSposeResponse CellsPageSetupPostHeader (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storage = null)
 
 update  page header information 
 
@@ -361,11 +371,12 @@ namespace Example
             var script = script_example;  // string | 
             var isFirstPage = true;  // bool? | 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // update  page header information 
-                SaaSposeResponse result = apiInstance.CellsPageSetupPostHeader(name, sheetName, section, script, isFirstPage, folder);
+                SaaSposeResponse result = apiInstance.CellsPageSetupPostHeader(name, sheetName, section, script, isFirstPage, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -387,6 +398,7 @@ Name | Type | Description  | Notes
  **script** | **string**|  | 
  **isFirstPage** | **bool?**|  | 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 
@@ -405,7 +417,7 @@ No authorization required
 
 <a name="cellspagesetuppostpagesetup"></a>
 # **CellsPageSetupPostPageSetup**
-> SaaSposeResponse CellsPageSetupPostPageSetup (string name, string sheetName, PageSetup pageSetup = null, string folder = null)
+> SaaSposeResponse CellsPageSetupPostPageSetup (string name, string sheetName, PageSetup pageSetup = null, string folder = null, string storage = null)
 
 Update Page Setup information.
 
@@ -428,11 +440,12 @@ namespace Example
             var sheetName = sheetName_example;  // string | 
             var pageSetup = new PageSetup(); // PageSetup |  (optional) 
             var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Update Page Setup information.
-                SaaSposeResponse result = apiInstance.CellsPageSetupPostPageSetup(name, sheetName, pageSetup, folder);
+                SaaSposeResponse result = apiInstance.CellsPageSetupPostPageSetup(name, sheetName, pageSetup, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -452,6 +465,7 @@ Name | Type | Description  | Notes
  **sheetName** | **string**|  | 
  **pageSetup** | [**PageSetup**](PageSetup.md)|  | [optional] 
  **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
 
 ### Return type
 

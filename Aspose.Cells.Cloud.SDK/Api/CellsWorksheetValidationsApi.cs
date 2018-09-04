@@ -35,8 +35,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ValidationResponse</returns>
-        ValidationResponse CellsWorksheetValidationsDeleteWorksheetValidation (string name, string sheetName, int? validationIndex, string folder = null);
+        ValidationResponse CellsWorksheetValidationsDeleteWorksheetValidation (string name, string sheetName, int? validationIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete worksheet validation by index.
@@ -49,8 +50,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ValidationResponse</returns>
-        ApiResponse<ValidationResponse> CellsWorksheetValidationsDeleteWorksheetValidationWithHttpInfo (string name, string sheetName, int? validationIndex, string folder = null);
+        ApiResponse<ValidationResponse> CellsWorksheetValidationsDeleteWorksheetValidationWithHttpInfo (string name, string sheetName, int? validationIndex, string folder = null, string storage = null);
         /// <summary>
         /// Get worksheet validation by index.
         /// </summary>
@@ -62,8 +64,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ValidationResponse</returns>
-        ValidationResponse CellsWorksheetValidationsGetWorksheetValidation (string name, string sheetName, int? validationIndex, string folder = null);
+        ValidationResponse CellsWorksheetValidationsGetWorksheetValidation (string name, string sheetName, int? validationIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Get worksheet validation by index.
@@ -76,8 +79,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ValidationResponse</returns>
-        ApiResponse<ValidationResponse> CellsWorksheetValidationsGetWorksheetValidationWithHttpInfo (string name, string sheetName, int? validationIndex, string folder = null);
+        ApiResponse<ValidationResponse> CellsWorksheetValidationsGetWorksheetValidationWithHttpInfo (string name, string sheetName, int? validationIndex, string folder = null, string storage = null);
         /// <summary>
         /// Get worksheet validations.
         /// </summary>
@@ -88,8 +92,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="folder">Document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ValidationsResponse</returns>
-        ValidationsResponse CellsWorksheetValidationsGetWorksheetValidations (string name, string sheetName, string folder = null);
+        ValidationsResponse CellsWorksheetValidationsGetWorksheetValidations (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Get worksheet validations.
@@ -101,8 +106,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="folder">Document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ValidationsResponse</returns>
-        ApiResponse<ValidationsResponse> CellsWorksheetValidationsGetWorksheetValidationsWithHttpInfo (string name, string sheetName, string folder = null);
+        ApiResponse<ValidationsResponse> CellsWorksheetValidationsGetWorksheetValidationsWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Update worksheet validation by index.
         /// </summary>
@@ -115,8 +121,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="validation"> (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ValidationResponse</returns>
-        ValidationResponse CellsWorksheetValidationsPostWorksheetValidation (string name, string sheetName, int? validationIndex, Validation validation = null, string folder = null);
+        ValidationResponse CellsWorksheetValidationsPostWorksheetValidation (string name, string sheetName, int? validationIndex, Validation validation = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Update worksheet validation by index.
@@ -130,8 +137,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="validation"> (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ValidationResponse</returns>
-        ApiResponse<ValidationResponse> CellsWorksheetValidationsPostWorksheetValidationWithHttpInfo (string name, string sheetName, int? validationIndex, Validation validation = null, string folder = null);
+        ApiResponse<ValidationResponse> CellsWorksheetValidationsPostWorksheetValidationWithHttpInfo (string name, string sheetName, int? validationIndex, Validation validation = null, string folder = null, string storage = null);
         /// <summary>
         /// Add worksheet validation at index.
         /// </summary>
@@ -143,8 +151,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="range">Specified cells area (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ValidationResponse</returns>
-        ValidationResponse CellsWorksheetValidationsPutWorksheetValidation (string name, string sheetName, string range = null, string folder = null);
+        ValidationResponse CellsWorksheetValidationsPutWorksheetValidation (string name, string sheetName, string range = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Add worksheet validation at index.
@@ -157,8 +166,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="range">Specified cells area (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ValidationResponse</returns>
-        ApiResponse<ValidationResponse> CellsWorksheetValidationsPutWorksheetValidationWithHttpInfo (string name, string sheetName, string range = null, string folder = null);
+        ApiResponse<ValidationResponse> CellsWorksheetValidationsPutWorksheetValidationWithHttpInfo (string name, string sheetName, string range = null, string folder = null, string storage = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -172,8 +182,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ValidationResponse</returns>
-        System.Threading.Tasks.Task<ValidationResponse> CellsWorksheetValidationsDeleteWorksheetValidationAsync (string name, string sheetName, int? validationIndex, string folder = null);
+        System.Threading.Tasks.Task<ValidationResponse> CellsWorksheetValidationsDeleteWorksheetValidationAsync (string name, string sheetName, int? validationIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete worksheet validation by index.
@@ -186,8 +197,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ValidationResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ValidationResponse>> CellsWorksheetValidationsDeleteWorksheetValidationAsyncWithHttpInfo (string name, string sheetName, int? validationIndex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<ValidationResponse>> CellsWorksheetValidationsDeleteWorksheetValidationAsyncWithHttpInfo (string name, string sheetName, int? validationIndex, string folder = null, string storage = null);
         /// <summary>
         /// Get worksheet validation by index.
         /// </summary>
@@ -199,8 +211,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ValidationResponse</returns>
-        System.Threading.Tasks.Task<ValidationResponse> CellsWorksheetValidationsGetWorksheetValidationAsync (string name, string sheetName, int? validationIndex, string folder = null);
+        System.Threading.Tasks.Task<ValidationResponse> CellsWorksheetValidationsGetWorksheetValidationAsync (string name, string sheetName, int? validationIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Get worksheet validation by index.
@@ -213,8 +226,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ValidationResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ValidationResponse>> CellsWorksheetValidationsGetWorksheetValidationAsyncWithHttpInfo (string name, string sheetName, int? validationIndex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<ValidationResponse>> CellsWorksheetValidationsGetWorksheetValidationAsyncWithHttpInfo (string name, string sheetName, int? validationIndex, string folder = null, string storage = null);
         /// <summary>
         /// Get worksheet validations.
         /// </summary>
@@ -225,8 +239,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="folder">Document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ValidationsResponse</returns>
-        System.Threading.Tasks.Task<ValidationsResponse> CellsWorksheetValidationsGetWorksheetValidationsAsync (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ValidationsResponse> CellsWorksheetValidationsGetWorksheetValidationsAsync (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Get worksheet validations.
@@ -238,8 +253,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="folder">Document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ValidationsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ValidationsResponse>> CellsWorksheetValidationsGetWorksheetValidationsAsyncWithHttpInfo (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<ValidationsResponse>> CellsWorksheetValidationsGetWorksheetValidationsAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Update worksheet validation by index.
         /// </summary>
@@ -252,8 +268,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="validation"> (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ValidationResponse</returns>
-        System.Threading.Tasks.Task<ValidationResponse> CellsWorksheetValidationsPostWorksheetValidationAsync (string name, string sheetName, int? validationIndex, Validation validation = null, string folder = null);
+        System.Threading.Tasks.Task<ValidationResponse> CellsWorksheetValidationsPostWorksheetValidationAsync (string name, string sheetName, int? validationIndex, Validation validation = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Update worksheet validation by index.
@@ -267,8 +284,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="validation"> (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ValidationResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ValidationResponse>> CellsWorksheetValidationsPostWorksheetValidationAsyncWithHttpInfo (string name, string sheetName, int? validationIndex, Validation validation = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<ValidationResponse>> CellsWorksheetValidationsPostWorksheetValidationAsyncWithHttpInfo (string name, string sheetName, int? validationIndex, Validation validation = null, string folder = null, string storage = null);
         /// <summary>
         /// Add worksheet validation at index.
         /// </summary>
@@ -280,8 +298,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="range">Specified cells area (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ValidationResponse</returns>
-        System.Threading.Tasks.Task<ValidationResponse> CellsWorksheetValidationsPutWorksheetValidationAsync (string name, string sheetName, string range = null, string folder = null);
+        System.Threading.Tasks.Task<ValidationResponse> CellsWorksheetValidationsPutWorksheetValidationAsync (string name, string sheetName, string range = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Add worksheet validation at index.
@@ -294,8 +313,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="range">Specified cells area (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ValidationResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ValidationResponse>> CellsWorksheetValidationsPutWorksheetValidationAsyncWithHttpInfo (string name, string sheetName, string range = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<ValidationResponse>> CellsWorksheetValidationsPutWorksheetValidationAsyncWithHttpInfo (string name, string sheetName, string range = null, string folder = null, string storage = null);
         #endregion Asynchronous Operations
     }
 
@@ -322,6 +342,25 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 this.Configuration.ApiClient.Configuration = this.Configuration;
             }
         }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsWorksheetValidationsApi"/> class.
+        /// </summary>
+        /// <returns></returns>
+        public CellsWorksheetValidationsApi(String basePath, String accesstoken)
+        {
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + accesstoken);
+            this.Configuration = new Configuration(new ApiClient(basePath),headerParameters);
+
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CellsWorksheetValidationsApi"/> class
@@ -336,6 +375,28 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
                 this.Configuration = configuration;
 
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsWorksheetValidationsApi"/> class
+        /// using Configuration object
+        /// </summary>
+        /// <param name="configuration">An instance of Configuration</param>
+        /// <returns></returns>
+        public CellsWorksheetValidationsApi(String grantType,String appSID,String appKey)
+        {
+            OAuthApi oauth2 = new OAuthApi("https://api.aspose.cloud");
+            var oauth2response = oauth2.OAuthPost(grantType, appSID, appKey);
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + oauth2response.AccessToken);
+            this.Configuration =  new Configuration(new ApiClient(), headerParameters);
             ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
@@ -416,10 +477,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ValidationResponse</returns>
-        public ValidationResponse CellsWorksheetValidationsDeleteWorksheetValidation (string name, string sheetName, int? validationIndex, string folder = null)
+        public ValidationResponse CellsWorksheetValidationsDeleteWorksheetValidation (string name, string sheetName, int? validationIndex, string folder = null, string storage = null)
         {
-             ApiResponse<ValidationResponse> localVarResponse = CellsWorksheetValidationsDeleteWorksheetValidationWithHttpInfo(name, sheetName, validationIndex, folder);
+             ApiResponse<ValidationResponse> localVarResponse = CellsWorksheetValidationsDeleteWorksheetValidationWithHttpInfo(name, sheetName, validationIndex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -431,8 +493,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ValidationResponse</returns>
-        public ApiResponse< ValidationResponse > CellsWorksheetValidationsDeleteWorksheetValidationWithHttpInfo (string name, string sheetName, int? validationIndex, string folder = null)
+        public ApiResponse< ValidationResponse > CellsWorksheetValidationsDeleteWorksheetValidationWithHttpInfo (string name, string sheetName, int? validationIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -470,6 +533,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (validationIndex != null) localVarPathParams.Add("validationIndex", Configuration.ApiClient.ParameterToString(validationIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -498,10 +562,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ValidationResponse</returns>
-        public async System.Threading.Tasks.Task<ValidationResponse> CellsWorksheetValidationsDeleteWorksheetValidationAsync (string name, string sheetName, int? validationIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ValidationResponse> CellsWorksheetValidationsDeleteWorksheetValidationAsync (string name, string sheetName, int? validationIndex, string folder = null, string storage = null)
         {
-             ApiResponse<ValidationResponse> localVarResponse = await CellsWorksheetValidationsDeleteWorksheetValidationAsyncWithHttpInfo(name, sheetName, validationIndex, folder);
+             ApiResponse<ValidationResponse> localVarResponse = await CellsWorksheetValidationsDeleteWorksheetValidationAsyncWithHttpInfo(name, sheetName, validationIndex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -514,8 +579,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ValidationResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ValidationResponse>> CellsWorksheetValidationsDeleteWorksheetValidationAsyncWithHttpInfo (string name, string sheetName, int? validationIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ValidationResponse>> CellsWorksheetValidationsDeleteWorksheetValidationAsyncWithHttpInfo (string name, string sheetName, int? validationIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -553,6 +619,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (validationIndex != null) localVarPathParams.Add("validationIndex", Configuration.ApiClient.ParameterToString(validationIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -581,10 +648,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ValidationResponse</returns>
-        public ValidationResponse CellsWorksheetValidationsGetWorksheetValidation (string name, string sheetName, int? validationIndex, string folder = null)
+        public ValidationResponse CellsWorksheetValidationsGetWorksheetValidation (string name, string sheetName, int? validationIndex, string folder = null, string storage = null)
         {
-             ApiResponse<ValidationResponse> localVarResponse = CellsWorksheetValidationsGetWorksheetValidationWithHttpInfo(name, sheetName, validationIndex, folder);
+             ApiResponse<ValidationResponse> localVarResponse = CellsWorksheetValidationsGetWorksheetValidationWithHttpInfo(name, sheetName, validationIndex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -596,8 +664,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ValidationResponse</returns>
-        public ApiResponse< ValidationResponse > CellsWorksheetValidationsGetWorksheetValidationWithHttpInfo (string name, string sheetName, int? validationIndex, string folder = null)
+        public ApiResponse< ValidationResponse > CellsWorksheetValidationsGetWorksheetValidationWithHttpInfo (string name, string sheetName, int? validationIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -635,6 +704,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (validationIndex != null) localVarPathParams.Add("validationIndex", Configuration.ApiClient.ParameterToString(validationIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -663,10 +733,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ValidationResponse</returns>
-        public async System.Threading.Tasks.Task<ValidationResponse> CellsWorksheetValidationsGetWorksheetValidationAsync (string name, string sheetName, int? validationIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ValidationResponse> CellsWorksheetValidationsGetWorksheetValidationAsync (string name, string sheetName, int? validationIndex, string folder = null, string storage = null)
         {
-             ApiResponse<ValidationResponse> localVarResponse = await CellsWorksheetValidationsGetWorksheetValidationAsyncWithHttpInfo(name, sheetName, validationIndex, folder);
+             ApiResponse<ValidationResponse> localVarResponse = await CellsWorksheetValidationsGetWorksheetValidationAsyncWithHttpInfo(name, sheetName, validationIndex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -679,8 +750,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ValidationResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ValidationResponse>> CellsWorksheetValidationsGetWorksheetValidationAsyncWithHttpInfo (string name, string sheetName, int? validationIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ValidationResponse>> CellsWorksheetValidationsGetWorksheetValidationAsyncWithHttpInfo (string name, string sheetName, int? validationIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -718,6 +790,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (validationIndex != null) localVarPathParams.Add("validationIndex", Configuration.ApiClient.ParameterToString(validationIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -745,10 +818,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="folder">Document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ValidationsResponse</returns>
-        public ValidationsResponse CellsWorksheetValidationsGetWorksheetValidations (string name, string sheetName, string folder = null)
+        public ValidationsResponse CellsWorksheetValidationsGetWorksheetValidations (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<ValidationsResponse> localVarResponse = CellsWorksheetValidationsGetWorksheetValidationsWithHttpInfo(name, sheetName, folder);
+             ApiResponse<ValidationsResponse> localVarResponse = CellsWorksheetValidationsGetWorksheetValidationsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -759,8 +833,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="folder">Document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ValidationsResponse</returns>
-        public ApiResponse< ValidationsResponse > CellsWorksheetValidationsGetWorksheetValidationsWithHttpInfo (string name, string sheetName, string folder = null)
+        public ApiResponse< ValidationsResponse > CellsWorksheetValidationsGetWorksheetValidationsWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -794,6 +869,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -821,10 +897,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="folder">Document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ValidationsResponse</returns>
-        public async System.Threading.Tasks.Task<ValidationsResponse> CellsWorksheetValidationsGetWorksheetValidationsAsync (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ValidationsResponse> CellsWorksheetValidationsGetWorksheetValidationsAsync (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<ValidationsResponse> localVarResponse = await CellsWorksheetValidationsGetWorksheetValidationsAsyncWithHttpInfo(name, sheetName, folder);
+             ApiResponse<ValidationsResponse> localVarResponse = await CellsWorksheetValidationsGetWorksheetValidationsAsyncWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -836,8 +913,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="folder">Document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ValidationsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ValidationsResponse>> CellsWorksheetValidationsGetWorksheetValidationsAsyncWithHttpInfo (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ValidationsResponse>> CellsWorksheetValidationsGetWorksheetValidationsAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -871,6 +949,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -900,10 +979,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="validation"> (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ValidationResponse</returns>
-        public ValidationResponse CellsWorksheetValidationsPostWorksheetValidation (string name, string sheetName, int? validationIndex, Validation validation = null, string folder = null)
+        public ValidationResponse CellsWorksheetValidationsPostWorksheetValidation (string name, string sheetName, int? validationIndex, Validation validation = null, string folder = null, string storage = null)
         {
-             ApiResponse<ValidationResponse> localVarResponse = CellsWorksheetValidationsPostWorksheetValidationWithHttpInfo(name, sheetName, validationIndex, validation, folder);
+             ApiResponse<ValidationResponse> localVarResponse = CellsWorksheetValidationsPostWorksheetValidationWithHttpInfo(name, sheetName, validationIndex, validation, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -916,8 +996,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="validation"> (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ValidationResponse</returns>
-        public ApiResponse< ValidationResponse > CellsWorksheetValidationsPostWorksheetValidationWithHttpInfo (string name, string sheetName, int? validationIndex, Validation validation = null, string folder = null)
+        public ApiResponse< ValidationResponse > CellsWorksheetValidationsPostWorksheetValidationWithHttpInfo (string name, string sheetName, int? validationIndex, Validation validation = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -955,6 +1036,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (validationIndex != null) localVarPathParams.Add("validationIndex", Configuration.ApiClient.ParameterToString(validationIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (validation != null && validation.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(validation); // http body (model) parameter
@@ -992,10 +1074,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="validation"> (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ValidationResponse</returns>
-        public async System.Threading.Tasks.Task<ValidationResponse> CellsWorksheetValidationsPostWorksheetValidationAsync (string name, string sheetName, int? validationIndex, Validation validation = null, string folder = null)
+        public async System.Threading.Tasks.Task<ValidationResponse> CellsWorksheetValidationsPostWorksheetValidationAsync (string name, string sheetName, int? validationIndex, Validation validation = null, string folder = null, string storage = null)
         {
-             ApiResponse<ValidationResponse> localVarResponse = await CellsWorksheetValidationsPostWorksheetValidationAsyncWithHttpInfo(name, sheetName, validationIndex, validation, folder);
+             ApiResponse<ValidationResponse> localVarResponse = await CellsWorksheetValidationsPostWorksheetValidationAsyncWithHttpInfo(name, sheetName, validationIndex, validation, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1009,8 +1092,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="validationIndex">The validation index.</param>
         /// <param name="validation"> (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ValidationResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ValidationResponse>> CellsWorksheetValidationsPostWorksheetValidationAsyncWithHttpInfo (string name, string sheetName, int? validationIndex, Validation validation = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ValidationResponse>> CellsWorksheetValidationsPostWorksheetValidationAsyncWithHttpInfo (string name, string sheetName, int? validationIndex, Validation validation = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1048,6 +1132,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (validationIndex != null) localVarPathParams.Add("validationIndex", Configuration.ApiClient.ParameterToString(validationIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (validation != null && validation.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(validation); // http body (model) parameter
@@ -1084,10 +1169,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="range">Specified cells area (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ValidationResponse</returns>
-        public ValidationResponse CellsWorksheetValidationsPutWorksheetValidation (string name, string sheetName, string range = null, string folder = null)
+        public ValidationResponse CellsWorksheetValidationsPutWorksheetValidation (string name, string sheetName, string range = null, string folder = null, string storage = null)
         {
-             ApiResponse<ValidationResponse> localVarResponse = CellsWorksheetValidationsPutWorksheetValidationWithHttpInfo(name, sheetName, range, folder);
+             ApiResponse<ValidationResponse> localVarResponse = CellsWorksheetValidationsPutWorksheetValidationWithHttpInfo(name, sheetName, range, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1099,8 +1185,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="range">Specified cells area (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of ValidationResponse</returns>
-        public ApiResponse< ValidationResponse > CellsWorksheetValidationsPutWorksheetValidationWithHttpInfo (string name, string sheetName, string range = null, string folder = null)
+        public ApiResponse< ValidationResponse > CellsWorksheetValidationsPutWorksheetValidationWithHttpInfo (string name, string sheetName, string range = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1135,6 +1222,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (range != null) localVarQueryParams.Add("range", Configuration.ApiClient.ParameterToString(range)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1163,10 +1251,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="range">Specified cells area (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ValidationResponse</returns>
-        public async System.Threading.Tasks.Task<ValidationResponse> CellsWorksheetValidationsPutWorksheetValidationAsync (string name, string sheetName, string range = null, string folder = null)
+        public async System.Threading.Tasks.Task<ValidationResponse> CellsWorksheetValidationsPutWorksheetValidationAsync (string name, string sheetName, string range = null, string folder = null, string storage = null)
         {
-             ApiResponse<ValidationResponse> localVarResponse = await CellsWorksheetValidationsPutWorksheetValidationAsyncWithHttpInfo(name, sheetName, range, folder);
+             ApiResponse<ValidationResponse> localVarResponse = await CellsWorksheetValidationsPutWorksheetValidationAsyncWithHttpInfo(name, sheetName, range, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1179,8 +1268,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">Worksheet name.</param>
         /// <param name="range">Specified cells area (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ValidationResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ValidationResponse>> CellsWorksheetValidationsPutWorksheetValidationAsyncWithHttpInfo (string name, string sheetName, string range = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ValidationResponse>> CellsWorksheetValidationsPutWorksheetValidationAsyncWithHttpInfo (string name, string sheetName, string range = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1215,6 +1305,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (range != null) localVarQueryParams.Add("range", Configuration.ApiClient.ParameterToString(range)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request

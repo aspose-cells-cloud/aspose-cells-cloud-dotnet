@@ -37,8 +37,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isAutoFitRows">Autofit rows. (optional, default to false)</param>
         /// <param name="isAutoFitColumns">Autofit columns. (optional, default to false)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaveResponse</returns>
-        SaveResponse CellsSaveAsPostDocumentSaveAs (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null);
+        SaveResponse CellsSaveAsPostDocumentSaveAs (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Convert document and save result to storage.
@@ -53,8 +54,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isAutoFitRows">Autofit rows. (optional, default to false)</param>
         /// <param name="isAutoFitColumns">Autofit columns. (optional, default to false)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaveResponse</returns>
-        ApiResponse<SaveResponse> CellsSaveAsPostDocumentSaveAsWithHttpInfo (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null);
+        ApiResponse<SaveResponse> CellsSaveAsPostDocumentSaveAsWithHttpInfo (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storage = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -70,8 +72,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isAutoFitRows">Autofit rows. (optional, default to false)</param>
         /// <param name="isAutoFitColumns">Autofit columns. (optional, default to false)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaveResponse</returns>
-        System.Threading.Tasks.Task<SaveResponse> CellsSaveAsPostDocumentSaveAsAsync (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null);
+        System.Threading.Tasks.Task<SaveResponse> CellsSaveAsPostDocumentSaveAsAsync (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Convert document and save result to storage.
@@ -86,8 +89,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isAutoFitRows">Autofit rows. (optional, default to false)</param>
         /// <param name="isAutoFitColumns">Autofit columns. (optional, default to false)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaveResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaveResponse>> CellsSaveAsPostDocumentSaveAsAsyncWithHttpInfo (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaveResponse>> CellsSaveAsPostDocumentSaveAsAsyncWithHttpInfo (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storage = null);
         #endregion Asynchronous Operations
     }
 
@@ -114,6 +118,25 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 this.Configuration.ApiClient.Configuration = this.Configuration;
             }
         }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsSaveAsApi"/> class.
+        /// </summary>
+        /// <returns></returns>
+        public CellsSaveAsApi(String basePath, String accesstoken)
+        {
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + accesstoken);
+            this.Configuration = new Configuration(new ApiClient(basePath),headerParameters);
+
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CellsSaveAsApi"/> class
@@ -128,6 +151,28 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
                 this.Configuration = configuration;
 
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsSaveAsApi"/> class
+        /// using Configuration object
+        /// </summary>
+        /// <param name="configuration">An instance of Configuration</param>
+        /// <returns></returns>
+        public CellsSaveAsApi(String grantType,String appSID,String appKey)
+        {
+            OAuthApi oauth2 = new OAuthApi("https://api.aspose.cloud");
+            var oauth2response = oauth2.OAuthPost(grantType, appSID, appKey);
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + oauth2response.AccessToken);
+            this.Configuration =  new Configuration(new ApiClient(), headerParameters);
             ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
@@ -210,10 +255,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isAutoFitRows">Autofit rows. (optional, default to false)</param>
         /// <param name="isAutoFitColumns">Autofit columns. (optional, default to false)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaveResponse</returns>
-        public SaveResponse CellsSaveAsPostDocumentSaveAs (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null)
+        public SaveResponse CellsSaveAsPostDocumentSaveAs (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaveResponse> localVarResponse = CellsSaveAsPostDocumentSaveAsWithHttpInfo(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder);
+             ApiResponse<SaveResponse> localVarResponse = CellsSaveAsPostDocumentSaveAsWithHttpInfo(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -227,8 +273,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isAutoFitRows">Autofit rows. (optional, default to false)</param>
         /// <param name="isAutoFitColumns">Autofit columns. (optional, default to false)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaveResponse</returns>
-        public ApiResponse< SaveResponse > CellsSaveAsPostDocumentSaveAsWithHttpInfo (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null)
+        public ApiResponse< SaveResponse > CellsSaveAsPostDocumentSaveAsWithHttpInfo (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -261,6 +308,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (isAutoFitRows != null) localVarQueryParams.Add("isAutoFitRows", Configuration.ApiClient.ParameterToString(isAutoFitRows)); // query parameter
             if (isAutoFitColumns != null) localVarQueryParams.Add("isAutoFitColumns", Configuration.ApiClient.ParameterToString(isAutoFitColumns)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (saveOptions != null && saveOptions.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(saveOptions); // http body (model) parameter
@@ -299,10 +347,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isAutoFitRows">Autofit rows. (optional, default to false)</param>
         /// <param name="isAutoFitColumns">Autofit columns. (optional, default to false)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaveResponse</returns>
-        public async System.Threading.Tasks.Task<SaveResponse> CellsSaveAsPostDocumentSaveAsAsync (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaveResponse> CellsSaveAsPostDocumentSaveAsAsync (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaveResponse> localVarResponse = await CellsSaveAsPostDocumentSaveAsAsyncWithHttpInfo(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder);
+             ApiResponse<SaveResponse> localVarResponse = await CellsSaveAsPostDocumentSaveAsAsyncWithHttpInfo(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -317,8 +366,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isAutoFitRows">Autofit rows. (optional, default to false)</param>
         /// <param name="isAutoFitColumns">Autofit columns. (optional, default to false)</param>
         /// <param name="folder">The document folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaveResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaveResponse>> CellsSaveAsPostDocumentSaveAsAsyncWithHttpInfo (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaveResponse>> CellsSaveAsPostDocumentSaveAsAsyncWithHttpInfo (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -351,6 +401,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (isAutoFitRows != null) localVarQueryParams.Add("isAutoFitRows", Configuration.ApiClient.ParameterToString(isAutoFitRows)); // query parameter
             if (isAutoFitColumns != null) localVarQueryParams.Add("isAutoFitColumns", Configuration.ApiClient.ParameterToString(isAutoFitColumns)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (saveOptions != null && saveOptions.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(saveOptions); // http body (model) parameter

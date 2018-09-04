@@ -42,8 +42,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="minute"> (optional, default to 0)</param>
         /// <param name="second"> (optional, default to 0)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsAutoFilterDeleteWorksheetDateFilter (string name, string sheetName, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, string folder = null);
+        SaaSposeResponse CellsAutoFilterDeleteWorksheetDateFilter (string name, string sheetName, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Removes a date filter.             
@@ -63,8 +64,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="minute"> (optional, default to 0)</param>
         /// <param name="second"> (optional, default to 0)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsAutoFilterDeleteWorksheetDateFilterWithHttpInfo (string name, string sheetName, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsAutoFilterDeleteWorksheetDateFilterWithHttpInfo (string name, string sheetName, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, string folder = null, string storage = null);
         /// <summary>
         /// Delete a filter for a filter column.             
         /// </summary>
@@ -77,8 +79,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="fieldIndex"></param>
         /// <param name="criteria"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsAutoFilterDeleteWorksheetFilter (string name, string sheetName, int? fieldIndex, string criteria = null, string folder = null);
+        SaaSposeResponse CellsAutoFilterDeleteWorksheetFilter (string name, string sheetName, int? fieldIndex, string criteria = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete a filter for a filter column.             
@@ -92,8 +95,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="fieldIndex"></param>
         /// <param name="criteria"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsAutoFilterDeleteWorksheetFilterWithHttpInfo (string name, string sheetName, int? fieldIndex, string criteria = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsAutoFilterDeleteWorksheetFilterWithHttpInfo (string name, string sheetName, int? fieldIndex, string criteria = null, string folder = null, string storage = null);
         /// <summary>
         /// Get Auto filter Description
         /// </summary>
@@ -104,8 +108,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>AutoFilterResponse</returns>
-        AutoFilterResponse CellsAutoFilterGetWorksheetAutoFilter (string name, string sheetName, string folder = null);
+        AutoFilterResponse CellsAutoFilterGetWorksheetAutoFilter (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Get Auto filter Description
@@ -117,8 +122,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of AutoFilterResponse</returns>
-        ApiResponse<AutoFilterResponse> CellsAutoFilterGetWorksheetAutoFilterWithHttpInfo (string name, string sheetName, string folder = null);
+        ApiResponse<AutoFilterResponse> CellsAutoFilterGetWorksheetAutoFilterWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -129,8 +135,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsAutoFilterPostWorksheetAutoFilterRefresh (string name, string sheetName, string folder = null);
+        SaaSposeResponse CellsAutoFilterPostWorksheetAutoFilterRefresh (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -142,8 +149,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsAutoFilterPostWorksheetAutoFilterRefreshWithHttpInfo (string name, string sheetName, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsAutoFilterPostWorksheetAutoFilterRefreshWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Match all blank cell in the list.
         /// </summary>
@@ -155,8 +163,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="fieldIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsAutoFilterPostWorksheetMatchBlanks (string name, string sheetName, int? fieldIndex, string folder = null);
+        SaaSposeResponse CellsAutoFilterPostWorksheetMatchBlanks (string name, string sheetName, int? fieldIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Match all blank cell in the list.
@@ -169,8 +178,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="fieldIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsAutoFilterPostWorksheetMatchBlanksWithHttpInfo (string name, string sheetName, int? fieldIndex, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsAutoFilterPostWorksheetMatchBlanksWithHttpInfo (string name, string sheetName, int? fieldIndex, string folder = null, string storage = null);
         /// <summary>
         /// Match all not blank cell in the list.             
         /// </summary>
@@ -182,8 +192,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="fieldIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsAutoFilterPostWorksheetMatchNonBlanks (string name, string sheetName, int? fieldIndex, string folder = null);
+        SaaSposeResponse CellsAutoFilterPostWorksheetMatchNonBlanks (string name, string sheetName, int? fieldIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Match all not blank cell in the list.             
@@ -196,8 +207,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="fieldIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsAutoFilterPostWorksheetMatchNonBlanksWithHttpInfo (string name, string sheetName, int? fieldIndex, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsAutoFilterPostWorksheetMatchNonBlanksWithHttpInfo (string name, string sheetName, int? fieldIndex, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -213,8 +225,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsAutoFilterPutWorksheetColorFilter (string name, string sheetName, string range, int? fieldIndex, ColorFilterRequest colorFilter = null, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        SaaSposeResponse CellsAutoFilterPutWorksheetColorFilter (string name, string sheetName, string range, int? fieldIndex, ColorFilterRequest colorFilter = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -231,8 +244,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsAutoFilterPutWorksheetColorFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, ColorFilterRequest colorFilter = null, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsAutoFilterPutWorksheetColorFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, ColorFilterRequest colorFilter = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
         /// <summary>
         /// Filters a list with a custom criteria.             
         /// </summary>
@@ -252,8 +266,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsAutoFilterPutWorksheetCustomFilter (string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        SaaSposeResponse CellsAutoFilterPutWorksheetCustomFilter (string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Filters a list with a custom criteria.             
@@ -274,8 +289,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsAutoFilterPutWorksheetCustomFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsAutoFilterPutWorksheetCustomFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
         /// <summary>
         /// add date filter in worksheet 
         /// </summary>
@@ -297,8 +313,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsAutoFilterPutWorksheetDateFilter (string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        SaaSposeResponse CellsAutoFilterPutWorksheetDateFilter (string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
 
         /// <summary>
         /// add date filter in worksheet 
@@ -321,8 +338,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsAutoFilterPutWorksheetDateFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsAutoFilterPutWorksheetDateFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -338,8 +356,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsAutoFilterPutWorksheetDynamicFilter (string name, string sheetName, string range, int? fieldIndex, string dynamicFilterType, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        SaaSposeResponse CellsAutoFilterPutWorksheetDynamicFilter (string name, string sheetName, string range, int? fieldIndex, string dynamicFilterType, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -356,8 +375,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsAutoFilterPutWorksheetDynamicFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string dynamicFilterType, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsAutoFilterPutWorksheetDynamicFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string dynamicFilterType, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
         /// <summary>
         /// Adds a filter for a filter column.             
         /// </summary>
@@ -373,8 +393,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsAutoFilterPutWorksheetFilter (string name, string sheetName, string range, int? fieldIndex, string criteria, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        SaaSposeResponse CellsAutoFilterPutWorksheetFilter (string name, string sheetName, string range, int? fieldIndex, string criteria, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Adds a filter for a filter column.             
@@ -391,8 +412,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsAutoFilterPutWorksheetFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string criteria, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsAutoFilterPutWorksheetFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string criteria, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
         /// <summary>
         /// Filter the top 10 item in the list
         /// </summary>
@@ -410,8 +432,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsAutoFilterPutWorksheetFilterTop10 (string name, string sheetName, string range, int? fieldIndex, bool? isTop, bool? isPercent, int? itemCount, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        SaaSposeResponse CellsAutoFilterPutWorksheetFilterTop10 (string name, string sheetName, string range, int? fieldIndex, bool? isTop, bool? isPercent, int? itemCount, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Filter the top 10 item in the list
@@ -430,8 +453,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsAutoFilterPutWorksheetFilterTop10WithHttpInfo (string name, string sheetName, string range, int? fieldIndex, bool? isTop, bool? isPercent, int? itemCount, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsAutoFilterPutWorksheetFilterTop10WithHttpInfo (string name, string sheetName, string range, int? fieldIndex, bool? isTop, bool? isPercent, int? itemCount, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
         /// <summary>
         /// Adds an icon filter.
         /// </summary>
@@ -448,8 +472,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        SaaSposeResponse CellsAutoFilterPutWorksheetIconFilter (string name, string sheetName, string range, int? fieldIndex, string iconSetType, int? iconId, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        SaaSposeResponse CellsAutoFilterPutWorksheetIconFilter (string name, string sheetName, string range, int? fieldIndex, string iconSetType, int? iconId, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Adds an icon filter.
@@ -467,8 +492,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        ApiResponse<SaaSposeResponse> CellsAutoFilterPutWorksheetIconFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string iconSetType, int? iconId, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        ApiResponse<SaaSposeResponse> CellsAutoFilterPutWorksheetIconFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string iconSetType, int? iconId, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -489,8 +515,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="minute"> (optional, default to 0)</param>
         /// <param name="second"> (optional, default to 0)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterDeleteWorksheetDateFilterAsync (string name, string sheetName, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterDeleteWorksheetDateFilterAsync (string name, string sheetName, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Removes a date filter.             
@@ -510,8 +537,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="minute"> (optional, default to 0)</param>
         /// <param name="second"> (optional, default to 0)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterDeleteWorksheetDateFilterAsyncWithHttpInfo (string name, string sheetName, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterDeleteWorksheetDateFilterAsyncWithHttpInfo (string name, string sheetName, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, string folder = null, string storage = null);
         /// <summary>
         /// Delete a filter for a filter column.             
         /// </summary>
@@ -524,8 +552,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="fieldIndex"></param>
         /// <param name="criteria"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterDeleteWorksheetFilterAsync (string name, string sheetName, int? fieldIndex, string criteria = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterDeleteWorksheetFilterAsync (string name, string sheetName, int? fieldIndex, string criteria = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Delete a filter for a filter column.             
@@ -539,8 +568,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="fieldIndex"></param>
         /// <param name="criteria"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterDeleteWorksheetFilterAsyncWithHttpInfo (string name, string sheetName, int? fieldIndex, string criteria = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterDeleteWorksheetFilterAsyncWithHttpInfo (string name, string sheetName, int? fieldIndex, string criteria = null, string folder = null, string storage = null);
         /// <summary>
         /// Get Auto filter Description
         /// </summary>
@@ -551,8 +581,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of AutoFilterResponse</returns>
-        System.Threading.Tasks.Task<AutoFilterResponse> CellsAutoFilterGetWorksheetAutoFilterAsync (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<AutoFilterResponse> CellsAutoFilterGetWorksheetAutoFilterAsync (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// Get Auto filter Description
@@ -564,8 +595,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (AutoFilterResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AutoFilterResponse>> CellsAutoFilterGetWorksheetAutoFilterAsyncWithHttpInfo (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<AutoFilterResponse>> CellsAutoFilterGetWorksheetAutoFilterAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -576,8 +608,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPostWorksheetAutoFilterRefreshAsync (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPostWorksheetAutoFilterRefreshAsync (string name, string sheetName, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -589,8 +622,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPostWorksheetAutoFilterRefreshAsyncWithHttpInfo (string name, string sheetName, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPostWorksheetAutoFilterRefreshAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null);
         /// <summary>
         /// Match all blank cell in the list.
         /// </summary>
@@ -602,8 +636,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="fieldIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPostWorksheetMatchBlanksAsync (string name, string sheetName, int? fieldIndex, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPostWorksheetMatchBlanksAsync (string name, string sheetName, int? fieldIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Match all blank cell in the list.
@@ -616,8 +651,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="fieldIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPostWorksheetMatchBlanksAsyncWithHttpInfo (string name, string sheetName, int? fieldIndex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPostWorksheetMatchBlanksAsyncWithHttpInfo (string name, string sheetName, int? fieldIndex, string folder = null, string storage = null);
         /// <summary>
         /// Match all not blank cell in the list.             
         /// </summary>
@@ -629,8 +665,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="fieldIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPostWorksheetMatchNonBlanksAsync (string name, string sheetName, int? fieldIndex, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPostWorksheetMatchNonBlanksAsync (string name, string sheetName, int? fieldIndex, string folder = null, string storage = null);
 
         /// <summary>
         /// Match all not blank cell in the list.             
@@ -643,8 +680,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="fieldIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPostWorksheetMatchNonBlanksAsyncWithHttpInfo (string name, string sheetName, int? fieldIndex, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPostWorksheetMatchNonBlanksAsyncWithHttpInfo (string name, string sheetName, int? fieldIndex, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -660,8 +698,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetColorFilterAsync (string name, string sheetName, string range, int? fieldIndex, ColorFilterRequest colorFilter = null, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetColorFilterAsync (string name, string sheetName, string range, int? fieldIndex, ColorFilterRequest colorFilter = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -678,8 +717,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetColorFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, ColorFilterRequest colorFilter = null, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetColorFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, ColorFilterRequest colorFilter = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
         /// <summary>
         /// Filters a list with a custom criteria.             
         /// </summary>
@@ -699,8 +739,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetCustomFilterAsync (string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetCustomFilterAsync (string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Filters a list with a custom criteria.             
@@ -721,8 +762,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetCustomFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetCustomFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
         /// <summary>
         /// add date filter in worksheet 
         /// </summary>
@@ -744,8 +786,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetDateFilterAsync (string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetDateFilterAsync (string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
 
         /// <summary>
         /// add date filter in worksheet 
@@ -768,8 +811,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetDateFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetDateFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
         /// <summary>
         /// 
         /// </summary>
@@ -785,8 +829,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetDynamicFilterAsync (string name, string sheetName, string range, int? fieldIndex, string dynamicFilterType, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetDynamicFilterAsync (string name, string sheetName, string range, int? fieldIndex, string dynamicFilterType, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
 
         /// <summary>
         /// 
@@ -803,8 +848,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetDynamicFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string dynamicFilterType, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetDynamicFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string dynamicFilterType, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
         /// <summary>
         /// Adds a filter for a filter column.             
         /// </summary>
@@ -820,8 +866,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetFilterAsync (string name, string sheetName, string range, int? fieldIndex, string criteria, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetFilterAsync (string name, string sheetName, string range, int? fieldIndex, string criteria, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Adds a filter for a filter column.             
@@ -838,8 +885,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string criteria, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string criteria, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
         /// <summary>
         /// Filter the top 10 item in the list
         /// </summary>
@@ -857,8 +905,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetFilterTop10Async (string name, string sheetName, string range, int? fieldIndex, bool? isTop, bool? isPercent, int? itemCount, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetFilterTop10Async (string name, string sheetName, string range, int? fieldIndex, bool? isTop, bool? isPercent, int? itemCount, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Filter the top 10 item in the list
@@ -877,8 +926,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetFilterTop10AsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, bool? isTop, bool? isPercent, int? itemCount, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetFilterTop10AsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, bool? isTop, bool? isPercent, int? itemCount, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
         /// <summary>
         /// Adds an icon filter.
         /// </summary>
@@ -895,8 +945,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetIconFilterAsync (string name, string sheetName, string range, int? fieldIndex, string iconSetType, int? iconId, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetIconFilterAsync (string name, string sheetName, string range, int? fieldIndex, string iconSetType, int? iconId, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Adds an icon filter.
@@ -914,8 +965,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetIconFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string iconSetType, int? iconId, bool? matchBlanks = null, bool? refresh = null, string folder = null);
+        System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetIconFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string iconSetType, int? iconId, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null);
         #endregion Asynchronous Operations
     }
 
@@ -942,6 +994,25 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 this.Configuration.ApiClient.Configuration = this.Configuration;
             }
         }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsAutoFilterApi"/> class.
+        /// </summary>
+        /// <returns></returns>
+        public CellsAutoFilterApi(String basePath, String accesstoken)
+        {
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + accesstoken);
+            this.Configuration = new Configuration(new ApiClient(basePath),headerParameters);
+
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CellsAutoFilterApi"/> class
@@ -956,6 +1027,28 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
                 this.Configuration = configuration;
 
+            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
+
+            // ensure API client has configuration ready
+            if (Configuration.ApiClient.Configuration == null)
+            {
+                this.Configuration.ApiClient.Configuration = this.Configuration;
+            }
+        }
+		
+		/// <summary>
+        /// Initializes a new instance of the <see cref="CellsAutoFilterApi"/> class
+        /// using Configuration object
+        /// </summary>
+        /// <param name="configuration">An instance of Configuration</param>
+        /// <returns></returns>
+        public CellsAutoFilterApi(String grantType,String appSID,String appKey)
+        {
+            OAuthApi oauth2 = new OAuthApi("https://api.aspose.cloud");
+            var oauth2response = oauth2.OAuthPost(grantType, appSID, appKey);
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + oauth2response.AccessToken);
+            this.Configuration =  new Configuration(new ApiClient(), headerParameters);
             ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
@@ -1043,10 +1136,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="minute"> (optional, default to 0)</param>
         /// <param name="second"> (optional, default to 0)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsAutoFilterDeleteWorksheetDateFilter (string name, string sheetName, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, string folder = null)
+        public SaaSposeResponse CellsAutoFilterDeleteWorksheetDateFilter (string name, string sheetName, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterDeleteWorksheetDateFilterWithHttpInfo(name, sheetName, fieldIndex, dateTimeGroupingType, year, month, day, hour, minute, second, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterDeleteWorksheetDateFilterWithHttpInfo(name, sheetName, fieldIndex, dateTimeGroupingType, year, month, day, hour, minute, second, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1065,8 +1159,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="minute"> (optional, default to 0)</param>
         /// <param name="second"> (optional, default to 0)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsAutoFilterDeleteWorksheetDateFilterWithHttpInfo (string name, string sheetName, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsAutoFilterDeleteWorksheetDateFilterWithHttpInfo (string name, string sheetName, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1114,6 +1209,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (minute != null) localVarQueryParams.Add("minute", Configuration.ApiClient.ParameterToString(minute)); // query parameter
             if (second != null) localVarQueryParams.Add("second", Configuration.ApiClient.ParameterToString(second)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1149,10 +1245,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="minute"> (optional, default to 0)</param>
         /// <param name="second"> (optional, default to 0)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterDeleteWorksheetDateFilterAsync (string name, string sheetName, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterDeleteWorksheetDateFilterAsync (string name, string sheetName, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterDeleteWorksheetDateFilterAsyncWithHttpInfo(name, sheetName, fieldIndex, dateTimeGroupingType, year, month, day, hour, minute, second, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterDeleteWorksheetDateFilterAsyncWithHttpInfo(name, sheetName, fieldIndex, dateTimeGroupingType, year, month, day, hour, minute, second, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1172,8 +1269,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="minute"> (optional, default to 0)</param>
         /// <param name="second"> (optional, default to 0)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterDeleteWorksheetDateFilterAsyncWithHttpInfo (string name, string sheetName, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterDeleteWorksheetDateFilterAsyncWithHttpInfo (string name, string sheetName, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1221,6 +1319,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (minute != null) localVarQueryParams.Add("minute", Configuration.ApiClient.ParameterToString(minute)); // query parameter
             if (second != null) localVarQueryParams.Add("second", Configuration.ApiClient.ParameterToString(second)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1250,10 +1349,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="fieldIndex"></param>
         /// <param name="criteria"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsAutoFilterDeleteWorksheetFilter (string name, string sheetName, int? fieldIndex, string criteria = null, string folder = null)
+        public SaaSposeResponse CellsAutoFilterDeleteWorksheetFilter (string name, string sheetName, int? fieldIndex, string criteria = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterDeleteWorksheetFilterWithHttpInfo(name, sheetName, fieldIndex, criteria, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterDeleteWorksheetFilterWithHttpInfo(name, sheetName, fieldIndex, criteria, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1266,8 +1366,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="fieldIndex"></param>
         /// <param name="criteria"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsAutoFilterDeleteWorksheetFilterWithHttpInfo (string name, string sheetName, int? fieldIndex, string criteria = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsAutoFilterDeleteWorksheetFilterWithHttpInfo (string name, string sheetName, int? fieldIndex, string criteria = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1306,6 +1407,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (fieldIndex != null) localVarQueryParams.Add("fieldIndex", Configuration.ApiClient.ParameterToString(fieldIndex)); // query parameter
             if (criteria != null) localVarQueryParams.Add("criteria", Configuration.ApiClient.ParameterToString(criteria)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1335,10 +1437,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="fieldIndex"></param>
         /// <param name="criteria"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterDeleteWorksheetFilterAsync (string name, string sheetName, int? fieldIndex, string criteria = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterDeleteWorksheetFilterAsync (string name, string sheetName, int? fieldIndex, string criteria = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterDeleteWorksheetFilterAsyncWithHttpInfo(name, sheetName, fieldIndex, criteria, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterDeleteWorksheetFilterAsyncWithHttpInfo(name, sheetName, fieldIndex, criteria, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1352,8 +1455,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="fieldIndex"></param>
         /// <param name="criteria"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterDeleteWorksheetFilterAsyncWithHttpInfo (string name, string sheetName, int? fieldIndex, string criteria = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterDeleteWorksheetFilterAsyncWithHttpInfo (string name, string sheetName, int? fieldIndex, string criteria = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1392,6 +1496,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (fieldIndex != null) localVarQueryParams.Add("fieldIndex", Configuration.ApiClient.ParameterToString(fieldIndex)); // query parameter
             if (criteria != null) localVarQueryParams.Add("criteria", Configuration.ApiClient.ParameterToString(criteria)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1419,10 +1524,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>AutoFilterResponse</returns>
-        public AutoFilterResponse CellsAutoFilterGetWorksheetAutoFilter (string name, string sheetName, string folder = null)
+        public AutoFilterResponse CellsAutoFilterGetWorksheetAutoFilter (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<AutoFilterResponse> localVarResponse = CellsAutoFilterGetWorksheetAutoFilterWithHttpInfo(name, sheetName, folder);
+             ApiResponse<AutoFilterResponse> localVarResponse = CellsAutoFilterGetWorksheetAutoFilterWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1433,8 +1539,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of AutoFilterResponse</returns>
-        public ApiResponse< AutoFilterResponse > CellsAutoFilterGetWorksheetAutoFilterWithHttpInfo (string name, string sheetName, string folder = null)
+        public ApiResponse< AutoFilterResponse > CellsAutoFilterGetWorksheetAutoFilterWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1468,6 +1575,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1495,10 +1603,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of AutoFilterResponse</returns>
-        public async System.Threading.Tasks.Task<AutoFilterResponse> CellsAutoFilterGetWorksheetAutoFilterAsync (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<AutoFilterResponse> CellsAutoFilterGetWorksheetAutoFilterAsync (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<AutoFilterResponse> localVarResponse = await CellsAutoFilterGetWorksheetAutoFilterAsyncWithHttpInfo(name, sheetName, folder);
+             ApiResponse<AutoFilterResponse> localVarResponse = await CellsAutoFilterGetWorksheetAutoFilterAsyncWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1510,8 +1619,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (AutoFilterResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<AutoFilterResponse>> CellsAutoFilterGetWorksheetAutoFilterAsyncWithHttpInfo (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<AutoFilterResponse>> CellsAutoFilterGetWorksheetAutoFilterAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1545,6 +1655,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1572,10 +1683,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsAutoFilterPostWorksheetAutoFilterRefresh (string name, string sheetName, string folder = null)
+        public SaaSposeResponse CellsAutoFilterPostWorksheetAutoFilterRefresh (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterPostWorksheetAutoFilterRefreshWithHttpInfo(name, sheetName, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterPostWorksheetAutoFilterRefreshWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1586,8 +1698,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsAutoFilterPostWorksheetAutoFilterRefreshWithHttpInfo (string name, string sheetName, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsAutoFilterPostWorksheetAutoFilterRefreshWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1621,6 +1734,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1648,10 +1762,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPostWorksheetAutoFilterRefreshAsync (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPostWorksheetAutoFilterRefreshAsync (string name, string sheetName, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterPostWorksheetAutoFilterRefreshAsyncWithHttpInfo(name, sheetName, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterPostWorksheetAutoFilterRefreshAsyncWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1663,8 +1778,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPostWorksheetAutoFilterRefreshAsyncWithHttpInfo (string name, string sheetName, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPostWorksheetAutoFilterRefreshAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1698,6 +1814,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1726,10 +1843,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="fieldIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsAutoFilterPostWorksheetMatchBlanks (string name, string sheetName, int? fieldIndex, string folder = null)
+        public SaaSposeResponse CellsAutoFilterPostWorksheetMatchBlanks (string name, string sheetName, int? fieldIndex, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterPostWorksheetMatchBlanksWithHttpInfo(name, sheetName, fieldIndex, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterPostWorksheetMatchBlanksWithHttpInfo(name, sheetName, fieldIndex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1741,8 +1859,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="fieldIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsAutoFilterPostWorksheetMatchBlanksWithHttpInfo (string name, string sheetName, int? fieldIndex, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsAutoFilterPostWorksheetMatchBlanksWithHttpInfo (string name, string sheetName, int? fieldIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1780,6 +1899,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (fieldIndex != null) localVarQueryParams.Add("fieldIndex", Configuration.ApiClient.ParameterToString(fieldIndex)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1808,10 +1928,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="fieldIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPostWorksheetMatchBlanksAsync (string name, string sheetName, int? fieldIndex, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPostWorksheetMatchBlanksAsync (string name, string sheetName, int? fieldIndex, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterPostWorksheetMatchBlanksAsyncWithHttpInfo(name, sheetName, fieldIndex, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterPostWorksheetMatchBlanksAsyncWithHttpInfo(name, sheetName, fieldIndex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1824,8 +1945,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="fieldIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPostWorksheetMatchBlanksAsyncWithHttpInfo (string name, string sheetName, int? fieldIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPostWorksheetMatchBlanksAsyncWithHttpInfo (string name, string sheetName, int? fieldIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1863,6 +1985,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (fieldIndex != null) localVarQueryParams.Add("fieldIndex", Configuration.ApiClient.ParameterToString(fieldIndex)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1891,10 +2014,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="fieldIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsAutoFilterPostWorksheetMatchNonBlanks (string name, string sheetName, int? fieldIndex, string folder = null)
+        public SaaSposeResponse CellsAutoFilterPostWorksheetMatchNonBlanks (string name, string sheetName, int? fieldIndex, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterPostWorksheetMatchNonBlanksWithHttpInfo(name, sheetName, fieldIndex, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterPostWorksheetMatchNonBlanksWithHttpInfo(name, sheetName, fieldIndex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -1906,8 +2030,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="fieldIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsAutoFilterPostWorksheetMatchNonBlanksWithHttpInfo (string name, string sheetName, int? fieldIndex, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsAutoFilterPostWorksheetMatchNonBlanksWithHttpInfo (string name, string sheetName, int? fieldIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -1945,6 +2070,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (fieldIndex != null) localVarQueryParams.Add("fieldIndex", Configuration.ApiClient.ParameterToString(fieldIndex)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -1973,10 +2099,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="fieldIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPostWorksheetMatchNonBlanksAsync (string name, string sheetName, int? fieldIndex, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPostWorksheetMatchNonBlanksAsync (string name, string sheetName, int? fieldIndex, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterPostWorksheetMatchNonBlanksAsyncWithHttpInfo(name, sheetName, fieldIndex, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterPostWorksheetMatchNonBlanksAsyncWithHttpInfo(name, sheetName, fieldIndex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -1989,8 +2116,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName"></param>
         /// <param name="fieldIndex"></param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPostWorksheetMatchNonBlanksAsyncWithHttpInfo (string name, string sheetName, int? fieldIndex, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPostWorksheetMatchNonBlanksAsyncWithHttpInfo (string name, string sheetName, int? fieldIndex, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2028,6 +2156,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (fieldIndex != null) localVarQueryParams.Add("fieldIndex", Configuration.ApiClient.ParameterToString(fieldIndex)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2060,10 +2189,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsAutoFilterPutWorksheetColorFilter (string name, string sheetName, string range, int? fieldIndex, ColorFilterRequest colorFilter = null, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public SaaSposeResponse CellsAutoFilterPutWorksheetColorFilter (string name, string sheetName, string range, int? fieldIndex, ColorFilterRequest colorFilter = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterPutWorksheetColorFilterWithHttpInfo(name, sheetName, range, fieldIndex, colorFilter, matchBlanks, refresh, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterPutWorksheetColorFilterWithHttpInfo(name, sheetName, range, fieldIndex, colorFilter, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -2079,8 +2209,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsAutoFilterPutWorksheetColorFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, ColorFilterRequest colorFilter = null, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsAutoFilterPutWorksheetColorFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, ColorFilterRequest colorFilter = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2124,6 +2255,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (matchBlanks != null) localVarQueryParams.Add("matchBlanks", Configuration.ApiClient.ParameterToString(matchBlanks)); // query parameter
             if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (colorFilter != null && colorFilter.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(colorFilter); // http body (model) parameter
@@ -2164,10 +2296,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetColorFilterAsync (string name, string sheetName, string range, int? fieldIndex, ColorFilterRequest colorFilter = null, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetColorFilterAsync (string name, string sheetName, string range, int? fieldIndex, ColorFilterRequest colorFilter = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterPutWorksheetColorFilterAsyncWithHttpInfo(name, sheetName, range, fieldIndex, colorFilter, matchBlanks, refresh, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterPutWorksheetColorFilterAsyncWithHttpInfo(name, sheetName, range, fieldIndex, colorFilter, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -2184,8 +2317,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetColorFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, ColorFilterRequest colorFilter = null, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetColorFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, ColorFilterRequest colorFilter = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2229,6 +2363,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (matchBlanks != null) localVarQueryParams.Add("matchBlanks", Configuration.ApiClient.ParameterToString(matchBlanks)); // query parameter
             if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
             if (colorFilter != null && colorFilter.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(colorFilter); // http body (model) parameter
@@ -2273,10 +2408,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsAutoFilterPutWorksheetCustomFilter (string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public SaaSposeResponse CellsAutoFilterPutWorksheetCustomFilter (string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterPutWorksheetCustomFilterWithHttpInfo(name, sheetName, range, fieldIndex, operatorType1, criteria1, isAnd, operatorType2, criteria2, matchBlanks, refresh, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterPutWorksheetCustomFilterWithHttpInfo(name, sheetName, range, fieldIndex, operatorType1, criteria1, isAnd, operatorType2, criteria2, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -2296,8 +2432,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsAutoFilterPutWorksheetCustomFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsAutoFilterPutWorksheetCustomFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2352,6 +2489,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (matchBlanks != null) localVarQueryParams.Add("matchBlanks", Configuration.ApiClient.ParameterToString(matchBlanks)); // query parameter
             if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2388,10 +2526,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetCustomFilterAsync (string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetCustomFilterAsync (string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterPutWorksheetCustomFilterAsyncWithHttpInfo(name, sheetName, range, fieldIndex, operatorType1, criteria1, isAnd, operatorType2, criteria2, matchBlanks, refresh, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterPutWorksheetCustomFilterAsyncWithHttpInfo(name, sheetName, range, fieldIndex, operatorType1, criteria1, isAnd, operatorType2, criteria2, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -2412,8 +2551,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetCustomFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetCustomFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2468,6 +2608,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (matchBlanks != null) localVarQueryParams.Add("matchBlanks", Configuration.ApiClient.ParameterToString(matchBlanks)); // query parameter
             if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2506,10 +2647,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsAutoFilterPutWorksheetDateFilter (string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public SaaSposeResponse CellsAutoFilterPutWorksheetDateFilter (string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterPutWorksheetDateFilterWithHttpInfo(name, sheetName, range, fieldIndex, dateTimeGroupingType, year, month, day, hour, minute, second, matchBlanks, refresh, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterPutWorksheetDateFilterWithHttpInfo(name, sheetName, range, fieldIndex, dateTimeGroupingType, year, month, day, hour, minute, second, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -2531,8 +2673,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsAutoFilterPutWorksheetDateFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsAutoFilterPutWorksheetDateFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2586,6 +2729,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (matchBlanks != null) localVarQueryParams.Add("matchBlanks", Configuration.ApiClient.ParameterToString(matchBlanks)); // query parameter
             if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2624,10 +2768,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetDateFilterAsync (string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetDateFilterAsync (string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterPutWorksheetDateFilterAsyncWithHttpInfo(name, sheetName, range, fieldIndex, dateTimeGroupingType, year, month, day, hour, minute, second, matchBlanks, refresh, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterPutWorksheetDateFilterAsyncWithHttpInfo(name, sheetName, range, fieldIndex, dateTimeGroupingType, year, month, day, hour, minute, second, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -2650,8 +2795,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetDateFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetDateFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2705,6 +2851,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (matchBlanks != null) localVarQueryParams.Add("matchBlanks", Configuration.ApiClient.ParameterToString(matchBlanks)); // query parameter
             if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2737,10 +2884,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsAutoFilterPutWorksheetDynamicFilter (string name, string sheetName, string range, int? fieldIndex, string dynamicFilterType, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public SaaSposeResponse CellsAutoFilterPutWorksheetDynamicFilter (string name, string sheetName, string range, int? fieldIndex, string dynamicFilterType, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterPutWorksheetDynamicFilterWithHttpInfo(name, sheetName, range, fieldIndex, dynamicFilterType, matchBlanks, refresh, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterPutWorksheetDynamicFilterWithHttpInfo(name, sheetName, range, fieldIndex, dynamicFilterType, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -2756,8 +2904,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsAutoFilterPutWorksheetDynamicFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string dynamicFilterType, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsAutoFilterPutWorksheetDynamicFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string dynamicFilterType, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2805,6 +2954,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (matchBlanks != null) localVarQueryParams.Add("matchBlanks", Configuration.ApiClient.ParameterToString(matchBlanks)); // query parameter
             if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2837,10 +2987,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetDynamicFilterAsync (string name, string sheetName, string range, int? fieldIndex, string dynamicFilterType, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetDynamicFilterAsync (string name, string sheetName, string range, int? fieldIndex, string dynamicFilterType, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterPutWorksheetDynamicFilterAsyncWithHttpInfo(name, sheetName, range, fieldIndex, dynamicFilterType, matchBlanks, refresh, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterPutWorksheetDynamicFilterAsyncWithHttpInfo(name, sheetName, range, fieldIndex, dynamicFilterType, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -2857,8 +3008,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetDynamicFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string dynamicFilterType, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetDynamicFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string dynamicFilterType, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -2906,6 +3058,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (matchBlanks != null) localVarQueryParams.Add("matchBlanks", Configuration.ApiClient.ParameterToString(matchBlanks)); // query parameter
             if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -2938,10 +3091,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsAutoFilterPutWorksheetFilter (string name, string sheetName, string range, int? fieldIndex, string criteria, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public SaaSposeResponse CellsAutoFilterPutWorksheetFilter (string name, string sheetName, string range, int? fieldIndex, string criteria, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterPutWorksheetFilterWithHttpInfo(name, sheetName, range, fieldIndex, criteria, matchBlanks, refresh, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterPutWorksheetFilterWithHttpInfo(name, sheetName, range, fieldIndex, criteria, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -2957,8 +3111,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsAutoFilterPutWorksheetFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string criteria, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsAutoFilterPutWorksheetFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string criteria, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3006,6 +3161,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (matchBlanks != null) localVarQueryParams.Add("matchBlanks", Configuration.ApiClient.ParameterToString(matchBlanks)); // query parameter
             if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3038,10 +3194,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetFilterAsync (string name, string sheetName, string range, int? fieldIndex, string criteria, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetFilterAsync (string name, string sheetName, string range, int? fieldIndex, string criteria, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterPutWorksheetFilterAsyncWithHttpInfo(name, sheetName, range, fieldIndex, criteria, matchBlanks, refresh, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterPutWorksheetFilterAsyncWithHttpInfo(name, sheetName, range, fieldIndex, criteria, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -3058,8 +3215,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string criteria, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string criteria, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3107,6 +3265,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (matchBlanks != null) localVarQueryParams.Add("matchBlanks", Configuration.ApiClient.ParameterToString(matchBlanks)); // query parameter
             if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3141,10 +3300,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsAutoFilterPutWorksheetFilterTop10 (string name, string sheetName, string range, int? fieldIndex, bool? isTop, bool? isPercent, int? itemCount, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public SaaSposeResponse CellsAutoFilterPutWorksheetFilterTop10 (string name, string sheetName, string range, int? fieldIndex, bool? isTop, bool? isPercent, int? itemCount, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterPutWorksheetFilterTop10WithHttpInfo(name, sheetName, range, fieldIndex, isTop, isPercent, itemCount, matchBlanks, refresh, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterPutWorksheetFilterTop10WithHttpInfo(name, sheetName, range, fieldIndex, isTop, isPercent, itemCount, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -3162,8 +3322,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsAutoFilterPutWorksheetFilterTop10WithHttpInfo (string name, string sheetName, string range, int? fieldIndex, bool? isTop, bool? isPercent, int? itemCount, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsAutoFilterPutWorksheetFilterTop10WithHttpInfo (string name, string sheetName, string range, int? fieldIndex, bool? isTop, bool? isPercent, int? itemCount, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3219,6 +3380,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (matchBlanks != null) localVarQueryParams.Add("matchBlanks", Configuration.ApiClient.ParameterToString(matchBlanks)); // query parameter
             if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3253,10 +3415,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetFilterTop10Async (string name, string sheetName, string range, int? fieldIndex, bool? isTop, bool? isPercent, int? itemCount, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetFilterTop10Async (string name, string sheetName, string range, int? fieldIndex, bool? isTop, bool? isPercent, int? itemCount, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterPutWorksheetFilterTop10AsyncWithHttpInfo(name, sheetName, range, fieldIndex, isTop, isPercent, itemCount, matchBlanks, refresh, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterPutWorksheetFilterTop10AsyncWithHttpInfo(name, sheetName, range, fieldIndex, isTop, isPercent, itemCount, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -3275,8 +3438,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetFilterTop10AsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, bool? isTop, bool? isPercent, int? itemCount, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetFilterTop10AsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, bool? isTop, bool? isPercent, int? itemCount, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3332,6 +3496,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (matchBlanks != null) localVarQueryParams.Add("matchBlanks", Configuration.ApiClient.ParameterToString(matchBlanks)); // query parameter
             if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3365,10 +3530,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>SaaSposeResponse</returns>
-        public SaaSposeResponse CellsAutoFilterPutWorksheetIconFilter (string name, string sheetName, string range, int? fieldIndex, string iconSetType, int? iconId, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public SaaSposeResponse CellsAutoFilterPutWorksheetIconFilter (string name, string sheetName, string range, int? fieldIndex, string iconSetType, int? iconId, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterPutWorksheetIconFilterWithHttpInfo(name, sheetName, range, fieldIndex, iconSetType, iconId, matchBlanks, refresh, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = CellsAutoFilterPutWorksheetIconFilterWithHttpInfo(name, sheetName, range, fieldIndex, iconSetType, iconId, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -3385,8 +3551,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SaaSposeResponse</returns>
-        public ApiResponse< SaaSposeResponse > CellsAutoFilterPutWorksheetIconFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string iconSetType, int? iconId, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public ApiResponse< SaaSposeResponse > CellsAutoFilterPutWorksheetIconFilterWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string iconSetType, int? iconId, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3438,6 +3605,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (matchBlanks != null) localVarQueryParams.Add("matchBlanks", Configuration.ApiClient.ParameterToString(matchBlanks)); // query parameter
             if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request
@@ -3471,10 +3639,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SaaSposeResponse</returns>
-        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetIconFilterAsync (string name, string sheetName, string range, int? fieldIndex, string iconSetType, int? iconId, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public async System.Threading.Tasks.Task<SaaSposeResponse> CellsAutoFilterPutWorksheetIconFilterAsync (string name, string sheetName, string range, int? fieldIndex, string iconSetType, int? iconId, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
-             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterPutWorksheetIconFilterAsyncWithHttpInfo(name, sheetName, range, fieldIndex, iconSetType, iconId, matchBlanks, refresh, folder);
+             ApiResponse<SaaSposeResponse> localVarResponse = await CellsAutoFilterPutWorksheetIconFilterAsyncWithHttpInfo(name, sheetName, range, fieldIndex, iconSetType, iconId, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -3492,8 +3661,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="matchBlanks"> (optional)</param>
         /// <param name="refresh"> (optional)</param>
         /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetIconFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string iconSetType, int? iconId, bool? matchBlanks = null, bool? refresh = null, string folder = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsAutoFilterPutWorksheetIconFilterAsyncWithHttpInfo (string name, string sheetName, string range, int? fieldIndex, string iconSetType, int? iconId, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -3545,6 +3715,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (matchBlanks != null) localVarQueryParams.Add("matchBlanks", Configuration.ApiClient.ParameterToString(matchBlanks)); // query parameter
             if (refresh != null) localVarQueryParams.Add("refresh", Configuration.ApiClient.ParameterToString(refresh)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
             // make the HTTP request

@@ -81,7 +81,25 @@ namespace Aspose.Cells.Cloud.SDK.Test
             Assert.IsInstanceOf<ColumnsResponse>(response, "response is ColumnsResponse");
             Assert.AreEqual(response.Code, 200);
         }
-
+        /// <summary>
+        /// Test CellsDeleteWorksheetColumns
+        /// </summary>
+        [Test]
+        public void CellsDeleteWorksheetColumnsForNewConstructorTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            string name = BOOK1;
+            string sheetName = SHEET1;
+            int? columnIndex = 1;
+            int? columns = 1;
+            bool? updateReference = true;
+            string folder = TEMPFOLDER;
+            UpdateDataFile(TEMPFOLDER, BOOK1);
+            var instanceNew = new CellsApi(grantType, clientId, clientSecret);
+            var response = instanceNew.CellsDeleteWorksheetColumns(name, sheetName, columnIndex, columns, updateReference, folder);
+            Assert.IsInstanceOf<ColumnsResponse>(response, "response is ColumnsResponse");
+            Assert.AreEqual(response.Code, 200);
+        }
         /// <summary>
         /// Test CellsDeleteWorksheetRow
         /// </summary>
@@ -98,7 +116,23 @@ namespace Aspose.Cells.Cloud.SDK.Test
             Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
             Assert.AreEqual(response.Code, 200);
         }
-
+        /// <summary>
+        /// Test CellsDeleteWorksheetRow
+        /// </summary>
+        [Test]
+        public void CellsDeleteWorksheetRowForNewConstructorTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            string name = BOOK1;
+            string sheetName = SHEET1;
+            int? rowIndex = 1;
+            string folder = TEMPFOLDER;
+            UpdateDataFile(TEMPFOLDER, BOOK1);
+            var instanceNew = new CellsApi(grantType, clientId, clientSecret);
+            var response = instanceNew.CellsDeleteWorksheetRow(name, sheetName, rowIndex, folder);
+            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.AreEqual(response.Code, 200);
+        }
         /// <summary>
         /// Test CellsDeleteWorksheetRows
         /// </summary>
@@ -124,14 +158,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
         [TestCase("A1")]
         [TestCase("firstcell")]
         [TestCase("endcell")]
-        [TestCase("maxrow")]
-        [TestCase("maxdatarow")]
-        [TestCase("maxcolumn")]
-        [TestCase("maxdatacolumn")]
-        [TestCase("minrow")]
-        [TestCase("mindatarow")]
-        [TestCase("mincolumn")]
-        [TestCase("mindatacolumn")]
         public void CellsGetWorksheetCellTest(string paramCellOrMethodName)
         {
             // TODO uncomment below to test the method and replace null with proper value
@@ -141,7 +167,28 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(TEMPFOLDER, BOOK1);
             var response = instance.CellsGetWorksheetCell(name, sheetName, cellOrMethodName, folder);
-            Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
+            Assert.IsInstanceOf<Object>(response, "response is System.IO.Stream");
+            //Assert.AreEqual(response.Code, 200);
+        }
+
+        [TestCase("maxrow")]
+        [TestCase("maxdatarow")]
+        [TestCase("maxcolumn")]
+        [TestCase("maxdatacolumn")]
+        [TestCase("minrow")]
+        [TestCase("mindatarow")]
+        [TestCase("mincolumn")]
+        [TestCase("mindatacolumn")]
+        public void CellsGetWorksheetCellTest1(string paramCellOrMethodName)
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            string name = BOOK1;
+            string sheetName = SHEET1;
+            string cellOrMethodName = paramCellOrMethodName;
+            string folder = TEMPFOLDER;
+            UpdateDataFile(TEMPFOLDER, BOOK1);
+            var response = instance.CellsGetWorksheetCell(name, sheetName, cellOrMethodName, folder);
+            Assert.IsInstanceOf<Object>(response, "response is System.IO.Stream");
         }
 
         /// <summary>
