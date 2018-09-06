@@ -146,7 +146,7 @@ No authorization required
 
 <a name="cellsoleobjectsgetworksheetoleobject"></a>
 # **CellsOleObjectsGetWorksheetOleObject**
-> System.IO.Stream CellsOleObjectsGetWorksheetOleObject (string name, string sheetName, int? objectNumber, string folder = null, string storage = null)
+> System.IO.Stream CellsOleObjectsGetWorksheetOleObject (string name, string sheetName, int? objectNumber, string format = null, string folder = null, string storage = null)
 
 Get OLE object info.
 
@@ -168,13 +168,14 @@ namespace Example
             var name = name_example;  // string | Document name.
             var sheetName = sheetName_example;  // string | Worksheet name.
             var objectNumber = 56;  // int? | The object number.
+            var format = format_example;  // string | The exported object format. (optional) 
             var folder = folder_example;  // string | The document folder. (optional) 
             var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Get OLE object info.
-                System.IO.Stream result = apiInstance.CellsOleObjectsGetWorksheetOleObject(name, sheetName, objectNumber, folder, storage);
+                System.IO.Stream result = apiInstance.CellsOleObjectsGetWorksheetOleObject(name, sheetName, objectNumber, format, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -193,6 +194,7 @@ Name | Type | Description  | Notes
  **name** | **string**| Document name. | 
  **sheetName** | **string**| Worksheet name. | 
  **objectNumber** | **int?**| The object number. | 
+ **format** | **string**| The exported object format. | [optional] 
  **folder** | **string**| The document folder. | [optional] 
  **storage** | **string**| storage name. | [optional] 
 

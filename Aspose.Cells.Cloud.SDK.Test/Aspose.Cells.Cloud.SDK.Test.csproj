@@ -73,7 +73,7 @@ OpenAPI spec version: 1.0
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
       <ProjectReference Include="..\Aspose.Cells.Cloud.SDK\Aspose.Cells.Cloud.SDK.csproj">
-          <Project>{864F040E-CD54-44D0-B280-D6CC165AE417}</Project>
+          <Project>{01EAB971-83A4-45CC-90A9-D216AA78FDAC}</Project>
           <Name>Aspose.Cells.Cloud.SDK</Name>
       </ProjectReference>
   </ItemGroup>

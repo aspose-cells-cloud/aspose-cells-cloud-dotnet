@@ -6,7 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**CellsPicturesDeleteWorksheetPicture**](CellsPicturesApi.md#cellspicturesdeleteworksheetpicture) | **DELETE** /cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex} | Delete a picture object in worksheet
 [**CellsPicturesDeleteWorksheetPictures**](CellsPicturesApi.md#cellspicturesdeleteworksheetpictures) | **DELETE** /cells/{name}/worksheets/{sheetName}/pictures | Delete all pictures in worksheet.
-[**CellsPicturesGetWorksheetPicture**](CellsPicturesApi.md#cellspicturesgetworksheetpicture) | **GET** /cells/{name}/worksheets/{sheetName}/pictures/{pictureNumber} | GRead worksheet picture by number.
+[**CellsPicturesGetWorksheetPicture**](CellsPicturesApi.md#cellspicturesgetworksheetpicture) | **GET** /cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex} | GRead worksheet picture by number.
 [**CellsPicturesGetWorksheetPictures**](CellsPicturesApi.md#cellspicturesgetworksheetpictures) | **GET** /cells/{name}/worksheets/{sheetName}/pictures | Read worksheet pictures.
 [**CellsPicturesPostWorksheetPicture**](CellsPicturesApi.md#cellspicturespostworksheetpicture) | **POST** /cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex} | Update worksheet picture by index.
 [**CellsPicturesPutWorksheetAddPicture**](CellsPicturesApi.md#cellspicturesputworksheetaddpicture) | **PUT** /cells/{name}/worksheets/{sheetName}/pictures | Add a new worksheet picture.
@@ -146,7 +146,7 @@ No authorization required
 
 <a name="cellspicturesgetworksheetpicture"></a>
 # **CellsPicturesGetWorksheetPicture**
-> System.IO.Stream CellsPicturesGetWorksheetPicture (string name, string sheetName, int? pictureNumber, string folder = null, string storage = null)
+> System.IO.Stream CellsPicturesGetWorksheetPicture (string name, string sheetName, int? pictureIndex, string format = null, string folder = null, string storage = null)
 
 GRead worksheet picture by number.
 
@@ -167,14 +167,15 @@ namespace Example
             var apiInstance = new CellsPicturesApi();
             var name = name_example;  // string | Document name.
             var sheetName = sheetName_example;  // string | Worksheet name.
-            var pictureNumber = 56;  // int? | The picture number.
+            var pictureIndex = 56;  // int? | The picture index.
+            var format = format_example;  // string | The exported object format. (optional) 
             var folder = folder_example;  // string | The document folder. (optional) 
             var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // GRead worksheet picture by number.
-                System.IO.Stream result = apiInstance.CellsPicturesGetWorksheetPicture(name, sheetName, pictureNumber, folder, storage);
+                System.IO.Stream result = apiInstance.CellsPicturesGetWorksheetPicture(name, sheetName, pictureIndex, format, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -192,7 +193,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| Document name. | 
  **sheetName** | **string**| Worksheet name. | 
- **pictureNumber** | **int?**| The picture number. | 
+ **pictureIndex** | **int?**| The picture index. | 
+ **format** | **string**| The exported object format. | [optional] 
  **folder** | **string**| The document folder. | [optional] 
  **storage** | **string**| storage name. | [optional] 
 

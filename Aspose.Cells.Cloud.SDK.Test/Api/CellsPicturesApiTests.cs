@@ -106,9 +106,10 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET6;
             int? pictureNumber = 0;
+            string format = null;
             string folder = TEMPFOLDER;
             UpdateDataFile(folder, name);
-            var response = instance.CellsPicturesGetWorksheetPicture(name, sheetName, pictureNumber, folder);
+            var response = instance.CellsPicturesGetWorksheetPicture(name, sheetName, pictureNumber, format,folder);
             Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
         }
         

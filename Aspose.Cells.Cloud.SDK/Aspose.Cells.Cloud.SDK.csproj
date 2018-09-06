@@ -12,7 +12,7 @@ OpenAPI spec version: 1.0
     
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{864F040E-CD54-44D0-B280-D6CC165AE417}</ProjectGuid>
+    <ProjectGuid>{01EAB971-83A4-45CC-90A9-D216AA78FDAC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Aspose.Cells.Cloud.SDK</RootNamespace>

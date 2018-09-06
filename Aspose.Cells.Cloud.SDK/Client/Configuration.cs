@@ -46,7 +46,7 @@ namespace Aspose.Cells.Cloud.SDK.Client
                              string tempFolderPath = null,
                              string dateTimeFormat = null,
                              int timeout = 100000,
-                             string userAgent = "Swagger-Codegen/18.9/csharp"
+                             string userAgent = "Swagger-Codegen/18.9.1/csharp"
                             )
         {
             setApiClientUsingDefault(apiClient);
@@ -81,7 +81,7 @@ namespace Aspose.Cells.Cloud.SDK.Client
         /// Version of the package.
         /// </summary>
         /// <value>Version of the package.</value>
-        public const string Version = "18.9";
+        public const string Version = "18.9.1";
 
         /// <summary>
         /// Gets or sets the default Configuration.
@@ -326,7 +326,7 @@ namespace Aspose.Cells.Cloud.SDK.Client
                      .GetReferencedAssemblies()
                      .Where(x => x.Name == "System.Core").First().Version.ToString()  + "\n";
             report += "    Version of the API: 1.0\n";
-            report += "    SDK Package Version: 18.9\n";
+            report += "    SDK Package Version: 18.9.1\n";
 
             return report;
         }

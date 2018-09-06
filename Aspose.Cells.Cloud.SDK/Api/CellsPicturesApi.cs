@@ -89,11 +89,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
-        /// <param name="pictureNumber">The picture number.</param>
+        /// <param name="pictureIndex">The picture index.</param>
+        /// <param name="format">The exported object format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        System.IO.Stream CellsPicturesGetWorksheetPicture (string name, string sheetName, int? pictureNumber, string folder = null, string storage = null);
+        System.IO.Stream CellsPicturesGetWorksheetPicture (string name, string sheetName, int? pictureIndex, string format = null, string folder = null, string storage = null);
 
         /// <summary>
         /// GRead worksheet picture by number.
@@ -104,11 +105,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
-        /// <param name="pictureNumber">The picture number.</param>
+        /// <param name="pictureIndex">The picture index.</param>
+        /// <param name="format">The exported object format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        ApiResponse<System.IO.Stream> CellsPicturesGetWorksheetPictureWithHttpInfo (string name, string sheetName, int? pictureNumber, string folder = null, string storage = null);
+        ApiResponse<System.IO.Stream> CellsPicturesGetWorksheetPictureWithHttpInfo (string name, string sheetName, int? pictureIndex, string format = null, string folder = null, string storage = null);
         /// <summary>
         /// Read worksheet pictures.
         /// </summary>
@@ -273,11 +275,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
-        /// <param name="pictureNumber">The picture number.</param>
+        /// <param name="pictureIndex">The picture index.</param>
+        /// <param name="format">The exported object format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of System.IO.Stream</returns>
-        System.Threading.Tasks.Task<System.IO.Stream> CellsPicturesGetWorksheetPictureAsync (string name, string sheetName, int? pictureNumber, string folder = null, string storage = null);
+        System.Threading.Tasks.Task<System.IO.Stream> CellsPicturesGetWorksheetPictureAsync (string name, string sheetName, int? pictureIndex, string format = null, string folder = null, string storage = null);
 
         /// <summary>
         /// GRead worksheet picture by number.
@@ -288,11 +291,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
-        /// <param name="pictureNumber">The picture number.</param>
+        /// <param name="pictureIndex">The picture index.</param>
+        /// <param name="format">The exported object format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsPicturesGetWorksheetPictureAsyncWithHttpInfo (string name, string sheetName, int? pictureNumber, string folder = null, string storage = null);
+        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsPicturesGetWorksheetPictureAsyncWithHttpInfo (string name, string sheetName, int? pictureIndex, string format = null, string folder = null, string storage = null);
         /// <summary>
         /// Read worksheet pictures.
         /// </summary>
@@ -879,13 +883,14 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
-        /// <param name="pictureNumber">The picture number.</param>
+        /// <param name="pictureIndex">The picture index.</param>
+        /// <param name="format">The exported object format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        public System.IO.Stream CellsPicturesGetWorksheetPicture (string name, string sheetName, int? pictureNumber, string folder = null, string storage = null)
+        public System.IO.Stream CellsPicturesGetWorksheetPicture (string name, string sheetName, int? pictureIndex, string format = null, string folder = null, string storage = null)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = CellsPicturesGetWorksheetPictureWithHttpInfo(name, sheetName, pictureNumber, folder, storage);
+             ApiResponse<System.IO.Stream> localVarResponse = CellsPicturesGetWorksheetPictureWithHttpInfo(name, sheetName, pictureIndex, format, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -895,11 +900,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
-        /// <param name="pictureNumber">The picture number.</param>
+        /// <param name="pictureIndex">The picture index.</param>
+        /// <param name="format">The exported object format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        public ApiResponse< System.IO.Stream > CellsPicturesGetWorksheetPictureWithHttpInfo (string name, string sheetName, int? pictureNumber, string folder = null, string storage = null)
+        public ApiResponse< System.IO.Stream > CellsPicturesGetWorksheetPictureWithHttpInfo (string name, string sheetName, int? pictureIndex, string format = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -907,11 +913,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
             // verify the required parameter 'sheetName' is set
             if (sheetName == null)
                 throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsPicturesApi->CellsPicturesGetWorksheetPicture");
-            // verify the required parameter 'pictureNumber' is set
-            if (pictureNumber == null)
-                throw new ApiException(400, "Missing required parameter 'pictureNumber' when calling CellsPicturesApi->CellsPicturesGetWorksheetPicture");
+            // verify the required parameter 'pictureIndex' is set
+            if (pictureIndex == null)
+                throw new ApiException(400, "Missing required parameter 'pictureIndex' when calling CellsPicturesApi->CellsPicturesGetWorksheetPicture");
 
-            var localVarPath = "/cells/{name}/worksheets/{sheetName}/pictures/{pictureNumber}";
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -935,7 +941,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
-            if (pictureNumber != null) localVarPathParams.Add("pictureNumber", Configuration.ApiClient.ParameterToString(pictureNumber)); // path parameter
+            if (pictureIndex != null) localVarPathParams.Add("pictureIndex", Configuration.ApiClient.ParameterToString(pictureIndex)); // path parameter
+            if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
             if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
@@ -964,13 +971,14 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
-        /// <param name="pictureNumber">The picture number.</param>
+        /// <param name="pictureIndex">The picture index.</param>
+        /// <param name="format">The exported object format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of System.IO.Stream</returns>
-        public async System.Threading.Tasks.Task<System.IO.Stream> CellsPicturesGetWorksheetPictureAsync (string name, string sheetName, int? pictureNumber, string folder = null, string storage = null)
+        public async System.Threading.Tasks.Task<System.IO.Stream> CellsPicturesGetWorksheetPictureAsync (string name, string sheetName, int? pictureIndex, string format = null, string folder = null, string storage = null)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = await CellsPicturesGetWorksheetPictureAsyncWithHttpInfo(name, sheetName, pictureNumber, folder, storage);
+             ApiResponse<System.IO.Stream> localVarResponse = await CellsPicturesGetWorksheetPictureAsyncWithHttpInfo(name, sheetName, pictureIndex, format, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -981,11 +989,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
-        /// <param name="pictureNumber">The picture number.</param>
+        /// <param name="pictureIndex">The picture index.</param>
+        /// <param name="format">The exported object format. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsPicturesGetWorksheetPictureAsyncWithHttpInfo (string name, string sheetName, int? pictureNumber, string folder = null, string storage = null)
+        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsPicturesGetWorksheetPictureAsyncWithHttpInfo (string name, string sheetName, int? pictureIndex, string format = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -993,11 +1002,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
             // verify the required parameter 'sheetName' is set
             if (sheetName == null)
                 throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsPicturesApi->CellsPicturesGetWorksheetPicture");
-            // verify the required parameter 'pictureNumber' is set
-            if (pictureNumber == null)
-                throw new ApiException(400, "Missing required parameter 'pictureNumber' when calling CellsPicturesApi->CellsPicturesGetWorksheetPicture");
+            // verify the required parameter 'pictureIndex' is set
+            if (pictureIndex == null)
+                throw new ApiException(400, "Missing required parameter 'pictureIndex' when calling CellsPicturesApi->CellsPicturesGetWorksheetPicture");
 
-            var localVarPath = "/cells/{name}/worksheets/{sheetName}/pictures/{pictureNumber}";
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -1021,7 +1030,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
-            if (pictureNumber != null) localVarPathParams.Add("pictureNumber", Configuration.ApiClient.ParameterToString(pictureNumber)); // path parameter
+            if (pictureIndex != null) localVarPathParams.Add("pictureIndex", Configuration.ApiClient.ParameterToString(pictureIndex)); // path parameter
+            if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
             if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
