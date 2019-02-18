@@ -554,7 +554,21 @@ namespace Aspose.Cells.Cloud.SDK.Test
             Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
             Assert.AreEqual(response.Status, "OK");
         }
-
+        /// <summary>
+        /// Test CellsGetCellHtmlString
+        /// </summary>
+        [Test]
+        public void CellsGetCellHtmlStringTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            string name = BOOK1;
+            string sheetName = SHEET1;
+            string cellName = CellName;
+            string folder = TEMPFOLDER;
+            UpdateDataFile(TEMPFOLDER, BOOK1);
+            var response = instance.CellsGetCellHtmlString(name, sheetName, cellName, folder);
+            Assert.IsInstanceOf<Object> (response, "response is Object");
+        }
         /// <summary>
         /// Test CellsPostSetCellHtmlString
         /// </summary>

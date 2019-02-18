@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**CellsDeleteWorksheetColumns**](CellsApi.md#cellsdeleteworksheetcolumns) | **DELETE** /cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex} | Delete worksheet columns.
 [**CellsDeleteWorksheetRow**](CellsApi.md#cellsdeleteworksheetrow) | **DELETE** /cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex} | Delete worksheet row.
 [**CellsDeleteWorksheetRows**](CellsApi.md#cellsdeleteworksheetrows) | **DELETE** /cells/{name}/worksheets/{sheetName}/cells/rows | Delete several worksheet rows.
+[**CellsGetCellHtmlString**](CellsApi.md#cellsgetcellhtmlstring) | **GET** /cells/{name}/worksheets/{sheetName}/cells/{cellName}/htmlstring | Read cell data by cell&#39;s name.
 [**CellsGetWorksheetCell**](CellsApi.md#cellsgetworksheetcell) | **GET** /cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName} | Read cell data by cell&#39;s name.
 [**CellsGetWorksheetCellStyle**](CellsApi.md#cellsgetworksheetcellstyle) | **GET** /cells/{name}/worksheets/{sheetName}/cells/{cellName}/style | Read cell&#39;s style info.
 [**CellsGetWorksheetCells**](CellsApi.md#cellsgetworksheetcells) | **GET** /cells/{name}/worksheets/{sheetName}/cells | Get cells info.
@@ -242,6 +243,73 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**SaaSposeResponse**](SaaSposeResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="cellsgetcellhtmlstring"></a>
+# **CellsGetCellHtmlString**
+> Object CellsGetCellHtmlString (string name, string sheetName, string cellName, string folder = null, string storage = null)
+
+Read cell data by cell's name.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+namespace Example
+{
+    public class CellsGetCellHtmlStringExample
+    {
+        public void main()
+        {
+            var apiInstance = new CellsApi();
+            var name = name_example;  // string | Document name.
+            var sheetName = sheetName_example;  // string | Worksheet name.
+            var cellName = cellName_example;  // string | The cell's  name.
+            var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
+
+            try
+            {
+                // Read cell data by cell's name.
+                Object result = apiInstance.CellsGetCellHtmlString(name, sheetName, cellName, folder, storage);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CellsApi.CellsGetCellHtmlString: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| Document name. | 
+ **sheetName** | **string**| Worksheet name. | 
+ **cellName** | **string**| The cell&#39;s  name. | 
+ **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
+
+### Return type
+
+**Object**
 
 ### Authorization
 

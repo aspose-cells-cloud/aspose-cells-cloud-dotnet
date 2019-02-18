@@ -128,6 +128,35 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">Worksheet name.</param>
+        /// <param name="cellName">The cell&#39;s  name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>Object</returns>
+        Object CellsGetCellHtmlString (string name, string sheetName, string cellName, string folder = null, string storage = null);
+
+        /// <summary>
+        /// Read cell data by cell&#39;s name.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">Worksheet name.</param>
+        /// <param name="cellName">The cell&#39;s  name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> CellsGetCellHtmlStringWithHttpInfo (string name, string sheetName, string cellName, string folder = null, string storage = null);
+        /// <summary>
+        /// Read cell data by cell&#39;s name.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">Worksheet name.</param>
         /// <param name="cellOrMethodName">The cell&#39;s or method name. (Method name like firstcell, endcell etc.)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
@@ -1366,6 +1395,35 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaaSposeResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<SaaSposeResponse>> CellsDeleteWorksheetRowsAsyncWithHttpInfo (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null);
+        /// <summary>
+        /// Read cell data by cell&#39;s name.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">Worksheet name.</param>
+        /// <param name="cellName">The cell&#39;s  name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> CellsGetCellHtmlStringAsync (string name, string sheetName, string cellName, string folder = null, string storage = null);
+
+        /// <summary>
+        /// Read cell data by cell&#39;s name.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">Worksheet name.</param>
+        /// <param name="cellName">The cell&#39;s  name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> CellsGetCellHtmlStringAsyncWithHttpInfo (string name, string sheetName, string cellName, string folder = null, string storage = null);
         /// <summary>
         /// Read cell data by cell&#39;s name.
         /// </summary>
@@ -3216,6 +3274,177 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return new ApiResponse<SaaSposeResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (SaaSposeResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(SaaSposeResponse)));
+        }
+
+        /// <summary>
+        /// Read cell data by cell&#39;s name. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">Worksheet name.</param>
+        /// <param name="cellName">The cell&#39;s  name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>Object</returns>
+        public Object CellsGetCellHtmlString (string name, string sheetName, string cellName, string folder = null, string storage = null)
+        {
+             ApiResponse<Object> localVarResponse = CellsGetCellHtmlStringWithHttpInfo(name, sheetName, cellName, folder, storage);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Read cell data by cell&#39;s name. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">Worksheet name.</param>
+        /// <param name="cellName">The cell&#39;s  name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse< Object > CellsGetCellHtmlStringWithHttpInfo (string name, string sheetName, string cellName, string folder = null, string storage = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsGetCellHtmlString");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsGetCellHtmlString");
+            // verify the required parameter 'cellName' is set
+            if (cellName == null)
+                throw new ApiException(400, "Missing required parameter 'cellName' when calling CellsApi->CellsGetCellHtmlString");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/cells/{cellName}/htmlstring";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (cellName != null) localVarPathParams.Add("cellName", Configuration.ApiClient.ParameterToString(cellName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsGetCellHtmlString", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Object) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+        }
+
+        /// <summary>
+        /// Read cell data by cell&#39;s name. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">Worksheet name.</param>
+        /// <param name="cellName">The cell&#39;s  name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> CellsGetCellHtmlStringAsync (string name, string sheetName, string cellName, string folder = null, string storage = null)
+        {
+             ApiResponse<Object> localVarResponse = await CellsGetCellHtmlStringAsyncWithHttpInfo(name, sheetName, cellName, folder, storage);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Read cell data by cell&#39;s name. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">Worksheet name.</param>
+        /// <param name="cellName">The cell&#39;s  name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> CellsGetCellHtmlStringAsyncWithHttpInfo (string name, string sheetName, string cellName, string folder = null, string storage = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsGetCellHtmlString");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsGetCellHtmlString");
+            // verify the required parameter 'cellName' is set
+            if (cellName == null)
+                throw new ApiException(400, "Missing required parameter 'cellName' when calling CellsApi->CellsGetCellHtmlString");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/cells/{cellName}/htmlstring";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (cellName != null) localVarPathParams.Add("cellName", Configuration.ApiClient.ParameterToString(cellName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsGetCellHtmlString", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Object) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>

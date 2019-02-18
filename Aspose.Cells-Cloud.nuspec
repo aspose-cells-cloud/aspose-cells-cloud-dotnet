@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>Aspose.Cells-Cloud</id>
-        <version>18.9.1</version>
+        <version>19.2</version>
         <title>Aspose.Cells Cloud SDK for .NET</title>
         <authors>Naeem</authors>
         <owners>asposecloud</owners>
         <iconUrl>http://www.aspose.com/Images/aspose_cells_for_cloud_140px.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Aspose.Cells Cloud for .NET is a spreadsheet programming SDK that allows software developers to manipulate and convert spreadsheet files from within their own applications. A Wrapper of RESTfull APIs, Aspose.Cells Cloud for .NET speeds up Microsoft Excel programming and conversion.</description>
-        <copyright>Aspose 2002-2018. All Rights Reserved.</copyright>
+        <copyright>Aspose 2002-2019. All Rights Reserved.</copyright>
         <tags>Excel Spreadsheet Aspose.Cells XLS XLSX TXT ODS</tags>
         <dependencies>
             <dependency id="Newtonsoft.Json" version="9.0.0.0" />
