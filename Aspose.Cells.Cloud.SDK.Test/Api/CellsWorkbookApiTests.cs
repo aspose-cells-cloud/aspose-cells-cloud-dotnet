@@ -461,13 +461,14 @@ namespace Aspose.Cells.Cloud.SDK.Test
         public void CellsWorkbookPutConvertWorkBookTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            string format = "xlsx";
+            string workbook = BOOK1;
+            string format = "pdf";
             string password = null;
             string outPath = null;
             UpdateDataFile(TEMPFOLDER, BOOK1);
-            var response = instance.CellsWorkbookPutConvertWorkbook(format, password, outPath);
+            var response = instance.CellsWorkbookPutConvertWorkbook(GetTestDataByteArray(workbook),format, password, outPath);
             Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
-
+            //WriteResponseStream(workbook + "." + format, response);
         }
 
         /// <summary>

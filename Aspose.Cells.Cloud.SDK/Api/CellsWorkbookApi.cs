@@ -668,11 +668,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// 
         /// </remarks>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="workbook"></param>
         /// <param name="format">The format to convert. (optional)</param>
         /// <param name="password">The workbook password. (optional)</param>
         /// <param name="outPath">Path to save result (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        System.IO.Stream CellsWorkbookPutConvertWorkbook (string format = null, string password = null, string outPath = null);
+        System.IO.Stream CellsWorkbookPutConvertWorkbook (byte[] workbook, string format = null, string password = null, string outPath = null);
 
         /// <summary>
         /// Convert workbook from request content to some format.
@@ -681,11 +682,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// 
         /// </remarks>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="workbook"></param>
         /// <param name="format">The format to convert. (optional)</param>
         /// <param name="password">The workbook password. (optional)</param>
         /// <param name="outPath">Path to save result (optional)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        ApiResponse<System.IO.Stream> CellsWorkbookPutConvertWorkbookWithHttpInfo (string format = null, string password = null, string outPath = null);
+        ApiResponse<System.IO.Stream> CellsWorkbookPutConvertWorkbookWithHttpInfo (byte[] workbook, string format = null, string password = null, string outPath = null);
         /// <summary>
         /// Protect document from changes.
         /// </summary>
@@ -1388,11 +1390,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// 
         /// </remarks>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="workbook"></param>
         /// <param name="format">The format to convert. (optional)</param>
         /// <param name="password">The workbook password. (optional)</param>
         /// <param name="outPath">Path to save result (optional)</param>
         /// <returns>Task of System.IO.Stream</returns>
-        System.Threading.Tasks.Task<System.IO.Stream> CellsWorkbookPutConvertWorkbookAsync (string format = null, string password = null, string outPath = null);
+        System.Threading.Tasks.Task<System.IO.Stream> CellsWorkbookPutConvertWorkbookAsync (byte[] workbook, string format = null, string password = null, string outPath = null);
 
         /// <summary>
         /// Convert workbook from request content to some format.
@@ -1401,11 +1404,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// 
         /// </remarks>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="workbook"></param>
         /// <param name="format">The format to convert. (optional)</param>
         /// <param name="password">The workbook password. (optional)</param>
         /// <param name="outPath">Path to save result (optional)</param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorkbookPutConvertWorkbookAsyncWithHttpInfo (string format = null, string password = null, string outPath = null);
+        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorkbookPutConvertWorkbookAsyncWithHttpInfo (byte[] workbook, string format = null, string password = null, string outPath = null);
         /// <summary>
         /// Protect document from changes.
         /// </summary>
@@ -5346,13 +5350,14 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// Convert workbook from request content to some format. 
         /// </summary>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="workbook"></param>
         /// <param name="format">The format to convert. (optional)</param>
         /// <param name="password">The workbook password. (optional)</param>
         /// <param name="outPath">Path to save result (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        public System.IO.Stream CellsWorkbookPutConvertWorkbook (string format = null, string password = null, string outPath = null)
+        public System.IO.Stream CellsWorkbookPutConvertWorkbook (byte[] workbook, string format = null, string password = null, string outPath = null)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = CellsWorkbookPutConvertWorkbookWithHttpInfo(format, password, outPath);
+             ApiResponse<System.IO.Stream> localVarResponse = CellsWorkbookPutConvertWorkbookWithHttpInfo(workbook, format, password, outPath);
              return localVarResponse.Data;
         }
 
@@ -5360,12 +5365,16 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// Convert workbook from request content to some format. 
         /// </summary>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="workbook"></param>
         /// <param name="format">The format to convert. (optional)</param>
         /// <param name="password">The workbook password. (optional)</param>
         /// <param name="outPath">Path to save result (optional)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        public ApiResponse< System.IO.Stream > CellsWorkbookPutConvertWorkbookWithHttpInfo (string format = null, string password = null, string outPath = null)
+        public ApiResponse< System.IO.Stream > CellsWorkbookPutConvertWorkbookWithHttpInfo (byte[] workbook, string format = null, string password = null, string outPath = null)
         {
+            // verify the required parameter 'workbook' is set
+            if (workbook == null)
+                throw new ApiException(400, "Missing required parameter 'workbook' when calling CellsWorkbookApi->CellsWorkbookPutConvertWorkbook");
 
             var localVarPath = "/cells/convert";
             var localVarPathParams = new Dictionary<String, String>();
@@ -5392,6 +5401,14 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
             if (password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(password)); // query parameter
             if (outPath != null) localVarQueryParams.Add("outPath", Configuration.ApiClient.ParameterToString(outPath)); // query parameter
+            if (workbook != null && workbook.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(workbook); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = workbook; // byte array
+            }
 
 
             // make the HTTP request
@@ -5416,13 +5433,14 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// Convert workbook from request content to some format. 
         /// </summary>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="workbook"></param>
         /// <param name="format">The format to convert. (optional)</param>
         /// <param name="password">The workbook password. (optional)</param>
         /// <param name="outPath">Path to save result (optional)</param>
         /// <returns>Task of System.IO.Stream</returns>
-        public async System.Threading.Tasks.Task<System.IO.Stream> CellsWorkbookPutConvertWorkbookAsync (string format = null, string password = null, string outPath = null)
+        public async System.Threading.Tasks.Task<System.IO.Stream> CellsWorkbookPutConvertWorkbookAsync (byte[] workbook, string format = null, string password = null, string outPath = null)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = await CellsWorkbookPutConvertWorkbookAsyncWithHttpInfo(format, password, outPath);
+             ApiResponse<System.IO.Stream> localVarResponse = await CellsWorkbookPutConvertWorkbookAsyncWithHttpInfo(workbook, format, password, outPath);
              return localVarResponse.Data;
 
         }
@@ -5431,12 +5449,16 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// Convert workbook from request content to some format. 
         /// </summary>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="workbook"></param>
         /// <param name="format">The format to convert. (optional)</param>
         /// <param name="password">The workbook password. (optional)</param>
         /// <param name="outPath">Path to save result (optional)</param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorkbookPutConvertWorkbookAsyncWithHttpInfo (string format = null, string password = null, string outPath = null)
+        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorkbookPutConvertWorkbookAsyncWithHttpInfo (byte[] workbook, string format = null, string password = null, string outPath = null)
         {
+            // verify the required parameter 'workbook' is set
+            if (workbook == null)
+                throw new ApiException(400, "Missing required parameter 'workbook' when calling CellsWorkbookApi->CellsWorkbookPutConvertWorkbook");
 
             var localVarPath = "/cells/convert";
             var localVarPathParams = new Dictionary<String, String>();
@@ -5463,6 +5485,14 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
             if (password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(password)); // query parameter
             if (outPath != null) localVarQueryParams.Add("outPath", Configuration.ApiClient.ParameterToString(outPath)); // query parameter
+            if (workbook != null && workbook.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(workbook); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = workbook; // byte array
+            }
 
 
             // make the HTTP request

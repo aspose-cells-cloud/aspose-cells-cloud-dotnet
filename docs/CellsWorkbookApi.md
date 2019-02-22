@@ -1544,7 +1544,7 @@ No authorization required
 
 <a name="cellsworkbookputconvertworkbook"></a>
 # **CellsWorkbookPutConvertWorkbook**
-> System.IO.Stream CellsWorkbookPutConvertWorkbook (string format = null, string password = null, string outPath = null)
+> System.IO.Stream CellsWorkbookPutConvertWorkbook (byte[] workbook, string format = null, string password = null, string outPath = null)
 
 Convert workbook from request content to some format.
 
@@ -1563,6 +1563,7 @@ namespace Example
         public void main()
         {
             var apiInstance = new CellsWorkbookApi();
+            var workbook = BINARY_DATA_HERE;  // byte[] | 
             var format = format_example;  // string | The format to convert. (optional) 
             var password = password_example;  // string | The workbook password. (optional) 
             var outPath = outPath_example;  // string | Path to save result (optional) 
@@ -1570,7 +1571,7 @@ namespace Example
             try
             {
                 // Convert workbook from request content to some format.
-                System.IO.Stream result = apiInstance.CellsWorkbookPutConvertWorkbook(format, password, outPath);
+                System.IO.Stream result = apiInstance.CellsWorkbookPutConvertWorkbook(workbook, format, password, outPath);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1586,6 +1587,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **workbook** | **byte[]**|  | 
  **format** | **string**| The format to convert. | [optional] 
  **password** | **string**| The workbook password. | [optional] 
  **outPath** | **string**| Path to save result | [optional] 
