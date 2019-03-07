@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>Aspose.Cells-Cloud</id>
-        <version>19.2</version>
+        <version>19.3</version>
         <title>Aspose.Cells Cloud SDK for .NET</title>
         <authors>Naeem</authors>
         <owners>asposecloud</owners>
@@ -12,11 +12,11 @@
         <copyright>Aspose 2002-2019. All Rights Reserved.</copyright>
         <tags>Excel Spreadsheet Aspose.Cells XLS XLSX TXT ODS</tags>
         <dependencies>
-            <dependency id="Newtonsoft.Json" version="9.0.0.0" />
-            <dependency id="RestSharp" version="105.1.0.0" />
+            <dependency id="Newtonsoft.Json" version="11.0.2.0" />
+            <dependency id="RestSharp" version="106.2.2.0" />
         </dependencies>
     </metadata>
 	<files>
-		<file src="Aspose.Cells.Cloud.SDK\bin\Release\Aspose.Cells.Cloud.SDK.dll" target="lib\net4.5" />
+		<file src="Aspose.Cells.Cloud.SDK\bin\Release\Aspose.Cells.Cloud.SDK.dll" target="lib\net4.5.2" />
 	</files>
 </package>

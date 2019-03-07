@@ -135,7 +135,13 @@ namespace Aspose.Cells.Cloud.SDK.Client
 #if NETCOREAPP2_0
                 request.AddFile(param.Value.Name, param.Value.Writer, param.Value.FileName, param.Value.ContentLength, param.Value.ContentType);
 #else
-                request.AddFile(param.Value.Name, param.Value.Writer, param.Value.FileName, param.Value.ContentType);
+                //request.AddFile(param.Value.Name, param.Value.Writer, param.Value.FileName, param.Value.ContentType);
+                using (MemoryStream stream = new MemoryStream())
+                {
+                    param.Value.Writer(stream);
+                    request.AddParameter(param.Value.ContentType, stream.ToArray(), ParameterType.RequestBody);
+                }
+
 #endif
             }
 

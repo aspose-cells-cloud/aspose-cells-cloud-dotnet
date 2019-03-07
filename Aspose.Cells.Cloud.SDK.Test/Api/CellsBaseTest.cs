@@ -1,22 +1,21 @@
 ﻿
 namespace Aspose.Cells.Cloud.SDK.Test
 {
-    using NUnit.Framework;
-
     using Aspose.Cells.Cloud.SDK.Client;
     using Aspose.Cells.Cloud.SDK.Api;
-    using Aspose.Cells.Cloud.SDK.Model;
-    using Com.Aspose.Storage.Api;
+    using Aspose.Storage.Cloud.Sdk.Api;
+    using Aspose.Storage.Cloud.Sdk.Model;
+    using Aspose.Storage.Cloud.Sdk.Model.Requests;
     using System.IO;
     using System.Collections.Generic;
     public class CellsBaseTest
     {
         protected ApiClient client;
-        protected Configuration config;
+        protected Client.Configuration config;
         protected static OAuthApi oauth2 =null;
         protected string grantType = "client_credentials";
-        protected string clientId = "xxxxx-xxxx-xxxx-xxxx-xxxxxxx";
-        protected string clientSecret = "xxxxxxxxxxxxxxxxxxx";
+        protected string clientId = "your app sid";
+        protected string clientSecret = "your app key";
         protected static string accesstoken;
         protected string refreshtoken;
         protected string BOOK1 = "Book1.xlsx";
@@ -35,38 +34,50 @@ namespace Aspose.Cells.Cloud.SDK.Test
         protected string RANGE = "A1:C10";
         protected string CELLAREA = "A1:C10";
         protected StorageApi storageApi;
-        private string TestDataFolder = @"xxxxxxxxx";
+        private string TestDataFolder = @"D:\Projects\Aspose\Aspose.Cloud\Aspose.Cells.Cloud.SDK\src\TestData\";
         protected void UpdateDataFile( string folder, string filename)
         {
-            this.storageApi = new StorageApi( clientSecret, clientId, "https://api.aspose.cloud/v1.1");
-            if(string.IsNullOrEmpty(folder))
+            this.storageApi = new StorageApi( clientSecret, clientId);
+            DeleteFileRequest file = new DeleteFileRequest();
+            PutCreateRequest newfile = new PutCreateRequest();
+            if (string.IsNullOrEmpty(folder))
             {
-                this.storageApi.DeleteFile( filename, null, null);
-                this.storageApi.PutCreate(filename, null, null, File.ReadAllBytes(TestDataFolder + filename));
-
+                file.Path =  filename;
+                newfile.Path = filename;
+                newfile.File = File.Open(TestDataFolder + filename, FileMode.Open);
             }
             else
             {
-                this.storageApi.DeleteFile(folder + "/" + filename, null, null);
-                this.storageApi.PutCreate(folder + "/" + filename, null, null, File.ReadAllBytes(TestDataFolder + filename));
-
+                file.Path = folder + "/" + filename;
+                newfile.Path = folder + "/" + filename;
+                newfile.File = File.Open(TestDataFolder + filename, FileMode.Open);
             }
+            storageApi.DeleteFile(file);
+            storageApi.PutCreate(newfile);
+            newfile.File.Close();
         }
         protected void UpdateDataFileForDropBox(string folder, string filename)
         {
-            this.storageApi = new StorageApi(clientSecret, clientId, "https://api.aspose.cloud/v1.1");
+            this.storageApi = new StorageApi(clientSecret, clientId);
+            DeleteFileRequest file = new DeleteFileRequest();
+            PutCreateRequest newfile = new PutCreateRequest();
+            file.Storage = "DropBox";
+            newfile.Storage = "DropBox";
             if (string.IsNullOrEmpty(folder))
             {
-                this.storageApi.DeleteFile(filename, null, "DropBox");
-                this.storageApi.PutCreate(filename, null, "DropBox", File.ReadAllBytes(TestDataFolder + filename));
-
+                file.Path = filename;
+                newfile.Path = filename;
+                newfile.File = File.Open(TestDataFolder + filename, FileMode.Open);
             }
             else
             {
-                this.storageApi.DeleteFile(folder + "/" + filename, null, "DropBox");
-                this.storageApi.PutCreate(folder + "/" + filename, null, "DropBox", File.ReadAllBytes(TestDataFolder + filename));
-
+                file.Path = folder + "/" + filename;
+                newfile.Path = folder + "/" + filename;
+                newfile.File = File.Open(TestDataFolder + filename, FileMode.Open);
             }
+            this.storageApi.DeleteFile(file);
+            this.storageApi.PutCreate(newfile);
+            newfile.File.Close();
         }
         protected Stream GetTestDataStream( string filename)
         {
@@ -81,7 +92,13 @@ namespace Aspose.Cells.Cloud.SDK.Test
         {
             return File.ReadAllBytes(TestDataFolder + filename);
         }
-        protected Configuration GetConfiguration()
+        protected void WriteResponseStream(string filename, Stream stream)
+        {
+            FileStream fs = File.Create(TestDataFolder + filename);
+            stream.CopyTo(fs);
+            fs.Close();
+        }
+        protected Client.Configuration GetConfiguration()
         {
             if (oauth2 == null)
             {
@@ -93,7 +110,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             Dictionary<string, string> headerParameters = new Dictionary<string, string>();
             headerParameters.Add("Authorization", "Bearer " + accesstoken);
             client = new ApiClient();
-            config = new Configuration(client, headerParameters);
+            config = new Client.Configuration(client, headerParameters);
             return config;
         }
     }
