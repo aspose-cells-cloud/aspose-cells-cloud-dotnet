@@ -410,7 +410,7 @@ namespace Aspose.Cells.Cloud.SDK.Client
         /// <param name="source">Object to be casted</param>
         /// <param name="dest">Target type</param>
         /// <returns>Casted object</returns>
-        public static dynamic ConvertType(dynamic source, Type dest)
+        public object ConvertType(object source, Type dest)
         {
             return Convert.ChangeType(source, dest);
         }

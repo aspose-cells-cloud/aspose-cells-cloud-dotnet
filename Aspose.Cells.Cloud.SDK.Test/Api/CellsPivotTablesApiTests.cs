@@ -9,12 +9,7 @@
  */
 
 using System;
-using System.IO;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Reflection;
-using RestSharp;
 using NUnit.Framework;
 
 using Aspose.Cells.Cloud.SDK.Client;
@@ -432,6 +427,30 @@ namespace Aspose.Cells.Cloud.SDK.Test
             Assert.AreEqual(response.Code, 200);
         }
 
+        /// <summary>
+        /// Test CellsPivotTablesPutWorksheetPivotTable
+        /// </summary>
+        [Test]
+        public void CellsPivotTablesPutWorksheetPivotTableTest_2()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            string name = PivTestFile2;
+            string sheetName = SHEET3;
+            CreatePivotTableRequest request = new CreatePivotTableRequest();            
+            request.DestCellName = "C1";
+            request.Name = "Test";
+            request.PivotFieldColumns = new List<int?>(){ 0, 1};
+            request.PivotFieldRows = new List<int?>() { 2, 3 };
+            request.PivotFieldData = new List<int?>() { 4 };
+            request.SourceData = "Sheet2!$A$1:$E$8";
+            request.UseSameSource = false;
+
+            string folder = TEMPFOLDER;
+            UpdateDataFile(folder, name);
+            var response = instance.CellsPivotTablesPutWorksheetPivotTable(name, sheetName, request, folder, null, null, null, null, null);
+            Assert.IsInstanceOf<PivotTableResponse>(response, "response is PivotTableResponse");
+            Assert.AreEqual(response.Code, 200);
+        }
         /// <summary>
         /// Test CellsPivotTablesPutWorksheetPivotTableFilter
         /// </summary>

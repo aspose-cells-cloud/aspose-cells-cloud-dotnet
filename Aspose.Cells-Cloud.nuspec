@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>Aspose.Cells-Cloud</id>
-        <version>19.3</version>
+        <version>19.4</version>
         <title>Aspose.Cells Cloud SDK for .NET</title>
         <authors>Naeem</authors>
         <owners>asposecloud</owners>
@@ -17,6 +17,7 @@
         </dependencies>
     </metadata>
 	<files>
-		<file src="Aspose.Cells.Cloud.SDK\bin\Release\Aspose.Cells.Cloud.SDK.dll" target="lib\net4.5.2" />
+		<file src="Aspose.Cells.Cloud.SDK\bin\Release\net4.5.2\Aspose.Cells.Cloud.SDK.dll" target="lib\net4.5.2" />
+		<file src="Aspose.Cells.Cloud.SDK\bin\Release\netstandard2.0\Aspose.Cells.Cloud.SDK.dll" target="lib\netstandard2.0" />
 	</files>
 </package>

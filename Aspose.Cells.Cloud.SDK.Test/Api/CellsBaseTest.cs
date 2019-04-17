@@ -14,13 +14,14 @@ namespace Aspose.Cells.Cloud.SDK.Test
         protected Client.Configuration config;
         protected static OAuthApi oauth2 =null;
         protected string grantType = "client_credentials";
-        protected string clientId = "your app sid";
-        protected string clientSecret = "your app key";
+        protected string clientId = "66164C51-693E-4904-A121-545961673EC1";
+        protected string clientSecret = "536e76768419db9585afdd37bb5f7533";
         protected static string accesstoken;
         protected string refreshtoken;
         protected string BOOK1 = "Book1.xlsx";
         protected string MYDOC = "myDocument.xlsx";
         protected string PivTestFile = "TestCase.xlsx";
+        protected string PivTestFile2 = "PivTestFile2.xlsx";
         protected string TEMPFOLDER = "Temp";
         protected string SHEET1 = "Sheet1";
         protected string SHEET2 = "Sheet2";
