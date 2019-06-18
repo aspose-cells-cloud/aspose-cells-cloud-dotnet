@@ -175,7 +175,25 @@ namespace Aspose.Cells.Cloud.SDK.Test
             var response = instance.CellsWorkbookGetWorkbook(name, password, format, isAutoFit, onlySaveTable, folder,null, outPath);
             Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
         }
-        
+        /// <summary>
+        /// Test CellsWorkbookGetWorkBook
+        /// </summary>
+        [Test]
+        public void CellsWorkbookGetMarkdownFormatTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            string name = BOOK1;
+            string password = null;
+            string format = "md";
+            bool? isAutoFit = true;
+            bool? onlySaveTable = true;
+            string folder = TEMPFOLDER;
+            string outPath = null;
+            UpdateDataFile(folder, name);
+            var response = instance.CellsWorkbookGetWorkbook(name, password, format, isAutoFit, onlySaveTable, folder, null, outPath);
+            Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
+            WriteResponseStream("markdowntest.md" , response);
+        }
         /// <summary>
         /// Test CellsWorkbookGetWorkBookDefaultStyle
         /// </summary>
@@ -467,6 +485,23 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string outPath = null;
             UpdateDataFile(TEMPFOLDER, BOOK1);
             var response = instance.CellsWorkbookPutConvertWorkbook(GetTestDataByteArray(workbook),format, password, outPath);
+            Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
+            //WriteResponseStream(workbook + "." + format, response);
+        }
+
+        /// <summary>
+        /// Test CellsWorkbookPutConvertWorkBook
+        /// </summary>
+        [Test]
+        public void CellsWorkbookPutConvertMDTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            string workbook = BOOK1;
+            string format = "md";
+            string password = null;
+            string outPath = null;
+            UpdateDataFile(TEMPFOLDER, BOOK1);
+            var response = instance.CellsWorkbookPutConvertWorkbook(GetTestDataByteArray(workbook), format, password, outPath);
             Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
             //WriteResponseStream(workbook + "." + format, response);
         }
