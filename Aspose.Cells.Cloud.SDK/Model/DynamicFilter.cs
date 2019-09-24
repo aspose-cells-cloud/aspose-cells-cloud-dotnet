@@ -46,6 +46,18 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string DynamicFilterType { get; set; }
 
         /// <summary>
+        /// Gets or sets MaxValue
+        /// </summary>  
+		[DataMember(Name="MaxValue", EmitDefaultValue=false)]
+        public Object MaxValue { get; set; }
+
+        /// <summary>
+        /// Gets or sets Value
+        /// </summary>  
+		[DataMember(Name="Value", EmitDefaultValue=false)]
+        public Object Value { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -54,6 +66,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class DynamicFilter {\n");
           sb.Append("  DynamicFilterType: ").Append(this.DynamicFilterType).Append("\n");
+          sb.Append("  MaxValue: ").Append(this.MaxValue).Append("\n");
+          sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

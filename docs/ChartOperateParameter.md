@@ -3,7 +3,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**_String** | **string** |  | [optional] 
+**String** | **string** |  | [optional] 
 **Area** | **string** |  | [optional] 
 **CategoryData** | **string** |  | [optional] 
 **UpperLeftRow** | **int?** |  | [optional] 

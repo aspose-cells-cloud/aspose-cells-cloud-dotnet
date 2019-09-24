@@ -40,10 +40,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class ChartOperateParameter : OperateParameter 
   {                       
         /// <summary>
-        /// Gets or sets _String
+        /// Gets or sets String
         /// </summary>  
 		[DataMember(Name="string", EmitDefaultValue=false)]
-        public string _String { get; set; }
+        public string String { get; set; }
 
         /// <summary>
         /// Gets or sets Area
@@ -101,7 +101,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class ChartOperateParameter {\n");
-          sb.Append("  _String: ").Append(this._String).Append("\n");
+          sb.Append("  String: ").Append(this.String).Append("\n");
           sb.Append("  Area: ").Append(this.Area).Append("\n");
           sb.Append("  CategoryData: ").Append(this.CategoryData).Append("\n");
           sb.Append("  UpperLeftRow: ").Append(this.UpperLeftRow).Append("\n");

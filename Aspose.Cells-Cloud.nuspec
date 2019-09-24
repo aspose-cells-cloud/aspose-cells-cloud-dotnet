@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>Aspose.Cells-Cloud</id>
-        <version>19.6</version>
+        <version>19.9</version>
         <title>Aspose.Cells Cloud SDK for .NET</title>
         <authors>Naeem</authors>
         <owners>asposecloud</owners>

@@ -37,7 +37,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class PivotTablesResponse : SaaSposeResponse 
+  public class PivotTablesResponse : CellsCloudResponse 
   {                       
         /// <summary>
         /// Gets or sets PivotTables

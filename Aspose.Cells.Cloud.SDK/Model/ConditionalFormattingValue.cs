@@ -52,6 +52,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string Type { get; set; }
 
         /// <summary>
+        /// Get or set the value of this conditional formatting value object.  It should     be used in conjunction with Type.
+        /// </summary>  
+		[DataMember(Name="Value", EmitDefaultValue=false)]
+        public Object Value { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -61,6 +67,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
           sb.Append("class ConditionalFormattingValue {\n");
           sb.Append("  IsGTE: ").Append(this.IsGTE).Append("\n");
           sb.Append("  Type: ").Append(this.Type).Append("\n");
+          sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

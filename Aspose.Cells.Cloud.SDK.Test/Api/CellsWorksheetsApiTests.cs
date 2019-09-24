@@ -33,14 +33,14 @@ namespace Aspose.Cells.Cloud.SDK.Test
     [TestFixture]
     public class CellsWorksheetsApiTests:CellsBaseTest
     {
-        private CellsWorksheetsApi instance;
+        private CellsApi instance;
         /// <summary>
         /// Setup before each unit test
         /// </summary>
         [SetUp]
         public void Init()
         {
-            instance = new CellsWorksheetsApi(GetConfiguration ());
+            instance = new CellsApi( clientId, clientSecret);
         }
 
         /// <summary>
@@ -51,17 +51,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
         {
 
         }
-
-        /// <summary>
-        /// Test an instance of CellsWorksheetsApi
-        /// </summary>
-        [Test]
-        public void InstanceTest()
-        {
-            // TODO uncomment below to test 'IsInstanceOfType' CellsWorksheetsApi
-            Assert.IsInstanceOf(typeof(CellsWorksheetsApi), instance, "instance is a CellsWorksheetsApi");
-        }
-
         
         /// <summary>
         /// Test CellsWorksheetsDeleteUnprotectWorksheet
@@ -76,7 +65,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             protectParameter.Password = "12345";
             protectParameter.ProtectionType = "All";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsDeleteUnprotectWorksheet(name, sheetName, protectParameter, folder);
             Assert.IsInstanceOf<WorksheetResponse>(response, "response is WorksheetResponse");
             Assert.AreEqual(response.Code, 200);
@@ -92,9 +81,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsDeleteWorksheetBackground(name, sheetName, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -109,9 +98,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET1;
             string cellName = "C1";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsDeleteWorksheetComment(name, sheetName, cellName, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -125,9 +114,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsDeleteWorksheetComments(name, sheetName, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -141,7 +130,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsDeleteWorksheet(name, sheetName, folder);
             Assert.IsInstanceOf<WorksheetsResponse>(response, "response is WorksheetsResponse");
             Assert.AreEqual(response.Code, 200);
@@ -161,9 +150,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             int? freezedRows = 2;
             int? freezedColumns = 2;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsDeleteWorksheetFreezePanes(name, sheetName, row, column, freezedRows, freezedColumns, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -176,7 +165,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             // TODO uncomment below to test the method and replace null with proper value
             string name = BOOK1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsGetNamedRanges(name, folder);
             Assert.IsInstanceOf<RangesResponse>(response, "response is RangesResponse");
             Assert.AreEqual(response.Code, 200);
@@ -195,12 +184,32 @@ namespace Aspose.Cells.Cloud.SDK.Test
             int? horizontalResolution = 90;
             string format = "png";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsGetWorksheet(name, sheetName, format, verticalResolution, horizontalResolution, folder);
             Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
 
         }
-        
+        /// <summary>
+        /// Test CellsWorksheetsGetWorkSheet
+        /// </summary>
+        [Test]
+        public void CellsWorksheetsGetWorkSheetToPDFTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            string name = BOOK1;
+            string sheetName = SHEET1;
+            int? verticalResolution = 100;
+            int? horizontalResolution = 90;
+            string format = "pdf";
+            string folder = TEMPFOLDER;
+            //UpdateDataFile(instance,folder, name);
+            var response = instance.CellsWorksheetsGetWorksheet(name, sheetName, format, verticalResolution, horizontalResolution, folder);
+            Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
+            FileStream stream = File.Create(@"d:\book1.pdf");
+            response.CopyTo(stream);
+            stream.Close();
+
+        }
         /// <summary>
         /// Test CellsWorksheetsGetWorkSheetCalculateFormula
         /// </summary>
@@ -212,7 +221,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET1;
             string formula = "=NOW()";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsGetWorksheetCalculateFormula(name, sheetName, formula, folder);
             Assert.IsInstanceOf<SingleValueResponse>(response, "response is SingleValueResponse");
         }
@@ -228,7 +237,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET1;
             string cellName = "B3";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsGetWorksheetComment(name, sheetName, cellName, folder);
             Assert.IsInstanceOf<CommentResponse>(response, "response is CommentResponse");
             Assert.AreEqual(response.Code, 200);
@@ -244,7 +253,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsGetWorksheetComments(name, sheetName, folder);
             Assert.IsInstanceOf<CommentsResponse>(response, "response is CommentsResponse");
             Assert.AreEqual(response.Code, 200);
@@ -261,7 +270,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET1;
             int? mergedCellIndex = 1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsGetWorksheetMergedCell(name, sheetName, mergedCellIndex, folder);
             Assert.IsInstanceOf<MergedCellResponse>(response, "response is MergedCellResponse");
             Assert.AreEqual(response.Code, 200);
@@ -277,7 +286,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsGetWorksheetMergedCells(name, sheetName, folder);
             Assert.IsInstanceOf<MergedCellsResponse>(response, "response is MergedCellsResponse");
             Assert.AreEqual(response.Code, 200);
@@ -293,7 +302,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsGetWorksheetTextItems(name, sheetName, folder);
             Assert.IsInstanceOf<TextItemsResponse>(response, "response is TextItemsResponse");
             Assert.AreEqual(response.Code, 200);
@@ -308,7 +317,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             // TODO uncomment below to test the method and replace null with proper value
             string name = BOOK1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsGetWorksheets(name, folder);
             Assert.IsInstanceOf<WorksheetsResponse>(response, "response is WorksheetsResponse");
             Assert.AreEqual(response.Code, 200);
@@ -325,13 +334,13 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET1;
             int? firstColumn = 1;
             int? lastColumn = 10;
-            AutoFitterOptions autoFitterOptions = null;
+            AutoFitterOptions autoFitterOptions = new AutoFitterOptions();
             int? firstRow = 1;
             int? lastRow = 19;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsPostAutofitWorksheetColumns(name, sheetName, firstColumn, lastColumn, autoFitterOptions, firstRow, lastRow, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -350,9 +359,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             AutoFitterOptions autoFitterOptions = new AutoFitterOptions();
             autoFitterOptions.AutoFitMergedCells = true;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsPostAutofitWorksheetRow(name, sheetName, rowIndex, firstColumn, lastColumn, autoFitterOptions, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -371,9 +380,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             int? endRow = 10;
             bool? onlyAuto = true;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsPostAutofitWorksheetRows(name, sheetName, autoFitterOptions, startRow, endRow, onlyAuto, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -392,10 +401,10 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sourceWorkbook = BOOK1;
             string sourceFolder = TEMPFOLDER;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
-            UpdateDataFile(folder, sourceWorkbook);
+            UpdateDataFile(instance,folder, name);
+            UpdateDataFile(instance,folder, sourceWorkbook);
             var response = instance.CellsWorksheetsPostCopyWorksheet(name, sheetName, sourceSheet, options,  sourceWorkbook, sourceFolder, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -412,7 +421,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             moving.DestinationWorksheet = SHEET3;
             moving.Position = "after";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsPostMoveWorksheet(name, sheetName, moving, folder);
             Assert.IsInstanceOf<WorksheetsResponse>(response, "response is WorksheetsResponse");
             Assert.AreEqual(response.Code, 200);
@@ -429,9 +438,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET1;
             string newname = "renametest";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsPostRenameWorksheet(name, sheetName, newname, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -448,7 +457,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             sheet.Index = 0;
             sheet.IsGridlinesVisible = true;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsPostUpdateWorksheetProperty(name, sheetName, sheet, folder);
             Assert.IsInstanceOf<WorksheetResponse>(response, "response is WorksheetResponse");
             Assert.AreEqual(response.Code, 200);
@@ -465,9 +474,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET1;
             int? value = 1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsPostUpdateWorksheetZoom(name, sheetName, value, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -484,9 +493,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             Comment comment = new Comment();
             comment.Author = "Roy";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsPostWorksheetComment(name, sheetName, cellName, comment, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -501,7 +510,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET1;
             string text = "123456";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsPostWorksheetTextSearch(name, sheetName, text, folder);
             Assert.IsInstanceOf<TextItemsResponse>(response, "response is TextItemsResponse");
             Assert.AreEqual(response.Code, 200);
@@ -520,9 +529,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             DataSorter dataSorter = new DataSorter();
             dataSorter.CaseSensitive = true;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsPostWorksheetRangeSort(name, sheetName, cellArea, dataSorter, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -538,7 +547,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string oldValue = "1234";
             string newValue = "56678";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsPostWorsheetTextReplace(name, sheetName, oldValue, newValue, folder);
             Assert.IsInstanceOf<WorksheetReplaceResponse>(response, "response is WorksheetReplaceResponse");
             Assert.AreEqual(response.Code, 200);
@@ -556,7 +565,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             int? position = 1;
             string sheettype = "VB";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsPutAddNewWorksheet(name, sheetName, position, sheettype, folder);
             Assert.IsInstanceOf<WorksheetsResponse>(response, "response is WorksheetsResponse");
             Assert.AreEqual(response.Code, 201);
@@ -573,7 +582,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET1;
             bool? isVisible = true;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsPutChangeVisibilityWorksheet(name, sheetName, isVisible, folder);
             Assert.IsInstanceOf<WorksheetResponse>(response, "response is WorksheetResponse");
             Assert.AreEqual(response.Code, 200);
@@ -593,7 +602,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             protectParameter.ProtectionType = "All";
             protectParameter.Password = "123";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsPutProtectWorksheet(name, sheetName, protectParameter, folder);
             Assert.IsInstanceOf<WorksheetResponse>(response, "response is WorksheetResponse");
             Assert.AreEqual(response.Code, 200);
@@ -609,10 +618,10 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             
             var response = instance.CellsWorksheetsPutWorksheetBackground(name, sheetName, GetTestDataByteArray("WaterMark.png"), folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -633,7 +642,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             encryption.KeyLength = 128;
             encryption.EncryptionType = "XOR";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsPutWorksheetComment(name, sheetName, cellName, comment, folder);
             Assert.IsInstanceOf<CommentResponse>(response, "response is CommentResponse");
             Assert.AreEqual(response.Code, 200);
@@ -653,9 +662,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             int? freezedRows = 4;
             int? freezedColumns = 5;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsPutWorksheetFreezePanes(name, sheetName, row, column, freezedRows, freezedColumns, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         

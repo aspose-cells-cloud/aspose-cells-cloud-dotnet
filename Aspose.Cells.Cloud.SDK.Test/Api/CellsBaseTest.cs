@@ -12,7 +12,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
     {
         protected ApiClient client;
         protected Client.Configuration config;
-        protected static OAuthApi oauth2 =null;
         protected string grantType = "client_credentials";
         protected string clientId = "66164C51-693E-4904-A121-545961673EC1";
         protected string clientSecret = "536e76768419db9585afdd37bb5f7533";
@@ -36,56 +35,31 @@ namespace Aspose.Cells.Cloud.SDK.Test
         protected string CELLAREA = "A1:C10";
         protected StorageApi storageApi;
         private string TestDataFolder = @"D:\Projects\Aspose\Aspose.Cloud\Aspose.Cells.Cloud.SDK\src\TestData\";
-        protected void UpdateDataFile( string folder, string filename)
+        
+        protected void UpdateDataFile( CellsApi cellsApi, string folder, string filename)
         {
-            this.storageApi = new StorageApi( clientSecret, clientId);
-            DeleteFileRequest file = new DeleteFileRequest();
-            PutCreateRequest newfile = new PutCreateRequest();
-            if (string.IsNullOrEmpty(folder))
-            {
-                file.Path =  filename;
-                newfile.Path = filename;
-                newfile.File = File.Open(TestDataFolder + filename, FileMode.Open);
-            }
-            else
-            {
-                file.Path = folder + "/" + filename;
-                newfile.Path = folder + "/" + filename;
-                newfile.File = File.Open(TestDataFolder + filename, FileMode.Open);
-            }
-            storageApi.DeleteFile(file);
-            storageApi.PutCreate(newfile);
-            newfile.File.Close();
+            cellsApi.DeleteFile(folder + @"\" + filename);
+            Stream stream = GetTestDataStream(filename);
+            var response = cellsApi.UploadFile(folder + @"\" + filename, stream);
         }
-        protected void UpdateDataFileForDropBox(string folder, string filename)
+        protected void UpdateDataFile(CellsApi cellsApi,  string filename)
         {
-            this.storageApi = new StorageApi(clientSecret, clientId);
-            DeleteFileRequest file = new DeleteFileRequest();
-            PutCreateRequest newfile = new PutCreateRequest();
-            file.Storage = "DropBox";
-            newfile.Storage = "DropBox";
-            if (string.IsNullOrEmpty(folder))
-            {
-                file.Path = filename;
-                newfile.Path = filename;
-                newfile.File = File.Open(TestDataFolder + filename, FileMode.Open);
-            }
-            else
-            {
-                file.Path = folder + "/" + filename;
-                newfile.Path = folder + "/" + filename;
-                newfile.File = File.Open(TestDataFolder + filename, FileMode.Open);
-            }
-            this.storageApi.DeleteFile(file);
-            this.storageApi.PutCreate(newfile);
-            newfile.File.Close();
+            cellsApi.DeleteFile(  filename);
+            Stream stream = GetTestDataStream(filename);
+            var response = cellsApi.UploadFile( filename, stream);
         }
+        protected void UpdateDataFileForDropBox(CellsApi cellsApi, string folder, string filename)
+        {
+            cellsApi.DeleteFile(folder + @"\" + filename, "DropBox");
+            Stream stream = GetTestDataStream(filename);
+            var response = cellsApi.UploadFile(folder + @"\" + filename, stream, "DropBox");
+        }
+
         protected Stream GetTestDataStream( string filename)
         {
             MemoryStream ms = new MemoryStream();
-            StreamWriter writer = new StreamWriter(ms);
-            writer.Write(System.Text.Encoding.Default.GetString(File.ReadAllBytes(TestDataFolder + filename)));
-            writer.Flush();
+            FileStream fs = File.OpenRead(TestDataFolder + filename);
+            fs.CopyTo(ms);
             ms.Position = 0;
             return ms;
         }
@@ -99,20 +73,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
             stream.CopyTo(fs);
             fs.Close();
         }
-        protected Client.Configuration GetConfiguration()
-        {
-            if (oauth2 == null)
-            {
-                oauth2 = new OAuthApi("https://api.aspose.cloud");
-                var oauth2response = oauth2.OAuthPost(grantType, clientId, clientSecret);
-                accesstoken = oauth2response.AccessToken;
-                refreshtoken = oauth2response.RefreshToken;
-            }
-            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
-            headerParameters.Add("Authorization", "Bearer " + accesstoken);
-            client = new ApiClient();
-            config = new Client.Configuration(client, headerParameters);
-            return config;
-        }
+        
     }
 }

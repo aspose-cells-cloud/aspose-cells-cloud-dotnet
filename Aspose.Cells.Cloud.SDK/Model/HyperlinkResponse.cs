@@ -37,7 +37,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class HyperlinkResponse : SaaSposeResponse 
+  public class HyperlinkResponse : CellsCloudResponse 
   {                       
         /// <summary>
         /// Gets or sets Hyperlink

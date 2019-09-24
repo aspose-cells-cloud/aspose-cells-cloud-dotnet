@@ -37,7 +37,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class FillFormatResponse : SaaSposeResponse 
+  public class FillFormatResponse : CellsCloudResponse 
   {                       
         /// <summary>
         /// Gets or sets FillFormat

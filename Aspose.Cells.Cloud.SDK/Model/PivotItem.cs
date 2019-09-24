@@ -58,6 +58,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string Name { get; set; }
 
         /// <summary>
+        /// Gets the value of the specified item.
+        /// </summary>  
+		[DataMember(Name="Value", EmitDefaultValue=false)]
+        public Object Value { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -68,6 +74,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
           sb.Append("  Index: ").Append(this.Index).Append("\n");
           sb.Append("  IsHidden: ").Append(this.IsHidden).Append("\n");
           sb.Append("  Name: ").Append(this.Name).Append("\n");
+          sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

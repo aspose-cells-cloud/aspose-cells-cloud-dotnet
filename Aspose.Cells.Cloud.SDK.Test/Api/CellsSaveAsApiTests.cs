@@ -33,14 +33,14 @@ namespace Aspose.Cells.Cloud.SDK.Test
     [TestFixture]
     public class CellsSaveAsApiTests:CellsBaseTest
     {
-        private CellsSaveAsApi instance;
+        private CellsApi instance;
         /// <summary>
         /// Setup before each unit test
         /// </summary>
         [SetUp]
         public void Init()
         {
-            instance = new CellsSaveAsApi(GetConfiguration());
+            instance = new CellsApi( clientId, clientSecret);;
         }
 
         /// <summary>
@@ -50,16 +50,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
         public void Cleanup()
         {
 
-        }
-
-        /// <summary>
-        /// Test an instance of CellsSaveAsApi
-        /// </summary>
-        [Test]
-        public void InstanceTest()
-        {
-            // TODO uncomment below to test 'IsInstanceOfType' CellsSaveAsApi
-            Assert.IsInstanceOf(typeof(CellsSaveAsApi), instance, "instance is a CellsSaveAsApi");
         }
 
         
@@ -76,7 +66,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             bool? isAutoFitRows = true;
             bool? isAutoFitColumns = true;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsSaveAsPostDocumentSaveAs(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder);
             Assert.IsInstanceOf<SaveResponse>(response, "response is SaveResponse");
         }
@@ -95,7 +85,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             bool? isAutoFitRows = true;
             bool? isAutoFitColumns = true;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsSaveAsPostDocumentSaveAs(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder);
             Assert.IsInstanceOf<SaveResponse>(response, "response is SaveResponse");
         }
@@ -107,14 +97,31 @@ namespace Aspose.Cells.Cloud.SDK.Test
         {
             // TODO uncomment below to test the method and replace null with proper value
             string name = BOOK1;
-            PdfSaveOptions saveOptions = new PdfSaveOptions();
-            saveOptions.OnePagePerSheet = true;
+            MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
             saveOptions.SaveFormat = "markdown";
             string newfilename = "newbook.md";
             bool? isAutoFitRows = true;
             bool? isAutoFitColumns = true;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            //UpdateDataFile(instance,folder, name);
+            var response = instance.CellsSaveAsPostDocumentSaveAs(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder);
+            Assert.IsInstanceOf<SaveResponse>(response, "response is SaveResponse");
+        }
+        /// <summary>
+        /// Test CellsSaveAsPostDocumentSaveAs
+        /// </summary>
+        [Test]
+        public void CellsSaveAsPostDocumentSaveAsHTMLTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            string name = BOOK1;
+            HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+            saveOptions.SaveFormat = "html";
+            string newfilename = "newbook.html";
+            bool? isAutoFitRows = true;
+            bool? isAutoFitColumns = true;
+            string folder = TEMPFOLDER;
+            //UpdateDataFile(instance,folder, name);
             var response = instance.CellsSaveAsPostDocumentSaveAs(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder);
             Assert.IsInstanceOf<SaveResponse>(response, "response is SaveResponse");
         }

@@ -46,6 +46,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string FilterOperatorType { get; set; }
 
         /// <summary>
+        /// Gets or sets Criteria
+        /// </summary>  
+		[DataMember(Name="Criteria", EmitDefaultValue=false)]
+        public Object Criteria { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -54,6 +60,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class CustomFilter {\n");
           sb.Append("  FilterOperatorType: ").Append(this.FilterOperatorType).Append("\n");
+          sb.Append("  Criteria: ").Append(this.Criteria).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

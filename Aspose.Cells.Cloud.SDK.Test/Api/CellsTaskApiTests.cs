@@ -32,14 +32,14 @@ namespace Aspose.Cells.Cloud.SDK.Test
     [TestFixture]
     public class CellsTaskApiTests:CellsBaseTest
     {
-        private CellsTaskApi instance;
+        private CellsApi instance;
         /// <summary>
         /// Setup before each unit test
         /// </summary>
         [SetUp]
         public void Init()
         {
-            instance = new CellsTaskApi(GetConfiguration());
+            instance = new CellsApi( clientId, clientSecret);;
         }
 
         /// <summary>
@@ -50,17 +50,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
         {
 
         }
-
-        /// <summary>
-        /// Test an instance of CellsTaskApi
-        /// </summary>
-        [Test]
-        public void InstanceTest()
-        {
-            // TODO uncomment below to test 'IsInstanceOfType' CellsTaskApi
-            Assert.IsInstanceOf(typeof(CellsTaskApi), instance, "instance is a CellsTaskApi");
-        }
-
         
         /// <summary>
         /// Test CellsTaskPostRunTask
@@ -72,7 +61,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET6;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
 
             TaskData taskData = new TaskData();
             taskData.Tasks = new List<TaskDescription>();

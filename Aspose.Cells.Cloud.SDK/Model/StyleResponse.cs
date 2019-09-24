@@ -37,7 +37,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class StyleResponse : SaaSposeResponse 
+  public class StyleResponse : CellsCloudResponse 
   {                       
         /// <summary>
         /// Gets or sets Style

@@ -37,7 +37,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class WorkbookReplaceResponse : SaaSposeResponse 
+  public class WorkbookReplaceResponse : CellsCloudResponse 
   {                       
         /// <summary>
         /// Gets or sets Matches

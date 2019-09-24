@@ -33,14 +33,14 @@ namespace Aspose.Cells.Cloud.SDK.Test
     [TestFixture]
     public class CellsPicturesApiTests:CellsBaseTest
     {
-        private CellsPicturesApi instance;
+        private CellsApi instance;
         /// <summary>
         /// Setup before each unit test
         /// </summary>
         [SetUp]
         public void Init()
         {
-            instance = new CellsPicturesApi(GetConfiguration());
+            instance = new CellsApi( clientId, clientSecret);;
         }
 
         /// <summary>
@@ -50,16 +50,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
         public void Cleanup()
         {
 
-        }
-
-        /// <summary>
-        /// Test an instance of CellsPicturesApi
-        /// </summary>
-        [Test]
-        public void InstanceTest()
-        {
-            // TODO uncomment below to test 'IsInstanceOfType' CellsPicturesApi
-            Assert.IsInstanceOf(typeof(CellsPicturesApi), instance, "instance is a CellsPicturesApi");
         }
 
         
@@ -73,9 +63,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET6;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPicturesDeleteWorksheetPictures(name, sheetName, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -90,9 +80,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET6;
             int? pictureIndex = 0;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPicturesDeleteWorksheetPicture(name, sheetName, pictureIndex, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -108,7 +98,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             int? pictureNumber = 0;
             string format = null;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPicturesGetWorksheetPicture(name, sheetName, pictureNumber, format,folder);
             Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
         }
@@ -123,7 +113,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET6;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPicturesGetWorksheetPictures(name, sheetName, folder);
             Assert.IsInstanceOf<PicturesResponse>(response, "response is PicturesResponse");
             Assert.AreEqual(response.Code, 200);
@@ -143,7 +133,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             Picture picture = new Picture ();
             picture.Left = 10;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPicturesPostWorksheetPicture(name, sheetName, pictureIndex, picture, folder);
             Assert.IsInstanceOf<PictureResponse>(response, "response is PictureResponse");
             Assert.AreEqual(response.Code, 200);
@@ -159,16 +149,23 @@ namespace Aspose.Cells.Cloud.SDK.Test
             // TODO uncomment below to test the method and replace null with proper value
             string name = BOOK1;
             string sheetName = SHEET6;
-            Picture picture =null;
+            
             int? upperLeftRow = 1;
             int? upperLeftColumn = 1;
             int? lowerRightRow = 10;
             int? lowerRightColumn = 10;
             string picturePath = "WaterMark.png";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
-            UpdateDataFile(folder, picturePath);
-            var response = instance.CellsPicturesPutWorksheetAddPicture(name, sheetName,picture, upperLeftRow, upperLeftColumn, lowerRightRow, lowerRightColumn, folder + "/" + picturePath, folder);
+            Picture picture = new Picture();
+            picture.SourceFullName = folder + "\\" + picturePath;
+            picture.UpperLeftRow = 1;
+            picture.UpperLeftColumn = 1;
+            picture.LowerRightRow = 10;
+            picture.LowerRightColumn = 10;
+            //picture = null;
+            UpdateDataFile(instance,folder, name);
+            UpdateDataFile(instance,folder, picturePath);
+            var response = instance.CellsPicturesPutWorksheetAddPicture(name, sheetName,picture, upperLeftRow, upperLeftColumn, lowerRightRow, lowerRightColumn, folder + "\\" + picturePath, folder);
             Assert.IsInstanceOf<PicturesResponse>(response, "response is PicturesResponse");
             Assert.AreEqual(response.Code, 200);
 

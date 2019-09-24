@@ -33,14 +33,14 @@ namespace Aspose.Cells.Cloud.SDK.Test
     [TestFixture]
     public class CellsWorksheetValidationsApiTests:CellsBaseTest
     {
-        private CellsWorksheetValidationsApi instance;
+        private CellsApi instance;
         /// <summary>
         /// Setup before each unit test
         /// </summary>
         [SetUp]
         public void Init()
         {
-            instance = new CellsWorksheetValidationsApi(GetConfiguration());
+            instance = new CellsApi( clientId, clientSecret);;
         }
 
         /// <summary>
@@ -51,17 +51,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
         {
 
         }
-
-        /// <summary>
-        /// Test an instance of CellsWorksheetValidationsApi
-        /// </summary>
-        [Test]
-        public void InstanceTest()
-        {
-            // TODO uncomment below to test 'IsInstanceOfType' CellsWorksheetValidationsApi
-            Assert.IsInstanceOf(typeof(CellsWorksheetValidationsApi), instance, "instance is a CellsWorksheetValidationsApi");
-        }
-
         
         /// <summary>
         /// Test CellsWorksheetValidationsDeleteWorkSheetValidation
@@ -74,7 +63,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET1;
             int? validationIndex = 0;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetValidationsDeleteWorksheetValidation(name, sheetName, validationIndex, folder);
             Assert.IsInstanceOf<ValidationResponse>(response, "response is ValidationResponse");
             Assert.AreEqual(response.Code, 200);
@@ -91,7 +80,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET1;
             int? validationIndex = 0;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetValidationsGetWorksheetValidation(name, sheetName, validationIndex, folder);
             Assert.IsInstanceOf<ValidationResponse>(response, "response is ValidationResponse");
             Assert.AreEqual(response.Code, 200);
@@ -107,7 +96,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetValidationsGetWorksheetValidations(name, sheetName, folder);
             Assert.IsInstanceOf<ValidationsResponse>(response, "response is ValidationsResponse");
             Assert.AreEqual(response.Code, 200);
@@ -135,8 +124,8 @@ namespace Aspose.Cells.Cloud.SDK.Test
             validation.Type = "Custom";
             validation.IgnoreBlank = true;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
-            UpdateDataFile(TEMPFOLDER, BOOK1);
+            UpdateDataFile(instance,folder, name);
+            UpdateDataFile(instance,TEMPFOLDER, BOOK1);
             var response = instance.CellsWorksheetValidationsPostWorksheetValidation(name, sheetName, validationIndex, validation, folder);
             Assert.IsInstanceOf<ValidationResponse>(response, "response is ValidationResponse");
             Assert.AreEqual(response.Code, 200);
@@ -153,8 +142,8 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET1;
             string range = RANGE;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
-            var response = instance.CellsWorksheetValidationsPutWorksheetValidation(name, sheetName, range, folder);
+            UpdateDataFile(instance,folder, name);
+            var response = instance.CellsWorksheetValidationsPutWorksheetValidation(name, sheetName, range,null, folder);
             Assert.IsInstanceOf<ValidationResponse>(response, "response is ValidationResponse");
             Assert.AreEqual(response.Code, 200);
         }

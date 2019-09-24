@@ -33,14 +33,14 @@ namespace Aspose.Cells.Cloud.SDK.Test
     [TestFixture]
     public class CellsShapesApiTests:CellsBaseTest
     {
-        private CellsShapesApi instance;
+        private CellsApi instance;
         /// <summary>
         /// Setup before each unit test
         /// </summary>
         [SetUp]
         public void Init()
         {
-            instance = new CellsShapesApi(GetConfiguration());
+            instance = new CellsApi( clientId, clientSecret);;
         }
 
         /// <summary>
@@ -50,16 +50,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
         public void Cleanup()
         {
 
-        }
-
-        /// <summary>
-        /// Test an instance of CellsShapesApi
-        /// </summary>
-        [Test]
-        public void InstanceTest()
-        {
-            // TODO uncomment below to test 'IsInstanceOfType' CellsShapesApi
-            Assert.IsInstanceOf(typeof(CellsShapesApi), instance, "instance is a CellsShapesApi");
         }
 
         
@@ -74,9 +64,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET1;
             int? shapeindex = 0;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsShapesDeleteWorksheetShape(name, sheetName, shapeindex, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -90,9 +80,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsShapesDeleteWorksheetShapes(name, sheetName, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -107,7 +97,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET1;
             int? shapeindex = 0;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsShapesGetWorksheetShape(name, sheetName, shapeindex, folder);
             Assert.IsInstanceOf<ShapeResponse>(response, "response is ShapeResponse");
             Assert.AreEqual(response.Code, 200);
@@ -123,7 +113,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsShapesGetWorksheetShapes(name, sheetName, folder);
             Assert.IsInstanceOf<ShapesResponse>(response, "response is ShapesResponse");
             Assert.AreEqual(response.Code, 200);
@@ -142,9 +132,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             Shape dto = new Shape();
             dto.LowerRightColumn = 10;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsShapesPostWorksheetShape(name, sheetName, shapeindex, dto, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -165,7 +155,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             int? width = 100;
             int? height = 90;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsShapesPutWorksheetShape(name, sheetName, drawingType, upperLeftRow, upperLeftColumn, top, left, width, height, folder);
             Assert.IsInstanceOf<ShapeResponse>(response, "response is ShapeResponse");
             Assert.AreEqual(response.Code, 200);

@@ -37,7 +37,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class AutoShapeResponse : SaaSposeResponse 
+  public class AutoShapeResponse : CellsCloudResponse 
   {                       
         /// <summary>
         /// Gets or sets AutoShape

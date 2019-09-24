@@ -37,7 +37,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class HorizontalPageBreaksResponse : SaaSposeResponse 
+  public class HorizontalPageBreaksResponse : CellsCloudResponse 
   {                       
         /// <summary>
         /// Gets or sets HorizontalPageBreaks

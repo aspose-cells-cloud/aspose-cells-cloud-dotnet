@@ -37,7 +37,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class MergedCellResponse : SaaSposeResponse 
+  public class MergedCellResponse : CellsCloudResponse 
   {                       
         /// <summary>
         /// Gets or sets MergedCell

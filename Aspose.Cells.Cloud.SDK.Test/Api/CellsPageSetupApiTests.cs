@@ -33,14 +33,14 @@ namespace Aspose.Cells.Cloud.SDK.Test
     [TestFixture]
     public class CellsPageSetupApiTests:CellsBaseTest
     {
-        private CellsPageSetupApi instance;
+        private CellsApi instance;
         /// <summary>
         /// Setup before each unit test
         /// </summary>
         [SetUp]
         public void Init()
         {
-            instance = new CellsPageSetupApi(GetConfiguration());
+            instance = new CellsApi( clientId, clientSecret);;
         }
 
         /// <summary>
@@ -50,16 +50,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
         public void Cleanup()
         {
 
-        }
-
-        /// <summary>
-        /// Test an instance of CellsPageSetupApi
-        /// </summary>
-        [Test]
-        public void InstanceTest()
-        {
-            // TODO uncomment below to test 'IsInstanceOfType' CellsPageSetupApi
-            Assert.IsInstanceOf(typeof(CellsPageSetupApi), instance, "instance is a CellsPageSetupApi");
         }
 
         
@@ -73,9 +63,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPageSetupDeleteHeaderFooter(name, sheetName, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -89,7 +79,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPageSetupGetFooter(name, sheetName, folder);
             Assert.IsInstanceOf<PageSectionsResponse>(response, "response is PageSectionsResponse");
             Assert.AreEqual(response.Code, 200);
@@ -105,7 +95,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPageSetupGetHeader(name, sheetName, folder);
             Assert.IsInstanceOf<PageSectionsResponse>(response, "response is PageSectionsResponse");
             Assert.AreEqual(response.Code, 200);
@@ -121,7 +111,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPageSetupGetPageSetup(name, sheetName, folder);
             Assert.IsInstanceOf<PageSetupResponse>(response, "response is PageSetupResponse");
             Assert.AreEqual(response.Code, 200);
@@ -140,9 +130,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string script = "test";
             bool? isFirstPage = true;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPageSetupPostFooter(name, sheetName, section, script, isFirstPage, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -159,9 +149,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string script = "trst";
             bool? isFirstPage = false;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPageSetupPostHeader(name, sheetName, section, script, isFirstPage, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -177,9 +167,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             PageSetup pageSetup = new PageSetup();
             pageSetup.BlackAndWhite = true;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPageSetupPostPageSetup(name, sheetName, pageSetup, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         

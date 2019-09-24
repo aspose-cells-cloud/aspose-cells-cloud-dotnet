@@ -33,14 +33,14 @@ namespace Aspose.Cells.Cloud.SDK.Test
     [TestFixture]
     public class CellsHypelinksApiTests : CellsBaseTest
     {
-        private CellsHypelinksApi instance;
+        private CellsApi instance;
         /// <summary>
         /// Setup before each unit test
         /// </summary>
         [SetUp]
         public void Init()
         {
-            instance = new CellsHypelinksApi(GetConfiguration ());
+            instance = new CellsApi( clientId, clientSecret);
         }
 
         /// <summary>
@@ -50,16 +50,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
         public void Cleanup()
         {
 
-        }
-
-        /// <summary>
-        /// Test an instance of CellsHypelinksApi
-        /// </summary>
-        [Test]
-        public void InstanceTest()
-        {
-            // TODO uncomment below to test 'IsInstanceOfType' CellsHypelinksApi
-            Assert.IsInstanceOf(typeof(CellsHypelinksApi), instance, "instance is a CellsHypelinksApi");
         }
 
         
@@ -74,9 +64,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET1;
             int? hyperlinkIndex = 0;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsHypelinksDeleteWorksheetHyperlink(name, sheetName, hyperlinkIndex, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -90,9 +80,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsHypelinksDeleteWorksheetHyperlinks(name, sheetName, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -107,7 +97,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET1;
             int? hyperlinkIndex = 0;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsHypelinksGetWorksheetHyperlink(name, sheetName, hyperlinkIndex, folder);
             Assert.IsInstanceOf<HyperlinkResponse>(response, "response is HyperlinkResponse");
             Assert.AreEqual(response.Code, 200);
@@ -123,7 +113,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsHypelinksGetWorksheetHyperlinks(name, sheetName, folder);
             Assert.IsInstanceOf<HyperlinksResponse>(response, "response is HyperlinksResponse");
             Assert.AreEqual(response.Code, 200);
@@ -143,7 +133,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             //new Link("http://wwww.aspose.com"),"http://www.aspose.com",new CellArea(2,2,1,1
             hyperlink.Address = "http://www.aspose.com";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsHypelinksPostWorksheetHyperlink(name, sheetName, hyperlinkIndex, hyperlink, folder);
             Assert.IsInstanceOf<HyperlinkResponse>(response, "response is HyperlinkResponse");
             Assert.AreEqual(response.Code, 200);
@@ -164,7 +154,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             int? totalColumns = 3;
             string address = "http://wwww.aspose.com";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsHypelinksPutWorksheetHyperlink(name, sheetName, firstRow, firstColumn, totalRows, totalColumns, address, folder);
             Assert.IsInstanceOf<HyperlinkResponse>(response, "response is HyperlinkResponse");
             Assert.AreEqual(response.Code, 200);

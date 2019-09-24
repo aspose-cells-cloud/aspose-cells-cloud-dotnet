@@ -1,12 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net4.5.2;netstandard2.0</TargetFrameworks>
-    <AssemblyVersion>19.6.0.0</AssemblyVersion>
-    <FileVersion>19.6.0.0</FileVersion>
-    <Version>19.6.0</Version>
-    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+    <AssemblyName>Aspose.Cells.Cloud.SDK</AssemblyName>
+    <PackageId>Aspose.Cells.Cloud.SDK</PackageId>
+    <OutputType>Library</OutputType>
+    <Authors>Aspose.Cells Cloud Team</Authors>
+    <Company>Aspose</Company>
+    <AssemblyTitle>Aspose.Cells Cloud SDK for .NET</AssemblyTitle>
+    <Description>This SDK allows you to work with Aspose.Cells Cloud REST APIs in your .NET applications quickly and easily, with zero initial cost.</Description>
+    <Copyright>MIT</Copyright>
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>    
+    <AssemblyVersion>19.9</AssemblyVersion>
+    <FileVersion>19.9</FileVersion>
+    <Version>19.9</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,4 +22,3 @@
   </ItemGroup>
 
 </Project>
-

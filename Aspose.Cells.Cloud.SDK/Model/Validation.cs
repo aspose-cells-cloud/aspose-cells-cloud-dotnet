@@ -115,7 +115,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// Represents the operator for the data validation. Between,Equal,GreaterThan,GreaterOrEqual,LessThan,LessOrEqual,None,NotBetween,NotEqual
         /// </summary>  
 		[DataMember(Name="Operator", EmitDefaultValue=false)]
-        public string _Operator { get; set; }
+        public string Operator { get; set; }
 
         /// <summary>
         /// Represents the title of the data-validation error dialog box.
@@ -161,7 +161,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
           sb.Append("  IgnoreBlank: ").Append(this.IgnoreBlank).Append("\n");
           sb.Append("  Value2: ").Append(this.Value2).Append("\n");
           sb.Append("  Value1: ").Append(this.Value1).Append("\n");
-          sb.Append("  _Operator: ").Append(this._Operator).Append("\n");
+          sb.Append("  Operator: ").Append(this.Operator).Append("\n");
           sb.Append("  ErrorTitle: ").Append(this.ErrorTitle).Append("\n");
           sb.Append("  Type: ").Append(this.Type).Append("\n");
           sb.Append("  InputMessage: ").Append(this.InputMessage).Append("\n");

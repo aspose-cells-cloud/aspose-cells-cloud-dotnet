@@ -106,10 +106,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public Top10 Top10 { get; set; }
 
         /// <summary>
-        /// Gets or sets _Operator
+        /// Gets or sets Operator
         /// </summary>  
 		[DataMember(Name="Operator", EmitDefaultValue=false)]
-        public string _Operator { get; set; }
+        public string Operator { get; set; }
 
         /// <summary>
         /// Gets or sets IconSet
@@ -148,7 +148,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
           sb.Append("  StopIfTrue: ").Append(this.StopIfTrue).Append("\n");
           sb.Append("  Priority: ").Append(this.Priority).Append("\n");
           sb.Append("  Top10: ").Append(this.Top10).Append("\n");
-          sb.Append("  _Operator: ").Append(this._Operator).Append("\n");
+          sb.Append("  Operator: ").Append(this.Operator).Append("\n");
           sb.Append("  IconSet: ").Append(this.IconSet).Append("\n");
           sb.Append("  Type: ").Append(this.Type).Append("\n");
           sb.Append("  TimePeriod: ").Append(this.TimePeriod).Append("\n");

@@ -33,14 +33,14 @@ namespace Aspose.Cells.Cloud.SDK.Test
     [TestFixture]
     public class CellsOleObjectsApiTests : CellsBaseTest
     {
-        private CellsOleObjectsApi instance;
+        private CellsApi instance;
         /// <summary>
         /// Setup before each unit test
         /// </summary>
         [SetUp]
         public void Init()
         {
-            instance = new CellsOleObjectsApi(GetConfiguration ());
+            instance = new CellsApi( clientId, clientSecret);
         }
 
         /// <summary>
@@ -51,17 +51,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
         {
 
         }
-
-        /// <summary>
-        /// Test an instance of CellsOleObjectsApi
-        /// </summary>
-        [Test]
-        public void InstanceTest()
-        {
-            // TODO uncomment below to test 'IsInstanceOfType' CellsOleObjectsApi
-            Assert.IsInstanceOf(typeof(CellsOleObjectsApi), instance, "instance is a CellsOleObjectsApi");
-        }
-
         
         /// <summary>
         /// Test CellsOleObjectsDeleteWorksheetOleObject
@@ -74,9 +63,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET6;
             int? oleObjectIndex = 0;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsOleObjectsDeleteWorksheetOleObject(name, sheetName, oleObjectIndex, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
 
@@ -90,9 +79,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET6;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsOleObjectsDeleteWorksheetOleObjects(name, sheetName, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
 
@@ -108,7 +97,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             int? objectNumber = 0;
             string format = null;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsOleObjectsGetWorksheetOleObject(name, sheetName, objectNumber, format, folder);
             Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
         }
@@ -123,7 +112,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET6;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsOleObjectsGetWorksheetOleObjects(name, sheetName, folder);
             Assert.IsInstanceOf<OleObjectsResponse>(response, "response is OleObjectsResponse");
             Assert.AreEqual(response.Code, 200);
@@ -145,9 +134,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             ole.Height = 90;
             ole.Width = 78;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsOleObjectsPostUpdateWorksheetOleObject(name, sheetName, oleObjectIndex, ole, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
 
@@ -160,7 +149,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             // TODO uncomment below to test the method and replace null with proper value
             string name = BOOK1;
             string sheetName = SHEET6;
-            OleObject oleObject = null;
+
             int? upperLeftRow = 1;
             int? upperLeftColumn = 1;
             int? height = 100;
@@ -168,10 +157,20 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string oleFile = "OLEDoc.docx";
             string imageFile = "word.jpg";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
-            UpdateDataFile(folder, oleFile);
-            UpdateDataFile(folder, imageFile);
-            var response = instance.CellsOleObjectsPutWorksheetOleObject(name, sheetName, oleObject, upperLeftRow, upperLeftColumn, height, width, folder +"/"+ oleFile, folder + "/" + imageFile, folder);
+            OleObject oleObject = new OleObject();
+            oleObject.UpperLeftColumn = 1;
+            oleObject.UpperLeftRow = 1;
+            oleObject.Width = 80;
+            oleObject.Height = 100;
+            oleObject.ImageSourceFullName = imageFile;
+            oleObject.SourceFullName = oleFile;
+            oleObject.Bottom = 0;
+            oleObject.Top = 0;
+            oleObject = null;
+            UpdateDataFile(instance,folder, name);
+            UpdateDataFile(instance, oleFile);
+            UpdateDataFile(instance, imageFile);
+            var response = instance.CellsOleObjectsPutWorksheetOleObject(name, sheetName, oleObject, upperLeftRow, upperLeftColumn, height, width,  oleFile,  imageFile, folder);
             Assert.IsInstanceOf<OleObjectResponse>(response, "response is OleObjectResponse");
             Assert.AreEqual(response.Code, 200);
         }

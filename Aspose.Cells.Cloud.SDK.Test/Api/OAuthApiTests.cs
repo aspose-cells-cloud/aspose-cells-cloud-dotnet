@@ -33,7 +33,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
     [TestFixture]
     public class OAuthApiTests
     {
-        private OAuthApi instance;
+        private CellsApi instance;
 
         /// <summary>
         /// Setup before each unit test
@@ -41,7 +41,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
         [SetUp]
         public void Init()
         {
-            instance = new OAuthApi("https://api.aspose.cloud");
+            instance = new CellsApi("https://api.aspose.cloud");
         }
 
         /// <summary>
@@ -52,18 +52,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
         {
 
         }
-
-        /// <summary>
-        /// Test an instance of OAuthApi
-        /// </summary>
-        [Test]
-        public void InstanceTest()
-        {
-            // TODO uncomment below to test 'IsInstanceOfType' OAuthApi
-           Assert.IsInstanceOf(typeof(OAuthApi), instance, "instance is a OAuthApi");
-        }
-
-        
         /// <summary>
         /// Test OAuthPost
         /// </summary>

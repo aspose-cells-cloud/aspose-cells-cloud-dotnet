@@ -37,7 +37,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class PageSetupResponse : SaaSposeResponse 
+  public class PageSetupResponse : CellsCloudResponse 
   {                       
         /// <summary>
         /// Gets or sets PageSetup

@@ -37,7 +37,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class ValidationResponse : SaaSposeResponse 
+  public class ValidationResponse : CellsCloudResponse 
   {                       
         /// <summary>
         /// Gets or sets Validation

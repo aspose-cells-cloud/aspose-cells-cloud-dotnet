@@ -37,7 +37,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class ConditionalFormattingResponse : SaaSposeResponse 
+  public class ConditionalFormattingResponse : CellsCloudResponse 
   {                       
         /// <summary>
         /// Gets or sets ConditionalFormatting

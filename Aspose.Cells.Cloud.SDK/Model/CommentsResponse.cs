@@ -37,7 +37,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class CommentsResponse : SaaSposeResponse 
+  public class CommentsResponse : CellsCloudResponse 
   {                       
         /// <summary>
         /// Gets or sets Comments

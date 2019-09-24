@@ -28,14 +28,14 @@ namespace Aspose.Cells.Cloud.SDK.Test
     [TestFixture]
     public class CellsPivotTablesApiTests:CellsBaseTest
     {
-        private CellsPivotTablesApi instance;
+        private CellsApi instance;
         /// <summary>
         /// Setup before each unit test
         /// </summary>
         [SetUp]
         public void Init()
         {
-            instance = new CellsPivotTablesApi(GetConfiguration());
+            instance = new CellsApi(clientId, clientSecret);;
         }
 
         /// <summary>
@@ -47,17 +47,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
 
         }
 
-        /// <summary>
-        /// Test an instance of CellsPivotTablesApi
-        /// </summary>
-        [Test]
-        public void InstanceTest()
-        {
-            // TODO uncomment below to test 'IsInstanceOfType' CellsPivotTablesApi
-            Assert.IsInstanceOf(typeof(CellsPivotTablesApi), instance, "instance is a CellsPivotTablesApi");
-        }
-
-        
+       
         /// <summary>
         /// Test CellsPivotTablesDeletePivotTableField
         /// </summary>
@@ -72,9 +62,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             PivotTableFieldRequest request = new PivotTableFieldRequest();
             request.Data = new List<int?> { 1 };
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesDeletePivotTableField(name, sheetName, pivotTableIndex, pivotFieldType, request, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -89,9 +79,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET4;
             int? pivotTableIndex = 0;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesDeleteWorksheetPivotTable(name, sheetName, pivotTableIndex, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -108,9 +98,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             int? fieldIndex = 0;
             bool? needReCalculate = true;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesDeleteWorksheetPivotTableFilter(name, sheetName, pivotTableIndex, fieldIndex, needReCalculate, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -126,9 +116,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             int? pivotTableIndex = 0;
             bool? needReCalculate = true;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesDeleteWorksheetPivotTableFilters(name, sheetName, pivotTableIndex, needReCalculate, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
 
@@ -142,9 +132,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = PivTestFile;
             string sheetName = SHEET4;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesDeleteWorksheetPivotTables(name, sheetName, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
 
@@ -161,7 +151,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             int? pivotFieldIndex = 0;
             string pivotFieldType = "Row";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesGetPivotTableField(name, sheetName, pivotTableIndex, pivotFieldIndex, pivotFieldType, folder);
             Assert.IsInstanceOf<PivotFieldResponse>(response, "response is PivotFieldResponse");
             Assert.AreEqual(response.Code, 200);
@@ -178,7 +168,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET4;
             int? pivottableIndex = 0;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesGetWorksheetPivotTable(name, sheetName, pivottableIndex, folder);
             Assert.IsInstanceOf<PivotTableResponse>(response, "response is PivotTableResponse");
             Assert.AreEqual(response.Code, 200);
@@ -214,7 +204,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
 
             bool? needReCalculate = true;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesPutWorksheetPivotTableFilter(name, sheetName, pivotTableIndex, pivotFilter, needReCalculate, folder);
             Assert.AreEqual(response.Code, 200);
             int filterIndex = 0;
@@ -234,7 +224,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET4;
             int? pivotTableIndex = 0;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesGetWorksheetPivotTableFilters(name, sheetName, pivotTableIndex, folder);
             Assert.IsInstanceOf<PivotFiltersResponse>(response, "response is PivotFiltersResponse");
             Assert.AreEqual(response.Code, 200);
@@ -250,7 +240,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = PivTestFile;
             string sheetName = SHEET4;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesGetWorksheetPivotTables(name, sheetName, folder);
             Assert.IsInstanceOf<PivotTablesResponse>(response, "response is PivotTablesResponse");
             Assert.AreEqual(response.Code, 200);
@@ -273,9 +263,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             style.Font.Size = 17;
             bool? needReCalculate = true;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesPostPivotTableCellStyle(name, sheetName, pivotTableIndex, column, row, style, needReCalculate, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
 
@@ -295,9 +285,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             bool? isHide = true;
             bool? needReCalculate = true;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesPostPivotTableFieldHideItem(name, sheetName, pivotTableIndex, pivotFieldType, fieldIndex, itemIndex, isHide, needReCalculate, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
 
@@ -315,9 +305,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string from = "Row";
             string to = "Column";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesPostPivotTableFieldMoveTo(name, sheetName, pivotTableIndex, fieldIndex, from, to, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
 
@@ -337,9 +327,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
 
             bool? needReCalculate = true;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesPostPivotTableStyle(name, sheetName, pivotTableIndex, style, needReCalculate, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
 
@@ -354,9 +344,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET4;
             int? pivotTableIndex = 0;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesPostWorksheetPivotTableCalculate(name, sheetName, pivotTableIndex, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
 
@@ -374,9 +364,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             int? column = 1;
             string destCellName = "C10";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesPostWorksheetPivotTableMove(name, sheetName, pivotTableIndex, row, column, destCellName, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
 
@@ -395,9 +385,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             request.Data = new List<int?>() { 1};
             bool? needReCalculate = null;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesPutPivotTableField(name, sheetName, pivotTableIndex, pivotFieldType, request, needReCalculate, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
 
@@ -416,13 +406,17 @@ namespace Aspose.Cells.Cloud.SDK.Test
             request.DestCellName = "C1";
             request.SourceData = "Sheet1!C6:E13";
             request.UseSameSource = true;
+            request.PivotFieldColumns = new List<int?> { 1};
+            request.PivotFieldData = new List<int?> { 2 };
+            request.PivotFieldRows = new List<int?> { 3 };
+            request = null;
             string folder = TEMPFOLDER;
             string sourceData = "Sheet1!C6:E13";
             string destCellName = "C1";
             string tableName = "TestPivot";
             bool? useSameSource = true;
-            UpdateDataFile(folder, name);
-            var response = instance.CellsPivotTablesPutWorksheetPivotTable(name, sheetName, null, folder, null, sourceData, destCellName, tableName, useSameSource);
+            UpdateDataFile(instance,folder, name);
+            var response = instance.CellsPivotTablesPutWorksheetPivotTable(name, sheetName, request, folder, null, sourceData, destCellName, tableName, useSameSource);
             Assert.IsInstanceOf<PivotTableResponse>(response, "response is PivotTableResponse");
             Assert.AreEqual(response.Code, 200);
         }
@@ -446,7 +440,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             request.UseSameSource = false;
 
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesPutWorksheetPivotTable(name, sheetName, request, folder, null, null, null, null, null);
             Assert.IsInstanceOf<PivotTableResponse>(response, "response is PivotTableResponse");
             Assert.AreEqual(response.Code, 200);
@@ -480,9 +474,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
 
             bool? needReCalculate = true;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesPutWorksheetPivotTableFilter(name, sheetName, pivotTableIndex, pivotFilter, needReCalculate, folder);
-            Assert.IsInstanceOf<SaaSposeResponse>(response, "response is SaaSposeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
 

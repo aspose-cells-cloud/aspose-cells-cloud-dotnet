@@ -37,7 +37,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class OleObjectsResponse : SaaSposeResponse 
+  public class OleObjectsResponse : CellsCloudResponse 
   {                       
         /// <summary>
         /// Gets or sets OleObjects

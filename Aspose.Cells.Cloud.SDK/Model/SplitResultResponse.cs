@@ -37,7 +37,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class SplitResultResponse : SaaSposeResponse 
+  public class SplitResultResponse : CellsCloudResponse 
   {                       
         /// <summary>
         /// Gets or sets the splitting result.

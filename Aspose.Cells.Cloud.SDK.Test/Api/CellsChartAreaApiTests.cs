@@ -33,14 +33,14 @@ namespace Aspose.Cells.Cloud.SDK.Test
     [TestFixture]
     public class CellsChartAreaApiTests : CellsBaseTest
     {
-        private CellsChartAreaApi instance;
+        private CellsApi instance;
         /// <summary>
         /// Setup before each unit test
         /// </summary>
         [SetUp]
         public void Init()
         {
-            instance = new CellsChartAreaApi(GetConfiguration());
+            instance = new CellsApi( clientId, clientSecret);;
         }
 
         /// <summary>
@@ -50,16 +50,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
         public void Cleanup()
         {
 
-        }
-
-        /// <summary>
-        /// Test an instance of CellsChartAreaApi
-        /// </summary>
-        [Test]
-        public void InstanceTest()
-        {
-            // TODO uncomment below to test 'IsInstanceOfType' CellsChartAreaApi
-            Assert.IsInstanceOf(typeof(CellsChartAreaApi), instance, "instance is a CellsChartAreaApi");
         }
 
         
@@ -74,7 +64,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET3;
             int? chartIndex = 0;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsChartAreaGetChartArea(name, sheetName, chartIndex, folder);
             Assert.IsInstanceOf<ChartAreaResponse>(response, "response is ChartAreaResponse");
             Assert.AreEqual(response.Code, 200);
@@ -91,7 +81,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET3;
             int? chartIndex = 0;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsChartAreaGetChartAreaBorder(name, sheetName, chartIndex, folder);
             Assert.IsInstanceOf<LineResponse>(response, "response is LineResponse");
             Assert.AreEqual(response.Code, 200);
@@ -108,7 +98,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET3;
             int? chartIndex = 0;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsChartAreaGetChartAreaFillFormat(name, sheetName, chartIndex, folder);
             Assert.IsInstanceOf<FillFormatResponse>(response, "response is FillFormatResponse");
             Assert.AreEqual(response.Code, 200);

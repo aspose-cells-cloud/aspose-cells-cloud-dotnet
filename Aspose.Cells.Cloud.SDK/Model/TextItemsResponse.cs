@@ -37,7 +37,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class TextItemsResponse : SaaSposeResponse 
+  public class TextItemsResponse : CellsCloudResponse 
   {                       
         /// <summary>
         /// Gets or sets TextItems

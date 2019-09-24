@@ -37,7 +37,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class ChartsResponse : SaaSposeResponse 
+  public class ChartsResponse : CellsCloudResponse 
   {                       
         /// <summary>
         /// Gets or sets Charts

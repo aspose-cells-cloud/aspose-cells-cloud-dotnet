@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **IgnoreBlank** | **bool?** | Indicates whether blank values are permitted by the range data validation. | [optional] 
 **Value2** | **string** | Represents the first value associated with the data validation.              | [optional] 
 **Value1** | **string** | Represents the first value associated with the data validation. | [optional] 
-**_Operator** | **string** | Represents the operator for the data validation. Between,Equal,GreaterThan,GreaterOrEqual,LessThan,LessOrEqual,None,NotBetween,NotEqual | [optional] 
+**Operator** | **string** | Represents the operator for the data validation. Between,Equal,GreaterThan,GreaterOrEqual,LessThan,LessOrEqual,None,NotBetween,NotEqual | [optional] 
 **ErrorTitle** | **string** | Represents the title of the data-validation error dialog box. | [optional] 
 **Type** | **string** | Represents the data validation type. AnyValue ,WholeNumber,Decimal,List,Date,Time,TextLength,Custom              | [optional] 
 **InputMessage** | **string** | Represents the data validation input message. | [optional] 

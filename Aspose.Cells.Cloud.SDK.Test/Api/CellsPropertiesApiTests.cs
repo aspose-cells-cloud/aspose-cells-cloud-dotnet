@@ -33,14 +33,14 @@ namespace Aspose.Cells.Cloud.SDK.Test
     [TestFixture]
     public class CellsPropertiesApiTests:CellsBaseTest
     {
-        private CellsPropertiesApi instance;
+        private CellsApi instance;
         /// <summary>
         /// Setup before each unit test
         /// </summary>
         [SetUp]
         public void Init()
         {
-            instance = new CellsPropertiesApi(GetConfiguration());
+            instance = new CellsApi(clientId, clientSecret);;
         }
 
         /// <summary>
@@ -51,17 +51,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
         {
 
         }
-
-        /// <summary>
-        /// Test an instance of CellsPropertiesApi
-        /// </summary>
-        [Test]
-        public void InstanceTest()
-        {
-            // TODO uncomment below to test 'IsInstanceOfType' CellsPropertiesApi
-            Assert.IsInstanceOf(typeof(CellsPropertiesApi), instance, "instance is a CellsPropertiesApi");
-        }
-
         
         /// <summary>
         /// Test CellsPropertiesDeleteDocumentProperties
@@ -72,7 +61,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             // TODO uncomment below to test the method and replace null with proper value
             string name = BOOK1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPropertiesDeleteDocumentProperties(name, folder);
             Assert.IsInstanceOf<CellsDocumentPropertiesResponse>(response, "response is CellsDocumentPropertiesResponse");
             Assert.AreEqual(response.Code, 200);
@@ -88,7 +77,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string propertyName = "Author";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPropertiesDeleteDocumentProperty(name, propertyName, folder);
             Assert.IsInstanceOf<CellsDocumentPropertiesResponse>(response, "response is CellsDocumentPropertiesResponse");
             Assert.AreEqual(response.Code, 200);
@@ -103,7 +92,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             // TODO uncomment below to test the method and replace null with proper value
             string name = BOOK1;
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPropertiesGetDocumentProperties(name, folder);
             Assert.IsInstanceOf<CellsDocumentPropertiesResponse>(response, "response is CellsDocumentPropertiesResponse");
             Assert.AreEqual(response.Code, 200);
@@ -119,7 +108,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string propertyName = "Author";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPropertiesGetDocumentProperty(name, propertyName, folder);
             Assert.IsInstanceOf<CellsDocumentPropertyResponse>(response, "response is CellsDocumentPropertyResponse");
             Assert.AreEqual(response.Code, 200);
@@ -139,7 +128,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             property.Name = "Author";
             property.Value = "Val";
             string folder = TEMPFOLDER;
-            UpdateDataFile(folder, name);
+            UpdateDataFile(instance,folder, name);
             var response = instance.CellsPropertiesPutDocumentProperty(name, propertyName, property, folder);
             Assert.IsInstanceOf<CellsDocumentPropertyResponse>(response, "response is CellsDocumentPropertyResponse");
             Assert.AreEqual(response.Code, 201);

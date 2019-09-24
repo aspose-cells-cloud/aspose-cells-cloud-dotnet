@@ -37,7 +37,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class AutoFilterResponse : SaaSposeResponse 
+  public class AutoFilterResponse : CellsCloudResponse 
   {                       
         /// <summary>
         /// Gets or sets AutoFilter
