@@ -33,6 +33,7 @@ using System.Net;
 using System.Text;
 using Newtonsoft.Json;
 using RestSharp;
+using Aspose.Cells.Cloud.SDK.Model;
 
 namespace Aspose.Cells.Cloud.SDK.Client
 {
@@ -41,6 +42,8 @@ namespace Aspose.Cells.Cloud.SDK.Client
     /// </summary>
     public partial class ApiClient
     {
+        private Aspose.Cells.Cloud.SDK.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
+
         private JsonSerializerSettings serializerSettings = new JsonSerializerSettings
         {
             ConstructorHandling = ConstructorHandling.AllowNonPublicDefaultConstructor
@@ -97,7 +100,84 @@ namespace Aspose.Cells.Cloud.SDK.Client
             RestClient = new RestClient(basePath);
             Configuration = Configuration.Default;
         }
+        /// <summary>
+        /// Provides a factory method hook for the creation of exceptions.
+        /// </summary>
+        public Aspose.Cells.Cloud.SDK.Client.ExceptionFactory ExceptionFactory
+        {
+            get
+            {
+                if (_exceptionFactory != null && _exceptionFactory.GetInvocationList().Length > 1)
+                {
+                    throw new InvalidOperationException("Multicast delegate for ExceptionFactory is unsupported.");
+                }
+                return _exceptionFactory;
+            }
+            set { _exceptionFactory = value; }
+        }
+        /// <summary>
+        /// Get access token
+        /// </summary>
+        /// <param name="grantType"></param>
+        /// <param name="clientId"></param>
+        /// <param name="clientSecret"></param>
+        /// <param name="OAuthPattern"></param>
+        /// <returns></returns>
+        public string GetAccessToken(string grantType, string clientId, string clientSecret,string OAuthPattern)
+        {
+            // verify the required parameter 'grantType' is set
+            if (grantType == null)
+                throw new ApiException(400, "Missing required parameter 'grantType' when calling ApiClient->GetAccessToken");
+            // verify the required parameter 'clientId' is set
+            if (clientId == null)
+                throw new ApiException(400, "Missing required parameter 'clientId' when calling ApiClient->GetAccessToken");
+            // verify the required parameter 'clientSecret' is set
+            if (clientSecret == null)
+                throw new ApiException(400, "Missing required parameter 'clientSecret' when calling ApiClient->GetAccessToken");
+            if (OAuthPattern == null)
+                throw new ApiException(400, "Missing required parameter 'OAuthUri' when calling ApiClient->GetAccessToken");
 
+            var localVarPath = OAuthPattern;// "/connect/token";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/x-www-form-urlencoded"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (grantType != null) localVarFormParams.Add("grant_type", Configuration.ApiClient.ParameterToString(grantType)); // form parameter
+            if (clientId != null) localVarFormParams.Add("client_id", Configuration.ApiClient.ParameterToString(clientId)); // form parameter
+            if (clientSecret != null) localVarFormParams.Add("client_secret", Configuration.ApiClient.ParameterToString(clientSecret)); // form parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("OAuthPost", localVarResponse);
+                if (exception != null) throw exception;
+            }
+            return ((AccessTokenResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(AccessTokenResponse))).AccessToken;
+        }
         /// <summary>
         /// Gets or sets the default API client for making HTTP calls.
         /// </summary>

@@ -561,8 +561,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string sheetName = SHEET1;
             string cellName = CellName;
             string folder = TEMPFOLDER;
+            string htmlString = "https://api.aspose.cloud/v3.0/cells";
             UpdateDataFile(instance,TEMPFOLDER, BOOK1);
-            var response = instance.CellsPostSetCellHtmlString(name, sheetName, cellName, folder);
+            var response = instance.CellsPostSetCellHtmlString(name, sheetName, cellName, System.Text.Encoding.Default.GetBytes(htmlString),folder);
             Assert.IsInstanceOf<CellResponse>(response, "response is CellResponse");
             Assert.AreEqual(response.Status, "OK");
         }

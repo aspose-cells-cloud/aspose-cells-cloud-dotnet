@@ -68,7 +68,21 @@ namespace Aspose.Cells.Cloud.SDK.Test
             Assert.IsInstanceOf<ValidationResponse>(response, "response is ValidationResponse");
             Assert.AreEqual(response.Code, 200);
         }
-        
+
+        /// <summary>
+        /// Test CellsWorksheetValidationsDeleteWorkSheetValidations
+        /// </summary>
+        [Test]
+        public void CellsWorksheetValidationsDeleteWorkSheetValidationsTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            string name = BOOK1;
+            string sheetName = SHEET1;
+            string folder = TEMPFOLDER;
+            UpdateDataFile(instance, folder, name);
+            var response = instance.CellsWorksheetValidationsDeleteWorksheetValidations(name, sheetName, folder);
+            Assert.AreEqual(response.Code, 200);
+        }
         /// <summary>
         /// Test CellsWorksheetValidationsGetWorkSheetValidation
         /// </summary>

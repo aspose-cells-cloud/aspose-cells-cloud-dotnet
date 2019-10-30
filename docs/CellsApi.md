@@ -198,6 +198,7 @@ Method | HTTP request | Description
 [**CellsWorkbookPutDocumentProtectFromChanges**](CellsApi.md#cellsworkbookputdocumentprotectfromchanges) | **PUT** /cells/{name}/writeProtection | Protect document from changes.
 [**CellsWorkbookPutWorkbookCreate**](CellsApi.md#cellsworkbookputworkbookcreate) | **PUT** /cells/{name} | Create new workbook using deferent methods.
 [**CellsWorksheetValidationsDeleteWorksheetValidation**](CellsApi.md#cellsworksheetvalidationsdeleteworksheetvalidation) | **DELETE** /cells/{name}/worksheets/{sheetName}/validations/{validationIndex} | Delete worksheet validation by index.
+[**CellsWorksheetValidationsDeleteWorksheetValidations**](CellsApi.md#cellsworksheetvalidationsdeleteworksheetvalidations) | **DELETE** /cells/{name}/worksheets/{sheetName}/validations | Clear all validation in worksheet.
 [**CellsWorksheetValidationsGetWorksheetValidation**](CellsApi.md#cellsworksheetvalidationsgetworksheetvalidation) | **GET** /cells/{name}/worksheets/{sheetName}/validations/{validationIndex} | Get worksheet validation by index.
 [**CellsWorksheetValidationsGetWorksheetValidations**](CellsApi.md#cellsworksheetvalidationsgetworksheetvalidations) | **GET** /cells/{name}/worksheets/{sheetName}/validations | Get worksheet validations.
 [**CellsWorksheetValidationsPostWorksheetValidation**](CellsApi.md#cellsworksheetvalidationspostworksheetvalidation) | **POST** /cells/{name}/worksheets/{sheetName}/validations/{validationIndex} | Update worksheet validation by index.
@@ -2850,7 +2851,7 @@ No authorization required
 
 <a name="cellsconditionalformattingsputworksheetconditionalformatting"></a>
 # **CellsConditionalFormattingsPutWorksheetConditionalFormatting**
-> CellsCloudResponse CellsConditionalFormattingsPutWorksheetConditionalFormatting (string name, string sheetName, string cellArea, FormatCondition formatcondition = null, string folder = null, string storage = null)
+> CellsCloudResponse CellsConditionalFormattingsPutWorksheetConditionalFormatting (string name, string sheetName, string cellArea, FormatCondition formatCondition = null, string folder = null, string storage = null)
 
 Add a condition formatting.
 
@@ -2872,14 +2873,14 @@ namespace Example
             var name = name_example;  // string | 
             var sheetName = sheetName_example;  // string | 
             var cellArea = cellArea_example;  // string | 
-            var formatcondition = new FormatCondition(); // FormatCondition |  (optional) 
+            var formatCondition = new FormatCondition(); // FormatCondition |  (optional) 
             var folder = folder_example;  // string |  (optional) 
             var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Add a condition formatting.
-                CellsCloudResponse result = apiInstance.CellsConditionalFormattingsPutWorksheetConditionalFormatting(name, sheetName, cellArea, formatcondition, folder, storage);
+                CellsCloudResponse result = apiInstance.CellsConditionalFormattingsPutWorksheetConditionalFormatting(name, sheetName, cellArea, formatCondition, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2898,7 +2899,7 @@ Name | Type | Description  | Notes
  **name** | **string**|  | 
  **sheetName** | **string**|  | 
  **cellArea** | **string**|  | 
- **formatcondition** | [**FormatCondition**](FormatCondition.md)|  | [optional] 
+ **formatCondition** | [**FormatCondition**](FormatCondition.md)|  | [optional] 
  **folder** | **string**|  | [optional] 
  **storage** | **string**| storage name. | [optional] 
 
@@ -9131,7 +9132,7 @@ No authorization required
 
 <a name="cellspostsetcellhtmlstring"></a>
 # **CellsPostSetCellHtmlString**
-> CellResponse CellsPostSetCellHtmlString (string name, string sheetName, string cellName, string folder = null, string storage = null)
+> CellResponse CellsPostSetCellHtmlString (string name, string sheetName, string cellName, byte[] htmlString, string folder = null, string storage = null)
 
 Set htmlstring value into cell
 
@@ -9153,13 +9154,14 @@ namespace Example
             var name = name_example;  // string | Workbook name.
             var sheetName = sheetName_example;  // string | Worksheet name.
             var cellName = cellName_example;  // string | The cell name.
+            var htmlString = BINARY_DATA_HERE;  // byte[] | 
             var folder = folder_example;  // string | The workbook folder. (optional) 
             var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Set htmlstring value into cell
-                CellResponse result = apiInstance.CellsPostSetCellHtmlString(name, sheetName, cellName, folder, storage);
+                CellResponse result = apiInstance.CellsPostSetCellHtmlString(name, sheetName, cellName, htmlString, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -9178,6 +9180,7 @@ Name | Type | Description  | Notes
  **name** | **string**| Workbook name. | 
  **sheetName** | **string**| Worksheet name. | 
  **cellName** | **string**| The cell name. | 
+ **htmlString** | **byte[]**|  | 
  **folder** | **string**| The workbook folder. | [optional] 
  **storage** | **string**| storage name. | [optional] 
 
@@ -12724,7 +12727,7 @@ No authorization required
 
 <a name="cellsworkbookpostimportdata"></a>
 # **CellsWorkbookPostImportData**
-> CellsCloudResponse CellsWorkbookPostImportData (string name, ImportOption importdata, string folder = null, string storage = null)
+> CellsCloudResponse CellsWorkbookPostImportData (string name, ImportOption importData, string folder = null, string storage = null)
 
 
 
@@ -12744,13 +12747,13 @@ namespace Example
         {
             var apiInstance = new CellsApi();
             var name = name_example;  // string | 
-            var importdata = new ImportOption(); // ImportOption | 
+            var importData = new ImportOption(); // ImportOption | 
             var folder = folder_example;  // string |  (optional) 
             var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
-                CellsCloudResponse result = apiInstance.CellsWorkbookPostImportData(name, importdata, folder, storage);
+                CellsCloudResponse result = apiInstance.CellsWorkbookPostImportData(name, importData, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -12767,7 +12770,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**|  | 
- **importdata** | [**ImportOption**](ImportOption.md)|  | 
+ **importData** | [**ImportOption**](ImportOption.md)|  | 
  **folder** | **string**|  | [optional] 
  **storage** | **string**| storage name. | [optional] 
 
@@ -13572,6 +13575,71 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ValidationResponse**](ValidationResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="cellsworksheetvalidationsdeleteworksheetvalidations"></a>
+# **CellsWorksheetValidationsDeleteWorksheetValidations**
+> CellsCloudResponse CellsWorksheetValidationsDeleteWorksheetValidations (string name, string sheetName, string folder = null, string storage = null)
+
+Clear all validation in worksheet.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+namespace Example
+{
+    public class CellsWorksheetValidationsDeleteWorksheetValidationsExample
+    {
+        public void main()
+        {
+            var apiInstance = new CellsApi();
+            var name = name_example;  // string | Document name.
+            var sheetName = sheetName_example;  // string | Worksheet name.
+            var folder = folder_example;  // string | Document's folder. (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
+
+            try
+            {
+                // Clear all validation in worksheet.
+                CellsCloudResponse result = apiInstance.CellsWorksheetValidationsDeleteWorksheetValidations(name, sheetName, folder, storage);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CellsApi.CellsWorksheetValidationsDeleteWorksheetValidations: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| Document name. | 
+ **sheetName** | **string**| Worksheet name. | 
+ **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storage** | **string**| storage name. | [optional] 
+
+### Return type
+
+[**CellsCloudResponse**](CellsCloudResponse.md)
 
 ### Authorization
 
