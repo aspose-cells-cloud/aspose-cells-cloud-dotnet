@@ -1,6 +1,6 @@
 /* 
  * <summary>
- *  Copyright (c) 2019 Aspose.Cells Cloud
+ *  Copyright (c) 2020 Aspose.Cells Cloud
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
  *  of this software and associated documentation files (the "Software"), to deal
  *  in the Software without restriction, including without limitation the rights
@@ -16294,6 +16294,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = colorFilter; // byte array
+                if ( "CellsAutoFilterPutWorksheetColorFilter" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -20040,6 +20044,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = chart; // byte array
+                if ( "CellsChartsPostWorksheetChart" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -20231,6 +20239,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = legend; // byte array
+                if ( "CellsChartsPostWorksheetChartLegend" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -20422,6 +20434,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = title; // byte array
+                if ( "CellsChartsPostWorksheetChartTitle" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -21009,6 +21025,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = title; // byte array
+                if ( "CellsChartsPutWorksheetChartTitle" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -22067,6 +22087,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = formatCondition; // byte array
+                if ( "CellsConditionalFormattingsPutWorksheetConditionalFormatting" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -25444,6 +25468,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = hyperlink; // byte array
+                if ( "CellsHypelinksPostWorksheetHyperlink" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -26514,6 +26542,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = listObject; // byte array
+                if ( "CellsListObjectsPostWorksheetListObject" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -26876,6 +26908,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = dataSorter; // byte array
+                if ( "CellsListObjectsPostWorksheetListObjectSortTable" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -27073,6 +27109,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = request; // byte array
+                if ( "CellsListObjectsPostWorksheetListObjectSummarizeWithPivotTable" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -27291,6 +27331,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = listObject; // byte array
+                if ( "CellsListObjectsPutWorksheetListObject" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -28169,6 +28213,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = ole; // byte array
+                if ( "CellsOleObjectsPostUpdateWorksheetOleObject" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -28372,6 +28420,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = oleObject; // byte array
+                if ( "CellsOleObjectsPutWorksheetOleObject" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -31305,6 +31357,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = pageSetup; // byte array
+                if ( "CellsPageSetupPostPageSetup" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -32156,6 +32212,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = picture; // byte array
+                if ( "CellsPicturesPostWorksheetPicture" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -32356,6 +32416,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = picture; // byte array
+                if ( "CellsPicturesPutWorksheetAddPicture" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -32562,6 +32626,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = request; // byte array
+                if ( "CellsPivotTablesDeletePivotTableField" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -34349,6 +34417,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = style; // byte array
+                if ( "CellsPivotTablesPostPivotTableCellStyle" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -34990,6 +35062,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = style; // byte array
+                if ( "CellsPivotTablesPostPivotTableStyle" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -35553,6 +35629,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = request; // byte array
+                if ( "CellsPivotTablesPutPivotTableField" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -35759,6 +35839,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = request; // byte array
+                if ( "CellsPivotTablesPutWorksheetPivotTable" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -35959,6 +36043,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = filter; // byte array
+                if ( "CellsPivotTablesPutWorksheetPivotTableFilter" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -36153,6 +36241,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = options; // byte array
+                if ( "CellsPostCellCalculate" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -36344,6 +36436,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = options; // byte array
+                if ( "CellsPostCellCharacters" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -36913,6 +37009,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = style; // byte array
+                if ( "CellsPostColumnStyle" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -38451,6 +38551,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = style; // byte array
+                if ( "CellsPostRowStyle" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -38645,6 +38749,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = htmlString; // byte array
+                if ( "CellsPostSetCellHtmlString" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -39967,6 +40075,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = style; // byte array
+                if ( "CellsPostUpdateWorksheetCellStyle" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -40158,6 +40270,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = style; // byte array
+                if ( "CellsPostUpdateWorksheetRangeStyle" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -41735,6 +41851,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = property; // byte array
+                if ( "CellsPropertiesPutDocumentProperty" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -42652,6 +42772,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = range; // byte array
+                if ( "CellsRangesPostWorksheetCellsRangeColumnWidth" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -42837,6 +42961,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = range; // byte array
+                if ( "CellsRangesPostWorksheetCellsRangeMerge" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -43028,6 +43156,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = range; // byte array
+                if ( "CellsRangesPostWorksheetCellsRangeMoveTo" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -43219,6 +43351,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = rangeOperate; // byte array
+                if ( "CellsRangesPostWorksheetCellsRangeOutlineBorder" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -43404,6 +43540,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = range; // byte array
+                if ( "CellsRangesPostWorksheetCellsRangeRowHeight" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -43589,6 +43729,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = rangeOperate; // byte array
+                if ( "CellsRangesPostWorksheetCellsRangeStyle" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -43768,6 +43912,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = range; // byte array
+                if ( "CellsRangesPostWorksheetCellsRangeUnmerge" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -43959,6 +44107,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = range; // byte array
+                if ( "CellsRangesPostWorksheetCellsRangeValue" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -44150,6 +44302,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = rangeOperate; // byte array
+                if ( "CellsRangesPostWorksheetCellsRanges" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -44332,6 +44488,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = saveOptions; // byte array
+                if ( "CellsSaveAsPostDocumentSaveAs" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -45180,6 +45340,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = dto; // byte array
+                if ( "CellsShapesPostWorksheetShape" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -45593,6 +45757,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = taskData; // byte array
+                if ( "CellsTaskPostRunTask" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -45751,6 +45919,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = encryption; // byte array
+                if ( "CellsWorkbookDeleteDecryptDocument" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -46065,6 +46237,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = protection; // byte array
+                if ( "CellsWorkbookDeleteUnprotectDocument" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -47630,6 +47806,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = autoFitterOptions; // byte array
+                if ( "CellsWorkbookPostAutofitWorkbookRows" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -47806,6 +47986,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = encryption; // byte array
+                if ( "CellsWorkbookPostEncryptDocument" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -47976,6 +48160,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = importData; // byte array
+                if ( "CellsWorkbookPostImportData" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -48146,6 +48334,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = protection; // byte array
+                if ( "CellsWorkbookPostProtectDocument" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -48316,6 +48508,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = options; // byte array
+                if ( "CellsWorkbookPostWorkbookCalculateFormula" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -48645,6 +48841,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = settings; // byte array
+                if ( "CellsWorkbookPostWorkbookSettings" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -49478,6 +49678,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = workbook; // byte array
+                if ( "CellsWorkbookPutConvertWorkbook" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -49645,6 +49849,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = password; // byte array
+                if ( "CellsWorkbookPutDocumentProtectFromChanges" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -50643,6 +50851,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = validation; // byte array
+                if ( "CellsWorksheetValidationsPostWorksheetValidation" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -50831,6 +51043,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = validation; // byte array
+                if ( "CellsWorksheetValidationsPutWorksheetValidation" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -51013,6 +51229,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = protectParameter; // byte array
+                if ( "CellsWorksheetsDeleteUnprotectWorksheet" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -53526,6 +53746,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = autoFitterOptions; // byte array
+                if ( "CellsWorksheetsPostAutofitWorksheetColumns" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -53741,6 +53965,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = autoFitterOptions; // byte array
+                if ( "CellsWorksheetsPostAutofitWorksheetRow" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -53947,6 +54175,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = autoFitterOptions; // byte array
+                if ( "CellsWorksheetsPostAutofitWorksheetRows" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -54147,6 +54379,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = options; // byte array
+                if ( "CellsWorksheetsPostCopyWorksheet" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -54338,6 +54574,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = moving; // byte array
+                if ( "CellsWorksheetsPostMoveWorksheet" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -54688,6 +54928,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = sheet; // byte array
+                if ( "CellsWorksheetsPostUpdateWorksheetProperty" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -55044,6 +55288,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = comment; // byte array
+                if ( "CellsWorksheetsPostWorksheetComment" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -55235,6 +55483,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = dataSorter; // byte array
+                if ( "CellsWorksheetsPostWorksheetRangeSort" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -56116,6 +56368,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = protectParameter; // byte array
+                if ( "CellsWorksheetsPutProtectWorksheet" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -56298,6 +56554,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = png; // byte array
+                if ( "CellsWorksheetsPutWorksheetBackground" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 
@@ -56486,6 +56746,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             else
             {
                 localVarPostBody = comment; // byte array
+                if ( "CellsWorksheetsPutWorksheetComment" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
             }
 
 

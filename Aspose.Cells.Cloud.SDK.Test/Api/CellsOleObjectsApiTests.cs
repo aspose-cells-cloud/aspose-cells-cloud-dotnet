@@ -164,8 +164,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
             oleObject.Height = 100;
             oleObject.ImageSourceFullName = imageFile;
             oleObject.SourceFullName = oleFile;
-            oleObject.Bottom = 0;
-            oleObject.Top = 0;
             oleObject = null;
             UpdateDataFile(instance,folder, name);
             UpdateDataFile(instance, oleFile);

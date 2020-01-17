@@ -166,10 +166,26 @@ namespace Aspose.Cells.Cloud.SDK.Test
             ColorFilterRequest colorFilter = new ColorFilterRequest();
             Color color = new Color();//0, 255, 245, 2
             color.R = 255;
-            color.G = 245;
+            color.A = 245;
+            color.B = 245;
+            color.G = 0;
 
             colorFilter.ForegroundColor = new CellsColor();
             colorFilter.ForegroundColor.Color = color;
+            colorFilter.ForegroundColor.ThemeColor = new ThemeColor();
+            colorFilter.ForegroundColor.ThemeColor.ColorType = "Text2";
+            colorFilter.ForegroundColor.ThemeColor.Tint =1;
+            colorFilter.ForegroundColor.Type = "Automatic";
+            colorFilter.BackgroundColor = new CellsColor();
+            colorFilter.BackgroundColor.Color = new Color();
+            colorFilter.BackgroundColor.Color.A = 255;
+            colorFilter.BackgroundColor.Color.R = 255;
+            colorFilter.BackgroundColor.Color.B = 0;
+            colorFilter.BackgroundColor.Color.G = 0;
+            colorFilter.BackgroundColor.ThemeColor = new ThemeColor();
+            colorFilter.BackgroundColor.ThemeColor.ColorType = "Text2";
+            colorFilter.BackgroundColor.ThemeColor.Tint = 1;
+            colorFilter.BackgroundColor.Type = "Automatic";
             colorFilter.Pattern = "Solid";
             bool? matchBlanks = true;
             bool? refresh = true;
