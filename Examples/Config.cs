@@ -18,8 +18,8 @@ namespace cells_cloud_charp
         protected static Configuration config;
         protected static OAuthApi oauth2 = null;
         protected static string grantType = "client_credentials";
-        protected static string clientId = "78946fb4-3bd4-4d3e-b309-f9e2ff9ac6f9";
-        protected static string clientSecret = "b125f13bf6b76ed81ee990142d841195";
+        protected static string clientId = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
+        protected static string clientSecret = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
         protected static string accesstoken;
         protected static string refreshtoken;
         public Configuration GetConfiguration()

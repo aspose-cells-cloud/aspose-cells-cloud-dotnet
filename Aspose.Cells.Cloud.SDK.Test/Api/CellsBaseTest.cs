@@ -13,8 +13,8 @@ namespace Aspose.Cells.Cloud.SDK.Test
         protected ApiClient client;
         protected Client.Configuration config;
         protected string grantType = "client_credentials";
-        protected string clientId = "66164C51-693E-4904-A121-545961673EC1";
-        protected string clientSecret = "536e76768419db9585afdd37bb5f7533";
+        protected string clientId = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
+        protected string clientSecret = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
         protected static string accesstoken;
         protected string refreshtoken;
         protected string BOOK1 = "Book1.xlsx";

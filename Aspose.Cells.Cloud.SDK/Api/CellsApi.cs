@@ -15030,6 +15030,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
     public partial class CellsApi : ICellsApi
     {
         private Aspose.Cells.Cloud.SDK.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
+        private const string _grantType = "client_credentials";
+        private string _clientId;
+        private string _clientSecret;
+        private string _OAuthPattern;
+        private string _version;
+        private DateTime _getAccessTokenTime;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CellsApi"/> class.
@@ -15057,29 +15063,21 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="version"></param>
         public CellsApi(String appSID,String appKey, String version = "v3.0")
         {
-            ApiClient apiClient = new ApiClient("https://api.aspose.cloud/");
-            
-            string accessToken = null;
-            switch (version)
+            _clientId = appSID;
+            _clientSecret = appKey;
+            _version = version;
+            switch (_version)
             {
                 case "v3.0":
-                    accessToken = apiClient.GetAccessToken("client_credentials", appSID, appKey, "/connect/token");
+                    _OAuthPattern = "/connect/token";
                     break;
                 case "v1.1":
-                    accessToken = apiClient.GetAccessToken("client_credentials", appSID, appKey, "/oauth2/token");
+                    _OAuthPattern = "/oauth2/token";
                     break;
                 default:
-                    throw new InvalidOperationException(String.Format("Version {0} is unsupported.",version));
+                    throw new InvalidOperationException(String.Format("Version {0} is unsupported.", version));
             }
-            if(String.IsNullOrEmpty(accessToken))
-            {
-              throw  new ApiException(400, "Get access token  fails.");
-            }
-
-            Configuration = new Configuration();
-            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
-            headerParameters.Add("Authorization", "Bearer " + accessToken);
-            this.Configuration =  new Configuration(new ApiClient("https://api.aspose.cloud/" +version), headerParameters);
+            UpdateAccessToken( getAccessToken());
             ExceptionFactory =  Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
@@ -15088,7 +15086,37 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 this.Configuration.ApiClient.Configuration = this.Configuration;
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        public void checkAccessToken()
+        {
+            if(DateTime.Now > _getAccessTokenTime.AddMinutes(1420))
+            {
+                UpdateAccessToken( getAccessToken());
+            }
+        }
+       
+        private string getAccessToken()
+        {
+            ApiClient apiClient = new ApiClient("https://api.aspose.cloud/");
+            string accessToken = apiClient.GetAccessToken("client_credentials", _clientId, _clientSecret, _OAuthPattern);
+            _getAccessTokenTime = DateTime.Now;
+            if (String.IsNullOrEmpty(accessToken))
+            {
+                throw new ApiException(400, "Get access token  fails.");
+            }
+            return accessToken;
+        }
 
+        private void UpdateAccessToken(string accessToken)
+        {
+            Configuration = new Configuration();
+            Dictionary<string, string> headerParameters = new Dictionary<string, string>();
+            headerParameters.Add("Authorization", "Bearer " + accessToken);
+            this.Configuration = new Configuration(new ApiClient("https://api.aspose.cloud/" + _version), headerParameters);
+        }
+        
         /// <summary>
         /// Gets the base path of the API client.
         /// </summary>
@@ -15171,6 +15199,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsAutoFilterDeleteWorksheetDateFilter (string name, string sheetName, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsAutoFilterDeleteWorksheetDateFilterWithHttpInfo(name, sheetName, fieldIndex, dateTimeGroupingType, year, month, day, hour, minute, second, folder, storage);
              return localVarResponse.Data;
         }
@@ -15384,6 +15413,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsAutoFilterDeleteWorksheetFilter (string name, string sheetName, int? fieldIndex, string criteria = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsAutoFilterDeleteWorksheetFilterWithHttpInfo(name, sheetName, fieldIndex, criteria, folder, storage);
              return localVarResponse.Data;
         }
@@ -15559,6 +15589,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>AutoFilterResponse</returns>
         public AutoFilterResponse CellsAutoFilterGetWorksheetAutoFilter (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<AutoFilterResponse> localVarResponse = CellsAutoFilterGetWorksheetAutoFilterWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -15718,6 +15749,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsAutoFilterPostWorksheetAutoFilterRefresh (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsAutoFilterPostWorksheetAutoFilterRefreshWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -15878,6 +15910,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsAutoFilterPostWorksheetMatchBlanks (string name, string sheetName, int? fieldIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsAutoFilterPostWorksheetMatchBlanksWithHttpInfo(name, sheetName, fieldIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -16049,6 +16082,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsAutoFilterPostWorksheetMatchNonBlanks (string name, string sheetName, int? fieldIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsAutoFilterPostWorksheetMatchNonBlanksWithHttpInfo(name, sheetName, fieldIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -16224,6 +16258,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsAutoFilterPutWorksheetColorFilter (string name, string sheetName, string range, int? fieldIndex, ColorFilterRequest colorFilter = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsAutoFilterPutWorksheetColorFilterWithHttpInfo(name, sheetName, range, fieldIndex, colorFilter, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
         }
@@ -16447,6 +16482,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsAutoFilterPutWorksheetCustomFilter (string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsAutoFilterPutWorksheetCustomFilterWithHttpInfo(name, sheetName, range, fieldIndex, operatorType1, criteria1, isAnd, operatorType2, criteria2, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
         }
@@ -16686,6 +16722,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsAutoFilterPutWorksheetDateFilter (string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsAutoFilterPutWorksheetDateFilterWithHttpInfo(name, sheetName, range, fieldIndex, dateTimeGroupingType, year, month, day, hour, minute, second, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
         }
@@ -16923,6 +16960,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsAutoFilterPutWorksheetDynamicFilter (string name, string sheetName, string range, int? fieldIndex, string dynamicFilterType, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsAutoFilterPutWorksheetDynamicFilterWithHttpInfo(name, sheetName, range, fieldIndex, dynamicFilterType, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
         }
@@ -17130,6 +17168,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsAutoFilterPutWorksheetFilter (string name, string sheetName, string range, int? fieldIndex, string criteria, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsAutoFilterPutWorksheetFilterWithHttpInfo(name, sheetName, range, fieldIndex, criteria, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
         }
@@ -17339,6 +17378,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsAutoFilterPutWorksheetFilterTop10 (string name, string sheetName, string range, int? fieldIndex, bool? isTop, bool? isPercent, int? itemCount, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsAutoFilterPutWorksheetFilterTop10WithHttpInfo(name, sheetName, range, fieldIndex, isTop, isPercent, itemCount, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
         }
@@ -17569,6 +17609,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsAutoFilterPutWorksheetIconFilter (string name, string sheetName, string range, int? fieldIndex, string iconSetType, int? iconId, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsAutoFilterPutWorksheetIconFilterWithHttpInfo(name, sheetName, range, fieldIndex, iconSetType, iconId, matchBlanks, refresh, folder, storage);
              return localVarResponse.Data;
         }
@@ -17784,6 +17825,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>System.IO.Stream</returns>
         public System.IO.Stream CellsAutoshapesGetWorksheetAutoshape (string name, string sheetName, int? autoshapeNumber, string format = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<System.IO.Stream> localVarResponse = CellsAutoshapesGetWorksheetAutoshapeWithHttpInfo(name, sheetName, autoshapeNumber, format, folder, storage);
              return localVarResponse.Data;
         }
@@ -17959,6 +18001,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>AutoShapesResponse</returns>
         public AutoShapesResponse CellsAutoshapesGetWorksheetAutoshapes (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<AutoShapesResponse> localVarResponse = CellsAutoshapesGetWorksheetAutoshapesWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -18119,6 +18162,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ChartAreaResponse</returns>
         public ChartAreaResponse CellsChartAreaGetChartArea (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ChartAreaResponse> localVarResponse = CellsChartAreaGetChartAreaWithHttpInfo(name, sheetName, chartIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -18290,6 +18334,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>LineResponse</returns>
         public LineResponse CellsChartAreaGetChartAreaBorder (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<LineResponse> localVarResponse = CellsChartAreaGetChartAreaBorderWithHttpInfo(name, sheetName, chartIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -18461,6 +18506,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>FillFormatResponse</returns>
         public FillFormatResponse CellsChartAreaGetChartAreaFillFormat (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<FillFormatResponse> localVarResponse = CellsChartAreaGetChartAreaFillFormatWithHttpInfo(name, sheetName, chartIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -18632,6 +18678,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsChartsDeleteWorksheetChartLegend (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsChartsDeleteWorksheetChartLegendWithHttpInfo(name, sheetName, chartIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -18803,6 +18850,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsChartsDeleteWorksheetChartTitle (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsChartsDeleteWorksheetChartTitleWithHttpInfo(name, sheetName, chartIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -18973,6 +19021,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsChartsDeleteWorksheetClearCharts (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsChartsDeleteWorksheetClearChartsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -19133,6 +19182,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ChartsResponse</returns>
         public ChartsResponse CellsChartsDeleteWorksheetDeleteChart (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ChartsResponse> localVarResponse = CellsChartsDeleteWorksheetDeleteChartWithHttpInfo(name, sheetName, chartIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -19305,6 +19355,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>System.IO.Stream</returns>
         public System.IO.Stream CellsChartsGetWorksheetChart (string name, string sheetName, int? chartNumber, string format = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<System.IO.Stream> localVarResponse = CellsChartsGetWorksheetChartWithHttpInfo(name, sheetName, chartNumber, format, folder, storage);
              return localVarResponse.Data;
         }
@@ -19481,6 +19532,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>LegendResponse</returns>
         public LegendResponse CellsChartsGetWorksheetChartLegend (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<LegendResponse> localVarResponse = CellsChartsGetWorksheetChartLegendWithHttpInfo(name, sheetName, chartIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -19652,6 +19704,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>TitleResponse</returns>
         public TitleResponse CellsChartsGetWorksheetChartTitle (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<TitleResponse> localVarResponse = CellsChartsGetWorksheetChartTitleWithHttpInfo(name, sheetName, chartIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -19822,6 +19875,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ChartsResponse</returns>
         public ChartsResponse CellsChartsGetWorksheetCharts (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ChartsResponse> localVarResponse = CellsChartsGetWorksheetChartsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -19983,6 +20037,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsChartsPostWorksheetChart (string name, string sheetName, int? chartIndex, Chart chart = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsChartsPostWorksheetChartWithHttpInfo(name, sheetName, chartIndex, chart, folder, storage);
              return localVarResponse.Data;
         }
@@ -20178,6 +20233,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>LegendResponse</returns>
         public LegendResponse CellsChartsPostWorksheetChartLegend (string name, string sheetName, int? chartIndex, Legend legend = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<LegendResponse> localVarResponse = CellsChartsPostWorksheetChartLegendWithHttpInfo(name, sheetName, chartIndex, legend, folder, storage);
              return localVarResponse.Data;
         }
@@ -20373,6 +20429,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>TitleResponse</returns>
         public TitleResponse CellsChartsPostWorksheetChartTitle (string name, string sheetName, int? chartIndex, Title title = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<TitleResponse> localVarResponse = CellsChartsPostWorksheetChartTitleWithHttpInfo(name, sheetName, chartIndex, title, folder, storage);
              return localVarResponse.Data;
         }
@@ -20576,6 +20633,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ChartsResponse</returns>
         public ChartsResponse CellsChartsPutWorksheetAddChart (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ChartsResponse> localVarResponse = CellsChartsPutWorksheetAddChartWithHttpInfo(name, sheetName, chartType, upperLeftRow, upperLeftColumn, lowerRightRow, lowerRightColumn, area, isVertical, categoryData, isAutoGetSerialName, title, folder, storage);
              return localVarResponse.Data;
         }
@@ -20792,6 +20850,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsChartsPutWorksheetChartLegend (string name, string sheetName, int? chartIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsChartsPutWorksheetChartLegendWithHttpInfo(name, sheetName, chartIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -20964,6 +21023,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>TitleResponse</returns>
         public TitleResponse CellsChartsPutWorksheetChartTitle (string name, string sheetName, int? chartIndex, Title title = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<TitleResponse> localVarResponse = CellsChartsPutWorksheetChartTitleWithHttpInfo(name, sheetName, chartIndex, title, folder, storage);
              return localVarResponse.Data;
         }
@@ -21158,6 +21218,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormatting (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsConditionalFormattingsDeleteWorksheetConditionalFormattingWithHttpInfo(name, sheetName, index, folder, storage);
              return localVarResponse.Data;
         }
@@ -21332,6 +21393,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormattingArea (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsConditionalFormattingsDeleteWorksheetConditionalFormattingAreaWithHttpInfo(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder, storage);
              return localVarResponse.Data;
         }
@@ -21535,6 +21597,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsConditionalFormattingsDeleteWorksheetConditionalFormattings (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsConditionalFormattingsDeleteWorksheetConditionalFormattingsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -21695,6 +21758,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ConditionalFormattingResponse</returns>
         public ConditionalFormattingResponse CellsConditionalFormattingsGetWorksheetConditionalFormatting (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ConditionalFormattingResponse> localVarResponse = CellsConditionalFormattingsGetWorksheetConditionalFormattingWithHttpInfo(name, sheetName, index, folder, storage);
              return localVarResponse.Data;
         }
@@ -21865,6 +21929,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ConditionalFormattingsResponse</returns>
         public ConditionalFormattingsResponse CellsConditionalFormattingsGetWorksheetConditionalFormattings (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ConditionalFormattingsResponse> localVarResponse = CellsConditionalFormattingsGetWorksheetConditionalFormattingsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -22026,6 +22091,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsConditionalFormattingsPutWorksheetConditionalFormatting (string name, string sheetName, string cellArea, FormatCondition formatCondition = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsConditionalFormattingsPutWorksheetConditionalFormattingWithHttpInfo(name, sheetName, cellArea, formatCondition, folder, storage);
              return localVarResponse.Data;
         }
@@ -22225,6 +22291,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsConditionalFormattingsPutWorksheetFormatCondition (string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsConditionalFormattingsPutWorksheetFormatConditionWithHttpInfo(name, sheetName, index, cellArea, type, operatorType, formula1, formula2, folder, storage);
              return localVarResponse.Data;
         }
@@ -22452,6 +22519,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsConditionalFormattingsPutWorksheetFormatConditionArea (string name, string sheetName, int? index, string cellArea, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsConditionalFormattingsPutWorksheetFormatConditionAreaWithHttpInfo(name, sheetName, index, cellArea, folder, storage);
              return localVarResponse.Data;
         }
@@ -22638,6 +22706,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsConditionalFormattingsPutWorksheetFormatConditionCondition (string name, string sheetName, int? index, string type, string operatorType, string formula1, string formula2, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsConditionalFormattingsPutWorksheetFormatConditionConditionWithHttpInfo(name, sheetName, index, type, operatorType, formula1, formula2, folder, storage);
              return localVarResponse.Data;
         }
@@ -22855,6 +22924,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ColumnsResponse</returns>
         public ColumnsResponse CellsDeleteWorksheetColumns (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ColumnsResponse> localVarResponse = CellsDeleteWorksheetColumnsWithHttpInfo(name, sheetName, columnIndex, columns, updateReference, folder, storage);
              return localVarResponse.Data;
         }
@@ -23048,6 +23118,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsDeleteWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsDeleteWorksheetRowWithHttpInfo(name, sheetName, rowIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -23221,6 +23292,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsDeleteWorksheetRows (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsDeleteWorksheetRowsWithHttpInfo(name, sheetName, startrow, totalRows, updateReference, folder, storage);
              return localVarResponse.Data;
         }
@@ -23402,6 +23474,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>Object</returns>
         public Object CellsGetCellHtmlString (string name, string sheetName, string cellName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<Object> localVarResponse = CellsGetCellHtmlStringWithHttpInfo(name, sheetName, cellName, folder, storage);
              return localVarResponse.Data;
         }
@@ -23573,6 +23646,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>Object</returns>
         public Object CellsGetWorksheetCell (string name, string sheetName, string cellOrMethodName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<Object> localVarResponse = CellsGetWorksheetCellWithHttpInfo(name, sheetName, cellOrMethodName, folder, storage);
              return localVarResponse.Data;
         }
@@ -23744,6 +23818,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>StyleResponse</returns>
         public StyleResponse CellsGetWorksheetCellStyle (string name, string sheetName, string cellName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<StyleResponse> localVarResponse = CellsGetWorksheetCellStyleWithHttpInfo(name, sheetName, cellName, folder, storage);
              return localVarResponse.Data;
         }
@@ -23916,6 +23991,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsResponse</returns>
         public CellsResponse CellsGetWorksheetCells (string name, string sheetName, int? offest = null, int? count = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsResponse> localVarResponse = CellsGetWorksheetCellsWithHttpInfo(name, sheetName, offest, count, folder, storage);
              return localVarResponse.Data;
         }
@@ -24086,6 +24162,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ColumnResponse</returns>
         public ColumnResponse CellsGetWorksheetColumn (string name, string sheetName, int? columnIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ColumnResponse> localVarResponse = CellsGetWorksheetColumnWithHttpInfo(name, sheetName, columnIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -24256,6 +24333,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ColumnsResponse</returns>
         public ColumnsResponse CellsGetWorksheetColumns (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ColumnsResponse> localVarResponse = CellsGetWorksheetColumnsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -24416,6 +24494,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>RowResponse</returns>
         public RowResponse CellsGetWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<RowResponse> localVarResponse = CellsGetWorksheetRowWithHttpInfo(name, sheetName, rowIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -24586,6 +24665,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>RowsResponse</returns>
         public RowsResponse CellsGetWorksheetRows (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<RowsResponse> localVarResponse = CellsGetWorksheetRowsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -24746,6 +24826,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsHypelinksDeleteWorksheetHyperlink (string name, string sheetName, int? hyperlinkIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsHypelinksDeleteWorksheetHyperlinkWithHttpInfo(name, sheetName, hyperlinkIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -24916,6 +24997,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsHypelinksDeleteWorksheetHyperlinks (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsHypelinksDeleteWorksheetHyperlinksWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -25076,6 +25158,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>HyperlinkResponse</returns>
         public HyperlinkResponse CellsHypelinksGetWorksheetHyperlink (string name, string sheetName, int? hyperlinkIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<HyperlinkResponse> localVarResponse = CellsHypelinksGetWorksheetHyperlinkWithHttpInfo(name, sheetName, hyperlinkIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -25246,6 +25329,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>HyperlinksResponse</returns>
         public HyperlinksResponse CellsHypelinksGetWorksheetHyperlinks (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<HyperlinksResponse> localVarResponse = CellsHypelinksGetWorksheetHyperlinksWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -25407,6 +25491,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>HyperlinkResponse</returns>
         public HyperlinkResponse CellsHypelinksPostWorksheetHyperlink (string name, string sheetName, int? hyperlinkIndex, Hyperlink hyperlink = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<HyperlinkResponse> localVarResponse = CellsHypelinksPostWorksheetHyperlinkWithHttpInfo(name, sheetName, hyperlinkIndex, hyperlink, folder, storage);
              return localVarResponse.Data;
         }
@@ -25605,6 +25690,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>HyperlinkResponse</returns>
         public HyperlinkResponse CellsHypelinksPutWorksheetHyperlink (string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<HyperlinkResponse> localVarResponse = CellsHypelinksPutWorksheetHyperlinkWithHttpInfo(name, sheetName, firstRow, firstColumn, totalRows, totalColumns, address, folder, storage);
              return localVarResponse.Data;
         }
@@ -25820,6 +25906,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsListObjectsDeleteWorksheetListObject (string name, string sheetName, int? listObjectIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsListObjectsDeleteWorksheetListObjectWithHttpInfo(name, sheetName, listObjectIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -25990,6 +26077,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsListObjectsDeleteWorksheetListObjects (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsListObjectsDeleteWorksheetListObjectsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -26150,6 +26238,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ListObjectResponse</returns>
         public ListObjectResponse CellsListObjectsGetWorksheetListObject (string name, string sheetName, int? listobjectindex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ListObjectResponse> localVarResponse = CellsListObjectsGetWorksheetListObjectWithHttpInfo(name, sheetName, listobjectindex, folder, storage);
              return localVarResponse.Data;
         }
@@ -26320,6 +26409,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ListObjectsResponse</returns>
         public ListObjectsResponse CellsListObjectsGetWorksheetListObjects (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ListObjectsResponse> localVarResponse = CellsListObjectsGetWorksheetListObjectsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -26481,6 +26571,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsListObjectsPostWorksheetListObject (string name, string sheetName, int? listObjectIndex, ListObject listObject = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsListObjectsPostWorksheetListObjectWithHttpInfo(name, sheetName, listObjectIndex, listObject, folder, storage);
              return localVarResponse.Data;
         }
@@ -26675,6 +26766,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsListObjectsPostWorksheetListObjectConvertToRange (string name, string sheetName, int? listObjectIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsListObjectsPostWorksheetListObjectConvertToRangeWithHttpInfo(name, sheetName, listObjectIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -26847,6 +26939,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsListObjectsPostWorksheetListObjectSortTable (string name, string sheetName, int? listObjectIndex, DataSorter dataSorter = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsListObjectsPostWorksheetListObjectSortTableWithHttpInfo(name, sheetName, listObjectIndex, dataSorter, folder, storage);
              return localVarResponse.Data;
         }
@@ -27043,6 +27136,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsListObjectsPostWorksheetListObjectSummarizeWithPivotTable (string name, string sheetName, int? listObjectIndex, string destsheetName, CreatePivotTableRequest request = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsListObjectsPostWorksheetListObjectSummarizeWithPivotTableWithHttpInfo(name, sheetName, listObjectIndex, destsheetName, request, folder, storage);
              return localVarResponse.Data;
         }
@@ -27253,6 +27347,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ListObjectResponse</returns>
         public ListObjectResponse CellsListObjectsPutWorksheetListObject (string name, string sheetName, int? startRow, int? startColumn, int? endRow, int? endColumn, bool? hasHeaders = null, ListObject listObject = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ListObjectResponse> localVarResponse = CellsListObjectsPutWorksheetListObjectWithHttpInfo(name, sheetName, startRow, startColumn, endRow, endColumn, hasHeaders, listObject, folder, storage);
              return localVarResponse.Data;
         }
@@ -27485,6 +27580,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsOleObjectsDeleteWorksheetOleObject (string name, string sheetName, int? oleObjectIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsOleObjectsDeleteWorksheetOleObjectWithHttpInfo(name, sheetName, oleObjectIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -27655,6 +27751,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsOleObjectsDeleteWorksheetOleObjects (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsOleObjectsDeleteWorksheetOleObjectsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -27816,6 +27913,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>System.IO.Stream</returns>
         public System.IO.Stream CellsOleObjectsGetWorksheetOleObject (string name, string sheetName, int? objectNumber, string format = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<System.IO.Stream> localVarResponse = CellsOleObjectsGetWorksheetOleObjectWithHttpInfo(name, sheetName, objectNumber, format, folder, storage);
              return localVarResponse.Data;
         }
@@ -27991,6 +28089,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>OleObjectsResponse</returns>
         public OleObjectsResponse CellsOleObjectsGetWorksheetOleObjects (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<OleObjectsResponse> localVarResponse = CellsOleObjectsGetWorksheetOleObjectsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -28152,6 +28251,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsOleObjectsPostUpdateWorksheetOleObject (string name, string sheetName, int? oleObjectIndex, OleObject ole = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsOleObjectsPostUpdateWorksheetOleObjectWithHttpInfo(name, sheetName, oleObjectIndex, ole, folder, storage);
              return localVarResponse.Data;
         }
@@ -28352,6 +28452,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>OleObjectResponse</returns>
         public OleObjectResponse CellsOleObjectsPutWorksheetOleObject (string name, string sheetName, OleObject oleObject = null, int? upperLeftRow = null, int? upperLeftColumn = null, int? height = null, int? width = null, string oleFile = null, string imageFile = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<OleObjectResponse> localVarResponse = CellsOleObjectsPutWorksheetOleObjectWithHttpInfo(name, sheetName, oleObject, upperLeftRow, upperLeftColumn, height, width, oleFile, imageFile, folder, storage);
              return localVarResponse.Data;
         }
@@ -28565,6 +28666,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPageBreaksDeleteHorizontalPageBreak (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPageBreaksDeleteHorizontalPageBreakWithHttpInfo(name, sheetName, index, folder, storage);
              return localVarResponse.Data;
         }
@@ -28736,6 +28838,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPageBreaksDeleteHorizontalPageBreaks (string name, string sheetName, int? row = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPageBreaksDeleteHorizontalPageBreaksWithHttpInfo(name, sheetName, row, folder, storage);
              return localVarResponse.Data;
         }
@@ -28901,6 +29004,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPageBreaksDeleteVerticalPageBreak (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPageBreaksDeleteVerticalPageBreakWithHttpInfo(name, sheetName, index, folder, storage);
              return localVarResponse.Data;
         }
@@ -29072,6 +29176,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPageBreaksDeleteVerticalPageBreaks (string name, string sheetName, int? column = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPageBreaksDeleteVerticalPageBreaksWithHttpInfo(name, sheetName, column, folder, storage);
              return localVarResponse.Data;
         }
@@ -29237,6 +29342,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>HorizontalPageBreakResponse</returns>
         public HorizontalPageBreakResponse CellsPageBreaksGetHorizontalPageBreak (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<HorizontalPageBreakResponse> localVarResponse = CellsPageBreaksGetHorizontalPageBreakWithHttpInfo(name, sheetName, index, folder, storage);
              return localVarResponse.Data;
         }
@@ -29407,6 +29513,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>HorizontalPageBreaksResponse</returns>
         public HorizontalPageBreaksResponse CellsPageBreaksGetHorizontalPageBreaks (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<HorizontalPageBreaksResponse> localVarResponse = CellsPageBreaksGetHorizontalPageBreaksWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -29567,6 +29674,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>VerticalPageBreakResponse</returns>
         public VerticalPageBreakResponse CellsPageBreaksGetVerticalPageBreak (string name, string sheetName, int? index, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<VerticalPageBreakResponse> localVarResponse = CellsPageBreaksGetVerticalPageBreakWithHttpInfo(name, sheetName, index, folder, storage);
              return localVarResponse.Data;
         }
@@ -29737,6 +29845,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>VerticalPageBreaksResponse</returns>
         public VerticalPageBreaksResponse CellsPageBreaksGetVerticalPageBreaks (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<VerticalPageBreaksResponse> localVarResponse = CellsPageBreaksGetVerticalPageBreaksWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -29901,6 +30010,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPageBreaksPutHorizontalPageBreak (string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPageBreaksPutHorizontalPageBreakWithHttpInfo(name, sheetName, cellname, row, column, startColumn, endColumn, folder, storage);
              return localVarResponse.Data;
         }
@@ -30090,6 +30200,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPageBreaksPutVerticalPageBreak (string name, string sheetName, string cellname = null, int? column = null, int? row = null, int? startRow = null, int? endRow = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPageBreaksPutVerticalPageBreakWithHttpInfo(name, sheetName, cellname, column, row, startRow, endRow, folder, storage);
              return localVarResponse.Data;
         }
@@ -30274,6 +30385,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPageSetupDeleteHeaderFooter (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPageSetupDeleteHeaderFooterWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -30433,6 +30545,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>PageSectionsResponse</returns>
         public PageSectionsResponse CellsPageSetupGetFooter (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<PageSectionsResponse> localVarResponse = CellsPageSetupGetFooterWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -30592,6 +30705,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>PageSectionsResponse</returns>
         public PageSectionsResponse CellsPageSetupGetHeader (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<PageSectionsResponse> localVarResponse = CellsPageSetupGetHeaderWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -30751,6 +30865,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>PageSetupResponse</returns>
         public PageSetupResponse CellsPageSetupGetPageSetup (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<PageSetupResponse> localVarResponse = CellsPageSetupGetPageSetupWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -30913,6 +31028,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPageSetupPostFooter (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPageSetupPostFooterWithHttpInfo(name, sheetName, section, script, isFirstPage, folder, storage);
              return localVarResponse.Data;
         }
@@ -31108,6 +31224,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPageSetupPostHeader (string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPageSetupPostHeaderWithHttpInfo(name, sheetName, section, script, isFirstPage, folder, storage);
              return localVarResponse.Data;
         }
@@ -31301,6 +31418,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPageSetupPostPageSetup (string name, string sheetName, PageSetup pageSetup = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPageSetupPostPageSetupWithHttpInfo(name, sheetName, pageSetup, folder, storage);
              return localVarResponse.Data;
         }
@@ -31484,6 +31602,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPicturesDeleteWorksheetPicture (string name, string sheetName, int? pictureIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPicturesDeleteWorksheetPictureWithHttpInfo(name, sheetName, pictureIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -31654,6 +31773,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPicturesDeleteWorksheetPictures (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPicturesDeleteWorksheetPicturesWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -31815,6 +31935,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>System.IO.Stream</returns>
         public System.IO.Stream CellsPicturesGetWorksheetPicture (string name, string sheetName, int? pictureIndex, string format = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<System.IO.Stream> localVarResponse = CellsPicturesGetWorksheetPictureWithHttpInfo(name, sheetName, pictureIndex, format, folder, storage);
              return localVarResponse.Data;
         }
@@ -31990,6 +32111,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>PicturesResponse</returns>
         public PicturesResponse CellsPicturesGetWorksheetPictures (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<PicturesResponse> localVarResponse = CellsPicturesGetWorksheetPicturesWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -32151,6 +32273,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>PictureResponse</returns>
         public PictureResponse CellsPicturesPostWorksheetPicture (string name, string sheetName, int? pictureIndex, Picture picture = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<PictureResponse> localVarResponse = CellsPicturesPostWorksheetPictureWithHttpInfo(name, sheetName, pictureIndex, picture, folder, storage);
              return localVarResponse.Data;
         }
@@ -32350,6 +32473,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>PicturesResponse</returns>
         public PicturesResponse CellsPicturesPutWorksheetAddPicture (string name, string sheetName, Picture picture = null, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string picturePath = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<PicturesResponse> localVarResponse = CellsPicturesPutWorksheetAddPictureWithHttpInfo(name, sheetName, picture, upperLeftRow, upperLeftColumn, lowerRightRow, lowerRightColumn, picturePath, folder, storage);
              return localVarResponse.Data;
         }
@@ -32560,6 +32684,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPivotTablesDeletePivotTableField (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPivotTablesDeletePivotTableFieldWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldType, request, folder, storage);
              return localVarResponse.Data;
         }
@@ -32765,6 +32890,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPivotTablesDeleteWorksheetPivotTable (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPivotTablesDeleteWorksheetPivotTableWithHttpInfo(name, sheetName, pivotTableIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -32938,6 +33064,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPivotTablesDeleteWorksheetPivotTableFilter (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, bool? needReCalculate = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPivotTablesDeleteWorksheetPivotTableFilterWithHttpInfo(name, sheetName, pivotTableIndex, fieldIndex, needReCalculate, folder, storage);
              return localVarResponse.Data;
         }
@@ -33126,6 +33253,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPivotTablesDeleteWorksheetPivotTableFilters (string name, string sheetName, int? pivotTableIndex, bool? needReCalculate = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPivotTablesDeleteWorksheetPivotTableFiltersWithHttpInfo(name, sheetName, pivotTableIndex, needReCalculate, folder, storage);
              return localVarResponse.Data;
         }
@@ -33301,6 +33429,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPivotTablesDeleteWorksheetPivotTables (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPivotTablesDeleteWorksheetPivotTablesWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -33463,6 +33592,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>PivotFieldResponse</returns>
         public PivotFieldResponse CellsPivotTablesGetPivotTableField (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<PivotFieldResponse> localVarResponse = CellsPivotTablesGetPivotTableFieldWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldIndex, pivotFieldType, folder, storage);
              return localVarResponse.Data;
         }
@@ -33656,6 +33786,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>PivotTableResponse</returns>
         public PivotTableResponse CellsPivotTablesGetWorksheetPivotTable (string name, string sheetName, int? pivottableIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<PivotTableResponse> localVarResponse = CellsPivotTablesGetWorksheetPivotTableWithHttpInfo(name, sheetName, pivottableIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -33828,6 +33959,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>PivotFilterResponse</returns>
         public PivotFilterResponse CellsPivotTablesGetWorksheetPivotTableFilter (string name, string sheetName, int? pivotTableIndex, int? filterIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<PivotFilterResponse> localVarResponse = CellsPivotTablesGetWorksheetPivotTableFilterWithHttpInfo(name, sheetName, pivotTableIndex, filterIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -34010,6 +34142,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>PivotFiltersResponse</returns>
         public PivotFiltersResponse CellsPivotTablesGetWorksheetPivotTableFilters (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<PivotFiltersResponse> localVarResponse = CellsPivotTablesGetWorksheetPivotTableFiltersWithHttpInfo(name, sheetName, pivotTableIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -34180,6 +34313,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>PivotTablesResponse</returns>
         public PivotTablesResponse CellsPivotTablesGetWorksheetPivotTables (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<PivotTablesResponse> localVarResponse = CellsPivotTablesGetWorksheetPivotTablesWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -34344,6 +34478,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPivotTablesPostPivotTableCellStyle (string name, string sheetName, int? pivotTableIndex, int? column, int? row, Style style = null, bool? needReCalculate = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPivotTablesPostPivotTableCellStyleWithHttpInfo(name, sheetName, pivotTableIndex, column, row, style, needReCalculate, folder, storage);
              return localVarResponse.Data;
         }
@@ -34570,6 +34705,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPivotTablesPostPivotTableFieldHideItem (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, int? fieldIndex, int? itemIndex, bool? isHide, bool? needReCalculate = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPivotTablesPostPivotTableFieldHideItemWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldType, fieldIndex, itemIndex, isHide, needReCalculate, folder, storage);
              return localVarResponse.Data;
         }
@@ -34793,6 +34929,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPivotTablesPostPivotTableFieldMoveTo (string name, string sheetName, int? pivotTableIndex, int? fieldIndex, string from, string to, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPivotTablesPostPivotTableFieldMoveToWithHttpInfo(name, sheetName, pivotTableIndex, fieldIndex, from, to, folder, storage);
              return localVarResponse.Data;
         }
@@ -34999,6 +35136,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPivotTablesPostPivotTableStyle (string name, string sheetName, int? pivotTableIndex, Style style = null, bool? needReCalculate = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPivotTablesPostPivotTableStyleWithHttpInfo(name, sheetName, pivotTableIndex, style, needReCalculate, folder, storage);
              return localVarResponse.Data;
         }
@@ -35198,6 +35336,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPivotTablesPostWorksheetPivotTableCalculate (string name, string sheetName, int? pivotTableIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPivotTablesPostWorksheetPivotTableCalculateWithHttpInfo(name, sheetName, pivotTableIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -35372,6 +35511,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPivotTablesPostWorksheetPivotTableMove (string name, string sheetName, int? pivotTableIndex, int? row = null, int? column = null, string destCellName = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPivotTablesPostWorksheetPivotTableMoveWithHttpInfo(name, sheetName, pivotTableIndex, row, column, destCellName, folder, storage);
              return localVarResponse.Data;
         }
@@ -35561,6 +35701,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPivotTablesPutPivotTableField (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotTableFieldRequest request = null, bool? needReCalculate = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPivotTablesPutPivotTableFieldWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldType, request, needReCalculate, folder, storage);
              return localVarResponse.Data;
         }
@@ -35775,6 +35916,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>PivotTableResponse</returns>
         public PivotTableResponse CellsPivotTablesPutWorksheetPivotTable (string name, string sheetName, CreatePivotTableRequest request = null, string folder = null, string storage = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null)
         {
+             checkAccessToken();
              ApiResponse<PivotTableResponse> localVarResponse = CellsPivotTablesPutWorksheetPivotTableWithHttpInfo(name, sheetName, request, folder, storage, sourceData, destCellName, tableName, useSameSource);
              return localVarResponse.Data;
         }
@@ -35980,6 +36122,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPivotTablesPutWorksheetPivotTableFilter (string name, string sheetName, int? pivotTableIndex, PivotFilter filter = null, bool? needReCalculate = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPivotTablesPutWorksheetPivotTableFilterWithHttpInfo(name, sheetName, pivotTableIndex, filter, needReCalculate, folder, storage);
              return localVarResponse.Data;
         }
@@ -36180,6 +36323,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostCellCalculate (string name, string sheetName, string cellName, CalculationOptions options = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostCellCalculateWithHttpInfo(name, sheetName, cellName, options, folder, storage);
              return localVarResponse.Data;
         }
@@ -36375,6 +36519,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostCellCharacters (string name, string sheetName, string cellName, List<FontSetting> options = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostCellCharactersWithHttpInfo(name, sheetName, cellName, options, folder, storage);
              return localVarResponse.Data;
         }
@@ -36573,6 +36718,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostClearContents (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostClearContentsWithHttpInfo(name, sheetName, range, startRow, startColumn, endRow, endColumn, folder, storage);
              return localVarResponse.Data;
         }
@@ -36762,6 +36908,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostClearFormats (string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostClearFormatsWithHttpInfo(name, sheetName, range, startRow, startColumn, endRow, endColumn, folder, storage);
              return localVarResponse.Data;
         }
@@ -36948,6 +37095,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostColumnStyle (string name, string sheetName, int? columnIndex, Style style = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostColumnStyleWithHttpInfo(name, sheetName, columnIndex, style, folder, storage);
              return localVarResponse.Data;
         }
@@ -37146,6 +37294,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostCopyCellIntoCell (string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostCopyCellIntoCellWithHttpInfo(name, destCellName, sheetName, worksheet, cellname, row, column, folder, storage);
              return localVarResponse.Data;
         }
@@ -37346,6 +37495,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostCopyWorksheetColumns (string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostCopyWorksheetColumnsWithHttpInfo(name, sheetName, sourceColumnIndex, destinationColumnIndex, columnNumber, worksheet, folder, storage);
              return localVarResponse.Data;
         }
@@ -37547,6 +37697,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostCopyWorksheetRows (string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostCopyWorksheetRowsWithHttpInfo(name, sheetName, sourceRowIndex, destinationRowIndex, rowNumber, worksheet, folder, storage);
              return localVarResponse.Data;
         }
@@ -37747,6 +37898,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostGroupWorksheetColumns (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostGroupWorksheetColumnsWithHttpInfo(name, sheetName, firstIndex, lastIndex, hide, folder, storage);
              return localVarResponse.Data;
         }
@@ -37936,6 +38088,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostGroupWorksheetRows (string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostGroupWorksheetRowsWithHttpInfo(name, sheetName, firstIndex, lastIndex, hide, folder, storage);
              return localVarResponse.Data;
         }
@@ -38124,6 +38277,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostHideWorksheetColumns (string name, string sheetName, int? startColumn, int? totalColumns, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostHideWorksheetColumnsWithHttpInfo(name, sheetName, startColumn, totalColumns, folder, storage);
              return localVarResponse.Data;
         }
@@ -38307,6 +38461,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostHideWorksheetRows (string name, string sheetName, int? startrow, int? totalRows, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostHideWorksheetRowsWithHttpInfo(name, sheetName, startrow, totalRows, folder, storage);
              return localVarResponse.Data;
         }
@@ -38490,6 +38645,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostRowStyle (string name, string sheetName, int? rowIndex, Style style = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostRowStyleWithHttpInfo(name, sheetName, rowIndex, style, folder, storage);
              return localVarResponse.Data;
         }
@@ -38685,6 +38841,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellResponse</returns>
         public CellResponse CellsPostSetCellHtmlString (string name, string sheetName, string cellName, byte[] htmlString, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellResponse> localVarResponse = CellsPostSetCellHtmlStringWithHttpInfo(name, sheetName, cellName, htmlString, folder, storage);
              return localVarResponse.Data;
         }
@@ -38887,6 +39044,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostSetCellRangeValue (string name, string sheetName, string cellarea, string value, string type, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostSetCellRangeValueWithHttpInfo(name, sheetName, cellarea, value, type, folder, storage);
              return localVarResponse.Data;
         }
@@ -39081,6 +39239,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ColumnResponse</returns>
         public ColumnResponse CellsPostSetWorksheetColumnWidth (string name, string sheetName, int? columnIndex, double? width, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ColumnResponse> localVarResponse = CellsPostSetWorksheetColumnWidthWithHttpInfo(name, sheetName, columnIndex, width, folder, storage);
              return localVarResponse.Data;
         }
@@ -39264,6 +39423,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostUngroupWorksheetColumns (string name, string sheetName, int? firstIndex, int? lastIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostUngroupWorksheetColumnsWithHttpInfo(name, sheetName, firstIndex, lastIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -39448,6 +39608,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostUngroupWorksheetRows (string name, string sheetName, int? firstIndex, int? lastIndex, bool? isAll = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostUngroupWorksheetRowsWithHttpInfo(name, sheetName, firstIndex, lastIndex, isAll, folder, storage);
              return localVarResponse.Data;
         }
@@ -39637,6 +39798,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostUnhideWorksheetColumns (string name, string sheetName, int? startcolumn, int? totalColumns, double? width = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostUnhideWorksheetColumnsWithHttpInfo(name, sheetName, startcolumn, totalColumns, width, folder, storage);
              return localVarResponse.Data;
         }
@@ -39826,6 +39988,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostUnhideWorksheetRows (string name, string sheetName, int? startrow, int? totalRows, double? height = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostUnhideWorksheetRowsWithHttpInfo(name, sheetName, startrow, totalRows, height, folder, storage);
              return localVarResponse.Data;
         }
@@ -40014,6 +40177,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>StyleResponse</returns>
         public StyleResponse CellsPostUpdateWorksheetCellStyle (string name, string sheetName, string cellName, Style style = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<StyleResponse> localVarResponse = CellsPostUpdateWorksheetCellStyleWithHttpInfo(name, sheetName, cellName, style, folder, storage);
              return localVarResponse.Data;
         }
@@ -40209,6 +40373,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostUpdateWorksheetRangeStyle (string name, string sheetName, string range, Style style = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostUpdateWorksheetRangeStyleWithHttpInfo(name, sheetName, range, style, folder, storage);
              return localVarResponse.Data;
         }
@@ -40404,6 +40569,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>RowResponse</returns>
         public RowResponse CellsPostUpdateWorksheetRow (string name, string sheetName, int? rowIndex, double? height = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<RowResponse> localVarResponse = CellsPostUpdateWorksheetRowWithHttpInfo(name, sheetName, rowIndex, height, folder, storage);
              return localVarResponse.Data;
         }
@@ -40583,6 +40749,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellResponse</returns>
         public CellResponse CellsPostWorksheetCellSetValue (string name, string sheetName, string cellName, string value = null, string type = null, string formula = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellResponse> localVarResponse = CellsPostWorksheetCellSetValueWithHttpInfo(name, sheetName, cellName, value, type, formula, folder, storage);
              return localVarResponse.Data;
         }
@@ -40772,6 +40939,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostWorksheetMerge (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostWorksheetMergeWithHttpInfo(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder, storage);
              return localVarResponse.Data;
         }
@@ -40979,6 +41147,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPostWorksheetUnmerge (string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPostWorksheetUnmergeWithHttpInfo(name, sheetName, startRow, startColumn, totalRows, totalColumns, folder, storage);
              return localVarResponse.Data;
         }
@@ -41181,6 +41350,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsDocumentPropertiesResponse</returns>
         public CellsDocumentPropertiesResponse CellsPropertiesDeleteDocumentProperties (string name, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsDocumentPropertiesResponse> localVarResponse = CellsPropertiesDeleteDocumentPropertiesWithHttpInfo(name, folder, storage);
              return localVarResponse.Data;
         }
@@ -41329,6 +41499,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsDocumentPropertiesResponse</returns>
         public CellsDocumentPropertiesResponse CellsPropertiesDeleteDocumentProperty (string name, string propertyName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsDocumentPropertiesResponse> localVarResponse = CellsPropertiesDeleteDocumentPropertyWithHttpInfo(name, propertyName, folder, storage);
              return localVarResponse.Data;
         }
@@ -41487,6 +41658,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsDocumentPropertiesResponse</returns>
         public CellsDocumentPropertiesResponse CellsPropertiesGetDocumentProperties (string name, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsDocumentPropertiesResponse> localVarResponse = CellsPropertiesGetDocumentPropertiesWithHttpInfo(name, folder, storage);
              return localVarResponse.Data;
         }
@@ -41635,6 +41807,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsDocumentPropertyResponse</returns>
         public CellsDocumentPropertyResponse CellsPropertiesGetDocumentProperty (string name, string propertyName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsDocumentPropertyResponse> localVarResponse = CellsPropertiesGetDocumentPropertyWithHttpInfo(name, propertyName, folder, storage);
              return localVarResponse.Data;
         }
@@ -41795,6 +41968,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsDocumentPropertyResponse</returns>
         public CellsDocumentPropertyResponse CellsPropertiesPutDocumentProperty (string name, string propertyName, CellsDocumentProperty property = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsDocumentPropertyResponse> localVarResponse = CellsPropertiesPutDocumentPropertyWithHttpInfo(name, propertyName, property, folder, storage);
              return localVarResponse.Data;
         }
@@ -41980,6 +42154,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ColumnsResponse</returns>
         public ColumnsResponse CellsPutInsertWorksheetColumns (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ColumnsResponse> localVarResponse = CellsPutInsertWorksheetColumnsWithHttpInfo(name, sheetName, columnIndex, columns, updateReference, folder, storage);
              return localVarResponse.Data;
         }
@@ -42167,6 +42342,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>RowResponse</returns>
         public RowResponse CellsPutInsertWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<RowResponse> localVarResponse = CellsPutInsertWorksheetRowWithHttpInfo(name, sheetName, rowIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -42340,6 +42516,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsPutInsertWorksheetRows (string name, string sheetName, int? startrow, int? totalRows = null, bool? updateReference = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsPutInsertWorksheetRowsWithHttpInfo(name, sheetName, startrow, totalRows, updateReference, folder, storage);
              return localVarResponse.Data;
         }
@@ -42525,6 +42702,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>RangeValueResponse</returns>
         public RangeValueResponse CellsRangesGetWorksheetCellsRangeValue (string name, string sheetName, string namerange = null, int? firstRow = null, int? firstColumn = null, int? rowCount = null, int? columnCount = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<RangeValueResponse> localVarResponse = CellsRangesGetWorksheetCellsRangeValueWithHttpInfo(name, sheetName, namerange, firstRow, firstColumn, rowCount, columnCount, folder, storage);
              return localVarResponse.Data;
         }
@@ -42711,6 +42889,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsRangesPostWorksheetCellsRangeColumnWidth (string name, string sheetName, double? value, Range range = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsRangesPostWorksheetCellsRangeColumnWidthWithHttpInfo(name, sheetName, value, range, folder, storage);
              return localVarResponse.Data;
         }
@@ -42905,6 +43084,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsRangesPostWorksheetCellsRangeMerge (string name, string sheetName, Range range = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsRangesPostWorksheetCellsRangeMergeWithHttpInfo(name, sheetName, range, folder, storage);
              return localVarResponse.Data;
         }
@@ -43090,6 +43270,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsRangesPostWorksheetCellsRangeMoveTo (string name, string sheetName, int? destRow, int? destColumn, Range range = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsRangesPostWorksheetCellsRangeMoveToWithHttpInfo(name, sheetName, destRow, destColumn, range, folder, storage);
              return localVarResponse.Data;
         }
@@ -43295,6 +43476,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsRangesPostWorksheetCellsRangeOutlineBorder (string name, string sheetName, RangeSetOutlineBorderRequest rangeOperate = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsRangesPostWorksheetCellsRangeOutlineBorderWithHttpInfo(name, sheetName, rangeOperate, folder, storage);
              return localVarResponse.Data;
         }
@@ -43479,6 +43661,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsRangesPostWorksheetCellsRangeRowHeight (string name, string sheetName, double? value, Range range = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsRangesPostWorksheetCellsRangeRowHeightWithHttpInfo(name, sheetName, value, range, folder, storage);
              return localVarResponse.Data;
         }
@@ -43673,6 +43856,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsRangesPostWorksheetCellsRangeStyle (string name, string sheetName, RangeSetStyleRequest rangeOperate = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsRangesPostWorksheetCellsRangeStyleWithHttpInfo(name, sheetName, rangeOperate, folder, storage);
              return localVarResponse.Data;
         }
@@ -43856,6 +44040,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsRangesPostWorksheetCellsRangeUnmerge (string name, string sheetName, Range range = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsRangesPostWorksheetCellsRangeUnmergeWithHttpInfo(name, sheetName, range, folder, storage);
              return localVarResponse.Data;
         }
@@ -44042,6 +44227,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsRangesPostWorksheetCellsRangeValue (string name, string sheetName, string value, Range range = null, bool? isConverted = null, bool? setStyle = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsRangesPostWorksheetCellsRangeValueWithHttpInfo(name, sheetName, value, range, isConverted, setStyle, folder, storage);
              return localVarResponse.Data;
         }
@@ -44246,6 +44432,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsRangesPostWorksheetCellsRanges (string name, string sheetName, RangeCopyRequest rangeOperate = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsRangesPostWorksheetCellsRangesWithHttpInfo(name, sheetName, rangeOperate, folder, storage);
              return localVarResponse.Data;
         }
@@ -44431,6 +44618,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>SaveResponse</returns>
         public SaveResponse CellsSaveAsPostDocumentSaveAs (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<SaveResponse> localVarResponse = CellsSaveAsPostDocumentSaveAsWithHttpInfo(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder, storage);
              return localVarResponse.Data;
         }
@@ -44618,6 +44806,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsShapesDeleteWorksheetShape (string name, string sheetName, int? shapeindex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsShapesDeleteWorksheetShapeWithHttpInfo(name, sheetName, shapeindex, folder, storage);
              return localVarResponse.Data;
         }
@@ -44788,6 +44977,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsShapesDeleteWorksheetShapes (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsShapesDeleteWorksheetShapesWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -44948,6 +45138,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ShapeResponse</returns>
         public ShapeResponse CellsShapesGetWorksheetShape (string name, string sheetName, int? shapeindex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ShapeResponse> localVarResponse = CellsShapesGetWorksheetShapeWithHttpInfo(name, sheetName, shapeindex, folder, storage);
              return localVarResponse.Data;
         }
@@ -45118,6 +45309,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ShapesResponse</returns>
         public ShapesResponse CellsShapesGetWorksheetShapes (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ShapesResponse> localVarResponse = CellsShapesGetWorksheetShapesWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -45279,6 +45471,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsShapesPostWorksheetShape (string name, string sheetName, int? shapeindex, Shape dto = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsShapesPostWorksheetShapeWithHttpInfo(name, sheetName, shapeindex, dto, folder, storage);
              return localVarResponse.Data;
         }
@@ -45479,6 +45672,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ShapeResponse</returns>
         public ShapeResponse CellsShapesPutWorksheetShape (string name, string sheetName, string drawingType, int? upperLeftRow, int? upperLeftColumn, int? top, int? left, int? width, int? height, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ShapeResponse> localVarResponse = CellsShapesPutWorksheetShapeWithHttpInfo(name, sheetName, drawingType, upperLeftRow, upperLeftColumn, top, left, width, height, folder, storage);
              return localVarResponse.Data;
         }
@@ -45712,6 +45906,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>Object</returns>
         public Object CellsTaskPostRunTask (TaskData taskData)
         {
+             checkAccessToken();
              ApiResponse<Object> localVarResponse = CellsTaskPostRunTaskWithHttpInfo(taskData);
              return localVarResponse.Data;
         }
@@ -45868,6 +46063,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorkbookDeleteDecryptDocument (string name, WorkbookEncryptionRequest encryption = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorkbookDeleteDecryptDocumentWithHttpInfo(name, encryption, folder, storage);
              return localVarResponse.Data;
         }
@@ -46038,6 +46234,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorkbookDeleteDocumentUnprotectFromChanges (string name, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorkbookDeleteDocumentUnprotectFromChangesWithHttpInfo(name, folder, storage);
              return localVarResponse.Data;
         }
@@ -46186,6 +46383,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorkbookDeleteUnprotectDocument (string name, WorkbookProtectionRequest protection = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorkbookDeleteUnprotectDocumentWithHttpInfo(name, protection, folder, storage);
              return localVarResponse.Data;
         }
@@ -46357,6 +46555,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorkbookDeleteWorkbookName (string name, string nameName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorkbookDeleteWorkbookNameWithHttpInfo(name, nameName, folder, storage);
              return localVarResponse.Data;
         }
@@ -46515,6 +46714,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorkbookDeleteWorkbookNames (string name, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorkbookDeleteWorkbookNamesWithHttpInfo(name, folder, storage);
              return localVarResponse.Data;
         }
@@ -46667,6 +46867,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>System.IO.Stream</returns>
         public System.IO.Stream CellsWorkbookGetWorkbook (string name, string password = null, string format = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string storage = null, string outPath = null)
         {
+             checkAccessToken();
              ApiResponse<System.IO.Stream> localVarResponse = CellsWorkbookGetWorkbookWithHttpInfo(name, password, format, isAutoFit, onlySaveTable, folder, storage, outPath);
              return localVarResponse.Data;
         }
@@ -46839,6 +47040,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>StyleResponse</returns>
         public StyleResponse CellsWorkbookGetWorkbookDefaultStyle (string name, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<StyleResponse> localVarResponse = CellsWorkbookGetWorkbookDefaultStyleWithHttpInfo(name, folder, storage);
              return localVarResponse.Data;
         }
@@ -46987,6 +47189,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>NameResponse</returns>
         public NameResponse CellsWorkbookGetWorkbookName (string name, string nameName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<NameResponse> localVarResponse = CellsWorkbookGetWorkbookNameWithHttpInfo(name, nameName, folder, storage);
              return localVarResponse.Data;
         }
@@ -47146,6 +47349,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>RangeValueResponse</returns>
         public RangeValueResponse CellsWorkbookGetWorkbookNameValue (string name, string nameName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<RangeValueResponse> localVarResponse = CellsWorkbookGetWorkbookNameValueWithHttpInfo(name, nameName, folder, storage);
              return localVarResponse.Data;
         }
@@ -47304,6 +47508,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>NamesResponse</returns>
         public NamesResponse CellsWorkbookGetWorkbookNames (string name, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<NamesResponse> localVarResponse = CellsWorkbookGetWorkbookNamesWithHttpInfo(name, folder, storage);
              return localVarResponse.Data;
         }
@@ -47451,6 +47656,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>WorkbookSettingsResponse</returns>
         public WorkbookSettingsResponse CellsWorkbookGetWorkbookSettings (string name, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<WorkbookSettingsResponse> localVarResponse = CellsWorkbookGetWorkbookSettingsWithHttpInfo(name, folder, storage);
              return localVarResponse.Data;
         }
@@ -47598,6 +47804,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>TextItemsResponse</returns>
         public TextItemsResponse CellsWorkbookGetWorkbookTextItems (string name, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<TextItemsResponse> localVarResponse = CellsWorkbookGetWorkbookTextItemsWithHttpInfo(name, folder, storage);
              return localVarResponse.Data;
         }
@@ -47749,6 +47956,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorkbookPostAutofitWorkbookRows (string name, AutoFitterOptions autoFitterOptions = null, int? startRow = null, int? endRow = null, bool? onlyAuto = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorkbookPostAutofitWorkbookRowsWithHttpInfo(name, autoFitterOptions, startRow, endRow, onlyAuto, folder, storage);
              return localVarResponse.Data;
         }
@@ -47935,6 +48143,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorkbookPostEncryptDocument (string name, WorkbookEncryptionRequest encryption = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorkbookPostEncryptDocumentWithHttpInfo(name, encryption, folder, storage);
              return localVarResponse.Data;
         }
@@ -48106,6 +48315,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorkbookPostImportData (string name, ImportOption importData, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorkbookPostImportDataWithHttpInfo(name, importData, folder, storage);
              return localVarResponse.Data;
         }
@@ -48283,6 +48493,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorkbookPostProtectDocument (string name, WorkbookProtectionRequest protection = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorkbookPostProtectDocumentWithHttpInfo(name, protection, folder, storage);
              return localVarResponse.Data;
         }
@@ -48455,6 +48666,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorkbookPostWorkbookCalculateFormula (string name, CalculationOptions options = null, bool? ignoreError = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorkbookPostWorkbookCalculateFormulaWithHttpInfo(name, options, ignoreError, folder, storage);
              return localVarResponse.Data;
         }
@@ -48632,6 +48844,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>System.IO.Stream</returns>
         public System.IO.Stream CellsWorkbookPostWorkbookGetSmartMarkerResult (string name, string xmlFile = null, string folder = null, string storage = null, string outPath = null)
         {
+             checkAccessToken();
              ApiResponse<System.IO.Stream> localVarResponse = CellsWorkbookPostWorkbookGetSmartMarkerResultWithHttpInfo(name, xmlFile, folder, storage, outPath);
              return localVarResponse.Data;
         }
@@ -48790,6 +49003,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorkbookPostWorkbookSettings (string name, WorkbookSettings settings = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorkbookPostWorkbookSettingsWithHttpInfo(name, settings, folder, storage);
              return localVarResponse.Data;
         }
@@ -48965,6 +49179,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>SplitResultResponse</returns>
         public SplitResultResponse CellsWorkbookPostWorkbookSplit (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<SplitResultResponse> localVarResponse = CellsWorkbookPostWorkbookSplitWithHttpInfo(name, format, from, to, horizontalResolution, verticalResolution, folder, storage);
              return localVarResponse.Data;
         }
@@ -49138,6 +49353,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>WorkbookResponse</returns>
         public WorkbookResponse CellsWorkbookPostWorkbooksMerge (string name, string mergeWith, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<WorkbookResponse> localVarResponse = CellsWorkbookPostWorkbooksMergeWithHttpInfo(name, mergeWith, folder, storage);
              return localVarResponse.Data;
         }
@@ -49298,6 +49514,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>WorkbookReplaceResponse</returns>
         public WorkbookReplaceResponse CellsWorkbookPostWorkbooksTextReplace (string name, string oldValue, string newValue, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<WorkbookReplaceResponse> localVarResponse = CellsWorkbookPostWorkbooksTextReplaceWithHttpInfo(name, oldValue, newValue, folder, storage);
              return localVarResponse.Data;
         }
@@ -49468,6 +49685,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>TextItemsResponse</returns>
         public TextItemsResponse CellsWorkbookPostWorkbooksTextSearch (string name, string text, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<TextItemsResponse> localVarResponse = CellsWorkbookPostWorkbooksTextSearchWithHttpInfo(name, text, folder, storage);
              return localVarResponse.Data;
         }
@@ -49627,6 +49845,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>System.IO.Stream</returns>
         public System.IO.Stream CellsWorkbookPutConvertWorkbook (byte[] workbook, string format = null, string password = null, string outPath = null)
         {
+             checkAccessToken();
              ApiResponse<System.IO.Stream> localVarResponse = CellsWorkbookPutConvertWorkbookWithHttpInfo(workbook, format, password, outPath);
              return localVarResponse.Data;
         }
@@ -49798,6 +50017,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorkbookPutDocumentProtectFromChanges (string name, PasswordRequest password = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorkbookPutDocumentProtectFromChangesWithHttpInfo(name, password, folder, storage);
              return localVarResponse.Data;
         }
@@ -49970,6 +50190,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>WorkbookResponse</returns>
         public WorkbookResponse CellsWorkbookPutWorkbookCreate (string name, string templateFile = null, string dataFile = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<WorkbookResponse> localVarResponse = CellsWorkbookPutWorkbookCreateWithHttpInfo(name, templateFile, dataFile, folder, storage);
              return localVarResponse.Data;
         }
@@ -50129,6 +50350,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ValidationResponse</returns>
         public ValidationResponse CellsWorksheetValidationsDeleteWorksheetValidation (string name, string sheetName, int? validationIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ValidationResponse> localVarResponse = CellsWorksheetValidationsDeleteWorksheetValidationWithHttpInfo(name, sheetName, validationIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -50299,6 +50521,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorksheetValidationsDeleteWorksheetValidations (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetValidationsDeleteWorksheetValidationsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -50459,6 +50682,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ValidationResponse</returns>
         public ValidationResponse CellsWorksheetValidationsGetWorksheetValidation (string name, string sheetName, int? validationIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ValidationResponse> localVarResponse = CellsWorksheetValidationsGetWorksheetValidationWithHttpInfo(name, sheetName, validationIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -50629,6 +50853,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ValidationsResponse</returns>
         public ValidationsResponse CellsWorksheetValidationsGetWorksheetValidations (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ValidationsResponse> localVarResponse = CellsWorksheetValidationsGetWorksheetValidationsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -50790,6 +51015,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ValidationResponse</returns>
         public ValidationResponse CellsWorksheetValidationsPostWorksheetValidation (string name, string sheetName, int? validationIndex, Validation validation = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ValidationResponse> localVarResponse = CellsWorksheetValidationsPostWorksheetValidationWithHttpInfo(name, sheetName, validationIndex, validation, folder, storage);
              return localVarResponse.Data;
         }
@@ -50985,6 +51211,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ValidationResponse</returns>
         public ValidationResponse CellsWorksheetValidationsPutWorksheetValidation (string name, string sheetName, string range = null, Validation validation = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<ValidationResponse> localVarResponse = CellsWorksheetValidationsPutWorksheetValidationWithHttpInfo(name, sheetName, range, validation, folder, storage);
              return localVarResponse.Data;
         }
@@ -51173,6 +51400,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>WorksheetResponse</returns>
         public WorksheetResponse CellsWorksheetsDeleteUnprotectWorksheet (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<WorksheetResponse> localVarResponse = CellsWorksheetsDeleteUnprotectWorksheetWithHttpInfo(name, sheetName, protectParameter, folder, storage);
              return localVarResponse.Data;
         }
@@ -51355,6 +51583,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>WorksheetsResponse</returns>
         public WorksheetsResponse CellsWorksheetsDeleteWorksheet (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<WorksheetsResponse> localVarResponse = CellsWorksheetsDeleteWorksheetWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -51514,6 +51743,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorksheetsDeleteWorksheetBackground (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsDeleteWorksheetBackgroundWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -51674,6 +51904,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorksheetsDeleteWorksheetComment (string name, string sheetName, string cellName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsDeleteWorksheetCommentWithHttpInfo(name, sheetName, cellName, folder, storage);
              return localVarResponse.Data;
         }
@@ -51844,6 +52075,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorksheetsDeleteWorksheetComments (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsDeleteWorksheetCommentsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -52007,6 +52239,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorksheetsDeleteWorksheetFreezePanes (string name, string sheetName, int? row, int? column, int? freezedRows, int? freezedColumns, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsDeleteWorksheetFreezePanesWithHttpInfo(name, sheetName, row, column, freezedRows, freezedColumns, folder, storage);
              return localVarResponse.Data;
         }
@@ -52209,6 +52442,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>RangesResponse</returns>
         public RangesResponse CellsWorksheetsGetNamedRanges (string name, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<RangesResponse> localVarResponse = CellsWorksheetsGetNamedRangesWithHttpInfo(name, folder, storage);
              return localVarResponse.Data;
         }
@@ -52360,6 +52594,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>System.IO.Stream</returns>
         public System.IO.Stream CellsWorksheetsGetWorksheet (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<System.IO.Stream> localVarResponse = CellsWorksheetsGetWorksheetWithHttpInfo(name, sheetName, format, verticalResolution, horizontalResolution, folder, storage);
              return localVarResponse.Data;
         }
@@ -52535,6 +52770,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>SingleValueResponse</returns>
         public SingleValueResponse CellsWorksheetsGetWorksheetCalculateFormula (string name, string sheetName, string formula, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<SingleValueResponse> localVarResponse = CellsWorksheetsGetWorksheetCalculateFormulaWithHttpInfo(name, sheetName, formula, folder, storage);
              return localVarResponse.Data;
         }
@@ -52706,6 +52942,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CommentResponse</returns>
         public CommentResponse CellsWorksheetsGetWorksheetComment (string name, string sheetName, string cellName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CommentResponse> localVarResponse = CellsWorksheetsGetWorksheetCommentWithHttpInfo(name, sheetName, cellName, folder, storage);
              return localVarResponse.Data;
         }
@@ -52876,6 +53113,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CommentsResponse</returns>
         public CommentsResponse CellsWorksheetsGetWorksheetComments (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CommentsResponse> localVarResponse = CellsWorksheetsGetWorksheetCommentsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -53036,6 +53274,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>MergedCellResponse</returns>
         public MergedCellResponse CellsWorksheetsGetWorksheetMergedCell (string name, string sheetName, int? mergedCellIndex, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<MergedCellResponse> localVarResponse = CellsWorksheetsGetWorksheetMergedCellWithHttpInfo(name, sheetName, mergedCellIndex, folder, storage);
              return localVarResponse.Data;
         }
@@ -53206,6 +53445,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>MergedCellsResponse</returns>
         public MergedCellsResponse CellsWorksheetsGetWorksheetMergedCells (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<MergedCellsResponse> localVarResponse = CellsWorksheetsGetWorksheetMergedCellsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -53365,6 +53605,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>TextItemsResponse</returns>
         public TextItemsResponse CellsWorksheetsGetWorksheetTextItems (string name, string sheetName, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<TextItemsResponse> localVarResponse = CellsWorksheetsGetWorksheetTextItemsWithHttpInfo(name, sheetName, folder, storage);
              return localVarResponse.Data;
         }
@@ -53523,6 +53764,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>WorksheetsResponse</returns>
         public WorksheetsResponse CellsWorksheetsGetWorksheets (string name, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<WorksheetsResponse> localVarResponse = CellsWorksheetsGetWorksheetsWithHttpInfo(name, folder, storage);
              return localVarResponse.Data;
         }
@@ -53676,6 +53918,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorksheetsPostAutofitWorksheetColumns (string name, string sheetName, int? firstColumn, int? lastColumn, AutoFitterOptions autoFitterOptions = null, int? firstRow = null, int? lastRow = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsPostAutofitWorksheetColumnsWithHttpInfo(name, sheetName, firstColumn, lastColumn, autoFitterOptions, firstRow, lastRow, folder, storage);
              return localVarResponse.Data;
         }
@@ -53894,6 +54137,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorksheetsPostAutofitWorksheetRow (string name, string sheetName, int? rowIndex, int? firstColumn, int? lastColumn, AutoFitterOptions autoFitterOptions = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsPostAutofitWorksheetRowWithHttpInfo(name, sheetName, rowIndex, firstColumn, lastColumn, autoFitterOptions, folder, storage);
              return localVarResponse.Data;
         }
@@ -54113,6 +54357,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorksheetsPostAutofitWorksheetRows (string name, string sheetName, AutoFitterOptions autoFitterOptions = null, int? startRow = null, int? endRow = null, bool? onlyAuto = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsPostAutofitWorksheetRowsWithHttpInfo(name, sheetName, autoFitterOptions, startRow, endRow, onlyAuto, folder, storage);
              return localVarResponse.Data;
         }
@@ -54314,6 +54559,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorksheetsPostCopyWorksheet (string name, string sheetName, string sourceSheet, CopyOptions options = null, string sourceWorkbook = null, string sourceFolder = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsPostCopyWorksheetWithHttpInfo(name, sheetName, sourceSheet, options, sourceWorkbook, sourceFolder, folder, storage);
              return localVarResponse.Data;
         }
@@ -54518,6 +54764,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>WorksheetsResponse</returns>
         public WorksheetsResponse CellsWorksheetsPostMoveWorksheet (string name, string sheetName, WorksheetMovingRequest moving = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<WorksheetsResponse> localVarResponse = CellsWorksheetsPostMoveWorksheetWithHttpInfo(name, sheetName, moving, folder, storage);
              return localVarResponse.Data;
         }
@@ -54701,6 +54948,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorksheetsPostRenameWorksheet (string name, string sheetName, string newname, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsPostRenameWorksheetWithHttpInfo(name, sheetName, newname, folder, storage);
              return localVarResponse.Data;
         }
@@ -54872,6 +55120,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>WorksheetResponse</returns>
         public WorksheetResponse CellsWorksheetsPostUpdateWorksheetProperty (string name, string sheetName, Worksheet sheet = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<WorksheetResponse> localVarResponse = CellsWorksheetsPostUpdateWorksheetPropertyWithHttpInfo(name, sheetName, sheet, folder, storage);
              return localVarResponse.Data;
         }
@@ -55055,6 +55304,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorksheetsPostUpdateWorksheetZoom (string name, string sheetName, int? value, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsPostUpdateWorksheetZoomWithHttpInfo(name, sheetName, value, folder, storage);
              return localVarResponse.Data;
         }
@@ -55227,6 +55477,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorksheetsPostWorksheetComment (string name, string sheetName, string cellName, Comment comment = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsPostWorksheetCommentWithHttpInfo(name, sheetName, cellName, comment, folder, storage);
              return localVarResponse.Data;
         }
@@ -55422,6 +55673,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorksheetsPostWorksheetRangeSort (string name, string sheetName, string cellArea, DataSorter dataSorter = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsPostWorksheetRangeSortWithHttpInfo(name, sheetName, cellArea, dataSorter, folder, storage);
              return localVarResponse.Data;
         }
@@ -55616,6 +55868,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>TextItemsResponse</returns>
         public TextItemsResponse CellsWorksheetsPostWorksheetTextSearch (string name, string sheetName, string text, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<TextItemsResponse> localVarResponse = CellsWorksheetsPostWorksheetTextSearchWithHttpInfo(name, sheetName, text, folder, storage);
              return localVarResponse.Data;
         }
@@ -55788,6 +56041,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>WorksheetReplaceResponse</returns>
         public WorksheetReplaceResponse CellsWorksheetsPostWorsheetTextReplace (string name, string sheetName, string oldValue, string newValue, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<WorksheetReplaceResponse> localVarResponse = CellsWorksheetsPostWorsheetTextReplaceWithHttpInfo(name, sheetName, oldValue, newValue, folder, storage);
              return localVarResponse.Data;
         }
@@ -55971,6 +56225,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>WorksheetsResponse</returns>
         public WorksheetsResponse CellsWorksheetsPutAddNewWorksheet (string name, string sheetName, int? position = null, string sheettype = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<WorksheetsResponse> localVarResponse = CellsWorksheetsPutAddNewWorksheetWithHttpInfo(name, sheetName, position, sheettype, folder, storage);
              return localVarResponse.Data;
         }
@@ -56141,6 +56396,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>WorksheetResponse</returns>
         public WorksheetResponse CellsWorksheetsPutChangeVisibilityWorksheet (string name, string sheetName, bool? isVisible, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<WorksheetResponse> localVarResponse = CellsWorksheetsPutChangeVisibilityWorksheetWithHttpInfo(name, sheetName, isVisible, folder, storage);
              return localVarResponse.Data;
         }
@@ -56312,6 +56568,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>WorksheetResponse</returns>
         public WorksheetResponse CellsWorksheetsPutProtectWorksheet (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<WorksheetResponse> localVarResponse = CellsWorksheetsPutProtectWorksheetWithHttpInfo(name, sheetName, protectParameter, folder, storage);
              return localVarResponse.Data;
         }
@@ -56495,6 +56752,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorksheetsPutWorksheetBackground (string name, string sheetName, byte[] png, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsPutWorksheetBackgroundWithHttpInfo(name, sheetName, png, folder, storage);
              return localVarResponse.Data;
         }
@@ -56685,6 +56943,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CommentResponse</returns>
         public CommentResponse CellsWorksheetsPutWorksheetComment (string name, string sheetName, string cellName, Comment comment = null, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CommentResponse> localVarResponse = CellsWorksheetsPutWorksheetCommentWithHttpInfo(name, sheetName, cellName, comment, folder, storage);
              return localVarResponse.Data;
         }
@@ -56882,6 +57141,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>CellsCloudResponse</returns>
         public CellsCloudResponse CellsWorksheetsPutWorksheetFreezePanes (string name, string sheetName, int? row, int? column, int? freezedRows, int? freezedColumns, string folder = null, string storage = null)
         {
+             checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsPutWorksheetFreezePanesWithHttpInfo(name, sheetName, row, column, freezedRows, freezedColumns, folder, storage);
              return localVarResponse.Data;
         }
@@ -57086,6 +57346,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns></returns>
         public void CopyFile (string srcPath, string destPath, string srcStorageName = null, string destStorageName = null, string versionId = null)
         {
+             checkAccessToken();
              CopyFileWithHttpInfo(srcPath, destPath, srcStorageName, destStorageName, versionId);
         }
 
@@ -57248,6 +57509,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns></returns>
         public void CopyFolder (string srcPath, string destPath, string srcStorageName = null, string destStorageName = null)
         {
+             checkAccessToken();
              CopyFolderWithHttpInfo(srcPath, destPath, srcStorageName, destStorageName);
         }
 
@@ -57403,6 +57665,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns></returns>
         public void CreateFolder (string path, string storageName = null)
         {
+             checkAccessToken();
              CreateFolderWithHttpInfo(path, storageName);
         }
 
@@ -57543,6 +57806,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns></returns>
         public void DeleteFile (string path, string storageName = null, string versionId = null)
         {
+             checkAccessToken();
              DeleteFileWithHttpInfo(path, storageName, versionId);
         }
 
@@ -57688,6 +57952,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns></returns>
         public void DeleteFolder (string path, string storageName = null, bool? recursive = null)
         {
+             checkAccessToken();
              DeleteFolderWithHttpInfo(path, storageName, recursive);
         }
 
@@ -57833,6 +58098,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>System.IO.Stream</returns>
         public System.IO.Stream DownloadFile (string path, string storageName = null, string versionId = null)
         {
+             checkAccessToken();
              ApiResponse<System.IO.Stream> localVarResponse = DownloadFileWithHttpInfo(path, storageName, versionId);
              return localVarResponse.Data;
         }
@@ -57978,6 +58244,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>DiscUsage</returns>
         public DiscUsage GetDiscUsage (string storageName = null)
         {
+             checkAccessToken();
              ApiResponse<DiscUsage> localVarResponse = GetDiscUsageWithHttpInfo(storageName);
              return localVarResponse.Data;
         }
@@ -58108,6 +58375,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>FileVersions</returns>
         public FileVersions GetFileVersions (string path, string storageName = null)
         {
+             checkAccessToken();
              ApiResponse<FileVersions> localVarResponse = GetFileVersionsWithHttpInfo(path, storageName);
              return localVarResponse.Data;
         }
@@ -58249,6 +58517,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>FilesList</returns>
         public FilesList GetFilesList (string path, string storageName = null)
         {
+             checkAccessToken();
              ApiResponse<FilesList> localVarResponse = GetFilesListWithHttpInfo(path, storageName);
              return localVarResponse.Data;
         }
@@ -58393,6 +58662,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns></returns>
         public void MoveFile (string srcPath, string destPath, string srcStorageName = null, string destStorageName = null, string versionId = null)
         {
+             checkAccessToken();
              MoveFileWithHttpInfo(srcPath, destPath, srcStorageName, destStorageName, versionId);
         }
 
@@ -58555,6 +58825,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns></returns>
         public void MoveFolder (string srcPath, string destPath, string srcStorageName = null, string destStorageName = null)
         {
+             checkAccessToken();
              MoveFolderWithHttpInfo(srcPath, destPath, srcStorageName, destStorageName);
         }
 
@@ -58711,6 +58982,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>AccessTokenResponse</returns>
         public AccessTokenResponse OAuthPost (string grantType, string clientId, string clientSecret)
         {
+             checkAccessToken();
              ApiResponse<AccessTokenResponse> localVarResponse = OAuthPostWithHttpInfo(grantType, clientId, clientSecret);
              return localVarResponse.Data;
         }
@@ -58870,6 +59142,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ObjectExist</returns>
         public ObjectExist ObjectExists (string path, string storageName = null, string versionId = null)
         {
+             checkAccessToken();
              ApiResponse<ObjectExist> localVarResponse = ObjectExistsWithHttpInfo(path, storageName, versionId);
              return localVarResponse.Data;
         }
@@ -59015,6 +59288,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>StorageExist</returns>
         public StorageExist StorageExists (string storageName)
         {
+             checkAccessToken();
              ApiResponse<StorageExist> localVarResponse = StorageExistsWithHttpInfo(storageName);
              return localVarResponse.Data;
         }
@@ -59152,6 +59426,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>FilesUploadResult</returns>
         public FilesUploadResult UploadFile (string path, System.IO.Stream file, string storageName = null)
         {
+             checkAccessToken();
              ApiResponse<FilesUploadResult> localVarResponse = UploadFileWithHttpInfo(path, file, storageName);
              return localVarResponse.Data;
         }

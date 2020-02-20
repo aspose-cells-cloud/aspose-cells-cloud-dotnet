@@ -60,8 +60,8 @@ namespace Aspose.Cells.Cloud.SDK.Test
         {
             // TODO uncomment below to test the method and replace null with proper value
             string grantType = "client_credentials";
-            string clientId = "66164C51-693E-4904-A121-545961673EC1";
-            string clientSecret = "536e76768419db9585afdd37bb5f7533";
+            string clientId = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
+            string clientSecret = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
             var response = instance.OAuthPost(grantType, clientId, clientSecret);
             Assert.IsInstanceOf<AccessTokenResponse>(response, "response is AccessTokenResponse");
             Assert.IsNotNull(response.AccessToken);
