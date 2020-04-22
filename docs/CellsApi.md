@@ -174,6 +174,7 @@ Method | HTTP request | Description
 [**CellsWorkbookDeleteDecryptDocument**](CellsApi.md#cellsworkbookdeletedecryptdocument) | **DELETE** /cells/{name}/encryption | Decrypt document.
 [**CellsWorkbookDeleteDocumentUnprotectFromChanges**](CellsApi.md#cellsworkbookdeletedocumentunprotectfromchanges) | **DELETE** /cells/{name}/writeProtection | Unprotect document from changes.
 [**CellsWorkbookDeleteUnprotectDocument**](CellsApi.md#cellsworkbookdeleteunprotectdocument) | **DELETE** /cells/{name}/protection | Unprotect document.
+[**CellsWorkbookDeleteWorkbookBackground**](CellsApi.md#cellsworkbookdeleteworkbookbackground) | **DELETE** /cells/{name}/background | Set worksheet background image.
 [**CellsWorkbookDeleteWorkbookName**](CellsApi.md#cellsworkbookdeleteworkbookname) | **DELETE** /cells/{name}/names/{nameName} | Clean workbook&#39;s names.
 [**CellsWorkbookDeleteWorkbookNames**](CellsApi.md#cellsworkbookdeleteworkbooknames) | **DELETE** /cells/{name}/names | Clean workbook&#39;s names.
 [**CellsWorkbookGetWorkbook**](CellsApi.md#cellsworkbookgetworkbook) | **GET** /cells/{name} | Read workbook info or export.
@@ -196,6 +197,7 @@ Method | HTTP request | Description
 [**CellsWorkbookPostWorkbooksTextSearch**](CellsApi.md#cellsworkbookpostworkbookstextsearch) | **POST** /cells/{name}/findText | Search text.
 [**CellsWorkbookPutConvertWorkbook**](CellsApi.md#cellsworkbookputconvertworkbook) | **PUT** /cells/convert | Convert workbook from request content to some format.
 [**CellsWorkbookPutDocumentProtectFromChanges**](CellsApi.md#cellsworkbookputdocumentprotectfromchanges) | **PUT** /cells/{name}/writeProtection | Protect document from changes.
+[**CellsWorkbookPutWorkbookBackground**](CellsApi.md#cellsworkbookputworkbookbackground) | **PUT** /cells/{name}/background | Set workbook background image.
 [**CellsWorkbookPutWorkbookCreate**](CellsApi.md#cellsworkbookputworkbookcreate) | **PUT** /cells/{name} | Create new workbook using deferent methods.
 [**CellsWorksheetValidationsDeleteWorksheetValidation**](CellsApi.md#cellsworksheetvalidationsdeleteworksheetvalidation) | **DELETE** /cells/{name}/worksheets/{sheetName}/validations/{validationIndex} | Delete worksheet validation by index.
 [**CellsWorksheetValidationsDeleteWorksheetValidations**](CellsApi.md#cellsworksheetvalidationsdeleteworksheetvalidations) | **DELETE** /cells/{name}/worksheets/{sheetName}/validations | Clear all validation in worksheet.
@@ -12006,6 +12008,69 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="cellsworkbookdeleteworkbookbackground"></a>
+# **CellsWorkbookDeleteWorkbookBackground**
+> CellsCloudResponse CellsWorkbookDeleteWorkbookBackground (string name, string folder = null, string storage = null)
+
+Set worksheet background image.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+namespace Example
+{
+    public class CellsWorkbookDeleteWorkbookBackgroundExample
+    {
+        public void main()
+        {
+            var apiInstance = new CellsApi();
+            var name = name_example;  // string | 
+            var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
+
+            try
+            {
+                // Set worksheet background image.
+                CellsCloudResponse result = apiInstance.CellsWorkbookDeleteWorkbookBackground(name, folder, storage);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CellsApi.CellsWorkbookDeleteWorkbookBackground: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**|  | 
+ **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
+
+### Return type
+
+[**CellsCloudResponse**](CellsCloudResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="cellsworkbookdeleteworkbookname"></a>
 # **CellsWorkbookDeleteWorkbookName**
 > CellsCloudResponse CellsWorkbookDeleteWorkbookName (string name, string nameName, string folder = null, string storage = null)
@@ -13055,7 +13120,7 @@ No authorization required
 
 <a name="cellsworkbookpostworkbooksplit"></a>
 # **CellsWorkbookPostWorkbookSplit**
-> SplitResultResponse CellsWorkbookPostWorkbookSplit (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null, string storage = null)
+> SplitResultResponse CellsWorkbookPostWorkbookSplit (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null, string outFolder = null, string storage = null)
 
 Split workbook.
 
@@ -13081,12 +13146,13 @@ namespace Example
             var horizontalResolution = 56;  // int? | Image horizontal resolution. (optional)  (default to 0)
             var verticalResolution = 56;  // int? | Image vertical resolution. (optional)  (default to 0)
             var folder = folder_example;  // string | The workbook folder. (optional) 
+            var outFolder = outFolder_example;  // string | out Folder. (optional) 
             var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Split workbook.
-                SplitResultResponse result = apiInstance.CellsWorkbookPostWorkbookSplit(name, format, from, to, horizontalResolution, verticalResolution, folder, storage);
+                SplitResultResponse result = apiInstance.CellsWorkbookPostWorkbookSplit(name, format, from, to, horizontalResolution, verticalResolution, folder, outFolder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -13109,6 +13175,7 @@ Name | Type | Description  | Notes
  **horizontalResolution** | **int?**| Image horizontal resolution. | [optional] [default to 0]
  **verticalResolution** | **int?**| Image vertical resolution. | [optional] [default to 0]
  **folder** | **string**| The workbook folder. | [optional] 
+ **outFolder** | **string**| out Folder. | [optional] 
  **storage** | **string**| storage name. | [optional] 
 
 ### Return type
@@ -13325,7 +13392,7 @@ No authorization required
 
 <a name="cellsworkbookputconvertworkbook"></a>
 # **CellsWorkbookPutConvertWorkbook**
-> System.IO.Stream CellsWorkbookPutConvertWorkbook (byte[] workbook, string format = null, string password = null, string outPath = null)
+> System.IO.Stream CellsWorkbookPutConvertWorkbook (System.IO.Stream workbook, string format = null, string password = null, string outPath = null)
 
 Convert workbook from request content to some format.
 
@@ -13344,7 +13411,7 @@ namespace Example
         public void main()
         {
             var apiInstance = new CellsApi();
-            var workbook = BINARY_DATA_HERE;  // byte[] | 
+            var workbook = new System.IO.Stream(); // System.IO.Stream | 
             var format = format_example;  // string | The format to convert. (optional) 
             var password = password_example;  // string | The workbook password. (optional) 
             var outPath = outPath_example;  // string | Path to save result (optional) 
@@ -13368,7 +13435,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **workbook** | **byte[]**|  | 
+ **workbook** | **System.IO.Stream**|  | 
  **format** | **string**| The format to convert. | [optional] 
  **password** | **string**| The workbook password. | [optional] 
  **outPath** | **string**| Path to save result | [optional] 
@@ -13453,9 +13520,74 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="cellsworkbookputworkbookbackground"></a>
+# **CellsWorkbookPutWorkbookBackground**
+> CellsCloudResponse CellsWorkbookPutWorkbookBackground (string name, byte[] png, string folder = null, string storage = null)
+
+Set workbook background image.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+namespace Example
+{
+    public class CellsWorkbookPutWorkbookBackgroundExample
+    {
+        public void main()
+        {
+            var apiInstance = new CellsApi();
+            var name = name_example;  // string | 
+            var png = BINARY_DATA_HERE;  // byte[] | 
+            var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
+
+            try
+            {
+                // Set workbook background image.
+                CellsCloudResponse result = apiInstance.CellsWorkbookPutWorkbookBackground(name, png, folder, storage);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CellsApi.CellsWorkbookPutWorkbookBackground: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**|  | 
+ **png** | **byte[]**|  | 
+ **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
+
+### Return type
+
+[**CellsCloudResponse**](CellsCloudResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="cellsworkbookputworkbookcreate"></a>
 # **CellsWorkbookPutWorkbookCreate**
-> WorkbookResponse CellsWorkbookPutWorkbookCreate (string name, string templateFile = null, string dataFile = null, string folder = null, string storage = null)
+> WorkbookResponse CellsWorkbookPutWorkbookCreate (string name, string templateFile = null, string dataFile = null, bool? isWriteOver = null, string folder = null, string storage = null)
 
 Create new workbook using deferent methods.
 
@@ -13477,13 +13609,14 @@ namespace Example
             var name = name_example;  // string | The new document name.
             var templateFile = templateFile_example;  // string | The template file, if the data not provided default workbook is created. (optional) 
             var dataFile = dataFile_example;  // string | Smart marker data file, if the data not provided the request content is checked for the data. (optional) 
+            var isWriteOver = true;  // bool? | write over file. (optional) 
             var folder = folder_example;  // string | The new document folder. (optional) 
             var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Create new workbook using deferent methods.
-                WorkbookResponse result = apiInstance.CellsWorkbookPutWorkbookCreate(name, templateFile, dataFile, folder, storage);
+                WorkbookResponse result = apiInstance.CellsWorkbookPutWorkbookCreate(name, templateFile, dataFile, isWriteOver, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -13502,6 +13635,7 @@ Name | Type | Description  | Notes
  **name** | **string**| The new document name. | 
  **templateFile** | **string**| The template file, if the data not provided default workbook is created. | [optional] 
  **dataFile** | **string**| Smart marker data file, if the data not provided the request content is checked for the data. | [optional] 
+ **isWriteOver** | **bool?**| write over file. | [optional] 
  **folder** | **string**| The new document folder. | [optional] 
  **storage** | **string**| storage name. | [optional] 
 
@@ -14389,7 +14523,7 @@ No authorization required
 
 <a name="cellsworksheetsgetworksheet"></a>
 # **CellsWorksheetsGetWorksheet**
-> System.IO.Stream CellsWorksheetsGetWorksheet (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string folder = null, string storage = null)
+> System.IO.Stream CellsWorksheetsGetWorksheet (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string area = null, int? pageIndex = null, string folder = null, string storage = null)
 
 Read worksheet info or export.
 
@@ -14413,13 +14547,15 @@ namespace Example
             var format = format_example;  // string | The exported file format. (optional) 
             var verticalResolution = 56;  // int? | Image vertical resolution. (optional)  (default to 0)
             var horizontalResolution = 56;  // int? | Image horizontal resolution. (optional)  (default to 0)
+            var area = area_example;  // string | Exported area. (optional) 
+            var pageIndex = 56;  // int? | Exported page index. (optional) 
             var folder = folder_example;  // string | The document folder. (optional) 
             var storage = storage_example;  // string | storage name. (optional) 
 
             try
             {
                 // Read worksheet info or export.
-                System.IO.Stream result = apiInstance.CellsWorksheetsGetWorksheet(name, sheetName, format, verticalResolution, horizontalResolution, folder, storage);
+                System.IO.Stream result = apiInstance.CellsWorksheetsGetWorksheet(name, sheetName, format, verticalResolution, horizontalResolution, area, pageIndex, folder, storage);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -14440,6 +14576,8 @@ Name | Type | Description  | Notes
  **format** | **string**| The exported file format. | [optional] 
  **verticalResolution** | **int?**| Image vertical resolution. | [optional] [default to 0]
  **horizontalResolution** | **int?**| Image horizontal resolution. | [optional] [default to 0]
+ **area** | **string**| Exported area. | [optional] 
+ **pageIndex** | **int?**| Exported page index. | [optional] 
  **folder** | **string**| The document folder. | [optional] 
  **storage** | **string**| storage name. | [optional] 
 

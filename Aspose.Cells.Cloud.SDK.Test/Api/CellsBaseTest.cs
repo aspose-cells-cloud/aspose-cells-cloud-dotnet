@@ -3,18 +3,14 @@ namespace Aspose.Cells.Cloud.SDK.Test
 {
     using Aspose.Cells.Cloud.SDK.Client;
     using Aspose.Cells.Cloud.SDK.Api;
-    using Aspose.Storage.Cloud.Sdk.Api;
-    using Aspose.Storage.Cloud.Sdk.Model;
-    using Aspose.Storage.Cloud.Sdk.Model.Requests;
     using System.IO;
-    using System.Collections.Generic;
     public class CellsBaseTest
     {
         protected ApiClient client;
         protected Client.Configuration config;
         protected string grantType = "client_credentials";
-        protected string clientId = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
-        protected string clientSecret = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+        protected string clientId = "xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx";
+        protected string clientSecret = "xxxxxxxxxxxxxxxxxxxxxxxx";
         protected static string accesstoken;
         protected string refreshtoken;
         protected string BOOK1 = "Book1.xlsx";
@@ -33,7 +29,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
         protected string CellName = "A1";
         protected string RANGE = "A1:C10";
         protected string CELLAREA = "A1:C10";
-        protected StorageApi storageApi;
         private string TestDataFolder = @"D:\Projects\Aspose\Aspose.Cloud\Aspose.Cells.Cloud.SDK\src\TestData\";
         
         protected void UpdateDataFile( CellsApi cellsApi, string folder, string filename)

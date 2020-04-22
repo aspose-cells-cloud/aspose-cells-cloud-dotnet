@@ -5352,6 +5352,31 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ApiResponse of CellsCloudResponse</returns>
         ApiResponse<CellsCloudResponse> CellsWorkbookDeleteUnprotectDocumentWithHttpInfo (string name, WorkbookProtectionRequest protection = null, string folder = null, string storage = null);
         /// <summary>
+        /// Set worksheet background image.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        CellsCloudResponse CellsWorkbookDeleteWorkbookBackground (string name, string folder = null, string storage = null);
+
+        /// <summary>
+        /// Set worksheet background image.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        ApiResponse<CellsCloudResponse> CellsWorkbookDeleteWorkbookBackgroundWithHttpInfo (string name, string folder = null, string storage = null);
+        /// <summary>
         /// Clean workbook&#39;s names.
         /// </summary>
         /// <remarks>
@@ -5805,9 +5830,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="outFolder">out Folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>SplitResultResponse</returns>
-        SplitResultResponse CellsWorkbookPostWorkbookSplit (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null, string storage = null);
+        SplitResultResponse CellsWorkbookPostWorkbookSplit (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null, string outFolder = null, string storage = null);
 
         /// <summary>
         /// Split workbook.
@@ -5823,9 +5849,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="outFolder">out Folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SplitResultResponse</returns>
-        ApiResponse<SplitResultResponse> CellsWorkbookPostWorkbookSplitWithHttpInfo (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null, string storage = null);
+        ApiResponse<SplitResultResponse> CellsWorkbookPostWorkbookSplitWithHttpInfo (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null, string outFolder = null, string storage = null);
         /// <summary>
         /// Merge workbooks.
         /// </summary>
@@ -5921,7 +5948,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="password">The workbook password. (optional)</param>
         /// <param name="outPath">Path to save result (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        System.IO.Stream CellsWorkbookPutConvertWorkbook (byte[] workbook, string format = null, string password = null, string outPath = null);
+        System.IO.Stream CellsWorkbookPutConvertWorkbook (System.IO.Stream workbook, string format = null, string password = null, string outPath = null);
 
         /// <summary>
         /// Convert workbook from request content to some format.
@@ -5935,7 +5962,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="password">The workbook password. (optional)</param>
         /// <param name="outPath">Path to save result (optional)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        ApiResponse<System.IO.Stream> CellsWorkbookPutConvertWorkbookWithHttpInfo (byte[] workbook, string format = null, string password = null, string outPath = null);
+        ApiResponse<System.IO.Stream> CellsWorkbookPutConvertWorkbookWithHttpInfo (System.IO.Stream workbook, string format = null, string password = null, string outPath = null);
         /// <summary>
         /// Protect document from changes.
         /// </summary>
@@ -5964,6 +5991,33 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ApiResponse of CellsCloudResponse</returns>
         ApiResponse<CellsCloudResponse> CellsWorkbookPutDocumentProtectFromChangesWithHttpInfo (string name, PasswordRequest password = null, string folder = null, string storage = null);
         /// <summary>
+        /// Set workbook background image.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="png"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        CellsCloudResponse CellsWorkbookPutWorkbookBackground (string name, byte[] png, string folder = null, string storage = null);
+
+        /// <summary>
+        /// Set workbook background image.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="png"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        ApiResponse<CellsCloudResponse> CellsWorkbookPutWorkbookBackgroundWithHttpInfo (string name, byte[] png, string folder = null, string storage = null);
+        /// <summary>
         /// Create new workbook using deferent methods.
         /// </summary>
         /// <remarks>
@@ -5973,10 +6027,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The new document name.</param>
         /// <param name="templateFile">The template file, if the data not provided default workbook is created. (optional)</param>
         /// <param name="dataFile">Smart marker data file, if the data not provided the request content is checked for the data. (optional)</param>
+        /// <param name="isWriteOver">write over file. (optional)</param>
         /// <param name="folder">The new document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>WorkbookResponse</returns>
-        WorkbookResponse CellsWorkbookPutWorkbookCreate (string name, string templateFile = null, string dataFile = null, string folder = null, string storage = null);
+        WorkbookResponse CellsWorkbookPutWorkbookCreate (string name, string templateFile = null, string dataFile = null, bool? isWriteOver = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Create new workbook using deferent methods.
@@ -5988,10 +6043,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The new document name.</param>
         /// <param name="templateFile">The template file, if the data not provided default workbook is created. (optional)</param>
         /// <param name="dataFile">Smart marker data file, if the data not provided the request content is checked for the data. (optional)</param>
+        /// <param name="isWriteOver">write over file. (optional)</param>
         /// <param name="folder">The new document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of WorkbookResponse</returns>
-        ApiResponse<WorkbookResponse> CellsWorkbookPutWorkbookCreateWithHttpInfo (string name, string templateFile = null, string dataFile = null, string folder = null, string storage = null);
+        ApiResponse<WorkbookResponse> CellsWorkbookPutWorkbookCreateWithHttpInfo (string name, string templateFile = null, string dataFile = null, bool? isWriteOver = null, string folder = null, string storage = null);
         /// <summary>
         /// Delete worksheet validation by index.
         /// </summary>
@@ -6377,10 +6433,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="format">The exported file format. (optional)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
+        /// <param name="area">Exported area. (optional)</param>
+        /// <param name="pageIndex">Exported page index. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        System.IO.Stream CellsWorksheetsGetWorksheet (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string folder = null, string storage = null);
+        System.IO.Stream CellsWorksheetsGetWorksheet (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string area = null, int? pageIndex = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Read worksheet info or export.
@@ -6394,10 +6452,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="format">The exported file format. (optional)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
+        /// <param name="area">Exported area. (optional)</param>
+        /// <param name="pageIndex">Exported page index. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        ApiResponse<System.IO.Stream> CellsWorksheetsGetWorksheetWithHttpInfo (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string folder = null, string storage = null);
+        ApiResponse<System.IO.Stream> CellsWorksheetsGetWorksheetWithHttpInfo (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string area = null, int? pageIndex = null, string folder = null, string storage = null);
         /// <summary>
         /// Calculate formula value.
         /// </summary>
@@ -12845,6 +12905,31 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorkbookDeleteUnprotectDocumentAsyncWithHttpInfo (string name, WorkbookProtectionRequest protection = null, string folder = null, string storage = null);
         /// <summary>
+        /// Set worksheet background image.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsWorkbookDeleteWorkbookBackgroundAsync (string name, string folder = null, string storage = null);
+
+        /// <summary>
+        /// Set worksheet background image.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorkbookDeleteWorkbookBackgroundAsyncWithHttpInfo (string name, string folder = null, string storage = null);
+        /// <summary>
         /// Clean workbook&#39;s names.
         /// </summary>
         /// <remarks>
@@ -13298,9 +13383,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="outFolder">out Folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SplitResultResponse</returns>
-        System.Threading.Tasks.Task<SplitResultResponse> CellsWorkbookPostWorkbookSplitAsync (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null, string storage = null);
+        System.Threading.Tasks.Task<SplitResultResponse> CellsWorkbookPostWorkbookSplitAsync (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null, string outFolder = null, string storage = null);
 
         /// <summary>
         /// Split workbook.
@@ -13316,9 +13402,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="outFolder">out Folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SplitResultResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SplitResultResponse>> CellsWorkbookPostWorkbookSplitAsyncWithHttpInfo (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null, string storage = null);
+        System.Threading.Tasks.Task<ApiResponse<SplitResultResponse>> CellsWorkbookPostWorkbookSplitAsyncWithHttpInfo (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null, string outFolder = null, string storage = null);
         /// <summary>
         /// Merge workbooks.
         /// </summary>
@@ -13414,7 +13501,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="password">The workbook password. (optional)</param>
         /// <param name="outPath">Path to save result (optional)</param>
         /// <returns>Task of System.IO.Stream</returns>
-        System.Threading.Tasks.Task<System.IO.Stream> CellsWorkbookPutConvertWorkbookAsync (byte[] workbook, string format = null, string password = null, string outPath = null);
+        System.Threading.Tasks.Task<System.IO.Stream> CellsWorkbookPutConvertWorkbookAsync (System.IO.Stream workbook, string format = null, string password = null, string outPath = null);
 
         /// <summary>
         /// Convert workbook from request content to some format.
@@ -13428,7 +13515,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="password">The workbook password. (optional)</param>
         /// <param name="outPath">Path to save result (optional)</param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorkbookPutConvertWorkbookAsyncWithHttpInfo (byte[] workbook, string format = null, string password = null, string outPath = null);
+        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorkbookPutConvertWorkbookAsyncWithHttpInfo (System.IO.Stream workbook, string format = null, string password = null, string outPath = null);
         /// <summary>
         /// Protect document from changes.
         /// </summary>
@@ -13457,6 +13544,33 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorkbookPutDocumentProtectFromChangesAsyncWithHttpInfo (string name, PasswordRequest password = null, string folder = null, string storage = null);
         /// <summary>
+        /// Set workbook background image.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="png"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsWorkbookPutWorkbookBackgroundAsync (string name, byte[] png, string folder = null, string storage = null);
+
+        /// <summary>
+        /// Set workbook background image.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="png"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorkbookPutWorkbookBackgroundAsyncWithHttpInfo (string name, byte[] png, string folder = null, string storage = null);
+        /// <summary>
         /// Create new workbook using deferent methods.
         /// </summary>
         /// <remarks>
@@ -13466,10 +13580,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The new document name.</param>
         /// <param name="templateFile">The template file, if the data not provided default workbook is created. (optional)</param>
         /// <param name="dataFile">Smart marker data file, if the data not provided the request content is checked for the data. (optional)</param>
+        /// <param name="isWriteOver">write over file. (optional)</param>
         /// <param name="folder">The new document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of WorkbookResponse</returns>
-        System.Threading.Tasks.Task<WorkbookResponse> CellsWorkbookPutWorkbookCreateAsync (string name, string templateFile = null, string dataFile = null, string folder = null, string storage = null);
+        System.Threading.Tasks.Task<WorkbookResponse> CellsWorkbookPutWorkbookCreateAsync (string name, string templateFile = null, string dataFile = null, bool? isWriteOver = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Create new workbook using deferent methods.
@@ -13481,10 +13596,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The new document name.</param>
         /// <param name="templateFile">The template file, if the data not provided default workbook is created. (optional)</param>
         /// <param name="dataFile">Smart marker data file, if the data not provided the request content is checked for the data. (optional)</param>
+        /// <param name="isWriteOver">write over file. (optional)</param>
         /// <param name="folder">The new document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (WorkbookResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<WorkbookResponse>> CellsWorkbookPutWorkbookCreateAsyncWithHttpInfo (string name, string templateFile = null, string dataFile = null, string folder = null, string storage = null);
+        System.Threading.Tasks.Task<ApiResponse<WorkbookResponse>> CellsWorkbookPutWorkbookCreateAsyncWithHttpInfo (string name, string templateFile = null, string dataFile = null, bool? isWriteOver = null, string folder = null, string storage = null);
         /// <summary>
         /// Delete worksheet validation by index.
         /// </summary>
@@ -13870,10 +13986,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="format">The exported file format. (optional)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
+        /// <param name="area">Exported area. (optional)</param>
+        /// <param name="pageIndex">Exported page index. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of System.IO.Stream</returns>
-        System.Threading.Tasks.Task<System.IO.Stream> CellsWorksheetsGetWorksheetAsync (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string folder = null, string storage = null);
+        System.Threading.Tasks.Task<System.IO.Stream> CellsWorksheetsGetWorksheetAsync (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string area = null, int? pageIndex = null, string folder = null, string storage = null);
 
         /// <summary>
         /// Read worksheet info or export.
@@ -13887,10 +14005,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="format">The exported file format. (optional)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
+        /// <param name="area">Exported area. (optional)</param>
+        /// <param name="pageIndex">Exported page index. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorksheetsGetWorksheetAsyncWithHttpInfo (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string folder = null, string storage = null);
+        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorksheetsGetWorksheetAsyncWithHttpInfo (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string area = null, int? pageIndex = null, string folder = null, string storage = null);
         /// <summary>
         /// Calculate formula value.
         /// </summary>
@@ -15086,12 +15206,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 this.Configuration.ApiClient.Configuration = this.Configuration;
             }
         }
-        /// <summary>
+/// <summary>
         /// 
         /// </summary>
         public void checkAccessToken()
         {
-            if(DateTime.Now > _getAccessTokenTime.AddMinutes(1420))
+            if(DateTime.Now > _getAccessTokenTime.AddMinutes(23.5 * 60))
             {
                 UpdateAccessToken( getAccessToken());
             }
@@ -46545,6 +46665,154 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
         /// <summary>
+        /// Set worksheet background image. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        public CellsCloudResponse CellsWorkbookDeleteWorkbookBackground (string name, string folder = null, string storage = null)
+        {
+             checkAccessToken();
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsWorkbookDeleteWorkbookBackgroundWithHttpInfo(name, folder, storage);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Set worksheet background image. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        public ApiResponse< CellsCloudResponse > CellsWorkbookDeleteWorkbookBackgroundWithHttpInfo (string name, string folder = null, string storage = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsWorkbookDeleteWorkbookBackground");
+
+            var localVarPath = "/cells/{name}/background";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsWorkbookDeleteWorkbookBackground", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
+        /// Set worksheet background image. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsWorkbookDeleteWorkbookBackgroundAsync (string name, string folder = null, string storage = null)
+        {
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsWorkbookDeleteWorkbookBackgroundAsyncWithHttpInfo(name, folder, storage);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Set worksheet background image. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorkbookDeleteWorkbookBackgroundAsyncWithHttpInfo (string name, string folder = null, string storage = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsWorkbookDeleteWorkbookBackground");
+
+            var localVarPath = "/cells/{name}/background";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsWorkbookDeleteWorkbookBackground", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
         /// Clean workbook&#39;s names. 
         /// </summary>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
@@ -49175,12 +49443,13 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="outFolder">out Folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>SplitResultResponse</returns>
-        public SplitResultResponse CellsWorkbookPostWorkbookSplit (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null, string storage = null)
+        public SplitResultResponse CellsWorkbookPostWorkbookSplit (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null, string outFolder = null, string storage = null)
         {
              checkAccessToken();
-             ApiResponse<SplitResultResponse> localVarResponse = CellsWorkbookPostWorkbookSplitWithHttpInfo(name, format, from, to, horizontalResolution, verticalResolution, folder, storage);
+             ApiResponse<SplitResultResponse> localVarResponse = CellsWorkbookPostWorkbookSplitWithHttpInfo(name, format, from, to, horizontalResolution, verticalResolution, folder, outFolder, storage);
              return localVarResponse.Data;
         }
 
@@ -49195,9 +49464,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="outFolder">out Folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of SplitResultResponse</returns>
-        public ApiResponse< SplitResultResponse > CellsWorkbookPostWorkbookSplitWithHttpInfo (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null, string storage = null)
+        public ApiResponse< SplitResultResponse > CellsWorkbookPostWorkbookSplitWithHttpInfo (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null, string outFolder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -49232,6 +49502,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (horizontalResolution != null) localVarQueryParams.Add("horizontalResolution", Configuration.ApiClient.ParameterToString(horizontalResolution)); // query parameter
             if (verticalResolution != null) localVarQueryParams.Add("verticalResolution", Configuration.ApiClient.ParameterToString(verticalResolution)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (outFolder != null) localVarQueryParams.Add("outFolder", Configuration.ApiClient.ParameterToString(outFolder)); // query parameter
             if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
@@ -49264,11 +49535,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="outFolder">out Folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of SplitResultResponse</returns>
-        public async System.Threading.Tasks.Task<SplitResultResponse> CellsWorkbookPostWorkbookSplitAsync (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null, string storage = null)
+        public async System.Threading.Tasks.Task<SplitResultResponse> CellsWorkbookPostWorkbookSplitAsync (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null, string outFolder = null, string storage = null)
         {
-             ApiResponse<SplitResultResponse> localVarResponse = await CellsWorkbookPostWorkbookSplitAsyncWithHttpInfo(name, format, from, to, horizontalResolution, verticalResolution, folder, storage);
+             ApiResponse<SplitResultResponse> localVarResponse = await CellsWorkbookPostWorkbookSplitAsyncWithHttpInfo(name, format, from, to, horizontalResolution, verticalResolution, folder, outFolder, storage);
              return localVarResponse.Data;
 
         }
@@ -49284,9 +49556,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
+        /// <param name="outFolder">out Folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SplitResultResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SplitResultResponse>> CellsWorkbookPostWorkbookSplitAsyncWithHttpInfo (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null, string storage = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SplitResultResponse>> CellsWorkbookPostWorkbookSplitAsyncWithHttpInfo (string name, string format = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string folder = null, string outFolder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -49321,6 +49594,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (horizontalResolution != null) localVarQueryParams.Add("horizontalResolution", Configuration.ApiClient.ParameterToString(horizontalResolution)); // query parameter
             if (verticalResolution != null) localVarQueryParams.Add("verticalResolution", Configuration.ApiClient.ParameterToString(verticalResolution)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (outFolder != null) localVarQueryParams.Add("outFolder", Configuration.ApiClient.ParameterToString(outFolder)); // query parameter
             if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
 
@@ -49843,7 +50117,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="password">The workbook password. (optional)</param>
         /// <param name="outPath">Path to save result (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        public System.IO.Stream CellsWorkbookPutConvertWorkbook (byte[] workbook, string format = null, string password = null, string outPath = null)
+        public System.IO.Stream CellsWorkbookPutConvertWorkbook (System.IO.Stream workbook, string format = null, string password = null, string outPath = null)
         {
              checkAccessToken();
              ApiResponse<System.IO.Stream> localVarResponse = CellsWorkbookPutConvertWorkbookWithHttpInfo(workbook, format, password, outPath);
@@ -49859,7 +50133,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="password">The workbook password. (optional)</param>
         /// <param name="outPath">Path to save result (optional)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        public ApiResponse< System.IO.Stream > CellsWorkbookPutConvertWorkbookWithHttpInfo (byte[] workbook, string format = null, string password = null, string outPath = null)
+        public ApiResponse< System.IO.Stream > CellsWorkbookPutConvertWorkbookWithHttpInfo (System.IO.Stream workbook, string format = null, string password = null, string outPath = null)
         {
             // verify the required parameter 'workbook' is set
             if (workbook == null)
@@ -49890,18 +50164,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
             if (password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(password)); // query parameter
             if (outPath != null) localVarQueryParams.Add("outPath", Configuration.ApiClient.ParameterToString(outPath)); // query parameter
-            if (workbook != null && workbook.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = Configuration.ApiClient.Serialize(workbook); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = workbook; // byte array
-                if ( "CellsWorkbookPutConvertWorkbook" == "CellsSaveAsPostDocumentSaveAs")
-                {
-                    localVarHeaderParams.Add("Content-Type", "application/json");
-                }
-            }
+            if (workbook != null) localVarFileParams.Add("workbook", Configuration.ApiClient.ParameterToFile("workbook", workbook));
 
 
             // make the HTTP request
@@ -49931,7 +50194,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="password">The workbook password. (optional)</param>
         /// <param name="outPath">Path to save result (optional)</param>
         /// <returns>Task of System.IO.Stream</returns>
-        public async System.Threading.Tasks.Task<System.IO.Stream> CellsWorkbookPutConvertWorkbookAsync (byte[] workbook, string format = null, string password = null, string outPath = null)
+        public async System.Threading.Tasks.Task<System.IO.Stream> CellsWorkbookPutConvertWorkbookAsync (System.IO.Stream workbook, string format = null, string password = null, string outPath = null)
         {
              ApiResponse<System.IO.Stream> localVarResponse = await CellsWorkbookPutConvertWorkbookAsyncWithHttpInfo(workbook, format, password, outPath);
              return localVarResponse.Data;
@@ -49947,7 +50210,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="password">The workbook password. (optional)</param>
         /// <param name="outPath">Path to save result (optional)</param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorkbookPutConvertWorkbookAsyncWithHttpInfo (byte[] workbook, string format = null, string password = null, string outPath = null)
+        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorkbookPutConvertWorkbookAsyncWithHttpInfo (System.IO.Stream workbook, string format = null, string password = null, string outPath = null)
         {
             // verify the required parameter 'workbook' is set
             if (workbook == null)
@@ -49978,14 +50241,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
             if (password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(password)); // query parameter
             if (outPath != null) localVarQueryParams.Add("outPath", Configuration.ApiClient.ParameterToString(outPath)); // query parameter
-            if (workbook != null && workbook.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = Configuration.ApiClient.Serialize(workbook); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = workbook; // byte array
-            }
+            if (workbook != null) localVarFileParams.Add("workbook", Configuration.ApiClient.ParameterToFile("workbook", workbook));
 
 
             // make the HTTP request
@@ -50179,19 +50435,198 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
         /// <summary>
+        /// Set workbook background image. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="png"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        public CellsCloudResponse CellsWorkbookPutWorkbookBackground (string name, byte[] png, string folder = null, string storage = null)
+        {
+             checkAccessToken();
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsWorkbookPutWorkbookBackgroundWithHttpInfo(name, png, folder, storage);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Set workbook background image. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="png"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        public ApiResponse< CellsCloudResponse > CellsWorkbookPutWorkbookBackgroundWithHttpInfo (string name, byte[] png, string folder = null, string storage = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsWorkbookPutWorkbookBackground");
+            // verify the required parameter 'png' is set
+            if (png == null)
+                throw new ApiException(400, "Missing required parameter 'png' when calling CellsApi->CellsWorkbookPutWorkbookBackground");
+
+            var localVarPath = "/cells/{name}/background";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
+            if (png != null && png.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(png); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = png; // byte array
+                if ( "CellsWorkbookPutWorkbookBackground" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsWorkbookPutWorkbookBackground", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
+        /// Set workbook background image. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="png"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsWorkbookPutWorkbookBackgroundAsync (string name, byte[] png, string folder = null, string storage = null)
+        {
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsWorkbookPutWorkbookBackgroundAsyncWithHttpInfo(name, png, folder, storage);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Set workbook background image. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="png"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorkbookPutWorkbookBackgroundAsyncWithHttpInfo (string name, byte[] png, string folder = null, string storage = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsWorkbookPutWorkbookBackground");
+            // verify the required parameter 'png' is set
+            if (png == null)
+                throw new ApiException(400, "Missing required parameter 'png' when calling CellsApi->CellsWorkbookPutWorkbookBackground");
+
+            var localVarPath = "/cells/{name}/background";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
+            if (png != null && png.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(png); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = png; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsWorkbookPutWorkbookBackground", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
         /// Create new workbook using deferent methods. 
         /// </summary>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">The new document name.</param>
         /// <param name="templateFile">The template file, if the data not provided default workbook is created. (optional)</param>
         /// <param name="dataFile">Smart marker data file, if the data not provided the request content is checked for the data. (optional)</param>
+        /// <param name="isWriteOver">write over file. (optional)</param>
         /// <param name="folder">The new document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>WorkbookResponse</returns>
-        public WorkbookResponse CellsWorkbookPutWorkbookCreate (string name, string templateFile = null, string dataFile = null, string folder = null, string storage = null)
+        public WorkbookResponse CellsWorkbookPutWorkbookCreate (string name, string templateFile = null, string dataFile = null, bool? isWriteOver = null, string folder = null, string storage = null)
         {
              checkAccessToken();
-             ApiResponse<WorkbookResponse> localVarResponse = CellsWorkbookPutWorkbookCreateWithHttpInfo(name, templateFile, dataFile, folder, storage);
+             ApiResponse<WorkbookResponse> localVarResponse = CellsWorkbookPutWorkbookCreateWithHttpInfo(name, templateFile, dataFile, isWriteOver, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -50202,10 +50637,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The new document name.</param>
         /// <param name="templateFile">The template file, if the data not provided default workbook is created. (optional)</param>
         /// <param name="dataFile">Smart marker data file, if the data not provided the request content is checked for the data. (optional)</param>
+        /// <param name="isWriteOver">write over file. (optional)</param>
         /// <param name="folder">The new document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of WorkbookResponse</returns>
-        public ApiResponse< WorkbookResponse > CellsWorkbookPutWorkbookCreateWithHttpInfo (string name, string templateFile = null, string dataFile = null, string folder = null, string storage = null)
+        public ApiResponse< WorkbookResponse > CellsWorkbookPutWorkbookCreateWithHttpInfo (string name, string templateFile = null, string dataFile = null, bool? isWriteOver = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -50236,6 +50672,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (templateFile != null) localVarQueryParams.Add("templateFile", Configuration.ApiClient.ParameterToString(templateFile)); // query parameter
             if (dataFile != null) localVarQueryParams.Add("dataFile", Configuration.ApiClient.ParameterToString(dataFile)); // query parameter
+            if (isWriteOver != null) localVarQueryParams.Add("isWriteOver", Configuration.ApiClient.ParameterToString(isWriteOver)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
             if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
@@ -50265,12 +50702,13 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The new document name.</param>
         /// <param name="templateFile">The template file, if the data not provided default workbook is created. (optional)</param>
         /// <param name="dataFile">Smart marker data file, if the data not provided the request content is checked for the data. (optional)</param>
+        /// <param name="isWriteOver">write over file. (optional)</param>
         /// <param name="folder">The new document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of WorkbookResponse</returns>
-        public async System.Threading.Tasks.Task<WorkbookResponse> CellsWorkbookPutWorkbookCreateAsync (string name, string templateFile = null, string dataFile = null, string folder = null, string storage = null)
+        public async System.Threading.Tasks.Task<WorkbookResponse> CellsWorkbookPutWorkbookCreateAsync (string name, string templateFile = null, string dataFile = null, bool? isWriteOver = null, string folder = null, string storage = null)
         {
-             ApiResponse<WorkbookResponse> localVarResponse = await CellsWorkbookPutWorkbookCreateAsyncWithHttpInfo(name, templateFile, dataFile, folder, storage);
+             ApiResponse<WorkbookResponse> localVarResponse = await CellsWorkbookPutWorkbookCreateAsyncWithHttpInfo(name, templateFile, dataFile, isWriteOver, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -50282,10 +50720,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">The new document name.</param>
         /// <param name="templateFile">The template file, if the data not provided default workbook is created. (optional)</param>
         /// <param name="dataFile">Smart marker data file, if the data not provided the request content is checked for the data. (optional)</param>
+        /// <param name="isWriteOver">write over file. (optional)</param>
         /// <param name="folder">The new document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (WorkbookResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<WorkbookResponse>> CellsWorkbookPutWorkbookCreateAsyncWithHttpInfo (string name, string templateFile = null, string dataFile = null, string folder = null, string storage = null)
+        public async System.Threading.Tasks.Task<ApiResponse<WorkbookResponse>> CellsWorkbookPutWorkbookCreateAsyncWithHttpInfo (string name, string templateFile = null, string dataFile = null, bool? isWriteOver = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -50316,6 +50755,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (templateFile != null) localVarQueryParams.Add("templateFile", Configuration.ApiClient.ParameterToString(templateFile)); // query parameter
             if (dataFile != null) localVarQueryParams.Add("dataFile", Configuration.ApiClient.ParameterToString(dataFile)); // query parameter
+            if (isWriteOver != null) localVarQueryParams.Add("isWriteOver", Configuration.ApiClient.ParameterToString(isWriteOver)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
             if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
@@ -52589,13 +53029,15 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="format">The exported file format. (optional)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
+        /// <param name="area">Exported area. (optional)</param>
+        /// <param name="pageIndex">Exported page index. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        public System.IO.Stream CellsWorksheetsGetWorksheet (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string folder = null, string storage = null)
+        public System.IO.Stream CellsWorksheetsGetWorksheet (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string area = null, int? pageIndex = null, string folder = null, string storage = null)
         {
              checkAccessToken();
-             ApiResponse<System.IO.Stream> localVarResponse = CellsWorksheetsGetWorksheetWithHttpInfo(name, sheetName, format, verticalResolution, horizontalResolution, folder, storage);
+             ApiResponse<System.IO.Stream> localVarResponse = CellsWorksheetsGetWorksheetWithHttpInfo(name, sheetName, format, verticalResolution, horizontalResolution, area, pageIndex, folder, storage);
              return localVarResponse.Data;
         }
 
@@ -52608,10 +53050,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="format">The exported file format. (optional)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
+        /// <param name="area">Exported area. (optional)</param>
+        /// <param name="pageIndex">Exported page index. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        public ApiResponse< System.IO.Stream > CellsWorksheetsGetWorksheetWithHttpInfo (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string folder = null, string storage = null)
+        public ApiResponse< System.IO.Stream > CellsWorksheetsGetWorksheetWithHttpInfo (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string area = null, int? pageIndex = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -52647,6 +53091,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
             if (verticalResolution != null) localVarQueryParams.Add("verticalResolution", Configuration.ApiClient.ParameterToString(verticalResolution)); // query parameter
             if (horizontalResolution != null) localVarQueryParams.Add("horizontalResolution", Configuration.ApiClient.ParameterToString(horizontalResolution)); // query parameter
+            if (area != null) localVarQueryParams.Add("area", Configuration.ApiClient.ParameterToString(area)); // query parameter
+            if (pageIndex != null) localVarQueryParams.Add("pageIndex", Configuration.ApiClient.ParameterToString(pageIndex)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
             if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 
@@ -52678,12 +53124,14 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="format">The exported file format. (optional)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
+        /// <param name="area">Exported area. (optional)</param>
+        /// <param name="pageIndex">Exported page index. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of System.IO.Stream</returns>
-        public async System.Threading.Tasks.Task<System.IO.Stream> CellsWorksheetsGetWorksheetAsync (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string folder = null, string storage = null)
+        public async System.Threading.Tasks.Task<System.IO.Stream> CellsWorksheetsGetWorksheetAsync (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string area = null, int? pageIndex = null, string folder = null, string storage = null)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = await CellsWorksheetsGetWorksheetAsyncWithHttpInfo(name, sheetName, format, verticalResolution, horizontalResolution, folder, storage);
+             ApiResponse<System.IO.Stream> localVarResponse = await CellsWorksheetsGetWorksheetAsyncWithHttpInfo(name, sheetName, format, verticalResolution, horizontalResolution, area, pageIndex, folder, storage);
              return localVarResponse.Data;
 
         }
@@ -52697,10 +53145,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="format">The exported file format. (optional)</param>
         /// <param name="verticalResolution">Image vertical resolution. (optional, default to 0)</param>
         /// <param name="horizontalResolution">Image horizontal resolution. (optional, default to 0)</param>
+        /// <param name="area">Exported area. (optional)</param>
+        /// <param name="pageIndex">Exported page index. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorksheetsGetWorksheetAsyncWithHttpInfo (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string folder = null, string storage = null)
+        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorksheetsGetWorksheetAsyncWithHttpInfo (string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string area = null, int? pageIndex = null, string folder = null, string storage = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -52736,6 +53186,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
             if (verticalResolution != null) localVarQueryParams.Add("verticalResolution", Configuration.ApiClient.ParameterToString(verticalResolution)); // query parameter
             if (horizontalResolution != null) localVarQueryParams.Add("horizontalResolution", Configuration.ApiClient.ParameterToString(horizontalResolution)); // query parameter
+            if (area != null) localVarQueryParams.Add("area", Configuration.ApiClient.ParameterToString(area)); // query parameter
+            if (pageIndex != null) localVarQueryParams.Add("pageIndex", Configuration.ApiClient.ParameterToString(pageIndex)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
             if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
 

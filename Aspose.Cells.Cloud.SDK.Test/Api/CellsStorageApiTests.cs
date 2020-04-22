@@ -140,6 +140,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             instance.CreateFolder(TEMPFOLDER+1);
 
             instance.DeleteFolder(TEMPFOLDER + 1);
+            instance.DeleteFolder("ruby");
         }
 
         /// <summary>

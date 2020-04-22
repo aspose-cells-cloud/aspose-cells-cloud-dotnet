@@ -113,3 +113,5 @@ SDKs/PHP/vendor/*
 SDKs/PHP/testReports/*
 SDKs/servercreds.json
 /.vs
+Aspose.Cells-Cloud.nuspec
+.vs

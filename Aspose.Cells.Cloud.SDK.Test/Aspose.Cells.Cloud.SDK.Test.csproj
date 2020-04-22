@@ -5,12 +5,6 @@
     <IsPackable>false</IsPackable>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
-  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp2.2'">
-    <PackageReference Include="Aspose.Storage.Core-Cloud" Version="18.4.0" />
-  </ItemGroup>
-  <ItemGroup Condition="'$(TargetFramework)' == 'net4.5.2'">
-	<PackageReference Include="Aspose.Storage-Cloud" Version="18.3.0" />
-  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="nunit" Version="3.11.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
