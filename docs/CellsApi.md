@@ -199,6 +199,7 @@ Method | HTTP request | Description
 [**CellsWorkbookPutDocumentProtectFromChanges**](CellsApi.md#cellsworkbookputdocumentprotectfromchanges) | **PUT** /cells/{name}/writeProtection | Protect document from changes.
 [**CellsWorkbookPutWorkbookBackground**](CellsApi.md#cellsworkbookputworkbookbackground) | **PUT** /cells/{name}/background | Set workbook background image.
 [**CellsWorkbookPutWorkbookCreate**](CellsApi.md#cellsworkbookputworkbookcreate) | **PUT** /cells/{name} | Create new workbook using deferent methods.
+[**CellsWorkbookPutWorkbookWaterMarker**](CellsApi.md#cellsworkbookputworkbookwatermarker) | **PUT** /cells/{name}/watermarker | Set workbook background image.
 [**CellsWorksheetValidationsDeleteWorksheetValidation**](CellsApi.md#cellsworksheetvalidationsdeleteworksheetvalidation) | **DELETE** /cells/{name}/worksheets/{sheetName}/validations/{validationIndex} | Delete worksheet validation by index.
 [**CellsWorksheetValidationsDeleteWorksheetValidations**](CellsApi.md#cellsworksheetvalidationsdeleteworksheetvalidations) | **DELETE** /cells/{name}/worksheets/{sheetName}/validations | Clear all validation in worksheet.
 [**CellsWorksheetValidationsGetWorksheetValidation**](CellsApi.md#cellsworksheetvalidationsgetworksheetvalidation) | **GET** /cells/{name}/worksheets/{sheetName}/validations/{validationIndex} | Get worksheet validation by index.
@@ -13642,6 +13643,71 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**WorkbookResponse**](WorkbookResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="cellsworkbookputworkbookwatermarker"></a>
+# **CellsWorkbookPutWorkbookWaterMarker**
+> CellsCloudResponse CellsWorkbookPutWorkbookWaterMarker (string name, string folder = null, string storage = null, TextWaterMarkerRequest textWaterMarkerRequest = null)
+
+Set workbook background image.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+namespace Example
+{
+    public class CellsWorkbookPutWorkbookWaterMarkerExample
+    {
+        public void main()
+        {
+            var apiInstance = new CellsApi();
+            var name = name_example;  // string | 
+            var folder = folder_example;  // string |  (optional) 
+            var storage = storage_example;  // string | storage name. (optional) 
+            var textWaterMarkerRequest = new TextWaterMarkerRequest(); // TextWaterMarkerRequest | The text water marker request. (optional) 
+
+            try
+            {
+                // Set workbook background image.
+                CellsCloudResponse result = apiInstance.CellsWorkbookPutWorkbookWaterMarker(name, folder, storage, textWaterMarkerRequest);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CellsApi.CellsWorkbookPutWorkbookWaterMarker: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**|  | 
+ **folder** | **string**|  | [optional] 
+ **storage** | **string**| storage name. | [optional] 
+ **textWaterMarkerRequest** | [**TextWaterMarkerRequest**](TextWaterMarkerRequest.md)| The text water marker request. | [optional] 
+
+### Return type
+
+[**CellsCloudResponse**](CellsCloudResponse.md)
 
 ### Authorization
 

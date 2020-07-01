@@ -61,7 +61,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET6;
             string folder = TEMPFOLDER;
-            UpdateDataFile(instance,folder, name);
+            UpdateDataFile(instance, name);
 
             TaskData taskData = new TaskData();
             taskData.Tasks = new List<TaskDescription>();
@@ -71,12 +71,12 @@ namespace Aspose.Cells.Cloud.SDK.Test
             SplitWorkbookTaskParameter param1 = new SplitWorkbookTaskParameter();
             param1.DestinationFileFormat = "xlsx";
             param1.DestinationFilePosition = new FileSource();
-            param1.DestinationFilePosition.FilePath = TEMPFOLDER;
+            param1.DestinationFilePosition.FilePath = "";
             param1.DestinationFilePosition.FileSourceType = "CloudFileSystem";
             param1.SplitNameRule = "sheetname";
             param1.Workbook = new FileSource();
             param1.Workbook.FileSourceType = "CloudFileSystem";
-            param1.Workbook.FilePath = TEMPFOLDER + "\\" + BOOK1;
+            param1.Workbook.FilePath =  BOOK1;
             task1.TaskParameter = param1;
             taskData.Tasks.Add(task1);
             var response = instance.CellsTaskPostRunTask(taskData);

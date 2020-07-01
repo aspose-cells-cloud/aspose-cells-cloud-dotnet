@@ -6049,6 +6049,33 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ApiResponse of WorkbookResponse</returns>
         ApiResponse<WorkbookResponse> CellsWorkbookPutWorkbookCreateWithHttpInfo (string name, string templateFile = null, string dataFile = null, bool? isWriteOver = null, string folder = null, string storage = null);
         /// <summary>
+        /// Set workbook background image.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <param name="textWaterMarkerRequest">The text water marker request. (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        CellsCloudResponse CellsWorkbookPutWorkbookWaterMarker (string name, string folder = null, string storage = null, TextWaterMarkerRequest textWaterMarkerRequest = null);
+
+        /// <summary>
+        /// Set workbook background image.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <param name="textWaterMarkerRequest">The text water marker request. (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        ApiResponse<CellsCloudResponse> CellsWorkbookPutWorkbookWaterMarkerWithHttpInfo (string name, string folder = null, string storage = null, TextWaterMarkerRequest textWaterMarkerRequest = null);
+        /// <summary>
         /// Delete worksheet validation by index.
         /// </summary>
         /// <remarks>
@@ -13601,6 +13628,33 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storage">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (WorkbookResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<WorkbookResponse>> CellsWorkbookPutWorkbookCreateAsyncWithHttpInfo (string name, string templateFile = null, string dataFile = null, bool? isWriteOver = null, string folder = null, string storage = null);
+        /// <summary>
+        /// Set workbook background image.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <param name="textWaterMarkerRequest">The text water marker request. (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsWorkbookPutWorkbookWaterMarkerAsync (string name, string folder = null, string storage = null, TextWaterMarkerRequest textWaterMarkerRequest = null);
+
+        /// <summary>
+        /// Set workbook background image.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <param name="textWaterMarkerRequest">The text water marker request. (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorkbookPutWorkbookWaterMarkerAsyncWithHttpInfo (string name, string folder = null, string storage = null, TextWaterMarkerRequest textWaterMarkerRequest = null);
         /// <summary>
         /// Delete worksheet validation by index.
         /// </summary>
@@ -50776,6 +50830,178 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return new ApiResponse<WorkbookResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (WorkbookResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(WorkbookResponse)));
+        }
+
+        /// <summary>
+        /// Set workbook background image. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <param name="textWaterMarkerRequest">The text water marker request. (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        public CellsCloudResponse CellsWorkbookPutWorkbookWaterMarker (string name, string folder = null, string storage = null, TextWaterMarkerRequest textWaterMarkerRequest = null)
+        {
+             checkAccessToken();
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsWorkbookPutWorkbookWaterMarkerWithHttpInfo(name, folder, storage, textWaterMarkerRequest);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Set workbook background image. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <param name="textWaterMarkerRequest">The text water marker request. (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        public ApiResponse< CellsCloudResponse > CellsWorkbookPutWorkbookWaterMarkerWithHttpInfo (string name, string folder = null, string storage = null, TextWaterMarkerRequest textWaterMarkerRequest = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsWorkbookPutWorkbookWaterMarker");
+
+            var localVarPath = "/cells/{name}/watermarker";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
+            if (textWaterMarkerRequest != null && textWaterMarkerRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(textWaterMarkerRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = textWaterMarkerRequest; // byte array
+                if ( "CellsWorkbookPutWorkbookWaterMarker" == "CellsSaveAsPostDocumentSaveAs")
+                {
+                    localVarHeaderParams.Add("Content-Type", "application/json");
+                }
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsWorkbookPutWorkbookWaterMarker", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
+        /// Set workbook background image. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <param name="textWaterMarkerRequest">The text water marker request. (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsWorkbookPutWorkbookWaterMarkerAsync (string name, string folder = null, string storage = null, TextWaterMarkerRequest textWaterMarkerRequest = null)
+        {
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsWorkbookPutWorkbookWaterMarkerAsyncWithHttpInfo(name, folder, storage, textWaterMarkerRequest);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Set workbook background image. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storage">storage name. (optional)</param>
+        /// <param name="textWaterMarkerRequest">The text water marker request. (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorkbookPutWorkbookWaterMarkerAsyncWithHttpInfo (string name, string folder = null, string storage = null, TextWaterMarkerRequest textWaterMarkerRequest = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsWorkbookPutWorkbookWaterMarker");
+
+            var localVarPath = "/cells/{name}/watermarker";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storage != null) localVarQueryParams.Add("storage", Configuration.ApiClient.ParameterToString(storage)); // query parameter
+            if (textWaterMarkerRequest != null && textWaterMarkerRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(textWaterMarkerRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = textWaterMarkerRequest; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsWorkbookPutWorkbookWaterMarker", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
         }
 
         /// <summary>

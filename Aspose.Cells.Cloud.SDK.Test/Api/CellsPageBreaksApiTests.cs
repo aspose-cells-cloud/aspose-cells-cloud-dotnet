@@ -79,7 +79,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             // TODO uncomment below to test the method and replace null with proper value
             string name = BOOK1;
             string sheetName = SHEET1;
-            int? row = 1;
+            int? row = 0;
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsPageBreaksDeleteHorizontalPageBreaks(name, sheetName, row, folder);
@@ -113,7 +113,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             // TODO uncomment below to test the method and replace null with proper value
             string name = BOOK1;
             string sheetName = SHEET1;
-            int? column = 1;
+            int? column = 0;
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsPageBreaksDeleteVerticalPageBreaks(name, sheetName, column, folder);

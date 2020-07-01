@@ -95,11 +95,31 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = PivTestFile;
             string sheetName = SHEET4;
             int? pivotTableIndex = 0;
-            int? fieldIndex = 0;
+            PivotFilter pivotFilter = new PivotFilter();
+            pivotFilter.FieldIndex = 1;
+            pivotFilter.FilterType = "Count";
+
+            AutoFilter autoFilter = new AutoFilter();
+            autoFilter.FilterColumns = new List<FilterColumn>();
+            FilterColumn filterColumn = new FilterColumn();
+            filterColumn.FilterType = "Top10";
+            filterColumn.FieldIndex = 0;
+
+            filterColumn.Top10Filter = new Top10Filter();
+            filterColumn.Top10Filter.Items = 1;
+            filterColumn.Top10Filter.IsTop = true;
+            filterColumn.Top10Filter.IsPercent = false;
+            autoFilter.FilterColumns.Add(filterColumn);
+            pivotFilter.AutoFilter = autoFilter;
+
             bool? needReCalculate = true;
             string folder = TEMPFOLDER;
-            UpdateDataFile(instance,folder, name);
-            var response = instance.CellsPivotTablesDeleteWorksheetPivotTableFilter(name, sheetName, pivotTableIndex, fieldIndex, needReCalculate, folder);
+            UpdateDataFile(instance, folder, name);
+            var response = instance.CellsPivotTablesPutWorksheetPivotTableFilter(name, sheetName, pivotTableIndex, pivotFilter, needReCalculate, folder);
+            Assert.AreEqual(response.Code, 200);
+
+            int? fieldIndex = 0;
+            response = instance.CellsPivotTablesDeleteWorksheetPivotTableFilter(name, sheetName, pivotTableIndex, fieldIndex, needReCalculate, folder);
             Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }

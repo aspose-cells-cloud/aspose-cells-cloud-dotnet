@@ -176,8 +176,10 @@ namespace Aspose.Cells.Cloud.SDK.Client
                 Exception exception = ExceptionFactory("OAuthPost", localVarResponse);
                 if (exception != null) throw exception;
             }
-            return ((AccessTokenResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(AccessTokenResponse))).AccessToken;
+            return  ((AccessTokenResponse)Configuration.ApiClient.Deserialize(localVarResponse, typeof(AccessTokenResponse))).AccessToken;
         }
+
+
         /// <summary>
         /// Gets or sets the default API client for making HTTP calls.
         /// </summary>
