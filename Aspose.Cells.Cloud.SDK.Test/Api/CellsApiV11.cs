@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using NUnit.Framework;
-using Aspose.Cells.Cloud.SDK.Api;
-using Aspose.Cells.Cloud.SDK.Model;
-
-namespace Aspose.Cells.Cloud.SDK.Test
+﻿namespace Aspose.Cells.Cloud.SDK.Test
 {
+    using NUnit.Framework;
+    using Aspose.Cells.Cloud.SDK.Api;
+    using Aspose.Cells.Cloud.SDK.Model;
+
     /// <summary>
     ///  Class for testing CellsApi
     /// </summary>

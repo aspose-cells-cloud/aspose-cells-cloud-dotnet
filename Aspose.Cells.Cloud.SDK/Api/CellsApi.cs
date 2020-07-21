@@ -15209,22 +15209,14 @@ namespace Aspose.Cells.Cloud.SDK.Api
         private string _clientSecret;
         private string _OAuthPattern;
         private string _version;
+        private string _basePath;
         private DateTime _getAccessTokenTime;
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="CellsApi"/> class.
-        /// </summary>
-        /// <returns></returns>
-        public CellsApi(String basePath)
+       
+        private string versionURI
         {
-            this.Configuration = new Configuration(new ApiClient(basePath));
-
-            ExceptionFactory = Aspose.Cells.Cloud.SDK.Client.Configuration.DefaultExceptionFactory;
-
-            // ensure API client has configuration ready
-            if (Configuration.ApiClient.Configuration == null)
+            get
             {
-                this.Configuration.ApiClient.Configuration = this.Configuration;
+                return _basePath.EndsWith("/") ? _basePath + _version : _basePath + "/" + _version;
             }
         }
 				
@@ -15235,11 +15227,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="appSID"></param>
         /// <param name="appKey"></param>
         /// <param name="version"></param>
-        public CellsApi(String appSID,String appKey, String version = "v3.0")
+        public CellsApi(String appSID,String appKey, String version = "v3.0", String basePath = "https://api.aspose.cloud")
         {
             _clientId = appSID;
             _clientSecret = appKey;
             _version = version;
+            _basePath = basePath;
             switch (_version)
             {
                 case "v3.0":
@@ -15273,7 +15266,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
        
         private string getAccessToken()
         {
-            ApiClient apiClient = new ApiClient("https://api.aspose.cloud/");
+            ApiClient apiClient = new ApiClient(_basePath);
             string accessToken = apiClient.GetAccessToken("client_credentials", _clientId, _clientSecret, _OAuthPattern);
             _getAccessTokenTime = DateTime.Now;
             if (String.IsNullOrEmpty(accessToken))
@@ -15288,7 +15281,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             Configuration = new Configuration();
             Dictionary<string, string> headerParameters = new Dictionary<string, string>();
             headerParameters.Add("Authorization", "Bearer " + accessToken);
-            this.Configuration = new Configuration(new ApiClient("https://api.aspose.cloud/" + _version), headerParameters);
+            this.Configuration = new Configuration(new ApiClient(versionURI), headerParameters);
         }
         
         /// <summary>
@@ -15298,16 +15291,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
         public String GetBasePath()
         {
             return this.Configuration.ApiClient.RestClient.BaseUrl.ToString();
-        }
-
-        /// <summary>
-        /// Sets the base path of the API client.
-        /// </summary>
-        /// <value>The base path</value>
-        [Obsolete("SetBasePath is deprecated, please do 'Configuration.ApiClient = new ApiClient(\"http://new-path\")' instead.")]
-        public void SetBasePath(String basePath)
-        {
-            // do nothing
         }
 
         /// <summary>
