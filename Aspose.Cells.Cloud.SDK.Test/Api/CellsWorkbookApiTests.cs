@@ -516,7 +516,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
 
         }
 
-        [Ignore("Ignore DropBox")]
+        //[Ignore("Ignore DropBox")]
         public void CellsWorkbookPostWorkbooksTextSearchTestForDropBox()
         {
             string name = BOOK1;
