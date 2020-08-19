@@ -40,22 +40,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class SaveResult 
   {                       
         /// <summary>
-        /// Gets or sets SourceDocument
+        /// Gets or sets Documents
         /// </summary>  
-		[DataMember(Name="SourceDocument", EmitDefaultValue=false)]
-        public Link SourceDocument { get; set; }
-
-        /// <summary>
-        /// Gets or sets DestDocument
-        /// </summary>  
-		[DataMember(Name="DestDocument", EmitDefaultValue=false)]
-        public Link DestDocument { get; set; }
-
-        /// <summary>
-        /// Gets or sets AdditionalItems
-        /// </summary>  
-		[DataMember(Name="AdditionalItems", EmitDefaultValue=false)]
-        public List<Link> AdditionalItems { get; set; }
+		[DataMember(Name="Documents", EmitDefaultValue=false)]
+        public List<CellsCloudFileInfo> Documents { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -65,9 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class SaveResult {\n");
-          sb.Append("  SourceDocument: ").Append(this.SourceDocument).Append("\n");
-          sb.Append("  DestDocument: ").Append(this.DestDocument).Append("\n");
-          sb.Append("  AdditionalItems: ").Append(this.AdditionalItems).Append("\n");
+          sb.Append("  Documents: ").Append(this.Documents).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="SplitResult.cs">
+// <copyright company="Aspose" file="CellsCloudFileInfo.cs">
 //   Copyright (c) 2016 Aspose.Cells for Cloud
 // </copyright>
 // <summary>
@@ -37,13 +37,31 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class SplitResult 
+  public class CellsCloudFileInfo 
   {                       
         /// <summary>
-        /// Gets or sets Documents
+        /// Gets or sets Name
         /// </summary>  
-		[DataMember(Name="Documents", EmitDefaultValue=false)]
-        public List<CellsCloudFileInfo> Documents { get; set; }
+		[DataMember(Name="Name", EmitDefaultValue=false)]
+        public string Name { get; set; }
+
+        /// <summary>
+        /// Gets or sets Size
+        /// </summary>  
+		[DataMember(Name="Size", EmitDefaultValue=false)]
+        public long? Size { get; set; }
+
+        /// <summary>
+        /// Gets or sets Folder
+        /// </summary>  
+		[DataMember(Name="Folder", EmitDefaultValue=false)]
+        public string Folder { get; set; }
+
+        /// <summary>
+        /// Gets or sets Storage
+        /// </summary>  
+		[DataMember(Name="Storage", EmitDefaultValue=false)]
+        public string Storage { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -52,8 +70,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class SplitResult {\n");
-          sb.Append("  Documents: ").Append(this.Documents).Append("\n");
+          sb.Append("class CellsCloudFileInfo {\n");
+          sb.Append("  Name: ").Append(this.Name).Append("\n");
+          sb.Append("  Size: ").Append(this.Size).Append("\n");
+          sb.Append("  Folder: ").Append(this.Folder).Append("\n");
+          sb.Append("  Storage: ").Append(this.Storage).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }
