@@ -41,7 +41,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
         [SetUp]
         public void Init()
         {
-            instance =  new CellsApi(clientId, clientSecret);
+            instance = new CellsApi(clientId, clientSecret, apiVersion, testbaseurl);
         }
 
         /// <summary>
@@ -59,7 +59,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
         public void OAuthPostTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            instance.Configuration.ApiClient = new ApiClient("https://api.aspose.cloud");
+            instance.Configuration.ApiClient = new ApiClient("https://api-qa.aspose.cloud");
             var response = instance.OAuthPost(grantType, clientId, clientSecret);
             Assert.IsInstanceOf<AccessTokenResponse>(response, "response is AccessTokenResponse");
             Assert.IsNotNull(response.AccessToken);

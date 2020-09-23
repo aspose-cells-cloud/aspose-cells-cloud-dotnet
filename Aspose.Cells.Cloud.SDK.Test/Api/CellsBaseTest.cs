@@ -6,11 +6,13 @@ namespace Aspose.Cells.Cloud.SDK.Test
     using System.IO;
     public class CellsBaseTest
     {
+        protected string testbaseurl = @"https://api-qa.aspose.cloud";
+        protected string apiVersion = @"v3.0";
         protected ApiClient client;
         protected Client.Configuration config;
         protected string grantType = "client_credentials";
-        protected string clientId = "xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx";
-        protected string clientSecret = "xxxxxxxxxxxxxxxxxxxxxxxx";
+        protected string clientId = "91A2FD07-BBA1-4B32-9112-ABFB1FE8AEBD";
+        protected string clientSecret = "0fbf678c5ecabdb5caca48452a736dd0";
         protected static string accesstoken;
         protected string refreshtoken;
         protected string BOOK1 = "Book1.xlsx";
@@ -29,25 +31,38 @@ namespace Aspose.Cells.Cloud.SDK.Test
         protected string CellName = "A1";
         protected string RANGE = "A1:C10";
         protected string CELLAREA = "A1:C10";
-        private string TestDataFolder = @"D:\Projects\Aspose\Aspose.Cloud\Aspose.Cells.Cloud.SDK\src\TestData\";
+        private string TestDataFolder = @"D:\Projects\Aspose\Aspose.Cells.Cloud.SDK\src\TestData\";
         
         protected void UpdateDataFile( CellsApi cellsApi, string folder, string filename)
         {
-            cellsApi.DeleteFile(folder + @"\" + filename);
+            bool? exist = cellsApi.ObjectExists(folder + @"\" + filename).Exists;
+            if (exist.HasValue && exist.Value)
+            {
+                cellsApi.DeleteFile(folder + @"\" + filename);
+            }
             Stream stream = GetTestDataStream(filename);
             var response = cellsApi.UploadFile(folder + @"\" + filename, stream);
         }
         protected void UpdateDataFile(CellsApi cellsApi,  string filename)
         {
+            bool? exist = cellsApi.ObjectExists( filename).Exists;
+            if (exist.HasValue && exist.Value)
+            {
+                cellsApi.DeleteFile(filename);
+            }
             cellsApi.DeleteFile(  filename);
             Stream stream = GetTestDataStream(filename);
             var response = cellsApi.UploadFile( filename, stream);
         }
-        protected void UpdateDataFileForDropBox(CellsApi cellsApi, string folder, string filename)
+        protected void UpdateDataFileToOtherStorage(CellsApi cellsApi, string folder, string filename,string stroageName)
         {
-            cellsApi.DeleteFile(folder + @"\" + filename, "DropBox");
+            bool? exist = cellsApi.ObjectExists(folder + @"\" + filename, stroageName).Exists;
+            if (exist.HasValue && exist.Value)
+            {
+                cellsApi.DeleteFile(folder + @"\" + filename, stroageName);
+            }
             Stream stream = GetTestDataStream(filename);
-            var response = cellsApi.UploadFile(folder + @"\" + filename, stream, "DropBox");
+            var response = cellsApi.UploadFile(folder + @"\" + filename, stream, stroageName);
         }
 
         protected Stream GetTestDataStream( string filename)

@@ -1,4 +1,3 @@
-
 namespace Aspose.Cells.Cloud.SDK.Test
 {
     using System;
@@ -23,7 +22,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
         [SetUp]
         public void Init()
         {
-            instance = new CellsApi(clientId, clientSecret);
+            instance = new CellsApi(clientId, clientSecret, apiVersion, testbaseurl);
         }
 
         /// <summary>
@@ -66,9 +65,8 @@ namespace Aspose.Cells.Cloud.SDK.Test
             int? columns = 1;
             bool? updateReference = true;
             string folder = TEMPFOLDER;
-            UpdateDataFile(instance,TEMPFOLDER, BOOK1);
-            var instanceNew = new CellsApi( clientId, clientSecret);
-            var response = instanceNew.CellsDeleteWorksheetColumns(name, sheetName, columnIndex, columns, updateReference, folder);
+            UpdateDataFile(instance,TEMPFOLDER, BOOK1);            
+            var response = instance.CellsDeleteWorksheetColumns(name, sheetName, columnIndex, columns, updateReference, folder);
             Assert.IsInstanceOf<ColumnsResponse>(response, "response is ColumnsResponse");
             Assert.AreEqual(response.Code, 200);
         }
@@ -746,7 +744,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string type = Type;
             string formula = Formula;
             string folder = TEMPFOLDER;
-            UpdateDataFile(instance, TEMPFOLDER, BOOK1);
             var response = instance.CellsPostWorksheetCellSetValue(name, sheetName, cellName, value, type, formula, folder);
             Assert.IsInstanceOf<CellResponse>(response, "response is CellResponse");
             Assert.AreEqual(response.Status, "OK");

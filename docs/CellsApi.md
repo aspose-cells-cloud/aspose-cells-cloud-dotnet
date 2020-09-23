@@ -114,6 +114,8 @@ Method | HTTP request | Description
 [**CellsPivotTablesPostPivotTableFieldHideItem**](CellsApi.md#cellspivottablespostpivottablefieldhideitem) | **POST** /cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Hide | 
 [**CellsPivotTablesPostPivotTableFieldMoveTo**](CellsApi.md#cellspivottablespostpivottablefieldmoveto) | **POST** /cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Move | 
 [**CellsPivotTablesPostPivotTableStyle**](CellsApi.md#cellspivottablespostpivottablestyle) | **POST** /cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/FormatAll | Update style for pivot table
+[**CellsPivotTablesPostPivotTableUpdatePivotField**](CellsApi.md#cellspivottablespostpivottableupdatepivotfield) | **POST** /cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFields/{pivotFieldIndex} | 
+[**CellsPivotTablesPostPivotTableUpdatePivotFields**](CellsApi.md#cellspivottablespostpivottableupdatepivotfields) | **POST** /cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFields | 
 [**CellsPivotTablesPostWorksheetPivotTableCalculate**](CellsApi.md#cellspivottablespostworksheetpivottablecalculate) | **POST** /cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/Calculate | Calculates pivottable&#39;s data to cells.
 [**CellsPivotTablesPostWorksheetPivotTableMove**](CellsApi.md#cellspivottablespostworksheetpivottablemove) | **POST** /cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/Move | 
 [**CellsPivotTablesPutPivotTableField**](CellsApi.md#cellspivottablesputpivottablefield) | **PUT** /cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField | Add pivot field into into pivot table
@@ -170,6 +172,12 @@ Method | HTTP request | Description
 [**CellsShapesGetWorksheetShapes**](CellsApi.md#cellsshapesgetworksheetshapes) | **GET** /cells/{name}/worksheets/{sheetName}/shapes | Get worksheet shapes 
 [**CellsShapesPostWorksheetShape**](CellsApi.md#cellsshapespostworksheetshape) | **POST** /cells/{name}/worksheets/{sheetName}/shapes/{shapeindex} | Update a shape in worksheet
 [**CellsShapesPutWorksheetShape**](CellsApi.md#cellsshapesputworksheetshape) | **PUT** /cells/{name}/worksheets/{sheetName}/shapes | Add shape in worksheet
+[**CellsSparklineGroupsDeleteWorksheetSparklineGroup**](CellsApi.md#cellssparklinegroupsdeleteworksheetsparklinegroup) | **DELETE** /cells/{name}/worksheets/{sheetName}/sparklinegroups/{sparklineGroupIndex} | 
+[**CellsSparklineGroupsDeleteWorksheetSparklineGroups**](CellsApi.md#cellssparklinegroupsdeleteworksheetsparklinegroups) | **DELETE** /cells/{name}/worksheets/{sheetName}/sparklinegroups | 
+[**CellsSparklineGroupsGetWorksheetSparklineGroup**](CellsApi.md#cellssparklinegroupsgetworksheetsparklinegroup) | **GET** /cells/{name}/worksheets/{sheetName}/sparklinegroups/{sparklineGroupIndex} | 
+[**CellsSparklineGroupsGetWorksheetSparklineGroups**](CellsApi.md#cellssparklinegroupsgetworksheetsparklinegroups) | **GET** /cells/{name}/worksheets/{sheetName}/sparklinegroups | Get worksheet charts description.
+[**CellsSparklineGroupsPostWorksheetSparklineGroup**](CellsApi.md#cellssparklinegroupspostworksheetsparklinegroup) | **POST** /cells/{name}/worksheets/{sheetName}/sparklinegroups/{sparklineGroupIndex} | 
+[**CellsSparklineGroupsPutWorksheetSparklineGroup**](CellsApi.md#cellssparklinegroupsputworksheetsparklinegroup) | **PUT** /cells/{name}/worksheets/{sheetName}/sparklinegroups | 
 [**CellsTaskPostRunTask**](CellsApi.md#cellstaskpostruntask) | **POST** /cells/task/runtask | Run tasks  
 [**CellsWorkbookDeleteDecryptDocument**](CellsApi.md#cellsworkbookdeletedecryptdocument) | **DELETE** /cells/{name}/encryption | Decrypt document.
 [**CellsWorkbookDeleteDocumentUnprotectFromChanges**](CellsApi.md#cellsworkbookdeletedocumentunprotectfromchanges) | **DELETE** /cells/{name}/writeProtection | Unprotect document from changes.
@@ -2296,7 +2304,7 @@ No authorization required
 
 <a name="cellschartsputworksheetaddchart"></a>
 # **CellsChartsPutWorksheetAddChart**
-> ChartsResponse CellsChartsPutWorksheetAddChart (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, string storageName = null)
+> ChartsResponse CellsChartsPutWorksheetAddChart (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, string storageName = null, bool? dataLabels = null, string dataLabelsPosition = null, string pivotTableSheet = null, string pivotTableName = null)
 
 Add new chart to worksheet.
 
@@ -2329,11 +2337,15 @@ namespace Example
             var title = title_example;  // string | Specifies chart title name. (optional) 
             var folder = folder_example;  // string | The workbook folder. (optional) 
             var storageName = storageName_example;  // string | storage name. (optional) 
+            var dataLabels = true;  // bool? |  (optional)  (default to true)
+            var dataLabelsPosition = dataLabelsPosition_example;  // string |  (optional)  (default to Above)
+            var pivotTableSheet = pivotTableSheet_example;  // string |  (optional) 
+            var pivotTableName = pivotTableName_example;  // string |  (optional) 
 
             try
             {
                 // Add new chart to worksheet.
-                ChartsResponse result = apiInstance.CellsChartsPutWorksheetAddChart(name, sheetName, chartType, upperLeftRow, upperLeftColumn, lowerRightRow, lowerRightColumn, area, isVertical, categoryData, isAutoGetSerialName, title, folder, storageName);
+                ChartsResponse result = apiInstance.CellsChartsPutWorksheetAddChart(name, sheetName, chartType, upperLeftRow, upperLeftColumn, lowerRightRow, lowerRightColumn, area, isVertical, categoryData, isAutoGetSerialName, title, folder, storageName, dataLabels, dataLabelsPosition, pivotTableSheet, pivotTableName);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2363,6 +2375,10 @@ Name | Type | Description  | Notes
  **title** | **string**| Specifies chart title name. | [optional] 
  **folder** | **string**| The workbook folder. | [optional] 
  **storageName** | **string**| storage name. | [optional] 
+ **dataLabels** | **bool?**|  | [optional] [default to true]
+ **dataLabelsPosition** | **string**|  | [optional] [default to Above]
+ **pivotTableSheet** | **string**|  | [optional] 
+ **pivotTableName** | **string**|  | [optional] 
 
 ### Return type
 
@@ -7848,6 +7864,148 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="cellspivottablespostpivottableupdatepivotfield"></a>
+# **CellsPivotTablesPostPivotTableUpdatePivotField**
+> CellsCloudResponse CellsPivotTablesPostPivotTableUpdatePivotField (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, PivotField pivotField, bool? needReCalculate = null, string folder = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+namespace Example
+{
+    public class CellsPivotTablesPostPivotTableUpdatePivotFieldExample
+    {
+        public void main()
+        {
+            var apiInstance = new CellsApi();
+            var name = name_example;  // string | 
+            var sheetName = sheetName_example;  // string | 
+            var pivotTableIndex = 56;  // int? | 
+            var pivotFieldIndex = 56;  // int? | 
+            var pivotFieldType = pivotFieldType_example;  // string | 
+            var pivotField = new PivotField(); // PivotField | 
+            var needReCalculate = true;  // bool? |  (optional)  (default to false)
+            var folder = folder_example;  // string |  (optional) 
+
+            try
+            {
+                CellsCloudResponse result = apiInstance.CellsPivotTablesPostPivotTableUpdatePivotField(name, sheetName, pivotTableIndex, pivotFieldIndex, pivotFieldType, pivotField, needReCalculate, folder);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CellsApi.CellsPivotTablesPostPivotTableUpdatePivotField: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**|  | 
+ **sheetName** | **string**|  | 
+ **pivotTableIndex** | **int?**|  | 
+ **pivotFieldIndex** | **int?**|  | 
+ **pivotFieldType** | **string**|  | 
+ **pivotField** | [**PivotField**](PivotField.md)|  | 
+ **needReCalculate** | **bool?**|  | [optional] [default to false]
+ **folder** | **string**|  | [optional] 
+
+### Return type
+
+[**CellsCloudResponse**](CellsCloudResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="cellspivottablespostpivottableupdatepivotfields"></a>
+# **CellsPivotTablesPostPivotTableUpdatePivotFields**
+> CellsCloudResponse CellsPivotTablesPostPivotTableUpdatePivotFields (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotField pivotField, bool? needReCalculate = null, string folder = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+namespace Example
+{
+    public class CellsPivotTablesPostPivotTableUpdatePivotFieldsExample
+    {
+        public void main()
+        {
+            var apiInstance = new CellsApi();
+            var name = name_example;  // string | 
+            var sheetName = sheetName_example;  // string | 
+            var pivotTableIndex = 56;  // int? | 
+            var pivotFieldType = pivotFieldType_example;  // string | 
+            var pivotField = new PivotField(); // PivotField | 
+            var needReCalculate = true;  // bool? |  (optional)  (default to false)
+            var folder = folder_example;  // string |  (optional) 
+
+            try
+            {
+                CellsCloudResponse result = apiInstance.CellsPivotTablesPostPivotTableUpdatePivotFields(name, sheetName, pivotTableIndex, pivotFieldType, pivotField, needReCalculate, folder);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CellsApi.CellsPivotTablesPostPivotTableUpdatePivotFields: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**|  | 
+ **sheetName** | **string**|  | 
+ **pivotTableIndex** | **int?**|  | 
+ **pivotFieldType** | **string**|  | 
+ **pivotField** | [**PivotField**](PivotField.md)|  | 
+ **needReCalculate** | **bool?**|  | [optional] [default to false]
+ **folder** | **string**|  | [optional] 
+
+### Return type
+
+[**CellsCloudResponse**](CellsCloudResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="cellspivottablespostworksheetpivottablecalculate"></a>
 # **CellsPivotTablesPostWorksheetPivotTableCalculate**
 > CellsCloudResponse CellsPivotTablesPostWorksheetPivotTableCalculate (string name, string sheetName, int? pivotTableIndex, string folder = null, string storageName = null)
@@ -11747,6 +11905,407 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ShapeResponse**](ShapeResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="cellssparklinegroupsdeleteworksheetsparklinegroup"></a>
+# **CellsSparklineGroupsDeleteWorksheetSparklineGroup**
+> CellsCloudResponse CellsSparklineGroupsDeleteWorksheetSparklineGroup (string name, string sheetName, int? sparklineGroupIndex, string folder = null, string storageName = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+namespace Example
+{
+    public class CellsSparklineGroupsDeleteWorksheetSparklineGroupExample
+    {
+        public void main()
+        {
+            var apiInstance = new CellsApi();
+            var name = name_example;  // string | 
+            var sheetName = sheetName_example;  // string | 
+            var sparklineGroupIndex = 56;  // int? | 
+            var folder = folder_example;  // string |  (optional) 
+            var storageName = storageName_example;  // string | storage name. (optional) 
+
+            try
+            {
+                CellsCloudResponse result = apiInstance.CellsSparklineGroupsDeleteWorksheetSparklineGroup(name, sheetName, sparklineGroupIndex, folder, storageName);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CellsApi.CellsSparklineGroupsDeleteWorksheetSparklineGroup: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**|  | 
+ **sheetName** | **string**|  | 
+ **sparklineGroupIndex** | **int?**|  | 
+ **folder** | **string**|  | [optional] 
+ **storageName** | **string**| storage name. | [optional] 
+
+### Return type
+
+[**CellsCloudResponse**](CellsCloudResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="cellssparklinegroupsdeleteworksheetsparklinegroups"></a>
+# **CellsSparklineGroupsDeleteWorksheetSparklineGroups**
+> CellsCloudResponse CellsSparklineGroupsDeleteWorksheetSparklineGroups (string name, string sheetName, string folder = null, string storageName = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+namespace Example
+{
+    public class CellsSparklineGroupsDeleteWorksheetSparklineGroupsExample
+    {
+        public void main()
+        {
+            var apiInstance = new CellsApi();
+            var name = name_example;  // string | 
+            var sheetName = sheetName_example;  // string | 
+            var folder = folder_example;  // string |  (optional) 
+            var storageName = storageName_example;  // string | storage name. (optional) 
+
+            try
+            {
+                CellsCloudResponse result = apiInstance.CellsSparklineGroupsDeleteWorksheetSparklineGroups(name, sheetName, folder, storageName);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CellsApi.CellsSparklineGroupsDeleteWorksheetSparklineGroups: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**|  | 
+ **sheetName** | **string**|  | 
+ **folder** | **string**|  | [optional] 
+ **storageName** | **string**| storage name. | [optional] 
+
+### Return type
+
+[**CellsCloudResponse**](CellsCloudResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="cellssparklinegroupsgetworksheetsparklinegroup"></a>
+# **CellsSparklineGroupsGetWorksheetSparklineGroup**
+> SparklineGroupResponse CellsSparklineGroupsGetWorksheetSparklineGroup (string name, string sheetName, int? sparklineGroupIndex, string folder = null, string storageName = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+namespace Example
+{
+    public class CellsSparklineGroupsGetWorksheetSparklineGroupExample
+    {
+        public void main()
+        {
+            var apiInstance = new CellsApi();
+            var name = name_example;  // string | 
+            var sheetName = sheetName_example;  // string | 
+            var sparklineGroupIndex = 56;  // int? | 
+            var folder = folder_example;  // string |  (optional) 
+            var storageName = storageName_example;  // string | storage name. (optional) 
+
+            try
+            {
+                SparklineGroupResponse result = apiInstance.CellsSparklineGroupsGetWorksheetSparklineGroup(name, sheetName, sparklineGroupIndex, folder, storageName);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CellsApi.CellsSparklineGroupsGetWorksheetSparklineGroup: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**|  | 
+ **sheetName** | **string**|  | 
+ **sparklineGroupIndex** | **int?**|  | 
+ **folder** | **string**|  | [optional] 
+ **storageName** | **string**| storage name. | [optional] 
+
+### Return type
+
+[**SparklineGroupResponse**](SparklineGroupResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="cellssparklinegroupsgetworksheetsparklinegroups"></a>
+# **CellsSparklineGroupsGetWorksheetSparklineGroups**
+> SparklineGroupsResponse CellsSparklineGroupsGetWorksheetSparklineGroups (string name, string sheetName, string folder = null, string storageName = null)
+
+Get worksheet charts description.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+namespace Example
+{
+    public class CellsSparklineGroupsGetWorksheetSparklineGroupsExample
+    {
+        public void main()
+        {
+            var apiInstance = new CellsApi();
+            var name = name_example;  // string | Document name.
+            var sheetName = sheetName_example;  // string | The worksheet name.
+            var folder = folder_example;  // string | Document's folder. (optional) 
+            var storageName = storageName_example;  // string | storage name. (optional) 
+
+            try
+            {
+                // Get worksheet charts description.
+                SparklineGroupsResponse result = apiInstance.CellsSparklineGroupsGetWorksheetSparklineGroups(name, sheetName, folder, storageName);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CellsApi.CellsSparklineGroupsGetWorksheetSparklineGroups: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| Document name. | 
+ **sheetName** | **string**| The worksheet name. | 
+ **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storageName** | **string**| storage name. | [optional] 
+
+### Return type
+
+[**SparklineGroupsResponse**](SparklineGroupsResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="cellssparklinegroupspostworksheetsparklinegroup"></a>
+# **CellsSparklineGroupsPostWorksheetSparklineGroup**
+> CellsCloudResponse CellsSparklineGroupsPostWorksheetSparklineGroup (string name, string sheetName, int? sparklineGroupIndex, SparklineGroup sparklineGroup, string folder = null, string storageName = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+namespace Example
+{
+    public class CellsSparklineGroupsPostWorksheetSparklineGroupExample
+    {
+        public void main()
+        {
+            var apiInstance = new CellsApi();
+            var name = name_example;  // string | 
+            var sheetName = sheetName_example;  // string | 
+            var sparklineGroupIndex = 56;  // int? | 
+            var sparklineGroup = new SparklineGroup(); // SparklineGroup | 
+            var folder = folder_example;  // string |  (optional) 
+            var storageName = storageName_example;  // string | storage name. (optional) 
+
+            try
+            {
+                CellsCloudResponse result = apiInstance.CellsSparklineGroupsPostWorksheetSparklineGroup(name, sheetName, sparklineGroupIndex, sparklineGroup, folder, storageName);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CellsApi.CellsSparklineGroupsPostWorksheetSparklineGroup: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**|  | 
+ **sheetName** | **string**|  | 
+ **sparklineGroupIndex** | **int?**|  | 
+ **sparklineGroup** | [**SparklineGroup**](SparklineGroup.md)|  | 
+ **folder** | **string**|  | [optional] 
+ **storageName** | **string**| storage name. | [optional] 
+
+### Return type
+
+[**CellsCloudResponse**](CellsCloudResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="cellssparklinegroupsputworksheetsparklinegroup"></a>
+# **CellsSparklineGroupsPutWorksheetSparklineGroup**
+> CellsCloudResponse CellsSparklineGroupsPutWorksheetSparklineGroup (string name, string sheetName, string type, string dataRange, bool? isVertical, string locationRange, string folder = null, string storageName = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+namespace Example
+{
+    public class CellsSparklineGroupsPutWorksheetSparklineGroupExample
+    {
+        public void main()
+        {
+            var apiInstance = new CellsApi();
+            var name = name_example;  // string | 
+            var sheetName = sheetName_example;  // string | 
+            var type = type_example;  // string | 
+            var dataRange = dataRange_example;  // string | 
+            var isVertical = true;  // bool? | 
+            var locationRange = locationRange_example;  // string | 
+            var folder = folder_example;  // string |  (optional) 
+            var storageName = storageName_example;  // string | storage name. (optional) 
+
+            try
+            {
+                CellsCloudResponse result = apiInstance.CellsSparklineGroupsPutWorksheetSparklineGroup(name, sheetName, type, dataRange, isVertical, locationRange, folder, storageName);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CellsApi.CellsSparklineGroupsPutWorksheetSparklineGroup: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**|  | 
+ **sheetName** | **string**|  | 
+ **type** | **string**|  | 
+ **dataRange** | **string**|  | 
+ **isVertical** | **bool?**|  | 
+ **locationRange** | **string**|  | 
+ **folder** | **string**|  | [optional] 
+ **storageName** | **string**| storage name. | [optional] 
+
+### Return type
+
+[**CellsCloudResponse**](CellsCloudResponse.md)
 
 ### Authorization
 

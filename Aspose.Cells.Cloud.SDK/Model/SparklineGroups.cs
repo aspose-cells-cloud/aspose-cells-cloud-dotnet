@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="FilesUploadResult.cs">
+// <copyright company="Aspose" file="SparklineGroups.cs">
 //   Copyright (c) 2016 Aspose.Cells for Cloud
 // </copyright>
 // <summary>
@@ -34,22 +34,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
   using Newtonsoft.Json.Converters;
 
   /// <summary>
-  /// File upload result
+  /// 
   /// </summary>  
   [DataContract]
-  public class FilesUploadResult 
+  public class SparklineGroups 
   {                       
         /// <summary>
-        /// List of uploaded file names
+        /// Gets or sets SparklineGroupList
         /// </summary>  
-		[DataMember(Name="Uploaded", EmitDefaultValue=false)]
-        public List<string> Uploaded { get; set; }
-
-        /// <summary>
-        /// List of errors.
-        /// </summary>  
-		[DataMember(Name="Errors", EmitDefaultValue=false)]
-        public List<CellsError> Errors { get; set; }
+		[DataMember(Name="SparklineGroupList", EmitDefaultValue=false)]
+        public List<SparklineGroup> SparklineGroupList { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -58,9 +52,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class FilesUploadResult {\n");
-          sb.Append("  Uploaded: ").Append(this.Uploaded).Append("\n");
-          sb.Append("  Errors: ").Append(this.Errors).Append("\n");
+          sb.Append("class SparklineGroups {\n");
+          sb.Append("  SparklineGroupList: ").Append(this.SparklineGroupList).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

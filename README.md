@@ -18,11 +18,11 @@ This Cloud SDK enhances your C#, ASP.NET, & other .NET cloud-based apps to [proc
 - Cloud SDK to Read & Process Excel Worksheets.
 - Leverage the Power of Pivot Tables & Ranges.
 
-## Feature & Enhancements in Version 20.8
+## Feature & Enhancements in Version 20.9
 
-- Aspose.Cells Cloud API calls are not working with explicit storage name but only default storage.
-- Get output file size without downloading during conversion.
-- Enhancement for CellsShapesPutWorksheetShape API.
+- Enhancement for add chart API.
+- Add API about updating pivot field.
+- Support sparkline groups.
 
 ## Read & Write Spreadsheet Formats
 

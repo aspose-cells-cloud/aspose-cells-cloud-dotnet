@@ -997,8 +997,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="title">Specifies chart title name. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
+        /// <param name="dataLabels"> (optional, default to true)</param>
+        /// <param name="dataLabelsPosition"> (optional, default to Above)</param>
+        /// <param name="pivotTableSheet"> (optional)</param>
+        /// <param name="pivotTableName"> (optional)</param>
         /// <returns>ChartsResponse</returns>
-        ChartsResponse CellsChartsPutWorksheetAddChart (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, string storageName = null);
+        ChartsResponse CellsChartsPutWorksheetAddChart (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, string storageName = null, bool? dataLabels = null, string dataLabelsPosition = null, string pivotTableSheet = null, string pivotTableName = null);
 
         /// <summary>
         /// Add new chart to worksheet.
@@ -1021,8 +1025,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="title">Specifies chart title name. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
+        /// <param name="dataLabels"> (optional, default to true)</param>
+        /// <param name="dataLabelsPosition"> (optional, default to Above)</param>
+        /// <param name="pivotTableSheet"> (optional)</param>
+        /// <param name="pivotTableName"> (optional)</param>
         /// <returns>ApiResponse of ChartsResponse</returns>
-        ApiResponse<ChartsResponse> CellsChartsPutWorksheetAddChartWithHttpInfo (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, string storageName = null);
+        ApiResponse<ChartsResponse> CellsChartsPutWorksheetAddChartWithHttpInfo (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, string storageName = null, bool? dataLabels = null, string dataLabelsPosition = null, string pivotTableSheet = null, string pivotTableName = null);
         /// <summary>
         /// Show legend in chart
         /// </summary>
@@ -3470,6 +3478,74 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ApiResponse of CellsCloudResponse</returns>
         ApiResponse<CellsCloudResponse> CellsPivotTablesPostPivotTableStyleWithHttpInfo (string name, string sheetName, int? pivotTableIndex, Style style = null, bool? needReCalculate = null, string folder = null, string storageName = null);
         /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="pivotTableIndex"></param>
+        /// <param name="pivotFieldIndex"></param>
+        /// <param name="pivotFieldType"></param>
+        /// <param name="pivotField"></param>
+        /// <param name="needReCalculate"> (optional, default to false)</param>
+        /// <param name="folder"> (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        CellsCloudResponse CellsPivotTablesPostPivotTableUpdatePivotField (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, PivotField pivotField, bool? needReCalculate = null, string folder = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="pivotTableIndex"></param>
+        /// <param name="pivotFieldIndex"></param>
+        /// <param name="pivotFieldType"></param>
+        /// <param name="pivotField"></param>
+        /// <param name="needReCalculate"> (optional, default to false)</param>
+        /// <param name="folder"> (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        ApiResponse<CellsCloudResponse> CellsPivotTablesPostPivotTableUpdatePivotFieldWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, PivotField pivotField, bool? needReCalculate = null, string folder = null);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="pivotTableIndex"></param>
+        /// <param name="pivotFieldType"></param>
+        /// <param name="pivotField"></param>
+        /// <param name="needReCalculate"> (optional, default to false)</param>
+        /// <param name="folder"> (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        CellsCloudResponse CellsPivotTablesPostPivotTableUpdatePivotFields (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotField pivotField, bool? needReCalculate = null, string folder = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="pivotTableIndex"></param>
+        /// <param name="pivotFieldType"></param>
+        /// <param name="pivotField"></param>
+        /// <param name="needReCalculate"> (optional, default to false)</param>
+        /// <param name="folder"> (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        ApiResponse<CellsCloudResponse> CellsPivotTablesPostPivotTableUpdatePivotFieldsWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotField pivotField, bool? needReCalculate = null, string folder = null);
+        /// <summary>
         /// Calculates pivottable&#39;s data to cells.
         /// </summary>
         /// <remarks>
@@ -5253,6 +5329,184 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>ApiResponse of ShapeResponse</returns>
         ApiResponse<ShapeResponse> CellsShapesPutWorksheetShapeWithHttpInfo (string name, string sheetName, Shape shapeDTO = null, string drawingType = null, int? upperLeftRow = null, int? upperLeftColumn = null, int? top = null, int? left = null, int? width = null, int? height = null, string folder = null, string storageName = null);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        CellsCloudResponse CellsSparklineGroupsDeleteWorksheetSparklineGroup (string name, string sheetName, int? sparklineGroupIndex, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        ApiResponse<CellsCloudResponse> CellsSparklineGroupsDeleteWorksheetSparklineGroupWithHttpInfo (string name, string sheetName, int? sparklineGroupIndex, string folder = null, string storageName = null);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        CellsCloudResponse CellsSparklineGroupsDeleteWorksheetSparklineGroups (string name, string sheetName, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        ApiResponse<CellsCloudResponse> CellsSparklineGroupsDeleteWorksheetSparklineGroupsWithHttpInfo (string name, string sheetName, string folder = null, string storageName = null);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>SparklineGroupResponse</returns>
+        SparklineGroupResponse CellsSparklineGroupsGetWorksheetSparklineGroup (string name, string sheetName, int? sparklineGroupIndex, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of SparklineGroupResponse</returns>
+        ApiResponse<SparklineGroupResponse> CellsSparklineGroupsGetWorksheetSparklineGroupWithHttpInfo (string name, string sheetName, int? sparklineGroupIndex, string folder = null, string storageName = null);
+        /// <summary>
+        /// Get worksheet charts description.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>SparklineGroupsResponse</returns>
+        SparklineGroupsResponse CellsSparklineGroupsGetWorksheetSparklineGroups (string name, string sheetName, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// Get worksheet charts description.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of SparklineGroupsResponse</returns>
+        ApiResponse<SparklineGroupsResponse> CellsSparklineGroupsGetWorksheetSparklineGroupsWithHttpInfo (string name, string sheetName, string folder = null, string storageName = null);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="sparklineGroup"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        CellsCloudResponse CellsSparklineGroupsPostWorksheetSparklineGroup (string name, string sheetName, int? sparklineGroupIndex, SparklineGroup sparklineGroup, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="sparklineGroup"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        ApiResponse<CellsCloudResponse> CellsSparklineGroupsPostWorksheetSparklineGroupWithHttpInfo (string name, string sheetName, int? sparklineGroupIndex, SparklineGroup sparklineGroup, string folder = null, string storageName = null);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="type"></param>
+        /// <param name="dataRange"></param>
+        /// <param name="isVertical"></param>
+        /// <param name="locationRange"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        CellsCloudResponse CellsSparklineGroupsPutWorksheetSparklineGroup (string name, string sheetName, string type, string dataRange, bool? isVertical, string locationRange, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="type"></param>
+        /// <param name="dataRange"></param>
+        /// <param name="isVertical"></param>
+        /// <param name="locationRange"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        ApiResponse<CellsCloudResponse> CellsSparklineGroupsPutWorksheetSparklineGroupWithHttpInfo (string name, string sheetName, string type, string dataRange, bool? isVertical, string locationRange, string folder = null, string storageName = null);
         /// <summary>
         /// Run tasks  
         /// </summary>
@@ -8579,8 +8833,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="title">Specifies chart title name. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
+        /// <param name="dataLabels"> (optional, default to true)</param>
+        /// <param name="dataLabelsPosition"> (optional, default to Above)</param>
+        /// <param name="pivotTableSheet"> (optional)</param>
+        /// <param name="pivotTableName"> (optional)</param>
         /// <returns>Task of ChartsResponse</returns>
-        System.Threading.Tasks.Task<ChartsResponse> CellsChartsPutWorksheetAddChartAsync (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, string storageName = null);
+        System.Threading.Tasks.Task<ChartsResponse> CellsChartsPutWorksheetAddChartAsync (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, string storageName = null, bool? dataLabels = null, string dataLabelsPosition = null, string pivotTableSheet = null, string pivotTableName = null);
 
         /// <summary>
         /// Add new chart to worksheet.
@@ -8603,8 +8861,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="title">Specifies chart title name. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
+        /// <param name="dataLabels"> (optional, default to true)</param>
+        /// <param name="dataLabelsPosition"> (optional, default to Above)</param>
+        /// <param name="pivotTableSheet"> (optional)</param>
+        /// <param name="pivotTableName"> (optional)</param>
         /// <returns>Task of ApiResponse (ChartsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ChartsResponse>> CellsChartsPutWorksheetAddChartAsyncWithHttpInfo (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, string storageName = null);
+        System.Threading.Tasks.Task<ApiResponse<ChartsResponse>> CellsChartsPutWorksheetAddChartAsyncWithHttpInfo (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, string storageName = null, bool? dataLabels = null, string dataLabelsPosition = null, string pivotTableSheet = null, string pivotTableName = null);
         /// <summary>
         /// Show legend in chart
         /// </summary>
@@ -11052,6 +11314,74 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsPivotTablesPostPivotTableStyleAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, Style style = null, bool? needReCalculate = null, string folder = null, string storageName = null);
         /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="pivotTableIndex"></param>
+        /// <param name="pivotFieldIndex"></param>
+        /// <param name="pivotFieldType"></param>
+        /// <param name="pivotField"></param>
+        /// <param name="needReCalculate"> (optional, default to false)</param>
+        /// <param name="folder"> (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsPivotTablesPostPivotTableUpdatePivotFieldAsync (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, PivotField pivotField, bool? needReCalculate = null, string folder = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="pivotTableIndex"></param>
+        /// <param name="pivotFieldIndex"></param>
+        /// <param name="pivotFieldType"></param>
+        /// <param name="pivotField"></param>
+        /// <param name="needReCalculate"> (optional, default to false)</param>
+        /// <param name="folder"> (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsPivotTablesPostPivotTableUpdatePivotFieldAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, PivotField pivotField, bool? needReCalculate = null, string folder = null);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="pivotTableIndex"></param>
+        /// <param name="pivotFieldType"></param>
+        /// <param name="pivotField"></param>
+        /// <param name="needReCalculate"> (optional, default to false)</param>
+        /// <param name="folder"> (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsPivotTablesPostPivotTableUpdatePivotFieldsAsync (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotField pivotField, bool? needReCalculate = null, string folder = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="pivotTableIndex"></param>
+        /// <param name="pivotFieldType"></param>
+        /// <param name="pivotField"></param>
+        /// <param name="needReCalculate"> (optional, default to false)</param>
+        /// <param name="folder"> (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsPivotTablesPostPivotTableUpdatePivotFieldsAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotField pivotField, bool? needReCalculate = null, string folder = null);
+        /// <summary>
         /// Calculates pivottable&#39;s data to cells.
         /// </summary>
         /// <remarks>
@@ -12835,6 +13165,184 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (ShapeResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<ShapeResponse>> CellsShapesPutWorksheetShapeAsyncWithHttpInfo (string name, string sheetName, Shape shapeDTO = null, string drawingType = null, int? upperLeftRow = null, int? upperLeftColumn = null, int? top = null, int? left = null, int? width = null, int? height = null, string folder = null, string storageName = null);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsSparklineGroupsDeleteWorksheetSparklineGroupAsync (string name, string sheetName, int? sparklineGroupIndex, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsSparklineGroupsDeleteWorksheetSparklineGroupAsyncWithHttpInfo (string name, string sheetName, int? sparklineGroupIndex, string folder = null, string storageName = null);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsSparklineGroupsDeleteWorksheetSparklineGroupsAsync (string name, string sheetName, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsSparklineGroupsDeleteWorksheetSparklineGroupsAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storageName = null);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of SparklineGroupResponse</returns>
+        System.Threading.Tasks.Task<SparklineGroupResponse> CellsSparklineGroupsGetWorksheetSparklineGroupAsync (string name, string sheetName, int? sparklineGroupIndex, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (SparklineGroupResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SparklineGroupResponse>> CellsSparklineGroupsGetWorksheetSparklineGroupAsyncWithHttpInfo (string name, string sheetName, int? sparklineGroupIndex, string folder = null, string storageName = null);
+        /// <summary>
+        /// Get worksheet charts description.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of SparklineGroupsResponse</returns>
+        System.Threading.Tasks.Task<SparklineGroupsResponse> CellsSparklineGroupsGetWorksheetSparklineGroupsAsync (string name, string sheetName, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// Get worksheet charts description.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (SparklineGroupsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SparklineGroupsResponse>> CellsSparklineGroupsGetWorksheetSparklineGroupsAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storageName = null);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="sparklineGroup"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsSparklineGroupsPostWorksheetSparklineGroupAsync (string name, string sheetName, int? sparklineGroupIndex, SparklineGroup sparklineGroup, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="sparklineGroup"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsSparklineGroupsPostWorksheetSparklineGroupAsyncWithHttpInfo (string name, string sheetName, int? sparklineGroupIndex, SparklineGroup sparklineGroup, string folder = null, string storageName = null);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="type"></param>
+        /// <param name="dataRange"></param>
+        /// <param name="isVertical"></param>
+        /// <param name="locationRange"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsSparklineGroupsPutWorksheetSparklineGroupAsync (string name, string sheetName, string type, string dataRange, bool? isVertical, string locationRange, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="type"></param>
+        /// <param name="dataRange"></param>
+        /// <param name="isVertical"></param>
+        /// <param name="locationRange"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsSparklineGroupsPutWorksheetSparklineGroupAsyncWithHttpInfo (string name, string sheetName, string type, string dataRange, bool? isVertical, string locationRange, string folder = null, string storageName = null);
         /// <summary>
         /// Run tasks  
         /// </summary>
@@ -20775,11 +21283,15 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="title">Specifies chart title name. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
+        /// <param name="dataLabels"> (optional, default to true)</param>
+        /// <param name="dataLabelsPosition"> (optional, default to Above)</param>
+        /// <param name="pivotTableSheet"> (optional)</param>
+        /// <param name="pivotTableName"> (optional)</param>
         /// <returns>ChartsResponse</returns>
-        public ChartsResponse CellsChartsPutWorksheetAddChart (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, string storageName = null)
+        public ChartsResponse CellsChartsPutWorksheetAddChart (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, string storageName = null, bool? dataLabels = null, string dataLabelsPosition = null, string pivotTableSheet = null, string pivotTableName = null)
         {
              checkAccessToken();
-             ApiResponse<ChartsResponse> localVarResponse = CellsChartsPutWorksheetAddChartWithHttpInfo(name, sheetName, chartType, upperLeftRow, upperLeftColumn, lowerRightRow, lowerRightColumn, area, isVertical, categoryData, isAutoGetSerialName, title, folder, storageName);
+             ApiResponse<ChartsResponse> localVarResponse = CellsChartsPutWorksheetAddChartWithHttpInfo(name, sheetName, chartType, upperLeftRow, upperLeftColumn, lowerRightRow, lowerRightColumn, area, isVertical, categoryData, isAutoGetSerialName, title, folder, storageName, dataLabels, dataLabelsPosition, pivotTableSheet, pivotTableName);
              return localVarResponse.Data;
         }
 
@@ -20801,8 +21313,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="title">Specifies chart title name. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
+        /// <param name="dataLabels"> (optional, default to true)</param>
+        /// <param name="dataLabelsPosition"> (optional, default to Above)</param>
+        /// <param name="pivotTableSheet"> (optional)</param>
+        /// <param name="pivotTableName"> (optional)</param>
         /// <returns>ApiResponse of ChartsResponse</returns>
-        public ApiResponse< ChartsResponse > CellsChartsPutWorksheetAddChartWithHttpInfo (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, string storageName = null)
+        public ApiResponse< ChartsResponse > CellsChartsPutWorksheetAddChartWithHttpInfo (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, string storageName = null, bool? dataLabels = null, string dataLabelsPosition = null, string pivotTableSheet = null, string pivotTableName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -20850,6 +21366,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (title != null) localVarQueryParams.Add("title", Configuration.ApiClient.ParameterToString(title)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
             if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+            if (dataLabels != null) localVarQueryParams.Add("dataLabels", Configuration.ApiClient.ParameterToString(dataLabels)); // query parameter
+            if (dataLabelsPosition != null) localVarQueryParams.Add("dataLabelsPosition", Configuration.ApiClient.ParameterToString(dataLabelsPosition)); // query parameter
+            if (pivotTableSheet != null) localVarQueryParams.Add("pivotTableSheet", Configuration.ApiClient.ParameterToString(pivotTableSheet)); // query parameter
+            if (pivotTableName != null) localVarQueryParams.Add("pivotTableName", Configuration.ApiClient.ParameterToString(pivotTableName)); // query parameter
 
 
             // make the HTTP request
@@ -20888,10 +21408,14 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="title">Specifies chart title name. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
+        /// <param name="dataLabels"> (optional, default to true)</param>
+        /// <param name="dataLabelsPosition"> (optional, default to Above)</param>
+        /// <param name="pivotTableSheet"> (optional)</param>
+        /// <param name="pivotTableName"> (optional)</param>
         /// <returns>Task of ChartsResponse</returns>
-        public async System.Threading.Tasks.Task<ChartsResponse> CellsChartsPutWorksheetAddChartAsync (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, string storageName = null)
+        public async System.Threading.Tasks.Task<ChartsResponse> CellsChartsPutWorksheetAddChartAsync (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, string storageName = null, bool? dataLabels = null, string dataLabelsPosition = null, string pivotTableSheet = null, string pivotTableName = null)
         {
-             ApiResponse<ChartsResponse> localVarResponse = await CellsChartsPutWorksheetAddChartAsyncWithHttpInfo(name, sheetName, chartType, upperLeftRow, upperLeftColumn, lowerRightRow, lowerRightColumn, area, isVertical, categoryData, isAutoGetSerialName, title, folder, storageName);
+             ApiResponse<ChartsResponse> localVarResponse = await CellsChartsPutWorksheetAddChartAsyncWithHttpInfo(name, sheetName, chartType, upperLeftRow, upperLeftColumn, lowerRightRow, lowerRightColumn, area, isVertical, categoryData, isAutoGetSerialName, title, folder, storageName, dataLabels, dataLabelsPosition, pivotTableSheet, pivotTableName);
              return localVarResponse.Data;
 
         }
@@ -20914,8 +21438,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="title">Specifies chart title name. (optional)</param>
         /// <param name="folder">The workbook folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
+        /// <param name="dataLabels"> (optional, default to true)</param>
+        /// <param name="dataLabelsPosition"> (optional, default to Above)</param>
+        /// <param name="pivotTableSheet"> (optional)</param>
+        /// <param name="pivotTableName"> (optional)</param>
         /// <returns>Task of ApiResponse (ChartsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ChartsResponse>> CellsChartsPutWorksheetAddChartAsyncWithHttpInfo (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, string storageName = null)
+        public async System.Threading.Tasks.Task<ApiResponse<ChartsResponse>> CellsChartsPutWorksheetAddChartAsyncWithHttpInfo (string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, string storageName = null, bool? dataLabels = null, string dataLabelsPosition = null, string pivotTableSheet = null, string pivotTableName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -20963,6 +21491,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (title != null) localVarQueryParams.Add("title", Configuration.ApiClient.ParameterToString(title)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
             if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+            if (dataLabels != null) localVarQueryParams.Add("dataLabels", Configuration.ApiClient.ParameterToString(dataLabels)); // query parameter
+            if (dataLabelsPosition != null) localVarQueryParams.Add("dataLabelsPosition", Configuration.ApiClient.ParameterToString(dataLabelsPosition)); // query parameter
+            if (pivotTableSheet != null) localVarQueryParams.Add("pivotTableSheet", Configuration.ApiClient.ParameterToString(pivotTableSheet)); // query parameter
+            if (pivotTableName != null) localVarQueryParams.Add("pivotTableName", Configuration.ApiClient.ParameterToString(pivotTableName)); // query parameter
 
 
             // make the HTTP request
@@ -35410,6 +35942,438 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
         /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="pivotTableIndex"></param>
+        /// <param name="pivotFieldIndex"></param>
+        /// <param name="pivotFieldType"></param>
+        /// <param name="pivotField"></param>
+        /// <param name="needReCalculate"> (optional, default to false)</param>
+        /// <param name="folder"> (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        public CellsCloudResponse CellsPivotTablesPostPivotTableUpdatePivotField (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, PivotField pivotField, bool? needReCalculate = null, string folder = null)
+        {
+             checkAccessToken();
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsPivotTablesPostPivotTableUpdatePivotFieldWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldIndex, pivotFieldType, pivotField, needReCalculate, folder);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="pivotTableIndex"></param>
+        /// <param name="pivotFieldIndex"></param>
+        /// <param name="pivotFieldType"></param>
+        /// <param name="pivotField"></param>
+        /// <param name="needReCalculate"> (optional, default to false)</param>
+        /// <param name="folder"> (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        public ApiResponse< CellsCloudResponse > CellsPivotTablesPostPivotTableUpdatePivotFieldWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, PivotField pivotField, bool? needReCalculate = null, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotField");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotField");
+            // verify the required parameter 'pivotTableIndex' is set
+            if (pivotTableIndex == null)
+                throw new ApiException(400, "Missing required parameter 'pivotTableIndex' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotField");
+            // verify the required parameter 'pivotFieldIndex' is set
+            if (pivotFieldIndex == null)
+                throw new ApiException(400, "Missing required parameter 'pivotFieldIndex' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotField");
+            // verify the required parameter 'pivotFieldType' is set
+            if (pivotFieldType == null)
+                throw new ApiException(400, "Missing required parameter 'pivotFieldType' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotField");
+            // verify the required parameter 'pivotField' is set
+            if (pivotField == null)
+                throw new ApiException(400, "Missing required parameter 'pivotField' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotField");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFields/{pivotFieldIndex}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (pivotTableIndex != null) localVarPathParams.Add("pivotTableIndex", Configuration.ApiClient.ParameterToString(pivotTableIndex)); // path parameter
+            if (pivotFieldIndex != null) localVarPathParams.Add("pivotFieldIndex", Configuration.ApiClient.ParameterToString(pivotFieldIndex)); // path parameter
+            if (pivotFieldType != null) localVarQueryParams.Add("pivotFieldType", Configuration.ApiClient.ParameterToString(pivotFieldType)); // query parameter
+            if (needReCalculate != null) localVarQueryParams.Add("needReCalculate", Configuration.ApiClient.ParameterToString(needReCalculate)); // query parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (pivotField != null && pivotField.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(pivotField); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = pivotField; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsPivotTablesPostPivotTableUpdatePivotField", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="pivotTableIndex"></param>
+        /// <param name="pivotFieldIndex"></param>
+        /// <param name="pivotFieldType"></param>
+        /// <param name="pivotField"></param>
+        /// <param name="needReCalculate"> (optional, default to false)</param>
+        /// <param name="folder"> (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsPivotTablesPostPivotTableUpdatePivotFieldAsync (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, PivotField pivotField, bool? needReCalculate = null, string folder = null)
+        {
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsPivotTablesPostPivotTableUpdatePivotFieldAsyncWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldIndex, pivotFieldType, pivotField, needReCalculate, folder);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="pivotTableIndex"></param>
+        /// <param name="pivotFieldIndex"></param>
+        /// <param name="pivotFieldType"></param>
+        /// <param name="pivotField"></param>
+        /// <param name="needReCalculate"> (optional, default to false)</param>
+        /// <param name="folder"> (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsPivotTablesPostPivotTableUpdatePivotFieldAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, PivotField pivotField, bool? needReCalculate = null, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotField");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotField");
+            // verify the required parameter 'pivotTableIndex' is set
+            if (pivotTableIndex == null)
+                throw new ApiException(400, "Missing required parameter 'pivotTableIndex' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotField");
+            // verify the required parameter 'pivotFieldIndex' is set
+            if (pivotFieldIndex == null)
+                throw new ApiException(400, "Missing required parameter 'pivotFieldIndex' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotField");
+            // verify the required parameter 'pivotFieldType' is set
+            if (pivotFieldType == null)
+                throw new ApiException(400, "Missing required parameter 'pivotFieldType' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotField");
+            // verify the required parameter 'pivotField' is set
+            if (pivotField == null)
+                throw new ApiException(400, "Missing required parameter 'pivotField' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotField");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFields/{pivotFieldIndex}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (pivotTableIndex != null) localVarPathParams.Add("pivotTableIndex", Configuration.ApiClient.ParameterToString(pivotTableIndex)); // path parameter
+            if (pivotFieldIndex != null) localVarPathParams.Add("pivotFieldIndex", Configuration.ApiClient.ParameterToString(pivotFieldIndex)); // path parameter
+            if (pivotFieldType != null) localVarQueryParams.Add("pivotFieldType", Configuration.ApiClient.ParameterToString(pivotFieldType)); // query parameter
+            if (needReCalculate != null) localVarQueryParams.Add("needReCalculate", Configuration.ApiClient.ParameterToString(needReCalculate)); // query parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (pivotField != null && pivotField.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(pivotField); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = pivotField; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsPivotTablesPostPivotTableUpdatePivotField", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="pivotTableIndex"></param>
+        /// <param name="pivotFieldType"></param>
+        /// <param name="pivotField"></param>
+        /// <param name="needReCalculate"> (optional, default to false)</param>
+        /// <param name="folder"> (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        public CellsCloudResponse CellsPivotTablesPostPivotTableUpdatePivotFields (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotField pivotField, bool? needReCalculate = null, string folder = null)
+        {
+             checkAccessToken();
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsPivotTablesPostPivotTableUpdatePivotFieldsWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldType, pivotField, needReCalculate, folder);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="pivotTableIndex"></param>
+        /// <param name="pivotFieldType"></param>
+        /// <param name="pivotField"></param>
+        /// <param name="needReCalculate"> (optional, default to false)</param>
+        /// <param name="folder"> (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        public ApiResponse< CellsCloudResponse > CellsPivotTablesPostPivotTableUpdatePivotFieldsWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotField pivotField, bool? needReCalculate = null, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotFields");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotFields");
+            // verify the required parameter 'pivotTableIndex' is set
+            if (pivotTableIndex == null)
+                throw new ApiException(400, "Missing required parameter 'pivotTableIndex' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotFields");
+            // verify the required parameter 'pivotFieldType' is set
+            if (pivotFieldType == null)
+                throw new ApiException(400, "Missing required parameter 'pivotFieldType' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotFields");
+            // verify the required parameter 'pivotField' is set
+            if (pivotField == null)
+                throw new ApiException(400, "Missing required parameter 'pivotField' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotFields");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFields";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (pivotTableIndex != null) localVarPathParams.Add("pivotTableIndex", Configuration.ApiClient.ParameterToString(pivotTableIndex)); // path parameter
+            if (pivotFieldType != null) localVarQueryParams.Add("pivotFieldType", Configuration.ApiClient.ParameterToString(pivotFieldType)); // query parameter
+            if (needReCalculate != null) localVarQueryParams.Add("needReCalculate", Configuration.ApiClient.ParameterToString(needReCalculate)); // query parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (pivotField != null && pivotField.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(pivotField); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = pivotField; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsPivotTablesPostPivotTableUpdatePivotFields", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="pivotTableIndex"></param>
+        /// <param name="pivotFieldType"></param>
+        /// <param name="pivotField"></param>
+        /// <param name="needReCalculate"> (optional, default to false)</param>
+        /// <param name="folder"> (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsPivotTablesPostPivotTableUpdatePivotFieldsAsync (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotField pivotField, bool? needReCalculate = null, string folder = null)
+        {
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsPivotTablesPostPivotTableUpdatePivotFieldsAsyncWithHttpInfo(name, sheetName, pivotTableIndex, pivotFieldType, pivotField, needReCalculate, folder);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="pivotTableIndex"></param>
+        /// <param name="pivotFieldType"></param>
+        /// <param name="pivotField"></param>
+        /// <param name="needReCalculate"> (optional, default to false)</param>
+        /// <param name="folder"> (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsPivotTablesPostPivotTableUpdatePivotFieldsAsyncWithHttpInfo (string name, string sheetName, int? pivotTableIndex, string pivotFieldType, PivotField pivotField, bool? needReCalculate = null, string folder = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotFields");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotFields");
+            // verify the required parameter 'pivotTableIndex' is set
+            if (pivotTableIndex == null)
+                throw new ApiException(400, "Missing required parameter 'pivotTableIndex' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotFields");
+            // verify the required parameter 'pivotFieldType' is set
+            if (pivotFieldType == null)
+                throw new ApiException(400, "Missing required parameter 'pivotFieldType' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotFields");
+            // verify the required parameter 'pivotField' is set
+            if (pivotField == null)
+                throw new ApiException(400, "Missing required parameter 'pivotField' when calling CellsApi->CellsPivotTablesPostPivotTableUpdatePivotFields");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFields";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (pivotTableIndex != null) localVarPathParams.Add("pivotTableIndex", Configuration.ApiClient.ParameterToString(pivotTableIndex)); // path parameter
+            if (pivotFieldType != null) localVarQueryParams.Add("pivotFieldType", Configuration.ApiClient.ParameterToString(pivotFieldType)); // query parameter
+            if (needReCalculate != null) localVarQueryParams.Add("needReCalculate", Configuration.ApiClient.ParameterToString(needReCalculate)); // query parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (pivotField != null && pivotField.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(pivotField); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = pivotField; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsPivotTablesPostPivotTableUpdatePivotFields", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
         /// Calculates pivottable&#39;s data to cells. 
         /// </summary>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
@@ -45871,6 +46835,1076 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return new ApiResponse<ShapeResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (ShapeResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ShapeResponse)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        public CellsCloudResponse CellsSparklineGroupsDeleteWorksheetSparklineGroup (string name, string sheetName, int? sparklineGroupIndex, string folder = null, string storageName = null)
+        {
+             checkAccessToken();
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsSparklineGroupsDeleteWorksheetSparklineGroupWithHttpInfo(name, sheetName, sparklineGroupIndex, folder, storageName);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        public ApiResponse< CellsCloudResponse > CellsSparklineGroupsDeleteWorksheetSparklineGroupWithHttpInfo (string name, string sheetName, int? sparklineGroupIndex, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsSparklineGroupsDeleteWorksheetSparklineGroup");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsSparklineGroupsDeleteWorksheetSparklineGroup");
+            // verify the required parameter 'sparklineGroupIndex' is set
+            if (sparklineGroupIndex == null)
+                throw new ApiException(400, "Missing required parameter 'sparklineGroupIndex' when calling CellsApi->CellsSparklineGroupsDeleteWorksheetSparklineGroup");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/sparklinegroups/{sparklineGroupIndex}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (sparklineGroupIndex != null) localVarPathParams.Add("sparklineGroupIndex", Configuration.ApiClient.ParameterToString(sparklineGroupIndex)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsSparklineGroupsDeleteWorksheetSparklineGroup", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsSparklineGroupsDeleteWorksheetSparklineGroupAsync (string name, string sheetName, int? sparklineGroupIndex, string folder = null, string storageName = null)
+        {
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsSparklineGroupsDeleteWorksheetSparklineGroupAsyncWithHttpInfo(name, sheetName, sparklineGroupIndex, folder, storageName);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsSparklineGroupsDeleteWorksheetSparklineGroupAsyncWithHttpInfo (string name, string sheetName, int? sparklineGroupIndex, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsSparklineGroupsDeleteWorksheetSparklineGroup");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsSparklineGroupsDeleteWorksheetSparklineGroup");
+            // verify the required parameter 'sparklineGroupIndex' is set
+            if (sparklineGroupIndex == null)
+                throw new ApiException(400, "Missing required parameter 'sparklineGroupIndex' when calling CellsApi->CellsSparklineGroupsDeleteWorksheetSparklineGroup");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/sparklinegroups/{sparklineGroupIndex}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (sparklineGroupIndex != null) localVarPathParams.Add("sparklineGroupIndex", Configuration.ApiClient.ParameterToString(sparklineGroupIndex)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsSparklineGroupsDeleteWorksheetSparklineGroup", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        public CellsCloudResponse CellsSparklineGroupsDeleteWorksheetSparklineGroups (string name, string sheetName, string folder = null, string storageName = null)
+        {
+             checkAccessToken();
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsSparklineGroupsDeleteWorksheetSparklineGroupsWithHttpInfo(name, sheetName, folder, storageName);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        public ApiResponse< CellsCloudResponse > CellsSparklineGroupsDeleteWorksheetSparklineGroupsWithHttpInfo (string name, string sheetName, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsSparklineGroupsDeleteWorksheetSparklineGroups");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsSparklineGroupsDeleteWorksheetSparklineGroups");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/sparklinegroups";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsSparklineGroupsDeleteWorksheetSparklineGroups", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsSparklineGroupsDeleteWorksheetSparklineGroupsAsync (string name, string sheetName, string folder = null, string storageName = null)
+        {
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsSparklineGroupsDeleteWorksheetSparklineGroupsAsyncWithHttpInfo(name, sheetName, folder, storageName);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsSparklineGroupsDeleteWorksheetSparklineGroupsAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsSparklineGroupsDeleteWorksheetSparklineGroups");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsSparklineGroupsDeleteWorksheetSparklineGroups");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/sparklinegroups";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsSparklineGroupsDeleteWorksheetSparklineGroups", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>SparklineGroupResponse</returns>
+        public SparklineGroupResponse CellsSparklineGroupsGetWorksheetSparklineGroup (string name, string sheetName, int? sparklineGroupIndex, string folder = null, string storageName = null)
+        {
+             checkAccessToken();
+             ApiResponse<SparklineGroupResponse> localVarResponse = CellsSparklineGroupsGetWorksheetSparklineGroupWithHttpInfo(name, sheetName, sparklineGroupIndex, folder, storageName);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of SparklineGroupResponse</returns>
+        public ApiResponse< SparklineGroupResponse > CellsSparklineGroupsGetWorksheetSparklineGroupWithHttpInfo (string name, string sheetName, int? sparklineGroupIndex, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsSparklineGroupsGetWorksheetSparklineGroup");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsSparklineGroupsGetWorksheetSparklineGroup");
+            // verify the required parameter 'sparklineGroupIndex' is set
+            if (sparklineGroupIndex == null)
+                throw new ApiException(400, "Missing required parameter 'sparklineGroupIndex' when calling CellsApi->CellsSparklineGroupsGetWorksheetSparklineGroup");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/sparklinegroups/{sparklineGroupIndex}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (sparklineGroupIndex != null) localVarPathParams.Add("sparklineGroupIndex", Configuration.ApiClient.ParameterToString(sparklineGroupIndex)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsSparklineGroupsGetWorksheetSparklineGroup", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<SparklineGroupResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (SparklineGroupResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(SparklineGroupResponse)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of SparklineGroupResponse</returns>
+        public async System.Threading.Tasks.Task<SparklineGroupResponse> CellsSparklineGroupsGetWorksheetSparklineGroupAsync (string name, string sheetName, int? sparklineGroupIndex, string folder = null, string storageName = null)
+        {
+             ApiResponse<SparklineGroupResponse> localVarResponse = await CellsSparklineGroupsGetWorksheetSparklineGroupAsyncWithHttpInfo(name, sheetName, sparklineGroupIndex, folder, storageName);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (SparklineGroupResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<SparklineGroupResponse>> CellsSparklineGroupsGetWorksheetSparklineGroupAsyncWithHttpInfo (string name, string sheetName, int? sparklineGroupIndex, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsSparklineGroupsGetWorksheetSparklineGroup");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsSparklineGroupsGetWorksheetSparklineGroup");
+            // verify the required parameter 'sparklineGroupIndex' is set
+            if (sparklineGroupIndex == null)
+                throw new ApiException(400, "Missing required parameter 'sparklineGroupIndex' when calling CellsApi->CellsSparklineGroupsGetWorksheetSparklineGroup");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/sparklinegroups/{sparklineGroupIndex}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (sparklineGroupIndex != null) localVarPathParams.Add("sparklineGroupIndex", Configuration.ApiClient.ParameterToString(sparklineGroupIndex)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsSparklineGroupsGetWorksheetSparklineGroup", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<SparklineGroupResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (SparklineGroupResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(SparklineGroupResponse)));
+        }
+
+        /// <summary>
+        /// Get worksheet charts description. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>SparklineGroupsResponse</returns>
+        public SparklineGroupsResponse CellsSparklineGroupsGetWorksheetSparklineGroups (string name, string sheetName, string folder = null, string storageName = null)
+        {
+             checkAccessToken();
+             ApiResponse<SparklineGroupsResponse> localVarResponse = CellsSparklineGroupsGetWorksheetSparklineGroupsWithHttpInfo(name, sheetName, folder, storageName);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get worksheet charts description. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of SparklineGroupsResponse</returns>
+        public ApiResponse< SparklineGroupsResponse > CellsSparklineGroupsGetWorksheetSparklineGroupsWithHttpInfo (string name, string sheetName, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsSparklineGroupsGetWorksheetSparklineGroups");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsSparklineGroupsGetWorksheetSparklineGroups");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/sparklinegroups";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsSparklineGroupsGetWorksheetSparklineGroups", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<SparklineGroupsResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (SparklineGroupsResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(SparklineGroupsResponse)));
+        }
+
+        /// <summary>
+        /// Get worksheet charts description. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of SparklineGroupsResponse</returns>
+        public async System.Threading.Tasks.Task<SparklineGroupsResponse> CellsSparklineGroupsGetWorksheetSparklineGroupsAsync (string name, string sheetName, string folder = null, string storageName = null)
+        {
+             ApiResponse<SparklineGroupsResponse> localVarResponse = await CellsSparklineGroupsGetWorksheetSparklineGroupsAsyncWithHttpInfo(name, sheetName, folder, storageName);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get worksheet charts description. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (SparklineGroupsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<SparklineGroupsResponse>> CellsSparklineGroupsGetWorksheetSparklineGroupsAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsSparklineGroupsGetWorksheetSparklineGroups");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsSparklineGroupsGetWorksheetSparklineGroups");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/sparklinegroups";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsSparklineGroupsGetWorksheetSparklineGroups", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<SparklineGroupsResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (SparklineGroupsResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(SparklineGroupsResponse)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="sparklineGroup"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        public CellsCloudResponse CellsSparklineGroupsPostWorksheetSparklineGroup (string name, string sheetName, int? sparklineGroupIndex, SparklineGroup sparklineGroup, string folder = null, string storageName = null)
+        {
+             checkAccessToken();
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsSparklineGroupsPostWorksheetSparklineGroupWithHttpInfo(name, sheetName, sparklineGroupIndex, sparklineGroup, folder, storageName);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="sparklineGroup"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        public ApiResponse< CellsCloudResponse > CellsSparklineGroupsPostWorksheetSparklineGroupWithHttpInfo (string name, string sheetName, int? sparklineGroupIndex, SparklineGroup sparklineGroup, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsSparklineGroupsPostWorksheetSparklineGroup");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsSparklineGroupsPostWorksheetSparklineGroup");
+            // verify the required parameter 'sparklineGroupIndex' is set
+            if (sparklineGroupIndex == null)
+                throw new ApiException(400, "Missing required parameter 'sparklineGroupIndex' when calling CellsApi->CellsSparklineGroupsPostWorksheetSparklineGroup");
+            // verify the required parameter 'sparklineGroup' is set
+            if (sparklineGroup == null)
+                throw new ApiException(400, "Missing required parameter 'sparklineGroup' when calling CellsApi->CellsSparklineGroupsPostWorksheetSparklineGroup");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/sparklinegroups/{sparklineGroupIndex}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (sparklineGroupIndex != null) localVarQueryParams.Add("sparklineGroupIndex", Configuration.ApiClient.ParameterToString(sparklineGroupIndex)); // query parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+            if (sparklineGroup != null && sparklineGroup.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(sparklineGroup); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = sparklineGroup; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsSparklineGroupsPostWorksheetSparklineGroup", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="sparklineGroup"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsSparklineGroupsPostWorksheetSparklineGroupAsync (string name, string sheetName, int? sparklineGroupIndex, SparklineGroup sparklineGroup, string folder = null, string storageName = null)
+        {
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsSparklineGroupsPostWorksheetSparklineGroupAsyncWithHttpInfo(name, sheetName, sparklineGroupIndex, sparklineGroup, folder, storageName);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="sparklineGroupIndex"></param>
+        /// <param name="sparklineGroup"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsSparklineGroupsPostWorksheetSparklineGroupAsyncWithHttpInfo (string name, string sheetName, int? sparklineGroupIndex, SparklineGroup sparklineGroup, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsSparklineGroupsPostWorksheetSparklineGroup");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsSparklineGroupsPostWorksheetSparklineGroup");
+            // verify the required parameter 'sparklineGroupIndex' is set
+            if (sparklineGroupIndex == null)
+                throw new ApiException(400, "Missing required parameter 'sparklineGroupIndex' when calling CellsApi->CellsSparklineGroupsPostWorksheetSparklineGroup");
+            // verify the required parameter 'sparklineGroup' is set
+            if (sparklineGroup == null)
+                throw new ApiException(400, "Missing required parameter 'sparklineGroup' when calling CellsApi->CellsSparklineGroupsPostWorksheetSparklineGroup");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/sparklinegroups/{sparklineGroupIndex}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (sparklineGroupIndex != null) localVarQueryParams.Add("sparklineGroupIndex", Configuration.ApiClient.ParameterToString(sparklineGroupIndex)); // query parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+            if (sparklineGroup != null && sparklineGroup.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(sparklineGroup); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = sparklineGroup; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsSparklineGroupsPostWorksheetSparklineGroup", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="type"></param>
+        /// <param name="dataRange"></param>
+        /// <param name="isVertical"></param>
+        /// <param name="locationRange"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        public CellsCloudResponse CellsSparklineGroupsPutWorksheetSparklineGroup (string name, string sheetName, string type, string dataRange, bool? isVertical, string locationRange, string folder = null, string storageName = null)
+        {
+             checkAccessToken();
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsSparklineGroupsPutWorksheetSparklineGroupWithHttpInfo(name, sheetName, type, dataRange, isVertical, locationRange, folder, storageName);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="type"></param>
+        /// <param name="dataRange"></param>
+        /// <param name="isVertical"></param>
+        /// <param name="locationRange"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        public ApiResponse< CellsCloudResponse > CellsSparklineGroupsPutWorksheetSparklineGroupWithHttpInfo (string name, string sheetName, string type, string dataRange, bool? isVertical, string locationRange, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsSparklineGroupsPutWorksheetSparklineGroup");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsSparklineGroupsPutWorksheetSparklineGroup");
+            // verify the required parameter 'type' is set
+            if (type == null)
+                throw new ApiException(400, "Missing required parameter 'type' when calling CellsApi->CellsSparklineGroupsPutWorksheetSparklineGroup");
+            // verify the required parameter 'dataRange' is set
+            if (dataRange == null)
+                throw new ApiException(400, "Missing required parameter 'dataRange' when calling CellsApi->CellsSparklineGroupsPutWorksheetSparklineGroup");
+            // verify the required parameter 'isVertical' is set
+            if (isVertical == null)
+                throw new ApiException(400, "Missing required parameter 'isVertical' when calling CellsApi->CellsSparklineGroupsPutWorksheetSparklineGroup");
+            // verify the required parameter 'locationRange' is set
+            if (locationRange == null)
+                throw new ApiException(400, "Missing required parameter 'locationRange' when calling CellsApi->CellsSparklineGroupsPutWorksheetSparklineGroup");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/sparklinegroups";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (type != null) localVarQueryParams.Add("type", Configuration.ApiClient.ParameterToString(type)); // query parameter
+            if (dataRange != null) localVarQueryParams.Add("dataRange", Configuration.ApiClient.ParameterToString(dataRange)); // query parameter
+            if (isVertical != null) localVarQueryParams.Add("isVertical", Configuration.ApiClient.ParameterToString(isVertical)); // query parameter
+            if (locationRange != null) localVarQueryParams.Add("locationRange", Configuration.ApiClient.ParameterToString(locationRange)); // query parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsSparklineGroupsPutWorksheetSparklineGroup", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="type"></param>
+        /// <param name="dataRange"></param>
+        /// <param name="isVertical"></param>
+        /// <param name="locationRange"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsSparklineGroupsPutWorksheetSparklineGroupAsync (string name, string sheetName, string type, string dataRange, bool? isVertical, string locationRange, string folder = null, string storageName = null)
+        {
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsSparklineGroupsPutWorksheetSparklineGroupAsyncWithHttpInfo(name, sheetName, type, dataRange, isVertical, locationRange, folder, storageName);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="type"></param>
+        /// <param name="dataRange"></param>
+        /// <param name="isVertical"></param>
+        /// <param name="locationRange"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsSparklineGroupsPutWorksheetSparklineGroupAsyncWithHttpInfo (string name, string sheetName, string type, string dataRange, bool? isVertical, string locationRange, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsSparklineGroupsPutWorksheetSparklineGroup");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsSparklineGroupsPutWorksheetSparklineGroup");
+            // verify the required parameter 'type' is set
+            if (type == null)
+                throw new ApiException(400, "Missing required parameter 'type' when calling CellsApi->CellsSparklineGroupsPutWorksheetSparklineGroup");
+            // verify the required parameter 'dataRange' is set
+            if (dataRange == null)
+                throw new ApiException(400, "Missing required parameter 'dataRange' when calling CellsApi->CellsSparklineGroupsPutWorksheetSparklineGroup");
+            // verify the required parameter 'isVertical' is set
+            if (isVertical == null)
+                throw new ApiException(400, "Missing required parameter 'isVertical' when calling CellsApi->CellsSparklineGroupsPutWorksheetSparklineGroup");
+            // verify the required parameter 'locationRange' is set
+            if (locationRange == null)
+                throw new ApiException(400, "Missing required parameter 'locationRange' when calling CellsApi->CellsSparklineGroupsPutWorksheetSparklineGroup");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/sparklinegroups";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (type != null) localVarQueryParams.Add("type", Configuration.ApiClient.ParameterToString(type)); // query parameter
+            if (dataRange != null) localVarQueryParams.Add("dataRange", Configuration.ApiClient.ParameterToString(dataRange)); // query parameter
+            if (isVertical != null) localVarQueryParams.Add("isVertical", Configuration.ApiClient.ParameterToString(isVertical)); // query parameter
+            if (locationRange != null) localVarQueryParams.Add("locationRange", Configuration.ApiClient.ParameterToString(locationRange)); // query parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsSparklineGroupsPutWorksheetSparklineGroup", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
         }
 
         /// <summary>

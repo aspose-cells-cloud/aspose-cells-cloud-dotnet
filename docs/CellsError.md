@@ -1,4 +1,4 @@
-# Aspose.Cells.Cloud.SDK.Model.Error
+# Aspose.Cells.Cloud.SDK.Model.CellsError
 ## Properties
 
 Name | Type | Description | Notes

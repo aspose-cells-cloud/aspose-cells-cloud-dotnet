@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="FilesUploadResult.cs">
+// <copyright company="Aspose" file="CellsError.cs">
 //   Copyright (c) 2016 Aspose.Cells for Cloud
 // </copyright>
 // <summary>
@@ -34,22 +34,34 @@ namespace Aspose.Cells.Cloud.SDK.Model
   using Newtonsoft.Json.Converters;
 
   /// <summary>
-  /// File upload result
+  /// Error
   /// </summary>  
   [DataContract]
-  public class FilesUploadResult 
+  public class CellsError 
   {                       
         /// <summary>
-        /// List of uploaded file names
+        /// Code             
         /// </summary>  
-		[DataMember(Name="Uploaded", EmitDefaultValue=false)]
-        public List<string> Uploaded { get; set; }
+		[DataMember(Name="Code", EmitDefaultValue=false)]
+        public string Code { get; set; }
 
         /// <summary>
-        /// List of errors.
+        /// Message             
         /// </summary>  
-		[DataMember(Name="Errors", EmitDefaultValue=false)]
-        public List<CellsError> Errors { get; set; }
+		[DataMember(Name="Message", EmitDefaultValue=false)]
+        public string Message { get; set; }
+
+        /// <summary>
+        /// Description             
+        /// </summary>  
+		[DataMember(Name="Description", EmitDefaultValue=false)]
+        public string Description { get; set; }
+
+        /// <summary>
+        /// Inner Error             
+        /// </summary>  
+		[DataMember(Name="InnerError", EmitDefaultValue=false)]
+        public ErrorDetails InnerError { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -58,9 +70,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class FilesUploadResult {\n");
-          sb.Append("  Uploaded: ").Append(this.Uploaded).Append("\n");
-          sb.Append("  Errors: ").Append(this.Errors).Append("\n");
+          sb.Append("class CellsError {\n");
+          sb.Append("  Code: ").Append(this.Code).Append("\n");
+          sb.Append("  Message: ").Append(this.Message).Append("\n");
+          sb.Append("  Description: ").Append(this.Description).Append("\n");
+          sb.Append("  InnerError: ").Append(this.InnerError).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

@@ -4,7 +4,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
     using NUnit.Framework;
     using Aspose.Cells.Cloud.SDK.Api;
     using Aspose.Cells.Cloud.SDK.Model;
-
     /// <summary>
     ///  Class for testing CellsPivotTablesApi
     /// </summary>
@@ -22,7 +21,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
         [SetUp]
         public void Init()
         {
-            instance = new CellsApi(clientId, clientSecret);;
+            instance = new CellsApi(clientId, clientSecret, apiVersion, testbaseurl);
         }
 
         /// <summary>
@@ -317,7 +316,25 @@ namespace Aspose.Cells.Cloud.SDK.Test
             Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
-
+        /// <summary>
+        /// Test CellsPivotTablesPostPivotTableFieldMoveTo
+        /// </summary>
+        [Test]
+        public void CellsPivotTablesPostPivotTableFieldFormatTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            string name = PivTestFile;
+            string sheetName = SHEET4;
+            int? pivotTableIndex = 0;
+            int? fieldIndex = 0;
+            PivotField pivotField = new PivotField();
+            pivotField.ShowCompact = true; 
+            string folder = TEMPFOLDER;
+            UpdateDataFile(instance, folder, name);
+            var response = instance.CellsPivotTablesPostPivotTableUpdatePivotField(name, sheetName, pivotTableIndex, fieldIndex, "Row", pivotField,true,folder);
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
+            Assert.AreEqual(response.Code, 200);
+        }
         /// <summary>
         /// Test CellsPivotTablesPostPivotTableStyle
         /// </summary>

@@ -1,9 +1,11 @@
-﻿namespace Aspose.Cells.Cloud.SDK.Test
-{
-    using NUnit.Framework;
-    using Aspose.Cells.Cloud.SDK.Api;
-    using Aspose.Cells.Cloud.SDK.Model;
+﻿using System;
+using System.Collections.Generic;
+using NUnit.Framework;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
 
+namespace Aspose.Cells.Cloud.SDK.Test
+{
     /// <summary>
     ///  Class for testing CellsApi
     /// </summary>
@@ -36,7 +38,7 @@
         /// <summary>
         /// Test CellsDeleteWorksheetColumns
         /// </summary>
-        [Test]
+        [Ignore("QA server is not supported v1.1.")]
         public void CellsDeleteWorksheetColumnsTestFor11()
         {
             // TODO uncomment below to test the method and replace null with proper value

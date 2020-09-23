@@ -5,7 +5,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
     using NUnit.Framework;
     using Aspose.Cells.Cloud.SDK.Api;
     using Aspose.Cells.Cloud.SDK.Model;
-
     /// <summary>
     ///  Class for testing CellsWorkbookApi
     /// </summary>
@@ -23,7 +22,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
         [SetUp]
         public void Init()
         {
-            instance = new CellsApi(clientId, clientSecret); ;
+            instance = new CellsApi(clientId, clientSecret, apiVersion, testbaseurl);
         }
 
         /// <summary>
@@ -353,8 +352,8 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             string outPath = null;
             UpdateDataFile(instance, folder, name);
-            UpdateDataFile(instance, folder, xmlFile);
-            var response = instance.CellsWorkbookPostWorkbookGetSmartMarkerResult(name, folder +"\\" + xmlFile, folder, outPath);
+            UpdateDataFile(instance, xmlFile);
+            var response = instance.CellsWorkbookPostWorkbookGetSmartMarkerResult(name, xmlFile, folder, outPath);
             Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
         }
 
@@ -390,7 +389,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             int? verticalResolution = 90;
             string folder = TEMPFOLDER;
             UpdateDataFile(instance, folder, name);
-            var response = instance.CellsWorkbookPostWorkbookSplit(name, format, from, to, horizontalResolution, verticalResolution, folder,folder);
+            var response = instance.CellsWorkbookPostWorkbookSplit(name, format, from, to, horizontalResolution, verticalResolution, folder);
             Assert.IsInstanceOf<SplitResultResponse>(response, "response is SplitResultResponse");
             Assert.AreEqual(response.Code, 200);
         }
@@ -406,8 +405,8 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string mergeWith = "myDocument.xlsx";
             string folder = TEMPFOLDER;
             UpdateDataFile(instance, folder, name);
-            UpdateDataFile(instance, folder, mergeWith);
-            var response = instance.CellsWorkbookPostWorkbooksMerge(name, folder + "/"+ mergeWith, folder);
+            UpdateDataFile(instance, mergeWith);
+            var response = instance.CellsWorkbookPostWorkbooksMerge(name, mergeWith, folder);
             Assert.IsInstanceOf<WorkbookResponse>(response, "response is WorkbookResponse");
             Assert.AreEqual(response.Code, 200);
         }
@@ -517,17 +516,30 @@ namespace Aspose.Cells.Cloud.SDK.Test
         }
 
         //[Ignore("Ignore DropBox")]
+        [Test]
         public void CellsWorkbookPostWorkbooksTextSearchTestForDropBox()
         {
             string name = BOOK1;
             string text = "test";
             string folder = TEMPFOLDER;
-            UpdateDataFileForDropBox(instance, folder, name);
+            UpdateDataFileToOtherStorage(instance, folder, name, "DropBox");
             var response = instance.CellsWorkbookPostWorkbooksTextSearch(name, text, folder, "DropBox");
             Assert.IsInstanceOf<TextItemsResponse>(response, "response is TextItemsResponse");
             Assert.AreEqual(response.Code, 200);
         }
 
+        [Test]
+        public void CellsWorkbookPostWorkbookSaveAsTestForDropBox()
+        {
+            string name = BOOK1;
+            string folder = TEMPFOLDER;
+            UpdateDataFileToOtherStorage(instance, folder, name, "DropBox");
+            SaveOptions saveOptions = new SaveOptions();
+            saveOptions.SaveFormat = "xml";
+            var response = instance.CellsSaveAsPostDocumentSaveAs(name, saveOptions,  BOOK1+".xml", null,null,folder, "DropBox");
+            Assert.IsInstanceOf<SaveResponse>(response, "response is SaveResponse");
+            Assert.AreEqual(response.Code, 200);
+        }
         /// <summary>
         /// Test CellsWorkbookPutBackgroupTest
         /// </summary>
