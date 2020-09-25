@@ -1,0 +1,25 @@
+name: .NET Core
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.301
+    - name: Install dependencies
+      run: dotnet restore
+    - name: Build1
+      run:  dotnet build --framework netstandard2.0  Aspose.Cells.Cloud.SDK\Aspose.Cells.Cloud.SDK.csproj
+    - name: Build2
+      run:  dotnet build  --framework netcoreapp2.2 Aspose.Cells.Cloud.SDK.Test\Aspose.Cells.Cloud.SDK.Test.csproj
+    - name: Test
+      run: dotnet build  --framework netcoreapp2.2 Aspose.Cells.Cloud.SDK.Test\Aspose.Cells.Cloud.SDK.Test.csproj
