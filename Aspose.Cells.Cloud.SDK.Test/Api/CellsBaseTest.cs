@@ -36,17 +36,19 @@ namespace Aspose.Cells.Cloud.SDK.Test
         //private string TestDataFolder = @"D:\Projects\Aspose\Aspose.Cells.Cloud.SDK\src\TestData\";
         private string TestDataFolder { get
             {
-                string basefolder = AppDomain.CurrentDomain.BaseDirectory;
-
-                DirectoryInfo directoryInfo = new DirectoryInfo(basefolder);
-                for (DirectoryInfo parentDirectory = directoryInfo.Parent; parentDirectory != null ; parentDirectory = parentDirectory.Parent)
-                {
-                    if (Directory.Exists(parentDirectory.FullName + @"\TestData\"))
-                    {
-                        return parentDirectory.FullName + @"\TestData\";
-                    }
-                }
-                return "";
+                ///home/runner/work/aspose-cells-cloud-dotnet/aspose-cells-cloud-dotnet/Aspose.Cells.Cloud.SDK.Test/bin/Debug/netcoreapp2.2/Book1.xlsx
+                //home/runner/work/aspose-cells-cloud-dotnet/aspose-cells-cloud-dotnet/TestData/Book1.xlsx
+                //string basefolder = AppDomain.CurrentDomain.BaseDirectory;
+                //DirectoryInfo directoryInfo = new DirectoryInfo(basefolder);
+                //for (DirectoryInfo parentDirectory = directoryInfo.Parent; parentDirectory != null ; parentDirectory = parentDirectory.Parent)
+                //{
+                //    if (Directory.Exists(parentDirectory.FullName + @"\TestData\"))
+                //    {
+                //        return parentDirectory.FullName + @"\TestData\";
+                //    }
+                //}
+                //return "";
+                return "../../../../TestData/";
             } 
         }
         protected void UpdateDataFile( CellsApi cellsApi, string folder, string filename)
