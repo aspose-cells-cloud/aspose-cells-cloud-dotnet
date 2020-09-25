@@ -17,9 +17,5 @@ jobs:
         dotnet-version: 3.1.301
     - name: Install dependencies
       run: dotnet restore
-    - name: Build1
-      run:  dotnet build --framework netstandard2.0  Aspose.Cells.Cloud.SDK.csproj
-    - name: Build2
-      run:  dotnet build  --framework netcoreapp2.2 Aspose.Cells.Cloud.SDK.Test.csproj
     - name: Test
-      run: dotnet build  --framework netcoreapp2.2 Aspose.Cells.Cloud.SDK.Test.csproj
+      run: dotnet test --framework netcoreapp2.2
