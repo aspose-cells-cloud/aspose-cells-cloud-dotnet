@@ -4,6 +4,8 @@ namespace Aspose.Cells.Cloud.SDK.Test
     using Aspose.Cells.Cloud.SDK.Client;
     using Aspose.Cells.Cloud.SDK.Api;
     using System.IO;
+    using System;
+
     public class CellsBaseTest
     {
         protected string testbaseurl = @"https://api-qa.aspose.cloud";
@@ -31,8 +33,22 @@ namespace Aspose.Cells.Cloud.SDK.Test
         protected string CellName = "A1";
         protected string RANGE = "A1:C10";
         protected string CELLAREA = "A1:C10";
-        private string TestDataFolder = @"D:\Projects\Aspose\Aspose.Cells.Cloud.SDK\src\TestData\";
-        
+        //private string TestDataFolder = @"D:\Projects\Aspose\Aspose.Cells.Cloud.SDK\src\TestData\";
+        private string TestDataFolder { get
+            {
+                string basefolder = AppDomain.CurrentDomain.BaseDirectory;
+
+                DirectoryInfo directoryInfo = new DirectoryInfo(basefolder);
+                for (DirectoryInfo parentDirectory = directoryInfo.Parent; parentDirectory != null ; parentDirectory = parentDirectory.Parent)
+                {
+                    if (Directory.Exists(parentDirectory.FullName + @"\TestData\"))
+                    {
+                        return parentDirectory.FullName + @"\TestData\";
+                    }
+                }
+                return "";
+            } 
+        }
         protected void UpdateDataFile( CellsApi cellsApi, string folder, string filename)
         {
             bool? exist = cellsApi.ObjectExists(folder + @"\" + filename).Exists;
