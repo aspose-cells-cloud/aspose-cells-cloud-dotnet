@@ -37,13 +37,13 @@ The Cloud SDK enhances your C#, ASP.NET, & other .NET-based cloud apps to [proce
 
 ## Save Spreadsheet As
 
-DIF, HTML, MHTML,PNG,JPG, TIFF, XPS, SVG, MD (Markdown), ODS ,xlsx,xls,xlsb, PDF,XML,TXT,CSV
+DIF, HTML, MHTML, PNG, JPG, TIFF, XPS, SVG, MD (Markdown), ODS, XLSX, XLS, XLSB, PDF, XML, TXT, CSV
 
 ## Read Other Formats
 
 SXC, FODS
 
-## Storage API Support
+## Integrated Storage API
 
 Since version 19.9, the SDK includes support of storage operations for better user experience and unification, so now there's no need to use 2 different SDKs!
 
