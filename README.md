@@ -1,12 +1,15 @@
-# .NET REST API for Spreadsheet Processing in Cloud
+![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/20.9) 
+# .NET REST API for Excel File Formats
 
-This Cloud SDK enhances your C#, ASP.NET, & other .NET cloud-based apps to [process & manipulate Microsoft Excel spreadsheets](https://products.aspose.cloud/cells/net) in the cloud, without MS Office.
+The Cloud SDK enhances your C#, ASP.NET, & other .NET-based cloud apps to [process & manipulate Microsoft Excel spreadsheets](https://products.aspose.cloud/cells/net) in the Cloud.
 
-## Spreadsheet Processing Features
+## Process Spreadsheets in the Cloud
 
+- Create spreadsheets via APIs or Smart Marker templates.
+- Load & process Excel Spreadsheets via Cloud SDK.
 - Add, update or delete charts, worksheet pictures, shapes, hyperlinks & validations.
 - Add or remove cells area for conditional formatting, or OleObjects from Excel worksheets.
-- Insert or delete, horizontal or vertical page breaks
+- [Insert or delete, horizontal or vertical page breaks](https://docs.aspose.cloud/cells/working-with-pagebreaks/).
 - Add ListObject at a specific place within an Excel file & convert them to a range of cells.
 - Delete specific or all ListObjects in a worksheet or summarize its data with pivot table.
 - Apply custom criteria to list filters of various types.
@@ -14,15 +17,13 @@ This Cloud SDK enhances your C#, ASP.NET, & other .NET cloud-based apps to [proc
 - Manipulate page setup, header & footer.
 - Create, update, fetch or delete document properties.
 - Fetch the required shape from worksheet.
-- Load & Process Excel Spreadsheets via Cloud SDK.
-- Cloud SDK to Read & Process Excel Worksheets.
-- Leverage the Power of Pivot Tables & Ranges.
+- [Leverage the power of Pivot Tables](https://docs.aspose.cloud/cells/working-with-pivot-tables/) & Ranges.
 
 ## Feature & Enhancements in Version 20.9
 
-- Enhancement for add chart API.
-- Add API about updating pivot field.
-- Support sparkline groups.
+- Added chart API.
+- Added API to update Pivot Field.
+- Supported sparkline groups.
 
 ## Read & Write Spreadsheet Formats
 
@@ -37,13 +38,13 @@ This Cloud SDK enhances your C#, ASP.NET, & other .NET cloud-based apps to [proc
 
 DIF, HTML, MHTML,PNG,JPG, TIFF, XPS, SVG, MD (Markdown), ODS ,xlsx,xls,xlsb, PDF,XML,TXT,CSV
 
-## Read Spreadsheet Formats
+## Read Other Formats
 
 SXC, FODS
 
 ## Storage API Support
 
-Since version 19.9, SDK includes support of storage operations for better user experience and unification, so now there's no need to use 2 different SDKs!
+Since version 19.9, the SDK includes support of storage operations for better user experience and unification, so now there's no need to use 2 different SDKs!
 
 It gives you an ability to:
 
@@ -53,15 +54,13 @@ It gives you an ability to:
 - Check if certain file, folder or storage exists.
 
 
-## Getting Started with Aspose.Cells Cloud SDK for .NET
+## Get Started with Aspose.Cells Cloud SDK for .NET
 
 You do not need to install anything to get started with Aspose.Cells Cloud SDK for .NET. Just create an account at [Aspose for Cloud](https://dashboard.aspose.cloud/#/apps) and get your application information.
 
-Simply execute `Install-Package Aspose.Cells-Cloud` from the Package Manager Console in Visual Studio to fetch & reference Aspose.Cells assembly in your project. If you already have Aspose.Cells Cloud SDK for .NET and want to upgrade it, please execute `Update-Package Aspose.Cells-Cloud` to get the latest version.
+Next. execute `Install-Package Aspose.Cells-Cloud` from the Package Manager Console in Visual Studio to fetch & reference Aspose.Cells Cloud SDK assembly in your project. If you already have Aspose.Cells Cloud SDK for .NET and want to upgrade it, please execute `Update-Package Aspose.Cells-Cloud` to get the latest version.
 
-Please check the [GitHub Repository](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet) for other common usage scenarios.
-
-## Using C# to Add a New Worksheet to an Excel File
+## Add a Worksheet to an Excel File in the Cloud
 
 The following code snippet demonstrates how to add a new worksheet to a Microsoft Excel document using C# code:
 
@@ -76,9 +75,9 @@ UpdateDataFile(folder, name);
 var response = cellsApi.CellsWorksheetsPutAddNewWorksheet(name, sheetName, position, sheettype, folder);
 ```
 
-## Using C# to Convert an Excel File to another File Format
+## Convert Excel Files via C# Code
 
-The following code example elaborates how you can use C# code to convert an Excel document to another file format in the cloud:
+The following code example elaborates Aspose.Cells REST API to convert an Excel file to another format in the cloud:
 
 ```csharp
 // Upload source file to aspose cloud storage
@@ -91,8 +90,4 @@ SaveResponse apiResponse = cellsApi.CellsSaveAsPostDocumentSaveAs(name, saveOpti
 
 [Tests](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/master/Aspose.Cells.Cloud.SDK.Test) contain various examples of using the SDK.
 
-## Licensing
-
-All Aspose.Cells Cloud SDKs are licensed under [MIT License](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE).
-
-[Product Page](https://products.aspose.cloud/cells/ruby) | [Documentation](https://docs.aspose.cloud/cells/) | [Live Demo](https://products.aspose.app/cells/family) | [API Reference](https://apireference.aspose.cloud/cells/) | [Code Samples](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby) | [Blog](https://blog.aspose.cloud/category/cells/) | [Free Support](https://forum.aspose.cloud/c/cells) | [Free Trial](https://dashboard.aspose.cloud/#/apps)
+[Product Page](https://products.aspose.cloud/cells/ruby) | [Documentation](https://docs.aspose.cloud/cells/) | [Live Demo](https://products.aspose.app/cells/family) | [API Reference](https://apireference.aspose.cloud/cells/) | [Code Samples](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/master/Examples) | [Blog](https://blog.aspose.cloud/category/cells/) | [Free Support](https://forum.aspose.cloud/c/cells) | [Free Trial](https://dashboard.aspose.cloud/#/apps)
