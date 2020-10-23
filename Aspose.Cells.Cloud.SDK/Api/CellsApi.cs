@@ -47569,7 +47569,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
-            if (sparklineGroupIndex != null) localVarQueryParams.Add("sparklineGroupIndex", Configuration.ApiClient.ParameterToString(sparklineGroupIndex)); // query parameter
+            if (sparklineGroupIndex != null) localVarPathParams.Add("sparklineGroupIndex", Configuration.ApiClient.ParameterToString(sparklineGroupIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
             if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
             if (sparklineGroup != null && sparklineGroup.GetType() != typeof(byte[]))
@@ -47668,7 +47668,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
-            if (sparklineGroupIndex != null) localVarQueryParams.Add("sparklineGroupIndex", Configuration.ApiClient.ParameterToString(sparklineGroupIndex)); // query parameter
+            if (sparklineGroupIndex != null) localVarPathParams.Add("sparklineGroupIndex", Configuration.ApiClient.ParameterToString(sparklineGroupIndex)); // path parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
             if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
             if (sparklineGroup != null && sparklineGroup.GetType() != typeof(byte[]))
