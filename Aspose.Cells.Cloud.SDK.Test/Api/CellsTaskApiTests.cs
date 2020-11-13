@@ -39,7 +39,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
         [SetUp]
         public void Init()
         {
-            instance = new CellsApi(clientId, clientSecret, apiVersion, testbaseurl);
+            instance = IsDockerTest ? new CellsApi(testbaseurl) : new CellsApi(clientId, clientSecret, apiVersion, testbaseurl);
         }
 
         /// <summary>

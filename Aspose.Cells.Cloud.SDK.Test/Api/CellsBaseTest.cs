@@ -8,7 +8,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
 
     public class CellsBaseTest
     {
-        protected string testbaseurl = @"https://api-qa.aspose.cloud";
+        protected string testbaseurl = @"http://199.83.230.208";
         protected string apiVersion = @"v3.0";
         protected ApiClient client;
         protected Client.Configuration config;
@@ -33,25 +33,16 @@ namespace Aspose.Cells.Cloud.SDK.Test
         protected string CellName = "A1";
         protected string RANGE = "A1:C10";
         protected string CELLAREA = "A1:C10";
-        //private string TestDataFolder = @"D:\Projects\Aspose\Aspose.Cells.Cloud.SDK\src\TestData\";
-        private string TestDataFolder { get
-            {
-                ///home/runner/work/aspose-cells-cloud-dotnet/aspose-cells-cloud-dotnet/Aspose.Cells.Cloud.SDK.Test/bin/Debug/netcoreapp2.2/Book1.xlsx
-                //home/runner/work/aspose-cells-cloud-dotnet/aspose-cells-cloud-dotnet/TestData/Book1.xlsx
-                //string basefolder = AppDomain.CurrentDomain.BaseDirectory;
-                //DirectoryInfo directoryInfo = new DirectoryInfo(basefolder);
-                //for (DirectoryInfo parentDirectory = directoryInfo.Parent; parentDirectory != null ; parentDirectory = parentDirectory.Parent)
-                //{
-                //    if (Directory.Exists(parentDirectory.FullName + @"\TestData\"))
-                //    {
-                //        return parentDirectory.FullName + @"\TestData\";
-                //    }
-                //}
-                //return "";
-                return "../../../../TestData/";
-            } 
+        protected bool IsDockerTest = true;
+        
+        private string TestDataFolder
+        {
+            get
+            {               
+                return @"C:\TestData\";
+            }
         }
-        protected void UpdateDataFile( CellsApi cellsApi, string folder, string filename)
+        protected void UpdateDataFile(CellsApi cellsApi, string folder, string filename)
         {
             bool? exist = cellsApi.ObjectExists(folder + @"\" + filename).Exists;
             if (exist.HasValue && exist.Value)
@@ -61,18 +52,18 @@ namespace Aspose.Cells.Cloud.SDK.Test
             Stream stream = GetTestDataStream(filename);
             var response = cellsApi.UploadFile(folder + @"\" + filename, stream);
         }
-        protected void UpdateDataFile(CellsApi cellsApi,  string filename)
+        protected void UpdateDataFile(CellsApi cellsApi, string filename)
         {
-            bool? exist = cellsApi.ObjectExists( filename).Exists;
+            bool? exist = cellsApi.ObjectExists(filename).Exists;
             if (exist.HasValue && exist.Value)
             {
                 cellsApi.DeleteFile(filename);
             }
-            cellsApi.DeleteFile(  filename);
+            cellsApi.DeleteFile(filename);
             Stream stream = GetTestDataStream(filename);
-            var response = cellsApi.UploadFile( filename, stream);
+            var response = cellsApi.UploadFile(filename, stream);
         }
-        protected void UpdateDataFileToOtherStorage(CellsApi cellsApi, string folder, string filename,string stroageName)
+        protected void UpdateDataFileToOtherStorage(CellsApi cellsApi, string folder, string filename, string stroageName)
         {
             bool? exist = cellsApi.ObjectExists(folder + @"\" + filename, stroageName).Exists;
             if (exist.HasValue && exist.Value)
@@ -83,7 +74,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             var response = cellsApi.UploadFile(folder + @"\" + filename, stream, stroageName);
         }
 
-        protected Stream GetTestDataStream( string filename)
+        protected Stream GetTestDataStream(string filename)
         {
             MemoryStream ms = new MemoryStream();
             FileStream fs = File.OpenRead(TestDataFolder + filename);
@@ -101,6 +92,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
             stream.CopyTo(fs);
             fs.Close();
         }
-        
+
     }
 }
