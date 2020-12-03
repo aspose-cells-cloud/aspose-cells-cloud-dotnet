@@ -58,8 +58,13 @@ namespace Aspose.Cells.Cloud.SDK.Test
         [Test]
         public void OAuthPostTest()
         {
+            if(IsDockerTest)
+            {
+                Assert.IsTrue(true);
+                return;
+            }
             // TODO uncomment below to test the method and replace null with proper value
-            instance.Configuration.ApiClient = new ApiClient("https://api-qa.aspose.cloud");
+            instance.Configuration.ApiClient = new ApiClient(Environment.GetEnvironmentVariable("CellsCloudTestApiBaseUrl"));
             var response = instance.OAuthPost(grantType, clientId, clientSecret);
             Assert.IsInstanceOf<AccessTokenResponse>(response, "response is AccessTokenResponse");
             Assert.IsNotNull(response.AccessToken);

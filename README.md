@@ -1,4 +1,4 @@
-![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/20.10) 
+![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/20.11) 
 
 # .NET SDK for Spreadsheet Processing in the Cloud
 
@@ -20,10 +20,9 @@ The Cloud SDK enhances your C#, ASP.NET, & other .NET-based cloud apps to [proce
 - Fetch the required shape from worksheet.
 - [Leverage the power of Pivot Tables](https://docs.aspose.cloud/cells/working-with-pivot-tables/) & Ranges.
 
-## Feature & Enhancements in Version 20.10
+## Feature & Enhancements in Version 20.11
 
-- Enhancement for post sparkline group API.
-- Support to upload large file.
+- Support Aspose.Cells Cloud for Docker.
 
 ## Read & Write Spreadsheet Formats
 
@@ -65,7 +64,7 @@ Next, execute `Install-Package Aspose.Cells-Cloud` from the Package Manager Cons
 The following code snippet demonstrates how to add a new worksheet to a Microsoft Excel document using C# code:
 
 ```csharp
-CellsApi cellsApi =CellsApi(clientId, clientSecret);;
+CellsApi cellsApi =CellsApi(clientId, clientSecret);
 string name = "Input.xlsx";
 string sheetName = "Sheet1";
 int? position = 1;

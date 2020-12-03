@@ -8,13 +8,22 @@ namespace Aspose.Cells.Cloud.SDK.Test
 
     public class CellsBaseTest
     {
-        protected string testbaseurl = @"http://199.83.230.208";
+        protected string testbaseurl
+        {
+            get { return Environment.GetEnvironmentVariable("CellsCloudTestApiBaseUrl"); }
+        }
         protected string apiVersion = @"v3.0";
         protected ApiClient client;
         protected Client.Configuration config;
         protected string grantType = "client_credentials";
-        protected string clientId = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx";
-        protected string clientSecret = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+        protected string clientId
+        {
+            get { return Environment.GetEnvironmentVariable("CellsCloudTestClientId"); }
+        }
+        protected string clientSecret
+        {
+            get { return Environment.GetEnvironmentVariable("CellsCloudTestClientSecret"); }
+        }
         protected static string accesstoken;
         protected string refreshtoken;
         protected string BOOK1 = "Book1.xlsx";
@@ -33,7 +42,10 @@ namespace Aspose.Cells.Cloud.SDK.Test
         protected string CellName = "A1";
         protected string RANGE = "A1:C10";
         protected string CELLAREA = "A1:C10";
-        protected bool IsDockerTest = true;
+        protected bool IsDockerTest
+        {
+            get { return Convert.ToBoolean( Environment.GetEnvironmentVariable("CellsCloudTestIsDockerTest")); }
+        }
         
         private string TestDataFolder
         {
