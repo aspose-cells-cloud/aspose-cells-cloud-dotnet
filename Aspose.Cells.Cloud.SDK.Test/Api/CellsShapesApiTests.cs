@@ -145,9 +145,12 @@ namespace Aspose.Cells.Cloud.SDK.Test
             int? left = 10;
             int? width = 100;
             int? height = 90;
+            Shape shape = new Shape();
+            shape.LowerRightRow = 10;
+            shape.LowerRightColumn = 10;
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
-            var response = instance.CellsShapesPutWorksheetShape(name, sheetName,null,drawingType, upperLeftRow, upperLeftColumn, top, left, width, height,  folder);
+            var response = instance.CellsShapesPutWorksheetShape(name, sheetName, shape, drawingType, upperLeftRow, upperLeftColumn, top, left, width, height,  folder);
             Assert.IsInstanceOf<ShapeResponse>(response, "response is ShapeResponse");
             Assert.AreEqual(response.Code, 200);
         }
