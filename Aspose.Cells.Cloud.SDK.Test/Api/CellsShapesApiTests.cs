@@ -148,6 +148,10 @@ namespace Aspose.Cells.Cloud.SDK.Test
             Shape shape = new Shape();
             shape.LowerRightRow = 10;
             shape.LowerRightColumn = 10;
+            shape.Height = 100;
+            shape.Width = 100;
+            shape.MsoDrawingType = "button";
+
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsShapesPutWorksheetShape(name, sheetName, shape, drawingType, upperLeftRow, upperLeftColumn, top, left, width, height,  folder);

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ChartOperateParameter.cs">
-//   Copyright (c) 2021 Aspose.Cells Cloud
+//   Copyright (c) 2016 Aspose.Cells for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -40,10 +40,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class ChartOperateParameter : OperateParameter 
   {                       
         /// <summary>
-        /// Gets or sets String
+        /// Gets or sets Title
         /// </summary>  
-		[DataMember(Name="string", EmitDefaultValue=false)]
-        public string String { get; set; }
+		[DataMember(Name="Title", EmitDefaultValue=false)]
+        public string Title { get; set; }
 
         /// <summary>
         /// Gets or sets Area
@@ -101,7 +101,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class ChartOperateParameter {\n");
-          sb.Append("  String: ").Append(this.String).Append("\n");
+          sb.Append("  Title: ").Append(this.Title).Append("\n");
           sb.Append("  Area: ").Append(this.Area).Append("\n");
           sb.Append("  CategoryData: ").Append(this.CategoryData).Append("\n");
           sb.Append("  UpperLeftRow: ").Append(this.UpperLeftRow).Append("\n");

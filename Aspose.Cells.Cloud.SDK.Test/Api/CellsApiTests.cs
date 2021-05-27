@@ -49,7 +49,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,TEMPFOLDER, BOOK1);
             var response = instance.CellsDeleteWorksheetColumns(name, sheetName, columnIndex, columns, updateReference, folder);
-            Assert.IsInstanceOf<ColumnsResponse>(response, "response is ColumnsResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is ColumnsResponse");
             Assert.AreEqual(response.Code, 200);
         }
         /// <summary>
@@ -67,7 +67,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,TEMPFOLDER, BOOK1);            
             var response = instance.CellsDeleteWorksheetColumns(name, sheetName, columnIndex, columns, updateReference, folder);
-            Assert.IsInstanceOf<ColumnsResponse>(response, "response is ColumnsResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is ColumnsResponse");
             Assert.AreEqual(response.Code, 200);
         }
         /// <summary>
@@ -591,7 +591,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,TEMPFOLDER, BOOK1);
             var response = instance.CellsPostSetWorksheetColumnWidth(name, sheetName, columnIndex, width, folder);
-            Assert.IsInstanceOf<ColumnResponse>(response, "response is ColumnResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is ColumnResponse");
             Assert.AreEqual(response.Status, "OK");
         }
 
@@ -724,7 +724,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,TEMPFOLDER, BOOK1);
             var response = instance.CellsPostUpdateWorksheetRow(name, sheetName, rowIndex, height, folder);
-            Assert.IsInstanceOf<RowResponse>(response, "response is RowResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is RowResponse");
             Assert.AreEqual(response.Status, "OK");
         }
 
@@ -804,7 +804,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,TEMPFOLDER, BOOK1);
             var response = instance.CellsPutInsertWorksheetColumns(name, sheetName, columnIndex, columns, updateReference, folder);
-            Assert.IsInstanceOf<ColumnsResponse>(response, "response is ColumnsResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is ColumnsResponse");
             Assert.AreEqual(response.Status, "OK");
         }
 
@@ -821,7 +821,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,TEMPFOLDER, BOOK1);
             var response = instance.CellsPutInsertWorksheetRow(name, sheetName, rowIndex, folder);
-            Assert.IsInstanceOf<RowResponse>(response, "response is RowResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is RowResponse");
             Assert.AreEqual(response.Status, "OK");
         }
 

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="Comment.cs">
-//   Copyright (c) 2021 Aspose.Cells Cloud
+//   Copyright (c) 2016 Aspose.Cells for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy

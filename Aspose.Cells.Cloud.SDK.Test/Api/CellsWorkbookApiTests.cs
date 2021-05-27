@@ -261,6 +261,23 @@ namespace Aspose.Cells.Cloud.SDK.Test
             Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
             Assert.AreEqual(response.Code, 200);
         }
+        /// <summary>
+        /// Test CellsWorkbookPostAutofitWorkbookRows
+        /// </summary>
+        [Test]
+        public void CellsWorkbookPostAutofitWorkbookColumnsTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            string name = BOOK1;
+            AutoFitterOptions autoFitterOptions = new AutoFitterOptions();
+            int? startColumn = 1;
+            int? endColumn = 100;
+            string folder = TEMPFOLDER;
+            UpdateDataFile(instance, folder, name);
+            var response = instance.CellsWorkbookPostAutofitWorkbookColumns(name, autoFitterOptions, startColumn, endColumn,  folder);
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
+            Assert.AreEqual(response.Code, 200);
+        }
 
         /// <summary>
         /// Test CellsWorkbookPostEncryptDocument

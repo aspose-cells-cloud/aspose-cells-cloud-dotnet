@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="PivotItem.cs">
+// <copyright company="Aspose" file="WorksheetOperateParameter.cs">
 //   Copyright (c) 2016 Aspose.Cells for Cloud
 // </copyright>
 // <summary>
@@ -37,31 +37,31 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class PivotItem 
+  public class WorksheetOperateParameter : OperateParameter 
   {                       
         /// <summary>
-        /// Gets or sets Index
-        /// </summary>  
-		[DataMember(Name="Index", EmitDefaultValue=false)]
-        public int? Index { get; set; }
-
-        /// <summary>
-        /// Represents whether the specified item visible.
-        /// </summary>  
-		[DataMember(Name="IsHidden", EmitDefaultValue=false)]
-        public bool? IsHidden { get; set; }
-
-        /// <summary>
-        /// Gets the name
+        /// Gets or sets Name
         /// </summary>  
 		[DataMember(Name="Name", EmitDefaultValue=false)]
         public string Name { get; set; }
 
         /// <summary>
-        /// Gets the value of the specified item.
+        /// Gets or sets SheetType
         /// </summary>  
-		[DataMember(Name="Value", EmitDefaultValue=false)]
-        public Object Value { get; set; }
+		[DataMember(Name="SheetType", EmitDefaultValue=false)]
+        public string SheetType { get; set; }
+
+        /// <summary>
+        /// Gets or sets NewName
+        /// </summary>  
+		[DataMember(Name="NewName", EmitDefaultValue=false)]
+        public string NewName { get; set; }
+
+        /// <summary>
+        /// Gets or sets MovingRequest
+        /// </summary>  
+		[DataMember(Name="MovingRequest", EmitDefaultValue=false)]
+        public WorksheetMovingRequest MovingRequest { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -70,11 +70,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class PivotItem {\n");
-          sb.Append("  Index: ").Append(this.Index).Append("\n");
-          sb.Append("  IsHidden: ").Append(this.IsHidden).Append("\n");
+          sb.Append("class WorksheetOperateParameter {\n");
           sb.Append("  Name: ").Append(this.Name).Append("\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("  SheetType: ").Append(this.SheetType).Append("\n");
+          sb.Append("  NewName: ").Append(this.NewName).Append("\n");
+          sb.Append("  MovingRequest: ").Append(this.MovingRequest).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }
