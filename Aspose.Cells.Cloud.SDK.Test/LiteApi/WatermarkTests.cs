@@ -21,7 +21,7 @@ using Aspose.Cells.Cloud.SDK.Client;
 using Aspose.Cells.Cloud.SDK.Api;
 using Aspose.Cells.Cloud.SDK.Model;
 
-namespace Aspose.Cells.Cloud.SDK.Test
+namespace Aspose.Cells.Cloud.SDK.Test.LiteApi
 {
     /// <summary>
     ///  Class for testing OAuthApi
@@ -31,9 +31,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
     /// Please update the test case below to test the API endpoint.
     /// </remarks>
     [TestFixture]
-    public class OAuthApieTests : CellsBaseTest
+    public class WatermarkTests : CellsBaseTest
     {
-        private CellsApi instance;
+        private ILiteCellsApi instance;
 
         /// <summary>
         /// Setup before each unit test
@@ -41,7 +41,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
         [SetUp]
         public void Init()
         {
-            instance = new CellsApi(clientId, clientSecret, apiVersion, testbaseurl);
+            instance = new LiteCellsApi(clientId, clientSecret, apiVersion, testbaseurl);
         }
 
         /// <summary>
@@ -52,24 +52,23 @@ namespace Aspose.Cells.Cloud.SDK.Test
         {
 
         }
-        /// <summary>
-        /// Test OAuthPost
-        /// </summary>
+        
         [Test]
-        public void OAuthPostTest()
+        public void PostWatermarkApi_Test()
         {
             if(IsDockerTest)
             {
                 Assert.IsTrue(true);
                 return;
             }
-            // TODO uncomment below to test the method and replace null with proper value
-            instance.Configuration.ApiClient = new ApiClient(Environment.GetEnvironmentVariable("CellsCloudTestApiBaseUrl"));
-            var response = instance.OAuthPost(grantType, clientId, clientSecret);
-            Assert.IsInstanceOf<AccessTokenResponse>(response, "response is AccessTokenResponse");
-            Assert.IsNotNull(response.AccessToken);
+            IDictionary<string, Stream> files = new Dictionary<string, Stream>();
+            files.Add(BOOK1, GetTestDataStream(BOOK1));
+            files.Add(MYDOC, GetTestDataStream(MYDOC));
+            var filesResult = instance.PostWatermark(files,"aspose.cells cloud sdk","#333");
+            Assert.IsInstanceOf<Model.FilesResult>(filesResult, "response is FilesResult");
         }
-        
+
+       
     }
 
 }

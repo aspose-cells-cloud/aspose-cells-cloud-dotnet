@@ -131,7 +131,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsPropertiesPutDocumentProperty(name, propertyName, property, folder);
             Assert.IsInstanceOf<CellsDocumentPropertyResponse>(response, "response is CellsDocumentPropertyResponse");
-            Assert.AreEqual(response.Code, 201);
+            Assert.AreEqual(response.Code, 200);
         }
         
     }

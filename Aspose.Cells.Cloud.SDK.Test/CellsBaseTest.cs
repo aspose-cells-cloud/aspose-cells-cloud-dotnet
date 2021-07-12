@@ -27,10 +27,13 @@ namespace Aspose.Cells.Cloud.SDK.Test
         protected static string accesstoken;
         protected string refreshtoken;
         protected string BOOK1 = "Book1.xlsx";
+        protected string DataSource = "datasource.xlsx";
+        protected string AssemblyTest = "assemblytest.xlsx";
         protected string MYDOC = "myDocument.xlsx";
         protected string PivTestFile = "TestCase.xlsx";
         protected string PivTestFile2 = "PivTestFile2.xlsx";
         protected string TEMPFOLDER = "DotnetTest";
+        protected string NEEDUNLOCK = "needUnlock.xlsx";
         protected string SHEET1 = "Sheet1";
         protected string SHEET2 = "Sheet2";
         protected string SHEET3 = "Sheet3";
@@ -84,6 +87,11 @@ namespace Aspose.Cells.Cloud.SDK.Test
             }
             Stream stream = GetTestDataStream(filename);
             var response = cellsApi.UploadFile(folder + @"\" + filename, stream, stroageName);
+        }
+
+        protected FileStream GetFileStream(string filename)
+        {
+            return File.OpenRead(TestDataFolder + filename);
         }
 
         protected Stream GetTestDataStream(string filename)
