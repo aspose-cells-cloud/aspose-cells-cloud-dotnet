@@ -85,7 +85,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="objecttype"></param>
         /// <param name="file">File to upload</param>
         /// <returns>FilesResult</returns>
-        FilesResult PostCleaeObjects(IDictionary<string, System.IO.Stream> files, string objecttype);
+        FilesResult PostClearObjects(IDictionary<string, System.IO.Stream> files, string objecttype);
 
         /// <summary>
         /// 
@@ -153,7 +153,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="path"> (optional)</param>
         /// <param name="storageName"> (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        IList<Model.TextItem> PostSearch(string text, IDictionary<string, System.IO.Stream> files, string password = null, string sheetname = null, string path = null, string storageName = null);
+        IList<Model.TextItem> PostSearch(IDictionary<string, System.IO.Stream> files, string text, string password = null, string sheetname = null, string path = null, string storageName = null);
 
 
         /// <summary>
@@ -531,15 +531,15 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="objecttype"></param>
         /// <param name="file">File to upload</param>
         /// <returns>FilesResult</returns>
-        public FilesResult PostCleaeObjects( IDictionary<string, System.IO.Stream> files, string objecttype)
+        public FilesResult PostClearObjects( IDictionary<string, System.IO.Stream> files, string objecttype)
         {
             checkAccessToken();
             // verify the required parameter 'objecttype' is set
             if (objecttype == null)
-                throw new ApiException(400, "Missing required parameter 'objecttype' when calling LiteCellsApi->PostCleaeObjects");
+                throw new ApiException(400, "Missing required parameter 'objecttype' when calling LiteCellsApi->PostClearObjects");
             // verify the required parameter 'file' is set
             if (files == null)
-                throw new ApiException(400, "Missing required parameter 'file' when calling LiteCellsApi->PostCleaeObjects");
+                throw new ApiException(400, "Missing required parameter 'file' when calling LiteCellsApi->PostClearObjects");
 
             var localVarPath = "/cells/clearobjects";
             var localVarPathParams = new Dictionary<String, String>();
@@ -578,7 +578,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("PostCleaeObjects", localVarResponse);
+                Exception exception = ExceptionFactory("PostClearObjects", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -862,7 +862,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="path"> (optional)</param>
         /// <param name="storageName"> (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        public IList<Model.TextItem> PostSearch(string text, IDictionary<string, System.IO.Stream> files, string password = null, string sheetname = null, string path = null, string storageName = null)
+        public IList<Model.TextItem> PostSearch(IDictionary<string, System.IO.Stream> files, string text,  string password = null, string sheetname = null, string path = null, string storageName = null)
         {
             checkAccessToken();
             // verify the required parameter 'text' is set

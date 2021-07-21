@@ -64,7 +64,7 @@ namespace Aspose.Cells.Cloud.SDK.Test.LiteApi
             IDictionary<string, Stream> files = new Dictionary<string, Stream>();
             files.Add(BOOK1, GetTestDataStream( BOOK1));
             files.Add(MYDOC, GetTestDataStream(MYDOC));
-            var filesResult = instance.PostSearch("1",files);
+            var filesResult = instance.PostSearch(files,"1");
             Assert.IsInstanceOf<IList<Model.TextItem>>(filesResult, "response is FileInfo");
         }
 

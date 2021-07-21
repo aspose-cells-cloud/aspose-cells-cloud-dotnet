@@ -66,7 +66,7 @@ namespace Aspose.Cells.Cloud.SDK.Test.LiteApi
             IDictionary<string, Stream> files = new Dictionary<string, Stream>();
             files.Add(DataSource, GetTestDataStream( DataSource));
             files.Add(AssemblyTest, GetTestDataStream(AssemblyTest));
-            var filesResult = instance.PostCleaeObjects(files,"comment");
+            var filesResult = instance.PostClearObjects(files,"comment");
             Assert.IsInstanceOf<FilesResult>(filesResult, "response is AccessTokenResponse");
         }
 
@@ -81,7 +81,7 @@ namespace Aspose.Cells.Cloud.SDK.Test.LiteApi
             IDictionary<string, Stream> files = new Dictionary<string, Stream>();
             files.Add(DataSource, GetTestDataStream(DataSource));
             files.Add(AssemblyTest, GetTestDataStream(AssemblyTest));
-            var filesResult = instance.PostCleaeObjects(files,"chart");
+            var filesResult = instance.PostClearObjects(files,"chart");
             Assert.IsInstanceOf<FilesResult>(filesResult, "response is AccessTokenResponse");
         }
 
@@ -96,7 +96,7 @@ namespace Aspose.Cells.Cloud.SDK.Test.LiteApi
             IDictionary<string, Stream> files = new Dictionary<string, Stream>();
             files.Add(DataSource, GetTestDataStream(DataSource));
             files.Add(AssemblyTest, GetTestDataStream(AssemblyTest));
-            var filesResult = instance.PostCleaeObjects(files,"picture");
+            var filesResult = instance.PostClearObjects(files,"picture");
             Assert.IsInstanceOf<FilesResult>(filesResult, "response is AccessTokenResponse");
         }
 
@@ -111,7 +111,7 @@ namespace Aspose.Cells.Cloud.SDK.Test.LiteApi
             IDictionary<string, Stream> files = new Dictionary<string, Stream>();
             files.Add(DataSource, GetTestDataStream(DataSource));
             files.Add(AssemblyTest, GetTestDataStream(AssemblyTest));
-            var filesResult = instance.PostCleaeObjects(files,"shape");
+            var filesResult = instance.PostClearObjects(files,"shape");
             Assert.IsInstanceOf<FilesResult>(filesResult, "response is AccessTokenResponse");
         }
     }
