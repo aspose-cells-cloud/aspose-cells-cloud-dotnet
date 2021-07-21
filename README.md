@@ -30,6 +30,10 @@ The Cloud SDK enhances your C#, ASP.NET, & other .NET-based cloud apps to [proce
 - Improve unlock API. 
 - Improve protected API. 
 - Improve watermark API.
+
+## Feature & Enhancements in Version 21.6.1 
+- Correct spelling errors in the clear function
+- Optimize searchh function
  
 ## Read & Write Spreadsheet Formats
 
