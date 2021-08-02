@@ -1,4 +1,4 @@
-![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/21.6)
+![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/21.7)
 
 # .NET SDK for Spreadsheet Processing in the Cloud
 
@@ -20,20 +20,12 @@ The Cloud SDK enhances your C#, ASP.NET, & other .NET-based cloud apps to [proce
 - Fetch the required shape from worksheet.
 - [Leverage the power of Pivot Tables](https://docs.aspose.cloud/cells/working-with-pivot-tables/) & Ranges.
 
-## Feature & Enhancements in Version 21.6
 
-- Improvement document properties.
-- Update the return value of put/post/delete. 
-- Improvement export API.
-- Improve split API.  
-- Improve merge API. 
-- Improve unlock API. 
-- Improve protected API. 
-- Improve watermark API.
+## Feature & Enhancements in Version 21.7
 
-## Feature & Enhancements in Version 21.6.1 
-- Correct spelling errors in the clear function
-- Optimize searchh function
+- Fix search API.
+- Fix split API.
+
  
 ## Read & Write Spreadsheet Formats
 

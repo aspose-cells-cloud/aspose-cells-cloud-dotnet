@@ -68,7 +68,20 @@ namespace Aspose.Cells.Cloud.SDK.Test.LiteApi
             Assert.IsInstanceOf<IList<Model.TextItem>>(filesResult, "response is FileInfo");
         }
 
-       
+        [Test]
+        public void PostSearchApi_Sheet_Test()
+        {
+            if (IsDockerTest)
+            {
+                Assert.IsTrue(true);
+                return;
+            }
+            IDictionary<string, Stream> files = new Dictionary<string, Stream>();
+            files.Add(BOOK1, GetTestDataStream(BOOK1));
+            files.Add(MYDOC, GetTestDataStream(MYDOC));
+            var filesResult = instance.PostSearch(files, "1",null,"Sheet1");
+            Assert.IsInstanceOf<IList<Model.TextItem>>(filesResult, "response is FileInfo");
+        }
     }
 
 }

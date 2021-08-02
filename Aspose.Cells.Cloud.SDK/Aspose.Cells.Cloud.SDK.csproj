@@ -11,9 +11,9 @@
     <Description>This SDK allows you to work with Aspose.Cells Cloud REST APIs in your .NET applications quickly and easily, with zero initial cost.</Description>
     <Copyright>MIT</Copyright>
     <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>    
-    <AssemblyVersion>21.6.1</AssemblyVersion>
-    <FileVersion>21.6.1</FileVersion>
-    <Version>21.6.1</Version>
+    <AssemblyVersion>21.7</AssemblyVersion>
+    <FileVersion>21.7</FileVersion>
+    <Version>21.7</Version>
   </PropertyGroup>
 
   <ItemGroup>

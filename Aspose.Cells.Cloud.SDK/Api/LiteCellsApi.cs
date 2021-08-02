@@ -150,10 +150,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="file">File to upload</param>
         /// <param name="password"> (optional)</param>
         /// <param name="sheetname"> (optional)</param>
-        /// <param name="path"> (optional)</param>
-        /// <param name="storageName"> (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        IList<Model.TextItem> PostSearch(IDictionary<string, System.IO.Stream> files, string text, string password = null, string sheetname = null, string path = null, string storageName = null);
+        IList<Model.TextItem> PostSearch(IDictionary<string, System.IO.Stream> files, string text, string password = null, string sheetname = null);
 
 
         /// <summary>
@@ -168,10 +166,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="password"> (optional)</param>
         /// <param name="from"> (optional)</param>
         /// <param name="to"> (optional)</param>
-        /// <param name="path"> (optional)</param>
-        /// <param name="storageName"> (optional)</param>
         /// <returns>FilesResult</returns>
-        FilesResult PostSplit( IDictionary<string, System.IO.Stream> files, string format, string password = null, int? from = null, int? to = null, string path = null, string storageName = null);
+        FilesResult PostSplit( IDictionary<string, System.IO.Stream> files, string format, string password = null, int? from = null, int? to = null);
 
 
         /// <summary>
@@ -862,7 +858,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="path"> (optional)</param>
         /// <param name="storageName"> (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        public IList<Model.TextItem> PostSearch(IDictionary<string, System.IO.Stream> files, string text,  string password = null, string sheetname = null, string path = null, string storageName = null)
+        public IList<Model.TextItem> PostSearch(IDictionary<string, System.IO.Stream> files, string text,  string password = null, string sheetname = null)
         {
             checkAccessToken();
             // verify the required parameter 'text' is set
@@ -897,8 +893,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (text != null) localVarQueryParams.Add("text", Configuration.ApiClient.ParameterToString(text)); // query parameter
             if (password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(password)); // query parameter
             if (sheetname != null) localVarQueryParams.Add("sheetname", Configuration.ApiClient.ParameterToString(sheetname)); // query parameter
-            if (path != null) localVarQueryParams.Add("path", Configuration.ApiClient.ParameterToString(path)); // query parameter
-            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
             foreach (KeyValuePair<string, System.IO.Stream> file in files)
             {
                 localVarFileParams.Add(file.Key, Configuration.ApiClient.ParameterToFile(file.Key, file.Value));
@@ -934,10 +928,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="password"> (optional)</param>
         /// <param name="from"> (optional)</param>
         /// <param name="to"> (optional)</param>
-        /// <param name="path"> (optional)</param>
-        /// <param name="storageName"> (optional)</param>
         /// <returns>FilesResult</returns>
-        public FilesResult PostSplit( IDictionary<string, System.IO.Stream> files, string format, string password = null, int? from = null, int? to = null, string path = null, string storageName = null)
+        public FilesResult PostSplit( IDictionary<string, System.IO.Stream> files, string format, string password = null, int? from = null, int? to = null)
         {
             checkAccessToken();
             // verify the required parameter 'format' is set
@@ -973,8 +965,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(password)); // query parameter
             if (from != null) localVarQueryParams.Add("from", Configuration.ApiClient.ParameterToString(from)); // query parameter
             if (to != null) localVarQueryParams.Add("to", Configuration.ApiClient.ParameterToString(to)); // query parameter
-            if (path != null) localVarQueryParams.Add("path", Configuration.ApiClient.ParameterToString(path)); // query parameter
-            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
             foreach (KeyValuePair<string, System.IO.Stream> file in files)
             {
                 localVarFileParams.Add(file.Key, Configuration.ApiClient.ParameterToFile(file.Key, file.Value));
