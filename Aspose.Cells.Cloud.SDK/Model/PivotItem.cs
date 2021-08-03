@@ -61,7 +61,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// Gets the value of the specified item.
         /// </summary>  
 		[DataMember(Name="Value", EmitDefaultValue=false)]
-        public Object Value { get; set; }
+        public string Value { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object

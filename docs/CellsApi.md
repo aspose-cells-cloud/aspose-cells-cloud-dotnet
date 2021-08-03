@@ -155,6 +155,7 @@ Method | HTTP request | Description
 [**CellsPutInsertWorksheetColumns**](CellsApi.md#cellsputinsertworksheetcolumns) | **PUT** /cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex} | Insert worksheet columns.
 [**CellsPutInsertWorksheetRow**](CellsApi.md#cellsputinsertworksheetrow) | **PUT** /cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex} | Insert new worksheet row.
 [**CellsPutInsertWorksheetRows**](CellsApi.md#cellsputinsertworksheetrows) | **PUT** /cells/{name}/worksheets/{sheetName}/cells/rows | Insert several new worksheet rows.
+[**CellsRangesDeleteWorksheetCellsRange**](CellsApi.md#cellsrangesdeleteworksheetcellsrange) | **DELETE** /cells/{name}/worksheets/{sheetName}/ranges | Delete range in the worksheet
 [**CellsRangesGetWorksheetCellsRangeValue**](CellsApi.md#cellsrangesgetworksheetcellsrangevalue) | **GET** /cells/{name}/worksheets/{sheetName}/ranges/value | Get cells list in a range by range name or row column indexes  
 [**CellsRangesPostWorksheetCellsRangeColumnWidth**](CellsApi.md#cellsrangespostworksheetcellsrangecolumnwidth) | **POST** /cells/{name}/worksheets/{sheetName}/ranges/columnWidth | Set column width of range
 [**CellsRangesPostWorksheetCellsRangeMerge**](CellsApi.md#cellsrangespostworksheetcellsrangemerge) | **POST** /cells/{name}/worksheets/{sheetName}/ranges/merge | Combines a range of cells into a single cell.              
@@ -165,6 +166,7 @@ Method | HTTP request | Description
 [**CellsRangesPostWorksheetCellsRangeUnmerge**](CellsApi.md#cellsrangespostworksheetcellsrangeunmerge) | **POST** /cells/{name}/worksheets/{sheetName}/ranges/unmerge | Unmerges merged cells of this range.             
 [**CellsRangesPostWorksheetCellsRangeValue**](CellsApi.md#cellsrangespostworksheetcellsrangevalue) | **POST** /cells/{name}/worksheets/{sheetName}/ranges/value | Puts a value into the range, if appropriate the value will be converted to other data type and cell&#39;s number format will be reset.             
 [**CellsRangesPostWorksheetCellsRanges**](CellsApi.md#cellsrangespostworksheetcellsranges) | **POST** /cells/{name}/worksheets/{sheetName}/ranges | copy range in the worksheet
+[**CellsRangesPutWorksheetCellsRange**](CellsApi.md#cellsrangesputworksheetcellsrange) | **PUT** /cells/{name}/worksheets/{sheetName}/ranges | Insert range in the worksheet
 [**CellsSaveAsPostDocumentSaveAs**](CellsApi.md#cellssaveaspostdocumentsaveas) | **POST** /cells/{name}/SaveAs | Convert document and save result to storage.
 [**CellsShapesDeleteWorksheetShape**](CellsApi.md#cellsshapesdeleteworksheetshape) | **DELETE** /cells/{name}/worksheets/{sheetName}/shapes/{shapeindex} | Delete a shape in worksheet
 [**CellsShapesDeleteWorksheetShapes**](CellsApi.md#cellsshapesdeleteworksheetshapes) | **DELETE** /cells/{name}/worksheets/{sheetName}/shapes | delete all shapes in worksheet
@@ -192,6 +194,7 @@ Method | HTTP request | Description
 [**CellsWorkbookGetWorkbookNames**](CellsApi.md#cellsworkbookgetworkbooknames) | **GET** /cells/{name}/names | Read workbook&#39;s names.
 [**CellsWorkbookGetWorkbookSettings**](CellsApi.md#cellsworkbookgetworkbooksettings) | **GET** /cells/{name}/settings | Get Workbook Settings DTO
 [**CellsWorkbookGetWorkbookTextItems**](CellsApi.md#cellsworkbookgetworkbooktextitems) | **GET** /cells/{name}/textItems | Read workbook&#39;s text items.
+[**CellsWorkbookPostAutofitWorkbookColumns**](CellsApi.md#cellsworkbookpostautofitworkbookcolumns) | **POST** /cells/{name}/autofitcolumns | Autofit workbook columns.
 [**CellsWorkbookPostAutofitWorkbookRows**](CellsApi.md#cellsworkbookpostautofitworkbookrows) | **POST** /cells/{name}/autofitrows | Autofit workbook rows.
 [**CellsWorkbookPostEncryptDocument**](CellsApi.md#cellsworkbookpostencryptdocument) | **POST** /cells/{name}/encryption | Encript document.
 [**CellsWorkbookPostImportData**](CellsApi.md#cellsworkbookpostimportdata) | **POST** /cells/{name}/importdata | 
@@ -3160,7 +3163,7 @@ No authorization required
 
 <a name="cellsdeleteworksheetcolumns"></a>
 # **CellsDeleteWorksheetColumns**
-> ColumnsResponse CellsDeleteWorksheetColumns (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null, string storageName = null)
+> CellsCloudResponse CellsDeleteWorksheetColumns (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null, string storageName = null)
 
 Delete worksheet columns.
 
@@ -3190,7 +3193,7 @@ namespace Example
             try
             {
                 // Delete worksheet columns.
-                ColumnsResponse result = apiInstance.CellsDeleteWorksheetColumns(name, sheetName, columnIndex, columns, updateReference, folder, storageName);
+                CellsCloudResponse result = apiInstance.CellsDeleteWorksheetColumns(name, sheetName, columnIndex, columns, updateReference, folder, storageName);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3216,7 +3219,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ColumnsResponse**](ColumnsResponse.md)
+[**CellsCloudResponse**](CellsCloudResponse.md)
 
 ### Authorization
 
@@ -9433,7 +9436,7 @@ No authorization required
 
 <a name="cellspostsetworksheetcolumnwidth"></a>
 # **CellsPostSetWorksheetColumnWidth**
-> ColumnResponse CellsPostSetWorksheetColumnWidth (string name, string sheetName, int? columnIndex, double? width, string folder = null, string storageName = null)
+> CellsCloudResponse CellsPostSetWorksheetColumnWidth (string name, string sheetName, int? columnIndex, double? width, string folder = null, string storageName = null)
 
 Set worksheet column width.
 
@@ -9462,7 +9465,7 @@ namespace Example
             try
             {
                 // Set worksheet column width.
-                ColumnResponse result = apiInstance.CellsPostSetWorksheetColumnWidth(name, sheetName, columnIndex, width, folder, storageName);
+                CellsCloudResponse result = apiInstance.CellsPostSetWorksheetColumnWidth(name, sheetName, columnIndex, width, folder, storageName);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -9487,7 +9490,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ColumnResponse**](ColumnResponse.md)
+[**CellsCloudResponse**](CellsCloudResponse.md)
 
 ### Authorization
 
@@ -9922,7 +9925,7 @@ No authorization required
 
 <a name="cellspostupdateworksheetrow"></a>
 # **CellsPostUpdateWorksheetRow**
-> RowResponse CellsPostUpdateWorksheetRow (string name, string sheetName, int? rowIndex, double? height = null, string folder = null, string storageName = null)
+> CellsCloudResponse CellsPostUpdateWorksheetRow (string name, string sheetName, int? rowIndex, double? height = null, string folder = null, string storageName = null)
 
 Update worksheet row.
 
@@ -9951,7 +9954,7 @@ namespace Example
             try
             {
                 // Update worksheet row.
-                RowResponse result = apiInstance.CellsPostUpdateWorksheetRow(name, sheetName, rowIndex, height, folder, storageName);
+                CellsCloudResponse result = apiInstance.CellsPostUpdateWorksheetRow(name, sheetName, rowIndex, height, folder, storageName);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -9976,7 +9979,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RowResponse**](RowResponse.md)
+[**CellsCloudResponse**](CellsCloudResponse.md)
 
 ### Authorization
 
@@ -10533,7 +10536,7 @@ No authorization required
 
 <a name="cellsputinsertworksheetcolumns"></a>
 # **CellsPutInsertWorksheetColumns**
-> ColumnsResponse CellsPutInsertWorksheetColumns (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null, string storageName = null)
+> CellsCloudResponse CellsPutInsertWorksheetColumns (string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null, string storageName = null)
 
 Insert worksheet columns.
 
@@ -10563,7 +10566,7 @@ namespace Example
             try
             {
                 // Insert worksheet columns.
-                ColumnsResponse result = apiInstance.CellsPutInsertWorksheetColumns(name, sheetName, columnIndex, columns, updateReference, folder, storageName);
+                CellsCloudResponse result = apiInstance.CellsPutInsertWorksheetColumns(name, sheetName, columnIndex, columns, updateReference, folder, storageName);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -10589,7 +10592,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ColumnsResponse**](ColumnsResponse.md)
+[**CellsCloudResponse**](CellsCloudResponse.md)
 
 ### Authorization
 
@@ -10604,7 +10607,7 @@ No authorization required
 
 <a name="cellsputinsertworksheetrow"></a>
 # **CellsPutInsertWorksheetRow**
-> RowResponse CellsPutInsertWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null, string storageName = null)
+> CellsCloudResponse CellsPutInsertWorksheetRow (string name, string sheetName, int? rowIndex, string folder = null, string storageName = null)
 
 Insert new worksheet row.
 
@@ -10632,7 +10635,7 @@ namespace Example
             try
             {
                 // Insert new worksheet row.
-                RowResponse result = apiInstance.CellsPutInsertWorksheetRow(name, sheetName, rowIndex, folder, storageName);
+                CellsCloudResponse result = apiInstance.CellsPutInsertWorksheetRow(name, sheetName, rowIndex, folder, storageName);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -10656,7 +10659,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RowResponse**](RowResponse.md)
+[**CellsCloudResponse**](CellsCloudResponse.md)
 
 ### Authorization
 
@@ -10723,6 +10726,75 @@ Name | Type | Description  | Notes
  **totalRows** | **int?**| Number of rows to be operated. | [optional] [default to 1]
  **updateReference** | **bool?**| Indicates if update references in other worksheets. | [optional] [default to true]
  **folder** | **string**| The document folder. | [optional] 
+ **storageName** | **string**| storage name. | [optional] 
+
+### Return type
+
+[**CellsCloudResponse**](CellsCloudResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="cellsrangesdeleteworksheetcellsrange"></a>
+# **CellsRangesDeleteWorksheetCellsRange**
+> CellsCloudResponse CellsRangesDeleteWorksheetCellsRange (string name, string sheetName, string range, string shift, string folder = null, string storageName = null)
+
+Delete range in the worksheet
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+namespace Example
+{
+    public class CellsRangesDeleteWorksheetCellsRangeExample
+    {
+        public void main()
+        {
+            var apiInstance = new CellsApi();
+            var name = name_example;  // string | workbook name
+            var sheetName = sheetName_example;  // string | worksheet name
+            var range = range_example;  // string | range
+            var shift = shift_example;  // string | Represent the shift options when deleting a range of cells. (Left,Up) 
+            var folder = folder_example;  // string | Workbook folder. (optional) 
+            var storageName = storageName_example;  // string | storage name. (optional) 
+
+            try
+            {
+                // Delete range in the worksheet
+                CellsCloudResponse result = apiInstance.CellsRangesDeleteWorksheetCellsRange(name, sheetName, range, shift, folder, storageName);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CellsApi.CellsRangesDeleteWorksheetCellsRange: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| workbook name | 
+ **sheetName** | **string**| worksheet name | 
+ **range** | **string**| range | 
+ **shift** | **string**| Represent the shift options when deleting a range of cells. (Left,Up)  | 
+ **folder** | **string**| Workbook folder. | [optional] 
  **storageName** | **string**| storage name. | [optional] 
 
 ### Return type
@@ -11414,6 +11486,75 @@ Name | Type | Description  | Notes
  **name** | **string**| workbook name | 
  **sheetName** | **string**| worksheet name | 
  **rangeOperate** | [**RangeCopyRequest**](RangeCopyRequest.md)| copydata,copystyle,copyto,copyvalue | [optional] 
+ **folder** | **string**| Workbook folder. | [optional] 
+ **storageName** | **string**| storage name. | [optional] 
+
+### Return type
+
+[**CellsCloudResponse**](CellsCloudResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="cellsrangesputworksheetcellsrange"></a>
+# **CellsRangesPutWorksheetCellsRange**
+> CellsCloudResponse CellsRangesPutWorksheetCellsRange (string name, string sheetName, string range, string shift, string folder = null, string storageName = null)
+
+Insert range in the worksheet
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+namespace Example
+{
+    public class CellsRangesPutWorksheetCellsRangeExample
+    {
+        public void main()
+        {
+            var apiInstance = new CellsApi();
+            var name = name_example;  // string | workbook name
+            var sheetName = sheetName_example;  // string | worksheet name
+            var range = range_example;  // string | range
+            var shift = shift_example;  // string | Represent the shift options when deleting a range of cells. (Right,Down) 
+            var folder = folder_example;  // string | Workbook folder. (optional) 
+            var storageName = storageName_example;  // string | storage name. (optional) 
+
+            try
+            {
+                // Insert range in the worksheet
+                CellsCloudResponse result = apiInstance.CellsRangesPutWorksheetCellsRange(name, sheetName, range, shift, folder, storageName);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CellsApi.CellsRangesPutWorksheetCellsRange: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| workbook name | 
+ **sheetName** | **string**| worksheet name | 
+ **range** | **string**| range | 
+ **shift** | **string**| Represent the shift options when deleting a range of cells. (Right,Down)  | 
  **folder** | **string**| Workbook folder. | [optional] 
  **storageName** | **string**| storage name. | [optional] 
 
@@ -13216,6 +13357,75 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="cellsworkbookpostautofitworkbookcolumns"></a>
+# **CellsWorkbookPostAutofitWorkbookColumns**
+> CellsCloudResponse CellsWorkbookPostAutofitWorkbookColumns (string name, AutoFitterOptions autoFitterOptions = null, int? startColumn = null, int? endColumn = null, string folder = null, string storageName = null)
+
+Autofit workbook columns.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+namespace Example
+{
+    public class CellsWorkbookPostAutofitWorkbookColumnsExample
+    {
+        public void main()
+        {
+            var apiInstance = new CellsApi();
+            var name = name_example;  // string | Document name.
+            var autoFitterOptions = new AutoFitterOptions(); // AutoFitterOptions | Auto Fitter Options. (optional) 
+            var startColumn = 56;  // int? | Start column. (optional) 
+            var endColumn = 56;  // int? | End column. (optional) 
+            var folder = folder_example;  // string | Document's folder. (optional) 
+            var storageName = storageName_example;  // string | storage name. (optional) 
+
+            try
+            {
+                // Autofit workbook columns.
+                CellsCloudResponse result = apiInstance.CellsWorkbookPostAutofitWorkbookColumns(name, autoFitterOptions, startColumn, endColumn, folder, storageName);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CellsApi.CellsWorkbookPostAutofitWorkbookColumns: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| Document name. | 
+ **autoFitterOptions** | [**AutoFitterOptions**](AutoFitterOptions.md)| Auto Fitter Options. | [optional] 
+ **startColumn** | **int?**| Start column. | [optional] 
+ **endColumn** | **int?**| End column. | [optional] 
+ **folder** | **string**| Document&#39;s folder. | [optional] 
+ **storageName** | **string**| storage name. | [optional] 
+
+### Return type
+
+[**CellsCloudResponse**](CellsCloudResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="cellsworkbookpostautofitworkbookrows"></a>
 # **CellsWorkbookPostAutofitWorkbookRows**
 > CellsCloudResponse CellsWorkbookPostAutofitWorkbookRows (string name, AutoFitterOptions autoFitterOptions = null, int? startRow = null, int? endRow = null, bool? onlyAuto = null, string folder = null, string storageName = null)
@@ -13954,7 +14164,7 @@ No authorization required
 
 <a name="cellsworkbookputconvertworkbook"></a>
 # **CellsWorkbookPutConvertWorkbook**
-> System.IO.Stream CellsWorkbookPutConvertWorkbook (System.IO.Stream workbook, string format = null, string password = null, string outPath = null)
+> System.IO.Stream CellsWorkbookPutConvertWorkbook (System.IO.Stream file, string format = null, string password = null, string outPath = null)
 
 Convert workbook from request content to some format.
 
@@ -13973,7 +14183,7 @@ namespace Example
         public void main()
         {
             var apiInstance = new CellsApi();
-            var workbook = new System.IO.Stream(); // System.IO.Stream | 
+            var file = new System.IO.Stream(); // System.IO.Stream | 
             var format = format_example;  // string | The format to convert. (optional) 
             var password = password_example;  // string | The workbook password. (optional) 
             var outPath = outPath_example;  // string | Path to save result (optional) 
@@ -13981,7 +14191,7 @@ namespace Example
             try
             {
                 // Convert workbook from request content to some format.
-                System.IO.Stream result = apiInstance.CellsWorkbookPutConvertWorkbook(workbook, format, password, outPath);
+                System.IO.Stream result = apiInstance.CellsWorkbookPutConvertWorkbook(file, format, password, outPath);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -13997,7 +14207,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **workbook** | **System.IO.Stream**|  | 
+ **file** | **System.IO.Stream**|  | 
  **format** | **string**| The format to convert. | [optional] 
  **password** | **string**| The workbook password. | [optional] 
  **outPath** | **string**| Path to save result | [optional] 
@@ -14012,7 +14222,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
