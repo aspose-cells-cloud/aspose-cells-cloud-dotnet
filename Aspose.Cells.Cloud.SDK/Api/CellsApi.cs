@@ -1947,10 +1947,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="listobjectindex">list object index.</param>
+        /// <param name="format">export format. (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ListObjectResponse</returns>
-        ListObjectResponse CellsListObjectsGetWorksheetListObject(string name, string sheetName, int? listobjectindex, string folder = null, string storageName = null);
+        /// <returns>System.IO.Stream</returns>
+        System.IO.Stream CellsListObjectsGetWorksheetListObject(string name, string sheetName, int? listobjectindex, string format = null, string folder = null, string storageName = null);
 
         /// <summary>
         /// Get worksheet list object info by index.
@@ -1962,10 +1963,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="listobjectindex">list object index.</param>
+        /// <param name="format">export format. (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ApiResponse of ListObjectResponse</returns>
-        ApiResponse<ListObjectResponse> CellsListObjectsGetWorksheetListObjectWithHttpInfo(string name, string sheetName, int? listobjectindex, string folder = null, string storageName = null);
+        /// <returns>ApiResponse of System.IO.Stream</returns>
+        ApiResponse<System.IO.Stream> CellsListObjectsGetWorksheetListObjectWithHttpInfo(string name, string sheetName, int? listobjectindex, string format = null, string folder = null, string storageName = null);
         /// <summary>
         /// Get worksheet listobjects info.
         /// </summary>
@@ -9876,10 +9878,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="listobjectindex">list object index.</param>
+        /// <param name="format">export format.(optional)</param>
         /// <param name="folder">Document&#39;s folder.(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
-        /// <returns>Task of ListObjectResponse</returns>
-        System.Threading.Tasks.Task<ListObjectResponse> CellsListObjectsGetWorksheetListObjectAsync (string name, string sheetName, int? listobjectindex, string folder = null, string storageName = null);
+        /// <returns>Task of System.IO.Stream</returns>
+        System.Threading.Tasks.Task<System.IO.Stream> CellsListObjectsGetWorksheetListObjectAsync (string name, string sheetName, int? listobjectindex, string format = null, string folder = null, string storageName = null);
 
         /// <summary>
         /// Get worksheet list object info by index.
@@ -9891,10 +9894,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="listobjectindex">list object index.</param>
+        /// <param name="format">export format.(optional)</param>
         /// <param name="folder">Document&#39;s folder.(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
-        /// <returns>Task of ApiResponse (ListObjectResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListObjectResponse>> CellsListObjectsGetWorksheetListObjectAsyncWithHttpInfo (string name, string sheetName, int? listobjectindex, string folder = null, string storageName = null);
+        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
+        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsListObjectsGetWorksheetListObjectAsyncWithHttpInfo (string name, string sheetName, int? listobjectindex, string format = null, string folder = null, string storageName = null);
         /// <summary>
         /// Get worksheet listobjects info.
         /// </summary>
@@ -27098,13 +27102,14 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="listobjectindex">list object index.</param>
+        /// <param name="format">export format. (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ListObjectResponse</returns>
-        public ListObjectResponse CellsListObjectsGetWorksheetListObject(string name, string sheetName, int? listobjectindex, string folder = null, string storageName = null)
+        /// <returns>System.IO.Stream</returns>
+        public System.IO.Stream CellsListObjectsGetWorksheetListObject(string name, string sheetName, int? listobjectindex, string format = null, string folder = null, string storageName = null)
         {
              checkAccessToken();
-             ApiResponse<ListObjectResponse> localVarResponse = CellsListObjectsGetWorksheetListObjectWithHttpInfo(name, sheetName, listobjectindex, folder, storageName);
+             ApiResponse<System.IO.Stream> localVarResponse = CellsListObjectsGetWorksheetListObjectWithHttpInfo(name, sheetName, listobjectindex, format, folder, storageName);
              return localVarResponse.Data;
         }
 
@@ -27115,10 +27120,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="listobjectindex">list object index.</param>
+        /// <param name="format">export format. (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ApiResponse of ListObjectResponse</returns>
-        public ApiResponse< ListObjectResponse > CellsListObjectsGetWorksheetListObjectWithHttpInfo(string name, string sheetName, int? listobjectindex, string folder = null, string storageName = null)
+        /// <returns>ApiResponse of System.IO.Stream</returns>
+        public ApiResponse< System.IO.Stream > CellsListObjectsGetWorksheetListObjectWithHttpInfo(string name, string sheetName, int? listobjectindex, string format = null, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -27155,6 +27161,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (listobjectindex != null) localVarPathParams.Add("listobjectindex", Configuration.ApiClient.ParameterToString(listobjectindex)); // path parameter
+            if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
             if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
 
@@ -27172,9 +27179,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<ListObjectResponse>(localVarStatusCode,
+            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (ListObjectResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListObjectResponse)));
+                (System.IO.Stream) Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
         }
 
         /// <summary>
@@ -27184,12 +27191,13 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="listobjectindex">list object index.</param>
+        /// <param name="format">export format. (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>Task of ListObjectResponse</returns>
-        public async System.Threading.Tasks.Task<ListObjectResponse> CellsListObjectsGetWorksheetListObjectAsync (string name, string sheetName, int? listobjectindex, string folder = null, string storageName = null)
+        /// <returns>Task of System.IO.Stream</returns>
+        public async System.Threading.Tasks.Task<System.IO.Stream> CellsListObjectsGetWorksheetListObjectAsync (string name, string sheetName, int? listobjectindex, string format = null, string folder = null, string storageName = null)
         {
-             ApiResponse<ListObjectResponse> localVarResponse = await CellsListObjectsGetWorksheetListObjectAsyncWithHttpInfo(name, sheetName, listobjectindex, folder, storageName);
+             ApiResponse<System.IO.Stream> localVarResponse = await CellsListObjectsGetWorksheetListObjectAsyncWithHttpInfo(name, sheetName, listobjectindex, format, folder, storageName);
              return localVarResponse.Data;
 
         }
@@ -27201,10 +27209,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="name">Document name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="listobjectindex">list object index.</param>
+        /// <param name="format">export format. (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>Task of ApiResponse (ListObjectResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListObjectResponse>> CellsListObjectsGetWorksheetListObjectAsyncWithHttpInfo (string name, string sheetName, int? listobjectindex, string folder = null, string storageName = null)
+        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsListObjectsGetWorksheetListObjectAsyncWithHttpInfo (string name, string sheetName, int? listobjectindex, string format = null, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -27241,6 +27250,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
             if (listobjectindex != null) localVarPathParams.Add("listobjectindex", Configuration.ApiClient.ParameterToString(listobjectindex)); // path parameter
+            if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
             if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
 
@@ -27258,9 +27268,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<ListObjectResponse>(localVarStatusCode,
+            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (ListObjectResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListObjectResponse)));
+                (System.IO.Stream) Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
         }
 
         /// <summary>
@@ -52765,7 +52775,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
             if (password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(password)); // query parameter
             if (outPath != null) localVarQueryParams.Add("outPath", Configuration.ApiClient.ParameterToString(outPath)); // query parameter
-            if (file != null) localVarFileParams.Add("File", Configuration.ApiClient.ParameterToFile("File", file));
+            if (file != null) localVarFileParams.Add("file", Configuration.ApiClient.ParameterToFile("file", file));
 
 
             // make the HTTP request
@@ -52842,7 +52852,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
             if (password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(password)); // query parameter
             if (outPath != null) localVarQueryParams.Add("outPath", Configuration.ApiClient.ParameterToString(outPath)); // query parameter
-            if (file != null) localVarFileParams.Add("File", Configuration.ApiClient.ParameterToFile("File", file));
+            if (file != null) localVarFileParams.Add("file", Configuration.ApiClient.ParameterToFile("file", file));
 
 
             // make the HTTP request
@@ -62629,7 +62639,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (path != null) localVarPathParams.Add("path", Configuration.ApiClient.ParameterToString(path)); // path parameter
             if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
-            if (file != null) localVarFileParams.Add("File", Configuration.ApiClient.ParameterToFile("File", file));
+            if (file != null) localVarFileParams.Add("file", Configuration.ApiClient.ParameterToFile("file", file));
 
 
             // make the HTTP request
@@ -62706,7 +62716,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (path != null) localVarPathParams.Add("path", Configuration.ApiClient.ParameterToString(path)); // path parameter
             if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
-            if (file != null) localVarFileParams.Add("File", Configuration.ApiClient.ParameterToFile("File", file));
+            if (file != null) localVarFileParams.Add("file", Configuration.ApiClient.ParameterToFile("file", file));
 
 
             // make the HTTP request

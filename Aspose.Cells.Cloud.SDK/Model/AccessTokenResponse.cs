@@ -42,7 +42,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// Gets or sets Expires
         /// </summary>  
-		[DataMember(Name=".expires", EmitDefaultValue=false)]
+		[DataMember(Name="expires", EmitDefaultValue=false)]
         public string Expires { get; set; }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// Gets or sets Issued
         /// </summary>  
-		[DataMember(Name=".issued", EmitDefaultValue=false)]
+		[DataMember(Name="issued", EmitDefaultValue=false)]
         public string Issued { get; set; }
 
         /// <summary>

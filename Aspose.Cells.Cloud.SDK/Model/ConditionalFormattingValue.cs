@@ -55,7 +55,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// Get or set the value of this conditional formatting value object.  It should     be used in conjunction with Type.
         /// </summary>  
 		[DataMember(Name="Value", EmitDefaultValue=false)]
-        public Object Value { get; set; }
+        public string Value { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object

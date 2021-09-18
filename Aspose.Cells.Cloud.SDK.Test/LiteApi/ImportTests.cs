@@ -31,7 +31,7 @@ namespace Aspose.Cells.Cloud.SDK.Test.LiteApi
     /// Please update the test case below to test the API endpoint.
     /// </remarks>
     [TestFixture]
-    public class ExportTests : CellsBaseTest
+    public class ImportTests : CellsBaseTest
     {
         private ILiteCellsApi instance;
 
@@ -54,79 +54,54 @@ namespace Aspose.Cells.Cloud.SDK.Test.LiteApi
         }
         
         [Test]
-        public void PostExportApi_Chart_Test()
-        {
-            if(IsDockerTest)
-            {
-                Assert.IsTrue(true);
-                return;
-            }
+        public void PostImportApi_intarray()
+        { 
             IDictionary<string, Stream> files = new Dictionary<string, Stream>();
             files.Add(BOOK1, GetTestDataStream( BOOK1));
             files.Add(MYDOC, GetTestDataStream(MYDOC));
-            var filesResult = instance.PostExport(files,"chart","png");
+            ImportIntArrayOption data = new ImportIntArrayOption();
+            data.DestinationWorksheet = SHEET1;
+            data.FirstColumn = 1;
+            data.FirstRow = 3;
+            data.ImportDataType = "IntArray";
+            data.IsVertical = true;
+            data.Data = new List<int?> { 1, 2, 3, 4 };
+            var filesResult = instance.PostImport(files, data);
             Assert.IsInstanceOf<FilesResult>(filesResult, "response is AccessTokenResponse");
         }
 
         [Test]
-        public void PostExportApi_Workbook_Test()
+        public void PostImportApi_stringarray()
         {
-            if (IsDockerTest)
-            {
-                Assert.IsTrue(true);
-                return;
-            }
             IDictionary<string, Stream> files = new Dictionary<string, Stream>();
             files.Add(BOOK1, GetTestDataStream(BOOK1));
             files.Add(MYDOC, GetTestDataStream(MYDOC));
-            var filesResult = instance.PostExport(files,"workbook", "png");
+            ImportIntArrayOption data = new ImportIntArrayOption();
+            data.DestinationWorksheet = SHEET1;
+            data.FirstColumn = 1;
+            data.FirstRow = 3;
+            data.ImportDataType = "StringArray";
+            data.IsVertical = true;
+            data.Data = new List<int?> { 1, 2, 3, 4 };
+            var filesResult = instance.PostImport(files, data);
             Assert.IsInstanceOf<FilesResult>(filesResult, "response is AccessTokenResponse");
         }
 
         [Test]
-        public void PostExportApi_Picture_Test()
+        public void PostImportApi_picture()
         {
-            if (IsDockerTest)
-            {
-                Assert.IsTrue(true);
-                return;
-            }
             IDictionary<string, Stream> files = new Dictionary<string, Stream>();
             files.Add(BOOK1, GetTestDataStream(BOOK1));
             files.Add(MYDOC, GetTestDataStream(MYDOC));
-            var filesResult = instance.PostExport(files,"picture", "png");
-            Assert.IsInstanceOf<FilesResult>(filesResult, "response is AccessTokenResponse");
-        }
-        [TestCase("worksheet", "png")]
-        [TestCase("workbook", "png")]
-        [TestCase("picture", "png")]
-        [TestCase("shape", "png")]
-        [TestCase("chart", "png")]
-        [TestCase("listobject", "png")]
-        [TestCase("worksheet", "pdf")]
-        [TestCase("workbook", "pdf")]
-        [TestCase("picture", "Tiff")]
-        [TestCase("shape", "Tiff")]
-        [TestCase("chart", "pdf")]
-        [TestCase("listobject", "pdf")]
-        [TestCase("worksheet", "xlsx")]
-        [TestCase("workbook", "xlsx")]
-        //[TestCase("picture", "Svg")]
-        //[TestCase("shape", "Svg")]
-        //[TestCase("chart", "Svg")]
-        [TestCase("listobject", "xlsx")]
-        //[TestCase("oleobject", "png")]
-        public void PostExportApi_Test(string objecttype ,string format)
-        {
-            if (IsDockerTest)
-            {
-                Assert.IsTrue(true);
-                return;
-            }
-            IDictionary<string, Stream> files = new Dictionary<string, Stream>();
-            files.Add(BOOK1, GetTestDataStream(BOOK1));
-            files.Add(MYDOC, GetTestDataStream(MYDOC));
-            var filesResult = instance.PostExport(files, objecttype, format);
+            ImportPictureOption data = new ImportPictureOption();
+            data.DestinationWorksheet = SHEET1;
+            data.LowerRightColumn = 21;
+            data.LowerRightRow = 23;
+            data.UpperLeftColumn = 10;
+            data.UpperLeftRow = 13;
+            data.ImportDataType = "Picture";
+            data.Data = GetTestDataBase64String("WaterMark.png");
+            var filesResult = instance.PostImport(files, data);
             Assert.IsInstanceOf<FilesResult>(filesResult, "response is AccessTokenResponse");
         }
     }

@@ -106,6 +106,10 @@ namespace Aspose.Cells.Cloud.SDK.Test
         {
             return File.ReadAllBytes(TestDataFolder + filename);
         }
+        protected string GetTestDataBase64String(string filename)
+        {
+            return Convert.ToBase64String( File.ReadAllBytes(TestDataFolder + filename));
+        }
         protected void WriteResponseStream(string filename, Stream stream)
         {
             FileStream fs = File.Create(TestDataFolder + filename);

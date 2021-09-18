@@ -49,7 +49,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// Gets or sets Criteria
         /// </summary>  
 		[DataMember(Name="Criteria", EmitDefaultValue=false)]
-        public Object Criteria { get; set; }
+        public string Criteria { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object

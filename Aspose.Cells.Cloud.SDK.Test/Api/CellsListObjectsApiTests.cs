@@ -88,8 +88,10 @@ namespace Aspose.Cells.Cloud.SDK.Test
         /// <summary>
         /// Test CellsListObjectsGetWorksheetListObject
         /// </summary>
-        [Test]
-        public void CellsListObjectsGetWorksheetListObjectTest()
+        [TestCase(null)]
+        [TestCase("pdf")]
+        [TestCase("xlsx")]
+        public void CellsListObjectsGetWorksheetListObjectTest(string format)
         {
             // TODO uncomment below to test the method and replace null with proper value
             string name = BOOK1;
@@ -97,9 +99,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
             int? listobjectindex = 0;
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
-            var response = instance.CellsListObjectsGetWorksheetListObject(name, sheetName, listobjectindex, folder);
-            Assert.IsInstanceOf<ListObjectResponse>(response, "response is ListObjectResponse");
-            Assert.AreEqual(response.Code, 200);
+            var response = instance.CellsListObjectsGetWorksheetListObject(name, sheetName, listobjectindex, format, folder);
+            Assert.IsInstanceOf<Stream>(response, "response is ListObjectResponse");
+
         }
 
         /// <summary>

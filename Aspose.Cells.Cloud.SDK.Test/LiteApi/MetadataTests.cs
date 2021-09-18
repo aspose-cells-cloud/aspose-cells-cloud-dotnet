@@ -72,7 +72,7 @@ namespace Aspose.Cells.Cloud.SDK.Test.LiteApi
             CellsDocumentProperty cellsDocumentProperty = new CellsDocumentProperty();
             cellsDocumentProperty.Name = "Title";
             cellsDocumentProperty.Value = "Aspose.Cells Cloud";
-            IList<CellsDocumentProperty> listCellsDocumentProperty = new List<CellsDocumentProperty>();
+            List<CellsDocumentProperty> listCellsDocumentProperty = new List<CellsDocumentProperty>();
             listCellsDocumentProperty.Add(cellsDocumentProperty);
             files.Clear();
             files.Add(DataSource, GetTestDataStream(DataSource));

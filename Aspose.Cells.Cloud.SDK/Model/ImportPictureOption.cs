@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="DynamicFilter.cs">
+// <copyright company="Aspose" file="ImportPictureOption.cs">
 //   Copyright (c) 2016 Aspose.Cells for Cloud
 // </copyright>
 // <summary>
@@ -37,25 +37,43 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class DynamicFilter 
+  public class ImportPictureOption : ImportOption 
   {                       
         /// <summary>
-        /// Gets or sets DynamicFilterType
+        /// Upper Left Row.
         /// </summary>  
-		[DataMember(Name="DynamicFilterType", EmitDefaultValue=false)]
-        public string DynamicFilterType { get; set; }
+		[DataMember(Name="UpperLeftRow", EmitDefaultValue=false)]
+        public int? UpperLeftRow { get; set; }
 
         /// <summary>
-        /// Gets or sets MaxValue
+        /// Upper Left Column.
         /// </summary>  
-		[DataMember(Name="MaxValue", EmitDefaultValue=false)]
-        public int? MaxValue { get; set; }
+		[DataMember(Name="UpperLeftColumn", EmitDefaultValue=false)]
+        public int? UpperLeftColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets Value
+        /// Lower Right Row.
         /// </summary>  
-		[DataMember(Name="Value", EmitDefaultValue=false)]
-        public int? Value { get; set; }
+		[DataMember(Name="LowerRightRow", EmitDefaultValue=false)]
+        public int? LowerRightRow { get; set; }
+
+        /// <summary>
+        /// Lower Right Column.
+        /// </summary>  
+		[DataMember(Name="LowerRightColumn", EmitDefaultValue=false)]
+        public int? LowerRightColumn { get; set; }
+
+        /// <summary>
+        /// Filename.
+        /// </summary>  
+		[DataMember(Name="Filename", EmitDefaultValue=false)]
+        public string Filename { get; set; }
+
+        /// <summary>
+        /// data : base64  string.
+        /// </summary>  
+		[DataMember(Name="Data", EmitDefaultValue=false)]
+        public string Data { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -64,10 +82,13 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class DynamicFilter {\n");
-          sb.Append("  DynamicFilterType: ").Append(this.DynamicFilterType).Append("\n");
-          sb.Append("  MaxValue: ").Append(this.MaxValue).Append("\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("class ImportPictureOption {\n");
+          sb.Append("  UpperLeftRow: ").Append(this.UpperLeftRow).Append("\n");
+          sb.Append("  UpperLeftColumn: ").Append(this.UpperLeftColumn).Append("\n");
+          sb.Append("  LowerRightRow: ").Append(this.LowerRightRow).Append("\n");
+          sb.Append("  LowerRightColumn: ").Append(this.LowerRightColumn).Append("\n");
+          sb.Append("  Filename: ").Append(this.Filename).Append("\n");
+          sb.Append("  Data: ").Append(this.Data).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

@@ -21,10 +21,10 @@ The Cloud SDK enhances your C#, ASP.NET, & other .NET-based cloud apps to [proce
 - [Leverage the power of Pivot Tables](https://docs.aspose.cloud/cells/working-with-pivot-tables/) & Ranges.
 
 
-## Feature & Enhancements in Version 21.7
+## Feature & Enhancements in Version 21.8
 
-- Fix search API.
-- Fix split API.
+- Improvement for getting list object Api.
+- Add import Api.
 
  
 ## Read & Write Spreadsheet Formats

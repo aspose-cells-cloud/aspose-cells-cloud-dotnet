@@ -100,6 +100,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>FilesResult</returns>
         FilesResult PostExport(IDictionary<string, System.IO.Stream> files,  string objectType, string format);
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file"></param> 
+        /// <param name="importOption"></param> 
+        /// <returns>FilesResult</returns>
+        FilesResult PostImport(IDictionary<string, System.IO.Stream> file, ImportOption importOption = null);
 
         /// <summary>
         /// 
@@ -653,7 +664,69 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 (FilesResult)Configuration.ApiClient.Deserialize(localVarResponse, typeof(FilesResult)))).Data;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file"></param> 
+        /// <param name="importOption"></param> 
+        /// <returns>FilesResult</returns>
+        public FilesResult PostImport(IDictionary<string, System.IO.Stream> file, ImportOption importOption = null)
+        {
+            if (file == null)
+                throw new ApiException(400, "Missing required parameter 'file' when calling CellsApi->PostImport");
+            if (importOption == null)
+                throw new ApiException(400, "Missing required parameter 'importOption' when calling CellsApi->PostImport");
+            var localVarPath = "/cells/import";
 
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "multipart/form-data"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            foreach (KeyValuePair<string, System.IO.Stream> keyValuePair in file)
+            {
+                localVarFileParams.Add(keyValuePair.Key, Configuration.ApiClient.ParameterToFile(keyValuePair.Key, keyValuePair.Value));
+            }
+            localVarFileParams.Add("importOption", Configuration.ApiClient.ParameterToFile("importOption", Configuration.ApiClient.Serialize(importOption)));
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PostImport", localVarResponse);
+                if (exception != null) throw exception;
+            }
+            return new ApiResponse<FilesResult>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (FilesResult)Configuration.ApiClient.Deserialize(localVarResponse, typeof(FilesResult))).Data;
+        }
         /// <summary>
         ///  
         /// </summary>
