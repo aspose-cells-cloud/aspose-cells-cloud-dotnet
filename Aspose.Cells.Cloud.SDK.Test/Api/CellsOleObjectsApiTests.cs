@@ -169,7 +169,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             UpdateDataFile(instance, oleFile);
             UpdateDataFile(instance, imageFile);
             var response = instance.CellsOleObjectsPutWorksheetOleObject(name, sheetName, oleObject, upperLeftRow, upperLeftColumn, height, width,  oleFile,  imageFile, folder);
-            Assert.IsInstanceOf<OleObjectResponse>(response, "response is OleObjectResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is OleObjectResponse");
             Assert.AreEqual(response.Code, 200);
         }
 

@@ -155,7 +155,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsShapesPutWorksheetShape(name, sheetName, shape, drawingType, upperLeftRow, upperLeftColumn, top, left, width, height,  folder);
-            Assert.IsInstanceOf<ShapeResponse>(response, "response is ShapeResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is ShapeResponse");
             Assert.AreEqual(response.Code, 200);
         }
         

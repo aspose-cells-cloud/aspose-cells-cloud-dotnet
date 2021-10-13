@@ -115,7 +115,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsChartsDeleteWorksheetDeleteChart(name, sheetName, chartIndex, folder);
-            Assert.IsInstanceOf<ChartsResponse>(response, "response is ChartsResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is ChartsResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -225,7 +225,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsChartsPostWorksheetChartLegend(name, sheetName, chartIndex, legend, folder);
-            Assert.IsInstanceOf<LegendResponse>(response, "response is LegendResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is LegendResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -244,7 +244,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsChartsPostWorksheetChartTitle(name, sheetName, chartIndex, title, folder);
-            Assert.IsInstanceOf<TitleResponse>(response, "response is TitleResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is TitleResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -270,7 +270,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsChartsPutWorksheetAddChart(name, sheetName, chartType, upperLeftRow, upperLeftColumn, lowerRightRow, lowerRightColumn, area, isVertical, categoryData, isAutoGetSerialName, title, folder);
-            Assert.IsInstanceOf<ChartsResponse>(response, "response is ChartsResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is ChartsResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -306,7 +306,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsChartsPutWorksheetChartTitle(name, sheetName, chartIndex, title, folder);
-            Assert.IsInstanceOf<TitleResponse>(response, "response is TitleResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is TitleResponse");
             Assert.AreEqual(response.Code, 200);
         }
         

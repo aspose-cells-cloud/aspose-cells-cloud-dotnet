@@ -441,7 +441,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             bool? useSameSource = true;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesPutWorksheetPivotTable(name, sheetName, request, folder, null, sourceData, destCellName, tableName, useSameSource);
-            Assert.IsInstanceOf<PivotTableResponse>(response, "response is PivotTableResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is PivotTableResponse");
             Assert.AreEqual(response.Code, 200);
         }
 
@@ -466,7 +466,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsPivotTablesPutWorksheetPivotTable(name, sheetName, request, folder, null, null, null, null, null);
-            Assert.IsInstanceOf<PivotTableResponse>(response, "response is PivotTableResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is PivotTableResponse");
             Assert.AreEqual(response.Code, 200);
         }
         /// <summary>

@@ -135,7 +135,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsPicturesPostWorksheetPicture(name, sheetName, pictureIndex, picture, folder);
-            Assert.IsInstanceOf<PictureResponse>(response, "response is PictureResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is PictureResponse");
             Assert.AreEqual(response.Code, 200);
 
         }
@@ -166,7 +166,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             UpdateDataFile(instance,folder, name);
             UpdateDataFile(instance,folder, picturePath);
             var response = instance.CellsPicturesPutWorksheetAddPicture(name, sheetName,picture, upperLeftRow, upperLeftColumn, lowerRightRow, lowerRightColumn, folder + "\\" + picturePath, folder);
-            Assert.IsInstanceOf<PicturesResponse>(response, "response is PicturesResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is PicturesResponse");
             Assert.AreEqual(response.Code, 200);
 
         }

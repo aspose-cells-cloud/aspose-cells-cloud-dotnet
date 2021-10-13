@@ -135,7 +135,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsHypelinksPostWorksheetHyperlink(name, sheetName, hyperlinkIndex, hyperlink, folder);
-            Assert.IsInstanceOf<HyperlinkResponse>(response, "response is HyperlinkResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is HyperlinkResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -156,7 +156,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsHypelinksPutWorksheetHyperlink(name, sheetName, firstRow, firstColumn, totalRows, totalColumns, address, folder);
-            Assert.IsInstanceOf<HyperlinkResponse>(response, "response is HyperlinkResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is HyperlinkResponse");
             Assert.AreEqual(response.Code, 200);
         }
         

@@ -65,7 +65,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetValidationsDeleteWorksheetValidation(name, sheetName, validationIndex, folder);
-            Assert.IsInstanceOf<ValidationResponse>(response, "response is ValidationResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is ValidationResponse");
             Assert.AreEqual(response.Code, 200);
         }
 

@@ -63,7 +63,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsPropertiesDeleteDocumentProperties(name, folder);
-            Assert.IsInstanceOf<CellsDocumentPropertiesResponse>(response, "response is CellsDocumentPropertiesResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsDocumentPropertiesResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -79,7 +79,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsPropertiesDeleteDocumentProperty(name, propertyName, folder);
-            Assert.IsInstanceOf<CellsDocumentPropertiesResponse>(response, "response is CellsDocumentPropertiesResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsDocumentPropertiesResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -130,7 +130,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsPropertiesPutDocumentProperty(name, propertyName, property, folder);
-            Assert.IsInstanceOf<CellsDocumentPropertyResponse>(response, "response is CellsDocumentPropertyResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsDocumentPropertyResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
