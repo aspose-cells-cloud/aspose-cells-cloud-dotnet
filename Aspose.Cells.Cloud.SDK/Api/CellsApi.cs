@@ -6775,6 +6775,33 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ApiResponse of CellsCloudResponse</returns>
         ApiResponse<CellsCloudResponse> CellsWorksheetsDeleteWorksheetFreezePanesWithHttpInfo(string name, string sheetName, int? row, int? column, int? freezedRows, int? freezedColumns, string folder = null, string storageName = null);
         /// <summary>
+        /// Read worksheets info.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="matchCondition"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName"> (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        CellsCloudResponse CellsWorksheetsDeleteWorksheets(string name, MatchConditionRequest matchCondition, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// Read worksheets info.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="matchCondition"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName"> (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        ApiResponse<CellsCloudResponse> CellsWorksheetsDeleteWorksheetsWithHttpInfo(string name, MatchConditionRequest matchCondition, string folder = null, string storageName = null);
+        /// <summary>
         /// Read worksheets ranges info.
         /// </summary>
         /// <remarks>
@@ -7920,6 +7947,27 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="versionId">File version ID (optional)</param>
         /// <returns>ApiResponse of ObjectExist</returns>
         ApiResponse<ObjectExist> ObjectExistsWithHttpInfo(string path, string storageName = null, string versionId = null);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="batchConvertRequest"></param>
+        /// <returns>System.IO.Stream</returns>
+        System.IO.Stream PostBatchConvert(BatchConvertRequest batchConvertRequest);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="batchConvertRequest"></param>
+        /// <returns>ApiResponse of System.IO.Stream</returns>
+        ApiResponse<System.IO.Stream> PostBatchConvertWithHttpInfo(BatchConvertRequest batchConvertRequest);
         /// <summary>
         /// Check if storage exists
         /// </summary>
@@ -14706,6 +14754,33 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorksheetsDeleteWorksheetFreezePanesAsyncWithHttpInfo (string name, string sheetName, int? row, int? column, int? freezedRows, int? freezedColumns, string folder = null, string storageName = null);
         /// <summary>
+        /// Read worksheets info.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="matchCondition"></param>
+        /// <param name="folder">(optional)</param>
+        /// <param name="storageName">(optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsWorksheetsDeleteWorksheetsAsync (string name, MatchConditionRequest matchCondition, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// Read worksheets info.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="matchCondition"></param>
+        /// <param name="folder">(optional)</param>
+        /// <param name="storageName">(optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorksheetsDeleteWorksheetsAsyncWithHttpInfo (string name, MatchConditionRequest matchCondition, string folder = null, string storageName = null);
+        /// <summary>
         /// Read worksheets ranges info.
         /// </summary>
         /// <remarks>
@@ -15851,6 +15926,27 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="versionId">File version ID(optional)</param>
         /// <returns>Task of ApiResponse (ObjectExist)</returns>
         System.Threading.Tasks.Task<ApiResponse<ObjectExist>> ObjectExistsAsyncWithHttpInfo (string path, string storageName = null, string versionId = null);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="batchConvertRequest"></param>
+        /// <returns>Task of System.IO.Stream</returns>
+        System.Threading.Tasks.Task<System.IO.Stream> PostBatchConvertAsync (BatchConvertRequest batchConvertRequest);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="batchConvertRequest"></param>
+        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
+        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> PostBatchConvertAsyncWithHttpInfo (BatchConvertRequest batchConvertRequest);
         /// <summary>
         /// Check if storage exists
         /// </summary>
@@ -55632,6 +55728,180 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
         /// <summary>
+        /// Read worksheets info. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="matchCondition"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName"> (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        public CellsCloudResponse CellsWorksheetsDeleteWorksheets(string name, MatchConditionRequest matchCondition, string folder = null, string storageName = null)
+        {
+             checkAccessToken();
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsDeleteWorksheetsWithHttpInfo(name, matchCondition, folder, storageName);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Read worksheets info. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="matchCondition"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName"> (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        public ApiResponse< CellsCloudResponse > CellsWorksheetsDeleteWorksheetsWithHttpInfo(string name, MatchConditionRequest matchCondition, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsWorksheetsDeleteWorksheets");
+            // verify the required parameter 'matchCondition' is set
+            if (matchCondition == null)
+                throw new ApiException(400, "Missing required parameter 'matchCondition' when calling CellsApi->CellsWorksheetsDeleteWorksheets");
+
+            var localVarPath = "/cells/{name}/worksheets";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+            if (matchCondition != null && matchCondition.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(matchCondition); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = matchCondition; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsWorksheetsDeleteWorksheets", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
+        /// Read worksheets info. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="matchCondition"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName"> (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsWorksheetsDeleteWorksheetsAsync (string name, MatchConditionRequest matchCondition, string folder = null, string storageName = null)
+        {
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsWorksheetsDeleteWorksheetsAsyncWithHttpInfo(name, matchCondition, folder, storageName);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Read worksheets info. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name"></param>
+        /// <param name="matchCondition"></param>
+        /// <param name="folder"> (optional)</param>
+        /// <param name="storageName"> (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorksheetsDeleteWorksheetsAsyncWithHttpInfo (string name, MatchConditionRequest matchCondition, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsWorksheetsDeleteWorksheets");
+            // verify the required parameter 'matchCondition' is set
+            if (matchCondition == null)
+                throw new ApiException(400, "Missing required parameter 'matchCondition' when calling CellsApi->CellsWorksheetsDeleteWorksheets");
+
+            var localVarPath = "/cells/{name}/worksheets";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+            if (matchCondition != null && matchCondition.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(matchCondition); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = matchCondition; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsWorksheetsDeleteWorksheets", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
         /// Read worksheets ranges info. 
         /// </summary>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
@@ -62445,6 +62715,156 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return new ApiResponse<ObjectExist>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (ObjectExist) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ObjectExist)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="batchConvertRequest"></param>
+        /// <returns>System.IO.Stream</returns>
+        public System.IO.Stream PostBatchConvert(BatchConvertRequest batchConvertRequest)
+        {
+             checkAccessToken();
+             ApiResponse<System.IO.Stream> localVarResponse = PostBatchConvertWithHttpInfo(batchConvertRequest);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="batchConvertRequest"></param>
+        /// <returns>ApiResponse of System.IO.Stream</returns>
+        public ApiResponse< System.IO.Stream > PostBatchConvertWithHttpInfo(BatchConvertRequest batchConvertRequest)
+        {
+            // verify the required parameter 'batchConvertRequest' is set
+            if (batchConvertRequest == null)
+                throw new ApiException(400, "Missing required parameter 'batchConvertRequest' when calling CellsApi->PostBatchConvert");
+
+            var localVarPath = "/cells/batch/convert";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (batchConvertRequest != null && batchConvertRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(batchConvertRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = batchConvertRequest; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PostBatchConvert", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (System.IO.Stream) Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="batchConvertRequest"></param>
+        /// <returns>Task of System.IO.Stream</returns>
+        public async System.Threading.Tasks.Task<System.IO.Stream> PostBatchConvertAsync (BatchConvertRequest batchConvertRequest)
+        {
+             ApiResponse<System.IO.Stream> localVarResponse = await PostBatchConvertAsyncWithHttpInfo(batchConvertRequest);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="batchConvertRequest"></param>
+        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> PostBatchConvertAsyncWithHttpInfo (BatchConvertRequest batchConvertRequest)
+        {
+            // verify the required parameter 'batchConvertRequest' is set
+            if (batchConvertRequest == null)
+                throw new ApiException(400, "Missing required parameter 'batchConvertRequest' when calling CellsApi->PostBatchConvert");
+
+            var localVarPath = "/cells/batch/convert";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (batchConvertRequest != null && batchConvertRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(batchConvertRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = batchConvertRequest; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PostBatchConvert", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (System.IO.Stream) Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
         }
 
         /// <summary>

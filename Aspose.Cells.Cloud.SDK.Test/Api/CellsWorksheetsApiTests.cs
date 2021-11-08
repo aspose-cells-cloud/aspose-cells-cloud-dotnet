@@ -13,6 +13,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
     using NUnit.Framework;
     using Aspose.Cells.Cloud.SDK.Api;
     using Aspose.Cells.Cloud.SDK.Model;
+    using System.Collections.Generic;
 
     /// <summary>
     ///  Class for testing CellsWorksheetsApi
@@ -694,6 +695,24 @@ namespace Aspose.Cells.Cloud.SDK.Test
             UpdateDataFile(instance, folder, name);
             var response = instance.CellsWorksheetsGetWorksheet(name, sheetName, format, verticalResolution, horizontalResolution, null, pageIndex, folder);
             Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
+
+        }
+        /// <summary>
+        /// Test CellsWorksheetsGetWorkSheet
+        /// </summary>
+        [Test]
+        public void CellsWorksheetsDeleteWorkSheetsTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            MatchConditionRequest matchConditionRequest = new MatchConditionRequest();
+            matchConditionRequest.FullMatchConditions = new List<string>() { "Sheet1", "Sheet2", "Sheet3" }; ;
+            var name = BOOK1;
+
+            string folder = TEMPFOLDER;
+            UpdateDataFile(instance, folder, BOOK1);
+
+            var response = instance.CellsWorksheetsDeleteWorksheets(name, matchConditionRequest, folder);
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is System.IO.Stream");
 
         }
     }

@@ -5,6 +5,8 @@ namespace Aspose.Cells.Cloud.SDK.Test
     using Aspose.Cells.Cloud.SDK.Api;
     using System.IO;
     using System;
+    using System.Text;
+    using Newtonsoft.Json;
 
     public class CellsBaseTest
     {
@@ -32,7 +34,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
         protected string MYDOC = "myDocument.xlsx";
         protected string PivTestFile = "TestCase.xlsx";
         protected string PivTestFile2 = "PivTestFile2.xlsx";
-        protected string TEMPFOLDER = "DotnetTest";
+        protected string TEMPFOLDER = "DotNetTest";
+        protected string BatchFolder = "BatchFiles";
+        protected string OutPut = "OutPut";
         protected string NEEDUNLOCK = "needUnlock.xlsx";
         protected string SHEET1 = "Sheet1";
         protected string SHEET2 = "Sheet2";
@@ -49,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
         {
             get { return Convert.ToBoolean( Environment.GetEnvironmentVariable("CellsCloudTestIsDockerTest")); }
         }
-        
+        protected const string DownloadFolder = @"C:\data\";
         private string TestDataFolder
         {
             get
@@ -116,6 +120,27 @@ namespace Aspose.Cells.Cloud.SDK.Test
             stream.CopyTo(fs);
             fs.Close();
         }
-
+        protected bool Download(Stream stream, string filename)
+        {
+            if ( Directory.Exists(DownloadFolder))
+            {
+                using (FileStream fileStream = File.Create(DownloadFolder + filename))
+                {
+                    fileStream.Position = 0;
+                    stream.CopyTo(fileStream);
+                    fileStream.Close();
+                }
+            }
+            return true;
+        }
+        protected DTO.CellsCloudResponse ToCellsCloudResponse(Stream stream)
+        {
+            stream.Position = 0;
+            using (StreamReader reader = new StreamReader(stream, Encoding.UTF8))
+            {
+                string dto =  reader.ReadToEnd();
+                return JsonConvert.DeserializeObject<DTO.CellsCloudResponse>(dto);
+            }
+        }
     }
 }
