@@ -207,6 +207,33 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>FilesResult</returns>
         FilesResult PostWatermark(IDictionary<string, System.IO.Stream> files, string text, string color);
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="compressLevel"></param>
+        /// <param name="file">File to upload</param>
+        /// <returns>FilesResult</returns>
+        FilesResult PostCompress(IDictionary<string, System.IO.Stream> files, int? compressLevel);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="text"></param>
+        /// <param name="newtext"></param>
+        /// <param name="password"></param>
+        /// <param name="text"></param>
+        /// <param name="sheetname">File to upload</param>
+        /// <returns>FilesResult</returns>
+        FilesResult PostReplace(IDictionary<string, System.IO.Stream> files, string text, string newtext, string password = null, string sheetname = null);
+
 
     }
 
@@ -1188,6 +1215,147 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (ExceptionFactory != null)
             {
                 Exception exception = ExceptionFactory("PostWatermark", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return (new ApiResponse<FilesResult>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (FilesResult)Configuration.ApiClient.Deserialize(localVarResponse, typeof(FilesResult)))).Data;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="compressLevel"></param>
+        /// <param name="file">File to upload</param>
+        /// <returns>FilesResult</returns>
+        public FilesResult PostCompress(IDictionary<string, System.IO.Stream> files, int? compressLevel)
+        {
+            checkAccessToken();
+            // verify the required parameter 'text' is set
+            if (compressLevel == null)
+                throw new ApiException(400, "Missing required parameter 'text' when calling LiteCellsApi->PostCompress");
+            // verify the required parameter 'file' is set
+            if (files == null)
+                throw new ApiException(400, "Missing required parameter 'file' when calling LiteCellsApi->PostCompress");
+
+            var localVarPath = "/cells/compress";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "multipart/form-data"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (compressLevel != null) localVarQueryParams.Add("compressLevel", Configuration.ApiClient.ParameterToString(compressLevel)); // query parameter
+            
+            foreach (KeyValuePair<string, System.IO.Stream> file in files)
+            {
+                localVarFileParams.Add(file.Key, Configuration.ApiClient.ParameterToFile(file.Key, file.Value));
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PostCompress", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return (new ApiResponse<FilesResult>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (FilesResult)Configuration.ApiClient.Deserialize(localVarResponse, typeof(FilesResult)))).Data;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="text"></param>
+        /// <param name="newtext"></param>
+        /// <param name="password"></param>
+        /// <param name="text"></param>
+        /// <param name="sheetname">File to upload</param>
+        /// <returns>FilesResult</returns>
+        public FilesResult PostReplace(IDictionary<string, System.IO.Stream> files, string text, string newtext, string password = null, string sheetname = null)
+        {
+            checkAccessToken();
+            // verify the required parameter 'text' is set
+            if (text == null)
+                throw new ApiException(400, "Missing required parameter 'text' when calling LiteCellsApi->PostReplace");
+            // verify the required parameter 'color' is set
+            if (newtext == null)
+                throw new ApiException(400, "Missing required parameter 'newtext' when calling LiteCellsApi->PostReplace");
+            // verify the required parameter 'file' is set
+            if (files == null)
+                throw new ApiException(400, "Missing required parameter 'file' when calling LiteCellsApi->PostReplace");
+
+            var localVarPath = "/cells/replace";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "multipart/form-data"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (text != null) localVarQueryParams.Add("text", Configuration.ApiClient.ParameterToString(text)); // query parameter
+            if (newtext != null) localVarQueryParams.Add("newtext", Configuration.ApiClient.ParameterToString(newtext)); // query parameter
+            if (password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(password)); // query parameter
+            if (sheetname != null) localVarQueryParams.Add("sheetname", Configuration.ApiClient.ParameterToString(sheetname)); // query parameter
+            foreach (KeyValuePair<string, System.IO.Stream> file in files)
+            {
+                localVarFileParams.Add(file.Key, Configuration.ApiClient.ParameterToFile(file.Key, file.Value));
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PostReplace", localVarResponse);
                 if (exception != null) throw exception;
             }
 

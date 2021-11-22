@@ -5749,6 +5749,31 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ApiResponse of CellsCloudResponse</returns>
         ApiResponse<CellsCloudResponse> CellsWorkbookDeleteWorkbookNamesWithHttpInfo(string name, string folder = null, string storageName = null);
         /// <summary>
+        /// Get page count for workbook.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Object</returns>
+        Object CellsWorkbookGetPageCount(string name, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// Get page count for workbook.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> CellsWorkbookGetPageCountWithHttpInfo(string name, string folder = null, string storageName = null);
+        /// <summary>
         /// Read workbook info or export.
         /// </summary>
         /// <remarks>
@@ -6640,8 +6665,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>WorksheetsResponse</returns>
-        WorksheetsResponse CellsWorksheetsDeleteWorksheet(string name, string sheetName, string folder = null, string storageName = null);
+        /// <returns>CellsCloudResponse</returns>
+        CellsCloudResponse CellsWorksheetsDeleteWorksheet(string name, string sheetName, string folder = null, string storageName = null);
 
         /// <summary>
         /// Delete worksheet.
@@ -6654,8 +6679,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ApiResponse of WorksheetsResponse</returns>
-        ApiResponse<WorksheetsResponse> CellsWorksheetsDeleteWorksheetWithHttpInfo(string name, string sheetName, string folder = null, string storageName = null);
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        ApiResponse<CellsCloudResponse> CellsWorksheetsDeleteWorksheetWithHttpInfo(string name, string sheetName, string folder = null, string storageName = null);
         /// <summary>
         /// Set worksheet background image.
         /// </summary>
@@ -6826,6 +6851,33 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>ApiResponse of RangesResponse</returns>
         ApiResponse<RangesResponse> CellsWorksheetsGetNamedRangesWithHttpInfo(string name, string folder = null, string storageName = null);
+        /// <summary>
+        /// Get page count for worksheet.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Object</returns>
+        Object CellsWorksheetsGetPageCount(string name, string sheetName, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// Get page count for worksheet.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> CellsWorksheetsGetPageCountWithHttpInfo(string name, string sheetName, string folder = null, string storageName = null);
         /// <summary>
         /// Read worksheet info or export.
         /// </summary>
@@ -7210,8 +7262,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="moving">with moving parameters. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>WorksheetsResponse</returns>
-        WorksheetsResponse CellsWorksheetsPostMoveWorksheet(string name, string sheetName, WorksheetMovingRequest moving = null, string folder = null, string storageName = null);
+        /// <returns>CellsCloudResponse</returns>
+        CellsCloudResponse CellsWorksheetsPostMoveWorksheet(string name, string sheetName, WorksheetMovingRequest moving = null, string folder = null, string storageName = null);
 
         /// <summary>
         /// Move worksheet.
@@ -7225,8 +7277,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="moving">with moving parameters. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ApiResponse of WorksheetsResponse</returns>
-        ApiResponse<WorksheetsResponse> CellsWorksheetsPostMoveWorksheetWithHttpInfo(string name, string sheetName, WorksheetMovingRequest moving = null, string folder = null, string storageName = null);
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        ApiResponse<CellsCloudResponse> CellsWorksheetsPostMoveWorksheetWithHttpInfo(string name, string sheetName, WorksheetMovingRequest moving = null, string folder = null, string storageName = null);
         /// <summary>
         /// Rename worksheet
         /// </summary>
@@ -7449,8 +7501,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheettype">The new sheet type. (optional)</param>
         /// <param name="folder">Document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>WorksheetsResponse</returns>
-        WorksheetsResponse CellsWorksheetsPutAddNewWorksheet(string name, string sheetName, int? position = null, string sheettype = null, string folder = null, string storageName = null);
+        /// <returns>CellsCloudResponse</returns>
+        CellsCloudResponse CellsWorksheetsPutAddNewWorksheet(string name, string sheetName, int? position = null, string sheettype = null, string folder = null, string storageName = null);
 
         /// <summary>
         /// Add new worksheet.
@@ -7465,8 +7517,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheettype">The new sheet type. (optional)</param>
         /// <param name="folder">Document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ApiResponse of WorksheetsResponse</returns>
-        ApiResponse<WorksheetsResponse> CellsWorksheetsPutAddNewWorksheetWithHttpInfo(string name, string sheetName, int? position = null, string sheettype = null, string folder = null, string storageName = null);
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        ApiResponse<CellsCloudResponse> CellsWorksheetsPutAddNewWorksheetWithHttpInfo(string name, string sheetName, int? position = null, string sheettype = null, string folder = null, string storageName = null);
         /// <summary>
         /// Change worksheet visibility.
         /// </summary>
@@ -7479,8 +7531,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isVisible">New worksheet visibility value.</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>WorksheetResponse</returns>
-        WorksheetResponse CellsWorksheetsPutChangeVisibilityWorksheet(string name, string sheetName, bool? isVisible, string folder = null, string storageName = null);
+        /// <returns>CellsCloudResponse</returns>
+        CellsCloudResponse CellsWorksheetsPutChangeVisibilityWorksheet(string name, string sheetName, bool? isVisible, string folder = null, string storageName = null);
 
         /// <summary>
         /// Change worksheet visibility.
@@ -7494,8 +7546,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isVisible">New worksheet visibility value.</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ApiResponse of WorksheetResponse</returns>
-        ApiResponse<WorksheetResponse> CellsWorksheetsPutChangeVisibilityWorksheetWithHttpInfo(string name, string sheetName, bool? isVisible, string folder = null, string storageName = null);
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        ApiResponse<CellsCloudResponse> CellsWorksheetsPutChangeVisibilityWorksheetWithHttpInfo(string name, string sheetName, bool? isVisible, string folder = null, string storageName = null);
         /// <summary>
         /// Protect worksheet.
         /// </summary>
@@ -13728,6 +13780,31 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorkbookDeleteWorkbookNamesAsyncWithHttpInfo (string name, string folder = null, string storageName = null);
         /// <summary>
+        /// Get page count for workbook.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="folder">Document&#39;s folder.(optional)</param>
+        /// <param name="storageName">storage name.(optional)</param>
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> CellsWorkbookGetPageCountAsync (string name, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// Get page count for workbook.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="folder">Document&#39;s folder.(optional)</param>
+        /// <param name="storageName">storage name.(optional)</param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> CellsWorkbookGetPageCountAsyncWithHttpInfo (string name, string folder = null, string storageName = null);
+        /// <summary>
         /// Read workbook info or export.
         /// </summary>
         /// <remarks>
@@ -14619,8 +14696,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder.(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
-        /// <returns>Task of WorksheetsResponse</returns>
-        System.Threading.Tasks.Task<WorksheetsResponse> CellsWorksheetsDeleteWorksheetAsync (string name, string sheetName, string folder = null, string storageName = null);
+        /// <returns>Task of CellsCloudResponse</returns>
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsWorksheetsDeleteWorksheetAsync (string name, string sheetName, string folder = null, string storageName = null);
 
         /// <summary>
         /// Delete worksheet.
@@ -14633,8 +14710,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder.(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
-        /// <returns>Task of ApiResponse (WorksheetsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<WorksheetsResponse>> CellsWorksheetsDeleteWorksheetAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storageName = null);
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorksheetsDeleteWorksheetAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storageName = null);
         /// <summary>
         /// Set worksheet background image.
         /// </summary>
@@ -14805,6 +14882,33 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name.(optional)</param>
         /// <returns>Task of ApiResponse (RangesResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<RangesResponse>> CellsWorksheetsGetNamedRangesAsyncWithHttpInfo (string name, string folder = null, string storageName = null);
+        /// <summary>
+        /// Get page count for worksheet.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="folder">Document&#39;s folder.(optional)</param>
+        /// <param name="storageName">storage name.(optional)</param>
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> CellsWorksheetsGetPageCountAsync (string name, string sheetName, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// Get page count for worksheet.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="folder">Document&#39;s folder.(optional)</param>
+        /// <param name="storageName">storage name.(optional)</param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> CellsWorksheetsGetPageCountAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storageName = null);
         /// <summary>
         /// Read worksheet info or export.
         /// </summary>
@@ -15189,8 +15293,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="moving">with moving parameters.(optional)</param>
         /// <param name="folder">The document folder.(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
-        /// <returns>Task of WorksheetsResponse</returns>
-        System.Threading.Tasks.Task<WorksheetsResponse> CellsWorksheetsPostMoveWorksheetAsync (string name, string sheetName, WorksheetMovingRequest moving = null, string folder = null, string storageName = null);
+        /// <returns>Task of CellsCloudResponse</returns>
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsWorksheetsPostMoveWorksheetAsync (string name, string sheetName, WorksheetMovingRequest moving = null, string folder = null, string storageName = null);
 
         /// <summary>
         /// Move worksheet.
@@ -15204,8 +15308,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="moving">with moving parameters.(optional)</param>
         /// <param name="folder">The document folder.(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
-        /// <returns>Task of ApiResponse (WorksheetsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<WorksheetsResponse>> CellsWorksheetsPostMoveWorksheetAsyncWithHttpInfo (string name, string sheetName, WorksheetMovingRequest moving = null, string folder = null, string storageName = null);
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorksheetsPostMoveWorksheetAsyncWithHttpInfo (string name, string sheetName, WorksheetMovingRequest moving = null, string folder = null, string storageName = null);
         /// <summary>
         /// Rename worksheet
         /// </summary>
@@ -15428,8 +15532,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheettype">The new sheet type.(optional)</param>
         /// <param name="folder">Document folder.(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
-        /// <returns>Task of WorksheetsResponse</returns>
-        System.Threading.Tasks.Task<WorksheetsResponse> CellsWorksheetsPutAddNewWorksheetAsync (string name, string sheetName, int? position = null, string sheettype = null, string folder = null, string storageName = null);
+        /// <returns>Task of CellsCloudResponse</returns>
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsWorksheetsPutAddNewWorksheetAsync (string name, string sheetName, int? position = null, string sheettype = null, string folder = null, string storageName = null);
 
         /// <summary>
         /// Add new worksheet.
@@ -15444,8 +15548,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheettype">The new sheet type.(optional)</param>
         /// <param name="folder">Document folder.(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
-        /// <returns>Task of ApiResponse (WorksheetsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<WorksheetsResponse>> CellsWorksheetsPutAddNewWorksheetAsyncWithHttpInfo (string name, string sheetName, int? position = null, string sheettype = null, string folder = null, string storageName = null);
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorksheetsPutAddNewWorksheetAsyncWithHttpInfo (string name, string sheetName, int? position = null, string sheettype = null, string folder = null, string storageName = null);
         /// <summary>
         /// Change worksheet visibility.
         /// </summary>
@@ -15458,8 +15562,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isVisible">New worksheet visibility value.</param>
         /// <param name="folder">The document folder.(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
-        /// <returns>Task of WorksheetResponse</returns>
-        System.Threading.Tasks.Task<WorksheetResponse> CellsWorksheetsPutChangeVisibilityWorksheetAsync (string name, string sheetName, bool? isVisible, string folder = null, string storageName = null);
+        /// <returns>Task of CellsCloudResponse</returns>
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsWorksheetsPutChangeVisibilityWorksheetAsync (string name, string sheetName, bool? isVisible, string folder = null, string storageName = null);
 
         /// <summary>
         /// Change worksheet visibility.
@@ -15473,8 +15577,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isVisible">New worksheet visibility value.</param>
         /// <param name="folder">The document folder.(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
-        /// <returns>Task of ApiResponse (WorksheetResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<WorksheetResponse>> CellsWorksheetsPutChangeVisibilityWorksheetAsyncWithHttpInfo (string name, string sheetName, bool? isVisible, string folder = null, string storageName = null);
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorksheetsPutChangeVisibilityWorksheetAsyncWithHttpInfo (string name, string sheetName, bool? isVisible, string folder = null, string storageName = null);
         /// <summary>
         /// Protect worksheet.
         /// </summary>
@@ -49672,6 +49776,154 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
         /// <summary>
+        /// Get page count for workbook. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Object</returns>
+        public Object CellsWorkbookGetPageCount(string name, string folder = null, string storageName = null)
+        {
+             checkAccessToken();
+             ApiResponse<Object> localVarResponse = CellsWorkbookGetPageCountWithHttpInfo(name, folder, storageName);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get page count for workbook. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse< Object > CellsWorkbookGetPageCountWithHttpInfo(string name, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsWorkbookGetPageCount");
+
+            var localVarPath = "/cells/{name}/pagecount";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsWorkbookGetPageCount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Object) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+        }
+
+        /// <summary>
+        /// Get page count for workbook. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> CellsWorkbookGetPageCountAsync (string name, string folder = null, string storageName = null)
+        {
+             ApiResponse<Object> localVarResponse = await CellsWorkbookGetPageCountAsyncWithHttpInfo(name, folder, storageName);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get page count for workbook. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> CellsWorkbookGetPageCountAsyncWithHttpInfo (string name, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsWorkbookGetPageCount");
+
+            var localVarPath = "/cells/{name}/pagecount";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsWorkbookGetPageCount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Object) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+        }
+
+        /// <summary>
         /// Read workbook info or export. 
         /// </summary>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
@@ -54875,11 +55127,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>WorksheetsResponse</returns>
-        public WorksheetsResponse CellsWorksheetsDeleteWorksheet(string name, string sheetName, string folder = null, string storageName = null)
+        /// <returns>CellsCloudResponse</returns>
+        public CellsCloudResponse CellsWorksheetsDeleteWorksheet(string name, string sheetName, string folder = null, string storageName = null)
         {
              checkAccessToken();
-             ApiResponse<WorksheetsResponse> localVarResponse = CellsWorksheetsDeleteWorksheetWithHttpInfo(name, sheetName, folder, storageName);
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsDeleteWorksheetWithHttpInfo(name, sheetName, folder, storageName);
              return localVarResponse.Data;
         }
 
@@ -54891,8 +55143,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ApiResponse of WorksheetsResponse</returns>
-        public ApiResponse< WorksheetsResponse > CellsWorksheetsDeleteWorksheetWithHttpInfo(string name, string sheetName, string folder = null, string storageName = null)
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        public ApiResponse< CellsCloudResponse > CellsWorksheetsDeleteWorksheetWithHttpInfo(string name, string sheetName, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -54942,9 +55194,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<WorksheetsResponse>(localVarStatusCode,
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (WorksheetsResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(WorksheetsResponse)));
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
         }
 
         /// <summary>
@@ -54955,10 +55207,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>Task of WorksheetsResponse</returns>
-        public async System.Threading.Tasks.Task<WorksheetsResponse> CellsWorksheetsDeleteWorksheetAsync (string name, string sheetName, string folder = null, string storageName = null)
+        /// <returns>Task of CellsCloudResponse</returns>
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsWorksheetsDeleteWorksheetAsync (string name, string sheetName, string folder = null, string storageName = null)
         {
-             ApiResponse<WorksheetsResponse> localVarResponse = await CellsWorksheetsDeleteWorksheetAsyncWithHttpInfo(name, sheetName, folder, storageName);
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsWorksheetsDeleteWorksheetAsyncWithHttpInfo(name, sheetName, folder, storageName);
              return localVarResponse.Data;
 
         }
@@ -54971,8 +55223,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>Task of ApiResponse (WorksheetsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<WorksheetsResponse>> CellsWorksheetsDeleteWorksheetAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storageName = null)
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorksheetsDeleteWorksheetAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -55022,9 +55274,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<WorksheetsResponse>(localVarStatusCode,
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (WorksheetsResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(WorksheetsResponse)));
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
         }
 
         /// <summary>
@@ -56047,6 +56299,166 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return new ApiResponse<RangesResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (RangesResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(RangesResponse)));
+        }
+
+        /// <summary>
+        /// Get page count for worksheet. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Object</returns>
+        public Object CellsWorksheetsGetPageCount(string name, string sheetName, string folder = null, string storageName = null)
+        {
+             checkAccessToken();
+             ApiResponse<Object> localVarResponse = CellsWorksheetsGetPageCountWithHttpInfo(name, sheetName, folder, storageName);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get page count for worksheet. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse< Object > CellsWorksheetsGetPageCountWithHttpInfo(string name, string sheetName, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsWorksheetsGetPageCount");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsWorksheetsGetPageCount");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/pagecount";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsWorksheetsGetPageCount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Object) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+        }
+
+        /// <summary>
+        /// Get page count for worksheet. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> CellsWorksheetsGetPageCountAsync (string name, string sheetName, string folder = null, string storageName = null)
+        {
+             ApiResponse<Object> localVarResponse = await CellsWorksheetsGetPageCountAsyncWithHttpInfo(name, sheetName, folder, storageName);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get page count for worksheet. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> CellsWorksheetsGetPageCountAsyncWithHttpInfo (string name, string sheetName, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsWorksheetsGetPageCount");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsWorksheetsGetPageCount");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/pagecount";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsWorksheetsGetPageCount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Object) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -58226,11 +58638,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="moving">with moving parameters. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>WorksheetsResponse</returns>
-        public WorksheetsResponse CellsWorksheetsPostMoveWorksheet(string name, string sheetName, WorksheetMovingRequest moving = null, string folder = null, string storageName = null)
+        /// <returns>CellsCloudResponse</returns>
+        public CellsCloudResponse CellsWorksheetsPostMoveWorksheet(string name, string sheetName, WorksheetMovingRequest moving = null, string folder = null, string storageName = null)
         {
              checkAccessToken();
-             ApiResponse<WorksheetsResponse> localVarResponse = CellsWorksheetsPostMoveWorksheetWithHttpInfo(name, sheetName, moving, folder, storageName);
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsPostMoveWorksheetWithHttpInfo(name, sheetName, moving, folder, storageName);
              return localVarResponse.Data;
         }
 
@@ -58243,8 +58655,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="moving">with moving parameters. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ApiResponse of WorksheetsResponse</returns>
-        public ApiResponse< WorksheetsResponse > CellsWorksheetsPostMoveWorksheetWithHttpInfo(string name, string sheetName, WorksheetMovingRequest moving = null, string folder = null, string storageName = null)
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        public ApiResponse< CellsCloudResponse > CellsWorksheetsPostMoveWorksheetWithHttpInfo(string name, string sheetName, WorksheetMovingRequest moving = null, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -58302,9 +58714,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<WorksheetsResponse>(localVarStatusCode,
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (WorksheetsResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(WorksheetsResponse)));
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
         }
 
         /// <summary>
@@ -58316,10 +58728,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="moving">with moving parameters. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>Task of WorksheetsResponse</returns>
-        public async System.Threading.Tasks.Task<WorksheetsResponse> CellsWorksheetsPostMoveWorksheetAsync (string name, string sheetName, WorksheetMovingRequest moving = null, string folder = null, string storageName = null)
+        /// <returns>Task of CellsCloudResponse</returns>
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsWorksheetsPostMoveWorksheetAsync (string name, string sheetName, WorksheetMovingRequest moving = null, string folder = null, string storageName = null)
         {
-             ApiResponse<WorksheetsResponse> localVarResponse = await CellsWorksheetsPostMoveWorksheetAsyncWithHttpInfo(name, sheetName, moving, folder, storageName);
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsWorksheetsPostMoveWorksheetAsyncWithHttpInfo(name, sheetName, moving, folder, storageName);
              return localVarResponse.Data;
 
         }
@@ -58333,8 +58745,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="moving">with moving parameters. (optional)</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>Task of ApiResponse (WorksheetsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<WorksheetsResponse>> CellsWorksheetsPostMoveWorksheetAsyncWithHttpInfo (string name, string sheetName, WorksheetMovingRequest moving = null, string folder = null, string storageName = null)
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorksheetsPostMoveWorksheetAsyncWithHttpInfo (string name, string sheetName, WorksheetMovingRequest moving = null, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -58392,9 +58804,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<WorksheetsResponse>(localVarStatusCode,
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (WorksheetsResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(WorksheetsResponse)));
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
         }
 
         /// <summary>
@@ -59671,11 +60083,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheettype">The new sheet type. (optional)</param>
         /// <param name="folder">Document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>WorksheetsResponse</returns>
-        public WorksheetsResponse CellsWorksheetsPutAddNewWorksheet(string name, string sheetName, int? position = null, string sheettype = null, string folder = null, string storageName = null)
+        /// <returns>CellsCloudResponse</returns>
+        public CellsCloudResponse CellsWorksheetsPutAddNewWorksheet(string name, string sheetName, int? position = null, string sheettype = null, string folder = null, string storageName = null)
         {
              checkAccessToken();
-             ApiResponse<WorksheetsResponse> localVarResponse = CellsWorksheetsPutAddNewWorksheetWithHttpInfo(name, sheetName, position, sheettype, folder, storageName);
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsPutAddNewWorksheetWithHttpInfo(name, sheetName, position, sheettype, folder, storageName);
              return localVarResponse.Data;
         }
 
@@ -59689,8 +60101,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheettype">The new sheet type. (optional)</param>
         /// <param name="folder">Document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ApiResponse of WorksheetsResponse</returns>
-        public ApiResponse< WorksheetsResponse > CellsWorksheetsPutAddNewWorksheetWithHttpInfo(string name, string sheetName, int? position = null, string sheettype = null, string folder = null, string storageName = null)
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        public ApiResponse< CellsCloudResponse > CellsWorksheetsPutAddNewWorksheetWithHttpInfo(string name, string sheetName, int? position = null, string sheettype = null, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -59742,9 +60154,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<WorksheetsResponse>(localVarStatusCode,
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (WorksheetsResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(WorksheetsResponse)));
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
         }
 
         /// <summary>
@@ -59757,10 +60169,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheettype">The new sheet type. (optional)</param>
         /// <param name="folder">Document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>Task of WorksheetsResponse</returns>
-        public async System.Threading.Tasks.Task<WorksheetsResponse> CellsWorksheetsPutAddNewWorksheetAsync (string name, string sheetName, int? position = null, string sheettype = null, string folder = null, string storageName = null)
+        /// <returns>Task of CellsCloudResponse</returns>
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsWorksheetsPutAddNewWorksheetAsync (string name, string sheetName, int? position = null, string sheettype = null, string folder = null, string storageName = null)
         {
-             ApiResponse<WorksheetsResponse> localVarResponse = await CellsWorksheetsPutAddNewWorksheetAsyncWithHttpInfo(name, sheetName, position, sheettype, folder, storageName);
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsWorksheetsPutAddNewWorksheetAsyncWithHttpInfo(name, sheetName, position, sheettype, folder, storageName);
              return localVarResponse.Data;
 
         }
@@ -59775,8 +60187,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheettype">The new sheet type. (optional)</param>
         /// <param name="folder">Document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>Task of ApiResponse (WorksheetsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<WorksheetsResponse>> CellsWorksheetsPutAddNewWorksheetAsyncWithHttpInfo (string name, string sheetName, int? position = null, string sheettype = null, string folder = null, string storageName = null)
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorksheetsPutAddNewWorksheetAsyncWithHttpInfo (string name, string sheetName, int? position = null, string sheettype = null, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -59828,9 +60240,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<WorksheetsResponse>(localVarStatusCode,
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (WorksheetsResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(WorksheetsResponse)));
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
         }
 
         /// <summary>
@@ -59842,11 +60254,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isVisible">New worksheet visibility value.</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>WorksheetResponse</returns>
-        public WorksheetResponse CellsWorksheetsPutChangeVisibilityWorksheet(string name, string sheetName, bool? isVisible, string folder = null, string storageName = null)
+        /// <returns>CellsCloudResponse</returns>
+        public CellsCloudResponse CellsWorksheetsPutChangeVisibilityWorksheet(string name, string sheetName, bool? isVisible, string folder = null, string storageName = null)
         {
              checkAccessToken();
-             ApiResponse<WorksheetResponse> localVarResponse = CellsWorksheetsPutChangeVisibilityWorksheetWithHttpInfo(name, sheetName, isVisible, folder, storageName);
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsPutChangeVisibilityWorksheetWithHttpInfo(name, sheetName, isVisible, folder, storageName);
              return localVarResponse.Data;
         }
 
@@ -59859,8 +60271,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isVisible">New worksheet visibility value.</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ApiResponse of WorksheetResponse</returns>
-        public ApiResponse< WorksheetResponse > CellsWorksheetsPutChangeVisibilityWorksheetWithHttpInfo(string name, string sheetName, bool? isVisible, string folder = null, string storageName = null)
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        public ApiResponse< CellsCloudResponse > CellsWorksheetsPutChangeVisibilityWorksheetWithHttpInfo(string name, string sheetName, bool? isVisible, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -59914,9 +60326,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<WorksheetResponse>(localVarStatusCode,
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (WorksheetResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(WorksheetResponse)));
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
         }
 
         /// <summary>
@@ -59928,10 +60340,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isVisible">New worksheet visibility value.</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>Task of WorksheetResponse</returns>
-        public async System.Threading.Tasks.Task<WorksheetResponse> CellsWorksheetsPutChangeVisibilityWorksheetAsync (string name, string sheetName, bool? isVisible, string folder = null, string storageName = null)
+        /// <returns>Task of CellsCloudResponse</returns>
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsWorksheetsPutChangeVisibilityWorksheetAsync (string name, string sheetName, bool? isVisible, string folder = null, string storageName = null)
         {
-             ApiResponse<WorksheetResponse> localVarResponse = await CellsWorksheetsPutChangeVisibilityWorksheetAsyncWithHttpInfo(name, sheetName, isVisible, folder, storageName);
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsWorksheetsPutChangeVisibilityWorksheetAsyncWithHttpInfo(name, sheetName, isVisible, folder, storageName);
              return localVarResponse.Data;
 
         }
@@ -59945,8 +60357,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="isVisible">New worksheet visibility value.</param>
         /// <param name="folder">The document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>Task of ApiResponse (WorksheetResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<WorksheetResponse>> CellsWorksheetsPutChangeVisibilityWorksheetAsyncWithHttpInfo (string name, string sheetName, bool? isVisible, string folder = null, string storageName = null)
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorksheetsPutChangeVisibilityWorksheetAsyncWithHttpInfo (string name, string sheetName, bool? isVisible, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -60000,9 +60412,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<WorksheetResponse>(localVarStatusCode,
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (WorksheetResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(WorksheetResponse)));
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
         }
 
         /// <summary>

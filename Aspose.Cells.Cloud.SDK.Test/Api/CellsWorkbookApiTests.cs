@@ -632,6 +632,20 @@ namespace Aspose.Cells.Cloud.SDK.Test
             Assert.IsInstanceOf<CellsCloudResponse>(response, "response is WorkbookResponse");
             Assert.AreEqual(response.Code, 200);
         }
+
+        [Test]
+        public void CellsWorkbookGetPageCountTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+
+            string name = BOOK1;
+            string folder = TEMPFOLDER;
+           
+            UpdateDataFile(instance, folder, name);
+            var response = instance.CellsWorkbookGetPageCount(name, folder);
+            Assert.IsInstanceOf<long>(response, "response is WorkbookResponse");
+            Assert.Greater((long)response ,0);
+        }
     }
 
 }

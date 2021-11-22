@@ -126,8 +126,8 @@ namespace Aspose.Cells.Cloud.SDK.Test
             batchConvertRequest.OutFolder = OutPut;
             var response = instance.PostBatchConvert(batchConvertRequest);
             Assert.IsInstanceOf<Stream>(response, "response is CellsCloudResponse");
-            DTO.CellsCloudResponse cellsCloudResponse = ToCellsCloudResponse(response);
-            Assert.AreEqual(cellsCloudResponse.Code, HttpStatusCode.OK);
+            CellsCloudResponse cellsCloudResponse = ToCellsCloudResponse(response);
+            Assert.AreEqual(cellsCloudResponse.Code, 200);
 
         }
 

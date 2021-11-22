@@ -7,6 +7,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
     using System;
     using System.Text;
     using Newtonsoft.Json;
+    using Aspose.Cells.Cloud.SDK.Model;
 
     public class CellsBaseTest
     {
@@ -133,13 +134,13 @@ namespace Aspose.Cells.Cloud.SDK.Test
             }
             return true;
         }
-        protected DTO.CellsCloudResponse ToCellsCloudResponse(Stream stream)
+        protected CellsCloudResponse ToCellsCloudResponse(Stream stream)
         {
             stream.Position = 0;
             using (StreamReader reader = new StreamReader(stream, Encoding.UTF8))
             {
                 string dto =  reader.ReadToEnd();
-                return JsonConvert.DeserializeObject<DTO.CellsCloudResponse>(dto);
+                return JsonConvert.DeserializeObject<CellsCloudResponse>(dto);
             }
         }
     }

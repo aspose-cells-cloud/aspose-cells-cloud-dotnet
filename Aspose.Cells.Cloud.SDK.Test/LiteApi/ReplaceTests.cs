@@ -31,7 +31,7 @@ namespace Aspose.Cells.Cloud.SDK.Test.LiteApi
     /// Please update the test case below to test the API endpoint.
     /// </remarks>
     [TestFixture]
-    public class UnlockTests : CellsBaseTest
+    public class ReplaceTests : CellsBaseTest
     {
         private ILiteCellsApi instance;
 
@@ -54,7 +54,7 @@ namespace Aspose.Cells.Cloud.SDK.Test.LiteApi
         }
         
         [Test]
-        public void PostUnlockApi_Test()
+        public void PostReplaceApi_Test()
         {
             if(IsDockerTest)
             {
@@ -62,12 +62,25 @@ namespace Aspose.Cells.Cloud.SDK.Test.LiteApi
                 return;
             }
             IDictionary<string, Stream> files = new Dictionary<string, Stream>();
-            files.Add(NEEDUNLOCK, GetTestDataStream(NEEDUNLOCK));
-            var filesResult = instance.PostUnlock(files, "123456");
+            files.Add(BOOK1, GetTestDataStream(BOOK1));
+            var filesResult = instance.PostReplace(files, "1","replace ok");
             Assert.IsInstanceOf<Model.FilesResult>(filesResult, "response is FilesResult");
         }
 
-       
+        [Test]
+        public void PostReplaceApi_Sheet_Test()
+        {
+            if (IsDockerTest)
+            {
+                Assert.IsTrue(true);
+                return;
+            }
+            IDictionary<string, Stream> files = new Dictionary<string, Stream>();
+            files.Add(BOOK1, GetTestDataStream(BOOK1));
+            var filesResult = instance.PostReplace(files, "1", "replace ok",null,"Sheet1");
+            Assert.IsInstanceOf<Model.FilesResult>(filesResult, "response is FilesResult");
+        }
+
     }
 
 }
