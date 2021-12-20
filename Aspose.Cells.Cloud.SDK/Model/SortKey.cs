@@ -43,7 +43,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// Gets or sets CustomList
         /// </summary>  
 		[DataMember(Name="CustomList", EmitDefaultValue=false)]
-        public string CustomList { get; set; }
+        public List<string> CustomList { get; set; }
 
         /// <summary>
         /// Gets or sets SortOrder
@@ -58,6 +58,24 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public int? Key { get; set; }
 
         /// <summary>
+        /// Gets or sets Order
+        /// </summary>  
+		[DataMember(Name="Order", EmitDefaultValue=false)]
+        public string Order { get; set; }
+
+        /// <summary>
+        /// Gets or sets Type
+        /// </summary>  
+		[DataMember(Name="Type", EmitDefaultValue=false)]
+        public string Type { get; set; }
+
+        /// <summary>
+        /// Gets or sets Index
+        /// </summary>  
+		[DataMember(Name="Index", EmitDefaultValue=false)]
+        public int? Index { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -68,6 +86,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
           sb.Append("  CustomList: ").Append(this.CustomList).Append("\n");
           sb.Append("  SortOrder: ").Append(this.SortOrder).Append("\n");
           sb.Append("  Key: ").Append(this.Key).Append("\n");
+          sb.Append("  Order: ").Append(this.Order).Append("\n");
+          sb.Append("  Type: ").Append(this.Type).Append("\n");
+          sb.Append("  Index: ").Append(this.Index).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

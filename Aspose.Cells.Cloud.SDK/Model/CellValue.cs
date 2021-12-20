@@ -70,6 +70,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string Value { get; set; }
 
         /// <summary>
+        /// Gets or sets Formula
+        /// </summary>  
+		[DataMember(Name="formula", EmitDefaultValue=false)]
+        public string Formula { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -82,6 +88,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
           sb.Append("  Style: ").Append(this.Style).Append("\n");
           sb.Append("  Type: ").Append(this.Type).Append("\n");
           sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("  Formula: ").Append(this.Formula).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

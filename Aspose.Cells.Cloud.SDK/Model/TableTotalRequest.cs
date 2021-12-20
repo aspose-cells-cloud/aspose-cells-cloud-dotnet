@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ListColumn.cs">
+// <copyright company="Aspose" file="TableTotalRequest.cs">
 //   Copyright (c) 2016 Aspose.Cells for Cloud
 // </copyright>
 // <summary>
@@ -37,31 +37,25 @@ namespace Aspose.Cells.Cloud.SDK.Model
   /// 
   /// </summary>  
   [DataContract]
-  public class ListColumn 
+  public class TableTotalRequest 
   {                       
         /// <summary>
-        /// Gets and sets the type of calculation in the Totals row of the list column.
+        /// Gets or sets ListColumnIndex
+        /// </summary>  
+		[DataMember(Name="ListColumnIndex", EmitDefaultValue=false)]
+        public int? ListColumnIndex { get; set; }
+
+        /// <summary>
+        /// Gets or sets TotalsCalculation
         /// </summary>  
 		[DataMember(Name="TotalsCalculation", EmitDefaultValue=false)]
         public string TotalsCalculation { get; set; }
 
         /// <summary>
-        /// Gets and sets the name of the column.
+        /// Gets or sets CustomFormula
         /// </summary>  
-		[DataMember(Name="Name", EmitDefaultValue=false)]
-        public string Name { get; set; }
-
-        /// <summary>
-        /// Gets and sets the formula of the list column.
-        /// </summary>  
-		[DataMember(Name="Formula", EmitDefaultValue=false)]
-        public string Formula { get; set; }
-
-        /// <summary>
-        /// Gets and sets the formula of the list column.
-        /// </summary>  
-		[DataMember(Name="Range", EmitDefaultValue=false)]
-        public Range Range { get; set; }
+		[DataMember(Name="CustomFormula", EmitDefaultValue=false)]
+        public string CustomFormula { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -70,11 +64,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ListColumn {\n");
+          sb.Append("class TableTotalRequest {\n");
+          sb.Append("  ListColumnIndex: ").Append(this.ListColumnIndex).Append("\n");
           sb.Append("  TotalsCalculation: ").Append(this.TotalsCalculation).Append("\n");
-          sb.Append("  Name: ").Append(this.Name).Append("\n");
-          sb.Append("  Formula: ").Append(this.Formula).Append("\n");
-          sb.Append("  Range: ").Append(this.Range).Append("\n");
+          sb.Append("  CustomFormula: ").Append(this.CustomFormula).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

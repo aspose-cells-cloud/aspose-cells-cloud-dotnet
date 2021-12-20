@@ -234,7 +234,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>FilesResult</returns>
         FilesResult PostReplace(IDictionary<string, System.IO.Stream> files, string text, string newtext, string password = null, string sheetname = null);
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="rotateType"></param>
+        /// <param name="format">File to upload</param>
+        /// <returns>FilesResult</returns>
+        FilesResult PostReverse(IDictionary<string, System.IO.Stream> files, string rotateType, string format = null);
     }
 
     /// <summary>
@@ -1363,6 +1373,71 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (FilesResult)Configuration.ApiClient.Deserialize(localVarResponse, typeof(FilesResult)))).Data;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="rotateType"></param>
+        /// <param name="format">File to upload</param>
+        /// <returns>FilesResult</returns>
+        public FilesResult PostReverse(IDictionary<string, System.IO.Stream> files, string rotateType, string format=null )
+        {
+            checkAccessToken();
+            // verify the required parameter 'rotateType' is set
+            if (rotateType == null)
+                throw new ApiException(400, "Missing required parameter 'text' when calling LiteCellsApi->PostReplace");
+            // verify the required parameter 'file' is set
+            if (files == null)
+                throw new ApiException(400, "Missing required parameter 'file' when calling LiteCellsApi->PostReplace");
 
+            var localVarPath = "/cells/replace";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "multipart/form-data"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (rotateType != null) localVarQueryParams.Add("rotateType", Configuration.ApiClient.ParameterToString(rotateType)); // query parameter
+            if (format != null) localVarQueryParams.Add("newtext", Configuration.ApiClient.ParameterToString(format)); // query parameter
+            foreach (KeyValuePair<string, System.IO.Stream> file in files)
+            {
+                localVarFileParams.Add(file.Key, Configuration.ApiClient.ParameterToFile(file.Key, file.Value));
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PostReplace", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return (new ApiResponse<FilesResult>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (FilesResult)Configuration.ApiClient.Deserialize(localVarResponse, typeof(FilesResult)))).Data;
+        }
     }
 }
