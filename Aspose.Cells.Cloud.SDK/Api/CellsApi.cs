@@ -5400,6 +5400,35 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
+        /// <param name="listShape">group shape indexs in worksheet shapes.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        CellsCloudResponse CellsShapesPostWorksheetGroupShape(string name, string sheetName, List<int?> listShape, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// Update a shape in worksheet
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">document name.</param>
+        /// <param name="sheetName">worksheet name.</param>
+        /// <param name="listShape">group shape indexs in worksheet shapes.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        ApiResponse<CellsCloudResponse> CellsShapesPostWorksheetGroupShapeWithHttpInfo(string name, string sheetName, List<int?> listShape, string folder = null, string storageName = null);
+        /// <summary>
+        /// Update a shape in worksheet
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">document name.</param>
+        /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="dto"> (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
@@ -5431,40 +5460,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
-        /// <param name="listShape">group shape indexs in worksheet shapes.</param>
-        /// <param name="folder">Document&#39;s folder. (optional)</param>
-        /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>CellsCloudResponse</returns>
-        CellsCloudResponse CellsShapesPostWorksheetUngroupShape(string name, string sheetName, List<> listShape, string folder = null, string storageName = null);
-
-        /// <summary>
-        /// Update a shape in worksheet
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="name">document name.</param>
-        /// <param name="sheetName">worksheet name.</param>
-        /// <param name="listShape">group shape indexs in worksheet shapes.</param>
-        /// <param name="folder">Document&#39;s folder. (optional)</param>
-        /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ApiResponse of CellsCloudResponse</returns>
-        ApiResponse<CellsCloudResponse> CellsShapesPostWorksheetUngroupShapeWithHttpInfo(string name, string sheetName, List<> listShape, string folder = null, string storageName = null);
-        /// <summary>
-        /// Update a shape in worksheet
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="name">document name.</param>
-        /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>CellsCloudResponse</returns>
-        CellsCloudResponse CellsShapesPostWorksheetUngroupShape_0(string name, string sheetName, int? shapeindex, string folder = null, string storageName = null);
+        CellsCloudResponse CellsShapesPostWorksheetUngroupShape(string name, string sheetName, int? shapeindex, string folder = null, string storageName = null);
 
         /// <summary>
         /// Update a shape in worksheet
@@ -5479,7 +5479,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="folder">Document&#39;s folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>ApiResponse of CellsCloudResponse</returns>
-        ApiResponse<CellsCloudResponse> CellsShapesPostWorksheetUngroupShape_0WithHttpInfo(string name, string sheetName, int? shapeindex, string folder = null, string storageName = null);
+        ApiResponse<CellsCloudResponse> CellsShapesPostWorksheetUngroupShapeWithHttpInfo(string name, string sheetName, int? shapeindex, string folder = null, string storageName = null);
         /// <summary>
         /// Add shape in worksheet
         /// </summary>
@@ -13563,6 +13563,35 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
+        /// <param name="listShape">group shape indexs in worksheet shapes.</param>
+        /// <param name="folder">Document&#39;s folder.(optional)</param>
+        /// <param name="storageName">storage name.(optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsShapesPostWorksheetGroupShapeAsync (string name, string sheetName, List<int?> listShape, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// Update a shape in worksheet
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">document name.</param>
+        /// <param name="sheetName">worksheet name.</param>
+        /// <param name="listShape">group shape indexs in worksheet shapes.</param>
+        /// <param name="folder">Document&#39;s folder.(optional)</param>
+        /// <param name="storageName">storage name.(optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsShapesPostWorksheetGroupShapeAsyncWithHttpInfo (string name, string sheetName, List<int?> listShape, string folder = null, string storageName = null);
+        /// <summary>
+        /// Update a shape in worksheet
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">document name.</param>
+        /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="dto">(optional)</param>
         /// <param name="folder">Document&#39;s folder.(optional)</param>
@@ -13594,40 +13623,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
-        /// <param name="listShape">group shape indexs in worksheet shapes.</param>
-        /// <param name="folder">Document&#39;s folder.(optional)</param>
-        /// <param name="storageName">storage name.(optional)</param>
-        /// <returns>Task of CellsCloudResponse</returns>
-        System.Threading.Tasks.Task<CellsCloudResponse> CellsShapesPostWorksheetUngroupShapeAsync (string name, string sheetName, List<> listShape, string folder = null, string storageName = null);
-
-        /// <summary>
-        /// Update a shape in worksheet
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="name">document name.</param>
-        /// <param name="sheetName">worksheet name.</param>
-        /// <param name="listShape">group shape indexs in worksheet shapes.</param>
-        /// <param name="folder">Document&#39;s folder.(optional)</param>
-        /// <param name="storageName">storage name.(optional)</param>
-        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsShapesPostWorksheetUngroupShapeAsyncWithHttpInfo (string name, string sheetName, List<> listShape, string folder = null, string storageName = null);
-        /// <summary>
-        /// Update a shape in worksheet
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="name">document name.</param>
-        /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="folder">Document&#39;s folder.(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
         /// <returns>Task of CellsCloudResponse</returns>
-        System.Threading.Tasks.Task<CellsCloudResponse> CellsShapesPostWorksheetUngroupShape_0Async (string name, string sheetName, int? shapeindex, string folder = null, string storageName = null);
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsShapesPostWorksheetUngroupShapeAsync (string name, string sheetName, int? shapeindex, string folder = null, string storageName = null);
 
         /// <summary>
         /// Update a shape in worksheet
@@ -13642,7 +13642,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="folder">Document&#39;s folder.(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
         /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsShapesPostWorksheetUngroupShape_0AsyncWithHttpInfo (string name, string sheetName, int? shapeindex, string folder = null, string storageName = null);
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsShapesPostWorksheetUngroupShapeAsyncWithHttpInfo (string name, string sheetName, int? shapeindex, string folder = null, string storageName = null);
         /// <summary>
         /// Add shape in worksheet
         /// </summary>
@@ -47897,6 +47897,192 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
+        /// <param name="listShape">group shape indexs in worksheet shapes.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        public CellsCloudResponse CellsShapesPostWorksheetGroupShape(string name, string sheetName, List<int?> listShape, string folder = null, string storageName = null)
+        {
+             checkAccessToken();
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsShapesPostWorksheetGroupShapeWithHttpInfo(name, sheetName, listShape, folder, storageName);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Update a shape in worksheet 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">document name.</param>
+        /// <param name="sheetName">worksheet name.</param>
+        /// <param name="listShape">group shape indexs in worksheet shapes.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        public ApiResponse< CellsCloudResponse > CellsShapesPostWorksheetGroupShapeWithHttpInfo(string name, string sheetName, List<int?> listShape, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsShapesPostWorksheetGroupShape");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsShapesPostWorksheetGroupShape");
+            // verify the required parameter 'listShape' is set
+            if (listShape == null)
+                throw new ApiException(400, "Missing required parameter 'listShape' when calling CellsApi->CellsShapesPostWorksheetGroupShape");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/shapes/group";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+            if (listShape != null && listShape.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(listShape); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = listShape; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsShapesPostWorksheetGroupShape", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
+        /// Update a shape in worksheet 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">document name.</param>
+        /// <param name="sheetName">worksheet name.</param>
+        /// <param name="listShape">group shape indexs in worksheet shapes.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsShapesPostWorksheetGroupShapeAsync (string name, string sheetName, List<int?> listShape, string folder = null, string storageName = null)
+        {
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsShapesPostWorksheetGroupShapeAsyncWithHttpInfo(name, sheetName, listShape, folder, storageName);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Update a shape in worksheet 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">document name.</param>
+        /// <param name="sheetName">worksheet name.</param>
+        /// <param name="listShape">group shape indexs in worksheet shapes.</param>
+        /// <param name="folder">Document&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsShapesPostWorksheetGroupShapeAsyncWithHttpInfo (string name, string sheetName, List<int?> listShape, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsShapesPostWorksheetGroupShape");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsShapesPostWorksheetGroupShape");
+            // verify the required parameter 'listShape' is set
+            if (listShape == null)
+                throw new ApiException(400, "Missing required parameter 'listShape' when calling CellsApi->CellsShapesPostWorksheetGroupShape");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/shapes/group";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+            if (listShape != null && listShape.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(listShape); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = listShape; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsShapesPostWorksheetGroupShape", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
+        /// Update a shape in worksheet 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">document name.</param>
+        /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="dto"> (optional)</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
@@ -48089,200 +48275,14 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="name">document name.</param>
         /// <param name="sheetName">worksheet name.</param>
-        /// <param name="listShape">group shape indexs in worksheet shapes.</param>
-        /// <param name="folder">Document&#39;s folder. (optional)</param>
-        /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>CellsCloudResponse</returns>
-        public CellsCloudResponse CellsShapesPostWorksheetUngroupShape(string name, string sheetName, List<> listShape, string folder = null, string storageName = null)
-        {
-             checkAccessToken();
-             ApiResponse<CellsCloudResponse> localVarResponse = CellsShapesPostWorksheetUngroupShapeWithHttpInfo(name, sheetName, listShape, folder, storageName);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Update a shape in worksheet 
-        /// </summary>
-        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="name">document name.</param>
-        /// <param name="sheetName">worksheet name.</param>
-        /// <param name="listShape">group shape indexs in worksheet shapes.</param>
-        /// <param name="folder">Document&#39;s folder. (optional)</param>
-        /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ApiResponse of CellsCloudResponse</returns>
-        public ApiResponse< CellsCloudResponse > CellsShapesPostWorksheetUngroupShapeWithHttpInfo(string name, string sheetName, List<> listShape, string folder = null, string storageName = null)
-        {
-            // verify the required parameter 'name' is set
-            if (name == null)
-                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsShapesPostWorksheetUngroupShape");
-            // verify the required parameter 'sheetName' is set
-            if (sheetName == null)
-                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsShapesPostWorksheetUngroupShape");
-            // verify the required parameter 'listShape' is set
-            if (listShape == null)
-                throw new ApiException(400, "Missing required parameter 'listShape' when calling CellsApi->CellsShapesPostWorksheetUngroupShape");
-
-            var localVarPath = "/cells/{name}/worksheets/{sheetName}/shapes/group";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
-            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
-            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
-            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
-            if (listShape != null && listShape.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = Configuration.ApiClient.Serialize(listShape); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = listShape; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("CellsShapesPostWorksheetUngroupShape", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
-        }
-
-        /// <summary>
-        /// Update a shape in worksheet 
-        /// </summary>
-        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="name">document name.</param>
-        /// <param name="sheetName">worksheet name.</param>
-        /// <param name="listShape">group shape indexs in worksheet shapes.</param>
-        /// <param name="folder">Document&#39;s folder. (optional)</param>
-        /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>Task of CellsCloudResponse</returns>
-        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsShapesPostWorksheetUngroupShapeAsync (string name, string sheetName, List<> listShape, string folder = null, string storageName = null)
-        {
-             ApiResponse<CellsCloudResponse> localVarResponse = await CellsShapesPostWorksheetUngroupShapeAsyncWithHttpInfo(name, sheetName, listShape, folder, storageName);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Update a shape in worksheet 
-        /// </summary>
-        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="name">document name.</param>
-        /// <param name="sheetName">worksheet name.</param>
-        /// <param name="listShape">group shape indexs in worksheet shapes.</param>
-        /// <param name="folder">Document&#39;s folder. (optional)</param>
-        /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsShapesPostWorksheetUngroupShapeAsyncWithHttpInfo (string name, string sheetName, List<> listShape, string folder = null, string storageName = null)
-        {
-            // verify the required parameter 'name' is set
-            if (name == null)
-                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsShapesPostWorksheetUngroupShape");
-            // verify the required parameter 'sheetName' is set
-            if (sheetName == null)
-                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsShapesPostWorksheetUngroupShape");
-            // verify the required parameter 'listShape' is set
-            if (listShape == null)
-                throw new ApiException(400, "Missing required parameter 'listShape' when calling CellsApi->CellsShapesPostWorksheetUngroupShape");
-
-            var localVarPath = "/cells/{name}/worksheets/{sheetName}/shapes/group";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
-            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
-            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
-            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
-            if (listShape != null && listShape.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = Configuration.ApiClient.Serialize(listShape); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = listShape; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("CellsShapesPostWorksheetUngroupShape", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
-        }
-
-        /// <summary>
-        /// Update a shape in worksheet 
-        /// </summary>
-        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="name">document name.</param>
-        /// <param name="sheetName">worksheet name.</param>
         /// <param name="shapeindex">shape index in worksheet shapes.</param>
         /// <param name="folder">Document&#39;s folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>CellsCloudResponse</returns>
-        public CellsCloudResponse CellsShapesPostWorksheetUngroupShape_0(string name, string sheetName, int? shapeindex, string folder = null, string storageName = null)
+        public CellsCloudResponse CellsShapesPostWorksheetUngroupShape(string name, string sheetName, int? shapeindex, string folder = null, string storageName = null)
         {
              checkAccessToken();
-             ApiResponse<CellsCloudResponse> localVarResponse = CellsShapesPostWorksheetUngroupShape_0WithHttpInfo(name, sheetName, shapeindex, folder, storageName);
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsShapesPostWorksheetUngroupShapeWithHttpInfo(name, sheetName, shapeindex, folder, storageName);
              return localVarResponse.Data;
         }
 
@@ -48296,17 +48296,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="folder">Document&#39;s folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>ApiResponse of CellsCloudResponse</returns>
-        public ApiResponse< CellsCloudResponse > CellsShapesPostWorksheetUngroupShape_0WithHttpInfo(string name, string sheetName, int? shapeindex, string folder = null, string storageName = null)
+        public ApiResponse< CellsCloudResponse > CellsShapesPostWorksheetUngroupShapeWithHttpInfo(string name, string sheetName, int? shapeindex, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
-                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsShapesPostWorksheetUngroupShape_0");
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsShapesPostWorksheetUngroupShape");
             // verify the required parameter 'sheetName' is set
             if (sheetName == null)
-                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsShapesPostWorksheetUngroupShape_0");
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsShapesPostWorksheetUngroupShape");
             // verify the required parameter 'shapeindex' is set
             if (shapeindex == null)
-                throw new ApiException(400, "Missing required parameter 'shapeindex' when calling CellsApi->CellsShapesPostWorksheetUngroupShape_0");
+                throw new ApiException(400, "Missing required parameter 'shapeindex' when calling CellsApi->CellsShapesPostWorksheetUngroupShape");
 
             var localVarPath = "/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}/ungroup";
             var localVarPathParams = new Dictionary<String, String>();
@@ -48346,7 +48346,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("CellsShapesPostWorksheetUngroupShape_0", localVarResponse);
+                Exception exception = ExceptionFactory("CellsShapesPostWorksheetUngroupShape", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -48365,9 +48365,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="folder">Document&#39;s folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>Task of CellsCloudResponse</returns>
-        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsShapesPostWorksheetUngroupShape_0Async (string name, string sheetName, int? shapeindex, string folder = null, string storageName = null)
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsShapesPostWorksheetUngroupShapeAsync (string name, string sheetName, int? shapeindex, string folder = null, string storageName = null)
         {
-             ApiResponse<CellsCloudResponse> localVarResponse = await CellsShapesPostWorksheetUngroupShape_0AsyncWithHttpInfo(name, sheetName, shapeindex, folder, storageName);
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsShapesPostWorksheetUngroupShapeAsyncWithHttpInfo(name, sheetName, shapeindex, folder, storageName);
              return localVarResponse.Data;
 
         }
@@ -48382,17 +48382,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="folder">Document&#39;s folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsShapesPostWorksheetUngroupShape_0AsyncWithHttpInfo (string name, string sheetName, int? shapeindex, string folder = null, string storageName = null)
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsShapesPostWorksheetUngroupShapeAsyncWithHttpInfo (string name, string sheetName, int? shapeindex, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
-                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsShapesPostWorksheetUngroupShape_0");
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsShapesPostWorksheetUngroupShape");
             // verify the required parameter 'sheetName' is set
             if (sheetName == null)
-                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsShapesPostWorksheetUngroupShape_0");
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsShapesPostWorksheetUngroupShape");
             // verify the required parameter 'shapeindex' is set
             if (shapeindex == null)
-                throw new ApiException(400, "Missing required parameter 'shapeindex' when calling CellsApi->CellsShapesPostWorksheetUngroupShape_0");
+                throw new ApiException(400, "Missing required parameter 'shapeindex' when calling CellsApi->CellsShapesPostWorksheetUngroupShape");
 
             var localVarPath = "/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}/ungroup";
             var localVarPathParams = new Dictionary<String, String>();
@@ -48432,7 +48432,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("CellsShapesPostWorksheetUngroupShape_0", localVarResponse);
+                Exception exception = ExceptionFactory("CellsShapesPostWorksheetUngroupShape", localVarResponse);
                 if (exception != null) throw exception;
             }
 

@@ -590,7 +590,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             double? width = 10;
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,TEMPFOLDER, BOOK1);
-            var response = instance.CellsPostSetWorksheetColumnWidth(name, sheetName, columnIndex, width, folder);
+            var response = instance.CellsPostSetWorksheetColumnWidth(name, sheetName, columnIndex, width,4, folder);
             Assert.IsInstanceOf<CellsCloudResponse>(response, "response is ColumnResponse");
             Assert.AreEqual(response.Status, "OK");
         }
@@ -723,7 +723,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             double? height = 10.8;
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,TEMPFOLDER, BOOK1);
-            var response = instance.CellsPostUpdateWorksheetRow(name, sheetName, rowIndex, height, folder);
+            var response = instance.CellsPostUpdateWorksheetRow(name, sheetName, rowIndex, height,5, folder);
             Assert.IsInstanceOf<CellsCloudResponse>(response, "response is RowResponse");
             Assert.AreEqual(response.Status, "OK");
         }

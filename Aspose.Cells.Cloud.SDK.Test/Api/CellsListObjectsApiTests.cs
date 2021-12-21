@@ -218,7 +218,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             bool? hasHeaders = null;
             UpdateDataFile(instance,folder, name);
-            var response = instance.CellsListObjectsPutWorksheetListObject(name, sheetName, startRow, startColumn, endRow, endColumn, hasHeaders, null, folder);
+            var response = instance.CellsListObjectsPutWorksheetListObject(name, sheetName, startRow, startColumn, endRow, endColumn, hasHeaders,null,null, null, folder);
             Assert.IsInstanceOf<CellsCloudResponse>(response, "response is ListObjectResponse");
             Assert.AreEqual(response.Code, 200);
         }
