@@ -29,6 +29,6 @@
         /// <summary>
         /// 
         /// </summary>
-        public Model.SaveOptions SaveOptions { get; set; }
+        //public Model.SaveOptions SaveOptions { get; set; }
     }
 }

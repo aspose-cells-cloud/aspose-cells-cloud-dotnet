@@ -222,7 +222,48 @@ namespace Aspose.Cells.Cloud.SDK.Test
             Assert.IsInstanceOf<CellsCloudResponse>(response, "response is ListObjectResponse");
             Assert.AreEqual(response.Code, 200);
         }
+        /// <summary>
+        /// Test CellsListObjectsPostWorksheetListColumn
+        /// </summary>
+        [Test]
+        public void CellsListObjectsPostWorksheetListColumnTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            string name = BOOK1;
+            string sheetName = SHEET7;
+            int listObjectIndex = 0;
+            int listColumnIndex =0;
+            ListColumn listColumn = new ListColumn();
+            listColumn.Name = "test cloumn";
+            listColumn.TotalsCalculation = "Average";
+            string folder = TEMPFOLDER;
+            
+            UpdateDataFile(instance, folder, name);
+            var response = instance.CellsListObjectsPostWorksheetListColumn(name, sheetName, listObjectIndex, listColumnIndex, listColumn, folder);
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "CellsListObjectsPostWorksheetListColumn is ok");
+            Assert.AreEqual(response.Code, 200);
+        }
+        /// <summary>
+        /// Test CellsListObjectsPostWorksheetListColumnsTotal
+        /// </summary>
+        [Test]
+        public void CellsListObjectsPostWorksheetListColumnsTotalTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            string name = BOOK1;
+            string sheetName = SHEET7;
+            int listObjectIndex = 0;
+            TableTotalRequest tableTotalRequest = new TableTotalRequest();
+            tableTotalRequest.ListColumnIndex = 1;
+            tableTotalRequest.TotalsCalculation = "Average";
+            
+            string folder = TEMPFOLDER;
 
+            UpdateDataFile(instance, folder, name);
+            var response = instance.CellsListObjectsPostWorksheetListColumnsTotal(name, sheetName, listObjectIndex, tableTotalRequest, folder);
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "CellsListObjectsPostWorksheetListColumnsTotal is ok");
+            Assert.AreEqual(response.Code, 200);
+        }
     }
 
 }
