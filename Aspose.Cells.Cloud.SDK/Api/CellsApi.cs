@@ -16362,6 +16362,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>Task of ApiResponse (FilesUploadResult)</returns>
         System.Threading.Tasks.Task<ApiResponse<FilesUploadResult>> UploadFileAsyncWithHttpInfo (string path, System.IO.Stream file, string storageName = null);
         #endregion Asynchronous Operations
+
+        #region ShortCode Operations
+        void Convert(Requests.ConversionRequest conversionRequest);
+        void Merge(Requests.MergeRequest mergeRequest);
+        #endregion
     }
 
     /// <summary>

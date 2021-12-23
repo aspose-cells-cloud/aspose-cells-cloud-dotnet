@@ -62,6 +62,15 @@ namespace Aspose.Cells.Cloud.SDK.Test
                 return @"C:\TestData\";
             }
         }
+
+        protected string GetInputFilePath(string filename)
+        {
+            return TestDataFolder + filename;
+        }
+        protected string GetOutFilePath(string filename)
+        {
+            return DownloadFolder + filename;
+        }
         protected void UpdateDataFile(CellsApi cellsApi, string folder, string filename)
         {
             bool? exist = cellsApi.ObjectExists(folder + @"\" + filename).Exists;

@@ -560,7 +560,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsPutAddNewWorksheet(name, sheetName, position, sheettype, folder);
             Assert.IsInstanceOf<CellsCloudResponse>(response, "response is WorksheetsResponse");
-            Assert.AreEqual(response.Code, 201);
+            Assert.AreEqual(response.Code, 200);
         }
         
         /// <summary>
