@@ -11,6 +11,7 @@
 using NUnit.Framework;
 using Aspose.Cells.Cloud.SDK.Api;
 using Aspose.Cells.Cloud.SDK.Model;
+using System.Collections.Generic;
 
 namespace Aspose.Cells.Cloud.SDK.Test
 {
@@ -158,7 +159,41 @@ namespace Aspose.Cells.Cloud.SDK.Test
             Assert.IsInstanceOf<CellsCloudResponse>(response, "response is ShapeResponse");
             Assert.AreEqual(response.Code, 200);
         }
-        
+
+        /// <summary>
+        /// Test CellsShapesPostWorksheetShape
+        /// </summary>
+        [Test]
+        public void CellsShapesPostWorksheetGroupShapeTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            string name = BOOK1;
+            string sheetName = SHEET6;
+            List<int?> listIndex = new List<int?>();
+            listIndex.Add(0);
+            listIndex.Add(1);   
+            string folder = TEMPFOLDER;
+            UpdateDataFile(instance, folder, name);
+            var response = instance.CellsShapesPostWorksheetGroupShape(name, sheetName, listIndex,  folder);
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
+            Assert.AreEqual(response.Code, 200);
+        }
+        /// <summary>
+        /// Test CellsShapesPostWorksheetShape
+        /// </summary>
+        [Test]
+        public void CellsShapesPostWorksheetUngroupShapeTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            string name = BOOK1;
+            string sheetName = SHEET6;
+
+            string folder = TEMPFOLDER;
+            UpdateDataFile(instance, folder, name);
+            var response = instance.CellsShapesPostWorksheetUngroupShape(name, sheetName, 6, folder);
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
+            Assert.AreEqual(response.Code, 200);
+        }
     }
 
 }

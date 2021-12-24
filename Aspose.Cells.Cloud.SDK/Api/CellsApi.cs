@@ -2042,7 +2042,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="folder"> (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>CellsCloudResponse</returns>
-        CellsCloudResponse CellsListObjectsPostWorksheetListColumnsTotal(string name, string sheetName, int? listObjectIndex, TableTotalRequest tableTotalRequests = null, string folder = null, string storageName = null);
+        CellsCloudResponse CellsListObjectsPostWorksheetListColumnsTotal(string name, string sheetName, int? listObjectIndex, List<TableTotalRequest> tableTotalRequests = null, string folder = null, string storageName = null);
 
         /// <summary>
         /// 
@@ -2058,7 +2058,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="folder"> (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>ApiResponse of CellsCloudResponse</returns>
-        ApiResponse<CellsCloudResponse> CellsListObjectsPostWorksheetListColumnsTotalWithHttpInfo(string name, string sheetName, int? listObjectIndex, TableTotalRequest tableTotalRequests = null, string folder = null, string storageName = null);
+        ApiResponse<CellsCloudResponse> CellsListObjectsPostWorksheetListColumnsTotalWithHttpInfo(string name, string sheetName, int? listObjectIndex, List<TableTotalRequest> tableTotalRequests = null, string folder = null, string storageName = null);
         /// <summary>
         /// Update  list object 
         /// </summary>
@@ -10205,7 +10205,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="folder">(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
         /// <returns>Task of CellsCloudResponse</returns>
-        System.Threading.Tasks.Task<CellsCloudResponse> CellsListObjectsPostWorksheetListColumnsTotalAsync (string name, string sheetName, int? listObjectIndex, TableTotalRequest tableTotalRequests = null, string folder = null, string storageName = null);
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsListObjectsPostWorksheetListColumnsTotalAsync (string name, string sheetName, int? listObjectIndex, List<TableTotalRequest> tableTotalRequests = null, string folder = null, string storageName = null);
 
         /// <summary>
         /// 
@@ -10221,7 +10221,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="folder">(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
         /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsListObjectsPostWorksheetListColumnsTotalAsyncWithHttpInfo (string name, string sheetName, int? listObjectIndex, TableTotalRequest tableTotalRequests = null, string folder = null, string storageName = null);
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsListObjectsPostWorksheetListColumnsTotalAsyncWithHttpInfo (string name, string sheetName, int? listObjectIndex, List<TableTotalRequest> tableTotalRequests = null, string folder = null, string storageName = null);
         /// <summary>
         /// Update  list object 
         /// </summary>
@@ -16362,11 +16362,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>Task of ApiResponse (FilesUploadResult)</returns>
         System.Threading.Tasks.Task<ApiResponse<FilesUploadResult>> UploadFileAsyncWithHttpInfo (string path, System.IO.Stream file, string storageName = null);
         #endregion Asynchronous Operations
-
-        #region ShortCode Operations
+#region ShortCode Operations
         void Convert(Requests.ConversionRequest conversionRequest);
         void Merge(Requests.MergeRequest mergeRequest);
-        #endregion
+#endregion
     }
 
     /// <summary>
@@ -28117,7 +28116,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="folder"> (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>CellsCloudResponse</returns>
-        public CellsCloudResponse CellsListObjectsPostWorksheetListColumnsTotal(string name, string sheetName, int? listObjectIndex, TableTotalRequest tableTotalRequests = null, string folder = null, string storageName = null)
+        public CellsCloudResponse CellsListObjectsPostWorksheetListColumnsTotal(string name, string sheetName, int? listObjectIndex, List<TableTotalRequest> tableTotalRequests = null, string folder = null, string storageName = null)
         {
              checkAccessToken();
              ApiResponse<CellsCloudResponse> localVarResponse = CellsListObjectsPostWorksheetListColumnsTotalWithHttpInfo(name, sheetName, listObjectIndex, tableTotalRequests, folder, storageName);
@@ -28135,7 +28134,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="folder"> (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>ApiResponse of CellsCloudResponse</returns>
-        public ApiResponse< CellsCloudResponse > CellsListObjectsPostWorksheetListColumnsTotalWithHttpInfo(string name, string sheetName, int? listObjectIndex, TableTotalRequest tableTotalRequests = null, string folder = null, string storageName = null)
+        public ApiResponse< CellsCloudResponse > CellsListObjectsPostWorksheetListColumnsTotalWithHttpInfo(string name, string sheetName, int? listObjectIndex, List<TableTotalRequest> tableTotalRequests = null, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -28213,7 +28212,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="folder"> (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>Task of CellsCloudResponse</returns>
-        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsListObjectsPostWorksheetListColumnsTotalAsync (string name, string sheetName, int? listObjectIndex, TableTotalRequest tableTotalRequests = null, string folder = null, string storageName = null)
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsListObjectsPostWorksheetListColumnsTotalAsync (string name, string sheetName, int? listObjectIndex, List<TableTotalRequest> tableTotalRequests = null, string folder = null, string storageName = null)
         {
              ApiResponse<CellsCloudResponse> localVarResponse = await CellsListObjectsPostWorksheetListColumnsTotalAsyncWithHttpInfo(name, sheetName, listObjectIndex, tableTotalRequests, folder, storageName);
              return localVarResponse.Data;
@@ -28231,7 +28230,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="folder"> (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsListObjectsPostWorksheetListColumnsTotalAsyncWithHttpInfo (string name, string sheetName, int? listObjectIndex, TableTotalRequest tableTotalRequests = null, string folder = null, string storageName = null)
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsListObjectsPostWorksheetListColumnsTotalAsyncWithHttpInfo (string name, string sheetName, int? listObjectIndex, List<TableTotalRequest> tableTotalRequests = null, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)

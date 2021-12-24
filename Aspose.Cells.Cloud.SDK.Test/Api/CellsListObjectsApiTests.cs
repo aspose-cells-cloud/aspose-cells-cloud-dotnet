@@ -253,14 +253,15 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string name = BOOK1;
             string sheetName = SHEET7;
             int listObjectIndex = 0;
+            List<TableTotalRequest> tableTotalRequests = new List<TableTotalRequest>();
             TableTotalRequest tableTotalRequest = new TableTotalRequest();
             tableTotalRequest.ListColumnIndex = 1;
             tableTotalRequest.TotalsCalculation = "Average";
-            
+            tableTotalRequests.Add(tableTotalRequest);
             string folder = TEMPFOLDER;
 
             UpdateDataFile(instance, folder, name);
-            var response = instance.CellsListObjectsPostWorksheetListColumnsTotal(name, sheetName, listObjectIndex, tableTotalRequest, folder);
+            var response = instance.CellsListObjectsPostWorksheetListColumnsTotal(name, sheetName, listObjectIndex, tableTotalRequests, folder);
             Assert.IsInstanceOf<CellsCloudResponse>(response, "CellsListObjectsPostWorksheetListColumnsTotal is ok");
             Assert.AreEqual(response.Code, 200);
         }
