@@ -1388,12 +1388,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
             checkAccessToken();
             // verify the required parameter 'rotateType' is set
             if (rotateType == null)
-                throw new ApiException(400, "Missing required parameter 'text' when calling LiteCellsApi->PostReplace");
+                throw new ApiException(400, "Missing required parameter 'text' when calling LiteCellsApi->PostReverse");
             // verify the required parameter 'file' is set
             if (files == null)
-                throw new ApiException(400, "Missing required parameter 'file' when calling LiteCellsApi->PostReplace");
+                throw new ApiException(400, "Missing required parameter 'file' when calling LiteCellsApi->PostReverse");
 
-            var localVarPath = "/cells/replace";
+            var localVarPath = "/cells/reverse";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
