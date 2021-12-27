@@ -1,4 +1,4 @@
-![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/21.11)
+![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/21.12)
 
 # .NET SDK for Spreadsheet Processing in the Cloud
 
@@ -21,15 +21,17 @@ The Cloud SDK enhances your C#, ASP.NET, & other .NET-based cloud apps to [proce
 - [Leverage the power of Pivot Tables](https://docs.aspose.cloud/cells/working-with-pivot-tables/) & Ranges.
 
 
-## Feature & Enhancements in Version 21.11
+## Feature & Enhancements in Version 21.12
 
-- Add new API for workbook get page count on Aspose.Cells Cloud.
-- Add new API for worksheet get page count on Aspose.Cells Cloud.
-- Add new API for compress excel file on Aspose.Cells Cloud.
-- Add new feature for replace API.
+- Improvement for conversion API.
+- Improvement for batch data import to support to set cell formula.
+- Improvement for setting row height and column wight to support to set multi-rows and multi-columns.
+- Support to set cell formula in batch data import.
+- Add a new API for updating the list column.
+- Add a new API for reversing columns and rows.
+- Add new APIs for grouping and ungrouping shapes.
+- Add Convert and Merge functions on CellsApi Class for short code. 
 
-	
- 
 ## Read & Write Spreadsheet Formats
 
 **Microsoft Excel:** XLS, XLSX, XLSB, XLSM, XLT, XLTX, XLTM
