@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="HtmlSaveOptions.cs">
-//   Copyright (c) 2016 Aspose.Cells for Cloud
+//   Copyright (c) 2022 Aspose.Cells for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -39,6 +39,132 @@ namespace Aspose.Cells.Cloud.SDK.Model
   [DataContract]
   public class HtmlSaveOptions : SaveOptions 
   {                       
+        /// <summary>
+        /// Gets or sets SaveAsSingleFile
+        /// </summary>  
+		[DataMember(Name="SaveAsSingleFile", EmitDefaultValue=false)]
+        public string SaveAsSingleFile { get; set; }
+
+        /// <summary>
+        /// Gets or sets ExportHiddenWorksheet
+        /// </summary>  
+		[DataMember(Name="ExportHiddenWorksheet", EmitDefaultValue=false)]
+        public string ExportHiddenWorksheet { get; set; }
+
+        /// <summary>
+        /// Gets or sets ExportGridLines
+        /// </summary>  
+		[DataMember(Name="ExportGridLines", EmitDefaultValue=false)]
+        public string ExportGridLines { get; set; }
+
+        /// <summary>
+        /// Gets or sets PresentationPreference
+        /// </summary>  
+		[DataMember(Name="PresentationPreference", EmitDefaultValue=false)]
+        public string PresentationPreference { get; set; }
+
+        /// <summary>
+        /// Gets or sets CellCssPrefix
+        /// </summary>  
+		[DataMember(Name="CellCssPrefix", EmitDefaultValue=false)]
+        public string CellCssPrefix { get; set; }
+
+        /// <summary>
+        /// Gets or sets TableCssId
+        /// </summary>  
+		[DataMember(Name="TableCssId", EmitDefaultValue=false)]
+        public string TableCssId { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsFullPathLink
+        /// </summary>  
+		[DataMember(Name="IsFullPathLink", EmitDefaultValue=false)]
+        public string IsFullPathLink { get; set; }
+
+        /// <summary>
+        /// Gets or sets ExportWorksheetCSSSeparately
+        /// </summary>  
+		[DataMember(Name="ExportWorksheetCSSSeparately", EmitDefaultValue=false)]
+        public string ExportWorksheetCSSSeparately { get; set; }
+
+        /// <summary>
+        /// Gets or sets ExportSimilarBorderStyle
+        /// </summary>  
+		[DataMember(Name="ExportSimilarBorderStyle", EmitDefaultValue=false)]
+        public string ExportSimilarBorderStyle { get; set; }
+
+        /// <summary>
+        /// Gets or sets MergeEmptyTdForcely
+        /// </summary>  
+		[DataMember(Name="MergeEmptyTdForcely", EmitDefaultValue=false)]
+        public string MergeEmptyTdForcely { get; set; }
+
+        /// <summary>
+        /// Gets or sets ExportCellCoordinate
+        /// </summary>  
+		[DataMember(Name="ExportCellCoordinate", EmitDefaultValue=false)]
+        public string ExportCellCoordinate { get; set; }
+
+        /// <summary>
+        /// Gets or sets ExportExtraHeadings
+        /// </summary>  
+		[DataMember(Name="ExportExtraHeadings", EmitDefaultValue=false)]
+        public string ExportExtraHeadings { get; set; }
+
+        /// <summary>
+        /// Gets or sets ExportHeadings
+        /// </summary>  
+		[DataMember(Name="ExportHeadings", EmitDefaultValue=false)]
+        public string ExportHeadings { get; set; }
+
+        /// <summary>
+        /// Gets or sets ExportFormula
+        /// </summary>  
+		[DataMember(Name="ExportFormula", EmitDefaultValue=false)]
+        public string ExportFormula { get; set; }
+
+        /// <summary>
+        /// Gets or sets AddTooltipText
+        /// </summary>  
+		[DataMember(Name="AddTooltipText", EmitDefaultValue=false)]
+        public string AddTooltipText { get; set; }
+
+        /// <summary>
+        /// Gets or sets ExportBogusRowData
+        /// </summary>  
+		[DataMember(Name="ExportBogusRowData", EmitDefaultValue=false)]
+        public string ExportBogusRowData { get; set; }
+
+        /// <summary>
+        /// Gets or sets ExcludeUnusedStyles
+        /// </summary>  
+		[DataMember(Name="ExcludeUnusedStyles", EmitDefaultValue=false)]
+        public string ExcludeUnusedStyles { get; set; }
+
+        /// <summary>
+        /// Gets or sets ExportDocumentProperties
+        /// </summary>  
+		[DataMember(Name="ExportDocumentProperties", EmitDefaultValue=false)]
+        public string ExportDocumentProperties { get; set; }
+
+        /// <summary>
+        /// Gets or sets ExportWorksheetProperties
+        /// </summary>  
+		[DataMember(Name="ExportWorksheetProperties", EmitDefaultValue=false)]
+        public string ExportWorksheetProperties { get; set; }
+
+        /// <summary>
+        /// Gets or sets ExportWorkbookProperties
+        /// </summary>  
+		[DataMember(Name="ExportWorkbookProperties", EmitDefaultValue=false)]
+        public string ExportWorkbookProperties { get; set; }
+
+        /// <summary>
+        /// Gets or sets ExportFrameScriptsAndProperties
+        /// </summary>  
+		[DataMember(Name="ExportFrameScriptsAndProperties", EmitDefaultValue=false)]
+        public string ExportFrameScriptsAndProperties { get; set; }
+
         /// <summary>
         /// Gets or sets AttachedFilesDirectory
         /// </summary>  
@@ -119,6 +245,27 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
           var sb = new StringBuilder();
           sb.Append("class HtmlSaveOptions {\n");
+          sb.Append("  SaveAsSingleFile: ").Append(this.SaveAsSingleFile).Append("\n");
+          sb.Append("  ExportHiddenWorksheet: ").Append(this.ExportHiddenWorksheet).Append("\n");
+          sb.Append("  ExportGridLines: ").Append(this.ExportGridLines).Append("\n");
+          sb.Append("  PresentationPreference: ").Append(this.PresentationPreference).Append("\n");
+          sb.Append("  CellCssPrefix: ").Append(this.CellCssPrefix).Append("\n");
+          sb.Append("  TableCssId: ").Append(this.TableCssId).Append("\n");
+          sb.Append("  IsFullPathLink: ").Append(this.IsFullPathLink).Append("\n");
+          sb.Append("  ExportWorksheetCSSSeparately: ").Append(this.ExportWorksheetCSSSeparately).Append("\n");
+          sb.Append("  ExportSimilarBorderStyle: ").Append(this.ExportSimilarBorderStyle).Append("\n");
+          sb.Append("  MergeEmptyTdForcely: ").Append(this.MergeEmptyTdForcely).Append("\n");
+          sb.Append("  ExportCellCoordinate: ").Append(this.ExportCellCoordinate).Append("\n");
+          sb.Append("  ExportExtraHeadings: ").Append(this.ExportExtraHeadings).Append("\n");
+          sb.Append("  ExportHeadings: ").Append(this.ExportHeadings).Append("\n");
+          sb.Append("  ExportFormula: ").Append(this.ExportFormula).Append("\n");
+          sb.Append("  AddTooltipText: ").Append(this.AddTooltipText).Append("\n");
+          sb.Append("  ExportBogusRowData: ").Append(this.ExportBogusRowData).Append("\n");
+          sb.Append("  ExcludeUnusedStyles: ").Append(this.ExcludeUnusedStyles).Append("\n");
+          sb.Append("  ExportDocumentProperties: ").Append(this.ExportDocumentProperties).Append("\n");
+          sb.Append("  ExportWorksheetProperties: ").Append(this.ExportWorksheetProperties).Append("\n");
+          sb.Append("  ExportWorkbookProperties: ").Append(this.ExportWorkbookProperties).Append("\n");
+          sb.Append("  ExportFrameScriptsAndProperties: ").Append(this.ExportFrameScriptsAndProperties).Append("\n");
           sb.Append("  AttachedFilesDirectory: ").Append(this.AttachedFilesDirectory).Append("\n");
           sb.Append("  AttachedFilesUrlPrefix: ").Append(this.AttachedFilesUrlPrefix).Append("\n");
           sb.Append("  Encoding: ").Append(this.Encoding).Append("\n");

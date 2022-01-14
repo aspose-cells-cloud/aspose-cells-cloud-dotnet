@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="BatchConvertRequest.cs">
-//   Copyright (c) 2016 Aspose.Cells for Cloud
+//   Copyright (c) 2022 Aspose.Cells for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -46,6 +46,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string SourceFolder { get; set; }
 
         /// <summary>
+        /// Gets or sets SourceStorage
+        /// </summary>  
+		[DataMember(Name="SourceStorage", EmitDefaultValue=false)]
+        public string SourceStorage { get; set; }
+
+        /// <summary>
         /// Gets or sets MatchCondition
         /// </summary>  
 		[DataMember(Name="MatchCondition", EmitDefaultValue=false)]
@@ -64,6 +70,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public string OutFolder { get; set; }
 
         /// <summary>
+        /// Gets or sets OutStorage
+        /// </summary>  
+		[DataMember(Name="OutStorage", EmitDefaultValue=false)]
+        public string OutStorage { get; set; }
+
+        /// <summary>
         /// Gets or sets SaveOptions
         /// </summary>  
 		[DataMember(Name="SaveOptions", EmitDefaultValue=false)]
@@ -78,9 +90,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
           var sb = new StringBuilder();
           sb.Append("class BatchConvertRequest {\n");
           sb.Append("  SourceFolder: ").Append(this.SourceFolder).Append("\n");
+          sb.Append("  SourceStorage: ").Append(this.SourceStorage).Append("\n");
           sb.Append("  MatchCondition: ").Append(this.MatchCondition).Append("\n");
           sb.Append("  Format: ").Append(this.Format).Append("\n");
           sb.Append("  OutFolder: ").Append(this.OutFolder).Append("\n");
+          sb.Append("  OutStorage: ").Append(this.OutStorage).Append("\n");
           sb.Append("  SaveOptions: ").Append(this.SaveOptions).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

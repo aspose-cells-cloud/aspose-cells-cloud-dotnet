@@ -1,6 +1,6 @@
 /* 
  * <summary>
- *  Copyright (c) 2021 Aspose.Cells Cloud
+ *  Copyright (c) 2022 Aspose.Cells Cloud
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
  *  of this software and associated documentation files (the "Software"), to deal
  *  in the Software without restriction, including without limitation the rights
@@ -59,7 +59,7 @@ namespace Aspose.Cells.Cloud.SDK.Client
                              string tempFolderPath = null,
                              string dateTimeFormat = null,
                              int timeout = 100000,
-                             string userAgent = "Swagger-Codegen/21.11/csharp"
+                             string userAgent = "Swagger-Codegen/22.1/csharp"
                             )
         {
             setApiClientUsingDefault(apiClient);
@@ -94,7 +94,7 @@ namespace Aspose.Cells.Cloud.SDK.Client
         /// Version of the package.
         /// </summary>
         /// <value>Version of the package.</value>
-        public const string Version = "21.11";
+        public const string Version = "22.1";
 
         /// <summary>
         /// Gets or sets the default Configuration.
@@ -338,7 +338,7 @@ namespace Aspose.Cells.Cloud.SDK.Client
                      .GetExecutingAssembly()
                      .GetReferencedAssemblies()
                      .Where(x => x.Name == "System.Core").First().Version.ToString()  + "\n";
-            report += "    SDK Package Version: 21.11\n";
+            report += "    SDK Package Version: 22.1\n";
 
             return report;
         }

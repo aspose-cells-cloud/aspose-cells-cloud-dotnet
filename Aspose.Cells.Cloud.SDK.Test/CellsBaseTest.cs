@@ -30,6 +30,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
         protected static string accesstoken;
         protected string refreshtoken;
         protected string BOOK1 = "Book1.xlsx";
+        protected string BOOK2 = "Book2.xlsx";
         protected string DataSource = "datasource.xlsx";
         protected string AssemblyTest = "assemblytest.xlsx";
         protected string MYDOC = "myDocument.xlsx";
