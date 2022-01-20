@@ -16385,6 +16385,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         #region ShortCode Operations
         void Convert(Requests.ConversionRequest conversionRequest);
         void Merge(Requests.MergeRequest mergeRequest);
+        void Unlock(Requests.UnlockRequest unlockRequest);
+        void Protect(Requests.ProtectRequest protectRequest);
         #endregion
     }
 

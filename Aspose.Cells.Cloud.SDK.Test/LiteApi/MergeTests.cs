@@ -33,7 +33,7 @@ namespace Aspose.Cells.Cloud.SDK.Test.LiteApi
     [TestFixture]
     public class MergeTests : CellsBaseTest
     {
-        private ILiteCellsApi instance;
+        private ILightCellsApi instance;
 
         /// <summary>
         /// Setup before each unit test
@@ -41,7 +41,7 @@ namespace Aspose.Cells.Cloud.SDK.Test.LiteApi
         [SetUp]
         public void Init()
         {
-            instance = new LiteCellsApi(clientId, clientSecret, apiVersion, testbaseurl);
+            instance = new LightCellsApi(clientId, clientSecret, apiVersion, testbaseurl);
         }
 
         /// <summary>

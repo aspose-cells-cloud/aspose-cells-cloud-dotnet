@@ -157,5 +157,171 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 }
             }
         }
+        public void Unlock(Requests.UnlockRequest unlockRequest)
+        {
+            if (unlockRequest.InputPath == null )
+            {
+                throw new ApplicationException("Input file no exists.");
+            }
+            if (!File.Exists(unlockRequest.InputPath))
+            {
+                throw new ApplicationException("Input file no exists.");
+            }
+            if (string.IsNullOrEmpty(unlockRequest.OutputPath))
+            {
+                throw new ApplicationException("OutputPath is Empty.");
+            }
+            checkAccessToken();
+
+            var format = "xlsx";
+            var password = string.Empty;
+            var outPath = string.Empty;
+            var storageName = string.Empty;
+
+            format = unlockRequest.OutputPath.GetFileFormat();
+
+            var localVarPath = "/cells/unlock";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "multipart/form-data"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (unlockRequest.Password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(unlockRequest.Password)); // query parameter
+
+            FileInfo fileInfo = new FileInfo(unlockRequest.InputPath);
+            localVarFileParams.Add(fileInfo.Name, Configuration.ApiClient.ParameterToFile(fileInfo.Name, File.OpenRead(unlockRequest.InputPath)));
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PostUnlock", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+
+            Model.FilesResult filesResult = (Model.FilesResult)Configuration.ApiClient.Deserialize(localVarResponse, typeof(Model.FilesResult));
+            if (unlockRequest.SaveToCloud.HasValue && unlockRequest.SaveToCloud.Value)
+            {
+                foreach ( var file in filesResult.Files)
+                {
+                    this.UploadFile(unlockRequest.OutputPath , file.FileContent.Base64StringToStream(), unlockRequest.StorageName);
+                }
+                
+            }
+            else
+            {
+                foreach (var file in filesResult.Files)
+                {
+                    using (Stream fileHalder = File.Create(Path.Combine( unlockRequest.OutputPath )))
+                    {
+                        file.FileContent.Base64StringToStream().CopyTo(fileHalder);
+                    }
+                }                
+            }
+        }
+        public void Protect(Requests.ProtectRequest protectRequest)
+        {
+            if (protectRequest.InputPath == null)
+            {
+                throw new ApplicationException("Input file no exists.");
+            }
+            if (!File.Exists(protectRequest.InputPath))
+            {
+                throw new ApplicationException("Input file no exists.");
+            }
+            if (string.IsNullOrEmpty(protectRequest.OutputPath))
+            {
+                throw new ApplicationException("OutputPath is Empty.");
+            }
+            checkAccessToken();
+
+            var format = "xlsx";
+            var password = string.Empty;
+            var outPath = string.Empty;
+            var storageName = string.Empty;
+
+            format = protectRequest.OutputPath.GetFileFormat();
+
+            var localVarPath = "/cells/protect";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "multipart/form-data"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (protectRequest.Password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(protectRequest.Password)); // query parameter
+
+            FileInfo fileInfo = new FileInfo(protectRequest.InputPath);
+            localVarFileParams.Add(fileInfo.Name, Configuration.ApiClient.ParameterToFile(fileInfo.Name, File.OpenRead(protectRequest.InputPath)));
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PostProtect", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+
+            Model.FilesResult filesResult = (Model.FilesResult)Configuration.ApiClient.Deserialize(localVarResponse, typeof(Model.FilesResult));
+            if (protectRequest.SaveToCloud.HasValue && protectRequest.SaveToCloud.Value)
+            {
+                foreach (var file in filesResult.Files)
+                {
+                    this.UploadFile(protectRequest.OutputPath, file.FileContent.Base64StringToStream(), protectRequest.StorageName);
+                }
+
+            }
+            else
+            {
+                foreach (var file in filesResult.Files)
+                {
+                    using (Stream fileHalder = File.Create(Path.Combine(protectRequest.OutputPath)))
+                    {
+                        file.FileContent.Base64StringToStream().CopyTo(fileHalder);
+                    }
+                }
+            }
+        }
     }
 }
