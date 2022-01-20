@@ -1,21 +1,21 @@
-# Aspose.Cells.Cloud.SDK.Api.LiteCellsApi
+# Aspose.Cells.Cloud.SDK.Api.LightCellsApi
 
 All URIs are relative to *https://api.aspose.cloud/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DeleteMetadata**](LiteCellsApi.md#deletemetadata) | **POST** /cells/metadata/delete | 
-[**GetMetadata**](LiteCellsApi.md#getmetadata) | **POST** /cells/metadata/get | 
-[**PostAssemble**](LiteCellsApi.md#postassemble) | **POST** /cells/assemble | 
-[**PostClearObjects**](LiteCellsApi.md#postclearobjects) | **POST** /cells/clearobjects | 
-[**PostExport**](LiteCellsApi.md#postexport) | **POST** /cells/export | 
-[**PostMerge**](LiteCellsApi.md#postmerge) | **POST** /cells/merge | 
-[**PostMetadata**](LiteCellsApi.md#postmetadata) | **POST** /cells/metadata/update | 
-[**PostProtect**](LiteCellsApi.md#postprotect) | **POST** /cells/protect | 
-[**PostSearch**](LiteCellsApi.md#postsearch) | **POST** /cells/search | 
-[**PostSplit**](LiteCellsApi.md#postsplit) | **POST** /cells/split | 
-[**PostUnlock**](LiteCellsApi.md#postunlock) | **POST** /cells/unlock | 
-[**PostWatermark**](LiteCellsApi.md#postwatermark) | **POST** /cells/watermark | 
+[**DeleteMetadata**](LightCellsApi.md#deletemetadata) | **POST** /cells/metadata/delete | 
+[**GetMetadata**](LightCellsApi.md#getmetadata) | **POST** /cells/metadata/get | 
+[**PostAssemble**](LightCellsApi.md#postassemble) | **POST** /cells/assemble | 
+[**PostClearObjects**](LightCellsApi.md#postclearobjects) | **POST** /cells/clearobjects | 
+[**PostExport**](LightCellsApi.md#postexport) | **POST** /cells/export | 
+[**PostMerge**](LightCellsApi.md#postmerge) | **POST** /cells/merge | 
+[**PostMetadata**](LightCellsApi.md#postmetadata) | **POST** /cells/metadata/update | 
+[**PostProtect**](LightCellsApi.md#postprotect) | **POST** /cells/protect | 
+[**PostSearch**](LightCellsApi.md#postsearch) | **POST** /cells/search | 
+[**PostSplit**](LightCellsApi.md#postsplit) | **POST** /cells/split | 
+[**PostUnlock**](LightCellsApi.md#postunlock) | **POST** /cells/unlock | 
+[**PostWatermark**](LightCellsApi.md#postwatermark) | **POST** /cells/watermark | 
 
 
 <a name="deletemetadata"></a>
@@ -38,7 +38,7 @@ namespace Example
     {
         public void main()
         {
-            var apiInstance = new LiteCellsApi();
+            var apiInstance = new LightCellsApi();
             var file = new System.IO.Stream(); // System.IO.Stream | File to upload
             var type = type_example;  // string |  (optional)  (default to all)
 
@@ -49,7 +49,7 @@ namespace Example
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LiteCellsApi.DeleteMetadata: " + e.Message );
+                Debug.Print("Exception when calling LightCellsApi.DeleteMetadata: " + e.Message );
             }
         }
     }
@@ -98,7 +98,7 @@ namespace Example
     {
         public void main()
         {
-            var apiInstance = new LiteCellsApi();
+            var apiInstance = new LightCellsApi();
             var file = new System.IO.Stream(); // System.IO.Stream | File to upload
             var type = type_example;  // string |  (optional)  (default to all)
 
@@ -109,7 +109,7 @@ namespace Example
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LiteCellsApi.GetMetadata: " + e.Message );
+                Debug.Print("Exception when calling LightCellsApi.GetMetadata: " + e.Message );
             }
         }
     }
@@ -158,7 +158,7 @@ namespace Example
     {
         public void main()
         {
-            var apiInstance = new LiteCellsApi();
+            var apiInstance = new LightCellsApi();
             var file = new System.IO.Stream(); // System.IO.Stream | File to upload
             var datasource = datasource_example;  // string | 
             var format = format_example;  // string |  (optional)  (default to Xlsx)
@@ -170,7 +170,7 @@ namespace Example
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LiteCellsApi.PostAssemble: " + e.Message );
+                Debug.Print("Exception when calling LightCellsApi.PostAssemble: " + e.Message );
             }
         }
     }
@@ -220,7 +220,7 @@ namespace Example
     {
         public void main()
         {
-            var apiInstance = new LiteCellsApi();
+            var apiInstance = new LightCellsApi();
             var file = new System.IO.Stream(); // System.IO.Stream | File to upload
             var objecttype = objecttype_example;  // string | 
 
@@ -231,7 +231,7 @@ namespace Example
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LiteCellsApi.PostClearObjects: " + e.Message );
+                Debug.Print("Exception when calling LightCellsApi.PostClearObjects: " + e.Message );
             }
         }
     }
@@ -280,7 +280,7 @@ namespace Example
     {
         public void main()
         {
-            var apiInstance = new LiteCellsApi();
+            var apiInstance = new LightCellsApi();
             var file = new System.IO.Stream(); // System.IO.Stream | File to upload
             var objectType = objectType_example;  // string | 
             var format = format_example;  // string | 
@@ -292,7 +292,7 @@ namespace Example
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LiteCellsApi.PostExport: " + e.Message );
+                Debug.Print("Exception when calling LightCellsApi.PostExport: " + e.Message );
             }
         }
     }
@@ -342,7 +342,7 @@ namespace Example
     {
         public void main()
         {
-            var apiInstance = new LiteCellsApi();
+            var apiInstance = new LightCellsApi();
             var file = new System.IO.Stream(); // System.IO.Stream | File to upload
             var format = format_example;  // string |  (optional)  (default to xlsx)
             var mergeToOneSheet = true;  // bool? |  (optional)  (default to false)
@@ -354,7 +354,7 @@ namespace Example
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LiteCellsApi.PostMerge: " + e.Message );
+                Debug.Print("Exception when calling LightCellsApi.PostMerge: " + e.Message );
             }
         }
     }
@@ -404,7 +404,7 @@ namespace Example
     {
         public void main()
         {
-            var apiInstance = new LiteCellsApi();
+            var apiInstance = new LightCellsApi();
             var file = new System.IO.Stream(); // System.IO.Stream | File to upload
             var documentProperties = new CellsDocumentProperty(); // CellsDocumentProperty | Cells document property.
 
@@ -415,7 +415,7 @@ namespace Example
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LiteCellsApi.PostMetadata: " + e.Message );
+                Debug.Print("Exception when calling LightCellsApi.PostMetadata: " + e.Message );
             }
         }
     }
@@ -464,7 +464,7 @@ namespace Example
     {
         public void main()
         {
-            var apiInstance = new LiteCellsApi();
+            var apiInstance = new LightCellsApi();
             var file = new System.IO.Stream(); // System.IO.Stream | File to upload
             var password = password_example;  // string | 
 
@@ -475,7 +475,7 @@ namespace Example
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LiteCellsApi.PostProtect: " + e.Message );
+                Debug.Print("Exception when calling LightCellsApi.PostProtect: " + e.Message );
             }
         }
     }
@@ -524,7 +524,7 @@ namespace Example
     {
         public void main()
         {
-            var apiInstance = new LiteCellsApi();
+            var apiInstance = new LightCellsApi();
             var file = new System.IO.Stream(); // System.IO.Stream | File to upload
             var text = text_example;  // string | 
             var password = password_example;  // string |  (optional) 
@@ -537,7 +537,7 @@ namespace Example
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LiteCellsApi.PostSearch: " + e.Message );
+                Debug.Print("Exception when calling LightCellsApi.PostSearch: " + e.Message );
             }
         }
     }
@@ -588,7 +588,7 @@ namespace Example
     {
         public void main()
         {
-            var apiInstance = new LiteCellsApi();
+            var apiInstance = new LightCellsApi();
             var file = new System.IO.Stream(); // System.IO.Stream | File to upload
             var format = format_example;  // string | 
             var password = password_example;  // string |  (optional) 
@@ -602,7 +602,7 @@ namespace Example
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LiteCellsApi.PostSplit: " + e.Message );
+                Debug.Print("Exception when calling LightCellsApi.PostSplit: " + e.Message );
             }
         }
     }
@@ -654,7 +654,7 @@ namespace Example
     {
         public void main()
         {
-            var apiInstance = new LiteCellsApi();
+            var apiInstance = new LightCellsApi();
             var file = new System.IO.Stream(); // System.IO.Stream | File to upload
             var password = password_example;  // string | 
 
@@ -665,7 +665,7 @@ namespace Example
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LiteCellsApi.PostUnlock: " + e.Message );
+                Debug.Print("Exception when calling LightCellsApi.PostUnlock: " + e.Message );
             }
         }
     }
@@ -714,7 +714,7 @@ namespace Example
     {
         public void main()
         {
-            var apiInstance = new LiteCellsApi();
+            var apiInstance = new LightCellsApi();
             var file = new System.IO.Stream(); // System.IO.Stream | File to upload
             var text = text_example;  // string | 
             var color = color_example;  // string | 
@@ -726,7 +726,7 @@ namespace Example
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling LiteCellsApi.PostWatermark: " + e.Message );
+                Debug.Print("Exception when calling LightCellsApi.PostWatermark: " + e.Message );
             }
         }
     }
