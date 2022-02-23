@@ -42,7 +42,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// Gets or sets BorderColor
         /// </summary>  
-		[DataMember(Name="borderColor", EmitDefaultValue=false)]
+		[DataMember(Name="BorderColor", EmitDefaultValue=false)]
         public Color BorderColor { get; set; }
 
         /// <summary>
@@ -54,13 +54,13 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// Gets or sets BorderStyle
         /// </summary>  
-		[DataMember(Name="borderStyle", EmitDefaultValue=false)]
+		[DataMember(Name="BorderStyle", EmitDefaultValue=false)]
         public string BorderStyle { get; set; }
 
         /// <summary>
         /// Gets or sets BorderEdge
         /// </summary>  
-		[DataMember(Name="borderEdge", EmitDefaultValue=false)]
+		[DataMember(Name="BorderEdge", EmitDefaultValue=false)]
         public string BorderEdge { get; set; }
 
         /// <summary>

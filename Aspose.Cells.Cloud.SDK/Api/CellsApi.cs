@@ -4230,8 +4230,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="htmlString"></param>
         /// <param name="folder">The workbook folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>CellResponse</returns>
-        CellResponse CellsPostSetCellHtmlString(string name, string sheetName, string cellName, byte[] htmlString, string folder = null, string storageName = null);
+        /// <returns>CellsCloudResponse</returns>
+        CellsCloudResponse CellsPostSetCellHtmlString(string name, string sheetName, string cellName, byte[] htmlString, string folder = null, string storageName = null);
 
         /// <summary>
         /// Set htmlstring value into cell
@@ -4246,8 +4246,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="htmlString"></param>
         /// <param name="folder">The workbook folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ApiResponse of CellResponse</returns>
-        ApiResponse<CellResponse> CellsPostSetCellHtmlStringWithHttpInfo(string name, string sheetName, string cellName, byte[] htmlString, string folder = null, string storageName = null);
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        ApiResponse<CellsCloudResponse> CellsPostSetCellHtmlStringWithHttpInfo(string name, string sheetName, string cellName, byte[] htmlString, string folder = null, string storageName = null);
         /// <summary>
         /// Set cell range value 
         /// </summary>
@@ -6779,8 +6779,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="protectParameter">with protection settings. Only password is used here. (optional)</param>
         /// <param name="folder">Document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>WorksheetResponse</returns>
-        WorksheetResponse CellsWorksheetsDeleteUnprotectWorksheet(string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null);
+        /// <returns>CellsCloudResponse</returns>
+        CellsCloudResponse CellsWorksheetsDeleteUnprotectWorksheet(string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null);
 
         /// <summary>
         /// Unprotect worksheet.
@@ -6794,8 +6794,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="protectParameter">with protection settings. Only password is used here. (optional)</param>
         /// <param name="folder">Document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ApiResponse of WorksheetResponse</returns>
-        ApiResponse<WorksheetResponse> CellsWorksheetsDeleteUnprotectWorksheetWithHttpInfo(string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null);
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        ApiResponse<CellsCloudResponse> CellsWorksheetsDeleteUnprotectWorksheetWithHttpInfo(string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null);
         /// <summary>
         /// Delete worksheet.
         /// </summary>
@@ -7462,8 +7462,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheet"> (optional)</param>
         /// <param name="folder"> (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>WorksheetResponse</returns>
-        WorksheetResponse CellsWorksheetsPostUpdateWorksheetProperty(string name, string sheetName, Worksheet sheet = null, string folder = null, string storageName = null);
+        /// <returns>CellsCloudResponse</returns>
+        CellsCloudResponse CellsWorksheetsPostUpdateWorksheetProperty(string name, string sheetName, Worksheet sheet = null, string folder = null, string storageName = null);
 
         /// <summary>
         /// Update worksheet property
@@ -7477,8 +7477,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheet"> (optional)</param>
         /// <param name="folder"> (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ApiResponse of WorksheetResponse</returns>
-        ApiResponse<WorksheetResponse> CellsWorksheetsPostUpdateWorksheetPropertyWithHttpInfo(string name, string sheetName, Worksheet sheet = null, string folder = null, string storageName = null);
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        ApiResponse<CellsCloudResponse> CellsWorksheetsPostUpdateWorksheetPropertyWithHttpInfo(string name, string sheetName, Worksheet sheet = null, string folder = null, string storageName = null);
         /// <summary>
         /// 
         /// </summary>
@@ -7702,8 +7702,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="protectParameter">with protection settings. (optional)</param>
         /// <param name="folder">Document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>WorksheetResponse</returns>
-        WorksheetResponse CellsWorksheetsPutProtectWorksheet(string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null);
+        /// <returns>CellsCloudResponse</returns>
+        CellsCloudResponse CellsWorksheetsPutProtectWorksheet(string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null);
 
         /// <summary>
         /// Protect worksheet.
@@ -7717,8 +7717,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="protectParameter">with protection settings. (optional)</param>
         /// <param name="folder">Document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ApiResponse of WorksheetResponse</returns>
-        ApiResponse<WorksheetResponse> CellsWorksheetsPutProtectWorksheetWithHttpInfo(string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null);
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        ApiResponse<CellsCloudResponse> CellsWorksheetsPutProtectWorksheetWithHttpInfo(string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null);
         /// <summary>
         /// Set worksheet background image.
         /// </summary>
@@ -12403,8 +12403,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="htmlString"></param>
         /// <param name="folder">The workbook folder.(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
-        /// <returns>Task of CellResponse</returns>
-        System.Threading.Tasks.Task<CellResponse> CellsPostSetCellHtmlStringAsync (string name, string sheetName, string cellName, byte[] htmlString, string folder = null, string storageName = null);
+        /// <returns>Task of CellsCloudResponse</returns>
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsPostSetCellHtmlStringAsync (string name, string sheetName, string cellName, byte[] htmlString, string folder = null, string storageName = null);
 
         /// <summary>
         /// Set htmlstring value into cell
@@ -12419,8 +12419,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="htmlString"></param>
         /// <param name="folder">The workbook folder.(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
-        /// <returns>Task of ApiResponse (CellResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CellResponse>> CellsPostSetCellHtmlStringAsyncWithHttpInfo (string name, string sheetName, string cellName, byte[] htmlString, string folder = null, string storageName = null);
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsPostSetCellHtmlStringAsyncWithHttpInfo (string name, string sheetName, string cellName, byte[] htmlString, string folder = null, string storageName = null);
         /// <summary>
         /// Set cell range value 
         /// </summary>
@@ -14952,8 +14952,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="protectParameter">with protection settings. Only password is used here.(optional)</param>
         /// <param name="folder">Document folder.(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
-        /// <returns>Task of WorksheetResponse</returns>
-        System.Threading.Tasks.Task<WorksheetResponse> CellsWorksheetsDeleteUnprotectWorksheetAsync (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null);
+        /// <returns>Task of CellsCloudResponse</returns>
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsWorksheetsDeleteUnprotectWorksheetAsync (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null);
 
         /// <summary>
         /// Unprotect worksheet.
@@ -14967,8 +14967,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="protectParameter">with protection settings. Only password is used here.(optional)</param>
         /// <param name="folder">Document folder.(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
-        /// <returns>Task of ApiResponse (WorksheetResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<WorksheetResponse>> CellsWorksheetsDeleteUnprotectWorksheetAsyncWithHttpInfo (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null);
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorksheetsDeleteUnprotectWorksheetAsyncWithHttpInfo (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null);
         /// <summary>
         /// Delete worksheet.
         /// </summary>
@@ -15635,8 +15635,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheet">(optional)</param>
         /// <param name="folder">(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
-        /// <returns>Task of WorksheetResponse</returns>
-        System.Threading.Tasks.Task<WorksheetResponse> CellsWorksheetsPostUpdateWorksheetPropertyAsync (string name, string sheetName, Worksheet sheet = null, string folder = null, string storageName = null);
+        /// <returns>Task of CellsCloudResponse</returns>
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsWorksheetsPostUpdateWorksheetPropertyAsync (string name, string sheetName, Worksheet sheet = null, string folder = null, string storageName = null);
 
         /// <summary>
         /// Update worksheet property
@@ -15650,8 +15650,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheet">(optional)</param>
         /// <param name="folder">(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
-        /// <returns>Task of ApiResponse (WorksheetResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<WorksheetResponse>> CellsWorksheetsPostUpdateWorksheetPropertyAsyncWithHttpInfo (string name, string sheetName, Worksheet sheet = null, string folder = null, string storageName = null);
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorksheetsPostUpdateWorksheetPropertyAsyncWithHttpInfo (string name, string sheetName, Worksheet sheet = null, string folder = null, string storageName = null);
         /// <summary>
         /// 
         /// </summary>
@@ -15875,8 +15875,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="protectParameter">with protection settings.(optional)</param>
         /// <param name="folder">Document folder.(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
-        /// <returns>Task of WorksheetResponse</returns>
-        System.Threading.Tasks.Task<WorksheetResponse> CellsWorksheetsPutProtectWorksheetAsync (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null);
+        /// <returns>Task of CellsCloudResponse</returns>
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsWorksheetsPutProtectWorksheetAsync (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null);
 
         /// <summary>
         /// Protect worksheet.
@@ -15890,8 +15890,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="protectParameter">with protection settings.(optional)</param>
         /// <param name="folder">Document folder.(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
-        /// <returns>Task of ApiResponse (WorksheetResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<WorksheetResponse>> CellsWorksheetsPutProtectWorksheetAsyncWithHttpInfo (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null);
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorksheetsPutProtectWorksheetAsyncWithHttpInfo (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null);
         /// <summary>
         /// Set worksheet background image.
         /// </summary>
@@ -40967,11 +40967,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="htmlString"></param>
         /// <param name="folder">The workbook folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>CellResponse</returns>
-        public CellResponse CellsPostSetCellHtmlString(string name, string sheetName, string cellName, byte[] htmlString, string folder = null, string storageName = null)
+        /// <returns>CellsCloudResponse</returns>
+        public CellsCloudResponse CellsPostSetCellHtmlString(string name, string sheetName, string cellName, byte[] htmlString, string folder = null, string storageName = null)
         {
              checkAccessToken();
-             ApiResponse<CellResponse> localVarResponse = CellsPostSetCellHtmlStringWithHttpInfo(name, sheetName, cellName, htmlString, folder, storageName);
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsPostSetCellHtmlStringWithHttpInfo(name, sheetName, cellName, htmlString, folder, storageName);
              return localVarResponse.Data;
         }
 
@@ -40985,8 +40985,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="htmlString"></param>
         /// <param name="folder">The workbook folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ApiResponse of CellResponse</returns>
-        public ApiResponse< CellResponse > CellsPostSetCellHtmlStringWithHttpInfo(string name, string sheetName, string cellName, byte[] htmlString, string folder = null, string storageName = null)
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        public ApiResponse< CellsCloudResponse > CellsPostSetCellHtmlStringWithHttpInfo(string name, string sheetName, string cellName, byte[] htmlString, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -41051,9 +41051,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<CellResponse>(localVarStatusCode,
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (CellResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellResponse)));
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
         }
 
         /// <summary>
@@ -41066,10 +41066,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="htmlString"></param>
         /// <param name="folder">The workbook folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>Task of CellResponse</returns>
-        public async System.Threading.Tasks.Task<CellResponse> CellsPostSetCellHtmlStringAsync (string name, string sheetName, string cellName, byte[] htmlString, string folder = null, string storageName = null)
+        /// <returns>Task of CellsCloudResponse</returns>
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsPostSetCellHtmlStringAsync (string name, string sheetName, string cellName, byte[] htmlString, string folder = null, string storageName = null)
         {
-             ApiResponse<CellResponse> localVarResponse = await CellsPostSetCellHtmlStringAsyncWithHttpInfo(name, sheetName, cellName, htmlString, folder, storageName);
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsPostSetCellHtmlStringAsyncWithHttpInfo(name, sheetName, cellName, htmlString, folder, storageName);
              return localVarResponse.Data;
 
         }
@@ -41084,8 +41084,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="htmlString"></param>
         /// <param name="folder">The workbook folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>Task of ApiResponse (CellResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CellResponse>> CellsPostSetCellHtmlStringAsyncWithHttpInfo (string name, string sheetName, string cellName, byte[] htmlString, string folder = null, string storageName = null)
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsPostSetCellHtmlStringAsyncWithHttpInfo (string name, string sheetName, string cellName, byte[] htmlString, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -41150,9 +41150,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<CellResponse>(localVarStatusCode,
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (CellResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellResponse)));
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
         }
 
         /// <summary>
@@ -56058,11 +56058,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="protectParameter">with protection settings. Only password is used here. (optional)</param>
         /// <param name="folder">Document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>WorksheetResponse</returns>
-        public WorksheetResponse CellsWorksheetsDeleteUnprotectWorksheet(string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null)
+        /// <returns>CellsCloudResponse</returns>
+        public CellsCloudResponse CellsWorksheetsDeleteUnprotectWorksheet(string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null)
         {
              checkAccessToken();
-             ApiResponse<WorksheetResponse> localVarResponse = CellsWorksheetsDeleteUnprotectWorksheetWithHttpInfo(name, sheetName, protectParameter, folder, storageName);
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsDeleteUnprotectWorksheetWithHttpInfo(name, sheetName, protectParameter, folder, storageName);
              return localVarResponse.Data;
         }
 
@@ -56075,8 +56075,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="protectParameter">with protection settings. Only password is used here. (optional)</param>
         /// <param name="folder">Document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ApiResponse of WorksheetResponse</returns>
-        public ApiResponse< WorksheetResponse > CellsWorksheetsDeleteUnprotectWorksheetWithHttpInfo(string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null)
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        public ApiResponse< CellsCloudResponse > CellsWorksheetsDeleteUnprotectWorksheetWithHttpInfo(string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -56134,9 +56134,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<WorksheetResponse>(localVarStatusCode,
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (WorksheetResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(WorksheetResponse)));
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
         }
 
         /// <summary>
@@ -56148,10 +56148,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="protectParameter">with protection settings. Only password is used here. (optional)</param>
         /// <param name="folder">Document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>Task of WorksheetResponse</returns>
-        public async System.Threading.Tasks.Task<WorksheetResponse> CellsWorksheetsDeleteUnprotectWorksheetAsync (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null)
+        /// <returns>Task of CellsCloudResponse</returns>
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsWorksheetsDeleteUnprotectWorksheetAsync (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null)
         {
-             ApiResponse<WorksheetResponse> localVarResponse = await CellsWorksheetsDeleteUnprotectWorksheetAsyncWithHttpInfo(name, sheetName, protectParameter, folder, storageName);
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsWorksheetsDeleteUnprotectWorksheetAsyncWithHttpInfo(name, sheetName, protectParameter, folder, storageName);
              return localVarResponse.Data;
 
         }
@@ -56165,8 +56165,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="protectParameter">with protection settings. Only password is used here. (optional)</param>
         /// <param name="folder">Document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>Task of ApiResponse (WorksheetResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<WorksheetResponse>> CellsWorksheetsDeleteUnprotectWorksheetAsyncWithHttpInfo (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null)
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorksheetsDeleteUnprotectWorksheetAsyncWithHttpInfo (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -56224,9 +56224,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<WorksheetResponse>(localVarStatusCode,
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (WorksheetResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(WorksheetResponse)));
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
         }
 
         /// <summary>
@@ -60100,11 +60100,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheet"> (optional)</param>
         /// <param name="folder"> (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>WorksheetResponse</returns>
-        public WorksheetResponse CellsWorksheetsPostUpdateWorksheetProperty(string name, string sheetName, Worksheet sheet = null, string folder = null, string storageName = null)
+        /// <returns>CellsCloudResponse</returns>
+        public CellsCloudResponse CellsWorksheetsPostUpdateWorksheetProperty(string name, string sheetName, Worksheet sheet = null, string folder = null, string storageName = null)
         {
              checkAccessToken();
-             ApiResponse<WorksheetResponse> localVarResponse = CellsWorksheetsPostUpdateWorksheetPropertyWithHttpInfo(name, sheetName, sheet, folder, storageName);
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsPostUpdateWorksheetPropertyWithHttpInfo(name, sheetName, sheet, folder, storageName);
              return localVarResponse.Data;
         }
 
@@ -60117,8 +60117,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheet"> (optional)</param>
         /// <param name="folder"> (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ApiResponse of WorksheetResponse</returns>
-        public ApiResponse< WorksheetResponse > CellsWorksheetsPostUpdateWorksheetPropertyWithHttpInfo(string name, string sheetName, Worksheet sheet = null, string folder = null, string storageName = null)
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        public ApiResponse< CellsCloudResponse > CellsWorksheetsPostUpdateWorksheetPropertyWithHttpInfo(string name, string sheetName, Worksheet sheet = null, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -60176,9 +60176,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<WorksheetResponse>(localVarStatusCode,
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (WorksheetResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(WorksheetResponse)));
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
         }
 
         /// <summary>
@@ -60190,10 +60190,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheet"> (optional)</param>
         /// <param name="folder"> (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>Task of WorksheetResponse</returns>
-        public async System.Threading.Tasks.Task<WorksheetResponse> CellsWorksheetsPostUpdateWorksheetPropertyAsync (string name, string sheetName, Worksheet sheet = null, string folder = null, string storageName = null)
+        /// <returns>Task of CellsCloudResponse</returns>
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsWorksheetsPostUpdateWorksheetPropertyAsync (string name, string sheetName, Worksheet sheet = null, string folder = null, string storageName = null)
         {
-             ApiResponse<WorksheetResponse> localVarResponse = await CellsWorksheetsPostUpdateWorksheetPropertyAsyncWithHttpInfo(name, sheetName, sheet, folder, storageName);
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsWorksheetsPostUpdateWorksheetPropertyAsyncWithHttpInfo(name, sheetName, sheet, folder, storageName);
              return localVarResponse.Data;
 
         }
@@ -60207,8 +60207,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="sheet"> (optional)</param>
         /// <param name="folder"> (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>Task of ApiResponse (WorksheetResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<WorksheetResponse>> CellsWorksheetsPostUpdateWorksheetPropertyAsyncWithHttpInfo (string name, string sheetName, Worksheet sheet = null, string folder = null, string storageName = null)
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorksheetsPostUpdateWorksheetPropertyAsyncWithHttpInfo (string name, string sheetName, Worksheet sheet = null, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -60266,9 +60266,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<WorksheetResponse>(localVarStatusCode,
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (WorksheetResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(WorksheetResponse)));
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
         }
 
         /// <summary>
@@ -61536,11 +61536,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="protectParameter">with protection settings. (optional)</param>
         /// <param name="folder">Document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>WorksheetResponse</returns>
-        public WorksheetResponse CellsWorksheetsPutProtectWorksheet(string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null)
+        /// <returns>CellsCloudResponse</returns>
+        public CellsCloudResponse CellsWorksheetsPutProtectWorksheet(string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null)
         {
              checkAccessToken();
-             ApiResponse<WorksheetResponse> localVarResponse = CellsWorksheetsPutProtectWorksheetWithHttpInfo(name, sheetName, protectParameter, folder, storageName);
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsWorksheetsPutProtectWorksheetWithHttpInfo(name, sheetName, protectParameter, folder, storageName);
              return localVarResponse.Data;
         }
 
@@ -61553,8 +61553,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="protectParameter">with protection settings. (optional)</param>
         /// <param name="folder">Document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>ApiResponse of WorksheetResponse</returns>
-        public ApiResponse< WorksheetResponse > CellsWorksheetsPutProtectWorksheetWithHttpInfo(string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null)
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        public ApiResponse< CellsCloudResponse > CellsWorksheetsPutProtectWorksheetWithHttpInfo(string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -61612,9 +61612,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<WorksheetResponse>(localVarStatusCode,
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (WorksheetResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(WorksheetResponse)));
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
         }
 
         /// <summary>
@@ -61626,10 +61626,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="protectParameter">with protection settings. (optional)</param>
         /// <param name="folder">Document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>Task of WorksheetResponse</returns>
-        public async System.Threading.Tasks.Task<WorksheetResponse> CellsWorksheetsPutProtectWorksheetAsync (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null)
+        /// <returns>Task of CellsCloudResponse</returns>
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsWorksheetsPutProtectWorksheetAsync (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null)
         {
-             ApiResponse<WorksheetResponse> localVarResponse = await CellsWorksheetsPutProtectWorksheetAsyncWithHttpInfo(name, sheetName, protectParameter, folder, storageName);
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsWorksheetsPutProtectWorksheetAsyncWithHttpInfo(name, sheetName, protectParameter, folder, storageName);
              return localVarResponse.Data;
 
         }
@@ -61643,8 +61643,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="protectParameter">with protection settings. (optional)</param>
         /// <param name="folder">Document folder. (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
-        /// <returns>Task of ApiResponse (WorksheetResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<WorksheetResponse>> CellsWorksheetsPutProtectWorksheetAsyncWithHttpInfo (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null)
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorksheetsPutProtectWorksheetAsyncWithHttpInfo (string name, string sheetName, ProtectSheetParameter protectParameter = null, string folder = null, string storageName = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -61702,9 +61702,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<WorksheetResponse>(localVarStatusCode,
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (WorksheetResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(WorksheetResponse)));
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
         }
 
         /// <summary>

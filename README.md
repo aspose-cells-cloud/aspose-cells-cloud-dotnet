@@ -1,4 +1,4 @@
-![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/22.1)
+![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/22.2)
 
 # .NET SDK for Spreadsheet Processing in the Cloud
 
@@ -21,18 +21,14 @@ The Cloud SDK enhances your C#, ASP.NET, & other .NET-based cloud apps to [proce
 - [Leverage the power of Pivot Tables](https://docs.aspose.cloud/cells/working-with-pivot-tables/) & Ranges.
 
 
-## Feature & Enhancements in Version 22.1
+## Feature & Enhancements in Version 22.2
 
-- SaveAs API add the parameter of target storage name.
-- Workbok merged API add the parameter of merged file storage name.
-- Workbok split API add the parameter of target storage name
-- Workbok smart marker API add the parameter of output storage name.
-- Batch convert API add the parameters of intput and output storage name.
-- Remove AutoshapesController from Aspose.Cells Cloud.
-- Rename LiteCellsApi to LightCellsApi.
-- Add Portect API.
-- Add Unlock API.
+- Update return value for the DeleteUnprotectWorksheet API on Aspose.Cells Cloud.
+- Update return value for the PutProtectWorksheet API on Aspose.Cells Cloud.
+- Update return value for the PostSetCellHtmlString API on Aspose.Cells Cloud.
+- Update return value for the PostUpdateWorksheetProperty API on Aspose.Cells Cloud.
 
+ 
 ## Read & Write Spreadsheet Formats
 
 **Microsoft Excel:** XLS, XLSX, XLSB, XLSM, XLT, XLTX, XLTM

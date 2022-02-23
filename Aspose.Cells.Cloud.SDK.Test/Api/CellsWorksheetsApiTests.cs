@@ -59,7 +59,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsDeleteUnprotectWorksheet(name, sheetName, protectParameter, folder);
-            Assert.IsInstanceOf<WorksheetResponse>(response, "response is WorksheetResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is WorksheetResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -451,7 +451,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsPostUpdateWorksheetProperty(name, sheetName, sheet, folder);
-            Assert.IsInstanceOf<WorksheetResponse>(response, "response is WorksheetResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is WorksheetResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -541,7 +541,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsPostWorsheetTextReplace(name, sheetName, oldValue, newValue, folder);
-            Assert.IsInstanceOf<WorksheetReplaceResponse>(response, "response is WorksheetReplaceResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is WorksheetReplaceResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
@@ -596,7 +596,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string folder = TEMPFOLDER;
             UpdateDataFile(instance,folder, name);
             var response = instance.CellsWorksheetsPutProtectWorksheet(name, sheetName, protectParameter, folder);
-            Assert.IsInstanceOf<WorksheetResponse>(response, "response is WorksheetResponse");
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is WorksheetResponse");
             Assert.AreEqual(response.Code, 200);
         }
         
