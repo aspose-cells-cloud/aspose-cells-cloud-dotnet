@@ -33,7 +33,22 @@ namespace Aspose.Cells.Cloud.SDK.Test
         {
 
         }
-
+        /// <summary>
+        /// Test CellsWorkbookDeleteDecryptDocument
+        /// </summary>
+        [Test]
+        public void CellsWorkbookPostDigitalSignatureTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            string name = BOOK1;
+            string dsfile = "roywang.pfx";
+            string password = "123456";
+            string folder = TEMPFOLDER;
+            UpdateDataFile(instance, folder, name);
+            var response = instance.CellsWorkbookPostDigitalSignature(name, dsfile, password, folder);
+            Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
+            Assert.AreEqual(response.Code, 200);
+        }
 
         /// <summary>
         /// Test CellsWorkbookDeleteDecryptDocument

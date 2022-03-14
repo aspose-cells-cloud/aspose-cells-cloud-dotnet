@@ -6161,6 +6161,35 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ApiResponse of CellsCloudResponse</returns>
         ApiResponse<CellsCloudResponse> CellsWorkbookPostAutofitWorkbookRowsWithHttpInfo(string name, AutoFitterOptions autoFitterOptions = null, int? startRow = null, int? endRow = null, bool? onlyAuto = null, string folder = null, string storageName = null);
         /// <summary>
+        /// Add digital signature.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Workbook name.</param>
+        /// <param name="digitalsignaturefile">Digital signature file parameters.</param>
+        /// <param name="password"></param>
+        /// <param name="folder">Workbook&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        CellsCloudResponse CellsWorkbookPostDigitalSignature(string name, string digitalsignaturefile, string password, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// Add digital signature.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Workbook name.</param>
+        /// <param name="digitalsignaturefile">Digital signature file parameters.</param>
+        /// <param name="password"></param>
+        /// <param name="folder">Workbook&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        ApiResponse<CellsCloudResponse> CellsWorkbookPostDigitalSignatureWithHttpInfo(string name, string digitalsignaturefile, string password, string folder = null, string storageName = null);
+        /// <summary>
         /// Encript document.
         /// </summary>
         /// <remarks>
@@ -14333,6 +14362,35 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name.(optional)</param>
         /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorkbookPostAutofitWorkbookRowsAsyncWithHttpInfo (string name, AutoFitterOptions autoFitterOptions = null, int? startRow = null, int? endRow = null, bool? onlyAuto = null, string folder = null, string storageName = null);
+        /// <summary>
+        /// Add digital signature.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Workbook name.</param>
+        /// <param name="digitalsignaturefile">Digital signature file parameters.</param>
+        /// <param name="password"></param>
+        /// <param name="folder">Workbook&#39;s folder.(optional)</param>
+        /// <param name="storageName">storage name.(optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        System.Threading.Tasks.Task<CellsCloudResponse> CellsWorkbookPostDigitalSignatureAsync (string name, string digitalsignaturefile, string password, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// Add digital signature.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Workbook name.</param>
+        /// <param name="digitalsignaturefile">Digital signature file parameters.</param>
+        /// <param name="password"></param>
+        /// <param name="folder">Workbook&#39;s folder.(optional)</param>
+        /// <param name="storageName">storage name.(optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorkbookPostDigitalSignatureAsyncWithHttpInfo (string name, string digitalsignaturefile, string password, string folder = null, string storageName = null);
         /// <summary>
         /// Encript document.
         /// </summary>
@@ -52457,6 +52515,178 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (ExceptionFactory != null)
             {
                 Exception exception = ExceptionFactory("CellsWorkbookPostAutofitWorkbookRows", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
+        /// Add digital signature. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Workbook name.</param>
+        /// <param name="digitalsignaturefile">Digital signature file parameters.</param>
+        /// <param name="password"></param>
+        /// <param name="folder">Workbook&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>CellsCloudResponse</returns>
+        public CellsCloudResponse CellsWorkbookPostDigitalSignature(string name, string digitalsignaturefile, string password, string folder = null, string storageName = null)
+        {
+             checkAccessToken();
+             ApiResponse<CellsCloudResponse> localVarResponse = CellsWorkbookPostDigitalSignatureWithHttpInfo(name, digitalsignaturefile, password, folder, storageName);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Add digital signature. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Workbook name.</param>
+        /// <param name="digitalsignaturefile">Digital signature file parameters.</param>
+        /// <param name="password"></param>
+        /// <param name="folder">Workbook&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of CellsCloudResponse</returns>
+        public ApiResponse< CellsCloudResponse > CellsWorkbookPostDigitalSignatureWithHttpInfo(string name, string digitalsignaturefile, string password, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsWorkbookPostDigitalSignature");
+            // verify the required parameter 'digitalsignaturefile' is set
+            if (digitalsignaturefile == null)
+                throw new ApiException(400, "Missing required parameter 'digitalsignaturefile' when calling CellsApi->CellsWorkbookPostDigitalSignature");
+            // verify the required parameter 'password' is set
+            if (password == null)
+                throw new ApiException(400, "Missing required parameter 'password' when calling CellsApi->CellsWorkbookPostDigitalSignature");
+
+            var localVarPath = "/cells/{name}/digitalsignature";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (digitalsignaturefile != null) localVarQueryParams.Add("digitalsignaturefile", Configuration.ApiClient.ParameterToString(digitalsignaturefile)); // query parameter
+            if (password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(password)); // query parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsWorkbookPostDigitalSignature", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CellsCloudResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (CellsCloudResponse) Configuration.ApiClient.Deserialize(localVarResponse, typeof(CellsCloudResponse)));
+        }
+
+        /// <summary>
+        /// Add digital signature. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Workbook name.</param>
+        /// <param name="digitalsignaturefile">Digital signature file parameters.</param>
+        /// <param name="password"></param>
+        /// <param name="folder">Workbook&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of CellsCloudResponse</returns>
+        public async System.Threading.Tasks.Task<CellsCloudResponse> CellsWorkbookPostDigitalSignatureAsync (string name, string digitalsignaturefile, string password, string folder = null, string storageName = null)
+        {
+             ApiResponse<CellsCloudResponse> localVarResponse = await CellsWorkbookPostDigitalSignatureAsyncWithHttpInfo(name, digitalsignaturefile, password, folder, storageName);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Add digital signature. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Workbook name.</param>
+        /// <param name="digitalsignaturefile">Digital signature file parameters.</param>
+        /// <param name="password"></param>
+        /// <param name="folder">Workbook&#39;s folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsWorkbookPostDigitalSignatureAsyncWithHttpInfo (string name, string digitalsignaturefile, string password, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsWorkbookPostDigitalSignature");
+            // verify the required parameter 'digitalsignaturefile' is set
+            if (digitalsignaturefile == null)
+                throw new ApiException(400, "Missing required parameter 'digitalsignaturefile' when calling CellsApi->CellsWorkbookPostDigitalSignature");
+            // verify the required parameter 'password' is set
+            if (password == null)
+                throw new ApiException(400, "Missing required parameter 'password' when calling CellsApi->CellsWorkbookPostDigitalSignature");
+
+            var localVarPath = "/cells/{name}/digitalsignature";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (digitalsignaturefile != null) localVarQueryParams.Add("digitalsignaturefile", Configuration.ApiClient.ParameterToString(digitalsignaturefile)); // query parameter
+            if (password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(password)); // query parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsWorkbookPostDigitalSignature", localVarResponse);
                 if (exception != null) throw exception;
             }
 
