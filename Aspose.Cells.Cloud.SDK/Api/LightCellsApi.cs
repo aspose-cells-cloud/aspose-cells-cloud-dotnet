@@ -98,7 +98,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="format"></param>
         /// <param name="file">File to upload</param>
         /// <returns>FilesResult</returns>
-        FilesResult PostExport(IDictionary<string, System.IO.Stream> files,  string objectType, string format);
+        FilesResult PostExport(IDictionary<string, System.IO.Stream> files,  string objectType, string format, IDictionary<string,string> extendedQueryParameters = null);
 
         /// <summary>
         /// 
@@ -641,7 +641,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="format"></param>
         /// <param name="file">File to upload</param>
         /// <returns>FilesResult</returns>
-        public FilesResult PostExport( IDictionary<string, System.IO.Stream> files, string objectType, string format)
+        public FilesResult PostExport( IDictionary<string, System.IO.Stream> files, string objectType, string format, IDictionary<string, string> extendedQueryParameters = null)
         {
             checkAccessToken();
             // verify the required parameter 'objectType' is set
@@ -678,6 +678,14 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (objectType != null) localVarQueryParams.Add("objectType", Configuration.ApiClient.ParameterToString(objectType)); // query parameter
             if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
+
+            if (extendedQueryParameters != null)
+            {
+                foreach( KeyValuePair<string,string> keyValuePair in extendedQueryParameters)
+                {
+                    localVarQueryParams.Add(keyValuePair.Key, Configuration.ApiClient.ParameterToString(keyValuePair.Value));
+                }
+            }
             foreach (KeyValuePair<string, System.IO.Stream> file in files)
             {
                 localVarFileParams.Add(file.Key, Configuration.ApiClient.ParameterToFile(file.Key, file.Value));

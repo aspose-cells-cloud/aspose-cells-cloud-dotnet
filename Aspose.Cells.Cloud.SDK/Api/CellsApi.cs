@@ -5262,7 +5262,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name. (optional)</param>
         /// <param name="outStorageName">output storage name. (optional)</param>
         /// <returns>SaveResponse</returns>
-        SaveResponse CellsSaveAsPostDocumentSaveAs(string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null);
+        SaveResponse CellsSaveAsPostDocumentSaveAs(string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null);
 
         /// <summary>
         /// Convert document and save result to storage.
@@ -5280,7 +5280,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name. (optional)</param>
         /// <param name="outStorageName">output storage name. (optional)</param>
         /// <returns>ApiResponse of SaveResponse</returns>
-        ApiResponse<SaveResponse> CellsSaveAsPostDocumentSaveAsWithHttpInfo(string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null);
+        ApiResponse<SaveResponse> CellsSaveAsPostDocumentSaveAsWithHttpInfo(string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null);
         /// <summary>
         /// Delete a shape in worksheet
         /// </summary>
@@ -5922,7 +5922,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="outPath">The document output folder. (optional)</param>
         /// <param name="outStorageName">output storage name. (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        System.IO.Stream CellsWorkbookGetWorkbook(string name, string password = null, string format = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null);
+        System.IO.Stream CellsWorkbookGetWorkbook(string name, string password = null, string format = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null);
 
         /// <summary>
         /// Read workbook info or export.
@@ -5941,7 +5941,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="outPath">The document output folder. (optional)</param>
         /// <param name="outStorageName">output storage name. (optional)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        ApiResponse<System.IO.Stream> CellsWorkbookGetWorkbookWithHttpInfo(string name, string password = null, string format = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null);
+        ApiResponse<System.IO.Stream> CellsWorkbookGetWorkbookWithHttpInfo(string name, string password = null, string format = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null);
         /// <summary>
         /// Read workbook default style info.
         /// </summary>
@@ -6494,7 +6494,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="outPath">Path to save result (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        System.IO.Stream CellsWorkbookPutConvertWorkbook(System.IO.Stream file, string format = null, string password = null, string outPath = null, string storageName = null);
+        System.IO.Stream CellsWorkbookPutConvertWorkbook(System.IO.Stream file, string format = null, string password = null, string outPath = null, string storageName = null, IDictionary<string, string> extendedQueryParameters = null);
 
         /// <summary>
         /// Convert workbook from request content to some format.
@@ -6509,7 +6509,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="outPath">Path to save result (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        ApiResponse<System.IO.Stream> CellsWorkbookPutConvertWorkbookWithHttpInfo(System.IO.Stream file, string format = null, string password = null, string outPath = null, string storageName = null);
+        ApiResponse<System.IO.Stream> CellsWorkbookPutConvertWorkbookWithHttpInfo(System.IO.Stream file, string format = null, string password = null, string outPath = null, string storageName = null, IDictionary<string, string> extendedQueryParameters = null);
         /// <summary>
         /// Protect document from changes.
         /// </summary>
@@ -13464,7 +13464,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name.(optional)</param>
         /// <param name="outStorageName">output storage name.(optional)</param>
         /// <returns>Task of SaveResponse</returns>
-        System.Threading.Tasks.Task<SaveResponse> CellsSaveAsPostDocumentSaveAsAsync (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null);
+        System.Threading.Tasks.Task<SaveResponse> CellsSaveAsPostDocumentSaveAsAsync (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null);
 
         /// <summary>
         /// Convert document and save result to storage.
@@ -13482,7 +13482,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name.(optional)</param>
         /// <param name="outStorageName">output storage name.(optional)</param>
         /// <returns>Task of ApiResponse (SaveResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaveResponse>> CellsSaveAsPostDocumentSaveAsAsyncWithHttpInfo (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null);
+        System.Threading.Tasks.Task<ApiResponse<SaveResponse>> CellsSaveAsPostDocumentSaveAsAsyncWithHttpInfo (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null);
         /// <summary>
         /// Delete a shape in worksheet
         /// </summary>
@@ -14124,7 +14124,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="outPath">The document output folder.(optional)</param>
         /// <param name="outStorageName">output storage name.(optional)</param>
         /// <returns>Task of System.IO.Stream</returns>
-        System.Threading.Tasks.Task<System.IO.Stream> CellsWorkbookGetWorkbookAsync (string name, string password = null, string format = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null);
+        System.Threading.Tasks.Task<System.IO.Stream> CellsWorkbookGetWorkbookAsync (string name, string password = null, string format = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null);
 
         /// <summary>
         /// Read workbook info or export.
@@ -14143,7 +14143,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="outPath">The document output folder.(optional)</param>
         /// <param name="outStorageName">output storage name.(optional)</param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorkbookGetWorkbookAsyncWithHttpInfo (string name, string password = null, string format = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null);
+        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorkbookGetWorkbookAsyncWithHttpInfo (string name, string password = null, string format = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null);
         /// <summary>
         /// Read workbook default style info.
         /// </summary>
@@ -14696,7 +14696,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="outPath">Path to save result(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
         /// <returns>Task of System.IO.Stream</returns>
-        System.Threading.Tasks.Task<System.IO.Stream> CellsWorkbookPutConvertWorkbookAsync (System.IO.Stream file, string format = null, string password = null, string outPath = null, string storageName = null);
+        System.Threading.Tasks.Task<System.IO.Stream> CellsWorkbookPutConvertWorkbookAsync (System.IO.Stream file, string format = null, string password = null, string outPath = null, string storageName = null, IDictionary<string, string> extendedQueryParameters = null);
 
         /// <summary>
         /// Convert workbook from request content to some format.
@@ -14711,7 +14711,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="outPath">Path to save result(optional)</param>
         /// <param name="storageName">storage name.(optional)</param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorkbookPutConvertWorkbookAsyncWithHttpInfo (System.IO.Stream file, string format = null, string password = null, string outPath = null, string storageName = null);
+        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorkbookPutConvertWorkbookAsyncWithHttpInfo (System.IO.Stream file, string format = null, string password = null, string outPath = null, string storageName = null, IDictionary<string, string> extendedQueryParameters = null);
         /// <summary>
         /// Protect document from changes.
         /// </summary>
@@ -47138,10 +47138,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name. (optional)</param>
         /// <param name="outStorageName">output storage name. (optional)</param>
         /// <returns>SaveResponse</returns>
-        public SaveResponse CellsSaveAsPostDocumentSaveAs(string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null)
+        public SaveResponse CellsSaveAsPostDocumentSaveAs(string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null)
         {
              checkAccessToken();
-             ApiResponse<SaveResponse> localVarResponse = CellsSaveAsPostDocumentSaveAsWithHttpInfo(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder, storageName, outStorageName);
+             ApiResponse<SaveResponse> localVarResponse = CellsSaveAsPostDocumentSaveAsWithHttpInfo(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder, storageName, outStorageName, extendedQueryParameters);
              return localVarResponse.Data;
         }
 
@@ -47158,7 +47158,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name. (optional)</param>
         /// <param name="outStorageName">output storage name. (optional)</param>
         /// <returns>ApiResponse of SaveResponse</returns>
-        public ApiResponse< SaveResponse > CellsSaveAsPostDocumentSaveAsWithHttpInfo(string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null)
+        public ApiResponse< SaveResponse > CellsSaveAsPostDocumentSaveAsWithHttpInfo(string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -47193,6 +47193,13 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
             if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
             if (outStorageName != null) localVarQueryParams.Add("outStorageName", Configuration.ApiClient.ParameterToString(outStorageName)); // query parameter
+            if (extendedQueryParameters != null)
+            {
+                foreach (KeyValuePair<string, string> keyValuePair in extendedQueryParameters)
+                {
+                    localVarQueryParams.Add(keyValuePair.Key, Configuration.ApiClient.ParameterToString(keyValuePair.Value));
+                }
+            }
             if (saveOptions != null && saveOptions.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(saveOptions); // http body (model) parameter
@@ -47234,9 +47241,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name. (optional)</param>
         /// <param name="outStorageName">output storage name. (optional)</param>
         /// <returns>Task of SaveResponse</returns>
-        public async System.Threading.Tasks.Task<SaveResponse> CellsSaveAsPostDocumentSaveAsAsync (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null)
+        public async System.Threading.Tasks.Task<SaveResponse> CellsSaveAsPostDocumentSaveAsAsync (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null)
         {
-             ApiResponse<SaveResponse> localVarResponse = await CellsSaveAsPostDocumentSaveAsAsyncWithHttpInfo(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder, storageName, outStorageName);
+             ApiResponse<SaveResponse> localVarResponse = await CellsSaveAsPostDocumentSaveAsAsyncWithHttpInfo(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder, storageName, outStorageName, extendedQueryParameters);
              return localVarResponse.Data;
 
         }
@@ -47254,7 +47261,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name. (optional)</param>
         /// <param name="outStorageName">output storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaveResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaveResponse>> CellsSaveAsPostDocumentSaveAsAsyncWithHttpInfo (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null)
+        public async System.Threading.Tasks.Task<ApiResponse<SaveResponse>> CellsSaveAsPostDocumentSaveAsAsyncWithHttpInfo (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -47289,6 +47296,13 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
             if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
             if (outStorageName != null) localVarQueryParams.Add("outStorageName", Configuration.ApiClient.ParameterToString(outStorageName)); // query parameter
+            if (extendedQueryParameters != null)
+            {
+                foreach (KeyValuePair<string, string> keyValuePair in extendedQueryParameters)
+                {
+                    localVarQueryParams.Add(keyValuePair.Key, Configuration.ApiClient.ParameterToString(keyValuePair.Value));
+                }
+            }
             if (saveOptions != null && saveOptions.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(saveOptions); // http body (model) parameter
@@ -51075,7 +51089,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="outPath">The document output folder. (optional)</param>
         /// <param name="outStorageName">output storage name. (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        public System.IO.Stream CellsWorkbookGetWorkbook(string name, string password = null, string format = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null)
+        public System.IO.Stream CellsWorkbookGetWorkbook(string name, string password = null, string format = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null)
         {
              checkAccessToken();
              ApiResponse<System.IO.Stream> localVarResponse = CellsWorkbookGetWorkbookWithHttpInfo(name, password, format, isAutoFit, onlySaveTable, folder, storageName, outPath, outStorageName);
@@ -51096,7 +51110,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="outPath">The document output folder. (optional)</param>
         /// <param name="outStorageName">output storage name. (optional)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        public ApiResponse< System.IO.Stream > CellsWorkbookGetWorkbookWithHttpInfo(string name, string password = null, string format = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null)
+        public ApiResponse< System.IO.Stream > CellsWorkbookGetWorkbookWithHttpInfo(string name, string password = null, string format = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -51133,7 +51147,13 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
             if (outPath != null) localVarQueryParams.Add("outPath", Configuration.ApiClient.ParameterToString(outPath)); // query parameter
             if (outStorageName != null) localVarQueryParams.Add("outStorageName", Configuration.ApiClient.ParameterToString(outStorageName)); // query parameter
-
+            if (extendedQueryParameters != null)
+            {
+                foreach (KeyValuePair<string, string> keyValuePair in extendedQueryParameters)
+                {
+                    localVarQueryParams.Add(keyValuePair.Key, Configuration.ApiClient.ParameterToString(keyValuePair.Value));
+                }
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
@@ -51167,9 +51187,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="outPath">The document output folder. (optional)</param>
         /// <param name="outStorageName">output storage name. (optional)</param>
         /// <returns>Task of System.IO.Stream</returns>
-        public async System.Threading.Tasks.Task<System.IO.Stream> CellsWorkbookGetWorkbookAsync (string name, string password = null, string format = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null)
+        public async System.Threading.Tasks.Task<System.IO.Stream> CellsWorkbookGetWorkbookAsync (string name, string password = null, string format = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = await CellsWorkbookGetWorkbookAsyncWithHttpInfo(name, password, format, isAutoFit, onlySaveTable, folder, storageName, outPath, outStorageName);
+             ApiResponse<System.IO.Stream> localVarResponse = await CellsWorkbookGetWorkbookAsyncWithHttpInfo(name, password, format, isAutoFit, onlySaveTable, folder, storageName, outPath, outStorageName, extendedQueryParameters);
              return localVarResponse.Data;
 
         }
@@ -51188,7 +51208,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="outPath">The document output folder. (optional)</param>
         /// <param name="outStorageName">output storage name. (optional)</param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorkbookGetWorkbookAsyncWithHttpInfo (string name, string password = null, string format = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null)
+        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorkbookGetWorkbookAsyncWithHttpInfo (string name, string password = null, string format = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -51226,7 +51246,13 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (outPath != null) localVarQueryParams.Add("outPath", Configuration.ApiClient.ParameterToString(outPath)); // query parameter
             if (outStorageName != null) localVarQueryParams.Add("outStorageName", Configuration.ApiClient.ParameterToString(outStorageName)); // query parameter
 
-
+            if (extendedQueryParameters != null)
+            {
+                foreach (KeyValuePair<string, string> keyValuePair in extendedQueryParameters)
+                {
+                    localVarQueryParams.Add(keyValuePair.Key, Configuration.ApiClient.ParameterToString(keyValuePair.Value));
+                }
+            }
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
@@ -54411,10 +54437,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="outPath">Path to save result (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        public System.IO.Stream CellsWorkbookPutConvertWorkbook(System.IO.Stream file, string format = null, string password = null, string outPath = null, string storageName = null)
+        public System.IO.Stream CellsWorkbookPutConvertWorkbook(System.IO.Stream file, string format = null, string password = null, string outPath = null, string storageName = null, IDictionary<string, string> extendedQueryParameters = null)
         {
              checkAccessToken();
-             ApiResponse<System.IO.Stream> localVarResponse = CellsWorkbookPutConvertWorkbookWithHttpInfo(file, format, password, outPath, storageName);
+             ApiResponse<System.IO.Stream> localVarResponse = CellsWorkbookPutConvertWorkbookWithHttpInfo(file, format, password, outPath, storageName,extendedQueryParameters);
              return localVarResponse.Data;
         }
 
@@ -54428,7 +54454,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="outPath">Path to save result (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        public ApiResponse< System.IO.Stream > CellsWorkbookPutConvertWorkbookWithHttpInfo(System.IO.Stream file, string format = null, string password = null, string outPath = null, string storageName = null)
+        public ApiResponse< System.IO.Stream > CellsWorkbookPutConvertWorkbookWithHttpInfo(System.IO.Stream file, string format = null, string password = null, string outPath = null, string storageName = null, IDictionary<string, string> extendedQueryParameters = null)
         {
             // verify the required parameter 'file' is set
             if (file == null)
@@ -54462,6 +54488,13 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
             if (file != null) localVarFileParams.Add("file", Configuration.ApiClient.ParameterToFile("file", file));
 
+            if (extendedQueryParameters != null)
+            {
+                foreach (KeyValuePair<string, string> keyValuePair in extendedQueryParameters)
+                {
+                    localVarQueryParams.Add(keyValuePair.Key, Configuration.ApiClient.ParameterToString(keyValuePair.Value));
+                }
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
@@ -54491,9 +54524,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="outPath">Path to save result (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>Task of System.IO.Stream</returns>
-        public async System.Threading.Tasks.Task<System.IO.Stream> CellsWorkbookPutConvertWorkbookAsync (System.IO.Stream file, string format = null, string password = null, string outPath = null, string storageName = null)
+        public async System.Threading.Tasks.Task<System.IO.Stream> CellsWorkbookPutConvertWorkbookAsync (System.IO.Stream file, string format = null, string password = null, string outPath = null, string storageName = null, IDictionary<string, string> extendedQueryParameters = null)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = await CellsWorkbookPutConvertWorkbookAsyncWithHttpInfo(file, format, password, outPath, storageName);
+             ApiResponse<System.IO.Stream> localVarResponse = await CellsWorkbookPutConvertWorkbookAsyncWithHttpInfo(file, format, password, outPath, storageName,extendedQueryParameters);
              return localVarResponse.Data;
 
         }
@@ -54508,7 +54541,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="outPath">Path to save result (optional)</param>
         /// <param name="storageName">storage name. (optional)</param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorkbookPutConvertWorkbookAsyncWithHttpInfo (System.IO.Stream file, string format = null, string password = null, string outPath = null, string storageName = null)
+        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> CellsWorkbookPutConvertWorkbookAsyncWithHttpInfo (System.IO.Stream file, string format = null, string password = null, string outPath = null, string storageName = null, IDictionary<string, string> extendedQueryParameters = null)
         {
             // verify the required parameter 'file' is set
             if (file == null)
@@ -54541,7 +54574,13 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (outPath != null) localVarQueryParams.Add("outPath", Configuration.ApiClient.ParameterToString(outPath)); // query parameter
             if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
             if (file != null) localVarFileParams.Add("file", Configuration.ApiClient.ParameterToFile("file", file));
-
+            if (extendedQueryParameters != null)
+            {
+                foreach (KeyValuePair<string, string> keyValuePair in extendedQueryParameters)
+                {
+                    localVarQueryParams.Add(keyValuePair.Key, Configuration.ApiClient.ParameterToString(keyValuePair.Value));
+                }
+            }
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
