@@ -2918,6 +2918,35 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>ApiResponse of CellsCloudResponse</returns>
         ApiResponse<CellsCloudResponse> CellsPageSetupPostPageSetupWithHttpInfo(string name, string sheetName, PageSetup pageSetup = null, string folder = null, string storageName = null);
         /// <summary>
+        /// Get chart area border info.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Workbook name.</param>
+        /// <param name="sheetName">Worksheet name.</param>
+        /// <param name="pictureIndex">The picture index.</param>
+        /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>BarcodeResponseList</returns>
+        BarcodeResponseList CellsPictureGetExtractBarcodes(string name, string sheetName, int? pictureIndex, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// Get chart area border info.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Workbook name.</param>
+        /// <param name="sheetName">Worksheet name.</param>
+        /// <param name="pictureIndex">The picture index.</param>
+        /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of BarcodeResponseList</returns>
+        ApiResponse<BarcodeResponseList> CellsPictureGetExtractBarcodesWithHttpInfo(string name, string sheetName, int? pictureIndex, string folder = null, string storageName = null);
+        /// <summary>
         /// Delete a picture object in worksheet
         /// </summary>
         /// <remarks>
@@ -11120,6 +11149,35 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>Task of ApiResponse (CellsCloudResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<CellsCloudResponse>> CellsPageSetupPostPageSetupAsyncWithHttpInfo (string name, string sheetName, PageSetup pageSetup = null, string folder = null, string storageName = null);
         /// <summary>
+        /// Get chart area border info.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Workbook name.</param>
+        /// <param name="sheetName">Worksheet name.</param>
+        /// <param name="pictureIndex">The picture index.</param>
+        /// <param name="folder">Workbook folder.(optional)</param>
+        /// <param name="storageName">storage name.(optional)</param>
+        /// <returns>Task of BarcodeResponseList</returns>
+        System.Threading.Tasks.Task<BarcodeResponseList> CellsPictureGetExtractBarcodesAsync (string name, string sheetName, int? pictureIndex, string folder = null, string storageName = null);
+
+        /// <summary>
+        /// Get chart area border info.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Workbook name.</param>
+        /// <param name="sheetName">Worksheet name.</param>
+        /// <param name="pictureIndex">The picture index.</param>
+        /// <param name="folder">Workbook folder.(optional)</param>
+        /// <param name="storageName">storage name.(optional)</param>
+        /// <returns>Task of ApiResponse (BarcodeResponseList)</returns>
+        System.Threading.Tasks.Task<ApiResponse<BarcodeResponseList>> CellsPictureGetExtractBarcodesAsyncWithHttpInfo (string name, string sheetName, int? pictureIndex, string folder = null, string storageName = null);
+        /// <summary>
         /// Delete a picture object in worksheet
         /// </summary>
         /// <remarks>
@@ -16440,12 +16498,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>Task of ApiResponse (FilesUploadResult)</returns>
         System.Threading.Tasks.Task<ApiResponse<FilesUploadResult>> UploadFileAsyncWithHttpInfo (string path, System.IO.Stream file, string storageName = null);
         #endregion Asynchronous Operations
-        #region ShortCode Operations
         void Convert(Requests.ConversionRequest conversionRequest);
         void Merge(Requests.MergeRequest mergeRequest);
         void Unlock(Requests.UnlockRequest unlockRequest);
         void Protect(Requests.ProtectRequest protectRequest);
-        #endregion
     }
 
     /// <summary>
@@ -33394,6 +33450,178 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
         /// <summary>
+        /// Get chart area border info. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Workbook name.</param>
+        /// <param name="sheetName">Worksheet name.</param>
+        /// <param name="pictureIndex">The picture index.</param>
+        /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>BarcodeResponseList</returns>
+        public BarcodeResponseList CellsPictureGetExtractBarcodes(string name, string sheetName, int? pictureIndex, string folder = null, string storageName = null)
+        {
+             checkAccessToken();
+             ApiResponse<BarcodeResponseList> localVarResponse = CellsPictureGetExtractBarcodesWithHttpInfo(name, sheetName, pictureIndex, folder, storageName);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get chart area border info. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Workbook name.</param>
+        /// <param name="sheetName">Worksheet name.</param>
+        /// <param name="pictureIndex">The picture index.</param>
+        /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>ApiResponse of BarcodeResponseList</returns>
+        public ApiResponse< BarcodeResponseList > CellsPictureGetExtractBarcodesWithHttpInfo(string name, string sheetName, int? pictureIndex, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsPictureGetExtractBarcodes");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsPictureGetExtractBarcodes");
+            // verify the required parameter 'pictureIndex' is set
+            if (pictureIndex == null)
+                throw new ApiException(400, "Missing required parameter 'pictureIndex' when calling CellsApi->CellsPictureGetExtractBarcodes");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}/recognize";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (pictureIndex != null) localVarPathParams.Add("pictureIndex", Configuration.ApiClient.ParameterToString(pictureIndex)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsPictureGetExtractBarcodes", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<BarcodeResponseList>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (BarcodeResponseList) Configuration.ApiClient.Deserialize(localVarResponse, typeof(BarcodeResponseList)));
+        }
+
+        /// <summary>
+        /// Get chart area border info. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Workbook name.</param>
+        /// <param name="sheetName">Worksheet name.</param>
+        /// <param name="pictureIndex">The picture index.</param>
+        /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of BarcodeResponseList</returns>
+        public async System.Threading.Tasks.Task<BarcodeResponseList> CellsPictureGetExtractBarcodesAsync (string name, string sheetName, int? pictureIndex, string folder = null, string storageName = null)
+        {
+             ApiResponse<BarcodeResponseList> localVarResponse = await CellsPictureGetExtractBarcodesAsyncWithHttpInfo(name, sheetName, pictureIndex, folder, storageName);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get chart area border info. 
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="name">Workbook name.</param>
+        /// <param name="sheetName">Worksheet name.</param>
+        /// <param name="pictureIndex">The picture index.</param>
+        /// <param name="folder">Workbook folder. (optional)</param>
+        /// <param name="storageName">storage name. (optional)</param>
+        /// <returns>Task of ApiResponse (BarcodeResponseList)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<BarcodeResponseList>> CellsPictureGetExtractBarcodesAsyncWithHttpInfo (string name, string sheetName, int? pictureIndex, string folder = null, string storageName = null)
+        {
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling CellsApi->CellsPictureGetExtractBarcodes");
+            // verify the required parameter 'sheetName' is set
+            if (sheetName == null)
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling CellsApi->CellsPictureGetExtractBarcodes");
+            // verify the required parameter 'pictureIndex' is set
+            if (pictureIndex == null)
+                throw new ApiException(400, "Missing required parameter 'pictureIndex' when calling CellsApi->CellsPictureGetExtractBarcodes");
+
+            var localVarPath = "/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}/recognize";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
+            if (sheetName != null) localVarPathParams.Add("sheetName", Configuration.ApiClient.ParameterToString(sheetName)); // path parameter
+            if (pictureIndex != null) localVarPathParams.Add("pictureIndex", Configuration.ApiClient.ParameterToString(pictureIndex)); // path parameter
+            if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
+            if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CellsPictureGetExtractBarcodes", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<BarcodeResponseList>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (BarcodeResponseList) Configuration.ApiClient.Deserialize(localVarResponse, typeof(BarcodeResponseList)));
+        }
+
+        /// <summary>
         /// Delete a picture object in worksheet 
         /// </summary>
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
@@ -47141,7 +47369,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         public SaveResponse CellsSaveAsPostDocumentSaveAs(string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null)
         {
              checkAccessToken();
-             ApiResponse<SaveResponse> localVarResponse = CellsSaveAsPostDocumentSaveAsWithHttpInfo(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder, storageName, outStorageName, extendedQueryParameters);
+             ApiResponse<SaveResponse> localVarResponse = CellsSaveAsPostDocumentSaveAsWithHttpInfo(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder, storageName, outStorageName,extendedQueryParameters);
              return localVarResponse.Data;
         }
 
@@ -47243,7 +47471,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>Task of SaveResponse</returns>
         public async System.Threading.Tasks.Task<SaveResponse> CellsSaveAsPostDocumentSaveAsAsync (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null)
         {
-             ApiResponse<SaveResponse> localVarResponse = await CellsSaveAsPostDocumentSaveAsAsyncWithHttpInfo(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder, storageName, outStorageName, extendedQueryParameters);
+             ApiResponse<SaveResponse> localVarResponse = await CellsSaveAsPostDocumentSaveAsAsyncWithHttpInfo(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder, storageName, outStorageName,extendedQueryParameters);
              return localVarResponse.Data;
 
         }
@@ -51092,7 +51320,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         public System.IO.Stream CellsWorkbookGetWorkbook(string name, string password = null, string format = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null)
         {
              checkAccessToken();
-             ApiResponse<System.IO.Stream> localVarResponse = CellsWorkbookGetWorkbookWithHttpInfo(name, password, format, isAutoFit, onlySaveTable, folder, storageName, outPath, outStorageName);
+             ApiResponse<System.IO.Stream> localVarResponse = CellsWorkbookGetWorkbookWithHttpInfo(name, password, format, isAutoFit, onlySaveTable, folder, storageName, outPath, outStorageName,extendedQueryParameters);
              return localVarResponse.Data;
         }
 
@@ -51189,7 +51417,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <returns>Task of System.IO.Stream</returns>
         public async System.Threading.Tasks.Task<System.IO.Stream> CellsWorkbookGetWorkbookAsync (string name, string password = null, string format = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = await CellsWorkbookGetWorkbookAsyncWithHttpInfo(name, password, format, isAutoFit, onlySaveTable, folder, storageName, outPath, outStorageName, extendedQueryParameters);
+             ApiResponse<System.IO.Stream> localVarResponse = await CellsWorkbookGetWorkbookAsyncWithHttpInfo(name, password, format, isAutoFit, onlySaveTable, folder, storageName, outPath, outStorageName,extendedQueryParameters);
              return localVarResponse.Data;
 
         }
@@ -51245,7 +51473,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
             if (outPath != null) localVarQueryParams.Add("outPath", Configuration.ApiClient.ParameterToString(outPath)); // query parameter
             if (outStorageName != null) localVarQueryParams.Add("outStorageName", Configuration.ApiClient.ParameterToString(outStorageName)); // query parameter
-
             if (extendedQueryParameters != null)
             {
                 foreach (KeyValuePair<string, string> keyValuePair in extendedQueryParameters)
@@ -51253,6 +51480,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                     localVarQueryParams.Add(keyValuePair.Key, Configuration.ApiClient.ParameterToString(keyValuePair.Value));
                 }
             }
+
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
@@ -54495,7 +54723,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
                     localVarQueryParams.Add(keyValuePair.Key, Configuration.ApiClient.ParameterToString(keyValuePair.Value));
                 }
             }
-
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
                 Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
