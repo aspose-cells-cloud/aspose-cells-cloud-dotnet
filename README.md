@@ -23,7 +23,7 @@ The Cloud SDK enhances your C#, ASP.NET, & other .NET-based cloud apps to [proce
 
 ## Feature & Enhancements in Version 22.5
 
-- Add a snew API for getting barcode description.
+- Add a new API for getting barcode description.
 
  
 ## Read & Write Spreadsheet Formats
