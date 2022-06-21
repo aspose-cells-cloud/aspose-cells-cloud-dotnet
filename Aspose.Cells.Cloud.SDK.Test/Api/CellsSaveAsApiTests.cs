@@ -62,7 +62,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             // TODO uncomment below to test the method and replace null with proper value
             string name = BOOK1;
             SaveOptions saveOptions = null;
-            string newfilename = "newbook.xlsx";
+            string newfilename = "newbook.png";
             bool? isAutoFitRows = true;
             bool? isAutoFitColumns = true;
             string folder = TEMPFOLDER;

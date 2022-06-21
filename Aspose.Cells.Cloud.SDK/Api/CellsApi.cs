@@ -5291,7 +5291,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name. (optional)</param>
         /// <param name="outStorageName">output storage name. (optional)</param>
         /// <returns>SaveResponse</returns>
-        SaveResponse CellsSaveAsPostDocumentSaveAs(string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null, bool checkExcelRestriction = true);
+        SaveResponse CellsSaveAsPostDocumentSaveAs(string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null, bool? checkExcelRestriction = null);
 
         /// <summary>
         /// Convert document and save result to storage.
@@ -5309,7 +5309,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name. (optional)</param>
         /// <param name="outStorageName">output storage name. (optional)</param>
         /// <returns>ApiResponse of SaveResponse</returns>
-        ApiResponse<SaveResponse> CellsSaveAsPostDocumentSaveAsWithHttpInfo(string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null, bool checkExcelRestriction = true);
+        ApiResponse<SaveResponse> CellsSaveAsPostDocumentSaveAsWithHttpInfo(string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null, bool? checkExcelRestriction = null);
         /// <summary>
         /// Delete a shape in worksheet
         /// </summary>
@@ -13522,7 +13522,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name.(optional)</param>
         /// <param name="outStorageName">output storage name.(optional)</param>
         /// <returns>Task of SaveResponse</returns>
-        System.Threading.Tasks.Task<SaveResponse> CellsSaveAsPostDocumentSaveAsAsync (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null, bool checkExcelRestriction = true);
+        System.Threading.Tasks.Task<SaveResponse> CellsSaveAsPostDocumentSaveAsAsync (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null, bool? checkExcelRestriction = null);
 
         /// <summary>
         /// Convert document and save result to storage.
@@ -13540,7 +13540,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name.(optional)</param>
         /// <param name="outStorageName">output storage name.(optional)</param>
         /// <returns>Task of ApiResponse (SaveResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SaveResponse>> CellsSaveAsPostDocumentSaveAsAsyncWithHttpInfo (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null, bool checkExcelRestriction = true);
+        System.Threading.Tasks.Task<ApiResponse<SaveResponse>> CellsSaveAsPostDocumentSaveAsAsyncWithHttpInfo (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null, bool? checkExcelRestriction = null);
         /// <summary>
         /// Delete a shape in worksheet
         /// </summary>
@@ -47366,7 +47366,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name. (optional)</param>
         /// <param name="outStorageName">output storage name. (optional)</param>
         /// <returns>SaveResponse</returns>
-        public SaveResponse CellsSaveAsPostDocumentSaveAs(string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null, bool checkExcelRestriction = true)
+        public SaveResponse CellsSaveAsPostDocumentSaveAs(string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null, bool? checkExcelRestriction = null)
         {
              checkAccessToken();
              ApiResponse<SaveResponse> localVarResponse = CellsSaveAsPostDocumentSaveAsWithHttpInfo(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder, storageName, outStorageName,extendedQueryParameters,checkExcelRestriction);
@@ -47386,7 +47386,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name. (optional)</param>
         /// <param name="outStorageName">output storage name. (optional)</param>
         /// <returns>ApiResponse of SaveResponse</returns>
-        public ApiResponse< SaveResponse > CellsSaveAsPostDocumentSaveAsWithHttpInfo(string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null, bool checkExcelRestriction = true)
+        public ApiResponse< SaveResponse > CellsSaveAsPostDocumentSaveAsWithHttpInfo(string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null, bool? checkExcelRestriction = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -47421,7 +47421,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
             if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
             if (outStorageName != null) localVarQueryParams.Add("outStorageName", Configuration.ApiClient.ParameterToString(outStorageName)); // query parameter
-            if (!checkExcelRestriction) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
+            if (checkExcelRestriction !=null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
 
             if (extendedQueryParameters != null)
             {
@@ -47471,7 +47471,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name. (optional)</param>
         /// <param name="outStorageName">output storage name. (optional)</param>
         /// <returns>Task of SaveResponse</returns>
-        public async System.Threading.Tasks.Task<SaveResponse> CellsSaveAsPostDocumentSaveAsAsync (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null, bool checkExcelRestriction = true)
+        public async System.Threading.Tasks.Task<SaveResponse> CellsSaveAsPostDocumentSaveAsAsync (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null, bool? checkExcelRestriction = null)
         {
              ApiResponse<SaveResponse> localVarResponse = await CellsSaveAsPostDocumentSaveAsAsyncWithHttpInfo(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder, storageName, outStorageName,extendedQueryParameters ,checkExcelRestriction);
              return localVarResponse.Data;
@@ -47491,7 +47491,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="storageName">storage name. (optional)</param>
         /// <param name="outStorageName">output storage name. (optional)</param>
         /// <returns>Task of ApiResponse (SaveResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SaveResponse>> CellsSaveAsPostDocumentSaveAsAsyncWithHttpInfo (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null, bool checkExcelRestriction = true)
+        public async System.Threading.Tasks.Task<ApiResponse<SaveResponse>> CellsSaveAsPostDocumentSaveAsAsyncWithHttpInfo (string name, SaveOptions saveOptions = null, string newfilename = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, IDictionary<string, string> extendedQueryParameters = null, bool? checkExcelRestriction = null)
         {
             // verify the required parameter 'name' is set
             if (name == null)
@@ -47526,7 +47526,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (folder != null) localVarQueryParams.Add("folder", Configuration.ApiClient.ParameterToString(folder)); // query parameter
             if (storageName != null) localVarQueryParams.Add("storageName", Configuration.ApiClient.ParameterToString(storageName)); // query parameter
             if (outStorageName != null) localVarQueryParams.Add("outStorageName", Configuration.ApiClient.ParameterToString(outStorageName)); // query parameter
-            if (!checkExcelRestriction) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
+            if (checkExcelRestriction!= null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
             if (extendedQueryParameters != null)
             {
                 foreach (KeyValuePair<string, string> keyValuePair in extendedQueryParameters)
