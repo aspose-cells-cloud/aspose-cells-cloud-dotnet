@@ -85,7 +85,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="objecttype"></param>
         /// <param name="file">File to upload</param>
         /// <returns>FilesResult</returns>
-        FilesResult PostClearObjects(IDictionary<string, System.IO.Stream> files, string objecttype);
+        FilesResult PostClearObjects(IDictionary<string, System.IO.Stream> files, string objecttype, string sheetname = null, string outFormat = null);
 
         /// <summary>
         /// 
@@ -575,7 +575,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="objecttype"></param>
         /// <param name="file">File to upload</param>
         /// <returns>FilesResult</returns>
-        public FilesResult PostClearObjects( IDictionary<string, System.IO.Stream> files, string objecttype)
+        public FilesResult PostClearObjects( IDictionary<string, System.IO.Stream> files, string objecttype, string sheetname = null, string outFormat = null)
         {
             checkAccessToken();
             // verify the required parameter 'objecttype' is set
@@ -608,6 +608,9 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (objecttype != null) localVarQueryParams.Add("objecttype", Configuration.ApiClient.ParameterToString(objecttype)); // query parameter
+            if (sheetname != null) localVarQueryParams.Add("sheetname", Configuration.ApiClient.ParameterToString(sheetname)); // query parameter
+            if (outFormat != null) localVarQueryParams.Add("outFormat", Configuration.ApiClient.ParameterToString(outFormat)); // query parameter
+
             foreach (KeyValuePair<string, System.IO.Stream> file in files)
             {
                 localVarFileParams.Add(file.Key, Configuration.ApiClient.ParameterToFile(file.Key, file.Value));
