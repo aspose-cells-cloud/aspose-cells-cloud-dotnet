@@ -47412,7 +47412,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             };
             String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+                localVarHeaderParams.Add("Content-Type", localVarHttpHeaderAccept);
 
             if (name != null) localVarPathParams.Add("name", Configuration.ApiClient.ParameterToString(name)); // path parameter
             if (newfilename != null) localVarQueryParams.Add("newfilename", Configuration.ApiClient.ParameterToString(newfilename)); // query parameter
