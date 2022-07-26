@@ -45,7 +45,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="files">File to upload</param>
         /// <param name="type"> (optional, default to all)</param>
         /// <returns>FilesResult</returns>
-        FilesResult DeleteMetadata(IDictionary<string, System.IO.Stream> files, string type = null);
+        FilesResult DeleteMetadata(IDictionary<string, System.IO.Stream> files, string type = null, bool? checkExcelRestriction = true);
 
 
         /// <summary>
@@ -58,7 +58,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="files">File to upload</param>
         /// <param name="type"> (optional, default to all)</param>
         /// <returns>List&lt;CellsDocumentProperty&gt;</returns>
-        List<CellsDocumentProperty> GetMetadata(IDictionary<string, System.IO.Stream> files, string type = null);
+        List<CellsDocumentProperty> GetMetadata(IDictionary<string, System.IO.Stream> files, string type = null, bool? checkExcelRestriction = true);
 
 
         /// <summary>
@@ -72,7 +72,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="file">File to upload</param>
         /// <param name="format"> (optional, default to Xlsx)</param>
         /// <returns>FilesResult</returns>
-        FilesResult PostAssemble( IDictionary<string, System.IO.Stream> files, string datasource, string format = null);
+        FilesResult PostAssemble( IDictionary<string, System.IO.Stream> files, string datasource, string format = null, bool? checkExcelRestriction = true);
 
 
         /// <summary>
@@ -85,7 +85,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="objecttype"></param>
         /// <param name="file">File to upload</param>
         /// <returns>FilesResult</returns>
-        FilesResult PostClearObjects(IDictionary<string, System.IO.Stream> files, string objecttype, string sheetname = null, string outFormat = null);
+        FilesResult PostClearObjects(IDictionary<string, System.IO.Stream> files, string objecttype, string sheetname = null, string outFormat = null, bool? checkExcelRestriction = true);
 
         /// <summary>
         /// 
@@ -98,7 +98,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="format"></param>
         /// <param name="file">File to upload</param>
         /// <returns>FilesResult</returns>
-        FilesResult PostExport(IDictionary<string, System.IO.Stream> files,  string objectType, string format, IDictionary<string,string> extendedQueryParameters = null);
+        FilesResult PostExport(IDictionary<string, System.IO.Stream> files,  string objectType, string format, IDictionary<string,string> extendedQueryParameters = null, bool? checkExcelRestriction = true);
 
         /// <summary>
         /// 
@@ -123,7 +123,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="format"> (optional, default to xlsx)</param>
         /// <param name="mergeToOneSheet"> (optional, default to false)</param>
         /// <returns>FileInfo</returns>
-        FileInfo PostMerge(IDictionary<string, System.IO.Stream> files, string format = null, bool? mergeToOneSheet = null);
+        FileInfo PostMerge(IDictionary<string, System.IO.Stream> files, string format = null, bool? mergeToOneSheet = null, bool? checkExcelRestriction = true);
 
 
         /// <summary>
@@ -135,7 +135,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">File to upload</param>
         /// <returns>FilesResult</returns>
-        FilesResult PostMetadata(IDictionary<string, System.IO.Stream> files, IList<CellsDocumentProperty> cellsDocumentProperties);
+        FilesResult PostMetadata(IDictionary<string, System.IO.Stream> files, IList<CellsDocumentProperty> cellsDocumentProperties, bool? checkExcelRestriction = true);
 
         /// <summary>
         /// 
@@ -162,7 +162,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="password"> (optional)</param>
         /// <param name="sheetname"> (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        IList<Model.TextItem> PostSearch(IDictionary<string, System.IO.Stream> files, string text, string password = null, string sheetname = null);
+        IList<Model.TextItem> PostSearch(IDictionary<string, System.IO.Stream> files, string text, string password = null, string sheetname = null, bool? checkExcelRestriction = true);
 
 
         /// <summary>
@@ -178,7 +178,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="from"> (optional)</param>
         /// <param name="to"> (optional)</param>
         /// <returns>FilesResult</returns>
-        FilesResult PostSplit( IDictionary<string, System.IO.Stream> files, string format, string password = null, int? from = null, int? to = null);
+        FilesResult PostSplit( IDictionary<string, System.IO.Stream> files, string format, string password = null, int? from = null, int? to = null, bool? checkExcelRestriction = true);
 
 
         /// <summary>
@@ -205,7 +205,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="color"></param>
         /// <param name="file">File to upload</param>
         /// <returns>FilesResult</returns>
-        FilesResult PostWatermark(IDictionary<string, System.IO.Stream> files, string text, string color);
+        FilesResult PostWatermark(IDictionary<string, System.IO.Stream> files, string text, string color, bool? checkExcelRestriction = true);
 
         /// <summary>
         /// 
@@ -217,7 +217,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="compressLevel"></param>
         /// <param name="file">File to upload</param>
         /// <returns>FilesResult</returns>
-        FilesResult PostCompress(IDictionary<string, System.IO.Stream> files, int? compressLevel);
+        FilesResult PostCompress(IDictionary<string, System.IO.Stream> files, int? compressLevel, bool? checkExcelRestriction = true);
 
         /// <summary>
         /// 
@@ -232,7 +232,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="text"></param>
         /// <param name="sheetname">File to upload</param>
         /// <returns>FilesResult</returns>
-        FilesResult PostReplace(IDictionary<string, System.IO.Stream> files, string text, string newtext, string password = null, string sheetname = null);
+        FilesResult PostReplace(IDictionary<string, System.IO.Stream> files, string text, string newtext, string password = null, string sheetname = null, bool? checkExcelRestriction = true);
 
         /// <summary>
         /// 
@@ -244,7 +244,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rotateType"></param>
         /// <param name="format">File to upload</param>
         /// <returns>FilesResult</returns>
-        FilesResult PostReverse(IDictionary<string, System.IO.Stream> files, string rotateType, string format = null);
+        FilesResult PostReverse(IDictionary<string, System.IO.Stream> files, string rotateType, string format = null, bool? checkExcelRestriction = true);
     }
 
     /// <summary>
@@ -387,7 +387,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="file">File to upload</param>
         /// <param name="type"> (optional, default to all)</param>
         /// <returns>FilesResult</returns>
-        public FilesResult DeleteMetadata(IDictionary<string, System.IO.Stream> files, string type = null)
+        public FilesResult DeleteMetadata(IDictionary<string, System.IO.Stream> files, string type = null, bool? checkExcelRestriction = true)
         {
             checkAccessToken();
             if (files == null)
@@ -416,6 +416,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (type != null) localVarQueryParams.Add("type", Configuration.ApiClient.ParameterToString(type)); // query parameter
+            if (checkExcelRestriction != null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
+
             foreach (KeyValuePair<string, System.IO.Stream> file in files)
             {
                 localVarFileParams.Add(file.Key, Configuration.ApiClient.ParameterToFile(file.Key, file.Value));
@@ -446,7 +448,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="file">File to upload</param>
         /// <param name="type"> (optional, default to all)</param>
         /// <returns>List&lt;CellsDocumentProperty&gt;</returns>
-        public List<CellsDocumentProperty> GetMetadata(IDictionary<string, System.IO.Stream> files, string type = null)
+        public List<CellsDocumentProperty> GetMetadata(IDictionary<string, System.IO.Stream> files, string type = null, bool? checkExcelRestriction = true)
         {
             checkAccessToken();
             // verify the required parameter 'file' is set
@@ -476,6 +478,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (type != null) localVarQueryParams.Add("type", Configuration.ApiClient.ParameterToString(type)); // query parameter
+            if (checkExcelRestriction != null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
             foreach (KeyValuePair<string, System.IO.Stream> file in files)
             {
                 localVarFileParams.Add(file.Key, Configuration.ApiClient.ParameterToFile(file.Key, file.Value));
@@ -509,7 +512,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="file">File to upload</param>
         /// <param name="format"> (optional, default to Xlsx)</param>
         /// <returns>FilesResult</returns>
-        public FilesResult PostAssemble( IDictionary<string, System.IO.Stream> files, string datasource, string format = null)
+        public FilesResult PostAssemble( IDictionary<string, System.IO.Stream> files, string datasource, string format = null, bool? checkExcelRestriction = true)
         {
             checkAccessToken();
             // verify the required parameter 'datasource' is set
@@ -543,6 +546,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (datasource != null) localVarQueryParams.Add("datasource", Configuration.ApiClient.ParameterToString(datasource)); // query parameter
             if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
+            if (checkExcelRestriction != null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
             foreach (KeyValuePair<string, System.IO.Stream> file in files)
             {
                 localVarFileParams.Add(file.Key, Configuration.ApiClient.ParameterToFile(file.Key, file.Value));
@@ -575,7 +579,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="objecttype"></param>
         /// <param name="file">File to upload</param>
         /// <returns>FilesResult</returns>
-        public FilesResult PostClearObjects( IDictionary<string, System.IO.Stream> files, string objecttype, string sheetname = null, string outFormat = null)
+        public FilesResult PostClearObjects( IDictionary<string, System.IO.Stream> files, string objecttype, string sheetname = null, string outFormat = null, bool? checkExcelRestriction = true)
         {
             checkAccessToken();
             // verify the required parameter 'objecttype' is set
@@ -610,6 +614,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (objecttype != null) localVarQueryParams.Add("objecttype", Configuration.ApiClient.ParameterToString(objecttype)); // query parameter
             if (sheetname != null) localVarQueryParams.Add("sheetname", Configuration.ApiClient.ParameterToString(sheetname)); // query parameter
             if (outFormat != null) localVarQueryParams.Add("outFormat", Configuration.ApiClient.ParameterToString(outFormat)); // query parameter
+            if (checkExcelRestriction != null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
 
             foreach (KeyValuePair<string, System.IO.Stream> file in files)
             {
@@ -644,7 +649,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="format"></param>
         /// <param name="file">File to upload</param>
         /// <returns>FilesResult</returns>
-        public FilesResult PostExport( IDictionary<string, System.IO.Stream> files, string objectType, string format, IDictionary<string, string> extendedQueryParameters = null)
+        public FilesResult PostExport( IDictionary<string, System.IO.Stream> files, string objectType, string format, IDictionary<string, string> extendedQueryParameters = null, bool? checkExcelRestriction = true)
         {
             checkAccessToken();
             // verify the required parameter 'objectType' is set
@@ -681,6 +686,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (objectType != null) localVarQueryParams.Add("objectType", Configuration.ApiClient.ParameterToString(objectType)); // query parameter
             if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
+            if (checkExcelRestriction != null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
 
             if (extendedQueryParameters != null)
             {
@@ -783,7 +789,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="format"> (optional, default to xlsx)</param>
         /// <param name="mergeToOneSheet"> (optional, default to false)</param>
         /// <returns>FileInfo</returns>
-        public FileInfo PostMerge(IDictionary<string, System.IO.Stream> files, string format = null, bool? mergeToOneSheet = null)
+        public FileInfo PostMerge(IDictionary<string, System.IO.Stream> files, string format = null, bool? mergeToOneSheet = null, bool? checkExcelRestriction = true)
         {
             checkAccessToken();
             // verify the required parameter 'file' is set
@@ -814,6 +820,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (format != null) localVarQueryParams.Add("format", Configuration.ApiClient.ParameterToString(format)); // query parameter
             if (mergeToOneSheet != null) localVarQueryParams.Add("mergeToOneSheet", Configuration.ApiClient.ParameterToString(mergeToOneSheet)); // query parameter
+            if (checkExcelRestriction != null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
+
             foreach (KeyValuePair<string, System.IO.Stream> file in files)
             {
                 localVarFileParams.Add(file.Key, Configuration.ApiClient.ParameterToFile(file.Key, file.Value));
@@ -845,7 +853,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="file">File to upload</param>
         /// <returns>FilesResult</returns>
-        public FilesResult PostMetadata(IDictionary<string, System.IO.Stream> files, IList<CellsDocumentProperty> cellsDocumentProperties)
+        public FilesResult PostMetadata(IDictionary<string, System.IO.Stream> files, IList<CellsDocumentProperty> cellsDocumentProperties, bool? checkExcelRestriction = true)
         {
             checkAccessToken();
             // verify the required parameter 'file' is set
@@ -875,7 +883,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-           
+            if (checkExcelRestriction != null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
             //localVarPostBody = Configuration.ApiClient.Serialize(cellsDocumentProperties);
             foreach (KeyValuePair<string, System.IO.Stream> file in files)
             {
@@ -979,7 +987,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="path"> (optional)</param>
         /// <param name="storageName"> (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        public IList<Model.TextItem> PostSearch(IDictionary<string, System.IO.Stream> files, string text,  string password = null, string sheetname = null)
+        public IList<Model.TextItem> PostSearch(IDictionary<string, System.IO.Stream> files, string text,  string password = null, string sheetname = null, bool? checkExcelRestriction = true)
         {
             checkAccessToken();
             // verify the required parameter 'text' is set
@@ -1014,6 +1022,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (text != null) localVarQueryParams.Add("text", Configuration.ApiClient.ParameterToString(text)); // query parameter
             if (password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(password)); // query parameter
             if (sheetname != null) localVarQueryParams.Add("sheetname", Configuration.ApiClient.ParameterToString(sheetname)); // query parameter
+            if (checkExcelRestriction != null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
+
             foreach (KeyValuePair<string, System.IO.Stream> file in files)
             {
                 localVarFileParams.Add(file.Key, Configuration.ApiClient.ParameterToFile(file.Key, file.Value));
@@ -1050,7 +1060,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="from"> (optional)</param>
         /// <param name="to"> (optional)</param>
         /// <returns>FilesResult</returns>
-        public FilesResult PostSplit( IDictionary<string, System.IO.Stream> files, string format, string password = null, int? from = null, int? to = null)
+        public FilesResult PostSplit( IDictionary<string, System.IO.Stream> files, string format, string password = null, int? from = null, int? to = null, bool? checkExcelRestriction = true)
         {
             checkAccessToken();
             // verify the required parameter 'format' is set
@@ -1086,6 +1096,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(password)); // query parameter
             if (from != null) localVarQueryParams.Add("from", Configuration.ApiClient.ParameterToString(from)); // query parameter
             if (to != null) localVarQueryParams.Add("to", Configuration.ApiClient.ParameterToString(to)); // query parameter
+            if (checkExcelRestriction != null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
             foreach (KeyValuePair<string, System.IO.Stream> file in files)
             {
                 localVarFileParams.Add(file.Key, Configuration.ApiClient.ParameterToFile(file.Key, file.Value));
@@ -1184,7 +1195,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="color"></param>
         /// <param name="file">File to upload</param>
         /// <returns>FilesResult</returns>
-        public FilesResult PostWatermark( IDictionary<string, System.IO.Stream> files, string text, string color)
+        public FilesResult PostWatermark( IDictionary<string, System.IO.Stream> files, string text, string color, bool? checkExcelRestriction = true)
         {
             checkAccessToken();
             // verify the required parameter 'text' is set
@@ -1221,6 +1232,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (text != null) localVarQueryParams.Add("text", Configuration.ApiClient.ParameterToString(text)); // query parameter
             if (color != null) localVarQueryParams.Add("color", Configuration.ApiClient.ParameterToString(color)); // query parameter
+            if (checkExcelRestriction != null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
+
             foreach (KeyValuePair<string, System.IO.Stream> file in files)
             {
                 localVarFileParams.Add(file.Key, Configuration.ApiClient.ParameterToFile(file.Key, file.Value));
@@ -1253,7 +1266,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="compressLevel"></param>
         /// <param name="file">File to upload</param>
         /// <returns>FilesResult</returns>
-        public FilesResult PostCompress(IDictionary<string, System.IO.Stream> files, int? compressLevel)
+        public FilesResult PostCompress(IDictionary<string, System.IO.Stream> files, int? compressLevel,bool? checkExcelRestriction =true)
         {
             checkAccessToken();
             // verify the required parameter 'text' is set
@@ -1286,7 +1299,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (compressLevel != null) localVarQueryParams.Add("compressLevel", Configuration.ApiClient.ParameterToString(compressLevel)); // query parameter
-            
+            if (checkExcelRestriction != null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
             foreach (KeyValuePair<string, System.IO.Stream> file in files)
             {
                 localVarFileParams.Add(file.Key, Configuration.ApiClient.ParameterToFile(file.Key, file.Value));
@@ -1323,7 +1336,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="text"></param>
         /// <param name="sheetname">File to upload</param>
         /// <returns>FilesResult</returns>
-        public FilesResult PostReplace(IDictionary<string, System.IO.Stream> files, string text, string newtext, string password = null, string sheetname = null)
+        public FilesResult PostReplace(IDictionary<string, System.IO.Stream> files, string text, string newtext, string password = null, string sheetname = null, bool? checkExcelRestriction = true)
         {
             checkAccessToken();
             // verify the required parameter 'text' is set
@@ -1362,6 +1375,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (newtext != null) localVarQueryParams.Add("newtext", Configuration.ApiClient.ParameterToString(newtext)); // query parameter
             if (password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(password)); // query parameter
             if (sheetname != null) localVarQueryParams.Add("sheetname", Configuration.ApiClient.ParameterToString(sheetname)); // query parameter
+            if (checkExcelRestriction != null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
             foreach (KeyValuePair<string, System.IO.Stream> file in files)
             {
                 localVarFileParams.Add(file.Key, Configuration.ApiClient.ParameterToFile(file.Key, file.Value));
@@ -1394,7 +1408,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="rotateType"></param>
         /// <param name="format">File to upload</param>
         /// <returns>FilesResult</returns>
-        public FilesResult PostReverse(IDictionary<string, System.IO.Stream> files, string rotateType, string format=null )
+        public FilesResult PostReverse(IDictionary<string, System.IO.Stream> files, string rotateType, string format=null, bool? checkExcelRestriction = true)
         {
             checkAccessToken();
             // verify the required parameter 'rotateType' is set
@@ -1428,6 +1442,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
             if (rotateType != null) localVarQueryParams.Add("rotateType", Configuration.ApiClient.ParameterToString(rotateType)); // query parameter
             if (format != null) localVarQueryParams.Add("newtext", Configuration.ApiClient.ParameterToString(format)); // query parameter
+            if (checkExcelRestriction != null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
+
             foreach (KeyValuePair<string, System.IO.Stream> file in files)
             {
                 localVarFileParams.Add(file.Key, Configuration.ApiClient.ParameterToFile(file.Key, file.Value));
