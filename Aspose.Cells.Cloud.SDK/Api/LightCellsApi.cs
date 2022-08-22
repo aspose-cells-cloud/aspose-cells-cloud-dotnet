@@ -245,6 +245,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="format">File to upload</param>
         /// <returns>FilesResult</returns>
         FilesResult PostReverse(IDictionary<string, System.IO.Stream> files, string rotateType, string format = null, bool? checkExcelRestriction = true);
+        FilesResult PostRotate(IDictionary<string, System.IO.Stream> files, string rotateType, string format = null, bool? checkExcelRestriction = true);
     }
 
     /// <summary>
@@ -1466,5 +1467,64 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (FilesResult)Configuration.ApiClient.Deserialize(localVarResponse, typeof(FilesResult)))).Data;
         }
+
+        public FilesResult PostRotate(IDictionary<string, System.IO.Stream> files, string rotateType, string format = null, bool? checkExcelRestriction = true)
+        {
+            checkAccessToken();
+            // verify the required parameter 'rotateType' is set
+            if (rotateType == null)
+                throw new ApiException(400, "Missing required parameter 'text' when calling LightCellsApi->PostReverse");
+            // verify the required parameter 'file' is set
+            if (files == null)
+                throw new ApiException(400, "Missing required parameter 'file' when calling LightCellsApi->PostReverse");
+
+            var localVarPath = "/cells/rotate";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "multipart/form-data"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (rotateType != null) localVarQueryParams.Add("rotateType", Configuration.ApiClient.ParameterToString(rotateType)); // query parameter
+            if (format != null) localVarQueryParams.Add("newtext", Configuration.ApiClient.ParameterToString(format)); // query parameter
+            if (checkExcelRestriction != null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
+
+            foreach (KeyValuePair<string, System.IO.Stream> file in files)
+            {
+                localVarFileParams.Add(file.Key, Configuration.ApiClient.ParameterToFile(file.Key, file.Value));
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PostReplace", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return (new ApiResponse<FilesResult>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (FilesResult)Configuration.ApiClient.Deserialize(localVarResponse, typeof(FilesResult)))).Data;
+        }   
     }
 }
