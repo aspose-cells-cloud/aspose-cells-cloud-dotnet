@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="DifSaveOptions.cs">
+// <copyright company="Aspose" file="DocxSaveOptions.cs">
 //   Copyright (c) 2022 Aspose.Cells for Cloud
 // </copyright>
 // <summary>

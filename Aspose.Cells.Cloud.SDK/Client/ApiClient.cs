@@ -223,9 +223,9 @@ namespace Aspose.Cells.Cloud.SDK.Client
             // add form parameter, if any
             foreach(var param in formParams)
                 request.AddParameter(param.Key, param.Value);
-            //request.AlwaysMultipartFormData = true;
+
             // add file parameter, if any
-            foreach (var param in fileParams)
+            foreach(var param in fileParams)
             {
 #if NETCOREAPP2_0
                 request.AddFile(param.Value.Name, param.Value.Writer, param.Value.FileName, param.Value.ContentLength, param.Value.ContentType);
@@ -237,9 +237,10 @@ namespace Aspose.Cells.Cloud.SDK.Client
                     //request.AddParameter(param.Value.Name, stream.ToArray(), ParameterType.RequestBody);
                     request.AddFile(param.Value.Name, stream.ToArray(), param.Value.Name, param.Value.ContentType);
                 }
+
 #endif
             }
-           
+
             if (postBody != null) // http body (model or byte[]) parameter
             {
                 if (postBody.GetType() == typeof(String))
@@ -340,11 +341,12 @@ namespace Aspose.Cells.Cloud.SDK.Client
             else
                 return FileParameter.Create(name, ReadAsBytes(stream), "no_file_name_provided");
         }
+
         public FileParameter ParameterToFile(string name, string value)
         {
             return FileParameter.Create(name,Encoding.UTF8.GetBytes(value), name);
         }
-
+        
         /// <summary>
         /// If parameter is DateTime, output in a formatted string (default ISO 8601), customizable with Configuration.DateTime.
         /// If parameter is a list, join the list with ",".

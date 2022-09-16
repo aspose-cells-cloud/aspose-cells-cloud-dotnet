@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ImageSaveOptions.cs">
+// <copyright company="Aspose" file="JsonSaveOptions.cs">
 //   Copyright (c) 2022 Aspose.Cells for Cloud
 // </copyright>
 // <summary>
@@ -40,30 +40,28 @@ namespace Aspose.Cells.Cloud.SDK.Model
   public class JsonSaveOptions : SaveOptions 
   {                       
         /// <summary>
-        /// Gets or sets ChartImageType
+        /// Gets or sets ExportArea
         /// </summary>  
-		[DataMember(Name= "ExportArea", EmitDefaultValue=false)]
+		[DataMember(Name="ExportArea", EmitDefaultValue=false)]
         public CellArea ExportArea { get; set; }
 
         /// <summary>
-        /// Gets or sets EmbededImageNameInSvg
+        /// Gets or sets HasHeaderRow
         /// </summary>  
-		[DataMember(Name= "HasHeaderRow", EmitDefaultValue=false)]
+		[DataMember(Name="HasHeaderRow", EmitDefaultValue=false)]
         public bool? HasHeaderRow { get; set; }
 
         /// <summary>
-        /// Gets or sets HorizontalResolution
+        /// Gets or sets ExportAsString
         /// </summary>  
-		[DataMember(Name= "ExportAsString", EmitDefaultValue=false)]
+		[DataMember(Name="ExportAsString", EmitDefaultValue=false)]
         public bool? ExportAsString { get; set; }
 
         /// <summary>
-        /// Gets or sets ImageFormat
+        /// Gets or sets Indent
         /// </summary>  
-		[DataMember(Name= "Indent", EmitDefaultValue=false)]
+		[DataMember(Name="Indent", EmitDefaultValue=false)]
         public string Indent { get; set; }
-
-        
 
         /// <summary>
         /// Get the string presentation of the object

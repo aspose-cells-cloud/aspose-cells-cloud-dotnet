@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ImageSaveOptions.cs">
+// <copyright company="Aspose" file="SqlScriptSaveOptions.cs">
 //   Copyright (c) 2022 Aspose.Cells for Cloud
 // </copyright>
 // <summary>
@@ -64,22 +64,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public bool? AddBlankLineBetweenRows { get; set; }
 
         /// <summary>
-        /// Gets or sets Separator
-        /// </summary>  
-		[DataMember(Name="Separator", EmitDefaultValue=false)]
-        public char? Separator { get; set; }
-
-        /// <summary>
         /// Gets or sets OperatorType
         /// </summary>  
 		[DataMember(Name="OperatorType", EmitDefaultValue=false)]
         public string OperatorType { get; set; }
-
-        /// <summary>
-        /// Gets or sets PrimaryKey
-        /// </summary>  
-		[DataMember(Name="PrimaryKey", EmitDefaultValue=false)]
-        public int? PrimaryKey { get; set; }
 
         /// <summary>
         /// Gets or sets CreateTable
@@ -109,17 +97,20 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// Gets or sets ExportAsString
         /// </summary>  
 		[DataMember(Name="ExportAsString", EmitDefaultValue=false)]
-        public int? ExportAsString { get; set; }
+        public bool? ExportAsString { get; set; }
+
         /// <summary>
         /// Gets or sets ExportArea
-        /// </summary>
-        [DataMember(Name = "ExportArea", EmitDefaultValue = false)]
+        /// </summary>  
+		[DataMember(Name="ExportArea", EmitDefaultValue=false)]
         public CellArea ExportArea { get; set; }
+
         /// <summary>
         /// Gets or sets HasHeaderRow
-        /// </summary>
-        [DataMember(Name = "HasHeaderRow", EmitDefaultValue = false)] 
+        /// </summary>  
+		[DataMember(Name="HasHeaderRow", EmitDefaultValue=false)]
         public bool? HasHeaderRow { get; set; }
+
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -132,9 +123,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
           sb.Append("  ColumnTypeMap: ").Append(this.ColumnTypeMap).Append("\n");
           sb.Append("  CheckAllDataForColumnType: ").Append(this.CheckAllDataForColumnType).Append("\n");
           sb.Append("  AddBlankLineBetweenRows: ").Append(this.AddBlankLineBetweenRows).Append("\n");
-          sb.Append("  Separator: ").Append(this.Separator).Append("\n");
           sb.Append("  OperatorType: ").Append(this.OperatorType).Append("\n");
-          sb.Append("  PrimaryKey: ").Append(this.PrimaryKey).Append("\n");
           sb.Append("  CreateTable: ").Append(this.CreateTable).Append("\n");
           sb.Append("  IdName: ").Append(this.IdName).Append("\n");
           sb.Append("  StartId: ").Append(this.StartId).Append("\n");
