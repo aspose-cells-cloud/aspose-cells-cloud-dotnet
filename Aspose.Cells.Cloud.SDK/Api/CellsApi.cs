@@ -8295,6 +8295,86 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="checkExcelRestriction"> (optional, default to true)</param>
         /// <returns>ApiResponse of FileInfo</returns>
         ApiResponse<FileInfo> PostConvertWorkbookToPNGWithHttpInfo(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction"> (optional, default to true)</param>
+        /// <returns>FileInfo</returns>
+        FileInfo PostConvertWorkbookToPptx(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction"> (optional, default to true)</param>
+        /// <returns>ApiResponse of FileInfo</returns>
+        ApiResponse<FileInfo> PostConvertWorkbookToPptxWithHttpInfo(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction"> (optional, default to true)</param>
+        /// <returns>FileInfo</returns>
+        FileInfo PostConvertWorkbookToHtml(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction"> (optional, default to true)</param>
+        /// <returns>ApiResponse of FileInfo</returns>
+        ApiResponse<FileInfo> PostConvertWorkbookToHtmlWithHttpInfo(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction"> (optional, default to true)</param>
+        /// <returns>FileInfo</returns>
+        FileInfo PostConvertWorkbookToMarkdown(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction"> (optional, default to true)</param>
+        /// <returns>ApiResponse of FileInfo</returns>
+        ApiResponse<FileInfo> PostConvertWorkbookToMarkdownWithHttpInfo(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null);
+
+
         /// <summary>
         /// Check if storage exists
         /// </summary>
@@ -16601,6 +16681,82 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <param name="checkExcelRestriction">(optional, default to true)</param>
         /// <returns>Task of ApiResponse (FileInfo)</returns>
         System.Threading.Tasks.Task<ApiResponse<FileInfo>> PostConvertWorkbookToPNGAsyncWithHttpInfo(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction">(optional, default to true)</param>
+        /// <returns>Task of FileInfo</returns>
+        System.Threading.Tasks.Task<FileInfo> PostConvertWorkbookToPptxAsync(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction">(optional, default to true)</param>
+        /// <returns>Task of ApiResponse (FileInfo)</returns>
+        System.Threading.Tasks.Task<ApiResponse<FileInfo>> PostConvertWorkbookToPptxAsyncWithHttpInfo(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction">(optional, default to true)</param>
+        /// <returns>Task of FileInfo</returns>
+        System.Threading.Tasks.Task<FileInfo> PostConvertWorkbookToHtmlAsync(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction">(optional, default to true)</param>
+        /// <returns>Task of ApiResponse (FileInfo)</returns>
+        System.Threading.Tasks.Task<ApiResponse<FileInfo>> PostConvertWorkbookToHtmlAsyncWithHttpInfo(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction">(optional, default to true)</param>
+        /// <returns>Task of FileInfo</returns>
+        System.Threading.Tasks.Task<FileInfo> PostConvertWorkbookToMarkdownAsync(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction">(optional, default to true)</param>
+        /// <returns>Task of ApiResponse (FileInfo)</returns>
+        System.Threading.Tasks.Task<ApiResponse<FileInfo>> PostConvertWorkbookToMarkdownAsyncWithHttpInfo(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null);
         /// <summary>
         /// Check if storage exists
         /// </summary>
@@ -65473,6 +65629,449 @@ namespace Aspose.Cells.Cloud.SDK.Api
             if (ExceptionFactory != null)
             {
                 Exception exception = ExceptionFactory("PostConvertWorkbookToPNG", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<FileInfo>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (FileInfo)Configuration.ApiClient.Deserialize(localVarResponse, typeof(FileInfo)));
+        }
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction"> (optional, default to true)</param>
+        /// <returns>FileInfo</returns>
+        public FileInfo PostConvertWorkbookToPptx(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null)
+        {
+            checkAccessToken();
+            ApiResponse<FileInfo> localVarResponse = PostConvertWorkbookToPptxWithHttpInfo(file, password, checkExcelRestriction);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction"> (optional, default to true)</param>
+        /// <returns>ApiResponse of FileInfo</returns>
+        public ApiResponse<FileInfo> PostConvertWorkbookToPptxWithHttpInfo(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null)
+        {
+            // verify the required parameter 'file' is set
+            if (file == null)
+                throw new ApiException(400, "Missing required parameter 'file' when calling CellsApi->PostConvertWorkbookToPptx");
+
+            var localVarPath = "/cells/convert/Pptx";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(password)); // query parameter
+            if (checkExcelRestriction != null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
+            if (file != null) localVarFileParams.Add("file", Configuration.ApiClient.ParameterToFile("file", file));
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PostConvertWorkbookToPptx", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<FileInfo>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (FileInfo)Configuration.ApiClient.Deserialize(localVarResponse, typeof(FileInfo)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction"> (optional, default to true)</param>
+        /// <returns>Task of FileInfo</returns>
+        public async System.Threading.Tasks.Task<FileInfo> PostConvertWorkbookToPptxAsync(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null)
+        {
+            ApiResponse<FileInfo> localVarResponse = await PostConvertWorkbookToPptxAsyncWithHttpInfo(file, password, checkExcelRestriction);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction"> (optional, default to true)</param>
+        /// <returns>Task of ApiResponse (FileInfo)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<FileInfo>> PostConvertWorkbookToPptxAsyncWithHttpInfo(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null)
+        {
+            // verify the required parameter 'file' is set
+            if (file == null)
+                throw new ApiException(400, "Missing required parameter 'file' when calling CellsApi->PostConvertWorkbookToPptx");
+
+            var localVarPath = "/cells/convert/Pptx";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(password)); // query parameter
+            if (checkExcelRestriction != null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
+            if (file != null) localVarFileParams.Add("file", Configuration.ApiClient.ParameterToFile("file", file));
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PostConvertWorkbookToPptx", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<FileInfo>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (FileInfo)Configuration.ApiClient.Deserialize(localVarResponse, typeof(FileInfo)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction"> (optional, default to true)</param>
+        /// <returns>FileInfo</returns>
+        public FileInfo PostConvertWorkbookToHtml(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null)
+        {
+            checkAccessToken();
+            ApiResponse<FileInfo> localVarResponse = PostConvertWorkbookToHtmlWithHttpInfo(file, password, checkExcelRestriction);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction"> (optional, default to true)</param>
+        /// <returns>ApiResponse of FileInfo</returns>
+        public ApiResponse<FileInfo> PostConvertWorkbookToHtmlWithHttpInfo(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null)
+        {
+            // verify the required parameter 'file' is set
+            if (file == null)
+                throw new ApiException(400, "Missing required parameter 'file' when calling CellsApi->PostConvertWorkbookToHtml");
+
+            var localVarPath = "/cells/convert/html";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(password)); // query parameter
+            if (checkExcelRestriction != null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
+            if (file != null) localVarFileParams.Add("file", Configuration.ApiClient.ParameterToFile("file", file));
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PostConvertWorkbookToHtml", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<FileInfo>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (FileInfo)Configuration.ApiClient.Deserialize(localVarResponse, typeof(FileInfo)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction"> (optional, default to true)</param>
+        /// <returns>Task of FileInfo</returns>
+        public async System.Threading.Tasks.Task<FileInfo> PostConvertWorkbookToHtmlAsync(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null)
+        {
+            ApiResponse<FileInfo> localVarResponse = await PostConvertWorkbookToHtmlAsyncWithHttpInfo(file, password, checkExcelRestriction);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction"> (optional, default to true)</param>
+        /// <returns>Task of ApiResponse (FileInfo)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<FileInfo>> PostConvertWorkbookToHtmlAsyncWithHttpInfo(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null)
+        {
+            // verify the required parameter 'file' is set
+            if (file == null)
+                throw new ApiException(400, "Missing required parameter 'file' when calling CellsApi->PostConvertWorkbookToHtml");
+
+            var localVarPath = "/cells/convert/Html";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(password)); // query parameter
+            if (checkExcelRestriction != null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
+            if (file != null) localVarFileParams.Add("file", Configuration.ApiClient.ParameterToFile("file", file));
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PostConvertWorkbookToHtml", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<FileInfo>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (FileInfo)Configuration.ApiClient.Deserialize(localVarResponse, typeof(FileInfo)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction"> (optional, default to true)</param>
+        /// <returns>FileInfo</returns>
+        public FileInfo PostConvertWorkbookToMarkdown(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null)
+        {
+            checkAccessToken();
+            ApiResponse<FileInfo> localVarResponse = PostConvertWorkbookToMarkdownWithHttpInfo(file, password, checkExcelRestriction);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction"> (optional, default to true)</param>
+        /// <returns>ApiResponse of FileInfo</returns>
+        public ApiResponse<FileInfo> PostConvertWorkbookToMarkdownWithHttpInfo(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null)
+        {
+            // verify the required parameter 'file' is set
+            if (file == null)
+                throw new ApiException(400, "Missing required parameter 'file' when calling CellsApi->PostConvertWorkbookToMarkdown");
+
+            var localVarPath = "/cells/convert/markdown";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(password)); // query parameter
+            if (checkExcelRestriction != null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
+            if (file != null) localVarFileParams.Add("file", Configuration.ApiClient.ParameterToFile("file", file));
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PostConvertWorkbookToMarkdown", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<FileInfo>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (FileInfo)Configuration.ApiClient.Deserialize(localVarResponse, typeof(FileInfo)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction"> (optional, default to true)</param>
+        /// <returns>Task of FileInfo</returns>
+        public async System.Threading.Tasks.Task<FileInfo> PostConvertWorkbookToMarkdownAsync(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null)
+        {
+            ApiResponse<FileInfo> localVarResponse = await PostConvertWorkbookToMarkdownAsyncWithHttpInfo(file, password, checkExcelRestriction);
+            return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Aspose.Cells.Cloud.SDK.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">File to upload</param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction"> (optional, default to true)</param>
+        /// <returns>Task of ApiResponse (FileInfo)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<FileInfo>> PostConvertWorkbookToMarkdownAsyncWithHttpInfo(System.IO.Stream file, string password = null, bool? checkExcelRestriction = null)
+        {
+            // verify the required parameter 'file' is set
+            if (file == null)
+                throw new ApiException(400, "Missing required parameter 'file' when calling CellsApi->PostConvertWorkbookToMarkdown");
+
+            var localVarPath = "/cells/convert/Markdown";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (password != null) localVarQueryParams.Add("password", Configuration.ApiClient.ParameterToString(password)); // query parameter
+            if (checkExcelRestriction != null) localVarQueryParams.Add("checkExcelRestriction", Configuration.ApiClient.ParameterToString(checkExcelRestriction)); // query parameter
+            if (file != null) localVarFileParams.Add("file", Configuration.ApiClient.ParameterToFile("file", file));
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("PostConvertWorkbookToMarkdown", localVarResponse);
                 if (exception != null) throw exception;
             }
 

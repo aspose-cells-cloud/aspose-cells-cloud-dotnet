@@ -44,6 +44,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
             string dsfile = "roywang.pfx";
             string password = "123456";
             string folder = TEMPFOLDER;
+            UpdateDataFile(instance,  dsfile);
             UpdateDataFile(instance, folder, name);
             var response = instance.CellsWorkbookPostDigitalSignature(name, dsfile, password, folder);
             Assert.IsInstanceOf<CellsCloudResponse>(response, "response is CellsCloudResponse");
