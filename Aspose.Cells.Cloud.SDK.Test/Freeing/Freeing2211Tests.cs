@@ -11,7 +11,7 @@ namespace Aspose.Cells.Cloud.SDK.Test
     /// Please update the test case below to test the API endpoint.
     /// </remarks>
     [TestFixture]
-    public class Freeing2210Tests : CellsBaseTest
+    public class Freeing2211Tests : CellsBaseTest
     {
         private CellsApi instance;
         private LightCellsApi lightInstance;
@@ -36,21 +36,21 @@ namespace Aspose.Cells.Cloud.SDK.Test
 
 
         [Test]
-        public void CellsCELLSCLOUD_PostConvertPNG()
+        public void CellsCELLSCLOUD_PostConvertJson()
         {
-            var fileInfo = instance.PostConvertWorkbookToPNG(GetTestDataStream(BOOK1));
+            var fileInfo = instance.PostConvertWorkbookToJson(GetTestDataStream(BOOK1));
             Assert.IsInstanceOf<Model.FileInfo>(fileInfo, "response is AccessTokenResponse");
         }
         [Test]
-        public void CellsCELLSCLOUD_PostConvertPDF()
+        public void CellsCELLSCLOUD_PostConvertSQL()
         {
-            var fileInfo = instance.PostConvertWorkbookToPDF(GetTestDataStream(BOOK1));
+            var fileInfo = instance.PostConvertWorkbookToSQL(GetTestDataStream(BOOK1));
             Assert.IsInstanceOf<Model.FileInfo>(fileInfo, "response is AccessTokenResponse");
         }
         [Test]
-        public void CellsCELLSCLOUD_PostConvertDocx()
+        public void CellsCELLSCLOUD_PostConvertCSV()
         {
-            var fileInfo = instance.PostConvertWorkbookToDocx(GetTestDataStream(BOOK1));
+            var fileInfo = instance.PostConvertWorkbookToCSV(GetTestDataStream(BOOK1));
             Assert.IsInstanceOf<Model.FileInfo>(fileInfo, "response is AccessTokenResponse");
         }
     }
