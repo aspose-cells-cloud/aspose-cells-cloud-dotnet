@@ -11,10 +11,9 @@ namespace Aspose.Cells.Cloud.SDK.Test
     /// Please update the test case below to test the API endpoint.
     /// </remarks>
     [TestFixture]
-    public class Freeing2210Tests : CellsBaseTest
+    public class Freeing2209Tests : CellsBaseTest
     {
         private CellsApi instance;
-        private LightCellsApi lightInstance;
         /// <summary>
         /// Setup before each unit test
         /// </summary>

@@ -1,4 +1,5 @@
-[string[]]$lines =dotnet build  --framework netstandard2.0  --configuration Release .\Aspose.Cells.Cloud.SDK\Aspose.Cells.Cloud.SDK.csproj
+$StartTime = Get-Date
+[string[]]$lines =dotnet build  --framework netstandard2.0   .\Aspose.Cells.Cloud.SDK\Aspose.Cells.Cloud.SDK.csproj
 foreach( $line in  $lines)
 {
     if($line -match  "Build succeeded")
@@ -7,7 +8,7 @@ foreach( $line in  $lines)
         break;
     }
 }
-[string[]]$lines =dotnet build  --framework netcoreapp2.2 .\Aspose.Cells.Cloud.SDK.Test\Aspose.Cells.Cloud.SDK.Test.csproj
+[string[]]$lines =dotnet build .\Aspose.Cells.Cloud.SDK.Test\Aspose.Cells.Cloud.SDK.Test.csproj
 foreach( $line in  $lines)
 {
     if($line -match  "Build succeeded")
@@ -16,7 +17,7 @@ foreach( $line in  $lines)
         break;
     }
 }
-[string[]]$lines = dotnet test  --framework netcoreapp2.2 .\Aspose.Cells.Cloud.SDK.Test\Aspose.Cells.Cloud.SDK.Test.csproj
+[string[]]$lines = dotnet test  .\Aspose.Cells.Cloud.SDK.Test\Aspose.Cells.Cloud.SDK.Test.csproj
 $total = 0
 $passed = 0
 $failed = 0

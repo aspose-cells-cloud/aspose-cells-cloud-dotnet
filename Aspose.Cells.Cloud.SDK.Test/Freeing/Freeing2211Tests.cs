@@ -14,7 +14,6 @@ namespace Aspose.Cells.Cloud.SDK.Test
     public class Freeing2211Tests : CellsBaseTest
     {
         private CellsApi instance;
-        private LightCellsApi lightInstance;
         /// <summary>
         /// Setup before each unit test
         /// </summary>
