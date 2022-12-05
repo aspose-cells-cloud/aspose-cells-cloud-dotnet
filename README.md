@@ -21,7 +21,7 @@ The Cloud SDK enhances your C#, ASP.NET, & other .NET-based cloud apps to [proce
 - [Leverage the power of Pivot Tables](https://docs.aspose.cloud/cells/working-with-pivot-tables/) & Ranges.
 
 
-## Feature & Enhancements in Version 22.11
+## Feature & Enhancements in Version 22.12
 
 - Add api for converting workbook to Json.
 - Add api for converting workbook to SQL.
