@@ -23,9 +23,7 @@ The Cloud SDK enhances your C#, ASP.NET, & other .NET-based cloud apps to [proce
 
 ## Feature & Enhancements in Version 22.12
 
-- Add api for converting workbook to Json.
-- Add api for converting workbook to SQL.
-- Add api for converting workbook to CSV.
+- Support chart axis operations.
  
 ## Read & Write Spreadsheet Formats
 
