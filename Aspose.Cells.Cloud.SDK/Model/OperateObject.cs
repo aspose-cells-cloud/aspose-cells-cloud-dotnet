@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="OperateObject.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,46 +23,44 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class OperateObject 
-  {                       
+    /// <summary>
+    /// OperateObject.
+    /// </summary>
+    public class OperateObject
+    {
         /// <summary>
-        /// Gets or sets OperateObjectType
-        /// </summary>  
-		[DataMember(Name="OperateObjectType", EmitDefaultValue=false)]
-        public string OperateObjectType { get; set; }
-
-        /// <summary>
-        /// Gets or sets Position
-        /// </summary>  
-		[DataMember(Name="Position", EmitDefaultValue=false)]
-        public OperateObjectPosition Position { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets OperateObjectType.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string OperateObjectType { get; set; }
+
+        /// <summary>
+        /// Gets or sets Position.
+        /// </summary>
+        public virtual OperateObjectPosition Position { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class OperateObject {\n");
-          sb.Append("  OperateObjectType: ").Append(this.OperateObjectType).Append("\n");
-          sb.Append("  Position: ").Append(this.Position).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class OperateObject {\n");
+            sb.Append("  OperateObjectType: ").Append(this.OperateObjectType).Append("\n");
+            sb.Append("  Position: ").Append(this.Position).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="SingleValue.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,46 +23,44 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class SingleValue 
-  {                       
+    /// <summary>
+    /// SingleValue.
+    /// </summary>
+    public class SingleValue
+    {
         /// <summary>
-        /// Gets or sets ValueType
-        /// </summary>  
-		[DataMember(Name="ValueType", EmitDefaultValue=false)]
-        public ValueType ValueType { get; set; }
-
-        /// <summary>
-        /// Gets or sets Value
-        /// </summary>  
-		[DataMember(Name="Value", EmitDefaultValue=false)]
-        public string Value { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Value.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string Value { get; set; }
+
+        /// <summary>
+        /// Gets or sets ValueType.
+        /// </summary>
+        public virtual ValueType ValueType { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class SingleValue {\n");
-          sb.Append("  ValueType: ").Append(this.ValueType).Append("\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class SingleValue {\n");
+            sb.Append("  Value: ").Append(this.Value).Append("\n");
+            sb.Append("  ValueType: ").Append(this.ValueType).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

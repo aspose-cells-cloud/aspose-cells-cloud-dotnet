@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ChartOperateParameter.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,95 +23,104 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class ChartOperateParameter : OperateParameter 
-  {                       
+    /// <summary>
+    /// ChartOperateParameter.
+    /// </summary>
+    public class ChartOperateParameter : OperateParameter
+    {
         /// <summary>
-        /// Gets or sets Title
-        /// </summary>  
-		[DataMember(Name="Title", EmitDefaultValue=false)]
-        public string Title { get; set; }
-
-        /// <summary>
-        /// Gets or sets Area
-        /// </summary>  
-		[DataMember(Name="Area", EmitDefaultValue=false)]
-        public string Area { get; set; }
-
-        /// <summary>
-        /// Gets or sets CategoryData
-        /// </summary>  
-		[DataMember(Name="CategoryData", EmitDefaultValue=false)]
-        public string CategoryData { get; set; }
-
-        /// <summary>
-        /// Gets or sets UpperLeftRow
-        /// </summary>  
-		[DataMember(Name="UpperLeftRow", EmitDefaultValue=false)]
-        public int? UpperLeftRow { get; set; }
-
-        /// <summary>
-        /// Gets or sets LowerRightColumn
-        /// </summary>  
-		[DataMember(Name="LowerRightColumn", EmitDefaultValue=false)]
-        public int? LowerRightColumn { get; set; }
-
-        /// <summary>
-        /// Gets or sets LowerRightRow
-        /// </summary>  
-		[DataMember(Name="LowerRightRow", EmitDefaultValue=false)]
-        public int? LowerRightRow { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsAutoGetSerialName
-        /// </summary>  
-		[DataMember(Name="IsAutoGetSerialName", EmitDefaultValue=false)]
-        public bool? IsAutoGetSerialName { get; set; }
-
-        /// <summary>
-        /// Gets or sets ChartType
-        /// </summary>  
-		[DataMember(Name="ChartType", EmitDefaultValue=false)]
-        public string ChartType { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsVertical
-        /// </summary>  
-		[DataMember(Name="IsVertical", EmitDefaultValue=false)]
-        public bool? IsVertical { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets ChartIndex.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual int? ChartIndex { get; set; }
+
+        /// <summary>
+        /// Gets or sets ChartType.
+        /// </summary>
+        public virtual string ChartType { get; set; }
+
+        /// <summary>
+        /// Gets or sets UpperLeftRow.
+        /// </summary>
+        public virtual int? UpperLeftRow { get; set; }
+
+        /// <summary>
+        /// Gets or sets UpperLeftColumn.
+        /// </summary>
+        public virtual int? UpperLeftColumn { get; set; }
+
+        /// <summary>
+        /// Gets or sets LowerRightRow.
+        /// </summary>
+        public virtual int? LowerRightRow { get; set; }
+
+        /// <summary>
+        /// Gets or sets LowerRightColumn.
+        /// </summary>
+        public virtual int? LowerRightColumn { get; set; }
+
+        /// <summary>
+        /// Gets or sets Area.
+        /// </summary>
+        public virtual string Area { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsVertical.
+        /// </summary>
+        public virtual bool? IsVertical { get; set; }
+
+        /// <summary>
+        /// Gets or sets CategoryData.
+        /// </summary>
+        public virtual string CategoryData { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsAutoGetSerialName.
+        /// </summary>
+        public virtual bool? IsAutoGetSerialName { get; set; }
+
+        /// <summary>
+        /// Gets or sets Title.
+        /// </summary>
+        public virtual string Title { get; set; }
+
+        /// <summary>
+        /// Gets or sets OperateType.
+        /// </summary>
+        public override string OperateType { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class ChartOperateParameter {\n");
-          sb.Append("  Title: ").Append(this.Title).Append("\n");
-          sb.Append("  Area: ").Append(this.Area).Append("\n");
-          sb.Append("  CategoryData: ").Append(this.CategoryData).Append("\n");
-          sb.Append("  UpperLeftRow: ").Append(this.UpperLeftRow).Append("\n");
-          sb.Append("  LowerRightColumn: ").Append(this.LowerRightColumn).Append("\n");
-          sb.Append("  LowerRightRow: ").Append(this.LowerRightRow).Append("\n");
-          sb.Append("  IsAutoGetSerialName: ").Append(this.IsAutoGetSerialName).Append("\n");
-          sb.Append("  ChartType: ").Append(this.ChartType).Append("\n");
-          sb.Append("  IsVertical: ").Append(this.IsVertical).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class ChartOperateParameter {\n");
+            sb.Append("  ChartIndex: ").Append(this.ChartIndex).Append("\n");
+            sb.Append("  ChartType: ").Append(this.ChartType).Append("\n");
+            sb.Append("  UpperLeftRow: ").Append(this.UpperLeftRow).Append("\n");
+            sb.Append("  UpperLeftColumn: ").Append(this.UpperLeftColumn).Append("\n");
+            sb.Append("  LowerRightRow: ").Append(this.LowerRightRow).Append("\n");
+            sb.Append("  LowerRightColumn: ").Append(this.LowerRightColumn).Append("\n");
+            sb.Append("  Area: ").Append(this.Area).Append("\n");
+            sb.Append("  IsVertical: ").Append(this.IsVertical).Append("\n");
+            sb.Append("  CategoryData: ").Append(this.CategoryData).Append("\n");
+            sb.Append("  IsAutoGetSerialName: ").Append(this.IsAutoGetSerialName).Append("\n");
+            sb.Append("  Title: ").Append(this.Title).Append("\n");
+            sb.Append("  OperateType: ").Append(this.OperateType).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

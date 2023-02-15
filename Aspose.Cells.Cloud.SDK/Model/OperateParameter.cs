@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="OperateParameter.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,39 +23,38 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class OperateParameter 
-  {                       
+    /// <summary>
+    /// OperateParameter.
+    /// </summary>
+    public class OperateParameter
+    {
         /// <summary>
-        /// Gets or sets OperateType
-        /// </summary>  
-		[DataMember(Name="OperateType", EmitDefaultValue=false)]
-        public string OperateType { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets OperateType.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string OperateType { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class OperateParameter {\n");
-          sb.Append("  OperateType: ").Append(this.OperateType).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class OperateParameter {\n");
+            sb.Append("  OperateType: ").Append(this.OperateType).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

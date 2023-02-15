@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="FilterColumn.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,95 +23,86 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class FilterColumn 
-  {                       
+    /// <summary>
+    /// FilterColumn.
+    /// </summary>
+    public class FilterColumn
+    {
         /// <summary>
-        /// Gets or sets FilterType
-        /// </summary>  
-		[DataMember(Name="FilterType", EmitDefaultValue=false)]
-        public string FilterType { get; set; }
-
-        /// <summary>
-        /// Gets or sets MultipleFilters
-        /// </summary>  
-		[DataMember(Name="MultipleFilters", EmitDefaultValue=false)]
-        public MultipleFilters MultipleFilters { get; set; }
-
-        /// <summary>
-        /// Gets or sets CustomFilters
-        /// </summary>  
-		[DataMember(Name="CustomFilters", EmitDefaultValue=false)]
-        public List<CustomFilter> CustomFilters { get; set; }
-
-        /// <summary>
-        /// Gets or sets DynamicFilter
-        /// </summary>  
-		[DataMember(Name="DynamicFilter", EmitDefaultValue=false)]
-        public DynamicFilter DynamicFilter { get; set; }
-
-        /// <summary>
-        /// Gets or sets ColorFilter
-        /// </summary>  
-		[DataMember(Name="ColorFilter", EmitDefaultValue=false)]
-        public ColorFilter ColorFilter { get; set; }
-
-        /// <summary>
-        /// Gets or sets FieldIndex
-        /// </summary>  
-		[DataMember(Name="FieldIndex", EmitDefaultValue=false)]
-        public int? FieldIndex { get; set; }
-
-        /// <summary>
-        /// Gets or sets Top10Filter
-        /// </summary>  
-		[DataMember(Name="Top10Filter", EmitDefaultValue=false)]
-        public Top10Filter Top10Filter { get; set; }
-
-        /// <summary>
-        /// Gets or sets IconFilter
-        /// </summary>  
-		[DataMember(Name="IconFilter", EmitDefaultValue=false)]
-        public IconFilter IconFilter { get; set; }
-
-        /// <summary>
-        /// Gets or sets Visibledropdown
-        /// </summary>  
-		[DataMember(Name="Visibledropdown", EmitDefaultValue=false)]
-        public string Visibledropdown { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets FieldIndex.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual int? FieldIndex { get; set; }
+
+        /// <summary>
+        /// Gets or sets FilterType.
+        /// </summary>
+        public virtual string FilterType { get; set; }
+
+        /// <summary>
+        /// Gets or sets MultipleFilters.
+        /// </summary>
+        public virtual MultipleFilters MultipleFilters { get; set; }
+
+        /// <summary>
+        /// Gets or sets ColorFilter.
+        /// </summary>
+        public virtual ColorFilter ColorFilter { get; set; }
+
+        /// <summary>
+        /// Gets or sets CustomFilters.
+        /// </summary>
+        public virtual IList<CustomFilter> CustomFilters { get; set; }
+
+        /// <summary>
+        /// Gets or sets DynamicFilter.
+        /// </summary>
+        public virtual DynamicFilter DynamicFilter { get; set; }
+
+        /// <summary>
+        /// Gets or sets IconFilter.
+        /// </summary>
+        public virtual IconFilter IconFilter { get; set; }
+
+        /// <summary>
+        /// Gets or sets Top10Filter.
+        /// </summary>
+        public virtual Top10Filter Top10Filter { get; set; }
+
+        /// <summary>
+        /// Gets or sets Visibledropdown.
+        /// </summary>
+        public virtual string Visibledropdown { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class FilterColumn {\n");
-          sb.Append("  FilterType: ").Append(this.FilterType).Append("\n");
-          sb.Append("  MultipleFilters: ").Append(this.MultipleFilters).Append("\n");
-          sb.Append("  CustomFilters: ").Append(this.CustomFilters).Append("\n");
-          sb.Append("  DynamicFilter: ").Append(this.DynamicFilter).Append("\n");
-          sb.Append("  ColorFilter: ").Append(this.ColorFilter).Append("\n");
-          sb.Append("  FieldIndex: ").Append(this.FieldIndex).Append("\n");
-          sb.Append("  Top10Filter: ").Append(this.Top10Filter).Append("\n");
-          sb.Append("  IconFilter: ").Append(this.IconFilter).Append("\n");
-          sb.Append("  Visibledropdown: ").Append(this.Visibledropdown).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class FilterColumn {\n");
+            sb.Append("  FieldIndex: ").Append(this.FieldIndex).Append("\n");
+            sb.Append("  FilterType: ").Append(this.FilterType).Append("\n");
+            sb.Append("  MultipleFilters: ").Append(this.MultipleFilters).Append("\n");
+            sb.Append("  ColorFilter: ").Append(this.ColorFilter).Append("\n");
+            sb.Append("  CustomFilters: ").Append(this.CustomFilters).Append("\n");
+            sb.Append("  DynamicFilter: ").Append(this.DynamicFilter).Append("\n");
+            sb.Append("  IconFilter: ").Append(this.IconFilter).Append("\n");
+            sb.Append("  Top10Filter: ").Append(this.Top10Filter).Append("\n");
+            sb.Append("  Visibledropdown: ").Append(this.Visibledropdown).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

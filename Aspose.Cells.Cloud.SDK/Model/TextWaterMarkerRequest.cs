@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="TextWaterMarkerRequest.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,67 +23,62 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// Used by text water marker requests.
-  /// </summary>  
-  [DataContract]
-  public class TextWaterMarkerRequest 
-  {                       
+    /// <summary>
+    /// TextWaterMarkerRequest.
+    /// </summary>
+    public class TextWaterMarkerRequest
+    {
         /// <summary>
-        /// water marker.
-        /// </summary>  
-		[DataMember(Name="Text", EmitDefaultValue=false)]
-        public string Text { get; set; }
-
-        /// <summary>
-        /// font name.
-        /// </summary>  
-		[DataMember(Name="FontName", EmitDefaultValue=false)]
-        public string FontName { get; set; }
-
-        /// <summary>
-        /// font size.
-        /// </summary>  
-		[DataMember(Name="FontSize", EmitDefaultValue=false)]
-        public int? FontSize { get; set; }
-
-        /// <summary>
-        /// height.
-        /// </summary>  
-		[DataMember(Name="Height", EmitDefaultValue=false)]
-        public int? Height { get; set; }
-
-        /// <summary>
-        /// width.
-        /// </summary>  
-		[DataMember(Name="Width", EmitDefaultValue=false)]
-        public int? Width { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Text.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string Text { get; set; }
+
+        /// <summary>
+        /// Gets or sets FontName.
+        /// </summary>
+        public virtual string FontName { get; set; }
+
+        /// <summary>
+        /// Gets or sets FontSize.
+        /// </summary>
+        public virtual int? FontSize { get; set; }
+
+        /// <summary>
+        /// Gets or sets Height.
+        /// </summary>
+        public virtual int? Height { get; set; }
+
+        /// <summary>
+        /// Gets or sets Width.
+        /// </summary>
+        public virtual int? Width { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class TextWaterMarkerRequest {\n");
-          sb.Append("  Text: ").Append(this.Text).Append("\n");
-          sb.Append("  FontName: ").Append(this.FontName).Append("\n");
-          sb.Append("  FontSize: ").Append(this.FontSize).Append("\n");
-          sb.Append("  Height: ").Append(this.Height).Append("\n");
-          sb.Append("  Width: ").Append(this.Width).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class TextWaterMarkerRequest {\n");
+            sb.Append("  Text: ").Append(this.Text).Append("\n");
+            sb.Append("  FontName: ").Append(this.FontName).Append("\n");
+            sb.Append("  FontSize: ").Append(this.FontSize).Append("\n");
+            sb.Append("  Height: ").Append(this.Height).Append("\n");
+            sb.Append("  Width: ").Append(this.Width).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

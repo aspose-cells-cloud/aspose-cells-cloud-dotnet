@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="Worksheets.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,46 +23,44 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class Worksheets 
-  {                       
+    /// <summary>
+    /// Worksheets.
+    /// </summary>
+    public class Worksheets : LinkElement
+    {
         /// <summary>
-        /// Gets or sets Link
-        /// </summary>  
-		[DataMember(Name="link", EmitDefaultValue=false)]
-        public Link Link { get; set; }
-
-        /// <summary>
-        /// Gets or sets WorksheetList
-        /// </summary>  
-		[DataMember(Name="WorksheetList", EmitDefaultValue=false)]
-        public List<LinkElement> WorksheetList { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets WorksheetList.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual IList<LinkElement> WorksheetList { get; set; }
+
+        /// <summary>
+        /// Gets or sets link.
+        /// </summary>
+        public override Link link { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class Worksheets {\n");
-          sb.Append("  Link: ").Append(this.Link).Append("\n");
-          sb.Append("  WorksheetList: ").Append(this.WorksheetList).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class Worksheets {\n");
+            sb.Append("  WorksheetList: ").Append(this.WorksheetList).Append("\n");
+            sb.Append("  link: ").Append(this.link).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

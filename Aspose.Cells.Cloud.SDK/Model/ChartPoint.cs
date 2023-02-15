@@ -1,0 +1,108 @@
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright company="Aspose" file="ChartPoint.cs">
+//   Copyright (c) 2023 Aspose.Cells Cloud
+// </copyright>
+// <summary>
+//   Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+// 
+//  The above copyright notice and this permission notice shall be included in all
+//  copies or substantial portions of the Software.
+// 
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+//  SOFTWARE.
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
+
+namespace Aspose.Cells.Cloud.SDK.Model
+{
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
+
+    /// <summary>
+    /// ChartPoint.
+    /// </summary>
+    public class ChartPoint : LinkElement
+    {
+        /// <summary>
+        /// Gets or sets Area.
+        /// </summary>
+        public virtual Area Area { get; set; }
+
+        /// <summary>
+        /// Gets or sets Border.
+        /// </summary>
+        public virtual Line Border { get; set; }
+
+        /// <summary>
+        /// Gets or sets DataLabels.
+        /// </summary>
+        public virtual DataLabels DataLabels { get; set; }
+
+        /// <summary>
+        /// Gets or sets Explosion.
+        /// </summary>
+        public virtual int? Explosion { get; set; }
+
+        /// <summary>
+        /// Gets or sets Marker.
+        /// </summary>
+        public virtual Marker Marker { get; set; }
+
+        /// <summary>
+        /// Gets or sets Shadow.
+        /// </summary>
+        public virtual bool? Shadow { get; set; }
+
+        /// <summary>
+        /// Gets or sets XValue.
+        /// </summary>
+        public virtual string XValue { get; set; }
+
+        /// <summary>
+        /// Gets or sets YValue.
+        /// </summary>
+        public virtual string YValue { get; set; }
+
+        /// <summary>
+        /// Gets or sets link.
+        /// </summary>
+        public override Link link { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.Append("class ChartPoint {\n");
+            sb.Append("  Area: ").Append(this.Area).Append("\n");
+            sb.Append("  Border: ").Append(this.Border).Append("\n");
+            sb.Append("  DataLabels: ").Append(this.DataLabels).Append("\n");
+            sb.Append("  Explosion: ").Append(this.Explosion).Append("\n");
+            sb.Append("  Marker: ").Append(this.Marker).Append("\n");
+            sb.Append("  Shadow: ").Append(this.Shadow).Append("\n");
+            sb.Append("  XValue: ").Append(this.XValue).Append("\n");
+            sb.Append("  YValue: ").Append(this.YValue).Append("\n");
+            sb.Append("  link: ").Append(this.link).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
+        }
+    }
+}

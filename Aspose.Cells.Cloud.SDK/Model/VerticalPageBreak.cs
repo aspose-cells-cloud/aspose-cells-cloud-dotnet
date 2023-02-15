@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="VerticalPageBreak.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,53 +23,50 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class VerticalPageBreak 
-  {                       
+    /// <summary>
+    /// VerticalPageBreak.
+    /// </summary>
+    public class VerticalPageBreak
+    {
         /// <summary>
-        /// Gets or sets Column
-        /// </summary>  
-		[DataMember(Name="Column", EmitDefaultValue=false)]
-        public int? Column { get; set; }
-
-        /// <summary>
-        /// Gets or sets StartRow
-        /// </summary>  
-		[DataMember(Name="StartRow", EmitDefaultValue=false)]
-        public int? StartRow { get; set; }
-
-        /// <summary>
-        /// Gets or sets EndRow
-        /// </summary>  
-		[DataMember(Name="EndRow", EmitDefaultValue=false)]
-        public int? EndRow { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Column.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual int? Column { get; set; }
+
+        /// <summary>
+        /// Gets or sets EndRow.
+        /// </summary>
+        public virtual int? EndRow { get; set; }
+
+        /// <summary>
+        /// Gets or sets StartRow.
+        /// </summary>
+        public virtual int? StartRow { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class VerticalPageBreak {\n");
-          sb.Append("  Column: ").Append(this.Column).Append("\n");
-          sb.Append("  StartRow: ").Append(this.StartRow).Append("\n");
-          sb.Append("  EndRow: ").Append(this.EndRow).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class VerticalPageBreak {\n");
+            sb.Append("  Column: ").Append(this.Column).Append("\n");
+            sb.Append("  EndRow: ").Append(this.EndRow).Append("\n");
+            sb.Append("  StartRow: ").Append(this.StartRow).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

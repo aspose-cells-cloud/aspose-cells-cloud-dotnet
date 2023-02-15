@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="CellsColor.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,67 +23,80 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class CellsColor 
-  {                       
+    /// <summary>
+    /// CellsColor.
+    /// </summary>
+    public class CellsColor
+    {
         /// <summary>
-        /// Gets or sets Color
-        /// </summary>  
-		[DataMember(Name="Color", EmitDefaultValue=false)]
-        public Color Color { get; set; }
-
-        /// <summary>
-        /// Gets or sets Type
-        /// </summary>  
-		[DataMember(Name="Type", EmitDefaultValue=false)]
-        public string Type { get; set; }
-
-        /// <summary>
-        /// Gets or sets ThemeColor
-        /// </summary>  
-		[DataMember(Name="ThemeColor", EmitDefaultValue=false)]
-        public ThemeColor ThemeColor { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsShapeColor
-        /// </summary>  
-		[DataMember(Name="IsShapeColor", EmitDefaultValue=false)]
-        public bool? IsShapeColor { get; set; }
-
-        /// <summary>
-        /// Gets or sets ColorIndex
-        /// </summary>  
-		[DataMember(Name="ColorIndex", EmitDefaultValue=false)]
-        public int? ColorIndex { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Color.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual Color Color { get; set; }
+
+        /// <summary>
+        /// Gets or sets ColorIndex.
+        /// </summary>
+        public virtual int? ColorIndex { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsShapeColor.
+        /// </summary>
+        public virtual bool? IsShapeColor { get; set; }
+
+        /// <summary>
+        /// Gets or sets tint.
+        /// </summary>
+        public virtual double? tint { get; set; }
+
+        /// <summary>
+        /// Gets or sets Argb.
+        /// </summary>
+        public virtual int? Argb { get; set; }
+
+        /// <summary>
+        /// Gets or sets ThemeColor.
+        /// </summary>
+        public virtual ThemeColor ThemeColor { get; set; }
+
+        /// <summary>
+        /// Gets or sets Type.
+        /// </summary>
+        public virtual string Type { get; set; }
+
+        /// <summary>
+        /// Gets or sets Transparency.
+        /// </summary>
+        public virtual double? Transparency { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class CellsColor {\n");
-          sb.Append("  Color: ").Append(this.Color).Append("\n");
-          sb.Append("  Type: ").Append(this.Type).Append("\n");
-          sb.Append("  ThemeColor: ").Append(this.ThemeColor).Append("\n");
-          sb.Append("  IsShapeColor: ").Append(this.IsShapeColor).Append("\n");
-          sb.Append("  ColorIndex: ").Append(this.ColorIndex).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class CellsColor {\n");
+            sb.Append("  Color: ").Append(this.Color).Append("\n");
+            sb.Append("  ColorIndex: ").Append(this.ColorIndex).Append("\n");
+            sb.Append("  IsShapeColor: ").Append(this.IsShapeColor).Append("\n");
+            sb.Append("  tint: ").Append(this.tint).Append("\n");
+            sb.Append("  Argb: ").Append(this.Argb).Append("\n");
+            sb.Append("  ThemeColor: ").Append(this.ThemeColor).Append("\n");
+            sb.Append("  Type: ").Append(this.Type).Append("\n");
+            sb.Append("  Transparency: ").Append(this.Transparency).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

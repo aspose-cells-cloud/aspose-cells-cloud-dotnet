@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="Comment.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,116 +23,104 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class Comment 
-  {                       
+    /// <summary>
+    /// Comment.
+    /// </summary>
+    public class Comment : LinkElement
+    {
         /// <summary>
-        /// Gets or sets Link
-        /// </summary>  
-		[DataMember(Name="link", EmitDefaultValue=false)]
-        public Link Link { get; set; }
-
-        /// <summary>
-        /// Gets or sets AutoSize
-        /// </summary>  
-		[DataMember(Name="AutoSize", EmitDefaultValue=false)]
-        public bool? AutoSize { get; set; }
-
-        /// <summary>
-        /// Gets or sets Author
-        /// </summary>  
-		[DataMember(Name="Author", EmitDefaultValue=false)]
-        public string Author { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsVisible
-        /// </summary>  
-		[DataMember(Name="IsVisible", EmitDefaultValue=false)]
-        public bool? IsVisible { get; set; }
-
-        /// <summary>
-        /// Gets or sets TextOrientationType
-        /// </summary>  
-		[DataMember(Name="TextOrientationType", EmitDefaultValue=false)]
-        public string TextOrientationType { get; set; }
-
-        /// <summary>
-        /// Gets or sets Height
-        /// </summary>  
-		[DataMember(Name="Height", EmitDefaultValue=false)]
-        public int? Height { get; set; }
-
-        /// <summary>
-        /// Gets or sets Note
-        /// </summary>  
-		[DataMember(Name="Note", EmitDefaultValue=false)]
-        public string Note { get; set; }
-
-        /// <summary>
-        /// Gets or sets Width
-        /// </summary>  
-		[DataMember(Name="Width", EmitDefaultValue=false)]
-        public int? Width { get; set; }
-
-        /// <summary>
-        /// Gets or sets TextVerticalAlignment
-        /// </summary>  
-		[DataMember(Name="TextVerticalAlignment", EmitDefaultValue=false)]
-        public string TextVerticalAlignment { get; set; }
-
-        /// <summary>
-        /// Gets or sets CellName
-        /// </summary>  
-		[DataMember(Name="CellName", EmitDefaultValue=false)]
-        public string CellName { get; set; }
-
-        /// <summary>
-        /// Gets or sets HtmlNote
-        /// </summary>  
-		[DataMember(Name="HtmlNote", EmitDefaultValue=false)]
-        public string HtmlNote { get; set; }
-
-        /// <summary>
-        /// Gets or sets TextHorizontalAlignment
-        /// </summary>  
-		[DataMember(Name="TextHorizontalAlignment", EmitDefaultValue=false)]
-        public string TextHorizontalAlignment { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets CellName.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string CellName { get; set; }
+
+        /// <summary>
+        /// Gets or sets Author.
+        /// </summary>
+        public virtual string Author { get; set; }
+
+        /// <summary>
+        /// Gets or sets HtmlNote.
+        /// </summary>
+        public virtual string HtmlNote { get; set; }
+
+        /// <summary>
+        /// Gets or sets Note.
+        /// </summary>
+        public virtual string Note { get; set; }
+
+        /// <summary>
+        /// Gets or sets AutoSize.
+        /// </summary>
+        public virtual bool? AutoSize { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsVisible.
+        /// </summary>
+        public virtual bool? IsVisible { get; set; }
+
+        /// <summary>
+        /// Gets or sets Width.
+        /// </summary>
+        public virtual int? Width { get; set; }
+
+        /// <summary>
+        /// Gets or sets Height.
+        /// </summary>
+        public virtual int? Height { get; set; }
+
+        /// <summary>
+        /// Gets or sets TextHorizontalAlignment.
+        /// </summary>
+        public virtual string TextHorizontalAlignment { get; set; }
+
+        /// <summary>
+        /// Gets or sets TextOrientationType.
+        /// </summary>
+        public virtual string TextOrientationType { get; set; }
+
+        /// <summary>
+        /// Gets or sets TextVerticalAlignment.
+        /// </summary>
+        public virtual string TextVerticalAlignment { get; set; }
+
+        /// <summary>
+        /// Gets or sets link.
+        /// </summary>
+        public override Link link { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class Comment {\n");
-          sb.Append("  Link: ").Append(this.Link).Append("\n");
-          sb.Append("  AutoSize: ").Append(this.AutoSize).Append("\n");
-          sb.Append("  Author: ").Append(this.Author).Append("\n");
-          sb.Append("  IsVisible: ").Append(this.IsVisible).Append("\n");
-          sb.Append("  TextOrientationType: ").Append(this.TextOrientationType).Append("\n");
-          sb.Append("  Height: ").Append(this.Height).Append("\n");
-          sb.Append("  Note: ").Append(this.Note).Append("\n");
-          sb.Append("  Width: ").Append(this.Width).Append("\n");
-          sb.Append("  TextVerticalAlignment: ").Append(this.TextVerticalAlignment).Append("\n");
-          sb.Append("  CellName: ").Append(this.CellName).Append("\n");
-          sb.Append("  HtmlNote: ").Append(this.HtmlNote).Append("\n");
-          sb.Append("  TextHorizontalAlignment: ").Append(this.TextHorizontalAlignment).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class Comment {\n");
+            sb.Append("  CellName: ").Append(this.CellName).Append("\n");
+            sb.Append("  Author: ").Append(this.Author).Append("\n");
+            sb.Append("  HtmlNote: ").Append(this.HtmlNote).Append("\n");
+            sb.Append("  Note: ").Append(this.Note).Append("\n");
+            sb.Append("  AutoSize: ").Append(this.AutoSize).Append("\n");
+            sb.Append("  IsVisible: ").Append(this.IsVisible).Append("\n");
+            sb.Append("  Width: ").Append(this.Width).Append("\n");
+            sb.Append("  Height: ").Append(this.Height).Append("\n");
+            sb.Append("  TextHorizontalAlignment: ").Append(this.TextHorizontalAlignment).Append("\n");
+            sb.Append("  TextOrientationType: ").Append(this.TextOrientationType).Append("\n");
+            sb.Append("  TextVerticalAlignment: ").Append(this.TextVerticalAlignment).Append("\n");
+            sb.Append("  link: ").Append(this.link).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="Border.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,53 +23,62 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class Border 
-  {                       
+    /// <summary>
+    /// Border.
+    /// </summary>
+    public class Border
+    {
         /// <summary>
-        /// Gets or sets Color
-        /// </summary>  
-		[DataMember(Name="Color", EmitDefaultValue=false)]
-        public Color Color { get; set; }
-
-        /// <summary>
-        /// Gets or sets BorderType
-        /// </summary>  
-		[DataMember(Name="BorderType", EmitDefaultValue=false)]
-        public string BorderType { get; set; }
-
-        /// <summary>
-        /// Gets or sets LineStyle
-        /// </summary>  
-		[DataMember(Name="LineStyle", EmitDefaultValue=false)]
-        public string LineStyle { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets LineStyle.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string LineStyle { get; set; }
+
+        /// <summary>
+        /// Gets or sets Color.
+        /// </summary>
+        public virtual Color Color { get; set; }
+
+        /// <summary>
+        /// Gets or sets BorderType.
+        /// </summary>
+        public virtual string BorderType { get; set; }
+
+        /// <summary>
+        /// Gets or sets ThemeColor.
+        /// </summary>
+        public virtual ThemeColor ThemeColor { get; set; }
+
+        /// <summary>
+        /// Gets or sets ArgbColor.
+        /// </summary>
+        public virtual int? ArgbColor { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class Border {\n");
-          sb.Append("  Color: ").Append(this.Color).Append("\n");
-          sb.Append("  BorderType: ").Append(this.BorderType).Append("\n");
-          sb.Append("  LineStyle: ").Append(this.LineStyle).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class Border {\n");
+            sb.Append("  LineStyle: ").Append(this.LineStyle).Append("\n");
+            sb.Append("  Color: ").Append(this.Color).Append("\n");
+            sb.Append("  BorderType: ").Append(this.BorderType).Append("\n");
+            sb.Append("  ThemeColor: ").Append(this.ThemeColor).Append("\n");
+            sb.Append("  ArgbColor: ").Append(this.ArgbColor).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

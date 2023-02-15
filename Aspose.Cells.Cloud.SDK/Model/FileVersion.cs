@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="FileVersion.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,46 +23,74 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// File Version
-  /// </summary>  
-  [DataContract]
-  public class FileVersion : StorageFile 
-  {                       
+    /// <summary>
+    /// FileVersion.
+    /// </summary>
+    public class FileVersion : StorageFile
+    {
         /// <summary>
-        /// File Version ID.
-        /// </summary>  
-		[DataMember(Name="VersionId", EmitDefaultValue=false)]
-        public string VersionId { get; set; }
-
-        /// <summary>
-        /// Specifies whether the file is (true) or is not (false) the latest version of an file.
-        /// </summary>  
-		[DataMember(Name="IsLatest", EmitDefaultValue=false)]
-        public bool? IsLatest { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets VersionId.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string VersionId { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsLatest.
+        /// </summary>
+        public virtual bool? IsLatest { get; set; }
+
+        /// <summary>
+        /// Gets or sets Name.
+        /// </summary>
+        public override string Name { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsFolder.
+        /// </summary>
+        public override bool? IsFolder { get; set; }
+
+        /// <summary>
+        /// Gets or sets ModifiedDate.
+        /// </summary>
+        public override DateTime? ModifiedDate { get; set; }
+
+        /// <summary>
+        /// Gets or sets Size.
+        /// </summary>
+        public override long? Size { get; set; }
+
+        /// <summary>
+        /// Gets or sets Path.
+        /// </summary>
+        public override string Path { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class FileVersion {\n");
-          sb.Append("  VersionId: ").Append(this.VersionId).Append("\n");
-          sb.Append("  IsLatest: ").Append(this.IsLatest).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class FileVersion {\n");
+            sb.Append("  VersionId: ").Append(this.VersionId).Append("\n");
+            sb.Append("  IsLatest: ").Append(this.IsLatest).Append("\n");
+            sb.Append("  Name: ").Append(this.Name).Append("\n");
+            sb.Append("  IsFolder: ").Append(this.IsFolder).Append("\n");
+            sb.Append("  ModifiedDate: ").Append(this.ModifiedDate).Append("\n");
+            sb.Append("  Size: ").Append(this.Size).Append("\n");
+            sb.Append("  Path: ").Append(this.Path).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

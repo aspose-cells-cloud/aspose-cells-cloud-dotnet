@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ObjectExist.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,46 +23,44 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// Object exists
-  /// </summary>  
-  [DataContract]
-  public class ObjectExist 
-  {                       
+    /// <summary>
+    /// ObjectExist.
+    /// </summary>
+    public class ObjectExist
+    {
         /// <summary>
-        /// Indicates that the file or folder exists.
-        /// </summary>  
-		[DataMember(Name="Exists", EmitDefaultValue=false)]
-        public bool? Exists { get; set; }
-
-        /// <summary>
-        /// True if it is a folder, false if it is a file.
-        /// </summary>  
-		[DataMember(Name="IsFolder", EmitDefaultValue=false)]
-        public bool? IsFolder { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Exists.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual bool? Exists { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsFolder.
+        /// </summary>
+        public virtual bool? IsFolder { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class ObjectExist {\n");
-          sb.Append("  Exists: ").Append(this.Exists).Append("\n");
-          sb.Append("  IsFolder: ").Append(this.IsFolder).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class ObjectExist {\n");
+            sb.Append("  Exists: ").Append(this.Exists).Append("\n");
+            sb.Append("  IsFolder: ").Append(this.IsFolder).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="AboveAverage.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,53 +23,50 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// Describe the AboveAverage conditional formatting rule. This conditional formatting     rule highlights cells that are above or below the average for all values     in the range.
-  /// </summary>  
-  [DataContract]
-  public class AboveAverage 
-  {                       
+    /// <summary>
+    /// AboveAverage.
+    /// </summary>
+    public class AboveAverage
+    {
         /// <summary>
-        /// Get or set the flag indicating whether the rule is an \"above average\" rule.    'true' indicates 'above average'.  Default value is true.             
-        /// </summary>  
-		[DataMember(Name="IsAboveAverage", EmitDefaultValue=false)]
-        public bool? IsAboveAverage { get; set; }
-
-        /// <summary>
-        /// Get or set the flag indicating whether the 'aboveAverage' and 'belowAverage'    criteria is inclusive of the average itself, or exclusive of that value.    'true' indicates to include the average value in the criteria.  Default value    is false.             
-        /// </summary>  
-		[DataMember(Name="IsEqualAverage", EmitDefaultValue=false)]
-        public bool? IsEqualAverage { get; set; }
-
-        /// <summary>
-        /// Get or set the number of standard deviations to include above or below the   average in the conditional formatting rule. The input value must between   0 and 3 (include 0 and 3). Setting this value to 0 means stdDev is not set.    The default value is 0.             
-        /// </summary>  
-		[DataMember(Name="StdDev", EmitDefaultValue=false)]
-        public int? StdDev { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets IsAboveAverage.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual bool? IsAboveAverage { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsEqualAverage.
+        /// </summary>
+        public virtual bool? IsEqualAverage { get; set; }
+
+        /// <summary>
+        /// Gets or sets StdDev.
+        /// </summary>
+        public virtual int? StdDev { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class AboveAverage {\n");
-          sb.Append("  IsAboveAverage: ").Append(this.IsAboveAverage).Append("\n");
-          sb.Append("  IsEqualAverage: ").Append(this.IsEqualAverage).Append("\n");
-          sb.Append("  StdDev: ").Append(this.StdDev).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class AboveAverage {\n");
+            sb.Append("  IsAboveAverage: ").Append(this.IsAboveAverage).Append("\n");
+            sb.Append("  IsEqualAverage: ").Append(this.IsEqualAverage).Append("\n");
+            sb.Append("  StdDev: ").Append(this.StdDev).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

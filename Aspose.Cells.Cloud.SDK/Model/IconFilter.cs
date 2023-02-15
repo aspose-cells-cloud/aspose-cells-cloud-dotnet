@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="IconFilter.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,46 +23,44 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class IconFilter 
-  {                       
+    /// <summary>
+    /// IconFilter.
+    /// </summary>
+    public class IconFilter
+    {
         /// <summary>
-        /// Gets or sets IconId
-        /// </summary>  
-		[DataMember(Name="IconId", EmitDefaultValue=false)]
-        public int? IconId { get; set; }
-
-        /// <summary>
-        /// Gets or sets IconSetType
-        /// </summary>  
-		[DataMember(Name="IconSetType", EmitDefaultValue=false)]
-        public string IconSetType { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets IconId.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual int? IconId { get; set; }
+
+        /// <summary>
+        /// Gets or sets IconSetType.
+        /// </summary>
+        public virtual string IconSetType { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class IconFilter {\n");
-          sb.Append("  IconId: ").Append(this.IconId).Append("\n");
-          sb.Append("  IconSetType: ").Append(this.IconSetType).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class IconFilter {\n");
+            sb.Append("  IconId: ").Append(this.IconId).Append("\n");
+            sb.Append("  IconSetType: ").Append(this.IconSetType).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

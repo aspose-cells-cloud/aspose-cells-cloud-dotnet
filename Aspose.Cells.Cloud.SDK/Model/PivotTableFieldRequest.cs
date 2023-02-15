@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PivotTableFieldRequest.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,39 +23,38 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class PivotTableFieldRequest 
-  {                       
+    /// <summary>
+    /// PivotTableFieldRequest.
+    /// </summary>
+    public class PivotTableFieldRequest
+    {
         /// <summary>
-        /// Gets or sets Data
-        /// </summary>  
-		[DataMember(Name="Data", EmitDefaultValue=false)]
-        public List<int?> Data { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Data.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual List<int?> Data { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class PivotTableFieldRequest {\n");
-          sb.Append("  Data: ").Append(this.Data).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class PivotTableFieldRequest {\n");
+            sb.Append("  Data: ").Append(this.Data).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

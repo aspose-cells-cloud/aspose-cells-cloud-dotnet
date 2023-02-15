@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="GradientFill.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,60 +23,56 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class GradientFill 
-  {                       
+    /// <summary>
+    /// GradientFill.
+    /// </summary>
+    public class GradientFill
+    {
         /// <summary>
-        /// Gets or sets FillType
-        /// </summary>  
-		[DataMember(Name="FillType", EmitDefaultValue=false)]
-        public string FillType { get; set; }
-
-        /// <summary>
-        /// Gets or sets Angle
-        /// </summary>  
-		[DataMember(Name="Angle", EmitDefaultValue=false)]
-        public double? Angle { get; set; }
-
-        /// <summary>
-        /// Gets or sets GradientStops
-        /// </summary>  
-		[DataMember(Name="GradientStops", EmitDefaultValue=false)]
-        public List<GradientFillStop> GradientStops { get; set; }
-
-        /// <summary>
-        /// Gets or sets DirectionType
-        /// </summary>  
-		[DataMember(Name="DirectionType", EmitDefaultValue=false)]
-        public string DirectionType { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets FillType.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string FillType { get; set; }
+
+        /// <summary>
+        /// Gets or sets DirectionType.
+        /// </summary>
+        public virtual string DirectionType { get; set; }
+
+        /// <summary>
+        /// Gets or sets Angle.
+        /// </summary>
+        public virtual double? Angle { get; set; }
+
+        /// <summary>
+        /// Gets or sets GradientStops.
+        /// </summary>
+        public virtual IList<GradientFillStop> GradientStops { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class GradientFill {\n");
-          sb.Append("  FillType: ").Append(this.FillType).Append("\n");
-          sb.Append("  Angle: ").Append(this.Angle).Append("\n");
-          sb.Append("  GradientStops: ").Append(this.GradientStops).Append("\n");
-          sb.Append("  DirectionType: ").Append(this.DirectionType).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class GradientFill {\n");
+            sb.Append("  FillType: ").Append(this.FillType).Append("\n");
+            sb.Append("  DirectionType: ").Append(this.DirectionType).Append("\n");
+            sb.Append("  Angle: ").Append(this.Angle).Append("\n");
+            sb.Append("  GradientStops: ").Append(this.GradientStops).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

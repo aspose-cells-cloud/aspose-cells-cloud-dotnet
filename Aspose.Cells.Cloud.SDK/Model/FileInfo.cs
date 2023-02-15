@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="FileInfo.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,53 +23,50 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class FileInfo 
-  {                       
+    /// <summary>
+    /// FileInfo.
+    /// </summary>
+    public class FileInfo
+    {
         /// <summary>
-        /// Gets or sets Filename
-        /// </summary>  
-		[DataMember(Name="Filename", EmitDefaultValue=false)]
-        public string Filename { get; set; }
-
-        /// <summary>
-        /// Gets or sets FileSize
-        /// </summary>  
-		[DataMember(Name="FileSize", EmitDefaultValue=false)]
-        public long? FileSize { get; set; }
-
-        /// <summary>
-        /// Gets or sets FileContent
-        /// </summary>  
-		[DataMember(Name="FileContent", EmitDefaultValue=false)]
-        public string FileContent { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Filename.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string Filename { get; set; }
+
+        /// <summary>
+        /// Gets or sets FileSize.
+        /// </summary>
+        public virtual long? FileSize { get; set; }
+
+        /// <summary>
+        /// Gets or sets FileContent.
+        /// </summary>
+        public virtual string FileContent { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class FileInfo {\n");
-          sb.Append("  Filename: ").Append(this.Filename).Append("\n");
-          sb.Append("  FileSize: ").Append(this.FileSize).Append("\n");
-          sb.Append("  FileContent: ").Append(this.FileContent).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class FileInfo {\n");
+            sb.Append("  Filename: ").Append(this.Filename).Append("\n");
+            sb.Append("  FileSize: ").Append(this.FileSize).Append("\n");
+            sb.Append("  FileContent: ").Append(this.FileContent).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

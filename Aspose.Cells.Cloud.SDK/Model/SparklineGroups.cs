@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="SparklineGroups.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,39 +23,38 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class SparklineGroups 
-  {                       
+    /// <summary>
+    /// SparklineGroups.
+    /// </summary>
+    public class SparklineGroups
+    {
         /// <summary>
-        /// Gets or sets SparklineGroupList
-        /// </summary>  
-		[DataMember(Name="SparklineGroupList", EmitDefaultValue=false)]
-        public List<SparklineGroup> SparklineGroupList { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets SparklineGroupList.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual IList<SparklineGroup> SparklineGroupList { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class SparklineGroups {\n");
-          sb.Append("  SparklineGroupList: ").Append(this.SparklineGroupList).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class SparklineGroups {\n");
+            sb.Append("  SparklineGroupList: ").Append(this.SparklineGroupList).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

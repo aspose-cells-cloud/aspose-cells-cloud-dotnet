@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="CopyOptions.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,74 +23,68 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// Represents the copy options.
-  /// </summary>  
-  [DataContract]
-  public class CopyOptions 
-  {                       
+    /// <summary>
+    /// CopyOptions.
+    /// </summary>
+    public class CopyOptions
+    {
         /// <summary>
-        /// When copying the range in the same file and the chart refers to the source sheet,   False means the copied chart's data source will not be changed. True means the   copied chart's data source refers to the destination sheet.             
-        /// </summary>  
-		[DataMember(Name="ReferToDestinationSheet", EmitDefaultValue=false)]
-        public bool? ReferToDestinationSheet { get; set; }
-
-        /// <summary>
-        /// Indicates whether copying the names.
-        /// </summary>  
-		[DataMember(Name="CopyNames", EmitDefaultValue=false)]
-        public bool? CopyNames { get; set; }
-
-        /// <summary>
-        /// Gets or sets ReferToSheetWithSameName
-        /// </summary>  
-		[DataMember(Name="ReferToSheetWithSameName", EmitDefaultValue=false)]
-        public bool? ReferToSheetWithSameName { get; set; }
-
-        /// <summary>
-        /// Indicates whether copying column width in unit of characters.
-        /// </summary>  
-		[DataMember(Name="ColumnCharacterWidth", EmitDefaultValue=false)]
-        public bool? ColumnCharacterWidth { get; set; }
-
-        /// <summary>
-        /// If the formula is not valid for the dest destination, only copy values.
-        /// </summary>  
-		[DataMember(Name="CopyInvalidFormulasAsValues", EmitDefaultValue=false)]
-        public bool? CopyInvalidFormulasAsValues { get; set; }
-
-        /// <summary>
-        /// Indicates whether extend ranges when copying the range to adjacent range.
-        /// </summary>  
-		[DataMember(Name="ExtendToAdjacentRange", EmitDefaultValue=false)]
-        public bool? ExtendToAdjacentRange { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets ColumnCharacterWidth.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual bool? ColumnCharacterWidth { get; set; }
+
+        /// <summary>
+        /// Gets or sets CopyInvalidFormulasAsValues.
+        /// </summary>
+        public virtual bool? CopyInvalidFormulasAsValues { get; set; }
+
+        /// <summary>
+        /// Gets or sets CopyNames.
+        /// </summary>
+        public virtual bool? CopyNames { get; set; }
+
+        /// <summary>
+        /// Gets or sets ExtendToAdjacentRange.
+        /// </summary>
+        public virtual bool? ExtendToAdjacentRange { get; set; }
+
+        /// <summary>
+        /// Gets or sets ReferToDestinationSheet.
+        /// </summary>
+        public virtual bool? ReferToDestinationSheet { get; set; }
+
+        /// <summary>
+        /// Gets or sets ReferToSheetWithSameName.
+        /// </summary>
+        public virtual bool? ReferToSheetWithSameName { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class CopyOptions {\n");
-          sb.Append("  ReferToDestinationSheet: ").Append(this.ReferToDestinationSheet).Append("\n");
-          sb.Append("  CopyNames: ").Append(this.CopyNames).Append("\n");
-          sb.Append("  ReferToSheetWithSameName: ").Append(this.ReferToSheetWithSameName).Append("\n");
-          sb.Append("  ColumnCharacterWidth: ").Append(this.ColumnCharacterWidth).Append("\n");
-          sb.Append("  CopyInvalidFormulasAsValues: ").Append(this.CopyInvalidFormulasAsValues).Append("\n");
-          sb.Append("  ExtendToAdjacentRange: ").Append(this.ExtendToAdjacentRange).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class CopyOptions {\n");
+            sb.Append("  ColumnCharacterWidth: ").Append(this.ColumnCharacterWidth).Append("\n");
+            sb.Append("  CopyInvalidFormulasAsValues: ").Append(this.CopyInvalidFormulasAsValues).Append("\n");
+            sb.Append("  CopyNames: ").Append(this.CopyNames).Append("\n");
+            sb.Append("  ExtendToAdjacentRange: ").Append(this.ExtendToAdjacentRange).Append("\n");
+            sb.Append("  ReferToDestinationSheet: ").Append(this.ReferToDestinationSheet).Append("\n");
+            sb.Append("  ReferToSheetWithSameName: ").Append(this.ReferToSheetWithSameName).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

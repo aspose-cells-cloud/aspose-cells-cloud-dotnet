@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PageBreakOperateParameter.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,74 +23,74 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class PageBreakOperateParameter : OperateParameter 
-  {                       
+    /// <summary>
+    /// PageBreakOperateParameter.
+    /// </summary>
+    public class PageBreakOperateParameter : OperateParameter
+    {
         /// <summary>
-        /// Gets or sets Index
-        /// </summary>  
-		[DataMember(Name="Index", EmitDefaultValue=false)]
-        public int? Index { get; set; }
-
-        /// <summary>
-        /// Gets or sets EndIndex
-        /// </summary>  
-		[DataMember(Name="EndIndex", EmitDefaultValue=false)]
-        public int? EndIndex { get; set; }
-
-        /// <summary>
-        /// Gets or sets Column
-        /// </summary>  
-		[DataMember(Name="Column", EmitDefaultValue=false)]
-        public int? Column { get; set; }
-
-        /// <summary>
-        /// Gets or sets StartIndex
-        /// </summary>  
-		[DataMember(Name="StartIndex", EmitDefaultValue=false)]
-        public int? StartIndex { get; set; }
-
-        /// <summary>
-        /// Gets or sets PageBreakType
-        /// </summary>  
-		[DataMember(Name="PageBreakType", EmitDefaultValue=false)]
-        public string PageBreakType { get; set; }
-
-        /// <summary>
-        /// Gets or sets Row
-        /// </summary>  
-		[DataMember(Name="Row", EmitDefaultValue=false)]
-        public int? Row { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets PageBreakType.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string PageBreakType { get; set; }
+
+        /// <summary>
+        /// Gets or sets Index.
+        /// </summary>
+        public virtual int? Index { get; set; }
+
+        /// <summary>
+        /// Gets or sets Row.
+        /// </summary>
+        public virtual int? Row { get; set; }
+
+        /// <summary>
+        /// Gets or sets Column.
+        /// </summary>
+        public virtual int? Column { get; set; }
+
+        /// <summary>
+        /// Gets or sets StartIndex.
+        /// </summary>
+        public virtual int? StartIndex { get; set; }
+
+        /// <summary>
+        /// Gets or sets EndIndex.
+        /// </summary>
+        public virtual int? EndIndex { get; set; }
+
+        /// <summary>
+        /// Gets or sets OperateType.
+        /// </summary>
+        public override string OperateType { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class PageBreakOperateParameter {\n");
-          sb.Append("  Index: ").Append(this.Index).Append("\n");
-          sb.Append("  EndIndex: ").Append(this.EndIndex).Append("\n");
-          sb.Append("  Column: ").Append(this.Column).Append("\n");
-          sb.Append("  StartIndex: ").Append(this.StartIndex).Append("\n");
-          sb.Append("  PageBreakType: ").Append(this.PageBreakType).Append("\n");
-          sb.Append("  Row: ").Append(this.Row).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class PageBreakOperateParameter {\n");
+            sb.Append("  PageBreakType: ").Append(this.PageBreakType).Append("\n");
+            sb.Append("  Index: ").Append(this.Index).Append("\n");
+            sb.Append("  Row: ").Append(this.Row).Append("\n");
+            sb.Append("  Column: ").Append(this.Column).Append("\n");
+            sb.Append("  StartIndex: ").Append(this.StartIndex).Append("\n");
+            sb.Append("  EndIndex: ").Append(this.EndIndex).Append("\n");
+            sb.Append("  OperateType: ").Append(this.OperateType).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="FileSource.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,46 +23,44 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class FileSource 
-  {                       
+    /// <summary>
+    /// FileSource.
+    /// </summary>
+    public class FileSource
+    {
         /// <summary>
-        /// Gets or sets FilePath
-        /// </summary>  
-		[DataMember(Name="FilePath", EmitDefaultValue=false)]
-        public string FilePath { get; set; }
-
-        /// <summary>
-        /// Gets or sets FileSourceType
-        /// </summary>  
-		[DataMember(Name="FileSourceType", EmitDefaultValue=false)]
-        public string FileSourceType { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets FileSourceType.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string FileSourceType { get; set; }
+
+        /// <summary>
+        /// Gets or sets FilePath.
+        /// </summary>
+        public virtual string FilePath { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class FileSource {\n");
-          sb.Append("  FilePath: ").Append(this.FilePath).Append("\n");
-          sb.Append("  FileSourceType: ").Append(this.FileSourceType).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class FileSource {\n");
+            sb.Append("  FileSourceType: ").Append(this.FileSourceType).Append("\n");
+            sb.Append("  FilePath: ").Append(this.FilePath).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

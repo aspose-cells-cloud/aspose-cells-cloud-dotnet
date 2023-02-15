@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="DiscUsage.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,46 +23,44 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// Class for disc space information.
-  /// </summary>  
-  [DataContract]
-  public class DiscUsage 
-  {                       
+    /// <summary>
+    /// DiscUsage.
+    /// </summary>
+    public class DiscUsage
+    {
         /// <summary>
-        /// Application used disc space.
-        /// </summary>  
-		[DataMember(Name="UsedSize", EmitDefaultValue=false)]
-        public long? UsedSize { get; set; }
-
-        /// <summary>
-        /// Total disc space.
-        /// </summary>  
-		[DataMember(Name="TotalSize", EmitDefaultValue=false)]
-        public long? TotalSize { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets UsedSize.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual long? UsedSize { get; set; }
+
+        /// <summary>
+        /// Gets or sets TotalSize.
+        /// </summary>
+        public virtual long? TotalSize { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class DiscUsage {\n");
-          sb.Append("  UsedSize: ").Append(this.UsedSize).Append("\n");
-          sb.Append("  TotalSize: ").Append(this.TotalSize).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class DiscUsage {\n");
+            sb.Append("  UsedSize: ").Append(this.UsedSize).Append("\n");
+            sb.Append("  TotalSize: ").Append(this.TotalSize).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

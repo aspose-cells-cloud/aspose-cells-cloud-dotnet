@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="AutoFitterOptions.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,53 +23,56 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class AutoFitterOptions 
-  {                       
+    /// <summary>
+    /// AutoFitterOptions.
+    /// </summary>
+    public class AutoFitterOptions
+    {
         /// <summary>
-        /// Gets or sets IgnoreHidden
-        /// </summary>  
-		[DataMember(Name="IgnoreHidden", EmitDefaultValue=false)]
-        public bool? IgnoreHidden { get; set; }
-
-        /// <summary>
-        /// Gets or sets OnlyAuto
-        /// </summary>  
-		[DataMember(Name="OnlyAuto", EmitDefaultValue=false)]
-        public bool? OnlyAuto { get; set; }
-
-        /// <summary>
-        /// Gets or sets AutoFitMergedCells
-        /// </summary>  
-		[DataMember(Name="AutoFitMergedCells", EmitDefaultValue=false)]
-        public bool? AutoFitMergedCells { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets AutoFitMergedCellsType.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string AutoFitMergedCellsType { get; set; }
+
+        /// <summary>
+        /// Gets or sets AutoFitMergedCells.
+        /// </summary>
+        public virtual bool? AutoFitMergedCells { get; set; }
+
+        /// <summary>
+        /// Gets or sets IgnoreHidden.
+        /// </summary>
+        public virtual bool? IgnoreHidden { get; set; }
+
+        /// <summary>
+        /// Gets or sets OnlyAuto.
+        /// </summary>
+        public virtual bool? OnlyAuto { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class AutoFitterOptions {\n");
-          sb.Append("  IgnoreHidden: ").Append(this.IgnoreHidden).Append("\n");
-          sb.Append("  OnlyAuto: ").Append(this.OnlyAuto).Append("\n");
-          sb.Append("  AutoFitMergedCells: ").Append(this.AutoFitMergedCells).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class AutoFitterOptions {\n");
+            sb.Append("  AutoFitMergedCellsType: ").Append(this.AutoFitMergedCellsType).Append("\n");
+            sb.Append("  AutoFitMergedCells: ").Append(this.AutoFitMergedCells).Append("\n");
+            sb.Append("  IgnoreHidden: ").Append(this.IgnoreHidden).Append("\n");
+            sb.Append("  OnlyAuto: ").Append(this.OnlyAuto).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="NegativeBarFormat.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,60 +23,56 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// Represents the color settings of the data bars for negative values that are    defined by a data bar conditional formating rule.             
-  /// </summary>  
-  [DataContract]
-  public class NegativeBarFormat 
-  {                       
+    /// <summary>
+    /// NegativeBarFormat.
+    /// </summary>
+    public class NegativeBarFormat
+    {
         /// <summary>
-        /// Gets or sets a FormatColor object that you can use to specify the border    color for negative data bars.             
-        /// </summary>  
-		[DataMember(Name="BorderColor", EmitDefaultValue=false)]
-        public Color BorderColor { get; set; }
-
-        /// <summary>
-        /// Gets or sets a FormatColor object that you can use to specify the fill color    for negative data bars.             
-        /// </summary>  
-		[DataMember(Name="Color", EmitDefaultValue=false)]
-        public Color Color { get; set; }
-
-        /// <summary>
-        /// Gets whether to use the same border color as positive data bars.             
-        /// </summary>  
-		[DataMember(Name="BorderColorType", EmitDefaultValue=false)]
-        public string BorderColorType { get; set; }
-
-        /// <summary>
-        /// Gets or sets whether to use the same fill color as positive data bars.
-        /// </summary>  
-		[DataMember(Name="ColorType", EmitDefaultValue=false)]
-        public string ColorType { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets BorderColor.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual Color BorderColor { get; set; }
+
+        /// <summary>
+        /// Gets or sets BorderColorType.
+        /// </summary>
+        public virtual string BorderColorType { get; set; }
+
+        /// <summary>
+        /// Gets or sets Color.
+        /// </summary>
+        public virtual Color Color { get; set; }
+
+        /// <summary>
+        /// Gets or sets ColorType.
+        /// </summary>
+        public virtual string ColorType { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class NegativeBarFormat {\n");
-          sb.Append("  BorderColor: ").Append(this.BorderColor).Append("\n");
-          sb.Append("  Color: ").Append(this.Color).Append("\n");
-          sb.Append("  BorderColorType: ").Append(this.BorderColorType).Append("\n");
-          sb.Append("  ColorType: ").Append(this.ColorType).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class NegativeBarFormat {\n");
+            sb.Append("  BorderColor: ").Append(this.BorderColor).Append("\n");
+            sb.Append("  BorderColorType: ").Append(this.BorderColorType).Append("\n");
+            sb.Append("  Color: ").Append(this.Color).Append("\n");
+            sb.Append("  ColorType: ").Append(this.ColorType).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

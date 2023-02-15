@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="CustomParserConfig.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,53 +23,50 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class CustomParserConfig 
-  {                       
+    /// <summary>
+    /// CustomParserConfig.
+    /// </summary>
+    public class CustomParserConfig
+    {
         /// <summary>
-        /// Gets or sets ColumnIndex
-        /// </summary>  
-		[DataMember(Name="ColumnIndex", EmitDefaultValue=false)]
-        public int? ColumnIndex { get; set; }
-
-        /// <summary>
-        /// Gets or sets CustomStyle
-        /// </summary>  
-		[DataMember(Name="CustomStyle", EmitDefaultValue=false)]
-        public string CustomStyle { get; set; }
-
-        /// <summary>
-        /// Gets or sets ParseMethod
-        /// </summary>  
-		[DataMember(Name="ParseMethod", EmitDefaultValue=false)]
-        public string ParseMethod { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets ColumnIndex.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual int? ColumnIndex { get; set; }
+
+        /// <summary>
+        /// Gets or sets ParseMethod.
+        /// </summary>
+        public virtual string ParseMethod { get; set; }
+
+        /// <summary>
+        /// Gets or sets CustomStyle.
+        /// </summary>
+        public virtual string CustomStyle { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class CustomParserConfig {\n");
-          sb.Append("  ColumnIndex: ").Append(this.ColumnIndex).Append("\n");
-          sb.Append("  CustomStyle: ").Append(this.CustomStyle).Append("\n");
-          sb.Append("  ParseMethod: ").Append(this.ParseMethod).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class CustomParserConfig {\n");
+            sb.Append("  ColumnIndex: ").Append(this.ColumnIndex).Append("\n");
+            sb.Append("  ParseMethod: ").Append(this.ParseMethod).Append("\n");
+            sb.Append("  CustomStyle: ").Append(this.CustomStyle).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

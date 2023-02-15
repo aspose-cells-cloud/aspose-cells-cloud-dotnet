@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="Column.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,74 +23,68 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class Column 
-  {                       
+    /// <summary>
+    /// Column.
+    /// </summary>
+    public class Column : LinkElement
+    {
         /// <summary>
-        /// Gets or sets Link
-        /// </summary>  
-		[DataMember(Name="link", EmitDefaultValue=false)]
-        public Link Link { get; set; }
-
-        /// <summary>
-        /// Gets or sets Index
-        /// </summary>  
-		[DataMember(Name="Index", EmitDefaultValue=false)]
-        public int? Index { get; set; }
-
-        /// <summary>
-        /// Gets or sets Style
-        /// </summary>  
-		[DataMember(Name="Style", EmitDefaultValue=false)]
-        public LinkElement Style { get; set; }
-
-        /// <summary>
-        /// Gets or sets GroupLevel
-        /// </summary>  
-		[DataMember(Name="GroupLevel", EmitDefaultValue=false)]
-        public int? GroupLevel { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsHidden
-        /// </summary>  
-		[DataMember(Name="IsHidden", EmitDefaultValue=false)]
-        public bool? IsHidden { get; set; }
-
-        /// <summary>
-        /// Gets or sets Width
-        /// </summary>  
-		[DataMember(Name="Width", EmitDefaultValue=false)]
-        public double? Width { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets GroupLevel.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual int? GroupLevel { get; set; }
+
+        /// <summary>
+        /// Gets or sets Index.
+        /// </summary>
+        public virtual int? Index { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsHidden.
+        /// </summary>
+        public virtual bool? IsHidden { get; set; }
+
+        /// <summary>
+        /// Gets or sets Width.
+        /// </summary>
+        public virtual double? Width { get; set; }
+
+        /// <summary>
+        /// Gets or sets Style.
+        /// </summary>
+        public virtual LinkElement Style { get; set; }
+
+        /// <summary>
+        /// Gets or sets link.
+        /// </summary>
+        public override Link link { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class Column {\n");
-          sb.Append("  Link: ").Append(this.Link).Append("\n");
-          sb.Append("  Index: ").Append(this.Index).Append("\n");
-          sb.Append("  Style: ").Append(this.Style).Append("\n");
-          sb.Append("  GroupLevel: ").Append(this.GroupLevel).Append("\n");
-          sb.Append("  IsHidden: ").Append(this.IsHidden).Append("\n");
-          sb.Append("  Width: ").Append(this.Width).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class Column {\n");
+            sb.Append("  GroupLevel: ").Append(this.GroupLevel).Append("\n");
+            sb.Append("  Index: ").Append(this.Index).Append("\n");
+            sb.Append("  IsHidden: ").Append(this.IsHidden).Append("\n");
+            sb.Append("  Width: ").Append(this.Width).Append("\n");
+            sb.Append("  Style: ").Append(this.Style).Append("\n");
+            sb.Append("  link: ").Append(this.link).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

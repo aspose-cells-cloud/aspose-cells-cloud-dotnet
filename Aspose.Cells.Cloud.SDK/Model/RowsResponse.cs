@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="RowsResponse.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,39 +23,50 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class RowsResponse : CellsCloudResponse 
-  {                       
+    /// <summary>
+    /// RowsResponse.
+    /// </summary>
+    public class RowsResponse : CellsCloudResponse
+    {
         /// <summary>
-        /// Gets or sets Rows
-        /// </summary>  
-		[DataMember(Name="Rows", EmitDefaultValue=false)]
-        public Rows Rows { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Rows.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual Rows Rows { get; set; }
+
+        /// <summary>
+        /// Gets or sets Code.
+        /// </summary>
+        public override int? Code { get; set; }
+
+        /// <summary>
+        /// Gets or sets Status.
+        /// </summary>
+        public override string Status { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class RowsResponse {\n");
-          sb.Append("  Rows: ").Append(this.Rows).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class RowsResponse {\n");
+            sb.Append("  Rows: ").Append(this.Rows).Append("\n");
+            sb.Append("  Code: ").Append(this.Code).Append("\n");
+            sb.Append("  Status: ").Append(this.Status).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="WorksheetMovingRequest.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,46 +23,44 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// Used by workbook moving requests.
-  /// </summary>  
-  [DataContract]
-  public class WorksheetMovingRequest 
-  {                       
+    /// <summary>
+    /// WorksheetMovingRequest.
+    /// </summary>
+    public class WorksheetMovingRequest
+    {
         /// <summary>
-        /// Position to move. Can be BEFORE or AFTER.
-        /// </summary>  
-		[DataMember(Name="Position", EmitDefaultValue=false)]
-        public string Position { get; set; }
-
-        /// <summary>
-        /// Destination worksheet name.  
-        /// </summary>  
-		[DataMember(Name="DestinationWorksheet", EmitDefaultValue=false)]
-        public string DestinationWorksheet { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets DestinationWorksheet.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string DestinationWorksheet { get; set; }
+
+        /// <summary>
+        /// Gets or sets Position.
+        /// </summary>
+        public virtual string Position { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class WorksheetMovingRequest {\n");
-          sb.Append("  Position: ").Append(this.Position).Append("\n");
-          sb.Append("  DestinationWorksheet: ").Append(this.DestinationWorksheet).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class WorksheetMovingRequest {\n");
+            sb.Append("  DestinationWorksheet: ").Append(this.DestinationWorksheet).Append("\n");
+            sb.Append("  Position: ").Append(this.Position).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

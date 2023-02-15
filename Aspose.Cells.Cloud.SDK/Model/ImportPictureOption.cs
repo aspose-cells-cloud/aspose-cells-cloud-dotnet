@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ImportPictureOption.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,74 +23,92 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class ImportPictureOption : ImportOption 
-  {                       
+    /// <summary>
+    /// ImportPictureOption.
+    /// </summary>
+    public class ImportPictureOption : ImportOption
+    {
         /// <summary>
-        /// Upper Left Row.
-        /// </summary>  
-		[DataMember(Name="UpperLeftRow", EmitDefaultValue=false)]
-        public int? UpperLeftRow { get; set; }
-
-        /// <summary>
-        /// Upper Left Column.
-        /// </summary>  
-		[DataMember(Name="UpperLeftColumn", EmitDefaultValue=false)]
-        public int? UpperLeftColumn { get; set; }
-
-        /// <summary>
-        /// Lower Right Row.
-        /// </summary>  
-		[DataMember(Name="LowerRightRow", EmitDefaultValue=false)]
-        public int? LowerRightRow { get; set; }
-
-        /// <summary>
-        /// Lower Right Column.
-        /// </summary>  
-		[DataMember(Name="LowerRightColumn", EmitDefaultValue=false)]
-        public int? LowerRightColumn { get; set; }
-
-        /// <summary>
-        /// Filename.
-        /// </summary>  
-		[DataMember(Name="Filename", EmitDefaultValue=false)]
-        public string Filename { get; set; }
-
-        /// <summary>
-        /// data : base64  string.
-        /// </summary>  
-		[DataMember(Name="Data", EmitDefaultValue=false)]
-        public string Data { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets UpperLeftRow.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual int? UpperLeftRow { get; set; }
+
+        /// <summary>
+        /// Gets or sets UpperLeftColumn.
+        /// </summary>
+        public virtual int? UpperLeftColumn { get; set; }
+
+        /// <summary>
+        /// Gets or sets LowerRightRow.
+        /// </summary>
+        public virtual int? LowerRightRow { get; set; }
+
+        /// <summary>
+        /// Gets or sets LowerRightColumn.
+        /// </summary>
+        public virtual int? LowerRightColumn { get; set; }
+
+        /// <summary>
+        /// Gets or sets Filename.
+        /// </summary>
+        public virtual string Filename { get; set; }
+
+        /// <summary>
+        /// Gets or sets Data.
+        /// </summary>
+        public virtual string Data { get; set; }
+
+        /// <summary>
+        /// Gets or sets DestinationWorksheet.
+        /// </summary>
+        public override string DestinationWorksheet { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsInsert.
+        /// </summary>
+        public override bool? IsInsert { get; set; }
+
+        /// <summary>
+        /// Gets or sets ImportDataType.
+        /// </summary>
+        public override string ImportDataType { get; set; }
+
+        /// <summary>
+        /// Gets or sets Source.
+        /// </summary>
+        public override FileSource Source { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class ImportPictureOption {\n");
-          sb.Append("  UpperLeftRow: ").Append(this.UpperLeftRow).Append("\n");
-          sb.Append("  UpperLeftColumn: ").Append(this.UpperLeftColumn).Append("\n");
-          sb.Append("  LowerRightRow: ").Append(this.LowerRightRow).Append("\n");
-          sb.Append("  LowerRightColumn: ").Append(this.LowerRightColumn).Append("\n");
-          sb.Append("  Filename: ").Append(this.Filename).Append("\n");
-          sb.Append("  Data: ").Append(this.Data).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class ImportPictureOption {\n");
+            sb.Append("  UpperLeftRow: ").Append(this.UpperLeftRow).Append("\n");
+            sb.Append("  UpperLeftColumn: ").Append(this.UpperLeftColumn).Append("\n");
+            sb.Append("  LowerRightRow: ").Append(this.LowerRightRow).Append("\n");
+            sb.Append("  LowerRightColumn: ").Append(this.LowerRightColumn).Append("\n");
+            sb.Append("  Filename: ").Append(this.Filename).Append("\n");
+            sb.Append("  Data: ").Append(this.Data).Append("\n");
+            sb.Append("  DestinationWorksheet: ").Append(this.DestinationWorksheet).Append("\n");
+            sb.Append("  IsInsert: ").Append(this.IsInsert).Append("\n");
+            sb.Append("  ImportDataType: ").Append(this.ImportDataType).Append("\n");
+            sb.Append("  Source: ").Append(this.Source).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

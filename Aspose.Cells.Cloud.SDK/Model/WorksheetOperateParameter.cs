@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="WorksheetOperateParameter.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,60 +23,62 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class WorksheetOperateParameter : OperateParameter 
-  {                       
+    /// <summary>
+    /// WorksheetOperateParameter.
+    /// </summary>
+    public class WorksheetOperateParameter : OperateParameter
+    {
         /// <summary>
-        /// Gets or sets Name
-        /// </summary>  
-		[DataMember(Name="Name", EmitDefaultValue=false)]
-        public string Name { get; set; }
-
-        /// <summary>
-        /// Gets or sets SheetType
-        /// </summary>  
-		[DataMember(Name="SheetType", EmitDefaultValue=false)]
-        public string SheetType { get; set; }
-
-        /// <summary>
-        /// Gets or sets NewName
-        /// </summary>  
-		[DataMember(Name="NewName", EmitDefaultValue=false)]
-        public string NewName { get; set; }
-
-        /// <summary>
-        /// Gets or sets MovingRequest
-        /// </summary>  
-		[DataMember(Name="MovingRequest", EmitDefaultValue=false)]
-        public WorksheetMovingRequest MovingRequest { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Name.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string Name { get; set; }
+
+        /// <summary>
+        /// Gets or sets SheetType.
+        /// </summary>
+        public virtual string SheetType { get; set; }
+
+        /// <summary>
+        /// Gets or sets NewName.
+        /// </summary>
+        public virtual string NewName { get; set; }
+
+        /// <summary>
+        /// Gets or sets MovingRequest.
+        /// </summary>
+        public virtual WorksheetMovingRequest MovingRequest { get; set; }
+
+        /// <summary>
+        /// Gets or sets OperateType.
+        /// </summary>
+        public override string OperateType { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class WorksheetOperateParameter {\n");
-          sb.Append("  Name: ").Append(this.Name).Append("\n");
-          sb.Append("  SheetType: ").Append(this.SheetType).Append("\n");
-          sb.Append("  NewName: ").Append(this.NewName).Append("\n");
-          sb.Append("  MovingRequest: ").Append(this.MovingRequest).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class WorksheetOperateParameter {\n");
+            sb.Append("  Name: ").Append(this.Name).Append("\n");
+            sb.Append("  SheetType: ").Append(this.SheetType).Append("\n");
+            sb.Append("  NewName: ").Append(this.NewName).Append("\n");
+            sb.Append("  MovingRequest: ").Append(this.MovingRequest).Append("\n");
+            sb.Append("  OperateType: ").Append(this.OperateType).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

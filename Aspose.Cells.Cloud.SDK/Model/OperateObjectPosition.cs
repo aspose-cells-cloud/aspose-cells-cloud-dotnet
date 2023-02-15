@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="OperateObjectPosition.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,74 +23,68 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class OperateObjectPosition 
-  {                       
+    /// <summary>
+    /// OperateObjectPosition.
+    /// </summary>
+    public class OperateObjectPosition
+    {
         /// <summary>
-        /// Gets or sets ChartIndex
-        /// </summary>  
-		[DataMember(Name="ChartIndex", EmitDefaultValue=false)]
-        public int? ChartIndex { get; set; }
-
-        /// <summary>
-        /// Gets or sets ListObjectIndex
-        /// </summary>  
-		[DataMember(Name="ListObjectIndex", EmitDefaultValue=false)]
-        public int? ListObjectIndex { get; set; }
-
-        /// <summary>
-        /// Gets or sets SheetName
-        /// </summary>  
-		[DataMember(Name="SheetName", EmitDefaultValue=false)]
-        public string SheetName { get; set; }
-
-        /// <summary>
-        /// Gets or sets ShapeIndex
-        /// </summary>  
-		[DataMember(Name="ShapeIndex", EmitDefaultValue=false)]
-        public int? ShapeIndex { get; set; }
-
-        /// <summary>
-        /// Gets or sets CellName
-        /// </summary>  
-		[DataMember(Name="CellName", EmitDefaultValue=false)]
-        public string CellName { get; set; }
-
-        /// <summary>
-        /// Gets or sets Workbook
-        /// </summary>  
-		[DataMember(Name="Workbook", EmitDefaultValue=false)]
-        public FileSource Workbook { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Workbook.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual FileSource Workbook { get; set; }
+
+        /// <summary>
+        /// Gets or sets SheetName.
+        /// </summary>
+        public virtual string SheetName { get; set; }
+
+        /// <summary>
+        /// Gets or sets ChartIndex.
+        /// </summary>
+        public virtual int? ChartIndex { get; set; }
+
+        /// <summary>
+        /// Gets or sets ShapeIndex.
+        /// </summary>
+        public virtual int? ShapeIndex { get; set; }
+
+        /// <summary>
+        /// Gets or sets CellName.
+        /// </summary>
+        public virtual string CellName { get; set; }
+
+        /// <summary>
+        /// Gets or sets ListObjectIndex.
+        /// </summary>
+        public virtual int? ListObjectIndex { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class OperateObjectPosition {\n");
-          sb.Append("  ChartIndex: ").Append(this.ChartIndex).Append("\n");
-          sb.Append("  ListObjectIndex: ").Append(this.ListObjectIndex).Append("\n");
-          sb.Append("  SheetName: ").Append(this.SheetName).Append("\n");
-          sb.Append("  ShapeIndex: ").Append(this.ShapeIndex).Append("\n");
-          sb.Append("  CellName: ").Append(this.CellName).Append("\n");
-          sb.Append("  Workbook: ").Append(this.Workbook).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class OperateObjectPosition {\n");
+            sb.Append("  Workbook: ").Append(this.Workbook).Append("\n");
+            sb.Append("  SheetName: ").Append(this.SheetName).Append("\n");
+            sb.Append("  ChartIndex: ").Append(this.ChartIndex).Append("\n");
+            sb.Append("  ShapeIndex: ").Append(this.ShapeIndex).Append("\n");
+            sb.Append("  CellName: ").Append(this.CellName).Append("\n");
+            sb.Append("  ListObjectIndex: ").Append(this.ListObjectIndex).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

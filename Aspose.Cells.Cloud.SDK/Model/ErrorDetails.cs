@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ErrorDetails.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,46 +23,32 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// The error details
-  /// </summary>  
-  [DataContract]
-  public class ErrorDetails 
-  {                       
+    /// <summary>
+    /// ErrorDetails.
+    /// </summary>
+    public class ErrorDetails
+    {
         /// <summary>
-        /// The request id
-        /// </summary>  
-		[DataMember(Name="RequestId", EmitDefaultValue=false)]
-        public string RequestId { get; set; }
-
-        /// <summary>
-        /// Date
-        /// </summary>  
-		[DataMember(Name="Date", EmitDefaultValue=false)]
-        public DateTime? Date { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Get the string presentation of the object.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class ErrorDetails {\n");
-          sb.Append("  RequestId: ").Append(this.RequestId).Append("\n");
-          sb.Append("  Date: ").Append(this.Date).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class ErrorDetails {\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

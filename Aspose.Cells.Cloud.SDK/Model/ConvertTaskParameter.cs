@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ConvertTaskParameter.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,53 +23,50 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class ConvertTaskParameter : TaskParameter 
-  {                       
+    /// <summary>
+    /// ConvertTaskParameter.
+    /// </summary>
+    public class ConvertTaskParameter : TaskParameter
+    {
         /// <summary>
-        /// Gets or sets Workbook
-        /// </summary>  
-		[DataMember(Name="Workbook", EmitDefaultValue=false)]
-        public FileSource Workbook { get; set; }
-
-        /// <summary>
-        /// Gets or sets SaveOptions
-        /// </summary>  
-		[DataMember(Name="SaveOptions", EmitDefaultValue=false)]
-        public SaveOptions SaveOptions { get; set; }
-
-        /// <summary>
-        /// Gets or sets DestinationFile
-        /// </summary>  
-		[DataMember(Name="DestinationFile", EmitDefaultValue=false)]
-        public string DestinationFile { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Workbook.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual FileSource Workbook { get; set; }
+
+        /// <summary>
+        /// Gets or sets DestinationFile.
+        /// </summary>
+        public virtual string DestinationFile { get; set; }
+
+        /// <summary>
+        /// Gets or sets SaveOptions.
+        /// </summary>
+        public virtual SaveOptions SaveOptions { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class ConvertTaskParameter {\n");
-          sb.Append("  Workbook: ").Append(this.Workbook).Append("\n");
-          sb.Append("  SaveOptions: ").Append(this.SaveOptions).Append("\n");
-          sb.Append("  DestinationFile: ").Append(this.DestinationFile).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class ConvertTaskParameter {\n");
+            sb.Append("  Workbook: ").Append(this.Workbook).Append("\n");
+            sb.Append("  DestinationFile: ").Append(this.DestinationFile).Append("\n");
+            sb.Append("  SaveOptions: ").Append(this.SaveOptions).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

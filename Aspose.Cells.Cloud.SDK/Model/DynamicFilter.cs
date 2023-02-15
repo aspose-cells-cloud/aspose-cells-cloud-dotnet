@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="DynamicFilter.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,53 +23,50 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class DynamicFilter 
-  {                       
+    /// <summary>
+    /// DynamicFilter.
+    /// </summary>
+    public class DynamicFilter
+    {
         /// <summary>
-        /// Gets or sets DynamicFilterType
-        /// </summary>  
-		[DataMember(Name="DynamicFilterType", EmitDefaultValue=false)]
-        public string DynamicFilterType { get; set; }
-
-        /// <summary>
-        /// Gets or sets MaxValue
-        /// </summary>  
-		[DataMember(Name="MaxValue", EmitDefaultValue=false)]
-        public int? MaxValue { get; set; }
-
-        /// <summary>
-        /// Gets or sets Value
-        /// </summary>  
-		[DataMember(Name="Value", EmitDefaultValue=false)]
-        public int? Value { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets DynamicFilterType.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string DynamicFilterType { get; set; }
+
+        /// <summary>
+        /// Gets or sets MaxValue.
+        /// </summary>
+        public virtual Object MaxValue { get; set; }
+
+        /// <summary>
+        /// Gets or sets Value.
+        /// </summary>
+        public virtual Object Value { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class DynamicFilter {\n");
-          sb.Append("  DynamicFilterType: ").Append(this.DynamicFilterType).Append("\n");
-          sb.Append("  MaxValue: ").Append(this.MaxValue).Append("\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class DynamicFilter {\n");
+            sb.Append("  DynamicFilterType: ").Append(this.DynamicFilterType).Append("\n");
+            sb.Append("  MaxValue: ").Append(this.MaxValue).Append("\n");
+            sb.Append("  Value: ").Append(this.Value).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

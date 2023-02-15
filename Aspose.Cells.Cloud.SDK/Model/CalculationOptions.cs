@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="CalculationOptions.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,60 +23,56 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class CalculationOptions 
-  {                       
+    /// <summary>
+    /// CalculationOptions.
+    /// </summary>
+    public class CalculationOptions
+    {
         /// <summary>
-        /// Gets or sets PrecisionStrategy
-        /// </summary>  
-		[DataMember(Name="PrecisionStrategy", EmitDefaultValue=false)]
-        public string PrecisionStrategy { get; set; }
-
-        /// <summary>
-        /// Gets or sets IgnoreError
-        /// </summary>  
-		[DataMember(Name="IgnoreError", EmitDefaultValue=false)]
-        public bool? IgnoreError { get; set; }
-
-        /// <summary>
-        /// Gets or sets Recursive
-        /// </summary>  
-		[DataMember(Name="Recursive", EmitDefaultValue=false)]
-        public bool? Recursive { get; set; }
-
-        /// <summary>
-        /// Gets or sets CalcStackSize
-        /// </summary>  
-		[DataMember(Name="CalcStackSize", EmitDefaultValue=false)]
-        public int? CalcStackSize { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets CalcStackSize.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual int? CalcStackSize { get; set; }
+
+        /// <summary>
+        /// Gets or sets IgnoreError.
+        /// </summary>
+        public virtual bool? IgnoreError { get; set; }
+
+        /// <summary>
+        /// Gets or sets PrecisionStrategy.
+        /// </summary>
+        public virtual string PrecisionStrategy { get; set; }
+
+        /// <summary>
+        /// Gets or sets Recursive.
+        /// </summary>
+        public virtual bool? Recursive { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class CalculationOptions {\n");
-          sb.Append("  PrecisionStrategy: ").Append(this.PrecisionStrategy).Append("\n");
-          sb.Append("  IgnoreError: ").Append(this.IgnoreError).Append("\n");
-          sb.Append("  Recursive: ").Append(this.Recursive).Append("\n");
-          sb.Append("  CalcStackSize: ").Append(this.CalcStackSize).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class CalculationOptions {\n");
+            sb.Append("  CalcStackSize: ").Append(this.CalcStackSize).Append("\n");
+            sb.Append("  IgnoreError: ").Append(this.IgnoreError).Append("\n");
+            sb.Append("  PrecisionStrategy: ").Append(this.PrecisionStrategy).Append("\n");
+            sb.Append("  Recursive: ").Append(this.Recursive).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

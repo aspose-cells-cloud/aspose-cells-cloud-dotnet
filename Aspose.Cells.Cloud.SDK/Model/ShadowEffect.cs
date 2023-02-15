@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ShadowEffect.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,81 +23,74 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class ShadowEffect 
-  {                       
+    /// <summary>
+    /// ShadowEffect.
+    /// </summary>
+    public class ShadowEffect
+    {
         /// <summary>
-        /// Gets or sets Distance
-        /// </summary>  
-		[DataMember(Name="Distance", EmitDefaultValue=false)]
-        public double? Distance { get; set; }
-
-        /// <summary>
-        /// Gets or sets Angle
-        /// </summary>  
-		[DataMember(Name="Angle", EmitDefaultValue=false)]
-        public double? Angle { get; set; }
-
-        /// <summary>
-        /// Gets or sets PresetType
-        /// </summary>  
-		[DataMember(Name="PresetType", EmitDefaultValue=false)]
-        public string PresetType { get; set; }
-
-        /// <summary>
-        /// Gets or sets Color
-        /// </summary>  
-		[DataMember(Name="Color", EmitDefaultValue=false)]
-        public CellsColor Color { get; set; }
-
-        /// <summary>
-        /// Gets or sets Transparency
-        /// </summary>  
-		[DataMember(Name="Transparency", EmitDefaultValue=false)]
-        public double? Transparency { get; set; }
-
-        /// <summary>
-        /// Gets or sets Blur
-        /// </summary>  
-		[DataMember(Name="Blur", EmitDefaultValue=false)]
-        public double? Blur { get; set; }
-
-        /// <summary>
-        /// Gets or sets Size
-        /// </summary>  
-		[DataMember(Name="Size", EmitDefaultValue=false)]
-        public double? Size { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Angle.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual double? Angle { get; set; }
+
+        /// <summary>
+        /// Gets or sets Blur.
+        /// </summary>
+        public virtual double? Blur { get; set; }
+
+        /// <summary>
+        /// Gets or sets Color.
+        /// </summary>
+        public virtual CellsColor Color { get; set; }
+
+        /// <summary>
+        /// Gets or sets Distance.
+        /// </summary>
+        public virtual double? Distance { get; set; }
+
+        /// <summary>
+        /// Gets or sets PresetType.
+        /// </summary>
+        public virtual string PresetType { get; set; }
+
+        /// <summary>
+        /// Gets or sets Size.
+        /// </summary>
+        public virtual double? Size { get; set; }
+
+        /// <summary>
+        /// Gets or sets Transparency.
+        /// </summary>
+        public virtual double? Transparency { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class ShadowEffect {\n");
-          sb.Append("  Distance: ").Append(this.Distance).Append("\n");
-          sb.Append("  Angle: ").Append(this.Angle).Append("\n");
-          sb.Append("  PresetType: ").Append(this.PresetType).Append("\n");
-          sb.Append("  Color: ").Append(this.Color).Append("\n");
-          sb.Append("  Transparency: ").Append(this.Transparency).Append("\n");
-          sb.Append("  Blur: ").Append(this.Blur).Append("\n");
-          sb.Append("  Size: ").Append(this.Size).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class ShadowEffect {\n");
+            sb.Append("  Angle: ").Append(this.Angle).Append("\n");
+            sb.Append("  Blur: ").Append(this.Blur).Append("\n");
+            sb.Append("  Color: ").Append(this.Color).Append("\n");
+            sb.Append("  Distance: ").Append(this.Distance).Append("\n");
+            sb.Append("  PresetType: ").Append(this.PresetType).Append("\n");
+            sb.Append("  Size: ").Append(this.Size).Append("\n");
+            sb.Append("  Transparency: ").Append(this.Transparency).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

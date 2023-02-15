@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="SolidFill.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,53 +23,50 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class SolidFill 
-  {                       
+    /// <summary>
+    /// SolidFill.
+    /// </summary>
+    public class SolidFill
+    {
         /// <summary>
-        /// Gets or sets Color
-        /// </summary>  
-		[DataMember(Name="Color", EmitDefaultValue=false)]
-        public Color Color { get; set; }
-
-        /// <summary>
-        /// Gets or sets CellsColor
-        /// </summary>  
-		[DataMember(Name="CellsColor", EmitDefaultValue=false)]
-        public CellsColor CellsColor { get; set; }
-
-        /// <summary>
-        /// Gets or sets Transparency
-        /// </summary>  
-		[DataMember(Name="Transparency", EmitDefaultValue=false)]
-        public double? Transparency { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Color.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual Color Color { get; set; }
+
+        /// <summary>
+        /// Gets or sets CellsColor.
+        /// </summary>
+        public virtual CellsColor CellsColor { get; set; }
+
+        /// <summary>
+        /// Gets or sets Transparency.
+        /// </summary>
+        public virtual double? Transparency { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class SolidFill {\n");
-          sb.Append("  Color: ").Append(this.Color).Append("\n");
-          sb.Append("  CellsColor: ").Append(this.CellsColor).Append("\n");
-          sb.Append("  Transparency: ").Append(this.Transparency).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class SolidFill {\n");
+            sb.Append("  Color: ").Append(this.Color).Append("\n");
+            sb.Append("  CellsColor: ").Append(this.CellsColor).Append("\n");
+            sb.Append("  Transparency: ").Append(this.Transparency).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

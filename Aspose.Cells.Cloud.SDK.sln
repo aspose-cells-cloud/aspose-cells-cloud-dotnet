@@ -1,16 +1,16 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30128.74
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aspose.Cells.Cloud.SDK", "Aspose.Cells.Cloud.SDK\Aspose.Cells.Cloud.SDK.csproj", "{CCFC6447-7804-4C73-B5BE-6444ACBEF9A3}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aspose.Cells.Cloud.SDK.Test", "Aspose.Cells.Cloud.SDK.Test\Aspose.Cells.Cloud.SDK.Test.csproj", "{19F1DEBC-DE5E-4517-8062-F000CD499087}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{146713BF-C18D-47F9-BEEA-8B1C71A834C1}"
 	ProjectSection(SolutionItems) = preProject
 		Aspose.Cells-Cloud.nuspec = Aspose.Cells-Cloud.nuspec
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aspose.Cells.Cloud.SDK.Test", "Aspose.Cells.Cloud.SDK.Test\Aspose.Cells.Cloud.SDK.Test.csproj", "{1343AF83-B6B9-4445-95BC-0A539D3B4774}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,10 +22,10 @@ Global
 		{CCFC6447-7804-4C73-B5BE-6444ACBEF9A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCFC6447-7804-4C73-B5BE-6444ACBEF9A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCFC6447-7804-4C73-B5BE-6444ACBEF9A3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1343AF83-B6B9-4445-95BC-0A539D3B4774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1343AF83-B6B9-4445-95BC-0A539D3B4774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1343AF83-B6B9-4445-95BC-0A539D3B4774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1343AF83-B6B9-4445-95BC-0A539D3B4774}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

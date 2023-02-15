@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="WorkbookEncryptionRequest.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,53 +23,50 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// Used by workbook encryption/decryption requests.
-  /// </summary>  
-  [DataContract]
-  public class WorkbookEncryptionRequest 
-  {                       
+    /// <summary>
+    /// WorkbookEncryptionRequest.
+    /// </summary>
+    public class WorkbookEncryptionRequest
+    {
         /// <summary>
-        /// Encription password.
-        /// </summary>  
-		[DataMember(Name="Password", EmitDefaultValue=false)]
-        public string Password { get; set; }
-
-        /// <summary>
-        /// Encription key length.
-        /// </summary>  
-		[DataMember(Name="KeyLength", EmitDefaultValue=false)]
-        public int? KeyLength { get; set; }
-
-        /// <summary>
-        /// Workbook encription type.
-        /// </summary>  
-		[DataMember(Name="EncryptionType", EmitDefaultValue=false)]
-        public string EncryptionType { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets EncryptionType.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string EncryptionType { get; set; }
+
+        /// <summary>
+        /// Gets or sets KeyLength.
+        /// </summary>
+        public virtual int? KeyLength { get; set; }
+
+        /// <summary>
+        /// Gets or sets Password.
+        /// </summary>
+        public virtual string Password { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class WorkbookEncryptionRequest {\n");
-          sb.Append("  Password: ").Append(this.Password).Append("\n");
-          sb.Append("  KeyLength: ").Append(this.KeyLength).Append("\n");
-          sb.Append("  EncryptionType: ").Append(this.EncryptionType).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class WorkbookEncryptionRequest {\n");
+            sb.Append("  EncryptionType: ").Append(this.EncryptionType).Append("\n");
+            sb.Append("  KeyLength: ").Append(this.KeyLength).Append("\n");
+            sb.Append("  Password: ").Append(this.Password).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ConditionalFormatting.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,53 +23,50 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class ConditionalFormatting 
-  {                       
+    /// <summary>
+    /// ConditionalFormatting.
+    /// </summary>
+    public class ConditionalFormatting : LinkElement
+    {
         /// <summary>
-        /// Gets or sets Link
-        /// </summary>  
-		[DataMember(Name="link", EmitDefaultValue=false)]
-        public Link Link { get; set; }
-
-        /// <summary>
-        /// Gets or sets Sqref
-        /// </summary>  
-		[DataMember(Name="sqref", EmitDefaultValue=false)]
-        public string Sqref { get; set; }
-
-        /// <summary>
-        /// Gets or sets FormatConditions
-        /// </summary>  
-		[DataMember(Name="FormatConditions", EmitDefaultValue=false)]
-        public List<FormatCondition> FormatConditions { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets sqref.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string sqref { get; set; }
+
+        /// <summary>
+        /// Gets or sets FormatConditions.
+        /// </summary>
+        public virtual IList<FormatCondition> FormatConditions { get; set; }
+
+        /// <summary>
+        /// Gets or sets link.
+        /// </summary>
+        public override Link link { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class ConditionalFormatting {\n");
-          sb.Append("  Link: ").Append(this.Link).Append("\n");
-          sb.Append("  Sqref: ").Append(this.Sqref).Append("\n");
-          sb.Append("  FormatConditions: ").Append(this.FormatConditions).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class ConditionalFormatting {\n");
+            sb.Append("  sqref: ").Append(this.sqref).Append("\n");
+            sb.Append("  FormatConditions: ").Append(this.FormatConditions).Append("\n");
+            sb.Append("  link: ").Append(this.link).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

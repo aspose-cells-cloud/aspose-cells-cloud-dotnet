@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ListColumn.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,60 +23,56 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class ListColumn 
-  {                       
+    /// <summary>
+    /// ListColumn.
+    /// </summary>
+    public class ListColumn
+    {
         /// <summary>
-        /// Gets and sets the type of calculation in the Totals row of the list column.
-        /// </summary>  
-		[DataMember(Name="TotalsCalculation", EmitDefaultValue=false)]
-        public string TotalsCalculation { get; set; }
-
-        /// <summary>
-        /// Gets and sets the name of the column.
-        /// </summary>  
-		[DataMember(Name="Name", EmitDefaultValue=false)]
-        public string Name { get; set; }
-
-        /// <summary>
-        /// Gets and sets the formula of the list column.
-        /// </summary>  
-		[DataMember(Name="Formula", EmitDefaultValue=false)]
-        public string Formula { get; set; }
-
-        /// <summary>
-        /// Gets and sets the formula of the list column.
-        /// </summary>  
-		[DataMember(Name="Range", EmitDefaultValue=false)]
-        public Range Range { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Name.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string Name { get; set; }
+
+        /// <summary>
+        /// Gets or sets Range.
+        /// </summary>
+        public virtual Range Range { get; set; }
+
+        /// <summary>
+        /// Gets or sets TotalsCalculation.
+        /// </summary>
+        public virtual string TotalsCalculation { get; set; }
+
+        /// <summary>
+        /// Gets or sets Formula.
+        /// </summary>
+        public virtual string Formula { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class ListColumn {\n");
-          sb.Append("  TotalsCalculation: ").Append(this.TotalsCalculation).Append("\n");
-          sb.Append("  Name: ").Append(this.Name).Append("\n");
-          sb.Append("  Formula: ").Append(this.Formula).Append("\n");
-          sb.Append("  Range: ").Append(this.Range).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class ListColumn {\n");
+            sb.Append("  Name: ").Append(this.Name).Append("\n");
+            sb.Append("  Range: ").Append(this.Range).Append("\n");
+            sb.Append("  TotalsCalculation: ").Append(this.TotalsCalculation).Append("\n");
+            sb.Append("  Formula: ").Append(this.Formula).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

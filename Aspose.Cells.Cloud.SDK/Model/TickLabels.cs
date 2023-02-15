@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="TickLabels.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,109 +23,104 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class TickLabels 
-  {                       
+    /// <summary>
+    /// TickLabels.
+    /// </summary>
+    public class TickLabels : LinkElement
+    {
         /// <summary>
-        ///  
-        /// </summary>  
-		[DataMember(Name="AutoScaleFont", EmitDefaultValue=false)]
-        public bool? AutoScaleFont { get; set; }
-
-        /// <summary>
-        /// Gets or sets Font
-        /// </summary>  
-		[DataMember(Name="Font", EmitDefaultValue=false)]
-        public Font Font { get; set; }
-
-        /// <summary>
-        ///  
-        /// </summary>  
-		[DataMember(Name="BackgroundMode", EmitDefaultValue=false)]
-        public string BackgroundMode { get; set; }
-
-        /// <summary>
-        /// Gets or sets Number
-        /// </summary>  
-		[DataMember(Name="Number", EmitDefaultValue=false)]
-        public int? Number { get; set; }
-
-        /// <summary>
-        ///  
-        /// </summary>  
-		[DataMember(Name="NumberFormat", EmitDefaultValue=false)]
-        public string NumberFormat { get; set; }
-
-        /// <summary>
-        ///  
-        /// </summary>  
-		[DataMember(Name="NumberFormatLinked", EmitDefaultValue=false)]
-        public bool? NumberFormatLinked { get; set; }
-
-        /// <summary>
-        ///  
-        /// </summary>  
-		[DataMember(Name="Offset", EmitDefaultValue=false)]
-        public int? Offset { get; set; }
-
-        /// <summary>
-        ///  
-        /// </summary>  
-		[DataMember(Name="RotationAngle", EmitDefaultValue=false)]
-        public int? RotationAngle { get; set; }
-
-        /// <summary>
-        ///  
-        /// </summary>  
-		[DataMember(Name="TextDirection", EmitDefaultValue=false)]
-        public string TextDirection { get; set; }
-
-        /// <summary>
-        ///  
-        /// </summary>  
-		[DataMember(Name="ReadingOrder", EmitDefaultValue=false)]
-        public string ReadingOrder { get; set; }
-
-        /// <summary>
-        ///  
-        /// </summary>  
-		[DataMember(Name="DirectionType", EmitDefaultValue=false)]
-        public string DirectionType { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets AutoScaleFont.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual bool? AutoScaleFont { get; set; }
+
+        /// <summary>
+        /// Gets or sets BackgroundMode.
+        /// </summary>
+        public virtual string BackgroundMode { get; set; }
+
+        /// <summary>
+        /// Gets or sets Font.
+        /// </summary>
+        public virtual Font Font { get; set; }
+
+        /// <summary>
+        /// Gets or sets Number.
+        /// </summary>
+        public virtual int? Number { get; set; }
+
+        /// <summary>
+        /// Gets or sets NumberFormat.
+        /// </summary>
+        public virtual string NumberFormat { get; set; }
+
+        /// <summary>
+        /// Gets or sets NumberFormatLinked.
+        /// </summary>
+        public virtual bool? NumberFormatLinked { get; set; }
+
+        /// <summary>
+        /// Gets or sets Offset.
+        /// </summary>
+        public virtual int? Offset { get; set; }
+
+        /// <summary>
+        /// Gets or sets RotationAngle.
+        /// </summary>
+        public virtual int? RotationAngle { get; set; }
+
+        /// <summary>
+        /// Gets or sets TextDirection.
+        /// </summary>
+        public virtual string TextDirection { get; set; }
+
+        /// <summary>
+        /// Gets or sets ReadingOrder.
+        /// </summary>
+        public virtual string ReadingOrder { get; set; }
+
+        /// <summary>
+        /// Gets or sets DirectionType.
+        /// </summary>
+        public virtual string DirectionType { get; set; }
+
+        /// <summary>
+        /// Gets or sets link.
+        /// </summary>
+        public override Link link { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class TickLabels {\n");
-          sb.Append("  AutoScaleFont: ").Append(this.AutoScaleFont).Append("\n");
-          sb.Append("  Font: ").Append(this.Font).Append("\n");
-          sb.Append("  BackgroundMode: ").Append(this.BackgroundMode).Append("\n");
-          sb.Append("  Number: ").Append(this.Number).Append("\n");
-          sb.Append("  NumberFormat: ").Append(this.NumberFormat).Append("\n");
-          sb.Append("  NumberFormatLinked: ").Append(this.NumberFormatLinked).Append("\n");
-          sb.Append("  Offset: ").Append(this.Offset).Append("\n");
-          sb.Append("  RotationAngle: ").Append(this.RotationAngle).Append("\n");
-          sb.Append("  TextDirection: ").Append(this.TextDirection).Append("\n");
-          sb.Append("  ReadingOrder: ").Append(this.ReadingOrder).Append("\n");
-          sb.Append("  DirectionType: ").Append(this.DirectionType).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class TickLabels {\n");
+            sb.Append("  AutoScaleFont: ").Append(this.AutoScaleFont).Append("\n");
+            sb.Append("  BackgroundMode: ").Append(this.BackgroundMode).Append("\n");
+            sb.Append("  Font: ").Append(this.Font).Append("\n");
+            sb.Append("  Number: ").Append(this.Number).Append("\n");
+            sb.Append("  NumberFormat: ").Append(this.NumberFormat).Append("\n");
+            sb.Append("  NumberFormatLinked: ").Append(this.NumberFormatLinked).Append("\n");
+            sb.Append("  Offset: ").Append(this.Offset).Append("\n");
+            sb.Append("  RotationAngle: ").Append(this.RotationAngle).Append("\n");
+            sb.Append("  TextDirection: ").Append(this.TextDirection).Append("\n");
+            sb.Append("  ReadingOrder: ").Append(this.ReadingOrder).Append("\n");
+            sb.Append("  DirectionType: ").Append(this.DirectionType).Append("\n");
+            sb.Append("  link: ").Append(this.link).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

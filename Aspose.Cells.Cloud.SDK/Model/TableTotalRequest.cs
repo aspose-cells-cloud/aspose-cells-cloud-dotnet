@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="TableTotalRequest.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,53 +23,50 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class TableTotalRequest 
-  {                       
+    /// <summary>
+    /// TableTotalRequest.
+    /// </summary>
+    public class TableTotalRequest
+    {
         /// <summary>
-        /// Gets or sets ListColumnIndex
-        /// </summary>  
-		[DataMember(Name="ListColumnIndex", EmitDefaultValue=false)]
-        public int? ListColumnIndex { get; set; }
-
-        /// <summary>
-        /// Gets or sets TotalsCalculation
-        /// </summary>  
-		[DataMember(Name="TotalsCalculation", EmitDefaultValue=false)]
-        public string TotalsCalculation { get; set; }
-
-        /// <summary>
-        /// Gets or sets CustomFormula
-        /// </summary>  
-		[DataMember(Name="CustomFormula", EmitDefaultValue=false)]
-        public string CustomFormula { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets ListColumnIndex.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual int? ListColumnIndex { get; set; }
+
+        /// <summary>
+        /// Gets or sets TotalsCalculation.
+        /// </summary>
+        public virtual string TotalsCalculation { get; set; }
+
+        /// <summary>
+        /// Gets or sets CustomFormula.
+        /// </summary>
+        public virtual string CustomFormula { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class TableTotalRequest {\n");
-          sb.Append("  ListColumnIndex: ").Append(this.ListColumnIndex).Append("\n");
-          sb.Append("  TotalsCalculation: ").Append(this.TotalsCalculation).Append("\n");
-          sb.Append("  CustomFormula: ").Append(this.CustomFormula).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class TableTotalRequest {\n");
+            sb.Append("  ListColumnIndex: ").Append(this.ListColumnIndex).Append("\n");
+            sb.Append("  TotalsCalculation: ").Append(this.TotalsCalculation).Append("\n");
+            sb.Append("  CustomFormula: ").Append(this.CustomFormula).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

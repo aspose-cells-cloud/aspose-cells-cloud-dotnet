@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="CellsObjectOperateTaskParameter.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,53 +23,50 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class CellsObjectOperateTaskParameter : TaskParameter 
-  {                       
+    /// <summary>
+    /// CellsObjectOperateTaskParameter.
+    /// </summary>
+    public class CellsObjectOperateTaskParameter : TaskParameter
+    {
         /// <summary>
-        /// Gets or sets OperateParameter
-        /// </summary>  
-		[DataMember(Name="OperateParameter", EmitDefaultValue=false)]
-        public OperateParameter OperateParameter { get; set; }
-
-        /// <summary>
-        /// Gets or sets DestinationWorkbook
-        /// </summary>  
-		[DataMember(Name="DestinationWorkbook", EmitDefaultValue=false)]
-        public FileSource DestinationWorkbook { get; set; }
-
-        /// <summary>
-        /// Gets or sets OperateObject
-        /// </summary>  
-		[DataMember(Name="OperateObject", EmitDefaultValue=false)]
-        public OperateObject OperateObject { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets OperateObject.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual OperateObject OperateObject { get; set; }
+
+        /// <summary>
+        /// Gets or sets OperateParameter.
+        /// </summary>
+        public virtual OperateParameter OperateParameter { get; set; }
+
+        /// <summary>
+        /// Gets or sets DestinationWorkbook.
+        /// </summary>
+        public virtual FileSource DestinationWorkbook { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class CellsObjectOperateTaskParameter {\n");
-          sb.Append("  OperateParameter: ").Append(this.OperateParameter).Append("\n");
-          sb.Append("  DestinationWorkbook: ").Append(this.DestinationWorkbook).Append("\n");
-          sb.Append("  OperateObject: ").Append(this.OperateObject).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class CellsObjectOperateTaskParameter {\n");
+            sb.Append("  OperateObject: ").Append(this.OperateObject).Append("\n");
+            sb.Append("  OperateParameter: ").Append(this.OperateParameter).Append("\n");
+            sb.Append("  DestinationWorkbook: ").Append(this.DestinationWorkbook).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

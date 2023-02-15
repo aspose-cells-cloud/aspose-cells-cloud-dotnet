@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="RangeSetOutlineBorderRequest.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,60 +23,56 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class RangeSetOutlineBorderRequest 
-  {                       
+    /// <summary>
+    /// RangeSetOutlineBorderRequest.
+    /// </summary>
+    public class RangeSetOutlineBorderRequest
+    {
         /// <summary>
-        /// Gets or sets BorderColor
-        /// </summary>  
-		[DataMember(Name="BorderColor", EmitDefaultValue=false)]
-        public Color BorderColor { get; set; }
-
-        /// <summary>
-        /// Gets or sets Range
-        /// </summary>  
-		[DataMember(Name="Range", EmitDefaultValue=false)]
-        public Range Range { get; set; }
-
-        /// <summary>
-        /// Gets or sets BorderStyle
-        /// </summary>  
-		[DataMember(Name="BorderStyle", EmitDefaultValue=false)]
-        public string BorderStyle { get; set; }
-
-        /// <summary>
-        /// Gets or sets BorderEdge
-        /// </summary>  
-		[DataMember(Name="BorderEdge", EmitDefaultValue=false)]
-        public string BorderEdge { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Range.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual Range Range { get; set; }
+
+        /// <summary>
+        /// Gets or sets borderEdge.
+        /// </summary>
+        public virtual string borderEdge { get; set; }
+
+        /// <summary>
+        /// Gets or sets borderStyle.
+        /// </summary>
+        public virtual string borderStyle { get; set; }
+
+        /// <summary>
+        /// Gets or sets borderColor.
+        /// </summary>
+        public virtual Color borderColor { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class RangeSetOutlineBorderRequest {\n");
-          sb.Append("  BorderColor: ").Append(this.BorderColor).Append("\n");
-          sb.Append("  Range: ").Append(this.Range).Append("\n");
-          sb.Append("  BorderStyle: ").Append(this.BorderStyle).Append("\n");
-          sb.Append("  BorderEdge: ").Append(this.BorderEdge).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class RangeSetOutlineBorderRequest {\n");
+            sb.Append("  Range: ").Append(this.Range).Append("\n");
+            sb.Append("  borderEdge: ").Append(this.borderEdge).Append("\n");
+            sb.Append("  borderStyle: ").Append(this.borderStyle).Append("\n");
+            sb.Append("  borderColor: ").Append(this.borderColor).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

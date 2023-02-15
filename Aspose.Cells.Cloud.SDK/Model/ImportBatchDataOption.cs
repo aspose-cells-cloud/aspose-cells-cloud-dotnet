@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ImportBatchDataOption.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,39 +23,62 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class ImportBatchDataOption : ImportOption 
-  {                       
+    /// <summary>
+    /// ImportBatchDataOption.
+    /// </summary>
+    public class ImportBatchDataOption : ImportOption
+    {
         /// <summary>
-        /// Gets or sets BatchData
-        /// </summary>  
-		[DataMember(Name="BatchData", EmitDefaultValue=false)]
-        public List<CellValue> BatchData { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets BatchData.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual IList<CellValue> BatchData { get; set; }
+
+        /// <summary>
+        /// Gets or sets DestinationWorksheet.
+        /// </summary>
+        public override string DestinationWorksheet { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsInsert.
+        /// </summary>
+        public override bool? IsInsert { get; set; }
+
+        /// <summary>
+        /// Gets or sets ImportDataType.
+        /// </summary>
+        public override string ImportDataType { get; set; }
+
+        /// <summary>
+        /// Gets or sets Source.
+        /// </summary>
+        public override FileSource Source { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class ImportBatchDataOption {\n");
-          sb.Append("  BatchData: ").Append(this.BatchData).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class ImportBatchDataOption {\n");
+            sb.Append("  BatchData: ").Append(this.BatchData).Append("\n");
+            sb.Append("  DestinationWorksheet: ").Append(this.DestinationWorksheet).Append("\n");
+            sb.Append("  IsInsert: ").Append(this.IsInsert).Append("\n");
+            sb.Append("  ImportDataType: ").Append(this.ImportDataType).Append("\n");
+            sb.Append("  Source: ").Append(this.Source).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ImportDoubleArrayOption.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,60 +23,80 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class ImportDoubleArrayOption : ImportOption 
-  {                       
+    /// <summary>
+    /// ImportDoubleArrayOption.
+    /// </summary>
+    public class ImportDoubleArrayOption : ImportOption
+    {
         /// <summary>
-        /// Gets or sets Data
-        /// </summary>  
-		[DataMember(Name="Data", EmitDefaultValue=false)]
-        public List<double?> Data { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsVertical
-        /// </summary>  
-		[DataMember(Name="IsVertical", EmitDefaultValue=false)]
-        public bool? IsVertical { get; set; }
-
-        /// <summary>
-        /// Gets or sets FirstRow
-        /// </summary>  
-		[DataMember(Name="FirstRow", EmitDefaultValue=false)]
-        public int? FirstRow { get; set; }
-
-        /// <summary>
-        /// Gets or sets FirstColumn
-        /// </summary>  
-		[DataMember(Name="FirstColumn", EmitDefaultValue=false)]
-        public int? FirstColumn { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets FirstRow.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual int? FirstRow { get; set; }
+
+        /// <summary>
+        /// Gets or sets FirstColumn.
+        /// </summary>
+        public virtual int? FirstColumn { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsVertical.
+        /// </summary>
+        public virtual bool? IsVertical { get; set; }
+
+        /// <summary>
+        /// Gets or sets Data.
+        /// </summary>
+        public virtual List<double?> Data { get; set; }
+
+        /// <summary>
+        /// Gets or sets DestinationWorksheet.
+        /// </summary>
+        public override string DestinationWorksheet { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsInsert.
+        /// </summary>
+        public override bool? IsInsert { get; set; }
+
+        /// <summary>
+        /// Gets or sets ImportDataType.
+        /// </summary>
+        public override string ImportDataType { get; set; }
+
+        /// <summary>
+        /// Gets or sets Source.
+        /// </summary>
+        public override FileSource Source { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class ImportDoubleArrayOption {\n");
-          sb.Append("  Data: ").Append(this.Data).Append("\n");
-          sb.Append("  IsVertical: ").Append(this.IsVertical).Append("\n");
-          sb.Append("  FirstRow: ").Append(this.FirstRow).Append("\n");
-          sb.Append("  FirstColumn: ").Append(this.FirstColumn).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class ImportDoubleArrayOption {\n");
+            sb.Append("  FirstRow: ").Append(this.FirstRow).Append("\n");
+            sb.Append("  FirstColumn: ").Append(this.FirstColumn).Append("\n");
+            sb.Append("  IsVertical: ").Append(this.IsVertical).Append("\n");
+            sb.Append("  Data: ").Append(this.Data).Append("\n");
+            sb.Append("  DestinationWorksheet: ").Append(this.DestinationWorksheet).Append("\n");
+            sb.Append("  IsInsert: ").Append(this.IsInsert).Append("\n");
+            sb.Append("  ImportDataType: ").Append(this.ImportDataType).Append("\n");
+            sb.Append("  Source: ").Append(this.Source).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

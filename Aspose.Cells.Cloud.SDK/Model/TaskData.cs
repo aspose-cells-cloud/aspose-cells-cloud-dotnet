@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="TaskData.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,39 +23,38 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class TaskData 
-  {                       
+    /// <summary>
+    /// TaskData.
+    /// </summary>
+    public class TaskData
+    {
         /// <summary>
-        /// Gets or sets Tasks
-        /// </summary>  
-		[DataMember(Name="Tasks", EmitDefaultValue=false)]
-        public List<TaskDescription> Tasks { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Tasks.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual IList<TaskDescription> Tasks { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class TaskData {\n");
-          sb.Append("  Tasks: ").Append(this.Tasks).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class TaskData {\n");
+            sb.Append("  Tasks: ").Append(this.Tasks).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

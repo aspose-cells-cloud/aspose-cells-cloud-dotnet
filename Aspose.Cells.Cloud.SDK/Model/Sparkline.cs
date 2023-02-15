@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="Sparkline.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,53 +23,50 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class Sparkline 
-  {                       
+    /// <summary>
+    /// Sparkline.
+    /// </summary>
+    public class Sparkline
+    {
         /// <summary>
-        /// Gets or sets Column
-        /// </summary>  
-		[DataMember(Name="Column", EmitDefaultValue=false)]
-        public int? Column { get; set; }
-
-        /// <summary>
-        /// Gets or sets DataRange
-        /// </summary>  
-		[DataMember(Name="DataRange", EmitDefaultValue=false)]
-        public string DataRange { get; set; }
-
-        /// <summary>
-        /// Gets or sets Row
-        /// </summary>  
-		[DataMember(Name="Row", EmitDefaultValue=false)]
-        public int? Row { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Column.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual int? Column { get; set; }
+
+        /// <summary>
+        /// Gets or sets DataRange.
+        /// </summary>
+        public virtual string DataRange { get; set; }
+
+        /// <summary>
+        /// Gets or sets Row.
+        /// </summary>
+        public virtual int? Row { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class Sparkline {\n");
-          sb.Append("  Column: ").Append(this.Column).Append("\n");
-          sb.Append("  DataRange: ").Append(this.DataRange).Append("\n");
-          sb.Append("  Row: ").Append(this.Row).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class Sparkline {\n");
+            sb.Append("  Column: ").Append(this.Column).Append("\n");
+            sb.Append("  DataRange: ").Append(this.DataRange).Append("\n");
+            sb.Append("  Row: ").Append(this.Row).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

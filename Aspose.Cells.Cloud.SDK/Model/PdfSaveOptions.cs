@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PdfSaveOptions.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,102 +23,140 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class PdfSaveOptions : SaveOptions 
-  {                       
+    /// <summary>
+    /// PdfSaveOptions.
+    /// </summary>
+    public class PdfSaveOptions : SaveOptions
+    {
         /// <summary>
-        /// Gets or sets CalculateFormula
-        /// </summary>  
-		[DataMember(Name="CalculateFormula", EmitDefaultValue=false)]
-        public bool? CalculateFormula { get; set; }
-
-        /// <summary>
-        /// Gets or sets CheckFontCompatibility
-        /// </summary>  
-		[DataMember(Name="CheckFontCompatibility", EmitDefaultValue=false)]
-        public bool? CheckFontCompatibility { get; set; }
-
-        /// <summary>
-        /// Gets or sets OnePagePerSheet
-        /// </summary>  
-		[DataMember(Name="OnePagePerSheet", EmitDefaultValue=false)]
-        public bool? OnePagePerSheet { get; set; }
-
-        /// <summary>
-        /// Gets or sets Compliance
-        /// </summary>  
-		[DataMember(Name="Compliance", EmitDefaultValue=false)]
-        public string Compliance { get; set; }
-
-        /// <summary>
-        /// Gets or sets DefaultFont
-        /// </summary>  
-		[DataMember(Name="DefaultFont", EmitDefaultValue=false)]
-        public string DefaultFont { get; set; }
-
-        /// <summary>
-        /// Gets or sets PrintingPageType
-        /// </summary>  
-		[DataMember(Name="PrintingPageType", EmitDefaultValue=false)]
-        public string PrintingPageType { get; set; }
-
-        /// <summary>
-        /// Gets or sets ImageType
-        /// </summary>  
-		[DataMember(Name="ImageType", EmitDefaultValue=false)]
-        public string ImageType { get; set; }
-
-        /// <summary>
-        /// Gets or sets DesiredPPI
-        /// </summary>  
-		[DataMember(Name="desiredPPI", EmitDefaultValue=false)]
-        public int? DesiredPPI { get; set; }
-
-        /// <summary>
-        /// Gets or sets JpegQuality
-        /// </summary>  
-		[DataMember(Name="jpegQuality", EmitDefaultValue=false)]
-        public int? JpegQuality { get; set; }
-
-        /// <summary>
-        /// Gets or sets SecurityOptions
-        /// </summary>  
-		[DataMember(Name="SecurityOptions", EmitDefaultValue=false)]
-        public PdfSecurityOptions SecurityOptions { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets CalculateFormula.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual bool? CalculateFormula { get; set; }
+
+        /// <summary>
+        /// Gets or sets CheckFontCompatibility.
+        /// </summary>
+        public virtual bool? CheckFontCompatibility { get; set; }
+
+        /// <summary>
+        /// Gets or sets Compliance.
+        /// </summary>
+        public virtual string Compliance { get; set; }
+
+        /// <summary>
+        /// Gets or sets DefaultFont.
+        /// </summary>
+        public virtual string DefaultFont { get; set; }
+
+        /// <summary>
+        /// Gets or sets OnePagePerSheet.
+        /// </summary>
+        public virtual bool? OnePagePerSheet { get; set; }
+
+        /// <summary>
+        /// Gets or sets PrintingPageType.
+        /// </summary>
+        public virtual string PrintingPageType { get; set; }
+
+        /// <summary>
+        /// Gets or sets SecurityOptions.
+        /// </summary>
+        public virtual PdfSecurityOptions SecurityOptions { get; set; }
+
+        /// <summary>
+        /// Gets or sets desiredPPI.
+        /// </summary>
+        public virtual int? desiredPPI { get; set; }
+
+        /// <summary>
+        /// Gets or sets jpegQuality.
+        /// </summary>
+        public virtual int? jpegQuality { get; set; }
+
+        /// <summary>
+        /// Gets or sets ImageType.
+        /// </summary>
+        public virtual string ImageType { get; set; }
+
+        /// <summary>
+        /// Gets or sets SaveFormat.
+        /// </summary>
+        public override string SaveFormat { get; set; }
+
+        /// <summary>
+        /// Gets or sets CachedFileFolder.
+        /// </summary>
+        public override string CachedFileFolder { get; set; }
+
+        /// <summary>
+        /// Gets or sets ClearData.
+        /// </summary>
+        public override bool? ClearData { get; set; }
+
+        /// <summary>
+        /// Gets or sets CreateDirectory.
+        /// </summary>
+        public override bool? CreateDirectory { get; set; }
+
+        /// <summary>
+        /// Gets or sets EnableHTTPCompression.
+        /// </summary>
+        public override bool? EnableHTTPCompression { get; set; }
+
+        /// <summary>
+        /// Gets or sets RefreshChartCache.
+        /// </summary>
+        public override bool? RefreshChartCache { get; set; }
+
+        /// <summary>
+        /// Gets or sets SortNames.
+        /// </summary>
+        public override bool? SortNames { get; set; }
+
+        /// <summary>
+        /// Gets or sets ValidateMergedAreas.
+        /// </summary>
+        public override bool? ValidateMergedAreas { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class PdfSaveOptions {\n");
-          sb.Append("  CalculateFormula: ").Append(this.CalculateFormula).Append("\n");
-          sb.Append("  CheckFontCompatibility: ").Append(this.CheckFontCompatibility).Append("\n");
-          sb.Append("  OnePagePerSheet: ").Append(this.OnePagePerSheet).Append("\n");
-          sb.Append("  Compliance: ").Append(this.Compliance).Append("\n");
-          sb.Append("  DefaultFont: ").Append(this.DefaultFont).Append("\n");
-          sb.Append("  PrintingPageType: ").Append(this.PrintingPageType).Append("\n");
-          sb.Append("  ImageType: ").Append(this.ImageType).Append("\n");
-          sb.Append("  DesiredPPI: ").Append(this.DesiredPPI).Append("\n");
-          sb.Append("  JpegQuality: ").Append(this.JpegQuality).Append("\n");
-          sb.Append("  SecurityOptions: ").Append(this.SecurityOptions).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class PdfSaveOptions {\n");
+            sb.Append("  CalculateFormula: ").Append(this.CalculateFormula).Append("\n");
+            sb.Append("  CheckFontCompatibility: ").Append(this.CheckFontCompatibility).Append("\n");
+            sb.Append("  Compliance: ").Append(this.Compliance).Append("\n");
+            sb.Append("  DefaultFont: ").Append(this.DefaultFont).Append("\n");
+            sb.Append("  OnePagePerSheet: ").Append(this.OnePagePerSheet).Append("\n");
+            sb.Append("  PrintingPageType: ").Append(this.PrintingPageType).Append("\n");
+            sb.Append("  SecurityOptions: ").Append(this.SecurityOptions).Append("\n");
+            sb.Append("  desiredPPI: ").Append(this.desiredPPI).Append("\n");
+            sb.Append("  jpegQuality: ").Append(this.jpegQuality).Append("\n");
+            sb.Append("  ImageType: ").Append(this.ImageType).Append("\n");
+            sb.Append("  SaveFormat: ").Append(this.SaveFormat).Append("\n");
+            sb.Append("  CachedFileFolder: ").Append(this.CachedFileFolder).Append("\n");
+            sb.Append("  ClearData: ").Append(this.ClearData).Append("\n");
+            sb.Append("  CreateDirectory: ").Append(this.CreateDirectory).Append("\n");
+            sb.Append("  EnableHTTPCompression: ").Append(this.EnableHTTPCompression).Append("\n");
+            sb.Append("  RefreshChartCache: ").Append(this.RefreshChartCache).Append("\n");
+            sb.Append("  SortNames: ").Append(this.SortNames).Append("\n");
+            sb.Append("  ValidateMergedAreas: ").Append(this.ValidateMergedAreas).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ColorFilter.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,67 +23,62 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class ColorFilter 
-  {                       
+    /// <summary>
+    /// ColorFilter.
+    /// </summary>
+    public class ColorFilter
+    {
         /// <summary>
-        /// Gets or sets Color
-        /// </summary>  
-		[DataMember(Name="Color", EmitDefaultValue=false)]
-        public CellsColor Color { get; set; }
-
-        /// <summary>
-        /// Gets or sets Pattern
-        /// </summary>  
-		[DataMember(Name="Pattern", EmitDefaultValue=false)]
-        public string Pattern { get; set; }
-
-        /// <summary>
-        /// Gets or sets BackgroundColor
-        /// </summary>  
-		[DataMember(Name="BackgroundColor", EmitDefaultValue=false)]
-        public CellsColor BackgroundColor { get; set; }
-
-        /// <summary>
-        /// Gets or sets ForegroundColorColor
-        /// </summary>  
-		[DataMember(Name="ForegroundColorColor", EmitDefaultValue=false)]
-        public CellsColor ForegroundColorColor { get; set; }
-
-        /// <summary>
-        /// Gets or sets FilterByFillColor
-        /// </summary>  
-		[DataMember(Name="FilterByFillColor", EmitDefaultValue=false)]
-        public string FilterByFillColor { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets FilterByFillColor.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual bool? FilterByFillColor { get; set; }
+
+        /// <summary>
+        /// Gets or sets Pattern.
+        /// </summary>
+        public virtual string Pattern { get; set; }
+
+        /// <summary>
+        /// Gets or sets Color.
+        /// </summary>
+        public virtual CellsColor Color { get; set; }
+
+        /// <summary>
+        /// Gets or sets ForegroundColorColor.
+        /// </summary>
+        public virtual CellsColor ForegroundColorColor { get; set; }
+
+        /// <summary>
+        /// Gets or sets BackgroundColor.
+        /// </summary>
+        public virtual CellsColor BackgroundColor { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class ColorFilter {\n");
-          sb.Append("  Color: ").Append(this.Color).Append("\n");
-          sb.Append("  Pattern: ").Append(this.Pattern).Append("\n");
-          sb.Append("  BackgroundColor: ").Append(this.BackgroundColor).Append("\n");
-          sb.Append("  ForegroundColorColor: ").Append(this.ForegroundColorColor).Append("\n");
-          sb.Append("  FilterByFillColor: ").Append(this.FilterByFillColor).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class ColorFilter {\n");
+            sb.Append("  FilterByFillColor: ").Append(this.FilterByFillColor).Append("\n");
+            sb.Append("  Pattern: ").Append(this.Pattern).Append("\n");
+            sb.Append("  Color: ").Append(this.Color).Append("\n");
+            sb.Append("  ForegroundColorColor: ").Append(this.ForegroundColorColor).Append("\n");
+            sb.Append("  BackgroundColor: ").Append(this.BackgroundColor).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

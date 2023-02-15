@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="Workbook.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,109 +23,98 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class Workbook 
-  {                       
+    /// <summary>
+    /// Workbook.
+    /// </summary>
+    public class Workbook
+    {
         /// <summary>
-        /// Gets or sets Links
-        /// </summary>  
-		[DataMember(Name="Links", EmitDefaultValue=false)]
-        public List<Link> Links { get; set; }
-
-        /// <summary>
-        /// Gets or sets Settings
-        /// </summary>  
-		[DataMember(Name="Settings", EmitDefaultValue=false)]
-        public LinkElement Settings { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsProtected
-        /// </summary>  
-		[DataMember(Name="IsProtected", EmitDefaultValue=false)]
-        public string IsProtected { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsWriteProtected
-        /// </summary>  
-		[DataMember(Name="IsWriteProtected", EmitDefaultValue=false)]
-        public string IsWriteProtected { get; set; }
-
-        /// <summary>
-        /// Gets or sets FileName
-        /// </summary>  
-		[DataMember(Name="FileName", EmitDefaultValue=false)]
-        public string FileName { get; set; }
-
-        /// <summary>
-        /// Gets or sets DocumentProperties
-        /// </summary>  
-		[DataMember(Name="DocumentProperties", EmitDefaultValue=false)]
-        public LinkElement DocumentProperties { get; set; }
-
-        /// <summary>
-        /// Gets or sets Names
-        /// </summary>  
-		[DataMember(Name="Names", EmitDefaultValue=false)]
-        public LinkElement Names { get; set; }
-
-        /// <summary>
-        /// Gets or sets DefaultStyle
-        /// </summary>  
-		[DataMember(Name="DefaultStyle", EmitDefaultValue=false)]
-        public LinkElement DefaultStyle { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsEncryption
-        /// </summary>  
-		[DataMember(Name="IsEncryption", EmitDefaultValue=false)]
-        public string IsEncryption { get; set; }
-
-        /// <summary>
-        /// Gets or sets Worksheets
-        /// </summary>  
-		[DataMember(Name="Worksheets", EmitDefaultValue=false)]
-        public LinkElement Worksheets { get; set; }
-
-        /// <summary>
-        /// Gets or sets Password
-        /// </summary>  
-		[DataMember(Name="Password", EmitDefaultValue=false)]
-        public string Password { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets FileName.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string FileName { get; set; }
+
+        /// <summary>
+        /// Gets or sets Links.
+        /// </summary>
+        public virtual IList<Link> Links { get; set; }
+
+        /// <summary>
+        /// Gets or sets Worksheets.
+        /// </summary>
+        public virtual LinkElement Worksheets { get; set; }
+
+        /// <summary>
+        /// Gets or sets DefaultStyle.
+        /// </summary>
+        public virtual LinkElement DefaultStyle { get; set; }
+
+        /// <summary>
+        /// Gets or sets DocumentProperties.
+        /// </summary>
+        public virtual LinkElement DocumentProperties { get; set; }
+
+        /// <summary>
+        /// Gets or sets Names.
+        /// </summary>
+        public virtual LinkElement Names { get; set; }
+
+        /// <summary>
+        /// Gets or sets Settings.
+        /// </summary>
+        public virtual LinkElement Settings { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsWriteProtected.
+        /// </summary>
+        public virtual string IsWriteProtected { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsProtected.
+        /// </summary>
+        public virtual string IsProtected { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsEncryption.
+        /// </summary>
+        public virtual string IsEncryption { get; set; }
+
+        /// <summary>
+        /// Gets or sets Password.
+        /// </summary>
+        public virtual string Password { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class Workbook {\n");
-          sb.Append("  Links: ").Append(this.Links).Append("\n");
-          sb.Append("  Settings: ").Append(this.Settings).Append("\n");
-          sb.Append("  IsProtected: ").Append(this.IsProtected).Append("\n");
-          sb.Append("  IsWriteProtected: ").Append(this.IsWriteProtected).Append("\n");
-          sb.Append("  FileName: ").Append(this.FileName).Append("\n");
-          sb.Append("  DocumentProperties: ").Append(this.DocumentProperties).Append("\n");
-          sb.Append("  Names: ").Append(this.Names).Append("\n");
-          sb.Append("  DefaultStyle: ").Append(this.DefaultStyle).Append("\n");
-          sb.Append("  IsEncryption: ").Append(this.IsEncryption).Append("\n");
-          sb.Append("  Worksheets: ").Append(this.Worksheets).Append("\n");
-          sb.Append("  Password: ").Append(this.Password).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class Workbook {\n");
+            sb.Append("  FileName: ").Append(this.FileName).Append("\n");
+            sb.Append("  Links: ").Append(this.Links).Append("\n");
+            sb.Append("  Worksheets: ").Append(this.Worksheets).Append("\n");
+            sb.Append("  DefaultStyle: ").Append(this.DefaultStyle).Append("\n");
+            sb.Append("  DocumentProperties: ").Append(this.DocumentProperties).Append("\n");
+            sb.Append("  Names: ").Append(this.Names).Append("\n");
+            sb.Append("  Settings: ").Append(this.Settings).Append("\n");
+            sb.Append("  IsWriteProtected: ").Append(this.IsWriteProtected).Append("\n");
+            sb.Append("  IsProtected: ").Append(this.IsProtected).Append("\n");
+            sb.Append("  IsEncryption: ").Append(this.IsEncryption).Append("\n");
+            sb.Append("  Password: ").Append(this.Password).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

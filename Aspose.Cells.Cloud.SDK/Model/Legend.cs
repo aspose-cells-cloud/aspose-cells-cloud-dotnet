@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="Legend.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,144 +23,122 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class Legend 
-  {                       
+    /// <summary>
+    /// Legend.
+    /// </summary>
+    public class Legend : ChartFrame
+    {
         /// <summary>
-        /// Gets or sets IsInnerMode
-        /// </summary>  
-		[DataMember(Name="IsInnerMode", EmitDefaultValue=false)]
-        public bool? IsInnerMode { get; set; }
-
-        /// <summary>
-        /// Gets or sets ShapeProperties
-        /// </summary>  
-		[DataMember(Name="ShapeProperties", EmitDefaultValue=false)]
-        public List<LinkElement> ShapeProperties { get; set; }
-
-        /// <summary>
-        /// Gets or sets AutoScaleFont
-        /// </summary>  
-		[DataMember(Name="AutoScaleFont", EmitDefaultValue=false)]
-        public bool? AutoScaleFont { get; set; }
-
-        /// <summary>
-        /// Gets or sets Area
-        /// </summary>  
-		[DataMember(Name="Area", EmitDefaultValue=false)]
-        public Area Area { get; set; }
-
-        /// <summary>
-        /// Gets or sets Height
-        /// </summary>  
-		[DataMember(Name="Height", EmitDefaultValue=false)]
-        public int? Height { get; set; }
-
-        /// <summary>
-        /// Gets or sets Width
-        /// </summary>  
-		[DataMember(Name="Width", EmitDefaultValue=false)]
-        public int? Width { get; set; }
-
-        /// <summary>
-        /// Gets or sets BackgroundMode
-        /// </summary>  
-		[DataMember(Name="BackgroundMode", EmitDefaultValue=false)]
-        public string BackgroundMode { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsAutomaticSize
-        /// </summary>  
-		[DataMember(Name="IsAutomaticSize", EmitDefaultValue=false)]
-        public bool? IsAutomaticSize { get; set; }
-
-        /// <summary>
-        /// Gets or sets Y
-        /// </summary>  
-		[DataMember(Name="Y", EmitDefaultValue=false)]
-        public int? Y { get; set; }
-
-        /// <summary>
-        /// Gets or sets X
-        /// </summary>  
-		[DataMember(Name="X", EmitDefaultValue=false)]
-        public int? X { get; set; }
-
-        /// <summary>
-        /// Gets or sets Shadow
-        /// </summary>  
-		[DataMember(Name="Shadow", EmitDefaultValue=false)]
-        public bool? Shadow { get; set; }
-
-        /// <summary>
-        /// Gets or sets Font
-        /// </summary>  
-		[DataMember(Name="Font", EmitDefaultValue=false)]
-        public Font Font { get; set; }
-
-        /// <summary>
-        /// Gets or sets Border
-        /// </summary>  
-		[DataMember(Name="Border", EmitDefaultValue=false)]
-        public Line Border { get; set; }
-
-        /// <summary>
-        /// Gets or sets Link
-        /// </summary>  
-		[DataMember(Name="link", EmitDefaultValue=false)]
-        public Link Link { get; set; }
-
-        /// <summary>
-        /// Gets or sets LegendEntries
-        /// </summary>  
-		[DataMember(Name="LegendEntries", EmitDefaultValue=false)]
-        public LinkElement LegendEntries { get; set; }
-
-        /// <summary>
-        /// Gets or sets Position
-        /// </summary>  
-		[DataMember(Name="Position", EmitDefaultValue=false)]
-        public string Position { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Position.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string Position { get; set; }
+
+        /// <summary>
+        /// Gets or sets LegendEntries.
+        /// </summary>
+        public virtual LinkElement LegendEntries { get; set; }
+
+        /// <summary>
+        /// Gets or sets Area.
+        /// </summary>
+        public override Area Area { get; set; }
+
+        /// <summary>
+        /// Gets or sets AutoScaleFont.
+        /// </summary>
+        public override bool? AutoScaleFont { get; set; }
+
+        /// <summary>
+        /// Gets or sets BackgroundMode.
+        /// </summary>
+        public override string BackgroundMode { get; set; }
+
+        /// <summary>
+        /// Gets or sets Border.
+        /// </summary>
+        public override Line Border { get; set; }
+
+        /// <summary>
+        /// Gets or sets Font.
+        /// </summary>
+        public override Font Font { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsAutomaticSize.
+        /// </summary>
+        public override bool? IsAutomaticSize { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsInnerMode.
+        /// </summary>
+        public override bool? IsInnerMode { get; set; }
+
+        /// <summary>
+        /// Gets or sets Shadow.
+        /// </summary>
+        public override bool? Shadow { get; set; }
+
+        /// <summary>
+        /// Gets or sets ShapeProperties.
+        /// </summary>
+        public override IList<LinkElement> ShapeProperties { get; set; }
+
+        /// <summary>
+        /// Gets or sets Width.
+        /// </summary>
+        public override int? Width { get; set; }
+
+        /// <summary>
+        /// Gets or sets Height.
+        /// </summary>
+        public override int? Height { get; set; }
+
+        /// <summary>
+        /// Gets or sets X.
+        /// </summary>
+        public override int? X { get; set; }
+
+        /// <summary>
+        /// Gets or sets Y.
+        /// </summary>
+        public override int? Y { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class Legend {\n");
-          sb.Append("  IsInnerMode: ").Append(this.IsInnerMode).Append("\n");
-          sb.Append("  ShapeProperties: ").Append(this.ShapeProperties).Append("\n");
-          sb.Append("  AutoScaleFont: ").Append(this.AutoScaleFont).Append("\n");
-          sb.Append("  Area: ").Append(this.Area).Append("\n");
-          sb.Append("  Height: ").Append(this.Height).Append("\n");
-          sb.Append("  Width: ").Append(this.Width).Append("\n");
-          sb.Append("  BackgroundMode: ").Append(this.BackgroundMode).Append("\n");
-          sb.Append("  IsAutomaticSize: ").Append(this.IsAutomaticSize).Append("\n");
-          sb.Append("  Y: ").Append(this.Y).Append("\n");
-          sb.Append("  X: ").Append(this.X).Append("\n");
-          sb.Append("  Shadow: ").Append(this.Shadow).Append("\n");
-          sb.Append("  Font: ").Append(this.Font).Append("\n");
-          sb.Append("  Border: ").Append(this.Border).Append("\n");
-          sb.Append("  Link: ").Append(this.Link).Append("\n");
-          sb.Append("  LegendEntries: ").Append(this.LegendEntries).Append("\n");
-          sb.Append("  Position: ").Append(this.Position).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class Legend {\n");
+            sb.Append("  Position: ").Append(this.Position).Append("\n");
+            sb.Append("  LegendEntries: ").Append(this.LegendEntries).Append("\n");
+            sb.Append("  Area: ").Append(this.Area).Append("\n");
+            sb.Append("  AutoScaleFont: ").Append(this.AutoScaleFont).Append("\n");
+            sb.Append("  BackgroundMode: ").Append(this.BackgroundMode).Append("\n");
+            sb.Append("  Border: ").Append(this.Border).Append("\n");
+            sb.Append("  Font: ").Append(this.Font).Append("\n");
+            sb.Append("  IsAutomaticSize: ").Append(this.IsAutomaticSize).Append("\n");
+            sb.Append("  IsInnerMode: ").Append(this.IsInnerMode).Append("\n");
+            sb.Append("  Shadow: ").Append(this.Shadow).Append("\n");
+            sb.Append("  ShapeProperties: ").Append(this.ShapeProperties).Append("\n");
+            sb.Append("  Width: ").Append(this.Width).Append("\n");
+            sb.Append("  Height: ").Append(this.Height).Append("\n");
+            sb.Append("  X: ").Append(this.X).Append("\n");
+            sb.Append("  Y: ").Append(this.Y).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="Top10Filter.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,60 +23,56 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class Top10Filter 
-  {                       
+    /// <summary>
+    /// Top10Filter.
+    /// </summary>
+    public class Top10Filter
+    {
         /// <summary>
-        /// Gets or sets Items
-        /// </summary>  
-		[DataMember(Name="Items", EmitDefaultValue=false)]
-        public int? Items { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsPercent
-        /// </summary>  
-		[DataMember(Name="IsPercent", EmitDefaultValue=false)]
-        public bool? IsPercent { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsTop
-        /// </summary>  
-		[DataMember(Name="IsTop", EmitDefaultValue=false)]
-        public bool? IsTop { get; set; }
-
-        /// <summary>
-        /// Gets or sets Criteria
-        /// </summary>  
-		[DataMember(Name="Criteria", EmitDefaultValue=false)]
-        public string Criteria { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Criteria.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string Criteria { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsPercent.
+        /// </summary>
+        public virtual bool? IsPercent { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsTop.
+        /// </summary>
+        public virtual bool? IsTop { get; set; }
+
+        /// <summary>
+        /// Gets or sets Items.
+        /// </summary>
+        public virtual int? Items { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class Top10Filter {\n");
-          sb.Append("  Items: ").Append(this.Items).Append("\n");
-          sb.Append("  IsPercent: ").Append(this.IsPercent).Append("\n");
-          sb.Append("  IsTop: ").Append(this.IsTop).Append("\n");
-          sb.Append("  Criteria: ").Append(this.Criteria).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class Top10Filter {\n");
+            sb.Append("  Criteria: ").Append(this.Criteria).Append("\n");
+            sb.Append("  IsPercent: ").Append(this.IsPercent).Append("\n");
+            sb.Append("  IsTop: ").Append(this.IsTop).Append("\n");
+            sb.Append("  Items: ").Append(this.Items).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

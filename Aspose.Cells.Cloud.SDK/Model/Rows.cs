@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="Rows.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,60 +23,56 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class Rows 
-  {                       
+    /// <summary>
+    /// Rows.
+    /// </summary>
+    public class Rows : LinkElement
+    {
         /// <summary>
-        /// Gets or sets Link
-        /// </summary>  
-		[DataMember(Name="link", EmitDefaultValue=false)]
-        public Link Link { get; set; }
-
-        /// <summary>
-        /// Gets or sets MaxRow
-        /// </summary>  
-		[DataMember(Name="MaxRow", EmitDefaultValue=false)]
-        public int? MaxRow { get; set; }
-
-        /// <summary>
-        /// Gets or sets RowsList
-        /// </summary>  
-		[DataMember(Name="RowsList", EmitDefaultValue=false)]
-        public List<LinkElement> RowsList { get; set; }
-
-        /// <summary>
-        /// Gets or sets RowsCount
-        /// </summary>  
-		[DataMember(Name="RowsCount", EmitDefaultValue=false)]
-        public int? RowsCount { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets MaxRow.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual int? MaxRow { get; set; }
+
+        /// <summary>
+        /// Gets or sets RowsCount.
+        /// </summary>
+        public virtual int? RowsCount { get; set; }
+
+        /// <summary>
+        /// Gets or sets RowsList.
+        /// </summary>
+        public virtual IList<LinkElement> RowsList { get; set; }
+
+        /// <summary>
+        /// Gets or sets link.
+        /// </summary>
+        public override Link link { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class Rows {\n");
-          sb.Append("  Link: ").Append(this.Link).Append("\n");
-          sb.Append("  MaxRow: ").Append(this.MaxRow).Append("\n");
-          sb.Append("  RowsList: ").Append(this.RowsList).Append("\n");
-          sb.Append("  RowsCount: ").Append(this.RowsCount).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class Rows {\n");
+            sb.Append("  MaxRow: ").Append(this.MaxRow).Append("\n");
+            sb.Append("  RowsCount: ").Append(this.RowsCount).Append("\n");
+            sb.Append("  RowsList: ").Append(this.RowsList).Append("\n");
+            sb.Append("  link: ").Append(this.link).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

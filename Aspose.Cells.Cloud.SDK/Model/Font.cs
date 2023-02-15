@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="Font.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,102 +23,92 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class Font 
-  {                       
+    /// <summary>
+    /// Font.
+    /// </summary>
+    public class Font
+    {
         /// <summary>
-        /// Gets or sets IsItalic
-        /// </summary>  
-		[DataMember(Name="IsItalic", EmitDefaultValue=false)]
-        public bool? IsItalic { get; set; }
-
-        /// <summary>
-        /// Gets or sets Name
-        /// </summary>  
-		[DataMember(Name="Name", EmitDefaultValue=false)]
-        public string Name { get; set; }
-
-        /// <summary>
-        /// Gets or sets DoubleSize
-        /// </summary>  
-		[DataMember(Name="DoubleSize", EmitDefaultValue=false)]
-        public double? DoubleSize { get; set; }
-
-        /// <summary>
-        /// Gets or sets Color
-        /// </summary>  
-		[DataMember(Name="Color", EmitDefaultValue=false)]
-        public Color Color { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsBold
-        /// </summary>  
-		[DataMember(Name="IsBold", EmitDefaultValue=false)]
-        public bool? IsBold { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsSubscript
-        /// </summary>  
-		[DataMember(Name="IsSubscript", EmitDefaultValue=false)]
-        public bool? IsSubscript { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsSuperscript
-        /// </summary>  
-		[DataMember(Name="IsSuperscript", EmitDefaultValue=false)]
-        public bool? IsSuperscript { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsStrikeout
-        /// </summary>  
-		[DataMember(Name="IsStrikeout", EmitDefaultValue=false)]
-        public bool? IsStrikeout { get; set; }
-
-        /// <summary>
-        /// Gets or sets Underline
-        /// </summary>  
-		[DataMember(Name="Underline", EmitDefaultValue=false)]
-        public string Underline { get; set; }
-
-        /// <summary>
-        /// Gets or sets Size
-        /// </summary>  
-		[DataMember(Name="Size", EmitDefaultValue=false)]
-        public int? Size { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Color.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual Color Color { get; set; }
+
+        /// <summary>
+        /// Gets or sets DoubleSize.
+        /// </summary>
+        public virtual double? DoubleSize { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsBold.
+        /// </summary>
+        public virtual bool? IsBold { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsItalic.
+        /// </summary>
+        public virtual bool? IsItalic { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsStrikeout.
+        /// </summary>
+        public virtual bool? IsStrikeout { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsSubscript.
+        /// </summary>
+        public virtual bool? IsSubscript { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsSuperscript.
+        /// </summary>
+        public virtual bool? IsSuperscript { get; set; }
+
+        /// <summary>
+        /// Gets or sets Name.
+        /// </summary>
+        public virtual string Name { get; set; }
+
+        /// <summary>
+        /// Gets or sets Size.
+        /// </summary>
+        public virtual int? Size { get; set; }
+
+        /// <summary>
+        /// Gets or sets Underline.
+        /// </summary>
+        public virtual string Underline { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class Font {\n");
-          sb.Append("  IsItalic: ").Append(this.IsItalic).Append("\n");
-          sb.Append("  Name: ").Append(this.Name).Append("\n");
-          sb.Append("  DoubleSize: ").Append(this.DoubleSize).Append("\n");
-          sb.Append("  Color: ").Append(this.Color).Append("\n");
-          sb.Append("  IsBold: ").Append(this.IsBold).Append("\n");
-          sb.Append("  IsSubscript: ").Append(this.IsSubscript).Append("\n");
-          sb.Append("  IsSuperscript: ").Append(this.IsSuperscript).Append("\n");
-          sb.Append("  IsStrikeout: ").Append(this.IsStrikeout).Append("\n");
-          sb.Append("  Underline: ").Append(this.Underline).Append("\n");
-          sb.Append("  Size: ").Append(this.Size).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class Font {\n");
+            sb.Append("  Color: ").Append(this.Color).Append("\n");
+            sb.Append("  DoubleSize: ").Append(this.DoubleSize).Append("\n");
+            sb.Append("  IsBold: ").Append(this.IsBold).Append("\n");
+            sb.Append("  IsItalic: ").Append(this.IsItalic).Append("\n");
+            sb.Append("  IsStrikeout: ").Append(this.IsStrikeout).Append("\n");
+            sb.Append("  IsSubscript: ").Append(this.IsSubscript).Append("\n");
+            sb.Append("  IsSuperscript: ").Append(this.IsSuperscript).Append("\n");
+            sb.Append("  Name: ").Append(this.Name).Append("\n");
+            sb.Append("  Size: ").Append(this.Size).Append("\n");
+            sb.Append("  Underline: ").Append(this.Underline).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

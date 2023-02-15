@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ImageSaveOptions.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,116 +23,152 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class ImageSaveOptions : SaveOptions 
-  {                       
+    /// <summary>
+    /// ImageSaveOptions.
+    /// </summary>
+    public class ImageSaveOptions : SaveOptions
+    {
         /// <summary>
-        /// Gets or sets ChartImageType
-        /// </summary>  
-		[DataMember(Name="ChartImageType", EmitDefaultValue=false)]
-        public string ChartImageType { get; set; }
-
-        /// <summary>
-        /// Gets or sets EmbededImageNameInSvg
-        /// </summary>  
-		[DataMember(Name="EmbededImageNameInSvg", EmitDefaultValue=false)]
-        public string EmbededImageNameInSvg { get; set; }
-
-        /// <summary>
-        /// Gets or sets HorizontalResolution
-        /// </summary>  
-		[DataMember(Name="HorizontalResolution", EmitDefaultValue=false)]
-        public int? HorizontalResolution { get; set; }
-
-        /// <summary>
-        /// Gets or sets ImageFormat
-        /// </summary>  
-		[DataMember(Name="ImageFormat", EmitDefaultValue=false)]
-        public string ImageFormat { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsCellAutoFit
-        /// </summary>  
-		[DataMember(Name="IsCellAutoFit", EmitDefaultValue=false)]
-        public bool? IsCellAutoFit { get; set; }
-
-        /// <summary>
-        /// Gets or sets OnePagePerSheet
-        /// </summary>  
-		[DataMember(Name="OnePagePerSheet", EmitDefaultValue=false)]
-        public bool? OnePagePerSheet { get; set; }
-
-        /// <summary>
-        /// Gets or sets OnlyArea
-        /// </summary>  
-		[DataMember(Name="OnlyArea", EmitDefaultValue=false)]
-        public bool? OnlyArea { get; set; }
-
-        /// <summary>
-        /// Gets or sets PrintingPage
-        /// </summary>  
-		[DataMember(Name="PrintingPage", EmitDefaultValue=false)]
-        public string PrintingPage { get; set; }
-
-        /// <summary>
-        /// Gets or sets PrintWithStatusDialog
-        /// </summary>  
-		[DataMember(Name="PrintWithStatusDialog", EmitDefaultValue=false)]
-        public int? PrintWithStatusDialog { get; set; }
-
-        /// <summary>
-        /// Gets or sets Quality
-        /// </summary>  
-		[DataMember(Name="Quality", EmitDefaultValue=false)]
-        public int? Quality { get; set; }
-
-        /// <summary>
-        /// Gets or sets TiffCompression
-        /// </summary>  
-		[DataMember(Name="TiffCompression", EmitDefaultValue=false)]
-        public string TiffCompression { get; set; }
-
-        /// <summary>
-        /// Gets or sets VerticalResolution
-        /// </summary>  
-		[DataMember(Name="VerticalResolution", EmitDefaultValue=false)]
-        public int? VerticalResolution { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets ChartImageType.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string ChartImageType { get; set; }
+
+        /// <summary>
+        /// Gets or sets EmbededImageNameInSvg.
+        /// </summary>
+        public virtual string EmbededImageNameInSvg { get; set; }
+
+        /// <summary>
+        /// Gets or sets HorizontalResolution.
+        /// </summary>
+        public virtual int? HorizontalResolution { get; set; }
+
+        /// <summary>
+        /// Gets or sets ImageFormat.
+        /// </summary>
+        public virtual string ImageFormat { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsCellAutoFit.
+        /// </summary>
+        public virtual bool? IsCellAutoFit { get; set; }
+
+        /// <summary>
+        /// Gets or sets OnePagePerSheet.
+        /// </summary>
+        public virtual bool? OnePagePerSheet { get; set; }
+
+        /// <summary>
+        /// Gets or sets OnlyArea.
+        /// </summary>
+        public virtual bool? OnlyArea { get; set; }
+
+        /// <summary>
+        /// Gets or sets PrintingPage.
+        /// </summary>
+        public virtual string PrintingPage { get; set; }
+
+        /// <summary>
+        /// Gets or sets PrintWithStatusDialog.
+        /// </summary>
+        public virtual bool? PrintWithStatusDialog { get; set; }
+
+        /// <summary>
+        /// Gets or sets Quality.
+        /// </summary>
+        public virtual int? Quality { get; set; }
+
+        /// <summary>
+        /// Gets or sets TiffCompression.
+        /// </summary>
+        public virtual string TiffCompression { get; set; }
+
+        /// <summary>
+        /// Gets or sets VerticalResolution.
+        /// </summary>
+        public virtual int? VerticalResolution { get; set; }
+
+        /// <summary>
+        /// Gets or sets SaveFormat.
+        /// </summary>
+        public override string SaveFormat { get; set; }
+
+        /// <summary>
+        /// Gets or sets CachedFileFolder.
+        /// </summary>
+        public override string CachedFileFolder { get; set; }
+
+        /// <summary>
+        /// Gets or sets ClearData.
+        /// </summary>
+        public override bool? ClearData { get; set; }
+
+        /// <summary>
+        /// Gets or sets CreateDirectory.
+        /// </summary>
+        public override bool? CreateDirectory { get; set; }
+
+        /// <summary>
+        /// Gets or sets EnableHTTPCompression.
+        /// </summary>
+        public override bool? EnableHTTPCompression { get; set; }
+
+        /// <summary>
+        /// Gets or sets RefreshChartCache.
+        /// </summary>
+        public override bool? RefreshChartCache { get; set; }
+
+        /// <summary>
+        /// Gets or sets SortNames.
+        /// </summary>
+        public override bool? SortNames { get; set; }
+
+        /// <summary>
+        /// Gets or sets ValidateMergedAreas.
+        /// </summary>
+        public override bool? ValidateMergedAreas { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class ImageSaveOptions {\n");
-          sb.Append("  ChartImageType: ").Append(this.ChartImageType).Append("\n");
-          sb.Append("  EmbededImageNameInSvg: ").Append(this.EmbededImageNameInSvg).Append("\n");
-          sb.Append("  HorizontalResolution: ").Append(this.HorizontalResolution).Append("\n");
-          sb.Append("  ImageFormat: ").Append(this.ImageFormat).Append("\n");
-          sb.Append("  IsCellAutoFit: ").Append(this.IsCellAutoFit).Append("\n");
-          sb.Append("  OnePagePerSheet: ").Append(this.OnePagePerSheet).Append("\n");
-          sb.Append("  OnlyArea: ").Append(this.OnlyArea).Append("\n");
-          sb.Append("  PrintingPage: ").Append(this.PrintingPage).Append("\n");
-          sb.Append("  PrintWithStatusDialog: ").Append(this.PrintWithStatusDialog).Append("\n");
-          sb.Append("  Quality: ").Append(this.Quality).Append("\n");
-          sb.Append("  TiffCompression: ").Append(this.TiffCompression).Append("\n");
-          sb.Append("  VerticalResolution: ").Append(this.VerticalResolution).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class ImageSaveOptions {\n");
+            sb.Append("  ChartImageType: ").Append(this.ChartImageType).Append("\n");
+            sb.Append("  EmbededImageNameInSvg: ").Append(this.EmbededImageNameInSvg).Append("\n");
+            sb.Append("  HorizontalResolution: ").Append(this.HorizontalResolution).Append("\n");
+            sb.Append("  ImageFormat: ").Append(this.ImageFormat).Append("\n");
+            sb.Append("  IsCellAutoFit: ").Append(this.IsCellAutoFit).Append("\n");
+            sb.Append("  OnePagePerSheet: ").Append(this.OnePagePerSheet).Append("\n");
+            sb.Append("  OnlyArea: ").Append(this.OnlyArea).Append("\n");
+            sb.Append("  PrintingPage: ").Append(this.PrintingPage).Append("\n");
+            sb.Append("  PrintWithStatusDialog: ").Append(this.PrintWithStatusDialog).Append("\n");
+            sb.Append("  Quality: ").Append(this.Quality).Append("\n");
+            sb.Append("  TiffCompression: ").Append(this.TiffCompression).Append("\n");
+            sb.Append("  VerticalResolution: ").Append(this.VerticalResolution).Append("\n");
+            sb.Append("  SaveFormat: ").Append(this.SaveFormat).Append("\n");
+            sb.Append("  CachedFileFolder: ").Append(this.CachedFileFolder).Append("\n");
+            sb.Append("  ClearData: ").Append(this.ClearData).Append("\n");
+            sb.Append("  CreateDirectory: ").Append(this.CreateDirectory).Append("\n");
+            sb.Append("  EnableHTTPCompression: ").Append(this.EnableHTTPCompression).Append("\n");
+            sb.Append("  RefreshChartCache: ").Append(this.RefreshChartCache).Append("\n");
+            sb.Append("  SortNames: ").Append(this.SortNames).Append("\n");
+            sb.Append("  ValidateMergedAreas: ").Append(this.ValidateMergedAreas).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

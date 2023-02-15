@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="CellsDocumentProperties.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,46 +23,38 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class CellsDocumentProperties 
-  {                       
+    /// <summary>
+    /// CellsDocumentProperties.
+    /// </summary>
+    public class CellsDocumentProperties
+    {
         /// <summary>
-        /// Gets or sets Link
-        /// </summary>  
-		[DataMember(Name="link", EmitDefaultValue=false)]
-        public Link Link { get; set; }
-
-        /// <summary>
-        /// Gets or sets DocumentPropertyList
-        /// </summary>  
-		[DataMember(Name="DocumentPropertyList", EmitDefaultValue=false)]
-        public List<CellsDocumentProperty> DocumentPropertyList { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets DocumentPropertyList.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual IList<CellsDocumentProperty> DocumentPropertyList { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class CellsDocumentProperties {\n");
-          sb.Append("  Link: ").Append(this.Link).Append("\n");
-          sb.Append("  DocumentPropertyList: ").Append(this.DocumentPropertyList).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class CellsDocumentProperties {\n");
+            sb.Append("  DocumentPropertyList: ").Append(this.DocumentPropertyList).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

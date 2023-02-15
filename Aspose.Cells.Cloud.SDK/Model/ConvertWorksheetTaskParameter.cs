@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ConvertWorksheetTaskParameter.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,88 +23,80 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class ConvertWorksheetTaskParameter : TaskParameter 
-  {                       
+    /// <summary>
+    /// ConvertWorksheetTaskParameter.
+    /// </summary>
+    public class ConvertWorksheetTaskParameter : TaskParameter
+    {
         /// <summary>
-        /// Gets or sets Workbook
-        /// </summary>  
-		[DataMember(Name="Workbook", EmitDefaultValue=false)]
-        public FileSource Workbook { get; set; }
-
-        /// <summary>
-        /// Gets or sets Sheet
-        /// </summary>  
-		[DataMember(Name="Sheet", EmitDefaultValue=false)]
-        public string Sheet { get; set; }
-
-        /// <summary>
-        /// Gets or sets Target
-        /// </summary>  
-		[DataMember(Name="Target", EmitDefaultValue=false)]
-        public FileSource Target { get; set; }
-
-        /// <summary>
-        /// Gets or sets Format
-        /// </summary>  
-		[DataMember(Name="Format", EmitDefaultValue=false)]
-        public string Format { get; set; }
-
-        /// <summary>
-        /// Gets or sets Area
-        /// </summary>  
-		[DataMember(Name="Area", EmitDefaultValue=false)]
-        public string Area { get; set; }
-
-        /// <summary>
-        /// Gets or sets PageIndex
-        /// </summary>  
-		[DataMember(Name="PageIndex", EmitDefaultValue=false)]
-        public int? PageIndex { get; set; }
-
-        /// <summary>
-        /// Gets or sets VerticalResolution
-        /// </summary>  
-		[DataMember(Name="VerticalResolution", EmitDefaultValue=false)]
-        public int? VerticalResolution { get; set; }
-
-        /// <summary>
-        /// Gets or sets HorizontalResolution
-        /// </summary>  
-		[DataMember(Name="HorizontalResolution", EmitDefaultValue=false)]
-        public int? HorizontalResolution { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Workbook.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual FileSource Workbook { get; set; }
+
+        /// <summary>
+        /// Gets or sets Sheet.
+        /// </summary>
+        public virtual string Sheet { get; set; }
+
+        /// <summary>
+        /// Gets or sets Target.
+        /// </summary>
+        public virtual FileSource Target { get; set; }
+
+        /// <summary>
+        /// Gets or sets Format.
+        /// </summary>
+        public virtual string Format { get; set; }
+
+        /// <summary>
+        /// Gets or sets Area.
+        /// </summary>
+        public virtual string Area { get; set; }
+
+        /// <summary>
+        /// Gets or sets PageIndex.
+        /// </summary>
+        public virtual int? PageIndex { get; set; }
+
+        /// <summary>
+        /// Gets or sets VerticalResolution.
+        /// </summary>
+        public virtual int? VerticalResolution { get; set; }
+
+        /// <summary>
+        /// Gets or sets HorizontalResolution.
+        /// </summary>
+        public virtual int? HorizontalResolution { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class ConvertWorksheetTaskParameter {\n");
-          sb.Append("  Workbook: ").Append(this.Workbook).Append("\n");
-          sb.Append("  Sheet: ").Append(this.Sheet).Append("\n");
-          sb.Append("  Target: ").Append(this.Target).Append("\n");
-          sb.Append("  Format: ").Append(this.Format).Append("\n");
-          sb.Append("  Area: ").Append(this.Area).Append("\n");
-          sb.Append("  PageIndex: ").Append(this.PageIndex).Append("\n");
-          sb.Append("  VerticalResolution: ").Append(this.VerticalResolution).Append("\n");
-          sb.Append("  HorizontalResolution: ").Append(this.HorizontalResolution).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class ConvertWorksheetTaskParameter {\n");
+            sb.Append("  Workbook: ").Append(this.Workbook).Append("\n");
+            sb.Append("  Sheet: ").Append(this.Sheet).Append("\n");
+            sb.Append("  Target: ").Append(this.Target).Append("\n");
+            sb.Append("  Format: ").Append(this.Format).Append("\n");
+            sb.Append("  Area: ").Append(this.Area).Append("\n");
+            sb.Append("  PageIndex: ").Append(this.PageIndex).Append("\n");
+            sb.Append("  VerticalResolution: ").Append(this.VerticalResolution).Append("\n");
+            sb.Append("  HorizontalResolution: ").Append(this.HorizontalResolution).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

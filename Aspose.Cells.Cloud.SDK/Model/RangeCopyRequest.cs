@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="RangeCopyRequest.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,60 +23,56 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class RangeCopyRequest 
-  {                       
+    /// <summary>
+    /// RangeCopyRequest.
+    /// </summary>
+    public class RangeCopyRequest
+    {
         /// <summary>
-        /// Gets or sets Source
-        /// </summary>  
-		[DataMember(Name="Source", EmitDefaultValue=false)]
-        public Range Source { get; set; }
-
-        /// <summary>
-        /// Gets or sets Operate
-        /// </summary>  
-		[DataMember(Name="Operate", EmitDefaultValue=false)]
-        public string Operate { get; set; }
-
-        /// <summary>
-        /// Gets or sets Target
-        /// </summary>  
-		[DataMember(Name="Target", EmitDefaultValue=false)]
-        public Range Target { get; set; }
-
-        /// <summary>
-        /// Gets or sets PasteOptions
-        /// </summary>  
-		[DataMember(Name="PasteOptions", EmitDefaultValue=false)]
-        public PasteOptions PasteOptions { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Operate.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string Operate { get; set; }
+
+        /// <summary>
+        /// Gets or sets Source.
+        /// </summary>
+        public virtual Range Source { get; set; }
+
+        /// <summary>
+        /// Gets or sets Target.
+        /// </summary>
+        public virtual Range Target { get; set; }
+
+        /// <summary>
+        /// Gets or sets PasteOptions.
+        /// </summary>
+        public virtual PasteOptions PasteOptions { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class RangeCopyRequest {\n");
-          sb.Append("  Source: ").Append(this.Source).Append("\n");
-          sb.Append("  Operate: ").Append(this.Operate).Append("\n");
-          sb.Append("  Target: ").Append(this.Target).Append("\n");
-          sb.Append("  PasteOptions: ").Append(this.PasteOptions).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class RangeCopyRequest {\n");
+            sb.Append("  Operate: ").Append(this.Operate).Append("\n");
+            sb.Append("  Source: ").Append(this.Source).Append("\n");
+            sb.Append("  Target: ").Append(this.Target).Append("\n");
+            sb.Append("  PasteOptions: ").Append(this.PasteOptions).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

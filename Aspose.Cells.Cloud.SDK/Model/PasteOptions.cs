@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PasteOptions.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,60 +23,56 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class PasteOptions 
-  {                       
+    /// <summary>
+    /// PasteOptions.
+    /// </summary>
+    public class PasteOptions
+    {
         /// <summary>
-        /// Gets or sets PasteType
-        /// </summary>  
-		[DataMember(Name="PasteType", EmitDefaultValue=false)]
-        public string PasteType { get; set; }
-
-        /// <summary>
-        /// Gets or sets SkipBlanks
-        /// </summary>  
-		[DataMember(Name="SkipBlanks", EmitDefaultValue=false)]
-        public bool? SkipBlanks { get; set; }
-
-        /// <summary>
-        /// Gets or sets OnlyVisibleCells
-        /// </summary>  
-		[DataMember(Name="OnlyVisibleCells", EmitDefaultValue=false)]
-        public bool? OnlyVisibleCells { get; set; }
-
-        /// <summary>
-        /// Gets or sets Transpose
-        /// </summary>  
-		[DataMember(Name="Transpose", EmitDefaultValue=false)]
-        public bool? Transpose { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets OnlyVisibleCells.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual bool? OnlyVisibleCells { get; set; }
+
+        /// <summary>
+        /// Gets or sets PasteType.
+        /// </summary>
+        public virtual string PasteType { get; set; }
+
+        /// <summary>
+        /// Gets or sets SkipBlanks.
+        /// </summary>
+        public virtual bool? SkipBlanks { get; set; }
+
+        /// <summary>
+        /// Gets or sets Transpose.
+        /// </summary>
+        public virtual bool? Transpose { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class PasteOptions {\n");
-          sb.Append("  PasteType: ").Append(this.PasteType).Append("\n");
-          sb.Append("  SkipBlanks: ").Append(this.SkipBlanks).Append("\n");
-          sb.Append("  OnlyVisibleCells: ").Append(this.OnlyVisibleCells).Append("\n");
-          sb.Append("  Transpose: ").Append(this.Transpose).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class PasteOptions {\n");
+            sb.Append("  OnlyVisibleCells: ").Append(this.OnlyVisibleCells).Append("\n");
+            sb.Append("  PasteType: ").Append(this.PasteType).Append("\n");
+            sb.Append("  SkipBlanks: ").Append(this.SkipBlanks).Append("\n");
+            sb.Append("  Transpose: ").Append(this.Transpose).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="CellsCloudFileInfo.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,60 +23,56 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class CellsCloudFileInfo 
-  {                       
+    /// <summary>
+    /// CellsCloudFileInfo.
+    /// </summary>
+    public class CellsCloudFileInfo
+    {
         /// <summary>
-        /// Gets or sets Name
-        /// </summary>  
-		[DataMember(Name="Name", EmitDefaultValue=false)]
-        public string Name { get; set; }
-
-        /// <summary>
-        /// Gets or sets Size
-        /// </summary>  
-		[DataMember(Name="Size", EmitDefaultValue=false)]
-        public long? Size { get; set; }
-
-        /// <summary>
-        /// Gets or sets Folder
-        /// </summary>  
-		[DataMember(Name="Folder", EmitDefaultValue=false)]
-        public string Folder { get; set; }
-
-        /// <summary>
-        /// Gets or sets Storage
-        /// </summary>  
-		[DataMember(Name="Storage", EmitDefaultValue=false)]
-        public string Storage { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Name.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string Name { get; set; }
+
+        /// <summary>
+        /// Gets or sets Size.
+        /// </summary>
+        public virtual long? Size { get; set; }
+
+        /// <summary>
+        /// Gets or sets Folder.
+        /// </summary>
+        public virtual string Folder { get; set; }
+
+        /// <summary>
+        /// Gets or sets Storage.
+        /// </summary>
+        public virtual string Storage { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class CellsCloudFileInfo {\n");
-          sb.Append("  Name: ").Append(this.Name).Append("\n");
-          sb.Append("  Size: ").Append(this.Size).Append("\n");
-          sb.Append("  Folder: ").Append(this.Folder).Append("\n");
-          sb.Append("  Storage: ").Append(this.Storage).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class CellsCloudFileInfo {\n");
+            sb.Append("  Name: ").Append(this.Name).Append("\n");
+            sb.Append("  Size: ").Append(this.Size).Append("\n");
+            sb.Append("  Folder: ").Append(this.Folder).Append("\n");
+            sb.Append("  Storage: ").Append(this.Storage).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

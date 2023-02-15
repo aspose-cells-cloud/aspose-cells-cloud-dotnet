@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="DataSorter.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,60 +23,62 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class DataSorter 
-  {                       
+    /// <summary>
+    /// DataSorter.
+    /// </summary>
+    public class DataSorter
+    {
         /// <summary>
-        /// Gets or sets CaseSensitive
-        /// </summary>  
-		[DataMember(Name="CaseSensitive", EmitDefaultValue=false)]
-        public bool? CaseSensitive { get; set; }
-
-        /// <summary>
-        /// Gets or sets KeyList
-        /// </summary>  
-		[DataMember(Name="KeyList", EmitDefaultValue=false)]
-        public List<SortKey> KeyList { get; set; }
-
-        /// <summary>
-        /// Gets or sets HasHeaders
-        /// </summary>  
-		[DataMember(Name="HasHeaders", EmitDefaultValue=false)]
-        public bool? HasHeaders { get; set; }
-
-        /// <summary>
-        /// Gets or sets SortLeftToRight
-        /// </summary>  
-		[DataMember(Name="SortLeftToRight", EmitDefaultValue=false)]
-        public bool? SortLeftToRight { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets CaseSensitive.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual bool? CaseSensitive { get; set; }
+
+        /// <summary>
+        /// Gets or sets HasHeaders.
+        /// </summary>
+        public virtual bool? HasHeaders { get; set; }
+
+        /// <summary>
+        /// Gets or sets KeyList.
+        /// </summary>
+        public virtual IList<SortKey> KeyList { get; set; }
+
+        /// <summary>
+        /// Gets or sets SortLeftToRight.
+        /// </summary>
+        public virtual bool? SortLeftToRight { get; set; }
+
+        /// <summary>
+        /// Gets or sets SortAsNumber.
+        /// </summary>
+        public virtual bool? SortAsNumber { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class DataSorter {\n");
-          sb.Append("  CaseSensitive: ").Append(this.CaseSensitive).Append("\n");
-          sb.Append("  KeyList: ").Append(this.KeyList).Append("\n");
-          sb.Append("  HasHeaders: ").Append(this.HasHeaders).Append("\n");
-          sb.Append("  SortLeftToRight: ").Append(this.SortLeftToRight).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class DataSorter {\n");
+            sb.Append("  CaseSensitive: ").Append(this.CaseSensitive).Append("\n");
+            sb.Append("  HasHeaders: ").Append(this.HasHeaders).Append("\n");
+            sb.Append("  KeyList: ").Append(this.KeyList).Append("\n");
+            sb.Append("  SortLeftToRight: ").Append(this.SortLeftToRight).Append("\n");
+            sb.Append("  SortAsNumber: ").Append(this.SortAsNumber).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

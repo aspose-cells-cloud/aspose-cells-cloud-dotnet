@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="Area.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,74 +23,68 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class Area 
-  {                       
+    /// <summary>
+    /// Area.
+    /// </summary>
+    public class Area
+    {
         /// <summary>
-        /// Gets or sets ForegroundColor
-        /// </summary>  
-		[DataMember(Name="ForegroundColor", EmitDefaultValue=false)]
-        public Color ForegroundColor { get; set; }
-
-        /// <summary>
-        /// Gets or sets BackgroundColor
-        /// </summary>  
-		[DataMember(Name="BackgroundColor", EmitDefaultValue=false)]
-        public Color BackgroundColor { get; set; }
-
-        /// <summary>
-        /// Gets or sets Format
-        /// </summary>  
-		[DataMember(Name="Format", EmitDefaultValue=false)]
-        public string Format { get; set; }
-
-        /// <summary>
-        /// Gets or sets FillFormat
-        /// </summary>  
-		[DataMember(Name="FillFormat", EmitDefaultValue=false)]
-        public FillFormat FillFormat { get; set; }
-
-        /// <summary>
-        /// Gets or sets InvertIfNegative
-        /// </summary>  
-		[DataMember(Name="InvertIfNegative", EmitDefaultValue=false)]
-        public bool? InvertIfNegative { get; set; }
-
-        /// <summary>
-        /// Gets or sets Transparency
-        /// </summary>  
-		[DataMember(Name="Transparency", EmitDefaultValue=false)]
-        public double? Transparency { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets BackgroundColor.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual Color BackgroundColor { get; set; }
+
+        /// <summary>
+        /// Gets or sets FillFormat.
+        /// </summary>
+        public virtual FillFormat FillFormat { get; set; }
+
+        /// <summary>
+        /// Gets or sets ForegroundColor.
+        /// </summary>
+        public virtual Color ForegroundColor { get; set; }
+
+        /// <summary>
+        /// Gets or sets Format.
+        /// </summary>
+        public virtual string Format { get; set; }
+
+        /// <summary>
+        /// Gets or sets InvertIfNegative.
+        /// </summary>
+        public virtual bool? InvertIfNegative { get; set; }
+
+        /// <summary>
+        /// Gets or sets Transparency.
+        /// </summary>
+        public virtual double? Transparency { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class Area {\n");
-          sb.Append("  ForegroundColor: ").Append(this.ForegroundColor).Append("\n");
-          sb.Append("  BackgroundColor: ").Append(this.BackgroundColor).Append("\n");
-          sb.Append("  Format: ").Append(this.Format).Append("\n");
-          sb.Append("  FillFormat: ").Append(this.FillFormat).Append("\n");
-          sb.Append("  InvertIfNegative: ").Append(this.InvertIfNegative).Append("\n");
-          sb.Append("  Transparency: ").Append(this.Transparency).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class Area {\n");
+            sb.Append("  BackgroundColor: ").Append(this.BackgroundColor).Append("\n");
+            sb.Append("  FillFormat: ").Append(this.FillFormat).Append("\n");
+            sb.Append("  ForegroundColor: ").Append(this.ForegroundColor).Append("\n");
+            sb.Append("  Format: ").Append(this.Format).Append("\n");
+            sb.Append("  InvertIfNegative: ").Append(this.InvertIfNegative).Append("\n");
+            sb.Append("  Transparency: ").Append(this.Transparency).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

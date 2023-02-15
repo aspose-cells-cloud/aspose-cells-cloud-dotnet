@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PageSection.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,67 +23,62 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class PageSection 
-  {                       
+    /// <summary>
+    /// PageSection.
+    /// </summary>
+    public class PageSection
+    {
         /// <summary>
-        /// Gets or sets Picture
-        /// </summary>  
-		[DataMember(Name="Picture", EmitDefaultValue=false)]
-        public byte[] Picture { get; set; }
-
-        /// <summary>
-        /// 0,1,2  left , middle ,right
-        /// </summary>  
-		[DataMember(Name="Section", EmitDefaultValue=false)]
-        public int? Section { get; set; }
-
-        /// <summary>
-        /// fisrt page context script
-        /// </summary>  
-		[DataMember(Name="FisrtPageContext", EmitDefaultValue=false)]
-        public string FisrtPageContext { get; set; }
-
-        /// <summary>
-        /// page context script             
-        /// </summary>  
-		[DataMember(Name="Context", EmitDefaultValue=false)]
-        public string Context { get; set; }
-
-        /// <summary>
-        /// Even page context script
-        /// </summary>  
-		[DataMember(Name="EvenPageContext", EmitDefaultValue=false)]
-        public string EvenPageContext { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Section.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual int? Section { get; set; }
+
+        /// <summary>
+        /// Gets or sets Context.
+        /// </summary>
+        public virtual string Context { get; set; }
+
+        /// <summary>
+        /// Gets or sets Picture.
+        /// </summary>
+        public virtual string Picture { get; set; }
+
+        /// <summary>
+        /// Gets or sets FisrtPageContext.
+        /// </summary>
+        public virtual string FisrtPageContext { get; set; }
+
+        /// <summary>
+        /// Gets or sets EvenPageContext.
+        /// </summary>
+        public virtual string EvenPageContext { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class PageSection {\n");
-          sb.Append("  Picture: ").Append(this.Picture).Append("\n");
-          sb.Append("  Section: ").Append(this.Section).Append("\n");
-          sb.Append("  FisrtPageContext: ").Append(this.FisrtPageContext).Append("\n");
-          sb.Append("  Context: ").Append(this.Context).Append("\n");
-          sb.Append("  EvenPageContext: ").Append(this.EvenPageContext).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class PageSection {\n");
+            sb.Append("  Section: ").Append(this.Section).Append("\n");
+            sb.Append("  Context: ").Append(this.Context).Append("\n");
+            sb.Append("  Picture: ").Append(this.Picture).Append("\n");
+            sb.Append("  FisrtPageContext: ").Append(this.FisrtPageContext).Append("\n");
+            sb.Append("  EvenPageContext: ").Append(this.EvenPageContext).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

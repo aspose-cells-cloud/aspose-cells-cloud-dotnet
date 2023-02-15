@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="IconSet.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,74 +23,68 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// Describe the IconSet conditional formatting rule. This conditional formatting     rule applies icons to cells according to their values.
-  /// </summary>  
-  [DataContract]
-  public class IconSet 
-  {                       
+    /// <summary>
+    /// IconSet.
+    /// </summary>
+    public class IconSet
+    {
         /// <summary>
-        /// Get or set the flag indicating whether to reverses the default order of the   icons in this icon set.  Default value is false.             
-        /// </summary>  
-		[DataMember(Name="Reverse", EmitDefaultValue=false)]
-        public bool? Reverse { get; set; }
-
-        /// <summary>
-        /// Get theAspose.Cells.ConditionalFormattingIcon from the collection
-        /// </summary>  
-		[DataMember(Name="CfIcons", EmitDefaultValue=false)]
-        public List<ConditionalFormattingIcon> CfIcons { get; set; }
-
-        /// <summary>
-        /// Get the CFValueObjects instance.
-        /// </summary>  
-		[DataMember(Name="Cfvos", EmitDefaultValue=false)]
-        public List<ConditionalFormattingValue> Cfvos { get; set; }
-
-        /// <summary>
-        /// Get or Set the icon set type to display.  Setting the type will auto check    if the current Cfvos's count is accord with the new type. If not accord,    old Cfvos will be cleaned and default Cfvos will be added.             
-        /// </summary>  
-		[DataMember(Name="IconSetType", EmitDefaultValue=false)]
-        public string IconSetType { get; set; }
-
-        /// <summary>
-        /// Indicates whether the icon set is custom.  Default value is false.
-        /// </summary>  
-		[DataMember(Name="IsCustom", EmitDefaultValue=false)]
-        public bool? IsCustom { get; set; }
-
-        /// <summary>
-        /// Get or set the flag indicating whether to show the values of the cells on    which this icon set is applied.  Default value is true.             
-        /// </summary>  
-		[DataMember(Name="ShowValue", EmitDefaultValue=false)]
-        public bool? ShowValue { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets CfIcons.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual IList<ConditionalFormattingIcon> CfIcons { get; set; }
+
+        /// <summary>
+        /// Gets or sets Cfvos.
+        /// </summary>
+        public virtual IList<ConditionalFormattingValue> Cfvos { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsCustom.
+        /// </summary>
+        public virtual bool? IsCustom { get; set; }
+
+        /// <summary>
+        /// Gets or sets Reverse.
+        /// </summary>
+        public virtual bool? Reverse { get; set; }
+
+        /// <summary>
+        /// Gets or sets ShowValue.
+        /// </summary>
+        public virtual bool? ShowValue { get; set; }
+
+        /// <summary>
+        /// Gets or sets IconSetType.
+        /// </summary>
+        public virtual string IconSetType { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class IconSet {\n");
-          sb.Append("  Reverse: ").Append(this.Reverse).Append("\n");
-          sb.Append("  CfIcons: ").Append(this.CfIcons).Append("\n");
-          sb.Append("  Cfvos: ").Append(this.Cfvos).Append("\n");
-          sb.Append("  IconSetType: ").Append(this.IconSetType).Append("\n");
-          sb.Append("  IsCustom: ").Append(this.IsCustom).Append("\n");
-          sb.Append("  ShowValue: ").Append(this.ShowValue).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class IconSet {\n");
+            sb.Append("  CfIcons: ").Append(this.CfIcons).Append("\n");
+            sb.Append("  Cfvos: ").Append(this.Cfvos).Append("\n");
+            sb.Append("  IsCustom: ").Append(this.IsCustom).Append("\n");
+            sb.Append("  Reverse: ").Append(this.Reverse).Append("\n");
+            sb.Append("  ShowValue: ").Append(this.ShowValue).Append("\n");
+            sb.Append("  IconSetType: ").Append(this.IconSetType).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

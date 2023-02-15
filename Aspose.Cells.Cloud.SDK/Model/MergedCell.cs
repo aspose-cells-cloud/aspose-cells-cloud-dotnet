@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="MergedCell.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,67 +23,62 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class MergedCell 
-  {                       
+    /// <summary>
+    /// MergedCell.
+    /// </summary>
+    public class MergedCell : LinkElement
+    {
         /// <summary>
-        /// Gets or sets Link
-        /// </summary>  
-		[DataMember(Name="link", EmitDefaultValue=false)]
-        public Link Link { get; set; }
-
-        /// <summary>
-        /// Gets or sets StartRow
-        /// </summary>  
-		[DataMember(Name="StartRow", EmitDefaultValue=false)]
-        public int? StartRow { get; set; }
-
-        /// <summary>
-        /// Gets or sets StartColumn
-        /// </summary>  
-		[DataMember(Name="StartColumn", EmitDefaultValue=false)]
-        public int? StartColumn { get; set; }
-
-        /// <summary>
-        /// Gets or sets EndColumn
-        /// </summary>  
-		[DataMember(Name="EndColumn", EmitDefaultValue=false)]
-        public int? EndColumn { get; set; }
-
-        /// <summary>
-        /// Gets or sets EndRow
-        /// </summary>  
-		[DataMember(Name="EndRow", EmitDefaultValue=false)]
-        public int? EndRow { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets EndColumn.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual int? EndColumn { get; set; }
+
+        /// <summary>
+        /// Gets or sets EndRow.
+        /// </summary>
+        public virtual int? EndRow { get; set; }
+
+        /// <summary>
+        /// Gets or sets StartColumn.
+        /// </summary>
+        public virtual int? StartColumn { get; set; }
+
+        /// <summary>
+        /// Gets or sets StartRow.
+        /// </summary>
+        public virtual int? StartRow { get; set; }
+
+        /// <summary>
+        /// Gets or sets link.
+        /// </summary>
+        public override Link link { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class MergedCell {\n");
-          sb.Append("  Link: ").Append(this.Link).Append("\n");
-          sb.Append("  StartRow: ").Append(this.StartRow).Append("\n");
-          sb.Append("  StartColumn: ").Append(this.StartColumn).Append("\n");
-          sb.Append("  EndColumn: ").Append(this.EndColumn).Append("\n");
-          sb.Append("  EndRow: ").Append(this.EndRow).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class MergedCell {\n");
+            sb.Append("  EndColumn: ").Append(this.EndColumn).Append("\n");
+            sb.Append("  EndRow: ").Append(this.EndRow).Append("\n");
+            sb.Append("  StartColumn: ").Append(this.StartColumn).Append("\n");
+            sb.Append("  StartRow: ").Append(this.StartRow).Append("\n");
+            sb.Append("  link: ").Append(this.link).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

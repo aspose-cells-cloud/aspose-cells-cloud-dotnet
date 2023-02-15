@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="BarcodeResponse.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,60 +23,56 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class BarcodeResponse 
-  {                       
+    /// <summary>
+    /// BarcodeResponse.
+    /// </summary>
+    public class BarcodeResponse
+    {
         /// <summary>
-        /// Gets or sets BarcodeValue
-        /// </summary>  
-		[DataMember(Name="BarcodeValue", EmitDefaultValue=false)]
-        public string BarcodeValue { get; set; }
-
-        /// <summary>
-        /// Gets or sets BarcodeType
-        /// </summary>  
-		[DataMember(Name="BarcodeType", EmitDefaultValue=false)]
-        public string BarcodeType { get; set; }
-
-        /// <summary>
-        /// Gets or sets Checksum
-        /// </summary>  
-		[DataMember(Name="Checksum", EmitDefaultValue=false)]
-        public string Checksum { get; set; }
-
-        /// <summary>
-        /// Gets or sets Region
-        /// </summary>  
-		[DataMember(Name="Region", EmitDefaultValue=false)]
-        public List<System.Drawing.Point> Region { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets BarcodeValue.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string BarcodeValue { get; set; }
+
+        /// <summary>
+        /// Gets or sets BarcodeType.
+        /// </summary>
+        public virtual string BarcodeType { get; set; }
+
+        /// <summary>
+        /// Gets or sets Region.
+        /// </summary>
+        public virtual List<Point> Region { get; set; }
+
+        /// <summary>
+        /// Gets or sets Checksum.
+        /// </summary>
+        public virtual string Checksum { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class BarcodeResponse {\n");
-          sb.Append("  BarcodeValue: ").Append(this.BarcodeValue).Append("\n");
-          sb.Append("  BarcodeType: ").Append(this.BarcodeType).Append("\n");
-          sb.Append("  Checksum: ").Append(this.Checksum).Append("\n");
-          sb.Append("  Region: ").Append(this.Region).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class BarcodeResponse {\n");
+            sb.Append("  BarcodeValue: ").Append(this.BarcodeValue).Append("\n");
+            sb.Append("  BarcodeType: ").Append(this.BarcodeType).Append("\n");
+            sb.Append("  Region: ").Append(this.Region).Append("\n");
+            sb.Append("  Checksum: ").Append(this.Checksum).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

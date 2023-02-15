@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="BatchConvertRequest.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,81 +23,74 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class BatchConvertRequest 
-  {                       
+    /// <summary>
+    /// BatchConvertRequest.
+    /// </summary>
+    public class BatchConvertRequest
+    {
         /// <summary>
-        /// Gets or sets SourceFolder
-        /// </summary>  
-		[DataMember(Name="SourceFolder", EmitDefaultValue=false)]
-        public string SourceFolder { get; set; }
-
-        /// <summary>
-        /// Gets or sets SourceStorage
-        /// </summary>  
-		[DataMember(Name="SourceStorage", EmitDefaultValue=false)]
-        public string SourceStorage { get; set; }
-
-        /// <summary>
-        /// Gets or sets MatchCondition
-        /// </summary>  
-		[DataMember(Name="MatchCondition", EmitDefaultValue=false)]
-        public MatchConditionRequest MatchCondition { get; set; }
-
-        /// <summary>
-        /// Gets or sets Format
-        /// </summary>  
-		[DataMember(Name="Format", EmitDefaultValue=false)]
-        public string Format { get; set; }
-
-        /// <summary>
-        /// Gets or sets OutFolder
-        /// </summary>  
-		[DataMember(Name="OutFolder", EmitDefaultValue=false)]
-        public string OutFolder { get; set; }
-
-        /// <summary>
-        /// Gets or sets OutStorage
-        /// </summary>  
-		[DataMember(Name="OutStorage", EmitDefaultValue=false)]
-        public string OutStorage { get; set; }
-
-        /// <summary>
-        /// Gets or sets SaveOptions
-        /// </summary>  
-		[DataMember(Name="SaveOptions", EmitDefaultValue=false)]
-        public SaveOptions SaveOptions { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets SourceFolder.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string SourceFolder { get; set; }
+
+        /// <summary>
+        /// Gets or sets SourceStorage.
+        /// </summary>
+        public virtual string SourceStorage { get; set; }
+
+        /// <summary>
+        /// Gets or sets MatchCondition.
+        /// </summary>
+        public virtual MatchConditionRequest MatchCondition { get; set; }
+
+        /// <summary>
+        /// Gets or sets Format.
+        /// </summary>
+        public virtual string Format { get; set; }
+
+        /// <summary>
+        /// Gets or sets OutFolder.
+        /// </summary>
+        public virtual string OutFolder { get; set; }
+
+        /// <summary>
+        /// Gets or sets OutStorage.
+        /// </summary>
+        public virtual string OutStorage { get; set; }
+
+        /// <summary>
+        /// Gets or sets SaveOptions.
+        /// </summary>
+        public virtual SaveOptions SaveOptions { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class BatchConvertRequest {\n");
-          sb.Append("  SourceFolder: ").Append(this.SourceFolder).Append("\n");
-          sb.Append("  SourceStorage: ").Append(this.SourceStorage).Append("\n");
-          sb.Append("  MatchCondition: ").Append(this.MatchCondition).Append("\n");
-          sb.Append("  Format: ").Append(this.Format).Append("\n");
-          sb.Append("  OutFolder: ").Append(this.OutFolder).Append("\n");
-          sb.Append("  OutStorage: ").Append(this.OutStorage).Append("\n");
-          sb.Append("  SaveOptions: ").Append(this.SaveOptions).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class BatchConvertRequest {\n");
+            sb.Append("  SourceFolder: ").Append(this.SourceFolder).Append("\n");
+            sb.Append("  SourceStorage: ").Append(this.SourceStorage).Append("\n");
+            sb.Append("  MatchCondition: ").Append(this.MatchCondition).Append("\n");
+            sb.Append("  Format: ").Append(this.Format).Append("\n");
+            sb.Append("  OutFolder: ").Append(this.OutFolder).Append("\n");
+            sb.Append("  OutStorage: ").Append(this.OutStorage).Append("\n");
+            sb.Append("  SaveOptions: ").Append(this.SaveOptions).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

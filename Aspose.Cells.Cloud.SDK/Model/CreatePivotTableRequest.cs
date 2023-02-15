@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="CreatePivotTableRequest.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,81 +23,74 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class CreatePivotTableRequest 
-  {                       
+    /// <summary>
+    /// CreatePivotTableRequest.
+    /// </summary>
+    public class CreatePivotTableRequest
+    {
         /// <summary>
-        /// Gets or sets PivotFieldColumns
-        /// </summary>  
-		[DataMember(Name="PivotFieldColumns", EmitDefaultValue=false)]
-        public List<int?> PivotFieldColumns { get; set; }
-
-        /// <summary>
-        /// Gets or sets Name
-        /// </summary>  
-		[DataMember(Name="Name", EmitDefaultValue=false)]
-        public string Name { get; set; }
-
-        /// <summary>
-        /// Gets or sets UseSameSource
-        /// </summary>  
-		[DataMember(Name="UseSameSource", EmitDefaultValue=false)]
-        public bool? UseSameSource { get; set; }
-
-        /// <summary>
-        /// Gets or sets PivotFieldData
-        /// </summary>  
-		[DataMember(Name="PivotFieldData", EmitDefaultValue=false)]
-        public List<int?> PivotFieldData { get; set; }
-
-        /// <summary>
-        /// Gets or sets PivotFieldRows
-        /// </summary>  
-		[DataMember(Name="PivotFieldRows", EmitDefaultValue=false)]
-        public List<int?> PivotFieldRows { get; set; }
-
-        /// <summary>
-        /// Gets or sets DestCellName
-        /// </summary>  
-		[DataMember(Name="DestCellName", EmitDefaultValue=false)]
-        public string DestCellName { get; set; }
-
-        /// <summary>
-        /// Gets or sets SourceData
-        /// </summary>  
-		[DataMember(Name="SourceData", EmitDefaultValue=false)]
-        public string SourceData { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Name.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string Name { get; set; }
+
+        /// <summary>
+        /// Gets or sets SourceData.
+        /// </summary>
+        public virtual string SourceData { get; set; }
+
+        /// <summary>
+        /// Gets or sets DestCellName.
+        /// </summary>
+        public virtual string DestCellName { get; set; }
+
+        /// <summary>
+        /// Gets or sets UseSameSource.
+        /// </summary>
+        public virtual bool? UseSameSource { get; set; }
+
+        /// <summary>
+        /// Gets or sets PivotFieldRows.
+        /// </summary>
+        public virtual List<int?> PivotFieldRows { get; set; }
+
+        /// <summary>
+        /// Gets or sets PivotFieldColumns.
+        /// </summary>
+        public virtual List<int?> PivotFieldColumns { get; set; }
+
+        /// <summary>
+        /// Gets or sets PivotFieldData.
+        /// </summary>
+        public virtual List<int?> PivotFieldData { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class CreatePivotTableRequest {\n");
-          sb.Append("  PivotFieldColumns: ").Append(this.PivotFieldColumns).Append("\n");
-          sb.Append("  Name: ").Append(this.Name).Append("\n");
-          sb.Append("  UseSameSource: ").Append(this.UseSameSource).Append("\n");
-          sb.Append("  PivotFieldData: ").Append(this.PivotFieldData).Append("\n");
-          sb.Append("  PivotFieldRows: ").Append(this.PivotFieldRows).Append("\n");
-          sb.Append("  DestCellName: ").Append(this.DestCellName).Append("\n");
-          sb.Append("  SourceData: ").Append(this.SourceData).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class CreatePivotTableRequest {\n");
+            sb.Append("  Name: ").Append(this.Name).Append("\n");
+            sb.Append("  SourceData: ").Append(this.SourceData).Append("\n");
+            sb.Append("  DestCellName: ").Append(this.DestCellName).Append("\n");
+            sb.Append("  UseSameSource: ").Append(this.UseSameSource).Append("\n");
+            sb.Append("  PivotFieldRows: ").Append(this.PivotFieldRows).Append("\n");
+            sb.Append("  PivotFieldColumns: ").Append(this.PivotFieldColumns).Append("\n");
+            sb.Append("  PivotFieldData: ").Append(this.PivotFieldData).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

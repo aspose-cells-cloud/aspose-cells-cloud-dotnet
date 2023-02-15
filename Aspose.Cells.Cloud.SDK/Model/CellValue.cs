@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="CellValue.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,74 +23,68 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class CellValue 
-  {                       
+    /// <summary>
+    /// CellValue.
+    /// </summary>
+    public class CellValue
+    {
         /// <summary>
-        /// Gets or sets RowIndex
-        /// </summary>  
-		[DataMember(Name="rowIndex", EmitDefaultValue=false)]
-        public int? RowIndex { get; set; }
-
-        /// <summary>
-        /// Gets or sets ColumnIndex
-        /// </summary>  
-		[DataMember(Name="columnIndex", EmitDefaultValue=false)]
-        public int? ColumnIndex { get; set; }
-
-        /// <summary>
-        /// Gets or sets Style
-        /// </summary>  
-		[DataMember(Name="style", EmitDefaultValue=false)]
-        public Style Style { get; set; }
-
-        /// <summary>
-        /// Gets or sets Type
-        /// </summary>  
-		[DataMember(Name="type", EmitDefaultValue=false)]
-        public string Type { get; set; }
-
-        /// <summary>
-        /// Gets or sets Value
-        /// </summary>  
-		[DataMember(Name="value", EmitDefaultValue=false)]
-        public string Value { get; set; }
-
-        /// <summary>
-        /// Gets or sets Formula
-        /// </summary>  
-		[DataMember(Name="formula", EmitDefaultValue=false)]
-        public string Formula { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets rowIndex.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual int? rowIndex { get; set; }
+
+        /// <summary>
+        /// Gets or sets columnIndex.
+        /// </summary>
+        public virtual int? columnIndex { get; set; }
+
+        /// <summary>
+        /// Gets or sets type.
+        /// </summary>
+        public virtual string type { get; set; }
+
+        /// <summary>
+        /// Gets or sets value.
+        /// </summary>
+        public virtual string value { get; set; }
+
+        /// <summary>
+        /// Gets or sets formula.
+        /// </summary>
+        public virtual string formula { get; set; }
+
+        /// <summary>
+        /// Gets or sets style.
+        /// </summary>
+        public virtual Style style { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class CellValue {\n");
-          sb.Append("  RowIndex: ").Append(this.RowIndex).Append("\n");
-          sb.Append("  ColumnIndex: ").Append(this.ColumnIndex).Append("\n");
-          sb.Append("  Style: ").Append(this.Style).Append("\n");
-          sb.Append("  Type: ").Append(this.Type).Append("\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
-          sb.Append("  Formula: ").Append(this.Formula).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class CellValue {\n");
+            sb.Append("  rowIndex: ").Append(this.rowIndex).Append("\n");
+            sb.Append("  columnIndex: ").Append(this.columnIndex).Append("\n");
+            sb.Append("  type: ").Append(this.type).Append("\n");
+            sb.Append("  value: ").Append(this.value).Append("\n");
+            sb.Append("  formula: ").Append(this.formula).Append("\n");
+            sb.Append("  style: ").Append(this.style).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

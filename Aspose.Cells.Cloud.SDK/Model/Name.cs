@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="Name.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,88 +23,80 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class Name 
-  {                       
+    /// <summary>
+    /// Name.
+    /// </summary>
+    public class Name : LinkElement
+    {
         /// <summary>
-        /// Gets or sets Link
-        /// </summary>  
-		[DataMember(Name="link", EmitDefaultValue=false)]
-        public Link Link { get; set; }
-
-        /// <summary>
-        /// Gets or sets Comment
-        /// </summary>  
-		[DataMember(Name="Comment", EmitDefaultValue=false)]
-        public string Comment { get; set; }
-
-        /// <summary>
-        /// Gets or sets Text
-        /// </summary>  
-		[DataMember(Name="Text", EmitDefaultValue=false)]
-        public string Text { get; set; }
-
-        /// <summary>
-        /// Gets or sets WorksheetIndex
-        /// </summary>  
-		[DataMember(Name="WorksheetIndex", EmitDefaultValue=false)]
-        public int? WorksheetIndex { get; set; }
-
-        /// <summary>
-        /// Gets or sets R1C1RefersTo
-        /// </summary>  
-		[DataMember(Name="R1C1RefersTo", EmitDefaultValue=false)]
-        public string R1C1RefersTo { get; set; }
-
-        /// <summary>
-        /// Gets or sets RefersTo
-        /// </summary>  
-		[DataMember(Name="RefersTo", EmitDefaultValue=false)]
-        public string RefersTo { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsReferred
-        /// </summary>  
-		[DataMember(Name="IsReferred", EmitDefaultValue=false)]
-        public bool? IsReferred { get; set; }
-
-        /// <summary>
-        /// Gets or sets IsVisible
-        /// </summary>  
-		[DataMember(Name="IsVisible", EmitDefaultValue=false)]
-        public bool? IsVisible { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Comment.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual string Comment { get; set; }
+
+        /// <summary>
+        /// Gets or sets WorksheetIndex.
+        /// </summary>
+        public virtual int? WorksheetIndex { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsReferred.
+        /// </summary>
+        public virtual bool? IsReferred { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsVisible.
+        /// </summary>
+        public virtual bool? IsVisible { get; set; }
+
+        /// <summary>
+        /// Gets or sets R1C1RefersTo.
+        /// </summary>
+        public virtual string R1C1RefersTo { get; set; }
+
+        /// <summary>
+        /// Gets or sets RefersTo.
+        /// </summary>
+        public virtual string RefersTo { get; set; }
+
+        /// <summary>
+        /// Gets or sets Text.
+        /// </summary>
+        public virtual string Text { get; set; }
+
+        /// <summary>
+        /// Gets or sets link.
+        /// </summary>
+        public override Link link { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class Name {\n");
-          sb.Append("  Link: ").Append(this.Link).Append("\n");
-          sb.Append("  Comment: ").Append(this.Comment).Append("\n");
-          sb.Append("  Text: ").Append(this.Text).Append("\n");
-          sb.Append("  WorksheetIndex: ").Append(this.WorksheetIndex).Append("\n");
-          sb.Append("  R1C1RefersTo: ").Append(this.R1C1RefersTo).Append("\n");
-          sb.Append("  RefersTo: ").Append(this.RefersTo).Append("\n");
-          sb.Append("  IsReferred: ").Append(this.IsReferred).Append("\n");
-          sb.Append("  IsVisible: ").Append(this.IsVisible).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class Name {\n");
+            sb.Append("  Comment: ").Append(this.Comment).Append("\n");
+            sb.Append("  WorksheetIndex: ").Append(this.WorksheetIndex).Append("\n");
+            sb.Append("  IsReferred: ").Append(this.IsReferred).Append("\n");
+            sb.Append("  IsVisible: ").Append(this.IsVisible).Append("\n");
+            sb.Append("  R1C1RefersTo: ").Append(this.R1C1RefersTo).Append("\n");
+            sb.Append("  RefersTo: ").Append(this.RefersTo).Append("\n");
+            sb.Append("  Text: ").Append(this.Text).Append("\n");
+            sb.Append("  link: ").Append(this.link).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

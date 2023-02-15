@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PivotItem.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,60 +23,56 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class PivotItem 
-  {                       
+    /// <summary>
+    /// PivotItem.
+    /// </summary>
+    public class PivotItem
+    {
         /// <summary>
-        /// Gets or sets Index
-        /// </summary>  
-		[DataMember(Name="Index", EmitDefaultValue=false)]
-        public int? Index { get; set; }
-
-        /// <summary>
-        /// Represents whether the specified item visible.
-        /// </summary>  
-		[DataMember(Name="IsHidden", EmitDefaultValue=false)]
-        public bool? IsHidden { get; set; }
-
-        /// <summary>
-        /// Gets the name
-        /// </summary>  
-		[DataMember(Name="Name", EmitDefaultValue=false)]
-        public string Name { get; set; }
-
-        /// <summary>
-        /// Gets the value of the specified item.
-        /// </summary>  
-		[DataMember(Name="Value", EmitDefaultValue=false)]
-        public string Value { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets Index.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual int? Index { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsHidden.
+        /// </summary>
+        public virtual bool? IsHidden { get; set; }
+
+        /// <summary>
+        /// Gets or sets Name.
+        /// </summary>
+        public virtual string Name { get; set; }
+
+        /// <summary>
+        /// Gets or sets Value.
+        /// </summary>
+        public virtual string Value { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class PivotItem {\n");
-          sb.Append("  Index: ").Append(this.Index).Append("\n");
-          sb.Append("  IsHidden: ").Append(this.IsHidden).Append("\n");
-          sb.Append("  Name: ").Append(this.Name).Append("\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class PivotItem {\n");
+            sb.Append("  Index: ").Append(this.Index).Append("\n");
+            sb.Append("  IsHidden: ").Append(this.IsHidden).Append("\n");
+            sb.Append("  Name: ").Append(this.Name).Append("\n");
+            sb.Append("  Value: ").Append(this.Value).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }

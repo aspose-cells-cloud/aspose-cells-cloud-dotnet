@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="Color.cs">
-//   Copyright (c) 2022 Aspose.Cells for Cloud
+//   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,60 +23,56 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.Model 
+namespace Aspose.Cells.Cloud.SDK.Model
 {
-  using System;  
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
+    using System;  
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Drawing;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
-  /// <summary>
-  /// 
-  /// </summary>  
-  [DataContract]
-  public class Color 
-  {                       
+    /// <summary>
+    /// Color.
+    /// </summary>
+    public class Color
+    {
         /// <summary>
-        /// Gets or sets A
-        /// </summary>  
-		[DataMember(Name="A", EmitDefaultValue=false)]
-        public int? A { get; set; }
-
-        /// <summary>
-        /// Gets or sets B
-        /// </summary>  
-		[DataMember(Name="B", EmitDefaultValue=false)]
-        public int? B { get; set; }
-
-        /// <summary>
-        /// Gets or sets R
-        /// </summary>  
-		[DataMember(Name="R", EmitDefaultValue=false)]
-        public int? R { get; set; }
-
-        /// <summary>
-        /// Gets or sets G
-        /// </summary>  
-		[DataMember(Name="G", EmitDefaultValue=false)]
-        public int? G { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object
+        /// Gets or sets A.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public virtual byte? A { get; set; }
+
+        /// <summary>
+        /// Gets or sets R.
+        /// </summary>
+        public virtual byte? R { get; set; }
+
+        /// <summary>
+        /// Gets or sets G.
+        /// </summary>
+        public virtual byte? G { get; set; }
+
+        /// <summary>
+        /// Gets or sets B.
+        /// </summary>
+        public virtual byte? B { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
         {
-          var sb = new StringBuilder();
-          sb.Append("class Color {\n");
-          sb.Append("  A: ").Append(this.A).Append("\n");
-          sb.Append("  B: ").Append(this.B).Append("\n");
-          sb.Append("  R: ").Append(this.R).Append("\n");
-          sb.Append("  G: ").Append(this.G).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
+            var sb = new StringBuilder();
+            sb.Append("class Color {\n");
+            sb.Append("  A: ").Append(this.A).Append("\n");
+            sb.Append("  R: ").Append(this.R).Append("\n");
+            sb.Append("  G: ").Append(this.G).Append("\n");
+            sb.Append("  B: ").Append(this.B).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
         }
     }
 }
