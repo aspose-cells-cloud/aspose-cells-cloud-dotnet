@@ -1,42 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+<package>
     <metadata>
         <id>Aspose.Cells-Cloud</id>
         <version>23.3</version>
         <title>Aspose.Cells Cloud SDK for .NET</title>
         <authors>Aspose</authors>
         <owners>asposecloud</owners>
-        <iconUrl>https://www.aspose.cloud/templates/asposecloud/App_Themes/V3/images/sdk/272x272/aspose_cells-for-net.png</iconUrl>
-        <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+        <icon>images\aspose_cells-for-net.png</icon>        
+        <license type="expression">MIT</license>
         <projectUrl>https://products.aspose.cloud/cells/family</projectUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
         <summary>Aspose.Cells Cloud SDK for .NET.</summary>
-        <description>      
-            New generation of Aspose Cloud SDK that allows to create, edit or convert Excel documents (20+ file formats) in Aspose Cloud from .NET applications.
-            Aspose.Cells Cloud enables your applications to perform a great range of document processing tasks. With Aspose.Cells you can load, save and convert documents between the following formats: XLS, XLSX, XLSB, XLSM, XLT, XLTX, XLTM, XML (including Excel 2003 XML), HTML, MHTML, ODS, CSV, TSV, TXT also you can convert them to: PDF, XPS, SVG, TIFF, BMP, PNG, EMF, JPEG, GIF and other formats. With Aspose.Cells you can generate, modify, convert and render documents without utilizing Microsoft Excel®.     
-            Aspose.Cells Cloud is well documented to help you create your solutions on different platforms.      
-            Rich Set of Features:      
-            - Conversions: High quality conversions to and from XLS, XLSX, CSV, PDF, ODS, HTML, MHTML, TXT and JSON formats.
-            - Workbook Object Model: Programmatic access through a rich API to all workbook elements and formatting allows to create, modify, extract, copy, split, join, and replace workbook content.
-            - Rendering: Export whole workbook, worksheet, pages or workbook elements to PDF, XPS,  or for server-side file  generation. Also export workbook pages and workbook elements to TIFF, PNG, BMP or EMF images, print or render pages to .NET Graphics. All with high fidelity - exactly like Microsoft Excel® would have done it.
-      
-            Aspose.Cells Cloud is designed to perform great. You can literally generate thousands of documents in minutes with Aspose.Cells Cloud and that involves opening a document, modifying content and formatting or populating it with data and saving it. Even most of the complex documents are opened and saved in fractions of a second.
-
-        Free support for Aspose.Cells Cloud is provided on our support forum:
-        https://forum.aspose.cloud/
-        and on StackOverflow:
-        https://stackoverflow.com/questions/tagged/aspose.cells
-</description>
-        <releaseNotes>https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/releases/tag/22.12</releaseNotes>
-        <copyright>Aspose 2002-2021. All Rights Reserved.</copyright>
-        <tags> Cloud REST API Excel XLS XLSX XLSB CSV to PDF JPG PNG HTML ODS Numbers XLSM OOXML Spreadsheet Markdown XPS DOCX PPTX MHTML SVG TIFF</tags>
+        <description>A powerful and fast Aspose.Cells cloud SDK library written in C# for manipulating and converting Excel(XLS, XLSX,XLSB), ODS, CSV,JSON and HTML files.    </description>
+        <releaseNotes>https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/releases/tag/23.3</releaseNotes>
+        <copyright>Aspose 2002-2023. All Rights Reserved.</copyright>
+        <tags>Cloud REST API Excel XLS XLSX XLSB CSV to PDF JPG PNG HTML ODS Numbers XLSM OOXML Spreadsheet Markdown XPS DOCX PPTX MHTML JSON SVG TIFF</tags>
         <dependencies>
             <dependency id="Newtonsoft.Json" version="11.0.2.0" />
             <dependency id="RestSharp" version="106.2.2.0" />
         </dependencies>
     </metadata>
 	<files>
-		<file src="Aspose.Cells.Cloud.SDK\bin\Release\net4.5.2\Aspose.Cells.Cloud.SDK.dll" target="lib\net4.5.2" />
+        <file src="aspose_cells-for-net.png" target="images\" />
+		<file src="Aspose.Cells.Cloud.SDK\bin\  \net4.5.2\Aspose.Cells.Cloud.SDK.dll" target="lib\net4.5.2" />
 		<file src="Aspose.Cells.Cloud.SDK\bin\Release\netstandard2.0\Aspose.Cells.Cloud.SDK.dll" target="lib\netstandard2.0" />
 	</files>
 </package>
