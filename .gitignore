@@ -114,4 +114,4 @@ SDKs/PHP/testReports/*
 SDKs/servercreds.json
 /.vs
 .vs
-TestData/roywang.pfx
+# TestData/roywang.pfx
