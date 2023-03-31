@@ -66,13 +66,21 @@ The following code snippet demonstrates how to add a new worksheet to a Microsof
 
 ```csharp
 CellsApi cellsApi =CellsApi(clientId, clientSecret);
-string name = "Input.xlsx";
-string sheetName = "Sheet1";
-int? position = 1;
-string sheettype = "VB";
-string folder = null;
-UpdateDataFile(folder, name);
-var response = cellsApi.CellsWorksheetsPutAddNewWorksheet(name, sheetName, position, sheettype, folder);
+string localName = "Book1.xlsx";
+string remoteName = "Book1.xlsx";
+
+this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+
+var request = new PutAddNewWorksheetRequest(
+    name: remoteName,
+    sheetName: "Sheet1",
+    position: 0,
+    sheettype: "VB",
+    folder: remoteFolder,
+    storageName: ""
+);
+cellsApi.PutAddNewWorksheet(request);
+
 ```
 
 ## Convert Excel Files via C# Code
@@ -80,11 +88,24 @@ var response = cellsApi.CellsWorksheetsPutAddNewWorksheet(name, sheetName, posit
 The following code example elaborates Aspose.Cells REST API to convert an Excel file to another format in the cloud:
 
 ```csharp
+CellsApi cellsApi =CellsApi(clientId, clientSecret);
 // Upload source file to aspose cloud storage
-cellsApi.UploadFile(folder + @"\" + filename, stream);
+string localName = "Book1.xlsx";
+string remoteName = "Book1.xlsx";
 
-// Invoke Aspose.Cells Cloud SDK API to convert excel workbook to different format
-SaveResponse apiResponse = cellsApi.CellsSaveAsPostDocumentSaveAs(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder);
+this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+
+var saveOptions = new PdfSaveOptions()
+{
+    SaveFormat = format
+};
+var request = new PostWorkbookSaveAsRequest(
+    name: remoteName,
+    newfilename: newfilename,
+    saveOptions: saveOptions,
+    folder: remoteFolder
+);
+cellsApi.PostWorkbookSaveAs(request);
 ```
 ## Tests
 
