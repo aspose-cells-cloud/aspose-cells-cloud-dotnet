@@ -105,7 +105,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
                 folder: remoteFolder,
                 hasHeaders: true,
                 displayName: "true",
-                showTotals: true,
+                showTotals: false,
                 storageName: ""
             );
             var actual =  this.CellsApi.PutWorksheetListObject(request);
