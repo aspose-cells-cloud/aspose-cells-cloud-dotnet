@@ -6,8 +6,8 @@
         <title>Aspose.Cells Cloud SDK for .NET</title>
         <authors>Aspose</authors>
         <owners>asposecloud</owners>
-        <icon>images\aspose_cells-for-net.png</icon>        
-        <license type="expression">MIT</license>
+        <iconUrl>https://www.aspose.cloud/templates/asposecloud/App_Themes/V3/images/sdk/272x272/aspose_cells-for-net.png</iconUrl> 
+         <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
         <projectUrl>https://products.aspose.cloud/cells/family</projectUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
         <summary>Aspose.Cells Cloud SDK for .NET.</summary>
@@ -21,7 +21,6 @@
         </dependencies>
     </metadata>
 	<files>
-        <file src="aspose_cells-for-net.png" target="images\" />
 		<file src="Aspose.Cells.Cloud.SDK\bin\Release\net4.5.2\Aspose.Cells.Cloud.SDK.dll" target="lib\net4.5.2" />
 		<file src="Aspose.Cells.Cloud.SDK\bin\Release\netstandard2.0\Aspose.Cells.Cloud.SDK.dll" target="lib\netstandard2.0" />
 	</files>
