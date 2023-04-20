@@ -3663,7 +3663,27 @@ namespace Aspose.Cells.Cloud.SDK.API
             return result;
         }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostWorkbookExportXMLRequest" /></param>
+        public Stream PostWorkbookExportXML(PostWorkbookExportXMLRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<Stream>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
 
+
+
+        /// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostWorkbookImortXMLRequest" /></param>
+        public Stream PostWorkbookImortXML(PostWorkbookImortXMLRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<Stream>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
 
         /// <summary>
         /// </summary>
