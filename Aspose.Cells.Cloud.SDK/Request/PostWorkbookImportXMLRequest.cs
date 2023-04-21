@@ -34,18 +34,18 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// <summary>
     /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.PostWorkbookImortXML" /> operation.
     /// </summary>
-    public class PostWorkbookImortXMLRequest : IRequestModel
+    public class PostWorkbookImportXMLRequest : IRequestModel
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="PostWorkbookImortXMLRequest"/> class.
+        /// Initializes a new instance of the <see cref="PostWorkbookImportXMLRequest"/> class.
         /// </summary>
-        public PostWorkbookImortXMLRequest()
+        public PostWorkbookImportXMLRequest()
         {
 
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="PostWorkbookImortXMLRequest"/> class.
+        /// Initializes a new instance of the <see cref="PostWorkbookImportXMLRequest"/> class.
         /// </summary>
         /// <param name="name"></param>
         /// <param name="importXMLRequest"></param>
@@ -55,7 +55,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="outPath"></param>
         /// <param name="outStorageName"></param>
         /// <param name="checkExcelRestriction"></param>
-        public PostWorkbookImortXMLRequest(string name, ImportXMLRequest importXMLRequest, string password = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null, bool? checkExcelRestriction = null)
+        public PostWorkbookImportXMLRequest(string name, ImportXMLRequest importXMLRequest, string password = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null, bool? checkExcelRestriction = null)
         {
             this.name = name;
             this.importXMLRequest = importXMLRequest;

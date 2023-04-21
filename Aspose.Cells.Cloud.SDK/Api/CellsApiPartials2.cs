@@ -3677,8 +3677,8 @@ namespace Aspose.Cells.Cloud.SDK.API
 
         /// <summary>
         /// </summary>
-        /// <param name="request">Request. <see cref="PostWorkbookImortXMLRequest" /></param>
-        public Stream PostWorkbookImortXML(PostWorkbookImortXMLRequest request)
+        /// <param name="request">Request. <see cref="PostWorkbookImportXMLRequest" /></param>
+        public Stream PostWorkbookImortXML(PostWorkbookImportXMLRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<Stream>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;

@@ -88,11 +88,10 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
                 XMLFileSource = importXMLRequestXMLFileSource,
                 ImportPosition = importXMLRequestImportPosition
             };
-            var request = new PostWorkbookImortXMLRequest(
-                name: remoteName,
-                folder: remoteFolder,
-                storageName: ""
-            );
+            var request = new PostWorkbookImportXMLRequest( );
+            request.name = remoteName;
+            request.importXMLRequest = importXMLRequest;
+            request.folder = remoteFolder;
             var actual =  this.CellsApi.PostWorkbookImortXML(request);
             Assert.IsNotNull(actual);
         }
