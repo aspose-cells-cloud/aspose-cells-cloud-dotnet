@@ -28,7 +28,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests
     using System;
     using System.IO;
     using System.Collections.Generic;
-    using Aspose.Cells.Cloud.SDK.API;
+    using Aspose.Cells.Cloud.SDK.Api;
     using Aspose.Cells.Cloud.SDK.Request;
 
     public class CellsTestCommon
@@ -62,7 +62,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests
 
         public CellsTestCommon()
         {
-            this.CellsApi = new CellsApi(this.ClientId, this.ClientSecret, this.BaseUri,this.ApiVersion);
+            this.CellsApi = new CellsApi(this.ClientId, this.ClientSecret,this.ApiVersion, this.BaseUri);
         }
 
         public void UploadFile(string filename , string remotepath , string storageName)

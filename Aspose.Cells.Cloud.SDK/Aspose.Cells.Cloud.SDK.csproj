@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net4.5.2;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <AssemblyName>Aspose.Cells.Cloud.SDK</AssemblyName>
     <PackageId>Aspose.Cells-Cloud</PackageId>
     <OutputType>Library</OutputType>
@@ -17,9 +17,9 @@
     <RepositoryType>GitHub</RepositoryType>
     <Copyright>MIT</Copyright>
     <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>    
-    <AssemblyVersion>23.4</AssemblyVersion>
-    <FileVersion>23.4</FileVersion>
-    <Version>23.4</Version>
+    <AssemblyVersion>23.4.1</AssemblyVersion>
+    <FileVersion>23.4.1</FileVersion>
+    <Version>23.4.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

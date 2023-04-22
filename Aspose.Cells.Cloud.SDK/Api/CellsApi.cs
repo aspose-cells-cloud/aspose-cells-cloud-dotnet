@@ -28,6 +28,7 @@ using System.Linq;
 using RestSharp;
 using Aspose.Cells.Cloud.SDK.Client;
 using Aspose.Cells.Cloud.SDK.Model;
+using System.Net;
 
 namespace Aspose.Cells.Cloud.SDK.Api
 {
@@ -17585,7 +17586,15 @@ namespace Aspose.Cells.Cloud.SDK.Api
 		private DateTime _getAccessTokenTime;
 		private bool _needAuth = true;
 
-		private string versionURI
+        private readonly Invoker.ApiInvoker invoker;
+        private readonly string BaseUri;
+        private readonly string ClientId;
+        private readonly string ClientSecrent;
+        private readonly string Version;
+        private readonly List<Invoker.IRequestHandler> requestHandlers;
+
+
+        private string versionURI
 		{
 			get
 			{
@@ -17600,8 +17609,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
 		/// <param name="appSID"></param>
 		/// <param name="appKey"></param>
 		/// <param name="version"></param>
-		[Obsolete(" is deprecated.")]
-		public CellsApi(String clientId, String clientSecret, String version = "v3.0", String basePath = "https://api.aspose.cloud")
+        
+        public CellsApi(string clientId, string clientSecret, string version = "v3.0", string basePath = "https://api.aspose.cloud")
 		{
 			_clientId = clientId;
 			_clientSecret = clientSecret;
@@ -17636,7 +17645,18 @@ namespace Aspose.Cells.Cloud.SDK.Api
 			{
 				this.Configuration.ApiClient.Configuration = this.Configuration;
 			}
-		}
+
+
+            this.Version = version;
+            this.ClientSecrent = clientSecret;
+            this.ClientId = clientId;
+            this.BaseUri = basePath;
+            this.requestHandlers = new List<Invoker.IRequestHandler>();
+            this.requestHandlers.Add(new Invoker.ApiExceptionRequestHandler());
+            this.requestHandlers.Add(new Invoker.JwtTokenRequestHandler(basePath, clientId, clientSecret));
+            invoker = new Invoker.ApiInvoker(requestHandlers);
+            ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
+        }
 
 
 		/// <summary>

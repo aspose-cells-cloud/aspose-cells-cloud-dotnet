@@ -23,7 +23,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Cells.Cloud.SDK.API
+namespace Aspose.Cells.Cloud.SDK.Api
 {
     using Aspose.Cells.Cloud.SDK.Model;
     using Aspose.Cells.Cloud.SDK.Request;
@@ -38,32 +38,32 @@ namespace Aspose.Cells.Cloud.SDK.API
     /// </summary>
     public partial class CellsApi
     {
-        private readonly Invoker.ApiInvoker invoker;
-        private readonly string BaseUri;
-        private readonly string ClientId;
-        private readonly string ClientSecrent;
-        private readonly string Version;        
-        private readonly List<Invoker.IRequestHandler> requestHandlers;
+        //private readonly Invoker.ApiInvoker invoker;
+        //private readonly string BaseUri;
+        //private readonly string ClientId;
+        //private readonly string ClientSecrent;
+        //private readonly string Version;        
+        //private readonly List<Invoker.IRequestHandler> requestHandlers;
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="clientId"></param>
-        /// <param name="clientSecrent"></param>
-        /// <param name="baseUrl"></param>
-        /// <param name="version"></param>
-        public CellsApi(string clientId, string clientSecrent,string baseUrl = "https://api.aspose.cloud", string version ="v3.0")    
-        {
-            this.Version = version;
-            this.ClientSecrent = clientSecrent;
-            this.ClientId = clientId;
-            this.BaseUri = baseUrl;
-            this.requestHandlers = new List<Invoker.IRequestHandler>();
-            this.requestHandlers.Add(new Invoker.ApiExceptionRequestHandler());
-            this.requestHandlers.Add(new Invoker.JwtTokenRequestHandler(baseUrl, clientId, clientSecrent));
-            invoker = new Invoker.ApiInvoker(requestHandlers);
-            ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
-        }
+        ///// <summary>
+        ///// 
+        ///// </summary>
+        ///// <param name="clientId"></param>
+        ///// <param name="clientSecrent"></param>
+        ///// <param name="baseUrl"></param>
+        ///// <param name="version"></param>
+        //public CellsApi(string clientId, string clientSecrent,string baseUrl = "https://api.aspose.cloud", string version ="v3.0")    
+        //{
+        //    this.Version = version;
+        //    this.ClientSecrent = clientSecrent;
+        //    this.ClientId = clientId;
+        //    this.BaseUri = baseUrl;
+        //    this.requestHandlers = new List<Invoker.IRequestHandler>();
+        //    this.requestHandlers.Add(new Invoker.ApiExceptionRequestHandler());
+        //    this.requestHandlers.Add(new Invoker.JwtTokenRequestHandler(baseUrl, clientId, clientSecrent));
+        //    invoker = new Invoker.ApiInvoker(requestHandlers);
+        //    ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
+        //}
 
         /// <summary>
         /// </summary>
