@@ -113,11 +113,11 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
         }
 
         /// <summary>
-        /// Test for PostWorkSheetPicture of PicturesController.
+        /// Test for PostWorksheetPicture of PicturesController.
         /// </summary>
         [TestCategory(ProductName)]
         [TestMethod]
-        public void TestPostWorkSheetPicture()
+        public void TestPostWorksheetPicture()
         {
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
@@ -129,7 +129,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
                 Left = 10,
                 Bottom = 10
             };
-            var request = new PostWorkSheetPictureRequest(
+            var request = new PostWorksheetPictureRequest(
                 name: remoteName,
                 sheetName: "Sheet6",
                 pictureIndex: 0,
@@ -137,7 +137,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
                 folder: remoteFolder,
                 storageName: ""
             );
-            var actual =  this.CellsApi.PostWorkSheetPicture(request);
+            var actual =  this.CellsApi.PostWorksheetPicture(request);
             Assert.AreEqual(200, actual.Code);
         }
 
@@ -165,24 +165,24 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
         }
 
         /// <summary>
-        /// Test for DeleteWorkSheetPictures of PicturesController.
+        /// Test for DeleteWorksheetPictures of PicturesController.
         /// </summary>
         [TestCategory(ProductName)]
         [TestMethod]
-        public void TestDeleteWorkSheetPictures()
+        public void TestDeleteWorksheetPictures()
         {
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
-            var request = new DeleteWorkSheetPicturesRequest(
+            var request = new DeleteWorksheetPicturesRequest(
                 name: remoteName,
                 sheetName: "Sheet6",
                 folder: remoteFolder,
                 storageName: ""
             );
-            var actual =  this.CellsApi.DeleteWorkSheetPictures(request);
+            var actual =  this.CellsApi.DeleteWorksheetPictures(request);
             Assert.AreEqual(200, actual.Code);
         }
     }

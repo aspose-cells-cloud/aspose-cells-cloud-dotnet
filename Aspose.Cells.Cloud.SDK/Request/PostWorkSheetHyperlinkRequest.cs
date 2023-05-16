@@ -30,16 +30,33 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Collections.Generic;
     using System.Net;
     using System.Text.RegularExpressions;
+    using System;
+    [Obsolete("PostWorkSheetHyperlinkRequest")]
+    public class PostWorkSheetHyperlinkRequest : PostWorksheetHyperlinkRequest
+    {
+        public PostWorkSheetHyperlinkRequest()
+        {
 
+        }
+        public PostWorkSheetHyperlinkRequest(string name, string sheetName, int? hyperlinkIndex, Hyperlink hyperlink, string folder = null, string storageName = null)
+        {
+            this.name = name;
+            this.sheetName = sheetName;
+            this.hyperlinkIndex = hyperlinkIndex;
+            this.hyperlink = hyperlink;
+            this.folder = folder;
+            this.storageName = storageName;
+        }
+    }
     /// <summary>
     /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.PostWorkSheetHyperlink" /> operation.
     /// </summary>
-    public class PostWorkSheetHyperlinkRequest : IRequestModel
+    public class PostWorksheetHyperlinkRequest : IRequestModel
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="PostWorkSheetHyperlinkRequest"/> class.
+        /// Initializes a new instance of the <see cref="PostWorksheetHyperlinkRequest"/> class.
         /// </summary>
-        public PostWorkSheetHyperlinkRequest()
+        public PostWorksheetHyperlinkRequest()
         {
 
         }
@@ -53,7 +70,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="hyperlink"></param>
         /// <param name="folder"></param>
         /// <param name="storageName"></param>
-        public PostWorkSheetHyperlinkRequest(string name, string sheetName, int? hyperlinkIndex, Hyperlink hyperlink, string folder = null, string storageName = null)
+        public PostWorksheetHyperlinkRequest(string name, string sheetName, int? hyperlinkIndex, Hyperlink hyperlink, string folder = null, string storageName = null)
         {
             this.name = name;
             this.sheetName = sheetName;

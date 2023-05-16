@@ -30,22 +30,40 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Collections.Generic;
     using System.Net;
     using System.Text.RegularExpressions;
-
-    /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.PostWorkSheetPicture" /> operation.
-    /// </summary>
-    public class PostWorkSheetPictureRequest : IRequestModel
+    using System;
+    [Obsolete("PostWorkSheetPictureRequest")]
+    public class PostWorkSheetPictureRequest : PostWorksheetPictureRequest
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostWorkSheetPictureRequest"/> class.
-        /// </summary>
         public PostWorkSheetPictureRequest()
         {
 
         }
 
+        public PostWorkSheetPictureRequest(string name, string sheetName, int? pictureIndex, Picture picture, string folder = null, string storageName = null)
+        {
+            this.name = name;
+            this.sheetName = sheetName;
+            this.pictureIndex = pictureIndex;
+            this.picture = picture;
+            this.folder = folder;
+            this.storageName = storageName;
+        }
+    }
+    /// <summary>
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.PostWorkSheetPicture" /> operation.
+    /// </summary>
+    public class PostWorksheetPictureRequest : IRequestModel
+    {
         /// <summary>
-        /// Initializes a new instance of the <see cref="PostWorkSheetPictureRequest"/> class.
+        /// Initializes a new instance of the <see cref="PostWorksheetPictureRequest"/> class.
+        /// </summary>
+        public PostWorksheetPictureRequest()
+        {
+
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PostWorksheetPictureRequest"/> class.
         /// </summary>
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
@@ -53,7 +71,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="picture"></param>
         /// <param name="folder"></param>
         /// <param name="storageName"></param>
-        public PostWorkSheetPictureRequest(string name, string sheetName, int? pictureIndex, Picture picture, string folder = null, string storageName = null)
+        public PostWorksheetPictureRequest(string name, string sheetName, int? pictureIndex, Picture picture, string folder = null, string storageName = null)
         {
             this.name = name;
             this.sheetName = sheetName;

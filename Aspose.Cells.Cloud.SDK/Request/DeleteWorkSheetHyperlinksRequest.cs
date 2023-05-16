@@ -30,16 +30,33 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Collections.Generic;
     using System.Net;
     using System.Text.RegularExpressions;
+    using System;
+    [Obsolete("DeleteWorkSheetHyperlinksRequest")]
+    public class DeleteWorkSheetHyperlinksRequest : DeleteWorksheetHyperlinksRequest
+    {
+        public DeleteWorkSheetHyperlinksRequest()
+        {
 
+        }
+
+        public DeleteWorkSheetHyperlinksRequest(string name, string sheetName, string folder = null, string storageName = null)
+        {
+            this.name = name;
+            this.sheetName = sheetName;
+            this.folder = folder;
+            this.storageName = storageName;
+        }
+
+    }
     /// <summary>
     /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.DeleteWorkSheetHyperlinks" /> operation.
     /// </summary>
-    public class DeleteWorkSheetHyperlinksRequest : IRequestModel
+    public class DeleteWorksheetHyperlinksRequest : IRequestModel
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteWorkSheetHyperlinksRequest"/> class.
         /// </summary>
-        public DeleteWorkSheetHyperlinksRequest()
+        public DeleteWorksheetHyperlinksRequest()
         {
 
         }
@@ -51,7 +68,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="sheetName"></param>
         /// <param name="folder"></param>
         /// <param name="storageName"></param>
-        public DeleteWorkSheetHyperlinksRequest(string name, string sheetName, string folder = null, string storageName = null)
+        public DeleteWorksheetHyperlinksRequest(string name, string sheetName, string folder = null, string storageName = null)
         {
             this.name = name;
             this.sheetName = sheetName;

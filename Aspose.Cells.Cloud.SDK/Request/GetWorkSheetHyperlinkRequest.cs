@@ -30,16 +30,32 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Collections.Generic;
     using System.Net;
     using System.Text.RegularExpressions;
+    using System;
+    [Obsolete("GetWorkSheetHyperlinkRequest")]
+    public class GetWorkSheetHyperlinkRequest :GetWorksheetHyperlinkRequest{
+        public GetWorkSheetHyperlinkRequest()
+        {
 
+        }
+
+        public GetWorkSheetHyperlinkRequest(string name, string sheetName, int? hyperlinkIndex, string folder = null, string storageName = null)
+        {
+            this.name = name;
+            this.sheetName = sheetName;
+            this.hyperlinkIndex = hyperlinkIndex;
+            this.folder = folder;
+            this.storageName = storageName;
+        }
+    }
     /// <summary>
     /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.GetWorkSheetHyperlink" /> operation.
     /// </summary>
-    public class GetWorkSheetHyperlinkRequest : IRequestModel
+    public class GetWorksheetHyperlinkRequest : IRequestModel
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorkSheetHyperlinkRequest"/> class.
         /// </summary>
-        public GetWorkSheetHyperlinkRequest()
+        public GetWorksheetHyperlinkRequest()
         {
 
         }
@@ -52,7 +68,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="hyperlinkIndex"></param>
         /// <param name="folder"></param>
         /// <param name="storageName"></param>
-        public GetWorkSheetHyperlinkRequest(string name, string sheetName, int? hyperlinkIndex, string folder = null, string storageName = null)
+        public GetWorksheetHyperlinkRequest(string name, string sheetName, int? hyperlinkIndex, string folder = null, string storageName = null)
         {
             this.name = name;
             this.sheetName = sheetName;

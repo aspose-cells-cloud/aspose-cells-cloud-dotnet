@@ -31,8 +31,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
     using System.Collections.Generic;
     using System.IO;
     using System.Net;
+    using System;
     using System.Threading.Tasks;
-
     /// <summary>
     /// Aspose.Cells Cloud API.
     /// </summary>
@@ -1347,23 +1347,25 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
-
+        [Obsolete("GetWorkSheetHyperlinks")]
+        public HyperlinksResponse GetWorkSheetHyperlinks(GetWorkSheetHyperlinksRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<HyperlinksResponse>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
 
         /// <summary>
         /// </summary>
-        /// <param name="request">Request. <see cref="GetWorkSheetHyperlinksRequest" /></param>
-        public   HyperlinksResponse  GetWorkSheetHyperlinks(GetWorkSheetHyperlinksRequest request)
+        /// <param name="request">Request. <see cref="GetWorksheetHyperlinksRequest" /></param>
+        public HyperlinksResponse  GetWorksheetHyperlinks(GetWorksheetHyperlinksRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    HyperlinksResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
             return result;
         }
 
-
-
-        /// <summary>
-        /// </summary>
-        /// <param name="request">Request. <see cref="GetWorkSheetHyperlinkRequest" /></param>
+        [Obsolete("GetWorkSheetHyperlink")]
         public   HyperlinkResponse  GetWorkSheetHyperlink(GetWorkSheetHyperlinkRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
@@ -1371,48 +1373,80 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetWorksheetHyperlinkRequest" /></param>
+        public   HyperlinkResponse  GetWorksheetHyperlink(GetWorksheetHyperlinkRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    HyperlinkResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
 
+        [Obsolete("DeleteWorkSheetHyperlink")]
+        public CellsCloudResponse DeleteWorkSheetHyperlink(DeleteWorkSheetHyperlinkRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<CellsCloudResponse>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
 
         /// <summary>
         /// </summary>
-        /// <param name="request">Request. <see cref="DeleteWorkSheetHyperlinkRequest" /></param>
-        public   CellsCloudResponse  DeleteWorkSheetHyperlink(DeleteWorkSheetHyperlinkRequest request)
+        /// <param name="request">Request. <see cref="DeleteWorksheetHyperlinkRequest" /></param>
+        public   CellsCloudResponse  DeleteWorksheetHyperlink(DeleteWorksheetHyperlinkRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
             return result;
         }
 
-
-
+        [Obsolete("PostWorkSheetHyperlink")]
+        public CellsCloudResponse PostWorkSheetHyperlink(PostWorkSheetHyperlinkRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<CellsCloudResponse>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
         /// <summary>
         /// </summary>
-        /// <param name="request">Request. <see cref="PostWorkSheetHyperlinkRequest" /></param>
-        public   CellsCloudResponse  PostWorkSheetHyperlink(PostWorkSheetHyperlinkRequest request)
+        /// <param name="request">Request. <see cref="PostWorksheetHyperlinkRequest" /></param>
+        public   CellsCloudResponse  PostWorksheetHyperlink(PostWorksheetHyperlinkRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
             return result;
         }
 
-
-
+        [Obsolete("PutWorkSheetHyperlink")]
+        public CellsCloudResponse PutWorkSheetHyperlink(PutWorkSheetHyperlinkRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<CellsCloudResponse>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
         /// <summary>
         /// </summary>
-        /// <param name="request">Request. <see cref="PutWorkSheetHyperlinkRequest" /></param>
-        public   CellsCloudResponse  PutWorkSheetHyperlink(PutWorkSheetHyperlinkRequest request)
+        /// <param name="request">Request. <see cref="PutWorksheetHyperlinkRequest" /></param>
+        public   CellsCloudResponse  PutWorksheetHyperlink(PutWorksheetHyperlinkRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
             return result;
         }
 
-
+        [Obsolete("DeleteWorkSheetHyperlinks")]
+        public CellsCloudResponse DeleteWorkSheetHyperlinks(DeleteWorkSheetHyperlinksRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<CellsCloudResponse>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
 
         /// <summary>
         /// </summary>
-        /// <param name="request">Request. <see cref="DeleteWorkSheetHyperlinksRequest" /></param>
-        public   CellsCloudResponse  DeleteWorkSheetHyperlinks(DeleteWorkSheetHyperlinksRequest request)
+        /// <param name="request">Request. <see cref="DeleteWorksheetHyperlinksRequest" /></param>
+        public CellsCloudResponse  DeleteWorksheetHyperlinks(DeleteWorksheetHyperlinksRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -2067,12 +2101,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
-
-
+        [Obsolete("PostWorkSheetPicture")]
+        public CellsCloudResponse PostWorkSheetPicture(PostWorkSheetPictureRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<CellsCloudResponse>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
         /// <summary>
         /// </summary>
-        /// <param name="request">Request. <see cref="PostWorkSheetPictureRequest" /></param>
-        public   CellsCloudResponse  PostWorkSheetPicture(PostWorkSheetPictureRequest request)
+        /// <param name="request">Request. <see cref="PostWorksheetPictureRequest" /></param>
+        public   CellsCloudResponse  PostWorksheetPicture(PostWorksheetPictureRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -2091,12 +2130,18 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
-
+        [Obsolete("DeleteWorkSheetPictures")]
+        public CellsCloudResponse DeleteWorkSheetPictures(DeleteWorkSheetPicturesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<CellsCloudResponse>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
 
         /// <summary>
         /// </summary>
-        /// <param name="request">Request. <see cref="DeleteWorkSheetPicturesRequest" /></param>
-        public   CellsCloudResponse  DeleteWorkSheetPictures(DeleteWorkSheetPicturesRequest request)
+        /// <param name="request">Request. <see cref="DeleteWorksheetPicturesRequest" /></param>
+        public CellsCloudResponse  DeleteWorksheetPictures(DeleteWorksheetPicturesRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;

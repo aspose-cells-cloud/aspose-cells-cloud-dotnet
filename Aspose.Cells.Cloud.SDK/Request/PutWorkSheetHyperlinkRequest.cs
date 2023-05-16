@@ -30,22 +30,42 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Collections.Generic;
     using System.Net;
     using System.Text.RegularExpressions;
+    using System;
+    [Obsolete("PutWorkSheetHyperlinkRequest")]
+    public class PutWorkSheetHyperlinkRequest : PutWorksheetHyperlinkRequest
+    {
+        public PutWorkSheetHyperlinkRequest()
+        {
 
+        }
+        public PutWorkSheetHyperlinkRequest(string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null, string storageName = null)
+        {
+            this.name = name;
+            this.sheetName = sheetName;
+            this.firstRow = firstRow;
+            this.firstColumn = firstColumn;
+            this.totalRows = totalRows;
+            this.totalColumns = totalColumns;
+            this.address = address;
+            this.folder = folder;
+            this.storageName = storageName;
+        }
+    }
     /// <summary>
     /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.PutWorkSheetHyperlink" /> operation.
     /// </summary>
-    public class PutWorkSheetHyperlinkRequest : IRequestModel
+    public class PutWorksheetHyperlinkRequest : IRequestModel
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="PutWorkSheetHyperlinkRequest"/> class.
+        /// Initializes a new instance of the <see cref="PutWorksheetHyperlinkRequest"/> class.
         /// </summary>
-        public PutWorkSheetHyperlinkRequest()
+        public PutWorksheetHyperlinkRequest()
         {
 
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="PutWorkSheetHyperlinkRequest"/> class.
+        /// Initializes a new instance of the <see cref="PutWorksheetHyperlinkRequest"/> class.
         /// </summary>
         /// <param name="name"></param>
         /// <param name="sheetName"></param>
@@ -56,7 +76,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="address"></param>
         /// <param name="folder"></param>
         /// <param name="storageName"></param>
-        public PutWorkSheetHyperlinkRequest(string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null, string storageName = null)
+        public PutWorksheetHyperlinkRequest(string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null, string storageName = null)
         {
             this.name = name;
             this.sheetName = sheetName;

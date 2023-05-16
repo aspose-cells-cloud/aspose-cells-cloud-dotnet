@@ -38,79 +38,79 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
         private readonly string remoteFolder = "TestData/In";
 
         /// <summary>
-        /// Test for GetWorkSheetHyperlinks of HypelinksController.
+        /// Test for GetWorksheetHyperlinks of HypelinksController.
         /// </summary>
         [TestCategory(ProductName)]
         [TestMethod]
-        public void TestGetWorkSheetHyperlinks()
+        public void TestGetWorksheetHyperlinks()
         {
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
-            var request = new GetWorkSheetHyperlinksRequest(
+            var request = new GetWorksheetHyperlinksRequest(
                 name: remoteName,
                 sheetName: "Sheet1",
                 folder: remoteFolder,
                 storageName: ""
             );
-            var actual =  this.CellsApi.GetWorkSheetHyperlinks(request);
+            var actual =  this.CellsApi.GetWorksheetHyperlinks(request);
             Assert.AreEqual(200, actual.Code);
         }
 
         /// <summary>
-        /// Test for GetWorkSheetHyperlink of HypelinksController.
+        /// Test for GetWorksheetHyperlink of HypelinksController.
         /// </summary>
         [TestCategory(ProductName)]
         [TestMethod]
-        public void TestGetWorkSheetHyperlink()
+        public void TestGetWorksheetHyperlink()
         {
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
-            var request = new GetWorkSheetHyperlinkRequest(
-                name: remoteName,
-                sheetName: "Sheet1",
-                hyperlinkIndex: 0,
-                folder: remoteFolder,
-                storageName: ""
-            );
-            var actual =  this.CellsApi.GetWorkSheetHyperlink(request);
-            Assert.AreEqual(200, actual.Code);
-        }
-
-        /// <summary>
-        /// Test for DeleteWorkSheetHyperlink of HypelinksController.
-        /// </summary>
-        [TestCategory(ProductName)]
-        [TestMethod]
-        public void TestDeleteWorkSheetHyperlink()
-        {
-            string localName = "Book1.xlsx";
-            string remoteName = "Book1.xlsx";
-
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
-
-            var request = new DeleteWorkSheetHyperlinkRequest(
+            var request = new GetWorksheetHyperlinkRequest(
                 name: remoteName,
                 sheetName: "Sheet1",
                 hyperlinkIndex: 0,
                 folder: remoteFolder,
                 storageName: ""
             );
-            var actual =  this.CellsApi.DeleteWorkSheetHyperlink(request);
+            var actual =  this.CellsApi.GetWorksheetHyperlink(request);
             Assert.AreEqual(200, actual.Code);
         }
 
         /// <summary>
-        /// Test for PostWorkSheetHyperlink of HypelinksController.
+        /// Test for DeleteWorksheetHyperlink of HypelinksController.
         /// </summary>
         [TestCategory(ProductName)]
         [TestMethod]
-        public void TestPostWorkSheetHyperlink()
+        public void TestDeleteWorksheetHyperlink()
+        {
+            string localName = "Book1.xlsx";
+            string remoteName = "Book1.xlsx";
+
+            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+
+            var request = new DeleteWorksheetHyperlinkRequest(
+                name: remoteName,
+                sheetName: "Sheet1",
+                hyperlinkIndex: 0,
+                folder: remoteFolder,
+                storageName: ""
+            );
+            var actual =  this.CellsApi.DeleteWorksheetHyperlink(request);
+            Assert.AreEqual(200, actual.Code);
+        }
+
+        /// <summary>
+        /// Test for PostWorksheetHyperlink of HypelinksController.
+        /// </summary>
+        [TestCategory(ProductName)]
+        [TestMethod]
+        public void TestPostWorksheetHyperlink()
         {
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
@@ -121,7 +121,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             {
                 Address = "https://products.aspose.cloud/cells/"
             };
-            var request = new PostWorkSheetHyperlinkRequest(
+            var request = new PostWorksheetHyperlinkRequest(
                 name: remoteName,
                 sheetName: "Sheet1",
                 hyperlinkIndex: 0,
@@ -129,23 +129,23 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
                 folder: remoteFolder,
                 storageName: ""
             );
-            var actual =  this.CellsApi.PostWorkSheetHyperlink(request);
+            var actual =  this.CellsApi.PostWorksheetHyperlink(request);
             Assert.AreEqual(200, actual.Code);
         }
 
         /// <summary>
-        /// Test for PutWorkSheetHyperlink of HypelinksController.
+        /// Test for PutWorksheetHyperlink of HypelinksController.
         /// </summary>
         [TestCategory(ProductName)]
         [TestMethod]
-        public void TestPutWorkSheetHyperlink()
+        public void TestPutWorksheetHyperlink()
         {
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
-            var request = new PutWorkSheetHyperlinkRequest(
+            var request = new PutWorksheetHyperlinkRequest(
                 name: remoteName,
                 sheetName: "Sheet1",
                 firstRow: 1,
@@ -156,29 +156,29 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
                 folder: remoteFolder,
                 storageName: ""
             );
-            var actual =  this.CellsApi.PutWorkSheetHyperlink(request);
+            var actual =  this.CellsApi.PutWorksheetHyperlink(request);
             Assert.AreEqual(200, actual.Code);
         }
 
         /// <summary>
-        /// Test for DeleteWorkSheetHyperlinks of HypelinksController.
+        /// Test for DeleteWorksheetHyperlinks of HypelinksController.
         /// </summary>
         [TestCategory(ProductName)]
         [TestMethod]
-        public void TestDeleteWorkSheetHyperlinks()
+        public void TestDeleteWorksheetHyperlinks()
         {
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
-            var request = new DeleteWorkSheetHyperlinksRequest(
+            var request = new DeleteWorksheetHyperlinksRequest(
                 name: remoteName,
                 sheetName: "Sheet1",
                 folder: remoteFolder,
                 storageName: ""
             );
-            var actual =  this.CellsApi.DeleteWorkSheetHyperlinks(request);
+            var actual =  this.CellsApi.DeleteWorksheetHyperlinks(request);
             Assert.AreEqual(200, actual.Code);
         }
     }

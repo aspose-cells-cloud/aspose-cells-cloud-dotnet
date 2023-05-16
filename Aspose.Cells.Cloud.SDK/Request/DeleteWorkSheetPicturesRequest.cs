@@ -30,16 +30,31 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Collections.Generic;
     using System.Net;
     using System.Text.RegularExpressions;
+    using System;
+    [Obsolete("DeleteWorkSheetPicturesRequest")]
+    public class DeleteWorkSheetPicturesRequest : DeleteWorksheetPicturesRequest
+    {
+        public DeleteWorkSheetPicturesRequest()
+        {
 
+        }
+        public DeleteWorkSheetPicturesRequest(string name, string sheetName, string folder = null, string storageName = null)
+        {
+            this.name = name;
+            this.sheetName = sheetName;
+            this.folder = folder;
+            this.storageName = storageName;
+        }
+    }
     /// <summary>
     /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.DeleteWorkSheetPictures" /> operation.
     /// </summary>
-    public class DeleteWorkSheetPicturesRequest : IRequestModel
+    public class DeleteWorksheetPicturesRequest : IRequestModel
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteWorkSheetPicturesRequest"/> class.
         /// </summary>
-        public DeleteWorkSheetPicturesRequest()
+        public DeleteWorksheetPicturesRequest()
         {
 
         }
@@ -51,7 +66,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="sheetName"></param>
         /// <param name="folder"></param>
         /// <param name="storageName"></param>
-        public DeleteWorkSheetPicturesRequest(string name, string sheetName, string folder = null, string storageName = null)
+        public DeleteWorksheetPicturesRequest(string name, string sheetName, string folder = null, string storageName = null)
         {
             this.name = name;
             this.sheetName = sheetName;
