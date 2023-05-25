@@ -15,4 +15,7 @@ dotnet pack --output .\
 dotnet nuget sign  --hash-algorithm  sha256 --certificate-path aspose.pfx  --certificate-password f27Hp99Ds3  --timestamper http://timestamp.digicert.com $PackFile
 dotnet nuget verify $PackFile
 Write-Output "Move-Item  -Path $PackFile -Destination  packages/$PackFile"
+if (Test-Path packages/$PackFile){
+    Remove-Item -Path packages/$PackFile 
+}
 Move-Item  -Path  "$PackFile" -Destination  "packages/$PackFile"
