@@ -124,7 +124,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests
             string localFolder = Environment.GetEnvironmentVariable("CellsCloudTestOutFolder");
             if (string.IsNullOrEmpty(localFolder))
             {
-                localFolder = @"D:\projects\test\Aspose.Cells.Cloud.SDK\DotNet\download";
+                localFolder = @"D:\test\data\asposecellscloudsdk\output";
                 if (!Directory.Exists(localFolder))
                 {
                     return null;
@@ -133,5 +133,17 @@ namespace Aspose.Cells.Cloud.SDK.Tests
             return Path.Combine(localFolder, filename);
         }
 
+        public void SaveCloudFileFromReponse(string path, Stream stream)
+        {
+            string localPath = this.GetDownloadFilePath(path);
+            if (string.IsNullOrEmpty(localPath))
+            {
+                return;
+            }
+            using (Stream outStream = File.OpenWrite(localPath))
+            {
+                stream.CopyTo(outStream);
+            }
+        }
     }
 }
