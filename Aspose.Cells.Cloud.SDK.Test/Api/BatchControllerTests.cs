@@ -60,13 +60,113 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             {
                 SourceFolder = remoteFolder,
                 Format = "pdf",
-                OutFolder = "pdf",
+                OutFolder = "TestResult",
                 MatchCondition = batchConvertRequestMatchCondition
             };
             var request = new PostBatchConvertRequest(
                 batchConvertRequest: batchConvertRequest
             );
             var actual =  this.CellsApi.PostBatchConvert(request);
+            Assert.IsNotNull(actual);
+        }
+
+        /// <summary>
+        /// Test for PostBatchProtect of BatchController.
+        /// </summary>
+        [TestCategory(ProductName)]
+        [TestMethod]
+        public void TestPostBatchProtect()
+        {
+            string localBook1 = "Book1.xlsx";
+            string remoteBook1 = "Book1.xlsx";
+            string localMyDoc = "myDocument.xlsx";
+            string remoteMyDoc = "myDocument.xlsx";
+
+            this.UploadFile( localBook1, remoteFolder + "/" + remoteBook1, "");
+            this.UploadFile( localMyDoc, remoteFolder + "/" + remoteMyDoc, "");
+
+            var batchProtectRequestMatchCondition = new MatchConditionRequest()
+            {
+                RegexPattern = "(^Book)(.+)(xlsx$)"
+            };
+            var batchProtectRequest = new BatchProtectRequest()
+            {
+                SourceFolder = remoteFolder,
+                ProtectionType = "All",
+                Password = "123456",
+                OutFolder = "TestResult",
+                MatchCondition = batchProtectRequestMatchCondition
+            };
+            var request = new PostBatchProtectRequest(
+                batchProtectRequest: batchProtectRequest
+            );
+            var actual =  this.CellsApi.PostBatchProtect(request);
+            Assert.IsNotNull(actual);
+        }
+
+        /// <summary>
+        /// Test for PostBatchLock of BatchController.
+        /// </summary>
+        [TestCategory(ProductName)]
+        [TestMethod]
+        public void TestPostBatchLock()
+        {
+            string localBook1 = "Book1.xlsx";
+            string remoteBook1 = "Book1.xlsx";
+            string localMyDoc = "myDocument.xlsx";
+            string remoteMyDoc = "myDocument.xlsx";
+
+            this.UploadFile( localBook1, remoteFolder + "/" + remoteBook1, "");
+            this.UploadFile( localMyDoc, remoteFolder + "/" + remoteMyDoc, "");
+
+            var batchLockRequestMatchCondition = new MatchConditionRequest()
+            {
+                RegexPattern = "(^Book)(.+)(xlsx$)"
+            };
+            var batchLockRequest = new BatchLockRequest()
+            {
+                SourceFolder = remoteFolder,
+                Password = "123456",
+                OutFolder = "TestResult",
+                MatchCondition = batchLockRequestMatchCondition
+            };
+            var request = new PostBatchLockRequest(
+                batchLockRequest: batchLockRequest
+            );
+            var actual =  this.CellsApi.PostBatchLock(request);
+            Assert.IsNotNull(actual);
+        }
+
+        /// <summary>
+        /// Test for PostBatchUnlock of BatchController.
+        /// </summary>
+        [TestCategory(ProductName)]
+        [TestMethod]
+        public void TestPostBatchUnlock()
+        {
+            string localBook1 = "Book1.xlsx";
+            string remoteBook1 = "Book1.xlsx";
+            string localMyDoc = "myDocument.xlsx";
+            string remoteMyDoc = "myDocument.xlsx";
+
+            this.UploadFile( localBook1, remoteFolder + "/" + remoteBook1, "");
+            this.UploadFile( localMyDoc, remoteFolder + "/" + remoteMyDoc, "");
+
+            var batchLockRequestMatchCondition = new MatchConditionRequest()
+            {
+                RegexPattern = "(^Book)(.+)(xlsx$)"
+            };
+            var batchLockRequest = new BatchLockRequest()
+            {
+                SourceFolder = remoteFolder,
+                Password = "123456",
+                OutFolder = "TestResult",
+                MatchCondition = batchLockRequestMatchCondition
+            };
+            var request = new PostBatchUnlockRequest(
+                batchLockRequest: batchLockRequest
+            );
+            var actual =  this.CellsApi.PostBatchUnlock(request);
             Assert.IsNotNull(actual);
         }
     }

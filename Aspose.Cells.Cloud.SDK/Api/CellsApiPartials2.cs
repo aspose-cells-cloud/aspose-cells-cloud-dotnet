@@ -256,6 +256,51 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
 
+        /// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostBatchProtectRequest" /></param>
+        public Stream PostBatchProtect(PostBatchProtectRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<Stream>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostBatchLockRequest" /></param>
+        public Stream PostBatchLock(PostBatchLockRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<Stream>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostBatchUnlockRequest" /></param>
+        public Stream PostBatchUnlock(PostBatchUnlockRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<Stream>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostBatchSplitRequest" /></param>
+        public Stream PostBatchSplit(PostBatchSplitRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<Stream>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
 
         /// <summary>
         /// </summary>
