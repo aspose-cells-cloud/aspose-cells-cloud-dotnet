@@ -108,7 +108,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 throw new ApiException(400, "Missing required parameter 'property' when calling PutDocumentProperty");
             }
 
-            var path = baseUri + "/cells/{name}/documentproperties/{propertyName}";
+            var path = baseUri + "/cells/{name}/documentproperties";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
