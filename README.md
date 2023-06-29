@@ -27,7 +27,7 @@ The Cloud SDK enhances your C#, ASP.NET, & other .NET-based cloud apps to [proce
 - Support to batch unlock multi-files.
 - Support to protect lock multi-files.
 - Support to split lock multi-files.
-- Fix put document property api..
+- Fix put document property api.
  
 ## Read & Write Spreadsheet Formats
 
