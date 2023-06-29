@@ -1,4 +1,4 @@
-dotnet build -c Release 
+dotnet build -c Release Aspose.Cells.Cloud.SDK\Aspose.Cells.Cloud.SDK.csproj
 $RootFoler=(Get-Location).Path
 $File = "$RootFoler\Aspose.Cells.Cloud.SDK\bin\Release\netstandard2.0\Aspose.Cells.Cloud.SDK.dll"
 $FileVersion = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.split(".")
@@ -11,7 +11,7 @@ if( $FileVersion.Length -eq 2 ){
 $PackFile="Aspose.Cells-Cloud.$version.nupkg" 
 
 Write-Output "Pack Aspose.Cells Cloud SDK $version For Net."
-dotnet pack --output .\
+dotnet pack -c Release --output .\
 dotnet nuget sign  --hash-algorithm  sha256 --certificate-path aspose.pfx  --certificate-password f27Hp99Ds3  --timestamper http://timestamp.digicert.com $PackFile
 dotnet nuget verify $PackFile
 Write-Output "Move-Item  -Path $PackFile -Destination  packages/$PackFile"
