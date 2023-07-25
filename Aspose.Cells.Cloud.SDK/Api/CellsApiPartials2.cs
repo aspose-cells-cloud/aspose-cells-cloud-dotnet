@@ -1658,8 +1658,18 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
         /// <summary>
         /// </summary>
+        /// <param name="request">Request. <see cref="PostRepairRequest" /></param>
+        public FilesResult PostRepair(PostRepairRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<FilesResult>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// </summary>
         /// <param name="request">Request. <see cref="PostRotateRequest" /></param>
-        public   FilesResult  PostRotate(PostRotateRequest request)
+        public FilesResult  PostRotate(PostRotateRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
