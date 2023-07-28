@@ -487,6 +487,28 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
             var actual =  this.CellsApi.PostClearObjects(request);
             Assert.IsNotNull(actual);
         }
+        /// <summary>
+        /// Test for repair workbook as one of the available formats.
+        /// </summary>
+        [TestCategory(ProductName)]
+        [TestMethod]
+        [DataRow("xlsx")]
+        [DataRow("pdf")]
+        [DataRow("csv")]
+        [DataRow("png")]
+        public void TestPostRepair(string format)
+        {
+            string book1Xlsx = "Book1.xlsx";
+
+            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
+            AddFileParameter(book1Xlsx,mapFiles);       
+            var request = new PostRepairRequest(
+                file: mapFiles,
+                format: format
+            );
+            var actual =  this.CellsApi.PostRepair(request);
+            Assert.IsNotNull(actual);
+        }
 
         /// <summary>
         /// Test for save workbook as one of the available formats.

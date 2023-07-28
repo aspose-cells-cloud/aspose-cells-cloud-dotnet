@@ -24,6 +24,7 @@ The Cloud SDK enhances your C#, ASP.NET, & other .NET-based cloud apps to [proce
 ## Feature & Enhancements in Version 23.7
 
 - Support to repair API.
+- Remove GetExtractBarcodes API. 
  
 ## Read & Write Spreadsheet Formats
 

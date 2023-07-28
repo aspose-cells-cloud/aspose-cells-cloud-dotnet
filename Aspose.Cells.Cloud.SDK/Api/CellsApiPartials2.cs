@@ -304,18 +304,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
         /// <summary>
         /// </summary>
-        /// <param name="request">Request. <see cref="GetExtractBarcodesRequest" /></param>
-        public   BarcodeResponseList  GetExtractBarcodes(GetExtractBarcodesRequest request)
-        {
-            requestHandlers.ForEach(p => p.ProcessUrl(""));
-            var result = invoker.InvokeApiAsync<    BarcodeResponseList  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
-            return result;
-        }
-
-
-
-        /// <summary>
-        /// </summary>
         /// <param name="request">Request. <see cref="PostClearContentsRequest" /></param>
         public   CellsCloudResponse  PostClearContents(PostClearContentsRequest request)
         {
@@ -323,7 +311,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
             return result;
         }
-
 
 
         /// <summary>
