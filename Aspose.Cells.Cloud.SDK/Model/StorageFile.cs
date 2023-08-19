@@ -35,32 +35,32 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// StorageFile.
+    /// File or folder information
     /// </summary>
     public class StorageFile
     {
         /// <summary>
-        /// Gets or sets Name.
+        /// File or folder name.
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets IsFolder.
+        /// True if it is a folder.
         /// </summary>
         public virtual bool? IsFolder { get; set; }
 
         /// <summary>
-        /// Gets or sets ModifiedDate.
+        /// File or folder last modified DateTime.
         /// </summary>
         public virtual DateTime? ModifiedDate { get; set; }
 
         /// <summary>
-        /// Gets or sets Size.
+        /// File or folder size.
         /// </summary>
         public virtual long? Size { get; set; }
 
         /// <summary>
-        /// Gets or sets Path.
+        /// File or folder path.
         /// </summary>
         public virtual string Path { get; set; }
 

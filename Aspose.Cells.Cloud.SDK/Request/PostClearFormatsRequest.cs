@@ -47,15 +47,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostClearFormatsRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="range"></param>
-        /// <param name="startRow"></param>
-        /// <param name="startColumn"></param>
-        /// <param name="endRow"></param>
-        /// <param name="endColumn"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="range">Represents the range to which the specified cells applies.</param>
+        /// <param name="startRow">The start row.</param>
+        /// <param name="startColumn">The start column.</param>
+        /// <param name="endRow">The end row.</param>
+        /// <param name="endColumn">The end column.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PostClearFormatsRequest(string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -70,47 +70,47 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets range.
+        /// Represents the range to which the specified cells applies.
         /// </summary>
         public string range { get; set; }
 
         /// <summary>
-        /// Gets or sets startRow.
+        /// The start row.
         /// </summary>
         public int? startRow { get; set; }
 
         /// <summary>
-        /// Gets or sets startColumn.
+        /// The start column.
         /// </summary>
         public int? startColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets endRow.
+        /// The end row.
         /// </summary>
         public int? endRow { get; set; }
 
         /// <summary>
-        /// Gets or sets endColumn.
+        /// The end column.
         /// </summary>
         public int? endColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

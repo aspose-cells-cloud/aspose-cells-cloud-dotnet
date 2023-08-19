@@ -47,11 +47,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorkbookCalculateFormulaRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="options"></param>
-        /// <param name="ignoreError"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="options">Calculation Options.</param>
+        /// <param name="ignoreError">ignore Error.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PostWorkbookCalculateFormulaRequest(string name, CalculationOptions options = null, bool? ignoreError = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -62,27 +62,27 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets options.
+        /// Calculation Options.
         /// </summary>
         public CalculationOptions options { get; set; }
 
         /// <summary>
-        /// Gets or sets ignoreError.
+        /// ignore Error.
         /// </summary>
         public bool? ignoreError { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

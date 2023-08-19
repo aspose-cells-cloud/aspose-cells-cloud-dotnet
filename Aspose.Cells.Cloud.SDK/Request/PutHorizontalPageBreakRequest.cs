@@ -47,15 +47,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PutHorizontalPageBreakRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="cellname"></param>
-        /// <param name="row"></param>
-        /// <param name="column"></param>
-        /// <param name="startColumn"></param>
-        /// <param name="endColumn"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="cellname">Cell name</param>
+        /// <param name="row">Row index, zero based.</param>
+        /// <param name="column">Column index, zero based.</param>
+        /// <param name="startColumn">Start column index, zero based.</param>
+        /// <param name="endColumn">End column index, zero based.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PutHorizontalPageBreakRequest(string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -70,47 +70,47 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets cellname.
+        /// Cell name
         /// </summary>
         public string cellname { get; set; }
 
         /// <summary>
-        /// Gets or sets row.
+        /// Row index, zero based.
         /// </summary>
         public int? row { get; set; }
 
         /// <summary>
-        /// Gets or sets column.
+        /// Column index, zero based.
         /// </summary>
         public int? column { get; set; }
 
         /// <summary>
-        /// Gets or sets startColumn.
+        /// Start column index, zero based.
         /// </summary>
         public int? startColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets endColumn.
+        /// End column index, zero based.
         /// </summary>
         public int? endColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

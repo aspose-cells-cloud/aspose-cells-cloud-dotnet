@@ -47,14 +47,14 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetCellSetValueRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="cellName"></param>
-        /// <param name="value"></param>
-        /// <param name="type"></param>
-        /// <param name="formula"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="cellName">The cell name.</param>
+        /// <param name="value">The cell value.</param>
+        /// <param name="type">The value type.</param>
+        /// <param name="formula">Formula for cell</param>
+        /// <param name="folder">The document folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PostWorksheetCellSetValueRequest(string name, string sheetName, string cellName, string value = null, string type = null, string formula = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -68,42 +68,42 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets cellName.
+        /// The cell name.
         /// </summary>
         public string cellName { get; set; }
 
         /// <summary>
-        /// Gets or sets value.
+        /// The cell value.
         /// </summary>
         public string value { get; set; }
 
         /// <summary>
-        /// Gets or sets type.
+        /// The value type.
         /// </summary>
         public string type { get; set; }
 
         /// <summary>
-        /// Gets or sets formula.
+        /// Formula for cell
         /// </summary>
         public string formula { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// The document folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

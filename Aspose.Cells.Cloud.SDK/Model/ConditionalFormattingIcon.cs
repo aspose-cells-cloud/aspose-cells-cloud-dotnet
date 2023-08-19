@@ -40,17 +40,20 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ConditionalFormattingIcon
     {
         /// <summary>
-        /// Gets or sets ImageData.
+        /// Gets the icon set data.
+        ///             
         /// </summary>
         public virtual string ImageData { get; set; }
 
         /// <summary>
-        /// Gets or sets Index.
+        /// Gets and sets the icon's index in the icon set.
+        ///             
         /// </summary>
         public virtual int? Index { get; set; }
 
         /// <summary>
-        /// Gets or sets Type.
+        /// Gets and sets the icon set type.
+        ///             
         /// </summary>
         public virtual string Type { get; set; }
 

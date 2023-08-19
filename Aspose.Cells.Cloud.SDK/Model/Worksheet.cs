@@ -45,107 +45,119 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual IList<Link> Links { get; set; }
 
         /// <summary>
-        /// Gets or sets DisplayRightToLeft.
+        /// Indicates if the specified worksheet is displayed from right to left instead
+        ///    of from left to right.  Default is false.
+        ///             
         /// </summary>
         public virtual bool? DisplayRightToLeft { get; set; }
 
         /// <summary>
-        /// Gets or sets DisplayZeros.
+        /// True if zero values are displayed.
         /// </summary>
         public virtual bool? DisplayZeros { get; set; }
 
         /// <summary>
-        /// Gets or sets FirstVisibleColumn.
+        /// Represents first visible column index.
         /// </summary>
         public virtual int? FirstVisibleColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets FirstVisibleRow.
+        /// Represents first visible row index.
+        ///             
         /// </summary>
         public virtual int? FirstVisibleRow { get; set; }
 
         /// <summary>
-        /// Gets or sets Name.
+        /// Gets or sets the name of the worksheet.
+        ///             
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets Index.
+        /// Gets the index of sheet in the worksheets collection.
+        ///             
         /// </summary>
         public virtual int? Index { get; set; }
 
         /// <summary>
-        /// Gets or sets IsGridlinesVisible.
+        /// Gets or sets a value indicating whether the gridelines are visible.Default
+        ///     is true.
         /// </summary>
         public virtual bool? IsGridlinesVisible { get; set; }
 
         /// <summary>
-        /// Gets or sets IsOutlineShown.
+        /// Indicates whether show outline.
+        ///             
         /// </summary>
         public virtual bool? IsOutlineShown { get; set; }
 
         /// <summary>
-        /// Gets or sets IsPageBreakPreview.
+        /// Indications the specified worksheet is shown in normal view or page break preview.
         /// </summary>
         public virtual bool? IsPageBreakPreview { get; set; }
 
         /// <summary>
-        /// Gets or sets IsVisible.
+        /// Represents if the worksheet is visible.
+        ///             
         /// </summary>
         public virtual bool? IsVisible { get; set; }
 
         /// <summary>
-        /// Gets or sets IsProtected.
+        /// Indicates if the worksheet is protected.
         /// </summary>
         public virtual bool? IsProtected { get; set; }
 
         /// <summary>
-        /// Gets or sets IsRowColumnHeadersVisible.
+        /// Gets or sets a value indicating whether the worksheet will display row and column headers.Default is true.
+        ///             
         /// </summary>
         public virtual bool? IsRowColumnHeadersVisible { get; set; }
 
         /// <summary>
-        /// Gets or sets IsRulerVisible.
+        /// Indicates whether the ruler is visible. Only apply for page break preview.
         /// </summary>
         public virtual bool? IsRulerVisible { get; set; }
 
         /// <summary>
-        /// Gets or sets IsSelected.
+        /// Indicates whether this worksheet is selected when the workbook is opened.
         /// </summary>
         public virtual bool? IsSelected { get; set; }
 
         /// <summary>
-        /// Gets or sets TabColor.
+        /// Represents worksheet tab color.
         /// </summary>
         public virtual Color TabColor { get; set; }
 
         /// <summary>
-        /// Gets or sets TransitionEntry.
+        /// Flag indicating whether the Transition Formula Entry (Lotus compatibility) option is enabled.
         /// </summary>
         public virtual bool? TransitionEntry { get; set; }
 
         /// <summary>
-        /// Gets or sets TransitionEvaluation.
+        /// Flag indicating whether the Transition Formula Evaluation (Lotus compatibility) option is enabled.
+        ///             
         /// </summary>
         public virtual bool? TransitionEvaluation { get; set; }
 
         /// <summary>
-        /// Gets or sets Type.
+        /// Represents worksheet type
         /// </summary>
         public virtual string Type { get; set; }
 
         /// <summary>
-        /// Gets or sets ViewType.
+        /// Gets and sets the view type.
         /// </summary>
         public virtual string ViewType { get; set; }
 
         /// <summary>
-        /// Gets or sets VisibilityType.
+        /// Indicates the state for this sheet visibility
+        ///             
         /// </summary>
         public virtual string VisibilityType { get; set; }
 
         /// <summary>
-        /// Gets or sets Zoom.
+        /// Represents the scaling factor in percent. It should be btween 10 and 400.
+        ///             
         /// </summary>
         public virtual int? Zoom { get; set; }
 

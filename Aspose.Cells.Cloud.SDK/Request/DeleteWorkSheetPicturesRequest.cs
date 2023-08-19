@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="DeleteWorkSheetPicturesRequest.cs">
+// <copyright company="Aspose" file="DeleteWorksheetPicturesRequest.cs">
 //   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -30,29 +30,14 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Collections.Generic;
     using System.Net;
     using System.Text.RegularExpressions;
-    using System;
-    [Obsolete("DeleteWorkSheetPicturesRequest")]
-    public class DeleteWorkSheetPicturesRequest : DeleteWorksheetPicturesRequest
-    {
-        public DeleteWorkSheetPicturesRequest()
-        {
 
-        }
-        public DeleteWorkSheetPicturesRequest(string name, string sheetName, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-    }
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.DeleteWorkSheetPictures" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.DeleteWorksheetPictures" /> operation.
     /// </summary>
     public class DeleteWorksheetPicturesRequest : IRequestModel
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DeleteWorkSheetPicturesRequest"/> class.
+        /// Initializes a new instance of the <see cref="DeleteWorksheetPicturesRequest"/> class.
         /// </summary>
         public DeleteWorksheetPicturesRequest()
         {
@@ -60,12 +45,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DeleteWorkSheetPicturesRequest"/> class.
+        /// Initializes a new instance of the <see cref="DeleteWorksheetPicturesRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public DeleteWorksheetPicturesRequest(string name, string sheetName, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -75,22 +60,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 
@@ -114,13 +99,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'name' is set
             if (string.IsNullOrEmpty (this.name ))
             {
-                throw new ApiException(400, "Missing required parameter 'name' when calling DeleteWorkSheetPictures");
+                throw new ApiException(400, "Missing required parameter 'name' when calling DeleteWorksheetPictures");
             }
 
             // verify the required parameter 'sheetName' is set
             if (string.IsNullOrEmpty (this.sheetName ))
             {
-                throw new ApiException(400, "Missing required parameter 'sheetName' when calling DeleteWorkSheetPictures");
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling DeleteWorksheetPictures");
             }
 
             var path = baseUri + "/cells/{name}/worksheets/{sheetName}/pictures";

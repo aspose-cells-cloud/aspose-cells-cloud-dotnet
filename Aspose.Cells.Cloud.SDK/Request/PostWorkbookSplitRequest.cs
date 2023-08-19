@@ -47,16 +47,16 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorkbookSplitRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="format"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="format">Split format.</param>
         /// <param name="outFolder"></param>
-        /// <param name="from"></param>
-        /// <param name="to"></param>
-        /// <param name="horizontalResolution"></param>
-        /// <param name="verticalResolution"></param>
-        /// <param name="splitNameRule"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="from">Start worksheet index.</param>
+        /// <param name="to">End worksheet index.</param>
+        /// <param name="horizontalResolution">Image horizontal resolution.</param>
+        /// <param name="verticalResolution">Image vertical resolution.</param>
+        /// <param name="splitNameRule">rule name : sheetname  newguid </param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         /// <param name="outStorageName"></param>
         public PostWorkbookSplitRequest(string name, string format = null, string outFolder = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string splitNameRule = null, string folder = null, string storageName = null, string outStorageName = null)
         {
@@ -74,12 +74,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets format.
+        /// Split format.
         /// </summary>
         public string format { get; set; }
 
@@ -89,37 +89,37 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string outFolder { get; set; }
 
         /// <summary>
-        /// Gets or sets from.
+        /// Start worksheet index.
         /// </summary>
         public int? from { get; set; }
 
         /// <summary>
-        /// Gets or sets to.
+        /// End worksheet index.
         /// </summary>
         public int? to { get; set; }
 
         /// <summary>
-        /// Gets or sets horizontalResolution.
+        /// Image horizontal resolution.
         /// </summary>
         public int? horizontalResolution { get; set; }
 
         /// <summary>
-        /// Gets or sets verticalResolution.
+        /// Image vertical resolution.
         /// </summary>
         public int? verticalResolution { get; set; }
 
         /// <summary>
-        /// Gets or sets splitNameRule.
+        /// rule name : sheetname  newguid 
         /// </summary>
         public string splitNameRule { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

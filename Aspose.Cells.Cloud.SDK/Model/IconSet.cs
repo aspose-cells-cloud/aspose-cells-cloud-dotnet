@@ -35,37 +35,45 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// IconSet.
+    /// Describe the IconSet conditional formatting rule. This conditional formatting
+    ///     rule applies icons to cells according to their values.
     /// </summary>
     public class IconSet
     {
         /// <summary>
-        /// Gets or sets CfIcons.
+        /// Get theAspose.Cells.ConditionalFormattingIcon from the collection
         /// </summary>
         public virtual IList<ConditionalFormattingIcon> CfIcons { get; set; }
 
         /// <summary>
-        /// Gets or sets Cfvos.
+        /// Get the CFValueObjects instance.
         /// </summary>
         public virtual IList<ConditionalFormattingValue> Cfvos { get; set; }
 
         /// <summary>
-        /// Gets or sets IsCustom.
+        /// Indicates whether the icon set is custom.  Default value is false.
         /// </summary>
         public virtual bool? IsCustom { get; set; }
 
         /// <summary>
-        /// Gets or sets Reverse.
+        /// Get or set the flag indicating whether to reverses the default order of the
+        ///   icons in this icon set.  Default value is false.
+        ///             
         /// </summary>
         public virtual bool? Reverse { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowValue.
+        /// Get or set the flag indicating whether to show the values of the cells on
+        ///    which this icon set is applied.  Default value is true.
+        ///             
         /// </summary>
         public virtual bool? ShowValue { get; set; }
 
         /// <summary>
-        /// Gets or sets IconSetType.
+        /// Get or Set the icon set type to display.  Setting the type will auto check
+        ///    if the current Cfvos's count is accord with the new type. If not accord,
+        ///    old Cfvos will be cleaned and default Cfvos will be added.
+        ///             
         /// </summary>
         public virtual string IconSetType { get; set; }
 

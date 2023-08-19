@@ -35,67 +35,78 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// DataBar.
+    /// Describe the DataBar conditional formatting rule. This conditional formatting
+    ///    rule displays a gradated data bar in the range of cells.
     /// </summary>
     public class DataBar
     {
         /// <summary>
-        /// Gets or sets AxisColor.
+        /// Gets the color of the axis for cells with conditional formatting as data bars.
         /// </summary>
         public virtual Color AxisColor { get; set; }
 
         /// <summary>
-        /// Gets or sets AxisPosition.
+        /// Gets or sets the position of the axis of the data bars specified by a conditional
+        ///    formatting rule.
         /// </summary>
         public virtual string AxisPosition { get; set; }
 
         /// <summary>
-        /// Gets or sets BarBorder.
+        /// Gets an object that specifies the border of a data bar.
         /// </summary>
         public virtual DataBarBorder BarBorder { get; set; }
 
         /// <summary>
-        /// Gets or sets BarFillType.
+        /// Gets or sets how a data bar is filled with color.
         /// </summary>
         public virtual string BarFillType { get; set; }
 
         /// <summary>
-        /// Gets or sets Color.
+        /// Get or set this DataBar's Color.
+        ///             
         /// </summary>
         public virtual Color Color { get; set; }
 
         /// <summary>
-        /// Gets or sets Direction.
+        /// Gets or sets the direction the databar is displayed.
         /// </summary>
         public virtual string Direction { get; set; }
 
         /// <summary>
-        /// Gets or sets MaxCfvo.
+        /// Get or set this DataBar's max value object.  Cannot set null or CFValueObject
+        ///    with type FormatConditionValueType.Min to it.
+        ///             
         /// </summary>
         public virtual ConditionalFormattingValue MaxCfvo { get; set; }
 
         /// <summary>
-        /// Gets or sets MaxLength.
+        /// Represents the max length of data bar .
         /// </summary>
         public virtual int? MaxLength { get; set; }
 
         /// <summary>
-        /// Gets or sets MinCfvo.
+        /// Get or set this DataBar's min value object.  Cannot set null or CFValueObject
+        ///   with type FormatConditionValueType.Max to it.
+        ///             
         /// </summary>
         public virtual ConditionalFormattingValue MinCfvo { get; set; }
 
         /// <summary>
-        /// Gets or sets MinLength.
+        /// Represents the min length of data bar .
+        ///             
         /// </summary>
         public virtual int? MinLength { get; set; }
 
         /// <summary>
-        /// Gets or sets NegativeBarFormat.
+        /// Gets the NegativeBarFormat object associated with a data bar conditional
+        ///     formatting rule.
         /// </summary>
         public virtual NegativeBarFormat NegativeBarFormat { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowValue.
+        /// Get or set the flag indicating whether to show the values of the cells on
+        ///   which this data bar is applied.  Default value is true.
+        ///             
         /// </summary>
         public virtual bool? ShowValue { get; set; }
 

@@ -47,14 +47,14 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetSparklineGroupRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="type"></param>
-        /// <param name="dataRange"></param>
-        /// <param name="isVertical"></param>
-        /// <param name="locationRange"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="type">Represents the sparkline types(Line/Column/Stacked).</param>
+        /// <param name="dataRange">Specifies the data range of the sparkline group.</param>
+        /// <param name="isVertical">Specifies whether to plot the sparklines from the data range by row or by column.</param>
+        /// <param name="locationRange">Specifies where the sparklines to be placed.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PutWorksheetSparklineGroupRequest(string name, string sheetName, string type, string dataRange, bool? isVertical, string locationRange, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -68,42 +68,42 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets type.
+        /// Represents the sparkline types(Line/Column/Stacked).
         /// </summary>
         public string type { get; set; }
 
         /// <summary>
-        /// Gets or sets dataRange.
+        /// Specifies the data range of the sparkline group.
         /// </summary>
         public string dataRange { get; set; }
 
         /// <summary>
-        /// Gets or sets isVertical.
+        /// Specifies whether to plot the sparklines from the data range by row or by column.
         /// </summary>
         public bool? isVertical { get; set; }
 
         /// <summary>
-        /// Gets or sets locationRange.
+        /// Specifies where the sparklines to be placed.
         /// </summary>
         public string locationRange { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

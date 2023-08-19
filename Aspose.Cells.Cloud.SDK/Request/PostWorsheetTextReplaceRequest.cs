@@ -47,12 +47,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorsheetTextReplaceRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="oldValue"></param>
-        /// <param name="newValue"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">Worksheet name.</param>
+        /// <param name="oldValue">The old text to replace.</param>
+        /// <param name="newValue">The new text to replace by.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PostWorsheetTextReplaceRequest(string name, string sheetName, string oldValue, string newValue, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -64,32 +64,32 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// Worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets oldValue.
+        /// The old text to replace.
         /// </summary>
         public string oldValue { get; set; }
 
         /// <summary>
-        /// Gets or sets newValue.
+        /// The new text to replace by.
         /// </summary>
         public string newValue { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

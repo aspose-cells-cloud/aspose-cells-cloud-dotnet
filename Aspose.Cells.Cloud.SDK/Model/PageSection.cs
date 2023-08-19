@@ -40,12 +40,13 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PageSection
     {
         /// <summary>
-        /// Gets or sets Section.
+        /// 0,1,2  left , middle ,right
         /// </summary>
         public virtual int? Section { get; set; }
 
         /// <summary>
-        /// Gets or sets Context.
+        /// page context script
+        ///             
         /// </summary>
         public virtual string Context { get; set; }
 
@@ -55,12 +56,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string Picture { get; set; }
 
         /// <summary>
-        /// Gets or sets FisrtPageContext.
+        /// fisrt page context script
         /// </summary>
         public virtual string FisrtPageContext { get; set; }
 
         /// <summary>
-        /// Gets or sets EvenPageContext.
+        /// Even page context script
         /// </summary>
         public virtual string EvenPageContext { get; set; }
 

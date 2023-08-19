@@ -47,17 +47,17 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetFilterTop10Request"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="range"></param>
-        /// <param name="fieldIndex"></param>
-        /// <param name="isTop"></param>
-        /// <param name="isPercent"></param>
-        /// <param name="itemCount"></param>
-        /// <param name="matchBlanks"></param>
-        /// <param name="refresh"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="range">Represents the range to which the specified AutoFilter applies.</param>
+        /// <param name="fieldIndex">The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0).</param>
+        /// <param name="isTop">Indicates whether filter from top or bottom</param>
+        /// <param name="isPercent">Indicates whether the items is percent or count</param>
+        /// <param name="itemCount">The item count</param>
+        /// <param name="matchBlanks">Match all blank or  not blank cell in the list.(true/false)</param>
+        /// <param name="refresh">If true, hide the filtered rows.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PutWorksheetFilterTop10Request(string name, string sheetName, string range, int? fieldIndex, bool? isTop, bool? isPercent, int? itemCount, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -74,57 +74,57 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets range.
+        /// Represents the range to which the specified AutoFilter applies.
         /// </summary>
         public string range { get; set; }
 
         /// <summary>
-        /// Gets or sets fieldIndex.
+        /// The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0).
         /// </summary>
         public int? fieldIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets isTop.
+        /// Indicates whether filter from top or bottom
         /// </summary>
         public bool? isTop { get; set; }
 
         /// <summary>
-        /// Gets or sets isPercent.
+        /// Indicates whether the items is percent or count
         /// </summary>
         public bool? isPercent { get; set; }
 
         /// <summary>
-        /// Gets or sets itemCount.
+        /// The item count
         /// </summary>
         public int? itemCount { get; set; }
 
         /// <summary>
-        /// Gets or sets matchBlanks.
+        /// Match all blank or  not blank cell in the list.(true/false)
         /// </summary>
         public bool? matchBlanks { get; set; }
 
         /// <summary>
-        /// Gets or sets refresh.
+        /// If true, hide the filtered rows.
         /// </summary>
         public bool? refresh { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// WorksheetMovingRequest.
+    /// Used by workbook moving requests.
     /// </summary>
     public class WorksheetMovingRequest
     {
         /// <summary>
-        /// Gets or sets DestinationWorksheet.
+        /// Destination worksheet name.  
         /// </summary>
         public virtual string DestinationWorksheet { get; set; }
 
         /// <summary>
-        /// Gets or sets Position.
+        /// Position to move. Can be BEFORE or AFTER.
         /// </summary>
         public virtual string Position { get; set; }
 

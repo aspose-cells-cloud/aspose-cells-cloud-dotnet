@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// WorkbookProtectionRequest.
+    /// Used by workbook protection requests.
     /// </summary>
     public class WorkbookProtectionRequest
     {
         /// <summary>
-        /// Gets or sets ProtectionType.
+        /// Protection type. Can be ALL, CONTENTS, NONE, OBJECTS, SCENARIOS, STRUCTURE, WINDOWS  
         /// </summary>
         public virtual string ProtectionType { get; set; }
 
         /// <summary>
-        /// Gets or sets Password.
+        /// Encription password.
         /// </summary>
         public virtual string Password { get; set; }
 

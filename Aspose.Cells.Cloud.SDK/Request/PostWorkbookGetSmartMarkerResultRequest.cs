@@ -47,12 +47,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorkbookGetSmartMarkerResultRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="xmlFile"></param>
-        /// <param name="folder"></param>
-        /// <param name="outPath"></param>
-        /// <param name="storageName"></param>
-        /// <param name="outStorageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="xmlFile">The xml file full path, if empty the data is read from request body.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="outPath">Path to save result</param>
+        /// <param name="storageName">Storage name.</param>
+        /// <param name="outStorageName">Storage name.</param>
         public PostWorkbookGetSmartMarkerResultRequest(string name, string xmlFile = null, string folder = null, string outPath = null, string storageName = null, string outStorageName = null)
         {
             this.name = name;
@@ -64,32 +64,32 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets xmlFile.
+        /// The xml file full path, if empty the data is read from request body.
         /// </summary>
         public string xmlFile { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets outPath.
+        /// Path to save result
         /// </summary>
         public string outPath { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 
         /// <summary>
-        /// Gets or sets outStorageName.
+        /// Storage name.
         /// </summary>
         public string outStorageName { get; set; }
 

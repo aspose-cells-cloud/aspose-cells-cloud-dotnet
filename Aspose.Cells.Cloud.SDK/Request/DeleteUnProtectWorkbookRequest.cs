@@ -47,10 +47,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteUnProtectWorkbookRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="protection"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="protection">Protection settings, only password can be specified.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public DeleteUnProtectWorkbookRequest(string name, WorkbookProtectionRequest protection, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -60,22 +60,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets protection.
+        /// Protection settings, only password can be specified.
         /// </summary>
         public WorkbookProtectionRequest protection { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

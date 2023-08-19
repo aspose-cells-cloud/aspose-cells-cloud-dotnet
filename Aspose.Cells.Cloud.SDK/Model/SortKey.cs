@@ -55,17 +55,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual List<string> CustomList { get; set; }
 
         /// <summary>
-        /// Gets or sets Order.
+        /// Indicates the order of sorting.
         /// </summary>
         public virtual string Order { get; set; }
 
         /// <summary>
-        /// Gets or sets Index.
+        /// Gets the sorted column index(absolute position, column A is 0, B is 1, ...).
         /// </summary>
         public virtual int? Index { get; set; }
 
         /// <summary>
-        /// Gets or sets Type.
+        /// Represents the type of sorting.
         /// </summary>
         public virtual string Type { get; set; }
 

@@ -47,15 +47,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetCellsRangeValueRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="namerange"></param>
-        /// <param name="firstRow"></param>
-        /// <param name="firstColumn"></param>
-        /// <param name="rowCount"></param>
-        /// <param name="columnCount"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="namerange">range name.</param>
+        /// <param name="firstRow">Gets the index of the first row of the range.</param>
+        /// <param name="firstColumn">Gets the index of the first columnn of the range.</param>
+        /// <param name="rowCount">Gets the count of rows in the range.</param>
+        /// <param name="columnCount">Gets the count of columns in the range.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public GetWorksheetCellsRangeValueRequest(string name, string sheetName, string namerange = null, int? firstRow = null, int? firstColumn = null, int? rowCount = null, int? columnCount = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -70,47 +70,47 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets namerange.
+        /// range name.
         /// </summary>
         public string namerange { get; set; }
 
         /// <summary>
-        /// Gets or sets firstRow.
+        /// Gets the index of the first row of the range.
         /// </summary>
         public int? firstRow { get; set; }
 
         /// <summary>
-        /// Gets or sets firstColumn.
+        /// Gets the index of the first columnn of the range.
         /// </summary>
         public int? firstColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets rowCount.
+        /// Gets the count of rows in the range.
         /// </summary>
         public int? rowCount { get; set; }
 
         /// <summary>
-        /// Gets or sets columnCount.
+        /// Gets the count of columns in the range.
         /// </summary>
         public int? columnCount { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

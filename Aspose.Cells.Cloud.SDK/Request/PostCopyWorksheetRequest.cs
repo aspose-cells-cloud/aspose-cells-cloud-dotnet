@@ -47,14 +47,14 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostCopyWorksheetRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="sourceSheet"></param>
-        /// <param name="options"></param>
-        /// <param name="sourceWorkbook"></param>
-        /// <param name="sourceFolder"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="sourceSheet">Source worksheet.</param>
+        /// <param name="options">Represents the copy options.</param>
+        /// <param name="sourceWorkbook">source Workbook.</param>
+        /// <param name="sourceFolder">Original workbook folder.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PostCopyWorksheetRequest(string name, string sheetName, string sourceSheet, CopyOptions options, string sourceWorkbook = null, string sourceFolder = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -68,42 +68,42 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets sourceSheet.
+        /// Source worksheet.
         /// </summary>
         public string sourceSheet { get; set; }
 
         /// <summary>
-        /// Gets or sets options.
+        /// Represents the copy options.
         /// </summary>
         public CopyOptions options { get; set; }
 
         /// <summary>
-        /// Gets or sets sourceWorkbook.
+        /// source Workbook.
         /// </summary>
         public string sourceWorkbook { get; set; }
 
         /// <summary>
-        /// Gets or sets sourceFolder.
+        /// Original workbook folder.
         /// </summary>
         public string sourceFolder { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

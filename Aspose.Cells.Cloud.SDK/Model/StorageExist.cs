@@ -35,12 +35,13 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// StorageExist.
+    /// Storage exists
     /// </summary>
     public class StorageExist
     {
         /// <summary>
-        /// Gets or sets Exists.
+        /// Shows that the storage exists.
+        ///             
         /// </summary>
         public virtual bool? Exists { get; set; }
 

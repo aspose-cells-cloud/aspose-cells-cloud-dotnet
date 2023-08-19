@@ -35,12 +35,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// SparklineGroups.
+    /// Encapsulates a collection of Aspose.Cells.Charts.SparklineGroup objects.
+    ///             
     /// </summary>
     public class SparklineGroups
     {
         /// <summary>
-        /// Gets or sets SparklineGroupList.
+        /// Encapsulates a collection of Aspose.Cells.Charts.SparklineGroup objects.
+        ///             
         /// </summary>
         public virtual IList<SparklineGroup> SparklineGroupList { get; set; }
 

@@ -35,22 +35,23 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Sparkline.
+    /// A sparkline represents a tiny chart or graphic in a worksheet cell that provides a visual representation of data.
+    ///             
     /// </summary>
     public class Sparkline
     {
         /// <summary>
-        /// Gets or sets Column.
+        /// Gets the column index of the sparkline.
         /// </summary>
         public virtual int? Column { get; set; }
 
         /// <summary>
-        /// Gets or sets DataRange.
+        /// Represents the data range of the sparkline.
         /// </summary>
         public virtual string DataRange { get; set; }
 
         /// <summary>
-        /// Gets or sets Row.
+        /// Gets the row index of the sparkline.
         /// </summary>
         public virtual int? Row { get; set; }
 

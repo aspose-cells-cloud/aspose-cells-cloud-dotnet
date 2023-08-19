@@ -35,32 +35,35 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// CopyOptions.
+    /// Represents the copy options.
     /// </summary>
     public class CopyOptions
     {
         /// <summary>
-        /// Gets or sets ColumnCharacterWidth.
+        /// Indicates whether copying column width in unit of characters.
         /// </summary>
         public virtual bool? ColumnCharacterWidth { get; set; }
 
         /// <summary>
-        /// Gets or sets CopyInvalidFormulasAsValues.
+        /// If the formula is not valid for the dest destination, only copy values.
         /// </summary>
         public virtual bool? CopyInvalidFormulasAsValues { get; set; }
 
         /// <summary>
-        /// Gets or sets CopyNames.
+        /// Indicates whether copying the names.
         /// </summary>
         public virtual bool? CopyNames { get; set; }
 
         /// <summary>
-        /// Gets or sets ExtendToAdjacentRange.
+        /// Indicates whether extend ranges when copying the range to adjacent range.
         /// </summary>
         public virtual bool? ExtendToAdjacentRange { get; set; }
 
         /// <summary>
-        /// Gets or sets ReferToDestinationSheet.
+        /// When copying the range in the same file and the chart refers to the source sheet,
+        ///   False means the copied chart's data source will not be changed. True means the
+        ///   copied chart's data source refers to the destination sheet.
+        ///             
         /// </summary>
         public virtual bool? ReferToDestinationSheet { get; set; }
 

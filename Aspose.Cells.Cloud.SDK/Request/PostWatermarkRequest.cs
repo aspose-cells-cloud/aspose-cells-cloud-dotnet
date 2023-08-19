@@ -49,7 +49,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         /// <param name="file">File to upload</param>
         /// <param name="text"></param>
-        /// <param name="color"></param>
+        /// <param name="color">e.g. #1032ff</param>
         /// <param name="password"></param>
         /// <param name="checkExcelRestriction"></param>
         public PostWatermarkRequest(IDictionary<string, System.IO.Stream> file, string text, string color, string password = null, bool? checkExcelRestriction = null)
@@ -72,7 +72,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string text { get; set; }
 
         /// <summary>
-        /// Gets or sets color.
+        /// e.g. #1032ff
         /// </summary>
         public string color { get; set; }
 

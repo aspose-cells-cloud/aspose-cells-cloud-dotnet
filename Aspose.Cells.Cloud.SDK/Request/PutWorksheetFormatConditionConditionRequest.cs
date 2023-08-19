@@ -47,15 +47,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetFormatConditionConditionRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="index"></param>
-        /// <param name="type"></param>
-        /// <param name="operatorType"></param>
-        /// <param name="formula1"></param>
-        /// <param name="formula2"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="index">Gets the Conditional Formatting element at the specified index.</param>
+        /// <param name="type">Format condition type(CellValue/Expression/ColorScale/DataBar/IconSet/Top10/UniqueValues/DuplicateValues/ContainsText/NotContainsText/BeginsWith/EndsWith/ContainsBlanks/NotContainsBlanks/ContainsErrors/NotContainsErrors/TimePeriod/AboveAverage).</param>
+        /// <param name="operatorType">Represents the operator type of conditional format and data validation(Between/Equal/GreaterThan/GreaterOrEqual/LessThan/None/NotBetween/NotEqual).</param>
+        /// <param name="formula1">The value or expression associated with conditional formatting.</param>
+        /// <param name="formula2">The value or expression associated with conditional formatting.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PutWorksheetFormatConditionConditionRequest(string name, string sheetName, int? index, string type, string operatorType, string formula1, string formula2, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -70,47 +70,47 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets index.
+        /// Gets the Conditional Formatting element at the specified index.
         /// </summary>
         public int? index { get; set; }
 
         /// <summary>
-        /// Gets or sets type.
+        /// Format condition type(CellValue/Expression/ColorScale/DataBar/IconSet/Top10/UniqueValues/DuplicateValues/ContainsText/NotContainsText/BeginsWith/EndsWith/ContainsBlanks/NotContainsBlanks/ContainsErrors/NotContainsErrors/TimePeriod/AboveAverage).
         /// </summary>
         public string type { get; set; }
 
         /// <summary>
-        /// Gets or sets operatorType.
+        /// Represents the operator type of conditional format and data validation(Between/Equal/GreaterThan/GreaterOrEqual/LessThan/None/NotBetween/NotEqual).
         /// </summary>
         public string operatorType { get; set; }
 
         /// <summary>
-        /// Gets or sets formula1.
+        /// The value or expression associated with conditional formatting.
         /// </summary>
         public string formula1 { get; set; }
 
         /// <summary>
-        /// Gets or sets formula2.
+        /// The value or expression associated with conditional formatting.
         /// </summary>
         public string formula2 { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

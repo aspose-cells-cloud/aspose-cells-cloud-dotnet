@@ -49,8 +49,8 @@ namespace Aspose.Cells.Cloud.SDK.Invoker
         /// <param name="requestHandlers"></param>
         internal ApiInvoker(List<IRequestHandler> requestHandlers)
         {
-            this.AddDefaultHeader(AsposeClientHeaderName, "Aspose.Cells Cloud SDK for Net");
-            this.AddDefaultHeader(AsposeClientVersionHeaderName, "23.3");
+            this.AddDefaultHeader(AsposeClientHeaderName, ".net sdk");
+            this.AddDefaultHeader(AsposeClientVersionHeaderName, "23.8");
             this.requestHandlers = requestHandlers;
         }
 
@@ -262,7 +262,7 @@ namespace Aspose.Cells.Cloud.SDK.Invoker
             var client = (HttpWebRequest)WebRequest.Create(path);
 
             client.Method = method;
-            client.Timeout =3600000 ;//600000
+            client.Timeout = 600000;
             byte[] formData = null;
             if (formParams.Count > 0)
             {

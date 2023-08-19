@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// DiscUsage.
+    /// Class for disc space information.
     /// </summary>
     public class DiscUsage
     {
         /// <summary>
-        /// Gets or sets UsedSize.
+        /// Application used disc space.
         /// </summary>
         public virtual long? UsedSize { get; set; }
 
         /// <summary>
-        /// Gets or sets TotalSize.
+        /// Total disc space.
         /// </summary>
         public virtual long? TotalSize { get; set; }
 

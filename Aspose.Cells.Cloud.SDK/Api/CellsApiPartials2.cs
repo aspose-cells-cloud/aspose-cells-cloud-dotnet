@@ -1380,7 +1380,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
         [Obsolete("GetWorkSheetHyperlinks")]
-        public HyperlinksResponse GetWorkSheetHyperlinks(GetWorkSheetHyperlinksRequest request)
+        public HyperlinksResponse GetWorkSheetHyperlinks(GetWorksheetHyperlinksRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<HyperlinksResponse>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -1398,7 +1398,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
         [Obsolete("GetWorkSheetHyperlink")]
-        public   HyperlinkResponse  GetWorkSheetHyperlink(GetWorkSheetHyperlinkRequest request)
+        public   HyperlinkResponse  GetWorkSheetHyperlink(GetWorksheetHyperlinkRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    HyperlinkResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -1416,7 +1416,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
         [Obsolete("DeleteWorkSheetHyperlink")]
-        public CellsCloudResponse DeleteWorkSheetHyperlink(DeleteWorkSheetHyperlinkRequest request)
+        public CellsCloudResponse DeleteWorkSheetHyperlink(DeleteWorksheetHyperlinkRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<CellsCloudResponse>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -1434,7 +1434,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
         [Obsolete("PostWorkSheetHyperlink")]
-        public CellsCloudResponse PostWorkSheetHyperlink(PostWorkSheetHyperlinkRequest request)
+        public CellsCloudResponse PostWorkSheetHyperlink(PostWorksheetHyperlinkRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<CellsCloudResponse>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -1451,7 +1451,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
         [Obsolete("PutWorkSheetHyperlink")]
-        public CellsCloudResponse PutWorkSheetHyperlink(PutWorkSheetHyperlinkRequest request)
+        public CellsCloudResponse PutWorkSheetHyperlink(PutWorksheetHyperlinkRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<CellsCloudResponse>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -1468,7 +1468,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
         [Obsolete("DeleteWorkSheetHyperlinks")]
-        public CellsCloudResponse DeleteWorkSheetHyperlinks(DeleteWorkSheetHyperlinksRequest request)
+        public CellsCloudResponse DeleteWorkSheetHyperlinks(DeleteWorksheetHyperlinksRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<CellsCloudResponse>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -1549,11 +1549,24 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
         /// <summary>
         /// </summary>
-        /// <param name="request">Request. <see cref="PostProtectRequest" /></param>
-        public   FilesResult  PostProtect(PostProtectRequest request)
+        /// <param name="request">Request. <see cref="PostLockRequest" /></param>
+        public FilesResult PostLock(PostLockRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
-            var result = invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            var result = invoker.InvokeApiAsync<FilesResult>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// Protect MS Excel and OpenDocument Spreadsheet by making them password protected.
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostProtectRequest" /></param>
+        public FilesResult PostProtect(PostProtectRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<FilesResult>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
             return result;
         }
 
@@ -1562,7 +1575,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <summary>
         /// </summary>
         /// <param name="request">Request. <see cref="PostSplitRequest" /></param>
-        public   FilesResult  PostSplit(PostSplitRequest request)
+        public FilesResult  PostSplit(PostSplitRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -2144,7 +2157,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
         [Obsolete("PostWorkSheetPicture")]
-        public CellsCloudResponse PostWorkSheetPicture(PostWorkSheetPictureRequest request)
+        public CellsCloudResponse PostWorkSheetPicture(PostWorksheetPictureRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<CellsCloudResponse>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -2173,7 +2186,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
         [Obsolete("DeleteWorkSheetPictures")]
-        public CellsCloudResponse DeleteWorkSheetPictures(DeleteWorkSheetPicturesRequest request)
+        public CellsCloudResponse DeleteWorkSheetPictures(DeleteWorksheetPicturesRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<CellsCloudResponse>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;

@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// PasswordRequest.
+    /// Used for password data transfer.
     /// </summary>
     public class PasswordRequest
     {

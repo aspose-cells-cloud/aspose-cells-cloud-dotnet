@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="PostWorkbookImortXMLRequest.cs">
+// <copyright company="Aspose" file="PostWorkbookImportXMLRequest.cs">
 //   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,7 +32,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.PostWorkbookImortXML" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.PostWorkbookImportXML" /> operation.
     /// </summary>
     public class PostWorkbookImportXMLRequest : IRequestModel
     {
@@ -47,14 +47,14 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorkbookImportXMLRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="importXMLRequest"></param>
+        /// <param name="name">The workbook(Excel/ODS/...) name.</param>
+        /// <param name="importXMLRequest">password</param>
         /// <param name="password"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
-        /// <param name="outPath"></param>
-        /// <param name="outStorageName"></param>
-        /// <param name="checkExcelRestriction"></param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
+        /// <param name="outPath">Output file path.</param>
+        /// <param name="outStorageName">Storage name for output file.</param>
+        /// <param name="checkExcelRestriction">check Excel restriction.</param>
         public PostWorkbookImportXMLRequest(string name, ImportXMLRequest importXMLRequest, string password = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null, bool? checkExcelRestriction = null)
         {
             this.name = name;
@@ -68,12 +68,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook(Excel/ODS/...) name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets importXMLRequest.
+        /// password
         /// </summary>
         public ImportXMLRequest importXMLRequest { get; set; }
 
@@ -83,27 +83,27 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string password { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 
         /// <summary>
-        /// Gets or sets outPath.
+        /// Output file path.
         /// </summary>
         public string outPath { get; set; }
 
         /// <summary>
-        /// Gets or sets outStorageName.
+        /// Storage name for output file.
         /// </summary>
         public string outStorageName { get; set; }
 
         /// <summary>
-        /// Gets or sets checkExcelRestriction.
+        /// check Excel restriction.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
 
@@ -127,13 +127,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'name' is set
             if (string.IsNullOrEmpty (this.name ))
             {
-                throw new ApiException(400, "Missing required parameter 'name' when calling PostWorkbookImortXML");
+                throw new ApiException(400, "Missing required parameter 'name' when calling PostWorkbookImportXML");
             }
 
             // verify the required parameter 'importXMLRequest' is set
             if ( this.importXMLRequest == null)
             {
-                throw new ApiException(400, "Missing required parameter 'importXMLRequest' when calling PostWorkbookImortXML");
+                throw new ApiException(400, "Missing required parameter 'importXMLRequest' when calling PostWorkbookImportXML");
             }
 
             var path = baseUri + "/cells/{name}/importxml";

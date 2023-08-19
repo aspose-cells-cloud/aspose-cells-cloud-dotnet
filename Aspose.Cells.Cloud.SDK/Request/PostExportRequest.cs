@@ -48,8 +48,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="PostExportRequest"/> class.
         /// </summary>
         /// <param name="file">File to upload</param>
-        /// <param name="objectType"></param>
-        /// <param name="format"></param>
+        /// <param name="objectType">workbook/worksheet/chart/comment/picture/shape/listobject/oleobject</param>
+        /// <param name="format">The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
         /// <param name="password"></param>
         /// <param name="checkExcelRestriction"></param>
         public PostExportRequest(IDictionary<string, System.IO.Stream> file, string objectType = null, string format = null, string password = null, bool? checkExcelRestriction = null)
@@ -67,12 +67,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public IDictionary<string, System.IO.Stream> File { get; set; }
 
         /// <summary>
-        /// Gets or sets objectType.
+        /// workbook/worksheet/chart/comment/picture/shape/listobject/oleobject
         /// </summary>
         public string objectType { get; set; }
 
         /// <summary>
-        /// Gets or sets format.
+        /// The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)
         /// </summary>
         public string format { get; set; }
 

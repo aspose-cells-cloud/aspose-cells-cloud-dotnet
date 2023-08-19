@@ -45,17 +45,18 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string SaveFormat { get; set; }
 
         /// <summary>
-        /// Gets or sets CachedFileFolder.
+        /// The cached file folder is used to store some large data.
         /// </summary>
         public virtual string CachedFileFolder { get; set; }
 
         /// <summary>
-        /// Gets or sets ClearData.
+        /// Make the workbook empty after saving the file.
         /// </summary>
         public virtual bool? ClearData { get; set; }
 
         /// <summary>
-        /// Gets or sets CreateDirectory.
+        /// If true and the directory does not exist, the directory will be automatically created before saving the file.
+        ///             
         /// </summary>
         public virtual bool? CreateDirectory { get; set; }
 
@@ -75,7 +76,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? SortNames { get; set; }
 
         /// <summary>
-        /// Gets or sets ValidateMergedAreas.
+        /// Indicates whether validate merged areas before saving the file.
+        /// The default value is false.
+        ///             
         /// </summary>
         public virtual bool? ValidateMergedAreas { get; set; }
 

@@ -40,137 +40,143 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class SparklineGroup
     {
         /// <summary>
-        /// Gets or sets DisplayHidden.
+        /// Indicates whether to show data in hidden rows and columns.
         /// </summary>
         public virtual bool? DisplayHidden { get; set; }
 
         /// <summary>
-        /// Gets or sets FirstPointColor.
+        /// Gets and sets the color of the first point of data in the sparkline group.
         /// </summary>
         public virtual CellsColor FirstPointColor { get; set; }
 
         /// <summary>
-        /// Gets or sets HighPointColor.
+        /// Gets and sets the color of the highest points of data in the sparkline group.
         /// </summary>
         public virtual CellsColor HighPointColor { get; set; }
 
         /// <summary>
-        /// Gets or sets HorizontalAxisColor.
+        /// Gets and sets the color of the horizontal axis in the sparkline group.
         /// </summary>
         public virtual CellsColor HorizontalAxisColor { get; set; }
 
         /// <summary>
-        /// Gets or sets HorizontalAxisDateRange.
+        /// Represents the range that contains the date values for the sparkline data.
         /// </summary>
         public virtual string HorizontalAxisDateRange { get; set; }
 
         /// <summary>
-        /// Gets or sets LastPointColor.
+        /// Gets and sets the color of the last point of data in the sparkline group.
         /// </summary>
         public virtual CellsColor LastPointColor { get; set; }
 
         /// <summary>
-        /// Gets or sets LineWeight.
+        /// Gets and sets the line weight in each line sparkline in the sparkline group,  in the unit of points.
+        ///             
         /// </summary>
         public virtual double? LineWeight { get; set; }
 
         /// <summary>
-        /// Gets or sets LowPointColor.
+        /// Gets and sets the color of the lowest points of data in the sparkline group.
         /// </summary>
         public virtual CellsColor LowPointColor { get; set; }
 
         /// <summary>
-        /// Gets or sets MarkersColor.
+        /// Gets and sets the color of points in each line sparkline in the sparkline group.
         /// </summary>
         public virtual CellsColor MarkersColor { get; set; }
 
         /// <summary>
-        /// Gets or sets NegativePointsColor.
+        /// Gets and sets the color of the negative values on the sparkline group.
+        ///             
         /// </summary>
         public virtual CellsColor NegativePointsColor { get; set; }
 
         /// <summary>
-        /// Gets or sets PlotEmptyCellsType.
+        /// Indicates how to plot empty cells.
         /// </summary>
         public virtual string PlotEmptyCellsType { get; set; }
 
         /// <summary>
-        /// Gets or sets PlotRightToLeft.
+        /// Indicates whether the plot data is right to left.
         /// </summary>
         public virtual bool? PlotRightToLeft { get; set; }
 
         /// <summary>
-        /// Gets or sets PresetStyle.
+        /// Gets and sets the preset style type of the sparkline group.
         /// </summary>
         public virtual string PresetStyle { get; set; }
 
         /// <summary>
-        /// Gets or sets SeriesColor.
+        /// Gets and sets the color of the sparklines in the sparkline group.
+        ///             
         /// </summary>
         public virtual CellsColor SeriesColor { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowFirstPoint.
+        /// Indicates whether to highlight the first point of data in the sparkline group.
         /// </summary>
         public virtual bool? ShowFirstPoint { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowHighPoint.
+        /// Indicates whether to highlight the highest points of data in the sparkline group.
         /// </summary>
         public virtual bool? ShowHighPoint { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowHorizontalAxis.
+        /// Indicates whether to show the sparkline horizontal axis. The horizontal axis   appears if the sparkline has data that crosses the zero axis.
+        ///             
         /// </summary>
         public virtual bool? ShowHorizontalAxis { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowLastPoint.
+        /// Indicates whether to highlight the last point of data in the sparkline group.
         /// </summary>
         public virtual bool? ShowLastPoint { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowLowPoint.
+        /// Indicates whether to highlight the lowest points of data in the sparkline group.
+        ///             
         /// </summary>
         public virtual bool? ShowLowPoint { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowMarkers.
+        /// Indicates whether to highlight each point in each line sparkline in the sparkline  group.
         /// </summary>
         public virtual bool? ShowMarkers { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowNegativePoints.
+        /// Indicates whether to highlight the negative values on the sparkline group with a different color or marker.
         /// </summary>
         public virtual bool? ShowNegativePoints { get; set; }
 
         /// <summary>
-        /// Gets or sets SparklineCollection.
+        /// Gets the Aspose.Cells.Charts.SparklineGroup.SparklineCollection object of the sparkline group.
         /// </summary>
         public virtual IList<Sparkline> SparklineCollection { get; set; }
 
         /// <summary>
-        /// Gets or sets Type.
+        /// Indicates the sparkline type of the sparkline group.
         /// </summary>
         public virtual string Type { get; set; }
 
         /// <summary>
-        /// Gets or sets VerticalAxisMaxValue.
+        /// Gets and sets the custom maximum value for the vertical axis.
         /// </summary>
         public virtual double? VerticalAxisMaxValue { get; set; }
 
         /// <summary>
-        /// Gets or sets VerticalAxisMaxValueType.
+        /// Represents the vertical axis maximum value type.
         /// </summary>
         public virtual string VerticalAxisMaxValueType { get; set; }
 
         /// <summary>
-        /// Gets or sets VerticalAxisMinValue.
+        /// Gets and sets the custom minimum value for the vertical axis.
         /// </summary>
         public virtual double? VerticalAxisMinValue { get; set; }
 
         /// <summary>
-        /// Gets or sets VerticalAxisMinValueType.
+        /// Represents the vertical axis minimum value type.
+        ///             
         /// </summary>
         public virtual string VerticalAxisMinValueType { get; set; }
 

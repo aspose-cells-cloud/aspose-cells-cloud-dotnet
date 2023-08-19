@@ -47,13 +47,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostPivotTableStyleRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="pivotTableIndex"></param>
-        /// <param name="style"></param>
-        /// <param name="needReCalculate"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="pivotTableIndex">Gets the PivotTable report by index.</param>
+        /// <param name="style">Style description in request body.</param>
+        /// <param name="needReCalculate">Whether the specific pivot table calculate(true/false).</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PostPivotTableStyleRequest(string name, string sheetName, int? pivotTableIndex, Style style, bool? needReCalculate = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -66,37 +66,37 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets pivotTableIndex.
+        /// Gets the PivotTable report by index.
         /// </summary>
         public int? pivotTableIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets style.
+        /// Style description in request body.
         /// </summary>
         public Style style { get; set; }
 
         /// <summary>
-        /// Gets or sets needReCalculate.
+        /// Whether the specific pivot table calculate(true/false).
         /// </summary>
         public bool? needReCalculate { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

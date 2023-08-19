@@ -47,12 +47,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorkbookCreateRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="templateFile"></param>
-        /// <param name="dataFile"></param>
-        /// <param name="isWriteOver"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The new document name.</param>
+        /// <param name="templateFile">The template file, if the data not provided default workbook is created.</param>
+        /// <param name="dataFile">Smart marker data file, if the data not provided the request content is checked for the data.</param>
+        /// <param name="isWriteOver">Specifies whether to write over targer file.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         /// <param name="checkExcelRestriction"></param>
         public PutWorkbookCreateRequest(string name, string templateFile = null, string dataFile = null, bool? isWriteOver = null, string folder = null, string storageName = null, bool? checkExcelRestriction = null)
         {
@@ -66,32 +66,32 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The new document name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets templateFile.
+        /// The template file, if the data not provided default workbook is created.
         /// </summary>
         public string templateFile { get; set; }
 
         /// <summary>
-        /// Gets or sets dataFile.
+        /// Smart marker data file, if the data not provided the request content is checked for the data.
         /// </summary>
         public string dataFile { get; set; }
 
         /// <summary>
-        /// Gets or sets isWriteOver.
+        /// Specifies whether to write over targer file.
         /// </summary>
         public bool? isWriteOver { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

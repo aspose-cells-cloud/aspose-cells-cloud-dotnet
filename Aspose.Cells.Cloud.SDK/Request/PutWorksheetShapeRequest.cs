@@ -47,18 +47,18 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetShapeRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
         /// <param name="shapeDTO"></param>
-        /// <param name="drawingType"></param>
-        /// <param name="upperLeftRow"></param>
-        /// <param name="upperLeftColumn"></param>
-        /// <param name="top"></param>
-        /// <param name="left"></param>
-        /// <param name="width"></param>
-        /// <param name="height"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="drawingType">shape object type</param>
+        /// <param name="upperLeftRow">Upper left row index.</param>
+        /// <param name="upperLeftColumn">Upper left column index.</param>
+        /// <param name="top">Represents the vertical offset of Spinner from its left row, in unit of pixel.</param>
+        /// <param name="left">Represents the horizontal offset of Spinner from its left column, in unit of pixel.</param>
+        /// <param name="width">Represents the height of Spinner, in unit of pixel.</param>
+        /// <param name="height">Represents the width of Spinner, in unit of pixel.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PutWorksheetShapeRequest(string name, string sheetName, Shape shapeDTO = null, string drawingType = null, int? upperLeftRow = null, int? upperLeftColumn = null, int? top = null, int? left = null, int? width = null, int? height = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -76,12 +76,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
@@ -91,47 +91,47 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public Shape shapeDTO { get; set; }
 
         /// <summary>
-        /// Gets or sets DrawingType.
+        /// shape object type
         /// </summary>
         public string DrawingType { get; set; }
 
         /// <summary>
-        /// Gets or sets upperLeftRow.
+        /// Upper left row index.
         /// </summary>
         public int? upperLeftRow { get; set; }
 
         /// <summary>
-        /// Gets or sets upperLeftColumn.
+        /// Upper left column index.
         /// </summary>
         public int? upperLeftColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets top.
+        /// Represents the vertical offset of Spinner from its left row, in unit of pixel.
         /// </summary>
         public int? top { get; set; }
 
         /// <summary>
-        /// Gets or sets left.
+        /// Represents the horizontal offset of Spinner from its left column, in unit of pixel.
         /// </summary>
         public int? left { get; set; }
 
         /// <summary>
-        /// Gets or sets width.
+        /// Represents the height of Spinner, in unit of pixel.
         /// </summary>
         public int? width { get; set; }
 
         /// <summary>
-        /// Gets or sets height.
+        /// Represents the width of Spinner, in unit of pixel.
         /// </summary>
         public int? height { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

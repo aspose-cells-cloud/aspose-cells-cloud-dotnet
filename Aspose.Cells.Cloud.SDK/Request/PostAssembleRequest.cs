@@ -49,7 +49,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         /// <param name="file">File to upload</param>
         /// <param name="datasource"></param>
-        /// <param name="format"></param>
+        /// <param name="format">The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
         /// <param name="password"></param>
         /// <param name="checkExcelRestriction"></param>
         public PostAssembleRequest(IDictionary<string, System.IO.Stream> file, string datasource, string format = null, string password = null, bool? checkExcelRestriction = null)
@@ -72,7 +72,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string datasource { get; set; }
 
         /// <summary>
-        /// Gets or sets format.
+        /// The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)
         /// </summary>
         public string format { get; set; }
 

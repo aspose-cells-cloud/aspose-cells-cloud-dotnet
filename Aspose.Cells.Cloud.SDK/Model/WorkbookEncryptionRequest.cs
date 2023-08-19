@@ -35,22 +35,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// WorkbookEncryptionRequest.
+    /// Used by workbook encryption/decryption requests.
     /// </summary>
     public class WorkbookEncryptionRequest
     {
         /// <summary>
-        /// Gets or sets EncryptionType.
+        /// Workbook encription type.
         /// </summary>
         public virtual string EncryptionType { get; set; }
 
         /// <summary>
-        /// Gets or sets KeyLength.
+        /// Encription key length.
         /// </summary>
         public virtual int? KeyLength { get; set; }
 
         /// <summary>
-        /// Gets or sets Password.
+        /// Encription password.
         /// </summary>
         public virtual string Password { get; set; }
 

@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ObjectExist.
+    /// Object exists
     /// </summary>
     public class ObjectExist
     {
         /// <summary>
-        /// Gets or sets Exists.
+        /// Indicates that the file or folder exists.
         /// </summary>
         public virtual bool? Exists { get; set; }
 
         /// <summary>
-        /// Gets or sets IsFolder.
+        /// True if it is a folder, false if it is a file.
         /// </summary>
         public virtual bool? IsFolder { get; set; }
 

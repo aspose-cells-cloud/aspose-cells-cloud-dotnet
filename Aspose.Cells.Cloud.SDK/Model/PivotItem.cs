@@ -45,17 +45,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual int? Index { get; set; }
 
         /// <summary>
-        /// Gets or sets IsHidden.
+        /// Represents whether the specified item visible.
         /// </summary>
         public virtual bool? IsHidden { get; set; }
 
         /// <summary>
-        /// Gets or sets Name.
+        /// Gets the name
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets Value.
+        /// Gets the value of the specified item.
         /// </summary>
         public virtual string Value { get; set; }
 

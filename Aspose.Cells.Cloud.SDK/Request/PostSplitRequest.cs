@@ -48,10 +48,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="PostSplitRequest"/> class.
         /// </summary>
         /// <param name="file">File to upload</param>
-        /// <param name="format"></param>
+        /// <param name="format">The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
         /// <param name="password"></param>
-        /// <param name="from"></param>
-        /// <param name="to"></param>
+        /// <param name="from">sheet index</param>
+        /// <param name="to">sheet index</param>
         /// <param name="checkExcelRestriction"></param>
         public PostSplitRequest(IDictionary<string, System.IO.Stream> file, string format, string password = null, int? from = null, int? to = null, bool? checkExcelRestriction = null)
         {
@@ -69,7 +69,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public IDictionary<string, System.IO.Stream> File { get; set; }
 
         /// <summary>
-        /// Gets or sets format.
+        /// The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)
         /// </summary>
         public string format { get; set; }
 
@@ -79,12 +79,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string password { get; set; }
 
         /// <summary>
-        /// Gets or sets from.
+        /// sheet index
         /// </summary>
         public int? from { get; set; }
 
         /// <summary>
-        /// Gets or sets to.
+        /// sheet index
         /// </summary>
         public int? to { get; set; }
 

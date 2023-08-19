@@ -47,11 +47,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorkbooksMergeRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="mergeWith"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
-        /// <param name="mergedStorageName"></param>
+        /// <param name="name">Workbook name.</param>
+        /// <param name="mergeWith">The workbook to merge with.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
+        /// <param name="mergedStorageName">Storage name.</param>
         public PostWorkbooksMergeRequest(string name, string mergeWith, string folder = null, string storageName = null, string mergedStorageName = null)
         {
             this.name = name;
@@ -62,27 +62,27 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// Workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets mergeWith.
+        /// The workbook to merge with.
         /// </summary>
         public string mergeWith { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 
         /// <summary>
-        /// Gets or sets mergedStorageName.
+        /// Storage name.
         /// </summary>
         public string mergedStorageName { get; set; }
 

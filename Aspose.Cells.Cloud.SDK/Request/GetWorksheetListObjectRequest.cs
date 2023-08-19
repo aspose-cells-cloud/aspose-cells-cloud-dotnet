@@ -47,12 +47,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetListObjectRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="listobjectindex"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="listobjectindex">list object index.</param>
         /// <param name="format"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public GetWorksheetListObjectRequest(string name, string sheetName, int? listobjectindex, string format = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -64,17 +64,17 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets listobjectindex.
+        /// list object index.
         /// </summary>
         public int? listobjectindex { get; set; }
 
@@ -84,12 +84,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string format { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

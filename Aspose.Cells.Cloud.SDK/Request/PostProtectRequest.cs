@@ -48,10 +48,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="PostProtectRequest"/> class.
         /// </summary>
         /// <param name="file">File to upload</param>
+        /// <param name="protectWorkbookRequst"></param>
         /// <param name="password"></param>
-        public PostProtectRequest(IDictionary<string, System.IO.Stream> file, string password)
+        public PostProtectRequest(IDictionary<string, System.IO.Stream> file, ProtectWorkbookRequst protectWorkbookRequst, string password = null)
         {
             this.File = file;
+            this.protectWorkbookRequst = protectWorkbookRequst;
             this.password = password;
         }
 
@@ -59,6 +61,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// File to upload
         /// </summary>
         public IDictionary<string, System.IO.Stream> File { get; set; }
+
+        /// <summary>
+        /// Gets or sets protectWorkbookRequst.
+        /// </summary>
+        public ProtectWorkbookRequst protectWorkbookRequst { get; set; }
 
         /// <summary>
         /// Gets or sets password.
@@ -88,10 +95,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 throw new ApiException(400, "Missing required parameter 'file' when calling PostProtect");
             }
 
-            // verify the required parameter 'password' is set
-            if (string.IsNullOrEmpty (this.password ))
+            // verify the required parameter 'protectWorkbookRequst' is set
+            if ( this.protectWorkbookRequst == null)
             {
-                throw new ApiException(400, "Missing required parameter 'password' when calling PostProtect");
+                throw new ApiException(400, "Missing required parameter 'protectWorkbookRequst' when calling PostProtect");
             }
 
             var path = baseUri + "/cells/protect";
@@ -100,7 +107,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
+            if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)
@@ -115,6 +122,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     localVarFileParams.Add(keyValueFileParam.Key, UrlHelper.ToFileInfo(keyValueFileParam.Value, keyValueFileParam.Key));
                 }
             }
+            localVarFileParams.Add("Body", UrlHelper.ToFileInfo( new System.IO.MemoryStream(System.Text.Encoding.ASCII.GetBytes(JsonConvert.SerializeObject(this.protectWorkbookRequst))),"protectWorkbookRequst"));
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

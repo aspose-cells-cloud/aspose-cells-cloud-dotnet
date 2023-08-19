@@ -47,12 +47,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostAutofitWorkbookRowsRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="startRow"></param>
-        /// <param name="endRow"></param>
-        /// <param name="onlyAuto"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="startRow">Start row.</param>
+        /// <param name="endRow">End row.</param>
+        /// <param name="onlyAuto">Only auto.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PostAutofitWorkbookRowsRequest(string name, int? startRow = null, int? endRow = null, bool? onlyAuto = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -64,32 +64,32 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets startRow.
+        /// Start row.
         /// </summary>
         public int? startRow { get; set; }
 
         /// <summary>
-        /// Gets or sets endRow.
+        /// End row.
         /// </summary>
         public int? endRow { get; set; }
 
         /// <summary>
-        /// Gets or sets onlyAuto.
+        /// Only auto.
         /// </summary>
         public bool? onlyAuto { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

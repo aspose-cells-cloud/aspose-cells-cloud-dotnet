@@ -47,12 +47,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetCellsRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="offest"></param>
-        /// <param name="count"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">Document name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="offest">Begginig offset.</param>
+        /// <param name="count">Maximum amount of cells in the response.</param>
+        /// <param name="folder">Document's folder name.</param>
+        /// <param name="storageName">Storage name.</param>
         public GetWorksheetCellsRequest(string name, string sheetName, int? offest = null, int? count = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -64,32 +64,32 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// Document name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets offest.
+        /// Begginig offset.
         /// </summary>
         public int? offest { get; set; }
 
         /// <summary>
-        /// Gets or sets count.
+        /// Maximum amount of cells in the response.
         /// </summary>
         public int? count { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Document's folder name.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

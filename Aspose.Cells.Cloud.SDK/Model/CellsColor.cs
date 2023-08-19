@@ -40,42 +40,43 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class CellsColor
     {
         /// <summary>
-        /// Gets or sets Color.
+        /// Gets and sets the RGB color.
         /// </summary>
         public virtual Color Color { get; set; }
 
         /// <summary>
-        /// Gets or sets ColorIndex.
+        /// Gets and sets the color index in the color palette. Only applies of indexed color.
         /// </summary>
         public virtual int? ColorIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets IsShapeColor.
+        /// Gets and set the color which should apply to cell or shape.
         /// </summary>
         public virtual bool? IsShapeColor { get; set; }
 
         /// <summary>
-        /// Gets or sets tint.
+        /// Set the tint of the shape color
         /// </summary>
         public virtual double? tint { get; set; }
 
         /// <summary>
-        /// Gets or sets Argb.
+        /// Gets and sets the color from a 32-bit ARGB value.
         /// </summary>
         public virtual int? Argb { get; set; }
 
         /// <summary>
-        /// Gets or sets ThemeColor.
+        /// Gets the theme color. Only applies for theme color type.
+        ///             
         /// </summary>
         public virtual ThemeColor ThemeColor { get; set; }
 
         /// <summary>
-        /// Gets or sets Type.
+        /// The color type.
         /// </summary>
         public virtual string Type { get; set; }
 
         /// <summary>
-        /// Gets or sets Transparency.
+        /// Gets and sets transparency as a value from 0.0 (opaque) through 1.0 (clear).
         /// </summary>
         public virtual double? Transparency { get; set; }
 

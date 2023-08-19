@@ -47,13 +47,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetCellsRangeMoveToRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="range"></param>
-        /// <param name="destRow"></param>
-        /// <param name="destColumn"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="range">range in worksheet </param>
+        /// <param name="destRow">The start row of the dest range.</param>
+        /// <param name="destColumn">The start column of the dest range.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PostWorksheetCellsRangeMoveToRequest(string name, string sheetName, Range range, int? destRow, int? destColumn, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -66,37 +66,37 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets range.
+        /// range in worksheet 
         /// </summary>
         public Range range { get; set; }
 
         /// <summary>
-        /// Gets or sets destRow.
+        /// The start row of the dest range.
         /// </summary>
         public int? destRow { get; set; }
 
         /// <summary>
-        /// Gets or sets destColumn.
+        /// The start column of the dest range.
         /// </summary>
         public int? destColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

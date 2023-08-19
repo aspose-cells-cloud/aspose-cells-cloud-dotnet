@@ -47,13 +47,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PutInsertNewWorksheetRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
         /// <param name="index"></param>
-        /// <param name="sheettype"></param>
+        /// <param name="sheettype">Specifies the worksheet type(VB/Worksheet/Chart/BIFF4Macro/InternationalMacro/Other/Dialog).</param>
         /// <param name="newsheetname"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PutInsertNewWorksheetRequest(string name, string sheetName, int? index, string sheettype, string newsheetname = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -66,12 +66,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
@@ -81,7 +81,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public int? index { get; set; }
 
         /// <summary>
-        /// Gets or sets sheettype.
+        /// Specifies the worksheet type(VB/Worksheet/Chart/BIFF4Macro/InternationalMacro/Other/Dialog).
         /// </summary>
         public string sheettype { get; set; }
 
@@ -91,12 +91,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string newsheetname { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

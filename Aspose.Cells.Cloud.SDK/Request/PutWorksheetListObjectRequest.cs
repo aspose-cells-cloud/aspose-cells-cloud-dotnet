@@ -47,17 +47,17 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetListObjectRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="startRow"></param>
-        /// <param name="startColumn"></param>
-        /// <param name="endRow"></param>
-        /// <param name="endColumn"></param>
-        /// <param name="folder"></param>
-        /// <param name="hasHeaders"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="startRow">The start row of the list range.</param>
+        /// <param name="startColumn">The start row of the list range.</param>
+        /// <param name="endRow">The start row of the list range.</param>
+        /// <param name="endColumn">The start row of the list range.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="hasHeaders">Whether the range has headers.</param>
         /// <param name="displayName"></param>
         /// <param name="showTotals"></param>
-        /// <param name="storageName"></param>
+        /// <param name="storageName">Storage name.</param>
         public PutWorksheetListObjectRequest(string name, string sheetName, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, bool? hasHeaders = null, string displayName = null, bool? showTotals = null, string storageName = null)
         {
             this.name = name;
@@ -74,42 +74,42 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets startRow.
+        /// The start row of the list range.
         /// </summary>
         public int? startRow { get; set; }
 
         /// <summary>
-        /// Gets or sets startColumn.
+        /// The start row of the list range.
         /// </summary>
         public int? startColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets endRow.
+        /// The start row of the list range.
         /// </summary>
         public int? endRow { get; set; }
 
         /// <summary>
-        /// Gets or sets endColumn.
+        /// The start row of the list range.
         /// </summary>
         public int? endColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets hasHeaders.
+        /// Whether the range has headers.
         /// </summary>
         public bool? hasHeaders { get; set; }
 
@@ -124,7 +124,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public bool? showTotals { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

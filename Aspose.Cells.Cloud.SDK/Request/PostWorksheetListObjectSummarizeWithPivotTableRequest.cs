@@ -47,13 +47,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetListObjectSummarizeWithPivotTableRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="listObjectIndex"></param>
-        /// <param name="destsheetName"></param>
-        /// <param name="createPivotTableRequest"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="listObjectIndex">List object index.</param>
+        /// <param name="destsheetName">Target work sheet name.</param>
+        /// <param name="createPivotTableRequest">Create pivot table request.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PostWorksheetListObjectSummarizeWithPivotTableRequest(string name, string sheetName, int? listObjectIndex, string destsheetName, CreatePivotTableRequest createPivotTableRequest, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -66,37 +66,37 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets listObjectIndex.
+        /// List object index.
         /// </summary>
         public int? listObjectIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets destsheetName.
+        /// Target work sheet name.
         /// </summary>
         public string destsheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets createPivotTableRequest.
+        /// Create pivot table request.
         /// </summary>
         public CreatePivotTableRequest createPivotTableRequest { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

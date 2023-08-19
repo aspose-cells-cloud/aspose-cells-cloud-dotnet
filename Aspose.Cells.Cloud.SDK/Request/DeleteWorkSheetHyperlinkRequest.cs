@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="DeleteWorkSheetHyperlinkRequest.cs">
+// <copyright company="Aspose" file="DeleteWorksheetHyperlinkRequest.cs">
 //   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -30,32 +30,14 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Collections.Generic;
     using System.Net;
     using System.Text.RegularExpressions;
-    using System;
-    [Obsolete("DeleteWorkSheetHyperlinkRequest")]
-    public class DeleteWorkSheetHyperlinkRequest : DeleteWorksheetHyperlinkRequest
-    {
-        public DeleteWorkSheetHyperlinkRequest()
-        {
 
-        }
-
-        public DeleteWorkSheetHyperlinkRequest(string name, string sheetName, int? hyperlinkIndex, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.hyperlinkIndex = hyperlinkIndex;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
-    }
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.DeleteWorkSheetHyperlink" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.DeleteWorksheetHyperlink" /> operation.
     /// </summary>
     public class DeleteWorksheetHyperlinkRequest : IRequestModel
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DeleteWorkSheetHyperlinkRequest"/> class.
+        /// Initializes a new instance of the <see cref="DeleteWorksheetHyperlinkRequest"/> class.
         /// </summary>
         public DeleteWorksheetHyperlinkRequest()
         {
@@ -63,13 +45,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DeleteWorkSheetHyperlinkRequest"/> class.
+        /// Initializes a new instance of the <see cref="DeleteWorksheetHyperlinkRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="hyperlinkIndex"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="hyperlinkIndex">The hyperlink's index.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public DeleteWorksheetHyperlinkRequest(string name, string sheetName, int? hyperlinkIndex, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -80,27 +62,27 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets hyperlinkIndex.
+        /// The hyperlink's index.
         /// </summary>
         public int? hyperlinkIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 
@@ -124,19 +106,19 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'name' is set
             if (string.IsNullOrEmpty (this.name ))
             {
-                throw new ApiException(400, "Missing required parameter 'name' when calling DeleteWorkSheetHyperlink");
+                throw new ApiException(400, "Missing required parameter 'name' when calling DeleteWorksheetHyperlink");
             }
 
             // verify the required parameter 'sheetName' is set
             if (string.IsNullOrEmpty (this.sheetName ))
             {
-                throw new ApiException(400, "Missing required parameter 'sheetName' when calling DeleteWorkSheetHyperlink");
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling DeleteWorksheetHyperlink");
             }
 
             // verify the required parameter 'hyperlinkIndex' is set
             if ( this.hyperlinkIndex == null)
             {
-                throw new ApiException(400, "Missing required parameter 'hyperlinkIndex' when calling DeleteWorkSheetHyperlink");
+                throw new ApiException(400, "Missing required parameter 'hyperlinkIndex' when calling DeleteWorksheetHyperlink");
             }
 
             var path = baseUri + "/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}";

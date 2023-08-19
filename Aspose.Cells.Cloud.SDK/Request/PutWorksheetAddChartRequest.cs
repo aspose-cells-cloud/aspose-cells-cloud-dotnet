@@ -47,24 +47,24 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetAddChartRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="chartType"></param>
-        /// <param name="upperLeftRow"></param>
-        /// <param name="upperLeftColumn"></param>
-        /// <param name="lowerRightRow"></param>
-        /// <param name="lowerRightColumn"></param>
-        /// <param name="area"></param>
-        /// <param name="isVertical"></param>
-        /// <param name="categoryData"></param>
-        /// <param name="isAutoGetSerialName"></param>
-        /// <param name="title"></param>
-        /// <param name="folder"></param>
-        /// <param name="dataLabels"></param>
-        /// <param name="dataLabelsPosition"></param>
-        /// <param name="pivotTableSheet"></param>
-        /// <param name="pivotTableName"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="chartType">Chart type, please refer property Type in chart resource.</param>
+        /// <param name="upperLeftRow">New chart upper left row.</param>
+        /// <param name="upperLeftColumn">New chart upperleft column.</param>
+        /// <param name="lowerRightRow">New chart lower right row.</param>
+        /// <param name="lowerRightColumn">New chart lower right column.</param>
+        /// <param name="area">Specifies values from which to plot the data series. </param>
+        /// <param name="isVertical">Specifies whether to plot the series from a range of cell values by row or by column. </param>
+        /// <param name="categoryData">Gets or sets the range of category Axis values. It can be a range of cells (such as, "d1:e10"). </param>
+        /// <param name="isAutoGetSerialName">Specifies whether auto update serial name. </param>
+        /// <param name="title">Specifies chart title name.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="dataLabels">Represents a specified chart's data label values display behavior. True displays the values. False to hide.</param>
+        /// <param name="dataLabelsPosition">Represents data label position(Center/InsideBase/InsideEnd/OutsideEnd/Above/Below/Left/Right/BestFit/Moved).</param>
+        /// <param name="pivotTableSheet">The source is the data of the pivotTable. If PivotSource is not empty ,the chart is PivotChart.</param>
+        /// <param name="pivotTableName">The source is the data of the pivotTable.</param>
+        /// <param name="storageName">Storage name.</param>
         public PutWorksheetAddChartRequest(string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, bool? dataLabels = null, string dataLabelsPosition = null, string pivotTableSheet = null, string pivotTableName = null, string storageName = null)
         {
             this.name = name;
@@ -88,92 +88,92 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets chartType.
+        /// Chart type, please refer property Type in chart resource.
         /// </summary>
         public string chartType { get; set; }
 
         /// <summary>
-        /// Gets or sets upperLeftRow.
+        /// New chart upper left row.
         /// </summary>
         public int? upperLeftRow { get; set; }
 
         /// <summary>
-        /// Gets or sets upperLeftColumn.
+        /// New chart upperleft column.
         /// </summary>
         public int? upperLeftColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets lowerRightRow.
+        /// New chart lower right row.
         /// </summary>
         public int? lowerRightRow { get; set; }
 
         /// <summary>
-        /// Gets or sets lowerRightColumn.
+        /// New chart lower right column.
         /// </summary>
         public int? lowerRightColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets area.
+        /// Specifies values from which to plot the data series. 
         /// </summary>
         public string area { get; set; }
 
         /// <summary>
-        /// Gets or sets isVertical.
+        /// Specifies whether to plot the series from a range of cell values by row or by column. 
         /// </summary>
         public bool? isVertical { get; set; }
 
         /// <summary>
-        /// Gets or sets categoryData.
+        /// Gets or sets the range of category Axis values. It can be a range of cells (such as, "d1:e10"). 
         /// </summary>
         public string categoryData { get; set; }
 
         /// <summary>
-        /// Gets or sets isAutoGetSerialName.
+        /// Specifies whether auto update serial name. 
         /// </summary>
         public bool? isAutoGetSerialName { get; set; }
 
         /// <summary>
-        /// Gets or sets title.
+        /// Specifies chart title name.
         /// </summary>
         public string title { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets dataLabels.
+        /// Represents a specified chart's data label values display behavior. True displays the values. False to hide.
         /// </summary>
         public bool? dataLabels { get; set; }
 
         /// <summary>
-        /// Gets or sets dataLabelsPosition.
+        /// Represents data label position(Center/InsideBase/InsideEnd/OutsideEnd/Above/Below/Left/Right/BestFit/Moved).
         /// </summary>
         public string dataLabelsPosition { get; set; }
 
         /// <summary>
-        /// Gets or sets pivotTableSheet.
+        /// The source is the data of the pivotTable. If PivotSource is not empty ,the chart is PivotChart.
         /// </summary>
         public string pivotTableSheet { get; set; }
 
         /// <summary>
-        /// Gets or sets pivotTableName.
+        /// The source is the data of the pivotTable.
         /// </summary>
         public string pivotTableName { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

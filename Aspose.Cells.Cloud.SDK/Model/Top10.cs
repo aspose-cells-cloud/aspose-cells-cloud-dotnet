@@ -35,22 +35,29 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Top10.
+    /// Describe the Top10 conditional formatting rule. This conditional formatting
+    ///     rule highlights cells whose values fall in the top N or bottom N bracket,
+    ///     as specified.
     /// </summary>
     public class Top10
     {
         /// <summary>
-        /// Gets or sets IsBottom.
+        /// Get or set the flag indicating whether a "top/bottom n" rule is a "bottom
+        ///    n" rule. '1' indicates 'bottom'.  Default value is false.
+        ///             
         /// </summary>
         public virtual bool? IsBottom { get; set; }
 
         /// <summary>
-        /// Gets or sets IsPercent.
+        /// Get or set the flag indicating whether a "top/bottom n" rule is a "top/bottom
+        ///     n percent" rule.  Default value is false.
         /// </summary>
         public virtual bool? IsPercent { get; set; }
 
         /// <summary>
-        /// Gets or sets Rank.
+        /// Get or set the value of "n" in a "top/bottom n" conditional formatting rule.
+        ///      If IsPercent is true, the value must between 0 and 100.  Otherwise it must
+        ///     between 0 and 1000.  Default value is 10.
         /// </summary>
         public virtual int? Rank { get; set; }
 

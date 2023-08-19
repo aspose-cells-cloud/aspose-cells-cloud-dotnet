@@ -47,14 +47,14 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetCellsRangeValueRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="range"></param>
-        /// <param name="value"></param>
-        /// <param name="isConverted"></param>
-        /// <param name="setStyle"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="range">range in worksheet </param>
+        /// <param name="value">Input value</param>
+        /// <param name="isConverted">True: converted to other data type if appropriate.</param>
+        /// <param name="setStyle">True: set the number format to cell's style when converting to other data type</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PostWorksheetCellsRangeValueRequest(string name, string sheetName, Range range, string value, bool? isConverted = null, bool? setStyle = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -68,42 +68,42 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets range.
+        /// range in worksheet 
         /// </summary>
         public Range range { get; set; }
 
         /// <summary>
-        /// Gets or sets Value.
+        /// Input value
         /// </summary>
         public string Value { get; set; }
 
         /// <summary>
-        /// Gets or sets isConverted.
+        /// True: converted to other data type if appropriate.
         /// </summary>
         public bool? isConverted { get; set; }
 
         /// <summary>
-        /// Gets or sets setStyle.
+        /// True: set the number format to cell's style when converting to other data type
         /// </summary>
         public bool? setStyle { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

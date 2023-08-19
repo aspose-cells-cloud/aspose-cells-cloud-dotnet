@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="PutWorkSheetHyperlinkRequest.cs">
+// <copyright company="Aspose" file="PutWorksheetHyperlinkRequest.cs">
 //   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -30,29 +30,9 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Collections.Generic;
     using System.Net;
     using System.Text.RegularExpressions;
-    using System;
-    [Obsolete("PutWorkSheetHyperlinkRequest")]
-    public class PutWorkSheetHyperlinkRequest : PutWorksheetHyperlinkRequest
-    {
-        public PutWorkSheetHyperlinkRequest()
-        {
 
-        }
-        public PutWorkSheetHyperlinkRequest(string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.firstRow = firstRow;
-            this.firstColumn = firstColumn;
-            this.totalRows = totalRows;
-            this.totalColumns = totalColumns;
-            this.address = address;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-    }
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.PutWorkSheetHyperlink" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.PutWorksheetHyperlink" /> operation.
     /// </summary>
     public class PutWorksheetHyperlinkRequest : IRequestModel
     {
@@ -67,15 +47,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetHyperlinkRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="firstRow"></param>
-        /// <param name="firstColumn"></param>
-        /// <param name="totalRows"></param>
-        /// <param name="totalColumns"></param>
-        /// <param name="address"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="firstRow">First row of the hyperlink range.</param>
+        /// <param name="firstColumn">First column of the hyperlink range.</param>
+        /// <param name="totalRows">Number of rows in this hyperlink range.</param>
+        /// <param name="totalColumns">Number of columns of this hyperlink range.</param>
+        /// <param name="address">Address of the hyperlink.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PutWorksheetHyperlinkRequest(string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -90,47 +70,47 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets firstRow.
+        /// First row of the hyperlink range.
         /// </summary>
         public int? firstRow { get; set; }
 
         /// <summary>
-        /// Gets or sets firstColumn.
+        /// First column of the hyperlink range.
         /// </summary>
         public int? firstColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets totalRows.
+        /// Number of rows in this hyperlink range.
         /// </summary>
         public int? totalRows { get; set; }
 
         /// <summary>
-        /// Gets or sets totalColumns.
+        /// Number of columns of this hyperlink range.
         /// </summary>
         public int? totalColumns { get; set; }
 
         /// <summary>
-        /// Gets or sets address.
+        /// Address of the hyperlink.
         /// </summary>
         public string address { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 
@@ -154,43 +134,43 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'name' is set
             if (string.IsNullOrEmpty (this.name ))
             {
-                throw new ApiException(400, "Missing required parameter 'name' when calling PutWorkSheetHyperlink");
+                throw new ApiException(400, "Missing required parameter 'name' when calling PutWorksheetHyperlink");
             }
 
             // verify the required parameter 'sheetName' is set
             if (string.IsNullOrEmpty (this.sheetName ))
             {
-                throw new ApiException(400, "Missing required parameter 'sheetName' when calling PutWorkSheetHyperlink");
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling PutWorksheetHyperlink");
             }
 
             // verify the required parameter 'firstRow' is set
             if ( this.firstRow == null)
             {
-                throw new ApiException(400, "Missing required parameter 'firstRow' when calling PutWorkSheetHyperlink");
+                throw new ApiException(400, "Missing required parameter 'firstRow' when calling PutWorksheetHyperlink");
             }
 
             // verify the required parameter 'firstColumn' is set
             if ( this.firstColumn == null)
             {
-                throw new ApiException(400, "Missing required parameter 'firstColumn' when calling PutWorkSheetHyperlink");
+                throw new ApiException(400, "Missing required parameter 'firstColumn' when calling PutWorksheetHyperlink");
             }
 
             // verify the required parameter 'totalRows' is set
             if ( this.totalRows == null)
             {
-                throw new ApiException(400, "Missing required parameter 'totalRows' when calling PutWorkSheetHyperlink");
+                throw new ApiException(400, "Missing required parameter 'totalRows' when calling PutWorksheetHyperlink");
             }
 
             // verify the required parameter 'totalColumns' is set
             if ( this.totalColumns == null)
             {
-                throw new ApiException(400, "Missing required parameter 'totalColumns' when calling PutWorkSheetHyperlink");
+                throw new ApiException(400, "Missing required parameter 'totalColumns' when calling PutWorksheetHyperlink");
             }
 
             // verify the required parameter 'address' is set
             if (string.IsNullOrEmpty (this.address ))
             {
-                throw new ApiException(400, "Missing required parameter 'address' when calling PutWorkSheetHyperlink");
+                throw new ApiException(400, "Missing required parameter 'address' when calling PutWorksheetHyperlink");
             }
 
             var path = baseUri + "/cells/{name}/worksheets/{sheetName}/hyperlinks";

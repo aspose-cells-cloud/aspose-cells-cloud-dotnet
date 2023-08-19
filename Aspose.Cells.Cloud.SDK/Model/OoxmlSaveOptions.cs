@@ -45,6 +45,26 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? ExportCellName { get; set; }
 
         /// <summary>
+        /// Gets or sets UpdateZoom.
+        /// </summary>
+        public virtual bool? UpdateZoom { get; set; }
+
+        /// <summary>
+        /// Gets or sets EnableZip64.
+        /// </summary>
+        public virtual bool? EnableZip64 { get; set; }
+
+        /// <summary>
+        /// Gets or sets EmbedOoxmlAsOleObject.
+        /// </summary>
+        public virtual bool? EmbedOoxmlAsOleObject { get; set; }
+
+        /// <summary>
+        /// Gets or sets CompressionType.
+        /// </summary>
+        public virtual string CompressionType { get; set; }
+
+        /// <summary>
         /// Gets or sets SaveFormat.
         /// </summary>
         public override string SaveFormat { get; set; }
@@ -93,6 +113,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
             var sb = new StringBuilder();
             sb.Append("class OoxmlSaveOptions {\n");
             sb.Append("  ExportCellName: ").Append(this.ExportCellName).Append("\n");
+            sb.Append("  UpdateZoom: ").Append(this.UpdateZoom).Append("\n");
+            sb.Append("  EnableZip64: ").Append(this.EnableZip64).Append("\n");
+            sb.Append("  EmbedOoxmlAsOleObject: ").Append(this.EmbedOoxmlAsOleObject).Append("\n");
+            sb.Append("  CompressionType: ").Append(this.CompressionType).Append("\n");
             sb.Append("  SaveFormat: ").Append(this.SaveFormat).Append("\n");
             sb.Append("  CachedFileFolder: ").Append(this.CachedFileFolder).Append("\n");
             sb.Append("  ClearData: ").Append(this.ClearData).Append("\n");

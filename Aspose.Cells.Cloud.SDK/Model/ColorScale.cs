@@ -35,37 +35,46 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ColorScale.
+    /// Describe the ColorScale conditional formatting rule. This conditional formatting
+    ///    rule creates a gradated color scale on the cells.
+    ///             
     /// </summary>
     public class ColorScale
     {
         /// <summary>
-        /// Gets or sets MaxCfvo.
+        /// Get or set this ColorScale's max value object.  Cannot set null or CFValueObject
+        ///     with type FormatConditionValueType.Min to it.
         /// </summary>
         public virtual ConditionalFormattingValue MaxCfvo { get; set; }
 
         /// <summary>
-        /// Gets or sets MaxColor.
+        /// Get or set the max value object's corresponding color.
         /// </summary>
         public virtual Color MaxColor { get; set; }
 
         /// <summary>
-        /// Gets or sets MidCfvo.
+        /// Get or set this ColorScale's mid value object.  Cannot set CFValueObject
+        ///    with type FormatConditionValueType.Max or FormatConditionValueType.Min to
+        ///    it.
+        ///             
         /// </summary>
         public virtual ConditionalFormattingValue MidCfvo { get; set; }
 
         /// <summary>
-        /// Gets or sets MidColor.
+        /// Get or set the mid value object's corresponding color.
+        ///             
         /// </summary>
         public virtual Color MidColor { get; set; }
 
         /// <summary>
-        /// Gets or sets MinCfvo.
+        /// Get or set this ColorScale's min value object.  Cannot set null or CFValueObject
+        ///    with type FormatConditionValueType.Max to it.
+        ///             
         /// </summary>
         public virtual ConditionalFormattingValue MinCfvo { get; set; }
 
         /// <summary>
-        /// Gets or sets MinColor.
+        /// Get or set the min value object's corresponding color.
         /// </summary>
         public virtual Color MinColor { get; set; }
 

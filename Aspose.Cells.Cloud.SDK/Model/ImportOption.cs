@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ImportOption
     {
         /// <summary>
-        /// Gets or sets DestinationWorksheet.
+        /// Destination worksheet name.  
         /// </summary>
         public virtual string DestinationWorksheet { get; set; }
 

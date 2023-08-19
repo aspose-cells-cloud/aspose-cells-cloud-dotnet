@@ -47,14 +47,14 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostCopyWorksheetRowsRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="sourceRowIndex"></param>
-        /// <param name="destinationRowIndex"></param>
-        /// <param name="rowNumber"></param>
-        /// <param name="worksheet"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="sourceRowIndex">Source row index</param>
+        /// <param name="destinationRowIndex">Destination row index</param>
+        /// <param name="rowNumber">The copied row number</param>
+        /// <param name="worksheet">The worksheet name.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PostCopyWorksheetRowsRequest(string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -68,42 +68,42 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets sourceRowIndex.
+        /// Source row index
         /// </summary>
         public int? sourceRowIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets destinationRowIndex.
+        /// Destination row index
         /// </summary>
         public int? destinationRowIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets rowNumber.
+        /// The copied row number
         /// </summary>
         public int? rowNumber { get; set; }
 
         /// <summary>
-        /// Gets or sets worksheet.
+        /// The worksheet name.
         /// </summary>
         public string worksheet { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

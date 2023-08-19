@@ -47,16 +47,16 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetAddPictureRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="picture"></param>
-        /// <param name="upperLeftRow"></param>
-        /// <param name="upperLeftColumn"></param>
-        /// <param name="lowerRightRow"></param>
-        /// <param name="lowerRightColumn"></param>
-        /// <param name="picturePath"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worsheet name.</param>
+        /// <param name="picture">Pictute object</param>
+        /// <param name="upperLeftRow">The image upper left row.</param>
+        /// <param name="upperLeftColumn">The image upper left column.</param>
+        /// <param name="lowerRightRow">The image low right row.</param>
+        /// <param name="lowerRightColumn">The image low right column.</param>
+        /// <param name="picturePath">The picture path, if not provided the picture data is inspected in the request body.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PutWorksheetAddPictureRequest(string name, string sheetName, Picture picture = null, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string picturePath = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -72,52 +72,52 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worsheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets picture.
+        /// Pictute object
         /// </summary>
         public Picture picture { get; set; }
 
         /// <summary>
-        /// Gets or sets upperLeftRow.
+        /// The image upper left row.
         /// </summary>
         public int? upperLeftRow { get; set; }
 
         /// <summary>
-        /// Gets or sets upperLeftColumn.
+        /// The image upper left column.
         /// </summary>
         public int? upperLeftColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets lowerRightRow.
+        /// The image low right row.
         /// </summary>
         public int? lowerRightRow { get; set; }
 
         /// <summary>
-        /// Gets or sets lowerRightColumn.
+        /// The image low right column.
         /// </summary>
         public int? lowerRightColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets picturePath.
+        /// The picture path, if not provided the picture data is inspected in the request body.
         /// </summary>
         public string picturePath { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

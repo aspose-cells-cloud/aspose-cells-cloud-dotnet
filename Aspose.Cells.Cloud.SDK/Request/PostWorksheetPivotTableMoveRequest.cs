@@ -47,14 +47,14 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetPivotTableMoveRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="pivotTableIndex"></param>
-        /// <param name="row"></param>
-        /// <param name="column"></param>
-        /// <param name="destCellName"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="pivotTableIndex">Gets the PivotTable report by index.</param>
+        /// <param name="row">Row index.</param>
+        /// <param name="column">Column index.</param>
+        /// <param name="destCellName">The dest cell name.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PostWorksheetPivotTableMoveRequest(string name, string sheetName, int? pivotTableIndex, int? row = null, int? column = null, string destCellName = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -68,42 +68,42 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets pivotTableIndex.
+        /// Gets the PivotTable report by index.
         /// </summary>
         public int? pivotTableIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets row.
+        /// Row index.
         /// </summary>
         public int? row { get; set; }
 
         /// <summary>
-        /// Gets or sets column.
+        /// Column index.
         /// </summary>
         public int? column { get; set; }
 
         /// <summary>
-        /// Gets or sets destCellName.
+        /// The dest cell name.
         /// </summary>
         public string destCellName { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

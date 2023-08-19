@@ -60,6 +60,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string TextToDisplay { get; set; }
 
         /// <summary>
+        /// Gets or sets LinkType.
+        /// </summary>
+        public virtual string LinkType { get; set; }
+
+        /// <summary>
         /// Gets or sets link.
         /// </summary>
         public override Link link { get; set; }
@@ -76,6 +81,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  Area: ").Append(this.Area).Append("\n");
             sb.Append("  ScreenTip: ").Append(this.ScreenTip).Append("\n");
             sb.Append("  TextToDisplay: ").Append(this.TextToDisplay).Append("\n");
+            sb.Append("  LinkType: ").Append(this.LinkType).Append("\n");
             sb.Append("  link: ").Append(this.link).Append("\n");
             sb.Append("}\n");
             return sb.ToString();

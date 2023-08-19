@@ -47,13 +47,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorkbookSaveAsRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="newfilename"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="newfilename">The new file name.</param>
         /// <param name="saveOptions"></param>
-        /// <param name="isAutoFitRows"></param>
-        /// <param name="isAutoFitColumns"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="isAutoFitRows">Indicates if Autofit rows in workbook.</param>
+        /// <param name="isAutoFitColumns">Indicates if Autofit columns in workbook.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         /// <param name="outStorageName"></param>
         /// <param name="checkExcelRestriction"></param>
         public PostWorkbookSaveAsRequest(string name, string newfilename, SaveOptions saveOptions = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, bool? checkExcelRestriction = null)
@@ -70,12 +70,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets newfilename.
+        /// The new file name.
         /// </summary>
         public string newfilename { get; set; }
 
@@ -85,22 +85,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public SaveOptions saveOptions { get; set; }
 
         /// <summary>
-        /// Gets or sets isAutoFitRows.
+        /// Indicates if Autofit rows in workbook.
         /// </summary>
         public bool? isAutoFitRows { get; set; }
 
         /// <summary>
-        /// Gets or sets isAutoFitColumns.
+        /// Indicates if Autofit columns in workbook.
         /// </summary>
         public bool? isAutoFitColumns { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

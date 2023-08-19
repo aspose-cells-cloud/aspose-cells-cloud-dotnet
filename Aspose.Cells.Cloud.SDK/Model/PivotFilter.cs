@@ -35,52 +35,56 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// PivotFilter.
+    /// Represents a PivotFilter in PivotFilter Collection.
     /// </summary>
     public class PivotFilter
     {
         /// <summary>
-        /// Gets or sets AutoFilter.
+        /// Gets the autofilter of the pivot filter.
         /// </summary>
         public virtual AutoFilter AutoFilter { get; set; }
 
         /// <summary>
-        /// Gets or sets EvaluationOrder.
+        /// Gets the Evaluation Order of the pivot filter.
         /// </summary>
         public virtual int? EvaluationOrder { get; set; }
 
         /// <summary>
-        /// Gets or sets FieldIndex.
+        /// Gets the field index of the pivot filter.
         /// </summary>
         public virtual int? FieldIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets FilterType.
+        /// Gets the autofilter type of the pivot filter.
         /// </summary>
         public virtual string FilterType { get; set; }
 
         /// <summary>
-        /// Gets or sets MeasureFldIndex.
+        /// Gets the measure field index of the pivot filter.
+        ///             
         /// </summary>
         public virtual int? MeasureFldIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets MemberPropertyFieldIndex.
+        /// Gets the member property field index of the pivot filter.
+        ///             
         /// </summary>
         public virtual int? MemberPropertyFieldIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets Name.
+        /// Gets the name of the pivot filter.
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets Value1.
+        /// Gets the string value1 of the label pivot filter.
+        ///             
         /// </summary>
         public virtual string Value1 { get; set; }
 
         /// <summary>
-        /// Gets or sets Value2.
+        /// Gets the string value2 of the label pivot filter.
+        ///             
         /// </summary>
         public virtual string Value2 { get; set; }
 

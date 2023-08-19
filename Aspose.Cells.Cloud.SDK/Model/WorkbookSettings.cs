@@ -50,32 +50,55 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? AutoRecover { get; set; }
 
         /// <summary>
-        /// Gets or sets BuildVersion.
+        /// Specifies the incremental public release of the application.
+        ///             
         /// </summary>
         public virtual string BuildVersion { get; set; }
 
         /// <summary>
-        /// Gets or sets CalcMode.
+        /// It specifies whether to calculate formulas manually, automatically or automatically
+        /// except for multiple table operations.
+        ///             
         /// </summary>
         public virtual string CalcMode { get; set; }
 
         /// <summary>
-        /// Gets or sets CalcStackSize.
+        /// Specifies the stack size for calculating cells recursively.  The large value
+        /// for this size will give better performance when there are lots of cells need
+        /// to be calculated recursively.  On the other hand, larger value will raise
+        /// the stakes of StackOverflowException.  If use gets StackOverflowException
+        /// when calculating formulas, this value should be decreased.
+        ///             
         /// </summary>
         public virtual int? CalcStackSize { get; set; }
 
         /// <summary>
-        /// Gets or sets CalculationId.
+        /// Specifies the version of the calculation engine used to calculate values
+        /// in the workbook.
+        ///             
         /// </summary>
         public virtual string CalculationId { get; set; }
 
         /// <summary>
-        /// Gets or sets CheckComptiliblity.
+        /// Indicates whether check comptiliblity when saving workbook.
+        ///             
+        ///              Remarks:
+        ///  The default value is true.
+        ///              
         /// </summary>
         public virtual bool? CheckComptiliblity { get; set; }
 
         /// <summary>
-        /// Gets or sets CheckExcelRestriction.
+        /// Whether check restriction of excel file when user modify cells related objects.
+        ///  For example, excel does not allow inputting string value longer than 32K.
+        ///  When you input a value longer than 32K such as by Cell.PutValue(string),
+        /// if this property is true, you will get an Exception.  If this property is
+        /// false, we will accept your input string value as the cell's value so that
+        /// later you can output the complete string value for other file formats such
+        /// as CSV.  However, if you have set such kind of value that is invalid for
+        /// excel file format, you should not save the workbook as excel file format
+        /// later. Otherwise there may be unexpected error for the generated excel file.
+        ///             
         /// </summary>
         public virtual bool? CheckExcelRestriction { get; set; }
 
@@ -85,7 +108,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? CrashSave { get; set; }
 
         /// <summary>
-        /// Gets or sets CreateCalcChain.
+        /// Indicates whether create calculated formulas chain.
+        ///             
         /// </summary>
         public virtual bool? CreateCalcChain { get; set; }
 
@@ -95,12 +119,15 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? DataExtractLoad { get; set; }
 
         /// <summary>
-        /// Gets or sets Date1904.
+        /// Gets or sets a value which represents if the workbook uses the 1904 date
+        /// system.
+        ///             
         /// </summary>
         public virtual bool? Date1904 { get; set; }
 
         /// <summary>
-        /// Gets or sets DisplayDrawingObjects.
+        /// Indicates whether and how to show objects in the workbook.
+        ///             
         /// </summary>
         public virtual string DisplayDrawingObjects { get; set; }
 
@@ -110,7 +137,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? EnableMacros { get; set; }
 
         /// <summary>
-        /// Gets or sets FirstVisibleTab.
+        /// Gets or sets the first visible worksheet tab.
+        ///             
         /// </summary>
         public virtual int? FirstVisibleTab { get; set; }
 
@@ -125,42 +153,61 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? IsDefaultEncrypted { get; set; }
 
         /// <summary>
-        /// Gets or sets IsHidden.
+        /// Indicates whether this workbook is hidden.
+        ///             
         /// </summary>
         public virtual bool? IsHidden { get; set; }
 
         /// <summary>
-        /// Gets or sets IsHScrollBarVisible.
+        /// Gets or sets a value indicating whether the generated spreadsheet will contain
+        /// a horizontal scroll bar.
+        ///             
+        ///              Remarks:
+        /// The default value is true.
+        ///              
         /// </summary>
         public virtual bool? IsHScrollBarVisible { get; set; }
 
         /// <summary>
-        /// Gets or sets IsMinimized.
+        /// Represents whether the generated spreadsheet will be opened Minimized.
+        ///             
         /// </summary>
         public virtual bool? IsMinimized { get; set; }
 
         /// <summary>
-        /// Gets or sets IsVScrollBarVisible.
+        /// Gets or sets a value indicating whether the generated spreadsheet will contain
+        /// a vertical scroll bar.
+        ///             
+        ///              Remarks:
+        /// The default value is true.
+        ///              
         /// </summary>
         public virtual bool? IsVScrollBarVisible { get; set; }
 
         /// <summary>
-        /// Gets or sets Iteration.
+        /// Indicates if Aspose.Cells will use iteration to resolve circular references.
+        ///             
         /// </summary>
         public virtual bool? Iteration { get; set; }
 
         /// <summary>
-        /// Gets or sets LanguageCode.
+        /// Gets or sets the user interface language of the Workbook version based on
+        /// CountryCode that has saved the file.
+        ///             
         /// </summary>
         public virtual string LanguageCode { get; set; }
 
         /// <summary>
-        /// Gets or sets MaxChange.
+        /// Returns or sets the maximum number of change that Microsoft Excel can use
+        /// to resolve a circular reference.
+        ///             
         /// </summary>
         public virtual double? MaxChange { get; set; }
 
         /// <summary>
-        /// Gets or sets MaxIteration.
+        /// Returns or sets the maximum number of iterations that Aspose.Cells can use
+        /// to resolve a circular reference.
+        ///             
         /// </summary>
         public virtual int? MaxIteration { get; set; }
 
@@ -180,32 +227,48 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string NumberGroupSeparator { get; set; }
 
         /// <summary>
-        /// Gets or sets ParsingFormulaOnOpen.
+        /// Indicates whether parsing the formula when reading the file.
+        ///             
+        ///              Remarks:
+        /// Only applies for Excel Xlsx,Xltx, Xltm,Xlsm file because the formulas in
+        /// the files are stored with a string formula.
+        ///              
         /// </summary>
         public virtual bool? ParsingFormulaOnOpen { get; set; }
 
         /// <summary>
-        /// Gets or sets PrecisionAsDisplayed.
+        /// True if calculations in this workbook will be done using only the precision
+        /// of the numbers as they're displayed
+        ///             
         /// </summary>
         public virtual bool? PrecisionAsDisplayed { get; set; }
 
         /// <summary>
-        /// Gets or sets RecalculateBeforeSave.
+        /// Indicates whether to recalculate before saving the document.
+        ///             
         /// </summary>
         public virtual bool? RecalculateBeforeSave { get; set; }
 
         /// <summary>
-        /// Gets or sets ReCalculateOnOpen.
+        /// Indicates whether re-calculate all formulas on opening file.
+        ///             
         /// </summary>
         public virtual bool? ReCalculateOnOpen { get; set; }
 
         /// <summary>
-        /// Gets or sets RecommendReadOnly.
+        /// Indicates if the Read Only Recommended option is selected.
+        ///             
         /// </summary>
         public virtual bool? RecommendReadOnly { get; set; }
 
         /// <summary>
-        /// Gets or sets Region.
+        /// Gets or sets the system regional settings based on CountryCode at the time
+        /// the file was saved.
+        ///             
+        ///              Remarks:
+        /// If you do not want to use the region saved in the file, please reset it after
+        /// reading the file.
+        ///              
         /// </summary>
         public virtual string Region { get; set; }
 
@@ -220,22 +283,36 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? RepairLoad { get; set; }
 
         /// <summary>
-        /// Gets or sets Shared.
+        /// Gets or sets a value that indicates whether the Workbook is shared.
+        ///             
+        ///              Remarks:
+        /// The default value is false.
+        ///              
         /// </summary>
         public virtual bool? Shared { get; set; }
 
         /// <summary>
-        /// Gets or sets SheetTabBarWidth.
+        /// Width of worksheet tab bar (in 1/1000 of window width).
+        ///             
         /// </summary>
         public virtual int? SheetTabBarWidth { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowTabs.
+        /// Get or sets a value whether the Workbook tabs are displayed.
+        ///             
+        ///              Remarks:
+        /// The default value is true.
+        ///              
         /// </summary>
         public virtual bool? ShowTabs { get; set; }
 
         /// <summary>
-        /// Gets or sets UpdateAdjacentCellsBorder.
+        /// Indicates whether update adjacent cells' border.
+        ///             
+        ///              Remarks:
+        /// The default value is true.  For example: the bottom border of the cell A1
+        /// is update, the top border of the cell A2 should be changed too.
+        ///              
         /// </summary>
         public virtual bool? UpdateAdjacentCellsBorder { get; set; }
 
@@ -245,22 +322,28 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string UpdateLinksType { get; set; }
 
         /// <summary>
-        /// Gets or sets WindowHeight.
+        /// The height of the window, in unit of point.
+        ///             
         /// </summary>
         public virtual double? WindowHeight { get; set; }
 
         /// <summary>
-        /// Gets or sets WindowLeft.
+        /// The distance from the left edge of the client area to the left edge of the
+        /// window, in unit of point.
+        ///             
         /// </summary>
         public virtual double? WindowLeft { get; set; }
 
         /// <summary>
-        /// Gets or sets WindowTop.
+        /// The distance from the top edge of the client area to the top edge of the
+        /// window, in unit of point.
+        ///             
         /// </summary>
         public virtual double? WindowTop { get; set; }
 
         /// <summary>
-        /// Gets or sets WindowWidth.
+        /// The width of the window, in unit of point.
+        ///             
         /// </summary>
         public virtual double? WindowWidth { get; set; }
 

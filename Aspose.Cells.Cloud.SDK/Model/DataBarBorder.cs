@@ -40,12 +40,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class DataBarBorder
     {
         /// <summary>
-        /// Gets or sets Color.
+        /// Gets or sets the border's color of data bars specified by a conditional formatting rule.
         /// </summary>
         public virtual Color Color { get; set; }
 
         /// <summary>
-        /// Gets or sets Type.
+        /// Gets or sets the border's type of data bars specified by a conditional formatting rule.
         /// </summary>
         public virtual string Type { get; set; }
 

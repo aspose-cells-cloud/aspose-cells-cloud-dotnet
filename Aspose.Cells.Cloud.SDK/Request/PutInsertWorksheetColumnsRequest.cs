@@ -47,13 +47,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PutInsertWorksheetColumnsRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="columnIndex"></param>
-        /// <param name="columns"></param>
-        /// <param name="updateReference"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="columnIndex">The column index.</param>
+        /// <param name="columns">The number of columns.</param>
+        /// <param name="updateReference">Indicates if references in other worksheets will be updated.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PutInsertWorksheetColumnsRequest(string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -66,37 +66,37 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets columnIndex.
+        /// The column index.
         /// </summary>
         public int? columnIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets columns.
+        /// The number of columns.
         /// </summary>
         public int? columns { get; set; }
 
         /// <summary>
-        /// Gets or sets updateReference.
+        /// Indicates if references in other worksheets will be updated.
         /// </summary>
         public bool? updateReference { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

@@ -47,14 +47,14 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetPivotTableRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="folder"></param>
-        /// <param name="sourceData"></param>
-        /// <param name="destCellName"></param>
-        /// <param name="tableName"></param>
-        /// <param name="useSameSource"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="sourceData">The data for the new PivotTable cache.</param>
+        /// <param name="destCellName">The cell in the upper-left corner of the PivotTable report's destination range.</param>
+        /// <param name="tableName">The name of the new PivotTable report.</param>
+        /// <param name="useSameSource">Indicates whether using same data source when another existing pivot table has used this data source. If the property is true, it will save memory.</param>
+        /// <param name="storageName">Storage name.</param>
         public PutWorksheetPivotTableRequest(string name, string sheetName, string folder = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null, string storageName = null)
         {
             this.name = name;
@@ -68,42 +68,42 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets sourceData.
+        /// The data for the new PivotTable cache.
         /// </summary>
         public string sourceData { get; set; }
 
         /// <summary>
-        /// Gets or sets destCellName.
+        /// The cell in the upper-left corner of the PivotTable report's destination range.
         /// </summary>
         public string destCellName { get; set; }
 
         /// <summary>
-        /// Gets or sets tableName.
+        /// The name of the new PivotTable report.
         /// </summary>
         public string tableName { get; set; }
 
         /// <summary>
-        /// Gets or sets useSameSource.
+        /// Indicates whether using same data source when another existing pivot table has used this data source. If the property is true, it will save memory.
         /// </summary>
         public bool? useSameSource { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

@@ -40,6 +40,31 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class HtmlSaveOptions : SaveOptions
     {
         /// <summary>
+        /// Gets or sets ExportPageHeaders.
+        /// </summary>
+        public virtual bool? ExportPageHeaders { get; set; }
+
+        /// <summary>
+        /// Gets or sets ExportPageFooters.
+        /// </summary>
+        public virtual bool? ExportPageFooters { get; set; }
+
+        /// <summary>
+        /// Gets or sets ExportRowColumnHeadings.
+        /// </summary>
+        public virtual bool? ExportRowColumnHeadings { get; set; }
+
+        /// <summary>
+        /// Gets or sets ShowAllSheets.
+        /// </summary>
+        public virtual bool? ShowAllSheets { get; set; }
+
+        /// <summary>
+        /// Gets or sets ImageOptions.
+        /// </summary>
+        public virtual ImageOrPrintOptions ImageOptions { get; set; }
+
+        /// <summary>
         /// Gets or sets SaveAsSingleFile.
         /// </summary>
         public virtual bool? SaveAsSingleFile { get; set; }
@@ -252,6 +277,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
             var sb = new StringBuilder();
             sb.Append("class HtmlSaveOptions {\n");
+            sb.Append("  ExportPageHeaders: ").Append(this.ExportPageHeaders).Append("\n");
+            sb.Append("  ExportPageFooters: ").Append(this.ExportPageFooters).Append("\n");
+            sb.Append("  ExportRowColumnHeadings: ").Append(this.ExportRowColumnHeadings).Append("\n");
+            sb.Append("  ShowAllSheets: ").Append(this.ShowAllSheets).Append("\n");
+            sb.Append("  ImageOptions: ").Append(this.ImageOptions).Append("\n");
             sb.Append("  SaveAsSingleFile: ").Append(this.SaveAsSingleFile).Append("\n");
             sb.Append("  ExportHiddenWorksheet: ").Append(this.ExportHiddenWorksheet).Append("\n");
             sb.Append("  ExportGridLines: ").Append(this.ExportGridLines).Append("\n");

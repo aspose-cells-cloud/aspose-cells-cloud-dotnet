@@ -47,13 +47,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostUnhideWorksheetRowsRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="startrow"></param>
-        /// <param name="totalRows"></param>
-        /// <param name="height"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="startrow">The begin row index to be operated.</param>
+        /// <param name="totalRows">Number of rows to be operated.</param>
+        /// <param name="height">The new row height.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PostUnhideWorksheetRowsRequest(string name, string sheetName, int? startrow, int? totalRows, double? height = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -66,37 +66,37 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets startrow.
+        /// The begin row index to be operated.
         /// </summary>
         public int? startrow { get; set; }
 
         /// <summary>
-        /// Gets or sets totalRows.
+        /// Number of rows to be operated.
         /// </summary>
         public int? totalRows { get; set; }
 
         /// <summary>
-        /// Gets or sets height.
+        /// The new row height.
         /// </summary>
         public double? height { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

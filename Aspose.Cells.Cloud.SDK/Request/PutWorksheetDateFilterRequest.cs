@@ -47,21 +47,21 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetDateFilterRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="range"></param>
-        /// <param name="fieldIndex"></param>
-        /// <param name="dateTimeGroupingType"></param>
-        /// <param name="year"></param>
-        /// <param name="month"></param>
-        /// <param name="day"></param>
-        /// <param name="hour"></param>
-        /// <param name="minute"></param>
-        /// <param name="second"></param>
-        /// <param name="matchBlanks"></param>
-        /// <param name="refresh"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="range">Represents the range to which the specified AutoFilter applies.</param>
+        /// <param name="fieldIndex">The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0).</param>
+        /// <param name="dateTimeGroupingType">Specifies how to group dateTime values(Day,Hour,Minute,Month,Second,Year).</param>
+        /// <param name="year">The year.</param>
+        /// <param name="month">The month.</param>
+        /// <param name="day">The day.</param>
+        /// <param name="hour">The hour.</param>
+        /// <param name="minute">The minute.</param>
+        /// <param name="second">The second.</param>
+        /// <param name="matchBlanks">Match all blank or not blank cell in the list.(true/false)</param>
+        /// <param name="refresh">If true, hide the filtered rows.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PutWorksheetDateFilterRequest(string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -82,77 +82,77 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets range.
+        /// Represents the range to which the specified AutoFilter applies.
         /// </summary>
         public string range { get; set; }
 
         /// <summary>
-        /// Gets or sets fieldIndex.
+        /// The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0).
         /// </summary>
         public int? fieldIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets dateTimeGroupingType.
+        /// Specifies how to group dateTime values(Day,Hour,Minute,Month,Second,Year).
         /// </summary>
         public string dateTimeGroupingType { get; set; }
 
         /// <summary>
-        /// Gets or sets year.
+        /// The year.
         /// </summary>
         public int? year { get; set; }
 
         /// <summary>
-        /// Gets or sets month.
+        /// The month.
         /// </summary>
         public int? month { get; set; }
 
         /// <summary>
-        /// Gets or sets day.
+        /// The day.
         /// </summary>
         public int? day { get; set; }
 
         /// <summary>
-        /// Gets or sets hour.
+        /// The hour.
         /// </summary>
         public int? hour { get; set; }
 
         /// <summary>
-        /// Gets or sets minute.
+        /// The minute.
         /// </summary>
         public int? minute { get; set; }
 
         /// <summary>
-        /// Gets or sets second.
+        /// The second.
         /// </summary>
         public int? second { get; set; }
 
         /// <summary>
-        /// Gets or sets matchBlanks.
+        /// Match all blank or not blank cell in the list.(true/false)
         /// </summary>
         public bool? matchBlanks { get; set; }
 
         /// <summary>
-        /// Gets or sets refresh.
+        /// If true, hide the filtered rows.
         /// </summary>
         public bool? refresh { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

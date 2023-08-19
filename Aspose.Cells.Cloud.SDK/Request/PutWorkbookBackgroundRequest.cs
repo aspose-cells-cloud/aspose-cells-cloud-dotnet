@@ -47,10 +47,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorkbookBackgroundRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="picPath"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="picPath">picture full path.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         /// <param name="file">File to upload</param>
         public PutWorkbookBackgroundRequest(string name, string picPath = null, string folder = null, string storageName = null, IDictionary<string, System.IO.Stream> file = null)
         {
@@ -62,22 +62,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets picPath.
+        /// picture full path.
         /// </summary>
         public string picPath { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

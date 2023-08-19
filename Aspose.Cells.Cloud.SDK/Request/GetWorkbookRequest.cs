@@ -47,15 +47,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorkbookRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="format"></param>
-        /// <param name="password"></param>
-        /// <param name="isAutoFit"></param>
-        /// <param name="onlySaveTable"></param>
-        /// <param name="folder"></param>
-        /// <param name="outPath"></param>
-        /// <param name="storageName"></param>
-        /// <param name="outStorageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="format">The conversion format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).</param>
+        /// <param name="password">The excel password.</param>
+        /// <param name="isAutoFit">Specifies whether set workbook rows to be autofit.</param>
+        /// <param name="onlySaveTable">Specifies whether only save table data.Only use pdf to excel.</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="outPath">Path to save result</param>
+        /// <param name="storageName">Storage name.</param>
+        /// <param name="outStorageName">Storage name.</param>
         /// <param name="checkExcelRestriction"></param>
         public GetWorkbookRequest(string name, string format = null, string password = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string outPath = null, string storageName = null, string outStorageName = null, bool? checkExcelRestriction = null)
         {
@@ -72,47 +72,47 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets format.
+        /// The conversion format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).
         /// </summary>
         public string format { get; set; }
 
         /// <summary>
-        /// Gets or sets password.
+        /// The excel password.
         /// </summary>
         public string password { get; set; }
 
         /// <summary>
-        /// Gets or sets isAutoFit.
+        /// Specifies whether set workbook rows to be autofit.
         /// </summary>
         public bool? isAutoFit { get; set; }
 
         /// <summary>
-        /// Gets or sets onlySaveTable.
+        /// Specifies whether only save table data.Only use pdf to excel.
         /// </summary>
         public bool? onlySaveTable { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets outPath.
+        /// Path to save result
         /// </summary>
         public string outPath { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 
         /// <summary>
-        /// Gets or sets outStorageName.
+        /// Storage name.
         /// </summary>
         public string outStorageName { get; set; }
 

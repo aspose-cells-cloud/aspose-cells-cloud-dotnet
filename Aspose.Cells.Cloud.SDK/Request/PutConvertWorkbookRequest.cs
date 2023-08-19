@@ -48,10 +48,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="PutConvertWorkbookRequest"/> class.
         /// </summary>
         /// <param name="file">File to upload</param>
-        /// <param name="format"></param>
-        /// <param name="password"></param>
-        /// <param name="outPath"></param>
-        /// <param name="storageName"></param>
+        /// <param name="format">The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).</param>
+        /// <param name="password">The workbook password.</param>
+        /// <param name="outPath">Path to save result</param>
+        /// <param name="storageName">Storage name.</param>
         /// <param name="checkExcelRestriction"></param>
         /// <param name="streamFormat"></param>
         public PutConvertWorkbookRequest(IDictionary<string, System.IO.Stream> file, string format = null, string password = null, string outPath = null, string storageName = null, bool? checkExcelRestriction = null, string streamFormat = null)
@@ -71,22 +71,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public IDictionary<string, System.IO.Stream> File { get; set; }
 
         /// <summary>
-        /// Gets or sets format.
+        /// The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).
         /// </summary>
         public string format { get; set; }
 
         /// <summary>
-        /// Gets or sets password.
+        /// The workbook password.
         /// </summary>
         public string password { get; set; }
 
         /// <summary>
-        /// Gets or sets outPath.
+        /// Path to save result
         /// </summary>
         public string outPath { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

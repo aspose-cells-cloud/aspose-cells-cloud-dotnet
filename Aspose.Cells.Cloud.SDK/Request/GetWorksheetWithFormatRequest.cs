@@ -47,15 +47,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetWithFormatRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="format"></param>
-        /// <param name="verticalResolution"></param>
-        /// <param name="horizontalResolution"></param>
-        /// <param name="area"></param>
-        /// <param name="pageIndex"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="format">Export format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).</param>
+        /// <param name="verticalResolution">Image vertical resolution.</param>
+        /// <param name="horizontalResolution">Image horizontal resolution.</param>
+        /// <param name="area">Represents the range to be printed.</param>
+        /// <param name="pageIndex">Represents the page to be printed</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public GetWorksheetWithFormatRequest(string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string area = null, int? pageIndex = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -70,47 +70,47 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets format.
+        /// Export format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).
         /// </summary>
         public string format { get; set; }
 
         /// <summary>
-        /// Gets or sets verticalResolution.
+        /// Image vertical resolution.
         /// </summary>
         public int? verticalResolution { get; set; }
 
         /// <summary>
-        /// Gets or sets horizontalResolution.
+        /// Image horizontal resolution.
         /// </summary>
         public int? horizontalResolution { get; set; }
 
         /// <summary>
-        /// Gets or sets area.
+        /// Represents the range to be printed.
         /// </summary>
         public string area { get; set; }
 
         /// <summary>
-        /// Gets or sets pageIndex.
+        /// Represents the page to be printed
         /// </summary>
         public int? pageIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

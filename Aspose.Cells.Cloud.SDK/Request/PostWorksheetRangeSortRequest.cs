@@ -47,12 +47,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetRangeSortRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="cellArea"></param>
-        /// <param name="dataSorter"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="cellArea">The area needed to sort.</param>
+        /// <param name="dataSorter">DataSorter with sorting settings.</param>
+        /// <param name="folder">The workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PostWorksheetRangeSortRequest(string name, string sheetName, string cellArea, DataSorter dataSorter, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -64,32 +64,32 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets cellArea.
+        /// The area needed to sort.
         /// </summary>
         public string cellArea { get; set; }
 
         /// <summary>
-        /// Gets or sets dataSorter.
+        /// DataSorter with sorting settings.
         /// </summary>
         public DataSorter dataSorter { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// The workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

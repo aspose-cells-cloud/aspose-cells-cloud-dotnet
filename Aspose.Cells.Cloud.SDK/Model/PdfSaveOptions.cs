@@ -40,6 +40,51 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PdfSaveOptions : SaveOptions
     {
         /// <summary>
+        /// Gets or sets DisplayDocTitle.
+        /// </summary>
+        public virtual bool? DisplayDocTitle { get; set; }
+
+        /// <summary>
+        /// Gets or sets ExportDocumentStructure.
+        /// </summary>
+        public virtual bool? ExportDocumentStructure { get; set; }
+
+        /// <summary>
+        /// Gets or sets EmfRenderSetting.
+        /// </summary>
+        public virtual string EmfRenderSetting { get; set; }
+
+        /// <summary>
+        /// Gets or sets CustomPropertiesExport.
+        /// </summary>
+        public virtual string CustomPropertiesExport { get; set; }
+
+        /// <summary>
+        /// Gets or sets OptimizationType.
+        /// </summary>
+        public virtual string OptimizationType { get; set; }
+
+        /// <summary>
+        /// Gets or sets Producer.
+        /// </summary>
+        public virtual string Producer { get; set; }
+
+        /// <summary>
+        /// Gets or sets PdfCompression.
+        /// </summary>
+        public virtual string PdfCompression { get; set; }
+
+        /// <summary>
+        /// Gets or sets FontEncoding.
+        /// </summary>
+        public virtual string FontEncoding { get; set; }
+
+        /// <summary>
+        /// Gets or sets Watermark.
+        /// </summary>
+        public virtual RenderingWatermark Watermark { get; set; }
+
+        /// <summary>
         /// Gets or sets CalculateFormula.
         /// </summary>
         public virtual bool? CalculateFormula { get; set; }
@@ -137,6 +182,15 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
             var sb = new StringBuilder();
             sb.Append("class PdfSaveOptions {\n");
+            sb.Append("  DisplayDocTitle: ").Append(this.DisplayDocTitle).Append("\n");
+            sb.Append("  ExportDocumentStructure: ").Append(this.ExportDocumentStructure).Append("\n");
+            sb.Append("  EmfRenderSetting: ").Append(this.EmfRenderSetting).Append("\n");
+            sb.Append("  CustomPropertiesExport: ").Append(this.CustomPropertiesExport).Append("\n");
+            sb.Append("  OptimizationType: ").Append(this.OptimizationType).Append("\n");
+            sb.Append("  Producer: ").Append(this.Producer).Append("\n");
+            sb.Append("  PdfCompression: ").Append(this.PdfCompression).Append("\n");
+            sb.Append("  FontEncoding: ").Append(this.FontEncoding).Append("\n");
+            sb.Append("  Watermark: ").Append(this.Watermark).Append("\n");
             sb.Append("  CalculateFormula: ").Append(this.CalculateFormula).Append("\n");
             sb.Append("  CheckFontCompatibility: ").Append(this.CheckFontCompatibility).Append("\n");
             sb.Append("  Compliance: ").Append(this.Compliance).Append("\n");

@@ -35,27 +35,34 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// NegativeBarFormat.
+    /// Represents the color settings of the data bars for negative values that are
+    ///    defined by a data bar conditional formating rule.
+    ///             
     /// </summary>
     public class NegativeBarFormat
     {
         /// <summary>
-        /// Gets or sets BorderColor.
+        /// Gets or sets a FormatColor object that you can use to specify the border
+        ///    color for negative data bars.
+        ///             
         /// </summary>
         public virtual Color BorderColor { get; set; }
 
         /// <summary>
-        /// Gets or sets BorderColorType.
+        /// Gets whether to use the same border color as positive data bars.
+        ///             
         /// </summary>
         public virtual string BorderColorType { get; set; }
 
         /// <summary>
-        /// Gets or sets Color.
+        /// Gets or sets a FormatColor object that you can use to specify the fill color
+        ///    for negative data bars.
+        ///             
         /// </summary>
         public virtual Color Color { get; set; }
 
         /// <summary>
-        /// Gets or sets ColorType.
+        /// Gets or sets whether to use the same fill color as positive data bars.
         /// </summary>
         public virtual string ColorType { get; set; }
 

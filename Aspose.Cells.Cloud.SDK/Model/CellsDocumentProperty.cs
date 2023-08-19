@@ -40,32 +40,36 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class CellsDocumentProperty
     {
         /// <summary>
-        /// Gets or sets Name.
+        /// Returns the name of the property.
+        ///             
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets Value.
+        /// Gets or sets the value of the property.
         /// </summary>
         public virtual string Value { get; set; }
 
         /// <summary>
-        /// Gets or sets IsLinkedToContent.
+        /// Indicates whether this property is linked to content
         /// </summary>
         public virtual string IsLinkedToContent { get; set; }
 
         /// <summary>
-        /// Gets or sets Source.
+        /// The linked content source.
         /// </summary>
         public virtual string Source { get; set; }
 
         /// <summary>
-        /// Gets or sets Type.
+        /// Gets the data type of the property.
+        ///             
         /// </summary>
         public virtual string Type { get; set; }
 
         /// <summary>
-        /// Gets or sets IsGeneratedName.
+        /// Returns true if this property does not have a name in the OLE2 storage and a 
+        ///  unique name was generated only for the public API.
+        ///             
         /// </summary>
         public virtual string IsGeneratedName { get; set; }
 

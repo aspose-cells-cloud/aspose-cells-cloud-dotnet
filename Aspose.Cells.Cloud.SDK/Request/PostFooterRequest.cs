@@ -47,13 +47,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostFooterRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="section"></param>
-        /// <param name="script"></param>
-        /// <param name="isFirstPage"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="section">0:Left Section. 1:Center Section 2:Right Section</param>
+        /// <param name="script">Header format script.</param>
+        /// <param name="isFirstPage">Is first page(true/false).</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public PostFooterRequest(string name, string sheetName, int? section, string script, bool? isFirstPage, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -66,37 +66,37 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets section.
+        /// 0:Left Section. 1:Center Section 2:Right Section
         /// </summary>
         public int? section { get; set; }
 
         /// <summary>
-        /// Gets or sets script.
+        /// Header format script.
         /// </summary>
         public string script { get; set; }
 
         /// <summary>
-        /// Gets or sets isFirstPage.
+        /// Is first page(true/false).
         /// </summary>
         public bool? isFirstPage { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

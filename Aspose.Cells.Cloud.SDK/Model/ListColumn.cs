@@ -40,22 +40,24 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ListColumn
     {
         /// <summary>
-        /// Gets or sets Name.
+        /// Gets and sets the name of the column.
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets Range.
+        /// Gets the range of this list column.
+        ///             
         /// </summary>
         public virtual Range Range { get; set; }
 
         /// <summary>
-        /// Gets or sets TotalsCalculation.
+        /// Gets and sets the type of calculation in the Totals row of the list column.
         /// </summary>
         public virtual string TotalsCalculation { get; set; }
 
         /// <summary>
-        /// Gets or sets Formula.
+        /// Gets and sets the formula of the list column.
+        ///             
         /// </summary>
         public virtual string Formula { get; set; }
 

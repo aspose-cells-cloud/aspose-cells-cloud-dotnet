@@ -47,13 +47,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorkbookExportXMLRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="password"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
-        /// <param name="outPath"></param>
-        /// <param name="outStorageName"></param>
-        /// <param name="checkExcelRestriction"></param>
+        /// <param name="name">The workbook(Excel/ODS/...) name.</param>
+        /// <param name="password">password</param>
+        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="storageName">Storage name.</param>
+        /// <param name="outPath">Output file path.</param>
+        /// <param name="outStorageName">Storage name for output file.</param>
+        /// <param name="checkExcelRestriction">check excel restriction.</param>
         public PostWorkbookExportXMLRequest(string name, string password = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null, bool? checkExcelRestriction = null)
         {
             this.name = name;
@@ -66,37 +66,37 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook(Excel/ODS/...) name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets password.
+        /// password
         /// </summary>
         public string password { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 
         /// <summary>
-        /// Gets or sets outPath.
+        /// Output file path.
         /// </summary>
         public string outPath { get; set; }
 
         /// <summary>
-        /// Gets or sets outStorageName.
+        /// Storage name for output file.
         /// </summary>
         public string outStorageName { get; set; }
 
         /// <summary>
-        /// Gets or sets checkExcelRestriction.
+        /// check excel restriction.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
 

@@ -40,12 +40,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ImportXMLRequest
     {
         /// <summary>
-        /// Gets or sets XMLFileSource.
+        /// XML file source
         /// </summary>
         public virtual FileSource XMLFileSource { get; set; }
 
         /// <summary>
-        /// Gets or sets ImportPosition.
+        /// Import position description.
         /// </summary>
         public virtual ImportPosition ImportPosition { get; set; }
 
