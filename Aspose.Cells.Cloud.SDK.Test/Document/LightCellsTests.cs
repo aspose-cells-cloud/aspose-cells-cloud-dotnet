@@ -363,6 +363,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
             AddFileParameter(dataSourceXlsx,mapFiles);       
             var request = new PostProtectRequest(
                 file: mapFiles,
+                protectWorkbookRequst : new ProtectWorkbookRequst { AwaysOpenOnlyReady = true },
                 password: "123456"
             );
             var actual =  this.CellsApi.PostProtect(request);
