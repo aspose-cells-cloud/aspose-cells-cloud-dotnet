@@ -60,6 +60,31 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? OnlyAuto { get; set; }
 
         /// <summary>
+        /// Gets or sets DefaultEditLanguage.
+        /// </summary>
+        public virtual string DefaultEditLanguage { get; set; }
+
+        /// <summary>
+        /// Gets or sets MaxRowHeight.
+        /// </summary>
+        public virtual double? MaxRowHeight { get; set; }
+
+        /// <summary>
+        /// Gets or sets AutoFitWrappedTextType.
+        /// </summary>
+        public virtual string AutoFitWrappedTextType { get; set; }
+
+        /// <summary>
+        /// Gets or sets FormatStrategy.
+        /// </summary>
+        public virtual string FormatStrategy { get; set; }
+
+        /// <summary>
+        /// Gets or sets ForRendering.
+        /// </summary>
+        public virtual bool? ForRendering { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object.
         /// </summary>
         /// <returns>String presentation of the object.</returns>
@@ -71,6 +96,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  AutoFitMergedCells: ").Append(this.AutoFitMergedCells).Append("\n");
             sb.Append("  IgnoreHidden: ").Append(this.IgnoreHidden).Append("\n");
             sb.Append("  OnlyAuto: ").Append(this.OnlyAuto).Append("\n");
+            sb.Append("  DefaultEditLanguage: ").Append(this.DefaultEditLanguage).Append("\n");
+            sb.Append("  MaxRowHeight: ").Append(this.MaxRowHeight).Append("\n");
+            sb.Append("  AutoFitWrappedTextType: ").Append(this.AutoFitWrappedTextType).Append("\n");
+            sb.Append("  FormatStrategy: ").Append(this.FormatStrategy).Append("\n");
+            sb.Append("  ForRendering: ").Append(this.ForRendering).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

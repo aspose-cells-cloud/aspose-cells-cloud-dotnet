@@ -1821,11 +1821,35 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
 
+        /// <summary>
+        /// Remove duplicates on list object.
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostWorksheetListObjectRemoveDuplicatesRequest" /></param>
+        public CellsCloudResponse PostWorksheetListObjectRemoveDuplicates(PostWorksheetListObjectRemoveDuplicatesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<CellsCloudResponse>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// Insert slicer for list object.
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostWorksheetListObjectInsertSlicerRequest" /></param>
+        public CellsCloudResponse PostWorksheetListObjectInsertSlicer(PostWorksheetListObjectInsertSlicerRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<CellsCloudResponse>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
 
         /// <summary>
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorksheetListColumnRequest" /></param>
-        public   CellsCloudResponse  PostWorksheetListColumn(PostWorksheetListColumnRequest request)
+        public CellsCloudResponse  PostWorksheetListColumn(PostWorksheetListColumnRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -2599,12 +2623,23 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// Sets outline border around a range of cells.
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostWorksheetCellsRangeSortRequest" /></param>
+        public CellsCloudResponse PostWorksheetCellsRangeSort(PostWorksheetCellsRangeSortRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<CellsCloudResponse>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
 
 
         /// <summary>
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorksheetCellsRangeOutlineBorderRequest" /></param>
-        public   CellsCloudResponse  PostWorksheetCellsRangeOutlineBorder(PostWorksheetCellsRangeOutlineBorderRequest request)
+        public CellsCloudResponse  PostWorksheetCellsRangeOutlineBorder(PostWorksheetCellsRangeOutlineBorderRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;

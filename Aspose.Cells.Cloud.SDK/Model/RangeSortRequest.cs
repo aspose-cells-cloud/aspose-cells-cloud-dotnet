@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ListColumn.cs">
+// <copyright company="Aspose" file="RangeSortRequest.cs">
 //   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,37 +35,19 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ListColumn.
+    /// RangeSortRequest.
     /// </summary>
-    public class ListColumn
+    public class RangeSortRequest
     {
         /// <summary>
-        /// Gets and sets the name of the column.
+        /// Gets or sets DataSorter.
         /// </summary>
-        public virtual string Name { get; set; }
+        public virtual DataSorter DataSorter { get; set; }
 
         /// <summary>
-        /// Gets the range of this list column.
-        ///             
+        /// Gets or sets CellArea.
         /// </summary>
-        public virtual Range Range { get; set; }
-
-        /// <summary>
-        /// Gets and sets the type of calculation in the Totals row of the list column.
-        /// </summary>
-        public virtual string TotalsCalculation { get; set; }
-
-        /// <summary>
-        /// Gets and sets the formula of the list column.
-        ///             
-        /// </summary>
-        public virtual string Formula { get; set; }
-
-        /// <summary>
-        /// Gets and sets the display labels of total row.
-        ///  
-        /// </summary>
-        public virtual string TotalsRowLabel { get; set; }
+        public virtual Range CellArea { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object.
@@ -74,12 +56,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class ListColumn {\n");
-            sb.Append("  Name: ").Append(this.Name).Append("\n");
-            sb.Append("  Range: ").Append(this.Range).Append("\n");
-            sb.Append("  TotalsCalculation: ").Append(this.TotalsCalculation).Append("\n");
-            sb.Append("  Formula: ").Append(this.Formula).Append("\n");
-            sb.Append("  TotalsRowLabel: ").Append(this.TotalsRowLabel).Append("\n");
+            sb.Append("class RangeSortRequest {\n");
+            sb.Append("  DataSorter: ").Append(this.DataSorter).Append("\n");
+            sb.Append("  CellArea: ").Append(this.CellArea).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

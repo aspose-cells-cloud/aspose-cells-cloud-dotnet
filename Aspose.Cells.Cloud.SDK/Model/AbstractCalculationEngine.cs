@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ListColumn.cs">
+// <copyright company="Aspose" file="AbstractCalculationEngine.cs">
 //   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,37 +35,28 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ListColumn.
+    /// Represents user's custom calculation engine to extend the default calculation engine of Aspose.Cells.
+    ///  
     /// </summary>
-    public class ListColumn
+    public class AbstractCalculationEngine
     {
         /// <summary>
-        /// Gets and sets the name of the column.
-        /// </summary>
-        public virtual string Name { get; set; }
-
-        /// <summary>
-        /// Gets the range of this list column.
-        ///             
-        /// </summary>
-        public virtual Range Range { get; set; }
-
-        /// <summary>
-        /// Gets and sets the type of calculation in the Totals row of the list column.
-        /// </summary>
-        public virtual string TotalsCalculation { get; set; }
-
-        /// <summary>
-        /// Gets and sets the formula of the list column.
-        ///             
-        /// </summary>
-        public virtual string Formula { get; set; }
-
-        /// <summary>
-        /// Gets and sets the display labels of total row.
+        /// Indicates whether this engine needs the literal text of parameter while doing calculation. Default value is false.
         ///  
         /// </summary>
-        public virtual string TotalsRowLabel { get; set; }
+        public virtual bool? IsParamLiteralRequired { get; set; }
+
+        /// <summary>
+        /// Indicates whether this engine needs the parameter to be calculated in array mode. Default value is false.            If  is required when calculating custom            functions, this property needs to be set as true.
+        ///  
+        /// </summary>
+        public virtual bool? IsParamArrayModeRequired { get; set; }
+
+        /// <summary>
+        /// Whether built-in functions that have been supported by the built-in engine            should be checked and processed by this implementation.            Default is false.            If user needs to change the calculation logic of some built-in functions, this property should be set as true.            Otherwise please leave this property as false for performance consideration.
+        ///  
+        /// </summary>
+        public virtual bool? ProcessBuiltInFunctions { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object.
@@ -74,12 +65,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class ListColumn {\n");
-            sb.Append("  Name: ").Append(this.Name).Append("\n");
-            sb.Append("  Range: ").Append(this.Range).Append("\n");
-            sb.Append("  TotalsCalculation: ").Append(this.TotalsCalculation).Append("\n");
-            sb.Append("  Formula: ").Append(this.Formula).Append("\n");
-            sb.Append("  TotalsRowLabel: ").Append(this.TotalsRowLabel).Append("\n");
+            sb.Append("class AbstractCalculationEngine {\n");
+            sb.Append("  IsParamLiteralRequired: ").Append(this.IsParamLiteralRequired).Append("\n");
+            sb.Append("  IsParamArrayModeRequired: ").Append(this.IsParamArrayModeRequired).Append("\n");
+            sb.Append("  ProcessBuiltInFunctions: ").Append(this.ProcessBuiltInFunctions).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

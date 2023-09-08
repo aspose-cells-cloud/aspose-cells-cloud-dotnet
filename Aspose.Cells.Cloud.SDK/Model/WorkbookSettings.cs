@@ -348,6 +348,113 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual double? WindowWidth { get; set; }
 
         /// <summary>
+        /// Gets and sets the author of the file.
+        ///  
+        /// </summary>
+        public virtual string Author { get; set; }
+
+        /// <summary>
+        /// Indicates whether checking custom number format when setting Style.Custom.
+        ///  
+        /// </summary>
+        public virtual bool? CheckCustomNumberFormat { get; set; }
+
+        /// <summary>
+        /// Gets the protection type of the workbook.
+        ///  
+        /// </summary>
+        public virtual string ProtectionType { get; set; }
+
+        /// <summary>
+        /// Gets and sets the globalization settings.
+        ///  
+        /// </summary>
+        public virtual GlobalizationSettings GlobalizationSettings { get; set; }
+
+        /// <summary>
+        /// Represents Workbook file encryption password.
+        ///  
+        /// </summary>
+        public virtual string Password { get; set; }
+
+        /// <summary>
+        /// Provides access to the workbook write protection options.
+        ///  
+        /// </summary>
+        public virtual WriteProtection WriteProtection { get; set; }
+
+        /// <summary>
+        /// Gets a value that indicates whether a password is required to open this workbook.
+        ///  
+        /// </summary>
+        public virtual bool? IsEncrypted { get; set; }
+
+        /// <summary>
+        /// Gets a value that indicates whether the structure or window of the Workbook is protected.
+        ///  
+        /// </summary>
+        public virtual bool? IsProtected { get; set; }
+
+        /// <summary>
+        /// Gets the max row index, zero-based.
+        ///  
+        /// </summary>
+        public virtual int? MaxRow { get; set; }
+
+        /// <summary>
+        /// Gets the max column index, zero-based.
+        ///  
+        /// </summary>
+        public virtual int? MaxColumn { get; set; }
+
+        /// <summary>
+        /// Gets or sets SignificantDigits.
+        /// </summary>
+        public virtual int? SignificantDigits { get; set; }
+
+        /// <summary>
+        /// Indicates whether check compatibility with earlier versions when saving workbook.
+        ///  
+        /// </summary>
+        public virtual bool? CheckCompatibility { get; set; }
+
+        /// <summary>
+        /// Gets and sets the default print paper size.
+        ///  
+        /// </summary>
+        public virtual string PaperSize { get; set; }
+
+        /// <summary>
+        /// Gets and sets the max row number of shared formula.
+        ///  
+        /// </summary>
+        public virtual int? MaxRowsOfSharedFormula { get; set; }
+
+        /// <summary>
+        /// Specifies the OOXML version for the output document. The default value is Ecma376_2006.
+        ///  
+        /// </summary>
+        public virtual string Compliance { get; set; }
+
+        /// <summary>
+        /// Indicates whether setting  property when entering the string value(which starts  with single quote mark ) to the cell
+        ///  
+        /// </summary>
+        public virtual bool? QuotePrefixToStyle { get; set; }
+
+        /// <summary>
+        /// Gets the settings for formula-related features.
+        ///  
+        /// </summary>
+        public virtual FormulaSettings FormulaSettings { get; set; }
+
+        /// <summary>
+        /// Fully calculates every time when a calculation is triggered.
+        ///  
+        /// </summary>
+        public virtual bool? ForceFullCalculate { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object.
         /// </summary>
         /// <returns>String presentation of the object.</returns>
@@ -400,6 +507,24 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  WindowLeft: ").Append(this.WindowLeft).Append("\n");
             sb.Append("  WindowTop: ").Append(this.WindowTop).Append("\n");
             sb.Append("  WindowWidth: ").Append(this.WindowWidth).Append("\n");
+            sb.Append("  Author: ").Append(this.Author).Append("\n");
+            sb.Append("  CheckCustomNumberFormat: ").Append(this.CheckCustomNumberFormat).Append("\n");
+            sb.Append("  ProtectionType: ").Append(this.ProtectionType).Append("\n");
+            sb.Append("  GlobalizationSettings: ").Append(this.GlobalizationSettings).Append("\n");
+            sb.Append("  Password: ").Append(this.Password).Append("\n");
+            sb.Append("  WriteProtection: ").Append(this.WriteProtection).Append("\n");
+            sb.Append("  IsEncrypted: ").Append(this.IsEncrypted).Append("\n");
+            sb.Append("  IsProtected: ").Append(this.IsProtected).Append("\n");
+            sb.Append("  MaxRow: ").Append(this.MaxRow).Append("\n");
+            sb.Append("  MaxColumn: ").Append(this.MaxColumn).Append("\n");
+            sb.Append("  SignificantDigits: ").Append(this.SignificantDigits).Append("\n");
+            sb.Append("  CheckCompatibility: ").Append(this.CheckCompatibility).Append("\n");
+            sb.Append("  PaperSize: ").Append(this.PaperSize).Append("\n");
+            sb.Append("  MaxRowsOfSharedFormula: ").Append(this.MaxRowsOfSharedFormula).Append("\n");
+            sb.Append("  Compliance: ").Append(this.Compliance).Append("\n");
+            sb.Append("  QuotePrefixToStyle: ").Append(this.QuotePrefixToStyle).Append("\n");
+            sb.Append("  FormulaSettings: ").Append(this.FormulaSettings).Append("\n");
+            sb.Append("  ForceFullCalculate: ").Append(this.ForceFullCalculate).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

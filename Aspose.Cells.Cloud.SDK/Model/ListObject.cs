@@ -115,6 +115,36 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string TableStyleType { get; set; }
 
         /// <summary>
+        /// Gets or sets DataRange.
+        /// </summary>
+        public virtual Range DataRange { get; set; }
+
+        /// <summary>
+        /// Gets or sets DataSourceType.
+        /// </summary>
+        public virtual string DataSourceType { get; set; }
+
+        /// <summary>
+        /// Gets or sets Comment.
+        /// </summary>
+        public virtual string Comment { get; set; }
+
+        /// <summary>
+        /// Gets or sets XmlMap.
+        /// </summary>
+        public virtual XmlMap XmlMap { get; set; }
+
+        /// <summary>
+        /// Gets or sets AlternativeText.
+        /// </summary>
+        public virtual string AlternativeText { get; set; }
+
+        /// <summary>
+        /// Gets or sets AlternativeDescription.
+        /// </summary>
+        public virtual string AlternativeDescription { get; set; }
+
+        /// <summary>
         /// Gets or sets link.
         /// </summary>
         public override Link link { get; set; }
@@ -142,6 +172,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  ShowTotals: ").Append(this.ShowTotals).Append("\n");
             sb.Append("  TableStyleName: ").Append(this.TableStyleName).Append("\n");
             sb.Append("  TableStyleType: ").Append(this.TableStyleType).Append("\n");
+            sb.Append("  DataRange: ").Append(this.DataRange).Append("\n");
+            sb.Append("  DataSourceType: ").Append(this.DataSourceType).Append("\n");
+            sb.Append("  Comment: ").Append(this.Comment).Append("\n");
+            sb.Append("  XmlMap: ").Append(this.XmlMap).Append("\n");
+            sb.Append("  AlternativeText: ").Append(this.AlternativeText).Append("\n");
+            sb.Append("  AlternativeDescription: ").Append(this.AlternativeDescription).Append("\n");
             sb.Append("  link: ").Append(this.link).Append("\n");
             sb.Append("}\n");
             return sb.ToString();

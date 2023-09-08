@@ -60,6 +60,24 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? Recursive { get; set; }
 
         /// <summary>
+        /// The custom formula calculation engine to extend the default calculation engine of Aspose.Cells.
+        ///  
+        /// </summary>
+        public virtual AbstractCalculationEngine CustomEngine { get; set; }
+
+        /// <summary>
+        /// The monitor for user to track the progress of formula calculation.
+        ///  
+        /// </summary>
+        public virtual AbstractCalculationMonitor CalculationMonitor { get; set; }
+
+        /// <summary>
+        /// Specifies the data sources for external links used in formulas.
+        ///  
+        /// </summary>
+        public virtual List<Workbook> LinkedDataSources { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object.
         /// </summary>
         /// <returns>String presentation of the object.</returns>
@@ -71,6 +89,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  IgnoreError: ").Append(this.IgnoreError).Append("\n");
             sb.Append("  PrecisionStrategy: ").Append(this.PrecisionStrategy).Append("\n");
             sb.Append("  Recursive: ").Append(this.Recursive).Append("\n");
+            sb.Append("  CustomEngine: ").Append(this.CustomEngine).Append("\n");
+            sb.Append("  CalculationMonitor: ").Append(this.CalculationMonitor).Append("\n");
+            sb.Append("  LinkedDataSources: ").Append(this.LinkedDataSources).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

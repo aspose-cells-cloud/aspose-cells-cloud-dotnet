@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ListColumn.cs">
+// <copyright company="Aspose" file="QueryTable.cs">
 //   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,37 +35,34 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ListColumn.
+    /// QueryTable.
     /// </summary>
-    public class ListColumn
+    public class QueryTable
     {
         /// <summary>
-        /// Gets and sets the name of the column.
+        /// Gets or sets ConnectionId.
+        /// </summary>
+        public virtual int? ConnectionId { get; set; }
+
+        /// <summary>
+        /// Gets or sets Name.
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets the range of this list column.
-        ///             
+        /// Gets or sets ResultRange.
         /// </summary>
-        public virtual Range Range { get; set; }
+        public virtual Range ResultRange { get; set; }
 
         /// <summary>
-        /// Gets and sets the type of calculation in the Totals row of the list column.
+        /// Gets or sets PreserveFormatting.
         /// </summary>
-        public virtual string TotalsCalculation { get; set; }
+        public virtual bool? PreserveFormatting { get; set; }
 
         /// <summary>
-        /// Gets and sets the formula of the list column.
-        ///             
+        /// Gets or sets AdjustColumnWidth.
         /// </summary>
-        public virtual string Formula { get; set; }
-
-        /// <summary>
-        /// Gets and sets the display labels of total row.
-        ///  
-        /// </summary>
-        public virtual string TotalsRowLabel { get; set; }
+        public virtual bool? AdjustColumnWidth { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object.
@@ -74,12 +71,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class ListColumn {\n");
+            sb.Append("class QueryTable {\n");
+            sb.Append("  ConnectionId: ").Append(this.ConnectionId).Append("\n");
             sb.Append("  Name: ").Append(this.Name).Append("\n");
-            sb.Append("  Range: ").Append(this.Range).Append("\n");
-            sb.Append("  TotalsCalculation: ").Append(this.TotalsCalculation).Append("\n");
-            sb.Append("  Formula: ").Append(this.Formula).Append("\n");
-            sb.Append("  TotalsRowLabel: ").Append(this.TotalsRowLabel).Append("\n");
+            sb.Append("  ResultRange: ").Append(this.ResultRange).Append("\n");
+            sb.Append("  PreserveFormatting: ").Append(this.PreserveFormatting).Append("\n");
+            sb.Append("  AdjustColumnWidth: ").Append(this.AdjustColumnWidth).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

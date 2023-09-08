@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ListColumn.cs">
+// <copyright company="Aspose" file="XmlMap.cs">
 //   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,37 +35,28 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ListColumn.
+    /// Represents Xml map information.
+    ///  
     /// </summary>
-    public class ListColumn
+    public class XmlMap
     {
         /// <summary>
-        /// Gets and sets the name of the column.
+        /// Returns or sets the name of the object.
+        ///  
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets the range of this list column.
-        ///             
-        /// </summary>
-        public virtual Range Range { get; set; }
-
-        /// <summary>
-        /// Gets and sets the type of calculation in the Totals row of the list column.
-        /// </summary>
-        public virtual string TotalsCalculation { get; set; }
-
-        /// <summary>
-        /// Gets and sets the formula of the list column.
-        ///             
-        /// </summary>
-        public virtual string Formula { get; set; }
-
-        /// <summary>
-        /// Gets and sets the display labels of total row.
+        /// Gets root element name.
         ///  
         /// </summary>
-        public virtual string TotalsRowLabel { get; set; }
+        public virtual string RootElementName { get; set; }
+
+        /// <summary>
+        /// Gets an  of this map.
+        ///  
+        /// </summary>
+        public virtual XmlDataBinding DataBinding { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object.
@@ -74,12 +65,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class ListColumn {\n");
+            sb.Append("class XmlMap {\n");
             sb.Append("  Name: ").Append(this.Name).Append("\n");
-            sb.Append("  Range: ").Append(this.Range).Append("\n");
-            sb.Append("  TotalsCalculation: ").Append(this.TotalsCalculation).Append("\n");
-            sb.Append("  Formula: ").Append(this.Formula).Append("\n");
-            sb.Append("  TotalsRowLabel: ").Append(this.TotalsRowLabel).Append("\n");
+            sb.Append("  RootElementName: ").Append(this.RootElementName).Append("\n");
+            sb.Append("  DataBinding: ").Append(this.DataBinding).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
