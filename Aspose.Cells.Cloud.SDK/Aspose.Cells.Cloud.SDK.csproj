@@ -11,15 +11,15 @@
     <Company>Aspose</Company>
     <AssemblyTitle>Aspose.Cells Cloud SDK for .NET</AssemblyTitle>
     <Description>A powerful and fast Aspose.Cells cloud SDK library written in C# for manipulating and converting Excel(XLS, XLSX,XLSB), ODS, CSV,JSON and HTML files.</Description>
-    <PackageReleaseNotes>https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/releases/tag/23.8</PackageReleaseNotes>
+    <PackageReleaseNotes>https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/releases/tag/23.9</PackageReleaseNotes>
     <PackageTags>Cloud REST API Excel XLS XLSX XLSB CSV to PDF JPG PNG HTML ODS Numbers XLSM OOXML Spreadsheet Markdown XPS DOCX PPTX MHTML JSON SVG TIFF</PackageTags>
     <RepositoryURL>https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/</RepositoryURL>
     <RepositoryType>GitHub</RepositoryType>
     <Copyright>MIT</Copyright>
     <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>    
-    <AssemblyVersion>23.8</AssemblyVersion>
-    <FileVersion>23.8</FileVersion>
-    <Version>23.8</Version>
+    <AssemblyVersion>23.9</AssemblyVersion>
+    <FileVersion>23.9</FileVersion>
+    <Version>23.9</Version>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
