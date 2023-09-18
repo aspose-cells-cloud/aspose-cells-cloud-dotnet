@@ -344,5 +344,54 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             var actual =  this.CellsApi.PostWorksheetListColumnsTotal(request);
             Assert.AreEqual(200, actual.Code);
         }
+
+        /// <summary>
+        /// Test for PostWorksheetListObjectRemoveDuplicates of ListObjectsController.
+        /// </summary>
+        [TestCategory(ProductName)]
+        [TestMethod]
+        public void TestPostWorksheetListObjectRemoveDuplicates()
+        {
+            string localName = "TestTables.xlsx";
+            string remoteName = "TestTables.xlsx";
+
+            this.UploadFile(localName, remoteFolder + "/" + remoteName, "");
+
+            var request = new PostWorksheetListObjectRemoveDuplicatesRequest(
+                name: remoteName,
+                sheetName: "Sheet2",
+                listObjectIndex: 0,
+                folder: remoteFolder,
+                storageName: ""
+            );
+            var actual = this.CellsApi.PostWorksheetListObjectRemoveDuplicates(request);
+            Assert.AreEqual(200, actual.Code);
+        }
+
+        /// <summary>
+        /// Test for TestPostWorksheetListObjectInsertSlicer of ListObjectsController.
+        /// </summary>
+        [TestCategory(ProductName)]
+        [TestMethod]
+        public void TestPostWorksheetListObjectInsertSlicer()
+        {
+            string localName = "TestTables.xlsx";
+            string remoteName = "TestTables.xlsx";
+
+            this.UploadFile(localName, remoteFolder + "/" + remoteName, "");
+
+            var request = new PostWorksheetListObjectInsertSlicerRequest(
+                name: remoteName,
+                sheetName: "Sheet1",
+                listObjectIndex: 0,
+                columnIndex: 2,
+                destCellName: "j9",
+                folder: remoteFolder,
+                storageName: ""
+            );
+            var actual = this.CellsApi.PostWorksheetListObjectInsertSlicer(request);
+            Assert.AreEqual(200, actual.Code);
+        }
     }
 }
+

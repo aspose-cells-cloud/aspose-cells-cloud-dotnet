@@ -427,5 +427,43 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             var actual =  this.CellsApi.DeleteWorksheetCellsRange(request);
             Assert.AreEqual(200, actual.Code);
         }
+        /// <summary>
+        /// Test for PostWorksheetCellsRangeSort of RangesController.
+        /// </summary>
+        [TestCategory(ProductName)]
+        [TestMethod]
+        public void TestPostWorksheetCellsRangeSort()
+        {
+            string localName = "Group.xlsx";
+            string remoteName = "Group.xlsx";
+
+            this.UploadFile(localName, remoteFolder + "/" + remoteName, "");
+
+            var rangeSortRequestDataSorter = new DataSorter()
+            {
+                CaseSensitive = true
+            };
+            var rangeSortRequestCellArea = new Range()
+            {
+                ColumnCount = 3,
+                FirstColumn = 0,
+                FirstRow = 0,
+                RowCount = 15
+            };
+            var rangeSortRequest = new RangeSortRequest()
+            {
+                DataSorter = rangeSortRequestDataSorter,
+                CellArea = rangeSortRequestCellArea
+            };
+            var request = new PostWorksheetCellsRangeSortRequest(
+                name: remoteName,
+                sheetName: "book1",
+                 rangeOperate: rangeSortRequest,
+                folder: remoteFolder,
+                storageName: ""
+            );
+            var actual = this.CellsApi.PostWorksheetCellsRangeSort(request);
+            Assert.AreEqual(200, actual.Code);
+        }
     }
 }
