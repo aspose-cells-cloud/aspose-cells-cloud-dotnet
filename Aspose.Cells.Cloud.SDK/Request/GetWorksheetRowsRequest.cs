@@ -47,10 +47,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetRowsRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="offset"></param>
-        /// <param name="count"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="offset">Original workbook folder.</param>
+        /// <param name="count">Storage name.</param>
         /// <param name="folder"></param>
         /// <param name="storageName"></param>
         public GetWorksheetRowsRequest(string name, string sheetName, int? offset = null, int? count = null, string folder = null, string storageName = null)
@@ -64,22 +64,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets offset.
+        /// Original workbook folder.
         /// </summary>
         public int? offset { get; set; }
 
         /// <summary>
-        /// Gets or sets count.
+        /// Storage name.
         /// </summary>
         public int? count { get; set; }
 

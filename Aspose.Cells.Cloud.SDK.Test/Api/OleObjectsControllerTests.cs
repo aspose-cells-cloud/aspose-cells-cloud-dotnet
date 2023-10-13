@@ -172,8 +172,8 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string remoteName = "Book1.xlsx";
 
             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
-            this.UploadFile( oLEDoc, remoteFolder + "/OLEDoc.docx", "");
-            this.UploadFile( wordJPG, remoteFolder + "/word.jpg", "");
+            this.UploadFile( oLEDoc, "OLEDoc.docx", "");
+            this.UploadFile( wordJPG, "word.jpg", "");
 
             var request = new PutWorksheetOleObjectRequest(
                 name: remoteName,

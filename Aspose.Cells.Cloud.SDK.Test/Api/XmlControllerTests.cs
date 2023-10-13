@@ -63,7 +63,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
         /// </summary>
         [TestCategory(ProductName)]
         [TestMethod]
-        public void TestPostWorkbookImortXML()
+        public void TestPostWorkbookImportXML()
         {
             string localName = "Template.xlsx";
             string dataXML = "data.xml";
@@ -88,11 +88,13 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
                 XMLFileSource = importXMLRequestXMLFileSource,
                 ImportPosition = importXMLRequestImportPosition
             };
-            var request = new PostWorkbookImportXMLRequest( );
-            request.name = remoteName;
-            request.importXMLRequest = importXMLRequest;
-            request.folder = remoteFolder;
-            var actual =  this.CellsApi.PostWorkbookImortXML(request);
+            var request = new PostWorkbookImportXMLRequest(
+                name: remoteName,
+                importXMLRequest: importXMLRequest,
+                folder: remoteFolder,
+                storageName: ""
+            );
+            var actual =  this.CellsApi.PostWorkbookImportXML(request);
             Assert.IsNotNull(actual);
         }
     }

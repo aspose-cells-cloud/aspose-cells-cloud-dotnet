@@ -48,13 +48,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="DeleteUnProtectWorkbookRequest"/> class.
         /// </summary>
         /// <param name="name">The workbook name.</param>
-        /// <param name="protection">Protection settings, only password can be specified.</param>
+        /// <param name="password">Protection settings, only password can be specified.</param>
         /// <param name="folder">Original workbook folder.</param>
         /// <param name="storageName">Storage name.</param>
-        public DeleteUnProtectWorkbookRequest(string name, WorkbookProtectionRequest protection, string folder = null, string storageName = null)
+        public DeleteUnProtectWorkbookRequest(string name, string password, string folder = null, string storageName = null)
         {
             this.name = name;
-            this.protection = protection;
+            this.password = password;
             this.folder = folder;
             this.storageName = storageName;
         }
@@ -67,7 +67,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Protection settings, only password can be specified.
         /// </summary>
-        public WorkbookProtectionRequest protection { get; set; }
+        public string password { get; set; }
 
         /// <summary>
         /// Original workbook folder.
@@ -102,10 +102,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 throw new ApiException(400, "Missing required parameter 'name' when calling DeleteUnProtectWorkbook");
             }
 
-            // verify the required parameter 'protection' is set
-            if ( this.protection == null)
+            // verify the required parameter 'password' is set
+            if (string.IsNullOrEmpty (this.password ))
             {
-                throw new ApiException(400, "Missing required parameter 'protection' when calling DeleteUnProtectWorkbook");
+                throw new ApiException(400, "Missing required parameter 'password' when calling DeleteUnProtectWorkbook");
             }
 
             var path = baseUri + "/cells/{name}/protection";
@@ -115,6 +115,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     .Replace("/?", "?");
 
             path = UrlHelper.AddPathParameter(path, "name", this.name);
+            path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
             if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
             if (this.extendQueryParameterMap != null)
@@ -125,7 +126,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 }
             }
 
-            localVarPostBody = ( this.protection != null ? JsonConvert.SerializeObject(this.protection) : null);
             return UrlHelper.PrepareRequest(path, "DELETE", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

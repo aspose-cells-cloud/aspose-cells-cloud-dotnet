@@ -47,7 +47,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostClearObjectsRequest"/> class.
         /// </summary>
-        /// <param name="file">File to upload</param>
+        /// <param name="file">chart/comment/picture/shape/listobject/hyperlink/oleobject/pivottable/validation/Background</param>
         /// <param name="objecttype">chart/comment/picture/shape/listobject/hyperlink/oleobject/pivottable/validation/Background</param>
         /// <param name="sheetname"></param>
         /// <param name="outFormat"></param>
@@ -64,7 +64,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// File to upload
+        /// chart/comment/picture/shape/listobject/hyperlink/oleobject/pivottable/validation/Background
         /// </summary>
         public IDictionary<string, System.IO.Stream> File { get; set; }
 

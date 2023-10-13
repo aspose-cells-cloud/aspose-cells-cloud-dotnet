@@ -355,7 +355,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "TestTables.xlsx";
             string remoteName = "TestTables.xlsx";
 
-            this.UploadFile(localName, remoteFolder + "/" + remoteName, "");
+            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostWorksheetListObjectRemoveDuplicatesRequest(
                 name: remoteName,
@@ -364,7 +364,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
                 folder: remoteFolder,
                 storageName: ""
             );
-            var actual = this.CellsApi.PostWorksheetListObjectRemoveDuplicates(request);
+            var actual =  this.CellsApi.PostWorksheetListObjectRemoveDuplicates(request);
             Assert.AreEqual(200, actual.Code);
         }
 
@@ -378,7 +378,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "TestTables.xlsx";
             string remoteName = "TestTables.xlsx";
 
-            this.UploadFile(localName, remoteFolder + "/" + remoteName, "");
+            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostWorksheetListObjectInsertSlicerRequest(
                 name: remoteName,
@@ -389,9 +389,8 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
                 folder: remoteFolder,
                 storageName: ""
             );
-            var actual = this.CellsApi.PostWorksheetListObjectInsertSlicer(request);
+            var actual =  this.CellsApi.PostWorksheetListObjectInsertSlicer(request);
             Assert.AreEqual(200, actual.Code);
         }
     }
 }
-

@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ProtectWorkbookRequst.cs">
+// <copyright company="Aspose" file="DataSorterKey.cs">
 //   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,39 +35,46 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ProtectWorkbookRequst.
+    /// Represents the key of the data sorter.
+    ///  
     /// </summary>
-    public class ProtectWorkbookRequst
+    public class DataSorterKey
     {
         /// <summary>
-        /// Gets or sets AwaysOpenOnlyReady.
+        /// Indicates the order of sorting.
+        ///  
         /// </summary>
-        public virtual bool? AwaysOpenOnlyReady { get; set; }
+        public virtual string Order { get; set; }
 
         /// <summary>
-        /// Gets or sets EncryptWithPassword.
+        /// Gets the sorted column index(absolute position, column A is 0, B is 1, ...).
+        ///  
         /// </summary>
-        public virtual string EncryptWithPassword { get; set; }
+        public virtual int? Index { get; set; }
 
         /// <summary>
-        /// Gets or sets ProtectCurrentSheet.
+        /// Represents the type of sorting.
+        ///  
         /// </summary>
-        public virtual Protection ProtectCurrentSheet { get; set; }
+        public virtual string Type { get; set; }
 
         /// <summary>
-        /// Gets or sets ProtectWorkbookStructure.
+        /// Represents the icon set type.
+        ///  
         /// </summary>
-        public virtual string ProtectWorkbookStructure { get; set; }
+        public virtual string IconSetType { get; set; }
 
         /// <summary>
-        /// Gets or sets DigitalSignature.
+        /// Represents the id of the icon set type.
+        ///  
         /// </summary>
-        public virtual DigitalSignature DigitalSignature { get; set; }
+        public virtual int? IconId { get; set; }
 
         /// <summary>
-        /// Gets or sets MarkAsFinal.
+        /// Gets the sorted color.
+        ///  
         /// </summary>
-        public virtual bool? MarkAsFinal { get; set; }
+        public virtual Color Color { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object.
@@ -76,13 +83,13 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class ProtectWorkbookRequst {\n");
-            sb.Append("  AwaysOpenOnlyReady: ").Append(this.AwaysOpenOnlyReady).Append("\n");
-            sb.Append("  EncryptWithPassword: ").Append(this.EncryptWithPassword).Append("\n");
-            sb.Append("  ProtectCurrentSheet: ").Append(this.ProtectCurrentSheet).Append("\n");
-            sb.Append("  ProtectWorkbookStructure: ").Append(this.ProtectWorkbookStructure).Append("\n");
-            sb.Append("  DigitalSignature: ").Append(this.DigitalSignature).Append("\n");
-            sb.Append("  MarkAsFinal: ").Append(this.MarkAsFinal).Append("\n");
+            sb.Append("class DataSorterKey {\n");
+            sb.Append("  Order: ").Append(this.Order).Append("\n");
+            sb.Append("  Index: ").Append(this.Index).Append("\n");
+            sb.Append("  Type: ").Append(this.Type).Append("\n");
+            sb.Append("  IconSetType: ").Append(this.IconSetType).Append("\n");
+            sb.Append("  IconId: ").Append(this.IconId).Append("\n");
+            sb.Append("  Color: ").Append(this.Color).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

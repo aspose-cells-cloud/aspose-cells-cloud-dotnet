@@ -360,11 +360,40 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
 
             System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
             AddFileParameter(assemblyTestXlsx,mapFiles);       
+            AddFileParameter(dataSourceXlsx,mapFiles);
+            var protectWorkbookRequst = new ProtectWorkbookRequest()
+            {                
+            };
+            var request = new PostProtectRequest(
+                file: mapFiles,
+                protectWorkbookRequest : protectWorkbookRequst,
+                password: "123456"
+            );
+            var actual =  this.CellsApi.PostProtect(request);
+            Assert.IsNotNull(actual.Files);
+        }
+
+        /// <summary>
+        /// Test for save workbook as one of the available formats.
+        /// </summary>
+        [TestCategory(ProductName)]
+        [TestMethod]
+        public void TestPostProtect_ProtectWorkbookRequest()
+        {
+            string assemblyTestXlsx = "assemblytest.xlsx";
+            string dataSourceXlsx = "datasource.xlsx";
+
+            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
+            var protectWorkbookRequst = new ProtectWorkbookRequest()
+            {
+                AwaysOpenReadOnly = true,
+                EncryptWithPassword = "123456"
+            };
+            AddFileParameter(assemblyTestXlsx,mapFiles);       
             AddFileParameter(dataSourceXlsx,mapFiles);       
             var request = new PostProtectRequest(
                 file: mapFiles,
-                protectWorkbookRequst : new ProtectWorkbookRequst { AwaysOpenOnlyReady = true },
-                password: "123456"
+                protectWorkbookRequest: protectWorkbookRequst
             );
             var actual =  this.CellsApi.PostProtect(request);
             Assert.IsNotNull(actual.Files);

@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net4.5.2</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <AssemblyName>Aspose.Cells.Cloud.SDK</AssemblyName>
     <PackageId>Aspose.Cells-Cloud</PackageId>
     <OutputType>Library</OutputType>
@@ -24,8 +24,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
-    <PackageReference Include="RestSharp" Version="106.2.2" />
+	  <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+	  <PackageReference Include="RestSharp" Version="106.2.2" />
   </ItemGroup>
 	<ItemGroup>
 		<None Include="..\README.md" Pack="true" PackagePath="\"/>

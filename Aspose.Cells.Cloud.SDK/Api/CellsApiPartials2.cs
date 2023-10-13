@@ -2551,7 +2551,16 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
-
+        /// <summary>
+        /// Copys content to destination range from source range in worksheet.
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostWorksheetCellsRangesCopyRequest" /></param>
+        public   CellsCloudResponse  PostWorksheetCellsRangesCopy(PostWorksheetCellsRangesCopyRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
 
         /// <summary>
         /// </summary>
@@ -3813,7 +3822,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <summary>
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorkbookImportXMLRequest" /></param>
-        public Stream PostWorkbookImortXML(PostWorkbookImportXMLRequest request)
+        public Stream PostWorkbookImportXML(PostWorkbookImportXMLRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<Stream>(request.CreateHttpRequest(BaseUri + "/" + Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;

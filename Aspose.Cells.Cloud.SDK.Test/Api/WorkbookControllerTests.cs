@@ -130,14 +130,14 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
 
             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
-            var protection = new WorkbookProtectionRequest()
+            var protection = new ProtectWorkbookRequest()
             {
-                Password = "123456",
-                ProtectionType = "ALL"
+                EncryptWithPassword = "123456",
+                AwaysOpenReadOnly = true
             };
             var request = new PostProtectWorkbookRequest(
                 name: remoteName,
-                protection: protection,
+                protectWorkbookRequest: protection,
                 folder: remoteFolder,
                 storageName: ""
             );
@@ -157,15 +157,10 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
 
             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
-            var protection = new WorkbookProtectionRequest()
-            {
-                Password = "123456",
-                ProtectionType = "ALL"
-            };
             var request = new DeleteUnProtectWorkbookRequest(
                 name: remoteName,
-                protection: protection,
                 folder: remoteFolder,
+                password : "123456",
                 storageName: ""
             );
             var actual =  this.CellsApi.DeleteUnProtectWorkbook(request);

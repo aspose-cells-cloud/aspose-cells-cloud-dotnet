@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="DataSorter.cs">
+// <copyright company="Aspose" file="ProtectWorkbookRequest.cs">
 //   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,47 +35,40 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Summary description for DataSorter.
+    /// Indicates protect workbook request
     /// </summary>
-    public class DataSorter
+    public class ProtectWorkbookRequest
     {
         /// <summary>
-        /// Gets and sets whether case sensitive when comparing string.
-        ///  
+        /// Indicates aways open read-only.
         /// </summary>
-        public virtual bool? CaseSensitive { get; set; }
+        public virtual bool? AwaysOpenReadOnly { get; set; }
 
         /// <summary>
-        /// Represents whether the range has headers.
-        ///  
+        /// Indicates encrypt with password.
         /// </summary>
-        public virtual bool? HasHeaders { get; set; }
+        public virtual string EncryptWithPassword { get; set; }
 
         /// <summary>
-        /// Gets the key list of data sorter.
+        /// Represents the various types of protection options available for a worksheet.
         ///             
         /// </summary>
-        public virtual IList<SortKey> KeyList { get; set; }
+        public virtual Protection ProtectCurrentSheet { get; set; }
 
         /// <summary>
-        /// True means that sorting orientation is from left to right.
-        ///             False means that sorting orientation is from top to bottom.
-        ///             The default value is false.
-        ///  
+        /// Indicates protect workbook structure. All, Contents, Objects, Scenarios, Structure, Windows, and None.
         /// </summary>
-        public virtual bool? SortLeftToRight { get; set; }
+        public virtual string ProtectWorkbookStructure { get; set; }
 
         /// <summary>
-        /// Indicates whether sorting anything that looks like a number.
-        ///  
+        /// Indicates signature in file.
         /// </summary>
-        public virtual bool? SortAsNumber { get; set; }
+        public virtual DigitalSignature DigitalSignature { get; set; }
 
         /// <summary>
-        /// Gets the key list of data sorter.
-        ///  
+        /// Indicates mark as final.
         /// </summary>
-        public virtual IList<DataSorterKey> Keys { get; set; }
+        public virtual bool? MarkAsFinal { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object.
@@ -84,13 +77,13 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class DataSorter {\n");
-            sb.Append("  CaseSensitive: ").Append(this.CaseSensitive).Append("\n");
-            sb.Append("  HasHeaders: ").Append(this.HasHeaders).Append("\n");
-            sb.Append("  KeyList: ").Append(this.KeyList).Append("\n");
-            sb.Append("  SortLeftToRight: ").Append(this.SortLeftToRight).Append("\n");
-            sb.Append("  SortAsNumber: ").Append(this.SortAsNumber).Append("\n");
-            sb.Append("  Keys: ").Append(this.Keys).Append("\n");
+            sb.Append("class ProtectWorkbookRequest {\n");
+            sb.Append("  AwaysOpenReadOnly: ").Append(this.AwaysOpenReadOnly).Append("\n");
+            sb.Append("  EncryptWithPassword: ").Append(this.EncryptWithPassword).Append("\n");
+            sb.Append("  ProtectCurrentSheet: ").Append(this.ProtectCurrentSheet).Append("\n");
+            sb.Append("  ProtectWorkbookStructure: ").Append(this.ProtectWorkbookStructure).Append("\n");
+            sb.Append("  DigitalSignature: ").Append(this.DigitalSignature).Append("\n");
+            sb.Append("  MarkAsFinal: ").Append(this.MarkAsFinal).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

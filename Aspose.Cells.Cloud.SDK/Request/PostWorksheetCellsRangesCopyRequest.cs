@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="PostWorksheetListObjectRemoveDuplicatesRequest.cs">
+// <copyright company="Aspose" file="PostWorksheetCellsRangesCopyRequest.cs">
 //   Copyright (c) 2023 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,31 +32,31 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.PostWorksheetListObjectRemoveDuplicates" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.PostWorksheetCellsRangesCopy" /> operation.
     /// </summary>
-    public class PostWorksheetListObjectRemoveDuplicatesRequest : IRequestModel
+    public class PostWorksheetCellsRangesCopyRequest : IRequestModel
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="PostWorksheetListObjectRemoveDuplicatesRequest"/> class.
+        /// Initializes a new instance of the <see cref="PostWorksheetCellsRangesCopyRequest"/> class.
         /// </summary>
-        public PostWorksheetListObjectRemoveDuplicatesRequest()
+        public PostWorksheetCellsRangesCopyRequest()
         {
 
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="PostWorksheetListObjectRemoveDuplicatesRequest"/> class.
+        /// Initializes a new instance of the <see cref="PostWorksheetCellsRangesCopyRequest"/> class.
         /// </summary>
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="listObjectIndex">List object index.</param>
+        /// <param name="rangeOperate">copydata,copystyle,copyto,copyvalue</param>
         /// <param name="folder">Original workbook folder.</param>
         /// <param name="storageName">Storage name.</param>
-        public PostWorksheetListObjectRemoveDuplicatesRequest(string name, string sheetName, int? listObjectIndex, string folder = null, string storageName = null)
+        public PostWorksheetCellsRangesCopyRequest(string name, string sheetName, RangeCopyRequest rangeOperate, string folder = null, string storageName = null)
         {
             this.name = name;
             this.sheetName = sheetName;
-            this.listObjectIndex = listObjectIndex;
+            this.rangeOperate = rangeOperate;
             this.folder = folder;
             this.storageName = storageName;
         }
@@ -72,9 +72,9 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string sheetName { get; set; }
 
         /// <summary>
-        /// List object index.
+        /// copydata,copystyle,copyto,copyvalue
         /// </summary>
-        public int? listObjectIndex { get; set; }
+        public RangeCopyRequest rangeOperate { get; set; }
 
         /// <summary>
         /// Original workbook folder.
@@ -106,22 +106,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'name' is set
             if (string.IsNullOrEmpty (this.name ))
             {
-                throw new ApiException(400, "Missing required parameter 'name' when calling PostWorksheetListObjectRemoveDuplicates");
+                throw new ApiException(400, "Missing required parameter 'name' when calling PostWorksheetCellsRangesCopy");
             }
 
             // verify the required parameter 'sheetName' is set
             if (string.IsNullOrEmpty (this.sheetName ))
             {
-                throw new ApiException(400, "Missing required parameter 'sheetName' when calling PostWorksheetListObjectRemoveDuplicates");
+                throw new ApiException(400, "Missing required parameter 'sheetName' when calling PostWorksheetCellsRangesCopy");
             }
 
-            // verify the required parameter 'listObjectIndex' is set
-            if ( this.listObjectIndex == null)
+            // verify the required parameter 'rangeOperate' is set
+            if ( this.rangeOperate == null)
             {
-                throw new ApiException(400, "Missing required parameter 'listObjectIndex' when calling PostWorksheetListObjectRemoveDuplicates");
+                throw new ApiException(400, "Missing required parameter 'rangeOperate' when calling PostWorksheetCellsRangesCopy");
             }
 
-            var path = baseUri + "/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates";
+            var path = baseUri + "/cells/{name}/worksheets/{sheetName}/ranges/copy";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
@@ -129,7 +129,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
             path = UrlHelper.AddPathParameter(path, "name", this.name);
             path = UrlHelper.AddPathParameter(path, "sheetName", this.sheetName);
-            path = UrlHelper.AddPathParameter(path, "listObjectIndex", this.listObjectIndex);
             if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
             if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
             if (this.extendQueryParameterMap != null)
@@ -140,6 +139,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 }
             }
 
+            localVarPostBody = ( this.rangeOperate != null ? JsonConvert.SerializeObject(this.rangeOperate) : null);
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

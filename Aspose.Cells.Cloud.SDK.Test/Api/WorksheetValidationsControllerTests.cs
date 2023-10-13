@@ -119,7 +119,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
 
             var validation = new Validation()
             {
-                Formula1 = "=(OR(A1=\"Yes\",A1=\"No\"))",
+                Formula1 = "=A1",
                 Type = "Custom"
             };
             var request = new PostWorksheetValidationRequest(

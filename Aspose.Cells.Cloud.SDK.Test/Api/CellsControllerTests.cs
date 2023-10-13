@@ -785,7 +785,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             var request = new GetWorksheetRowRequest(
                 name: remoteName,
                 sheetName: "Sheet1",
-                rowIndex: 0,
+                rowIndex: 1,
                 folder: remoteFolder,
                 storageName: ""
             );
@@ -881,7 +881,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             var request = new PutInsertWorksheetRowRequest(
                 name: remoteName,
                 sheetName: "Sheet1",
-                rowIndex: 0,
+                rowIndex: 1,
                 folder: remoteFolder,
                 storageName: ""
             );
@@ -904,7 +904,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             var request = new PostUpdateWorksheetRowRequest(
                 name: remoteName,
                 sheetName: "Sheet1",
-                rowIndex: 0,
+                rowIndex: 1,
                 height: 10.8f,
                 count: 9,
                 folder: remoteFolder,

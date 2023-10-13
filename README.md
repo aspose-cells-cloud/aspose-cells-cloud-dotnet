@@ -21,15 +21,14 @@ The Cloud SDK enhances your C#, ASP.NET, & other .NET-based cloud apps to [proce
 - [Leverage the power of Pivot Tables](https://docs.aspose.cloud/cells/working-with-pivot-tables/) & Ranges.
 
 
-## Feature & Enhancements in Version 23.9
+## Feature & Enhancements in Version 23.10
 
 Full list of issues covering all changes in this release:
 
-- Support to data sorting on range controller.
-- Support to remove duplicate data on list object.
-- Support to insert slicer for list object.
-- Optimize list object and related objects.
-
+- Fix protect workbook request.
+- Fix range copy API.
+- Fix workbook import API.
+- Optimize workbook protect API.
  
 ## Read & Write Spreadsheet Formats
 

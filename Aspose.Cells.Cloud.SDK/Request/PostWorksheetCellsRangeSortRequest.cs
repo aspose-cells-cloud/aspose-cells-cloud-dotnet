@@ -49,14 +49,14 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="rangeOperate">Range Set OutlineBorder Request </param>
+        /// <param name="rangeSortRequest">Range Sort Request </param>
         /// <param name="folder">Original workbook folder.</param>
         /// <param name="storageName">Storage name.</param>
-        public PostWorksheetCellsRangeSortRequest(string name, string sheetName, RangeSortRequest rangeOperate, string folder = null, string storageName = null)
+        public PostWorksheetCellsRangeSortRequest(string name, string sheetName, RangeSortRequest rangeSortRequest, string folder = null, string storageName = null)
         {
             this.name = name;
             this.sheetName = sheetName;
-            this.rangeOperate = rangeOperate;
+            this.rangeSortRequest = rangeSortRequest;
             this.folder = folder;
             this.storageName = storageName;
         }
@@ -72,9 +72,9 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Range Set OutlineBorder Request 
+        /// Range Sort Request 
         /// </summary>
-        public RangeSortRequest rangeOperate { get; set; }
+        public RangeSortRequest rangeSortRequest { get; set; }
 
         /// <summary>
         /// Original workbook folder.
@@ -115,10 +115,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 throw new ApiException(400, "Missing required parameter 'sheetName' when calling PostWorksheetCellsRangeSort");
             }
 
-            // verify the required parameter 'rangeOperate' is set
-            if ( this.rangeOperate == null)
+            // verify the required parameter 'rangeSortRequest' is set
+            if ( this.rangeSortRequest == null)
             {
-                throw new ApiException(400, "Missing required parameter 'rangeOperate' when calling PostWorksheetCellsRangeSort");
+                throw new ApiException(400, "Missing required parameter 'rangeSortRequest' when calling PostWorksheetCellsRangeSort");
             }
 
             var path = baseUri + "/cells/{name}/worksheets/{sheetName}/ranges/sort";
@@ -139,7 +139,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 }
             }
 
-            localVarPostBody = ( this.rangeOperate != null ? JsonConvert.SerializeObject(this.rangeOperate) : null);
+            localVarPostBody = ( this.rangeSortRequest != null ? JsonConvert.SerializeObject(this.rangeSortRequest) : null);
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

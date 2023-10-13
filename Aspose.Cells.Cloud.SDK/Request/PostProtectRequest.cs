@@ -48,12 +48,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="PostProtectRequest"/> class.
         /// </summary>
         /// <param name="file">File to upload</param>
-        /// <param name="protectWorkbookRequst"></param>
+        /// <param name="protectWorkbookRequest"></param>
         /// <param name="password"></param>
-        public PostProtectRequest(IDictionary<string, System.IO.Stream> file, ProtectWorkbookRequst protectWorkbookRequst, string password = null)
+        public PostProtectRequest(IDictionary<string, System.IO.Stream> file, ProtectWorkbookRequest protectWorkbookRequest, string password = null)
         {
             this.File = file;
-            this.protectWorkbookRequst = protectWorkbookRequst;
+            this.protectWorkbookRequest = protectWorkbookRequest;
             this.password = password;
         }
 
@@ -63,9 +63,9 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public IDictionary<string, System.IO.Stream> File { get; set; }
 
         /// <summary>
-        /// Gets or sets protectWorkbookRequst.
+        /// Gets or sets protectWorkbookRequest.
         /// </summary>
-        public ProtectWorkbookRequst protectWorkbookRequst { get; set; }
+        public ProtectWorkbookRequest protectWorkbookRequest { get; set; }
 
         /// <summary>
         /// Gets or sets password.
@@ -95,10 +95,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 throw new ApiException(400, "Missing required parameter 'file' when calling PostProtect");
             }
 
-            // verify the required parameter 'protectWorkbookRequst' is set
-            if ( this.protectWorkbookRequst == null)
+            // verify the required parameter 'protectWorkbookRequest' is set
+            if ( this.protectWorkbookRequest == null)
             {
-                throw new ApiException(400, "Missing required parameter 'protectWorkbookRequst' when calling PostProtect");
+                throw new ApiException(400, "Missing required parameter 'protectWorkbookRequest' when calling PostProtect");
             }
 
             var path = baseUri + "/cells/protect";
@@ -122,7 +122,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     localVarFileParams.Add(keyValueFileParam.Key, UrlHelper.ToFileInfo(keyValueFileParam.Value, keyValueFileParam.Key));
                 }
             }
-            localVarFileParams.Add("Body", UrlHelper.ToFileInfo( new System.IO.MemoryStream(System.Text.Encoding.ASCII.GetBytes(JsonConvert.SerializeObject(this.protectWorkbookRequst))),"protectWorkbookRequst"));
+            localVarFileParams.Add("Body", UrlHelper.ToFileInfo( new System.IO.MemoryStream(System.Text.Encoding.ASCII.GetBytes(JsonConvert.SerializeObject(this.protectWorkbookRequest))),"protectWorkbookRequest"));
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }
