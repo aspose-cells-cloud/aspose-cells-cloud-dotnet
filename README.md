@@ -1,4 +1,4 @@
-![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/23.9)
+![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/23.10)
 
 # .NET SDK for Spreadsheet Processing in the Cloud
 

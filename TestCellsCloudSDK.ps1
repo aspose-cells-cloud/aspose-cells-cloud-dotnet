@@ -42,4 +42,5 @@ Write-Host $StartTime
 # $EndTime = Get-Date
 # $timespan ="{0:N2}" -f (New-TimeSpan $StartTime  $EndTime).TotalSeconds
 dotnet test --logger "html;logfilename=CellsCloudSDKNet-$StartTime-TestResult.html"  --blame  --collect "Code Coverage"
+# dotnet test .\Aspose.Cells.Cloud.SDK.Test\Aspose.Cells.Cloud.SDK.Test.csproj -l "console;verbosity=detailed"
 # Write-Host "Spent ${timespan}s on finishing test. Result : Total ${total}, Passed ${passed} , Failed ${failed} ."
