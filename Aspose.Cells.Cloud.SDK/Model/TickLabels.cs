@@ -40,57 +40,58 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class TickLabels : LinkElement
     {
         /// <summary>
-        /// Gets or sets AutoScaleFont.
+        /// True if the text in the object changes font size when the object size changes. The default value is True.
         /// </summary>
         public virtual bool? AutoScaleFont { get; set; }
 
         /// <summary>
-        /// Gets or sets BackgroundMode.
+        /// Gets and sets the display mode of the background
         /// </summary>
         public virtual string BackgroundMode { get; set; }
 
         /// <summary>
-        /// Gets or sets Font.
+        /// Returns a  object that represents the font of the specified TickLabels object.
         /// </summary>
         public virtual Font Font { get; set; }
 
         /// <summary>
-        /// Gets or sets Number.
+        /// Represents the format number for the TickLabels object.
         /// </summary>
         public virtual int? Number { get; set; }
 
         /// <summary>
-        /// Gets or sets NumberFormat.
+        /// Represents the format string for the TickLabels object.
         /// </summary>
         public virtual string NumberFormat { get; set; }
 
         /// <summary>
-        /// Gets or sets NumberFormatLinked.
+        /// True if the number format is linked to the cells 
+        ///                         (so that the number format changes in the labels when it changes in the cells).
         /// </summary>
         public virtual bool? NumberFormatLinked { get; set; }
 
         /// <summary>
-        /// Gets or sets Offset.
+        /// Gets and sets the distance of labels from the axis.
         /// </summary>
         public virtual int? Offset { get; set; }
 
         /// <summary>
-        /// Gets or sets RotationAngle.
+        /// Represents text rotation angle in clockwise.
         /// </summary>
         public virtual int? RotationAngle { get; set; }
 
         /// <summary>
-        /// Gets or sets TextDirection.
+        /// Represents text reading order.
         /// </summary>
         public virtual string TextDirection { get; set; }
 
         /// <summary>
-        /// Gets or sets ReadingOrder.
+        /// Represents text reading order.
         /// </summary>
         public virtual string ReadingOrder { get; set; }
 
         /// <summary>
-        /// Gets or sets DirectionType.
+        /// Gets and sets the direction of text.
         /// </summary>
         public virtual string DirectionType { get; set; }
 

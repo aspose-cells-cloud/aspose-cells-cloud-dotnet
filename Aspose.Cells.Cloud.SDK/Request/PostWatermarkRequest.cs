@@ -47,7 +47,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWatermarkRequest"/> class.
         /// </summary>
-        /// <param name="file">File to upload</param>
+        /// <param name="file">e.g. #1032ff</param>
         /// <param name="text"></param>
         /// <param name="color">e.g. #1032ff</param>
         /// <param name="password"></param>
@@ -62,7 +62,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// File to upload
+        /// e.g. #1032ff
         /// </summary>
         public IDictionary<string, System.IO.Stream> File { get; set; }
 

@@ -35,47 +35,47 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ChartPoint.
+    /// 
     /// </summary>
     public class ChartPoint : LinkElement
     {
         /// <summary>
-        /// Gets or sets Area.
+        /// Gets the area.
         /// </summary>
         public virtual Area Area { get; set; }
 
         /// <summary>
-        /// Gets or sets Border.
+        /// Gets the border.
         /// </summary>
         public virtual Line Border { get; set; }
 
         /// <summary>
-        /// Gets or sets DataLabels.
+        /// Returns a DataLabels object that represents the data label associated with the point.
         /// </summary>
         public virtual DataLabels DataLabels { get; set; }
 
         /// <summary>
-        /// Gets or sets Explosion.
+        /// The distance of an open pie slice from the center of the pie chart is expressed as a percentage of the pie diameter.
         /// </summary>
         public virtual int? Explosion { get; set; }
 
         /// <summary>
-        /// Gets or sets Marker.
+        /// Gets the marker.
         /// </summary>
         public virtual Marker Marker { get; set; }
 
         /// <summary>
-        /// Gets or sets Shadow.
+        /// True if the chartpoint has a shadow.
         /// </summary>
         public virtual bool? Shadow { get; set; }
 
         /// <summary>
-        /// Gets or sets XValue.
+        /// Gets or sets the X value of the chart point.
         /// </summary>
         public virtual string XValue { get; set; }
 
         /// <summary>
-        /// Gets or sets YValue.
+        /// Gets or sets the Y value of the chart point.
         /// </summary>
         public virtual string YValue { get; set; }
 

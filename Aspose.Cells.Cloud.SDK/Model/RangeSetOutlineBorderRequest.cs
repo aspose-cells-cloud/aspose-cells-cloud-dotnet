@@ -35,27 +35,27 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// RangeSetOutlineBorderRequest.
+    /// Indicates range set outline border request.
     /// </summary>
     public class RangeSetOutlineBorderRequest
     {
         /// <summary>
-        /// Gets or sets Range.
+        /// Encapsulates the object that represents a range of cells within a spreadsheet.
         /// </summary>
         public virtual Range Range { get; set; }
 
         /// <summary>
-        /// Gets or sets borderEdge.
+        /// LeftBorder, RightBorder, TopBorder, BottomBorder, DiagonalDown, DiagonalUp, Vertical and Horizontal.
         /// </summary>
         public virtual string borderEdge { get; set; }
 
         /// <summary>
-        /// Gets or sets borderStyle.
+        /// None, Thin, Medium, Dashed, Dotted, Thick, Double, Hair, MediumDashed, DashDot, MediumDashDot, DashDotDot, MediumDashDotDot and SlantedDashDot.
         /// </summary>
         public virtual string borderStyle { get; set; }
 
         /// <summary>
-        /// Gets or sets borderColor.
+        /// Border color.
         /// </summary>
         public virtual Color borderColor { get; set; }
 

@@ -48,8 +48,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="PostWorkbookImportXMLRequest"/> class.
         /// </summary>
         /// <param name="name">The workbook(Excel/ODS/...) name.</param>
-        /// <param name="importXMLRequest">password</param>
-        /// <param name="password"></param>
+        /// <param name="importXMLRequest"></param>
+        /// <param name="password">password</param>
         /// <param name="folder">Original workbook folder.</param>
         /// <param name="storageName">Storage name.</param>
         /// <param name="outPath">Output file path.</param>
@@ -73,12 +73,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string name { get; set; }
 
         /// <summary>
-        /// password
+        /// Gets or sets importXMLRequest.
         /// </summary>
         public ImportXMLRequest importXMLRequest { get; set; }
 
         /// <summary>
-        /// Gets or sets password.
+        /// password
         /// </summary>
         public string password { get; set; }
 

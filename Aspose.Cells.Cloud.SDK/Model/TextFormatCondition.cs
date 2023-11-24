@@ -35,12 +35,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// TextFormatCondition.
+    /// 
     /// </summary>
     public class TextFormatCondition : FormulaFormatCondition
     {
         /// <summary>
-        /// Gets or sets Text.
+        /// The text value in a "text contains" conditional formatting rule. Valid only
+        ///                 for type = containsText, notContainsText, beginsWith and endsWith.  The default
+        ///                 value is null.
         /// </summary>
         public virtual string Text { get; set; }
 

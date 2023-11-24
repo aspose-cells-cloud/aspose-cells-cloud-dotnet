@@ -40,12 +40,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Legend : ChartFrame
     {
         /// <summary>
-        /// Gets or sets Position.
+        /// Gets or sets the legend position type.
         /// </summary>
         public virtual string Position { get; set; }
 
         /// <summary>
-        /// Gets or sets LegendEntries.
+        /// Gets a collection of all the LegendEntry objects in the specified chart legend.
+        ///                         Setting the legend entries of the surface chart is not supported.
+        ///                         So it will return null if the chart type is surface chart type.
         /// </summary>
         public virtual LinkElement LegendEntries { get; set; }
 

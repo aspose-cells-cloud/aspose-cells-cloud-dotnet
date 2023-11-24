@@ -35,22 +35,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Import2DimensionIntArrayOption.
+    /// 
     /// </summary>
     public class Import2DimensionIntArrayOption : ImportOption
     {
         /// <summary>
-        /// Gets or sets FirstRow.
+        /// 
         /// </summary>
         public virtual int? FirstRow { get; set; }
 
         /// <summary>
-        /// Gets or sets FirstColumn.
+        /// 
         /// </summary>
         public virtual int? FirstColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets Data.
+        /// 
         /// </summary>
         public virtual List<int?> Data { get; set; }
 

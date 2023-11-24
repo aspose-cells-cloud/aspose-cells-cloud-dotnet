@@ -35,32 +35,32 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Spinner.
+    /// 
     /// </summary>
     public class Spinner : Shape
     {
         /// <summary>
-        /// Gets or sets CurrentValue.
+        /// Gets or sets the current value.
         /// </summary>
         public virtual int? CurrentValue { get; set; }
 
         /// <summary>
-        /// Gets or sets IncrementalChange.
+        /// Gets or sets the amount that the scroll bar or spinner is incremented a line scroll.
         /// </summary>
         public virtual int? IncrementalChange { get; set; }
 
         /// <summary>
-        /// Gets or sets Max.
+        /// Gets or sets the maximum value of a scroll bar or spinner range.
         /// </summary>
         public virtual int? Max { get; set; }
 
         /// <summary>
-        /// Gets or sets Min.
+        /// Gets or sets the minimum value of a scroll bar or spinner range.
         /// </summary>
         public virtual int? Min { get; set; }
 
         /// <summary>
-        /// Gets or sets Shadow.
+        /// Indicates whether the shape has 3-D shading.
         /// </summary>
         public virtual bool? Shadow { get; set; }
 

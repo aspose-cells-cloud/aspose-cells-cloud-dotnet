@@ -35,27 +35,28 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// RangeCopyRequest.
+    /// Indicates range copy request
     /// </summary>
     public class RangeCopyRequest
     {
         /// <summary>
-        /// Gets or sets Operate.
+        /// copydata, copystyle, copyto, copyvalue.
         /// </summary>
         public virtual string Operate { get; set; }
 
         /// <summary>
-        /// Gets or sets Source.
+        /// Source range. 
         /// </summary>
         public virtual Range Source { get; set; }
 
         /// <summary>
-        /// Gets or sets Target.
+        /// Target range.
         /// </summary>
         public virtual Range Target { get; set; }
 
         /// <summary>
-        /// Gets or sets PasteOptions.
+        /// Represents the paste special options.
+        ///             
         /// </summary>
         public virtual PasteOptions PasteOptions { get; set; }
 

@@ -40,52 +40,62 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Font
     {
         /// <summary>
-        /// Gets or sets Color.
+        /// Gets or sets the  of the font.
+        ///  
         /// </summary>
         public virtual Color Color { get; set; }
 
         /// <summary>
-        /// Gets or sets DoubleSize.
+        /// Gets and sets the double size of the font.
+        ///  
         /// </summary>
         public virtual double? DoubleSize { get; set; }
 
         /// <summary>
-        /// Gets or sets IsBold.
+        /// Gets or sets a value indicating whether the font is bold.
+        ///  
         /// </summary>
         public virtual bool? IsBold { get; set; }
 
         /// <summary>
-        /// Gets or sets IsItalic.
+        /// Gets or sets a value indicating whether the font is italic.
+        ///  
         /// </summary>
         public virtual bool? IsItalic { get; set; }
 
         /// <summary>
-        /// Gets or sets IsStrikeout.
+        /// Gets or sets a value indicating whether the font is single strikeout.
+        ///  
         /// </summary>
         public virtual bool? IsStrikeout { get; set; }
 
         /// <summary>
-        /// Gets or sets IsSubscript.
+        /// Gets or sets a value indicating whether the font is subscript.
+        ///  
         /// </summary>
         public virtual bool? IsSubscript { get; set; }
 
         /// <summary>
-        /// Gets or sets IsSuperscript.
+        /// Gets or sets a value indicating whether the font is super script.
+        ///  
         /// </summary>
         public virtual bool? IsSuperscript { get; set; }
 
         /// <summary>
-        /// Gets or sets Name.
+        /// Gets  or sets the name of the .
+        ///  
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets Size.
+        /// Gets or sets the size of the font.
+        ///  
         /// </summary>
         public virtual int? Size { get; set; }
 
         /// <summary>
-        /// Gets or sets Underline.
+        /// Gets or sets the font underline type.
+        ///  
         /// </summary>
         public virtual string Underline { get; set; }
 

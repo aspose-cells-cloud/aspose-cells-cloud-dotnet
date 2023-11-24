@@ -35,102 +35,113 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// PdfSaveOptions.
+    /// Represents options of saving pdf file.
     /// </summary>
     public class PdfSaveOptions : SaveOptions
     {
         /// <summary>
-        /// Gets or sets DisplayDocTitle.
+        /// Indicates whether the window's title bar should display the document title.
         /// </summary>
         public virtual bool? DisplayDocTitle { get; set; }
 
         /// <summary>
-        /// Gets or sets ExportDocumentStructure.
+        /// Indicates whether to export document structure.
         /// </summary>
         public virtual bool? ExportDocumentStructure { get; set; }
 
         /// <summary>
-        /// Gets or sets EmfRenderSetting.
+        /// Setting for rendering Emf metafile.
         /// </summary>
         public virtual string EmfRenderSetting { get; set; }
 
         /// <summary>
-        /// Gets or sets CustomPropertiesExport.
+        /// Specifies the way CustomDocumentPropertyCollection are exported to PDF file.
         /// </summary>
         public virtual string CustomPropertiesExport { get; set; }
 
         /// <summary>
-        /// Gets or sets OptimizationType.
+        /// Gets and sets pdf optimization type.
         /// </summary>
         public virtual string OptimizationType { get; set; }
 
         /// <summary>
-        /// Gets or sets Producer.
+        /// Gets and sets producer of generated pdf document.
         /// </summary>
         public virtual string Producer { get; set; }
 
         /// <summary>
-        /// Gets or sets PdfCompression.
+        /// Indicate the compression algorithm.
         /// </summary>
         public virtual string PdfCompression { get; set; }
 
         /// <summary>
-        /// Gets or sets FontEncoding.
+        /// Gets or sets embedded font encoding in pdf.
         /// </summary>
         public virtual string FontEncoding { get; set; }
 
         /// <summary>
-        /// Gets or sets Watermark.
+        /// Gets or sets watermark to output.
         /// </summary>
         public virtual RenderingWatermark Watermark { get; set; }
 
         /// <summary>
-        /// Gets or sets CalculateFormula.
+        /// Indicates whether calculate formulas before saving pdf file.The default value is false.
         /// </summary>
         public virtual bool? CalculateFormula { get; set; }
 
         /// <summary>
-        /// Gets or sets CheckFontCompatibility.
+        /// Indicates whether check font compatibility for every character in text.
+        ///                 The default value is true.  Disable this property may give better performance.
+        ///                  But when the default or specified font of text/character cannot be used
+        ///                 to render it, unreadable characters(such as block) maybe occur in the generated
+        ///                 pdf.  For such situation user should keep this property as true so that alternative
+        ///                 font can be searched and used to render the text instead;
         /// </summary>
         public virtual bool? CheckFontCompatibility { get; set; }
 
         /// <summary>
-        /// Gets or sets Compliance.
+        /// Workbook converts to pdf will according to PdfCompliance in this property.
         /// </summary>
         public virtual string Compliance { get; set; }
 
         /// <summary>
-        /// Gets or sets DefaultFont.
+        /// When characters in the Excel are unicode and not be set with correct font in cell style, 
+        ///              They may appear as block in pdf,image.  Set the DefaultFont such as MingLiu or MS Gothic to show these characters.  
+        ///              If this property is not set, Aspose.Cells will use system default font to show these unicode characters.
         /// </summary>
         public virtual string DefaultFont { get; set; }
 
         /// <summary>
-        /// Gets or sets OnePagePerSheet.
+        /// If OnePagePerSheet is true , all content of one sheet will output to only
+        ///             one page in result. The paper size of pagesetup will be invalid, and the
+        ///                other settings of pagesetup will still take effect.
         /// </summary>
         public virtual bool? OnePagePerSheet { get; set; }
 
         /// <summary>
-        /// Gets or sets PrintingPageType.
+        /// Indicates which pages will not be printed.
         /// </summary>
         public virtual string PrintingPageType { get; set; }
 
         /// <summary>
-        /// Gets or sets SecurityOptions.
+        /// Set this options, when security is need in xls2pdf result.
         /// </summary>
         public virtual PdfSecurityOptions SecurityOptions { get; set; }
 
         /// <summary>
-        /// Gets or sets desiredPPI.
+        /// Set desired PPI(pixels per inch) of resample images and jpeg quality  All images will be converted to JPEG with the specified quality setting, and images that are greater than the specified PPI (pixels per inch) will be resampled.
+        ///               Desired pixels per inch. 220 high quality. 150 screen quality. 96 email quality.
         /// </summary>
         public virtual int? desiredPPI { get; set; }
 
         /// <summary>
-        /// Gets or sets jpegQuality.
+        /// Set desired PPI(pixels per inch) of resample images and jpeg quality  All images will be converted to JPEG with the specified quality setting, and images that are greater than the specified PPI (pixels per inch) will be resampled.
+        ///               0 - 100% JPEG quality.
         /// </summary>
         public virtual int? jpegQuality { get; set; }
 
         /// <summary>
-        /// Gets or sets ImageType.
+        /// Represents the image type when converting the chart and shape .
         /// </summary>
         public virtual string ImageType { get; set; }
 

@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// AutoShapeResponse.
+    /// 
     /// </summary>
     public class AutoShapeResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets AutoShape.
+        /// 
         /// </summary>
         public virtual AutoShape AutoShape { get; set; }
 

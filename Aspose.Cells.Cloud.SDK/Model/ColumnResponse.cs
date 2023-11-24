@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ColumnResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Column.
+        /// 
         /// </summary>
         public virtual Column Column { get; set; }
 

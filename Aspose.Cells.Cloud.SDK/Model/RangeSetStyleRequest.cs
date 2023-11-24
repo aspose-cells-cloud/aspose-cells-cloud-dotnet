@@ -35,17 +35,18 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// RangeSetStyleRequest.
+    /// Indicates range set style request.
     /// </summary>
     public class RangeSetStyleRequest
     {
         /// <summary>
-        /// Gets or sets Range.
+        /// Encapsulates the object that represents a range of cells within a spreadsheet.
         /// </summary>
         public virtual Range Range { get; set; }
 
         /// <summary>
-        /// Gets or sets Style.
+        /// Represents display style of excel document,such as font,color,alignment,border,etc.
+        ///             
         /// </summary>
         public virtual Style Style { get; set; }
 

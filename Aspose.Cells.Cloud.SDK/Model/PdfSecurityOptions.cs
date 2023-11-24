@@ -35,57 +35,57 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// PdfSecurityOptions.
+    /// 
     /// </summary>
     public class PdfSecurityOptions
     {
         /// <summary>
-        /// Gets or sets AnnotationsPermission.
+        /// 
         /// </summary>
         public virtual bool? AnnotationsPermission { get; set; }
 
         /// <summary>
-        /// Gets or sets AssembleDocumentPermission.
+        /// 
         /// </summary>
         public virtual bool? AssembleDocumentPermission { get; set; }
 
         /// <summary>
-        /// Gets or sets ExtractContentPermission.
+        /// 
         /// </summary>
         public virtual bool? ExtractContentPermission { get; set; }
 
         /// <summary>
-        /// Gets or sets ExtractContentPermissionObsolete.
+        /// 
         /// </summary>
         public virtual bool? ExtractContentPermissionObsolete { get; set; }
 
         /// <summary>
-        /// Gets or sets FillFormsPermission.
+        /// 
         /// </summary>
         public virtual bool? FillFormsPermission { get; set; }
 
         /// <summary>
-        /// Gets or sets FullQualityPrintPermission.
+        /// 
         /// </summary>
         public virtual bool? FullQualityPrintPermission { get; set; }
 
         /// <summary>
-        /// Gets or sets ModifyDocumentPermission.
+        /// 
         /// </summary>
         public virtual bool? ModifyDocumentPermission { get; set; }
 
         /// <summary>
-        /// Gets or sets OwnerPassword.
+        /// 
         /// </summary>
         public virtual string OwnerPassword { get; set; }
 
         /// <summary>
-        /// Gets or sets PrintPermission.
+        /// 
         /// </summary>
         public virtual bool? PrintPermission { get; set; }
 
         /// <summary>
-        /// Gets or sets UserPassword.
+        /// 
         /// </summary>
         public virtual string UserPassword { get; set; }
 

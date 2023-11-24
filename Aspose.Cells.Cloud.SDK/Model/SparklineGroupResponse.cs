@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class SparklineGroupResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets SparklineGroup.
+        /// 
         /// </summary>
         public virtual SparklineGroup SparklineGroup { get; set; }
 

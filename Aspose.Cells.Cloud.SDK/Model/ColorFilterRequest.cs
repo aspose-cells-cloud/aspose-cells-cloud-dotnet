@@ -35,22 +35,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ColorFilterRequest.
+    /// Indicates color filter request
     /// </summary>
     public class ColorFilterRequest
     {
         /// <summary>
-        /// Gets or sets Pattern.
+        /// Gets or sets the fill pattern type
         /// </summary>
         public virtual string Pattern { get; set; }
 
         /// <summary>
-        /// Gets or sets ForegroundColor.
+        /// Foreground color
         /// </summary>
         public virtual CellsColor ForegroundColor { get; set; }
 
         /// <summary>
-        /// Gets or sets BackgroundColor.
+        /// Background color
         /// </summary>
         public virtual CellsColor BackgroundColor { get; set; }
 

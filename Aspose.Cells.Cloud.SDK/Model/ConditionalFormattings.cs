@@ -40,12 +40,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ConditionalFormattings : LinkElement
     {
         /// <summary>
-        /// Gets or sets Count.
+        /// 
         /// </summary>
         public virtual int? Count { get; set; }
 
         /// <summary>
-        /// Gets or sets ConditionalFormattingList.
+        /// 
         /// </summary>
         public virtual IList<ConditionalFormatting> ConditionalFormattingList { get; set; }
 

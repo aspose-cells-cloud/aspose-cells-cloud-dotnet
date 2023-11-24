@@ -40,17 +40,20 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Area
     {
         /// <summary>
-        /// Gets or sets BackgroundColor.
+        /// Gets or sets the background  of the .
+        ///  
         /// </summary>
         public virtual Color BackgroundColor { get; set; }
 
         /// <summary>
-        /// Gets or sets FillFormat.
+        /// Represents a  object that contains fill formatting properties for the specified chart or shape.
+        ///  
         /// </summary>
         public virtual FillFormat FillFormat { get; set; }
 
         /// <summary>
-        /// Gets or sets ForegroundColor.
+        /// Gets or sets the foreground .
+        ///  
         /// </summary>
         public virtual Color ForegroundColor { get; set; }
 
@@ -60,12 +63,15 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string Format { get; set; }
 
         /// <summary>
-        /// Gets or sets InvertIfNegative.
+        /// If the property is true and the value of chart point is a negative number,
+        ///             the foreground color and background color will be exchanged.
+        ///  
         /// </summary>
         public virtual bool? InvertIfNegative { get; set; }
 
         /// <summary>
-        /// Gets or sets Transparency.
+        /// Returns or sets the degree of transparency of the area as a value from 0.0 (opaque) through 1.0 (clear).
+        ///  
         /// </summary>
         public virtual double? Transparency { get; set; }
 

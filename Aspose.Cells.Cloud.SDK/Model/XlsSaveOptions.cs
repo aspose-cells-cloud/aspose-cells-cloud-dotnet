@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// XlsSaveOptions.
+    /// Represents the options of saving .xls file.
     /// </summary>
     public class XlsSaveOptions : SaveOptions
     {

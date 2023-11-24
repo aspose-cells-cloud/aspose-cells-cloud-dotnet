@@ -35,47 +35,48 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ChartDataTable.
+    /// 
     /// </summary>
     public class ChartDataTable : LinkElement
     {
         /// <summary>
-        /// Gets or sets AutoScaleFont.
+        /// True if the text in the object changes font size when the object size changes. 
+        ///                         The default value is True.
         /// </summary>
         public virtual bool? AutoScaleFont { get; set; }
 
         /// <summary>
-        /// Gets or sets BackgroundMode.
+        /// Gets and sets the display mode of the background
         /// </summary>
         public virtual string BackgroundMode { get; set; }
 
         /// <summary>
-        /// Gets or sets Border.
+        /// Returns a Border object that represents the border of the object
         /// </summary>
         public virtual Line Border { get; set; }
 
         /// <summary>
-        /// Gets or sets Font.
+        /// Gets a  object which represents the font setting of the specified chart data table.
         /// </summary>
         public virtual Font Font { get; set; }
 
         /// <summary>
-        /// Gets or sets HasBorderHorizontal.
+        /// True if the chart data table has horizontal cell borders
         /// </summary>
         public virtual bool? HasBorderHorizontal { get; set; }
 
         /// <summary>
-        /// Gets or sets HasBorderOutline.
+        /// True if the chart data table has outline borders
         /// </summary>
         public virtual bool? HasBorderOutline { get; set; }
 
         /// <summary>
-        /// Gets or sets HasBorderVertical.
+        /// True if the chart data table has vertical cell borders
         /// </summary>
         public virtual bool? HasBorderVertical { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowLegendKey.
+        /// True if the data label legend key is visible.
         /// </summary>
         public virtual bool? ShowLegendKey { get; set; }
 

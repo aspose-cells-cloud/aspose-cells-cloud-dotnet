@@ -35,22 +35,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// CheckBox.
+    /// 
     /// </summary>
     public class CheckBox : Shape
     {
         /// <summary>
-        /// Gets or sets CheckedValue.
+        /// Gets or set checkbox' value.
         /// </summary>
         public virtual string CheckedValue { get; set; }
 
         /// <summary>
-        /// Gets or sets Shadow.
+        /// Indicates whether the combobox has 3-D shading.
         /// </summary>
         public virtual bool? Shadow { get; set; }
 
         /// <summary>
-        /// Gets or sets Value.
+        /// Indicates if the checkbox is checked or not.
         /// </summary>
         public virtual bool? Value { get; set; }
 

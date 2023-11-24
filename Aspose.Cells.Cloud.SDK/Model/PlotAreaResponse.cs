@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// PlotAreaResponse.
+    /// 
     /// </summary>
     public class PlotAreaResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets PlotArea.
+        /// 
         /// </summary>
         public virtual PlotArea PlotArea { get; set; }
 

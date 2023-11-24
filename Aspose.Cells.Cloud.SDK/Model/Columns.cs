@@ -40,17 +40,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Columns : LinkElement
     {
         /// <summary>
-        /// Gets or sets MaxColumn.
+        /// 
         /// </summary>
         public virtual int? MaxColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets ColumnsCount.
+        /// 
         /// </summary>
         public virtual int? ColumnsCount { get; set; }
 
         /// <summary>
-        /// Gets or sets ColumnsList.
+        /// 
         /// </summary>
         public virtual IList<LinkElement> ColumnsList { get; set; }
 

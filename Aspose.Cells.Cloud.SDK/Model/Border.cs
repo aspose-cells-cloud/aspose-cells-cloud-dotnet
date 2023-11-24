@@ -40,12 +40,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Border
     {
         /// <summary>
-        /// Gets or sets LineStyle.
+        /// Gets or sets the cell border type.
+        ///  
         /// </summary>
         public virtual string LineStyle { get; set; }
 
         /// <summary>
-        /// Gets or sets Color.
+        /// Gets or sets the  of the border.
+        ///  
         /// </summary>
         public virtual Color Color { get; set; }
 
@@ -55,12 +57,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string BorderType { get; set; }
 
         /// <summary>
-        /// Gets or sets ThemeColor.
+        /// Gets and sets the theme color of the border.
+        ///  
         /// </summary>
         public virtual ThemeColor ThemeColor { get; set; }
 
         /// <summary>
-        /// Gets or sets ArgbColor.
+        /// Gets and sets the color with a 32-bit ARGB value.
+        ///  
         /// </summary>
         public virtual int? ArgbColor { get; set; }
 

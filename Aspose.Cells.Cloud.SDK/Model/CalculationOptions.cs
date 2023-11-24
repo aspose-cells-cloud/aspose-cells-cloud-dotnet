@@ -40,22 +40,29 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class CalculationOptions
     {
         /// <summary>
-        /// Gets or sets CalcStackSize.
+        /// Specifies the stack size for calculating cells recursively.
+        ///  
         /// </summary>
         public virtual int? CalcStackSize { get; set; }
 
         /// <summary>
-        /// Gets or sets IgnoreError.
+        /// Indicates whether errors encountered while calculating formulas should be ignored.
+        ///             The error may be unsupported function, external links, etc.
+        ///             The default value is true.
+        ///  
         /// </summary>
         public virtual bool? IgnoreError { get; set; }
 
         /// <summary>
-        /// Gets or sets PrecisionStrategy.
+        /// Specifies the strategy for processing precision of calculation.
+        ///  
         /// </summary>
         public virtual string PrecisionStrategy { get; set; }
 
         /// <summary>
-        /// Gets or sets Recursive.
+        /// Indicates whether calculate the dependent cells recursively when calculating one cell and it depends on other cells.
+        ///             The default value is true.
+        ///  
         /// </summary>
         public virtual bool? Recursive { get; set; }
 

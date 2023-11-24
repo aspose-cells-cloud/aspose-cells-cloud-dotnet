@@ -40,67 +40,81 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ChartFrame
     {
         /// <summary>
-        /// Gets or sets Area.
+        /// Gets the area.
+        ///  
         /// </summary>
         public virtual Area Area { get; set; }
 
         /// <summary>
-        /// Gets or sets AutoScaleFont.
+        /// True if the text in the object changes font size when the object size changes. The default value is True.
+        ///  
         /// </summary>
         public virtual bool? AutoScaleFont { get; set; }
 
         /// <summary>
-        /// Gets or sets BackgroundMode.
+        /// Gets and sets the display mode of the background
+        ///  
         /// </summary>
         public virtual string BackgroundMode { get; set; }
 
         /// <summary>
-        /// Gets or sets Border.
+        /// Gets the border.
+        ///  
         /// </summary>
         public virtual Line Border { get; set; }
 
         /// <summary>
-        /// Gets or sets Font.
+        /// Gets a  object of the specified ChartFrame object.
+        ///  
         /// </summary>
         public virtual Font Font { get; set; }
 
         /// <summary>
-        /// Gets or sets IsAutomaticSize.
+        /// Indicates whether the chart frame is automatic sized.
+        ///  
         /// </summary>
         public virtual bool? IsAutomaticSize { get; set; }
 
         /// <summary>
-        /// Gets or sets IsInnerMode.
+        /// Indicates whether the size of the plot area size includes the tick marks, and the axis labels.
+        ///             False specifies that the size shall determine the size of the plot area, the tick marks, and the axis labels.
+        ///  
         /// </summary>
         public virtual bool? IsInnerMode { get; set; }
 
         /// <summary>
-        /// Gets or sets Shadow.
+        /// True if the frame has a shadow.
+        ///  
         /// </summary>
         public virtual bool? Shadow { get; set; }
 
         /// <summary>
-        /// Gets or sets ShapeProperties.
+        /// Gets the  object.
+        ///  
         /// </summary>
         public virtual IList<LinkElement> ShapeProperties { get; set; }
 
         /// <summary>
-        /// Gets or sets Width.
+        /// Gets or sets the width of frame in units of 1/4000 of the chart area.
+        ///  
         /// </summary>
         public virtual int? Width { get; set; }
 
         /// <summary>
-        /// Gets or sets Height.
+        /// Gets or sets the height of frame in units of 1/4000 of the chart area.
+        ///  
         /// </summary>
         public virtual int? Height { get; set; }
 
         /// <summary>
-        /// Gets or sets X.
+        /// Gets or sets the x coordinate of the upper left corner in units of 1/4000 of the chart area.
+        ///  
         /// </summary>
         public virtual int? X { get; set; }
 
         /// <summary>
-        /// Gets or sets Y.
+        /// Gets or sets the y coordinate of the upper left corner in units of 1/4000 of the chart area.
+        ///  
         /// </summary>
         public virtual int? Y { get; set; }
 

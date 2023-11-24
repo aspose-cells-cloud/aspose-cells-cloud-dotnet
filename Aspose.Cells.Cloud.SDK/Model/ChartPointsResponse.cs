@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ChartPointsResponse.
+    /// 
     /// </summary>
     public class ChartPointsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets ChartPoints.
+        /// 
         /// </summary>
         public virtual ChartPoints ChartPoints { get; set; }
 

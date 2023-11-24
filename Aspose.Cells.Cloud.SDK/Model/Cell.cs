@@ -40,82 +40,83 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Cell : LinkElement
     {
         /// <summary>
-        /// Gets or sets Name.
+        /// Gets the name of the cell.
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets Row.
+        /// Gets row number (zero based) of the cell.
         /// </summary>
         public virtual int? Row { get; set; }
 
         /// <summary>
-        /// Gets or sets Column.
+        /// Gets column number (zero based) of the cell.
         /// </summary>
         public virtual int? Column { get; set; }
 
         /// <summary>
-        /// Gets or sets Value.
+        /// Gets the value contained in this cell.
         /// </summary>
         public virtual string Value { get; set; }
 
         /// <summary>
-        /// Gets or sets Type.
+        /// Represents cell value type.
         /// </summary>
         public virtual string Type { get; set; }
 
         /// <summary>
-        /// Gets or sets Formula.
+        /// Gets or sets a formula of the .
         /// </summary>
         public virtual string Formula { get; set; }
 
         /// <summary>
-        /// Gets or sets IsFormula.
+        /// Represents if the specified cell contains formula.
         /// </summary>
         public virtual bool? IsFormula { get; set; }
 
         /// <summary>
-        /// Gets or sets IsMerged.
+        /// Checks if a cell is part of a merged range or not.
         /// </summary>
         public virtual bool? IsMerged { get; set; }
 
         /// <summary>
-        /// Gets or sets IsArrayHeader.
+        /// Indicates the cell's formula is and array formula 
+        ///                         and it is the first cell of the array.
         /// </summary>
         public virtual bool? IsArrayHeader { get; set; }
 
         /// <summary>
-        /// Gets or sets IsInArray.
+        /// Indicates whether the cell formula is an array formula.
         /// </summary>
         public virtual bool? IsInArray { get; set; }
 
         /// <summary>
-        /// Gets or sets IsErrorValue.
+        /// Checks if the value of this cell is an error.
         /// </summary>
         public virtual bool? IsErrorValue { get; set; }
 
         /// <summary>
-        /// Gets or sets IsInTable.
+        /// Indicates whether this cell is part of table formula.
         /// </summary>
         public virtual bool? IsInTable { get; set; }
 
         /// <summary>
-        /// Gets or sets IsStyleSet.
+        /// Indicates if the cell's style is set. If return false, it means this cell has a default cell format.
         /// </summary>
         public virtual bool? IsStyleSet { get; set; }
 
         /// <summary>
-        /// Gets or sets HtmlString.
+        /// Gets and sets the html string which contains data and some formats in this cell.
         /// </summary>
         public virtual string HtmlString { get; set; }
 
         /// <summary>
-        /// Gets or sets Style.
+        /// 
         /// </summary>
         public virtual LinkElement Style { get; set; }
 
         /// <summary>
-        /// Gets or sets Worksheet.
+        /// Gets the parent worksheet.
         /// </summary>
         public virtual string Worksheet { get; set; }
 

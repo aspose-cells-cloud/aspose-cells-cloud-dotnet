@@ -35,42 +35,45 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ListBox.
+    /// 
     /// </summary>
     public class ListBox : Shape
     {
         /// <summary>
-        /// Gets or sets InputRange.
+        /// 
         /// </summary>
         public virtual string InputRange { get; set; }
 
         /// <summary>
-        /// Gets or sets ItemCount.
+        /// Gets the number of items in the list box.
         /// </summary>
         public virtual int? ItemCount { get; set; }
 
         /// <summary>
-        /// Gets or sets PageChange.
+        /// Specifies the amount by which the control's value is changed 
+        ///                         when the user clicks on the scrollbar's page up or page down region.
         /// </summary>
         public virtual int? PageChange { get; set; }
 
         /// <summary>
-        /// Gets or sets SelectedCells.
+        /// Gets the selected cells.
+        ///                         Returns null if the input range is not set or no item is selected
         /// </summary>
         public virtual IList<LinkElement> SelectedCells { get; set; }
 
         /// <summary>
-        /// Gets or sets SelectedIndex.
+        /// Gets or sets the index number of the currently selected item in a list box or combo box.
+        ///                         Zero-based.
         /// </summary>
         public virtual int? SelectedIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets SelectionType.
+        /// Gets or sets the selection mode of the specified list box.
         /// </summary>
         public virtual string SelectionType { get; set; }
 
         /// <summary>
-        /// Gets or sets Shadow.
+        /// Indicates whether the combobox has 3-D shading.
         /// </summary>
         public virtual bool? Shadow { get; set; }
 

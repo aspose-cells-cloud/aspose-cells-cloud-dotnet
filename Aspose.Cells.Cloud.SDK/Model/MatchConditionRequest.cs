@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// MatchConditionRequest.
+    /// Indicates the match condition that needs to be processed for the file name.
     /// </summary>
     public class MatchConditionRequest
     {
         /// <summary>
-        /// Gets or sets RegexPattern.
+        /// Regex Pattern.
         /// </summary>
         public virtual string RegexPattern { get; set; }
 
         /// <summary>
-        /// Gets or sets FullMatchConditions.
+        /// Name list.
         /// </summary>
         public virtual IList<string> FullMatchConditions { get; set; }
 

@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// DifSaveOptions.
+    /// Represents the options of saving dif file.
     /// </summary>
     public class DifSaveOptions : SaveOptions
     {

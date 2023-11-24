@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// SpinnerResponse.
+    /// 
     /// </summary>
     public class SpinnerResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shape.
+        /// 
         /// </summary>
         public virtual Spinner Shape { get; set; }
 

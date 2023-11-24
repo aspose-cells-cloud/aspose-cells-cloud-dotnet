@@ -1,7 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net4.5.2</TargetFrameworks>
+    <TargetFrameworks>Net6</TargetFrameworks>
     <AssemblyName>Aspose.Cells.Cloud.SDK</AssemblyName>
     <PackageId>Aspose.Cells-Cloud</PackageId>
     <OutputType>Library</OutputType>
@@ -17,17 +17,17 @@
     <RepositoryType>GitHub</RepositoryType>
     <Copyright>MIT</Copyright>
     <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>    
-    <AssemblyVersion>23.10</AssemblyVersion>
-    <FileVersion>23.10</FileVersion>
-    <Version>23.10</Version>
+    <AssemblyVersion>23.11</AssemblyVersion>
+    <FileVersion>23.11</FileVersion>
+    <Version>23.11</Version>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
-  </PropertyGroup>
 
+  </PropertyGroup>
   <ItemGroup>
-	  <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
-	  <PackageReference Include="RestSharp" Version="106.2.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
   </ItemGroup>
-	<ItemGroup>
-		<None Include="..\README.md" Pack="true" PackagePath="\"/>
-	</ItemGroup>
+  <ItemGroup>
+	<None Include="..\README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 </Project>

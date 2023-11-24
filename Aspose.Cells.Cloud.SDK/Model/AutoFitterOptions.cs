@@ -35,52 +35,53 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// AutoFitterOptions.
+    /// 
     /// </summary>
     public class AutoFitterOptions
     {
         /// <summary>
-        /// Gets or sets AutoFitMergedCellsType.
+        /// Gets and set the type of auto fitting row height of merged cells.
         /// </summary>
         public virtual string AutoFitMergedCellsType { get; set; }
 
         /// <summary>
-        /// Gets or sets AutoFitMergedCells.
+        /// Indicates whether auto fit row height when the cells is merged in a row.
+        ///                         The default value is false.
         /// </summary>
         public virtual bool? AutoFitMergedCells { get; set; }
 
         /// <summary>
-        /// Gets or sets IgnoreHidden.
+        /// Ignores the hidden rows/columns.
         /// </summary>
         public virtual bool? IgnoreHidden { get; set; }
 
         /// <summary>
-        /// Gets or sets OnlyAuto.
+        /// Indicates whether only fit the rows which height are not customed.
         /// </summary>
         public virtual bool? OnlyAuto { get; set; }
 
         /// <summary>
-        /// Gets or sets DefaultEditLanguage.
+        /// Gets or sets default edit language.
         /// </summary>
         public virtual string DefaultEditLanguage { get; set; }
 
         /// <summary>
-        /// Gets or sets MaxRowHeight.
+        /// Gets and sets the max row height(in unit of Point) when autofitting rows.
         /// </summary>
         public virtual double? MaxRowHeight { get; set; }
 
         /// <summary>
-        /// Gets or sets AutoFitWrappedTextType.
+        /// Gets and sets the type of auto fitting wrapped text.
         /// </summary>
         public virtual string AutoFitWrappedTextType { get; set; }
 
         /// <summary>
-        /// Gets or sets FormatStrategy.
+        /// Gets and sets the formatted strategy.
         /// </summary>
         public virtual string FormatStrategy { get; set; }
 
         /// <summary>
-        /// Gets or sets ForRendering.
+        /// Indicates whether fit for rendering purpose.
         /// </summary>
         public virtual bool? ForRendering { get; set; }
 

@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Comments : LinkElement
     {
         /// <summary>
-        /// Gets or sets CommentList.
+        /// 
         /// </summary>
         public virtual IList<LinkElement> CommentList { get; set; }
 

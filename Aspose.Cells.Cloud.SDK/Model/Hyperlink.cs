@@ -40,27 +40,27 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Hyperlink : LinkElement
     {
         /// <summary>
-        /// Gets or sets Address.
+        /// Represents the address of a hyperlink.
         /// </summary>
         public virtual string Address { get; set; }
 
         /// <summary>
-        /// Gets or sets Area.
+        /// Gets the range of hyperlink.
         /// </summary>
         public virtual CellArea Area { get; set; }
 
         /// <summary>
-        /// Gets or sets ScreenTip.
+        /// Returns or sets the ScreenTip text for the specified hyperlink.
         /// </summary>
         public virtual string ScreenTip { get; set; }
 
         /// <summary>
-        /// Gets or sets TextToDisplay.
+        /// Represents the text to be displayed for the specified hyperlink. The default value is the address of the hyperlink.
         /// </summary>
         public virtual string TextToDisplay { get; set; }
 
         /// <summary>
-        /// Gets or sets LinkType.
+        /// Gets the link type.
         /// </summary>
         public virtual string LinkType { get; set; }
 

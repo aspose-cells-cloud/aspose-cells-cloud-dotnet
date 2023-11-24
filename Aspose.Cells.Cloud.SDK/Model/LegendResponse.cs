@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class LegendResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Legend.
+        /// 
         /// </summary>
         public virtual Legend Legend { get; set; }
 

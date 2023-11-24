@@ -40,7 +40,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ColorFilter
     {
         /// <summary>
-        /// Gets or sets FilterByFillColor.
+        /// Flag indicating whether filter by the cell's fill color.
+        ///  
         /// </summary>
         public virtual bool? FilterByFillColor { get; set; }
 

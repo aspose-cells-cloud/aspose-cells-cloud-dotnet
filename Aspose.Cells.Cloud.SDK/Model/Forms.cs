@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Forms.
+    /// 
     /// </summary>
     public class Forms : LinkElement
     {
         /// <summary>
-        /// Gets or sets FormList.
+        /// 
         /// </summary>
         public virtual IList<LinkElement> FormList { get; set; }
 

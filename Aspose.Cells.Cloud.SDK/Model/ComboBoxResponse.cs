@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ComboBoxResponse.
+    /// 
     /// </summary>
     public class ComboBoxResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shape.
+        /// 
         /// </summary>
         public virtual ComboBox Shape { get; set; }
 

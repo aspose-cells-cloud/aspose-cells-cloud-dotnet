@@ -40,12 +40,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class CustomFilter
     {
         /// <summary>
-        /// Gets or sets Criteria.
+        /// Gets and sets the criteria.
+        ///  
         /// </summary>
         public virtual Object Criteria { get; set; }
 
         /// <summary>
-        /// Gets or sets FilterOperatorType.
+        /// Gets and sets the filter operator type.
+        ///  
         /// </summary>
         public virtual string FilterOperatorType { get; set; }
 

@@ -35,27 +35,32 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// PasteOptions.
+    /// Represents the paste special options.
+    ///             
     /// </summary>
     public class PasteOptions
     {
         /// <summary>
-        /// Gets or sets OnlyVisibleCells.
+        /// True means only copying visible cells.
+        ///  
         /// </summary>
         public virtual bool? OnlyVisibleCells { get; set; }
 
         /// <summary>
-        /// Gets or sets PasteType.
+        /// The paste special type.
+        ///  
         /// </summary>
         public virtual string PasteType { get; set; }
 
         /// <summary>
-        /// Gets or sets SkipBlanks.
+        /// Indicates whether skips blank cells.
+        ///  
         /// </summary>
         public virtual bool? SkipBlanks { get; set; }
 
         /// <summary>
-        /// Gets or sets Transpose.
+        /// True to transpose rows and columns when the range is pasted. The default value is False.
+        ///  
         /// </summary>
         public virtual bool? Transpose { get; set; }
 

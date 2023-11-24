@@ -35,22 +35,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// RadioButton.
+    /// 
     /// </summary>
     public class RadioButton : Shape
     {
         /// <summary>
-        /// Gets or sets GroupBox.
+        /// Gets the GroupBox that contains this RadioButton.
         /// </summary>
         public virtual GroupBox GroupBox { get; set; }
 
         /// <summary>
-        /// Gets or sets IsChecked.
+        /// Indicates if the radiobutton is checked or not.
         /// </summary>
         public virtual bool? IsChecked { get; set; }
 
         /// <summary>
-        /// Gets or sets Shadow.
+        /// Indicates whether the combobox has 3-D shading.
         /// </summary>
         public virtual bool? Shadow { get; set; }
 

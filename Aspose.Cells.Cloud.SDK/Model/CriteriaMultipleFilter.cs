@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// CriteriaMultipleFilter.
+    /// 
     /// </summary>
     public class CriteriaMultipleFilter : MultipleFilter
     {
         /// <summary>
-        /// Gets or sets Criteria.
+        /// 
         /// </summary>
         public virtual string Criteria { get; set; }
 

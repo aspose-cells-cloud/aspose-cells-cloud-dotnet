@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// CalculateFormulaResponse.
+    /// 
     /// </summary>
     public class CalculateFormulaResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Result.
+        /// 
         /// </summary>
         public virtual string Result { get; set; }
 

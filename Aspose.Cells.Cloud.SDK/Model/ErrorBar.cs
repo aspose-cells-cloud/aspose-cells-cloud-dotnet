@@ -35,42 +35,43 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ErrorBar.
+    /// 
     /// </summary>
     public class ErrorBar : Line
     {
         /// <summary>
-        /// Gets or sets Link.
+        /// 
         /// </summary>
         public virtual Link Link { get; set; }
 
         /// <summary>
-        /// Gets or sets Amount.
+        /// Represents amount of error bar.
+        ///                          The amount must be greater than or equal to zero.
         /// </summary>
         public virtual double? Amount { get; set; }
 
         /// <summary>
-        /// Gets or sets DisplayType.
+        /// Represents error bar display type.
         /// </summary>
         public virtual string DisplayType { get; set; }
 
         /// <summary>
-        /// Gets or sets MinusValue.
+        /// Represents negative error amount when error bar type is Custom.
         /// </summary>
         public virtual string MinusValue { get; set; }
 
         /// <summary>
-        /// Gets or sets PlusValue.
+        /// Represents positive error amount when error bar type is Custom.
         /// </summary>
         public virtual string PlusValue { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowMarkerTTop.
+        /// Indicates if formatting error bars with a T-top.
         /// </summary>
         public virtual bool? ShowMarkerTTop { get; set; }
 
         /// <summary>
-        /// Gets or sets Type.
+        /// Represents error bar amount type.
         /// </summary>
         public virtual string Type { get; set; }
 

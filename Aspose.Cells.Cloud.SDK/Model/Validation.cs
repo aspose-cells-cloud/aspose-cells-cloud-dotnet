@@ -40,82 +40,83 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Validation : LinkElement
     {
         /// <summary>
-        /// Gets or sets AlertStyle.
+        /// Represents the validation alert style.
         /// </summary>
         public virtual string AlertStyle { get; set; }
 
         /// <summary>
-        /// Gets or sets AreaList.
+        /// Represents a collection of Aspose.Cells.CellArea which contains the data
+        ///                 validation settings.
         /// </summary>
         public virtual IList<CellArea> AreaList { get; set; }
 
         /// <summary>
-        /// Gets or sets ErrorMessage.
+        /// Represents the data validation error message.
         /// </summary>
         public virtual string ErrorMessage { get; set; }
 
         /// <summary>
-        /// Gets or sets ErrorTitle.
+        /// Represents the title of the data-validation error dialog box.
         /// </summary>
         public virtual string ErrorTitle { get; set; }
 
         /// <summary>
-        /// Gets or sets Formula1.
+        /// Represents the value or expression associated with the data validation.
         /// </summary>
         public virtual string Formula1 { get; set; }
 
         /// <summary>
-        /// Gets or sets Formula2.
+        /// Represents the value or expression associated with the data validation.
         /// </summary>
         public virtual string Formula2 { get; set; }
 
         /// <summary>
-        /// Gets or sets IgnoreBlank.
+        /// Indicates whether blank values are permitted by the range data validation.
         /// </summary>
         public virtual bool? IgnoreBlank { get; set; }
 
         /// <summary>
-        /// Gets or sets InCellDropDown.
+        /// Indicates whether data validation displays a drop-down list that contains acceptable values.
         /// </summary>
         public virtual bool? InCellDropDown { get; set; }
 
         /// <summary>
-        /// Gets or sets InputMessage.
+        /// Represents the data validation input message.
         /// </summary>
         public virtual string InputMessage { get; set; }
 
         /// <summary>
-        /// Gets or sets InputTitle.
+        /// Represents the title of the data-validation input dialog box.
         /// </summary>
         public virtual string InputTitle { get; set; }
 
         /// <summary>
-        /// Gets or sets Operator.
+        /// Represents the operator for the data validation.
         /// </summary>
         public virtual string Operator { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowError.
+        /// Indicates whether the data validation error message will be displayed whenever the user enters invalid data.
         /// </summary>
         public virtual bool? ShowError { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowInput.
+        /// Indicates whether the data validation input message will be displayed whenever the user selects a cell in the data validation range.
         /// </summary>
         public virtual bool? ShowInput { get; set; }
 
         /// <summary>
-        /// Gets or sets Type.
+        /// Represents the data validation type.
         /// </summary>
         public virtual string Type { get; set; }
 
         /// <summary>
-        /// Gets or sets Value1.
+        /// Represents the first value associated with the data validation.
         /// </summary>
         public virtual string Value1 { get; set; }
 
         /// <summary>
-        /// Gets or sets Value2.
+        /// Represents the second value associated with the data validation.
         /// </summary>
         public virtual string Value2 { get; set; }
 

@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// CommentShapeResponse.
+    /// 
     /// </summary>
     public class CommentShapeResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Comment.
+        /// 
         /// </summary>
         public virtual CommentShape Comment { get; set; }
 

@@ -40,37 +40,45 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ShadowEffect
     {
         /// <summary>
-        /// Gets or sets Angle.
+        /// Gets and sets the lighting angle. Range from 0 to 359.9 degrees.
+        ///  
         /// </summary>
         public virtual double? Angle { get; set; }
 
         /// <summary>
-        /// Gets or sets Blur.
+        /// Gets and sets the blur of the shadow. Range from 0 to 100 points.
+        ///  
         /// </summary>
         public virtual double? Blur { get; set; }
 
         /// <summary>
-        /// Gets or sets Color.
+        /// Gets and sets the color of the shadow.
+        ///  
         /// </summary>
         public virtual CellsColor Color { get; set; }
 
         /// <summary>
-        /// Gets or sets Distance.
+        /// Gets and sets the distance of the shadow. Range from 0 to 200 points.
+        ///  
         /// </summary>
         public virtual double? Distance { get; set; }
 
         /// <summary>
-        /// Gets or sets PresetType.
+        /// Gets and sets the preset shadow type of the shadow.
+        ///  
         /// </summary>
         public virtual string PresetType { get; set; }
 
         /// <summary>
-        /// Gets or sets Size.
+        /// Gets and sets the size of the shadow. Range from 0 to 2.0. 
+        ///             Meaningless in inner shadow.
+        ///  
         /// </summary>
         public virtual double? Size { get; set; }
 
         /// <summary>
-        /// Gets or sets Transparency.
+        /// Gets and sets the degree of transparency of the shadow. Range from 0.0 (opaque) to 1.0 (clear).
+        ///  
         /// </summary>
         public virtual double? Transparency { get; set; }
 

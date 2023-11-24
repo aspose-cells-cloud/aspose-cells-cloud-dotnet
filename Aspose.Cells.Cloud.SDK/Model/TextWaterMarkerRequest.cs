@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// TextWaterMarkerRequest.
+    /// Indicates text water marker request.
     /// </summary>
     public class TextWaterMarkerRequest
     {
@@ -45,22 +45,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string Text { get; set; }
 
         /// <summary>
-        /// Gets or sets FontName.
+        /// Indicates font name.
         /// </summary>
         public virtual string FontName { get; set; }
 
         /// <summary>
-        /// Gets or sets FontSize.
+        /// Indicates font size.
         /// </summary>
         public virtual int? FontSize { get; set; }
 
         /// <summary>
-        /// Gets or sets Height.
+        /// Indicates image height.
         /// </summary>
         public virtual int? Height { get; set; }
 
         /// <summary>
-        /// Gets or sets Width.
+        /// Indicates image width.
         /// </summary>
         public virtual int? Width { get; set; }
 

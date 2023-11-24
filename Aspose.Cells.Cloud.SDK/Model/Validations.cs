@@ -40,12 +40,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Validations : LinkElement
     {
         /// <summary>
-        /// Gets or sets Count.
+        /// 
         /// </summary>
         public virtual int? Count { get; set; }
 
         /// <summary>
-        /// Gets or sets ValidationList.
+        /// 
         /// </summary>
         public virtual IList<LinkElement> ValidationList { get; set; }
 

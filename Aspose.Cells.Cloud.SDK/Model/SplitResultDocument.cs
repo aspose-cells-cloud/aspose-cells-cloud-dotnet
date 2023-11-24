@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// SplitResultDocument.
+    /// 
     /// </summary>
     public class SplitResultDocument : LinkElement
     {
         /// <summary>
-        /// Gets or sets Id.
+        /// 
         /// </summary>
         public virtual int? Id { get; set; }
 

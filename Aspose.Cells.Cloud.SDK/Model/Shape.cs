@@ -40,182 +40,183 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Shape : LinkElement
     {
         /// <summary>
-        /// Gets or sets Name.
+        /// Gets and sets the name of the shape.
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets MsoDrawingType.
+        /// Gets mso drawing type.
         /// </summary>
         public virtual string MsoDrawingType { get; set; }
 
         /// <summary>
-        /// Gets or sets AutoShapeType.
+        /// Gets and sets the auto shape type.
         /// </summary>
         public virtual string AutoShapeType { get; set; }
 
         /// <summary>
-        /// Gets or sets Placement.
+        /// Represents the way the drawing object is attached to the cells below it.
+        ///                         The property controls the placement of an object on a worksheet.
         /// </summary>
         public virtual string Placement { get; set; }
 
         /// <summary>
-        /// Gets or sets UpperLeftRow.
+        /// Represents upper left corner row index.
         /// </summary>
         public virtual int? UpperLeftRow { get; set; }
 
         /// <summary>
-        /// Gets or sets Top.
+        /// Represents the vertical offset of shape from its top row, in unit of pixels.
         /// </summary>
         public virtual int? Top { get; set; }
 
         /// <summary>
-        /// Gets or sets UpperLeftColumn.
+        /// Represents upper left corner column index.
         /// </summary>
         public virtual int? UpperLeftColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets Left.
+        /// Represents the horizontal offset of shape from its left column, in unit of pixels.
         /// </summary>
         public virtual int? Left { get; set; }
 
         /// <summary>
-        /// Gets or sets LowerRightRow.
+        /// Represents lower right corner row index.
         /// </summary>
         public virtual int? LowerRightRow { get; set; }
 
         /// <summary>
-        /// Gets or sets Bottom.
+        /// Represents the width of the shape's vertical offset from its lower bottom corner row, in unit of pixels.
         /// </summary>
         public virtual int? Bottom { get; set; }
 
         /// <summary>
-        /// Gets or sets LowerRightColumn.
+        /// Represents lower right corner column index.
         /// </summary>
         public virtual int? LowerRightColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets Right.
+        /// Represents the width of the shape's horizontal  offset from its lower right corner column, in unit of pixels.
         /// </summary>
         public virtual int? Right { get; set; }
 
         /// <summary>
-        /// Gets or sets Width.
+        /// Represents the width of shape, in unit of pixels.
         /// </summary>
         public virtual int? Width { get; set; }
 
         /// <summary>
-        /// Gets or sets Height.
+        /// Represents the height of shape, in unit of pixel.
         /// </summary>
         public virtual int? Height { get; set; }
 
         /// <summary>
-        /// Gets or sets X.
+        /// Gets and sets the horizontal offset of shape from worksheet left border,in unit of pixels.
         /// </summary>
         public virtual int? X { get; set; }
 
         /// <summary>
-        /// Gets or sets Y.
+        /// Gets and sets the vertical offset of shape from worksheet top border,in unit of pixels.
         /// </summary>
         public virtual int? Y { get; set; }
 
         /// <summary>
-        /// Gets or sets RotationAngle.
+        /// Gets and sets the rotation of the shape.
         /// </summary>
         public virtual double? RotationAngle { get; set; }
 
         /// <summary>
-        /// Gets or sets HtmlText.
+        /// Gets and sets the html string which contains data and some formats in this textbox.
         /// </summary>
         public virtual string HtmlText { get; set; }
 
         /// <summary>
-        /// Gets or sets Text.
+        /// Represents the string in this TextBox object.
         /// </summary>
         public virtual string Text { get; set; }
 
         /// <summary>
-        /// Gets or sets AlternativeText.
+        /// Returns or sets the descriptive (alternative) text string of the  object.
         /// </summary>
         public virtual string AlternativeText { get; set; }
 
         /// <summary>
-        /// Gets or sets TextHorizontalAlignment.
+        /// Gets and sets the text horizontal alignment type of the shape.
         /// </summary>
         public virtual string TextHorizontalAlignment { get; set; }
 
         /// <summary>
-        /// Gets or sets TextHorizontalOverflow.
+        /// Gets and sets the text horizontal overflow type of the shape which contains text.
         /// </summary>
         public virtual string TextHorizontalOverflow { get; set; }
 
         /// <summary>
-        /// Gets or sets TextOrientationType.
+        /// Gets and sets the text orientation type of the shape.
         /// </summary>
         public virtual string TextOrientationType { get; set; }
 
         /// <summary>
-        /// Gets or sets TextVerticalAlignment.
+        /// Gets and sets the text vertical alignment type of the shape.
         /// </summary>
         public virtual string TextVerticalAlignment { get; set; }
 
         /// <summary>
-        /// Gets or sets TextVerticalOverflow.
+        /// Gets and sets the text vertical overflow type of the shape which contains text.
         /// </summary>
         public virtual string TextVerticalOverflow { get; set; }
 
         /// <summary>
-        /// Gets or sets IsGroup.
+        /// Indicates whether the shape is a group.
         /// </summary>
         public virtual bool? IsGroup { get; set; }
 
         /// <summary>
-        /// Gets or sets IsHidden.
+        /// Indicates whether the object is visible.
         /// </summary>
         public virtual bool? IsHidden { get; set; }
 
         /// <summary>
-        /// Gets or sets IsLockAspectRatio.
+        /// True means that don't allow changes in aspect ratio.
         /// </summary>
         public virtual bool? IsLockAspectRatio { get; set; }
 
         /// <summary>
-        /// Gets or sets IsLocked.
+        /// True if the object is locked, False if the object can be modified when the sheet is protected.
         /// </summary>
         public virtual bool? IsLocked { get; set; }
 
         /// <summary>
-        /// Gets or sets IsPrintable.
+        /// True if the object is printable
         /// </summary>
         public virtual bool? IsPrintable { get; set; }
 
         /// <summary>
-        /// Gets or sets IsTextWrapped.
+        /// Gets and sets the text wrapped type of the shape which contains text.
         /// </summary>
         public virtual bool? IsTextWrapped { get; set; }
 
         /// <summary>
-        /// Gets or sets IsWordArt.
+        /// Indicates whether this shape is a word art.
         /// </summary>
         public virtual bool? IsWordArt { get; set; }
 
         /// <summary>
-        /// Gets or sets LinkedCell.
+        /// Gets or sets the worksheet range linked to the control's value.
         /// </summary>
         public virtual string LinkedCell { get; set; }
 
         /// <summary>
-        /// Gets or sets ZOrderPosition.
+        /// Returns the position of a shape in the z-order.
         /// </summary>
         public virtual int? ZOrderPosition { get; set; }
 
         /// <summary>
-        /// Gets or sets Font.
+        /// Represents the font of shape.
         /// </summary>
         public virtual Font Font { get; set; }
 
         /// <summary>
-        /// Gets or sets Hyperlink.
+        /// Gets the hyperlink of the shape.
         /// </summary>
         public virtual string Hyperlink { get; set; }
 

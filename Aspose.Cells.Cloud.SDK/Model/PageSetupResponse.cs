@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PageSetupResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets PageSetup.
+        /// 
         /// </summary>
         public virtual PageSetup PageSetup { get; set; }
 

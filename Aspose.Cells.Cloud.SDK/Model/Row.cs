@@ -40,37 +40,37 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Row : LinkElement
     {
         /// <summary>
-        /// Gets or sets GroupLevel.
+        /// Gets the group level of the row.
         /// </summary>
         public virtual int? GroupLevel { get; set; }
 
         /// <summary>
-        /// Gets or sets Height.
+        /// Gets and sets the row height in unit of Points.
         /// </summary>
         public virtual double? Height { get; set; }
 
         /// <summary>
-        /// Gets or sets Index.
+        /// Gets the index of this row.
         /// </summary>
         public virtual int? Index { get; set; }
 
         /// <summary>
-        /// Gets or sets IsBlank.
+        /// Indicates whether the row contains any data
         /// </summary>
         public virtual bool? IsBlank { get; set; }
 
         /// <summary>
-        /// Gets or sets IsHeightMatched.
+        /// Indicates that row height and default font height matches.
         /// </summary>
         public virtual bool? IsHeightMatched { get; set; }
 
         /// <summary>
-        /// Gets or sets IsHidden.
+        /// Indicates whether the row is hidden.
         /// </summary>
         public virtual bool? IsHidden { get; set; }
 
         /// <summary>
-        /// Gets or sets Style.
+        /// Represents the style of this row.
         /// </summary>
         public virtual LinkElement Style { get; set; }
 

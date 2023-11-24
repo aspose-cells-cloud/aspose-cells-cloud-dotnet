@@ -35,42 +35,42 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// DateTimeGroupItem.
+    /// 
     /// </summary>
     public class DateTimeGroupItem : MultipleFilter
     {
         /// <summary>
-        /// Gets or sets DateTimeGroupingType.
+        /// Gets and sets the group type.
         /// </summary>
         public virtual string DateTimeGroupingType { get; set; }
 
         /// <summary>
-        /// Gets or sets Day.
+        /// Gets and sets the day of the grouped date time.
         /// </summary>
         public virtual int? Day { get; set; }
 
         /// <summary>
-        /// Gets or sets Hour.
+        /// Gets and sets the hour of the grouped date time.
         /// </summary>
         public virtual int? Hour { get; set; }
 
         /// <summary>
-        /// Gets or sets Minute.
+        /// Gets and sets the minute of the grouped date time.
         /// </summary>
         public virtual int? Minute { get; set; }
 
         /// <summary>
-        /// Gets or sets Month.
+        /// Gets and sets the month of the grouped date time.
         /// </summary>
         public virtual int? Month { get; set; }
 
         /// <summary>
-        /// Gets or sets Second.
+        /// Gets and sets the second of the grouped date time.
         /// </summary>
         public virtual int? Second { get; set; }
 
         /// <summary>
-        /// Gets or sets Year.
+        /// Gets and sets the year of the grouped date time.
         /// </summary>
         public virtual int? Year { get; set; }
 

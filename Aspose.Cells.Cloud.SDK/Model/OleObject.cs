@@ -40,37 +40,39 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class OleObject : Shape
     {
         /// <summary>
-        /// Gets or sets DisplayAsIcon.
+        /// True if the specified object is displayed as an icon 
+        ///                         and the image will not be auto changed.
         /// </summary>
         public virtual bool? DisplayAsIcon { get; set; }
 
         /// <summary>
-        /// Gets or sets FileFormatType.
+        /// Gets and sets the file type of the embedded ole object data
         /// </summary>
         public virtual string FileFormatType { get; set; }
 
         /// <summary>
-        /// Gets or sets ImageSourceFullName.
+        /// Gets or sets the path and name of the source file for the linked image.
         /// </summary>
         public virtual string ImageSourceFullName { get; set; }
 
         /// <summary>
-        /// Gets or sets IsAutoSize.
+        /// True indicates that the size of the ole object will be auto changed as the size of snapshot of the embedded content
+        ///                         when the ole object is activated.
         /// </summary>
         public virtual bool? IsAutoSize { get; set; }
 
         /// <summary>
-        /// Gets or sets IsLink.
+        /// Returns true if the OleObject links to the file.
         /// </summary>
         public virtual bool? IsLink { get; set; }
 
         /// <summary>
-        /// Gets or sets ProgID.
+        /// Gets or sets the ProgID of the OLE object.
         /// </summary>
         public virtual string ProgID { get; set; }
 
         /// <summary>
-        /// Gets or sets SourceFullName.
+        /// Returns the source full name of the source file for the linked OLE object.
         /// </summary>
         public virtual string SourceFullName { get; set; }
 

@@ -40,27 +40,32 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class TextureFill
     {
         /// <summary>
-        /// Gets or sets Type.
+        /// Gets and sets the texture type
+        ///  
         /// </summary>
         public virtual string Type { get; set; }
 
         /// <summary>
-        /// Gets or sets Transparency.
+        /// Returns or sets the degree of transparency of the area as a value from 0.0 (opaque) through 1.0 (clear).
+        ///  
         /// </summary>
         public virtual double? Transparency { get; set; }
 
         /// <summary>
-        /// Gets or sets Scale.
+        /// Gets and sets the picture format scale.
+        ///  
         /// </summary>
         public virtual double? Scale { get; set; }
 
         /// <summary>
-        /// Gets or sets TilePicOption.
+        /// Gets or sets tile picture option.
+        ///  
         /// </summary>
         public virtual TilePicOption TilePicOption { get; set; }
 
         /// <summary>
-        /// Gets or sets PicFormatOption.
+        /// Gets or sets picture format option.
+        ///  
         /// </summary>
         public virtual PicFormatOption PicFormatOption { get; set; }
 

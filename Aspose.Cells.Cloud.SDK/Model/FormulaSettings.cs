@@ -101,7 +101,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? EnableCalculationChain { get; set; }
 
         /// <summary>
-        /// Indicates whether preserve those spaces and line breaks that are padded between formula tokens            while getting and setting formulas.            Default value is false.
+        /// Indicates whether preserve those spaces and line breaks that are padded between formula tokens
+        ///             while getting and setting formulas.
+        ///             Default value is false.
         ///  
         /// </summary>
         public virtual bool? PreservePaddingSpaces { get; set; }

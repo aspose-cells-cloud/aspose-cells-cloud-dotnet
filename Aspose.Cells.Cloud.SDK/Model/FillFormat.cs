@@ -40,32 +40,38 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class FillFormat
     {
         /// <summary>
-        /// Gets or sets Type.
+        /// Gets and sets the fill type.
+        ///  
         /// </summary>
         public virtual string Type { get; set; }
 
         /// <summary>
-        /// Gets or sets SolidFill.
+        /// Gets  object.
+        ///  
         /// </summary>
         public virtual SolidFill SolidFill { get; set; }
 
         /// <summary>
-        /// Gets or sets PatternFill.
+        /// Gets  object.
+        ///  
         /// </summary>
         public virtual PatternFill PatternFill { get; set; }
 
         /// <summary>
-        /// Gets or sets TextureFill.
+        /// Gets  object.
+        ///  
         /// </summary>
         public virtual TextureFill TextureFill { get; set; }
 
         /// <summary>
-        /// Gets or sets GradientFill.
+        /// Gets  object.
+        ///  
         /// </summary>
         public virtual GradientFill GradientFill { get; set; }
 
         /// <summary>
-        /// Gets or sets ImageData.
+        /// Gets and sets the picture image data.
+        ///  
         /// </summary>
         public virtual string ImageData { get; set; }
 

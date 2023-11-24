@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ChartAreaResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets ChartArea.
+        /// 
         /// </summary>
         public virtual ChartArea ChartArea { get; set; }
 

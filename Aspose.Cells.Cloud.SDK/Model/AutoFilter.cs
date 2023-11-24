@@ -40,22 +40,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class AutoFilter : LinkElement
     {
         /// <summary>
-        /// Gets or sets FilterColumns.
+        /// Gets the collection of the filter columns.
         /// </summary>
         public virtual IList<FilterColumn> FilterColumns { get; set; }
 
         /// <summary>
-        /// Gets or sets Range.
+        /// Represents the range to which the specified AutoFilter applies.
         /// </summary>
         public virtual string Range { get; set; }
 
         /// <summary>
-        /// Gets or sets Sorter.
+        /// Gets the data sorter.
         /// </summary>
         public virtual DataSorter Sorter { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowFilterButton.
+        /// Indicates whether the AutoFilter button for this column is visible.
         /// </summary>
         public virtual bool? ShowFilterButton { get; set; }
 

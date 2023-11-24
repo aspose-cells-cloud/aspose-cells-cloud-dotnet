@@ -35,37 +35,37 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ImportPictureOption.
+    /// 
     /// </summary>
     public class ImportPictureOption : ImportOption
     {
         /// <summary>
-        /// Gets or sets UpperLeftRow.
+        /// 
         /// </summary>
         public virtual int? UpperLeftRow { get; set; }
 
         /// <summary>
-        /// Gets or sets UpperLeftColumn.
+        /// 
         /// </summary>
         public virtual int? UpperLeftColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets LowerRightRow.
+        /// 
         /// </summary>
         public virtual int? LowerRightRow { get; set; }
 
         /// <summary>
-        /// Gets or sets LowerRightColumn.
+        /// 
         /// </summary>
         public virtual int? LowerRightColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets Filename.
+        /// 
         /// </summary>
         public virtual string Filename { get; set; }
 
         /// <summary>
-        /// Gets or sets Data.
+        /// base64
         /// </summary>
         public virtual string Data { get; set; }
 

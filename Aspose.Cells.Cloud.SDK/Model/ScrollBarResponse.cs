@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ScrollBarResponse.
+    /// 
     /// </summary>
     public class ScrollBarResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shape.
+        /// 
         /// </summary>
         public virtual ScrollBar Shape { get; set; }
 

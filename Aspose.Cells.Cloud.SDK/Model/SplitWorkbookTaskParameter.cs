@@ -35,37 +35,37 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// SplitWorkbookTaskParameter.
+    /// 
     /// </summary>
     public class SplitWorkbookTaskParameter : TaskParameter
     {
         /// <summary>
-        /// Gets or sets Workbook.
+        /// 
         /// </summary>
         public virtual FileSource Workbook { get; set; }
 
         /// <summary>
-        /// Gets or sets DestinationFilePosition.
+        /// 
         /// </summary>
         public virtual FileSource DestinationFilePosition { get; set; }
 
         /// <summary>
-        /// Gets or sets DestinationFileFormat.
+        /// 
         /// </summary>
         public virtual string DestinationFileFormat { get; set; }
 
         /// <summary>
-        /// Gets or sets SplitNameRule.
+        /// SheetName /NewGuid
         /// </summary>
         public virtual string SplitNameRule { get; set; }
 
         /// <summary>
-        /// Gets or sets VerticalResolution.
+        /// When destination file format is image , vertical resolution can not be null.
         /// </summary>
         public virtual int? VerticalResolution { get; set; }
 
         /// <summary>
-        /// Gets or sets HorizontalResolution.
+        /// When destination file format is image , horizontal resolution can not be null.
         /// </summary>
         public virtual int? HorizontalResolution { get; set; }
 

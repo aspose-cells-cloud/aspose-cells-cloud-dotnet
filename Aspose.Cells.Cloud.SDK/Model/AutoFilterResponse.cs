@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class AutoFilterResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets AutoFilter.
+        /// 
         /// </summary>
         public virtual AutoFilter AutoFilter { get; set; }
 

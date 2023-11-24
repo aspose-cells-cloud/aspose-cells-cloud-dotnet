@@ -35,37 +35,37 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ArcShape.
+    /// 
     /// </summary>
     public class ArcShape : Shape
     {
         /// <summary>
-        /// Gets or sets BeginArrowheadLength.
+        /// Gets and sets the begin arrow head length of the line.
         /// </summary>
         public virtual string BeginArrowheadLength { get; set; }
 
         /// <summary>
-        /// Gets or sets BeginArrowheadStyle.
+        /// Gets and sets the begin arrow head style of the line.
         /// </summary>
         public virtual string BeginArrowheadStyle { get; set; }
 
         /// <summary>
-        /// Gets or sets BeginArrowheadWidth.
+        /// Gets and sets the begin arrow head width of the line.
         /// </summary>
         public virtual string BeginArrowheadWidth { get; set; }
 
         /// <summary>
-        /// Gets or sets EndArrowheadLength.
+        /// Gets and sets the end arrow head length of the line.
         /// </summary>
         public virtual string EndArrowheadLength { get; set; }
 
         /// <summary>
-        /// Gets or sets EndArrowheadStyle.
+        /// Gets and sets the end arrow head style of the line.
         /// </summary>
         public virtual string EndArrowheadStyle { get; set; }
 
         /// <summary>
-        /// Gets or sets EndArrowheadWidth.
+        /// Gets and sets the end arrow head width of the line.
         /// </summary>
         public virtual string EndArrowheadWidth { get; set; }
 

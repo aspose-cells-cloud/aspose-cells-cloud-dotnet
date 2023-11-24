@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ButtonResponse.
+    /// 
     /// </summary>
     public class ButtonResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shape.
+        /// 
         /// </summary>
         public virtual Button Shape { get; set; }
 

@@ -35,72 +35,76 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Trendline.
+    /// 
     /// </summary>
     public class Trendline : Line
     {
         /// <summary>
-        /// Gets or sets link.
+        /// 
         /// </summary>
         public virtual Link link { get; set; }
 
         /// <summary>
-        /// Gets or sets Backward.
+        /// Returns or sets the number of periods (or units on a scatter chart) that the trendline extends backward. 
+        ///                         The number of periods must be greater than or equal to zero.
+        ///                         If the chart type is column ,the number of periods must be between 0 and 0.5
         /// </summary>
         public virtual double? Backward { get; set; }
 
         /// <summary>
-        /// Gets or sets DataLabels.
+        /// Represents the DataLabels object for the specified series.
         /// </summary>
         public virtual LinkElement DataLabels { get; set; }
 
         /// <summary>
-        /// Gets or sets DisplayEquation.
+        /// Represents if the equation for the trendline is displayed on the chart (in the same data label as the R-squared value). Setting this property to True automatically turns on data labels.
         /// </summary>
         public virtual bool? DisplayEquation { get; set; }
 
         /// <summary>
-        /// Gets or sets DisplayRSquared.
+        /// Represents if the R-squared value of the trendline is displayed on the chart (in the same data label as the equation). Setting this property to True automatically turns on data labels.
         /// </summary>
         public virtual bool? DisplayRSquared { get; set; }
 
         /// <summary>
-        /// Gets or sets Forward.
+        /// Returns or sets the number of periods (or units on a scatter chart) that the trendline extends forward.
+        ///                         The number of periods must be greater than or equal to zero.
         /// </summary>
         public virtual double? Forward { get; set; }
 
         /// <summary>
-        /// Gets or sets Intercept.
+        /// Returns or sets the point where the trendline crosses the value axis.
         /// </summary>
         public virtual double? Intercept { get; set; }
 
         /// <summary>
-        /// Gets or sets IsNameAuto.
+        /// Returns if Microsoft Excel automatically determines the name of the trendline.
         /// </summary>
         public virtual bool? IsNameAuto { get; set; }
 
         /// <summary>
-        /// Gets or sets LegendEntry.
+        /// Gets the legend entry according to this trendline
         /// </summary>
         public virtual LinkElement LegendEntry { get; set; }
 
         /// <summary>
-        /// Gets or sets Name.
+        /// Returns the name of the trendline.
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets Order.
+        /// Returns or sets the trendline order (an integer greater than 1) when the trendline type is Polynomial. 
+        ///                         The order must be between 2 and 6.
         /// </summary>
         public virtual int? Order { get; set; }
 
         /// <summary>
-        /// Gets or sets Period.
+        /// Returns or sets the period for the moving-average trendline.
         /// </summary>
         public virtual int? Period { get; set; }
 
         /// <summary>
-        /// Gets or sets Type.
+        /// Returns the trendline type.
         /// </summary>
         public virtual string Type { get; set; }
 

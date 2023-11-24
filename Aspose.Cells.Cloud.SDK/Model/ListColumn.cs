@@ -41,23 +41,25 @@ namespace Aspose.Cells.Cloud.SDK.Model
     {
         /// <summary>
         /// Gets and sets the name of the column.
+        ///  
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
         /// Gets the range of this list column.
-        ///             
+        ///  
         /// </summary>
         public virtual Range Range { get; set; }
 
         /// <summary>
         /// Gets and sets the type of calculation in the Totals row of the list column.
+        ///  
         /// </summary>
         public virtual string TotalsCalculation { get; set; }
 
         /// <summary>
         /// Gets and sets the formula of the list column.
-        ///             
+        ///  
         /// </summary>
         public virtual string Formula { get; set; }
 

@@ -40,27 +40,27 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Column : LinkElement
     {
         /// <summary>
-        /// Gets or sets GroupLevel.
+        /// Gets the group level of the column.
         /// </summary>
         public virtual int? GroupLevel { get; set; }
 
         /// <summary>
-        /// Gets or sets Index.
+        /// Gets the index of this column.
         /// </summary>
         public virtual int? Index { get; set; }
 
         /// <summary>
-        /// Gets or sets IsHidden.
+        /// Indicates whether the column is hidden.
         /// </summary>
         public virtual bool? IsHidden { get; set; }
 
         /// <summary>
-        /// Gets or sets Width.
+        /// Gets and sets the column width in unit of characters.
         /// </summary>
         public virtual double? Width { get; set; }
 
         /// <summary>
-        /// Gets or sets Style.
+        /// Gets the style of this column.
         /// </summary>
         public virtual LinkElement Style { get; set; }
 

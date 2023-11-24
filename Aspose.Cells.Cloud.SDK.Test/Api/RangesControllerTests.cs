@@ -440,26 +440,26 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
 
             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
-            var rangeOperateDataSorter = new DataSorter()
+            var rangeSortRequestDataSorter = new DataSorter()
             {
                 CaseSensitive = true
             };
-            var rangeOperateCellArea = new Range()
+            var rangeSortRequestCellArea = new Range()
             {
                 ColumnCount = 3,
                 FirstColumn = 0,
                 FirstRow = 0,
                 RowCount = 15
             };
-            var rangeOperate = new RangeSortRequest()
+            var rangeSortRequest = new RangeSortRequest()
             {
-                DataSorter = rangeOperateDataSorter,
-                CellArea = rangeOperateCellArea
+                DataSorter = rangeSortRequestDataSorter,
+                CellArea = rangeSortRequestCellArea
             };
             var request = new PostWorksheetCellsRangeSortRequest(
                 name: remoteName,
                 sheetName: "book1",
-                rangeSortRequest: rangeOperate,
+                rangeSortRequest: rangeSortRequest,
                 folder: remoteFolder,
                 storageName: ""
             );

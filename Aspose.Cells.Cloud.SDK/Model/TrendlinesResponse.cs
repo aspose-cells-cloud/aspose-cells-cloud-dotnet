@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// TrendlinesResponse.
+    /// 
     /// </summary>
     public class TrendlinesResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Trendlines.
+        /// 
         /// </summary>
         public virtual Trendlines Trendlines { get; set; }
 

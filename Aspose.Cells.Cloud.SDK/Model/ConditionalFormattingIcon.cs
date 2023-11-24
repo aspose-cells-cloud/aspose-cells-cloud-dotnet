@@ -41,19 +41,19 @@ namespace Aspose.Cells.Cloud.SDK.Model
     {
         /// <summary>
         /// Gets the icon set data.
-        ///             
+        ///  
         /// </summary>
         public virtual string ImageData { get; set; }
 
         /// <summary>
         /// Gets and sets the icon's index in the icon set.
-        ///             
+        ///  
         /// </summary>
         public virtual int? Index { get; set; }
 
         /// <summary>
         /// Gets and sets the icon set type.
-        ///             
+        ///  
         /// </summary>
         public virtual string Type { get; set; }
 

@@ -40,107 +40,107 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ListObject : LinkElement
     {
         /// <summary>
-        /// Gets or sets AutoFilter.
+        /// Gets auto filter.
         /// </summary>
         public virtual AutoFilter AutoFilter { get; set; }
 
         /// <summary>
-        /// Gets or sets DisplayName.
+        /// Gets and sets the display name.
         /// </summary>
         public virtual string DisplayName { get; set; }
 
         /// <summary>
-        /// Gets or sets StartColumn.
+        /// Gets the start column of the range.
         /// </summary>
         public virtual int? StartColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets StartRow.
+        /// Gets the start row of the range.
         /// </summary>
         public virtual int? StartRow { get; set; }
 
         /// <summary>
-        /// Gets or sets EndColumn.
+        /// Gets the end column of the range.
         /// </summary>
         public virtual int? EndColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets EndRow.
+        /// Gets the end  row of the range.
         /// </summary>
         public virtual int? EndRow { get; set; }
 
         /// <summary>
-        /// Gets or sets ListColumns.
+        /// Gets ListColumns of the ListObject.
         /// </summary>
         public virtual IList<ListColumn> ListColumns { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowHeaderRow.
+        /// Gets and sets whether this ListObject show header row.
         /// </summary>
         public virtual bool? ShowHeaderRow { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowTableStyleColumnStripes.
+        /// Indicates whether column stripe formatting is applied.
         /// </summary>
         public virtual bool? ShowTableStyleColumnStripes { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowTableStyleFirstColumn.
+        /// Indicates whether the first column in the table should have the style applied.
         /// </summary>
         public virtual bool? ShowTableStyleFirstColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowTableStyleLastColumn.
+        /// Indicates whether the last column in the table should have the style applied.
         /// </summary>
         public virtual bool? ShowTableStyleLastColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowTableStyleRowStripes.
+        /// Indicates whether row stripe formatting is applied.
         /// </summary>
         public virtual bool? ShowTableStyleRowStripes { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowTotals.
+        /// Gets and sets whether this ListObject show total row.
         /// </summary>
         public virtual bool? ShowTotals { get; set; }
 
         /// <summary>
-        /// Gets or sets TableStyleName.
+        /// Gets and sets the table style name.
         /// </summary>
         public virtual string TableStyleName { get; set; }
 
         /// <summary>
-        /// Gets or sets TableStyleType.
+        /// Gets and the built-in table style.
         /// </summary>
         public virtual string TableStyleType { get; set; }
 
         /// <summary>
-        /// Gets or sets DataRange.
+        /// Gets the data range of the ListObject.
         /// </summary>
         public virtual Range DataRange { get; set; }
 
         /// <summary>
-        /// Gets or sets DataSourceType.
+        /// Gets the data source type of the table.
         /// </summary>
         public virtual string DataSourceType { get; set; }
 
         /// <summary>
-        /// Gets or sets Comment.
+        /// Gets and sets the comment of the table.
         /// </summary>
         public virtual string Comment { get; set; }
 
         /// <summary>
-        /// Gets or sets XmlMap.
+        /// Gets an  used for this list.
         /// </summary>
         public virtual XmlMap XmlMap { get; set; }
 
         /// <summary>
-        /// Gets or sets AlternativeText.
+        /// Gets and sets the alternative text.
         /// </summary>
         public virtual string AlternativeText { get; set; }
 
         /// <summary>
-        /// Gets or sets AlternativeDescription.
+        /// Gets and sets the alternative description.
         /// </summary>
         public virtual string AlternativeDescription { get; set; }
 

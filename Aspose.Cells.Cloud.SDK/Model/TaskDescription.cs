@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// TaskDescription.
+    /// 
     /// </summary>
     public class TaskDescription
     {
         /// <summary>
-        /// Gets or sets TaskType.
+        /// 
         /// </summary>
         public virtual string TaskType { get; set; }
 
         /// <summary>
-        /// Gets or sets TaskParameter.
+        /// 
         /// </summary>
         public virtual TaskParameter TaskParameter { get; set; }
 

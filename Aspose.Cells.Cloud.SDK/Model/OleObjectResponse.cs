@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// OleObjectResponse.
+    /// 
     /// </summary>
     public class OleObjectResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets OleObject.
+        /// 
         /// </summary>
         public virtual OleObject OleObject { get; set; }
 

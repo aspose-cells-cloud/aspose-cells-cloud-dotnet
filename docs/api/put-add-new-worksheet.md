@@ -1,0 +1,23 @@
+# **putAddNewWorksheet API**
+
+Adds new worksheet in workbook. 
+
+```bash
+
+PUT http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}
+
+```
+
+## The request parameters of **putAddNewWorksheet** API are: 
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
+| :- | :- | :- |:- | 
+|name|String|Path|The workbook name.|
+|sheetName|String|Path|The new sheet name.|
+|position|Integer|Query|The new sheet position.|
+|sheettype|String|Query|Specifies the worksheet type(VB/Worksheet/Chart/BIFF4Macro/InternationalMacro/Other/Dialog).|
+|folder|String|Query|Original workbook folder.|
+|storageName|String|Query|Storage name.|
+
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/WorksheetsController/PutAddNewWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Floor.
+    /// 
     /// </summary>
     public class Floor : Area
     {
         /// <summary>
-        /// Gets or sets Border.
+        /// Gets or sets the border .
         /// </summary>
         public virtual Line Border { get; set; }
 

@@ -35,37 +35,37 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// CellValue.
+    /// 
     /// </summary>
     public class CellValue
     {
         /// <summary>
-        /// Gets or sets rowIndex.
+        /// 
         /// </summary>
         public virtual int? rowIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets columnIndex.
+        /// 
         /// </summary>
         public virtual int? columnIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets type.
+        /// 
         /// </summary>
         public virtual string type { get; set; }
 
         /// <summary>
-        /// Gets or sets value.
+        /// 
         /// </summary>
         public virtual string value { get; set; }
 
         /// <summary>
-        /// Gets or sets formula.
+        /// 
         /// </summary>
         public virtual string formula { get; set; }
 
         /// <summary>
-        /// Gets or sets style.
+        /// 
         /// </summary>
         public virtual Style style { get; set; }
 

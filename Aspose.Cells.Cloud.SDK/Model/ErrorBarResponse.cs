@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ErrorBarResponse.
+    /// 
     /// </summary>
     public class ErrorBarResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets ErrorBar.
+        /// 
         /// </summary>
         public virtual ErrorBar ErrorBar { get; set; }
 

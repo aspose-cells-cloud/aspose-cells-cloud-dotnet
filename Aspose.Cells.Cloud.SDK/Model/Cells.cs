@@ -40,32 +40,33 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Cells : LinkElement
     {
         /// <summary>
-        /// Gets or sets MaxRow.
+        /// Maximum row index of cell which contains data or style.
         /// </summary>
         public virtual int? MaxRow { get; set; }
 
         /// <summary>
-        /// Gets or sets MaxColumn.
+        /// Maximum column index of those cells that have been instantiated in the collection(does not include the column
+        ///                         where style is defined for the whole column but no cell has been instantiated in it).
         /// </summary>
         public virtual int? MaxColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets CellCount.
+        /// 
         /// </summary>
         public virtual int? CellCount { get; set; }
 
         /// <summary>
-        /// Gets or sets Rows.
+        /// Gets the collection of  objects that represents the individual rows in this worksheet.
         /// </summary>
         public virtual LinkElement Rows { get; set; }
 
         /// <summary>
-        /// Gets or sets Columns.
+        /// Gets the collection of  objects that represents the individual columns in this worksheet.
         /// </summary>
         public virtual LinkElement Columns { get; set; }
 
         /// <summary>
-        /// Gets or sets CellList.
+        /// 
         /// </summary>
         public virtual IList<LinkElement> CellList { get; set; }
 

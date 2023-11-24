@@ -35,27 +35,27 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// SeriesItems.
+    /// 
     /// </summary>
     public class SeriesItems : LinkElement
     {
         /// <summary>
-        /// Gets or sets CategoryData.
+        /// 
         /// </summary>
         public virtual string CategoryData { get; set; }
 
         /// <summary>
-        /// Gets or sets IsColorVaried.
+        /// 
         /// </summary>
         public virtual bool? IsColorVaried { get; set; }
 
         /// <summary>
-        /// Gets or sets SecondCatergoryData.
+        /// 
         /// </summary>
         public virtual string SecondCatergoryData { get; set; }
 
         /// <summary>
-        /// Gets or sets SeriesList.
+        /// 
         /// </summary>
         public virtual IList<LinkElement> SeriesList { get; set; }
 

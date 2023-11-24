@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class SplitResultResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Result.
+        /// Gets or sets the splitting result.
         /// </summary>
         public virtual SplitResult Result { get; set; }
 

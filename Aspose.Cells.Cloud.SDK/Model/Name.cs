@@ -40,37 +40,38 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Name : LinkElement
     {
         /// <summary>
-        /// Gets or sets Comment.
+        /// Gets and sets the comment of the name.
+        ///                         Only applies for Excel 2007.
         /// </summary>
         public virtual string Comment { get; set; }
 
         /// <summary>
-        /// Gets or sets WorksheetIndex.
+        /// 
         /// </summary>
         public virtual int? WorksheetIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets IsReferred.
+        /// Indicates whether this name is referred by other formulas.
         /// </summary>
         public virtual bool? IsReferred { get; set; }
 
         /// <summary>
-        /// Gets or sets IsVisible.
+        /// Indicates whether the name is visible.
         /// </summary>
         public virtual bool? IsVisible { get; set; }
 
         /// <summary>
-        /// Gets or sets R1C1RefersTo.
+        /// Gets or sets a R1C1 reference of the .
         /// </summary>
         public virtual string R1C1RefersTo { get; set; }
 
         /// <summary>
-        /// Gets or sets RefersTo.
+        /// Returns or sets the formula that the name is defined to refer to, beginning with an equal sign.
         /// </summary>
         public virtual string RefersTo { get; set; }
 
         /// <summary>
-        /// Gets or sets Text.
+        /// Gets the name text of the object.
         /// </summary>
         public virtual string Text { get; set; }
 

@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class TextItem : LinkElement
     {
         /// <summary>
-        /// Gets or sets Text.
+        /// 
         /// </summary>
         public virtual string Text { get; set; }
 

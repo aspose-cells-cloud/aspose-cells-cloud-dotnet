@@ -40,217 +40,224 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Chart : LinkElement
     {
         /// <summary>
-        /// Gets or sets AutoScaling.
+        /// True if Microsoft Excel scales a 3-D chart so that it's closer in size to the equivalent 2-D chart. 
+        ///                         The RightAngleAxes property must be True.
         /// </summary>
         public virtual bool? AutoScaling { get; set; }
 
         /// <summary>
-        /// Gets or sets BackWall.
+        /// Returns a  object that represents the back wall of a 3-D chart.
         /// </summary>
         public virtual LinkElement BackWall { get; set; }
 
         /// <summary>
-        /// Gets or sets CategoryAxis.
+        /// Gets the chart's X axis.
         /// </summary>
         public virtual LinkElement CategoryAxis { get; set; }
 
         /// <summary>
-        /// Gets or sets ChartArea.
+        /// Gets the chart area in the worksheet.
         /// </summary>
         public virtual LinkElement ChartArea { get; set; }
 
         /// <summary>
-        /// Gets or sets ChartDataTable.
+        /// Represents the chart data table.
         /// </summary>
         public virtual LinkElement ChartDataTable { get; set; }
 
         /// <summary>
-        /// Gets or sets ChartObject.
+        /// Represents the chartShape;
         /// </summary>
         public virtual LinkElement ChartObject { get; set; }
 
         /// <summary>
-        /// Gets or sets DepthPercent.
+        /// Represents the depth of a 3-D chart as a percentage of the chart width (between 20 and 2000 percent).
         /// </summary>
         public virtual int? DepthPercent { get; set; }
 
         /// <summary>
-        /// Gets or sets Elevation.
+        /// Represents the elevation of the 3-D chart view, in degrees.
         /// </summary>
         public virtual int? Elevation { get; set; }
 
         /// <summary>
-        /// Gets or sets FirstSliceAngle.
+        /// Gets or sets the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). 
+        ///                         Applies only to pie, 3-D pie, and doughnut charts, 0 to 360.
         /// </summary>
         public virtual int? FirstSliceAngle { get; set; }
 
         /// <summary>
-        /// Gets or sets Floor.
+        /// Returns a  object that represents the walls of a 3-D chart.
         /// </summary>
         public virtual LinkElement Floor { get; set; }
 
         /// <summary>
-        /// Gets or sets GapDepth.
+        /// Gets or sets the distance between the data series in a 3-D chart, as a percentage of the marker width.
+        ///                         The value of this property must be between 0 and 500.
         /// </summary>
         public virtual int? GapDepth { get; set; }
 
         /// <summary>
-        /// Gets or sets GapWidth.
+        /// Returns or sets the space between bar or column clusters, as a percentage of the bar or column width.
+        ///                         The value of this property must be between 0 and 500.
         /// </summary>
         public virtual int? GapWidth { get; set; }
 
         /// <summary>
-        /// Gets or sets HeightPercent.
+        /// Returns or sets the height of a 3-D chart as a percentage of the chart width (between 5 and 500 percent).
         /// </summary>
         public virtual int? HeightPercent { get; set; }
 
         /// <summary>
-        /// Gets or sets HidePivotFieldButtons.
+        /// Indicates whether hide the pivot chart field buttons only when the chart is PivotChart.
         /// </summary>
         public virtual bool? HidePivotFieldButtons { get; set; }
 
         /// <summary>
-        /// Gets or sets Is3D.
+        /// Indicates whether the chart is a 3d chart.
         /// </summary>
         public virtual bool? Is3D { get; set; }
 
         /// <summary>
-        /// Gets or sets IsRectangularCornered.
+        /// Gets or sets a value indicating whether the chart area is rectangular cornered.
+        ///                         Default is true.
         /// </summary>
         public virtual bool? IsRectangularCornered { get; set; }
 
         /// <summary>
-        /// Gets or sets Legend.
+        /// Gets the chart legend.
         /// </summary>
         public virtual LinkElement Legend { get; set; }
 
         /// <summary>
-        /// Gets or sets Name.
+        /// Gets and sets the name of the chart.
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets NSeries.
+        /// Gets a  collection representing the data series in the chart.
         /// </summary>
         public virtual LinkElement NSeries { get; set; }
 
         /// <summary>
-        /// Gets or sets PageSetup.
+        /// Represents the page setup description in this chart.
         /// </summary>
         public virtual LinkElement PageSetup { get; set; }
 
         /// <summary>
-        /// Gets or sets Perspective.
+        /// Returns or sets the perspective for the 3-D chart view. Must be between 0 and 100.
+        ///                         This property is ignored if the RightAngleAxes property is True.
         /// </summary>
         public virtual int? Perspective { get; set; }
 
         /// <summary>
-        /// Gets or sets PivotSource.
+        /// The source is the data of the pivotTable.
+        ///                         If PivotSource is not empty ,the chart is PivotChart.
         /// </summary>
         public virtual string PivotSource { get; set; }
 
         /// <summary>
-        /// Gets or sets Placement.
+        /// Represents the way the chart is attached to the cells below it.
         /// </summary>
         public virtual string Placement { get; set; }
 
         /// <summary>
-        /// Gets or sets PlotArea.
+        /// Gets the chart's plot area which includes axis tick labels.
         /// </summary>
         public virtual LinkElement PlotArea { get; set; }
 
         /// <summary>
-        /// Gets or sets PlotEmptyCellsType.
+        /// Gets and sets  how to plot the empty cells.
         /// </summary>
         public virtual string PlotEmptyCellsType { get; set; }
 
         /// <summary>
-        /// Gets or sets PlotVisibleCells.
+        /// Indicates whether only plot visible cells.
         /// </summary>
         public virtual bool? PlotVisibleCells { get; set; }
 
         /// <summary>
-        /// Gets or sets PrintSize.
+        /// Gets and sets the printed chart size.
         /// </summary>
         public virtual string PrintSize { get; set; }
 
         /// <summary>
-        /// Gets or sets RightAngleAxes.
+        /// True if the chart axes are at right angles. Applies only for 3-D charts(except Column3D and 3-D Pie Charts).
         /// </summary>
         public virtual bool? RightAngleAxes { get; set; }
 
         /// <summary>
-        /// Gets or sets RotationAngle.
+        /// Represents the rotation of the 3-D chart view (the rotation of the plot area around the z-axis, in degrees).
         /// </summary>
         public virtual int? RotationAngle { get; set; }
 
         /// <summary>
-        /// Gets or sets SecondCategoryAxis.
+        /// Gets the chart's second X axis.
         /// </summary>
         public virtual LinkElement SecondCategoryAxis { get; set; }
 
         /// <summary>
-        /// Gets or sets SecondValueAxis.
+        /// Gets the chart's second Y axis.
         /// </summary>
         public virtual LinkElement SecondValueAxis { get; set; }
 
         /// <summary>
-        /// Gets or sets SeriesAxis.
+        /// Gets the chart's series axis.
         /// </summary>
         public virtual LinkElement SeriesAxis { get; set; }
 
         /// <summary>
-        /// Gets or sets Shapes.
+        /// Returns all drawing shapes in this chart.
         /// </summary>
         public virtual LinkElement Shapes { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowDataTable.
+        /// Gets or sets a value indicating whether the chart displays a data table.
         /// </summary>
         public virtual bool? ShowDataTable { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowLegend.
+        /// Gets or sets a value indicating whether the chart legend will be displayed. Default is true.
         /// </summary>
         public virtual bool? ShowLegend { get; set; }
 
         /// <summary>
-        /// Gets or sets SideWall.
+        /// Returns a  object that represents the side wall of a 3-D chart.
         /// </summary>
         public virtual LinkElement SideWall { get; set; }
 
         /// <summary>
-        /// Gets or sets SizeWithWindow.
+        /// True if Microsoft Excel resizes the chart to match the size of the chart sheet window.
         /// </summary>
         public virtual bool? SizeWithWindow { get; set; }
 
         /// <summary>
-        /// Gets or sets Style.
+        /// Gets and sets the builtin style.
         /// </summary>
         public virtual int? Style { get; set; }
 
         /// <summary>
-        /// Gets or sets Title.
+        /// Gets the chart's title.
         /// </summary>
         public virtual LinkElement Title { get; set; }
 
         /// <summary>
-        /// Gets or sets Type.
+        /// Gets or sets a chart's type.
         /// </summary>
         public virtual string Type { get; set; }
 
         /// <summary>
-        /// Gets or sets ValueAxis.
+        /// Gets the chart's Y axis.
         /// </summary>
         public virtual LinkElement ValueAxis { get; set; }
 
         /// <summary>
-        /// Gets or sets Walls.
+        /// Returns a  object that represents the walls of a 3-D chart.
         /// </summary>
         public virtual LinkElement Walls { get; set; }
 
         /// <summary>
-        /// Gets or sets WallsAndGridlines2D.
+        /// True if gridlines are drawn two-dimensionally on a 3-D chart.
         /// </summary>
         public virtual bool? WallsAndGridlines2D { get; set; }
 

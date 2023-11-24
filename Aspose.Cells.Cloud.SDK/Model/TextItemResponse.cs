@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// TextItemResponse.
+    /// 
     /// </summary>
     public class TextItemResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets TextItem.
+        /// 
         /// </summary>
         public virtual TextItem TextItem { get; set; }
 

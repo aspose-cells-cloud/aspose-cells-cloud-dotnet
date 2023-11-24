@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class FillFormatResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets FillFormat.
+        /// 
         /// </summary>
         public virtual FillFormat FillFormat { get; set; }
 

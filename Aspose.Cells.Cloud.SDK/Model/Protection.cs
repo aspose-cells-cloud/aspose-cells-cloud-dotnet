@@ -35,92 +35,110 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Protection.
+    /// Represents the various types of protection options available for a worksheet.
+    ///             
     /// </summary>
     public class Protection
     {
         /// <summary>
-        /// Gets or sets AllowDeletingColumn.
+        /// Represents if the deletion of columns is allowed on a protected worksheet.
+        ///  
         /// </summary>
         public virtual bool? AllowDeletingColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowDeletingRow.
+        /// Represents if the deletion of rows is allowed on a protected worksheet.
+        ///  
         /// </summary>
         public virtual bool? AllowDeletingRow { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowFiltering.
+        /// Represents if the user is allowed to make use of an AutoFilter that was created before the sheet was protected.
+        ///  
         /// </summary>
         public virtual bool? AllowFiltering { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowFormattingCell.
+        /// Represents if the formatting of cells is allowed on a protected worksheet.
+        ///  
         /// </summary>
         public virtual bool? AllowFormattingCell { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowFormattingColumn.
+        /// Represents if the formatting of columns is allowed on a protected worksheet
+        ///  
         /// </summary>
         public virtual bool? AllowFormattingColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowFormattingRow.
+        /// Represents if the formatting of rows is allowed on a protected worksheet
+        ///  
         /// </summary>
         public virtual bool? AllowFormattingRow { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowInsertingColumn.
+        /// Represents if the insertion of columns is allowed on a protected worksheet
+        ///  
         /// </summary>
         public virtual bool? AllowInsertingColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowInsertingHyperlink.
+        /// Represents if the insertion of hyperlinks is allowed on a protected worksheet
+        ///  
         /// </summary>
         public virtual bool? AllowInsertingHyperlink { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowInsertingRow.
+        /// Represents if the insertion of rows is allowed on a protected worksheet
+        ///  
         /// </summary>
         public virtual bool? AllowInsertingRow { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowSorting.
+        /// Represents if the sorting option is allowed on a protected worksheet.
+        ///  
         /// </summary>
         public virtual bool? AllowSorting { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowUsingPivotTable.
+        /// Represents if the user is allowed to manipulate pivot tables on a protected worksheet.
+        ///  
         /// </summary>
         public virtual bool? AllowUsingPivotTable { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowEditingContent.
+        /// Represents if the user is allowed to edit contents of locked cells on a protected worksheet.
+        ///  
         /// </summary>
         public virtual bool? AllowEditingContent { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowEditingObject.
+        /// Represents if the user is allowed to manipulate drawing objects on a protected worksheet.
+        ///  
         /// </summary>
         public virtual bool? AllowEditingObject { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowEditingScenario.
+        /// Represents if the user is allowed to edit scenarios on a protected worksheet.
+        ///  
         /// </summary>
         public virtual bool? AllowEditingScenario { get; set; }
 
         /// <summary>
-        /// Gets or sets Password.
+        /// Represents the password to protect the worksheet.
+        ///  
         /// </summary>
         public virtual string Password { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowSelectingLockedCell.
+        /// Represents if the user is allowed to select locked cells on a protected worksheet.
+        ///  
         /// </summary>
         public virtual bool? AllowSelectingLockedCell { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowSelectingUnlockedCell.
+        /// Represents if the user is allowed to select unlocked cells on a protected worksheet.
+        ///  
         /// </summary>
         public virtual bool? AllowSelectingUnlockedCell { get; set; }
 

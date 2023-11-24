@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Styles.
+    /// 
     /// </summary>
     public class Styles : LinkElement
     {
         /// <summary>
-        /// Gets or sets StyleList.
+        /// 
         /// </summary>
         public virtual IList<LinkElement> StyleList { get; set; }
 

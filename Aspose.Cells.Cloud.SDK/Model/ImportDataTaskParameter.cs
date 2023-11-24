@@ -35,22 +35,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ImportDataTaskParameter.
+    /// 
     /// </summary>
     public class ImportDataTaskParameter : TaskParameter
     {
         /// <summary>
-        /// Gets or sets Workbook.
+        /// 
         /// </summary>
         public virtual FileSource Workbook { get; set; }
 
         /// <summary>
-        /// Gets or sets ImportOption.
+        /// 
         /// </summary>
         public virtual ImportOption ImportOption { get; set; }
 
         /// <summary>
-        /// Gets or sets DestinationWorkbook.
+        /// 
         /// </summary>
         public virtual FileSource DestinationWorkbook { get; set; }
 

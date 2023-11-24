@@ -40,172 +40,178 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PageSetup : LinkElement
     {
         /// <summary>
-        /// Gets or sets BlackAndWhite.
+        /// Represents if elements of the document will be printed in black and white.
         /// </summary>
         public virtual bool? BlackAndWhite { get; set; }
 
         /// <summary>
-        /// Gets or sets BottomMargin.
+        /// Represents the size of the bottom margin, in unit of centimeters.
         /// </summary>
         public virtual double? BottomMargin { get; set; }
 
         /// <summary>
-        /// Gets or sets CenterHorizontally.
+        /// Represent if the sheet is printed centered horizontally.
         /// </summary>
         public virtual bool? CenterHorizontally { get; set; }
 
         /// <summary>
-        /// Gets or sets CenterVertically.
+        /// Represent if the sheet is printed centered vertically.
         /// </summary>
         public virtual bool? CenterVertically { get; set; }
 
         /// <summary>
-        /// Gets or sets FirstPageNumber.
+        /// Represents the first page number that will be used when this sheet is printed.
         /// </summary>
         public virtual int? FirstPageNumber { get; set; }
 
         /// <summary>
-        /// Gets or sets FitToPagesTall.
+        /// Represents  the number of pages tall the worksheet will be scaled to when it's printed.
+        ///                         The default value is 1.
         /// </summary>
         public virtual int? FitToPagesTall { get; set; }
 
         /// <summary>
-        /// Gets or sets FitToPagesWide.
+        /// Represents the number of pages wide the worksheet will be scaled to when it's printed.
+        ///                         The default value is 1.
         /// </summary>
         public virtual int? FitToPagesWide { get; set; }
 
         /// <summary>
-        /// Gets or sets FooterMargin.
+        /// Represents the distance from the bottom of the page to the footer, in unit of centimeters.
         /// </summary>
         public virtual double? FooterMargin { get; set; }
 
         /// <summary>
-        /// Gets or sets HeaderMargin.
+        /// Represents the distance from the top of the page to the header, in unit of centimeters.
         /// </summary>
         public virtual double? HeaderMargin { get; set; }
 
         /// <summary>
-        /// Gets or sets IsAutoFirstPageNumber.
+        /// Indicates whether the first the page number is automatically assigned.
         /// </summary>
         public virtual bool? IsAutoFirstPageNumber { get; set; }
 
         /// <summary>
-        /// Gets or sets IsHFAlignMargins.
+        /// Indicates whether header and footer margins are aligned with the page margins.
+        ///                         If this property is true, the left header and footer will be aligned with the left margin,
+        ///                         and the right header and footer will be aligned with the right margin.
+        ///                         This option is enabled by default.
         /// </summary>
         public virtual bool? IsHFAlignMargins { get; set; }
 
         /// <summary>
-        /// Gets or sets IsHFDiffFirst.
+        /// True means that the header/footer of the first page is different with other pages.
         /// </summary>
         public virtual bool? IsHFDiffFirst { get; set; }
 
         /// <summary>
-        /// Gets or sets IsHFDiffOddEven.
+        /// True means that the header/footer of the odd pages is different with odd pages.
         /// </summary>
         public virtual bool? IsHFDiffOddEven { get; set; }
 
         /// <summary>
-        /// Gets or sets IsHFScaleWithDoc.
+        /// Indicates whether header and footer are scaled with document scaling.
+        ///                         Only applies for Excel 2007.
         /// </summary>
         public virtual bool? IsHFScaleWithDoc { get; set; }
 
         /// <summary>
-        /// Gets or sets IsPercentScale.
+        /// If this property is False, the FitToPagesWide and FitToPagesTall properties control how the worksheet is scaled.
         /// </summary>
         public virtual bool? IsPercentScale { get; set; }
 
         /// <summary>
-        /// Gets or sets LeftMargin.
+        /// Represents the size of the left margin, in unit of centimeters.
         /// </summary>
         public virtual double? LeftMargin { get; set; }
 
         /// <summary>
-        /// Gets or sets Order.
+        /// Represents the order that Microsoft Excel uses to number pages when printing a large worksheet.
         /// </summary>
         public virtual string Order { get; set; }
 
         /// <summary>
-        /// Gets or sets Orientation.
+        /// Represents page print orientation.
         /// </summary>
         public virtual string Orientation { get; set; }
 
         /// <summary>
-        /// Gets or sets PaperSize.
+        /// Represents the size of the paper.
         /// </summary>
         public virtual string PaperSize { get; set; }
 
         /// <summary>
-        /// Gets or sets PrintArea.
+        /// Represents the range to be printed.
         /// </summary>
         public virtual string PrintArea { get; set; }
 
         /// <summary>
-        /// Gets or sets PrintComments.
+        /// Represents the way comments are printed with the sheet.
         /// </summary>
         public virtual string PrintComments { get; set; }
 
         /// <summary>
-        /// Gets or sets PrintCopies.
+        /// Get and sets number of copies to print.
         /// </summary>
         public virtual int? PrintCopies { get; set; }
 
         /// <summary>
-        /// Gets or sets PrintDraft.
+        /// Represents if the sheet will be printed without graphics.
         /// </summary>
         public virtual bool? PrintDraft { get; set; }
 
         /// <summary>
-        /// Gets or sets PrintErrors.
+        /// Specifies the type of print error displayed.
         /// </summary>
         public virtual string PrintErrors { get; set; }
 
         /// <summary>
-        /// Gets or sets PrintGridlines.
+        /// Represents if cell gridlines are printed on the page.
         /// </summary>
         public virtual bool? PrintGridlines { get; set; }
 
         /// <summary>
-        /// Gets or sets PrintHeadings.
+        /// Represents if row and column headings are printed with this page.
         /// </summary>
         public virtual bool? PrintHeadings { get; set; }
 
         /// <summary>
-        /// Gets or sets PrintQuality.
+        /// Represents the print quality.
         /// </summary>
         public virtual int? PrintQuality { get; set; }
 
         /// <summary>
-        /// Gets or sets PrintTitleColumns.
+        /// Represents the columns that contain the cells to be repeated on the left side of each page.
         /// </summary>
         public virtual string PrintTitleColumns { get; set; }
 
         /// <summary>
-        /// Gets or sets PrintTitleRows.
+        /// Represents the rows that contain the cells to be repeated at the top of each page.
         /// </summary>
         public virtual string PrintTitleRows { get; set; }
 
         /// <summary>
-        /// Gets or sets RightMargin.
+        /// Represents the size of the right margin, in unit of centimeters.
         /// </summary>
         public virtual double? RightMargin { get; set; }
 
         /// <summary>
-        /// Gets or sets TopMargin.
+        /// Represents the size of the top margin, in unit of centimeters.
         /// </summary>
         public virtual double? TopMargin { get; set; }
 
         /// <summary>
-        /// Gets or sets Zoom.
+        /// Represents the scaling factor in percent. It should be between 10 and 400.
         /// </summary>
         public virtual int? Zoom { get; set; }
 
         /// <summary>
-        /// Gets or sets Header.
+        /// Represents the page header.
         /// </summary>
         public virtual IList<PageSection> Header { get; set; }
 
         /// <summary>
-        /// Gets or sets Footer.
+        /// Represents the page footor.
         /// </summary>
         public virtual IList<PageSection> Footer { get; set; }
 

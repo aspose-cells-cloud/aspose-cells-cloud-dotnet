@@ -35,22 +35,24 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// CustomParserConfig.
+    /// 
     /// </summary>
     public class CustomParserConfig
     {
         /// <summary>
-        /// Gets or sets ColumnIndex.
+        /// Point Column
         /// </summary>
         public virtual int? ColumnIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets ParseMethod.
+        /// data parser method. 
+        ///             ToDateTime
+        ///             ToString
         /// </summary>
         public virtual string ParseMethod { get; set; }
 
         /// <summary>
-        /// Gets or sets CustomStyle.
+        /// 
         /// </summary>
         public virtual string CustomStyle { get; set; }
 

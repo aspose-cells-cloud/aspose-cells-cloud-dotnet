@@ -35,47 +35,47 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ConvertWorksheetTaskParameter.
+    /// 
     /// </summary>
     public class ConvertWorksheetTaskParameter : TaskParameter
     {
         /// <summary>
-        /// Gets or sets Workbook.
+        /// 
         /// </summary>
         public virtual FileSource Workbook { get; set; }
 
         /// <summary>
-        /// Gets or sets Sheet.
+        /// 
         /// </summary>
         public virtual string Sheet { get; set; }
 
         /// <summary>
-        /// Gets or sets Target.
+        /// 
         /// </summary>
         public virtual FileSource Target { get; set; }
 
         /// <summary>
-        /// Gets or sets Format.
+        /// 
         /// </summary>
         public virtual string Format { get; set; }
 
         /// <summary>
-        /// Gets or sets Area.
+        /// 
         /// </summary>
         public virtual string Area { get; set; }
 
         /// <summary>
-        /// Gets or sets PageIndex.
+        /// 
         /// </summary>
         public virtual int? PageIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets VerticalResolution.
+        /// 
         /// </summary>
         public virtual int? VerticalResolution { get; set; }
 
         /// <summary>
-        /// Gets or sets HorizontalResolution.
+        /// 
         /// </summary>
         public virtual int? HorizontalResolution { get; set; }
 

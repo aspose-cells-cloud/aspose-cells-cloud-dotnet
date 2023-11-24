@@ -40,102 +40,125 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Style
     {
         /// <summary>
-        /// Gets or sets Font.
+        /// Gets a  object.
+        ///  
         /// </summary>
         public virtual Font Font { get; set; }
 
         /// <summary>
-        /// Gets or sets Name.
+        /// Gets or sets the name of the style.
+        ///  
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets CultureCustom.
+        /// Gets and sets the culture-dependent pattern string for number format.
+        ///             If no number format has been set for this object, null will be returned.
+        ///             If number format is builtin, the pattern string corresponding to the builtin number will be returned.
+        ///  
         /// </summary>
         public virtual string CultureCustom { get; set; }
 
         /// <summary>
-        /// Gets or sets Custom.
+        /// Represents the custom number format string of this style object.
+        ///             If the custom number format is not set(For example, the number format is builtin), "" will be returned.
+        ///  
         /// </summary>
         public virtual string Custom { get; set; }
 
         /// <summary>
-        /// Gets or sets BackgroundColor.
+        /// Gets or sets a style's background color.
+        ///  
         /// </summary>
         public virtual Color BackgroundColor { get; set; }
 
         /// <summary>
-        /// Gets or sets ForegroundColor.
+        /// Gets or sets a style's foreground color.
+        ///  
         /// </summary>
         public virtual Color ForegroundColor { get; set; }
 
         /// <summary>
-        /// Gets or sets IsFormulaHidden.
+        /// Represents if the formula will be hidden when the worksheet is protected.
+        ///  
         /// </summary>
         public virtual bool? IsFormulaHidden { get; set; }
 
         /// <summary>
-        /// Gets or sets IsDateTime.
+        /// Indicates whether the number format is a date format.
+        ///  
         /// </summary>
         public virtual bool? IsDateTime { get; set; }
 
         /// <summary>
-        /// Gets or sets IsTextWrapped.
+        /// Gets or sets a value indicating whether the text within a cell is wrapped.
+        ///  
         /// </summary>
         public virtual bool? IsTextWrapped { get; set; }
 
         /// <summary>
-        /// Gets or sets IsGradient.
+        /// Indicates whether the cell shading is a gradient pattern.
+        ///  
         /// </summary>
         public virtual bool? IsGradient { get; set; }
 
         /// <summary>
-        /// Gets or sets IsLocked.
+        /// Gets or sets a value indicating whether a cell can be modified or not.
+        ///  
         /// </summary>
         public virtual bool? IsLocked { get; set; }
 
         /// <summary>
-        /// Gets or sets IsPercent.
+        /// Indicates whether the number format is a percent format.
+        ///  
         /// </summary>
         public virtual bool? IsPercent { get; set; }
 
         /// <summary>
-        /// Gets or sets ShrinkToFit.
+        /// Represents if text automatically shrinks to fit in the available column width.
+        ///  
         /// </summary>
         public virtual bool? ShrinkToFit { get; set; }
 
         /// <summary>
-        /// Gets or sets IndentLevel.
+        /// Represents the indent level for the cell or range. Can only be an integer from 0 to 250.
+        ///  
         /// </summary>
         public virtual int? IndentLevel { get; set; }
 
         /// <summary>
-        /// Gets or sets Number.
+        /// Gets or sets the display format of numbers and dates. The formatting patterns are different for different regions.
+        ///  
         /// </summary>
         public virtual int? Number { get; set; }
 
         /// <summary>
-        /// Gets or sets RotationAngle.
+        /// Represents text rotation angle.
+        ///  
         /// </summary>
         public virtual int? RotationAngle { get; set; }
 
         /// <summary>
-        /// Gets or sets Pattern.
+        /// Gets or sets the cell background pattern type.
+        ///  
         /// </summary>
         public virtual string Pattern { get; set; }
 
         /// <summary>
-        /// Gets or sets TextDirection.
+        /// Represents text reading order.
+        ///  
         /// </summary>
         public virtual string TextDirection { get; set; }
 
         /// <summary>
-        /// Gets or sets VerticalAlignment.
+        /// Gets or sets the vertical alignment type of the text in a cell.
+        ///  
         /// </summary>
         public virtual string VerticalAlignment { get; set; }
 
         /// <summary>
-        /// Gets or sets HorizontalAlignment.
+        /// Gets or sets the horizontal alignment type of the text in a cell.
+        ///  
         /// </summary>
         public virtual string HorizontalAlignment { get; set; }
 
@@ -145,12 +168,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual IList<Border> BorderCollection { get; set; }
 
         /// <summary>
-        /// Gets or sets BackgroundThemeColor.
+        /// Gets and sets the background theme color.
+        ///  
         /// </summary>
         public virtual ThemeColor BackgroundThemeColor { get; set; }
 
         /// <summary>
-        /// Gets or sets ForegroundThemeColor.
+        /// Gets and sets the foreground theme color.
+        ///  
         /// </summary>
         public virtual ThemeColor ForegroundThemeColor { get; set; }
 

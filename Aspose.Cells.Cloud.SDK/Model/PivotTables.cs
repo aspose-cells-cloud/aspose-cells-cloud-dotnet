@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PivotTables : LinkElement
     {
         /// <summary>
-        /// Gets or sets PivotTableList.
+        /// 
         /// </summary>
         public virtual IList<LinkElement> PivotTableList { get; set; }
 

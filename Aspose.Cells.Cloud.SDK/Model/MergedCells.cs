@@ -40,12 +40,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class MergedCells : LinkElement
     {
         /// <summary>
-        /// Gets or sets Count.
+        /// 
         /// </summary>
         public virtual int? Count { get; set; }
 
         /// <summary>
-        /// Gets or sets MergedCellList.
+        /// 
         /// </summary>
         public virtual IList<LinkElement> MergedCellList { get; set; }
 

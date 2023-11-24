@@ -47,7 +47,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostRotateRequest"/> class.
         /// </summary>
-        /// <param name="file">File to upload</param>
+        /// <param name="file">270/90/row/col/row2col</param>
         /// <param name="rotateType">270/90/row/col/row2col</param>
         /// <param name="format">CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers</param>
         /// <param name="password"></param>
@@ -62,7 +62,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// File to upload
+        /// 270/90/row/col/row2col
         /// </summary>
         public IDictionary<string, System.IO.Stream> File { get; set; }
 

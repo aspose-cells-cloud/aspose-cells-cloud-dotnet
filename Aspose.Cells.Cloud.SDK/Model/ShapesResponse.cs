@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ShapesResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shapes.
+        /// 
         /// </summary>
         public virtual Shapes Shapes { get; set; }
 

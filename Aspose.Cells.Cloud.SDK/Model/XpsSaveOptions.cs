@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// XpsSaveOptions.
+    /// Represents the options of saving .xps file.
     /// </summary>
     public class XpsSaveOptions : SaveOptions
     {

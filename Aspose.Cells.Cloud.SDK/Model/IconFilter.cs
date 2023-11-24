@@ -40,12 +40,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class IconFilter
     {
         /// <summary>
-        /// Gets or sets IconId.
+        /// Gets and sets Zero-based index of an icon in an icon set.
+        ///  
         /// </summary>
         public virtual int? IconId { get; set; }
 
         /// <summary>
-        /// Gets or sets IconSetType.
+        /// Gets and sets which icon set is used in the filter criteria.
+        ///  
         /// </summary>
         public virtual string IconSetType { get; set; }
 

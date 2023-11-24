@@ -35,42 +35,42 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// CreatePivotTableRequest.
+    /// Indicates create pivot table request
     /// </summary>
     public class CreatePivotTableRequest
     {
         /// <summary>
-        /// Gets or sets Name.
+        /// Pivot table name
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets SourceData.
+        /// The data for the new PivotTable cache.
         /// </summary>
         public virtual string SourceData { get; set; }
 
         /// <summary>
-        /// Gets or sets DestCellName.
+        /// The cell in the upper-left corner of the PivotTable report's destination range.
         /// </summary>
         public virtual string DestCellName { get; set; }
 
         /// <summary>
-        /// Gets or sets UseSameSource.
+        /// Indicates whether using same data source when another existing pivot table has used this data source.If the property is true, it will save memory.
         /// </summary>
         public virtual bool? UseSameSource { get; set; }
 
         /// <summary>
-        /// Gets or sets PivotFieldRows.
+        /// Represents row fields in a PivotTable report.
         /// </summary>
         public virtual List<int?> PivotFieldRows { get; set; }
 
         /// <summary>
-        /// Gets or sets PivotFieldColumns.
+        /// Represents column fields in a PivotTable report.
         /// </summary>
         public virtual List<int?> PivotFieldColumns { get; set; }
 
         /// <summary>
-        /// Gets or sets PivotFieldData.
+        /// Represents data fields in a PivotTable report.
         /// </summary>
         public virtual List<int?> PivotFieldData { get; set; }
 

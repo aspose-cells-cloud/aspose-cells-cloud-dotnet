@@ -40,17 +40,20 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class HorizontalPageBreak
     {
         /// <summary>
-        /// Gets or sets Row.
+        /// Gets the zero based row index.
+        ///  
         /// </summary>
         public virtual int? Row { get; set; }
 
         /// <summary>
-        /// Gets or sets EndColumn.
+        /// Gets the end column index of this horizontal page break.
+        ///  
         /// </summary>
         public virtual int? EndColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets StartColumn.
+        /// Gets the start column index of this horizontal page break.
+        ///  
         /// </summary>
         public virtual int? StartColumn { get; set; }
 

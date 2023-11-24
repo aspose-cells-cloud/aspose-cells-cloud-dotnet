@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ValidationsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Validations.
+        /// 
         /// </summary>
         public virtual Validations Validations { get; set; }
 

@@ -35,32 +35,32 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// QueryTable.
+    /// Represents QueryTable information.
     /// </summary>
     public class QueryTable
     {
         /// <summary>
-        /// Gets or sets ConnectionId.
+        /// Gets the connection id of the query table.
         /// </summary>
         public virtual int? ConnectionId { get; set; }
 
         /// <summary>
-        /// Gets or sets Name.
+        /// Gets the name of querytable.
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets ResultRange.
+        /// Gets the range of the result.
         /// </summary>
         public virtual Range ResultRange { get; set; }
 
         /// <summary>
-        /// Gets or sets PreserveFormatting.
+        /// Returns or sets the PreserveFormatting of the object.
         /// </summary>
         public virtual bool? PreserveFormatting { get; set; }
 
         /// <summary>
-        /// Gets or sets AdjustColumnWidth.
+        /// Returns or sets the AdjustColumnWidth of the object.
         /// </summary>
         public virtual bool? AdjustColumnWidth { get; set; }
 

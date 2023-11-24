@@ -35,62 +35,62 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// LoadOptions.
+    /// 
     /// </summary>
     public class LoadOptions
     {
         /// <summary>
-        /// Gets or sets ConvertNumericData.
+        /// 
         /// </summary>
         public virtual string ConvertNumericData { get; set; }
 
         /// <summary>
-        /// Gets or sets InterruptMonitor.
+        /// Gets and sets the interrupt monitor.
         /// </summary>
         public virtual string InterruptMonitor { get; set; }
 
         /// <summary>
-        /// Gets or sets LanguageCode.
+        /// Gets or sets the user interface language of the Workbook version based on CountryCode that has saved the file.
         /// </summary>
         public virtual string LanguageCode { get; set; }
 
         /// <summary>
-        /// Gets or sets LoadDataOptions.
+        /// 
         /// </summary>
         public virtual string LoadDataOptions { get; set; }
 
         /// <summary>
-        /// Gets or sets LoadFormat.
+        /// Gets the load format.
         /// </summary>
         public virtual string LoadFormat { get; set; }
 
         /// <summary>
-        /// Gets or sets OnlyLoadDocumentProperties.
+        /// 
         /// </summary>
         public virtual string OnlyLoadDocumentProperties { get; set; }
 
         /// <summary>
-        /// Gets or sets ParsingFormulaOnOpen.
+        /// Indicates whether parsing the formula when reading the file.
         /// </summary>
         public virtual string ParsingFormulaOnOpen { get; set; }
 
         /// <summary>
-        /// Gets or sets Password.
+        /// Gets and set the password of the workbook.
         /// </summary>
         public virtual string Password { get; set; }
 
         /// <summary>
-        /// Gets or sets Region.
+        /// Gets or sets the system regional settings based on CountryCode at the time the file was loaded.
         /// </summary>
         public virtual string Region { get; set; }
 
         /// <summary>
-        /// Gets or sets StandardFont.
+        /// Sets the default standard font name
         /// </summary>
         public virtual string StandardFont { get; set; }
 
         /// <summary>
-        /// Gets or sets StandardFontSize.
+        /// Sets the default standard font size.
         /// </summary>
         public virtual double? StandardFontSize { get; set; }
 

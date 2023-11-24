@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// WallsResponse.
+    /// 
     /// </summary>
     public class WallsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Walls.
+        /// 
         /// </summary>
         public virtual Walls Walls { get; set; }
 

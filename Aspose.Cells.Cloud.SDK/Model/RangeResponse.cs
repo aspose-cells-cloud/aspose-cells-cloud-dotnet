@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// RangeResponse.
+    /// 
     /// </summary>
     public class RangeResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Range.
+        /// 
         /// </summary>
         public virtual Range Range { get; set; }
 

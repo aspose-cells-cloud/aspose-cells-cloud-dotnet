@@ -35,62 +35,62 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// RenderingWatermark.
+    /// 
     /// </summary>
     public class RenderingWatermark
     {
         /// <summary>
-        /// Gets or sets Rotation.
+        /// 
         /// </summary>
         public virtual double? Rotation { get; set; }
 
         /// <summary>
-        /// Gets or sets ScaleToPagePercent.
+        /// 
         /// </summary>
         public virtual int? ScaleToPagePercent { get; set; }
 
         /// <summary>
-        /// Gets or sets Opacity.
+        /// 
         /// </summary>
         public virtual double? Opacity { get; set; }
 
         /// <summary>
-        /// Gets or sets IsBackground.
+        /// 
         /// </summary>
         public virtual bool? IsBackground { get; set; }
 
         /// <summary>
-        /// Gets or sets Text.
+        /// 
         /// </summary>
         public virtual string Text { get; set; }
 
         /// <summary>
-        /// Gets or sets Font.
+        /// 
         /// </summary>
         public virtual RenderingFont Font { get; set; }
 
         /// <summary>
-        /// Gets or sets Image.
+        /// 
         /// </summary>
         public virtual byte[] Image { get; set; }
 
         /// <summary>
-        /// Gets or sets HAlignment.
+        /// 
         /// </summary>
         public virtual string HAlignment { get; set; }
 
         /// <summary>
-        /// Gets or sets VAlignment.
+        /// 
         /// </summary>
         public virtual string VAlignment { get; set; }
 
         /// <summary>
-        /// Gets or sets OffsetX.
+        /// 
         /// </summary>
         public virtual double? OffsetX { get; set; }
 
         /// <summary>
-        /// Gets or sets OffsetY.
+        /// 
         /// </summary>
         public virtual double? OffsetY { get; set; }
 

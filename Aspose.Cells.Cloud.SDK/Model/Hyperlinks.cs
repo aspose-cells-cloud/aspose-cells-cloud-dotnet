@@ -40,12 +40,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Hyperlinks : LinkElement
     {
         /// <summary>
-        /// Gets or sets Count.
+        /// 
         /// </summary>
         public virtual int? Count { get; set; }
 
         /// <summary>
-        /// Gets or sets HyperlinkList.
+        /// 
         /// </summary>
         public virtual IList<LinkElement> HyperlinkList { get; set; }
 

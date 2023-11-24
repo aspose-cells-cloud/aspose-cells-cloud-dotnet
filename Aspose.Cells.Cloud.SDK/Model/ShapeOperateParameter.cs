@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ShapeOperateParameter.
+    /// 
     /// </summary>
     public class ShapeOperateParameter : OperateParameter
     {
         /// <summary>
-        /// Gets or sets Shape.
+        /// 
         /// </summary>
         public virtual Shape Shape { get; set; }
 

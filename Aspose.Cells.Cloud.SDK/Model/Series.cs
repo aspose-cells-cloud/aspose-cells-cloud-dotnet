@@ -35,247 +35,274 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Series.
+    /// 
     /// </summary>
     public class Series : LinkElement
     {
         /// <summary>
-        /// Gets or sets Area.
+        /// Represents the background area of Series object.
         /// </summary>
         public virtual Area Area { get; set; }
 
         /// <summary>
-        /// Gets or sets Bar3DShapeType.
+        /// Gets or sets the 3D shape type used with the 3-D bar or column chart.
         /// </summary>
         public virtual string Bar3DShapeType { get; set; }
 
         /// <summary>
-        /// Gets or sets Border.
+        /// Represents border of Series object.
         /// </summary>
         public virtual Line Border { get; set; }
 
         /// <summary>
-        /// Gets or sets BubbleScale.
+        /// Gets or sets the scale factor for bubbles in the specified chart group. 
+        ///                         It can be an integer value from 0 (zero) to 300, 
+        ///                         corresponding to a percentage of the default size.
+        ///                         Applies only to bubble charts.
         /// </summary>
         public virtual int? BubbleScale { get; set; }
 
         /// <summary>
-        /// Gets or sets BubbleSizes.
+        /// Gets or sets the bubble sizes values of the chart series.
         /// </summary>
         public virtual string BubbleSizes { get; set; }
 
         /// <summary>
-        /// Gets or sets CountOfDataValues.
+        /// Gets the number of the data values.
         /// </summary>
         public virtual int? CountOfDataValues { get; set; }
 
         /// <summary>
-        /// Gets or sets DataLabels.
+        /// Represents the DataLabels object for the specified ASeries.
         /// </summary>
         public virtual LinkElement DataLabels { get; set; }
 
         /// <summary>
-        /// Gets or sets DisplayName.
+        /// Gets the series's name that displays on the chart graph.
         /// </summary>
         public virtual string DisplayName { get; set; }
 
         /// <summary>
-        /// Gets or sets DoughnutHoleSize.
+        /// Returns or sets the size of the hole in a doughnut chart group. 
+        ///                         The hole size is expressed as a percentage of the chart size, between 10 and 90 percent.
         /// </summary>
         public virtual int? DoughnutHoleSize { get; set; }
 
         /// <summary>
-        /// Gets or sets DownBars.
+        /// Returns a  object that represents the down bars on a line chart.
+        ///                         Applies only to line charts.
         /// </summary>
         public virtual LinkElement DownBars { get; set; }
 
         /// <summary>
-        /// Gets or sets DropLines.
+        /// Returns a  object that represents the drop lines for a series on the line chart or area chart.
+        ///                         Applies only to line chart or area charts.
         /// </summary>
         public virtual Line DropLines { get; set; }
 
         /// <summary>
-        /// Gets or sets Explosion.
+        /// The distance of an open pie slice from the center of the pie chart is expressed as a percentage of the pie diameter.
         /// </summary>
         public virtual int? Explosion { get; set; }
 
         /// <summary>
-        /// Gets or sets FirstSliceAngle.
+        /// Gets or sets the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). 
+        ///                         Applies only to pie, 3-D pie, and doughnut charts, 0 to 360.
         /// </summary>
         public virtual int? FirstSliceAngle { get; set; }
 
         /// <summary>
-        /// Gets or sets GapWidth.
+        /// Returns or sets the space between bar or column clusters, as a percentage of the bar or column width.
+        ///                         The value of this property must be between 0 and 500.
         /// </summary>
         public virtual int? GapWidth { get; set; }
 
         /// <summary>
-        /// Gets or sets Has3DEffect.
+        /// True if the series has a three-dimensional appearance. 
+        ///                         Applies only to bubble charts.
         /// </summary>
         public virtual bool? Has3DEffect { get; set; }
 
         /// <summary>
-        /// Gets or sets HasDropLines.
+        /// True if the chart has drop lines.
+        ///                         Applies only to line chart or area charts.
         /// </summary>
         public virtual bool? HasDropLines { get; set; }
 
         /// <summary>
-        /// Gets or sets HasHiLoLines.
+        /// True if the line chart has high-low lines. 
+        ///                          Applies only to line charts.
         /// </summary>
         public virtual bool? HasHiLoLines { get; set; }
 
         /// <summary>
-        /// Gets or sets HasLeaderLines.
+        /// True if the series has leader lines.
         /// </summary>
         public virtual bool? HasLeaderLines { get; set; }
 
         /// <summary>
-        /// Gets or sets HasRadarAxisLabels.
+        /// True if a radar chart has category axis labels. Applies only to radar charts.
         /// </summary>
         public virtual bool? HasRadarAxisLabels { get; set; }
 
         /// <summary>
-        /// Gets or sets HasSeriesLines.
+        /// True if a stacked column chart or bar chart has series lines or
+        ///                         if a Pie of Pie chart or Bar of Pie chart has connector lines between the two sections. 
+        ///                         Applies only to stacked column charts, bar charts, Pie of Pie charts, or Bar of Pie charts.
         /// </summary>
         public virtual bool? HasSeriesLines { get; set; }
 
         /// <summary>
-        /// Gets or sets HasUpDownBars.
+        /// True if a line chart has up and down bars.
+        ///                         Applies only to line charts.
         /// </summary>
         public virtual bool? HasUpDownBars { get; set; }
 
         /// <summary>
-        /// Gets or sets HiLoLines.
+        /// Returns a HiLoLines object that represents the high-low lines for a series on a line chart. 
+        ///                         Applies only to line charts.
         /// </summary>
         public virtual Line HiLoLines { get; set; }
 
         /// <summary>
-        /// Gets or sets IsAutoSplit.
+        /// Indicates whether the threshold value is automatic.
         /// </summary>
         public virtual bool? IsAutoSplit { get; set; }
 
         /// <summary>
-        /// Gets or sets IsColorVaried.
+        /// Represents if the color of points is varied. 
+        ///                         The chart must contain only one series.
         /// </summary>
         public virtual bool? IsColorVaried { get; set; }
 
         /// <summary>
-        /// Gets or sets LeaderLines.
+        /// Represents leader lines on a chart. Leader lines connect data labels to data points. 
+        ///                         This object isn’t a collection; there’s no object that represents a single leader line.
         /// </summary>
         public virtual Line LeaderLines { get; set; }
 
         /// <summary>
-        /// Gets or sets LegendEntry.
+        /// Gets the legend entry according to this series.
         /// </summary>
         public virtual LinkElement LegendEntry { get; set; }
 
         /// <summary>
-        /// Gets or sets Line.
+        /// 
         /// </summary>
         public virtual Line Line { get; set; }
 
         /// <summary>
-        /// Gets or sets Marker.
+        /// Gets the marker.
         /// </summary>
         public virtual Marker Marker { get; set; }
 
         /// <summary>
-        /// Gets or sets Name.
+        /// Gets or sets the name of the data series.
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets Overlap.
+        /// Specifies how bars and columns are positioned.
+        ///                         Can be a value between – 100 and 100. 
+        ///                         Applies only to 2-D bar and 2-D column charts.
         /// </summary>
         public virtual int? Overlap { get; set; }
 
         /// <summary>
-        /// Gets or sets PlotOnSecondAxis.
+        /// Indicates if this series is plotted on second value axis.
         /// </summary>
         public virtual bool? PlotOnSecondAxis { get; set; }
 
         /// <summary>
-        /// Gets or sets Points.
+        /// Gets the collection of points in a series in a chart.
         /// </summary>
         public virtual LinkElement Points { get; set; }
 
         /// <summary>
-        /// Gets or sets SecondPlotSize.
+        /// Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, 
+        ///                         as a percentage of the size of the primary pie.
+        ///                         Can be a value from 5 to 200.
         /// </summary>
         public virtual int? SecondPlotSize { get; set; }
 
         /// <summary>
-        /// Gets or sets SeriesLines.
+        /// Returns a SeriesLines object that represents the series lines for a stacked bar chart or a stacked column chart.
+        ///                         Applies only to stacked bar and stacked column charts.
         /// </summary>
         public virtual Line SeriesLines { get; set; }
 
         /// <summary>
-        /// Gets or sets Shadow.
+        /// True if the series has a shadow.
         /// </summary>
         public virtual bool? Shadow { get; set; }
 
         /// <summary>
-        /// Gets or sets ShapeProperties.
+        /// Gets the  object that holds the visual shape properties of the Series.
         /// </summary>
         public virtual LinkElement ShapeProperties { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowNegativeBubbles.
+        /// True if negative bubbles are shown for the chart group. Valid only for bubble charts.
         /// </summary>
         public virtual bool? ShowNegativeBubbles { get; set; }
 
         /// <summary>
-        /// Gets or sets SizeRepresents.
+        /// Gets or sets what the bubble size represents on a bubble chart.
         /// </summary>
         public virtual string SizeRepresents { get; set; }
 
         /// <summary>
-        /// Gets or sets Smooth.
+        /// Represents curve smoothing. 
+        ///                         True if curve smoothing is turned on for the line chart or scatter chart.
+        ///                         Applies only to line and scatter connected by lines charts.
         /// </summary>
         public virtual bool? Smooth { get; set; }
 
         /// <summary>
-        /// Gets or sets SplitType.
+        /// Returns or sets a value that how to determine which data points are in the second pie or bar on a pie of pie or bar of
+        ///                         pie chart.
         /// </summary>
         public virtual string SplitType { get; set; }
 
         /// <summary>
-        /// Gets or sets SplitValue.
+        /// Returns or sets a value that shall be used to determine which data points are in the second pie or bar on
+        ///                         a pie of pie or bar of pie chart.
         /// </summary>
         public virtual double? SplitValue { get; set; }
 
         /// <summary>
-        /// Gets or sets TrendLines.
+        /// Returns an object that represents a collection of all the trendlines for the series.
         /// </summary>
         public virtual LinkElement TrendLines { get; set; }
 
         /// <summary>
-        /// Gets or sets Type.
+        /// Gets or sets a data series' type.
         /// </summary>
         public virtual string Type { get; set; }
 
         /// <summary>
-        /// Gets or sets UpBars.
+        /// Returns an DropBars object that represents the up bars on a line chart.
+        ///                         Applies only to line charts.
         /// </summary>
         public virtual LinkElement UpBars { get; set; }
 
         /// <summary>
-        /// Gets or sets Values.
+        /// Represents the data of the chart series.
         /// </summary>
         public virtual string Values { get; set; }
 
         /// <summary>
-        /// Gets or sets XErrorBar.
+        /// Represents X direction error bar of the series.
         /// </summary>
         public virtual LinkElement XErrorBar { get; set; }
 
         /// <summary>
-        /// Gets or sets XValues.
+        /// Represents the x values of the chart series.
         /// </summary>
         public virtual string XValues { get; set; }
 
         /// <summary>
-        /// Gets or sets YErrorBar.
+        /// Represents Y direction error bar of the series.
         /// </summary>
         public virtual LinkElement YErrorBar { get; set; }
 

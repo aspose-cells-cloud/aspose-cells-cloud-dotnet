@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// TickLabelsResponse.
+    /// 
     /// </summary>
     public class TickLabelsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets TickLabels.
+        /// 
         /// </summary>
         public virtual TickLabels TickLabels { get; set; }
 

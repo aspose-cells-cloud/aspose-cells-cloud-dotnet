@@ -40,22 +40,26 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class GradientFill
     {
         /// <summary>
-        /// Gets or sets FillType.
+        /// Gets the gradient fill type.
+        ///  
         /// </summary>
         public virtual string FillType { get; set; }
 
         /// <summary>
-        /// Gets or sets DirectionType.
+        /// Gets the gradient direction type.
+        ///  
         /// </summary>
         public virtual string DirectionType { get; set; }
 
         /// <summary>
-        /// Gets or sets Angle.
+        /// The angle of linear fill.
+        ///  
         /// </summary>
         public virtual double? Angle { get; set; }
 
         /// <summary>
-        /// Gets or sets GradientStops.
+        /// Represents the gradient stop collection.
+        ///  
         /// </summary>
         public virtual IList<GradientFillStop> GradientStops { get; set; }
 

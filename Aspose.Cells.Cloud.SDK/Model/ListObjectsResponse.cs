@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ListObjectsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets ListObjects.
+        /// 
         /// </summary>
         public virtual ListObjects ListObjects { get; set; }
 

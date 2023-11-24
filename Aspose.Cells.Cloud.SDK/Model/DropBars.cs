@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// DropBars.
+    /// 
     /// </summary>
     public class DropBars : LinkElement
     {
         /// <summary>
-        /// Gets or sets Area.
+        /// Gets the .
         /// </summary>
         public virtual Area Area { get; set; }
 
         /// <summary>
-        /// Gets or sets Border.
+        /// Gets the border .
         /// </summary>
         public virtual Line Border { get; set; }
 

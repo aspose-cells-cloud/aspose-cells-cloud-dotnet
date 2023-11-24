@@ -1,0 +1,25 @@
+# **protectSheetParameter**
+
+ 
+
+## **Properties**
+
+| Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
+| :- | :- | :- |:- |  :- | :- |
+|ProtectionType|String|true|false |  ||
+|Password|String|true|false |  ||
+|AllowEditArea|Container|true|false |  ||
+|AllowDeletingColumn|String|true|false |  ||
+|AllowDeletingRow|String|true|false |  ||
+|AllowFiltering|String|true|false |  ||
+|AllowFormattingCell|String|true|false |  ||
+|AllowFormattingColumn|String|true|false |  ||
+|AllowFormattingRow|String|true|false |  ||
+|AllowInsertingColumn|String|true|false |  ||
+|AllowInsertingHyperlink|String|true|false |  ||
+|AllowInsertingRow|String|true|false |  ||
+|AllowSelectingLockedCell|String|true|false |  ||
+|AllowSelectingUnlockedCell|String|true|false |  ||
+|AllowSorting|String|true|false |  ||
+|AllowUsingPivotTable|String|true|false |  ||
+

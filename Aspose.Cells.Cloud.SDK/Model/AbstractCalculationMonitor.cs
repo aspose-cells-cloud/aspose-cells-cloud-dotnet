@@ -41,19 +41,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class AbstractCalculationMonitor
     {
         /// <summary>
-        /// Gets the old value of the calculated cell.            Should be used only in  and .
+        /// Gets the old value of the calculated cell.
+        ///             Should be used only in  and .
         ///  
         /// </summary>
         public virtual Object OriginalValue { get; set; }
 
         /// <summary>
-        /// Whether the cell's value has been changed after the calculation.            Should be used only in .
+        /// Whether the cell's value has been changed after the calculation.
+        ///             Should be used only in .
         ///  
         /// </summary>
         public virtual bool? ValueChanged { get; set; }
 
         /// <summary>
-        /// Gets the newly calculated value of the cell.            Should be used only in .
+        /// Gets the newly calculated value of the cell.
+        ///             Should be used only in .
         ///  
         /// </summary>
         public virtual Object CalculatedValue { get; set; }

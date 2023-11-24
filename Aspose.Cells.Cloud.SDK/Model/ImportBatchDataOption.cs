@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ImportBatchDataOption.
+    /// 
     /// </summary>
     public class ImportBatchDataOption : ImportOption
     {
         /// <summary>
-        /// Gets or sets BatchData.
+        /// 
         /// </summary>
         public virtual IList<CellValue> BatchData { get; set; }
 

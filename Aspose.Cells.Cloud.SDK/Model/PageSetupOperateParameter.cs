@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// PageSetupOperateParameter.
+    /// 
     /// </summary>
     public class PageSetupOperateParameter : OperateParameter
     {
         /// <summary>
-        /// Gets or sets PageSetup.
+        /// 
         /// </summary>
         public virtual PageSetup PageSetup { get; set; }
 

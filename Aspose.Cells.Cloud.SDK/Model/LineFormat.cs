@@ -40,57 +40,57 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class LineFormat : FillFormat
     {
         /// <summary>
-        /// Gets or sets BeginArrowheadLength.
+        /// Gets and sets the begin arrow length type of the line.
         /// </summary>
         public virtual string BeginArrowheadLength { get; set; }
 
         /// <summary>
-        /// Gets or sets BeginArrowheadStyle.
+        /// Gets and sets the begin arrow type of the line.
         /// </summary>
         public virtual string BeginArrowheadStyle { get; set; }
 
         /// <summary>
-        /// Gets or sets BeginArrowheadWidth.
+        /// Gets and sets the begin arrow width type of the line.
         /// </summary>
         public virtual string BeginArrowheadWidth { get; set; }
 
         /// <summary>
-        /// Gets or sets CapType.
+        /// Specifies the ending caps.
         /// </summary>
         public virtual string CapType { get; set; }
 
         /// <summary>
-        /// Gets or sets CompoundType.
+        /// Specifies the line compound type.
         /// </summary>
         public virtual string CompoundType { get; set; }
 
         /// <summary>
-        /// Gets or sets DashStyle.
+        /// Specifies the line dash type.
         /// </summary>
         public virtual string DashStyle { get; set; }
 
         /// <summary>
-        /// Gets or sets EndArrowheadLength.
+        /// Gets and sets the end arrow length type of the line.
         /// </summary>
         public virtual string EndArrowheadLength { get; set; }
 
         /// <summary>
-        /// Gets or sets EndArrowheadStyle.
+        /// Gets and sets the end arrow type of the line.
         /// </summary>
         public virtual string EndArrowheadStyle { get; set; }
 
         /// <summary>
-        /// Gets or sets EndArrowheadWidth.
+        /// Gets and sets the end arrow width type of the line.
         /// </summary>
         public virtual string EndArrowheadWidth { get; set; }
 
         /// <summary>
-        /// Gets or sets JoinType.
+        /// Specifies the line join type.
         /// </summary>
         public virtual string JoinType { get; set; }
 
         /// <summary>
-        /// Gets or sets Weight.
+        /// Gets or sets the weight of the line in unit of points.
         /// </summary>
         public virtual double? Weight { get; set; }
 

@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// DisplayUnitLabelResponse.
+    /// 
     /// </summary>
     public class DisplayUnitLabelResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets DisplayUnitLabel.
+        /// 
         /// </summary>
         public virtual DisplayUnitLabel DisplayUnitLabel { get; set; }
 

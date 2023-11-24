@@ -40,32 +40,38 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PicFormatOption
     {
         /// <summary>
-        /// Gets or sets Type.
+        /// Gets or sets the picture fill type.
+        ///  
         /// </summary>
         public virtual string Type { get; set; }
 
         /// <summary>
-        /// Gets or sets Scale.
+        /// Gets or sets how many the picture stack and scale with.
+        ///  
         /// </summary>
         public virtual double? Scale { get; set; }
 
         /// <summary>
-        /// Gets or sets Left.
+        /// Gets or sets the left offset for stretching picture.
+        ///  
         /// </summary>
         public virtual double? Left { get; set; }
 
         /// <summary>
-        /// Gets or sets Right.
+        /// Gets or sets the right offset for stretching picture.
+        ///  
         /// </summary>
         public virtual double? Right { get; set; }
 
         /// <summary>
-        /// Gets or sets Top.
+        /// Gets or sets the top offset for stretching picture.
+        ///  
         /// </summary>
         public virtual double? Top { get; set; }
 
         /// <summary>
-        /// Gets or sets Bottom.
+        /// Gets or sets the bottom offset for stretching picture.
+        ///  
         /// </summary>
         public virtual double? Bottom { get; set; }
 

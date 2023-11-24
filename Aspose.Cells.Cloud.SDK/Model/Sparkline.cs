@@ -42,16 +42,19 @@ namespace Aspose.Cells.Cloud.SDK.Model
     {
         /// <summary>
         /// Gets the column index of the sparkline.
+        ///  
         /// </summary>
         public virtual int? Column { get; set; }
 
         /// <summary>
         /// Represents the data range of the sparkline.
+        ///  
         /// </summary>
         public virtual string DataRange { get; set; }
 
         /// <summary>
         /// Gets the row index of the sparkline.
+        ///  
         /// </summary>
         public virtual int? Row { get; set; }
 

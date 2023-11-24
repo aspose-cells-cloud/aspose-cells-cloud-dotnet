@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class WorkbookProtectionRequest
     {
         /// <summary>
-        /// Protection type. Can be ALL, CONTENTS, NONE, OBJECTS, SCENARIOS, STRUCTURE, WINDOWS  
+        /// Protection type. Can be ALL, CONTENTS, NONE, OBJECTS, SCENARIOS, STRUCTURE, WINDOWS
         /// </summary>
         public virtual string ProtectionType { get; set; }
 

@@ -40,172 +40,173 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Axis : LinkElement
     {
         /// <summary>
-        /// Gets or sets Area.
+        /// Gets the .
         /// </summary>
         public virtual Area Area { get; set; }
 
         /// <summary>
-        /// Gets or sets AxisBetweenCategories.
+        /// Represents if the value axis crosses the category axis between categories.
         /// </summary>
         public virtual bool? AxisBetweenCategories { get; set; }
 
         /// <summary>
-        /// Gets or sets AxisLine.
+        /// Gets the appearance of an Axis.
         /// </summary>
         public virtual Line AxisLine { get; set; }
 
         /// <summary>
-        /// Gets or sets BaseUnitScale.
+        /// Represents the base unit scale for the category axis.
         /// </summary>
         public virtual string BaseUnitScale { get; set; }
 
         /// <summary>
-        /// Gets or sets CategoryType.
+        /// Represents the category axis type.
         /// </summary>
         public virtual string CategoryType { get; set; }
 
         /// <summary>
-        /// Gets or sets CrossAt.
+        /// Represents the point on the value axis where the category axis crosses it.
         /// </summary>
         public virtual double? CrossAt { get; set; }
 
         /// <summary>
-        /// Gets or sets CrossType.
+        /// Represents the  on the specified axis where the other axis crosses.
         /// </summary>
         public virtual string CrossType { get; set; }
 
         /// <summary>
-        /// Gets or sets DisplayUnit.
+        /// Represents the unit label for the specified axis.
         /// </summary>
         public virtual string DisplayUnit { get; set; }
 
         /// <summary>
-        /// Gets or sets DisplayUnitLabel.
+        /// Represents a unit label on an axis in the specified chart. 
+        ///                         Unit labels are useful for charting large values— for example, in the millions or billions.
         /// </summary>
         public virtual LinkElement DisplayUnitLabel { get; set; }
 
         /// <summary>
-        /// Gets or sets HasMultiLevelLabels.
+        /// Indicates whether the labels shall be shown as multi level.
         /// </summary>
         public virtual bool? HasMultiLevelLabels { get; set; }
 
         /// <summary>
-        /// Gets or sets IsAutomaticMajorUnit.
+        /// Indicates whether the major unit of the axis is automatically assigned.
         /// </summary>
         public virtual bool? IsAutomaticMajorUnit { get; set; }
 
         /// <summary>
-        /// Gets or sets IsAutomaticMaxValue.
+        /// Indicates whether the max value is automatically assigned.
         /// </summary>
         public virtual bool? IsAutomaticMaxValue { get; set; }
 
         /// <summary>
-        /// Gets or sets IsAutomaticMinorUnit.
+        /// Indicates whether the minor unit of the axis is automatically assigned.
         /// </summary>
         public virtual bool? IsAutomaticMinorUnit { get; set; }
 
         /// <summary>
-        /// Gets or sets IsAutomaticMinValue.
+        /// Indicates whether the min value is automatically assigned.
         /// </summary>
         public virtual bool? IsAutomaticMinValue { get; set; }
 
         /// <summary>
-        /// Gets or sets IsDisplayUnitLabelShown.
+        /// Represents if the display unit label is shown on the specified axis.
         /// </summary>
         public virtual bool? IsDisplayUnitLabelShown { get; set; }
 
         /// <summary>
-        /// Gets or sets IsLogarithmic.
+        /// Represents if the value axis scale type is logarithmic or not.
         /// </summary>
         public virtual bool? IsLogarithmic { get; set; }
 
         /// <summary>
-        /// Gets or sets IsPlotOrderReversed.
+        /// Represents if Microsoft Excel plots data points from last to first.
         /// </summary>
         public virtual bool? IsPlotOrderReversed { get; set; }
 
         /// <summary>
-        /// Gets or sets IsVisible.
+        /// Represents if the axis is visible.
         /// </summary>
         public virtual bool? IsVisible { get; set; }
 
         /// <summary>
-        /// Gets or sets LogBase.
+        /// Represents the logarithmic base. Default value is 10.Only applies for Excel2007.
         /// </summary>
         public virtual double? LogBase { get; set; }
 
         /// <summary>
-        /// Gets or sets MajorGridLines.
+        /// Represents major gridlines on a chart axis.
         /// </summary>
         public virtual Line MajorGridLines { get; set; }
 
         /// <summary>
-        /// Gets or sets MajorTickMark.
+        /// Represents the type of major tick mark for the specified axis.
         /// </summary>
         public virtual string MajorTickMark { get; set; }
 
         /// <summary>
-        /// Gets or sets MajorUnit.
+        /// Represents the major units for the axis.
         /// </summary>
         public virtual double? MajorUnit { get; set; }
 
         /// <summary>
-        /// Gets or sets MajorUnitScale.
+        /// Represents the major unit scale for the category axis.
         /// </summary>
         public virtual string MajorUnitScale { get; set; }
 
         /// <summary>
-        /// Gets or sets MaxValue.
+        /// Represents the maximum value on the value axis.
         /// </summary>
         public virtual double? MaxValue { get; set; }
 
         /// <summary>
-        /// Gets or sets MinorGridLines.
+        /// Represents minor gridlines on a chart axis.
         /// </summary>
         public virtual Line MinorGridLines { get; set; }
 
         /// <summary>
-        /// Gets or sets MinorTickMark.
+        /// Represents the type of minor tick mark for the specified axis.
         /// </summary>
         public virtual string MinorTickMark { get; set; }
 
         /// <summary>
-        /// Gets or sets MinorUnit.
+        /// Represents the minor units for the axis.
         /// </summary>
         public virtual double? MinorUnit { get; set; }
 
         /// <summary>
-        /// Gets or sets MinorUnitScale.
+        /// Represents the major unit scale for the category axis.
         /// </summary>
         public virtual string MinorUnitScale { get; set; }
 
         /// <summary>
-        /// Gets or sets MinValue.
+        /// Represents the minimum value on the value axis.
         /// </summary>
         public virtual double? MinValue { get; set; }
 
         /// <summary>
-        /// Gets or sets TickLabelPosition.
+        /// Represents the position of tick-mark labels on the specified axis.
         /// </summary>
         public virtual string TickLabelPosition { get; set; }
 
         /// <summary>
-        /// Gets or sets TickLabels.
+        /// Returns a  object that represents the tick-mark labels for the specified axis.
         /// </summary>
         public virtual TickLabels TickLabels { get; set; }
 
         /// <summary>
-        /// Gets or sets TickLabelSpacing.
+        /// Represents the number of categories or series between tick-mark labels. Applies only to category and series axes.
         /// </summary>
         public virtual int? TickLabelSpacing { get; set; }
 
         /// <summary>
-        /// Gets or sets TickMarkSpacing.
+        /// Returns or sets the number of categories or series between tick marks. Applies only to category and series axes.
         /// </summary>
         public virtual int? TickMarkSpacing { get; set; }
 
         /// <summary>
-        /// Gets or sets Title.
+        /// Gets the axis' title.
         /// </summary>
         public virtual Title Title { get; set; }
 

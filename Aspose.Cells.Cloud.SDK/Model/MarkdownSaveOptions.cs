@@ -35,22 +35,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// MarkdownSaveOptions.
+    /// Represents options of saving .md file.
     /// </summary>
     public class MarkdownSaveOptions : SaveOptions
     {
         /// <summary>
-        /// Gets or sets Encoding.
+        /// Gets and sets the default encoding.
         /// </summary>
         public virtual string Encoding { get; set; }
 
         /// <summary>
-        /// Gets or sets FormatStrategy.
+        /// The Data provider to provide cells data for saving workbook in light mode.
         /// </summary>
         public virtual string FormatStrategy { get; set; }
 
         /// <summary>
-        /// Gets or sets LineSeparator.
+        /// Gets and sets the line separator.
         /// </summary>
         public virtual string LineSeparator { get; set; }
 

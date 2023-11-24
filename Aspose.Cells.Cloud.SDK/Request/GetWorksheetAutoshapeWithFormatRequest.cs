@@ -47,12 +47,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetAutoshapeWithFormatRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="autoshapeNumber"></param>
-        /// <param name="format"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="sheetName">Worksheet name.</param>
+        /// <param name="autoshapeNumber">The autoshape number.</param>
+        /// <param name="format">Autoshape conversion format.</param>
+        /// <param name="folder">The document folder.</param>
+        /// <param name="storageName">Storage name.</param>
         public GetWorksheetAutoshapeWithFormatRequest(string name, string sheetName, int? autoshapeNumber, string format = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -64,32 +64,32 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// Worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets autoshapeNumber.
+        /// The autoshape number.
         /// </summary>
         public int? autoshapeNumber { get; set; }
 
         /// <summary>
-        /// Gets or sets format.
+        /// Autoshape conversion format.
         /// </summary>
         public string format { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// The document folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// Storage name.
         /// </summary>
         public string storageName { get; set; }
 

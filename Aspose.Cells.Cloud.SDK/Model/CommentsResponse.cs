@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class CommentsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Comments.
+        /// 
         /// </summary>
         public virtual Comments Comments { get; set; }
 

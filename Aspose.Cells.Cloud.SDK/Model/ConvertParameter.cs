@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ConvertParameter.
+    /// Indicates convert parameter
     /// </summary>
     public class ConvertParameter
     {
         /// <summary>
-        /// Gets or sets Name.
+        /// 
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets Value.
+        /// 
         /// </summary>
         public virtual string Value { get; set; }
 

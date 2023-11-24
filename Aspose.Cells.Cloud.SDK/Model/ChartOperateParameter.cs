@@ -35,62 +35,62 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ChartOperateParameter.
+    /// 
     /// </summary>
     public class ChartOperateParameter : OperateParameter
     {
         /// <summary>
-        /// Gets or sets ChartIndex.
+        /// 
         /// </summary>
         public virtual int? ChartIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets ChartType.
+        /// 
         /// </summary>
         public virtual string ChartType { get; set; }
 
         /// <summary>
-        /// Gets or sets UpperLeftRow.
+        /// 
         /// </summary>
         public virtual int? UpperLeftRow { get; set; }
 
         /// <summary>
-        /// Gets or sets UpperLeftColumn.
+        /// 
         /// </summary>
         public virtual int? UpperLeftColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets LowerRightRow.
+        /// 
         /// </summary>
         public virtual int? LowerRightRow { get; set; }
 
         /// <summary>
-        /// Gets or sets LowerRightColumn.
+        /// 
         /// </summary>
         public virtual int? LowerRightColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets Area.
+        /// 
         /// </summary>
         public virtual string Area { get; set; }
 
         /// <summary>
-        /// Gets or sets IsVertical.
+        /// 
         /// </summary>
         public virtual bool? IsVertical { get; set; }
 
         /// <summary>
-        /// Gets or sets CategoryData.
+        /// 
         /// </summary>
         public virtual string CategoryData { get; set; }
 
         /// <summary>
-        /// Gets or sets IsAutoGetSerialName.
+        /// 
         /// </summary>
         public virtual bool? IsAutoGetSerialName { get; set; }
 
         /// <summary>
-        /// Gets or sets Title.
+        /// 
         /// </summary>
         public virtual string Title { get; set; }
 

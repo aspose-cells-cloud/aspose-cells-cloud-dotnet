@@ -40,57 +40,57 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Comment : LinkElement
     {
         /// <summary>
-        /// Gets or sets CellName.
+        /// 
         /// </summary>
         public virtual string CellName { get; set; }
 
         /// <summary>
-        /// Gets or sets Author.
+        /// Gets and sets Name of the original comment author
         /// </summary>
         public virtual string Author { get; set; }
 
         /// <summary>
-        /// Gets or sets HtmlNote.
+        /// Gets and sets the html string which contains data and some formats in this comment.
         /// </summary>
         public virtual string HtmlNote { get; set; }
 
         /// <summary>
-        /// Gets or sets Note.
+        /// Represents the content of comment.
         /// </summary>
         public virtual string Note { get; set; }
 
         /// <summary>
-        /// Gets or sets AutoSize.
+        /// Indicates if size of comment is adjusted automatically according to its content.
         /// </summary>
         public virtual bool? AutoSize { get; set; }
 
         /// <summary>
-        /// Gets or sets IsVisible.
+        /// Represents if the comment is visible or not.
         /// </summary>
         public virtual bool? IsVisible { get; set; }
 
         /// <summary>
-        /// Gets or sets Width.
+        /// Represents the width of the comment, in unit of pixels.
         /// </summary>
         public virtual int? Width { get; set; }
 
         /// <summary>
-        /// Gets or sets Height.
+        /// Represents the Height of the comment, in unit of pixels.
         /// </summary>
         public virtual int? Height { get; set; }
 
         /// <summary>
-        /// Gets or sets TextHorizontalAlignment.
+        /// Gets and sets the text horizontal alignment type of the comment.
         /// </summary>
         public virtual string TextHorizontalAlignment { get; set; }
 
         /// <summary>
-        /// Gets or sets TextOrientationType.
+        /// Gets and sets the text orientation type of the comment.
         /// </summary>
         public virtual string TextOrientationType { get; set; }
 
         /// <summary>
-        /// Gets or sets TextVerticalAlignment.
+        /// Gets and sets the text vertical alignment type of the comment.
         /// </summary>
         public virtual string TextVerticalAlignment { get; set; }
 

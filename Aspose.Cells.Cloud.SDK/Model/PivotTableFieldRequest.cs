@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// PivotTableFieldRequest.
+    /// Indicates pivot table field request
     /// </summary>
     public class PivotTableFieldRequest
     {
         /// <summary>
-        /// Gets or sets Data.
+        /// Intdex array.
         /// </summary>
         public virtual List<int?> Data { get; set; }
 

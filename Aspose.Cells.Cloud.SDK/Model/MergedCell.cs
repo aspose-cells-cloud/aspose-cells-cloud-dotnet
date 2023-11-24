@@ -40,22 +40,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class MergedCell : LinkElement
     {
         /// <summary>
-        /// Gets or sets EndColumn.
+        /// 
         /// </summary>
         public virtual int? EndColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets EndRow.
+        /// 
         /// </summary>
         public virtual int? EndRow { get; set; }
 
         /// <summary>
-        /// Gets or sets StartColumn.
+        /// 
         /// </summary>
         public virtual int? StartColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets StartRow.
+        /// 
         /// </summary>
         public virtual int? StartRow { get; set; }
 

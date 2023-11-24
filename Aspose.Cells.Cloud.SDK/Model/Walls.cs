@@ -35,32 +35,32 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Walls.
+    /// 
     /// </summary>
     public class Walls : Floor
     {
         /// <summary>
-        /// Gets or sets CenterX.
+        /// Gets the x coordinate of the left-bottom corner of Wall center in units of 1/4000 of chart's width after calls Chart.Calculate() method.
         /// </summary>
         public virtual int? CenterX { get; set; }
 
         /// <summary>
-        /// Gets or sets CenterY.
+        /// Gets the y coordinate of the left-bottom corner of Wall center in units of 1/4000 of chart's height after calls Chart.Calculate() method.
         /// </summary>
         public virtual int? CenterY { get; set; }
 
         /// <summary>
-        /// Gets or sets Depth.
+        /// Gets the depth front to back in units of 1/4000 of chart's width after calls Chart.Calculate() method.
         /// </summary>
         public virtual int? Depth { get; set; }
 
         /// <summary>
-        /// Gets or sets Height.
+        /// Gets the height of top to bottom in units of 1/4000 of chart's height after calls Chart.Calculate() method.
         /// </summary>
         public virtual int? Height { get; set; }
 
         /// <summary>
-        /// Gets or sets Width.
+        /// Gets the width of left to right in units of 1/4000 of chart's width after calls Chart.Calculate() method.
         /// </summary>
         public virtual int? Width { get; set; }
 

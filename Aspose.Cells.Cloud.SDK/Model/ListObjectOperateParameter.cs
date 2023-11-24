@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ListObjectOperateParameter.
+    /// 
     /// </summary>
     public class ListObjectOperateParameter : OperateParameter
     {
         /// <summary>
-        /// Gets or sets ListObject.
+        /// 
         /// </summary>
         public virtual ListObject ListObject { get; set; }
 

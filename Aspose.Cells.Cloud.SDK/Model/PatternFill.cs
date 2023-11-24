@@ -40,37 +40,44 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PatternFill
     {
         /// <summary>
-        /// Gets or sets Pattern.
+        /// Gets or sets the fill pattern type
+        ///  
         /// </summary>
         public virtual string Pattern { get; set; }
 
         /// <summary>
-        /// Gets or sets BackgroundCellsColor.
+        /// Gets and sets the foreground  object.
+        ///  
         /// </summary>
         public virtual CellsColor BackgroundCellsColor { get; set; }
 
         /// <summary>
-        /// Gets or sets ForegroundCellsColor.
+        /// Gets and sets the foreground  object.
+        ///  
         /// </summary>
         public virtual CellsColor ForegroundCellsColor { get; set; }
 
         /// <summary>
-        /// Gets or sets ForegroundColor.
+        /// Gets or sets the foreground .
+        ///  
         /// </summary>
         public virtual Color ForegroundColor { get; set; }
 
         /// <summary>
-        /// Gets or sets BackgroundColor.
+        /// Gets or sets the background  of the .
+        ///  
         /// </summary>
         public virtual Color BackgroundColor { get; set; }
 
         /// <summary>
-        /// Gets or sets BackTransparency.
+        /// Gets or sets the transparency of background color.
+        ///  
         /// </summary>
         public virtual double? BackTransparency { get; set; }
 
         /// <summary>
-        /// Gets or sets ForeTransparency.
+        /// Gets or sets the transparency of foreground color.
+        ///  
         /// </summary>
         public virtual double? ForeTransparency { get; set; }
 

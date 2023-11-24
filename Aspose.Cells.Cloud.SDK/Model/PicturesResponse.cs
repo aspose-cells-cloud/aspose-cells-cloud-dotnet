@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PicturesResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Pictures.
+        /// 
         /// </summary>
         public virtual Pictures Pictures { get; set; }
 

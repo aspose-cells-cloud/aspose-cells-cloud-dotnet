@@ -35,102 +35,121 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Line.
+    /// Encapsulates the object that represents the line format.
     /// </summary>
     public class Line
     {
         /// <summary>
-        /// Gets or sets BeginArrowLength.
+        /// Specifies the length of the arrowhead for the begin of a line.
+        ///  
         /// </summary>
         public virtual string BeginArrowLength { get; set; }
 
         /// <summary>
-        /// Gets or sets BeginArrowWidth.
+        /// Specifies the width of the arrowhead for the begin of a line.
+        ///  
         /// </summary>
         public virtual string BeginArrowWidth { get; set; }
 
         /// <summary>
-        /// Gets or sets BeginType.
+        /// Specifies an arrowhead for the begin of a line.
+        ///  
         /// </summary>
         public virtual string BeginType { get; set; }
 
         /// <summary>
-        /// Gets or sets CapType.
+        /// Specifies the ending caps.
+        ///  
         /// </summary>
         public virtual string CapType { get; set; }
 
         /// <summary>
-        /// Gets or sets Color.
+        /// Represents the  of the line.
+        ///  
         /// </summary>
         public virtual Color Color { get; set; }
 
         /// <summary>
-        /// Gets or sets CompoundType.
+        /// Specifies the compound line type
+        ///  
         /// </summary>
         public virtual string CompoundType { get; set; }
 
         /// <summary>
-        /// Gets or sets DashType.
+        /// Specifies the dash line type
+        ///  
         /// </summary>
         public virtual string DashType { get; set; }
 
         /// <summary>
-        /// Gets or sets EndArrowLength.
+        /// Specifies the length of the arrowhead for the end of a line.
+        ///  
         /// </summary>
         public virtual string EndArrowLength { get; set; }
 
         /// <summary>
-        /// Gets or sets EndArrowWidth.
+        /// Specifies the width of the arrowhead for the end of a line.
+        ///  
         /// </summary>
         public virtual string EndArrowWidth { get; set; }
 
         /// <summary>
-        /// Gets or sets EndType.
+        /// Specifies an arrowhead for the end of a line.
+        ///  
         /// </summary>
         public virtual string EndType { get; set; }
 
         /// <summary>
-        /// Gets or sets GradientFill.
+        /// Represents gradient fill.
+        ///  
         /// </summary>
         public virtual GradientFill GradientFill { get; set; }
 
         /// <summary>
-        /// Gets or sets IsAuto.
+        /// Indicates whether this line style is auto assigned.
+        ///  
         /// </summary>
         public virtual bool? IsAuto { get; set; }
 
         /// <summary>
-        /// Gets or sets IsAutomaticColor.
+        /// Indicates whether the color of line is automatic assigned.
+        ///  
         /// </summary>
         public virtual bool? IsAutomaticColor { get; set; }
 
         /// <summary>
-        /// Gets or sets IsVisible.
+        /// Represents whether the line is visible.
+        ///  
         /// </summary>
         public virtual bool? IsVisible { get; set; }
 
         /// <summary>
-        /// Gets or sets JoinType.
+        /// Specifies the joining caps.
+        ///  
         /// </summary>
         public virtual string JoinType { get; set; }
 
         /// <summary>
-        /// Gets or sets Style.
+        /// Represents the style of the line.
+        ///  
         /// </summary>
         public virtual string Style { get; set; }
 
         /// <summary>
-        /// Gets or sets Transparency.
+        /// Returns or sets the degree of transparency of the line as a value from 0.0 (opaque) through 1.0 (clear).
+        ///  
         /// </summary>
         public virtual double? Transparency { get; set; }
 
         /// <summary>
-        /// Gets or sets Weight.
+        /// Gets or sets the  of the line.
+        ///  
         /// </summary>
         public virtual string Weight { get; set; }
 
         /// <summary>
-        /// Gets or sets WeightPt.
+        /// Gets or sets the weight of the line in unit of points.
+        ///  
         /// </summary>
         public virtual double? WeightPt { get; set; }
 

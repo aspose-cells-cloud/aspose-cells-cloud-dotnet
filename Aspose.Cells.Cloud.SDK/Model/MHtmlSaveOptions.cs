@@ -35,67 +35,77 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// MHtmlSaveOptions.
+    /// Represents options of saving .mhtml file.
     /// </summary>
     public class MHtmlSaveOptions : SaveOptions
     {
         /// <summary>
-        /// Gets or sets AttachedFilesDirectory.
+        /// The directory that the attached files will be saved to.  Only for saving to html stream.
         /// </summary>
         public virtual string AttachedFilesDirectory { get; set; }
 
         /// <summary>
-        /// Gets or sets AttachedFilesUrlPrefix.
+        /// Specify the Url prefix of attached files such as image in the html file. Only for saving to html stream.
         /// </summary>
         public virtual string AttachedFilesUrlPrefix { get; set; }
 
         /// <summary>
-        /// Gets or sets Encoding.
+        /// If not set,use Encoding.UTF8 as default enconding type.
         /// </summary>
         public virtual string Encoding { get; set; }
 
         /// <summary>
-        /// Gets or sets ExportActiveWorksheetOnly.
+        /// Indicates if exporting the whole workbook to html file.
         /// </summary>
         public virtual bool? ExportActiveWorksheetOnly { get; set; }
 
         /// <summary>
-        /// Gets or sets ExportChartImageFormat.
+        /// Get or set the format of chart image before exporting
         /// </summary>
         public virtual string ExportChartImageFormat { get; set; }
 
         /// <summary>
-        /// Gets or sets ExportImagesAsBase64.
+        /// Specifies whether images are saved in Base64 format to HTML, MHTML or EPUB.
         /// </summary>
         public virtual bool? ExportImagesAsBase64 { get; set; }
 
         /// <summary>
-        /// Gets or sets HiddenColDisplayType.
+        /// Hidden column(the width of this column is 0) in excel,before save this into 
+        ///                html format, if HtmlHiddenColDisplayType is "Remove",the hidden column would
+        ///                ont been output, if the value is "Hidden", the column would been output,but was hidden,the default value is "Hidden"
         /// </summary>
         public virtual string HiddenColDisplayType { get; set; }
 
         /// <summary>
-        /// Gets or sets HiddenRowDisplayType.
+        /// Hidden row(the height of this row is 0) in excel,before save this into html 
+        ///                format, if HtmlHiddenRowDisplayType is "Remove",the hidden row would ont
+        ///                been output, if the value is "Hidden", the row would been output,but was
+        ///                hidden,the default value is "Hidden"
         /// </summary>
         public virtual string HiddenRowDisplayType { get; set; }
 
         /// <summary>
-        /// Gets or sets HtmlCrossStringType.
+        /// Indicates if a cross-cell string will be displayed in the same way as MS
+        ///                Excel when saving an Excel file in html format.  By default the value is
+        ///                Default, so, for cross-cell strings, there is little difference between the
+        ///                html files created by Aspose.Cells and MS Excel. But the performance for
+        ///                creating large html files,setting the value to Cross would be several times
+        ///                faster than setting it to Default or Fit2Cell.
         /// </summary>
         public virtual string HtmlCrossStringType { get; set; }
 
         /// <summary>
-        /// Gets or sets IsExpImageToTempDir.
+        /// Indicates if export image files to temp directory.  Only for saving to html  stream.
         /// </summary>
         public virtual bool? IsExpImageToTempDir { get; set; }
 
         /// <summary>
-        /// Gets or sets PageTitle.
+        /// The title of the html page.  Only for saving to html stream.
         /// </summary>
         public virtual string PageTitle { get; set; }
 
         /// <summary>
-        /// Gets or sets ParseHtmlTagInCell.
+        /// Parse html tag in cell,like ,as cell value,or as html tag,default is true
         /// </summary>
         public virtual bool? ParseHtmlTagInCell { get; set; }
 

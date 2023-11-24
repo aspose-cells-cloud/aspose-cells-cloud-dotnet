@@ -35,27 +35,28 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// LegendEntry.
+    /// 
     /// </summary>
     public class LegendEntry : LinkElement
     {
         /// <summary>
-        /// Gets or sets AutoScaleFont.
+        /// True if the text in the object changes font size when the object size changes. 
+        ///                         The default value is True.
         /// </summary>
         public virtual string AutoScaleFont { get; set; }
 
         /// <summary>
-        /// Gets or sets BackgroundMode.
+        /// Gets and sets the display mode of the background
         /// </summary>
         public virtual string BackgroundMode { get; set; }
 
         /// <summary>
-        /// Gets or sets Font.
+        /// Gets a  object of the specified ChartFrame object.
         /// </summary>
         public virtual Font Font { get; set; }
 
         /// <summary>
-        /// Gets or sets IsDeleted.
+        /// Gets and sets whether the legend entry is deleted.
         /// </summary>
         public virtual string IsDeleted { get; set; }
 

@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Label.
+    /// 
     /// </summary>
     public class Label : Shape
     {
@@ -120,7 +120,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override int? Y { get; set; }
 
         /// <summary>
-        /// Gets or sets RotationAngle.
+        /// 
         /// </summary>
         public override double? RotationAngle { get; set; }
 
@@ -130,7 +130,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string HtmlText { get; set; }
 
         /// <summary>
-        /// Gets or sets Text.
+        /// Gets or sets the text of display unit label.
         /// </summary>
         public override string Text { get; set; }
 
@@ -140,7 +140,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string AlternativeText { get; set; }
 
         /// <summary>
-        /// Gets or sets TextHorizontalAlignment.
+        /// 
         /// </summary>
         public override string TextHorizontalAlignment { get; set; }
 
@@ -155,7 +155,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string TextOrientationType { get; set; }
 
         /// <summary>
-        /// Gets or sets TextVerticalAlignment.
+        /// 
         /// </summary>
         public override string TextVerticalAlignment { get; set; }
 

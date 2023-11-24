@@ -35,22 +35,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// FormulaFormatCondition.
+    /// 
     /// </summary>
     public class FormulaFormatCondition
     {
         /// <summary>
-        /// Gets or sets Formula1.
+        /// Gets and sets the value or expression associated with conditional formatting.
         /// </summary>
         public virtual string Formula1 { get; set; }
 
         /// <summary>
-        /// Gets or sets Formula2.
+        /// Gets and sets the value or expression associated with conditional formatting.
         /// </summary>
         public virtual string Formula2 { get; set; }
 
         /// <summary>
-        /// Gets or sets Operator.
+        /// Gets and sets the conditional format operator type.
         /// </summary>
         public virtual string Operator { get; set; }
 

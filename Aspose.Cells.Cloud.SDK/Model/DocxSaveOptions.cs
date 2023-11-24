@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// DocxSaveOptions.
+    /// Represents options of saving .docx file.
     /// </summary>
     public class DocxSaveOptions : SaveOptions
     {

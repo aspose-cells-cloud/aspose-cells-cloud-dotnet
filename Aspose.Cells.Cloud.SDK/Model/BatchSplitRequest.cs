@@ -40,47 +40,48 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class BatchSplitRequest
     {
         /// <summary>
-        /// Gets or sets SourceFolder.
+        /// The directory stores files that need to format conversion.
+        ///             
         /// </summary>
         public virtual string SourceFolder { get; set; }
 
         /// <summary>
-        /// Gets or sets SourceStorage.
+        /// Aspose Cloud storage name
         /// </summary>
         public virtual string SourceStorage { get; set; }
 
         /// <summary>
-        /// Gets or sets MatchCondition.
+        /// Indicates the match condition that needs to be processed for the file name.
         /// </summary>
         public virtual MatchConditionRequest MatchCondition { get; set; }
 
         /// <summary>
-        /// Gets or sets Format.
+        /// Output file format
         /// </summary>
         public virtual string Format { get; set; }
 
         /// <summary>
-        /// Gets or sets FromIndex.
+        /// From worksheet index of workbook.
         /// </summary>
         public virtual int? FromIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets ToIndex.
+        /// To worksheet index of workbook.
         /// </summary>
         public virtual int? ToIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets OutFolder.
+        /// The directory that stores files whose format conversion was successful.
         /// </summary>
         public virtual string OutFolder { get; set; }
 
         /// <summary>
-        /// Gets or sets OutStorage.
+        /// Aspose Cloud storage name.
         /// </summary>
         public virtual string OutStorage { get; set; }
 
         /// <summary>
-        /// Gets or sets SaveOptions.
+        /// Indicates save options.
         /// </summary>
         public virtual SaveOptions SaveOptions { get; set; }
 

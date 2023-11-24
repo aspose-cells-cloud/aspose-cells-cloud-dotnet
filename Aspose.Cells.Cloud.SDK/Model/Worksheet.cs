@@ -45,129 +45,142 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual IList<Link> Links { get; set; }
 
         /// <summary>
-        /// Indicates if the specified worksheet is displayed from right to left instead
-        ///    of from left to right.  Default is false.
-        ///             
+        /// Indicates if the specified worksheet is displayed from right to left instead of from left to right.
+        ///             Default is false.
+        ///  
         /// </summary>
         public virtual bool? DisplayRightToLeft { get; set; }
 
         /// <summary>
         /// True if zero values are displayed.
+        ///  
         /// </summary>
         public virtual bool? DisplayZeros { get; set; }
 
         /// <summary>
         /// Represents first visible column index.
+        ///  
         /// </summary>
         public virtual int? FirstVisibleColumn { get; set; }
 
         /// <summary>
         /// Represents first visible row index.
-        ///             
+        ///  
         /// </summary>
         public virtual int? FirstVisibleRow { get; set; }
 
         /// <summary>
         /// Gets or sets the name of the worksheet.
-        ///             
+        ///  
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets the index of sheet in the worksheets collection.
-        ///             
+        /// Gets the index of sheet in the worksheet collection.
+        ///  
         /// </summary>
         public virtual int? Index { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether the gridelines are visible.Default
-        ///     is true.
+        /// Gets or sets a value indicating whether the gridlines are visible.Default is true.
+        ///  
         /// </summary>
         public virtual bool? IsGridlinesVisible { get; set; }
 
         /// <summary>
-        /// Indicates whether show outline.
-        ///             
+        /// Indicates whether to show outline.
+        ///  
         /// </summary>
         public virtual bool? IsOutlineShown { get; set; }
 
         /// <summary>
-        /// Indications the specified worksheet is shown in normal view or page break preview.
+        /// Indicates whether the specified worksheet is shown in normal view or page break preview.
+        ///  
         /// </summary>
         public virtual bool? IsPageBreakPreview { get; set; }
 
         /// <summary>
         /// Represents if the worksheet is visible.
-        ///             
+        ///  
         /// </summary>
         public virtual bool? IsVisible { get; set; }
 
         /// <summary>
         /// Indicates if the worksheet is protected.
+        ///  
         /// </summary>
         public virtual bool? IsProtected { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether the worksheet will display row and column headers.Default is true.
-        ///             
+        /// Gets or sets a value indicating whether the worksheet will display row and column headers.
+        ///             Default is true.
+        ///  
         /// </summary>
         public virtual bool? IsRowColumnHeadersVisible { get; set; }
 
         /// <summary>
-        /// Indicates whether the ruler is visible. Only apply for page break preview.
+        /// Indicates whether the ruler is visible. This property is only applied for page break preview.
+        ///  
         /// </summary>
         public virtual bool? IsRulerVisible { get; set; }
 
         /// <summary>
         /// Indicates whether this worksheet is selected when the workbook is opened.
+        ///  
         /// </summary>
         public virtual bool? IsSelected { get; set; }
 
         /// <summary>
         /// Represents worksheet tab color.
+        ///  
         /// </summary>
         public virtual Color TabColor { get; set; }
 
         /// <summary>
-        /// Flag indicating whether the Transition Formula Entry (Lotus compatibility) option is enabled.
+        /// Indicates whether the Transition Formula Entry (Lotus compatibility) option is enabled.
+        ///  
         /// </summary>
         public virtual bool? TransitionEntry { get; set; }
 
         /// <summary>
-        /// Flag indicating whether the Transition Formula Evaluation (Lotus compatibility) option is enabled.
-        ///             
+        /// Indicates whether the Transition Formula Evaluation (Lotus compatibility) option is enabled.
+        ///  
         /// </summary>
         public virtual bool? TransitionEvaluation { get; set; }
 
         /// <summary>
-        /// Represents worksheet type
+        /// Represents worksheet type.
+        ///  
         /// </summary>
         public virtual string Type { get; set; }
 
         /// <summary>
         /// Gets and sets the view type.
+        ///  
         /// </summary>
         public virtual string ViewType { get; set; }
 
         /// <summary>
-        /// Indicates the state for this sheet visibility
-        ///             
+        /// Indicates the visible state for this sheet.
+        ///  
         /// </summary>
         public virtual string VisibilityType { get; set; }
 
         /// <summary>
-        /// Represents the scaling factor in percent. It should be btween 10 and 400.
-        ///             
+        /// Represents the scaling factor in percentage. It should be between 10 and 400.
+        ///  
         /// </summary>
         public virtual int? Zoom { get; set; }
 
         /// <summary>
-        /// Gets or sets Cells.
+        /// Gets the  collection.
+        ///  
         /// </summary>
         public virtual LinkElement Cells { get; set; }
 
         /// <summary>
-        /// Gets or sets Charts.
+        /// Gets a  collection
+        ///  
         /// </summary>
         public virtual LinkElement Charts { get; set; }
 
@@ -177,17 +190,20 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual LinkElement AutoShapes { get; set; }
 
         /// <summary>
-        /// Gets or sets OleObjects.
+        /// Represents a collection of  in a worksheet.
+        ///  
         /// </summary>
         public virtual LinkElement OleObjects { get; set; }
 
         /// <summary>
-        /// Gets or sets Comments.
+        /// Gets the  collection.
+        ///  
         /// </summary>
         public virtual LinkElement Comments { get; set; }
 
         /// <summary>
-        /// Gets or sets Pictures.
+        /// Gets a  collection.
+        ///  
         /// </summary>
         public virtual LinkElement Pictures { get; set; }
 
@@ -197,17 +213,20 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual LinkElement MergedCells { get; set; }
 
         /// <summary>
-        /// Gets or sets Validations.
+        /// Gets the data validation setting collection in the worksheet.
+        ///  
         /// </summary>
         public virtual LinkElement Validations { get; set; }
 
         /// <summary>
-        /// Gets or sets ConditionalFormattings.
+        /// Gets the ConditionalFormattings in the worksheet.
+        ///  
         /// </summary>
         public virtual LinkElement ConditionalFormattings { get; set; }
 
         /// <summary>
-        /// Gets or sets Hyperlinks.
+        /// Gets the  collection.
+        ///  
         /// </summary>
         public virtual LinkElement Hyperlinks { get; set; }
 

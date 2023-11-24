@@ -35,47 +35,47 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// PivotTableOperateParameter.
+    /// 
     /// </summary>
     public class PivotTableOperateParameter : OperateParameter
     {
         /// <summary>
-        /// Gets or sets SourceData.
+        /// 
         /// </summary>
         public virtual string SourceData { get; set; }
 
         /// <summary>
-        /// Gets or sets DestCellName.
+        /// 
         /// </summary>
         public virtual string DestCellName { get; set; }
 
         /// <summary>
-        /// Gets or sets TableName.
+        /// 
         /// </summary>
         public virtual string TableName { get; set; }
 
         /// <summary>
-        /// Gets or sets UseSameSource.
+        /// 
         /// </summary>
         public virtual bool? UseSameSource { get; set; }
 
         /// <summary>
-        /// Gets or sets PivotTableIndex.
+        /// 
         /// </summary>
         public virtual int? PivotTableIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets PivotFieldRows.
+        /// 
         /// </summary>
         public virtual List<int?> PivotFieldRows { get; set; }
 
         /// <summary>
-        /// Gets or sets PivotFieldColumns.
+        /// 
         /// </summary>
         public virtual List<int?> PivotFieldColumns { get; set; }
 
         /// <summary>
-        /// Gets or sets PivotFieldData.
+        /// 
         /// </summary>
         public virtual List<int?> PivotFieldData { get; set; }
 

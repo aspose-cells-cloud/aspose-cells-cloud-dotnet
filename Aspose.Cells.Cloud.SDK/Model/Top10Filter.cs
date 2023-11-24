@@ -40,22 +40,25 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Top10Filter
     {
         /// <summary>
-        /// Gets or sets Criteria.
+        ///  
         /// </summary>
         public virtual string Criteria { get; set; }
 
         /// <summary>
-        /// Gets or sets IsPercent.
+        /// Indicates whether the items is percent.
+        ///  
         /// </summary>
         public virtual bool? IsPercent { get; set; }
 
         /// <summary>
-        /// Gets or sets IsTop.
+        /// Indicates whether it's top filter.
+        ///  
         /// </summary>
         public virtual bool? IsTop { get; set; }
 
         /// <summary>
-        /// Gets or sets Items.
+        /// Gets and sets the items of the filter.
+        ///  
         /// </summary>
         public virtual int? Items { get; set; }
 

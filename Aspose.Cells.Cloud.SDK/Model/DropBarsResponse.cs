@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// DropBarsResponse.
+    /// 
     /// </summary>
     public class DropBarsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets DropBars.
+        /// 
         /// </summary>
         public virtual DropBars DropBars { get; set; }
 

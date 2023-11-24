@@ -35,12 +35,13 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// TimePeriodFormatCondition.
+    /// 
     /// </summary>
     public class TimePeriodFormatCondition
     {
         /// <summary>
-        /// Gets or sets TimePeriod.
+        /// The applicable time period in a "date occurring…" conditional formatting
+        ///                 rule. Valid only for type = timePeriod.  The default value is TimePeriodType.Today
         /// </summary>
         public virtual string TimePeriod { get; set; }
 

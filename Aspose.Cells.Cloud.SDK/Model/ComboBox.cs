@@ -35,37 +35,38 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ComboBox.
+    /// 
     /// </summary>
     public class ComboBox : Shape
     {
         /// <summary>
-        /// Gets or sets DropDownLines.
+        /// Gets or sets the number of list lines displayed in the drop-down portion of a combo box.
         /// </summary>
         public virtual int? DropDownLines { get; set; }
 
         /// <summary>
-        /// Gets or sets InputRange.
+        /// 
         /// </summary>
         public virtual string InputRange { get; set; }
 
         /// <summary>
-        /// Gets or sets SelectedCell.
+        /// Gets the selected cell in the input range of the combo box.
         /// </summary>
         public virtual LinkElement SelectedCell { get; set; }
 
         /// <summary>
-        /// Gets or sets SelectedIndex.
+        /// Gets or sets the index number of the currently selected item in a list box or combo box.
+        ///                         Zero-based.
         /// </summary>
         public virtual int? SelectedIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets SelectedValue.
+        /// Gets the selected value of the combox box.
         /// </summary>
         public virtual string SelectedValue { get; set; }
 
         /// <summary>
-        /// Gets or sets Shadow.
+        /// Indicates whether the combobox has 3-D shading.
         /// </summary>
         public virtual bool? Shadow { get; set; }
 

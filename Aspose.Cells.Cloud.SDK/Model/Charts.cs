@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Charts : LinkElement
     {
         /// <summary>
-        /// Gets or sets ChartList.
+        /// 
         /// </summary>
         public virtual IList<LinkElement> ChartList { get; set; }
 

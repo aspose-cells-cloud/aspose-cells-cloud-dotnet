@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// FindResponse.
+    /// 
     /// </summary>
     public class FindResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Count.
+        /// 
         /// </summary>
         public virtual int? Count { get; set; }
 
         /// <summary>
-        /// Gets or sets TextItems.
+        /// 
         /// </summary>
         public virtual TextItems TextItems { get; set; }
 

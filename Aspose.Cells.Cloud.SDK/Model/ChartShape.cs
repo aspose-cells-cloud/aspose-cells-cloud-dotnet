@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ChartShape.
+    /// Chart shape object
     /// </summary>
     public class ChartShape : Shape
     {

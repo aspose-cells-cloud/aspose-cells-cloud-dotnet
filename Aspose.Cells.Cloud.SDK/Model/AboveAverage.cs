@@ -42,27 +42,29 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class AboveAverage
     {
         /// <summary>
-        /// Get or set the flag indicating whether the rule is an "above average" rule.
-        ///    'true' indicates 'above average'.  Default value is true.
-        ///             
+        /// Get or set the flag indicating whether the rule is an "above average" rule. 
+        ///             'true' indicates 'above average'.
+        ///             Default value is true.
+        ///  
         /// </summary>
         public virtual bool? IsAboveAverage { get; set; }
 
         /// <summary>
-        /// Get or set the flag indicating whether the 'aboveAverage' and 'belowAverage'
-        ///    criteria is inclusive of the average itself, or exclusive of that value.
-        ///    'true' indicates to include the average value in the criteria.  Default value
-        ///    is false.
-        ///             
+        /// Get or set the flag indicating whether the 'aboveAverage' and 'belowAverage' criteria 
+        ///             is inclusive of the average itself, or exclusive of that value. 
+        ///             'true' indicates to include the average value in the criteria.
+        ///             Default value is false.
+        ///  
         /// </summary>
         public virtual bool? IsEqualAverage { get; set; }
 
         /// <summary>
-        /// Get or set the number of standard deviations to include above or below the
-        ///   average in the conditional formatting rule. The input value must between
-        ///   0 and 3 (include 0 and 3). Setting this value to 0 means stdDev is not set.
-        ///    The default value is 0.
-        ///             
+        /// Get or set the number of standard deviations to include above or below the average in the
+        ///             conditional formatting rule. 
+        ///             The input value must between 0 and 3 (include 0 and 3). 
+        ///             Setting this value to 0 means stdDev is not set.
+        ///             The default value is 0.
+        ///  
         /// </summary>
         public virtual int? StdDev { get; set; }
 

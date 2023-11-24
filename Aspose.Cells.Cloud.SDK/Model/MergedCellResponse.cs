@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class MergedCellResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets MergedCell.
+        /// 
         /// </summary>
         public virtual MergedCell MergedCell { get; set; }
 

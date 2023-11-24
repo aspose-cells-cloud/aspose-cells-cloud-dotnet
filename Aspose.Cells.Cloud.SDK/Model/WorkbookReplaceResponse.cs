@@ -40,12 +40,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class WorkbookReplaceResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Matches.
+        /// 
         /// </summary>
         public virtual int? Matches { get; set; }
 
         /// <summary>
-        /// Gets or sets Workbook.
+        /// 
         /// </summary>
         public virtual LinkElement Workbook { get; set; }
 

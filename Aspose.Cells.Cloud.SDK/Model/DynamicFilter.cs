@@ -40,17 +40,20 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class DynamicFilter
     {
         /// <summary>
-        /// Gets or sets DynamicFilterType.
+        /// Gets and sets the dynamic filter type.
+        ///  
         /// </summary>
         public virtual string DynamicFilterType { get; set; }
 
         /// <summary>
-        /// Gets or sets MaxValue.
+        /// Gets and sets the dynamic filter max value.
+        ///  
         /// </summary>
         public virtual Object MaxValue { get; set; }
 
         /// <summary>
-        /// Gets or sets Value.
+        /// Gets and sets the dynamic filter value.
+        ///  
         /// </summary>
         public virtual Object Value { get; set; }
 

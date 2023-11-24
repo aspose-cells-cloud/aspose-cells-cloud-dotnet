@@ -35,12 +35,13 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// SvgSaveOptions.
+    /// Represents the options of saving .svg file.
     /// </summary>
     public class SvgSaveOptions : SaveOptions
     {
         /// <summary>
-        /// Gets or sets SheetIndex.
+        /// Gets and sets which worksheet should be exported.  If the value is -1, the
+        ///                 active worksheet will be exported.
         /// </summary>
         public virtual int? SheetIndex { get; set; }
 

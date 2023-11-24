@@ -40,12 +40,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ThemeColor
     {
         /// <summary>
-        /// Gets or sets ColorType.
+        /// Gets and sets the theme type.
+        ///  
         /// </summary>
         public virtual string ColorType { get; set; }
 
         /// <summary>
-        /// Gets or sets Tint.
+        /// Gets and sets the tint value.
+        ///  
         /// </summary>
         public virtual double? Tint { get; set; }
 

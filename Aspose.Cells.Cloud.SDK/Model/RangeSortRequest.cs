@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// RangeSortRequest.
+    /// Indicates range sort request
     /// </summary>
     public class RangeSortRequest
     {
         /// <summary>
-        /// Gets or sets DataSorter.
+        /// Summary description for DataSorter.
         /// </summary>
         public virtual DataSorter DataSorter { get; set; }
 
         /// <summary>
-        /// Gets or sets CellArea.
+        /// Encapsulates the object that represents a range of cells within a spreadsheet.
         /// </summary>
         public virtual Range CellArea { get; set; }
 

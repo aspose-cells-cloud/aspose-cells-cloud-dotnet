@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class SingleValueResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Value.
+        /// 
         /// </summary>
         public virtual SingleValue Value { get; set; }
 

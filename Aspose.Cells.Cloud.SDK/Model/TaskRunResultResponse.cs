@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// TaskRunResultResponse.
+    /// 
     /// </summary>
     public class TaskRunResultResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets TaskRunResult.
+        /// 
         /// </summary>
         public virtual TaskRunResult TaskRunResult { get; set; }
 

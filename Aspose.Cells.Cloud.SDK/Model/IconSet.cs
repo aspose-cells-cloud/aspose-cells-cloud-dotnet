@@ -41,31 +41,35 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class IconSet
     {
         /// <summary>
-        /// Get theAspose.Cells.ConditionalFormattingIcon from the collection
+        /// Get the from the collection
+        ///  
         /// </summary>
         public virtual IList<ConditionalFormattingIcon> CfIcons { get; set; }
 
         /// <summary>
         /// Get the CFValueObjects instance.
+        ///  
         /// </summary>
         public virtual IList<ConditionalFormattingValue> Cfvos { get; set; }
 
         /// <summary>
-        /// Indicates whether the icon set is custom.  Default value is false.
+        /// Indicates whether the icon set is custom.
+        ///             Default value is false.
+        ///  
         /// </summary>
         public virtual bool? IsCustom { get; set; }
 
         /// <summary>
-        /// Get or set the flag indicating whether to reverses the default order of the
-        ///   icons in this icon set.  Default value is false.
-        ///             
+        /// Get or set the flag indicating whether to reverses the default order of the icons in this icon set.
+        ///             Default value is false.
+        ///  
         /// </summary>
         public virtual bool? Reverse { get; set; }
 
         /// <summary>
-        /// Get or set the flag indicating whether to show the values of the cells on
-        ///    which this icon set is applied.  Default value is true.
-        ///             
+        /// Get or set the flag indicating whether to show the values of the cells on which this icon set is applied.
+        ///             Default value is true.
+        ///  
         /// </summary>
         public virtual bool? ShowValue { get; set; }
 

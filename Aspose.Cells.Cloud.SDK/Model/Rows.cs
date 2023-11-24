@@ -40,17 +40,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Rows : LinkElement
     {
         /// <summary>
-        /// Gets or sets MaxRow.
+        /// 
         /// </summary>
         public virtual int? MaxRow { get; set; }
 
         /// <summary>
-        /// Gets or sets RowsCount.
+        /// 
         /// </summary>
         public virtual int? RowsCount { get; set; }
 
         /// <summary>
-        /// Gets or sets RowsList.
+        /// 
         /// </summary>
         public virtual IList<LinkElement> RowsList { get; set; }
 

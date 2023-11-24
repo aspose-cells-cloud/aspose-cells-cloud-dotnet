@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PivotFieldResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets PivotField.
+        /// 
         /// </summary>
         public virtual PivotField PivotField { get; set; }
 

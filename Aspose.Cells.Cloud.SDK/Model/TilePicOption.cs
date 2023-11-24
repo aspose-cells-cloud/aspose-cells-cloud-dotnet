@@ -40,32 +40,38 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class TilePicOption
     {
         /// <summary>
-        /// Gets or sets OffsetX.
+        /// Gets or sets the X offset for tiling picture.
+        ///  
         /// </summary>
         public virtual double? OffsetX { get; set; }
 
         /// <summary>
-        /// Gets or sets OffsetY.
+        /// Gets or sets the Y offset for tiling picture.
+        ///  
         /// </summary>
         public virtual double? OffsetY { get; set; }
 
         /// <summary>
-        /// Gets or sets ScaleX.
+        /// Gets or sets the X scale for tiling picture.
+        ///  
         /// </summary>
         public virtual double? ScaleX { get; set; }
 
         /// <summary>
-        /// Gets or sets ScaleY.
+        /// Gets or sets the Y scale for tiling picture.
+        ///  
         /// </summary>
         public virtual double? ScaleY { get; set; }
 
         /// <summary>
-        /// Gets or sets AlignmentType.
+        /// Gets or sets the alignment for tiling.
+        ///  
         /// </summary>
         public virtual string AlignmentType { get; set; }
 
         /// <summary>
-        /// Gets or sets MirrorType.
+        /// Gets or sets the mirror type for tiling.
+        ///  
         /// </summary>
         public virtual string MirrorType { get; set; }
 

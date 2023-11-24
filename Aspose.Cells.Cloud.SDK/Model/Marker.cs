@@ -35,27 +35,27 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Marker.
+    /// 
     /// </summary>
     public class Marker
     {
         /// <summary>
-        /// Gets or sets Border.
+        /// Gets the border.
         /// </summary>
         public virtual Line Border { get; set; }
 
         /// <summary>
-        /// Gets or sets Area.
+        /// Gets the area.
         /// </summary>
         public virtual Area Area { get; set; }
 
         /// <summary>
-        /// Gets or sets MarkerSize.
+        /// Represents the marker size in unit of points. Applies to line chart, scatter chart, or radar chart.
         /// </summary>
         public virtual int? MarkerSize { get; set; }
 
         /// <summary>
-        /// Gets or sets MarkerStyle.
+        /// Represents the marker style. Applies to line chart, scatter chart, or radar chart.
         /// </summary>
         public virtual string MarkerStyle { get; set; }
 

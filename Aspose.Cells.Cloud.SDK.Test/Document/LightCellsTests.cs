@@ -273,7 +273,8 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
             AddFileParameter(assemblyTestXlsx,mapFiles);       
             AddFileParameter(dataSourceXlsx,mapFiles);       
             var request = new PostCompressRequest(
-                file: mapFiles
+                file: mapFiles,
+                compressLevel: compressLevel
             );
             var actual =  this.CellsApi.PostCompress(request);
             Assert.IsNotNull(actual.Files);
@@ -359,14 +360,16 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
             string dataSourceXlsx = "datasource.xlsx";
 
             System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
-            AddFileParameter(assemblyTestXlsx,mapFiles);       
-            AddFileParameter(dataSourceXlsx,mapFiles);
-            var protectWorkbookRequst = new ProtectWorkbookRequest()
-            {                
+            var protectWorkbookRequest = new ProtectWorkbookRequest()
+            {
+                AwaysOpenReadOnly = true,
+                EncryptWithPassword = "123456"
             };
+            AddFileParameter(assemblyTestXlsx,mapFiles);       
+            AddFileParameter(dataSourceXlsx,mapFiles);       
             var request = new PostProtectRequest(
                 file: mapFiles,
-                protectWorkbookRequest : protectWorkbookRequst,
+                protectWorkbookRequest: protectWorkbookRequest,
                 password: "123456"
             );
             var actual =  this.CellsApi.PostProtect(request);
@@ -384,7 +387,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
             string dataSourceXlsx = "datasource.xlsx";
 
             System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
-            var protectWorkbookRequst = new ProtectWorkbookRequest()
+            var protectWorkbookRequest = new ProtectWorkbookRequest()
             {
                 AwaysOpenReadOnly = true,
                 EncryptWithPassword = "123456"
@@ -393,7 +396,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
             AddFileParameter(dataSourceXlsx,mapFiles);       
             var request = new PostProtectRequest(
                 file: mapFiles,
-                protectWorkbookRequest: protectWorkbookRequst
+                protectWorkbookRequest: protectWorkbookRequest
             );
             var actual =  this.CellsApi.PostProtect(request);
             Assert.IsNotNull(actual.Files);
@@ -517,6 +520,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
             var actual =  this.CellsApi.PostClearObjects(request);
             Assert.IsNotNull(actual);
         }
+
         /// <summary>
         /// Test for repair workbook as one of the available formats.
         /// </summary>

@@ -35,37 +35,37 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// PageBreakOperateParameter.
+    /// 
     /// </summary>
     public class PageBreakOperateParameter : OperateParameter
     {
         /// <summary>
-        /// Gets or sets PageBreakType.
+        /// 
         /// </summary>
         public virtual string PageBreakType { get; set; }
 
         /// <summary>
-        /// Gets or sets Index.
+        /// 
         /// </summary>
         public virtual int? Index { get; set; }
 
         /// <summary>
-        /// Gets or sets Row.
+        /// 
         /// </summary>
         public virtual int? Row { get; set; }
 
         /// <summary>
-        /// Gets or sets Column.
+        /// 
         /// </summary>
         public virtual int? Column { get; set; }
 
         /// <summary>
-        /// Gets or sets StartIndex.
+        /// 
         /// </summary>
         public virtual int? StartIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets EndIndex.
+        /// 
         /// </summary>
         public virtual int? EndIndex { get; set; }
 

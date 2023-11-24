@@ -35,32 +35,32 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// RenderingFont.
+    /// 
     /// </summary>
     public class RenderingFont
     {
         /// <summary>
-        /// Gets or sets Name.
+        /// 
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets Size.
+        /// 
         /// </summary>
         public virtual double? Size { get; set; }
 
         /// <summary>
-        /// Gets or sets Bold.
+        /// 
         /// </summary>
         public virtual bool? Bold { get; set; }
 
         /// <summary>
-        /// Gets or sets Italic.
+        /// 
         /// </summary>
         public virtual bool? Italic { get; set; }
 
         /// <summary>
-        /// Gets or sets Color.
+        /// 
         /// </summary>
         public virtual Color Color { get; set; }
 

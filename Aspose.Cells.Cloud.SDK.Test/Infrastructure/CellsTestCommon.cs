@@ -42,9 +42,8 @@ namespace Aspose.Cells.Cloud.SDK.Tests
         {
             get
             {
-                return "v3.0";
-                //string apiVersion = Environment.GetEnvironmentVariable("CellsCloudApiBaseUrl");
-                //return string.IsNullOrEmpty(apiVersion)?apiVersion:"v3.0";
+                string apiVersion = Environment.GetEnvironmentVariable("CellsCloudApiBaseUrl");
+                return string.IsNullOrEmpty(apiVersion)?apiVersion:"v3.0";
             }            
         } 
 
@@ -63,7 +62,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests
 
         public CellsTestCommon()
         {
-            this.CellsApi = new CellsApi(this.ClientId, this.ClientSecret,this.ApiVersion, this.BaseUri);
+            this.CellsApi = new CellsApi(this.ClientId, this.ClientSecret, this.BaseUri,this.ApiVersion);
         }
 
         public void UploadFile(string filename , string remotepath , string storageName)
@@ -124,7 +123,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests
             string localFolder = Environment.GetEnvironmentVariable("CellsCloudTestOutFolder");
             if (string.IsNullOrEmpty(localFolder))
             {
-                localFolder = @"D:\test\data\asposecellscloudsdk\output";
+                localFolder = @"D:\projects\test\Aspose.Cells.Cloud.SDK\DotNet\download";
                 if (!Directory.Exists(localFolder))
                 {
                     return null;
@@ -133,17 +132,5 @@ namespace Aspose.Cells.Cloud.SDK.Tests
             return Path.Combine(localFolder, filename);
         }
 
-        public void SaveCloudFileFromReponse(string path, Stream stream)
-        {
-            string localPath = this.GetDownloadFilePath(path);
-            if (string.IsNullOrEmpty(localPath))
-            {
-                return;
-            }
-            using (Stream outStream = File.OpenWrite(localPath))
-            {
-                stream.CopyTo(outStream);
-            }
-        }
     }
 }

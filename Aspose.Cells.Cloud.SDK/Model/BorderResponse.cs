@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// BorderResponse.
+    /// 
     /// </summary>
     public class BorderResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Border.
+        /// 
         /// </summary>
         public virtual Border Border { get; set; }
 

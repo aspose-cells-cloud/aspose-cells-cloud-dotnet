@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// GroupBox.
+    /// 
     /// </summary>
     public class GroupBox : Shape
     {
         /// <summary>
-        /// Gets or sets Shadow.
+        /// Indicates whether the groupbox has shadow.
         /// </summary>
         public virtual bool? Shadow { get; set; }
 

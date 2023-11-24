@@ -40,17 +40,20 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class VerticalPageBreak
     {
         /// <summary>
-        /// Gets or sets Column.
+        /// Gets the column index of the vertical page break.
+        ///  
         /// </summary>
         public virtual int? Column { get; set; }
 
         /// <summary>
-        /// Gets or sets EndRow.
+        /// Gets the end row index of the vertical page break.
+        ///  
         /// </summary>
         public virtual int? EndRow { get; set; }
 
         /// <summary>
-        /// Gets or sets StartRow.
+        /// Gets the start row index of the vertical page break.
+        ///  
         /// </summary>
         public virtual int? StartRow { get; set; }
 

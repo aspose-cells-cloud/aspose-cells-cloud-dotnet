@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PasswordRequest
     {
         /// <summary>
-        /// Gets or sets Password.
+        /// Password.
         /// </summary>
         public virtual string Password { get; set; }
 

@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ChartPoints.
+    /// 
     /// </summary>
     public class ChartPoints : LinkElement
     {
         /// <summary>
-        /// Gets or sets ChartPointList.
+        /// 
         /// </summary>
         public virtual IList<LinkElement> ChartPointList { get; set; }
 

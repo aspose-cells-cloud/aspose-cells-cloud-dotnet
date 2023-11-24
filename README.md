@@ -1,8 +1,9 @@
-![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/23.10)
+![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/23.11)
 
 # .NET SDK for Spreadsheet Processing in the Cloud
 
 The Cloud SDK enhances your C#, ASP.NET, & other .NET-based cloud apps to [process & manipulate Microsoft Excel spreadsheets](https://products.aspose.cloud/cells/net) in the Cloud.
+
 
 ## Cloud Spreadsheet Processor in a Nutshell
 
@@ -20,16 +21,14 @@ The Cloud SDK enhances your C#, ASP.NET, & other .NET-based cloud apps to [proce
 - Fetch the required shape from worksheet.
 - [Leverage the power of Pivot Tables](https://docs.aspose.cloud/cells/working-with-pivot-tables/) & Ranges.
 
-
-## Feature & Enhancements in Version 23.10
+## Feature & Enhancements in Version 23.11
 
 Full list of issues covering all changes in this release:
 
-- Fix protect workbook request.
-- Fix range copy API.
-- Fix workbook import API.
-- Optimize workbook protect API.
- 
+- Optimize import xml data into Excel file.
+- Optimize import json data into Excel file.
+- **Remove deprecated functions, class and test case**.
+
 ## Read & Write Spreadsheet Formats
 
 **Microsoft Excel:** XLS, XLSX, XLSB, XLSM, XLT, XLTX, XLTM
@@ -70,11 +69,8 @@ Next, execute `Install-Package Aspose.Cells-Cloud` from the Package Manager Cons
 The following code snippet demonstrates how to add a new worksheet to a Microsoft Excel document using C# code:
 
 ```csharp
-CellsApi cellsApi =CellsApi(clientId, clientSecret);
 string localName = "Book1.xlsx";
 string remoteName = "Book1.xlsx";
-
-this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
 var request = new PutAddNewWorksheetRequest(
     name: remoteName,
@@ -84,8 +80,7 @@ var request = new PutAddNewWorksheetRequest(
     folder: remoteFolder,
     storageName: ""
 );
-cellsApi.PutAddNewWorksheet(request);
-
+var actual =  this.CellsApi.PutAddNewWorksheet(request);
 ```
 
 ## Convert Excel Files via C# Code
@@ -93,24 +88,14 @@ cellsApi.PutAddNewWorksheet(request);
 The following code example elaborates Aspose.Cells REST API to convert an Excel file to another format in the cloud:
 
 ```csharp
-CellsApi cellsApi =CellsApi(clientId, clientSecret);
-// Upload source file to aspose cloud storage
-string localName = "Book1.xlsx";
-string remoteName = "Book1.xlsx";
 
-this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
-
-var saveOptions = new PdfSaveOptions()
-{
-    SaveFormat = format
-};
-var request = new PostWorkbookSaveAsRequest(
-    name: remoteName,
-    newfilename: newfilename,
-    saveOptions: saveOptions,
-    folder: remoteFolder
+System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
+AddFileParameter(localName,mapFiles);       
+var request = new PutConvertWorkbookRequest(
+    file: mapFiles,
+    format: "pdf"
 );
-cellsApi.PostWorkbookSaveAs(request);
+var actual =  this.CellsApi.PutConvertWorkbook(request);
 ```
 ## Tests
 
@@ -124,4 +109,3 @@ cellsApi.PostWorkbookSaveAs(request);
 | [Maven](https://repository.aspose.cloud/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-cells-cloud) | [Composer](https://packagist.org/packages/aspose/cells-sdk-php) | [PIP](https://pypi.org/project/asposecellscloud/) | [GEM](https://rubygems.org/gems/aspose_cells_cloud)  | [NPM](https://www.npmjs.com/package/asposecellscloud) | [Maven](https://repository.aspose.cloud/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-cells-cloud-android) | [POD](https://cocoapods.org/pods/AsposeCellsCloud) |  [CPAN](https://metacpan.org/release/AsposeCellsCloud-CellsApi) | [GO](https://pkg.go.dev/github.com/aspose-cells-cloud/aspose-cells-cloud-go/v20?tab=overview) |
 
 [Product Page](https://products.aspose.cloud/cells/net) | [Documentation](https://docs.aspose.cloud/cells/) | [Live Demo](https://products.aspose.app/cells/family) | [API Reference](https://apireference.aspose.cloud/cells/) | [Code Samples](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/master/Examples) | [Blog](https://blog.aspose.cloud/category/cells/) | [Free Support](https://forum.aspose.cloud/c/cells) | [Free Trial](https://dashboard.aspose.cloud/#/apps)
-

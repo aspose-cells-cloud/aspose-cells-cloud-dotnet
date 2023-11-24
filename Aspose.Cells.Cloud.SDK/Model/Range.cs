@@ -40,47 +40,56 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Range
     {
         /// <summary>
-        /// Gets or sets ColumnCount.
+        /// Gets the count of columns in the range.
+        ///  
         /// </summary>
         public virtual int? ColumnCount { get; set; }
 
         /// <summary>
-        /// Gets or sets ColumnWidth.
+        /// Sets or gets the column width of this range
+        ///  
         /// </summary>
         public virtual double? ColumnWidth { get; set; }
 
         /// <summary>
-        /// Gets or sets FirstColumn.
+        /// Gets the index of the first column of the range.
+        ///  
         /// </summary>
         public virtual int? FirstColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets FirstRow.
+        /// Gets the index of the first row of the range.
+        ///  
         /// </summary>
         public virtual int? FirstRow { get; set; }
 
         /// <summary>
-        /// Gets or sets Name.
+        /// Gets or sets the name of the range.
+        ///  
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets RefersTo.
+        /// Gets the range's refers to.
+        ///  
         /// </summary>
         public virtual string RefersTo { get; set; }
 
         /// <summary>
-        /// Gets or sets RowCount.
+        /// Gets the count of rows in the range.
+        ///  
         /// </summary>
         public virtual int? RowCount { get; set; }
 
         /// <summary>
-        /// Gets or sets RowHeight.
+        /// Sets or gets the height of rows in this range
+        ///  
         /// </summary>
         public virtual double? RowHeight { get; set; }
 
         /// <summary>
-        /// Gets or sets Worksheet.
+        /// Gets the object which contains this range.
+        ///  
         /// </summary>
         public virtual string Worksheet { get; set; }
 

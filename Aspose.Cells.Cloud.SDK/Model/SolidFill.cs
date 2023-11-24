@@ -40,17 +40,20 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class SolidFill
     {
         /// <summary>
-        /// Gets or sets Color.
+        /// Gets or sets the .
+        ///  
         /// </summary>
         public virtual Color Color { get; set; }
 
         /// <summary>
-        /// Gets or sets CellsColor.
+        /// Gets and sets the  object.
+        ///  
         /// </summary>
         public virtual CellsColor CellsColor { get; set; }
 
         /// <summary>
-        /// Gets or sets Transparency.
+        /// Returns or sets the degree of transparency of the area as a value from 0.0 (opaque) through 1.0 (clear).
+        ///  
         /// </summary>
         public virtual double? Transparency { get; set; }
 

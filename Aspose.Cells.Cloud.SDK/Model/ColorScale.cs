@@ -42,39 +42,41 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ColorScale
     {
         /// <summary>
-        /// Get or set this ColorScale's max value object.  Cannot set null or CFValueObject
-        ///     with type FormatConditionValueType.Min to it.
+        /// Get or set this ColorScale's max value object.
+        ///             Cannot set null or CFValueObject with type FormatConditionValueType.Min to it.
+        ///  
         /// </summary>
         public virtual ConditionalFormattingValue MaxCfvo { get; set; }
 
         /// <summary>
-        /// Get or set the max value object's corresponding color.
+        /// Get or set the gradient color for the maximum value in the range.
+        ///  
         /// </summary>
         public virtual Color MaxColor { get; set; }
 
         /// <summary>
-        /// Get or set this ColorScale's mid value object.  Cannot set CFValueObject
-        ///    with type FormatConditionValueType.Max or FormatConditionValueType.Min to
-        ///    it.
-        ///             
+        /// Get or set this ColorScale's mid value object.
+        ///             Cannot set CFValueObject with type FormatConditionValueType.Max or FormatConditionValueType.Min to it.
+        ///  
         /// </summary>
         public virtual ConditionalFormattingValue MidCfvo { get; set; }
 
         /// <summary>
-        /// Get or set the mid value object's corresponding color.
-        ///             
+        /// Get or set the gradient color for the middle value in the range.
+        ///  
         /// </summary>
         public virtual Color MidColor { get; set; }
 
         /// <summary>
-        /// Get or set this ColorScale's min value object.  Cannot set null or CFValueObject
-        ///    with type FormatConditionValueType.Max to it.
-        ///             
+        /// Get or set this ColorScale's min value object.
+        ///             Cannot set null or CFValueObject with type FormatConditionValueType.Max to it.
+        ///  
         /// </summary>
         public virtual ConditionalFormattingValue MinCfvo { get; set; }
 
         /// <summary>
-        /// Get or set the min value object's corresponding color.
+        /// Get or set the gradient color for the minimum value in the range.
+        ///  
         /// </summary>
         public virtual Color MinColor { get; set; }
 

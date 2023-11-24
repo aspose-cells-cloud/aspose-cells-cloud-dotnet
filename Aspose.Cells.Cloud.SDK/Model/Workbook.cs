@@ -40,7 +40,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Workbook
     {
         /// <summary>
-        /// Gets or sets FileName.
+        /// Gets and sets the current file name.
+        ///  
         /// </summary>
         public virtual string FileName { get; set; }
 
@@ -50,12 +51,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual IList<Link> Links { get; set; }
 
         /// <summary>
-        /// Gets or sets Worksheets.
+        /// Gets the  collection in the spreadsheet.
+        ///  
         /// </summary>
         public virtual LinkElement Worksheets { get; set; }
 
         /// <summary>
-        /// Gets or sets DefaultStyle.
+        /// Gets or sets the default  object of the workbook.
+        ///  
         /// </summary>
         public virtual LinkElement DefaultStyle { get; set; }
 
@@ -70,7 +73,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual LinkElement Names { get; set; }
 
         /// <summary>
-        /// Gets or sets Settings.
+        /// Represents the workbook settings.
+        ///  
         /// </summary>
         public virtual LinkElement Settings { get; set; }
 

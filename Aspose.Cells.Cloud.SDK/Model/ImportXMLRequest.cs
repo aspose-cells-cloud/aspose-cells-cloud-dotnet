@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ImportXMLRequest.
+    /// Indicates import xml data request
     /// </summary>
     public class ImportXMLRequest
     {
@@ -50,6 +50,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual ImportPosition ImportPosition { get; set; }
 
         /// <summary>
+        /// Base64String default is null
+        /// </summary>
+        public virtual string XMLContent { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object.
         /// </summary>
         /// <returns>String presentation of the object.</returns>
@@ -59,6 +64,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("class ImportXMLRequest {\n");
             sb.Append("  XMLFileSource: ").Append(this.XMLFileSource).Append("\n");
             sb.Append("  ImportPosition: ").Append(this.ImportPosition).Append("\n");
+            sb.Append("  XMLContent: ").Append(this.XMLContent).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

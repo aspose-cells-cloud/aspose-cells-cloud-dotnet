@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// PictureResponse.
+    /// 
     /// </summary>
     public class PictureResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Picture.
+        /// 
         /// </summary>
         public virtual Picture Picture { get; set; }
 

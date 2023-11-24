@@ -35,102 +35,105 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// DataLabels.
+    /// 
     /// </summary>
     public class DataLabels : ChartFrame
     {
         /// <summary>
-        /// Gets or sets IsAutoText.
+        /// Indicates the text is auto generated.
         /// </summary>
         public virtual bool? IsAutoText { get; set; }
 
         /// <summary>
-        /// Gets or sets IsDeleted.
+        /// 
         /// </summary>
         public virtual bool? IsDeleted { get; set; }
 
         /// <summary>
-        /// Gets or sets LinkedSource.
+        /// 
         /// </summary>
         public virtual string LinkedSource { get; set; }
 
         /// <summary>
-        /// Gets or sets Number.
+        /// Gets and sets the built-in number format.
         /// </summary>
         public virtual int? Number { get; set; }
 
         /// <summary>
-        /// Gets or sets NumberFormat.
+        /// Represents the format string for the DataLabels object.
         /// </summary>
         public virtual string NumberFormat { get; set; }
 
         /// <summary>
-        /// Gets or sets NumberFormatLinked.
+        /// True if the number format is linked to the cells 
+        ///                         (so that the number format changes in the labels when it changes in the cells).
         /// </summary>
         public virtual bool? NumberFormatLinked { get; set; }
 
         /// <summary>
-        /// Gets or sets Position.
+        /// Represents the position of the data label.
         /// </summary>
         public virtual string Position { get; set; }
 
         /// <summary>
-        /// Gets or sets RotationAngle.
+        /// 
         /// </summary>
         public virtual int? RotationAngle { get; set; }
 
         /// <summary>
-        /// Gets or sets Separator.
+        /// Gets or sets the separator type used for the data labels on a chart.
         /// </summary>
         public virtual string Separator { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowBubbleSize.
+        /// Represents a specified chart's data label percentage value display behavior. True displays the percentage value. False to hide.
         /// </summary>
         public virtual bool? ShowBubbleSize { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowCategoryName.
+        /// Represents a specified chart's data label category name display behavior.True to display the category name for the data labels on a chart. False to hide.
         /// </summary>
         public virtual bool? ShowCategoryName { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowLegendKey.
+        /// Represents a specified chart's data label legend key display behavior.
+        ///                         True if the data label legend key is visible.
         /// </summary>
         public virtual bool? ShowLegendKey { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowPercentage.
+        /// Represents a specified chart's data label percentage value display behavior. True displays the percentage value. False to hide.
         /// </summary>
         public virtual bool? ShowPercentage { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowSeriesName.
+        /// Returns or sets a Boolean to indicate the series name display behavior for the data labels on a chart.
+        ///                         True to show the series name. False to hide.
         /// </summary>
         public virtual bool? ShowSeriesName { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowValue.
+        /// Represents a specified chart's data label values display behavior. True displays the values. False to hide.
         /// </summary>
         public virtual bool? ShowValue { get; set; }
 
         /// <summary>
-        /// Gets or sets Text.
+        /// Gets or sets the text of data label.
         /// </summary>
         public virtual string Text { get; set; }
 
         /// <summary>
-        /// Gets or sets TextDirection.
+        /// 
         /// </summary>
         public virtual string TextDirection { get; set; }
 
         /// <summary>
-        /// Gets or sets TextHorizontalAlignment.
+        /// 
         /// </summary>
         public virtual string TextHorizontalAlignment { get; set; }
 
         /// <summary>
-        /// Gets or sets TextVerticalAlignment.
+        /// 
         /// </summary>
         public virtual string TextVerticalAlignment { get; set; }
 

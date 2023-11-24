@@ -40,342 +40,342 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PivotTable : LinkElement
     {
         /// <summary>
-        /// Gets or sets AltTextDescription.
+        /// 
         /// </summary>
         public virtual string AltTextDescription { get; set; }
 
         /// <summary>
-        /// Gets or sets AltTextTitle.
+        /// 
         /// </summary>
         public virtual string AltTextTitle { get; set; }
 
         /// <summary>
-        /// Gets or sets AutoFormatType.
+        /// 
         /// </summary>
         public virtual string AutoFormatType { get; set; }
 
         /// <summary>
-        /// Gets or sets BaseFields.
+        /// 
         /// </summary>
         public virtual IList<PivotField> BaseFields { get; set; }
 
         /// <summary>
-        /// Gets or sets ColumnFields.
+        /// 
         /// </summary>
         public virtual IList<PivotField> ColumnFields { get; set; }
 
         /// <summary>
-        /// Gets or sets ColumnGrand.
+        /// 
         /// </summary>
         public virtual bool? ColumnGrand { get; set; }
 
         /// <summary>
-        /// Gets or sets ColumnHeaderCaption.
+        /// 
         /// </summary>
         public virtual string ColumnHeaderCaption { get; set; }
 
         /// <summary>
-        /// Gets or sets ColumnRange.
+        /// 
         /// </summary>
         public virtual CellArea ColumnRange { get; set; }
 
         /// <summary>
-        /// Gets or sets CustomListSort.
+        /// 
         /// </summary>
         public virtual bool? CustomListSort { get; set; }
 
         /// <summary>
-        /// Gets or sets DataBodyRange.
+        /// 
         /// </summary>
         public virtual CellArea DataBodyRange { get; set; }
 
         /// <summary>
-        /// Gets or sets DataField.
+        /// 
         /// </summary>
         public virtual PivotField DataField { get; set; }
 
         /// <summary>
-        /// Gets or sets DataFields.
+        /// 
         /// </summary>
         public virtual IList<PivotField> DataFields { get; set; }
 
         /// <summary>
-        /// Gets or sets DataSource.
+        /// 
         /// </summary>
         public virtual List<string> DataSource { get; set; }
 
         /// <summary>
-        /// Gets or sets DisplayErrorString.
+        /// 
         /// </summary>
         public virtual bool? DisplayErrorString { get; set; }
 
         /// <summary>
-        /// Gets or sets DisplayImmediateItems.
+        /// 
         /// </summary>
         public virtual bool? DisplayImmediateItems { get; set; }
 
         /// <summary>
-        /// Gets or sets DisplayNullString.
+        /// 
         /// </summary>
         public virtual bool? DisplayNullString { get; set; }
 
         /// <summary>
-        /// Gets or sets EnableDataValueEditing.
+        /// 
         /// </summary>
         public virtual bool? EnableDataValueEditing { get; set; }
 
         /// <summary>
-        /// Gets or sets EnableDrilldown.
+        /// 
         /// </summary>
         public virtual bool? EnableDrilldown { get; set; }
 
         /// <summary>
-        /// Gets or sets EnableFieldDialog.
+        /// 
         /// </summary>
         public virtual bool? EnableFieldDialog { get; set; }
 
         /// <summary>
-        /// Gets or sets EnableFieldList.
+        /// 
         /// </summary>
         public virtual bool? EnableFieldList { get; set; }
 
         /// <summary>
-        /// Gets or sets EnableWizard.
+        /// 
         /// </summary>
         public virtual bool? EnableWizard { get; set; }
 
         /// <summary>
-        /// Gets or sets ErrorString.
+        /// 
         /// </summary>
         public virtual string ErrorString { get; set; }
 
         /// <summary>
-        /// Gets or sets FieldListSortAscending.
+        /// 
         /// </summary>
         public virtual bool? FieldListSortAscending { get; set; }
 
         /// <summary>
-        /// Gets or sets GrandTotalName.
+        /// 
         /// </summary>
         public virtual string GrandTotalName { get; set; }
 
         /// <summary>
-        /// Gets or sets HasBlankRows.
+        /// 
         /// </summary>
         public virtual bool? HasBlankRows { get; set; }
 
         /// <summary>
-        /// Gets or sets Indent.
+        /// 
         /// </summary>
         public virtual int? Indent { get; set; }
 
         /// <summary>
-        /// Gets or sets IsAutoFormat.
+        /// 
         /// </summary>
         public virtual bool? IsAutoFormat { get; set; }
 
         /// <summary>
-        /// Gets or sets IsGridDropZones.
+        /// 
         /// </summary>
         public virtual bool? IsGridDropZones { get; set; }
 
         /// <summary>
-        /// Gets or sets IsMultipleFieldFilters.
+        /// 
         /// </summary>
         public virtual bool? IsMultipleFieldFilters { get; set; }
 
         /// <summary>
-        /// Gets or sets IsSelected.
+        /// 
         /// </summary>
         public virtual bool? IsSelected { get; set; }
 
         /// <summary>
-        /// Gets or sets ItemPrintTitles.
+        /// 
         /// </summary>
         public virtual bool? ItemPrintTitles { get; set; }
 
         /// <summary>
-        /// Gets or sets ManualUpdate.
+        /// 
         /// </summary>
         public virtual bool? ManualUpdate { get; set; }
 
         /// <summary>
-        /// Gets or sets MergeLabels.
+        /// 
         /// </summary>
         public virtual bool? MergeLabels { get; set; }
 
         /// <summary>
-        /// Gets or sets MissingItemsLimit.
+        /// 
         /// </summary>
         public virtual string MissingItemsLimit { get; set; }
 
         /// <summary>
-        /// Gets or sets Name.
+        /// 
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets NullString.
+        /// 
         /// </summary>
         public virtual string NullString { get; set; }
 
         /// <summary>
-        /// Gets or sets PageFieldOrder.
+        /// 
         /// </summary>
         public virtual string PageFieldOrder { get; set; }
 
         /// <summary>
-        /// Gets or sets PageFields.
+        /// 
         /// </summary>
         public virtual IList<PivotField> PageFields { get; set; }
 
         /// <summary>
-        /// Gets or sets PageFieldWrapCount.
+        /// 
         /// </summary>
         public virtual int? PageFieldWrapCount { get; set; }
 
         /// <summary>
-        /// Gets or sets PivotFilters.
+        /// 
         /// </summary>
         public virtual IList<PivotFilter> PivotFilters { get; set; }
 
         /// <summary>
-        /// Gets or sets PivotTableStyleName.
+        /// 
         /// </summary>
         public virtual string PivotTableStyleName { get; set; }
 
         /// <summary>
-        /// Gets or sets PivotTableStyleType.
+        /// 
         /// </summary>
         public virtual string PivotTableStyleType { get; set; }
 
         /// <summary>
-        /// Gets or sets PreserveFormatting.
+        /// 
         /// </summary>
         public virtual bool? PreserveFormatting { get; set; }
 
         /// <summary>
-        /// Gets or sets PrintDrill.
+        /// 
         /// </summary>
         public virtual bool? PrintDrill { get; set; }
 
         /// <summary>
-        /// Gets or sets PrintTitles.
+        /// 
         /// </summary>
         public virtual bool? PrintTitles { get; set; }
 
         /// <summary>
-        /// Gets or sets RefreshDataFlag.
+        /// 
         /// </summary>
         public virtual bool? RefreshDataFlag { get; set; }
 
         /// <summary>
-        /// Gets or sets RefreshDataOnOpeningFile.
+        /// 
         /// </summary>
         public virtual bool? RefreshDataOnOpeningFile { get; set; }
 
         /// <summary>
-        /// Gets or sets RowFields.
+        /// 
         /// </summary>
         public virtual IList<PivotField> RowFields { get; set; }
 
         /// <summary>
-        /// Gets or sets RowGrand.
+        /// 
         /// </summary>
         public virtual bool? RowGrand { get; set; }
 
         /// <summary>
-        /// Gets or sets RowHeaderCaption.
+        /// 
         /// </summary>
         public virtual string RowHeaderCaption { get; set; }
 
         /// <summary>
-        /// Gets or sets RowRange.
+        /// 
         /// </summary>
         public virtual CellArea RowRange { get; set; }
 
         /// <summary>
-        /// Gets or sets SaveData.
+        /// 
         /// </summary>
         public virtual bool? SaveData { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowDataTips.
+        /// 
         /// </summary>
         public virtual bool? ShowDataTips { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowDrill.
+        /// 
         /// </summary>
         public virtual bool? ShowDrill { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowEmptyCol.
+        /// 
         /// </summary>
         public virtual bool? ShowEmptyCol { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowEmptyRow.
+        /// 
         /// </summary>
         public virtual bool? ShowEmptyRow { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowMemberPropertyTips.
+        /// 
         /// </summary>
         public virtual bool? ShowMemberPropertyTips { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowPivotStyleColumnHeader.
+        /// 
         /// </summary>
         public virtual bool? ShowPivotStyleColumnHeader { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowPivotStyleColumnStripes.
+        /// 
         /// </summary>
         public virtual bool? ShowPivotStyleColumnStripes { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowPivotStyleLastColumn.
+        /// 
         /// </summary>
         public virtual bool? ShowPivotStyleLastColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowPivotStyleRowHeader.
+        /// 
         /// </summary>
         public virtual bool? ShowPivotStyleRowHeader { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowPivotStyleRowStripes.
+        /// 
         /// </summary>
         public virtual bool? ShowPivotStyleRowStripes { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowRowHeaderCaption.
+        /// 
         /// </summary>
         public virtual bool? ShowRowHeaderCaption { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowValuesRow.
+        /// 
         /// </summary>
         public virtual bool? ShowValuesRow { get; set; }
 
         /// <summary>
-        /// Gets or sets SubtotalHiddenPageItems.
+        /// 
         /// </summary>
         public virtual bool? SubtotalHiddenPageItems { get; set; }
 
         /// <summary>
-        /// Gets or sets TableRange1.
+        /// 
         /// </summary>
         public virtual CellArea TableRange1 { get; set; }
 
         /// <summary>
-        /// Gets or sets TableRange2.
+        /// 
         /// </summary>
         public virtual CellArea TableRange2 { get; set; }
 
         /// <summary>
-        /// Gets or sets Tag.
+        /// 
         /// </summary>
         public virtual string Tag { get; set; }
 

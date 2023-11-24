@@ -35,97 +35,97 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Form.
+    /// 
     /// </summary>
     public class Form : Shape
     {
         /// <summary>
-        /// Gets or sets FormType.
+        /// 
         /// </summary>
         public virtual string FormType { get; set; }
 
         /// <summary>
-        /// Gets or sets CheckedValue.
+        /// 
         /// </summary>
         public virtual string CheckedValue { get; set; }
 
         /// <summary>
-        /// Gets or sets Shadow.
+        /// 
         /// </summary>
         public virtual bool? Shadow { get; set; }
 
         /// <summary>
-        /// Gets or sets InputRange.
+        /// 
         /// </summary>
         public virtual string InputRange { get; set; }
 
         /// <summary>
-        /// Gets or sets SelectedIndex.
+        /// 
         /// </summary>
         public virtual int? SelectedIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets SelectedValue.
+        /// 
         /// </summary>
         public virtual string SelectedValue { get; set; }
 
         /// <summary>
-        /// Gets or sets SelectedCell.
+        /// 
         /// </summary>
         public virtual LinkElement SelectedCell { get; set; }
 
         /// <summary>
-        /// Gets or sets DropDownLines.
+        /// 
         /// </summary>
         public virtual int? DropDownLines { get; set; }
 
         /// <summary>
-        /// Gets or sets ItemCount.
+        /// 
         /// </summary>
         public virtual int? ItemCount { get; set; }
 
         /// <summary>
-        /// Gets or sets SelectedCells.
+        /// 
         /// </summary>
         public virtual IList<LinkElement> SelectedCells { get; set; }
 
         /// <summary>
-        /// Gets or sets SelectionType.
+        /// 
         /// </summary>
         public virtual string SelectionType { get; set; }
 
         /// <summary>
-        /// Gets or sets IsChecked.
+        /// 
         /// </summary>
         public virtual bool? IsChecked { get; set; }
 
         /// <summary>
-        /// Gets or sets CurrentValue.
+        /// 
         /// </summary>
         public virtual int? CurrentValue { get; set; }
 
         /// <summary>
-        /// Gets or sets Min.
+        /// 
         /// </summary>
         public virtual int? Min { get; set; }
 
         /// <summary>
-        /// Gets or sets Max.
+        /// 
         /// </summary>
         public virtual int? Max { get; set; }
 
         /// <summary>
-        /// Gets or sets IncrementalChange.
+        /// 
         /// </summary>
         public virtual int? IncrementalChange { get; set; }
 
         /// <summary>
-        /// Gets or sets PageChange.
+        /// 
         /// </summary>
         public virtual int? PageChange { get; set; }
 
         /// <summary>
-        /// Gets or sets IsHorizontal.
+        /// 
         /// </summary>
         public virtual bool? IsHorizontal { get; set; }
 

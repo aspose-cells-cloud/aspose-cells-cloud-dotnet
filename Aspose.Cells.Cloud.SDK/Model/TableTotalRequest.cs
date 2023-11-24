@@ -35,22 +35,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// TableTotalRequest.
+    /// Indicates table total request
     /// </summary>
     public class TableTotalRequest
     {
         /// <summary>
-        /// Gets or sets ListColumnIndex.
+        /// Indicates list column index.
         /// </summary>
         public virtual int? ListColumnIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets TotalsCalculation.
+        /// Indicates totals calculation.
         /// </summary>
         public virtual string TotalsCalculation { get; set; }
 
         /// <summary>
-        /// Gets or sets CustomFormula.
+        /// Indicates custom formula.
         /// </summary>
         public virtual string CustomFormula { get; set; }
 

@@ -40,32 +40,32 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Picture : Shape
     {
         /// <summary>
-        /// Gets or sets BorderLineColor.
+        /// Represents the  of the border line of a picture.
         /// </summary>
         public virtual Color BorderLineColor { get; set; }
 
         /// <summary>
-        /// Gets or sets BorderWeight.
+        /// Gets or sets the weight of the border line of a picture in units of pt.
         /// </summary>
         public virtual double? BorderWeight { get; set; }
 
         /// <summary>
-        /// Gets or sets OriginalHeight.
+        /// Gets the original height of the picture.
         /// </summary>
         public virtual int? OriginalHeight { get; set; }
 
         /// <summary>
-        /// Gets or sets OriginalWidth.
+        /// Gets the original width of the picture.
         /// </summary>
         public virtual int? OriginalWidth { get; set; }
 
         /// <summary>
-        /// Gets or sets ImageFormat.
+        /// 
         /// </summary>
         public virtual string ImageFormat { get; set; }
 
         /// <summary>
-        /// Gets or sets SourceFullName.
+        /// Gets or sets the path and name of the source file for the linked image.
         /// </summary>
         public virtual string SourceFullName { get; set; }
 

@@ -35,22 +35,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ConvertTaskParameter.
+    /// 
     /// </summary>
     public class ConvertTaskParameter : TaskParameter
     {
         /// <summary>
-        /// Gets or sets Workbook.
+        /// 
         /// </summary>
         public virtual FileSource Workbook { get; set; }
 
         /// <summary>
-        /// Gets or sets DestinationFile.
+        /// 
         /// </summary>
         public virtual string DestinationFile { get; set; }
 
         /// <summary>
-        /// Gets or sets SaveOptions.
+        /// 
         /// </summary>
         public virtual SaveOptions SaveOptions { get; set; }
 

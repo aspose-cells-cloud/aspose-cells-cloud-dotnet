@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// LegendEntries.
+    /// 
     /// </summary>
     public class LegendEntries : LinkElement
     {
         /// <summary>
-        /// Gets or sets legendEntryList.
+        /// 
         /// </summary>
         public virtual IList<LinkElement> legendEntryList { get; set; }
 

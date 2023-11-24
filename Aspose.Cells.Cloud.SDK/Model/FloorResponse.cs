@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// FloorResponse.
+    /// 
     /// </summary>
     public class FloorResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Floor.
+        /// 
         /// </summary>
         public virtual Floor Floor { get; set; }
 

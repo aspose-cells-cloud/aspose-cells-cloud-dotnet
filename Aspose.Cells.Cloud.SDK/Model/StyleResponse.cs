@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class StyleResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Style.
+        /// 
         /// </summary>
         public virtual Style Style { get; set; }
 

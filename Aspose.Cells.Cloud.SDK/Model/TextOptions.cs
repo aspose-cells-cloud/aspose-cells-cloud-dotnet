@@ -40,32 +40,32 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class TextOptions : Font
     {
         /// <summary>
-        /// Gets or sets Fill.
+        /// 
         /// </summary>
         public virtual FillFormat Fill { get; set; }
 
         /// <summary>
-        /// Gets or sets Kerning.
+        /// 
         /// </summary>
         public virtual double? Kerning { get; set; }
 
         /// <summary>
-        /// Gets or sets Outline.
+        /// 
         /// </summary>
         public virtual LineFormat Outline { get; set; }
 
         /// <summary>
-        /// Gets or sets Shadow.
+        /// 
         /// </summary>
         public virtual ShadowEffect Shadow { get; set; }
 
         /// <summary>
-        /// Gets or sets Spacing.
+        /// 
         /// </summary>
         public virtual double? Spacing { get; set; }
 
         /// <summary>
-        /// Gets or sets UnderlineColor.
+        /// 
         /// </summary>
         public virtual CellsColor UnderlineColor { get; set; }
 

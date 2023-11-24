@@ -41,34 +41,43 @@ namespace Aspose.Cells.Cloud.SDK.Model
     {
         /// <summary>
         /// Indicates whether copying column width in unit of characters.
+        ///  
         /// </summary>
         public virtual bool? ColumnCharacterWidth { get; set; }
 
         /// <summary>
         /// If the formula is not valid for the dest destination, only copy values.
+        ///  
         /// </summary>
         public virtual bool? CopyInvalidFormulasAsValues { get; set; }
 
         /// <summary>
         /// Indicates whether copying the names.
+        ///  
         /// </summary>
         public virtual bool? CopyNames { get; set; }
 
         /// <summary>
         /// Indicates whether extend ranges when copying the range to adjacent range.
+        ///  
         /// </summary>
         public virtual bool? ExtendToAdjacentRange { get; set; }
 
         /// <summary>
         /// When copying the range in the same file and the chart refers to the source sheet,
-        ///   False means the copied chart's data source will not be changed. True means the
-        ///   copied chart's data source refers to the destination sheet.
-        ///             
+        ///             False means the copied chart's data source will not be changed.
+        ///             True means the copied chart's data source refers to the destination sheet.
+        ///  
         /// </summary>
         public virtual bool? ReferToDestinationSheet { get; set; }
 
         /// <summary>
-        /// Gets or sets ReferToSheetWithSameName.
+        /// In ms excel, when copying formulas which refer to other worksheets while copying a worksheet to another one,
+        ///             the copied formulas should refer to source workbook.
+        ///             However, for some situations user may need the copied formulas refer to worksheets with the same name
+        ///             in the same workbook, such as when those worksheets have been copied before this copy operation,
+        ///             then this property should be kept as true.
+        ///  
         /// </summary>
         public virtual bool? ReferToSheetWithSameName { get; set; }
 

@@ -35,27 +35,27 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// BarcodeResponse.
+    /// 
     /// </summary>
     public class BarcodeResponse
     {
         /// <summary>
-        /// Gets or sets BarcodeValue.
+        /// Gets or sets barcode data.
         /// </summary>
         public virtual string BarcodeValue { get; set; }
 
         /// <summary>
-        /// Gets or sets BarcodeType.
+        /// Gets or sets type of the barcode.
         /// </summary>
         public virtual string BarcodeType { get; set; }
 
         /// <summary>
-        /// Gets or sets Region.
+        /// Gets or sets region with barcode.
         /// </summary>
         public virtual List<Point> Region { get; set; }
 
         /// <summary>
-        /// Gets or sets Checksum.
+        /// Gets or sets checksum of barcode.
         /// </summary>
         public virtual string Checksum { get; set; }
 

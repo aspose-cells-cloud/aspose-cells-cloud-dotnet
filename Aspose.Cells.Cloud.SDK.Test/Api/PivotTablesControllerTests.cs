@@ -568,7 +568,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
 
             var request = new DeleteWorksheetPivotTableFiltersRequest(
                 name: remoteName,
-                sheetName: "Sheet4",
+                sheetName: "Sheet3",
                 pivotTableIndex: 0,
                 needReCalculate: true,
                 folder: remoteFolder,

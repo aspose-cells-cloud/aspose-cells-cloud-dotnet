@@ -35,47 +35,50 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// DigitalSignature.
+    /// Signature in file.
+    ///             
     /// </summary>
     public class DigitalSignature
     {
         /// <summary>
-        /// Gets or sets Comments.
+        /// The purpose to signature.
         /// </summary>
         public virtual string Comments { get; set; }
 
         /// <summary>
-        /// Gets or sets SignTime.
+        /// The time when the document was signed.
         /// </summary>
         public virtual string SignTime { get; set; }
 
         /// <summary>
-        /// Gets or sets Id.
+        /// Specifies a GUID which can be cross-referenced with the GUID of the signature line stored in the document content. Default value is Empty (all zeroes) Guid.
         /// </summary>
         public virtual string Id { get; set; }
 
         /// <summary>
-        /// Gets or sets Password.
+        /// Specifies the text of actual signature in the digital signature. Default value is Empty.
+        ///             
         /// </summary>
         public virtual string Password { get; set; }
 
         /// <summary>
-        /// Gets or sets Image.
+        /// Specifies an image for the digital signature. Default value is null.
         /// </summary>
         public virtual byte[] Image { get; set; }
 
         /// <summary>
-        /// Gets or sets ProviderId.
+        /// Specifies the class ID of the signature provider. Default value is Empty (all zeroes) Guid.
+        ///             
         /// </summary>
         public virtual string ProviderId { get; set; }
 
         /// <summary>
-        /// Gets or sets IsValid.
+        /// If this digital signature is valid and the document has not been tampered with, this value will be true.
         /// </summary>
         public virtual bool? IsValid { get; set; }
 
         /// <summary>
-        /// Gets or sets XAdESType.
+        /// XAdES type. Default value is None(XAdES is off).
         /// </summary>
         public virtual string XAdESType { get; set; }
 

@@ -40,12 +40,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ConditionalFormatting : LinkElement
     {
         /// <summary>
-        /// Gets or sets sqref.
+        /// 
         /// </summary>
         public virtual string sqref { get; set; }
 
         /// <summary>
-        /// Gets or sets FormatConditions.
+        /// 
         /// </summary>
         public virtual IList<FormatCondition> FormatConditions { get; set; }
 

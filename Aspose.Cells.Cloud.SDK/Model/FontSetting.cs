@@ -40,27 +40,32 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class FontSetting
     {
         /// <summary>
-        /// Gets or sets Font.
+        /// Returns the font of this object.
+        ///  
         /// </summary>
         public virtual Font Font { get; set; }
 
         /// <summary>
-        /// Gets or sets Length.
+        /// Gets the length of the characters.
+        ///  
         /// </summary>
         public virtual int? Length { get; set; }
 
         /// <summary>
-        /// Gets or sets StartIndex.
+        /// Gets the start index of the characters.
+        ///  
         /// </summary>
         public virtual int? StartIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets TextOptions.
+        /// Returns the text options.
+        ///  
         /// </summary>
         public virtual TextOptions TextOptions { get; set; }
 
         /// <summary>
-        /// Gets or sets Type.
+        /// Gets the type of text node.
+        ///  
         /// </summary>
         public virtual string Type { get; set; }
 

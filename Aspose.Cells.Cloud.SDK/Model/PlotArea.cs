@@ -35,27 +35,27 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// PlotArea.
+    /// 
     /// </summary>
     public class PlotArea : ChartFrame
     {
         /// <summary>
-        /// Gets or sets InnerHeight.
+        /// Gets or sets the height of plot area in units of 1/4000 of the chart area.
         /// </summary>
         public virtual int? InnerHeight { get; set; }
 
         /// <summary>
-        /// Gets or sets InnerWidth.
+        /// Gets or sets the width  of plot area in units of 1/4000 of the chart area.
         /// </summary>
         public virtual int? InnerWidth { get; set; }
 
         /// <summary>
-        /// Gets or sets InnerX.
+        /// Gets or gets the x coordinate of the upper top corner of plot area in units of 1/4000 of the chart area.
         /// </summary>
         public virtual int? InnerX { get; set; }
 
         /// <summary>
-        /// Gets or sets InnerY.
+        /// Gets or gets the x coordinate of the upper top corner of plot area in units of 1/4000 of the chart area.
         /// </summary>
         public virtual int? InnerY { get; set; }
 

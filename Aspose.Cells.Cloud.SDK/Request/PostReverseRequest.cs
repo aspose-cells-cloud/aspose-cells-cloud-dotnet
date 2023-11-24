@@ -47,7 +47,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostReverseRequest"/> class.
         /// </summary>
-        /// <param name="file">File to upload</param>
+        /// <param name="file">rows/cols/both</param>
         /// <param name="rotateType">rows/cols/both</param>
         /// <param name="format">CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers</param>
         /// <param name="password"></param>
@@ -62,7 +62,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// File to upload
+        /// rows/cols/both
         /// </summary>
         public IDictionary<string, System.IO.Stream> File { get; set; }
 

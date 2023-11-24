@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PageSectionsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets PageSections.
+        /// 
         /// </summary>
         public virtual IList<PageSection> PageSections { get; set; }
 

@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// SaveOptions.
+    /// Represents all save options
     /// </summary>
     public class SaveOptions
     {
         /// <summary>
-        /// Gets or sets SaveFormat.
+        /// Save format name
         /// </summary>
         public virtual string SaveFormat { get; set; }
 
@@ -61,17 +61,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? CreateDirectory { get; set; }
 
         /// <summary>
-        /// Gets or sets EnableHTTPCompression.
+        /// whether http compression is to be used.
         /// </summary>
         public virtual bool? EnableHTTPCompression { get; set; }
 
         /// <summary>
-        /// Gets or sets RefreshChartCache.
+        /// Indicates whether refreshing chart cache data
         /// </summary>
         public virtual bool? RefreshChartCache { get; set; }
 
         /// <summary>
-        /// Gets or sets SortNames.
+        /// Indicates whether sorting defined names before saving file.
         /// </summary>
         public virtual bool? SortNames { get; set; }
 

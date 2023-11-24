@@ -40,12 +40,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class FilterColumn
     {
         /// <summary>
-        /// Gets or sets FieldIndex.
+        /// Gets and sets the column offset in the range.
+        ///  
         /// </summary>
         public virtual int? FieldIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets FilterType.
+        /// Gets and sets the type fo filtering data.
+        ///  
         /// </summary>
         public virtual string FilterType { get; set; }
 
@@ -80,7 +82,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual Top10Filter Top10Filter { get; set; }
 
         /// <summary>
-        /// Gets or sets Visibledropdown.
+        /// Indicates whether the AutoFilter button for this column is visible.
+        ///  
         /// </summary>
         public virtual string Visibledropdown { get; set; }
 

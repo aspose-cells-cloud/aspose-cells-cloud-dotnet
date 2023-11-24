@@ -40,37 +40,37 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Title : ChartFrame
     {
         /// <summary>
-        /// Gets or sets IsVisible.
+        /// Represents whether the title is visible.
         /// </summary>
         public virtual bool? IsVisible { get; set; }
 
         /// <summary>
-        /// Gets or sets LinkedSource.
+        /// 
         /// </summary>
         public virtual string LinkedSource { get; set; }
 
         /// <summary>
-        /// Gets or sets RotationAngle.
+        /// 
         /// </summary>
         public virtual int? RotationAngle { get; set; }
 
         /// <summary>
-        /// Gets or sets Text.
+        /// Gets or sets the text of display unit label.
         /// </summary>
         public virtual string Text { get; set; }
 
         /// <summary>
-        /// Gets or sets TextDirection.
+        /// 
         /// </summary>
         public virtual string TextDirection { get; set; }
 
         /// <summary>
-        /// Gets or sets TextHorizontalAlignment.
+        /// 
         /// </summary>
         public virtual string TextHorizontalAlignment { get; set; }
 
         /// <summary>
-        /// Gets or sets TextVerticalAlignment.
+        /// 
         /// </summary>
         public virtual string TextVerticalAlignment { get; set; }
 

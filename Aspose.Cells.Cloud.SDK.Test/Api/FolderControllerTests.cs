@@ -70,7 +70,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new CreateFolderRequest(
-                path: "OutResul/NewFolder",
+                path: "OutResult/NewFolder",
                 storageName: ""
             );
          this.CellsApi.CreateFolder(request);

@@ -35,22 +35,23 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// BatchProtectRequest.
+    /// Indicates batch protect file request
     /// </summary>
     public class BatchProtectRequest
     {
         /// <summary>
-        /// Gets or sets SourceFolder.
+        /// The directory stores files that need to format conversion.
+        ///             
         /// </summary>
         public virtual string SourceFolder { get; set; }
 
         /// <summary>
-        /// Gets or sets SourceStorage.
+        /// Aspose Cloud storage name
         /// </summary>
         public virtual string SourceStorage { get; set; }
 
         /// <summary>
-        /// Gets or sets MatchCondition.
+        /// Indicates the match condition that needs to be processed for the file name.
         /// </summary>
         public virtual MatchConditionRequest MatchCondition { get; set; }
 
@@ -60,17 +61,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string ProtectionType { get; set; }
 
         /// <summary>
-        /// Gets or sets Password.
+        ///             
         /// </summary>
         public virtual string Password { get; set; }
 
         /// <summary>
-        /// Gets or sets OutFolder.
+        /// The directory that stores files whose format conversion was successful.
         /// </summary>
         public virtual string OutFolder { get; set; }
 
         /// <summary>
-        /// Gets or sets OutStorage.
+        /// Aspose Cloud storage name.
         /// </summary>
         public virtual string OutStorage { get; set; }
 

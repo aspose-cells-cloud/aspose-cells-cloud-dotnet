@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// OperateObject.
+    /// 
     /// </summary>
     public class OperateObject
     {
         /// <summary>
-        /// Gets or sets OperateObjectType.
+        /// 
         /// </summary>
         public virtual string OperateObjectType { get; set; }
 
         /// <summary>
-        /// Gets or sets Position.
+        /// 
         /// </summary>
         public virtual OperateObjectPosition Position { get; set; }
 

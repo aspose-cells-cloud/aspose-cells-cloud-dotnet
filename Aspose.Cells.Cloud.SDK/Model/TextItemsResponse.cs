@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class TextItemsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets TextItems.
+        /// 
         /// </summary>
         public virtual TextItems TextItems { get; set; }
 

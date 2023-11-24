@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ListObjects : LinkElement
     {
         /// <summary>
-        /// Gets or sets ListObjectList.
+        /// 
         /// </summary>
         public virtual IList<LinkElement> ListObjectList { get; set; }
 
