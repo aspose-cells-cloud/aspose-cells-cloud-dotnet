@@ -47,34 +47,36 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostSplitRequest"/> class.
         /// </summary>
-        /// <param name="file">The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
-        /// <param name="format">The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
-        /// <param name="password"></param>
+        /// <param name="file">The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
+        /// <param name="outFormat">The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
+        /// <param name="password">The password needed to open an Excel file.</param>
         /// <param name="from">sheet index</param>
         /// <param name="to">sheet index</param>
-        /// <param name="checkExcelRestriction"></param>
-        public PostSplitRequest(IDictionary<string, System.IO.Stream> file, string format, string password = null, int? from = null, int? to = null, bool? checkExcelRestriction = null)
+        /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
+        /// <param name="region">The regional settings for workbook.</param>
+        public PostSplitRequest(IDictionary<string, System.IO.Stream> file, string outFormat, string password = null, int? from = null, int? to = null, bool? checkExcelRestriction = null, string region = null)
         {
             this.File = file;
-            this.format = format;
+            this.outFormat = outFormat;
             this.password = password;
             this.from = from;
             this.to = to;
             this.checkExcelRestriction = checkExcelRestriction;
+            this.region = region;
         }
 
         /// <summary>
-        /// The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)
+        /// The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)
         /// </summary>
         public IDictionary<string, System.IO.Stream> File { get; set; }
 
         /// <summary>
-        /// The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)
+        /// The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)
         /// </summary>
-        public string format { get; set; }
+        public string outFormat { get; set; }
 
         /// <summary>
-        /// Gets or sets password.
+        /// The password needed to open an Excel file.
         /// </summary>
         public string password { get; set; }
 
@@ -89,9 +91,14 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public int? to { get; set; }
 
         /// <summary>
-        /// Gets or sets checkExcelRestriction.
+        /// Whether check restriction of excel file when user modify cells related objects.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
+
+        /// <summary>
+        /// The regional settings for workbook.
+        /// </summary>
+        public string region { get; set; }
 
 
         /// <summary>
@@ -116,10 +123,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 throw new ApiException(400, "Missing required parameter 'file' when calling PostSplit");
             }
 
-            // verify the required parameter 'format' is set
-            if (string.IsNullOrEmpty (this.format ))
+            // verify the required parameter 'outFormat' is set
+            if (string.IsNullOrEmpty (this.outFormat ))
             {
-                throw new ApiException(400, "Missing required parameter 'format' when calling PostSplit");
+                throw new ApiException(400, "Missing required parameter 'outFormat' when calling PostSplit");
             }
 
             var path = baseUri + "/cells/split";
@@ -128,11 +135,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            path = UrlHelper.AddQueryParameterToUrl(path, "format", this.format);
+            path = UrlHelper.AddQueryParameterToUrl(path, "outFormat", this.outFormat);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if(this.from != null)  path = UrlHelper.AddQueryParameterToUrl(path, "from", this.from);
             if(this.to != null)  path = UrlHelper.AddQueryParameterToUrl(path, "to", this.to);
             if(this.checkExcelRestriction != null)  path = UrlHelper.AddQueryParameterToUrl(path, "checkExcelRestriction", this.checkExcelRestriction);
+            if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)

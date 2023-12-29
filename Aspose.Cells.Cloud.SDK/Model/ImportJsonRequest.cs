@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ImportJsonRequest
     {
         /// <summary>
-        /// XML file source
+        /// Json file source
         /// </summary>
         public virtual FileSource JsonFileSource { get; set; }
 

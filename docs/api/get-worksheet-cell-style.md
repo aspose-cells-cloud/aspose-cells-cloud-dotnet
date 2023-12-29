@@ -1,6 +1,6 @@
 # **getWorksheetCellStyle API**
 
-Gets cell's style description in worksheet. 
+Retrieve cell style descriptions in the worksheet. 
 
 ```bash
 
@@ -12,11 +12,11 @@ GET http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/cells/{cel
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|name|String|Path|Document name.|
+|name|String|Path|The file name.|
 |sheetName|String|Path|The worksheet name.|
 |cellName|String|Path|Cell's name.|
-|folder|String|Query|Document's folder.|
-|storageName|String|Query|Storage name.|
+|folder|String|Query|The folder where the file is situated.|
+|storageName|String|Query|The storage name where the file is situated.|
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/CellsController/GetWorksheetCellStyle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

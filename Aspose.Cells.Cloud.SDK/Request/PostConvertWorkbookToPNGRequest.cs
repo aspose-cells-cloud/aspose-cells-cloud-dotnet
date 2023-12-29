@@ -47,30 +47,37 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostConvertWorkbookToPNGRequest"/> class.
         /// </summary>
-        /// <param name="file">File to upload</param>
-        /// <param name="password"></param>
-        /// <param name="checkExcelRestriction"></param>
-        public PostConvertWorkbookToPNGRequest(IDictionary<string, System.IO.Stream> file, string password = null, bool? checkExcelRestriction = null)
+        /// <param name="file">The password needed to open an Excel file.</param>
+        /// <param name="password">The password needed to open an Excel file.</param>
+        /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
+        /// <param name="region">The regional settings for workbook.</param>
+        public PostConvertWorkbookToPNGRequest(IDictionary<string, System.IO.Stream> file, string password = null, bool? checkExcelRestriction = null, string region = null)
         {
             this.File = file;
             this.password = password;
             this.checkExcelRestriction = checkExcelRestriction;
+            this.region = region;
         }
 
         /// <summary>
-        /// File to upload
+        /// The password needed to open an Excel file.
         /// </summary>
         public IDictionary<string, System.IO.Stream> File { get; set; }
 
         /// <summary>
-        /// Gets or sets password.
+        /// The password needed to open an Excel file.
         /// </summary>
         public string password { get; set; }
 
         /// <summary>
-        /// Gets or sets checkExcelRestriction.
+        /// Whether check restriction of excel file when user modify cells related objects.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
+
+        /// <summary>
+        /// The regional settings for workbook.
+        /// </summary>
+        public string region { get; set; }
 
 
         /// <summary>
@@ -103,6 +110,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if(this.checkExcelRestriction != null)  path = UrlHelper.AddQueryParameterToUrl(path, "checkExcelRestriction", this.checkExcelRestriction);
+            if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)

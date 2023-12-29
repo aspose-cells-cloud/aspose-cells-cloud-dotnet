@@ -47,11 +47,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetCellStyleRequest"/> class.
         /// </summary>
-        /// <param name="name">Document name.</param>
+        /// <param name="name">The file name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="cellName">Cell's name.</param>
-        /// <param name="folder">Document's folder.</param>
-        /// <param name="storageName">Storage name.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public GetWorksheetCellStyleRequest(string name, string sheetName, string cellName, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -62,7 +62,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Document name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
@@ -77,12 +77,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string cellName { get; set; }
 
         /// <summary>
-        /// Document's folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

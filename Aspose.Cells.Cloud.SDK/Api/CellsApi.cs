@@ -66,7 +66,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
         /// <summary>
-        /// Get auto filters description in worksheet.
+        /// Retrieve the description of auto filters from a worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetAutoFilterRequest" /></param>
         public   AutoFilterResponse  GetWorksheetAutoFilter(GetWorksheetAutoFilterRequest request)
@@ -79,7 +79,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Adds date filter in worksheet.
+        /// Apply a date filter in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PutWorksheetDateFilterRequest" /></param>
         public   CellsCloudResponse  PutWorksheetDateFilter(PutWorksheetDateFilterRequest request)
@@ -92,8 +92,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Adds a filter for a filter column in worksheet.
-        ///             
+        /// Add a filter for a column in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PutWorksheetFilterRequest" /></param>
         public   CellsCloudResponse  PutWorksheetFilter(PutWorksheetFilterRequest request)
@@ -106,7 +105,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Adds an icon filter in worksheet.
+        /// Add an icon filter in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PutWorksheetIconFilterRequest" /></param>
         public   CellsCloudResponse  PutWorksheetIconFilter(PutWorksheetIconFilterRequest request)
@@ -119,8 +118,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Filters a list with a custom criteria in worksheet.
-        ///             
+        /// Filter a list with custom criteria in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PutWorksheetCustomFilterRequest" /></param>
         public   CellsCloudResponse  PutWorksheetCustomFilter(PutWorksheetCustomFilterRequest request)
@@ -133,7 +131,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Adds a dynamic filter in worksheet.
+        /// Add a dynamic filter in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PutWorksheetDynamicFilterRequest" /></param>
         public   CellsCloudResponse  PutWorksheetDynamicFilter(PutWorksheetDynamicFilterRequest request)
@@ -146,7 +144,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Filters the top 10 item in the list in worksheet
+        /// Filter the top 10 items in the list in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PutWorksheetFilterTop10Request" /></param>
         public   CellsCloudResponse  PutWorksheetFilterTop10(PutWorksheetFilterTop10Request request)
@@ -159,7 +157,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Adds a color filter in worksheet.
+        /// Add a color filter in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PutWorksheetColorFilterRequest" /></param>
         public   CellsCloudResponse  PutWorksheetColorFilter(PutWorksheetColorFilterRequest request)
@@ -172,7 +170,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Match all blank cell in the list.
+        /// Match all blank cells in the list.
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorksheetMatchBlanksRequest" /></param>
         public   CellsCloudResponse  PostWorksheetMatchBlanks(PostWorksheetMatchBlanksRequest request)
@@ -185,8 +183,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Match all not blank cell in the list.
-        ///             
+        /// Match all not blank cells in the list.
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorksheetMatchNonBlanksRequest" /></param>
         public   CellsCloudResponse  PostWorksheetMatchNonBlanks(PostWorksheetMatchNonBlanksRequest request)
@@ -199,7 +196,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Refresh auto filters in worksheet.
+        /// Refresh auto filters in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorksheetAutoFilterRefreshRequest" /></param>
         public   CellsCloudResponse  PostWorksheetAutoFilterRefresh(PostWorksheetAutoFilterRefreshRequest request)
@@ -212,8 +209,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Removes a date filter in worksheet.
-        ///             
+        /// Remove a date filter in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="DeleteWorksheetDateFilterRequest" /></param>
         public   CellsCloudResponse  DeleteWorksheetDateFilter(DeleteWorksheetDateFilterRequest request)
@@ -226,8 +222,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Deletes a filter for a filter column in worksheet.
-        ///             
+        /// Delete a filter for a column in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="DeleteWorksheetFilterRequest" /></param>
         public   CellsCloudResponse  DeleteWorksheetFilter(DeleteWorksheetFilterRequest request)
@@ -266,6 +261,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Batch converting files that meet specific matching conditions.
         /// </summary>
         /// <param name="request">Request. <see cref="PostBatchConvertRequest" /></param>
         public   Stream  PostBatchConvert(PostBatchConvertRequest request)
@@ -278,6 +274,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Batch protecting files that meet specific matching conditions.
         /// </summary>
         /// <param name="request">Request. <see cref="PostBatchProtectRequest" /></param>
         public   Stream  PostBatchProtect(PostBatchProtectRequest request)
@@ -290,6 +287,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Batch locking files that meet specific matching conditions.
         /// </summary>
         /// <param name="request">Request. <see cref="PostBatchLockRequest" /></param>
         public   Stream  PostBatchLock(PostBatchLockRequest request)
@@ -302,6 +300,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Batch unlocking files that meet specific matching conditions.
         /// </summary>
         /// <param name="request">Request. <see cref="PostBatchUnlockRequest" /></param>
         public   Stream  PostBatchUnlock(PostBatchUnlockRequest request)
@@ -314,6 +313,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Batch splitting files that meet specific matching conditions.
         /// </summary>
         /// <param name="request">Request. <see cref="PostBatchSplitRequest" /></param>
         public   Stream  PostBatchSplit(PostBatchSplitRequest request)
@@ -326,7 +326,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Clear cells contents in worksheet.
+        /// Clear cell area contents in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PostClearContentsRequest" /></param>
         public   CellsCloudResponse  PostClearContents(PostClearContentsRequest request)
@@ -339,7 +339,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Clear cells formats in worksheet.
+        /// Clear cell formats in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PostClearFormatsRequest" /></param>
         public   CellsCloudResponse  PostClearFormats(PostClearFormatsRequest request)
@@ -352,7 +352,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Updates cell's range style in worksheet.
+        /// Update cell range styles in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PostUpdateWorksheetRangeStyleRequest" /></param>
         public   CellsCloudResponse  PostUpdateWorksheetRangeStyle(PostUpdateWorksheetRangeStyleRequest request)
@@ -365,7 +365,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Merge cells in worksheet.
+        /// Merge cells in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorksheetMergeRequest" /></param>
         public   CellsCloudResponse  PostWorksheetMerge(PostWorksheetMergeRequest request)
@@ -378,7 +378,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Unmerge cells in worksheet.
+        /// Unmerge cells in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorksheetUnmergeRequest" /></param>
         public   CellsCloudResponse  PostWorksheetUnmerge(PostWorksheetUnmergeRequest request)
@@ -391,7 +391,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Gets cells description in some format.
+        /// Retrieve cell descriptions in a specified format.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetCellsRequest" /></param>
         public   CellsResponse  GetWorksheetCells(GetWorksheetCellsRequest request)
@@ -404,7 +404,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Gets cell data by cell or method name in worksheet.
+        /// Retrieve cell data using either cell reference or method name in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetCellRequest" /></param>
         public   string  GetWorksheetCell(GetWorksheetCellRequest request)
@@ -417,7 +417,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Gets cell's style description in worksheet.
+        /// Retrieve cell style descriptions in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetCellStyleRequest" /></param>
         public   StyleResponse  GetWorksheetCellStyle(GetWorksheetCellStyleRequest request)
@@ -430,7 +430,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Sets cell value by cell name in worksheet.
+        /// Set cell value using cell name in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorksheetCellSetValueRequest" /></param>
         public   CellResponse  PostWorksheetCellSetValue(PostWorksheetCellSetValueRequest request)
@@ -443,7 +443,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Sets cell's style by cell name in worksheet.
+        /// Set cell style using cell name in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PostUpdateWorksheetCellStyleRequest" /></param>
         public   CellsCloudResponse  PostUpdateWorksheetCellStyle(PostUpdateWorksheetCellStyleRequest request)
@@ -456,7 +456,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Sets the value of the range in worksheet.
+        /// Set the value of the range in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PostSetCellRangeValueRequest" /></param>
         public   CellsCloudResponse  PostSetCellRangeValue(PostSetCellRangeValueRequest request)
@@ -469,7 +469,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Copies data to destination cell from a source cell in worksheet.
+        /// Copy data from a source cell to a destination cell in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PostCopyCellIntoCellRequest" /></param>
         public   CellsCloudResponse  PostCopyCellIntoCell(PostCopyCellIntoCellRequest request)
@@ -482,7 +482,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Gets the html string which contains data and some formats in this cell.
+        /// Retrieve the HTML string containing data and specific formats in this cell.
         /// </summary>
         /// <param name="request">Request. <see cref="GetCellHtmlStringRequest" /></param>
         public   string  GetCellHtmlString(GetCellHtmlStringRequest request)
@@ -495,7 +495,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Sets the html string which contains data and some formats in this cell.
+        /// Set the HTML string containing data and specific formats in this cell.
         /// </summary>
         /// <param name="request">Request. <see cref="PostSetCellHtmlStringRequest" /></param>
         public   CellsCloudResponse  PostSetCellHtmlString(PostSetCellHtmlStringRequest request)
@@ -508,7 +508,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Calculates cell formula in worksheet.
+        /// Calculate cell formula in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PostCellCalculateRequest" /></param>
         public   CellsCloudResponse  PostCellCalculate(PostCellCalculateRequest request)
@@ -521,7 +521,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Sets cell characters in worksheet.
+        /// Set cell characters in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PostCellCharactersRequest" /></param>
         public   CellsCloudResponse  PostCellCharacters(PostCellCharactersRequest request)
@@ -834,7 +834,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
         /// <summary>
         /// Applies formats for a whole row in worksheet.
-        ///             
         /// </summary>
         /// <param name="request">Request. <see cref="PostRowStyleRequest" /></param>
         public   CellsCloudResponse  PostRowStyle(PostRowStyleRequest request)
@@ -847,7 +846,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Gets cells description in some format.
+        /// Retrieve cell descriptions in a specified format.
         /// </summary>
         /// <param name="request">Request. <see cref="GetCellsCloudServicesHealthCheckRequest" /></param>
         public   string  GetCellsCloudServicesHealthCheck(GetCellsCloudServicesHealthCheckRequest request)
@@ -860,7 +859,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Aspose.Cells Cloud service health status check(old). 
+        /// Aspose.Cells Cloud service health status check.
         /// </summary>
         /// <param name="request">Request. <see cref="GetCellsCloudServiceStatusRequest" /></param>
         public   string  GetCellsCloudServiceStatus(GetCellsCloudServiceStatusRequest request)
@@ -873,7 +872,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Gets chart area description in worksheet.
+        /// Retrieve chart area description in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetChartAreaRequest" /></param>
         public   ChartAreaResponse  GetChartArea(GetChartAreaRequest request)
@@ -886,7 +885,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Gets chart area fill format description in worksheet.
+        /// Retrieve chart area fill format description in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetChartAreaFillFormatRequest" /></param>
         public   FillFormatResponse  GetChartAreaFillFormat(GetChartAreaFillFormatRequest request)
@@ -899,7 +898,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Gets chart area border description.
+        /// Retrieve chart area border description.
         /// </summary>
         /// <param name="request">Request. <see cref="GetChartAreaBorderRequest" /></param>
         public   LineResponse  GetChartAreaBorder(GetChartAreaBorderRequest request)
@@ -912,7 +911,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Get worksheet charts description.
+        /// Retrieve descriptions of charts in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetChartsRequest" /></param>
         public   ChartsResponse  GetWorksheetCharts(GetWorksheetChartsRequest request)
@@ -925,7 +924,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Gets chart in some format.
+        /// Retrieve the chart in a specified format.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetChartRequest" /></param>
         public   Stream  GetWorksheetChart(GetWorksheetChartRequest request)
@@ -938,7 +937,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Adds new chart in worksheet.
+        /// Add a new chart in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PutWorksheetAddChartRequest" /></param>
         public   CellsCloudResponse  PutWorksheetAddChart(PutWorksheetAddChartRequest request)
@@ -951,7 +950,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Deletes a chart by index in worksheet.
+        /// Delete a chart by index in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="DeleteWorksheetDeleteChartRequest" /></param>
         public   CellsCloudResponse  DeleteWorksheetDeleteChart(DeleteWorksheetDeleteChartRequest request)
@@ -964,7 +963,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Update chart propreties in worksheet.
+        /// Update chart properties in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorksheetChartRequest" /></param>
         public   CellsCloudResponse  PostWorksheetChart(PostWorksheetChartRequest request)
@@ -977,7 +976,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Gets chart legend description in worksheet.
+        /// Retrieve chart legend description in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetChartLegendRequest" /></param>
         public   LegendResponse  GetWorksheetChartLegend(GetWorksheetChartLegendRequest request)
@@ -990,7 +989,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Updates chart legend in worksheet.
+        /// Update chart legend in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorksheetChartLegendRequest" /></param>
         public   CellsCloudResponse  PostWorksheetChartLegend(PostWorksheetChartLegendRequest request)
@@ -1331,7 +1330,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Exports workbook to some format.
+        /// Retrieve workbooks in various formats.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorkbookRequest" /></param>
         public   Stream  GetWorkbook(GetWorkbookRequest request)
@@ -1344,7 +1343,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Converts workbook from request content to some format.
+        /// Convert the workbook from the requested content into files in different formats.
         /// </summary>
         /// <param name="request">Request. <see cref="PutConvertWorkbookRequest" /></param>
         public   Stream  PutConvertWorkbook(PutConvertWorkbookRequest request)
@@ -1357,7 +1356,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Converts document and saves result to storage.
+        /// Save an Excel file in various formats.
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorkbookSaveAsRequest" /></param>
         public   SaveResponse  PostWorkbookSaveAs(PostWorkbookSaveAsRequest request)
@@ -1370,6 +1369,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Convert Excel file to PDF files.
         /// </summary>
         /// <param name="request">Request. <see cref="PostConvertWorkbookToPDFRequest" /></param>
         public   FileInfo  PostConvertWorkbookToPDF(PostConvertWorkbookToPDFRequest request)
@@ -1382,6 +1382,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Convert Excel file to PNG files.
         /// </summary>
         /// <param name="request">Request. <see cref="PostConvertWorkbookToPNGRequest" /></param>
         public   FileInfo  PostConvertWorkbookToPNG(PostConvertWorkbookToPNGRequest request)
@@ -1394,6 +1395,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Convert Excel file to Docx files.
         /// </summary>
         /// <param name="request">Request. <see cref="PostConvertWorkbookToDocxRequest" /></param>
         public   FileInfo  PostConvertWorkbookToDocx(PostConvertWorkbookToDocxRequest request)
@@ -1406,6 +1408,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Convert Excel file to Pptx files.
         /// </summary>
         /// <param name="request">Request. <see cref="PostConvertWorkbookToPptxRequest" /></param>
         public   FileInfo  PostConvertWorkbookToPptx(PostConvertWorkbookToPptxRequest request)
@@ -1418,6 +1421,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Convert Excel file to HTML files.
         /// </summary>
         /// <param name="request">Request. <see cref="PostConvertWorkbookToHtmlRequest" /></param>
         public   FileInfo  PostConvertWorkbookToHtml(PostConvertWorkbookToHtmlRequest request)
@@ -1430,6 +1434,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Convert Excel file to Markdown files.
         /// </summary>
         /// <param name="request">Request. <see cref="PostConvertWorkbookToMarkdownRequest" /></param>
         public   FileInfo  PostConvertWorkbookToMarkdown(PostConvertWorkbookToMarkdownRequest request)
@@ -1442,6 +1447,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Convert Excel file to Json files.
         /// </summary>
         /// <param name="request">Request. <see cref="PostConvertWorkbookToJsonRequest" /></param>
         public   FileInfo  PostConvertWorkbookToJson(PostConvertWorkbookToJsonRequest request)
@@ -1454,6 +1460,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Convert Excel file to SQL Script files.
         /// </summary>
         /// <param name="request">Request. <see cref="PostConvertWorkbookToSQLRequest" /></param>
         public   FileInfo  PostConvertWorkbookToSQL(PostConvertWorkbookToSQLRequest request)
@@ -1466,6 +1473,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Convert Excel file to Csv files.
         /// </summary>
         /// <param name="request">Request. <see cref="PostConvertWorkbookToCSVRequest" /></param>
         public   FileInfo  PostConvertWorkbookToCSV(PostConvertWorkbookToCSVRequest request)
@@ -1478,7 +1486,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Export excel internal elements or itself to kinds of format files.
+        /// Export Excel internal elements or the workbook itself to various format files.
         /// </summary>
         /// <param name="request">Request. <see cref="PostExportRequest" /></param>
         public   FilesResult  PostExport(PostExportRequest request)
@@ -1491,9 +1499,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Export XML data from Excel file. 
-        /// When there are Xml Maps in Excel file, export xml data. 
-        /// When there is not xml map in Excel file, convert Excel file to xml file. 
+        /// Export XML data from an Excel file.
+        /// When there are XML Maps in an Excel file, export XML data. When there is no XML map in the Excel file, convert the Excel file to an XML file.
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorkbookExportXMLRequest" /></param>
         public   Stream  PostWorkbookExportXML(PostWorkbookExportXMLRequest request)
@@ -1506,8 +1513,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Imports/Updates an XML data file into the workbook.
-        /// The XML data file can be a cloud file or HTTP URI data.
+        /// Import a JSON data file into the workbook. The JSON data file can either be a cloud file or data from an HTTP URI.
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorkbookImportJsonRequest" /></param>
         public   Stream  PostWorkbookImportJson(PostWorkbookImportJsonRequest request)
@@ -1520,8 +1526,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Imports/Updates an XML data file into the workbook.
-        /// The XML data file can be a cloud file or HTTP URI data.
+        /// Import an XML data file into an Excel file. The XML data file can either be a cloud file or data from an HTTP URI.
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorkbookImportXMLRequest" /></param>
         public   Stream  PostWorkbookImportXML(PostWorkbookImportXMLRequest request)
@@ -1534,7 +1539,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Imports data into workbook.
+        /// Import data into the Excel file.
         /// </summary>
         /// <param name="request">Request. <see cref="PostImportDataRequest" /></param>
         public   CellsCloudResponse  PostImportData(PostImportDataRequest request)
@@ -1625,7 +1630,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Combine data files and template files to kinds of format files. 
+        /// Assemble data files with template files to generate files in various formats.
         /// </summary>
         /// <param name="request">Request. <see cref="PostAssembleRequest" /></param>
         public   FilesResult  PostAssemble(PostAssembleRequest request)
@@ -1638,7 +1643,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Compress XLS, XLSX, XLSM, XLSB, ODS and more
+        /// Compress files and generate target files in various formats, supported file formats are include Xls, Xlsx, Xlsm, Xlsb, Ods and more.
         /// </summary>
         /// <param name="request">Request. <see cref="PostCompressRequest" /></param>
         public   FilesResult  PostCompress(PostCompressRequest request)
@@ -1651,7 +1656,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Merge cells in worksheet.
+        /// Merge cells in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PostMergeRequest" /></param>
         public   FileInfo  PostMerge(PostMergeRequest request)
@@ -1664,7 +1669,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Split Excel spreadsheet files by worksheet, save as kinds of format files.
+        /// Split Excel spreadsheet files based on worksheets and create output files in various formats.
         /// </summary>
         /// <param name="request">Request. <see cref="PostSplitRequest" /></param>
         public   FilesResult  PostSplit(PostSplitRequest request)
@@ -1677,7 +1682,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Search specify the text from excel files.
+        /// Search for specified text within Excel files.
         /// </summary>
         /// <param name="request">Request. <see cref="PostSearchRequest" /></param>
         public   IList<TextItem>  PostSearch(PostSearchRequest request)
@@ -1690,7 +1695,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Use new text to replace specify the text from excel files.
+        /// Replace specified text with new text in Excel files.
         /// </summary>
         /// <param name="request">Request. <see cref="PostReplaceRequest" /></param>
         public   FilesResult  PostReplace(PostReplaceRequest request)
@@ -1703,7 +1708,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Import data into excel file.
+        /// Import data into an Excel file and generate output files in various formats.
         /// </summary>
         /// <param name="request">Request. <see cref="PostImportRequest" /></param>
         public   FilesResult  PostImport(PostImportRequest request)
@@ -1716,7 +1721,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Add Text Watermark to Excel files.
+        /// Add Text Watermark to Excel files and generate output files in various formats.
         /// </summary>
         /// <param name="request">Request. <see cref="PostWatermarkRequest" /></param>
         public   FilesResult  PostWatermark(PostWatermarkRequest request)
@@ -1729,7 +1734,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Clear excel internal elements for excel files
+        /// Clear internal elements in Excel files and generate output files in various formats.
         /// </summary>
         /// <param name="request">Request. <see cref="PostClearObjectsRequest" /></param>
         public   FilesResult  PostClearObjects(PostClearObjectsRequest request)
@@ -1742,7 +1747,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Reverse rows or columns of Excel files, save as kinds of format files.
+        /// Reverse rows or columns in Excel files and create output files in various formats.
         /// </summary>
         /// <param name="request">Request. <see cref="PostReverseRequest" /></param>
         public   FilesResult  PostReverse(PostReverseRequest request)
@@ -1755,6 +1760,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Repair abnormal files and generate files in various formats.
         /// </summary>
         /// <param name="request">Request. <see cref="PostRepairRequest" /></param>
         public   FilesResult  PostRepair(PostRepairRequest request)
@@ -1767,7 +1773,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Reverse rows or columns of Excel files, save as kinds of format files.
+        /// Rotate rows, columns, or other objects in Excel files and save them in various formats.
         /// </summary>
         /// <param name="request">Request. <see cref="PostRotateRequest" /></param>
         public   FilesResult  PostRotate(PostRotateRequest request)
@@ -1780,6 +1786,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Update document properties in Excel file, and save them is various formats.
         /// </summary>
         /// <param name="request">Request. <see cref="PostMetadataRequest" /></param>
         public   FilesResult  PostMetadata(PostMetadataRequest request)
@@ -1792,6 +1799,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Get cells document properties.
         /// </summary>
         /// <param name="request">Request. <see cref="GetMetadataRequest" /></param>
         public   IList<CellsDocumentProperty>  GetMetadata(GetMetadataRequest request)
@@ -1804,6 +1812,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Delete cells document properties in Excel file, and save them is various formats.
         /// </summary>
         /// <param name="request">Request. <see cref="DeleteMetadataRequest" /></param>
         public   FilesResult  DeleteMetadata(DeleteMetadataRequest request)
@@ -2245,7 +2254,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Updates page header in worksheet. 
+        /// Updates page header in worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PostHeaderRequest" /></param>
         public   CellsCloudResponse  PostHeader(PostHeaderRequest request)
@@ -2271,7 +2280,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Update  page footer description in worksheet. 
+        /// Update  page footer description in worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PostFooterRequest" /></param>
         public   CellsCloudResponse  PostFooter(PostFooterRequest request)
@@ -2698,7 +2707,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Digital Signature.
+        /// Excel file digital signature.
         /// </summary>
         /// <param name="request">Request. <see cref="PostDigitalSignatureRequest" /></param>
         public   CellsCloudResponse  PostDigitalSignature(PostDigitalSignatureRequest request)
@@ -2711,7 +2720,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Encripts workbook.
+        /// Excel Encryption.
         /// </summary>
         /// <param name="request">Request. <see cref="PostEncryptWorkbookRequest" /></param>
         public   CellsCloudResponse  PostEncryptWorkbook(PostEncryptWorkbookRequest request)
@@ -2724,7 +2733,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Decrypts workbook.
+        /// Excel files decryption.
         /// </summary>
         /// <param name="request">Request. <see cref="DeleteDecryptWorkbookRequest" /></param>
         public   CellsCloudResponse  DeleteDecryptWorkbook(DeleteDecryptWorkbookRequest request)
@@ -2737,7 +2746,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Protects workbook.
+        /// Excel protection.
         /// </summary>
         /// <param name="request">Request. <see cref="PostProtectWorkbookRequest" /></param>
         public   CellsCloudResponse  PostProtectWorkbook(PostProtectWorkbookRequest request)
@@ -2750,7 +2759,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Unprotects workbook.
+        /// Excel unprotection.
         /// </summary>
         /// <param name="request">Request. <see cref="DeleteUnProtectWorkbookRequest" /></param>
         public   CellsCloudResponse  DeleteUnProtectWorkbook(DeleteUnProtectWorkbookRequest request)
@@ -2763,7 +2772,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Protects document from changes.
+        /// Excel file write protection.
         /// </summary>
         /// <param name="request">Request. <see cref="PutDocumentProtectFromChangesRequest" /></param>
         public   CellsCloudResponse  PutDocumentProtectFromChanges(PutDocumentProtectFromChangesRequest request)
@@ -2776,7 +2785,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Unprotects document from changes.
+        /// Excel file cancel write protection.
         /// </summary>
         /// <param name="request">Request. <see cref="DeleteDocumentUnProtectFromChangesRequest" /></param>
         public   CellsCloudResponse  DeleteDocumentUnProtectFromChanges(DeleteDocumentUnProtectFromChangesRequest request)
@@ -2789,7 +2798,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Unprotect password protected Excel file.
+        /// Unlock Excel files.
         /// </summary>
         /// <param name="request">Request. <see cref="PostUnlockRequest" /></param>
         public   FilesResult  PostUnlock(PostUnlockRequest request)
@@ -2802,7 +2811,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Setting access password.
+        /// Lock Excel files.
         /// </summary>
         /// <param name="request">Request. <see cref="PostLockRequest" /></param>
         public   FilesResult  PostLock(PostLockRequest request)
@@ -2815,7 +2824,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Protect MS Excel and OpenDocument Spreadsheet by making them password protected.
+        /// Excel files encryption.
         /// </summary>
         /// <param name="request">Request. <see cref="PostProtectRequest" /></param>
         public   FilesResult  PostProtect(PostProtectRequest request)
@@ -2841,7 +2850,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Combines a range of cells into a single cell. 
+        /// Combines a range of cells into a single cell.
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorksheetCellsRangeMergeRequest" /></param>
         public   CellsCloudResponse  PostWorksheetCellsRangeMerge(PostWorksheetCellsRangeMergeRequest request)
@@ -2894,7 +2903,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
         /// <summary>
         /// Puts a value into the range, if appropriate the value will be converted to other data type and cell's number format will be reset.
-        ///             
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorksheetCellsRangeValueRequest" /></param>
         public   CellsCloudResponse  PostWorksheetCellsRangeValue(PostWorksheetCellsRangeValueRequest request)
@@ -2908,7 +2916,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
         /// <summary>
         /// Moves the current range to the dest range.
-        ///             
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorksheetCellsRangeMoveToRequest" /></param>
         public   CellsCloudResponse  PostWorksheetCellsRangeMoveTo(PostWorksheetCellsRangeMoveToRequest request)
@@ -2921,7 +2928,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Sets outline border around a range of cells.
+        /// Sets data sort around a range of cells.
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorksheetCellsRangeSortRequest" /></param>
         public   CellsCloudResponse  PostWorksheetCellsRangeSort(PostWorksheetCellsRangeSortRequest request)
@@ -2974,7 +2981,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
         /// <summary>
         /// Inserts a range of cells and shift cells according to the shift option.
-        ///             
         /// </summary>
         /// <param name="request">Request. <see cref="PutWorksheetCellsRangeRequest" /></param>
         public   CellsCloudResponse  PutWorksheetCellsRange(PutWorksheetCellsRangeRequest request)
@@ -3258,7 +3264,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Update workbook's name. 
+        /// Update workbook's name.
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorkbookNameRequest" /></param>
         public   CellsCloudResponse  PostWorkbookName(PostWorkbookNameRequest request)

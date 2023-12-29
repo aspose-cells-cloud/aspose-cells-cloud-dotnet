@@ -47,14 +47,14 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostBatchProtectRequest"/> class.
         /// </summary>
-        /// <param name="batchProtectRequest"></param>
+        /// <param name="batchProtectRequest">BatchProtectRequest Batch protection file request.  </param>
         public PostBatchProtectRequest(BatchProtectRequest batchProtectRequest)
         {
             this.batchProtectRequest = batchProtectRequest;
         }
 
         /// <summary>
-        /// Gets or sets batchProtectRequest.
+        /// BatchProtectRequest Batch protection file request.  
         /// </summary>
         public BatchProtectRequest batchProtectRequest { get; set; }
 

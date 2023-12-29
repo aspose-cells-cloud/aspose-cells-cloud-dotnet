@@ -1,6 +1,6 @@
 # **postWorksheetCellsRangeSort API**
 
-Sets outline border around a range of cells. 
+Sets data sort around a range of cells. 
 
 ```bash
 

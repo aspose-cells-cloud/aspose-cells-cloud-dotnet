@@ -49,12 +49,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         /// <param name="file">The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).</param>
         /// <param name="format">The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).</param>
-        /// <param name="password">The workbook password.</param>
-        /// <param name="outPath">Path to save result</param>
-        /// <param name="storageName">Storage name.</param>
-        /// <param name="checkExcelRestriction"></param>
-        /// <param name="streamFormat"></param>
-        public PutConvertWorkbookRequest(IDictionary<string, System.IO.Stream> file, string format = null, string password = null, string outPath = null, string storageName = null, bool? checkExcelRestriction = null, string streamFormat = null)
+        /// <param name="password">The password needed to open an Excel file.</param>
+        /// <param name="outPath">Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
+        /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
+        /// <param name="streamFormat">The format of the input file stream. </param>
+        /// <param name="region">The regional settings for workbook.</param>
+        public PutConvertWorkbookRequest(IDictionary<string, System.IO.Stream> file, string format = null, string password = null, string outPath = null, string storageName = null, bool? checkExcelRestriction = null, string streamFormat = null, string region = null)
         {
             this.File = file;
             this.format = format;
@@ -63,6 +64,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.storageName = storageName;
             this.checkExcelRestriction = checkExcelRestriction;
             this.streamFormat = streamFormat;
+            this.region = region;
         }
 
         /// <summary>
@@ -76,29 +78,34 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string format { get; set; }
 
         /// <summary>
-        /// The workbook password.
+        /// The password needed to open an Excel file.
         /// </summary>
         public string password { get; set; }
 
         /// <summary>
-        /// Path to save result
+        /// Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder.
         /// </summary>
         public string outPath { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 
         /// <summary>
-        /// Gets or sets checkExcelRestriction.
+        /// Whether check restriction of excel file when user modify cells related objects.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
 
         /// <summary>
-        /// Gets or sets streamFormat.
+        /// The format of the input file stream. 
         /// </summary>
         public string streamFormat { get; set; }
+
+        /// <summary>
+        /// The regional settings for workbook.
+        /// </summary>
+        public string region { get; set; }
 
 
         /// <summary>
@@ -135,6 +142,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
             if(this.checkExcelRestriction != null)  path = UrlHelper.AddQueryParameterToUrl(path, "checkExcelRestriction", this.checkExcelRestriction);
             if (!string.IsNullOrEmpty(this.streamFormat))  path = UrlHelper.AddQueryParameterToUrl(path, "streamFormat", this.streamFormat);
+            if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)

@@ -1,41 +1,44 @@
-﻿/* 
- * <summary>
- *  Copyright (c) 2022 Aspose.Cells Cloud
- *  Permission is hereby granted, free of charge, to any person obtaining a copy
- *  of this software and associated documentation files (the "Software"), to deal
- *  in the Software without restriction, including without limitation the rights
- *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- *  copies of the Software, and to permit persons to whom the Software is
- *  furnished to do so, subject to the following conditions:
- * 
- *  The above copyright notice and this permission notice shall be included in all 
- *  copies or substantial portions of the Software.
- * 
- *  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- *  SOFTWARE.
- * </summary>
- */
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright company="Aspose" file="CellsApiExtension.cs.cs">
+//   Copyright (c) 2023 Aspose.Cells Cloud
+// </copyright>
+// <summary>
+//   Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+// 
+//  The above copyright notice and this permission notice shall be included in all
+//  copies or substantial portions of the Software.
+// 
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+//  SOFTWARE.
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
+
 namespace Aspose.Cells.Cloud.SDK.Api
 {
-    using Aspose.Cells.Cloud.SDK.Internal.Extensions;    
+    using Aspose.Cells.Cloud.SDK.Extensions;    
     using System;
     using System.Collections.Generic;
     using System.IO;
-    /// <summary>
+    ///<summary>
     /// 
-    /// </summary>
+    ///</summary>
     public static class CellsApiExtension
     {
-        /// <summary>
+        ///<summary>
         /// 
-        /// </summary>
-        /// <param name="conversionRequest"></param>
-        public static void Convert(this CellsApi cellsApi, Requests.ConversionRequest conversionRequest)
+        ///</summary>
+        ///<param name="conversionRequest"></param>
+        public static void Convert(this CellsApi cellsApi, Request.ConversionRequest conversionRequest)
         {
             var password = string.Empty;
             var outPath = string.Empty;
@@ -73,11 +76,11 @@ namespace Aspose.Cells.Cloud.SDK.Api
             }
         }
 
-        /// <summary>
+        ///<summary>
         /// 
-        /// </summary>
-        /// <param name="mergeRequest"></param>
-        public static void Merge(this CellsApi cellsApi,  Requests.MergeRequest mergeRequest)
+        ///</summary>
+        ///<param name="mergeRequest"></param>
+        public static void Merge(this CellsApi cellsApi,  Request.MergeRequest mergeRequest)
         {
             if (mergeRequest.InputFiles == null || mergeRequest.InputFiles.Length ==0)
             {
@@ -90,7 +93,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                     throw new ApplicationException("Input file no exists.");
                 }
             }
-            
+
             if (string.IsNullOrEmpty(mergeRequest.OutputPath))
             {
                 throw new ApplicationException("OutputPath is Empty.");
@@ -103,7 +106,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 request.File.Add((new System.IO.FileInfo(filename)).Name, File.OpenRead(filename));
             }
 
-            request.format = mergeRequest.OutputPath.GetFileFormat();
+            request.outFormat = mergeRequest.OutputPath.GetFileFormat();
             request.mergeToOneSheet = mergeRequest.mergeToOneSheet;
 
             Model.FileInfo fileInfo = cellsApi.PostMerge(request);
@@ -125,7 +128,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 resultStream.Close();
             }
         }
-        public static void Unlock(this CellsApi cellsApi, Requests.UnlockRequest unlockRequest)
+        public static void Unlock(this CellsApi cellsApi, Request.UnlockRequest unlockRequest)
         {
             if (unlockRequest.InputPath == null )
             {
@@ -168,7 +171,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             }
 
         }
-        public static void Protect(this CellsApi cellsApi , Requests.ProtectRequest protectRequest)
+        public static void Protect(this CellsApi cellsApi , Request.ProtectRequest protectRequest)
         {
             if (protectRequest.InputPath == null)
             {
@@ -182,7 +185,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
             {
                 throw new ApplicationException("OutputPath is Empty.");
             }
-            
+
             Request.PostProtectRequest request = new Request.PostProtectRequest();
             request.File = new Dictionary<string, Stream>();
             request.File.Add((new System.IO.FileInfo(protectRequest.InputPath)).Name, File.OpenRead(protectRequest.InputPath));

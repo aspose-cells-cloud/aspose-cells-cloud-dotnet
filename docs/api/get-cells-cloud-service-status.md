@@ -1,6 +1,6 @@
 # **getCellsCloudServiceStatus API**
 
-Aspose.Cells Cloud service health status check(old).  
+Aspose.Cells Cloud service health status check. 
 
 ```bash
 

@@ -52,6 +52,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// 
         /// </summary>
+        public virtual string Region { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public virtual SaveOptions SaveOptions { get; set; }
 
         /// <summary>
@@ -64,6 +69,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("class ConvertTaskParameter {\n");
             sb.Append("  Workbook: ").Append(this.Workbook).Append("\n");
             sb.Append("  DestinationFile: ").Append(this.DestinationFile).Append("\n");
+            sb.Append("  Region: ").Append(this.Region).Append("\n");
             sb.Append("  SaveOptions: ").Append(this.SaveOptions).Append("\n");
             sb.Append("}\n");
             return sb.ToString();

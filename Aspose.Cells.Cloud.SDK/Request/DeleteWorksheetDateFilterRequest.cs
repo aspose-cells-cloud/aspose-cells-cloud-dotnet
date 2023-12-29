@@ -57,8 +57,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="hour">The hour.</param>
         /// <param name="minute">The minute.</param>
         /// <param name="second">The second.</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public DeleteWorksheetDateFilterRequest(string name, string sheetName, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -126,12 +126,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public int? second { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

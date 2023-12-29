@@ -47,44 +47,51 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostMergeRequest"/> class.
         /// </summary>
-        /// <param name="file">The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
-        /// <param name="format"></param>
-        /// <param name="mergeToOneSheet"></param>
-        /// <param name="password"></param>
-        /// <param name="checkExcelRestriction"></param>
-        public PostMergeRequest(IDictionary<string, System.IO.Stream> file, string format = null, bool? mergeToOneSheet = null, string password = null, bool? checkExcelRestriction = null)
+        /// <param name="file">The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
+        /// <param name="outFormat">The password needed to open an Excel file.</param>
+        /// <param name="mergeToOneSheet">Whether check restriction of excel file when user modify cells related objects.</param>
+        /// <param name="password">The regional settings for workbook.</param>
+        /// <param name="checkExcelRestriction">Upload files.</param>
+        /// <param name="region"></param>
+        public PostMergeRequest(IDictionary<string, System.IO.Stream> file, string outFormat = null, bool? mergeToOneSheet = null, string password = null, bool? checkExcelRestriction = null, string region = null)
         {
             this.File = file;
-            this.format = format;
+            this.outFormat = outFormat;
             this.mergeToOneSheet = mergeToOneSheet;
             this.password = password;
             this.checkExcelRestriction = checkExcelRestriction;
+            this.region = region;
         }
 
         /// <summary>
-        /// The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)
+        /// The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)
         /// </summary>
         public IDictionary<string, System.IO.Stream> File { get; set; }
 
         /// <summary>
-        /// Gets or sets format.
+        /// The password needed to open an Excel file.
         /// </summary>
-        public string format { get; set; }
+        public string outFormat { get; set; }
 
         /// <summary>
-        /// Gets or sets mergeToOneSheet.
+        /// Whether check restriction of excel file when user modify cells related objects.
         /// </summary>
         public bool? mergeToOneSheet { get; set; }
 
         /// <summary>
-        /// Gets or sets password.
+        /// The regional settings for workbook.
         /// </summary>
         public string password { get; set; }
 
         /// <summary>
-        /// Gets or sets checkExcelRestriction.
+        /// Upload files.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
+
+        /// <summary>
+        /// Gets or sets region.
+        /// </summary>
+        public string region { get; set; }
 
 
         /// <summary>
@@ -115,10 +122,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            if (!string.IsNullOrEmpty(this.format))  path = UrlHelper.AddQueryParameterToUrl(path, "format", this.format);
+            if (!string.IsNullOrEmpty(this.outFormat))  path = UrlHelper.AddQueryParameterToUrl(path, "outFormat", this.outFormat);
             if(this.mergeToOneSheet != null)  path = UrlHelper.AddQueryParameterToUrl(path, "mergeToOneSheet", this.mergeToOneSheet);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if(this.checkExcelRestriction != null)  path = UrlHelper.AddQueryParameterToUrl(path, "checkExcelRestriction", this.checkExcelRestriction);
+            if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)

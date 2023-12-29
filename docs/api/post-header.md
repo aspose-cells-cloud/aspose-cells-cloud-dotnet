@@ -1,6 +1,6 @@
 # **postHeader API**
 
-Updates page header in worksheet.  
+Updates page header in worksheet. 
 
 ```bash
 

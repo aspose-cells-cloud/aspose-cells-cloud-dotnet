@@ -1,6 +1,6 @@
 # **postWorkbookImportJson API**
 
-Imports/Updates an XML data file into the workbook.The XML data file can be a cloud file or HTTP URI data. 
+Import a JSON data file into the workbook. The JSON data file can either be a cloud file or data from an HTTP URI. 
 
 ```bash
 
@@ -12,14 +12,15 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/importjson
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|name|String|Path|The workbook(Excel/ODS/...) name.|
-|importJsonRequest|Class|Body||
-|password|String|Query|password|
-|folder|String|Query|Original workbook folder.|
-|storageName|String|Query|Storage name.|
-|outPath|String|Query|Output file path.|
-|outStorageName|String|Query|Storage name for output file.|
-|checkExcelRestriction|Boolean|Query|check Excel restriction.|
+|name|String|Path|The file name.|
+|importJsonRequest|Class|Body|Import Json request.|
+|password|String|Query|The password needed to open an Excel file.|
+|folder|String|Query|The folder where the file is situated.|
+|storageName|String|Query|The storage name where the file is situated.|
+|outPath|String|Query|Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder.|
+|outStorageName|String|Query|The storage name where the output file is situated.|
+|checkExcelRestriction|Boolean|Query|Whether check restriction of excel file when user modify cells related objects.|
+|region|String|Query|The regional settings for workbook.|
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/PostWorkbookImportJson) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

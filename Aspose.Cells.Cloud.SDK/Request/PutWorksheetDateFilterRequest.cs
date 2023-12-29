@@ -47,21 +47,21 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetDateFilterRequest"/> class.
         /// </summary>
-        /// <param name="name">The workbook name.</param>
+        /// <param name="name">The file name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="range">Represents the range to which the specified AutoFilter applies.</param>
         /// <param name="fieldIndex">The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0).</param>
-        /// <param name="dateTimeGroupingType">Specifies how to group dateTime values(Day,Hour,Minute,Month,Second,Year).</param>
+        /// <param name="dateTimeGroupingType">Specifies how to group dateTime values (Day, Hour, Minute, Month, Second, Year).</param>
         /// <param name="year">The year.</param>
         /// <param name="month">The month.</param>
         /// <param name="day">The day.</param>
         /// <param name="hour">The hour.</param>
         /// <param name="minute">The minute.</param>
         /// <param name="second">The second.</param>
-        /// <param name="matchBlanks">Match all blank or not blank cell in the list.(true/false)</param>
-        /// <param name="refresh">If true, hide the filtered rows.</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
+        /// <param name="matchBlanks">Match all blank cell in the list.</param>
+        /// <param name="refresh">Refresh auto filters to hide or unhide the rows.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public PutWorksheetDateFilterRequest(string name, string sheetName, string range, int? fieldIndex, string dateTimeGroupingType, int? year = null, int? month = null, int? day = null, int? hour = null, int? minute = null, int? second = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -82,7 +82,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// The workbook name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
@@ -102,7 +102,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public int? fieldIndex { get; set; }
 
         /// <summary>
-        /// Specifies how to group dateTime values(Day,Hour,Minute,Month,Second,Year).
+        /// Specifies how to group dateTime values (Day, Hour, Minute, Month, Second, Year).
         /// </summary>
         public string dateTimeGroupingType { get; set; }
 
@@ -137,22 +137,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public int? second { get; set; }
 
         /// <summary>
-        /// Match all blank or not blank cell in the list.(true/false)
+        /// Match all blank cell in the list.
         /// </summary>
         public bool? matchBlanks { get; set; }
 
         /// <summary>
-        /// If true, hide the filtered rows.
+        /// Refresh auto filters to hide or unhide the rows.
         /// </summary>
         public bool? refresh { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

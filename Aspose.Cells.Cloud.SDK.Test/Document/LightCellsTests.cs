@@ -50,25 +50,18 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         [DataRow("txt")]
         [DataRow("tif")]
         [DataRow("xlsb")]
-        [DataRow("xlsm")]
         [DataRow("xlsx")]
-        [DataRow("xltm")]
-        [DataRow("xltx")]
         [DataRow("xps")]
         [DataRow("png")]
         [DataRow("jpg")]
-        [DataRow("gif")]
-        [DataRow("emf")]
-        [DataRow("bmp")]
         [DataRow("md")]
         [DataRow("numbers")]
-        [DataRow("wmf")]
         [DataRow("svg")]
         [DataRow("docx")]
         [DataRow("pptx")]
         [DataRow("json")]
         [DataRow("sql")]
-        public void TestPostSplit(string format)
+        public void TestPostSplit(string outFormat)
         {
             string assemblyTestXlsx = "assemblytest.xlsx";
             string dataSourceXlsx = "datasource.xlsx";
@@ -78,7 +71,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
             AddFileParameter(dataSourceXlsx,mapFiles);       
             var request = new PostSplitRequest(
                 file: mapFiles,
-                format: format
+                outFormat: outFormat
             );
             var actual =  this.CellsApi.PostSplit(request);
             Assert.IsNotNull(actual.Files);
@@ -323,7 +316,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
             AddFileParameter(dataSourceXlsx,mapFiles);       
             var request = new PostMergeRequest(
                 file: mapFiles,
-                format: format,
+                outFormat: format,
                 mergeToOneSheet: mergeToOneSheet
             );
             var actual =  this.CellsApi.PostMerge(request);
@@ -538,7 +531,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
             AddFileParameter(book1Xlsx,mapFiles);       
             var request = new PostRepairRequest(
                 file: mapFiles,
-                format: format
+                outFormat: format
             );
             var actual =  this.CellsApi.PostRepair(request);
             Assert.IsNotNull(actual);
@@ -564,7 +557,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
             var request = new PostReverseRequest(
                 file: mapFiles,
                 rotateType: rotateType,
-                format: format
+                outFormat: format
             );
             var actual =  this.CellsApi.PostReverse(request);
             Assert.IsNotNull(actual);

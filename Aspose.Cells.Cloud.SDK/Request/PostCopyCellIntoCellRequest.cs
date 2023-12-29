@@ -47,15 +47,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostCopyCellIntoCellRequest"/> class.
         /// </summary>
-        /// <param name="name">The workbook name.</param>
-        /// <param name="destCellName">Destination cell name</param>
-        /// <param name="sheetName">Destination worksheet name.</param>
-        /// <param name="worksheet">Source worksheet name.</param>
-        /// <param name="cellname">Source cell name</param>
-        /// <param name="row">Source row</param>
-        /// <param name="column">Source column</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
+        /// <param name="name">The file name.</param>
+        /// <param name="destCellName">The destination cell name.</param>
+        /// <param name="sheetName">The destination worksheet name.</param>
+        /// <param name="worksheet">The source worksheet name.</param>
+        /// <param name="cellname">The source cell name.</param>
+        /// <param name="row">The source row index.</param>
+        /// <param name="column">The source column index.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public PostCopyCellIntoCellRequest(string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -70,47 +70,47 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// The workbook name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Destination cell name
+        /// The destination cell name.
         /// </summary>
         public string destCellName { get; set; }
 
         /// <summary>
-        /// Destination worksheet name.
+        /// The destination worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Source worksheet name.
+        /// The source worksheet name.
         /// </summary>
         public string worksheet { get; set; }
 
         /// <summary>
-        /// Source cell name
+        /// The source cell name.
         /// </summary>
         public string cellname { get; set; }
 
         /// <summary>
-        /// Source row
+        /// The source row index.
         /// </summary>
         public int? row { get; set; }
 
         /// <summary>
-        /// Source column
+        /// The source column index.
         /// </summary>
         public int? column { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

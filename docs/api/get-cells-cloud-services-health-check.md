@@ -1,6 +1,6 @@
 # **getCellsCloudServicesHealthCheck API**
 
-Gets cells description in some format. 
+Retrieve cell descriptions in a specified format. 
 
 ```bash
 

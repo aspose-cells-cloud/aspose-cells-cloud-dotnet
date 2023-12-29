@@ -19736,5 +19736,298 @@
         }
       ]
     }
-  ]
+  ],
+  "Models": [
+    {
+      "Name": "DiscUsage",
+      "Type": "Class",
+      "IsAbstract": false,
+      "Properties": [
+        {
+          "Name": "UsedSize",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "Long"
+          }
+        },
+        {
+          "Name": "TotalSize",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "Long"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "ObjectExist",
+      "Type": "Class",
+      "IsAbstract": false,
+      "Properties": [
+        {
+          "Name": "Exists",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "Boolean"
+          }
+        },
+        {
+          "Name": "IsFolder",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "Boolean"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "ObjectExistsExtensions",
+      "Type": "Class",
+      "IsAbstract": false,
+      "Properties": []
+    },
+    {
+      "Name": "FileVersion",
+      "Type": "Class",
+      "ParentName": "StorageFile",
+      "IsAbstract": false,
+      "Properties": [
+        {
+          "Name": "VersionId",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "String"
+          }
+        },
+        {
+          "Name": "IsLatest",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "Boolean"
+          }
+        },
+        {
+          "Name": "Name",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "String"
+          }
+        },
+        {
+          "Name": "IsFolder",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "Boolean"
+          }
+        },
+        {
+          "Name": "ModifiedDate",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "DateTime"
+          }
+        },
+        {
+          "Name": "Size",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "Long"
+          }
+        },
+        {
+          "Name": "Path",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "String"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "StorageExist",
+      "Type": "Class",
+      "IsAbstract": false,
+      "Properties": [
+        {
+          "Name": "Exists",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "Boolean"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "FileVersions",
+      "Type": "Class",
+      "IsAbstract": false,
+      "Properties": [
+        {
+          "Name": "Value",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "Class",
+            "Reference": "IList<FileVersion>"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "FilesList",
+      "Type": "Class",
+      "IsAbstract": false,
+      "Properties": [
+        {
+          "Name": "Value",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "Class",
+            "Reference": "IList<StorageFile>"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "FilesUploadResult",
+      "Type": "Class",
+      "IsAbstract": false,
+      "Properties": [
+        {
+          "Name": "Uploaded",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "Class",
+            "Reference": "IList<String>"
+          }
+        },
+        {
+          "Name": "Errors",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "Class",
+            "Reference": "IList<Error>"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "StorageFile",
+      "Type": "Class",
+      "IsAbstract": false,
+      "Properties": [
+        {
+          "Name": "Name",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "String"
+          }
+        },
+        {
+          "Name": "IsFolder",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "Boolean"
+          }
+        },
+        {
+          "Name": "ModifiedDate",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "DateTime"
+          }
+        },
+        {
+          "Name": "Size",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "Long"
+          }
+        },
+        {
+          "Name": "Path",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "String"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "GoogleDriveStorageFile",
+      "Type": "Class",
+      "ParentName": "StorageFile",
+      "IsAbstract": false,
+      "Properties": [
+        {
+          "Name": "MimeType",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "String"
+          }
+        },
+        {
+          "Name": "Name",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "String"
+          }
+        },
+        {
+          "Name": "IsFolder",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "Boolean"
+          }
+        },
+        {
+          "Name": "ModifiedDate",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "DateTime"
+          }
+        },
+        {
+          "Name": "Size",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "Long"
+          }
+        },
+        {
+          "Name": "Path",
+          "Nullable": true,
+          "ReadOnly": false,
+          "DataType": {
+            "Identifier": "String"
+          }
+        }
+      ]
+    }
+    ]
 }

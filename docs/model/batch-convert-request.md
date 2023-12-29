@@ -12,5 +12,6 @@ Indicates batch convert file request
 |Format|String|true|false |  |Conversion format.|
 |OutFolder|String|true|false |  |The directory that stores files whose format conversion was successful.|
 |OutStorage|String|true|false |  |Aspose Cloud storage name.|
+|Region|String|true|false |  |The regional settings for workbook.|
 |SaveOptions|Class|true|false |  |Indicates save options.|
 

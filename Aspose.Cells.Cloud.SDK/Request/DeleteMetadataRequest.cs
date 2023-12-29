@@ -47,35 +47,42 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteMetadataRequest"/> class.
         /// </summary>
-        /// <param name="file">File to upload</param>
-        /// <param name="type"></param>
-        /// <param name="password"></param>
-        /// <param name="checkExcelRestriction"></param>
-        public DeleteMetadataRequest(IDictionary<string, System.IO.Stream> file, string type = null, string password = null, bool? checkExcelRestriction = null)
+        /// <param name="file">Cells document property name.</param>
+        /// <param name="type">Cells document property name.</param>
+        /// <param name="outFormat">The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
+        /// <param name="password">The password needed to open an Excel file.</param>
+        /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
+        public DeleteMetadataRequest(IDictionary<string, System.IO.Stream> file, string type = null, string outFormat = null, string password = null, bool? checkExcelRestriction = null)
         {
             this.File = file;
             this.type = type;
+            this.outFormat = outFormat;
             this.password = password;
             this.checkExcelRestriction = checkExcelRestriction;
         }
 
         /// <summary>
-        /// File to upload
+        /// Cells document property name.
         /// </summary>
         public IDictionary<string, System.IO.Stream> File { get; set; }
 
         /// <summary>
-        /// Gets or sets type.
+        /// Cells document property name.
         /// </summary>
         public string type { get; set; }
 
         /// <summary>
-        /// Gets or sets password.
+        /// The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)
+        /// </summary>
+        public string outFormat { get; set; }
+
+        /// <summary>
+        /// The password needed to open an Excel file.
         /// </summary>
         public string password { get; set; }
 
         /// <summary>
-        /// Gets or sets checkExcelRestriction.
+        /// Whether check restriction of excel file when user modify cells related objects.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
 
@@ -109,6 +116,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     .Replace("/?", "?");
 
             if (!string.IsNullOrEmpty(this.type))  path = UrlHelper.AddQueryParameterToUrl(path, "type", this.type);
+            if (!string.IsNullOrEmpty(this.outFormat))  path = UrlHelper.AddQueryParameterToUrl(path, "outFormat", this.outFormat);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if(this.checkExcelRestriction != null)  path = UrlHelper.AddQueryParameterToUrl(path, "checkExcelRestriction", this.checkExcelRestriction);
             if (this.extendQueryParameterMap != null)

@@ -1,6 +1,6 @@
 # **postLock API**
 
-Setting access password. 
+Lock Excel files. 
 
 ```bash
 
@@ -12,8 +12,8 @@ POST http://api.aspose.cloud/v3.0//cells/lock
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|File|File|FormData|File to upload|
-|password|String|Query||
+|File|File|FormData|The password needed to open an Excel file.|
+|password|String|Query|The password needed to open an Excel file.|
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ProtectionController/PostLock) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

@@ -1,6 +1,6 @@
 # **putWorksheetFilterTop10 API**
 
-Filters the top 10 item in the list in worksheet 
+Filter the top 10 items in the list in the worksheet. 
 
 ```bash
 
@@ -19,10 +19,10 @@ PUT http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/autoFilter
 |isTop|Boolean|Query|Indicates whether filter from top or bottom|
 |isPercent|Boolean|Query|Indicates whether the items is percent or count|
 |itemCount|Integer|Query|The item count|
-|matchBlanks|Boolean|Query|Match all blank or  not blank cell in the list.(true/false)|
-|refresh|Boolean|Query|If true, hide the filtered rows.|
-|folder|String|Query|Original workbook folder.|
-|storageName|String|Query|Storage name.|
+|matchBlanks|Boolean|Query|Match all blank cell in the list.|
+|refresh|Boolean|Query|Refresh auto filters to hide or unhide the rows.|
+|folder|String|Query|The folder where the file is situated.|
+|storageName|String|Query|The storage name where the file is situated.|
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/AutoFilterController/PutWorksheetFilterTop10) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

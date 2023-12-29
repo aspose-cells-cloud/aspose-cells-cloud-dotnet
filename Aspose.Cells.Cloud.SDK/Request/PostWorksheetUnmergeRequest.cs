@@ -47,14 +47,14 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetUnmergeRequest"/> class.
         /// </summary>
-        /// <param name="name">The workbook name.</param>
+        /// <param name="name">The file name.</param>
         /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="startRow">The start row.</param>
-        /// <param name="startColumn">The start column.</param>
-        /// <param name="totalRows">The total rows</param>
-        /// <param name="totalColumns">The total columns.</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
+        /// <param name="startRow">The start row index.</param>
+        /// <param name="startColumn">The start column index.</param>
+        /// <param name="totalRows">The total rows number.</param>
+        /// <param name="totalColumns">The total columns number.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public PostWorksheetUnmergeRequest(string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -68,7 +68,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// The workbook name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
@@ -78,32 +78,32 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string sheetName { get; set; }
 
         /// <summary>
-        /// The start row.
+        /// The start row index.
         /// </summary>
         public int? startRow { get; set; }
 
         /// <summary>
-        /// The start column.
+        /// The start column index.
         /// </summary>
         public int? startColumn { get; set; }
 
         /// <summary>
-        /// The total rows
+        /// The total rows number.
         /// </summary>
         public int? totalRows { get; set; }
 
         /// <summary>
-        /// The total columns.
+        /// The total columns number.
         /// </summary>
         public int? totalColumns { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

@@ -1,9 +1,8 @@
-![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/23.11)
+![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/23.12)
 
 # .NET SDK for Spreadsheet Processing in the Cloud
 
 The Cloud SDK enhances your C#, ASP.NET, & other .NET-based cloud apps to [process & manipulate Microsoft Excel spreadsheets](https://products.aspose.cloud/cells/net) in the Cloud.
-
 
 ## Cloud Spreadsheet Processor in a Nutshell
 
@@ -21,13 +20,20 @@ The Cloud SDK enhances your C#, ASP.NET, & other .NET-based cloud apps to [proce
 - Fetch the required shape from worksheet.
 - [Leverage the power of Pivot Tables](https://docs.aspose.cloud/cells/working-with-pivot-tables/) & Ranges.
 
-## Feature & Enhancements in Version 23.11
+## Feature & Enhancements in Version 23.12
 
 Full list of issues covering all changes in this release:
 
-- Optimize import xml data into Excel file.
-- Optimize import json data into Excel file.
-- **Remove deprecated functions, class and test case**.
+- Conversion APIs add region parameter.
+- Protection APIs add region parameter.
+- Assemble data API adds region parameter.
+- Merge files API adds region parameter.
+- Split files API adds region parameter.
+- Import data API adds region parameter.
+- Watermark API adds region parameter.
+- Clear object API adds region parameter.
+- Reverse data API adds region parameter.
+- Rotate data API adds region parameter.
 
 ## Read & Write Spreadsheet Formats
 
@@ -69,18 +75,14 @@ Next, execute `Install-Package Aspose.Cells-Cloud` from the Package Manager Cons
 The following code snippet demonstrates how to add a new worksheet to a Microsoft Excel document using C# code:
 
 ```csharp
-string localName = "Book1.xlsx";
-string remoteName = "Book1.xlsx";
-
-var request = new PutAddNewWorksheetRequest(
-    name: remoteName,
-    sheetName: "Sheet1",
-    position: 0,
-    sheettype: "VB",
-    folder: remoteFolder,
-    storageName: ""
-);
-var actual =  this.CellsApi.PutAddNewWorksheet(request);
+CellsApi cellsApi =CellsApi(clientId, clientSecret);
+string name = "Input.xlsx";
+string sheetName = "Sheet1";
+int? position = 1;
+string sheettype = "VB";
+string folder = null;
+UpdateDataFile(folder, name);
+var response = cellsApi.CellsWorksheetsPutAddNewWorksheet(name, sheetName, position, sheettype, folder);
 ```
 
 ## Convert Excel Files via C# Code
@@ -88,14 +90,11 @@ var actual =  this.CellsApi.PutAddNewWorksheet(request);
 The following code example elaborates Aspose.Cells REST API to convert an Excel file to another format in the cloud:
 
 ```csharp
+// Upload source file to aspose cloud storage
+cellsApi.UploadFile(folder + @"\" + filename, stream);
 
-System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
-AddFileParameter(localName,mapFiles);       
-var request = new PutConvertWorkbookRequest(
-    file: mapFiles,
-    format: "pdf"
-);
-var actual =  this.CellsApi.PutConvertWorkbook(request);
+// Invoke Aspose.Cells Cloud SDK API to convert excel workbook to different format
+SaveResponse apiResponse = cellsApi.CellsSaveAsPostDocumentSaveAs(name, saveOptions, newfilename, isAutoFitRows, isAutoFitColumns, folder);
 ```
 ## Tests
 

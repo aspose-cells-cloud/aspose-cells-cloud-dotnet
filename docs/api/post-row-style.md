@@ -1,6 +1,6 @@
 # **postRowStyle API**
 
-Applies formats for a whole row in worksheet.             
+Applies formats for a whole row in worksheet. 
 
 ```bash
 

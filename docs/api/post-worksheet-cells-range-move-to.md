@@ -1,6 +1,6 @@
 # **postWorksheetCellsRangeMoveTo API**
 
-Moves the current range to the dest range.             
+Moves the current range to the dest range. 
 
 ```bash
 

@@ -47,12 +47,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetCellsRequest"/> class.
         /// </summary>
-        /// <param name="name">Document name.</param>
+        /// <param name="name">The file name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="offest">Begginig offset.</param>
         /// <param name="count">Maximum amount of cells in the response.</param>
-        /// <param name="folder">Document's folder name.</param>
-        /// <param name="storageName">Storage name.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public GetWorksheetCellsRequest(string name, string sheetName, int? offest = null, int? count = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -64,7 +64,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Document name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
@@ -84,12 +84,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public int? count { get; set; }
 
         /// <summary>
-        /// Document's folder name.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

@@ -49,11 +49,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         /// <param name="file">chart/comment/picture/shape/listobject/hyperlink/oleobject/pivottable/validation/Background</param>
         /// <param name="objecttype">chart/comment/picture/shape/listobject/hyperlink/oleobject/pivottable/validation/Background</param>
-        /// <param name="sheetname"></param>
-        /// <param name="outFormat"></param>
-        /// <param name="password"></param>
-        /// <param name="checkExcelRestriction"></param>
-        public PostClearObjectsRequest(IDictionary<string, System.IO.Stream> file, string objecttype, string sheetname = null, string outFormat = null, string password = null, bool? checkExcelRestriction = null)
+        /// <param name="sheetname">The worksheet name, specify the scope of the deletion.</param>
+        /// <param name="outFormat">The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
+        /// <param name="password">The password needed to open an Excel file.</param>
+        /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
+        /// <param name="region">The regional settings for workbook.</param>
+        public PostClearObjectsRequest(IDictionary<string, System.IO.Stream> file, string objecttype, string sheetname = null, string outFormat = null, string password = null, bool? checkExcelRestriction = null, string region = null)
         {
             this.File = file;
             this.objecttype = objecttype;
@@ -61,6 +62,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.outFormat = outFormat;
             this.password = password;
             this.checkExcelRestriction = checkExcelRestriction;
+            this.region = region;
         }
 
         /// <summary>
@@ -74,24 +76,29 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string objecttype { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetname.
+        /// The worksheet name, specify the scope of the deletion.
         /// </summary>
         public string sheetname { get; set; }
 
         /// <summary>
-        /// Gets or sets outFormat.
+        /// The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)
         /// </summary>
         public string outFormat { get; set; }
 
         /// <summary>
-        /// Gets or sets password.
+        /// The password needed to open an Excel file.
         /// </summary>
         public string password { get; set; }
 
         /// <summary>
-        /// Gets or sets checkExcelRestriction.
+        /// Whether check restriction of excel file when user modify cells related objects.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
+
+        /// <summary>
+        /// The regional settings for workbook.
+        /// </summary>
+        public string region { get; set; }
 
 
         /// <summary>
@@ -133,6 +140,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             if (!string.IsNullOrEmpty(this.outFormat))  path = UrlHelper.AddQueryParameterToUrl(path, "outFormat", this.outFormat);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if(this.checkExcelRestriction != null)  path = UrlHelper.AddQueryParameterToUrl(path, "checkExcelRestriction", this.checkExcelRestriction);
+            if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)

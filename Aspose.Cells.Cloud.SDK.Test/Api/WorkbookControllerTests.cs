@@ -562,6 +562,8 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
                 outFolder: "OutResult",
                 from: 1,
                 to: 5,
+                horizontalResolution: 96,
+                verticalResolution: 96,
                 splitNameRule: "sheetname",
                 folder: remoteFolder,
                 storageName: "",

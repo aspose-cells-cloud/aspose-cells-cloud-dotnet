@@ -47,37 +47,44 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostImportDataRequest"/> class.
         /// </summary>
-        /// <param name="name">The workbook name.</param>
-        /// <param name="importOption"></param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
-        public PostImportDataRequest(string name, ImportOption importOption = null, string folder = null, string storageName = null)
+        /// <param name="name">The file name.</param>
+        /// <param name="importOption">Import option. They are include of ImportCSVDataOption, ImportBatchDataOption, ImportPictureOption, ImportStringArrayOption, Import2DimensionStringArrayOption, and so on.  </param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
+        /// <param name="region">The regional settings for workbook.</param>
+        public PostImportDataRequest(string name, ImportOption importOption = null, string folder = null, string storageName = null, string region = null)
         {
             this.name = name;
             this.importOption = importOption;
             this.folder = folder;
             this.storageName = storageName;
+            this.region = region;
         }
 
         /// <summary>
-        /// The workbook name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets importOption.
+        /// Import option. They are include of ImportCSVDataOption, ImportBatchDataOption, ImportPictureOption, ImportStringArrayOption, Import2DimensionStringArrayOption, and so on.  
         /// </summary>
         public ImportOption importOption { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
+        /// <summary>
+        /// The regional settings for workbook.
+        /// </summary>
+        public string region { get; set; }
 
 
         /// <summary>
@@ -111,6 +118,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             path = UrlHelper.AddPathParameter(path, "name", this.name);
             if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
             if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
+            if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)

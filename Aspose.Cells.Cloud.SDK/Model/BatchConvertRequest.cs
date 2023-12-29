@@ -70,6 +70,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string OutStorage { get; set; }
 
         /// <summary>
+        /// The regional settings for workbook.
+        /// </summary>
+        public virtual string Region { get; set; }
+
+        /// <summary>
         /// Indicates save options.
         /// </summary>
         public virtual SaveOptions SaveOptions { get; set; }
@@ -88,6 +93,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  Format: ").Append(this.Format).Append("\n");
             sb.Append("  OutFolder: ").Append(this.OutFolder).Append("\n");
             sb.Append("  OutStorage: ").Append(this.OutStorage).Append("\n");
+            sb.Append("  Region: ").Append(this.Region).Append("\n");
             sb.Append("  SaveOptions: ").Append(this.SaveOptions).Append("\n");
             sb.Append("}\n");
             return sb.ToString();

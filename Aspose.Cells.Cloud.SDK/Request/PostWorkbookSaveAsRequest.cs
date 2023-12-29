@@ -48,15 +48,16 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="PostWorkbookSaveAsRequest"/> class.
         /// </summary>
         /// <param name="name">The workbook name.</param>
-        /// <param name="newfilename">The new file name.</param>
+        /// <param name="newfilename">newfilename to save the result.The `newfilename` should encompass both the filename and extension.</param>
         /// <param name="saveOptions"></param>
         /// <param name="isAutoFitRows">Indicates if Autofit rows in workbook.</param>
         /// <param name="isAutoFitColumns">Indicates if Autofit columns in workbook.</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
-        /// <param name="outStorageName"></param>
-        /// <param name="checkExcelRestriction"></param>
-        public PostWorkbookSaveAsRequest(string name, string newfilename, SaveOptions saveOptions = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, bool? checkExcelRestriction = null)
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
+        /// <param name="outStorageName">The storage name where the output file is situated.</param>
+        /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
+        /// <param name="region">The regional settings for workbook.</param>
+        public PostWorkbookSaveAsRequest(string name, string newfilename, SaveOptions saveOptions = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, bool? checkExcelRestriction = null, string region = null)
         {
             this.name = name;
             this.newfilename = newfilename;
@@ -67,6 +68,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.storageName = storageName;
             this.outStorageName = outStorageName;
             this.checkExcelRestriction = checkExcelRestriction;
+            this.region = region;
         }
 
         /// <summary>
@@ -75,7 +77,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string name { get; set; }
 
         /// <summary>
-        /// The new file name.
+        /// newfilename to save the result.The `newfilename` should encompass both the filename and extension.
         /// </summary>
         public string newfilename { get; set; }
 
@@ -95,24 +97,29 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public bool? isAutoFitColumns { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 
         /// <summary>
-        /// Gets or sets outStorageName.
+        /// The storage name where the output file is situated.
         /// </summary>
         public string outStorageName { get; set; }
 
         /// <summary>
-        /// Gets or sets checkExcelRestriction.
+        /// Whether check restriction of excel file when user modify cells related objects.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
+
+        /// <summary>
+        /// The regional settings for workbook.
+        /// </summary>
+        public string region { get; set; }
 
 
         /// <summary>
@@ -157,6 +164,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
             if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
             if(this.checkExcelRestriction != null)  path = UrlHelper.AddQueryParameterToUrl(path, "checkExcelRestriction", this.checkExcelRestriction);
+            if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)

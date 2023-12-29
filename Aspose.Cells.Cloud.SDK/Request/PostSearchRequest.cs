@@ -47,11 +47,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostSearchRequest"/> class.
         /// </summary>
-        /// <param name="file">File to upload</param>
-        /// <param name="text"></param>
-        /// <param name="password"></param>
-        /// <param name="sheetname"></param>
-        /// <param name="checkExcelRestriction"></param>
+        /// <param name="file">Find content</param>
+        /// <param name="text">Find content</param>
+        /// <param name="password">The password needed to open an Excel file.</param>
+        /// <param name="sheetname">The worksheet name. Locate the specified text content in the worksheet.</param>
+        /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
         public PostSearchRequest(IDictionary<string, System.IO.Stream> file, string text, string password = null, string sheetname = null, bool? checkExcelRestriction = null)
         {
             this.File = file;
@@ -62,27 +62,27 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// File to upload
+        /// Find content
         /// </summary>
         public IDictionary<string, System.IO.Stream> File { get; set; }
 
         /// <summary>
-        /// Gets or sets text.
+        /// Find content
         /// </summary>
         public string text { get; set; }
 
         /// <summary>
-        /// Gets or sets password.
+        /// The password needed to open an Excel file.
         /// </summary>
         public string password { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetname.
+        /// The worksheet name. Locate the specified text content in the worksheet.
         /// </summary>
         public string sheetname { get; set; }
 
         /// <summary>
-        /// Gets or sets checkExcelRestriction.
+        /// Whether check restriction of excel file when user modify cells related objects.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
 

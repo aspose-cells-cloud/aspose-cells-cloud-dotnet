@@ -50,8 +50,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="fieldIndex">The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0).</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public PostWorksheetMatchNonBlanksRequest(string name, string sheetName, int? fieldIndex, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -77,12 +77,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public int? fieldIndex { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

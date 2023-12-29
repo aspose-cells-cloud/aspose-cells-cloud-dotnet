@@ -1,22 +1,17 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.7.34018.315
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aspose.Cells.Cloud.SDK", "Aspose.Cells.Cloud.Sdk\Aspose.Cells.Cloud.SDK.csproj", "{13284D1A-8B08-469A-A58B-5C94B92C68E7}"
+
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Cells.Cloud.SDK", "Aspose.Cells.Cloud.Sdk\Aspose.Cells.Cloud.SDK.csproj", "{13284D1A-8B08-469A-A58B-5C94B92C68E7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aspose.Cells.Cloud.SDK.Test", "Aspose.Cells.Cloud.Sdk.Test\Aspose.Cells.Cloud.SDK.Test.csproj", "{FCFE1F60-DB73-4F3F-853A-FBADCC5E994B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Cells.Cloud.SDK.Tests", "Aspose.Cells.Cloud.Sdk.Test\Aspose.Cells.Cloud.SDK.Test.csproj", "{FCFE1F60-DB73-4F3F-853A-FBADCC5E994B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{98322D5D-AC84-4BA5-94DC-5FB1B651046F}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{19ED4C76-3AE3-49FC-93EA-707C54808F9E}"
-	ProjectSection(SolutionItems) = preProject
-		Pack_NugetPackage.ps1 = Pack_NugetPackage.ps1
-		TestCellsCloudSDK.ps1 = TestCellsCloudSDK.ps1
 	EndProjectSection
 EndProject
 Global
@@ -51,6 +46,30 @@ Global
 		{FCFE1F60-DB73-4F3F-853A-FBADCC5E994B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{FCFE1F60-DB73-4F3F-853A-FBADCC5E994B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{FCFE1F60-DB73-4F3F-853A-FBADCC5E994B}.Release|x86.ActiveCfg = Release|Any CPU
+		{C1DB5D37-FA22-431D-8D24-6D4CF6385959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1DB5D37-FA22-431D-8D24-6D4CF6385959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1DB5D37-FA22-431D-8D24-6D4CF6385959}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C1DB5D37-FA22-431D-8D24-6D4CF6385959}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C1DB5D37-FA22-431D-8D24-6D4CF6385959}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C1DB5D37-FA22-431D-8D24-6D4CF6385959}.Debug|x86.Build.0 = Debug|Any CPU
+		{C1DB5D37-FA22-431D-8D24-6D4CF6385959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1DB5D37-FA22-431D-8D24-6D4CF6385959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1DB5D37-FA22-431D-8D24-6D4CF6385959}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C1DB5D37-FA22-431D-8D24-6D4CF6385959}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C1DB5D37-FA22-431D-8D24-6D4CF6385959}.Release|x86.ActiveCfg = Release|Any CPU
+		{C1DB5D37-FA22-431D-8D24-6D4CF6385959}.Release|x86.Build.0 = Release|Any CPU
+		{3F07B0FB-1B48-47E8-A07D-C4A136BED25A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F07B0FB-1B48-47E8-A07D-C4A136BED25A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F07B0FB-1B48-47E8-A07D-C4A136BED25A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{3F07B0FB-1B48-47E8-A07D-C4A136BED25A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{3F07B0FB-1B48-47E8-A07D-C4A136BED25A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3F07B0FB-1B48-47E8-A07D-C4A136BED25A}.Debug|x86.Build.0 = Debug|Any CPU
+		{3F07B0FB-1B48-47E8-A07D-C4A136BED25A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F07B0FB-1B48-47E8-A07D-C4A136BED25A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F07B0FB-1B48-47E8-A07D-C4A136BED25A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{3F07B0FB-1B48-47E8-A07D-C4A136BED25A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{3F07B0FB-1B48-47E8-A07D-C4A136BED25A}.Release|x86.ActiveCfg = Release|Any CPU
+		{3F07B0FB-1B48-47E8-A07D-C4A136BED25A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

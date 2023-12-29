@@ -47,12 +47,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostChartSecondCategoryAxisRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="chartIndex"></param>
-        /// <param name="axis"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The file name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="chartIndex">The chart index.</param>
+        /// <param name="axis">Axis </param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public PostChartSecondCategoryAxisRequest(string name, string sheetName, int? chartIndex, Axis axis, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -64,32 +64,32 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets chartIndex.
+        /// The chart index.
         /// </summary>
         public int? chartIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets axis.
+        /// Axis 
         /// </summary>
         public Axis axis { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

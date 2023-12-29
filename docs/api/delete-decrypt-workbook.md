@@ -1,6 +1,6 @@
 # **deleteDecryptWorkbook API**
 
-Decrypts workbook. 
+Excel files decryption. 
 
 ```bash
 
@@ -12,10 +12,10 @@ DELETE http://api.aspose.cloud/v3.0//cells/{name}/encryption
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|name|String|Path|The workbook name.|
-|encryption|Class|Body|Encryption settings, only password can be specified.|
-|folder|String|Query|Original workbook folder.|
-|storageName|String|Query|Storage name.|
+|name|String|Path|The file name.|
+|encryption|Class|Body|WorkbookEncryptionRequestEncryption parameters.|
+|folder|String|Query|The folder where the file is situated.|
+|storageName|String|Query|The storage name where the file is situated.|
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ProtectionController/DeleteDecryptWorkbook) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

@@ -8,5 +8,6 @@
 | :- | :- | :- |:- |  :- | :- |
 |Workbook|Class|true|false |  ||
 |DestinationFile|String|true|false |  ||
+|Region|String|true|false |  ||
 |SaveOptions|Class|true|false |  ||
 

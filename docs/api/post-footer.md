@@ -1,6 +1,6 @@
 # **postFooter API**
 
-Update  page footer description in worksheet.  
+Update  page footer description in worksheet. 
 
 ```bash
 

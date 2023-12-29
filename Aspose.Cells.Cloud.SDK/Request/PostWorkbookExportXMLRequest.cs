@@ -47,14 +47,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorkbookExportXMLRequest"/> class.
         /// </summary>
-        /// <param name="name">The workbook(Excel/ODS/...) name.</param>
-        /// <param name="password">password</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
-        /// <param name="outPath">Output file path.</param>
-        /// <param name="outStorageName">Storage name for output file.</param>
-        /// <param name="checkExcelRestriction">check excel restriction.</param>
-        public PostWorkbookExportXMLRequest(string name, string password = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null, bool? checkExcelRestriction = null)
+        /// <param name="name">The file name.</param>
+        /// <param name="password">The password needed to open an Excel file.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
+        /// <param name="outPath">Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder.</param>
+        /// <param name="outStorageName">The storage name where the output file is situated.</param>
+        /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
+        /// <param name="region">The regional settings for workbook.</param>
+        public PostWorkbookExportXMLRequest(string name, string password = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null, bool? checkExcelRestriction = null, string region = null)
         {
             this.name = name;
             this.password = password;
@@ -63,42 +64,48 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.outPath = outPath;
             this.outStorageName = outStorageName;
             this.checkExcelRestriction = checkExcelRestriction;
+            this.region = region;
         }
 
         /// <summary>
-        /// The workbook(Excel/ODS/...) name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// password
+        /// The password needed to open an Excel file.
         /// </summary>
         public string password { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 
         /// <summary>
-        /// Output file path.
+        /// Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder.
         /// </summary>
         public string outPath { get; set; }
 
         /// <summary>
-        /// Storage name for output file.
+        /// The storage name where the output file is situated.
         /// </summary>
         public string outStorageName { get; set; }
 
         /// <summary>
-        /// check excel restriction.
+        /// Whether check restriction of excel file when user modify cells related objects.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
+
+        /// <summary>
+        /// The regional settings for workbook.
+        /// </summary>
+        public string region { get; set; }
 
 
         /// <summary>
@@ -136,6 +143,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
             if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
             if(this.checkExcelRestriction != null)  path = UrlHelper.AddQueryParameterToUrl(path, "checkExcelRestriction", this.checkExcelRestriction);
+            if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)

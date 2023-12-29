@@ -60,7 +60,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             {
                 SourceFolder = remoteFolder,
                 Format = "pdf",
-                OutFolder = "TestResult",
+                OutFolder = "OutResult",
                 MatchCondition = batchConvertRequestMatchCondition
             };
             var request = new PostBatchConvertRequest(
@@ -94,7 +94,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
                 SourceFolder = remoteFolder,
                 ProtectionType = "All",
                 Password = "123456",
-                OutFolder = "TestResult",
+                OutFolder = "OutResult",
                 MatchCondition = batchProtectRequestMatchCondition
             };
             var request = new PostBatchProtectRequest(
@@ -127,7 +127,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             {
                 SourceFolder = remoteFolder,
                 Password = "123456",
-                OutFolder = "TestResult",
+                OutFolder = "OutResult",
                 MatchCondition = batchLockRequestMatchCondition
             };
             var request = new PostBatchLockRequest(
@@ -160,7 +160,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             {
                 SourceFolder = remoteFolder,
                 Password = "123456",
-                OutFolder = "TestResult",
+                OutFolder = "OutResult",
                 MatchCondition = batchLockRequestMatchCondition
             };
             var request = new PostBatchUnlockRequest(

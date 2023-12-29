@@ -56,10 +56,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="isAnd">true/false</param>
         /// <param name="operatorType2"></param>
         /// <param name="criteria2">The custom criteria.</param>
-        /// <param name="matchBlanks">Match all blank or  not blank cell in the list.(true/false)</param>
-        /// <param name="refresh">If true, hide the filtered rows.</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
+        /// <param name="matchBlanks">Match all blank cell in the list.</param>
+        /// <param name="refresh">Refresh auto filters to hide or unhide the rows.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public PutWorksheetCustomFilterRequest(string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -123,22 +123,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string criteria2 { get; set; }
 
         /// <summary>
-        /// Match all blank or  not blank cell in the list.(true/false)
+        /// Match all blank cell in the list.
         /// </summary>
         public bool? matchBlanks { get; set; }
 
         /// <summary>
-        /// If true, hide the filtered rows.
+        /// Refresh auto filters to hide or unhide the rows.
         /// </summary>
         public bool? refresh { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

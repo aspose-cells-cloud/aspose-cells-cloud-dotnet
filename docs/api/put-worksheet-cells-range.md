@@ -1,6 +1,6 @@
 # **putWorksheetCellsRange API**
 
-Inserts a range of cells and shift cells according to the shift option.             
+Inserts a range of cells and shift cells according to the shift option. 
 
 ```bash
 

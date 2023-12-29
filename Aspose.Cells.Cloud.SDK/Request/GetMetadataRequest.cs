@@ -47,10 +47,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="GetMetadataRequest"/> class.
         /// </summary>
-        /// <param name="file">File to upload</param>
-        /// <param name="type"></param>
-        /// <param name="password"></param>
-        /// <param name="checkExcelRestriction"></param>
+        /// <param name="file">Cells document property name.</param>
+        /// <param name="type">Cells document property name.</param>
+        /// <param name="password">The password needed to open an Excel file.</param>
+        /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
         public GetMetadataRequest(IDictionary<string, System.IO.Stream> file, string type = null, string password = null, bool? checkExcelRestriction = null)
         {
             this.File = file;
@@ -60,22 +60,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// File to upload
+        /// Cells document property name.
         /// </summary>
         public IDictionary<string, System.IO.Stream> File { get; set; }
 
         /// <summary>
-        /// Gets or sets type.
+        /// Cells document property name.
         /// </summary>
         public string type { get; set; }
 
         /// <summary>
-        /// Gets or sets password.
+        /// The password needed to open an Excel file.
         /// </summary>
         public string password { get; set; }
 
         /// <summary>
-        /// Gets or sets checkExcelRestriction.
+        /// Whether check restriction of excel file when user modify cells related objects.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
 

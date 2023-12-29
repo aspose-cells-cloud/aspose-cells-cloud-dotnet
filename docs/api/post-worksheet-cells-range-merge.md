@@ -1,6 +1,6 @@
 # **postWorksheetCellsRangeMerge API**
 
-Combines a range of cells into a single cell.  
+Combines a range of cells into a single cell. 
 
 ```bash
 

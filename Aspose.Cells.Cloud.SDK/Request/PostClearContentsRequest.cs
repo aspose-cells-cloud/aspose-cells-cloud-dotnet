@@ -47,15 +47,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostClearContentsRequest"/> class.
         /// </summary>
-        /// <param name="name">The workbook name.</param>
+        /// <param name="name">The file name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="range">Represents the range to which the specified cells applies.</param>
-        /// <param name="startRow">The start row.</param>
-        /// <param name="startColumn">The start column.</param>
-        /// <param name="endRow">The end row.</param>
-        /// <param name="endColumn">The end column.</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
+        /// <param name="startRow">The start row index.</param>
+        /// <param name="startColumn">The start column index.</param>
+        /// <param name="endRow">The end row index.</param>
+        /// <param name="endColumn">The end column index.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public PostClearContentsRequest(string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -70,7 +70,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// The workbook name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
@@ -85,32 +85,32 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string range { get; set; }
 
         /// <summary>
-        /// The start row.
+        /// The start row index.
         /// </summary>
         public int? startRow { get; set; }
 
         /// <summary>
-        /// The start column.
+        /// The start column index.
         /// </summary>
         public int? startColumn { get; set; }
 
         /// <summary>
-        /// The end row.
+        /// The end row index.
         /// </summary>
         public int? endRow { get; set; }
 
         /// <summary>
-        /// The end column.
+        /// The end column index.
         /// </summary>
         public int? endColumn { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

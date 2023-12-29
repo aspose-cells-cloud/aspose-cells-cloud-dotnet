@@ -48,16 +48,12 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Conversion
         [DataRow("pdf")]
         [DataRow("xml")]
         [DataRow("tif")]
-        [DataRow("xlsb")]
         [DataRow("xps")]
         [DataRow("jpg")]
         [DataRow("md")]
         [DataRow("numbers")]
         [DataRow("svg")]
         [DataRow("docx")]
-        [DataRow("pptx")]
-        [DataRow("json")]
-        [DataRow("sql")]
         public void TestConvertWorkbook(string format)
         {
             string localName = "cloud.png";

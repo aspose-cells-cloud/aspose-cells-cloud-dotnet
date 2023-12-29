@@ -14,5 +14,6 @@
 |ToIndex|Integer|true|false |  |To worksheet index of workbook.|
 |OutFolder|String|true|false |  |The directory that stores files whose format conversion was successful.|
 |OutStorage|String|true|false |  |Aspose Cloud storage name.|
+|Region|String|true|false |  |The regional settings for workbook.|
 |SaveOptions|Class|true|false |  |Indicates save options.|
 
