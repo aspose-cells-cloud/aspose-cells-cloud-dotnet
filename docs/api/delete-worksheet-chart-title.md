@@ -1,6 +1,6 @@
 # **deleteWorksheetChartTitle API**
 
-Hides chart title in worksheet. 
+Hide chart title in the worksheet. 
 
 ```bash
 

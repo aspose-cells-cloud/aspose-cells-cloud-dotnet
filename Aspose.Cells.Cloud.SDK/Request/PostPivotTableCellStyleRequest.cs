@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PostPivotTableCellStyleRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,15 +47,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostPivotTableCellStyleRequest"/> class.
         /// </summary>
-        /// <param name="name">The workbook name.</param>
+        /// <param name="name">The file name.</param>
         /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="pivotTableIndex">Gets the PivotTable report by index.</param>
-        /// <param name="column">Column index of the cell.</param>
-        /// <param name="row">RowIndex of the cell.</param>
-        /// <param name="style">Style description in request body.</param>
-        /// <param name="needReCalculate">Whether the specific pivot table calculate(true/false).</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
+        /// <param name="pivotTableIndex">The PivotTable index.</param>
+        /// <param name="column">The column index of the cell.</param>
+        /// <param name="row">The row index of the cell.</param>
+        /// <param name="style">Style Style description in request body.</param>
+        /// <param name="needReCalculate">Whether the specific PivotTable calculate(true/false).</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public PostPivotTableCellStyleRequest(string name, string sheetName, int? pivotTableIndex, int? column, int? row, Style style, bool? needReCalculate = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -70,7 +70,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// The workbook name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
@@ -80,37 +80,37 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets the PivotTable report by index.
+        /// The PivotTable index.
         /// </summary>
         public int? pivotTableIndex { get; set; }
 
         /// <summary>
-        /// Column index of the cell.
+        /// The column index of the cell.
         /// </summary>
         public int? column { get; set; }
 
         /// <summary>
-        /// RowIndex of the cell.
+        /// The row index of the cell.
         /// </summary>
         public int? row { get; set; }
 
         /// <summary>
-        /// Style description in request body.
+        /// Style Style description in request body.
         /// </summary>
         public Style style { get; set; }
 
         /// <summary>
-        /// Whether the specific pivot table calculate(true/false).
+        /// Whether the specific PivotTable calculate(true/false).
         /// </summary>
         public bool? needReCalculate { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

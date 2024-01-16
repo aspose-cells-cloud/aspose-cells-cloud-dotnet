@@ -1,6 +1,6 @@
 # **postChartSecondCategoryAxis API**
 
- 
+Update chart sencond category axis in the chart. 
 
 ```bash
 

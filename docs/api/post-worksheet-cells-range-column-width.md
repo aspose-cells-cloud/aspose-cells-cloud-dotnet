@@ -1,6 +1,6 @@
 # **postWorksheetCellsRangeColumnWidth API**
 
-Sets column width of range. 
+Set the column width of the specified range. 
 
 ```bash
 
@@ -12,9 +12,9 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/ranges/co
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|name|String|Path|The workbook name.|
+|name|String|Path|The file name.|
 |sheetName|String|Path|The worksheet name.|
-|range|Class|Body|The range object.|
+|range|Class|Body|Range The range object.|
 |value|Floating|Query|Sets the column width of this range.|
 |folder|String|Query|Original workbook folder.|
 |storageName|String|Query|Storage name.|

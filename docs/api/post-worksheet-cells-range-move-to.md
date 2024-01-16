@@ -1,6 +1,6 @@
 # **postWorksheetCellsRangeMoveTo API**
 
-Moves the current range to the dest range. 
+Move the current range to the destination range. 
 
 ```bash
 
@@ -12,7 +12,7 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/ranges/mo
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|name|String|Path|The workbook name.|
+|name|String|Path|The file name.|
 |sheetName|String|Path|The worksheet name.|
 |range|Class|Body|range in worksheet |
 |destRow|Integer|Query|The start row of the dest range.|

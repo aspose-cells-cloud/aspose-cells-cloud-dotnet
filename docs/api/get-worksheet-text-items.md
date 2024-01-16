@@ -1,6 +1,6 @@
 # **getWorksheetTextItems API**
 
-Get text items in worksheet. 
+Retrieve text items in the worksheet. 
 
 ```bash
 
@@ -14,8 +14,8 @@ GET http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/textItems
 | :- | :- | :- |:- | 
 |name|String|Path|Workbook name.|
 |sheetName|String|Path|The worksheet name.|
-|folder|String|Query|The workbook's folder.|
-|storageName|String|Query|Storage name.|
+|folder|String|Query|The folder where the file is situated.|
+|storageName|String|Query|The storage name where the file is situated.|
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/WorksheetsController/GetWorksheetTextItems) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

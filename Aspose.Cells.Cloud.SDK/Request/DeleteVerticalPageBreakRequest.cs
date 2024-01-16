@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="DeleteVerticalPageBreakRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -49,9 +49,9 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="index">Removes the VPageBreak element at a specified name. Element index, zero based.</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
+        /// <param name="index">Removes the vertical page break element at a specified name. Element index, zero based.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public DeleteVerticalPageBreakRequest(string name, string sheetName, int? index, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -72,17 +72,17 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Removes the VPageBreak element at a specified name. Element index, zero based.
+        /// Removes the vertical page break element at a specified name. Element index, zero based.
         /// </summary>
         public int? index { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PutWorksheetShapeRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,18 +47,18 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetShapeRequest"/> class.
         /// </summary>
-        /// <param name="name">The workbook name.</param>
+        /// <param name="name">The file name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="shapeDTO"></param>
-        /// <param name="drawingType">shape object type</param>
+        /// <param name="drawingType">Shape object type</param>
         /// <param name="upperLeftRow">Upper left row index.</param>
         /// <param name="upperLeftColumn">Upper left column index.</param>
         /// <param name="top">Represents the vertical offset of Spinner from its left row, in unit of pixel.</param>
         /// <param name="left">Represents the horizontal offset of Spinner from its left column, in unit of pixel.</param>
         /// <param name="width">Represents the height of Spinner, in unit of pixel.</param>
         /// <param name="height">Represents the width of Spinner, in unit of pixel.</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public PutWorksheetShapeRequest(string name, string sheetName, Shape shapeDTO = null, string drawingType = null, int? upperLeftRow = null, int? upperLeftColumn = null, int? top = null, int? left = null, int? width = null, int? height = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -76,7 +76,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// The workbook name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
@@ -91,7 +91,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public Shape shapeDTO { get; set; }
 
         /// <summary>
-        /// shape object type
+        /// Shape object type
         /// </summary>
         public string DrawingType { get; set; }
 
@@ -126,12 +126,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public int? height { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

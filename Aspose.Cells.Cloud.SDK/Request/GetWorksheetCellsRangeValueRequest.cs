@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="GetWorksheetCellsRangeValueRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,9 +47,9 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetCellsRangeValueRequest"/> class.
         /// </summary>
-        /// <param name="name">The workbook name.</param>
+        /// <param name="name">The file name.</param>
         /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="namerange">range name.</param>
+        /// <param name="namerange">The range name.</param>
         /// <param name="firstRow">Gets the index of the first row of the range.</param>
         /// <param name="firstColumn">Gets the index of the first columnn of the range.</param>
         /// <param name="rowCount">Gets the count of rows in the range.</param>
@@ -70,7 +70,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// The workbook name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
@@ -80,7 +80,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string sheetName { get; set; }
 
         /// <summary>
-        /// range name.
+        /// The range name.
         /// </summary>
         public string namerange { get; set; }
 

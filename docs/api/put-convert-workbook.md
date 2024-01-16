@@ -20,6 +20,8 @@ PUT http://api.aspose.cloud/v3.0//cells/convert
 |checkExcelRestriction|Boolean|Query|Whether check restriction of excel file when user modify cells related objects.|
 |streamFormat|String|Query|The format of the input file stream. |
 |region|String|Query|The regional settings for workbook.|
+|pageWideFitOnPerSheet|Boolean|Query|The page wide fit on worksheet.|
+|pageTallFitOnPerSheet|Boolean|Query|The page tall fit on worksheet.|
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/PutConvertWorkbook) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

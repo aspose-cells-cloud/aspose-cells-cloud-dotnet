@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="XpsSaveOptions.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -37,8 +37,98 @@ namespace Aspose.Cells.Cloud.SDK.Model
     /// <summary>
     /// Represents the options of saving .xps file.
     /// </summary>
-    public class XpsSaveOptions : SaveOptions
+    public class XpsSaveOptions : PaginatedSaveOptions
     {
+        /// <summary>
+        /// Gets or sets DefaultFont.
+        /// </summary>
+        public override string DefaultFont { get; set; }
+
+        /// <summary>
+        /// Gets or sets CheckWorkbookDefaultFont.
+        /// </summary>
+        public override bool? CheckWorkbookDefaultFont { get; set; }
+
+        /// <summary>
+        /// Gets or sets CheckFontCompatibility.
+        /// </summary>
+        public override bool? CheckFontCompatibility { get; set; }
+
+        /// <summary>
+        /// Gets or sets IsFontSubstitutionCharGranularity.
+        /// </summary>
+        public override bool? IsFontSubstitutionCharGranularity { get; set; }
+
+        /// <summary>
+        /// Gets or sets OnePagePerSheet.
+        /// </summary>
+        public override bool? OnePagePerSheet { get; set; }
+
+        /// <summary>
+        /// Gets or sets AllColumnsInOnePagePerSheet.
+        /// </summary>
+        public override bool? AllColumnsInOnePagePerSheet { get; set; }
+
+        /// <summary>
+        /// Gets or sets IgnoreError.
+        /// </summary>
+        public override bool? IgnoreError { get; set; }
+
+        /// <summary>
+        /// Gets or sets OutputBlankPageWhenNothingToPrint.
+        /// </summary>
+        public override bool? OutputBlankPageWhenNothingToPrint { get; set; }
+
+        /// <summary>
+        /// Gets or sets PageIndex.
+        /// </summary>
+        public override int? PageIndex { get; set; }
+
+        /// <summary>
+        /// Gets or sets PageCount.
+        /// </summary>
+        public override int? PageCount { get; set; }
+
+        /// <summary>
+        /// Gets or sets PrintingPageType.
+        /// </summary>
+        public override string PrintingPageType { get; set; }
+
+        /// <summary>
+        /// Gets or sets GridlineType.
+        /// </summary>
+        public override string GridlineType { get; set; }
+
+        /// <summary>
+        /// Gets or sets TextCrossType.
+        /// </summary>
+        public override string TextCrossType { get; set; }
+
+        /// <summary>
+        /// Gets or sets DefaultEditLanguage.
+        /// </summary>
+        public override string DefaultEditLanguage { get; set; }
+
+        /// <summary>
+        /// Gets or sets EmfRenderSetting.
+        /// </summary>
+        public override string EmfRenderSetting { get; set; }
+
+        /// <summary>
+        /// Gets or sets MergeAreas.
+        /// </summary>
+        public override bool? MergeAreas { get; set; }
+
+        /// <summary>
+        /// Gets or sets SortExternalNames.
+        /// </summary>
+        public override bool? SortExternalNames { get; set; }
+
+        /// <summary>
+        /// Gets or sets UpdateSmartArt.
+        /// </summary>
+        public override bool? UpdateSmartArt { get; set; }
+
         /// <summary>
         /// Gets or sets SaveFormat.
         /// </summary>
@@ -87,6 +177,24 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
             var sb = new StringBuilder();
             sb.Append("class XpsSaveOptions {\n");
+            sb.Append("  DefaultFont: ").Append(this.DefaultFont).Append("\n");
+            sb.Append("  CheckWorkbookDefaultFont: ").Append(this.CheckWorkbookDefaultFont).Append("\n");
+            sb.Append("  CheckFontCompatibility: ").Append(this.CheckFontCompatibility).Append("\n");
+            sb.Append("  IsFontSubstitutionCharGranularity: ").Append(this.IsFontSubstitutionCharGranularity).Append("\n");
+            sb.Append("  OnePagePerSheet: ").Append(this.OnePagePerSheet).Append("\n");
+            sb.Append("  AllColumnsInOnePagePerSheet: ").Append(this.AllColumnsInOnePagePerSheet).Append("\n");
+            sb.Append("  IgnoreError: ").Append(this.IgnoreError).Append("\n");
+            sb.Append("  OutputBlankPageWhenNothingToPrint: ").Append(this.OutputBlankPageWhenNothingToPrint).Append("\n");
+            sb.Append("  PageIndex: ").Append(this.PageIndex).Append("\n");
+            sb.Append("  PageCount: ").Append(this.PageCount).Append("\n");
+            sb.Append("  PrintingPageType: ").Append(this.PrintingPageType).Append("\n");
+            sb.Append("  GridlineType: ").Append(this.GridlineType).Append("\n");
+            sb.Append("  TextCrossType: ").Append(this.TextCrossType).Append("\n");
+            sb.Append("  DefaultEditLanguage: ").Append(this.DefaultEditLanguage).Append("\n");
+            sb.Append("  EmfRenderSetting: ").Append(this.EmfRenderSetting).Append("\n");
+            sb.Append("  MergeAreas: ").Append(this.MergeAreas).Append("\n");
+            sb.Append("  SortExternalNames: ").Append(this.SortExternalNames).Append("\n");
+            sb.Append("  UpdateSmartArt: ").Append(this.UpdateSmartArt).Append("\n");
             sb.Append("  SaveFormat: ").Append(this.SaveFormat).Append("\n");
             sb.Append("  CachedFileFolder: ").Append(this.CachedFileFolder).Append("\n");
             sb.Append("  ClearData: ").Append(this.ClearData).Append("\n");

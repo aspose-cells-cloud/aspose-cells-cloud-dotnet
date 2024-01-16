@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PostWorksheetChartTitleRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -50,7 +50,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="name">The file name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="chartIndex">The chart index.</param>
-        /// <param name="title">Chart title</param>
+        /// <param name="title">TitleChart title</param>
         /// <param name="folder">The folder where the file is situated.</param>
         /// <param name="storageName">The storage name where the file is situated.</param>
         public PostWorksheetChartTitleRequest(string name, string sheetName, int? chartIndex, Title title, string folder = null, string storageName = null)
@@ -79,7 +79,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public int? chartIndex { get; set; }
 
         /// <summary>
-        /// Chart title
+        /// TitleChart title
         /// </summary>
         public Title title { get; set; }
 

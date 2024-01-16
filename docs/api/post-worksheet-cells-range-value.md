@@ -1,6 +1,6 @@
 # **postWorksheetCellsRangeValue API**
 
-Puts a value into the range, if appropriate the value will be converted to other data type and cell's number format will be reset. 
+Assign a value to the range; if necessary, the value will be converted to another data type, and the cell's number format will be reset. 
 
 ```bash
 
@@ -12,12 +12,12 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/ranges/va
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|name|String|Path|The workbook name.|
+|name|String|Path|The file name.|
 |sheetName|String|Path|The worksheet name.|
-|range|Class|Body|range in worksheet |
-|Value|String|Query|Input value|
+|range|Class|Body|The range in worksheet. |
+|Value|String|Query|Input value.|
 |isConverted|Boolean|Query|True: converted to other data type if appropriate.|
-|setStyle|Boolean|Query|True: set the number format to cell's style when converting to other data type|
+|setStyle|Boolean|Query|True: set the number format to cell's style when converting to other data type.|
 |folder|String|Query|Original workbook folder.|
 |storageName|String|Query|Storage name.|
 

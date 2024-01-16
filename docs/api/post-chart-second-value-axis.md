@@ -1,6 +1,6 @@
 # **postChartSecondValueAxis API**
 
- 
+Update chart sencond value axis in the chart. 
 
 ```bash
 

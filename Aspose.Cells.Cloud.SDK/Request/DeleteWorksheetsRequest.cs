@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="DeleteWorksheetsRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -49,8 +49,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         /// <param name="name"></param>
         /// <param name="matchCondition"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public DeleteWorksheetsRequest(string name, MatchConditionRequest matchCondition = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -70,12 +70,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public MatchConditionRequest matchCondition { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

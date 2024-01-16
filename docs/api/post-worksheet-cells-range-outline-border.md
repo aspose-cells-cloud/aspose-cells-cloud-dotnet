@@ -1,6 +1,6 @@
 # **postWorksheetCellsRangeOutlineBorder API**
 
-Sets outline border around a range of cells. 
+Apply an outline border around a range of cells. 
 
 ```bash
 
@@ -12,9 +12,9 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/ranges/ou
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|name|String|Path|The workbook name.|
+|name|String|Path|The file name.|
 |sheetName|String|Path|The worksheet name.|
-|rangeOperate|Class|Body|Range Set OutlineBorder Request.|
+|rangeOperate|Class|Body|RangeSetOutlineBorderRequest Range Set OutlineBorder Request.|
 |folder|String|Query|Original workbook folder.|
 |storageName|String|Query|Storage name.|
 

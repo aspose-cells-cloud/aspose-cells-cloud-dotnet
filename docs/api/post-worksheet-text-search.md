@@ -1,6 +1,6 @@
 # **postWorksheetTextSearch API**
 
-Searchs text in worksheet. 
+Search for text in the worksheet. 
 
 ```bash
 
@@ -12,7 +12,7 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/findText
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|name|String|Path|The workbook name.|
+|name|String|Path|The file name.|
 |sheetName|String|Path|The worksheet name.|
 |text|String|Query|Text to search.|
 |folder|String|Query|Original workbook folder.|

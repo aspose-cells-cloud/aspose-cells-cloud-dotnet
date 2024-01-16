@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PutWorksheetPivotTableRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,14 +47,14 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetPivotTableRequest"/> class.
         /// </summary>
-        /// <param name="name">The workbook name.</param>
+        /// <param name="name">The file name.</param>
         /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="folder">Original workbook folder.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
         /// <param name="sourceData">The data for the new PivotTable cache.</param>
-        /// <param name="destCellName">The cell in the upper-left corner of the PivotTable report's destination range.</param>
-        /// <param name="tableName">The name of the new PivotTable report.</param>
-        /// <param name="useSameSource">Indicates whether using same data source when another existing pivot table has used this data source. If the property is true, it will save memory.</param>
-        /// <param name="storageName">Storage name.</param>
+        /// <param name="destCellName">The cell in the upper-left corner of the destination range for the PivotTable report.</param>
+        /// <param name="tableName">The name of the new PivotTable.</param>
+        /// <param name="useSameSource">Indicates whether using same data source when another existing PivotTable has used this data source. If the property is true, it will save memory.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public PutWorksheetPivotTableRequest(string name, string sheetName, string folder = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null, string storageName = null)
         {
             this.name = name;
@@ -68,7 +68,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// The workbook name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
@@ -78,7 +78,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
@@ -88,22 +88,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string sourceData { get; set; }
 
         /// <summary>
-        /// The cell in the upper-left corner of the PivotTable report's destination range.
+        /// The cell in the upper-left corner of the destination range for the PivotTable report.
         /// </summary>
         public string destCellName { get; set; }
 
         /// <summary>
-        /// The name of the new PivotTable report.
+        /// The name of the new PivotTable.
         /// </summary>
         public string tableName { get; set; }
 
         /// <summary>
-        /// Indicates whether using same data source when another existing pivot table has used this data source. If the property is true, it will save memory.
+        /// Indicates whether using same data source when another existing PivotTable has used this data source. If the property is true, it will save memory.
         /// </summary>
         public bool? useSameSource { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

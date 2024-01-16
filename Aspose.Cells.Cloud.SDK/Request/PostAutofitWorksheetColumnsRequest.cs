@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PostAutofitWorksheetColumnsRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,13 +47,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostAutofitWorksheetColumnsRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="startColumn"></param>
-        /// <param name="endColumn"></param>
+        /// <param name="name">The file name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="startColumn">The start column index.</param>
+        /// <param name="endColumn">The end column index.</param>
         /// <param name="onlyAuto"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public PostAutofitWorksheetColumnsRequest(string name, string sheetName, int? startColumn = null, int? endColumn = null, bool? onlyAuto = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -66,22 +66,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets startColumn.
+        /// The start column index.
         /// </summary>
         public int? startColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets endColumn.
+        /// The end column index.
         /// </summary>
         public int? endColumn { get; set; }
 
@@ -91,12 +91,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public bool? onlyAuto { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

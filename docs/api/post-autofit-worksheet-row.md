@@ -1,6 +1,6 @@
 # **postAutofitWorksheetRow API**
 
-Autofits row in worksheet. 
+Autofit a row in the worksheet. 
 
 ```bash
 
@@ -12,13 +12,13 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/autofitro
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|name|String|Path|The workbook name.|
+|name|String|Path|The file name.|
 |sheetName|String|Path|The worksheet name.|
-|rowIndex|Integer|Query|Row index.|
-|firstColumn|Integer|Query|First column index.|
-|lastColumn|Integer|Query|Last column index.|
-|folder|String|Query|Original workbook folder.|
-|storageName|String|Query|Storage name.|
+|rowIndex|Integer|Query|The row index.|
+|firstColumn|Integer|Query|The first column index.|
+|lastColumn|Integer|Query|The last column index.|
+|folder|String|Query|The folder where the file is situated.|
+|storageName|String|Query|The storage name where the file is situated.|
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/WorksheetsController/PostAutofitWorksheetRow) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

@@ -1,6 +1,6 @@
 # **getWorksheetCellsRangeValue API**
 
-Get the value of cells in range. 
+Retrieve the values of cells within the specified range. 
 
 ```bash
 
@@ -12,9 +12,9 @@ GET http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/ranges/val
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|name|String|Path|The workbook name.|
+|name|String|Path|The file name.|
 |sheetName|String|Path|The worksheet name.|
-|namerange|String|Query|range name.|
+|namerange|String|Query|The range name.|
 |firstRow|Integer|Query|Gets the index of the first row of the range.|
 |firstColumn|Integer|Query|Gets the index of the first columnn of the range.|
 |rowCount|Integer|Query|Gets the count of rows in the range.|

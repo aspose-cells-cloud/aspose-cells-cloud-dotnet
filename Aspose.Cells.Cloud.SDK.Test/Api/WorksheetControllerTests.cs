@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="WorksheetControllerTests.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -593,18 +593,18 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
         }
 
         /// <summary>
-        /// Test for PostWorsheetTextReplace of WorksheetController.
+        /// Test for PostWorksheetTextReplace of WorksheetController.
         /// </summary>
         [TestCategory(ProductName)]
         [TestMethod]
-        public void TestPostWorsheetTextReplace()
+        public void TestPostWorksheetTextReplace()
         {
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
-            var request = new PostWorsheetTextReplaceRequest(
+            var request = new PostWorksheetTextReplaceRequest(
                 name: remoteName,
                 sheetName: "Sheet1",
                 oldValue: "123",
@@ -612,7 +612,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
                 folder: remoteFolder,
                 storageName: ""
             );
-            var actual =  this.CellsApi.PostWorsheetTextReplace(request);
+            var actual =  this.CellsApi.PostWorksheetTextReplace(request);
             Assert.AreEqual(200, actual.Code);
         }
 

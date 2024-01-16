@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PutWorksheetListObjectRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,17 +47,17 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetListObjectRequest"/> class.
         /// </summary>
-        /// <param name="name">The workbook name.</param>
+        /// <param name="name">The file name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="startRow">The start row of the list range.</param>
-        /// <param name="startColumn">The start row of the list range.</param>
+        /// <param name="startColumn">The start column of the list range.</param>
         /// <param name="endRow">The start row of the list range.</param>
-        /// <param name="endColumn">The start row of the list range.</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="hasHeaders">Whether the range has headers.</param>
-        /// <param name="displayName"></param>
-        /// <param name="showTotals"></param>
-        /// <param name="storageName">Storage name.</param>
+        /// <param name="endColumn">The start column of the list range.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="hasHeaders">Indicate whether the range has headers.</param>
+        /// <param name="displayName">Indicate whether display name.</param>
+        /// <param name="showTotals">Indicate whether show totals.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public PutWorksheetListObjectRequest(string name, string sheetName, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, bool? hasHeaders = null, string displayName = null, bool? showTotals = null, string storageName = null)
         {
             this.name = name;
@@ -74,7 +74,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// The workbook name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
@@ -89,7 +89,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public int? startRow { get; set; }
 
         /// <summary>
-        /// The start row of the list range.
+        /// The start column of the list range.
         /// </summary>
         public int? startColumn { get; set; }
 
@@ -99,32 +99,32 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public int? endRow { get; set; }
 
         /// <summary>
-        /// The start row of the list range.
+        /// The start column of the list range.
         /// </summary>
         public int? endColumn { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Whether the range has headers.
+        /// Indicate whether the range has headers.
         /// </summary>
         public bool? hasHeaders { get; set; }
 
         /// <summary>
-        /// Gets or sets displayName.
+        /// Indicate whether display name.
         /// </summary>
         public string displayName { get; set; }
 
         /// <summary>
-        /// Gets or sets showTotals.
+        /// Indicate whether show totals.
         /// </summary>
         public bool? showTotals { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PostWorksheetUngroupShapeRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,11 +47,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetUngroupShapeRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
+        /// <param name="name">The file name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
         /// <param name="shapeindex"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public PostWorksheetUngroupShapeRequest(string name, string sheetName, int? shapeindex, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -62,12 +62,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
@@ -77,12 +77,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public int? shapeindex { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

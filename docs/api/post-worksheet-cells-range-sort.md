@@ -1,6 +1,6 @@
 # **postWorksheetCellsRangeSort API**
 
-Sets data sort around a range of cells. 
+Perform data sorting around a range of cells. 
 
 ```bash
 
@@ -12,9 +12,9 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/ranges/so
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|name|String|Path|The workbook name.|
+|name|String|Path|The file name.|
 |sheetName|String|Path|The worksheet name.|
-|rangeSortRequest|Class|Body|Range Sort Request |
+|rangeSortRequest|Class|Body|RangeSortRequest Range Sort Request |
 |folder|String|Query|Original workbook folder.|
 |storageName|String|Query|Storage name.|
 

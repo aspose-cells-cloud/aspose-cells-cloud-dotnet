@@ -1,6 +1,6 @@
 # **getChartSecondCategoryAxis API**
 
- 
+Retrieve chart second category axis in the chart 
 
 ```bash
 

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PostWorkbookCalculateFormulaRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,11 +47,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorkbookCalculateFormulaRequest"/> class.
         /// </summary>
-        /// <param name="name">The workbook name.</param>
-        /// <param name="options">Calculation Options.</param>
+        /// <param name="name">The file name.</param>
+        /// <param name="options">CalculationOptions Calculation Options.</param>
         /// <param name="ignoreError">ignore Error.</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public PostWorkbookCalculateFormulaRequest(string name, CalculationOptions options = null, bool? ignoreError = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -62,12 +62,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// The workbook name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Calculation Options.
+        /// CalculationOptions Calculation Options.
         /// </summary>
         public CalculationOptions options { get; set; }
 
@@ -77,12 +77,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public bool? ignoreError { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

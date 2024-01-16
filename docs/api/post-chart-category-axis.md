@@ -1,6 +1,6 @@
 # **postChartCategoryAxis API**
 
- 
+Update chart category axis in the chart. 
 
 ```bash
 

@@ -1,6 +1,6 @@
 # **postPivotTableFieldHideItem API**
 
-Hides pivot field item in pivot table. 
+Hide a pivot field item in the PivotTable. 
 
 ```bash
 
@@ -12,16 +12,16 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/pivottabl
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|name|String|Path|The workbook name.|
+|name|String|Path|The file name.|
 |sheetName|String|Path|The worksheet name.|
-|pivotTableIndex|Integer|Path|Gets the PivotTable report by index.|
+|pivotTableIndex|Integer|Path|The PivotTable index.|
 |pivotFieldType|String|Query|Represents PivotTable field type(Undefined/Row/Column/Page/Data).|
-|fieldIndex|Integer|Query|Gets the PivotField Object at the specific index.|
-|itemIndex|Integer|Query|The index of the pivotItem in the pivotField.|
+|fieldIndex|Integer|Query|The pivot field index.|
+|itemIndex|Integer|Query|The index of the pivot item in the pivot field.|
 |isHide|Boolean|Query|Whether the specific PivotItem is hidden(true/false).|
-|needReCalculate|Boolean|Query|Whether the specific pivot table calculate(true/false).|
-|folder|String|Query|Original workbook folder.|
-|storageName|String|Query|Storage name.|
+|needReCalculate|Boolean|Query|Whether the specific PivotTable calculate(true/false).|
+|folder|String|Query|The folder where the file is situated.|
+|storageName|String|Query|The storage name where the file is situated.|
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/PivotTablesController/PostPivotTableFieldHideItem) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

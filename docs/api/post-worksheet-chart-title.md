@@ -1,6 +1,6 @@
 # **postWorksheetChartTitle API**
 
-Update chart title in worksheet. 
+Update chart title in the worksheet. 
 
 ```bash
 
@@ -15,7 +15,7 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/charts/{c
 |name|String|Path|The file name.|
 |sheetName|String|Path|The worksheet name.|
 |chartIndex|Integer|Path|The chart index.|
-|title|Class|Body|Chart title|
+|title|Class|Body|TitleChart title|
 |folder|String|Query|The folder where the file is situated.|
 |storageName|String|Query|The storage name where the file is situated.|
 

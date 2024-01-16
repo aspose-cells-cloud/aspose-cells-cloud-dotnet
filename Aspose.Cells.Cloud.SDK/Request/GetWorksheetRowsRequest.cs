@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="GetWorksheetRowsRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,12 +47,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetRowsRequest"/> class.
         /// </summary>
-        /// <param name="name">The workbook name.</param>
+        /// <param name="name">The file name.</param>
         /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="offset">Original workbook folder.</param>
-        /// <param name="count">Storage name.</param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="offset">Row offset.</param>
+        /// <param name="count">Display rows number.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public GetWorksheetRowsRequest(string name, string sheetName, int? offset = null, int? count = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -64,7 +64,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// The workbook name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
@@ -74,22 +74,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// Row offset.
         /// </summary>
         public int? offset { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// Display rows number.
         /// </summary>
         public int? count { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

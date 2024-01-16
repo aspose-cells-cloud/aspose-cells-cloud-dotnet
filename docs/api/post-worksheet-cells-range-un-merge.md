@@ -1,6 +1,6 @@
 # **postWorksheetCellsRangeUnMerge API**
 
-Unmerges merged cells of this range. 
+Unmerge merged cells within this range. 
 
 ```bash
 
@@ -12,9 +12,9 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/ranges/un
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|name|String|Path|The workbook name.|
+|name|String|Path|The file name.|
 |sheetName|String|Path|The worksheet name.|
-|range|Class|Body|range description.|
+|range|Class|Body|Range range description.|
 |folder|String|Query|Original workbook folder.|
 |storageName|String|Query|Storage name.|
 

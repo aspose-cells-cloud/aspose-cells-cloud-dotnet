@@ -1,6 +1,6 @@
 # **getChartValueAxis API**
 
- 
+Retrieve chart value axis in the chart. 
 
 ```bash
 

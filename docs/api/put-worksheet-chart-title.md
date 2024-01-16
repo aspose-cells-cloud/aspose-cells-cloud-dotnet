@@ -1,6 +1,6 @@
 # **putWorksheetChartTitle API**
 
-Add chart title / Set chart title visible 
+Set chart title in the worksheet. 
 
 ```bash
 
@@ -15,7 +15,7 @@ PUT http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/charts/{ch
 |name|String|Path|The file name.|
 |sheetName|String|Path|The worksheet name.|
 |chartIndex|Integer|Path|The chart index.|
-|title|Class|Body|Chart title.|
+|title|Class|Body|TitleChart title.|
 |folder|String|Query|The folder where the file is situated.|
 |storageName|String|Query|The storage name where the file is situated.|
 

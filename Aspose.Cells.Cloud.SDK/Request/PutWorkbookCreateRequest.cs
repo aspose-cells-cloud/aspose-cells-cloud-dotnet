@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PutWorkbookCreateRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -51,8 +51,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="templateFile">The template file, if the data not provided default workbook is created.</param>
         /// <param name="dataFile">Smart marker data file, if the data not provided the request content is checked for the data.</param>
         /// <param name="isWriteOver">Specifies whether to write over targer file.</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         /// <param name="checkExcelRestriction"></param>
         public PutWorkbookCreateRequest(string name, string templateFile = null, string dataFile = null, bool? isWriteOver = null, string folder = null, string storageName = null, bool? checkExcelRestriction = null)
         {
@@ -86,12 +86,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public bool? isWriteOver { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

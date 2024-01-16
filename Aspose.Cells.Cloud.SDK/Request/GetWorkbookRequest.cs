@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="GetWorkbookRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -58,7 +58,9 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="outStorageName">The storage name where the output file is situated.</param>
         /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
         /// <param name="region">The regional settings for workbook.</param>
-        public GetWorkbookRequest(string name, string format = null, string password = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string outPath = null, string storageName = null, string outStorageName = null, bool? checkExcelRestriction = null, string region = null)
+        /// <param name="pageWideFitOnPerSheet">The page wide fit on worksheet.</param>
+        /// <param name="pageTallFitOnPerSheet">The page tall fit on worksheet.</param>
+        public GetWorkbookRequest(string name, string format = null, string password = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string outPath = null, string storageName = null, string outStorageName = null, bool? checkExcelRestriction = null, string region = null, bool? pageWideFitOnPerSheet = null, bool? pageTallFitOnPerSheet = null)
         {
             this.name = name;
             this.format = format;
@@ -71,6 +73,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.outStorageName = outStorageName;
             this.checkExcelRestriction = checkExcelRestriction;
             this.region = region;
+            this.pageWideFitOnPerSheet = pageWideFitOnPerSheet;
+            this.pageTallFitOnPerSheet = pageTallFitOnPerSheet;
         }
 
         /// <summary>
@@ -128,6 +132,16 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string region { get; set; }
 
+        /// <summary>
+        /// The page wide fit on worksheet.
+        /// </summary>
+        public bool? pageWideFitOnPerSheet { get; set; }
+
+        /// <summary>
+        /// The page tall fit on worksheet.
+        /// </summary>
+        public bool? pageTallFitOnPerSheet { get; set; }
+
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -168,6 +182,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
             if(this.checkExcelRestriction != null)  path = UrlHelper.AddQueryParameterToUrl(path, "checkExcelRestriction", this.checkExcelRestriction);
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
+            if(this.pageWideFitOnPerSheet != null)  path = UrlHelper.AddQueryParameterToUrl(path, "pageWideFitOnPerSheet", this.pageWideFitOnPerSheet);
+            if(this.pageTallFitOnPerSheet != null)  path = UrlHelper.AddQueryParameterToUrl(path, "pageTallFitOnPerSheet", this.pageTallFitOnPerSheet);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)

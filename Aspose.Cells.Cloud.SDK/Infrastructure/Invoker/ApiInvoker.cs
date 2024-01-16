@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ApiInvoker.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -50,7 +50,7 @@ namespace Aspose.Cells.Cloud.SDK.Invoker
         internal ApiInvoker(List<IRequestHandler> requestHandlers)
         {
             this.AddDefaultHeader(AsposeClientHeaderName, ".net sdk");
-            this.AddDefaultHeader(AsposeClientVersionHeaderName, "23.12.1");
+            this.AddDefaultHeader(AsposeClientVersionHeaderName, "24.1.1");
             this.requestHandlers = requestHandlers;
         }
 

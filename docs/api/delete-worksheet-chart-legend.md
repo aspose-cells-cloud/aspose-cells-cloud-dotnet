@@ -1,6 +1,6 @@
 # **deleteWorksheetChartLegend API**
 
-Hides chart legend in worksheet. 
+Hides chart legend in the worksheet. 
 
 ```bash
 

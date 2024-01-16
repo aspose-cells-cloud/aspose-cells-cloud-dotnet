@@ -1,6 +1,6 @@
 # **getChartSeriesAxis API**
 
- 
+Retrieve descriptions of chart seriesaxis in the chart. 
 
 ```bash
 

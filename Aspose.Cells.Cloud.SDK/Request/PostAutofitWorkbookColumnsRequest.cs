@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PostAutofitWorkbookColumnsRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -48,10 +48,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="PostAutofitWorkbookColumnsRequest"/> class.
         /// </summary>
         /// <param name="name"></param>
-        /// <param name="startColumn"></param>
-        /// <param name="endColumn"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="startColumn">The start column index.</param>
+        /// <param name="endColumn">The end column index.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public PostAutofitWorkbookColumnsRequest(string name, int? startColumn = null, int? endColumn = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -67,22 +67,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets startColumn.
+        /// The start column index.
         /// </summary>
         public int? startColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets endColumn.
+        /// The end column index.
         /// </summary>
         public int? endColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

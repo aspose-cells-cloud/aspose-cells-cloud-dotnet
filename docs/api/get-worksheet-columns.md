@@ -1,6 +1,6 @@
 # **getWorksheetColumns API**
 
-Get worksheet columns description. 
+Retrieve descriptions of worksheet columns. 
 
 ```bash
 
@@ -12,10 +12,10 @@ GET http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/cells/colu
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|name|String|Path|The workbook name.|
+|name|String|Path|The file name.|
 |sheetName|String|Path|The worksheet name.|
-|offset|Integer|Query|Original workbook folder.|
-|count|Integer|Query|Storage name.|
+|offset|Integer|Query|The folder where the file is situated.|
+|count|Integer|Query|The storage name where the file is situated.|
 |folder|String|Query|The workdook folder.|
 |storageName|String|Query||
 

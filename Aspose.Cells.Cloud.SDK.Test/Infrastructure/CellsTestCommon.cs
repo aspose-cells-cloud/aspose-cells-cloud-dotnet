@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="CellsTestCommon.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -35,25 +35,25 @@ namespace Aspose.Cells.Cloud.SDK.Tests
     {
         private string BaseUri
         {
-            get { return Environment.GetEnvironmentVariable("CellsCloudTestApiBaseUrl"); }
+            get { return Environment.GetEnvironmentVariable("CellsCloudApiBaseUrl"); }
         }
 
         private string ApiVersion
         {
             get
             {
-                string apiVersion = Environment.GetEnvironmentVariable("CellsCloudTestApiBaseUrl");
+                string apiVersion = Environment.GetEnvironmentVariable("CellsCloudApiBaseUrl");
                 return string.IsNullOrEmpty(apiVersion)?apiVersion:"v3.0";
             }            
         } 
 
         private string ClientId
         {
-            get { return Environment.GetEnvironmentVariable("CellsCloudTestClientId"); }
+            get { return Environment.GetEnvironmentVariable("CellsCloudClientId"); }
         }
         private string ClientSecret
         {
-            get { return Environment.GetEnvironmentVariable("CellsCloudTestClientSecret"); }
+            get { return Environment.GetEnvironmentVariable("CellsCloudClientSecret"); }
         }
 
         protected const string ProductName = "Cells";

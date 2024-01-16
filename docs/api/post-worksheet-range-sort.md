@@ -1,6 +1,6 @@
 # **postWorksheetRangeSort API**
 
-Sorts range in worksheet. 
+Sort a range in the worksheet. 
 
 ```bash
 
@@ -12,12 +12,12 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/sort
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|name|String|Path|The workbook name.|
+|name|String|Path|The file name.|
 |sheetName|String|Path|The worksheet name.|
 |cellArea|String|Query|The area needed to sort.|
 |dataSorter|Class|Body|DataSorter with sorting settings.|
-|folder|String|Query|The workbook folder.|
-|storageName|String|Query|Storage name.|
+|folder|String|Query|The folder where the file is situated.|
+|storageName|String|Query|The storage name where the file is situated.|
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/WorksheetsController/PostWorksheetRangeSort) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

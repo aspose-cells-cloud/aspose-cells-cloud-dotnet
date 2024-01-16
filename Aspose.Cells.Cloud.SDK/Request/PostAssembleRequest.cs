@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PostAssembleRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -49,15 +49,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         /// <param name="file">The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
         /// <param name="datasource"></param>
-        /// <param name="format">The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
+        /// <param name="outFormat">The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
         /// <param name="password">The password needed to open an Excel file.</param>
         /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
         /// <param name="region">The regional settings for workbook.</param>
-        public PostAssembleRequest(IDictionary<string, System.IO.Stream> file, string datasource, string format = null, string password = null, bool? checkExcelRestriction = null, string region = null)
+        public PostAssembleRequest(IDictionary<string, System.IO.Stream> file, string datasource, string outFormat = null, string password = null, bool? checkExcelRestriction = null, string region = null)
         {
             this.File = file;
             this.datasource = datasource;
-            this.format = format;
+            this.outFormat = outFormat;
             this.password = password;
             this.checkExcelRestriction = checkExcelRestriction;
             this.region = region;
@@ -76,7 +76,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)
         /// </summary>
-        public string format { get; set; }
+        public string outFormat { get; set; }
 
         /// <summary>
         /// The password needed to open an Excel file.
@@ -129,7 +129,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     .Replace("/?", "?");
 
             path = UrlHelper.AddQueryParameterToUrl(path, "datasource", this.datasource);
-            if (!string.IsNullOrEmpty(this.format))  path = UrlHelper.AddQueryParameterToUrl(path, "format", this.format);
+            if (!string.IsNullOrEmpty(this.outFormat))  path = UrlHelper.AddQueryParameterToUrl(path, "outFormat", this.outFormat);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if(this.checkExcelRestriction != null)  path = UrlHelper.AddQueryParameterToUrl(path, "checkExcelRestriction", this.checkExcelRestriction);
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);

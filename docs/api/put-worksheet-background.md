@@ -1,6 +1,6 @@
 # **putWorksheetBackground API**
 
-Sets background image in worksheet. 
+Set background image in the worksheet. 
 
 ```bash
 
@@ -12,11 +12,11 @@ PUT http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/background
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|name|String|Path|The workbook name.|
+|name|String|Path|The file name.|
 |sheetName|String|Path|The worksheet name.|
 |picPath|String|Query|picture full filename.|
-|folder|String|Query|Original workbook folder.|
-|storageName|String|Query|Storage name.|
+|folder|String|Query|The folder where the file is situated.|
+|storageName|String|Query|The storage name where the file is situated.|
 |File|File|FormData|File to upload|
 
 

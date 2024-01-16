@@ -1,6 +1,6 @@
 # **putWorkbookCreate API**
 
-Creates new workbook using deferent methods. 
+Create a new workbook using different methods. 
 
 ```bash
 
@@ -16,8 +16,8 @@ PUT http://api.aspose.cloud/v3.0//cells/{name}
 |templateFile|String|Query|The template file, if the data not provided default workbook is created.|
 |dataFile|String|Query|Smart marker data file, if the data not provided the request content is checked for the data.|
 |isWriteOver|Boolean|Query|Specifies whether to write over targer file.|
-|folder|String|Query|Original workbook folder.|
-|storageName|String|Query|Storage name.|
+|folder|String|Query|The folder where the file is situated.|
+|storageName|String|Query|The storage name where the file is situated.|
 |checkExcelRestriction|Boolean|Query||
 
 

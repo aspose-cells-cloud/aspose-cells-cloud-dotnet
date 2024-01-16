@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="GetWorksheetPivotTableFilterRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,12 +47,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetPivotTableFilterRequest"/> class.
         /// </summary>
-        /// <param name="name">The workbook name.</param>
+        /// <param name="name">The file name.</param>
         /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="pivotTableIndex">Gets the PivotTable report by index.</param>
-        /// <param name="filterIndex">Gets the pivotfilter object at the specific index.</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
+        /// <param name="pivotTableIndex">The PivotTable index in the worksheet.</param>
+        /// <param name="filterIndex">The pivot filter index of PivotTable.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public GetWorksheetPivotTableFilterRequest(string name, string sheetName, int? pivotTableIndex, int? filterIndex, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -64,7 +64,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// The workbook name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
@@ -74,22 +74,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets the PivotTable report by index.
+        /// The PivotTable index in the worksheet.
         /// </summary>
         public int? pivotTableIndex { get; set; }
 
         /// <summary>
-        /// Gets the pivotfilter object at the specific index.
+        /// The pivot filter index of PivotTable.
         /// </summary>
         public int? filterIndex { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

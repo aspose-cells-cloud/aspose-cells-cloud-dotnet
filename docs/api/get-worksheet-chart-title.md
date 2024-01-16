@@ -1,6 +1,6 @@
 # **getWorksheetChartTitle API**
 
-Gets chart title description in worksheet. 
+Retrieve chart title description in the worksheet. 
 
 ```bash
 

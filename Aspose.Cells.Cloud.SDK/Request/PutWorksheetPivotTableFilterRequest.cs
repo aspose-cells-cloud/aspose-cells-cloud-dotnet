@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PutWorksheetPivotTableFilterRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,13 +47,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetPivotTableFilterRequest"/> class.
         /// </summary>
-        /// <param name="name">The workbook name.</param>
+        /// <param name="name">The file name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="pivotTableIndex">Gets the PivotTable report by index.</param>
-        /// <param name="filter">Pivot filter description.</param>
-        /// <param name="needReCalculate">Whether the specific pivot table calculate(true/false).</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
+        /// <param name="filter">PivotFilter Pivot filter description.</param>
+        /// <param name="needReCalculate">Whether the specific PivotTable calculate(true/false).</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public PutWorksheetPivotTableFilterRequest(string name, string sheetName, int? pivotTableIndex, PivotFilter filter, bool? needReCalculate = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -66,7 +66,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// The workbook name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
@@ -81,22 +81,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public int? pivotTableIndex { get; set; }
 
         /// <summary>
-        /// Pivot filter description.
+        /// PivotFilter Pivot filter description.
         /// </summary>
         public PivotFilter filter { get; set; }
 
         /// <summary>
-        /// Whether the specific pivot table calculate(true/false).
+        /// Whether the specific PivotTable calculate(true/false).
         /// </summary>
         public bool? needReCalculate { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

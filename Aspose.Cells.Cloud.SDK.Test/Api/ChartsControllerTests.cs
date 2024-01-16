@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ChartsControllerTests.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -84,18 +84,18 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
         }
 
         /// <summary>
-        /// Test for PutWorksheetAddChart of ChartsController.
+        /// Test for PutWorksheetChart of ChartsController.
         /// </summary>
         [TestCategory(ProductName)]
         [TestMethod]
-        public void TestPutWorksheetAddChart()
+        public void TestPutWorksheetChart()
         {
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
-            var request = new PutWorksheetAddChartRequest(
+            var request = new PutWorksheetChartRequest(
                 name: remoteName,
                 sheetName: "Sheet4",
                 chartType: "Pie",
@@ -109,30 +109,30 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
                 folder: remoteFolder,
                 storageName: ""
             );
-            var actual =  this.CellsApi.PutWorksheetAddChart(request);
+            var actual =  this.CellsApi.PutWorksheetChart(request);
             Assert.AreEqual(200, actual.Code);
         }
 
         /// <summary>
-        /// Test for DeleteWorksheetDeleteChart of ChartsController.
+        /// Test for DeleteWorksheetChart of ChartsController.
         /// </summary>
         [TestCategory(ProductName)]
         [TestMethod]
-        public void TestDeleteWorksheetDeleteChart()
+        public void TestDeleteWorksheetChart()
         {
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
-            var request = new DeleteWorksheetDeleteChartRequest(
+            var request = new DeleteWorksheetChartRequest(
                 name: remoteName,
                 sheetName: "Sheet4",
                 chartIndex: 0,
                 folder: remoteFolder,
                 storageName: ""
             );
-            var actual =  this.CellsApi.DeleteWorksheetDeleteChart(request);
+            var actual =  this.CellsApi.DeleteWorksheetChart(request);
             Assert.AreEqual(200, actual.Code);
         }
 
@@ -263,24 +263,24 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
         }
 
         /// <summary>
-        /// Test for DeleteWorksheetClearCharts of ChartsController.
+        /// Test for DeleteWorksheetCharts of ChartsController.
         /// </summary>
         [TestCategory(ProductName)]
         [TestMethod]
-        public void TestDeleteWorksheetClearCharts()
+        public void TestDeleteWorksheetCharts()
         {
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
-            var request = new DeleteWorksheetClearChartsRequest(
+            var request = new DeleteWorksheetChartsRequest(
                 name: remoteName,
                 sheetName: "Sheet4",
                 folder: remoteFolder,
                 storageName: ""
             );
-            var actual =  this.CellsApi.DeleteWorksheetClearCharts(request);
+            var actual =  this.CellsApi.DeleteWorksheetCharts(request);
             Assert.AreEqual(200, actual.Code);
         }
 

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="BatchConvertRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -75,6 +75,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string Region { get; set; }
 
         /// <summary>
+        /// Gets or sets PageWideFitOnPerSheet.
+        /// </summary>
+        public virtual bool? PageWideFitOnPerSheet { get; set; }
+
+        /// <summary>
+        /// Gets or sets PageTallFitOnPerSheet.
+        /// </summary>
+        public virtual bool? PageTallFitOnPerSheet { get; set; }
+
+        /// <summary>
         /// Indicates save options.
         /// </summary>
         public virtual SaveOptions SaveOptions { get; set; }
@@ -94,6 +104,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  OutFolder: ").Append(this.OutFolder).Append("\n");
             sb.Append("  OutStorage: ").Append(this.OutStorage).Append("\n");
             sb.Append("  Region: ").Append(this.Region).Append("\n");
+            sb.Append("  PageWideFitOnPerSheet: ").Append(this.PageWideFitOnPerSheet).Append("\n");
+            sb.Append("  PageTallFitOnPerSheet: ").Append(this.PageTallFitOnPerSheet).Append("\n");
             sb.Append("  SaveOptions: ").Append(this.SaveOptions).Append("\n");
             sb.Append("}\n");
             return sb.ToString();

@@ -1,6 +1,6 @@
 # **postChartSeriesAxis API**
 
- 
+Update chart series axis in the chart. 
 
 ```bash
 

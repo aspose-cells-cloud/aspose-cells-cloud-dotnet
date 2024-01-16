@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="LightCellsTests.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -121,7 +121,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
             var request = new PostAssembleRequest(
                 file: mapFiles,
                 datasource: "ds",
-                format: format
+                outFormat: format
             );
             var actual =  this.CellsApi.PostAssemble(request);
             Assert.IsNotNull(actual.Files);

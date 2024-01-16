@@ -1,6 +1,6 @@
 # **putWorksheetChartLegend API**
 
-Show chart legend in worksheet. 
+Show chart legend in the worksheet. 
 
 ```bash
 

@@ -1,6 +1,6 @@
 # **deleteWorksheetCellsRange API**
 
-Deletes a range of cells and shift cells according to the shift option. 
+Delete a range of cells and shift existing cells based on the specified shift option. 
 
 ```bash
 
@@ -12,7 +12,7 @@ DELETE http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/ranges
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|name|String|Path|The workbook name.|
+|name|String|Path|The file name.|
 |sheetName|String|Path|The worksheet name.|
 |range|String|Query|The range object.|
 |shift|String|Query|Represent the shift options when deleting a range of cells(Down/Left/None/Right/Up).|

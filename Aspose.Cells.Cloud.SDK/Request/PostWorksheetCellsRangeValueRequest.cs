@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PostWorksheetCellsRangeValueRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,12 +47,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetCellsRangeValueRequest"/> class.
         /// </summary>
-        /// <param name="name">The workbook name.</param>
+        /// <param name="name">The file name.</param>
         /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="range">range in worksheet </param>
-        /// <param name="value">Input value</param>
+        /// <param name="range">The range in worksheet. </param>
+        /// <param name="value">Input value.</param>
         /// <param name="isConverted">True: converted to other data type if appropriate.</param>
-        /// <param name="setStyle">True: set the number format to cell's style when converting to other data type</param>
+        /// <param name="setStyle">True: set the number format to cell's style when converting to other data type.</param>
         /// <param name="folder">Original workbook folder.</param>
         /// <param name="storageName">Storage name.</param>
         public PostWorksheetCellsRangeValueRequest(string name, string sheetName, Range range, string value, bool? isConverted = null, bool? setStyle = null, string folder = null, string storageName = null)
@@ -68,7 +68,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// The workbook name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
@@ -78,12 +78,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string sheetName { get; set; }
 
         /// <summary>
-        /// range in worksheet 
+        /// The range in worksheet. 
         /// </summary>
         public Range range { get; set; }
 
         /// <summary>
-        /// Input value
+        /// Input value.
         /// </summary>
         public string Value { get; set; }
 
@@ -93,7 +93,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public bool? isConverted { get; set; }
 
         /// <summary>
-        /// True: set the number format to cell's style when converting to other data type
+        /// True: set the number format to cell's style when converting to other data type.
         /// </summary>
         public bool? setStyle { get; set; }
 

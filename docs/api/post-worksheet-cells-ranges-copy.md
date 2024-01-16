@@ -1,6 +1,6 @@
 # **postWorksheetCellsRangesCopy API**
 
-Copys content to destination range from source range in worksheet. 
+Copy content from the source range to the destination range in the worksheet. 
 
 ```bash
 
@@ -12,9 +12,9 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/ranges/co
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|name|String|Path|The workbook name.|
+|name|String|Path|The file name.|
 |sheetName|String|Path|The worksheet name.|
-|rangeOperate|Class|Body|copydata,copystyle,copyto,copyvalue|
+|rangeOperate|Class|Body|RangeCopyRequestcopydata,copystyle,copyto,copyvalue|
 |folder|String|Query|Original workbook folder.|
 |storageName|String|Query|Storage name.|
 

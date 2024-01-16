@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="GetWorksheetValidationRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -50,8 +50,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="name">The workbook name.</param>
         /// <param name="sheetName">The worksheet name.</param>
         /// <param name="validationIndex">The validation index.</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public GetWorksheetValidationRequest(string name, string sheetName, int? validationIndex, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -77,12 +77,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public int? validationIndex { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PutConvertWorkbookRequest.cs">
-//   Copyright (c) 2023 Aspose.Cells Cloud
+//   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -55,7 +55,9 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
         /// <param name="streamFormat">The format of the input file stream. </param>
         /// <param name="region">The regional settings for workbook.</param>
-        public PutConvertWorkbookRequest(IDictionary<string, System.IO.Stream> file, string format = null, string password = null, string outPath = null, string storageName = null, bool? checkExcelRestriction = null, string streamFormat = null, string region = null)
+        /// <param name="pageWideFitOnPerSheet">The page wide fit on worksheet.</param>
+        /// <param name="pageTallFitOnPerSheet">The page tall fit on worksheet.</param>
+        public PutConvertWorkbookRequest(IDictionary<string, System.IO.Stream> file, string format = null, string password = null, string outPath = null, string storageName = null, bool? checkExcelRestriction = null, string streamFormat = null, string region = null, bool? pageWideFitOnPerSheet = null, bool? pageTallFitOnPerSheet = null)
         {
             this.File = file;
             this.format = format;
@@ -65,6 +67,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.checkExcelRestriction = checkExcelRestriction;
             this.streamFormat = streamFormat;
             this.region = region;
+            this.pageWideFitOnPerSheet = pageWideFitOnPerSheet;
+            this.pageTallFitOnPerSheet = pageTallFitOnPerSheet;
         }
 
         /// <summary>
@@ -107,6 +111,16 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string region { get; set; }
 
+        /// <summary>
+        /// The page wide fit on worksheet.
+        /// </summary>
+        public bool? pageWideFitOnPerSheet { get; set; }
+
+        /// <summary>
+        /// The page tall fit on worksheet.
+        /// </summary>
+        public bool? pageTallFitOnPerSheet { get; set; }
+
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -143,6 +157,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             if(this.checkExcelRestriction != null)  path = UrlHelper.AddQueryParameterToUrl(path, "checkExcelRestriction", this.checkExcelRestriction);
             if (!string.IsNullOrEmpty(this.streamFormat))  path = UrlHelper.AddQueryParameterToUrl(path, "streamFormat", this.streamFormat);
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
+            if(this.pageWideFitOnPerSheet != null)  path = UrlHelper.AddQueryParameterToUrl(path, "pageWideFitOnPerSheet", this.pageWideFitOnPerSheet);
+            if(this.pageTallFitOnPerSheet != null)  path = UrlHelper.AddQueryParameterToUrl(path, "pageTallFitOnPerSheet", this.pageTallFitOnPerSheet);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)
