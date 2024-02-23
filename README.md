@@ -20,7 +20,11 @@ The Cloud SDK enhances your C#, ASP.NET, & other .NET-based cloud apps to [proce
 - Fetch the required shape from worksheet.
 - [Leverage the power of Pivot Tables](https://docs.aspose.cloud/cells/working-with-pivot-tables/) & Ranges.
 
+## Feature & Enhancements in Version 24.2.1
 
+Full list of issues covering all changes in this release:
+
+- Add the analyze excel api for analyze controller.
 
 ## Read & Write Spreadsheet Formats
 
