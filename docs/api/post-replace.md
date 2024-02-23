@@ -12,7 +12,7 @@ POST http://api.aspose.cloud/v3.0//cells/replace
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|File|File|FormData|Find content|
+|File|File|FormData|File to upload|
 |text|String|Query|Find content|
 |newtext|String|Query|Replace content|
 |password|String|Query|The password needed to open an Excel file.|

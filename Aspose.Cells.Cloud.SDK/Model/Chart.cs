@@ -237,12 +237,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual int? Style { get; set; }
 
         /// <summary>
-        /// Gets the chart's title.
+        /// 
         /// </summary>
         public virtual LinkElement Title { get; set; }
 
         /// <summary>
-        /// Gets or sets a chart's type.
+        /// 
         /// </summary>
         public virtual string Type { get; set; }
 

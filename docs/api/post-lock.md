@@ -12,7 +12,7 @@ POST http://api.aspose.cloud/v3.0//cells/lock
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|File|File|FormData|The password needed to open an Excel file.|
+|File|File|FormData|File to upload|
 |password|String|Query|The password needed to open an Excel file.|
 
 

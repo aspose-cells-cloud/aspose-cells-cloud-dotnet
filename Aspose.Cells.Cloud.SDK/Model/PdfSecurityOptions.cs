@@ -57,11 +57,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// 
         /// </summary>
-        public virtual bool? ExtractContentPermissionObsolete { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         public virtual bool? FillFormsPermission { get; set; }
 
         /// <summary>
@@ -100,7 +95,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  AnnotationsPermission: ").Append(this.AnnotationsPermission).Append("\n");
             sb.Append("  AssembleDocumentPermission: ").Append(this.AssembleDocumentPermission).Append("\n");
             sb.Append("  ExtractContentPermission: ").Append(this.ExtractContentPermission).Append("\n");
-            sb.Append("  ExtractContentPermissionObsolete: ").Append(this.ExtractContentPermissionObsolete).Append("\n");
             sb.Append("  FillFormsPermission: ").Append(this.FillFormsPermission).Append("\n");
             sb.Append("  FullQualityPrintPermission: ").Append(this.FullQualityPrintPermission).Append("\n");
             sb.Append("  ModifyDocumentPermission: ").Append(this.ModifyDocumentPermission).Append("\n");

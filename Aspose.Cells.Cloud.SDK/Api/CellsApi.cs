@@ -66,6 +66,19 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
         /// <summary>
+        /// Perform business analysis of data in Excel files.
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostAnalyzeExcelRequest" /></param>
+        public   IList<AnalyzedResult>  PostAnalyzeExcel(PostAnalyzeExcelRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    IList<AnalyzedResult>  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+
+
+        /// <summary>
         /// Retrieve the description of auto filters from a worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetAutoFilterRequest" /></param>

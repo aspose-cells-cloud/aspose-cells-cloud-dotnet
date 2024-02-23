@@ -45,12 +45,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string AutoFitMergedCellsType { get; set; }
 
         /// <summary>
-        /// Indicates whether auto fit row height when the cells is merged in a row.
-        ///                         The default value is false.
-        /// </summary>
-        public virtual bool? AutoFitMergedCells { get; set; }
-
-        /// <summary>
         /// Ignores the hidden rows/columns.
         /// </summary>
         public virtual bool? IgnoreHidden { get; set; }
@@ -94,7 +88,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
             var sb = new StringBuilder();
             sb.Append("class AutoFitterOptions {\n");
             sb.Append("  AutoFitMergedCellsType: ").Append(this.AutoFitMergedCellsType).Append("\n");
-            sb.Append("  AutoFitMergedCells: ").Append(this.AutoFitMergedCells).Append("\n");
             sb.Append("  IgnoreHidden: ").Append(this.IgnoreHidden).Append("\n");
             sb.Append("  OnlyAuto: ").Append(this.OnlyAuto).Append("\n");
             sb.Append("  DefaultEditLanguage: ").Append(this.DefaultEditLanguage).Append("\n");

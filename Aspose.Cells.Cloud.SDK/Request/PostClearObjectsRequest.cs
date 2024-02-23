@@ -47,7 +47,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostClearObjectsRequest"/> class.
         /// </summary>
-        /// <param name="file">chart/comment/picture/shape/listobject/hyperlink/oleobject/pivottable/validation/Background</param>
+        /// <param name="file">File to upload</param>
         /// <param name="objecttype">chart/comment/picture/shape/listobject/hyperlink/oleobject/pivottable/validation/Background</param>
         /// <param name="sheetname">The worksheet name, specify the scope of the deletion.</param>
         /// <param name="outFormat">The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
@@ -66,7 +66,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// chart/comment/picture/shape/listobject/hyperlink/oleobject/pivottable/validation/Background
+        /// File to upload
         /// </summary>
         public IDictionary<string, System.IO.Stream> File { get; set; }
 

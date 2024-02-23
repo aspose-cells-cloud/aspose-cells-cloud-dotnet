@@ -40,22 +40,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class CellArea
     {
         /// <summary>
-        /// Gets or sets EndColumn.
+        /// The end column index.
         /// </summary>
         public virtual int? EndColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets EndRow.
+        /// The end row index.
         /// </summary>
         public virtual int? EndRow { get; set; }
 
         /// <summary>
-        /// Gets or sets StartColumn.
+        /// The start column index.
         /// </summary>
         public virtual int? StartColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets StartRow.
+        /// The start row index.
         /// </summary>
         public virtual int? StartRow { get; set; }
 

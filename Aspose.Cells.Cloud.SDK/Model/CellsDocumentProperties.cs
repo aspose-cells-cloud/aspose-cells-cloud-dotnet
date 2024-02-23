@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// CellsDocumentProperties.
+    /// Excel properties
     /// </summary>
     public class CellsDocumentProperties
     {
         /// <summary>
-        /// Gets or sets DocumentPropertyList.
+        /// Document property list.
         /// </summary>
         public virtual IList<CellsDocumentProperty> DocumentPropertyList { get; set; }
 

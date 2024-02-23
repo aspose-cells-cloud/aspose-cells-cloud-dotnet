@@ -12,7 +12,7 @@ POST http://api.aspose.cloud/v3.0//cells/metadata/get
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|File|File|FormData|Cells document property name.|
+|File|File|FormData|File to upload|
 |type|String|Query|Cells document property name.|
 |password|String|Query|The password needed to open an Excel file.|
 |checkExcelRestriction|Boolean|Query|Whether check restriction of excel file when user modify cells related objects.|

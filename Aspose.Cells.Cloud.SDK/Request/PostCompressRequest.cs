@@ -47,7 +47,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostCompressRequest"/> class.
         /// </summary>
-        /// <param name="file">Compress level. The compression ratio 1-100.</param>
+        /// <param name="file">File to upload</param>
         /// <param name="compressLevel">Compress level. The compression ratio 1-100.</param>
         /// <param name="password">The password needed to open an Excel file.</param>
         /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
@@ -60,7 +60,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Compress level. The compression ratio 1-100.
+        /// File to upload
         /// </summary>
         public IDictionary<string, System.IO.Stream> File { get; set; }
 

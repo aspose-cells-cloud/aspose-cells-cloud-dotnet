@@ -47,7 +47,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostConvertWorkbookToDocxRequest"/> class.
         /// </summary>
-        /// <param name="file">The password needed to open an Excel file.</param>
+        /// <param name="file">File to upload</param>
         /// <param name="password">The password needed to open an Excel file.</param>
         /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
         /// <param name="region">The regional settings for workbook.</param>
@@ -60,7 +60,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// The password needed to open an Excel file.
+        /// File to upload
         /// </summary>
         public IDictionary<string, System.IO.Stream> File { get; set; }
 

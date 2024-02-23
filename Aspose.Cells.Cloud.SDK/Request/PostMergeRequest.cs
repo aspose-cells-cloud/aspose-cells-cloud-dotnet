@@ -47,12 +47,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostMergeRequest"/> class.
         /// </summary>
-        /// <param name="file">The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
-        /// <param name="outFormat">The password needed to open an Excel file.</param>
-        /// <param name="mergeToOneSheet">Whether check restriction of excel file when user modify cells related objects.</param>
-        /// <param name="password">The regional settings for workbook.</param>
-        /// <param name="checkExcelRestriction">Upload files.</param>
-        /// <param name="region"></param>
+        /// <param name="file">File to upload</param>
+        /// <param name="outFormat">The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
+        /// <param name="mergeToOneSheet">Merge all workbooks into a sheet.</param>
+        /// <param name="password">The password needed to open an Excel file.</param>
+        /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
+        /// <param name="region">The regional settings for workbook.</param>
         public PostMergeRequest(IDictionary<string, System.IO.Stream> file, string outFormat = null, bool? mergeToOneSheet = null, string password = null, bool? checkExcelRestriction = null, string region = null)
         {
             this.File = file;
@@ -64,32 +64,32 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)
+        /// File to upload
         /// </summary>
         public IDictionary<string, System.IO.Stream> File { get; set; }
 
         /// <summary>
-        /// The password needed to open an Excel file.
+        /// The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)
         /// </summary>
         public string outFormat { get; set; }
 
         /// <summary>
-        /// Whether check restriction of excel file when user modify cells related objects.
+        /// Merge all workbooks into a sheet.
         /// </summary>
         public bool? mergeToOneSheet { get; set; }
 
         /// <summary>
-        /// The regional settings for workbook.
+        /// The password needed to open an Excel file.
         /// </summary>
         public string password { get; set; }
 
         /// <summary>
-        /// Upload files.
+        /// Whether check restriction of excel file when user modify cells related objects.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
 
         /// <summary>
-        /// Gets or sets region.
+        /// The regional settings for workbook.
         /// </summary>
         public string region { get; set; }
 

@@ -35,13 +35,13 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ColorFilter.
+    /// Color filter.
     /// </summary>
     public class ColorFilter
     {
         /// <summary>
-        /// Flag indicating whether filter by the cell's fill color.
-        ///  
+        /// Whether filter by the cell's fill color.
+        ///             
         /// </summary>
         public virtual bool? FilterByFillColor { get; set; }
 

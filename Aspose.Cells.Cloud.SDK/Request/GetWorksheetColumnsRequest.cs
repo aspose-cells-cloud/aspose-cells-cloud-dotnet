@@ -49,10 +49,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         /// <param name="name">The file name.</param>
         /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="offset">The folder where the file is situated.</param>
-        /// <param name="count">The storage name where the file is situated.</param>
-        /// <param name="folder">The workdook folder.</param>
-        /// <param name="storageName"></param>
+        /// <param name="offset">The workdook folder.</param>
+        /// <param name="count"></param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public GetWorksheetColumnsRequest(string name = null, string sheetName = null, int? offset = null, int? count = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -74,22 +74,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string sheetName { get; set; }
 
         /// <summary>
-        /// The folder where the file is situated.
+        /// The workdook folder.
         /// </summary>
         public int? offset { get; set; }
 
         /// <summary>
-        /// The storage name where the file is situated.
+        /// Gets or sets count.
         /// </summary>
         public int? count { get; set; }
 
         /// <summary>
-        /// The workdook folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

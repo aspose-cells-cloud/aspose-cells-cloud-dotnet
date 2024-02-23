@@ -12,7 +12,7 @@ POST http://api.aspose.cloud/v3.0//cells/export
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|File|File|FormData|Exported object type:workbook/worksheet/chart/comment/picture/shape/listobject/oleobject.|
+|File|File|FormData|File to upload|
 |objectType|String|Query|Exported object type:workbook/worksheet/chart/comment/picture/shape/listobject/oleobject.|
 |format|String|Query|The conversion format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).|
 |password|String|Query|The password needed to open an Excel file.|

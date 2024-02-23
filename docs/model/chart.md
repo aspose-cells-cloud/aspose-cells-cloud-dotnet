@@ -44,8 +44,8 @@
 |SideWall|Class|true|false |  |Returns a  object that represents the side wall of a 3-D chart.|
 |SizeWithWindow|Boolean|true|false |  |True if Microsoft Excel resizes the chart to match the size of the chart sheet window.|
 |Style|Integer|true|false |  |Gets and sets the builtin style.|
-|Title|Class|true|false |  |Gets the chart's title.|
-|Type|String|true|false |  |Gets or sets a chart's type.|
+|Title|Class|true|false |  ||
+|Type|String|true|false |  ||
 |ValueAxis|Class|true|false |  |Gets the chart's Y axis.|
 |Walls|Class|true|false |  |Returns a  object that represents the walls of a 3-D chart.|
 |WallsAndGridlines2D|Boolean|true|false |  |True if gridlines are drawn two-dimensionally on a 3-D chart.|

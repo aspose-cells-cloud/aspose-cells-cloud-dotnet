@@ -12,7 +12,7 @@ POST http://api.aspose.cloud/v3.0//cells/compress
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|File|File|FormData|Compress level. The compression ratio 1-100.|
+|File|File|FormData|File to upload|
 |CompressLevel|Integer|Query|Compress level. The compression ratio 1-100.|
 |password|String|Query|The password needed to open an Excel file.|
 |checkExcelRestriction|Boolean|Query|Whether check restriction of excel file when user modify cells related objects.|

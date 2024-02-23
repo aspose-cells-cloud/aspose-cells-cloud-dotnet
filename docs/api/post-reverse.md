@@ -12,7 +12,7 @@ POST http://api.aspose.cloud/v3.0//cells/reverse
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|File|File|FormData|rows/cols/both|
+|File|File|FormData|File to upload|
 |rotateType|String|Query|rows/cols/both|
 |outFormat|String|Query|The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)|
 |password|String|Query|The password needed to open an Excel file.|

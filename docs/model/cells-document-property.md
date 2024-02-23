@@ -1,6 +1,6 @@
 # **cellsDocumentProperty**
 
- 
+Cells document property. 
 
 ## **Properties**
 

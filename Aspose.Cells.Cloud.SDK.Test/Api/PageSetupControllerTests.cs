@@ -203,5 +203,49 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             var actual =  this.CellsApi.PostFooter(request);
             Assert.AreEqual(200, actual.Code);
         }
+
+        /// <summary>
+        /// Test for PostFitWideToPages of PageSetupController.
+        /// </summary>
+        [TestCategory(ProductName)]
+        [TestMethod]
+        public void TestPostFitWideToPages()
+        {
+            string localName = "Book1.xlsx";
+            string remoteName = "Book1.xlsx";
+
+            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+
+            var request = new PostFitWideToPagesRequest(
+                name: remoteName,
+                sheetName: "Sheet1",
+                folder: remoteFolder,
+                storageName: ""
+            );
+            var actual =  this.CellsApi.PostFitWideToPages(request);
+            Assert.AreEqual(200, actual.Code);
+        }
+
+        /// <summary>
+        /// Test for PostFitTallToPages of PageSetupController.
+        /// </summary>
+        [TestCategory(ProductName)]
+        [TestMethod]
+        public void TestPostFitTallToPages()
+        {
+            string localName = "Book1.xlsx";
+            string remoteName = "Book1.xlsx";
+
+            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+
+            var request = new PostFitTallToPagesRequest(
+                name: remoteName,
+                sheetName: "Sheet1",
+                folder: remoteFolder,
+                storageName: ""
+            );
+            var actual =  this.CellsApi.PostFitTallToPages(request);
+            Assert.AreEqual(200, actual.Code);
+        }
     }
 }

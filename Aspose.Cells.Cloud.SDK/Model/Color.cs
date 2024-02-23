@@ -40,22 +40,25 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Color
     {
         /// <summary>
-        /// Gets or sets A.
+        /// Gets the alpha component value of this System.Drawing.Color structure.
+        ///             
         /// </summary>
         public virtual byte? A { get; set; }
 
         /// <summary>
-        /// Gets or sets R.
+        /// Gets the red component value of this System.Drawing.Color structure.
+        ///             
         /// </summary>
         public virtual byte? R { get; set; }
 
         /// <summary>
-        /// Gets or sets G.
+        /// Gets the green component value of this System.Drawing.Color structure.
         /// </summary>
         public virtual byte? G { get; set; }
 
         /// <summary>
-        /// Gets or sets B.
+        /// Gets the blue component value of this System.Drawing.Color structure.
+        ///             
         /// </summary>
         public virtual byte? B { get; set; }
 
