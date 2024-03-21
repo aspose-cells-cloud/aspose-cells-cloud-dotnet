@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="DiscoverChart.cs">
+// <copyright company="Aspose" file="DataDeduplicationRequest.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,39 +35,34 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// DataDeduplicationRequest.
     /// </summary>
-    public class DiscoverChart
+    public class DataDeduplicationRequest
     {
         /// <summary>
-        /// 
+        /// Spreadsheet files that require data fulling. 
         /// </summary>
-        public virtual string Name { get; set; }
+        public virtual FileInfo File { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets DeduplicationRegion.
         /// </summary>
-        public virtual string SheetName { get; set; }
+        public virtual DeduplicationRegion DeduplicationRegion { get; set; }
 
         /// <summary>
-        /// 
+        /// finish to data cleansing, outfile`s file format.
         /// </summary>
-        public virtual string Title { get; set; }
+        public virtual string OutFileFormat { get; set; }
 
         /// <summary>
-        /// 
+        /// Whether check restriction of Spreadsheet file when user modify cells related objects.
         /// </summary>
-        public virtual string Type { get; set; }
+        public virtual bool? CheckExcelRestriction { get; set; }
 
         /// <summary>
-        /// 
+        /// The regional settings for workbook.
         /// </summary>
-        public virtual string DataRange { get; set; }
-
-        /// <summary>
-        /// Base64String
-        /// </summary>
-        public virtual string Thumbnail { get; set; }
+        public virtual string Region { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object.
@@ -76,13 +71,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class DiscoverChart {\n");
-            sb.Append("  Name: ").Append(this.Name).Append("\n");
-            sb.Append("  SheetName: ").Append(this.SheetName).Append("\n");
-            sb.Append("  Title: ").Append(this.Title).Append("\n");
-            sb.Append("  Type: ").Append(this.Type).Append("\n");
-            sb.Append("  DataRange: ").Append(this.DataRange).Append("\n");
-            sb.Append("  Thumbnail: ").Append(this.Thumbnail).Append("\n");
+            sb.Append("class DataDeduplicationRequest {\n");
+            sb.Append("  File: ").Append(this.File).Append("\n");
+            sb.Append("  DeduplicationRegion: ").Append(this.DeduplicationRegion).Append("\n");
+            sb.Append("  OutFileFormat: ").Append(this.OutFileFormat).Append("\n");
+            sb.Append("  CheckExcelRestriction: ").Append(this.CheckExcelRestriction).Append("\n");
+            sb.Append("  Region: ").Append(this.Region).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

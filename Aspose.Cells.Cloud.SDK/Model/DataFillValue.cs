@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="TextCategoryType.cs">
+// <copyright company="Aspose" file="DataFillValue.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,10 +35,50 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// DataFillValue.
     /// </summary>
-    [JsonConverter(typeof(StringEnumConverter))]
-    public enum TextCategoryType
+    public class DataFillValue
     {
+        /// <summary>
+        /// Gets or sets DefaultBoolean.
+        /// </summary>
+        public virtual bool? DefaultBoolean { get; set; }
+
+        /// <summary>
+        /// Gets or sets DefaultString.
+        /// </summary>
+        public virtual string DefaultString { get; set; }
+
+        /// <summary>
+        /// Gets or sets DefaultNumber.
+        /// </summary>
+        public virtual int? DefaultNumber { get; set; }
+
+        /// <summary>
+        /// Gets or sets DefaultDouble.
+        /// </summary>
+        public virtual double? DefaultDouble { get; set; }
+
+        /// <summary>
+        /// Gets or sets DefaultDate.
+        /// </summary>
+        public virtual string DefaultDate { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.Append("class DataFillValue {\n");
+            sb.Append("  DefaultBoolean: ").Append(this.DefaultBoolean).Append("\n");
+            sb.Append("  DefaultString: ").Append(this.DefaultString).Append("\n");
+            sb.Append("  DefaultNumber: ").Append(this.DefaultNumber).Append("\n");
+            sb.Append("  DefaultDouble: ").Append(this.DefaultDouble).Append("\n");
+            sb.Append("  DefaultDate: ").Append(this.DefaultDate).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
+        }
     }
 }

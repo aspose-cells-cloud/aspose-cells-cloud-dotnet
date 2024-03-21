@@ -23,7 +23,7 @@
 |Is3D|Boolean|true|false |  |Indicates whether the chart is a 3d chart.|
 |IsRectangularCornered|Boolean|true|false |  |Gets or sets a value indicating whether the chart area is rectangular cornered.                        Default is true.|
 |Legend|Class|true|false |  |Gets the chart legend.|
-|Name|String|true|false |  |Gets and sets the name of the chart.|
+|Name|String|true|false |  ||
 |NSeries|Class|true|false |  |Gets a  collection representing the data series in the chart.|
 |PageSetup|Class|true|false |  |Represents the page setup description in this chart.|
 |Perspective|Integer|true|false |  |Returns or sets the perspective for the 3-D chart view. Must be between 0 and 100.                        This property is ignored if the RightAngleAxes property is True.|

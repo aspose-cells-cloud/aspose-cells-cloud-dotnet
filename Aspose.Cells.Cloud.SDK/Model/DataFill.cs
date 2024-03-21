@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="TextCategoryType.cs">
+// <copyright company="Aspose" file="DataFill.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,10 +35,38 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// DataFill.
     /// </summary>
-    [JsonConverter(typeof(StringEnumConverter))]
-    public enum TextCategoryType
+    public class DataFill
     {
+        /// <summary>
+        /// Gets or sets Ranges.
+        /// </summary>
+        public virtual IList<Range> Ranges { get; set; }
+
+        /// <summary>
+        /// Gets or sets DataFillDefaultValue.
+        /// </summary>
+        public virtual DataFillValue DataFillDefaultValue { get; set; }
+
+        /// <summary>
+        /// Gets or sets DataColumnFillValueList.
+        /// </summary>
+        public virtual IList<DataColumnFillValue> DataColumnFillValueList { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.Append("class DataFill {\n");
+            sb.Append("  Ranges: ").Append(this.Ranges).Append("\n");
+            sb.Append("  DataFillDefaultValue: ").Append(this.DataFillDefaultValue).Append("\n");
+            sb.Append("  DataColumnFillValueList: ").Append(this.DataColumnFillValueList).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
+        }
     }
 }

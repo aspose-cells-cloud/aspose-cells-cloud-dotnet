@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="TextCategoryType.cs">
+// <copyright company="Aspose" file="DataColumnFillValue.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,10 +35,32 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// DataColumnFillValue.
     /// </summary>
-    [JsonConverter(typeof(StringEnumConverter))]
-    public enum TextCategoryType
+    public class DataColumnFillValue
     {
+        /// <summary>
+        /// Gets or sets ColumnIndex.
+        /// </summary>
+        public virtual int? ColumnIndex { get; set; }
+
+        /// <summary>
+        /// Gets or sets DataFillValue.
+        /// </summary>
+        public virtual DataFillValue DataFillValue { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.Append("class DataColumnFillValue {\n");
+            sb.Append("  ColumnIndex: ").Append(this.ColumnIndex).Append("\n");
+            sb.Append("  DataFillValue: ").Append(this.DataFillValue).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
+        }
     }
 }

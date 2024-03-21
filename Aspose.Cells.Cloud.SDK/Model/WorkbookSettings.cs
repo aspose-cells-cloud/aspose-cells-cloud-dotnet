@@ -65,15 +65,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string CalcMode { get; set; }
 
         /// <summary>
-        /// Specifies the stack size for calculating cells recursively.
-        ///             The large value for this size will give better performance when there are lots of cells need to be calculated recursively.
-        ///             On the other hand, larger value will raise the risk of StackOverflowException.
-        ///             If user gets StackOverflowException when calculating formulas, this value should be decreased.
-        ///  
-        /// </summary>
-        public virtual int? CalcStackSize { get; set; }
-
-        /// <summary>
         /// Specifies the version of the calculation engine used to calculate values in the workbook.
         ///  
         /// </summary>
@@ -443,7 +434,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  AutoRecover: ").Append(this.AutoRecover).Append("\n");
             sb.Append("  BuildVersion: ").Append(this.BuildVersion).Append("\n");
             sb.Append("  CalcMode: ").Append(this.CalcMode).Append("\n");
-            sb.Append("  CalcStackSize: ").Append(this.CalcStackSize).Append("\n");
             sb.Append("  CalculationId: ").Append(this.CalculationId).Append("\n");
             sb.Append("  CheckComptiliblity: ").Append(this.CheckComptiliblity).Append("\n");
             sb.Append("  CheckExcelRestriction: ").Append(this.CheckExcelRestriction).Append("\n");

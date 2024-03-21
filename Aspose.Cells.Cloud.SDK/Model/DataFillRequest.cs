@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="TextCategoryType.cs">
+// <copyright company="Aspose" file="DataFillRequest.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,10 +35,50 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// DataFillRequest.
     /// </summary>
-    [JsonConverter(typeof(StringEnumConverter))]
-    public enum TextCategoryType
+    public class DataFillRequest
     {
+        /// <summary>
+        /// Spreadsheet files that require data fulling. 
+        /// </summary>
+        public virtual FileInfo File { get; set; }
+
+        /// <summary>
+        /// finish to data cleansing, outfile`s file format.
+        /// </summary>
+        public virtual string OutFileFormat { get; set; }
+
+        /// <summary>
+        /// Whether check restriction of Spreadsheet file when user modify cells related objects.
+        /// </summary>
+        public virtual bool? CheckExcelRestriction { get; set; }
+
+        /// <summary>
+        /// The regional settings for workbook.
+        /// </summary>
+        public virtual string Region { get; set; }
+
+        /// <summary>
+        /// Fill data default value.
+        /// </summary>
+        public virtual DataFill DataFill { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.Append("class DataFillRequest {\n");
+            sb.Append("  File: ").Append(this.File).Append("\n");
+            sb.Append("  OutFileFormat: ").Append(this.OutFileFormat).Append("\n");
+            sb.Append("  CheckExcelRestriction: ").Append(this.CheckExcelRestriction).Append("\n");
+            sb.Append("  Region: ").Append(this.Region).Append("\n");
+            sb.Append("  DataFill: ").Append(this.DataFill).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
+        }
     }
 }

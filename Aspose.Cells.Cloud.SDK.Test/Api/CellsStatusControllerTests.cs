@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             var request = new GetCellsCloudServicesHealthCheckRequest(
             );
             var actual =  this.CellsApi.GetCellsCloudServicesHealthCheck(request);
-            Assert.AreEqual("{\"Status\":\"Cells Cloud(v24.2.1) is working fine!\"}", actual);
+            Assert.AreEqual("{\"Status\":\"Cells Cloud(v24.3.2) is working fine!\"}", actual);
         }
 
         /// <summary>

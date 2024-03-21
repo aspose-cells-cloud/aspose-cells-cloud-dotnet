@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="TextCategoryType.cs">
+// <copyright company="Aspose" file="DeduplicationRegion.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,10 +35,32 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// DeduplicationRegion.
     /// </summary>
-    [JsonConverter(typeof(StringEnumConverter))]
-    public enum TextCategoryType
+    public class DeduplicationRegion
     {
+        /// <summary>
+        /// Gets or sets Ranges.
+        /// </summary>
+        public virtual IList<Range> Ranges { get; set; }
+
+        /// <summary>
+        /// Gets or sets WorksheetNameList.
+        /// </summary>
+        public virtual IList<string> WorksheetNameList { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.Append("class DeduplicationRegion {\n");
+            sb.Append("  Ranges: ").Append(this.Ranges).Append("\n");
+            sb.Append("  WorksheetNameList: ").Append(this.WorksheetNameList).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
+        }
     }
 }

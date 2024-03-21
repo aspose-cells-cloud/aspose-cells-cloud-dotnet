@@ -130,7 +130,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual LinkElement Legend { get; set; }
 
         /// <summary>
-        /// Gets and sets the name of the chart.
+        /// 
         /// </summary>
         public virtual string Name { get; set; }
 

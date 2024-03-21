@@ -1575,6 +1575,97 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Data cleaning of spreadsheet files is a data management process used to identify, correct, and remove errors, incompleteness, duplicates, or inaccuracies in tables and ranges.
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostWorkbookDataCleansingRequest" /></param>
+        public   FileInfo  PostWorkbookDataCleansing(PostWorkbookDataCleansingRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// Data cleansing of spreadsheet files is a data management process used to identify, correct, and remove errors, incompleteness, duplicates, or inaccuracies in tables and ranges.
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostDataCleansingRequest" /></param>
+        public   FileInfo  PostDataCleansing(PostDataCleansingRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges.
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostWorkbookDataDeduplicationRequest" /></param>
+        public   FileInfo  PostWorkbookDataDeduplication(PostWorkbookDataDeduplicationRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges.
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostDataDeduplicationRequest" /></param>
+        public   FileInfo  PostDataDeduplication(PostDataDeduplicationRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// Data filling for spreadsheet files is primarily used to fill empty data in tables and ranges.
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostWorkbookDataFillRequest" /></param>
+        public   FileInfo  PostWorkbookDataFill(PostWorkbookDataFillRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// Data filling for spreadsheet files is primarily used to fill empty data in tables and ranges.
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostDataFillRequest" /></param>
+        public   FileInfo  PostDataFill(PostDataFillRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// Deleting incomplete rows of spreadsheet files is mainly used to eliminate incomplete rows in tables and ranges.
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostDeleteIncompleteRowsRequest" /></param>
+        public   FileInfo  PostDeleteIncompleteRows(PostDeleteIncompleteRowsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+
+
+        /// <summary>
         /// Retrieve descriptions of hyperlinks in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetHyperlinksRequest" /></param>

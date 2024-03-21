@@ -77,7 +77,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string NumberCategoryType { get; set; }
 
         /// <summary>
-        /// Gets or sets TextCategoryType.
+        /// 
         /// </summary>
         public virtual string TextCategoryType { get; set; }
 
