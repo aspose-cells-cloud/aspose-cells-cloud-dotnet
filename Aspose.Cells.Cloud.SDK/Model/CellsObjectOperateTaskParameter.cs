@@ -52,6 +52,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// 
         /// </summary>
+        public virtual DataSource DestinatioDataSource { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public virtual FileSource DestinationWorkbook { get; set; }
 
         /// <summary>
@@ -64,6 +69,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("class CellsObjectOperateTaskParameter {\n");
             sb.Append("  OperateObject: ").Append(this.OperateObject).Append("\n");
             sb.Append("  OperateParameter: ").Append(this.OperateParameter).Append("\n");
+            sb.Append("  DestinatioDataSource: ").Append(this.DestinatioDataSource).Append("\n");
             sb.Append("  DestinationWorkbook: ").Append(this.DestinationWorkbook).Append("\n");
             sb.Append("}\n");
             return sb.ToString();

@@ -46,22 +46,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? FilterByFillColor { get; set; }
 
         /// <summary>
-        /// Gets or sets Pattern.
+        /// 
         /// </summary>
         public virtual string Pattern { get; set; }
 
         /// <summary>
-        /// Gets or sets Color.
+        /// 
         /// </summary>
         public virtual CellsColor Color { get; set; }
 
         /// <summary>
-        /// Gets or sets ForegroundColorColor.
+        /// 
         /// </summary>
         public virtual CellsColor ForegroundColorColor { get; set; }
 
         /// <summary>
-        /// Gets or sets BackgroundColor.
+        /// 
         /// </summary>
         public virtual CellsColor BackgroundColor { get; set; }
 

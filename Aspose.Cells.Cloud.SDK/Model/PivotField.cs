@@ -35,202 +35,202 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// PivotField.
+    /// 
     /// </summary>
     public class PivotField
     {
         /// <summary>
-        /// Gets or sets AutoShowCount.
+        /// 
         /// </summary>
         public virtual int? AutoShowCount { get; set; }
 
         /// <summary>
-        /// Gets or sets AutoShowField.
+        /// 
         /// </summary>
         public virtual int? AutoShowField { get; set; }
 
         /// <summary>
-        /// Gets or sets AutoSortField.
+        /// 
         /// </summary>
         public virtual int? AutoSortField { get; set; }
 
         /// <summary>
-        /// Gets or sets BaseField.
+        /// 
         /// </summary>
         public virtual int? BaseField { get; set; }
 
         /// <summary>
-        /// Gets or sets BaseIndex.
+        /// 
         /// </summary>
         public virtual int? BaseIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets BaseItem.
+        /// 
         /// </summary>
         public virtual int? BaseItem { get; set; }
 
         /// <summary>
-        /// Gets or sets BaseItemPosition.
+        /// 
         /// </summary>
         public virtual string BaseItemPosition { get; set; }
 
         /// <summary>
-        /// Gets or sets CurrentPageItem.
+        /// 
         /// </summary>
         public virtual int? CurrentPageItem { get; set; }
 
         /// <summary>
-        /// Gets or sets DataDisplayFormat.
+        /// 
         /// </summary>
         public virtual string DataDisplayFormat { get; set; }
 
         /// <summary>
-        /// Gets or sets DisplayName.
+        /// 
         /// </summary>
         public virtual string DisplayName { get; set; }
 
         /// <summary>
-        /// Gets or sets DragToColumn.
+        /// 
         /// </summary>
         public virtual bool? DragToColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets DragToData.
+        /// 
         /// </summary>
         public virtual bool? DragToData { get; set; }
 
         /// <summary>
-        /// Gets or sets DragToHide.
+        /// 
         /// </summary>
         public virtual bool? DragToHide { get; set; }
 
         /// <summary>
-        /// Gets or sets DragToPage.
+        /// 
         /// </summary>
         public virtual bool? DragToPage { get; set; }
 
         /// <summary>
-        /// Gets or sets DragToRow.
+        /// 
         /// </summary>
         public virtual bool? DragToRow { get; set; }
 
         /// <summary>
-        /// Gets or sets Function.
+        /// 
         /// </summary>
         public virtual string Function { get; set; }
 
         /// <summary>
-        /// Gets or sets InsertBlankRow.
+        /// 
         /// </summary>
         public virtual bool? InsertBlankRow { get; set; }
 
         /// <summary>
-        /// Gets or sets IsAscendShow.
+        /// 
         /// </summary>
         public virtual bool? IsAscendShow { get; set; }
 
         /// <summary>
-        /// Gets or sets IsAscendSort.
+        /// 
         /// </summary>
         public virtual bool? IsAscendSort { get; set; }
 
         /// <summary>
-        /// Gets or sets IsAutoShow.
+        /// 
         /// </summary>
         public virtual bool? IsAutoShow { get; set; }
 
         /// <summary>
-        /// Gets or sets IsAutoSort.
+        /// 
         /// </summary>
         public virtual bool? IsAutoSort { get; set; }
 
         /// <summary>
-        /// Gets or sets IsAutoSubtotals.
+        /// 
         /// </summary>
         public virtual bool? IsAutoSubtotals { get; set; }
 
         /// <summary>
-        /// Gets or sets IsCalculatedField.
+        /// 
         /// </summary>
         public virtual bool? IsCalculatedField { get; set; }
 
         /// <summary>
-        /// Gets or sets IsIncludeNewItemsInFilter.
+        /// 
         /// </summary>
         public virtual bool? IsIncludeNewItemsInFilter { get; set; }
 
         /// <summary>
-        /// Gets or sets IsInsertPageBreaksBetweenItems.
+        /// 
         /// </summary>
         public virtual bool? IsInsertPageBreaksBetweenItems { get; set; }
 
         /// <summary>
-        /// Gets or sets IsMultipleItemSelectionAllowed.
+        /// 
         /// </summary>
         public virtual bool? IsMultipleItemSelectionAllowed { get; set; }
 
         /// <summary>
-        /// Gets or sets IsRepeatItemLabels.
+        /// 
         /// </summary>
         public virtual bool? IsRepeatItemLabels { get; set; }
 
         /// <summary>
-        /// Gets or sets ItemCount.
+        /// 
         /// </summary>
         public virtual int? ItemCount { get; set; }
 
         /// <summary>
-        /// Gets or sets Items.
+        /// 
         /// </summary>
         public virtual List<string> Items { get; set; }
 
         /// <summary>
-        /// Gets or sets Name.
+        /// 
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets Number.
+        /// 
         /// </summary>
         public virtual int? Number { get; set; }
 
         /// <summary>
-        /// Gets or sets NumberFormat.
+        /// 
         /// </summary>
         public virtual string NumberFormat { get; set; }
 
         /// <summary>
-        /// Gets or sets OriginalItems.
+        /// 
         /// </summary>
         public virtual List<string> OriginalItems { get; set; }
 
         /// <summary>
-        /// Gets or sets PivotItems.
+        /// 
         /// </summary>
         public virtual IList<PivotItem> PivotItems { get; set; }
 
         /// <summary>
-        /// Gets or sets Position.
+        /// 
         /// </summary>
         public virtual int? Position { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowAllItems.
+        /// 
         /// </summary>
         public virtual bool? ShowAllItems { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowCompact.
+        /// 
         /// </summary>
         public virtual bool? ShowCompact { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowInOutlineForm.
+        /// 
         /// </summary>
         public virtual bool? ShowInOutlineForm { get; set; }
 
         /// <summary>
-        /// Gets or sets ShowSubtotalAtTop.
+        /// 
         /// </summary>
         public virtual bool? ShowSubtotalAtTop { get; set; }
 

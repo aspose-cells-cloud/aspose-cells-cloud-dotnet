@@ -1,6 +1,6 @@
 # **analyzeExcelResponse**
 
- 
+Represents 
 
 ## **Properties**
 

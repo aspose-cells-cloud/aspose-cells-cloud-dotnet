@@ -35,22 +35,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ImportPosition.
+    /// 
     /// </summary>
     public class ImportPosition
     {
         /// <summary>
-        /// Gets or sets SheetName.
+        /// 
         /// </summary>
         public virtual string SheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets RowIndex.
+        /// 
         /// </summary>
         public virtual int? RowIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets ColumnIndex.
+        /// 
         /// </summary>
         public virtual int? ColumnIndex { get; set; }
 

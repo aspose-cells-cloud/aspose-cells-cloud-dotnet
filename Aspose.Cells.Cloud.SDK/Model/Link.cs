@@ -35,27 +35,27 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Link.
+    /// 
     /// </summary>
     public class Link
     {
         /// <summary>
-        /// Gets or sets Href.
+        /// 
         /// </summary>
         public virtual string Href { get; set; }
 
         /// <summary>
-        /// Gets or sets Rel.
+        /// 
         /// </summary>
         public virtual string Rel { get; set; }
 
         /// <summary>
-        /// Gets or sets Title.
+        /// 
         /// </summary>
         public virtual string Title { get; set; }
 
         /// <summary>
-        /// Gets or sets Type.
+        /// 
         /// </summary>
         public virtual string Type { get; set; }
 

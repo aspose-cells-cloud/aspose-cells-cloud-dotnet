@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Workbook.
+    /// 
     /// </summary>
     public class Workbook
     {
@@ -46,7 +46,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string FileName { get; set; }
 
         /// <summary>
-        /// Gets or sets Links.
+        /// 
         /// </summary>
         public virtual IList<Link> Links { get; set; }
 
@@ -63,12 +63,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual LinkElement DefaultStyle { get; set; }
 
         /// <summary>
-        /// Gets or sets DocumentProperties.
+        /// 
         /// </summary>
         public virtual LinkElement DocumentProperties { get; set; }
 
         /// <summary>
-        /// Gets or sets Names.
+        /// 
         /// </summary>
         public virtual LinkElement Names { get; set; }
 
@@ -79,22 +79,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual LinkElement Settings { get; set; }
 
         /// <summary>
-        /// Gets or sets IsWriteProtected.
+        /// 
         /// </summary>
         public virtual string IsWriteProtected { get; set; }
 
         /// <summary>
-        /// Gets or sets IsProtected.
+        /// 
         /// </summary>
         public virtual string IsProtected { get; set; }
 
         /// <summary>
-        /// Gets or sets IsEncryption.
+        /// 
         /// </summary>
         public virtual string IsEncryption { get; set; }
 
         /// <summary>
-        /// Gets or sets Password.
+        /// 
         /// </summary>
         public virtual string Password { get; set; }
 

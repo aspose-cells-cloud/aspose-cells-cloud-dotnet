@@ -8,6 +8,8 @@
 | :- | :- | :- |:- |  :- | :- |
 |Workbook|Class|true|false |  ||
 |DestinationFilePosition|Class|true|false |  ||
+|DataSource|Class|true|false |  ||
+|TargetDataSource|Class|true|false |  ||
 |DestinationFileFormat|String|true|false |  ||
 |SplitNameRule|String|true|false |  |SheetName /NewGuid|
 |VerticalResolution|Integer|true|false |  |When destination file format is image , vertical resolution can not be null.|

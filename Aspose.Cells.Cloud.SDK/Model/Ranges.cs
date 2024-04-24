@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Ranges.
+    /// 
     /// </summary>
     public class Ranges
     {
         /// <summary>
-        /// Gets or sets RangeList.
+        /// 
         /// </summary>
         public virtual IList<Range> RangeList { get; set; }
 

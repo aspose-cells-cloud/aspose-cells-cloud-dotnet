@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// DataDeduplicationRequest.
+    /// 
     /// </summary>
     public class DataDeduplicationRequest
     {
@@ -45,7 +45,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual FileInfo File { get; set; }
 
         /// <summary>
-        /// Gets or sets DeduplicationRegion.
+        /// 
         /// </summary>
         public virtual DeduplicationRegion DeduplicationRegion { get; set; }
 

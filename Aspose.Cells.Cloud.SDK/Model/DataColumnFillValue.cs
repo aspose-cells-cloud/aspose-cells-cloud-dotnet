@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// DataColumnFillValue.
+    /// 
     /// </summary>
     public class DataColumnFillValue
     {
         /// <summary>
-        /// Gets or sets ColumnIndex.
+        /// 
         /// </summary>
         public virtual int? ColumnIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets DataFillValue.
+        /// 
         /// </summary>
         public virtual DataFillValue DataFillValue { get; set; }
 

@@ -35,22 +35,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// SortKey.
+    /// 
     /// </summary>
     public class SortKey
     {
         /// <summary>
-        /// Gets or sets Key.
+        /// 
         /// </summary>
         public virtual int? Key { get; set; }
 
         /// <summary>
-        /// Gets or sets SortOrder.
+        /// 
         /// </summary>
         public virtual string SortOrder { get; set; }
 
         /// <summary>
-        /// Gets or sets CustomList.
+        /// 
         /// </summary>
         public virtual List<string> CustomList { get; set; }
 

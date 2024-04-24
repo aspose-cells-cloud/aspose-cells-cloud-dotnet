@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// SaveResult.
+    /// 
     /// </summary>
     public class SaveResult
     {
         /// <summary>
-        /// Gets or sets Documents.
+        /// 
         /// </summary>
         public virtual IList<CellsCloudFileInfo> Documents { get; set; }
 

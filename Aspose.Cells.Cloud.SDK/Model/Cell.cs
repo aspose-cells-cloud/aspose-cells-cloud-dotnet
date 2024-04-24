@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Cell.
+    /// Encapsulates the object that represents a single Workbook cell.
     /// </summary>
     public class Cell : LinkElement
     {

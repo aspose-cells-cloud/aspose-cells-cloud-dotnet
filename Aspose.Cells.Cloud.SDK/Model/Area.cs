@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Area.
+    /// 
     /// </summary>
     public class Area
     {
@@ -58,7 +58,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual Color ForegroundColor { get; set; }
 
         /// <summary>
-        /// Gets or sets Format.
+        /// 
         /// </summary>
         public virtual string Format { get; set; }
 

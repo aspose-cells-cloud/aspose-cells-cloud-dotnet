@@ -1,6 +1,6 @@
 # **cell**
 
- 
+Encapsulates the object that represents a single Workbook cell. 
 
 ## **Properties**
 

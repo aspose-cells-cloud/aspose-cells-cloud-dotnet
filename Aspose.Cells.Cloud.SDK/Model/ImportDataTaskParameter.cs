@@ -42,12 +42,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// 
         /// </summary>
+        public virtual DataSource DataSource { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public virtual FileSource Workbook { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         public virtual ImportOption ImportOption { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual DataSource TargetDataSource { get; set; }
 
         /// <summary>
         /// 
@@ -62,8 +72,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
             var sb = new StringBuilder();
             sb.Append("class ImportDataTaskParameter {\n");
+            sb.Append("  DataSource: ").Append(this.DataSource).Append("\n");
             sb.Append("  Workbook: ").Append(this.Workbook).Append("\n");
             sb.Append("  ImportOption: ").Append(this.ImportOption).Append("\n");
+            sb.Append("  TargetDataSource: ").Append(this.TargetDataSource).Append("\n");
             sb.Append("  DestinationWorkbook: ").Append(this.DestinationWorkbook).Append("\n");
             sb.Append("}\n");
             return sb.ToString();

@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// PageSection.
+    /// 
     /// </summary>
     public class PageSection
     {
@@ -51,7 +51,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string Context { get; set; }
 
         /// <summary>
-        /// Gets or sets Picture.
+        /// 
         /// </summary>
         public virtual string Picture { get; set; }
 

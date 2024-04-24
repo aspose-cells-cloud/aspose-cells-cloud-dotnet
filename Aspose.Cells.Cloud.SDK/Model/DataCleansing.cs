@@ -40,17 +40,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class DataCleansing
     {
         /// <summary>
-        /// Gets or sets Ranges.
+        /// 
         /// </summary>
         public virtual IList<Range> Ranges { get; set; }
 
         /// <summary>
-        /// Gets or sets NeedFillData.
+        /// 
         /// </summary>
         public virtual bool? NeedFillData { get; set; }
 
         /// <summary>
-        /// Gets or sets DataFill.
+        /// 
         /// </summary>
         public virtual DataFill DataFill { get; set; }
 

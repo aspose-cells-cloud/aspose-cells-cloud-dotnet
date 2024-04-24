@@ -1,6 +1,6 @@
 # **cells**
 
- 
+Encapsulates a collection of cell relevant objects, such as Aspose.Cells.Cell, Aspose.Cells.Row, ...etc. 
 
 ## **Properties**
 

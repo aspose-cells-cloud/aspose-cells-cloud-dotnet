@@ -42,7 +42,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// Json file source
         /// </summary>
-        public virtual FileSource JsonFileSource { get; set; }
+        public virtual DataSource JsonFileSource { get; set; }
 
         /// <summary>
         /// Import position description.

@@ -35,22 +35,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// GradientFillStop.
+    /// 
     /// </summary>
     public class GradientFillStop
     {
         /// <summary>
-        /// Gets or sets Color.
+        /// 
         /// </summary>
         public virtual Color Color { get; set; }
 
         /// <summary>
-        /// Gets or sets Position.
+        /// 
         /// </summary>
         public virtual double? Position { get; set; }
 
         /// <summary>
-        /// Gets or sets Transparency.
+        /// 
         /// </summary>
         public virtual double? Transparency { get; set; }
 

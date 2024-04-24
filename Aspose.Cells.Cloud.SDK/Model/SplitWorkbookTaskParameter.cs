@@ -52,6 +52,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// 
         /// </summary>
+        public virtual DataSource DataSource { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual DataSource TargetDataSource { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public virtual string DestinationFileFormat { get; set; }
 
         /// <summary>
@@ -79,6 +89,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("class SplitWorkbookTaskParameter {\n");
             sb.Append("  Workbook: ").Append(this.Workbook).Append("\n");
             sb.Append("  DestinationFilePosition: ").Append(this.DestinationFilePosition).Append("\n");
+            sb.Append("  DataSource: ").Append(this.DataSource).Append("\n");
+            sb.Append("  TargetDataSource: ").Append(this.TargetDataSource).Append("\n");
             sb.Append("  DestinationFileFormat: ").Append(this.DestinationFileFormat).Append("\n");
             sb.Append("  SplitNameRule: ").Append(this.SplitNameRule).Append("\n");
             sb.Append("  VerticalResolution: ").Append(this.VerticalResolution).Append("\n");

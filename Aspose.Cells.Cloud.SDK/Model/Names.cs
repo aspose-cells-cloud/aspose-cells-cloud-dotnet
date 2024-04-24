@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Names.
+    /// 
     /// </summary>
     public class Names : LinkElement
     {

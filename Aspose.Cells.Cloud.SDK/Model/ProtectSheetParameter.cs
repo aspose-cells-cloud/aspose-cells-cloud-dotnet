@@ -35,87 +35,87 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ProtectSheetParameter.
+    /// 
     /// </summary>
     public class ProtectSheetParameter
     {
         /// <summary>
-        /// Gets or sets ProtectionType.
+        /// 
         /// </summary>
         public virtual string ProtectionType { get; set; }
 
         /// <summary>
-        /// Gets or sets Password.
+        /// 
         /// </summary>
         public virtual string Password { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowEditArea.
+        /// 
         /// </summary>
         public virtual IList<string> AllowEditArea { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowDeletingColumn.
+        /// 
         /// </summary>
         public virtual string AllowDeletingColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowDeletingRow.
+        /// 
         /// </summary>
         public virtual string AllowDeletingRow { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowFiltering.
+        /// 
         /// </summary>
         public virtual string AllowFiltering { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowFormattingCell.
+        /// 
         /// </summary>
         public virtual string AllowFormattingCell { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowFormattingColumn.
+        /// 
         /// </summary>
         public virtual string AllowFormattingColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowFormattingRow.
+        /// 
         /// </summary>
         public virtual string AllowFormattingRow { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowInsertingColumn.
+        /// 
         /// </summary>
         public virtual string AllowInsertingColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowInsertingHyperlink.
+        /// 
         /// </summary>
         public virtual string AllowInsertingHyperlink { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowInsertingRow.
+        /// 
         /// </summary>
         public virtual string AllowInsertingRow { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowSelectingLockedCell.
+        /// 
         /// </summary>
         public virtual string AllowSelectingLockedCell { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowSelectingUnlockedCell.
+        /// 
         /// </summary>
         public virtual string AllowSelectingUnlockedCell { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowSorting.
+        /// 
         /// </summary>
         public virtual string AllowSorting { get; set; }
 
         /// <summary>
-        /// Gets or sets AllowUsingPivotTable.
+        /// 
         /// </summary>
         public virtual string AllowUsingPivotTable { get; set; }
 

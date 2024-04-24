@@ -42,7 +42,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// XML file source
         /// </summary>
-        public virtual FileSource XMLFileSource { get; set; }
+        public virtual DataSource XMLFileSource { get; set; }
 
         /// <summary>
         /// Import position description.

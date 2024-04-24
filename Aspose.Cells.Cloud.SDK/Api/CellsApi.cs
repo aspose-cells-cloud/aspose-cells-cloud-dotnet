@@ -1666,6 +1666,19 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Transform spreadsheet data is mainly used to pivot columns, unpivot columns.
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostDataTransformationRequest" /></param>
+        public   FileInfo  PostDataTransformation(PostDataTransformationRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+
+
+        /// <summary>
         /// Retrieve descriptions of hyperlinks in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetHyperlinksRequest" /></param>

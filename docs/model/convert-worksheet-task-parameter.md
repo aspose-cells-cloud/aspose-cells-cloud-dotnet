@@ -6,8 +6,10 @@
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
+|DataSource|Class|true|false |  ||
 |Workbook|Class|true|false |  ||
 |Sheet|String|true|false |  ||
+|TargetDataSource|Class|true|false |  ||
 |Target|Class|true|false |  ||
 |Format|String|true|false |  ||
 |Area|String|true|false |  ||

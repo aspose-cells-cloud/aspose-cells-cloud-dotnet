@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Style.
+    /// 
     /// </summary>
     public class Style
     {
@@ -163,7 +163,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string HorizontalAlignment { get; set; }
 
         /// <summary>
-        /// Gets or sets BorderCollection.
+        /// 
         /// </summary>
         public virtual IList<Border> BorderCollection { get; set; }
 

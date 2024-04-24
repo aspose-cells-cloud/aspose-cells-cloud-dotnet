@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// AutoFilter.
+    /// Represents autofiltering for the specified worksheet.
     /// </summary>
     public class AutoFilter : LinkElement
     {

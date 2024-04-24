@@ -35,32 +35,32 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// DataFillValue.
+    /// 
     /// </summary>
     public class DataFillValue
     {
         /// <summary>
-        /// Gets or sets DefaultBoolean.
+        /// 
         /// </summary>
         public virtual bool? DefaultBoolean { get; set; }
 
         /// <summary>
-        /// Gets or sets DefaultString.
+        /// 
         /// </summary>
         public virtual string DefaultString { get; set; }
 
         /// <summary>
-        /// Gets or sets DefaultNumber.
+        /// 
         /// </summary>
         public virtual int? DefaultNumber { get; set; }
 
         /// <summary>
-        /// Gets or sets DefaultDouble.
+        /// 
         /// </summary>
         public virtual double? DefaultDouble { get; set; }
 
         /// <summary>
-        /// Gets or sets DefaultDate.
+        /// 
         /// </summary>
         public virtual string DefaultDate { get; set; }
 

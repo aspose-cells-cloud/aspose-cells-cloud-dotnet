@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// Gets or sets OutFileList.
         /// </summary>
-        public override IList<FileSource> OutFileList { get; set; }
+        public override IList<DataSource> OutFileList { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object.

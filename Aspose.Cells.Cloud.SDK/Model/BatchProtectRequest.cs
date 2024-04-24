@@ -56,7 +56,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual MatchConditionRequest MatchCondition { get; set; }
 
         /// <summary>
-        /// Gets or sets ProtectionType.
+        /// 
         /// </summary>
         public virtual string ProtectionType { get; set; }
 

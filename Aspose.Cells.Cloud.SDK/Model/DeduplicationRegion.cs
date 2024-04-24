@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// DeduplicationRegion.
+    /// 
     /// </summary>
     public class DeduplicationRegion
     {
         /// <summary>
-        /// Gets or sets Ranges.
+        /// 
         /// </summary>
         public virtual IList<Range> Ranges { get; set; }
 
         /// <summary>
-        /// Gets or sets WorksheetNameList.
+        /// 
         /// </summary>
         public virtual IList<string> WorksheetNameList { get; set; }
 

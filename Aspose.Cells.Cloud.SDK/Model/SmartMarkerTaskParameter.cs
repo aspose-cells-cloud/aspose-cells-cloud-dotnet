@@ -55,6 +55,21 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual FileSource xmlFile { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public virtual DataSource DataSource { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual DataSource TargetDataSource { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual DataSource XMLFileDataSource { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object.
         /// </summary>
         /// <returns>String presentation of the object.</returns>
@@ -65,6 +80,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  SourceWorkbook: ").Append(this.SourceWorkbook).Append("\n");
             sb.Append("  DestinationWorkbook: ").Append(this.DestinationWorkbook).Append("\n");
             sb.Append("  xmlFile: ").Append(this.xmlFile).Append("\n");
+            sb.Append("  DataSource: ").Append(this.DataSource).Append("\n");
+            sb.Append("  TargetDataSource: ").Append(this.TargetDataSource).Append("\n");
+            sb.Append("  XMLFileDataSource: ").Append(this.XMLFileDataSource).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

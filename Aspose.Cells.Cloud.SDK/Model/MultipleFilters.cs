@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// MultipleFilters.
+    /// 
     /// </summary>
     public class MultipleFilters
     {
         /// <summary>
-        /// Gets or sets MatchBlank.
+        /// 
         /// </summary>
         public virtual bool? MatchBlank { get; set; }
 
         /// <summary>
-        /// Gets or sets MultipleFilterList.
+        /// 
         /// </summary>
         public virtual IList<MultipleFilter> MultipleFilterList { get; set; }
 

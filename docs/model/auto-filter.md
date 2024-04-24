@@ -1,6 +1,6 @@
 # **autoFilter**
 
- 
+Represents autofiltering for the specified worksheet. 
 
 ## **Properties**
 

@@ -35,22 +35,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// AnalyzeExcelRequest.
+    /// 
     /// </summary>
     public class AnalyzeExcelRequest
     {
         /// <summary>
-        /// Gets or sets Files.
+        /// 
         /// </summary>
         public virtual IList<FileInfo> Files { get; set; }
 
         /// <summary>
-        /// Gets or sets NeedThumbnail.
+        /// 
         /// </summary>
         public virtual bool? NeedThumbnail { get; set; }
 
         /// <summary>
-        /// Gets or sets BuildSuggestoinSheet.
+        /// 
         /// </summary>
         public virtual bool? BuildSuggestoinSheet { get; set; }
 

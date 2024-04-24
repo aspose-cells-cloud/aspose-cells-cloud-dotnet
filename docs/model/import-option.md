@@ -9,5 +9,6 @@
 |DestinationWorksheet|String|true|false |  |Destination worksheet name.  |
 |IsInsert|Boolean|true|false |  ||
 |ImportDataType|String|true|false |  ||
+|DataSource|Class|true|false |  ||
 |Source|Class|true|false |  ||
 

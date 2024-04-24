@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Top10Filter.
+    /// 
     /// </summary>
     public class Top10Filter
     {

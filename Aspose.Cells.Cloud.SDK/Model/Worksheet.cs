@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Worksheet.
+    /// 
     /// </summary>
     public class Worksheet
     {
         /// <summary>
-        /// Gets or sets Links.
+        /// 
         /// </summary>
         public virtual IList<Link> Links { get; set; }
 
@@ -185,7 +185,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual LinkElement Charts { get; set; }
 
         /// <summary>
-        /// Gets or sets AutoShapes.
+        /// 
         /// </summary>
         public virtual LinkElement AutoShapes { get; set; }
 
@@ -208,7 +208,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual LinkElement Pictures { get; set; }
 
         /// <summary>
-        /// Gets or sets MergedCells.
+        /// 
         /// </summary>
         public virtual LinkElement MergedCells { get; set; }
 

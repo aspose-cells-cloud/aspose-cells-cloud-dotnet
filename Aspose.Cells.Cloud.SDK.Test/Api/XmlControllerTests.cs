@@ -72,10 +72,10 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
             this.UploadFile( dataXML, remoteFolder + "/data.xml", "");
 
-            var importXMLRequestXMLFileSource = new FileSource()
+            var importXMLRequestXMLFileSource = new DataSource()
             {
-                FileSourceType = "CloudFileSystem",
-                FilePath = remoteFolder + "/data.xml"
+                DataSourceType = "CloudFileSystem",
+                DataPath = remoteFolder + "/data.xml"
             };
             var importXMLRequestImportPosition = new ImportPosition()
             {

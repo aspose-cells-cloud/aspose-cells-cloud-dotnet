@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// PivotItem.
+    /// 
     /// </summary>
     public class PivotItem
     {
         /// <summary>
-        /// Gets or sets Index.
+        /// 
         /// </summary>
         public virtual int? Index { get; set; }
 

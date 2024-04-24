@@ -75,12 +75,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string Region { get; set; }
 
         /// <summary>
-        /// Gets or sets PageWideFitOnPerSheet.
+        /// 
         /// </summary>
         public virtual bool? PageWideFitOnPerSheet { get; set; }
 
         /// <summary>
-        /// Gets or sets PageTallFitOnPerSheet.
+        /// 
         /// </summary>
         public virtual bool? PageTallFitOnPerSheet { get; set; }
 

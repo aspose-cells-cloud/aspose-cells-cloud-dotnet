@@ -42,6 +42,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// 
         /// </summary>
+        public virtual DataSource DataSource { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public virtual FileSource Workbook { get; set; }
 
         /// <summary>
@@ -67,6 +72,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
             var sb = new StringBuilder();
             sb.Append("class ConvertTaskParameter {\n");
+            sb.Append("  DataSource: ").Append(this.DataSource).Append("\n");
             sb.Append("  Workbook: ").Append(this.Workbook).Append("\n");
             sb.Append("  DestinationFile: ").Append(this.DestinationFile).Append("\n");
             sb.Append("  Region: ").Append(this.Region).Append("\n");

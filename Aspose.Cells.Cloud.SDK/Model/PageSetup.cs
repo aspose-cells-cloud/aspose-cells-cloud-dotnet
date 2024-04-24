@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// PageSetup.
+    /// excel print page setting
     /// </summary>
     public class PageSetup : LinkElement
     {

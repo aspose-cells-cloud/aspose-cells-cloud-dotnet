@@ -42,12 +42,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// 
         /// </summary>
+        public virtual DataSource DataSource { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public virtual FileSource Workbook { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         public virtual string Sheet { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual DataSource TargetDataSource { get; set; }
 
         /// <summary>
         /// 
@@ -87,8 +97,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
             var sb = new StringBuilder();
             sb.Append("class ConvertWorksheetTaskParameter {\n");
+            sb.Append("  DataSource: ").Append(this.DataSource).Append("\n");
             sb.Append("  Workbook: ").Append(this.Workbook).Append("\n");
             sb.Append("  Sheet: ").Append(this.Sheet).Append("\n");
+            sb.Append("  TargetDataSource: ").Append(this.TargetDataSource).Append("\n");
             sb.Append("  Target: ").Append(this.Target).Append("\n");
             sb.Append("  Format: ").Append(this.Format).Append("\n");
             sb.Append("  Area: ").Append(this.Area).Append("\n");

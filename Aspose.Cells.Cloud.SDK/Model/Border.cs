@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Border.
+    /// 
     /// </summary>
     public class Border
     {
@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual Color Color { get; set; }
 
         /// <summary>
-        /// Gets or sets BorderType.
+        /// 
         /// </summary>
         public virtual string BorderType { get; set; }
 

@@ -70,6 +70,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ImportDataType { get; set; }
 
         /// <summary>
+        /// Gets or sets DataSource.
+        /// </summary>
+        public override DataSource DataSource { get; set; }
+
+        /// <summary>
         /// Gets or sets Source.
         /// </summary>
         public override FileSource Source { get; set; }
@@ -88,6 +93,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  DestinationWorksheet: ").Append(this.DestinationWorksheet).Append("\n");
             sb.Append("  IsInsert: ").Append(this.IsInsert).Append("\n");
             sb.Append("  ImportDataType: ").Append(this.ImportDataType).Append("\n");
+            sb.Append("  DataSource: ").Append(this.DataSource).Append("\n");
             sb.Append("  Source: ").Append(this.Source).Append("\n");
             sb.Append("}\n");
             return sb.ToString();

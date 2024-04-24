@@ -40,17 +40,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PptxSaveOptions : PaginatedSaveOptions
     {
         /// <summary>
-        /// 
+        /// Ignore hidden rows
         /// </summary>
         public virtual bool? IgnoreHiddenRows { get; set; }
 
         /// <summary>
-        /// 
+        /// Adjust font size for row type
         /// </summary>
         public virtual string AdjustFontSizeForRowType { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets and sets the display type when exporting to PowerPoint. The default exporting type is working as printing.
         /// </summary>
         public virtual string ExportViewType { get; set; }
 

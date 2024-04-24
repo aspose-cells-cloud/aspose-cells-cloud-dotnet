@@ -42,6 +42,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// 
         /// </summary>
+        public virtual DataSource DataSource { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public virtual FileSource Workbook { get; set; }
 
         /// <summary>
@@ -77,6 +82,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
             var sb = new StringBuilder();
             sb.Append("class OperateObjectPosition {\n");
+            sb.Append("  DataSource: ").Append(this.DataSource).Append("\n");
             sb.Append("  Workbook: ").Append(this.Workbook).Append("\n");
             sb.Append("  SheetName: ").Append(this.SheetName).Append("\n");
             sb.Append("  ChartIndex: ").Append(this.ChartIndex).Append("\n");

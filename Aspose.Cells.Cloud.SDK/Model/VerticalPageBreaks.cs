@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// VerticalPageBreaks.
+    /// 
     /// </summary>
     public class VerticalPageBreaks : LinkElement
     {

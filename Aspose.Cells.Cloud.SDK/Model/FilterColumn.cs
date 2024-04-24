@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// FilterColumn.
+    /// 
     /// </summary>
     public class FilterColumn
     {
@@ -52,32 +52,32 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string FilterType { get; set; }
 
         /// <summary>
-        /// Gets or sets MultipleFilters.
+        /// 
         /// </summary>
         public virtual MultipleFilters MultipleFilters { get; set; }
 
         /// <summary>
-        /// Gets or sets ColorFilter.
+        /// 
         /// </summary>
         public virtual ColorFilter ColorFilter { get; set; }
 
         /// <summary>
-        /// Gets or sets CustomFilters.
+        /// 
         /// </summary>
         public virtual IList<CustomFilter> CustomFilters { get; set; }
 
         /// <summary>
-        /// Gets or sets DynamicFilter.
+        /// 
         /// </summary>
         public virtual DynamicFilter DynamicFilter { get; set; }
 
         /// <summary>
-        /// Gets or sets IconFilter.
+        /// 
         /// </summary>
         public virtual IconFilter IconFilter { get; set; }
 
         /// <summary>
-        /// Gets or sets Top10Filter.
+        /// 
         /// </summary>
         public virtual Top10Filter Top10Filter { get; set; }
 

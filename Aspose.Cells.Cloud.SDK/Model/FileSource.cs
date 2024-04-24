@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// FileSource.
+    /// 
     /// </summary>
     public class FileSource
     {
         /// <summary>
-        /// Gets or sets FileSourceType.
+        /// 
         /// </summary>
         public virtual string FileSourceType { get; set; }
 
         /// <summary>
-        /// Gets or sets FilePath.
+        /// 
         /// </summary>
         public virtual string FilePath { get; set; }
 

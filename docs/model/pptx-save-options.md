@@ -6,9 +6,9 @@ Represents the options of saving pptx file.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|IgnoreHiddenRows|Boolean|true|false |  ||
-|AdjustFontSizeForRowType|String|true|false |  ||
-|ExportViewType|String|true|false |  ||
+|IgnoreHiddenRows|Boolean|true|false |  |Ignore hidden rows|
+|AdjustFontSizeForRowType|String|true|false |  |Adjust font size for row type|
+|ExportViewType|String|true|false |  |Gets and sets the display type when exporting to PowerPoint. The default exporting type is working as printing.|
 |DefaultFont|String|true|false |  ||
 |CheckWorkbookDefaultFont|Boolean|true|false |  ||
 |CheckFontCompatibility|Boolean|true|false |  ||

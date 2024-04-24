@@ -47,7 +47,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// 
         /// </summary>
-        public virtual IList<FileSource> OutFileList { get; set; }
+        public virtual IList<DataSource> OutFileList { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object.

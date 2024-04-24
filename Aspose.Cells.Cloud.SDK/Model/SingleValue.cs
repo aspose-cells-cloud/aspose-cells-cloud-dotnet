@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// SingleValue.
+    /// 
     /// </summary>
     public class SingleValue
     {
         /// <summary>
-        /// Gets or sets Value.
+        /// 
         /// </summary>
         public virtual string Value { get; set; }
 
         /// <summary>
-        /// Gets or sets ValueType.
+        /// 
         /// </summary>
         public virtual ValueType ValueType { get; set; }
 

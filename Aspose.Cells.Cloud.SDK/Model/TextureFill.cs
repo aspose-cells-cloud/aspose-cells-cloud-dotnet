@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// TextureFill.
+    /// 
     /// </summary>
     public class TextureFill
     {
@@ -70,7 +70,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual PicFormatOption PicFormatOption { get; set; }
 
         /// <summary>
-        /// Gets or sets Image.
+        /// 
         /// </summary>
         public virtual LinkElement Image { get; set; }
 

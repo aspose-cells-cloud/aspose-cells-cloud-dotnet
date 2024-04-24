@@ -1,4 +1,4 @@
-![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/24.3)
+![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/24.4)
 
 # .NET package for Aspose.Cells Cloud
 
@@ -18,14 +18,11 @@ Enhance your .NET applications with the [Aspose.Cells Cloud](https://products.as
 - Security Management: Offers a range of security features like data encryption, access control, and permission management to safeguard the security and integrity of spreadsheet data.
 
 
-## Feature & Enhancements in Version 24.3
+## Feature & Enhancements in Version 24.4.0
 
 Full list of issues covering all changes in this release:
 
-- Support data deduplication.
-- Support data filling.
-- Support to delete incomplete rows.
-- Support data cleansing.
+- Support data transformation function for Aspose.Cells Cloud Services.
 
 ## Support file format
 
@@ -96,6 +93,13 @@ var response = cellsApi.CellsWorksheetsPutAddNewWorksheet(name, sheetName, posit
 
 
 # Release history version
+
+## Enhancements in Version 24.3
+
+- Support data deduplication.
+- Support data filling.
+- Support to delete incomplete rows.
+- Support data cleansing.
 
 ## Enhancements in Version 24.2.1
 
