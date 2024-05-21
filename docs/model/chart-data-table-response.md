@@ -1,6 +1,6 @@
 # **chartDataTableResponse**
 
- 
+Represents the ChartDataTable Response. 
 
 ## **Properties**
 

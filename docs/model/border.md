@@ -1,6 +1,6 @@
 # **border**
 
- 
+           Encapsulates the object that represents the cell border.            
 
 ## **Properties**
 

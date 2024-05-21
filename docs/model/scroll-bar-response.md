@@ -1,6 +1,6 @@
 # **scrollBarResponse**
 
- 
+Represents the ScrollBar Response. 
 
 ## **Properties**
 

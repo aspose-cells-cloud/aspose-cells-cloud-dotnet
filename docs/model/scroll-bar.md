@@ -1,6 +1,6 @@
 # **scrollBar**
 
- 
+Represents a scroll bar object. 
 
 ## **Properties**
 

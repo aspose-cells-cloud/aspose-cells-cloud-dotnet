@@ -1,6 +1,6 @@
 # **textureFill**
 
- 
+           Encapsulates the object that represents texture fill format            
 
 ## **Properties**
 

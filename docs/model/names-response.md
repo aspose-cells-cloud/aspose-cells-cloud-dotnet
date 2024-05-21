@@ -1,6 +1,6 @@
 # **namesResponse**
 
- 
+Represents the Names Response. 
 
 ## **Properties**
 

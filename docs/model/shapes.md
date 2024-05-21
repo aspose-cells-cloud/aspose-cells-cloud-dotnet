@@ -1,6 +1,6 @@
 # **shapes**
 
- 
+Represents all the shape in a worksheet/chart. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **findResponse**
 
- 
+Represents the Find Response. 
 
 ## **Properties**
 

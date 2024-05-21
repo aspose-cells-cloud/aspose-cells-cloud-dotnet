@@ -1,6 +1,6 @@
 # **sparklineGroupResponse**
 
- 
+Represents the SparklineGroup Response. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **ranges**
 
- 
+           Encapsulates a collection of  objects.            
 
 ## **Properties**
 

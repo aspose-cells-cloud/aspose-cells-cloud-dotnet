@@ -1,6 +1,6 @@
 # **operateObjectType**
 
- 
+Represents operate object type. 
 
 ## **Properties**
 

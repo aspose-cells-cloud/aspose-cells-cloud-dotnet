@@ -1,6 +1,6 @@
 # **errorBarResponse**
 
- 
+Represents the ErrorBar Response. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **customFilter**
 
- 
+           Represents the custom filter.            
 
 ## **Properties**
 

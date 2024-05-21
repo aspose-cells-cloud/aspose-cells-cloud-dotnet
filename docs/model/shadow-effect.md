@@ -1,6 +1,6 @@
 # **shadowEffect**
 
- 
+           This class specifies the shadow effect of the chart element or shape.            
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **legendEntriesResponse**
 
- 
+Represents the LegendEntries Response. 
 
 ## **Properties**
 

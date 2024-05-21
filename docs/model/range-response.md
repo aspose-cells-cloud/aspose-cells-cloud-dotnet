@@ -1,6 +1,6 @@
 # **rangeResponse**
 
- 
+Represents the Range Response. 
 
 ## **Properties**
 

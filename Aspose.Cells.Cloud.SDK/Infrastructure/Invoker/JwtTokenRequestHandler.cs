@@ -78,7 +78,7 @@ namespace Aspose.Cells.Cloud.SDK.Invoker
 
         private void RequestToken()
         {
-            var requestUrl = baseApiUrl + "/connect/token";
+            var requestUrl ="https://id.aspose.cloud/connect/token";
 
             var postData = "grant_type=client_credentials";
             postData += "&client_id=" + clientId;

@@ -1,6 +1,6 @@
 # **validations**
 
- 
+Represents data validation collection. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **workbook**
 
- 
+           Represents a root object to create an Excel spreadsheet.            
 
 ## **Properties**
 

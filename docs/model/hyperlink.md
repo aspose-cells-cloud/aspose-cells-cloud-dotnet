@@ -1,6 +1,6 @@
 # **hyperlink**
 
- 
+Encapsulates the object that represents a hyperlink. 
 
 ## **Properties**
 

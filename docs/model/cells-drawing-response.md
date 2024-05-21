@@ -1,6 +1,6 @@
 # **cellsDrawingResponse**
 
- 
+Represents the CellsDrawing Response. 
 
 ## **Properties**
 

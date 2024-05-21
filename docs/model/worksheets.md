@@ -1,6 +1,6 @@
 # **worksheets**
 
- 
+Encapsulates a collection of  objects. 
 
 ## **Properties**
 

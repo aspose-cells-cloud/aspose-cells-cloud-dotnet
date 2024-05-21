@@ -1,6 +1,6 @@
 # **checkBoxResponse**
 
- 
+Represents the CheckBox Response. 
 
 ## **Properties**
 

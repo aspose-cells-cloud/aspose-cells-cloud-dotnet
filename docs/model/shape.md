@@ -1,6 +1,6 @@
 # **shape**
 
- 
+Represents the msodrawing object. 
 
 ## **Properties**
 

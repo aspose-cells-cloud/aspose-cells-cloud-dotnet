@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents a trendline in a chart.
     /// </summary>
     public class Trendline : Line
     {
@@ -54,7 +54,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// Represents the DataLabels object for the specified series.
         /// </summary>
-        public virtual LinkElement DataLabels { get; set; }
+        public virtual DataLabels DataLabels { get; set; }
 
         /// <summary>
         /// Represents if the equation for the trendline is displayed on the chart (in the same data label as the R-squared value). Setting this property to True automatically turns on data labels.
@@ -85,7 +85,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// Gets the legend entry according to this trendline
         /// </summary>
-        public virtual LinkElement LegendEntry { get; set; }
+        public virtual LegendEntry LegendEntry { get; set; }
 
         /// <summary>
         /// Returns the name of the trendline.

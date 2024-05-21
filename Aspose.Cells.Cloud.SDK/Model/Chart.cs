@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Encapsulates the object that represents a single Excel chart.
     /// </summary>
     public class Chart : LinkElement
     {
@@ -48,22 +48,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// Returns a  object that represents the back wall of a 3-D chart.
         /// </summary>
-        public virtual LinkElement BackWall { get; set; }
+        public virtual Walls BackWall { get; set; }
 
         /// <summary>
         /// Gets the chart's X axis.
         /// </summary>
-        public virtual LinkElement CategoryAxis { get; set; }
+        public virtual Axis CategoryAxis { get; set; }
 
         /// <summary>
         /// Gets the chart area in the worksheet.
         /// </summary>
-        public virtual LinkElement ChartArea { get; set; }
+        public virtual ChartArea ChartArea { get; set; }
 
         /// <summary>
         /// Represents the chart data table.
         /// </summary>
-        public virtual LinkElement ChartDataTable { get; set; }
+        public virtual ChartDataTable ChartDataTable { get; set; }
 
         /// <summary>
         /// Represents the chartShape;
@@ -89,7 +89,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// Returns a  object that represents the walls of a 3-D chart.
         /// </summary>
-        public virtual LinkElement Floor { get; set; }
+        public virtual Floor Floor { get; set; }
 
         /// <summary>
         /// Gets or sets the distance between the data series in a 3-D chart, as a percentage of the marker width.
@@ -127,17 +127,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// Gets the chart legend.
         /// </summary>
-        public virtual LinkElement Legend { get; set; }
+        public virtual Legend Legend { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents chart name.
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
         /// Gets a  collection representing the data series in the chart.
         /// </summary>
-        public virtual LinkElement NSeries { get; set; }
+        public virtual SeriesItems NSeries { get; set; }
 
         /// <summary>
         /// Represents the page setup description in this chart.
@@ -164,7 +164,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// Gets the chart's plot area which includes axis tick labels.
         /// </summary>
-        public virtual LinkElement PlotArea { get; set; }
+        public virtual PlotArea PlotArea { get; set; }
 
         /// <summary>
         /// Gets and sets  how to plot the empty cells.
@@ -237,19 +237,19 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual int? Style { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents chart title.
         /// </summary>
         public virtual LinkElement Title { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents chart type.
         /// </summary>
         public virtual string Type { get; set; }
 
         /// <summary>
         /// Gets the chart's Y axis.
         /// </summary>
-        public virtual LinkElement ValueAxis { get; set; }
+        public virtual Axis ValueAxis { get; set; }
 
         /// <summary>
         /// Returns a  object that represents the walls of a 3-D chart.

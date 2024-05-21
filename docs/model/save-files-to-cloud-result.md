@@ -1,6 +1,6 @@
 # **saveFilesToCloudResult**
 
- 
+Represents save file to cloud result. 
 
 ## **Properties**
 

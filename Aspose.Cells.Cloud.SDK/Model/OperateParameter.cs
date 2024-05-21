@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents operate parameter.
     /// </summary>
     public class OperateParameter
     {
         /// <summary>
-        /// 
+        /// Represents task operate type.
         /// </summary>
         public virtual string OperateType { get; set; }
 

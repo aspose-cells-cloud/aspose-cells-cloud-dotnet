@@ -1,6 +1,6 @@
 # **shapeResponse**
 
- 
+Represents the Shape Response. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **dropBarsResponse**
 
- 
+Represents the DropBars Response. 
 
 ## **Properties**
 

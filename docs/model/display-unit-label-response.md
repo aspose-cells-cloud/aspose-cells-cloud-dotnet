@@ -1,6 +1,6 @@
 # **displayUnitLabelResponse**
 
- 
+Represents the DisplayUnitLabel Response. 
 
 ## **Properties**
 

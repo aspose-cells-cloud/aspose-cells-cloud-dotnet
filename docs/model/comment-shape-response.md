@@ -1,6 +1,6 @@
 # **commentShapeResponse**
 
- 
+Represents the CommentShape Response. 
 
 ## **Properties**
 

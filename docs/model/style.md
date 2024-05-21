@@ -1,6 +1,6 @@
 # **style**
 
- 
+           Represents display style of excel document,such as font,color,alignment,border,etc.            The Style object contains all style attributes (font, number format, alignment, and so on) as properties.            
 
 ## **Properties**
 

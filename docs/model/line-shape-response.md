@@ -1,6 +1,6 @@
 # **lineShapeResponse**
 
- 
+Represents the LineShape Response. 
 
 ## **Properties**
 

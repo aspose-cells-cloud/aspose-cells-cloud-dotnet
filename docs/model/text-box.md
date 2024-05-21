@@ -1,6 +1,6 @@
 # **textBox**
 
- 
+Encapsulates the object that represents a textbox in a spreadsheet. 
 
 ## **Properties**
 

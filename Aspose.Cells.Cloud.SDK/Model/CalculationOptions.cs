@@ -35,7 +35,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    ///            Represents options for calculation.
+    ///            
     /// </summary>
     public class CalculationOptions
     {

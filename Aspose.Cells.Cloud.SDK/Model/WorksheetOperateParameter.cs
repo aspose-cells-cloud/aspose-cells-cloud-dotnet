@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents worksheet operate parameter.
     /// </summary>
     public class WorksheetOperateParameter : OperateParameter
     {
         /// <summary>
-        /// 
+        /// Represents worksheet name.
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents worksheet type.
         /// </summary>
         public virtual string SheetType { get; set; }
 
@@ -55,7 +55,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string NewName { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents move position.
         /// </summary>
         public virtual WorksheetMovingRequest MovingRequest { get; set; }
 

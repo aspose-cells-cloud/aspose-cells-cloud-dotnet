@@ -1,6 +1,6 @@
 # **listColumn**
 
- 
+           Represents a column in a Table.            
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **pivotTables**
 
- 
+Represents the collection of all the PivotTable objects on the specified worksheet. 
 
 ## **Properties**
 

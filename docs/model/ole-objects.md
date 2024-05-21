@@ -1,6 +1,6 @@
 # **oleObjects**
 
- 
+Represents embedded OLE objects. 
 
 ## **Properties**
 

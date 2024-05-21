@@ -1,6 +1,6 @@
 # **label**
 
- 
+Encapsulates the object that represents a label in a spreadsheet. 
 
 ## **Properties**
 

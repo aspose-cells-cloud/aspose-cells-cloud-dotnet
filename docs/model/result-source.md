@@ -1,6 +1,6 @@
 # **resultSource**
 
- 
+Represents result source type. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **operateType**
 
- 
+Represents operate type. 
 
 ## **Properties**
 

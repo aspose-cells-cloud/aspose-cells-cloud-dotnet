@@ -1,6 +1,6 @@
 # **resultDestinationType**
 
- 
+Represents result destination type. 
 
 ## **Properties**
 

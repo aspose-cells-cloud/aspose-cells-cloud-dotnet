@@ -1,6 +1,6 @@
 # **trendline**
 
- 
+Represents a trendline in a chart. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **picture**
 
- 
+Encapsulates the object that represents a single picture in a spreadsheet. 
 
 ## **Properties**
 

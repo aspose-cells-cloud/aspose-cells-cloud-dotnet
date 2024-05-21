@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Options for encrypting and access permissions for a PDF document.            PDF/A does not allow security setting.
     /// </summary>
     public class PdfSecurityOptions
     {

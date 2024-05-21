@@ -35,7 +35,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    ///            This class specifies the shadow effect of the chart element or shape.
+    ///            
     /// </summary>
     public class ShadowEffect
     {

@@ -1,6 +1,6 @@
 # **ovalResponse**
 
- 
+Represents the Oval Response. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **cellValue**
 
- 
+Represents the cell value and corresponding type. 
 
 ## **Properties**
 

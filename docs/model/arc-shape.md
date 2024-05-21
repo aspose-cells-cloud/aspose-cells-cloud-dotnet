@@ -1,6 +1,6 @@
 # **arcShape**
 
- 
+Represents the arc shape. 
 
 ## **Properties**
 

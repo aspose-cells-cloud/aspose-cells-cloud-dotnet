@@ -1,6 +1,6 @@
 # **saveResponse**
 
- 
+Represents the Save Response. 
 
 ## **Properties**
 

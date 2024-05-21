@@ -1,6 +1,6 @@
 # **rectangleShape**
 
- 
+Represents the rectangle shape. 
 
 ## **Properties**
 

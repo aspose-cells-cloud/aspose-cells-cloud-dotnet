@@ -1,6 +1,6 @@
 # **timePeriodFormatCondition**
 
- 
+Represents time period format condition. 
 
 ## **Properties**
 

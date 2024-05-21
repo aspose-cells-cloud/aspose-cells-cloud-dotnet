@@ -1,6 +1,6 @@
 # **styles**
 
- 
+Represents data style collection. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **singleValueResponse**
 
- 
+Represents the SingleValue Response. 
 
 ## **Properties**
 

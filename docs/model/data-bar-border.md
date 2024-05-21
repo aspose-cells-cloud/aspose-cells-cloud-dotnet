@@ -1,6 +1,6 @@
 # **dataBarBorder**
 
- 
+           Represents the border of the data bars specified by a conditional formatting rule.            
 
 ## **Properties**
 

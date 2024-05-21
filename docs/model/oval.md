@@ -1,6 +1,6 @@
 # **oval**
 
- 
+Represents the oval shape. 
 
 ## **Properties**
 

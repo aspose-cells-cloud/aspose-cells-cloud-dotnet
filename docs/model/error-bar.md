@@ -1,6 +1,6 @@
 # **errorBar**
 
- 
+Represents error bar of data series. 
 
 ## **Properties**
 

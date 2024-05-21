@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>Net6</TargetFrameworks>
+    <TargetFrameworks>Net6;Net452;netstandard2.0</TargetFrameworks>
     <AssemblyName>Aspose.Cells.Cloud.SDK</AssemblyName>
     <PackageId>Aspose.Cells-Cloud</PackageId>
     <OutputType>Library</OutputType>
@@ -10,16 +10,16 @@
     <PackageProjectUrl>https://products.aspose.cloud/cells/family</PackageProjectUrl>
     <Company>Aspose</Company>
     <AssemblyTitle>Aspose.Cells Cloud SDK for .NET</AssemblyTitle>
-    <Description>New generation of Aspose.Cells Cloud SDK for .NET, written in C#, enables the creation, editing, and conversion of Excel (XLS, XLSX, XLSB), ODS, CSV, JSON, and HTML files through easy interaction with the Aspose.Cells Cloud REST API.</Description>
+    <Description>A powerful and fast Aspose.Cells cloud SDK library written in C# for manipulating and converting Excel(XLS, XLSX,XLSB), ODS, CSV,JSON and HTML files.</Description>
     <PackageReleaseNotes>https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/releases/tag/23.10</PackageReleaseNotes>
-    <PackageTags>Cloud REST API Excel XLS XLSX XLSB CSV-to-PDF JPG PNG HTML ODS Numbers XLSM OOXML Spreadsheet Markdown XPS DOCX PPTX MHTML JSON SVG TIFF</PackageTags>
+    <PackageTags>Cloud REST API Excel XLS XLSX XLSB CSV to PDF JPG PNG HTML ODS Numbers XLSM OOXML Spreadsheet Markdown XPS DOCX PPTX MHTML JSON SVG TIFF</PackageTags>
     <RepositoryURL>https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/</RepositoryURL>
     <RepositoryType>GitHub</RepositoryType>
     <Copyright>MIT</Copyright>
-    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>    
-    <AssemblyVersion>24.4</AssemblyVersion>
-    <FileVersion>24.4</FileVersion>
-    <Version>24.4</Version>
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+    <AssemblyVersion>24.5</AssemblyVersion>
+    <FileVersion>24.5</FileVersion>
+    <Version>24.5</Version>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
 
   </PropertyGroup>

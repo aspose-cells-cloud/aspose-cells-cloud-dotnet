@@ -1,6 +1,6 @@
 # **conditionalFormattings**
 
- 
+Encapsulates a collection of  objects. 
 
 ## **Properties**
 

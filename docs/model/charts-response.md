@@ -1,6 +1,6 @@
 # **chartsResponse**
 
- 
+Represents the Charts Response. 
 
 ## **Properties**
 

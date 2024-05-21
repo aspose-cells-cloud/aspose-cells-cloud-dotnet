@@ -1,6 +1,6 @@
 # **dataItemType**
 
- 
+Represents data item type. 
 
 ## **Properties**
 

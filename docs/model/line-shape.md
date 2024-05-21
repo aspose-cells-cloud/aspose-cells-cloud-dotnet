@@ -1,6 +1,6 @@
 # **lineShape**
 
- 
+Represents the line shape. 
 
 ## **Properties**
 

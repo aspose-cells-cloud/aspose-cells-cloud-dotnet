@@ -1,6 +1,6 @@
 # **gradientFill**
 
- 
+           Represents the gradient fill.            
 
 ## **Properties**
 

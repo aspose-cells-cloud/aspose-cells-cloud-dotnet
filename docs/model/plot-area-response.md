@@ -1,6 +1,6 @@
 # **plotAreaResponse**
 
- 
+Represents the PlotArea Response. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **tickLabelsResponse**
 
- 
+Represents the TickLabels Response. 
 
 ## **Properties**
 

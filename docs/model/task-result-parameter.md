@@ -1,6 +1,6 @@
 # **taskResultParameter**
 
- 
+Represents task result parameter. 
 
 ## **Properties**
 

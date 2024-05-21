@@ -1,6 +1,6 @@
 # **font**
 
- 
+           Encapsulates the font object used in a spreadsheet.            
 
 ## **Properties**
 

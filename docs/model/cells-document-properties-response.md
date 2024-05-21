@@ -1,6 +1,6 @@
 # **cellsDocumentPropertiesResponse**
 
- 
+Represents the CellsDocumentProperties Response. 
 
 ## **Properties**
 

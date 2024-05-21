@@ -1,6 +1,6 @@
 # **columnResponse**
 
- 
+Represents the Column Response. 
 
 ## **Properties**
 

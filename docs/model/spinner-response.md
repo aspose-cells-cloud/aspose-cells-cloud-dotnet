@@ -1,6 +1,6 @@
 # **spinnerResponse**
 
- 
+Represents the Spinner Response. 
 
 ## **Properties**
 

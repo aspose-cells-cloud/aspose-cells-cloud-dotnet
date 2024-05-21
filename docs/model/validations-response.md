@@ -1,6 +1,6 @@
 # **validationsResponse**
 
- 
+Represents the Validations Response. 
 
 ## **Properties**
 

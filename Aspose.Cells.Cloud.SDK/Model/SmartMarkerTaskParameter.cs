@@ -35,37 +35,37 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents smart marker task parameter.
     /// </summary>
     public class SmartMarkerTaskParameter : TaskParameter
     {
         /// <summary>
-        /// 
+        /// Represents data source of task object.
         /// </summary>
         public virtual FileSource SourceWorkbook { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents data source of task object.
         /// </summary>
         public virtual FileSource DestinationWorkbook { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents xml file.
         /// </summary>
         public virtual FileSource xmlFile { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents destination data source.
         /// </summary>
         public virtual DataSource DataSource { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents destination data source.
         /// </summary>
         public virtual DataSource TargetDataSource { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents xml file.
         /// </summary>
         public virtual DataSource XMLFileDataSource { get; set; }
 

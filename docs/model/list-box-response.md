@@ -1,6 +1,6 @@
 # **listBoxResponse**
 
- 
+Represents the ListBox Response. 
 
 ## **Properties**
 

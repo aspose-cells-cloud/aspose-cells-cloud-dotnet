@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents sort key.
     /// </summary>
     public class SortKey
     {
         /// <summary>
-        /// 
+        /// Represents the key of sorting.
         /// </summary>
         public virtual int? Key { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents the order of sorting.
         /// </summary>
         public virtual string SortOrder { get; set; }
 

@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents the GroupBox Response.
     /// </summary>
     public class GroupBoxResponse : CellsCloudResponse
     {

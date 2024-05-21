@@ -35,7 +35,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    ///            Represents the border of the data bars specified by a conditional formatting rule.
+    ///            
     /// </summary>
     public class DataBarBorder
     {

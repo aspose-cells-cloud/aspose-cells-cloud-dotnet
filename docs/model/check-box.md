@@ -1,6 +1,6 @@
 # **checkBox**
 
- 
+Represents a check box object in a worksheet. 
 
 ## **Properties**
 

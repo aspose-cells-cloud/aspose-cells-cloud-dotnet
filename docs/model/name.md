@@ -1,6 +1,6 @@
 # **name**
 
- 
+Represents a defined name for a range of cells. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **splitResultResponse**
 
- 
+Represents the SplitResult Response. 
 
 ## **Properties**
 

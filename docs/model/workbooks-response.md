@@ -1,6 +1,6 @@
 # **workbooksResponse**
 
- 
+Represents the Workbooks Response. 
 
 ## **Properties**
 

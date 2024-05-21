@@ -1,6 +1,6 @@
 # **trendlines**
 
- 
+Represents a collection of all the  objects for the specified data series. 
 
 ## **Properties**
 

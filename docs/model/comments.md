@@ -1,6 +1,6 @@
 # **comments**
 
- 
+Encapsulates a collection of  objects. 
 
 ## **Properties**
 

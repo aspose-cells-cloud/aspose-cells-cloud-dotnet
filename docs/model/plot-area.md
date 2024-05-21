@@ -1,6 +1,6 @@
 # **plotArea**
 
- 
+Encapsulates the object that represents the plot area in a chart. 
 
 ## **Properties**
 
@@ -18,7 +18,6 @@
 |IsAutomaticSize|Boolean|true|false |  ||
 |IsInnerMode|Boolean|true|false |  ||
 |Shadow|Boolean|true|false |  ||
-|ShapeProperties|Container|true|false |  ||
 |Width|Integer|true|false |  ||
 |Height|Integer|true|false |  ||
 |X|Integer|true|false |  ||

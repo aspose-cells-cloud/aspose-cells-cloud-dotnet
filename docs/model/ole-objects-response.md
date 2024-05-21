@@ -1,6 +1,6 @@
 # **oleObjectsResponse**
 
- 
+Represents the OleObjects Response. 
 
 ## **Properties**
 

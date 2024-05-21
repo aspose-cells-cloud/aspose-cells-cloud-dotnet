@@ -1,6 +1,6 @@
 # **themeColor**
 
- 
+           Represents a theme color.            
 
 ## **Properties**
 

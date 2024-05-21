@@ -1,6 +1,6 @@
 # **range**
 
- 
+           Encapsulates the object that represents a range of cells within a spreadsheet.            
 
 ## **Properties**
 

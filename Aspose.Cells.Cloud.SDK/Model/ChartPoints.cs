@@ -35,14 +35,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents a collection that contains all the points in one series.
     /// </summary>
     public class ChartPoints : LinkElement
     {
         /// <summary>
         /// 
         /// </summary>
-        public virtual IList<LinkElement> ChartPointList { get; set; }
+        public virtual IList<ChartPoint> ChartPointList { get; set; }
 
         /// <summary>
         /// Gets or sets link.

@@ -1,6 +1,6 @@
 # **arcShapeResponse**
 
- 
+Represents the ArcShape Response. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **listBox**
 
- 
+Represents a list box object. 
 
 ## **Properties**
 

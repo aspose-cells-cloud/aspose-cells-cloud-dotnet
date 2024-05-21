@@ -1,6 +1,6 @@
 # **walls**
 
- 
+Encapsulates the object that represents the walls of a 3-D chart. 
 
 ## **Properties**
 

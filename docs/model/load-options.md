@@ -1,6 +1,6 @@
 # **loadOptions**
 
- 
+Represents the options of loading the file. 
 
 ## **Properties**
 

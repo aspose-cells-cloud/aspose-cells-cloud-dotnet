@@ -1,6 +1,6 @@
 # **buttonResponse**
 
- 
+Represents the Button Response. 
 
 ## **Properties**
 

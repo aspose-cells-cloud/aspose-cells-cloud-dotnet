@@ -35,7 +35,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    ///            Represents all settings of the workbook.
+    ///            
     /// </summary>
     public class WorkbookSettings
     {

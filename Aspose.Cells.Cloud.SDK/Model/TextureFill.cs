@@ -35,7 +35,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    ///            Encapsulates the object that represents texture fill format
+    ///            
     /// </summary>
     public class TextureFill
     {

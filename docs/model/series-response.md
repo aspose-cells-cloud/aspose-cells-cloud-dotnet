@@ -1,6 +1,6 @@
 # **seriesResponse**
 
- 
+Represents the Series Response. 
 
 ## **Properties**
 

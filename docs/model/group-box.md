@@ -1,6 +1,6 @@
 # **groupBox**
 
- 
+Encapsulates the object that represents a groupbox in a spreadsheet. 
 
 ## **Properties**
 

@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Allows to specify options when rendering worksheet to images, printing worksheet or rendering chart to image.
     /// </summary>
     public class ImageOrPrintOptions
     {

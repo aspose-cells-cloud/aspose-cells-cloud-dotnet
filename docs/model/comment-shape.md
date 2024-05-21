@@ -1,6 +1,6 @@
 # **commentShape**
 
- 
+Represents the shape of the comment. 
 
 ## **Properties**
 

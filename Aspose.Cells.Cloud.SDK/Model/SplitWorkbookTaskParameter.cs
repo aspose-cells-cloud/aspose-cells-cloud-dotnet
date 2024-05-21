@@ -35,32 +35,32 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents split workbook task parameter.
     /// </summary>
     public class SplitWorkbookTaskParameter : TaskParameter
     {
         /// <summary>
-        /// 
+        /// Represents data source of task object.
         /// </summary>
         public virtual FileSource Workbook { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents data source of task object.
         /// </summary>
         public virtual FileSource DestinationFilePosition { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents destination data source.
         /// </summary>
         public virtual DataSource DataSource { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents destination data source.
         /// </summary>
         public virtual DataSource TargetDataSource { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents destination data file format.
         /// </summary>
         public virtual string DestinationFileFormat { get; set; }
 

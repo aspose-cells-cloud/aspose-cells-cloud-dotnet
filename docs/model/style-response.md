@@ -1,6 +1,6 @@
 # **styleResponse**
 
- 
+Represents the Style Response. 
 
 ## **Properties**
 

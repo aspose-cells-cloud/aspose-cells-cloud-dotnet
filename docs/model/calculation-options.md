@@ -1,6 +1,6 @@
 # **calculationOptions**
 
- 
+           Represents options for calculation.            
 
 ## **Properties**
 

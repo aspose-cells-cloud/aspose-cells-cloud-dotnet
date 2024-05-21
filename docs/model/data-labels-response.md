@@ -1,6 +1,6 @@
 # **dataLabelsResponse**
 
- 
+Represents the DataLabels Response. 
 
 ## **Properties**
 

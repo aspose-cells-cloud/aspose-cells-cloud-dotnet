@@ -1,6 +1,6 @@
 # **worksheet**
 
- 
+           Encapsulates the object that represents a single worksheet.            
 
 ## **Properties**
 

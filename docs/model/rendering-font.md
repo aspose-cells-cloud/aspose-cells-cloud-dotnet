@@ -1,6 +1,6 @@
 # **renderingFont**
 
- 
+Font for rendering. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **floorResponse**
 
- 
+Represents the Floor Response. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **column**
 
- 
+Represents a single column in a worksheet. 
 
 ## **Properties**
 

@@ -35,7 +35,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    ///            Encapsulates a collection of  objects.
+    ///            
     /// </summary>
     public class Ranges
     {

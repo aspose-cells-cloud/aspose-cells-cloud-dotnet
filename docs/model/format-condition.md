@@ -1,6 +1,6 @@
 # **formatCondition**
 
- 
+Represents conditional formatting condition. 
 
 ## **Properties**
 

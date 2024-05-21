@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents the group shape which contains the individual shapes.
     /// </summary>
     public class GroupShape : Shape
     {

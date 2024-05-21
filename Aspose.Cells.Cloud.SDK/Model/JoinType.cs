@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="SuggestedOutputType.cs">
+// <copyright company="Aspose" file="JoinType.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -38,7 +38,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     /// 
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum SuggestedOutputType
+    public enum JoinType
     {
     }
 }

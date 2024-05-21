@@ -35,42 +35,42 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents operate object position.
     /// </summary>
     public class OperateObjectPosition
     {
         /// <summary>
-        /// 
+        /// Represents data source of operate object.
         /// </summary>
         public virtual DataSource DataSource { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents data source of operate object.
         /// </summary>
         public virtual FileSource Workbook { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents worksheet name of operate object.
         /// </summary>
         public virtual string SheetName { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents chart index of operate object.
         /// </summary>
         public virtual int? ChartIndex { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents shape index of operate object.
         /// </summary>
         public virtual int? ShapeIndex { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents cell name of operate object.
         /// </summary>
         public virtual string CellName { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents list object index of operate object.
         /// </summary>
         public virtual int? ListObjectIndex { get; set; }
 

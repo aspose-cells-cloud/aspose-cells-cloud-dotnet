@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Summary description for PivotTable.
     /// </summary>
     public class PivotTable : LinkElement
     {
@@ -210,7 +210,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string MissingItemsLimit { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents pivot table name.
         /// </summary>
         public virtual string Name { get; set; }
 

@@ -1,6 +1,6 @@
 # **styleFormatCondition**
 
- 
+Represents style format condition. 
 
 ## **Properties**
 

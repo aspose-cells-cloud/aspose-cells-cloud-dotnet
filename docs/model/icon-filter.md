@@ -1,6 +1,6 @@
 # **iconFilter**
 
- 
+           Represents icon filter.            
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **legendEntryResponse**
 
- 
+Represents the LegendEntry Response. 
 
 ## **Properties**
 

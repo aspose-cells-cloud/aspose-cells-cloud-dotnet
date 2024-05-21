@@ -35,7 +35,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    ///            Represents a item in a PivotField report.
+    ///            
     /// </summary>
     public class PivotItem
     {

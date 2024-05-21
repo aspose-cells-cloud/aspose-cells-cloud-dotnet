@@ -1,6 +1,6 @@
 # **trendlinesResponse**
 
- 
+Represents the Trendlines Response. 
 
 ## **Properties**
 

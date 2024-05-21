@@ -1,6 +1,6 @@
 # **groupBoxResponse**
 
- 
+Represents the GroupBox Response. 
 
 ## **Properties**
 
