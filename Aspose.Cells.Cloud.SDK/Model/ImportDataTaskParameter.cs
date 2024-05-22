@@ -35,32 +35,32 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents import data task parameter.
+    /// 
     /// </summary>
     public class ImportDataTaskParameter : TaskParameter
     {
         /// <summary>
-        /// Represents data source of task object.
+        /// 
         /// </summary>
         public virtual DataSource DataSource { get; set; }
 
         /// <summary>
-        /// Represents data source of task object.
+        /// 
         /// </summary>
         public virtual FileSource Workbook { get; set; }
 
         /// <summary>
-        /// Represents import option.
+        /// 
         /// </summary>
         public virtual ImportOption ImportOption { get; set; }
 
         /// <summary>
-        /// Represents destination data source.
+        /// 
         /// </summary>
         public virtual DataSource TargetDataSource { get; set; }
 
         /// <summary>
-        /// Represents destination data source.
+        /// 
         /// </summary>
         public virtual FileSource DestinationWorkbook { get; set; }
 

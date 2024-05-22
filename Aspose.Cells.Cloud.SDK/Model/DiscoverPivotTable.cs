@@ -35,22 +35,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents a pivot table, which is a pivot table created based on data analysis of a table.
+    /// 
     /// </summary>
     public class DiscoverPivotTable
     {
         /// <summary>
-        /// Represents pivot table name.
+        /// 
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Represents pivot table title.
+        /// 
         /// </summary>
         public virtual string Title { get; set; }
 
         /// <summary>
-        /// Represents pivot table data range.
+        /// 
         /// </summary>
         public virtual string DataRange { get; set; }
 
@@ -70,7 +70,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual List<int?> PivotFieldData { get; set; }
 
         /// <summary>
-        /// Represents pivot table thumbnail. Base64String
+        /// Base64String
         /// </summary>
         public virtual string Thumbnail { get; set; }
 

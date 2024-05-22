@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Collects the  objects that represent the individual rows in a worksheet.
+    /// 
     /// </summary>
     public class Rows : LinkElement
     {

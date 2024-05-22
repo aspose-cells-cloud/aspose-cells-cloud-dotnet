@@ -35,8 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    ///            Represents a root object to create an Excel spreadsheet.
-    ///            
+    /// 
     /// </summary>
     public class Workbook
     {

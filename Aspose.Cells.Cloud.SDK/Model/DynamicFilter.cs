@@ -35,8 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    ///            Represents the dynamic filter.
-    ///            
+    /// 
     /// </summary>
     public class DynamicFilter
     {

@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents time period format condition.
+    /// 
     /// </summary>
     public class TimePeriodFormatCondition
     {

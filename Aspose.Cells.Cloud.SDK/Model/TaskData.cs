@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents task data.
+    /// 
     /// </summary>
     public class TaskData
     {
         /// <summary>
-        /// Represents task description list.
+        /// 
         /// </summary>
         public virtual IList<TaskDescription> Tasks { get; set; }
 

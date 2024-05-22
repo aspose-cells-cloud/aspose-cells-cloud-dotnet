@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Encapsulates the object that represents a textbox in a spreadsheet.
+    /// 
     /// </summary>
     public class TextBox : Shape
     {

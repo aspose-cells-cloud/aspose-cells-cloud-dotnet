@@ -35,8 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    ///            Encapsulates the object that represents fill formatting for a shape.
-    ///            
+    /// 
     /// </summary>
     public class FillFormat
     {

@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents save file to cloud result.
+    /// 
     /// </summary>
     public class SaveFilesToCloudResult : TaskRunResult
     {

@@ -35,8 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    ///            Represents a theme color.
-    ///            
+    /// 
     /// </summary>
     public class ThemeColor
     {

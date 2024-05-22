@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the up/down bars in a chart.
+    /// 
     /// </summary>
     public class DropBars : LinkElement
     {

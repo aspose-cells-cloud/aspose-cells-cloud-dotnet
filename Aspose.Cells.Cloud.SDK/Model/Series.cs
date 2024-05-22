@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Encapsulates the object that represents a single data series in a chart.
+    /// 
     /// </summary>
     public class Series : LinkElement
     {
@@ -75,7 +75,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// Represents the DataLabels object for the specified ASeries.
         /// </summary>
-        public virtual DataLabels DataLabels { get; set; }
+        public virtual LinkElement DataLabels { get; set; }
 
         /// <summary>
         /// Gets the series's name that displays on the chart graph.
@@ -92,7 +92,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// Returns a  object that represents the down bars on a line chart.
         ///                         Applies only to line charts.
         /// </summary>
-        public virtual DropBars DownBars { get; set; }
+        public virtual LinkElement DownBars { get; set; }
 
         /// <summary>
         /// Returns a  object that represents the drop lines for a series on the line chart or area chart.
@@ -184,7 +184,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// Gets the legend entry according to this series.
         /// </summary>
-        public virtual LegendEntry LegendEntry { get; set; }
+        public virtual LinkElement LegendEntry { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual Line Line { get; set; }
 
         /// <summary>
         /// Gets the marker.
@@ -232,6 +237,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? Shadow { get; set; }
 
         /// <summary>
+        /// Gets the  object that holds the visual shape properties of the Series.
+        /// </summary>
+        public virtual LinkElement ShapeProperties { get; set; }
+
+        /// <summary>
         /// True if negative bubbles are shown for the chart group. Valid only for bubble charts.
         /// </summary>
         public virtual bool? ShowNegativeBubbles { get; set; }
@@ -263,7 +273,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// Returns an object that represents a collection of all the trendlines for the series.
         /// </summary>
-        public virtual Trendlines TrendLines { get; set; }
+        public virtual LinkElement TrendLines { get; set; }
 
         /// <summary>
         /// Gets or sets a data series' type.
@@ -274,7 +284,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// Returns an DropBars object that represents the up bars on a line chart.
         ///                         Applies only to line charts.
         /// </summary>
-        public virtual DropBars UpBars { get; set; }
+        public virtual LinkElement UpBars { get; set; }
 
         /// <summary>
         /// Represents the data of the chart series.
@@ -284,7 +294,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// Represents X direction error bar of the series.
         /// </summary>
-        public virtual ErrorBar XErrorBar { get; set; }
+        public virtual LinkElement XErrorBar { get; set; }
 
         /// <summary>
         /// Represents the x values of the chart series.
@@ -294,7 +304,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// Represents Y direction error bar of the series.
         /// </summary>
-        public virtual ErrorBar YErrorBar { get; set; }
+        public virtual LinkElement YErrorBar { get; set; }
 
         /// <summary>
         /// Gets or sets link.
@@ -335,6 +345,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  IsColorVaried: ").Append(this.IsColorVaried).Append("\n");
             sb.Append("  LeaderLines: ").Append(this.LeaderLines).Append("\n");
             sb.Append("  LegendEntry: ").Append(this.LegendEntry).Append("\n");
+            sb.Append("  Line: ").Append(this.Line).Append("\n");
             sb.Append("  Marker: ").Append(this.Marker).Append("\n");
             sb.Append("  Name: ").Append(this.Name).Append("\n");
             sb.Append("  Overlap: ").Append(this.Overlap).Append("\n");
@@ -343,6 +354,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  SecondPlotSize: ").Append(this.SecondPlotSize).Append("\n");
             sb.Append("  SeriesLines: ").Append(this.SeriesLines).Append("\n");
             sb.Append("  Shadow: ").Append(this.Shadow).Append("\n");
+            sb.Append("  ShapeProperties: ").Append(this.ShapeProperties).Append("\n");
             sb.Append("  ShowNegativeBubbles: ").Append(this.ShowNegativeBubbles).Append("\n");
             sb.Append("  SizeRepresents: ").Append(this.SizeRepresents).Append("\n");
             sb.Append("  Smooth: ").Append(this.Smooth).Append("\n");

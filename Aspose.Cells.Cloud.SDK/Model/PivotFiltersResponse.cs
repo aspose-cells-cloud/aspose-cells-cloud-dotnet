@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the PivotFilters Response.
+    /// 
     /// </summary>
     public class PivotFiltersResponse : CellsCloudResponse
     {

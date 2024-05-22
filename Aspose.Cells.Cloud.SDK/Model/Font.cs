@@ -35,8 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    ///            Encapsulates the font object used in a spreadsheet.
-    ///            
+    /// 
     /// </summary>
     public class Font
     {

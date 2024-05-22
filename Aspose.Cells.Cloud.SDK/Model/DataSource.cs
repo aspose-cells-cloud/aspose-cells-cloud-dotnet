@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents data source.
+    /// 
     /// </summary>
     public class DataSource
     {
         /// <summary>
-        /// Represents data source type.
+        /// 
         /// </summary>
         public virtual string DataSourceType { get; set; }
 
         /// <summary>
-        /// Represents data path.
+        /// 
         /// </summary>
         public virtual string DataPath { get; set; }
 

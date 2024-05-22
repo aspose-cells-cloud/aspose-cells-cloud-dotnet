@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents a single point in a series in a chart.
+    /// 
     /// </summary>
     public class ChartPoint : LinkElement
     {
@@ -72,17 +72,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// Gets or sets the X value of the chart point.
         /// </summary>
-        public virtual Object XValue { get; set; }
+        public virtual string XValue { get; set; }
 
         /// <summary>
         /// Gets or sets the Y value of the chart point.
         /// </summary>
-        public virtual Object YValue { get; set; }
-
-        /// <summary>
-        /// Gets or sets a value indicates whether this data points is in the second pie or bar on a pie of pie or bar of pie chart.
-        /// </summary>
-        public virtual bool? IsInSecondaryPlot { get; set; }
+        public virtual string YValue { get; set; }
 
         /// <summary>
         /// Gets or sets link.
@@ -105,7 +100,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  Shadow: ").Append(this.Shadow).Append("\n");
             sb.Append("  XValue: ").Append(this.XValue).Append("\n");
             sb.Append("  YValue: ").Append(this.YValue).Append("\n");
-            sb.Append("  IsInSecondaryPlot: ").Append(this.IsInSecondaryPlot).Append("\n");
             sb.Append("  link: ").Append(this.link).Append("\n");
             sb.Append("}\n");
             return sb.ToString();

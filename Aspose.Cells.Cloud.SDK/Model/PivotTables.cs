@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the collection of all the PivotTable objects on the specified worksheet.
+    /// 
     /// </summary>
     public class PivotTables : LinkElement
     {

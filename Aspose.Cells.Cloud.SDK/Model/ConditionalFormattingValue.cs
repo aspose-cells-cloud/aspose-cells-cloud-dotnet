@@ -35,8 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    ///            Describes the values of the interpolation points in a gradient scale, dataBar or iconSet.
-    ///            
+    /// 
     /// </summary>
     public class ConditionalFormattingValue
     {

@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents a collection of  objects in the worksheet.
+    /// 
     /// </summary>
     public class ListObjects : LinkElement
     {

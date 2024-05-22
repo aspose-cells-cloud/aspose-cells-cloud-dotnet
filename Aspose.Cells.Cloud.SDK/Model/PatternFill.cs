@@ -35,8 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    ///            Encapsulates the object that represents pattern fill format
-    ///            
+    /// 
     /// </summary>
     public class PatternFill
     {

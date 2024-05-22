@@ -1,12 +1,12 @@
 # **dataCleansing**
 
-Represents data cleansing. 
+Data Cleansing 
 
 ## **Properties**
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
 |Ranges|Container|true|false |  ||
-|NeedFillData|Boolean|true|false |  |Represents whether the data needs to be populated.|
-|DataFill|Class|true|false |  |Represents data fill.|
+|NeedFillData|Boolean|true|false |  ||
+|DataFill|Class|true|false |  ||
 

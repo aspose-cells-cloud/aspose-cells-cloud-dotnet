@@ -35,8 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    ///            Encapsulates the object that represents a range of cells within a spreadsheet.
-    ///            
+    /// 
     /// </summary>
     public class Range
     {

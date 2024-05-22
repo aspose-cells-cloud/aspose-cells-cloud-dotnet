@@ -35,37 +35,37 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the text options.
+    /// 
     /// </summary>
     public class TextOptions : Font
     {
         /// <summary>
-        /// Represents fill format.
+        /// 
         /// </summary>
         public virtual FillFormat Fill { get; set; }
 
         /// <summary>
-        /// Represents kerning.
+        /// 
         /// </summary>
         public virtual double? Kerning { get; set; }
 
         /// <summary>
-        /// Represents outline format.
+        /// 
         /// </summary>
         public virtual LineFormat Outline { get; set; }
 
         /// <summary>
-        /// Represents shadow effect.
+        /// 
         /// </summary>
         public virtual ShadowEffect Shadow { get; set; }
 
         /// <summary>
-        /// Represents spacing.
+        /// 
         /// </summary>
         public virtual double? Spacing { get; set; }
 
         /// <summary>
-        /// Represents under line color.
+        /// 
         /// </summary>
         public virtual CellsColor UnderlineColor { get; set; }
 

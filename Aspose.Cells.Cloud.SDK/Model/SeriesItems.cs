@@ -57,7 +57,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// 
         /// </summary>
-        public virtual IList<Series> SeriesList { get; set; }
+        public virtual IList<LinkElement> SeriesList { get; set; }
 
         /// <summary>
         /// Gets or sets link.

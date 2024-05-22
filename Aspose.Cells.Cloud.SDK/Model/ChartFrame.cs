@@ -35,8 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    ///            Encapsulates the object that represents the frame object in a chart.
-    ///            
+    /// 
     /// </summary>
     public class ChartFrame
     {
@@ -90,6 +89,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? Shadow { get; set; }
 
         /// <summary>
+        /// Gets the  object.
+        ///  
+        /// </summary>
+        public virtual IList<LinkElement> ShapeProperties { get; set; }
+
+        /// <summary>
         /// Gets or sets the width of frame in units of 1/4000 of the chart area.
         ///  
         /// </summary>
@@ -129,6 +134,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  IsAutomaticSize: ").Append(this.IsAutomaticSize).Append("\n");
             sb.Append("  IsInnerMode: ").Append(this.IsInnerMode).Append("\n");
             sb.Append("  Shadow: ").Append(this.Shadow).Append("\n");
+            sb.Append("  ShapeProperties: ").Append(this.ShapeProperties).Append("\n");
             sb.Append("  Width: ").Append(this.Width).Append("\n");
             sb.Append("  Height: ").Append(this.Height).Append("\n");
             sb.Append("  X: ").Append(this.X).Append("\n");

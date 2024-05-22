@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the Legend Response.
+    /// 
     /// </summary>
     public class LegendResponse : CellsCloudResponse
     {

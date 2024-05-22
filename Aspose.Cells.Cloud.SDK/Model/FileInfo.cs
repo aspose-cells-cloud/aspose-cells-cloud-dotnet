@@ -35,22 +35,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents file information.
+    /// File Information
     /// </summary>
     public class FileInfo
     {
         /// <summary>
-        /// Represents filename. 
+        /// Filename. 
         /// </summary>
         public virtual string Filename { get; set; }
 
         /// <summary>
-        /// Represents file size.
+        /// File size.
         /// </summary>
         public virtual long? FileSize { get; set; }
 
         /// <summary>
-        /// Represents file content,  byte to base64 string.
+        /// File content,  byte to base64 string.
         /// </summary>
         public virtual string FileContent { get; set; }
 

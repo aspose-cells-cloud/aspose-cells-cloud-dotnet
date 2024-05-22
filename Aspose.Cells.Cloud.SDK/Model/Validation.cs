@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents data validation.settings.
+    /// 
     /// </summary>
     public class Validation : LinkElement
     {

@@ -35,8 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    ///            Represents a range of characters within the cell text.
-    ///            
+    /// 
     /// </summary>
     public class FontSetting
     {

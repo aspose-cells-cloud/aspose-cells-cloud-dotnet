@@ -1,6 +1,6 @@
 # **analyzedColumnDescription**
 
-Represents description of analyzed column. 
+How to use the properties of each column: currently divided into timeline, product line, numerical statistics line             How to present the product, a unified plan            How to solve the problem of full digital?            Full text How to solve it?            Two columns: Text, Number is the easiest            Three columns: Text, Text, Number                    text, number, number --- date date ; Date Numeric ; Numeric Digital             What about four columns, five columns? 
 
 ## **Properties**
 

@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the ChartPoints Response.
+    /// 
     /// </summary>
     public class ChartPointsResponse : CellsCloudResponse
     {

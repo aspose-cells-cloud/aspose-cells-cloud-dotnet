@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents an OleObject in a worksheet.
+    /// 
     /// </summary>
     public class OleObject : Shape
     {

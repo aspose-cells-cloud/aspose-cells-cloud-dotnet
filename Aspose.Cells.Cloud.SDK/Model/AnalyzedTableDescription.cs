@@ -35,87 +35,87 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents analyzed table description.
+    /// 
     /// </summary>
     public class AnalyzedTableDescription
     {
         /// <summary>
-        /// Represents table name.
+        /// 
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Represents worksheet name which is where the table is located.
+        /// 
         /// </summary>
         public virtual string SheetName { get; set; }
 
         /// <summary>
-        /// Represents analyzed description about table columns.
+        /// 
         /// </summary>
         public virtual IList<AnalyzedColumnDescription> Columns { get; set; }
 
         /// <summary>
-        /// Represents date columns list.
+        /// 
         /// </summary>
         public virtual IList<int?> DateColumns { get; set; }
 
         /// <summary>
-        /// Represents number columns list.
+        /// 
         /// </summary>
         public virtual IList<int?> NumberColumns { get; set; }
 
         /// <summary>
-        /// Represents string columns list.
+        /// 
         /// </summary>
         public virtual IList<int?> TextColumns { get; set; }
 
         /// <summary>
-        /// Represents exception columns list.
+        /// 
         /// </summary>
         public virtual IList<int?> ExceptionColumns { get; set; }
 
         /// <summary>
-        /// Represents there is a table header in the table.
+        /// 
         /// </summary>
         public virtual bool? HasTableHeaderRow { get; set; }
 
         /// <summary>
-        /// Represents there is a total row in the table.
+        /// 
         /// </summary>
         public virtual bool? HasTableTotalRow { get; set; }
 
         /// <summary>
-        /// Represents the column index as the start data column.
+        /// 
         /// </summary>
         public virtual int? StartDataColumnIndex { get; set; }
 
         /// <summary>
-        /// Represents the column index as the end data column.
+        /// 
         /// </summary>
         public virtual int? EndDataColumnIndex { get; set; }
 
         /// <summary>
-        /// Represents the row index as the start data row.
+        /// 
         /// </summary>
         public virtual int? StartDataRowIndex { get; set; }
 
         /// <summary>
-        /// Represents the row index as the end data row.
+        /// 
         /// </summary>
         public virtual int? EndDataRowIndex { get; set; }
 
         /// <summary>
-        /// Represents table thumbnail. Base64String
+        /// Base64String
         /// </summary>
         public virtual string Thumbnail { get; set; }
 
         /// <summary>
-        /// Represents a collection of charts, which is a collection of charts created based on data analysis of a table.
+        /// 
         /// </summary>
         public virtual IList<DiscoverChart> DiscoverCharts { get; set; }
 
         /// <summary>
-        /// Represents a collection of pivot tables, which is a collection of pivot tables created based on data analysis of a table.
+        /// 
         /// </summary>
         public virtual IList<DiscoverPivotTable> DiscoverPivotTables { get; set; }
 

@@ -35,57 +35,57 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents worksheet data statistics.
+    /// 
     /// </summary>
     public class WorksheetDataStatistics
     {
         /// <summary>
-        /// Represents worksheet name.
+        /// 
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Represents chart number.
+        /// 
         /// </summary>
         public virtual int? ChartsCount { get; set; }
 
         /// <summary>
-        /// Represents list object number.
+        /// 
         /// </summary>
         public virtual int? TablesCount { get; set; }
 
         /// <summary>
-        /// Represents pivot table number.
+        /// 
         /// </summary>
         public virtual int? PivotTablesCount { get; set; }
 
         /// <summary>
-        /// Represents shape number.
+        /// 
         /// </summary>
         public virtual int? ShapesCount { get; set; }
 
         /// <summary>
-        /// Represents shape number.
+        /// 
         /// </summary>
         public virtual int? HyperlinksCount { get; set; }
 
         /// <summary>
-        /// Represents hyperlink number.
+        /// 
         /// </summary>
         public virtual int? QueryTablesCount { get; set; }
 
         /// <summary>
-        /// Represents query table number.
+        /// 
         /// </summary>
         public virtual int? CellsCount { get; set; }
 
         /// <summary>
-        /// Represents cell number.
+        /// 
         /// </summary>
         public virtual int? CellsCountInTable { get; set; }
 
         /// <summary>
-        /// Represents formula number.
+        /// 
         /// </summary>
         public virtual int? CellsCountIsFormula { get; set; }
 

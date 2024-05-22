@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Encapsulates the object that represents the title of chart or axis.
+    /// 
     /// </summary>
     public class Title : ChartFrame
     {
@@ -115,6 +115,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override bool? Shadow { get; set; }
 
         /// <summary>
+        /// Gets or sets ShapeProperties.
+        /// </summary>
+        public override IList<LinkElement> ShapeProperties { get; set; }
+
+        /// <summary>
         /// Gets or sets Width.
         /// </summary>
         public override int? Width { get; set; }
@@ -157,6 +162,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  IsAutomaticSize: ").Append(this.IsAutomaticSize).Append("\n");
             sb.Append("  IsInnerMode: ").Append(this.IsInnerMode).Append("\n");
             sb.Append("  Shadow: ").Append(this.Shadow).Append("\n");
+            sb.Append("  ShapeProperties: ").Append(this.ShapeProperties).Append("\n");
             sb.Append("  Width: ").Append(this.Width).Append("\n");
             sb.Append("  Height: ").Append(this.Height).Append("\n");
             sb.Append("  X: ").Append(this.X).Append("\n");

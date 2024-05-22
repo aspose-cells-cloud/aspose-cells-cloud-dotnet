@@ -35,22 +35,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents data filling.
+    /// 
     /// </summary>
     public class DataFill
     {
         /// <summary>
-        /// Represents range of data filling.
+        /// 
         /// </summary>
         public virtual IList<Range> Ranges { get; set; }
 
         /// <summary>
-        /// Represents that the data column is populated with the default value.
+        /// 
         /// </summary>
         public virtual DataFillValue DataFillDefaultValue { get; set; }
 
         /// <summary>
-        /// Represents that the data column is populated with the specified value.
+        /// 
         /// </summary>
         public virtual IList<DataColumnFillValue> DataColumnFillValueList { get; set; }
 

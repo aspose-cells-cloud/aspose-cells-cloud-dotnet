@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the Hyperlinks Response.
+    /// 
     /// </summary>
     public class HyperlinksResponse : CellsCloudResponse
     {

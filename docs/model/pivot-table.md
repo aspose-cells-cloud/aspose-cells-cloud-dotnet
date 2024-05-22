@@ -1,6 +1,6 @@
 # **pivotTable**
 
-Summary description for PivotTable. 
+ 
 
 ## **Properties**
 
@@ -40,7 +40,7 @@ Summary description for PivotTable.
 |ManualUpdate|Boolean|true|false |  ||
 |MergeLabels|Boolean|true|false |  ||
 |MissingItemsLimit|String|true|false |  ||
-|Name|String|true|false |  |Represents pivot table name.|
+|Name|String|true|false |  ||
 |NullString|String|true|false |  ||
 |PageFieldOrder|String|true|false |  ||
 |PageFields|Container|true|false |  ||

@@ -35,37 +35,37 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents a chart, which is a chart created based on data analysis of a table.
+    /// 
     /// </summary>
     public class DiscoverChart
     {
         /// <summary>
-        /// Represents chart name.
+        /// 
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Represents worksheet name which is where the chart is located.
+        /// 
         /// </summary>
         public virtual string SheetName { get; set; }
 
         /// <summary>
-        /// Represents chart title.
+        /// 
         /// </summary>
         public virtual string Title { get; set; }
 
         /// <summary>
-        /// Represents chart type.
+        /// 
         /// </summary>
         public virtual string Type { get; set; }
 
         /// <summary>
-        /// Represents chart data range.
+        /// 
         /// </summary>
         public virtual string DataRange { get; set; }
 
         /// <summary>
-        /// Represents chart thumbnail. Base64String
+        /// Base64String
         /// </summary>
         public virtual string Thumbnail { get; set; }
 

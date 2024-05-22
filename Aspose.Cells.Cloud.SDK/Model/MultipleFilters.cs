@@ -35,8 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    ///            Represents the multiple filter collection.
-    ///            
+    /// 
     /// </summary>
     public class MultipleFilters
     {

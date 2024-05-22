@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the Rows Response.
+    /// 
     /// </summary>
     public class RowsResponse : CellsCloudResponse
     {

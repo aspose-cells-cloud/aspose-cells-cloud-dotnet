@@ -35,14 +35,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents a collection of all the  objects for the specified data series.
+    /// 
     /// </summary>
     public class Trendlines : LinkElement
     {
         /// <summary>
         /// 
         /// </summary>
-        public virtual IList<Trendline> TrendlineList { get; set; }
+        public virtual IList<LinkElement> TrendlineList { get; set; }
 
         /// <summary>
         /// Gets or sets link.

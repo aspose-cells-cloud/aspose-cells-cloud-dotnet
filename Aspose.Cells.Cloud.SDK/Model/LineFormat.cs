@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents all setting of the line.
+    /// 
     /// </summary>
     public class LineFormat : FillFormat
     {

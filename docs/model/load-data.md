@@ -10,5 +10,4 @@ Loading data information.
 |DataSource|Class|true|false |  |Indicates the source of the mount data.|
 |FileInfo|Class|true|false |  |When data souce is request files, FileInfo store the contents of the file.|
 |DataItem|Class|true|false |  |The specific data object type and name.|
-|MergeQueries|Class|true|false |  ||
 

@@ -1,6 +1,6 @@
 # **displayUnitLabel**
 
-Represents the display unit label. 
+ 
 
 ## **Properties**
 
@@ -9,6 +9,7 @@ Represents the display unit label.
 |LinkedSource|String|true|false |  ||
 |RotationAngle|Integer|true|false |  ||
 |Text|String|true|false |  |Gets or sets the text of display unit label.|
+|TextDirection|String|true|false |  ||
 |TextHorizontalAlignment|String|true|false |  ||
 |TextVerticalAlignment|String|true|false |  ||
 |Area|Class|true|false |  ||
@@ -19,6 +20,7 @@ Represents the display unit label.
 |IsAutomaticSize|Boolean|true|false |  ||
 |IsInnerMode|Boolean|true|false |  ||
 |Shadow|Boolean|true|false |  ||
+|ShapeProperties|Container|true|false |  ||
 |Width|Integer|true|false |  ||
 |Height|Integer|true|false |  ||
 |X|Integer|true|false |  ||

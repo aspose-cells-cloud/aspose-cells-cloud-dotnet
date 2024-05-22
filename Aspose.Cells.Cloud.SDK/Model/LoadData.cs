@@ -60,11 +60,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual DataItem DataItem { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        public virtual MergeQueries MergeQueries { get; set; }
-
-        /// <summary>
         /// Get the string presentation of the object.
         /// </summary>
         /// <returns>String presentation of the object.</returns>
@@ -76,7 +71,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  DataSource: ").Append(this.DataSource).Append("\n");
             sb.Append("  FileInfo: ").Append(this.FileInfo).Append("\n");
             sb.Append("  DataItem: ").Append(this.DataItem).Append("\n");
-            sb.Append("  MergeQueries: ").Append(this.MergeQueries).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

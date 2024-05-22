@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents workbook setting operate parameter.
+    /// 
     /// </summary>
     public class WorkbookSettingsOperateParameter : OperateParameter
     {
         /// <summary>
-        /// Represents workbook setting.
+        /// 
         /// </summary>
         public virtual WorkbookSettings WorkbookSettings { get; set; }
 

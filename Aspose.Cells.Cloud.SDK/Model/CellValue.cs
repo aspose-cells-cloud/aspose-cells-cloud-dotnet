@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the cell value and corresponding type.
+    /// 
     /// </summary>
     public class CellValue
     {

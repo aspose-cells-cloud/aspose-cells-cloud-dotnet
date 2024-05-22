@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the result of the file split.
+    /// 
     /// </summary>
     public class SplitResult
     {
         /// <summary>
-        /// Represents cells cloud file information.
+        /// 
         /// </summary>
         public virtual IList<CellsCloudFileInfo> Documents { get; set; }
 

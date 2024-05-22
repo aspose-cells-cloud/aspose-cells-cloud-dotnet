@@ -35,8 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    ///            Encapsulates the object that represents a single worksheet.
-    ///            
+    /// 
     /// </summary>
     public class Worksheet
     {

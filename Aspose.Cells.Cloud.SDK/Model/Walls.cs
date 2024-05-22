@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Encapsulates the object that represents the walls of a 3-D chart.
+    /// 
     /// </summary>
     public class Walls : Floor
     {

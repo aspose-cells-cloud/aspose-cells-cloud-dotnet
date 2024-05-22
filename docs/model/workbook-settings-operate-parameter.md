@@ -1,11 +1,11 @@
 # **workbookSettingsOperateParameter**
 
-Represents workbook setting operate parameter. 
+ 
 
 ## **Properties**
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|WorkbookSettings|Class|true|false |  |Represents workbook setting.|
+|WorkbookSettings|Class|true|false |  ||
 |OperateType|String|true|false |  ||
 

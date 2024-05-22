@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the ConditionalFormatting Response.
+    /// 
     /// </summary>
     public class ConditionalFormattingResponse : CellsCloudResponse
     {

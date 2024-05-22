@@ -1,4 +1,4 @@
-![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/24.5)
+![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/24.4)
 
 # .NET package for Aspose.Cells Cloud
 
@@ -18,13 +18,11 @@ Enhance your .NET applications with the [Aspose.Cells Cloud](https://products.as
 - Security Management: Offers a range of security features like data encryption, access control, and permission management to safeguard the security and integrity of spreadsheet data.
 
 
-## Feature & Enhancements in Version 24.5.0
+## Feature & Enhancements in Version 24.4.0
 
 Full list of issues covering all changes in this release:
 
-- Add merge queries method for loading data of data transformation.
-- Optimize chart data model.
-- Fixed the bug of incorrect obtaining token.
+- Support data transformation function for Aspose.Cells Cloud Services.
 
 ## Support file format
 
@@ -95,10 +93,6 @@ var response = cellsApi.CellsWorksheetsPutAddNewWorksheet(name, sheetName, posit
 
 
 # Release history version
-
-## Enhancements in Version 24.4
-
-- Support data transformation function for Aspose.Cells Cloud Services.
 
 ## Enhancements in Version 24.3
 
