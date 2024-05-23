@@ -1,6 +1,6 @@
 # **area**
 
- 
+           Encapsulates the object that represents an area format.            
 
 ## **Properties**
 

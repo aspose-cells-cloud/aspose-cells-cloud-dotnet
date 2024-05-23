@@ -1,6 +1,6 @@
 # **lineResponse**
 
- 
+Represents the Line Response. 
 
 ## **Properties**
 

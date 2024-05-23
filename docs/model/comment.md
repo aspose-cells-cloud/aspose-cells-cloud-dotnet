@@ -1,6 +1,6 @@
 # **comment**
 
- 
+Encapsulates the object that represents a cell comment. 
 
 ## **Properties**
 

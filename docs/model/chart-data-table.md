@@ -1,6 +1,6 @@
 # **chartDataTable**
 
- 
+Represents a chart data table. 
 
 ## **Properties**
 

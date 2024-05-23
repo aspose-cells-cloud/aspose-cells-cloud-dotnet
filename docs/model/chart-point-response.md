@@ -1,6 +1,6 @@
 # **chartPointResponse**
 
- 
+Represents the ChartPoint Response. 
 
 ## **Properties**
 

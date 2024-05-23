@@ -1,6 +1,6 @@
 # **pivotFieldResponse**
 
- 
+Represents the PivotField Response. 
 
 ## **Properties**
 

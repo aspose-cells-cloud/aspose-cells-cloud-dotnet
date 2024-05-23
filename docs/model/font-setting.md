@@ -1,6 +1,6 @@
 # **fontSetting**
 
- 
+           Represents a range of characters within the cell text.            
 
 ## **Properties**
 

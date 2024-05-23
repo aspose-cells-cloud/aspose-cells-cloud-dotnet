@@ -1,6 +1,6 @@
 # **pageSetupResponse**
 
- 
+Represents the PageSetup Response. 
 
 ## **Properties**
 

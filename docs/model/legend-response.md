@@ -1,6 +1,6 @@
 # **legendResponse**
 
- 
+Represents the Legend Response. 
 
 ## **Properties**
 

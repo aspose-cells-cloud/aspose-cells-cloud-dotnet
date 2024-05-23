@@ -35,27 +35,27 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents cells object operate task parameter.
     /// </summary>
     public class CellsObjectOperateTaskParameter : TaskParameter
     {
         /// <summary>
-        /// 
+        /// Represents object operate.
         /// </summary>
         public virtual OperateObject OperateObject { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents operate parameter.
         /// </summary>
         public virtual OperateParameter OperateParameter { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents destination data source.
         /// </summary>
-        public virtual DataSource DestinatioDataSource { get; set; }
+        public virtual DataSource DestinationDataSource { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents destination data source.
         /// </summary>
         public virtual FileSource DestinationWorkbook { get; set; }
 
@@ -69,7 +69,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("class CellsObjectOperateTaskParameter {\n");
             sb.Append("  OperateObject: ").Append(this.OperateObject).Append("\n");
             sb.Append("  OperateParameter: ").Append(this.OperateParameter).Append("\n");
-            sb.Append("  DestinatioDataSource: ").Append(this.DestinatioDataSource).Append("\n");
+            sb.Append("  DestinationDataSource: ").Append(this.DestinationDataSource).Append("\n");
             sb.Append("  DestinationWorkbook: ").Append(this.DestinationWorkbook).Append("\n");
             sb.Append("}\n");
             return sb.ToString();

@@ -1,6 +1,6 @@
 # **solidFill**
 
- 
+           Encapsulates the object that represents solid fill format            
 
 ## **Properties**
 

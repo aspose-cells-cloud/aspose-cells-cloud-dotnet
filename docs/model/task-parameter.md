@@ -1,6 +1,6 @@
 # **taskParameter**
 
- 
+Represents task parameter. 
 
 ## **Properties**
 

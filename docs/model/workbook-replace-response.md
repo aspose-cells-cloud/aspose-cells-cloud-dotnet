@@ -1,6 +1,6 @@
 # **workbookReplaceResponse**
 
- 
+Represents the WorkbookReplace Response. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **workbookSettings**
 
- 
+           Represents all settings of the workbook.            
 
 ## **Properties**
 

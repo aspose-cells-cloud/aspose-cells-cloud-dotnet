@@ -1,4 +1,4 @@
-![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/24.4)
+![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/24.5.1)
 
 # .NET package for Aspose.Cells Cloud
 
@@ -17,12 +17,15 @@ Enhance your .NET applications with the [Aspose.Cells Cloud](https://products.as
 - Import/Export: Facilitates importing data from various sources into spreadsheets and exporting spreadsheet data to other formats.
 - Security Management: Offers a range of security features like data encryption, access control, and permission management to safeguard the security and integrity of spreadsheet data.
 
+## There are major problems with v24.5.0 and it does not work properly, please use v24.5.1.
 
-## Feature & Enhancements in Version 24.4.0
+## Feature & Enhancements in Version 24.5.1
 
 Full list of issues covering all changes in this release:
 
-- Support data transformation function for Aspose.Cells Cloud Services.
+- Add merge queries method for loading data of data transformation.
+- Optimize chart data model.
+- Update obtaining access token address.
 
 ## Support file format
 
@@ -93,6 +96,10 @@ var response = cellsApi.CellsWorksheetsPutAddNewWorksheet(name, sheetName, posit
 
 
 # Release history version
+
+## Enhancements in Version 24.4
+
+- Support data transformation function for Aspose.Cells Cloud Services.
 
 ## Enhancements in Version 24.3
 

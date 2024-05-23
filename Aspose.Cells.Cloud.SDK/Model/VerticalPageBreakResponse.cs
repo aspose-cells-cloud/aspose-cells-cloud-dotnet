@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents the VerticalPageBreak Response.
     /// </summary>
     public class VerticalPageBreakResponse : CellsCloudResponse
     {

@@ -1,6 +1,6 @@
 # **multipleFilters**
 
- 
+           Represents the multiple filter collection.            
 
 ## **Properties**
 

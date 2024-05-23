@@ -1,6 +1,6 @@
 # **conditionalFormattingsResponse**
 
- 
+Represents the ConditionalFormattings Response. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **conditionalFormattingIcon**
 
- 
+           Represents  the custom  icon of conditional formatting rule.            
 
 ## **Properties**
 

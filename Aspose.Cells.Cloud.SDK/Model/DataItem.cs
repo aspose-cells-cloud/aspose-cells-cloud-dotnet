@@ -35,17 +35,19 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents data item.
     /// </summary>
     public class DataItem
     {
         /// <summary>
-        /// 
+        /// Represents data item type.
+        ///             
         /// </summary>
         public virtual string DataItemType { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents data item value.
+        ///             
         /// </summary>
         public virtual string Value { get; set; }
 

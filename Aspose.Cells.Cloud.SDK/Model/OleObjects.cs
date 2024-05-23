@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents embedded OLE objects.
     /// </summary>
     public class OleObjects : LinkElement
     {

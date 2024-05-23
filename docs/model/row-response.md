@@ -1,6 +1,6 @@
 # **rowResponse**
 
- 
+Represents the Row Response. 
 
 ## **Properties**
 

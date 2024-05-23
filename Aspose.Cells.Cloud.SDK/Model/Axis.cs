@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Encapsulates the object that represents an axis of chart.
     /// </summary>
     public class Axis : LinkElement
     {
@@ -83,7 +83,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// Represents a unit label on an axis in the specified chart. 
         ///                         Unit labels are useful for charting large values— for example, in the millions or billions.
         /// </summary>
-        public virtual LinkElement DisplayUnitLabel { get; set; }
+        public virtual DisplayUnitLabel DisplayUnitLabel { get; set; }
 
         /// <summary>
         /// Indicates whether the labels shall be shown as multi level.

@@ -1,6 +1,6 @@
 # **cellsCloudFileInfoResponse**
 
- 
+Represents the CellsCloudFileInfo Response. 
 
 ## **Properties**
 

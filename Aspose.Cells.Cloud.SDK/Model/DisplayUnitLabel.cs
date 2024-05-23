@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents the display unit label.
     /// </summary>
     public class DisplayUnitLabel : ChartFrame
     {
@@ -53,11 +53,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// Gets or sets the text of display unit label.
         /// </summary>
         public virtual string Text { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public virtual string TextDirection { get; set; }
 
         /// <summary>
         /// 
@@ -110,11 +105,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override bool? Shadow { get; set; }
 
         /// <summary>
-        /// Gets or sets ShapeProperties.
-        /// </summary>
-        public override IList<LinkElement> ShapeProperties { get; set; }
-
-        /// <summary>
         /// Gets or sets Width.
         /// </summary>
         public override int? Width { get; set; }
@@ -145,7 +135,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  LinkedSource: ").Append(this.LinkedSource).Append("\n");
             sb.Append("  RotationAngle: ").Append(this.RotationAngle).Append("\n");
             sb.Append("  Text: ").Append(this.Text).Append("\n");
-            sb.Append("  TextDirection: ").Append(this.TextDirection).Append("\n");
             sb.Append("  TextHorizontalAlignment: ").Append(this.TextHorizontalAlignment).Append("\n");
             sb.Append("  TextVerticalAlignment: ").Append(this.TextVerticalAlignment).Append("\n");
             sb.Append("  Area: ").Append(this.Area).Append("\n");
@@ -156,7 +145,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  IsAutomaticSize: ").Append(this.IsAutomaticSize).Append("\n");
             sb.Append("  IsInnerMode: ").Append(this.IsInnerMode).Append("\n");
             sb.Append("  Shadow: ").Append(this.Shadow).Append("\n");
-            sb.Append("  ShapeProperties: ").Append(this.ShapeProperties).Append("\n");
             sb.Append("  Width: ").Append(this.Width).Append("\n");
             sb.Append("  Height: ").Append(this.Height).Append("\n");
             sb.Append("  X: ").Append(this.X).Append("\n");

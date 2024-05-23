@@ -1,6 +1,6 @@
 # **chartAreaResponse**
 
- 
+Represents the ChartArea Response. 
 
 ## **Properties**
 

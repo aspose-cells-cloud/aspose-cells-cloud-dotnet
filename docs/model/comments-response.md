@@ -1,6 +1,6 @@
 # **commentsResponse**
 
- 
+Represents the Comments Response. 
 
 ## **Properties**
 

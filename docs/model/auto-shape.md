@@ -1,6 +1,6 @@
 # **autoShape**
 
- 
+Represents an AutoShape. 
 
 ## **Properties**
 

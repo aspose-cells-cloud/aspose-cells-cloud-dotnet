@@ -35,7 +35,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    ///            Represents a column in a Table.
+    ///            
     /// </summary>
     public class ListColumn
     {

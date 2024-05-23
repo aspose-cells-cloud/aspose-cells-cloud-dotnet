@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents text item collection.
     /// </summary>
     public class TextItems : LinkElement
     {
         /// <summary>
-        /// 
+        /// Represents text item collection
         /// </summary>
         public virtual IList<TextItem> TextItemList { get; set; }
 

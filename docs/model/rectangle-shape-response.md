@@ -1,6 +1,6 @@
 # **rectangleShapeResponse**
 
- 
+Represents the RectangleShape Response. 
 
 ## **Properties**
 

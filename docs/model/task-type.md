@@ -1,6 +1,6 @@
 # **taskType**
 
- 
+Represents task type. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **labelResponse**
 
- 
+Represents the Label Response. 
 
 ## **Properties**
 

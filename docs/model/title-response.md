@@ -1,6 +1,6 @@
 # **titleResponse**
 
- 
+Represents the Title Response. 
 
 ## **Properties**
 

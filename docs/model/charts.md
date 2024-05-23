@@ -1,6 +1,6 @@
 # **charts**
 
- 
+Encapsulates a collection of  objects. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **cellsCloudResponse**
 
- 
+           Represents the CellsCloud Response.            
 
 ## **Properties**
 

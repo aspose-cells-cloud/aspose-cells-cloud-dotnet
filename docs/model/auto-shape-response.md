@@ -1,6 +1,6 @@
 # **autoShapeResponse**
 
- 
+Represents the AutoShape Response. 
 
 ## **Properties**
 

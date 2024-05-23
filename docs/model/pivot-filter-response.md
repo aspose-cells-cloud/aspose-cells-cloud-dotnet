@@ -1,6 +1,6 @@
 # **pivotFilterResponse**
 
- 
+Represents the PivotFilter Response. 
 
 ## **Properties**
 

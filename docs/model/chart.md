@@ -1,6 +1,6 @@
 # **chart**
 
- 
+Encapsulates the object that represents a single Excel chart. 
 
 ## **Properties**
 
@@ -23,7 +23,7 @@
 |Is3D|Boolean|true|false |  |Indicates whether the chart is a 3d chart.|
 |IsRectangularCornered|Boolean|true|false |  |Gets or sets a value indicating whether the chart area is rectangular cornered.                        Default is true.|
 |Legend|Class|true|false |  |Gets the chart legend.|
-|Name|String|true|false |  ||
+|Name|String|true|false |  |Represents chart name.|
 |NSeries|Class|true|false |  |Gets a  collection representing the data series in the chart.|
 |PageSetup|Class|true|false |  |Represents the page setup description in this chart.|
 |Perspective|Integer|true|false |  |Returns or sets the perspective for the 3-D chart view. Must be between 0 and 100.                        This property is ignored if the RightAngleAxes property is True.|
@@ -44,8 +44,8 @@
 |SideWall|Class|true|false |  |Returns a  object that represents the side wall of a 3-D chart.|
 |SizeWithWindow|Boolean|true|false |  |True if Microsoft Excel resizes the chart to match the size of the chart sheet window.|
 |Style|Integer|true|false |  |Gets and sets the builtin style.|
-|Title|Class|true|false |  ||
-|Type|String|true|false |  ||
+|Title|Class|true|false |  |Represents chart title.|
+|Type|String|true|false |  |Represents chart type.|
 |ValueAxis|Class|true|false |  |Gets the chart's Y axis.|
 |Walls|Class|true|false |  |Returns a  object that represents the walls of a 3-D chart.|
 |WallsAndGridlines2D|Boolean|true|false |  |True if gridlines are drawn two-dimensionally on a 3-D chart.|

@@ -1,6 +1,6 @@
 # **calculateFormulaResponse**
 
- 
+Represents the CalculateFormula Response. 
 
 ## **Properties**
 

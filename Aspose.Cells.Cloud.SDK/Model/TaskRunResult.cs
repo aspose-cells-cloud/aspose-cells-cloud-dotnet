@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents task run result.
     /// </summary>
     public class TaskRunResult
     {
         /// <summary>
-        /// 
+        /// Represents task run result description.
         /// </summary>
         public virtual string Description { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents out data file list.
         /// </summary>
         public virtual IList<DataSource> OutFileList { get; set; }
 

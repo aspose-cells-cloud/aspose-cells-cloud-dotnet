@@ -1,6 +1,6 @@
 # **pictureResponse**
 
- 
+Represents the Picture Response. 
 
 ## **Properties**
 

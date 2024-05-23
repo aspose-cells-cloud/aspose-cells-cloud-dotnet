@@ -1,6 +1,6 @@
 # **horizontalPageBreaksResponse**
 
- 
+Represents the HorizontalPageBreaks Response. 
 
 ## **Properties**
 

@@ -35,62 +35,62 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents chart operate parameter.
     /// </summary>
     public class ChartOperateParameter : OperateParameter
     {
         /// <summary>
-        /// 
+        /// Represents chart index.
         /// </summary>
         public virtual int? ChartIndex { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents chart type.
         /// </summary>
         public virtual string ChartType { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents upper left row index of chart.
         /// </summary>
         public virtual int? UpperLeftRow { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents upper left column index of chart.
         /// </summary>
         public virtual int? UpperLeftColumn { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents lower right row index of chart.
         /// </summary>
         public virtual int? LowerRightRow { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents lower right column index of chart.
         /// </summary>
         public virtual int? LowerRightColumn { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents chart area.
         /// </summary>
         public virtual string Area { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents whether to plot the series from a range of cell values by row or by column.
         /// </summary>
         public virtual bool? IsVertical { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents chart category data.
         /// </summary>
         public virtual string CategoryData { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents whether auto get serial name.
         /// </summary>
         public virtual bool? IsAutoGetSerialName { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents chart title.
         /// </summary>
         public virtual string Title { get; set; }
 

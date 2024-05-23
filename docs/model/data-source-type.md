@@ -1,6 +1,6 @@
 # **dataSourceType**
 
- 
+Represents data source type. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **horizontalPageBreak**
 
- 
+           Encapsulates the object that represents a horizontal page break.            
 
 ## **Properties**
 

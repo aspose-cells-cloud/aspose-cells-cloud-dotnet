@@ -1,6 +1,6 @@
 # **pictures**
 
- 
+Encapsulates a collection of  objects. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **textBoxResponse**
 
- 
+Represents the TextBox Response. 
 
 ## **Properties**
 

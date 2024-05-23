@@ -1,6 +1,6 @@
 # **dateTimeGroupItem**
 
- 
+Represents the datetime's group setting. 
 
 ## **Properties**
 

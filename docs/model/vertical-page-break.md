@@ -1,6 +1,6 @@
 # **verticalPageBreak**
 
- 
+           Encapsulates the object that represents a vertical page break.            
 
 ## **Properties**
 

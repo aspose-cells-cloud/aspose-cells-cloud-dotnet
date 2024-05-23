@@ -1,6 +1,6 @@
 # **tickLabels**
 
- 
+Represents the tick-mark labels associated with tick marks on a chart axis. 
 
 ## **Properties**
 

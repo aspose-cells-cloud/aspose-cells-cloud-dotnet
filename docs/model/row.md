@@ -1,6 +1,6 @@
 # **row**
 
- 
+Represents a single row in a worksheet. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **axisResponse**
 
- 
+Represents the Axis Response. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **oleObject**
 
- 
+Represents an OleObject in a worksheet. 
 
 ## **Properties**
 

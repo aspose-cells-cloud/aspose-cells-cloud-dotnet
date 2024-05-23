@@ -1,6 +1,6 @@
 # **radioButtonResponse**
 
- 
+Represents the RadioButton Response. 
 
 ## **Properties**
 

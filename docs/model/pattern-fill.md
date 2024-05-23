@@ -1,6 +1,6 @@
 # **patternFill**
 
- 
+           Encapsulates the object that represents pattern fill format            
 
 ## **Properties**
 

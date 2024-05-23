@@ -1,6 +1,6 @@
 # **groupShape**
 
- 
+Represents the group shape which contains the individual shapes. 
 
 ## **Properties**
 

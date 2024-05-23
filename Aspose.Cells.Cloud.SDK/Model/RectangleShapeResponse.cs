@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents the RectangleShape Response.
     /// </summary>
     public class RectangleShapeResponse : CellsCloudResponse
     {

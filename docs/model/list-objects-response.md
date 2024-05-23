@@ -1,6 +1,6 @@
 # **listObjectsResponse**
 
- 
+Represents the ListObjects Response. 
 
 ## **Properties**
 

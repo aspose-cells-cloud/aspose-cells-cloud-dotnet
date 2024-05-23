@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Encapsulates the object that represents a label in a spreadsheet.
     /// </summary>
     public class Label : Shape
     {

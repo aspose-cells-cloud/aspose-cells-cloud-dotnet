@@ -1,6 +1,6 @@
 # **borderResponse**
 
- 
+Represents the Border Response. 
 
 ## **Properties**
 

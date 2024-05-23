@@ -35,27 +35,27 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents results of analyzed data.
     /// </summary>
     public class AnalyzedResult
     {
         /// <summary>
-        /// 
+        /// Represents the file name of data file.
         /// </summary>
         public virtual string Filename { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents summary about results of analyzed data.
         /// </summary>
         public virtual string Description { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents Excel data statistics.
         /// </summary>
         public virtual ExcelDataStatistics BasicStatistics { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents analyzed table description.
         /// </summary>
         public virtual IList<AnalyzedTableDescription> Results { get; set; }
 

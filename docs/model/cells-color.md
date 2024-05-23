@@ -1,6 +1,6 @@
 # **cellsColor**
 
- 
+           Represents all types of color.            
 
 ## **Properties**
 

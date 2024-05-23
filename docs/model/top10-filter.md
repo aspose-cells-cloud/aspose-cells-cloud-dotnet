@@ -1,6 +1,6 @@
 # **top10Filter**
 
- 
+           Represents the top 10 filter.            
 
 ## **Properties**
 

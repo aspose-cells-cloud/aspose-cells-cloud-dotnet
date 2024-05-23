@@ -1,6 +1,6 @@
 # **dropBars**
 
- 
+Represents the up/down bars in a chart. 
 
 ## **Properties**
 

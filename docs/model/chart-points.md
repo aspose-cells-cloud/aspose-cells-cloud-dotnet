@@ -1,6 +1,6 @@
 # **chartPoints**
 
- 
+Represents a collection that contains all the points in one series. 
 
 ## **Properties**
 

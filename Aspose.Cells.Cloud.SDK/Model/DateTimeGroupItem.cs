@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents the datetime's group setting.
     /// </summary>
     public class DateTimeGroupItem : MultipleFilter
     {

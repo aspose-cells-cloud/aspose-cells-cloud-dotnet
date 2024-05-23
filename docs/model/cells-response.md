@@ -1,6 +1,6 @@
 # **cellsResponse**
 
- 
+Represents the Cells Response. 
 
 ## **Properties**
 

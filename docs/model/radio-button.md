@@ -1,6 +1,6 @@
 # **radioButton**
 
- 
+Represents a radio button. 
 
 ## **Properties**
 

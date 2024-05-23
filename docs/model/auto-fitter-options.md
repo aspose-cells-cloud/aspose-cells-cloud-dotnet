@@ -1,6 +1,6 @@
 # **autoFitterOptions**
 
- 
+Represents all auto fitter options. 
 
 ## **Properties**
 

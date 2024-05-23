@@ -1,6 +1,6 @@
 # **dynamicFilter**
 
- 
+           Represents the dynamic filter.            
 
 ## **Properties**
 

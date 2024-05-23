@@ -1,6 +1,6 @@
 # **picFormatOption**
 
- 
+           Represents picture format option            
 
 ## **Properties**
 

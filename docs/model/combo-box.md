@@ -1,6 +1,6 @@
 # **comboBox**
 
- 
+Represents the control form ComboBox. 
 
 ## **Properties**
 

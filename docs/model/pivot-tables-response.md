@@ -1,6 +1,6 @@
 # **pivotTablesResponse**
 
- 
+Represents the PivotTables Response. 
 
 ## **Properties**
 

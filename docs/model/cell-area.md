@@ -1,6 +1,6 @@
 # **cellArea**
 
- 
+           Represent an area of cells.            
 
 ## **Properties**
 

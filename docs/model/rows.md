@@ -1,6 +1,6 @@
 # **rows**
 
- 
+Collects the  objects that represent the individual rows in a worksheet. 
 
 ## **Properties**
 

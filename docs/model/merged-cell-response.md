@@ -1,6 +1,6 @@
 # **mergedCellResponse**
 
- 
+Represents the MergedCell Response. 
 
 ## **Properties**
 

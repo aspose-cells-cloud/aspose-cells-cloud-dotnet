@@ -1,6 +1,6 @@
 # **textItemResponse**
 
- 
+Represents the TextItem Response. 
 
 ## **Properties**
 

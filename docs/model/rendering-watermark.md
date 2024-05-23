@@ -1,6 +1,6 @@
 # **renderingWatermark**
 
- 
+Watermark for rendering. 
 
 ## **Properties**
 

@@ -1,6 +1,6 @@
 # **worksheetsResponse**
 
- 
+Represents the Worksheets Response. 
 
 ## **Properties**
 

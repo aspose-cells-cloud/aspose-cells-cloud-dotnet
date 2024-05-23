@@ -1,6 +1,6 @@
 # **textFormatCondition**
 
- 
+Represents text format condition. 
 
 ## **Properties**
 

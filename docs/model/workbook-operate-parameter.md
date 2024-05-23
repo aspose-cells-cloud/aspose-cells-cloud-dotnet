@@ -1,6 +1,6 @@
 # **workbookOperateParameter**
 
- 
+Represents workbook operate parameter. 
 
 ## **Properties**
 

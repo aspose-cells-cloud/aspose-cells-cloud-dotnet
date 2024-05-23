@@ -1,6 +1,6 @@
 # **pageSectionsResponse**
 
- 
+Represents the PageSections Response. 
 
 ## **Properties**
 

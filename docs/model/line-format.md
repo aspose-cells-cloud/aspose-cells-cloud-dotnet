@@ -1,6 +1,6 @@
 # **lineFormat**
 
- 
+Represents all setting of the line. 
 
 ## **Properties**
 

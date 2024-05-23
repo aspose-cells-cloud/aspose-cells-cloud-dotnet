@@ -1,6 +1,6 @@
 # **tilePicOption**
 
- 
+           Represents tile picture as texture.            
 
 ## **Properties**
 

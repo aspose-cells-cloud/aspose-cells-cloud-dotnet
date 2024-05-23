@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents a legend entry in a chart legend.
     /// </summary>
     public class LegendEntry : LinkElement
     {
@@ -43,7 +43,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// True if the text in the object changes font size when the object size changes. 
         ///                         The default value is True.
         /// </summary>
-        public virtual string AutoScaleFont { get; set; }
+        public virtual bool? AutoScaleFont { get; set; }
 
         /// <summary>
         /// Gets and sets the display mode of the background
@@ -58,7 +58,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// Gets and sets whether the legend entry is deleted.
         /// </summary>
-        public virtual string IsDeleted { get; set; }
+        public virtual bool? IsDeleted { get; set; }
 
         /// <summary>
         /// Gets or sets link.

@@ -1,6 +1,6 @@
 # **axis**
 
- 
+Encapsulates the object that represents an axis of chart. 
 
 ## **Properties**
 

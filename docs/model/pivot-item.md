@@ -1,6 +1,6 @@
 # **pivotItem**
 
- 
+           Represents a item in a PivotField report.            
 
 ## **Properties**
 

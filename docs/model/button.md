@@ -1,6 +1,6 @@
 # **button**
 
- 
+Represents the Forms control: Button 
 
 ## **Properties**
 

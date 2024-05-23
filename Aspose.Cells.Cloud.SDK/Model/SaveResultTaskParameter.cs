@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents save result task parameter.
     /// </summary>
     public class SaveResultTaskParameter : TaskParameter
     {
         /// <summary>
-        /// 
+        /// Represents result data source.
         /// </summary>
         public virtual string ResultSource { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents result destination data.
         /// </summary>
         public virtual ResultDestination ResultDestination { get; set; }
 

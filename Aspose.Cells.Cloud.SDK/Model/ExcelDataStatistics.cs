@@ -35,19 +35,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents Excel data statistics.
     /// </summary>
     public class ExcelDataStatistics
     {
         /// <summary>
-        /// 
+        /// Represents worksheet data statistics list.
         /// </summary>
         public virtual IList<WorksheetDataStatistics> WorksheetDataStatistics { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public virtual int? NamesCount { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object.
@@ -58,7 +53,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
             var sb = new StringBuilder();
             sb.Append("class ExcelDataStatistics {\n");
             sb.Append("  WorksheetDataStatistics: ").Append(this.WorksheetDataStatistics).Append("\n");
-            sb.Append("  NamesCount: ").Append(this.NamesCount).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

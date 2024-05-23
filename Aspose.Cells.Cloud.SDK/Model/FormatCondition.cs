@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents conditional formatting condition.
     /// </summary>
     public class FormatCondition : LinkElement
     {

@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Data Cleansing
+    /// Represents data cleansing.
     /// </summary>
     public class DataCleansing
     {
@@ -45,12 +45,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual IList<Range> Ranges { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents whether the data needs to be populated.
         /// </summary>
         public virtual bool? NeedFillData { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents data fill.
         /// </summary>
         public virtual DataFill DataFill { get; set; }
 

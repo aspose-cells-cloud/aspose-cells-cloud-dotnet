@@ -1,6 +1,6 @@
 # **autoFilterResponse**
 
- 
+Represents the AutoFilter Response. 
 
 ## **Properties**
 

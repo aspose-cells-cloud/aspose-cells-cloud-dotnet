@@ -1,6 +1,6 @@
 # **listObjects**
 
- 
+Represents a collection of  objects in the worksheet. 
 
 ## **Properties**
 

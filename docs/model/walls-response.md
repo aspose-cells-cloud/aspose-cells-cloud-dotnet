@@ -1,6 +1,6 @@
 # **wallsResponse**
 
- 
+Represents the Walls Response. 
 
 ## **Properties**
 

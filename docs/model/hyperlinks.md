@@ -1,6 +1,6 @@
 # **hyperlinks**
 
- 
+Encapsulates a collection of  objects. 
 
 ## **Properties**
 

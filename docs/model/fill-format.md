@@ -1,6 +1,6 @@
 # **fillFormat**
 
- 
+           Encapsulates the object that represents fill formatting for a shape.            
 
 ## **Properties**
 

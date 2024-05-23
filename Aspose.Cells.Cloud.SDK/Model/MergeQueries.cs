@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="AnalyzeSuggestion.cs">
+// <copyright company="Aspose" file="MergeQueries.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,49 +35,54 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents merge quesies.
     /// </summary>
-    public class AnalyzeSuggestion
+    public class MergeQueries
     {
         /// <summary>
-        /// 
+        /// Indicates the source of the mount data.
         /// </summary>
-        public virtual string Name { get; set; }
-
-        /// <summary>
-        /// Excel file name.
-        /// </summary>
-        public virtual string Filename { get; set; }
-
-        /// <summary>
-        /// The worksheet where the data is aAnalyzed.
-        /// </summary>
-        public virtual string SheetName { get; set; }
-
-        /// <summary>
-        /// The type of data being analyzed.
-        /// </summary>
-        public virtual string DateSourceType { get; set; }
-
-        /// <summary>
-        /// Based on the results of the data analysis, suggestions for creating new data types are given.
-        /// </summary>
-        public virtual string SuggestedOutputType { get; set; }
-
-        /// <summary>
-        /// Based on the results of the data analysis, a business description of the new data object is created.
-        /// </summary>
-        public virtual string Description { get; set; }
+        public virtual DataSource DataSourceA { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        public virtual string DataSouceThumbnail { get; set; }
+        public virtual FileInfo FileInfoA { get; set; }
+
+        /// <summary>
+        /// Represents data item.
+        /// </summary>
+        public virtual DataItem DataItemA { get; set; }
+
+        /// <summary>
+        /// Represents index field  of DataA
+        /// </summary>
+        public virtual string DataAIndexField { get; set; }
+
+        /// <summary>
+        /// Indicates the source of the mount data.
+        /// </summary>
+        public virtual DataSource DataSourceB { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        public virtual string Thumbnail { get; set; }
+        public virtual FileInfo FileInfoB { get; set; }
+
+        /// <summary>
+        /// Represents data item.
+        /// </summary>
+        public virtual DataItem DataItemB { get; set; }
+
+        /// <summary>
+        /// Represents index field  of DataB
+        /// </summary>
+        public virtual string DataBIndexField { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual string JoinType { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object.
@@ -86,15 +91,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class AnalyzeSuggestion {\n");
-            sb.Append("  Name: ").Append(this.Name).Append("\n");
-            sb.Append("  Filename: ").Append(this.Filename).Append("\n");
-            sb.Append("  SheetName: ").Append(this.SheetName).Append("\n");
-            sb.Append("  DateSourceType: ").Append(this.DateSourceType).Append("\n");
-            sb.Append("  SuggestedOutputType: ").Append(this.SuggestedOutputType).Append("\n");
-            sb.Append("  Description: ").Append(this.Description).Append("\n");
-            sb.Append("  DataSouceThumbnail: ").Append(this.DataSouceThumbnail).Append("\n");
-            sb.Append("  Thumbnail: ").Append(this.Thumbnail).Append("\n");
+            sb.Append("class MergeQueries {\n");
+            sb.Append("  DataSourceA: ").Append(this.DataSourceA).Append("\n");
+            sb.Append("  FileInfoA: ").Append(this.FileInfoA).Append("\n");
+            sb.Append("  DataItemA: ").Append(this.DataItemA).Append("\n");
+            sb.Append("  DataAIndexField: ").Append(this.DataAIndexField).Append("\n");
+            sb.Append("  DataSourceB: ").Append(this.DataSourceB).Append("\n");
+            sb.Append("  FileInfoB: ").Append(this.FileInfoB).Append("\n");
+            sb.Append("  DataItemB: ").Append(this.DataItemB).Append("\n");
+            sb.Append("  DataBIndexField: ").Append(this.DataBIndexField).Append("\n");
+            sb.Append("  JoinType: ").Append(this.JoinType).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

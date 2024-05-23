@@ -1,6 +1,6 @@
 # **validation**
 
- 
+Represents data validation.settings. 
 
 ## **Properties**
 

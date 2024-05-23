@@ -1,6 +1,6 @@
 # **cellsDrawing**
 
- 
+Represents the auto shape and drawing object. 
 
 ## **Properties**
 

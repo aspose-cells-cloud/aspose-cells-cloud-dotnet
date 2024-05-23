@@ -1,6 +1,6 @@
 # **comboBoxResponse**
 
- 
+Represents the ComboBox Response. 
 
 ## **Properties**
 

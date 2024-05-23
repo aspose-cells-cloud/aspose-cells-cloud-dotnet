@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents operate object type.
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
     public enum OperateObjectType

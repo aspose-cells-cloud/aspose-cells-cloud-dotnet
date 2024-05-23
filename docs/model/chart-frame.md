@@ -1,6 +1,6 @@
 # **chartFrame**
 
- 
+           Encapsulates the object that represents the frame object in a chart.            
 
 ## **Properties**
 
@@ -14,7 +14,6 @@
 |IsAutomaticSize|Boolean|true|false |  |Indicates whether the chart frame is automatic sized. |
 |IsInnerMode|Boolean|true|false |  |Indicates whether the size of the plot area size includes the tick marks, and the axis labels.            False specifies that the size shall determine the size of the plot area, the tick marks, and the axis labels. |
 |Shadow|Boolean|true|false |  |True if the frame has a shadow. |
-|ShapeProperties|Container|true|false |  |Gets the  object. |
 |Width|Integer|true|false |  |Gets or sets the width of frame in units of 1/4000 of the chart area. |
 |Height|Integer|true|false |  |Gets or sets the height of frame in units of 1/4000 of the chart area. |
 |X|Integer|true|false |  |Gets or sets the x coordinate of the upper left corner in units of 1/4000 of the chart area. |

@@ -1,6 +1,6 @@
 # **hyperlinkResponse**
 
- 
+Represents the Hyperlink Response. 
 
 ## **Properties**
 

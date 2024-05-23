@@ -1,6 +1,6 @@
 # **horizontalPageBreaks**
 
- 
+Encapsulates a collection of  objects. 
 
 ## **Properties**
 

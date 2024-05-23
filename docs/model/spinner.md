@@ -1,6 +1,6 @@
 # **spinner**
 
- 
+Represents the Forms control: Spinner. 
 
 ## **Properties**
 

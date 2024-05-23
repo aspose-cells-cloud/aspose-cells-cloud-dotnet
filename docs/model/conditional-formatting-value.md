@@ -1,6 +1,6 @@
 # **conditionalFormattingValue**
 
- 
+           Describes the values of the interpolation points in a gradient scale, dataBar or iconSet.            
 
 ## **Properties**
 
