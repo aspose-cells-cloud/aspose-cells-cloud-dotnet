@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="QueryDataSource.cs">
+// <copyright company="Aspose" file="AppliedOperate.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,24 +35,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// A data operation that is used to obtain a query of data.
     /// </summary>
-    public class QueryDataSource
+    public class AppliedOperate
     {
         /// <summary>
         /// 
         /// </summary>
-        public virtual string DataSourceDataType { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public virtual DataSource DataFile { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public virtual string DataSource { get; set; }
+        public virtual string AppliedOperateType { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object.
@@ -61,10 +51,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class QueryDataSource {\n");
-            sb.Append("  DataSourceDataType: ").Append(this.DataSourceDataType).Append("\n");
-            sb.Append("  DataFile: ").Append(this.DataFile).Append("\n");
-            sb.Append("  DataSource: ").Append(this.DataSource).Append("\n");
+            sb.Append("class AppliedOperate {\n");
+            sb.Append("  AppliedOperateType: ").Append(this.AppliedOperateType).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

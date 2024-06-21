@@ -6,13 +6,10 @@ Represents merge quesies.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|DataSourceA|Class|true|false |  |Indicates the source of the mount data.|
-|FileInfoA|Class|true|false |  ||
-|DataItemA|Class|true|false |  |Represents data item.|
-|DataAIndexField|String|true|false |  |Represents index field  of DataA|
-|DataSourceB|Class|true|false |  |Indicates the source of the mount data.|
-|FileInfoB|Class|true|false |  ||
-|DataItemB|Class|true|false |  |Represents data item.|
-|DataBIndexField|String|true|false |  |Represents index field  of DataB|
-|JoinType|String|true|false |  ||
+|DataQueryNameA|String|true|false |  |Indicates the name of the data query , it is matched in the data query set.|
+|DataAIndexField|String|true|false |  |Represents index field  of DataA.|
+|DataQueryNameB|String|true|false |  |Indicates the name of the data query , it is matched in the data query set.|
+|DataBIndexField|String|true|false |  |Represents index field  of DataB.|
+|JoinType|String|true|false |  |Represents ethods of data consolidation.|
+|AppliedOperateType|String|true|false |  ||
 

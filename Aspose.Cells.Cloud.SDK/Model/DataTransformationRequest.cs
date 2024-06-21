@@ -35,24 +35,29 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Data Transformation Request
     /// </summary>
     public class DataTransformationRequest
     {
         /// <summary>
-        /// 
+        /// Indicates the source of the mount data.
         /// </summary>
         public virtual FileInfo FileInfo { get; set; }
 
         /// <summary>
-        /// 
+        /// Indicates the source of the mount data.
         /// </summary>
-        public virtual Transformation Transformation { get; set; }
+        public virtual DataSource DataSource { get; set; }
 
         /// <summary>
-        /// 
+        /// Indicates load data.
         /// </summary>
         public virtual LoadData LoadData { get; set; }
+
+        /// <summary>
+        /// Indicates applied step list. 
+        /// </summary>
+        public virtual IList<AppliedStep> AppliedSteps { get; set; }
 
         /// <summary>
         /// 
@@ -60,7 +65,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string Region { get; set; }
 
         /// <summary>
-        /// 
+        /// Indicates output format 
         /// </summary>
         public virtual string OutFormat { get; set; }
 
@@ -73,8 +78,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
             var sb = new StringBuilder();
             sb.Append("class DataTransformationRequest {\n");
             sb.Append("  FileInfo: ").Append(this.FileInfo).Append("\n");
-            sb.Append("  Transformation: ").Append(this.Transformation).Append("\n");
+            sb.Append("  DataSource: ").Append(this.DataSource).Append("\n");
             sb.Append("  LoadData: ").Append(this.LoadData).Append("\n");
+            sb.Append("  AppliedSteps: ").Append(this.AppliedSteps).Append("\n");
             sb.Append("  Region: ").Append(this.Region).Append("\n");
             sb.Append("  OutFormat: ").Append(this.OutFormat).Append("\n");
             sb.Append("}\n");

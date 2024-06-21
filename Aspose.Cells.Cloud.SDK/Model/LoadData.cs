@@ -45,24 +45,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual LoadTo LoadTo { get; set; }
 
         /// <summary>
-        /// Indicates the source of the mount data.
+        /// Indicates data query for data loading. 
         /// </summary>
-        public virtual DataSource DataSource { get; set; }
-
-        /// <summary>
-        /// When data souce is request files, FileInfo store the contents of the file.
-        /// </summary>
-        public virtual FileInfo FileInfo { get; set; }
-
-        /// <summary>
-        /// The specific data object type and name.
-        /// </summary>
-        public virtual DataItem DataItem { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public virtual MergeQueries MergeQueries { get; set; }
+        public virtual DataQuery DataQuery { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object.
@@ -73,10 +58,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
             var sb = new StringBuilder();
             sb.Append("class LoadData {\n");
             sb.Append("  LoadTo: ").Append(this.LoadTo).Append("\n");
-            sb.Append("  DataSource: ").Append(this.DataSource).Append("\n");
-            sb.Append("  FileInfo: ").Append(this.FileInfo).Append("\n");
-            sb.Append("  DataItem: ").Append(this.DataItem).Append("\n");
-            sb.Append("  MergeQueries: ").Append(this.MergeQueries).Append("\n");
+            sb.Append("  DataQuery: ").Append(this.DataQuery).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

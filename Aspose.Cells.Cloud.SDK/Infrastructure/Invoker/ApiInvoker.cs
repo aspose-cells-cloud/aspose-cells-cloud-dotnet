@@ -50,7 +50,7 @@ namespace Aspose.Cells.Cloud.SDK.Invoker
         internal ApiInvoker(List<IRequestHandler> requestHandlers)
         {
             this.AddDefaultHeader(AsposeClientHeaderName, ".net sdk");
-            this.AddDefaultHeader(AsposeClientVersionHeaderName, "24.5");
+            this.AddDefaultHeader(AsposeClientVersionHeaderName, "24.6");
             this.requestHandlers = requestHandlers;
         }
 
@@ -240,10 +240,6 @@ namespace Aspose.Cells.Cloud.SDK.Invoker
         private async Task<T> InvokeInternalAsync<T>(HttpWebRequest httpWebRequest) where T : class
         {
             string path = httpWebRequest.RequestUri.AbsolutePath;
-            foreach (var defaultHeader in this.defaultHeaderMap)
-            {                
-                httpWebRequest.Headers.Add(defaultHeader.Key, defaultHeader.Value);
-            }
 
             try
             {               
@@ -262,27 +258,27 @@ namespace Aspose.Cells.Cloud.SDK.Invoker
             var client = (HttpWebRequest)WebRequest.Create(path);
 
             client.Method = method;
-            client.Timeout = 600000;
+            client.Timeout = 1200000;
             byte[] formData = null;
             if (formParams.Count > 0)
             {
-                if (formParams.Count > 0)
-                {
-                    string formDataBoundary = Guid.NewGuid().ToString("D");
-                    client.ContentType = "multipart/form-data; boundary=" + formDataBoundary;
-                    formData = GetMultipartFormData(formParams, formDataBoundary);
-                }
-                else
-                {
-                    client.ContentType = "multipart/form-data";
-                    formData = GetMultipartFormData(formParams, string.Empty);
-                }
-
+                string formDataBoundary = Guid.NewGuid().ToString("D");
+                client.ContentType = "multipart/form-data; boundary=" + formDataBoundary;
+                formData = GetMultipartFormData(formParams, formDataBoundary);
                 client.ContentLength = formData.Length;
             }
             else
             {
                 client.ContentType = contentType;
+                if (body != null)
+                {
+                    byte[] bodyBytes = Encoding.UTF8.GetBytes(body);
+                    client.ContentLength = bodyBytes.Length;
+                }
+                else
+                {
+                    client.ContentLength = 0;
+                }
             }
 
             foreach (var headerParamsItem in headerParams)
@@ -296,7 +292,15 @@ namespace Aspose.Cells.Cloud.SDK.Invoker
             foreach (var defaultHeaderMapItem in defaultHeaderMap)
                 if (!headerParams.ContainsKey(defaultHeaderMapItem.Key))
                     client.Headers.Add(defaultHeaderMapItem.Key, defaultHeaderMapItem.Value);
-
+            foreach (var defaultHeader in this.defaultHeaderMap)
+            {
+                client.Headers.Remove(defaultHeader.Key);
+                client.Headers.Add(defaultHeader.Key, defaultHeader.Value);
+            }
+            if (client.ContentLength > 0 && string.IsNullOrEmpty(client.ContentType))
+            {
+                throw new InvalidOperationException("Content length is set but content type is missing.");
+            }
             MemoryStream streamToSend = null;
             try
             {
@@ -325,6 +329,22 @@ namespace Aspose.Cells.Cloud.SDK.Invoker
                 }
 
                 requestHandlers.ForEach(p => p.BeforeSend(client, streamToSend));
+
+                if (streamToSend != null)
+                {
+                    try
+                    {
+                        streamToSend.Position = 0;
+                        using (var reader = new StreamReader(streamToSend, Encoding.UTF8, true, 1024, true))
+                        {
+                            var serializedContent = reader.ReadToEnd();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new InvalidOperationException("Serialization check failed.", ex);
+                    }
+                }
 
                 if (streamToSend != null)
                     using (var requestStream = client.GetRequestStream())

@@ -130,5 +130,78 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             var actual =  this.CellsApi.PostWorkbookDataFill(request);
             Assert.IsNotNull(actual);
         }
+
+        /// <summary>
+        /// Test for PostDataTransformation of DataProcessingController.
+        /// </summary>
+        [TestCategory(ProductName)]
+        [TestMethod]
+        public void TestPostDataTransformation()
+        {
+            string localName = "BookTableL2W.xlsx";
+            string remoteName = "BookTableL2W.xlsx";
+
+            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+
+            var dataTransformationRequestLoadDataLoadTo = new LoadTo()
+            {
+                beginColumnIndex = 2,
+                beginRowIndex = 3,
+                Worksheet = "L2W"
+            };
+            var dataTransformationRequestLoadDataDataQueryDataItem = new DataItem()
+            {
+                DataItemType = "Table",
+                Value = "Table1"
+            };
+            var dataTransformationRequestLoadDataDataQueryDataSource = new DataSource()
+            {
+                DataSourceType = "CloudFileSystem",
+                DataPath = "BookTableL2W.xlsx"
+            };
+            var dataTransformationRequestLoadDataDataQuery = new DataQuery()
+            {
+                Name = "DataQuery",
+                DataItem = dataTransformationRequestLoadDataDataQueryDataItem,
+                DataSource = dataTransformationRequestLoadDataDataQueryDataSource,
+                DataSourceDataType = "ListObject"
+            };
+            var dataTransformationRequestLoadData = new LoadData()
+            {
+                LoadTo = dataTransformationRequestLoadDataLoadTo,
+                DataQuery = dataTransformationRequestLoadDataDataQuery
+            };
+            var dataTransformationRequestAppliedStepsAppliedStep0AppliedOperateUnpivotColumnNames = new List<string>()
+            {
+                "2017",
+                "2018",
+                "2019"
+            };
+            var dataTransformationRequestAppliedStepsAppliedStep0AppliedOperate = new UnpivotColumn()
+            {
+                AppliedOperateType = "UnpivotColumn",
+                ValueMapName = "Count",
+                ColumnMapName = "Date",
+                UnpivotColumnNames = dataTransformationRequestAppliedStepsAppliedStep0AppliedOperateUnpivotColumnNames
+            };
+            var dataTransformationRequestAppliedStepsAppliedStep0 = new AppliedStep()
+            {
+                StepName = "UnpivotColumn",
+                AppliedOperate = dataTransformationRequestAppliedStepsAppliedStep0AppliedOperate
+            };
+            var dataTransformationRequestAppliedSteps = new List<AppliedStep>()
+            {
+                dataTransformationRequestAppliedStepsAppliedStep0
+            };
+            var dataTransformationRequest = new DataTransformationRequest()
+            {
+                LoadData = dataTransformationRequestLoadData,
+                AppliedSteps = dataTransformationRequestAppliedSteps
+            };
+            var request = new PostDataTransformationRequest(
+            );
+            var actual =  this.CellsApi.PostDataTransformation(request);
+            Assert.IsNotNull(actual);
+        }
     }
 }

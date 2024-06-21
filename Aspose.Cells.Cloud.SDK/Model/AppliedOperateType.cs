@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="LoadTo.cs">
+// <copyright company="Aspose" file="AppliedOperateType.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,38 +35,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// A description of the location to which the data is mounted.
+    /// Operation type. 
     /// </summary>
-    public class LoadTo
+    [JsonConverter(typeof(StringEnumConverter))]
+    public enum AppliedOperateType
     {
-        /// <summary>
-        /// The worksheet name.
-        /// </summary>
-        public virtual string Worksheet { get; set; }
-
-        /// <summary>
-        /// The begin row index of worksheet.
-        /// </summary>
-        public virtual int? beginRowIndex { get; set; }
-
-        /// <summary>
-        /// The begin column index of worksheet.
-        /// </summary>
-        public virtual int? beginColumnIndex { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object.
-        /// </summary>
-        /// <returns>String presentation of the object.</returns>
-        public override string ToString()
-        {
-            var sb = new StringBuilder();
-            sb.Append("class LoadTo {\n");
-            sb.Append("  Worksheet: ").Append(this.Worksheet).Append("\n");
-            sb.Append("  beginRowIndex: ").Append(this.beginRowIndex).Append("\n");
-            sb.Append("  beginColumnIndex: ").Append(this.beginColumnIndex).Append("\n");
-            sb.Append("}\n");
-            return sb.ToString();
-        }
     }
 }

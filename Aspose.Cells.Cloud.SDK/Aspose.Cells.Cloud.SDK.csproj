@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>Net6</TargetFrameworks>
+    <TargetFrameworks>net6.0;net452;netstandard2.0</TargetFrameworks>
     <AssemblyName>Aspose.Cells.Cloud.SDK</AssemblyName>
     <PackageId>Aspose.Cells-Cloud</PackageId>
     <OutputType>Library</OutputType>
@@ -17,9 +17,9 @@
     <RepositoryType>GitHub</RepositoryType>
     <Copyright>MIT</Copyright>
     <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
-    <AssemblyVersion>24.5.1</AssemblyVersion>
-    <FileVersion>24.5.1</FileVersion>
-    <Version>24.5.1</Version>
+    <AssemblyVersion>24.6</AssemblyVersion>
+    <FileVersion>24.6</FileVersion>
+    <Version>24.6</Version>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
 
   </PropertyGroup>

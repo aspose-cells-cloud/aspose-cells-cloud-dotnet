@@ -35,19 +35,24 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents pivot column for data table.
     /// </summary>
-    public class PivotColumn
+    public class PivotColumn : AppliedOperate
     {
         /// <summary>
-        /// 
+        /// Represents pivot column name.
         /// </summary>
         public virtual string PivotColumnName { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents column name that sets the column's value to the value of the pivot column.
         /// </summary>
         public virtual IList<string> ValueColumnNames { get; set; }
+
+        /// <summary>
+        /// Gets or sets AppliedOperateType.
+        /// </summary>
+        public override string AppliedOperateType { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object.
@@ -59,6 +64,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("class PivotColumn {\n");
             sb.Append("  PivotColumnName: ").Append(this.PivotColumnName).Append("\n");
             sb.Append("  ValueColumnNames: ").Append(this.ValueColumnNames).Append("\n");
+            sb.Append("  AppliedOperateType: ").Append(this.AppliedOperateType).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

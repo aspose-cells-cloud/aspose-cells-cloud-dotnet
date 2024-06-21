@@ -35,24 +35,29 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Unpivot column.
     /// </summary>
-    public class UnpivotColumn
+    public class UnpivotColumn : AppliedOperate
     {
         /// <summary>
-        /// 
+        /// Indicates unpivot column names.
         /// </summary>
         public virtual IList<string> UnpivotColumnNames { get; set; }
 
         /// <summary>
-        /// 
+        /// Indicates the column is used to store the name of unpivot columns.
         /// </summary>
         public virtual string ColumnMapName { get; set; }
 
         /// <summary>
-        /// 
+        /// Indicates the column is used to store the value of unpivot columns.
         /// </summary>
         public virtual string ValueMapName { get; set; }
+
+        /// <summary>
+        /// Gets or sets AppliedOperateType.
+        /// </summary>
+        public override string AppliedOperateType { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object.
@@ -65,6 +70,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  UnpivotColumnNames: ").Append(this.UnpivotColumnNames).Append("\n");
             sb.Append("  ColumnMapName: ").Append(this.ColumnMapName).Append("\n");
             sb.Append("  ValueMapName: ").Append(this.ValueMapName).Append("\n");
+            sb.Append("  AppliedOperateType: ").Append(this.AppliedOperateType).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

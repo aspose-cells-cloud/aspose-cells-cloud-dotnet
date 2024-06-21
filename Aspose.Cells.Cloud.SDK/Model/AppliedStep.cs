@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="QueryDataSourceDataType.cs">
+// <copyright company="Aspose" file="AppliedStep.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,10 +35,32 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Each data manipulation step that is performed when you get the query data.
     /// </summary>
-    [JsonConverter(typeof(StringEnumConverter))]
-    public enum QueryDataSourceDataType
+    public class AppliedStep
     {
+        /// <summary>
+        /// Data manipulation step name.
+        /// </summary>
+        public virtual string StepName { get; set; }
+
+        /// <summary>
+        /// Data manipulation name.
+        /// </summary>
+        public virtual AppliedOperate AppliedOperate { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object.
+        /// </summary>
+        /// <returns>String presentation of the object.</returns>
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.Append("class AppliedStep {\n");
+            sb.Append("  StepName: ").Append(this.StepName).Append("\n");
+            sb.Append("  AppliedOperate: ").Append(this.AppliedOperate).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
+        }
     }
 }

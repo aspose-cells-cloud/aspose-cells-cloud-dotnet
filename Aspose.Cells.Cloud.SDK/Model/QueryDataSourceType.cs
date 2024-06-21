@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="QueryTable.cs">
+// <copyright company="Aspose" file="QueryDataSourceType.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,50 +35,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents QueryTable information.
+    /// Represents query data source type
     /// </summary>
-    public class QueryTable
+    [JsonConverter(typeof(StringEnumConverter))]
+    public enum QueryDataSourceType
     {
-        /// <summary>
-        /// Gets the connection id of the query table.
-        /// </summary>
-        public virtual int? ConnectionId { get; set; }
-
-        /// <summary>
-        /// Gets the name of querytable.
-        /// </summary>
-        public virtual string Name { get; set; }
-
-        /// <summary>
-        /// Gets the range of the result.
-        /// </summary>
-        public virtual Range ResultRange { get; set; }
-
-        /// <summary>
-        /// Returns or sets the PreserveFormatting of the object.
-        /// </summary>
-        public virtual bool? PreserveFormatting { get; set; }
-
-        /// <summary>
-        /// Returns or sets the AdjustColumnWidth of the object.
-        /// </summary>
-        public virtual bool? AdjustColumnWidth { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object.
-        /// </summary>
-        /// <returns>String presentation of the object.</returns>
-        public override string ToString()
-        {
-            var sb = new StringBuilder();
-            sb.Append("class QueryTable {\n");
-            sb.Append("  ConnectionId: ").Append(this.ConnectionId).Append("\n");
-            sb.Append("  Name: ").Append(this.Name).Append("\n");
-            sb.Append("  ResultRange: ").Append(this.ResultRange).Append("\n");
-            sb.Append("  PreserveFormatting: ").Append(this.PreserveFormatting).Append("\n");
-            sb.Append("  AdjustColumnWidth: ").Append(this.AdjustColumnWidth).Append("\n");
-            sb.Append("}\n");
-            return sb.ToString();
-        }
     }
 }

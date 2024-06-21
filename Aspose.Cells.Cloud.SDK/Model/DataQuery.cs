@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="Transformation.cs">
+// <copyright company="Aspose" file="DataQuery.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,19 +35,34 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Data query.
     /// </summary>
-    public class Transformation
+    public class DataQuery
     {
         /// <summary>
-        /// long table to a wide table.
+        /// Define a name for data query. Unique identification.
         /// </summary>
-        public virtual PivotColumn PivotColumn { get; set; }
+        public virtual string Name { get; set; }
 
         /// <summary>
-        /// wide table to a long table
+        /// The specific data object type. When the value is File, DataItem is invalid.
         /// </summary>
-        public virtual UnpivotColumn UnpivotColumn { get; set; }
+        public virtual string DataSourceDataType { get; set; }
+
+        /// <summary>
+        /// Indicates the source of the mount data.
+        /// </summary>
+        public virtual DataSource DataSource { get; set; }
+
+        /// <summary>
+        /// When data souce is request files, FileInfo store the contents of the file.
+        /// </summary>
+        public virtual FileInfo FileInfo { get; set; }
+
+        /// <summary>
+        /// The specific data object type and name.
+        /// </summary>
+        public virtual DataItem DataItem { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object.
@@ -56,9 +71,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class Transformation {\n");
-            sb.Append("  PivotColumn: ").Append(this.PivotColumn).Append("\n");
-            sb.Append("  UnpivotColumn: ").Append(this.UnpivotColumn).Append("\n");
+            sb.Append("class DataQuery {\n");
+            sb.Append("  Name: ").Append(this.Name).Append("\n");
+            sb.Append("  DataSourceDataType: ").Append(this.DataSourceDataType).Append("\n");
+            sb.Append("  DataSource: ").Append(this.DataSource).Append("\n");
+            sb.Append("  FileInfo: ").Append(this.FileInfo).Append("\n");
+            sb.Append("  DataItem: ").Append(this.DataItem).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

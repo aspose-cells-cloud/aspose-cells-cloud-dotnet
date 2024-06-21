@@ -1,6 +1,6 @@
-# **queryDataSourceDataType**
+# **queryDataSourceType**
 
- 
+Represents query data source type 
 
 ## **Properties**
 

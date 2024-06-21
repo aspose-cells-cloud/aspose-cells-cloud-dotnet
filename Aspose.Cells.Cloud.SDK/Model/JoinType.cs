@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Join Type.
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
     public enum JoinType

@@ -37,52 +37,37 @@ namespace Aspose.Cells.Cloud.SDK.Model
     /// <summary>
     /// Represents merge quesies.
     /// </summary>
-    public class MergeQueries
+    public class MergeQueries : AppliedOperate
     {
         /// <summary>
-        /// Indicates the source of the mount data.
+        /// Indicates the name of the data query , it is matched in the data query set.
         /// </summary>
-        public virtual DataSource DataSourceA { get; set; }
+        public virtual string DataQueryNameA { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        public virtual FileInfo FileInfoA { get; set; }
-
-        /// <summary>
-        /// Represents data item.
-        /// </summary>
-        public virtual DataItem DataItemA { get; set; }
-
-        /// <summary>
-        /// Represents index field  of DataA
+        /// Represents index field  of DataA.
         /// </summary>
         public virtual string DataAIndexField { get; set; }
 
         /// <summary>
-        /// Indicates the source of the mount data.
+        /// Indicates the name of the data query , it is matched in the data query set.
         /// </summary>
-        public virtual DataSource DataSourceB { get; set; }
+        public virtual string DataQueryNameB { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        public virtual FileInfo FileInfoB { get; set; }
-
-        /// <summary>
-        /// Represents data item.
-        /// </summary>
-        public virtual DataItem DataItemB { get; set; }
-
-        /// <summary>
-        /// Represents index field  of DataB
+        /// Represents index field  of DataB.
         /// </summary>
         public virtual string DataBIndexField { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents ethods of data consolidation.
         /// </summary>
         public virtual string JoinType { get; set; }
+
+        /// <summary>
+        /// Gets or sets AppliedOperateType.
+        /// </summary>
+        public override string AppliedOperateType { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object.
@@ -92,15 +77,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
             var sb = new StringBuilder();
             sb.Append("class MergeQueries {\n");
-            sb.Append("  DataSourceA: ").Append(this.DataSourceA).Append("\n");
-            sb.Append("  FileInfoA: ").Append(this.FileInfoA).Append("\n");
-            sb.Append("  DataItemA: ").Append(this.DataItemA).Append("\n");
+            sb.Append("  DataQueryNameA: ").Append(this.DataQueryNameA).Append("\n");
             sb.Append("  DataAIndexField: ").Append(this.DataAIndexField).Append("\n");
-            sb.Append("  DataSourceB: ").Append(this.DataSourceB).Append("\n");
-            sb.Append("  FileInfoB: ").Append(this.FileInfoB).Append("\n");
-            sb.Append("  DataItemB: ").Append(this.DataItemB).Append("\n");
+            sb.Append("  DataQueryNameB: ").Append(this.DataQueryNameB).Append("\n");
             sb.Append("  DataBIndexField: ").Append(this.DataBIndexField).Append("\n");
             sb.Append("  JoinType: ").Append(this.JoinType).Append("\n");
+            sb.Append("  AppliedOperateType: ").Append(this.AppliedOperateType).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
