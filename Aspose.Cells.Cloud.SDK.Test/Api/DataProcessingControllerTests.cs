@@ -199,6 +199,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
                 AppliedSteps = dataTransformationRequestAppliedSteps
             };
             var request = new PostDataTransformationRequest(
+                dataTransformationRequest: dataTransformationRequest
             );
             var actual =  this.CellsApi.PostDataTransformation(request);
             Assert.IsNotNull(actual);

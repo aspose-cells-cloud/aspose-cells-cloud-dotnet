@@ -150,7 +150,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)
                 {
-                    UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
+                    path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
 

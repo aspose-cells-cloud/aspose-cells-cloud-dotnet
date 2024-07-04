@@ -37,7 +37,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     /// <summary>
     /// A data operation that is used to obtain a query of data.
     /// </summary>
-    public class AppliedOperate
+    public abstract class AppliedOperate
     {
         /// <summary>
         /// 

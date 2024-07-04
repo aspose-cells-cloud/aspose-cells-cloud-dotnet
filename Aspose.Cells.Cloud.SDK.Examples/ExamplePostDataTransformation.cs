@@ -69,5 +69,6 @@ var dataTransformationRequest = new DataTransformationRequest()
     AppliedSteps = dataTransformationRequestAppliedSteps
 };
 var request = new PostDataTransformationRequest(
+    dataTransformationRequest: dataTransformationRequest
 );
 this.CellsApi.PostDataTransformation(request);
