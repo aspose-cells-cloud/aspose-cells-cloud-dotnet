@@ -37,7 +37,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     /// <summary>
     /// 
     /// </summary>
-    public class MultipleFilter
+    public abstract class MultipleFilter
     {
         /// <summary>
         /// Get the string presentation of the object.

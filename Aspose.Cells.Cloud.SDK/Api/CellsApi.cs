@@ -339,6 +339,19 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Get Access Token Result
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostAccessTokenRequest" /></param>
+        public   string  PostAccessToken(PostAccessTokenRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+
+
+        /// <summary>
         /// Clear cell area contents in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PostClearContentsRequest" /></param>
@@ -3356,7 +3369,19 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve the description of the default style for the workbook.
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostAddTextContentRequest" /></param>
+        public   FileInfo  PostAddTextContent(PostAddTextContentRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// Retrieve the description of the default style for the workbook .
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorkbookDefaultStyleRequest" /></param>
         public   StyleResponse  GetWorkbookDefaultStyle(GetWorkbookDefaultStyleRequest request)

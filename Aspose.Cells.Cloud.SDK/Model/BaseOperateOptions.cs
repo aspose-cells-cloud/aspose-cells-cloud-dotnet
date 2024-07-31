@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ObjectExistsExtensions.cs">
+// <copyright company="Aspose" file="BaseOperateOptions.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,10 +35,15 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ObjectExistsExtensions.
+    /// 
     /// </summary>
-    public abstract class ObjectExistsExtensions
+    public abstract class BaseOperateOptions
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual string Name { get; set; }
+
         /// <summary>
         /// Get the string presentation of the object.
         /// </summary>
@@ -46,7 +51,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class ObjectExistsExtensions {\n");
+            sb.Append("class BaseOperateOptions {\n");
+            sb.Append("  Name: ").Append(this.Name).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

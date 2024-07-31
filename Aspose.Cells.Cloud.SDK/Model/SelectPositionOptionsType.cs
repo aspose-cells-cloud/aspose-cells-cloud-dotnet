@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ObjectExistsExtensions.cs">
+// <copyright company="Aspose" file="SelectPositionOptionsType.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,20 +35,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ObjectExistsExtensions.
+    /// 
     /// </summary>
-    public abstract class ObjectExistsExtensions
+    [JsonConverter(typeof(StringEnumConverter))]
+    public enum SelectPositionOptionsType
     {
-        /// <summary>
-        /// Get the string presentation of the object.
-        /// </summary>
-        /// <returns>String presentation of the object.</returns>
-        public override string ToString()
-        {
-            var sb = new StringBuilder();
-            sb.Append("class ObjectExistsExtensions {\n");
-            sb.Append("}\n");
-            return sb.ToString();
-        }
     }
 }

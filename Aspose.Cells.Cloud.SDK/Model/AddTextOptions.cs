@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ObjectExistsExtensions.cs">
+// <copyright company="Aspose" file="AddTextOptions.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,10 +35,55 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ObjectExistsExtensions.
+    /// 
     /// </summary>
-    public abstract class ObjectExistsExtensions
+    public class AddTextOptions : BaseOperateOptions
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        public override string Name { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual DataSource DataSource { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual FileInfo FileInfo { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual string Text { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual string Worksheet { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual string Range { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual string SelectPoistion { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual string SelectText { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual bool? SkipEmptyCells { get; set; }
+
         /// <summary>
         /// Get the string presentation of the object.
         /// </summary>
@@ -46,7 +91,16 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class ObjectExistsExtensions {\n");
+            sb.Append("class AddTextOptions {\n");
+            sb.Append("  Name: ").Append(this.Name).Append("\n");
+            sb.Append("  DataSource: ").Append(this.DataSource).Append("\n");
+            sb.Append("  FileInfo: ").Append(this.FileInfo).Append("\n");
+            sb.Append("  Text: ").Append(this.Text).Append("\n");
+            sb.Append("  Worksheet: ").Append(this.Worksheet).Append("\n");
+            sb.Append("  Range: ").Append(this.Range).Append("\n");
+            sb.Append("  SelectPoistion: ").Append(this.SelectPoistion).Append("\n");
+            sb.Append("  SelectText: ").Append(this.SelectText).Append("\n");
+            sb.Append("  SkipEmptyCells: ").Append(this.SkipEmptyCells).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

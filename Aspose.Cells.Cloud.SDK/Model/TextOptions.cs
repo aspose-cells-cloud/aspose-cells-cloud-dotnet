@@ -105,7 +105,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override bool? IsSuperscript { get; set; }
 
         /// <summary>
-        /// Gets or sets Name.
+        /// 
         /// </summary>
         public override string Name { get; set; }
 

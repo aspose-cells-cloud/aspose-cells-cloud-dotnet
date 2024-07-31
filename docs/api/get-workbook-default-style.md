@@ -1,6 +1,6 @@
 # **getWorkbookDefaultStyle API**
 
-Retrieve the description of the default style for the workbook. 
+Retrieve the description of the default style for the workbook . 
 
 ```bash
 

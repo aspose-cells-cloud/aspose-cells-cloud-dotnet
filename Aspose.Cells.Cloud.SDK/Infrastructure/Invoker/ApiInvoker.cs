@@ -50,7 +50,7 @@ namespace Aspose.Cells.Cloud.SDK.Invoker
         internal ApiInvoker(List<IRequestHandler> requestHandlers)
         {
             this.AddDefaultHeader(AsposeClientHeaderName, ".net sdk");
-            this.AddDefaultHeader(AsposeClientVersionHeaderName, "24.6");
+            this.AddDefaultHeader(AsposeClientVersionHeaderName, "24.7");
             this.requestHandlers = requestHandlers;
         }
 
