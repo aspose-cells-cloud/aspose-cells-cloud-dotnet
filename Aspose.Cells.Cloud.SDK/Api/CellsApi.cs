@@ -3381,6 +3381,18 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostTrimContentRequest" /></param>
+        public   FileInfo  PostTrimContent(PostTrimContentRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+
+
+        /// <summary>
         /// Retrieve the description of the default style for the workbook .
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorkbookDefaultStyleRequest" /></param>

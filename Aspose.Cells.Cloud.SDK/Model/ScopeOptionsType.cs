@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="SearchScopeOptionsType.cs">
+// <copyright company="Aspose" file="ScopeOptionsType.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,10 +35,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// SearchScopeOptionsType.
+    /// ScopeOptionsType.
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum SearchScopeOptionsType
+    public enum ScopeOptionsType
     {
     }
 }
