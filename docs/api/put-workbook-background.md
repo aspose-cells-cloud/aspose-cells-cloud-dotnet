@@ -14,6 +14,7 @@ PUT http://api.aspose.cloud/v3.0//cells/{name}/background
 | :- | :- | :- |:- | 
 |name|String|Path|The file name.|
 |picPath|String|Query|The picture full path.|
+|imageAdaptOption|String|Query||
 |folder|String|Query|The folder where the file is situated.|
 |storageName|String|Query|The storage name where the file is situated.|
 |File|File|FormData|File to upload|

@@ -57,7 +57,9 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="region">The regional settings for workbook.</param>
         /// <param name="pageWideFitOnPerSheet">The page wide fit on worksheet.</param>
         /// <param name="pageTallFitOnPerSheet">The page tall fit on worksheet.</param>
-        public PutConvertWorkbookRequest(IDictionary<string, System.IO.Stream> file, string format = null, string password = null, string outPath = null, string storageName = null, bool? checkExcelRestriction = null, string streamFormat = null, string region = null, bool? pageWideFitOnPerSheet = null, bool? pageTallFitOnPerSheet = null)
+        /// <param name="sheetName"></param>
+        /// <param name="pageIndex"></param>
+        public PutConvertWorkbookRequest(IDictionary<string, System.IO.Stream> file, string format = null, string password = null, string outPath = null, string storageName = null, bool? checkExcelRestriction = null, string streamFormat = null, string region = null, bool? pageWideFitOnPerSheet = null, bool? pageTallFitOnPerSheet = null, string sheetName = null, int? pageIndex = null)
         {
             this.File = file;
             this.format = format;
@@ -69,6 +71,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.region = region;
             this.pageWideFitOnPerSheet = pageWideFitOnPerSheet;
             this.pageTallFitOnPerSheet = pageTallFitOnPerSheet;
+            this.sheetName = sheetName;
+            this.pageIndex = pageIndex;
         }
 
         /// <summary>
@@ -121,6 +125,16 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public bool? pageTallFitOnPerSheet { get; set; }
 
+        /// <summary>
+        /// Gets or sets sheetName.
+        /// </summary>
+        public string sheetName { get; set; }
+
+        /// <summary>
+        /// Gets or sets pageIndex.
+        /// </summary>
+        public int? pageIndex { get; set; }
+
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -159,6 +173,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if(this.pageWideFitOnPerSheet != null)  path = UrlHelper.AddQueryParameterToUrl(path, "pageWideFitOnPerSheet", this.pageWideFitOnPerSheet);
             if(this.pageTallFitOnPerSheet != null)  path = UrlHelper.AddQueryParameterToUrl(path, "pageTallFitOnPerSheet", this.pageTallFitOnPerSheet);
+            if (!string.IsNullOrEmpty(this.sheetName))  path = UrlHelper.AddQueryParameterToUrl(path, "sheetName", this.sheetName);
+            if(this.pageIndex != null)  path = UrlHelper.AddQueryParameterToUrl(path, "pageIndex", this.pageIndex);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)

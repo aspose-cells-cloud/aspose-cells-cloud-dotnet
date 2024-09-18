@@ -56,6 +56,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual Protection ProtectCurrentSheet { get; set; }
 
         /// <summary>
+        /// Represents the various types of protection options available for all worksheets.
+        ///             
+        /// </summary>
+        public virtual Protection ProtectAllSheets { get; set; }
+
+        /// <summary>
         /// Indicates protect workbook structure. All, Contents, Objects, Scenarios, Structure, Windows, and None.
         /// </summary>
         public virtual string ProtectWorkbookStructure { get; set; }
@@ -81,6 +87,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  AwaysOpenReadOnly: ").Append(this.AwaysOpenReadOnly).Append("\n");
             sb.Append("  EncryptWithPassword: ").Append(this.EncryptWithPassword).Append("\n");
             sb.Append("  ProtectCurrentSheet: ").Append(this.ProtectCurrentSheet).Append("\n");
+            sb.Append("  ProtectAllSheets: ").Append(this.ProtectAllSheets).Append("\n");
             sb.Append("  ProtectWorkbookStructure: ").Append(this.ProtectWorkbookStructure).Append("\n");
             sb.Append("  DigitalSignature: ").Append(this.DigitalSignature).Append("\n");
             sb.Append("  MarkAsFinal: ").Append(this.MarkAsFinal).Append("\n");

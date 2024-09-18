@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="TextWaterMarkerRequest.cs">
+// <copyright company="Aspose" file="WordCaseOptions.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,39 +35,29 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Indicates text water marker request.
+    /// WordCaseOptions.
     /// </summary>
-    public class TextWaterMarkerRequest
+    public class WordCaseOptions
     {
         /// <summary>
-        /// 
+        /// Gets or sets DataSource.
         /// </summary>
-        public virtual string Text { get; set; }
+        public virtual DataSource DataSource { get; set; }
 
         /// <summary>
-        /// Indicates font name.
+        /// Gets or sets FileInfo.
         /// </summary>
-        public virtual string FontName { get; set; }
+        public virtual FileInfo FileInfo { get; set; }
 
         /// <summary>
-        /// Indicates font size.
+        /// Gets or sets WordCaseType.
         /// </summary>
-        public virtual int? FontSize { get; set; }
+        public virtual string WordCaseType { get; set; }
 
         /// <summary>
-        /// Indicates image height.
+        /// Gets or sets ScopeOptions.
         /// </summary>
-        public virtual int? Height { get; set; }
-
-        /// <summary>
-        /// Indicates image width.
-        /// </summary>
-        public virtual int? Width { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public virtual string ImageAdaptOption { get; set; }
+        public virtual ScopeOptions ScopeOptions { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object.
@@ -76,13 +66,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class TextWaterMarkerRequest {\n");
-            sb.Append("  Text: ").Append(this.Text).Append("\n");
-            sb.Append("  FontName: ").Append(this.FontName).Append("\n");
-            sb.Append("  FontSize: ").Append(this.FontSize).Append("\n");
-            sb.Append("  Height: ").Append(this.Height).Append("\n");
-            sb.Append("  Width: ").Append(this.Width).Append("\n");
-            sb.Append("  ImageAdaptOption: ").Append(this.ImageAdaptOption).Append("\n");
+            sb.Append("class WordCaseOptions {\n");
+            sb.Append("  DataSource: ").Append(this.DataSource).Append("\n");
+            sb.Append("  FileInfo: ").Append(this.FileInfo).Append("\n");
+            sb.Append("  WordCaseType: ").Append(this.WordCaseType).Append("\n");
+            sb.Append("  ScopeOptions: ").Append(this.ScopeOptions).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

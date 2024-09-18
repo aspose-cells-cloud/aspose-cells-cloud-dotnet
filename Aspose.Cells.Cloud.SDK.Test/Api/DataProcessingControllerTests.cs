@@ -86,8 +86,12 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
 
             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
+            var deduplicationRegionRanges = new List<Range>()
+            {
+            };
             var deduplicationRegion = new DeduplicationRegion()
             {
+                Ranges = deduplicationRegionRanges
             };
             var request = new PostWorkbookDataDeduplicationRequest(
                 name: remoteName,

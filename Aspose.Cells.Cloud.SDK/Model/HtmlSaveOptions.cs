@@ -216,14 +216,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? ExportImagesAsBase64 { get; set; }
 
         /// <summary>
-        /// Hidden column(the width of this column is 0) in excel,before save this into 
+        /// Hidden column(the width of this column is 0) in excel,before save this into
         ///                html format, if HtmlHiddenColDisplayType is "Remove",the hidden column would
         ///                ont been output, if the value is "Hidden", the column would been output,but was hidden,the default value is "Hidden"
         /// </summary>
         public virtual string HiddenColDisplayType { get; set; }
 
         /// <summary>
-        /// Hidden row(the height of this row is 0) in excel,before save this into html 
+        /// Hidden row(the height of this row is 0) in excel,before save this into html
         ///                format, if HtmlHiddenRowDisplayType is "Remove",the hidden row would ont
         ///                been output, if the value is "Hidden", the row would been output,but was
         ///                hidden,the default value is "Hidden"
@@ -254,6 +254,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// Parse html tag in cell,like ,as cell value,or as html tag,default is true
         /// </summary>
         public virtual bool? ParseHtmlTagInCell { get; set; }
+
+        /// <summary>
+        /// Gets or sets CellNameAttribute.
+        /// </summary>
+        public virtual string CellNameAttribute { get; set; }
 
         /// <summary>
         /// Gets or sets SaveFormat.
@@ -341,6 +346,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  IsExpImageToTempDir: ").Append(this.IsExpImageToTempDir).Append("\n");
             sb.Append("  PageTitle: ").Append(this.PageTitle).Append("\n");
             sb.Append("  ParseHtmlTagInCell: ").Append(this.ParseHtmlTagInCell).Append("\n");
+            sb.Append("  CellNameAttribute: ").Append(this.CellNameAttribute).Append("\n");
             sb.Append("  SaveFormat: ").Append(this.SaveFormat).Append("\n");
             sb.Append("  CachedFileFolder: ").Append(this.CachedFileFolder).Append("\n");
             sb.Append("  ClearData: ").Append(this.ClearData).Append("\n");

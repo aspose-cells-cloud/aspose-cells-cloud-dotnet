@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="TextWaterMarkerRequest.cs">
+// <copyright company="Aspose" file="ImageAdaptOptions.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,56 +35,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Indicates text water marker request.
+    /// 
     /// </summary>
-    public class TextWaterMarkerRequest
+    [JsonConverter(typeof(StringEnumConverter))]
+    public enum ImageAdaptOptions
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        public virtual string Text { get; set; }
-
-        /// <summary>
-        /// Indicates font name.
-        /// </summary>
-        public virtual string FontName { get; set; }
-
-        /// <summary>
-        /// Indicates font size.
-        /// </summary>
-        public virtual int? FontSize { get; set; }
-
-        /// <summary>
-        /// Indicates image height.
-        /// </summary>
-        public virtual int? Height { get; set; }
-
-        /// <summary>
-        /// Indicates image width.
-        /// </summary>
-        public virtual int? Width { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public virtual string ImageAdaptOption { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object.
-        /// </summary>
-        /// <returns>String presentation of the object.</returns>
-        public override string ToString()
-        {
-            var sb = new StringBuilder();
-            sb.Append("class TextWaterMarkerRequest {\n");
-            sb.Append("  Text: ").Append(this.Text).Append("\n");
-            sb.Append("  FontName: ").Append(this.FontName).Append("\n");
-            sb.Append("  FontSize: ").Append(this.FontSize).Append("\n");
-            sb.Append("  Height: ").Append(this.Height).Append("\n");
-            sb.Append("  Width: ").Append(this.Width).Append("\n");
-            sb.Append("  ImageAdaptOption: ").Append(this.ImageAdaptOption).Append("\n");
-            sb.Append("}\n");
-            return sb.ToString();
-        }
     }
 }

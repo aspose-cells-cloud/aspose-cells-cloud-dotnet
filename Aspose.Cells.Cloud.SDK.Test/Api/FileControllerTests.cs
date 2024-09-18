@@ -102,47 +102,5 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             );
          this.CellsApi.CopyFile(request);
         }
-
-        /// <summary>
-        /// Test for MoveFile of FileController.
-        /// </summary>
-        [TestCategory(ProductName)]
-        [TestMethod]
-        public void TestMoveFile()
-        {
-            string localName = "Book1.xlsx";
-            string remoteName = "Book1.xlsx";
-
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
-
-            var request = new MoveFileRequest(
-                srcPath: remoteFolder + "/" + remoteName,
-                destPath: "OutResult/" + remoteName,
-                srcStorageName: "",
-                destStorageName: "",
-                versionId: ""
-            );
-         this.CellsApi.MoveFile(request);
-        }
-
-        /// <summary>
-        /// Test for DeleteFile of FileController.
-        /// </summary>
-        [TestCategory(ProductName)]
-        [TestMethod]
-        public void TestDeleteFile()
-        {
-            string localName = "Book1.xlsx";
-            string remoteName = "Book1.xlsx";
-
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
-
-            var request = new DeleteFileRequest(
-                path: remoteFolder + "/" + remoteName,
-                storageName: "",
-                versionId: ""
-            );
-         this.CellsApi.DeleteFile(request);
-        }
     }
 }

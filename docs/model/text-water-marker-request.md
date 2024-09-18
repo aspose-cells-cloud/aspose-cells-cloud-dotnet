@@ -11,4 +11,5 @@ Indicates text water marker request.
 |FontSize|Integer|true|false |  |Indicates font size.|
 |Height|Integer|true|false |  |Indicates image height.|
 |Width|Integer|true|false |  |Indicates image width.|
+|ImageAdaptOption|String|true|false |  ||
 

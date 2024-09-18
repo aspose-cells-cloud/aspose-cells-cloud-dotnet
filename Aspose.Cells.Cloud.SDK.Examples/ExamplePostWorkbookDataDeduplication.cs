@@ -13,8 +13,12 @@ string remoteName = "BookCsvDuplicateData.csv";
 
 this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
+var deduplicationRegionRanges = new List<Range>()
+{
+};
 var deduplicationRegion = new DeduplicationRegion()
 {
+    Ranges = deduplicationRegionRanges
 };
 var request = new PostWorkbookDataDeduplicationRequest(
     name: remoteName,

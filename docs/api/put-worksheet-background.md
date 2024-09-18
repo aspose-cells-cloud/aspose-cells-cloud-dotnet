@@ -15,6 +15,7 @@ PUT http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/background
 |name|String|Path|The file name.|
 |sheetName|String|Path|The worksheet name.|
 |picPath|String|Query|picture full filename.|
+|imageAdaptOption|String|Query||
 |folder|String|Query|The folder where the file is situated.|
 |storageName|String|Query|The storage name where the file is situated.|
 |File|File|FormData|File to upload|

@@ -49,13 +49,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         /// <param name="name">The file name.</param>
         /// <param name="picPath">The picture full path.</param>
+        /// <param name="imageAdaptOption"></param>
         /// <param name="folder">The folder where the file is situated.</param>
         /// <param name="storageName">The storage name where the file is situated.</param>
         /// <param name="file">File to upload</param>
-        public PutWorkbookBackgroundRequest(string name, string picPath = null, string folder = null, string storageName = null, IDictionary<string, System.IO.Stream> file = null)
+        public PutWorkbookBackgroundRequest(string name, string picPath = null, string imageAdaptOption = null, string folder = null, string storageName = null, IDictionary<string, System.IO.Stream> file = null)
         {
             this.name = name;
             this.picPath = picPath;
+            this.imageAdaptOption = imageAdaptOption;
             this.folder = folder;
             this.storageName = storageName;
             this.File = file;
@@ -70,6 +72,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The picture full path.
         /// </summary>
         public string picPath { get; set; }
+
+        /// <summary>
+        /// Gets or sets imageAdaptOption.
+        /// </summary>
+        public string imageAdaptOption { get; set; }
 
         /// <summary>
         /// The folder where the file is situated.
@@ -117,6 +124,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
             path = UrlHelper.AddPathParameter(path, "name", this.name);
             if (!string.IsNullOrEmpty(this.picPath))  path = UrlHelper.AddQueryParameterToUrl(path, "picPath", this.picPath);
+            if (!string.IsNullOrEmpty(this.imageAdaptOption))  path = UrlHelper.AddQueryParameterToUrl(path, "imageAdaptOption", this.imageAdaptOption);
             if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
             if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
             if (this.extendQueryParameterMap != null)
