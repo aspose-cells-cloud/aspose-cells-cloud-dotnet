@@ -76,6 +76,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   IList<AnalyzedResult>  > PostAnalyzeExcelAsync(PostAnalyzeExcelRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    IList<AnalyzedResult>  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -86,6 +97,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    AutoFilterResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   AutoFilterResponse  > GetWorksheetAutoFilterAsync(GetWorksheetAutoFilterRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    AutoFilterResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -102,6 +124,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetDateFilterAsync(PutWorksheetDateFilterRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -112,6 +145,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetFilterAsync(PutWorksheetFilterRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -128,6 +172,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetIconFilterAsync(PutWorksheetIconFilterRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -138,6 +193,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetCustomFilterAsync(PutWorksheetCustomFilterRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -154,6 +220,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetDynamicFilterAsync(PutWorksheetDynamicFilterRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -164,6 +241,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetFilterTop10Async(PutWorksheetFilterTop10Request request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -180,6 +268,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetColorFilterAsync(PutWorksheetColorFilterRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -190,6 +289,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetMatchBlanksAsync(PostWorksheetMatchBlanksRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -206,6 +316,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetMatchNonBlanksAsync(PostWorksheetMatchNonBlanksRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -216,6 +337,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetAutoFilterRefreshAsync(PostWorksheetAutoFilterRefreshRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -232,6 +364,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetDateFilterAsync(DeleteWorksheetDateFilterRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -242,6 +385,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetFilterAsync(DeleteWorksheetFilterRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -258,6 +412,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   AutoShapesResponse  > GetWorksheetAutoshapesAsync(GetWorksheetAutoshapesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    AutoShapesResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -268,6 +433,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > GetWorksheetAutoshapeWithFormatAsync(GetWorksheetAutoshapeWithFormatRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -284,6 +460,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > PostBatchConvertAsync(PostBatchConvertRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -294,6 +481,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > PostBatchProtectAsync(PostBatchProtectRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -310,6 +508,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > PostBatchLockAsync(PostBatchLockRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -320,6 +529,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > PostBatchUnlockAsync(PostBatchUnlockRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -336,6 +556,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > PostBatchSplitAsync(PostBatchSplitRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -346,6 +577,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   string  > PostAccessTokenAsync(PostAccessTokenRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -362,6 +604,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostClearContentsAsync(PostClearContentsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -372,6 +625,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostClearFormatsAsync(PostClearFormatsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -388,6 +652,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostUpdateWorksheetRangeStyleAsync(PostUpdateWorksheetRangeStyleRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -398,6 +673,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetMergeAsync(PostWorksheetMergeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -414,6 +700,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetUnmergeAsync(PostWorksheetUnmergeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -424,6 +721,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsResponse  > GetWorksheetCellsAsync(GetWorksheetCellsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -440,6 +748,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   string  > GetWorksheetCellAsync(GetWorksheetCellRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -450,6 +769,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    StyleResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   StyleResponse  > GetWorksheetCellStyleAsync(GetWorksheetCellStyleRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    StyleResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -466,6 +796,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellResponse  > PostWorksheetCellSetValueAsync(PostWorksheetCellSetValueRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -476,6 +817,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostUpdateWorksheetCellStyleAsync(PostUpdateWorksheetCellStyleRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -492,6 +844,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostSetCellRangeValueAsync(PostSetCellRangeValueRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -502,6 +865,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostCopyCellIntoCellAsync(PostCopyCellIntoCellRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -518,6 +892,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   string  > GetCellHtmlStringAsync(GetCellHtmlStringRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -528,6 +913,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostSetCellHtmlStringAsync(PostSetCellHtmlStringRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -544,6 +940,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostCellCalculateAsync(PostCellCalculateRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -554,6 +961,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostCellCharactersAsync(PostCellCharactersRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -570,6 +988,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   ColumnsResponse  > GetWorksheetColumnsAsync(GetWorksheetColumnsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    ColumnsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -580,6 +1009,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostSetWorksheetColumnWidthAsync(PostSetWorksheetColumnWidthRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -596,6 +1036,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   ColumnResponse  > GetWorksheetColumnAsync(GetWorksheetColumnRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    ColumnResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -606,6 +1057,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutInsertWorksheetColumnsAsync(PutInsertWorksheetColumnsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -622,6 +1084,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetColumnsAsync(DeleteWorksheetColumnsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -632,6 +1105,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostHideWorksheetColumnsAsync(PostHideWorksheetColumnsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -648,6 +1132,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostUnhideWorksheetColumnsAsync(PostUnhideWorksheetColumnsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -658,6 +1153,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostGroupWorksheetColumnsAsync(PostGroupWorksheetColumnsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -674,6 +1180,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostUngroupWorksheetColumnsAsync(PostUngroupWorksheetColumnsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -684,6 +1201,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostCopyWorksheetColumnsAsync(PostCopyWorksheetColumnsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -700,6 +1228,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostColumnStyleAsync(PostColumnStyleRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -710,6 +1249,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    RowsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   RowsResponse  > GetWorksheetRowsAsync(GetWorksheetRowsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    RowsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -726,6 +1276,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   RowResponse  > GetWorksheetRowAsync(GetWorksheetRowRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    RowResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -736,6 +1297,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetRowAsync(DeleteWorksheetRowRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -752,6 +1324,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetRowsAsync(DeleteWorksheetRowsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -762,6 +1345,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutInsertWorksheetRowsAsync(PutInsertWorksheetRowsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -778,6 +1372,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutInsertWorksheetRowAsync(PutInsertWorksheetRowRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -788,6 +1393,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostUpdateWorksheetRowAsync(PostUpdateWorksheetRowRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -804,6 +1420,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostHideWorksheetRowsAsync(PostHideWorksheetRowsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -814,6 +1441,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostUnhideWorksheetRowsAsync(PostUnhideWorksheetRowsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -830,6 +1468,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostGroupWorksheetRowsAsync(PostGroupWorksheetRowsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -840,6 +1489,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostUngroupWorksheetRowsAsync(PostUngroupWorksheetRowsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -856,6 +1516,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostCopyWorksheetRowsAsync(PostCopyWorksheetRowsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -866,6 +1537,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostRowStyleAsync(PostRowStyleRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -882,6 +1564,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   string  > GetCellsCloudServicesHealthCheckAsync(GetCellsCloudServicesHealthCheckRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -892,6 +1585,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   string  > GetCellsCloudServiceStatusAsync(GetCellsCloudServiceStatusRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -908,6 +1612,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   ChartAreaResponse  > GetChartAreaAsync(GetChartAreaRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    ChartAreaResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -918,6 +1633,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FillFormatResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FillFormatResponse  > GetChartAreaFillFormatAsync(GetChartAreaFillFormatRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FillFormatResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -934,6 +1660,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   LineResponse  > GetChartAreaBorderAsync(GetChartAreaBorderRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    LineResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -944,6 +1681,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    ChartsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   ChartsResponse  > GetWorksheetChartsAsync(GetWorksheetChartsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    ChartsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -960,6 +1708,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > GetWorksheetChartAsync(GetWorksheetChartRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -970,6 +1729,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetChartAsync(PutWorksheetChartRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -986,6 +1756,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetChartAsync(DeleteWorksheetChartRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -996,6 +1777,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetChartAsync(PostWorksheetChartRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1012,6 +1804,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   LegendResponse  > GetWorksheetChartLegendAsync(GetWorksheetChartLegendRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    LegendResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1022,6 +1825,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetChartLegendAsync(PostWorksheetChartLegendRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1038,6 +1852,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetChartLegendAsync(PutWorksheetChartLegendRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1048,6 +1873,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetChartLegendAsync(DeleteWorksheetChartLegendRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1064,6 +1900,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetChartsAsync(DeleteWorksheetChartsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1074,6 +1921,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    TitleResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   TitleResponse  > GetWorksheetChartTitleAsync(GetWorksheetChartTitleRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    TitleResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1090,6 +1948,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetChartTitleAsync(PostWorksheetChartTitleRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1100,6 +1969,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetChartTitleAsync(PutWorksheetChartTitleRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1116,6 +1996,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetChartTitleAsync(DeleteWorksheetChartTitleRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1126,6 +2017,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    AxisResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   AxisResponse  > GetChartSeriesAxisAsync(GetChartSeriesAxisRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    AxisResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1142,6 +2044,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   AxisResponse  > GetChartCategoryAxisAsync(GetChartCategoryAxisRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    AxisResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1152,6 +2065,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    AxisResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   AxisResponse  > GetChartValueAxisAsync(GetChartValueAxisRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    AxisResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1168,6 +2092,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   AxisResponse  > GetChartSecondCategoryAxisAsync(GetChartSecondCategoryAxisRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    AxisResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1178,6 +2113,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    AxisResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   AxisResponse  > GetChartSecondValueAxisAsync(GetChartSecondValueAxisRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    AxisResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1194,6 +2140,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostChartSeriesAxisAsync(PostChartSeriesAxisRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1204,6 +2161,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostChartCategoryAxisAsync(PostChartCategoryAxisRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1220,6 +2188,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostChartValueAxisAsync(PostChartValueAxisRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1230,6 +2209,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostChartSecondCategoryAxisAsync(PostChartSecondCategoryAxisRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1246,6 +2236,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostChartSecondValueAxisAsync(PostChartSecondValueAxisRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1256,6 +2257,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    ConditionalFormattingsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   ConditionalFormattingsResponse  > GetWorksheetConditionalFormattingsAsync(GetWorksheetConditionalFormattingsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    ConditionalFormattingsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1272,6 +2284,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   ConditionalFormattingResponse  > GetWorksheetConditionalFormattingAsync(GetWorksheetConditionalFormattingRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    ConditionalFormattingResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1282,6 +2305,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetConditionalFormattingAsync(PutWorksheetConditionalFormattingRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1298,6 +2332,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetFormatConditionAsync(PutWorksheetFormatConditionRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1308,6 +2353,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetFormatConditionAreaAsync(PutWorksheetFormatConditionAreaRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1324,6 +2380,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetFormatConditionConditionAsync(PutWorksheetFormatConditionConditionRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1334,6 +2401,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetConditionalFormattingsAsync(DeleteWorksheetConditionalFormattingsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1350,6 +2428,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetConditionalFormattingAsync(DeleteWorksheetConditionalFormattingRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1360,6 +2449,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetConditionalFormattingAreaAsync(DeleteWorksheetConditionalFormattingAreaRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1376,6 +2476,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > GetWorkbookAsync(GetWorkbookRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1386,6 +2497,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > PutConvertWorkbookAsync(PutConvertWorkbookRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1402,6 +2524,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   SaveResponse  > PostWorkbookSaveAsAsync(PostWorkbookSaveAsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    SaveResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1412,6 +2545,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostConvertWorkbookToPDFAsync(PostConvertWorkbookToPDFRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1428,6 +2572,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostConvertWorkbookToPNGAsync(PostConvertWorkbookToPNGRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1438,6 +2593,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostConvertWorkbookToDocxAsync(PostConvertWorkbookToDocxRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1454,6 +2620,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostConvertWorkbookToPptxAsync(PostConvertWorkbookToPptxRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1464,6 +2641,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostConvertWorkbookToHtmlAsync(PostConvertWorkbookToHtmlRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1480,6 +2668,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostConvertWorkbookToMarkdownAsync(PostConvertWorkbookToMarkdownRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1490,6 +2689,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostConvertWorkbookToJsonAsync(PostConvertWorkbookToJsonRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1506,6 +2716,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostConvertWorkbookToSQLAsync(PostConvertWorkbookToSQLRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1519,6 +2740,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostConvertWorkbookToCSVAsync(PostConvertWorkbookToCSVRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1529,6 +2761,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FilesResult  > PostExportAsync(PostExportRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1546,6 +2789,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > PostWorkbookExportXMLAsync(PostWorkbookExportXMLRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1556,6 +2810,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > PostWorkbookImportJsonAsync(PostWorkbookImportJsonRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1572,6 +2837,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > PostWorkbookImportXMLAsync(PostWorkbookImportXMLRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1582,6 +2858,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostImportDataAsync(PostImportDataRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1598,6 +2885,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostWorkbookDataCleansingAsync(PostWorkbookDataCleansingRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1608,6 +2906,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostDataCleansingAsync(PostDataCleansingRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1624,6 +2933,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostWorkbookDataDeduplicationAsync(PostWorkbookDataDeduplicationRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1634,6 +2954,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostDataDeduplicationAsync(PostDataDeduplicationRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1650,6 +2981,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostWorkbookDataFillAsync(PostWorkbookDataFillRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1660,6 +3002,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostDataFillAsync(PostDataFillRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1676,6 +3029,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostDeleteIncompleteRowsAsync(PostDeleteIncompleteRowsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1686,6 +3050,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostDataTransformationAsync(PostDataTransformationRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1702,6 +3077,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   HyperlinksResponse  > GetWorksheetHyperlinksAsync(GetWorksheetHyperlinksRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    HyperlinksResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1712,6 +3098,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    HyperlinkResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   HyperlinkResponse  > GetWorksheetHyperlinkAsync(GetWorksheetHyperlinkRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    HyperlinkResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1728,6 +3125,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetHyperlinkAsync(DeleteWorksheetHyperlinkRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1738,6 +3146,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetHyperlinkAsync(PostWorksheetHyperlinkRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1754,6 +3173,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetHyperlinkAsync(PutWorksheetHyperlinkRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1764,6 +3194,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetHyperlinksAsync(DeleteWorksheetHyperlinksRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1780,6 +3221,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FilesResult  > PostAssembleAsync(PostAssembleRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1790,6 +3242,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FilesResult  > PostCompressAsync(PostCompressRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1806,6 +3269,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostMergeAsync(PostMergeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1816,6 +3290,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FilesResult  > PostSplitAsync(PostSplitRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1832,6 +3317,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   IList<TextItem>  > PostSearchAsync(PostSearchRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    IList<TextItem>  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1842,6 +3338,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FilesResult  > PostReplaceAsync(PostReplaceRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1858,6 +3365,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FilesResult  > PostImportAsync(PostImportRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1868,6 +3386,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FilesResult  > PostWatermarkAsync(PostWatermarkRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1884,6 +3413,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FilesResult  > PostClearObjectsAsync(PostClearObjectsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1894,6 +3434,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FilesResult  > PostReverseAsync(PostReverseRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1910,6 +3461,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FilesResult  > PostRepairAsync(PostRepairRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1920,6 +3482,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FilesResult  > PostRotateAsync(PostRotateRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1936,6 +3509,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FilesResult  > PostMetadataAsync(PostMetadataRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1946,6 +3530,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    IList<CellsDocumentProperty>  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   IList<CellsDocumentProperty>  > GetMetadataAsync(GetMetadataRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    IList<CellsDocumentProperty>  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1962,6 +3557,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FilesResult  > DeleteMetadataAsync(DeleteMetadataRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1972,6 +3578,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    ListObjectsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   ListObjectsResponse  > GetWorksheetListObjectsAsync(GetWorksheetListObjectsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    ListObjectsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1988,6 +3605,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > GetWorksheetListObjectAsync(GetWorksheetListObjectRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -1998,6 +3626,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetListObjectAsync(PutWorksheetListObjectRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2014,6 +3653,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetListObjectsAsync(DeleteWorksheetListObjectsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2024,6 +3674,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetListObjectAsync(DeleteWorksheetListObjectRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2040,6 +3701,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetListObjectAsync(PostWorksheetListObjectRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2050,6 +3722,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetListObjectConvertToRangeAsync(PostWorksheetListObjectConvertToRangeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2066,6 +3749,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetListObjectSummarizeWithPivotTableAsync(PostWorksheetListObjectSummarizeWithPivotTableRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2076,6 +3770,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetListObjectSortTableAsync(PostWorksheetListObjectSortTableRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2092,6 +3797,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetListObjectRemoveDuplicatesAsync(PostWorksheetListObjectRemoveDuplicatesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2102,6 +3818,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetListObjectInsertSlicerAsync(PostWorksheetListObjectInsertSlicerRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2118,6 +3845,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetListColumnAsync(PostWorksheetListColumnRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2128,6 +3866,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetListColumnsTotalAsync(PostWorksheetListColumnsTotalRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2144,6 +3893,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   OleObjectsResponse  > GetWorksheetOleObjectsAsync(GetWorksheetOleObjectsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    OleObjectsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2154,6 +3914,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > GetWorksheetOleObjectAsync(GetWorksheetOleObjectRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2170,6 +3941,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetOleObjectsAsync(DeleteWorksheetOleObjectsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2180,6 +3962,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetOleObjectAsync(DeleteWorksheetOleObjectRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2196,6 +3989,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostUpdateWorksheetOleObjectAsync(PostUpdateWorksheetOleObjectRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2206,6 +4010,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetOleObjectAsync(PutWorksheetOleObjectRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2222,6 +4037,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   VerticalPageBreaksResponse  > GetVerticalPageBreaksAsync(GetVerticalPageBreaksRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    VerticalPageBreaksResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2232,6 +4058,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    HorizontalPageBreaksResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   HorizontalPageBreaksResponse  > GetHorizontalPageBreaksAsync(GetHorizontalPageBreaksRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    HorizontalPageBreaksResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2248,6 +4085,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   VerticalPageBreakResponse  > GetVerticalPageBreakAsync(GetVerticalPageBreakRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    VerticalPageBreakResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2258,6 +4106,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    HorizontalPageBreakResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   HorizontalPageBreakResponse  > GetHorizontalPageBreakAsync(GetHorizontalPageBreakRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    HorizontalPageBreakResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2274,6 +4133,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutVerticalPageBreakAsync(PutVerticalPageBreakRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2284,6 +4154,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutHorizontalPageBreakAsync(PutHorizontalPageBreakRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2300,6 +4181,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteVerticalPageBreaksAsync(DeleteVerticalPageBreaksRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2310,6 +4202,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteHorizontalPageBreaksAsync(DeleteHorizontalPageBreaksRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2326,6 +4229,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteVerticalPageBreakAsync(DeleteVerticalPageBreakRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2336,6 +4250,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteHorizontalPageBreakAsync(DeleteHorizontalPageBreakRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2352,6 +4277,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   PageSetupResponse  > GetPageSetupAsync(GetPageSetupRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    PageSetupResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2362,6 +4298,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostPageSetupAsync(PostPageSetupRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2378,6 +4325,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteHeaderFooterAsync(DeleteHeaderFooterRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2388,6 +4346,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    PageSectionsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   PageSectionsResponse  > GetHeaderAsync(GetHeaderRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    PageSectionsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2404,6 +4373,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostHeaderAsync(PostHeaderRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2414,6 +4394,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    PageSectionsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   PageSectionsResponse  > GetFooterAsync(GetFooterRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    PageSectionsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2430,6 +4421,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostFooterAsync(PostFooterRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2440,6 +4442,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostFitWideToPagesAsync(PostFitWideToPagesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2456,6 +4469,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostFitTallToPagesAsync(PostFitTallToPagesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2466,6 +4490,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    PicturesResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   PicturesResponse  > GetWorksheetPicturesAsync(GetWorksheetPicturesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    PicturesResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2482,6 +4517,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > GetWorksheetPictureWithFormatAsync(GetWorksheetPictureWithFormatRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2492,6 +4538,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetAddPictureAsync(PutWorksheetAddPictureRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2508,6 +4565,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetPictureAsync(PostWorksheetPictureRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2518,6 +4586,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetPictureAsync(DeleteWorksheetPictureRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2534,6 +4613,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetPicturesAsync(DeleteWorksheetPicturesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2544,6 +4634,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    PivotTablesResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   PivotTablesResponse  > GetWorksheetPivotTablesAsync(GetWorksheetPivotTablesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    PivotTablesResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2560,6 +4661,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   PivotTableResponse  > GetWorksheetPivotTableAsync(GetWorksheetPivotTableRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    PivotTableResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2570,6 +4682,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    PivotFieldResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   PivotFieldResponse  > GetPivotTableFieldAsync(GetPivotTableFieldRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    PivotFieldResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2586,6 +4709,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   PivotFiltersResponse  > GetWorksheetPivotTableFiltersAsync(GetWorksheetPivotTableFiltersRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    PivotFiltersResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2596,6 +4730,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    PivotFilterResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   PivotFilterResponse  > GetWorksheetPivotTableFilterAsync(GetWorksheetPivotTableFilterRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    PivotFilterResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2612,6 +4757,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetPivotTableAsync(PutWorksheetPivotTableRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2622,6 +4778,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutPivotTableFieldAsync(PutPivotTableFieldRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2638,6 +4805,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetPivotTableFilterAsync(PutWorksheetPivotTableFilterRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2648,6 +4826,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostPivotTableFieldHideItemAsync(PostPivotTableFieldHideItemRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2664,6 +4853,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostPivotTableFieldMoveToAsync(PostPivotTableFieldMoveToRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2674,6 +4874,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostPivotTableCellStyleAsync(PostPivotTableCellStyleRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2690,6 +4901,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostPivotTableStyleAsync(PostPivotTableStyleRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2700,6 +4922,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostPivotTableUpdatePivotFieldsAsync(PostPivotTableUpdatePivotFieldsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2716,6 +4949,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostPivotTableUpdatePivotFieldAsync(PostPivotTableUpdatePivotFieldRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2726,6 +4970,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetPivotTableCalculateAsync(PostWorksheetPivotTableCalculateRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2742,6 +4997,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetPivotTableMoveAsync(PostWorksheetPivotTableMoveRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2752,6 +5018,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetPivotTablesAsync(DeleteWorksheetPivotTablesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2768,6 +5045,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetPivotTableAsync(DeleteWorksheetPivotTableRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2778,6 +5066,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeletePivotTableFieldAsync(DeletePivotTableFieldRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2794,6 +5093,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetPivotTableFiltersAsync(DeleteWorksheetPivotTableFiltersRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2804,6 +5114,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetPivotTableFilterAsync(DeleteWorksheetPivotTableFilterRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2820,6 +5141,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsDocumentPropertiesResponse  > GetDocumentPropertiesAsync(GetDocumentPropertiesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsDocumentPropertiesResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2830,6 +5162,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutDocumentPropertyAsync(PutDocumentPropertyRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2846,6 +5189,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsDocumentPropertyResponse  > GetDocumentPropertyAsync(GetDocumentPropertyRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsDocumentPropertyResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2856,6 +5210,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteDocumentPropertyAsync(DeleteDocumentPropertyRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2872,6 +5237,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteDocumentPropertiesAsync(DeleteDocumentPropertiesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2882,6 +5258,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostDigitalSignatureAsync(PostDigitalSignatureRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2898,6 +5285,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostEncryptWorkbookAsync(PostEncryptWorkbookRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2908,6 +5306,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteDecryptWorkbookAsync(DeleteDecryptWorkbookRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2924,6 +5333,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostProtectWorkbookAsync(PostProtectWorkbookRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2934,6 +5354,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteUnProtectWorkbookAsync(DeleteUnProtectWorkbookRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2950,6 +5381,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutDocumentProtectFromChangesAsync(PutDocumentProtectFromChangesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2960,6 +5402,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteDocumentUnProtectFromChangesAsync(DeleteDocumentUnProtectFromChangesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2976,6 +5429,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FilesResult  > PostUnlockAsync(PostUnlockRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -2986,6 +5450,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FilesResult  > PostLockAsync(PostLockRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3002,6 +5477,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FilesResult  > PostProtectAsync(PostProtectRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FilesResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3012,6 +5498,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetCellsRangesCopyAsync(PostWorksheetCellsRangesCopyRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3028,6 +5525,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetCellsRangeMergeAsync(PostWorksheetCellsRangeMergeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3038,6 +5546,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetCellsRangeUnMergeAsync(PostWorksheetCellsRangeUnMergeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3054,6 +5573,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetCellsRangeStyleAsync(PostWorksheetCellsRangeStyleRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3064,6 +5594,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    RangeValueResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   RangeValueResponse  > GetWorksheetCellsRangeValueAsync(GetWorksheetCellsRangeValueRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    RangeValueResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3080,6 +5621,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetCellsRangeValueAsync(PostWorksheetCellsRangeValueRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3090,6 +5642,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetCellsRangeMoveToAsync(PostWorksheetCellsRangeMoveToRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3106,6 +5669,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetCellsRangeSortAsync(PostWorksheetCellsRangeSortRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3116,6 +5690,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetCellsRangeOutlineBorderAsync(PostWorksheetCellsRangeOutlineBorderRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3132,6 +5717,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetCellsRangeColumnWidthAsync(PostWorksheetCellsRangeColumnWidthRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3142,6 +5738,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetCellsRangeRowHeightAsync(PostWorksheetCellsRangeRowHeightRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3158,6 +5765,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetCellsRangeAsync(PutWorksheetCellsRangeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3168,6 +5786,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetCellsRangeAsync(DeleteWorksheetCellsRangeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3184,6 +5813,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   ShapesResponse  > GetWorksheetShapesAsync(GetWorksheetShapesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    ShapesResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3194,6 +5834,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    ShapeResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   ShapeResponse  > GetWorksheetShapeAsync(GetWorksheetShapeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    ShapeResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3210,6 +5861,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetShapeAsync(PutWorksheetShapeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3220,6 +5882,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetShapesAsync(DeleteWorksheetShapesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3236,6 +5909,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetShapeAsync(DeleteWorksheetShapeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3246,6 +5930,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetShapeAsync(PostWorksheetShapeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3262,6 +5957,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetGroupShapeAsync(PostWorksheetGroupShapeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3272,6 +5978,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetUngroupShapeAsync(PostWorksheetUngroupShapeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3288,6 +6005,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   SparklineGroupsResponse  > GetWorksheetSparklineGroupsAsync(GetWorksheetSparklineGroupsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    SparklineGroupsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3298,6 +6026,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    SparklineGroupResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   SparklineGroupResponse  > GetWorksheetSparklineGroupAsync(GetWorksheetSparklineGroupRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    SparklineGroupResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3314,6 +6053,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetSparklineGroupsAsync(DeleteWorksheetSparklineGroupsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3324,6 +6074,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetSparklineGroupAsync(DeleteWorksheetSparklineGroupRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3340,6 +6101,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetSparklineGroupAsync(PutWorksheetSparklineGroupRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3350,6 +6122,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetSparklineGroupAsync(PostWorksheetSparklineGroupRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3366,6 +6149,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > PostRunTaskAsync(PostRunTaskRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3375,6 +6169,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostAddTextContentAsync(PostAddTextContentRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3390,6 +6195,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostTrimContentAsync(PostTrimContentRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3399,6 +6215,40 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostUpdateWordCaseAsync(PostUpdateWordCaseRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostRemoveCharactersRequest" /></param>
+        public   FileInfo  PostRemoveCharacters(PostRemoveCharactersRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostRemoveCharactersAsync(PostRemoveCharactersRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3415,6 +6265,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   StyleResponse  > GetWorkbookDefaultStyleAsync(GetWorkbookDefaultStyleRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    StyleResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3425,6 +6286,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    TextItemsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   TextItemsResponse  > GetWorkbookTextItemsAsync(GetWorkbookTextItemsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    TextItemsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3441,6 +6313,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   NamesResponse  > GetWorkbookNamesAsync(GetWorkbookNamesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    NamesResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3451,6 +6334,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorkbookNameAsync(PutWorkbookNameRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3467,6 +6361,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   NameResponse  > GetWorkbookNameAsync(GetWorkbookNameRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    NameResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3477,6 +6382,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorkbookNameAsync(PostWorkbookNameRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3493,6 +6409,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   RangeValueResponse  > GetWorkbookNameValueAsync(GetWorkbookNameValueRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    RangeValueResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3503,6 +6430,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorkbookNamesAsync(DeleteWorkbookNamesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3519,6 +6457,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorkbookNameAsync(DeleteWorkbookNameRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3529,6 +6478,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    WorkbookResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   WorkbookResponse  > PostWorkbooksMergeAsync(PostWorkbooksMergeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    WorkbookResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3545,6 +6505,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   TextItemsResponse  > PostWorkbooksTextSearchAsync(PostWorkbooksTextSearchRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    TextItemsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3555,6 +6526,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    WorkbookReplaceResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   WorkbookReplaceResponse  > PostWorkbookTextReplaceAsync(PostWorkbookTextReplaceRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    WorkbookReplaceResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3571,6 +6553,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > PostWorkbookGetSmartMarkerResultAsync(PostWorkbookGetSmartMarkerResultRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3581,6 +6574,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorkbookCreateAsync(PutWorkbookCreateRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3597,6 +6601,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   SplitResultResponse  > PostWorkbookSplitAsync(PostWorkbookSplitRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    SplitResultResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3607,6 +6622,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorkbookCalculateFormulaAsync(PostWorkbookCalculateFormulaRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3623,6 +6649,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostAutofitWorkbookRowsAsync(PostAutofitWorkbookRowsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3633,6 +6670,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostAutofitWorkbookColumnsAsync(PostAutofitWorkbookColumnsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3649,6 +6697,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   WorkbookSettingsResponse  > GetWorkbookSettingsAsync(GetWorkbookSettingsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    WorkbookSettingsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3659,6 +6718,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorkbookSettingsAsync(PostWorkbookSettingsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3675,6 +6745,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorkbookBackgroundAsync(PutWorkbookBackgroundRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3685,6 +6766,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorkbookBackgroundAsync(DeleteWorkbookBackgroundRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3701,6 +6793,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorkbookWaterMarkerAsync(PutWorkbookWaterMarkerRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3711,6 +6814,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return System.Convert.ToInt32( result); 
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   int?  > GetPageCountAsync(GetPageCountRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return System.Convert.ToInt32( result); 
         }
 
@@ -3727,6 +6841,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   WorksheetsResponse  > GetWorksheetsAsync(GetWorksheetsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    WorksheetsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3737,6 +6862,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > GetWorksheetWithFormatAsync(GetWorksheetWithFormatRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3753,6 +6889,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutChangeVisibilityWorksheetAsync(PutChangeVisibilityWorksheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3763,6 +6910,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutActiveWorksheetAsync(PutActiveWorksheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3779,6 +6937,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutInsertNewWorksheetAsync(PutInsertNewWorksheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3789,6 +6958,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutAddNewWorksheetAsync(PutAddNewWorksheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3805,6 +6985,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetAsync(DeleteWorksheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3815,6 +7006,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetsAsync(DeleteWorksheetsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3831,6 +7033,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostMoveWorksheetAsync(PostMoveWorksheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3841,6 +7054,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutProtectWorksheetAsync(PutProtectWorksheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3857,6 +7081,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteUnprotectWorksheetAsync(DeleteUnprotectWorksheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3867,6 +7102,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    TextItemsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   TextItemsResponse  > GetWorksheetTextItemsAsync(GetWorksheetTextItemsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    TextItemsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3883,6 +7129,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CommentsResponse  > GetWorksheetCommentsAsync(GetWorksheetCommentsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CommentsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3893,6 +7150,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CommentResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CommentResponse  > GetWorksheetCommentAsync(GetWorksheetCommentRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CommentResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3909,6 +7177,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CommentResponse  > PutWorksheetCommentAsync(PutWorksheetCommentRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CommentResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3919,6 +7198,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetCommentAsync(PostWorksheetCommentRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3935,6 +7225,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetCommentAsync(DeleteWorksheetCommentRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3945,6 +7246,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetCommentsAsync(DeleteWorksheetCommentsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3961,6 +7273,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   MergedCellsResponse  > GetWorksheetMergedCellsAsync(GetWorksheetMergedCellsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    MergedCellsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3971,6 +7294,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    MergedCellResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   MergedCellResponse  > GetWorksheetMergedCellAsync(GetWorksheetMergedCellRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    MergedCellResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -3987,6 +7321,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   SingleValueResponse  > GetWorksheetCalculateFormulaAsync(GetWorksheetCalculateFormulaRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    SingleValueResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -3997,6 +7342,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    SingleValueResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   SingleValueResponse  > PostWorksheetCalculateFormulaAsync(PostWorksheetCalculateFormulaRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    SingleValueResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -4013,6 +7369,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   TextItemsResponse  > PostWorksheetTextSearchAsync(PostWorksheetTextSearchRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    TextItemsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -4023,6 +7390,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    WorksheetReplaceResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   WorksheetReplaceResponse  > PostWorksheetTextReplaceAsync(PostWorksheetTextReplaceRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    WorksheetReplaceResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -4039,6 +7417,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetRangeSortAsync(PostWorksheetRangeSortRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -4049,6 +7438,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostAutofitWorksheetRowAsync(PostAutofitWorksheetRowRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -4065,6 +7465,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostAutofitWorksheetRowsAsync(PostAutofitWorksheetRowsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -4075,6 +7486,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostAutofitWorksheetColumnsAsync(PostAutofitWorksheetColumnsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -4091,6 +7513,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetBackgroundAsync(PutWorksheetBackgroundRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -4101,6 +7534,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetBackgroundAsync(DeleteWorksheetBackgroundRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -4117,6 +7561,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetFreezePanesAsync(PutWorksheetFreezePanesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -4127,6 +7582,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetFreezePanesAsync(DeleteWorksheetFreezePanesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -4143,6 +7609,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostCopyWorksheetAsync(PostCopyWorksheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -4153,6 +7630,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostRenameWorksheetAsync(PostRenameWorksheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -4169,6 +7657,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostUpdateWorksheetPropertyAsync(PostUpdateWorksheetPropertyRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -4179,6 +7678,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    RangesResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   RangesResponse  > GetNamedRangesAsync(GetNamedRangesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    RangesResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -4195,6 +7705,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   RangeValueResponse  > GetNamedRangeValueAsync(GetNamedRangeValueRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    RangeValueResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -4205,6 +7726,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostUpdateWorksheetZoomAsync(PostUpdateWorksheetZoomRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -4221,6 +7753,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return System.Convert.ToInt32( result); 
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   int?  > GetWorksheetPageCountAsync(GetWorksheetPageCountRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return System.Convert.ToInt32( result); 
+        }
+
 
 
         /// <summary>
@@ -4231,6 +7774,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    ValidationsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   ValidationsResponse  > GetWorksheetValidationsAsync(GetWorksheetValidationsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    ValidationsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -4247,6 +7801,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   ValidationResponse  > GetWorksheetValidationAsync(GetWorksheetValidationRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    ValidationResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -4257,6 +7822,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PutWorksheetValidationAsync(PutWorksheetValidationRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -4273,6 +7849,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetValidationAsync(PostWorksheetValidationRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -4283,6 +7870,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetValidationAsync(DeleteWorksheetValidationRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -4299,6 +7897,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > DeleteWorksheetValidationsAsync(DeleteWorksheetValidationsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -4308,6 +7917,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > DownloadFileAsync(DownloadFileRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -4323,6 +7943,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FilesUploadResult  > UploadFileAsync(UploadFileRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FilesUploadResult  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -4334,6 +7965,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             var result = invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
             return ;
         }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+        public async Task CopyFileAsync(CopyFileRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return ;
+        }
+
 
 
 
@@ -4347,6 +7989,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return ;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+        public async Task MoveFileAsync(MoveFileRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return ;
+        }
+
+
 
 
         /// <summary>
@@ -4359,6 +8012,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return ;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+        public async Task DeleteFileAsync(DeleteFileRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return ;
+        }
+
+
 
 
         /// <summary>
@@ -4368,6 +8032,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FilesList  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FilesList  > GetFilesListAsync(GetFilesListRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FilesList  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -4383,6 +8058,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return ;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+        public async Task CreateFolderAsync(CreateFolderRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return ;
+        }
+
+
 
 
         /// <summary>
@@ -4394,6 +8080,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             var result = invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
             return ;
         }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+        public async Task CopyFolderAsync(CopyFolderRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return ;
+        }
+
 
 
 
@@ -4407,6 +8104,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return ;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+        public async Task MoveFolderAsync(MoveFolderRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return ;
+        }
+
+
 
 
         /// <summary>
@@ -4419,6 +8127,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return ;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+        public async Task DeleteFolderAsync(DeleteFolderRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return ;
+        }
+
+
 
 
         /// <summary>
@@ -4428,6 +8147,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    StorageExist  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   StorageExist  > StorageExistsAsync(StorageExistsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    StorageExist  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -4443,6 +8173,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   ObjectExist  > ObjectExistsAsync(ObjectExistsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    ObjectExist  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -4455,6 +8196,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   DiscUsage  > GetDiscUsageAsync(GetDiscUsageRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    DiscUsage  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
 
 
         /// <summary>
@@ -4464,6 +8216,17 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    FileVersions  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileVersions  > GetFileVersionsAsync(GetFileVersionsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileVersions  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 

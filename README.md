@@ -1,4 +1,4 @@
-![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/24.9.0)
+![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/24.10)
 
 # .NET package for Aspose.Cells Cloud
 
@@ -17,12 +17,11 @@ Enhance your .NET applications with the [Aspose.Cells Cloud](https://products.as
 - Import/Export: Facilitates importing data from various sources into spreadsheets and exporting spreadsheet data to other formats.
 - Security Management: Offers a range of security features like data encryption, access control, and permission management to safeguard the security and integrity of spreadsheet data.
 
-## Feature & Enhancements in Version 24.9
+## Feature & Enhancements in Version 24.10
 
 Full list of issues covering all changes in this release:
 
-- Add word case function for TextProcessingController.
-- Support to export Worksheet to HTML with cell address or id.
+- Add the new feature about removing characters on TextProcessingController.
 
 ## Support file format
 
@@ -93,6 +92,11 @@ var response = cellsApi.CellsWorksheetsPutAddNewWorksheet(name, sheetName, posit
 
 
 # Release history version
+
+## Enhancements in Version 24.9
+
+- Add word case function for TextProcessingController.
+- Support to export Worksheet to HTML with cell address or id.
 
 ## Enhancements in Version 24.8
 
