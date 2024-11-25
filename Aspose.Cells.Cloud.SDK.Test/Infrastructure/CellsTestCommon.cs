@@ -112,7 +112,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests
                 int pos = localFolder.IndexOf("bin");
                 if(pos >0)
                 {
-                    localFolder = Path.Combine( localFolder.Substring(0, pos),"./../","TestData");
+                    localFolder = Path.Combine( localFolder.Substring(0, pos),"./../","TestData/CellsCloud");
                 }
             }
 
