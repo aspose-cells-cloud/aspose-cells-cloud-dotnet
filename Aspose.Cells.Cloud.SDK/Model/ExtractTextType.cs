@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="Top10Filter.cs">
+// <copyright company="Aspose" file="ExtractTextType.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,54 +35,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    ///            Represents the top 10 filter.
-    ///            
+    /// ExtractTextType.
     /// </summary>
-    public class Top10Filter
+    [JsonConverter(typeof(StringEnumConverter))]
+    public enum ExtractTextType
     {
-        /// <summary>
-        /// Gets or sets FieldIndex.
-        /// </summary>
-        public virtual int? FieldIndex { get; set; }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        public virtual string Criteria { get; set; }
-
-        /// <summary>
-        /// Indicates whether the items is percent.
-        ///  
-        /// </summary>
-        public virtual bool? IsPercent { get; set; }
-
-        /// <summary>
-        /// Indicates whether it's top filter.
-        ///  
-        /// </summary>
-        public virtual bool? IsTop { get; set; }
-
-        /// <summary>
-        /// Gets and sets the items of the filter.
-        ///  
-        /// </summary>
-        public virtual int? Items { get; set; }
-
-        /// <summary>
-        /// Get the string presentation of the object.
-        /// </summary>
-        /// <returns>String presentation of the object.</returns>
-        public override string ToString()
-        {
-            var sb = new StringBuilder();
-            sb.Append("class Top10Filter {\n");
-            sb.Append("  FieldIndex: ").Append(this.FieldIndex).Append("\n");
-            sb.Append("  Criteria: ").Append(this.Criteria).Append("\n");
-            sb.Append("  IsPercent: ").Append(this.IsPercent).Append("\n");
-            sb.Append("  IsTop: ").Append(this.IsTop).Append("\n");
-            sb.Append("  Items: ").Append(this.Items).Append("\n");
-            sb.Append("}\n");
-            return sb.ToString();
-        }
     }
 }

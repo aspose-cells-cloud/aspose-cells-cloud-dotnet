@@ -9,10 +9,10 @@
 //  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 //  copies of the Software, and to permit persons to whom the Software is
 //  furnished to do so, subject to the following conditions:
-// 
+//
 //  The above copyright notice and this permission notice shall be included in all
 //  copies or substantial portions of the Software.
-// 
+//
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 //  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 //  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -25,7 +25,7 @@
 
 namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
 {
-    using Microsoft.VisualStudio.TestTools.UnitTesting;    
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Aspose.Cells.Cloud.SDK.Model;
     using Aspose.Cells.Cloud.SDK.Request;
     using System.Collections.Generic;
@@ -133,8 +133,9 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
         /// <summary>
         /// Test for GetWorksheetPivotTableFilter of PivotTablesController.
         /// </summary>
-        [TestCategory(ProductName)]
+     /*   [TestCategory(ProductName)]
         [TestMethod]
+        [Ignore]
         public void TestGetWorksheetPivotTableFilter()
         {
             string localName = "TestCase.xlsx";
@@ -152,7 +153,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             );
             var actual =  this.CellsApi.GetWorksheetPivotTableFilter(request);
             Assert.AreEqual(200, actual.Code);
-        }
+        }*/
 
         /// <summary>
         /// Test for PutWorksheetPivotTable of PivotTablesController.
@@ -213,12 +214,13 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             var actual =  this.CellsApi.PutPivotTableField(request);
             Assert.AreEqual(200, actual.Code);
         }
-
+/*
         /// <summary>
         /// Test for PutWorksheetPivotTableFilter of PivotTablesController.
         /// </summary>
         [TestCategory(ProductName)]
         [TestMethod]
+        [Ignore]
         public void TestPutWorksheetPivotTableFilter()
         {
             string localName = "TestCase.xlsx";
@@ -243,6 +245,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             var actual =  this.CellsApi.PutWorksheetPivotTableFilter(request);
             Assert.AreEqual(200, actual.Code);
         }
+        */
 
         /// <summary>
         /// Test for PostPivotTableFieldHideItem of PivotTablesController.

@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="PivotFilter.cs">
+// <copyright company="Aspose" file="RemoveDuplicatesOptions.cs">
 //   Copyright (c) 2024 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,63 +35,39 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents a PivotFilter in PivotFilter Collection.
+    /// 
     /// </summary>
-    public class PivotFilter
+    public class RemoveDuplicatesOptions : BaseOperateOptions
     {
         /// <summary>
-        /// Gets the autofilter of the pivot filter.
+        /// 
         /// </summary>
-        public virtual AutoFilter AutoFilter { get; set; }
-
-        /// <summary>
-        /// Gets the Evaluation Order of the pivot filter.
-        /// </summary>
-        public virtual int? EvaluationOrder { get; set; }
-
-        /// <summary>
-        /// Gets the field index of the pivot filter.
-        /// </summary>
-        public virtual int? FieldIndex { get; set; }
-
-        /// <summary>
-        /// Gets the autofilter type of the pivot filter.
-        /// </summary>
-        public virtual string FilterType { get; set; }
-
-        /// <summary>
-        /// Gets the measure field index of the pivot filter.
-        ///             
-        /// </summary>
-        public virtual int? ValueFieldIndex { get; set; }
-
-        /// <summary>
-        /// Gets the member property field index of the pivot filter.
-        ///             
-        /// </summary>
-        public virtual int? MemberPropertyFieldIndex { get; set; }
-
-        /// <summary>
-        /// Gets the name of the pivot filter.
-        /// </summary>
-        public virtual string Name { get; set; }
-
-        /// <summary>
-        /// Gets the string value1 of the label pivot filter.
-        ///             
-        /// </summary>
-        public virtual string Value1 { get; set; }
-
-        /// <summary>
-        /// Gets the string value2 of the label pivot filter.
-        ///             
-        /// </summary>
-        public virtual string Value2 { get; set; }
+        public override string Name { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        public virtual Top10Filter Top10Filter { get; set; }
+        public virtual DataSource DataSource { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual FileInfo FileInfo { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual string Worksheet { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual string RemoveDuplicatesArea { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual string RemoveDuplicatesAreaValue { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object.
@@ -100,17 +76,13 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class PivotFilter {\n");
-            sb.Append("  AutoFilter: ").Append(this.AutoFilter).Append("\n");
-            sb.Append("  EvaluationOrder: ").Append(this.EvaluationOrder).Append("\n");
-            sb.Append("  FieldIndex: ").Append(this.FieldIndex).Append("\n");
-            sb.Append("  FilterType: ").Append(this.FilterType).Append("\n");
-            sb.Append("  ValueFieldIndex: ").Append(this.ValueFieldIndex).Append("\n");
-            sb.Append("  MemberPropertyFieldIndex: ").Append(this.MemberPropertyFieldIndex).Append("\n");
+            sb.Append("class RemoveDuplicatesOptions {\n");
             sb.Append("  Name: ").Append(this.Name).Append("\n");
-            sb.Append("  Value1: ").Append(this.Value1).Append("\n");
-            sb.Append("  Value2: ").Append(this.Value2).Append("\n");
-            sb.Append("  Top10Filter: ").Append(this.Top10Filter).Append("\n");
+            sb.Append("  DataSource: ").Append(this.DataSource).Append("\n");
+            sb.Append("  FileInfo: ").Append(this.FileInfo).Append("\n");
+            sb.Append("  Worksheet: ").Append(this.Worksheet).Append("\n");
+            sb.Append("  RemoveDuplicatesArea: ").Append(this.RemoveDuplicatesArea).Append("\n");
+            sb.Append("  RemoveDuplicatesAreaValue: ").Append(this.RemoveDuplicatesAreaValue).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

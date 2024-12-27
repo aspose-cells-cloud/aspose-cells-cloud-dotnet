@@ -6278,6 +6278,52 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostRemoveDuplicatesRequest" /></param>
+        public   FileInfo  PostRemoveDuplicates(PostRemoveDuplicatesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostRemoveDuplicatesAsync(PostRemoveDuplicatesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostExtractTextRequest" /></param>
+        public   FileInfo  PostExtractText(PostExtractTextRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostExtractTextAsync(PostExtractTextRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        /// <summary>
         /// Retrieve the description of the default style for the workbook .
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorkbookDefaultStyleRequest" /></param>
