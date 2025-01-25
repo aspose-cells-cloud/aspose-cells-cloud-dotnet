@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="DataDeduplicationRequest.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// DataDeduplicationRequest.
     /// </summary>
     public class DataDeduplicationRequest
     {
@@ -45,7 +45,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual FileInfo File { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets DeduplicationRegion.
         /// </summary>
         public virtual DeduplicationRegion DeduplicationRegion { get; set; }
 

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PostWorksheetCellsRangesCopyRequest.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,11 +47,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetCellsRangesCopyRequest"/> class.
         /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="rangeOperate">RangeCopyRequestcopydata,copystyle,copyto,copyvalue</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="rangeOperate"></param>
+        /// <param name="folder"></param>
+        /// <param name="storageName"></param>
         public PostWorksheetCellsRangesCopyRequest(string name, string sheetName, RangeCopyRequest rangeOperate, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -62,27 +62,27 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// The file name.
+        /// Gets or sets name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// The worksheet name.
+        /// Gets or sets sheetName.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// RangeCopyRequestcopydata,copystyle,copyto,copyvalue
+        /// Gets or sets rangeOperate.
         /// </summary>
         public RangeCopyRequest rangeOperate { get; set; }
 
         /// <summary>
-        /// Original workbook folder.
+        /// Gets or sets folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Storage name.
+        /// Gets or sets storageName.
         /// </summary>
         public string storageName { get; set; }
 

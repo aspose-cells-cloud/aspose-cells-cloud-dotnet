@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ProtectSheetParameter.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// ProtectSheetParameter.
     /// </summary>
     public class ProtectSheetParameter
     {
         /// <summary>
-        /// 
+        /// Gets or sets ProtectionType.
         /// </summary>
         public virtual string ProtectionType { get; set; }
 

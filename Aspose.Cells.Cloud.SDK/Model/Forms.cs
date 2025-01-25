@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="Forms.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Forms.
     /// </summary>
     public class Forms : LinkElement
     {
         /// <summary>
-        /// 
+        /// Gets or sets FormList.
         /// </summary>
         public virtual IList<LinkElement> FormList { get; set; }
 

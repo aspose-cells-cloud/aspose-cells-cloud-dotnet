@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="GetWorkbookRequest.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,19 +47,19 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorkbookRequest"/> class.
         /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="format">The conversion format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).</param>
-        /// <param name="password">The password needed to open an Excel file.</param>
-        /// <param name="isAutoFit">Specifies whether set workbook rows to be autofit.</param>
-        /// <param name="onlySaveTable">Specifies whether only save table data.Only use pdf to excel.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="outPath">Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        /// <param name="outStorageName">The storage name where the output file is situated.</param>
-        /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
-        /// <param name="region">The regional settings for workbook.</param>
-        /// <param name="pageWideFitOnPerSheet">The page wide fit on worksheet.</param>
-        /// <param name="pageTallFitOnPerSheet">The page tall fit on worksheet.</param>
+        /// <param name="name"></param>
+        /// <param name="format"></param>
+        /// <param name="password"></param>
+        /// <param name="isAutoFit"></param>
+        /// <param name="onlySaveTable"></param>
+        /// <param name="folder"></param>
+        /// <param name="outPath"></param>
+        /// <param name="storageName"></param>
+        /// <param name="outStorageName"></param>
+        /// <param name="checkExcelRestriction"></param>
+        /// <param name="region"></param>
+        /// <param name="pageWideFitOnPerSheet"></param>
+        /// <param name="pageTallFitOnPerSheet"></param>
         public GetWorkbookRequest(string name, string format = null, string password = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string outPath = null, string storageName = null, string outStorageName = null, bool? checkExcelRestriction = null, string region = null, bool? pageWideFitOnPerSheet = null, bool? pageTallFitOnPerSheet = null)
         {
             this.name = name;
@@ -78,67 +78,67 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// The file name.
+        /// Gets or sets name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// The conversion format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).
+        /// Gets or sets format.
         /// </summary>
         public string format { get; set; }
 
         /// <summary>
-        /// The password needed to open an Excel file.
+        /// Gets or sets password.
         /// </summary>
         public string password { get; set; }
 
         /// <summary>
-        /// Specifies whether set workbook rows to be autofit.
+        /// Gets or sets isAutoFit.
         /// </summary>
         public bool? isAutoFit { get; set; }
 
         /// <summary>
-        /// Specifies whether only save table data.Only use pdf to excel.
+        /// Gets or sets onlySaveTable.
         /// </summary>
         public bool? onlySaveTable { get; set; }
 
         /// <summary>
-        /// The folder where the file is situated.
+        /// Gets or sets folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder.
+        /// Gets or sets outPath.
         /// </summary>
         public string outPath { get; set; }
 
         /// <summary>
-        /// The storage name where the file is situated.
+        /// Gets or sets storageName.
         /// </summary>
         public string storageName { get; set; }
 
         /// <summary>
-        /// The storage name where the output file is situated.
+        /// Gets or sets outStorageName.
         /// </summary>
         public string outStorageName { get; set; }
 
         /// <summary>
-        /// Whether check restriction of excel file when user modify cells related objects.
+        /// Gets or sets checkExcelRestriction.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
 
         /// <summary>
-        /// The regional settings for workbook.
+        /// Gets or sets region.
         /// </summary>
         public string region { get; set; }
 
         /// <summary>
-        /// The page wide fit on worksheet.
+        /// Gets or sets pageWideFitOnPerSheet.
         /// </summary>
         public bool? pageWideFitOnPerSheet { get; set; }
 
         /// <summary>
-        /// The page tall fit on worksheet.
+        /// Gets or sets pageTallFitOnPerSheet.
         /// </summary>
         public bool? pageTallFitOnPerSheet { get; set; }
 

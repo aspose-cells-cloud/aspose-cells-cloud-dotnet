@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="GetWorksheetListObjectsRequest.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,10 +47,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetListObjectsRequest"/> class.
         /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="folder"></param>
+        /// <param name="storageName"></param>
         public GetWorksheetListObjectsRequest(string name, string sheetName, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -60,22 +60,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// The file name.
+        /// Gets or sets name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// The worksheet name.
+        /// Gets or sets sheetName.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// The folder where the file is situated.
+        /// Gets or sets folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// The storage name where the file is situated.
+        /// Gets or sets storageName.
         /// </summary>
         public string storageName { get; set; }
 

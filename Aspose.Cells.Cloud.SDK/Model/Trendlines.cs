@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="Trendlines.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Trendlines : LinkElement
     {
         /// <summary>
-        /// 
+        /// Gets or sets TrendlineList.
         /// </summary>
         public virtual IList<Trendline> TrendlineList { get; set; }
 

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ImportBatchDataOption.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// ImportBatchDataOption.
     /// </summary>
     public class ImportBatchDataOption : ImportOption
     {
         /// <summary>
-        /// 
+        /// Gets or sets BatchData.
         /// </summary>
         public virtual IList<CellValue> BatchData { get; set; }
 

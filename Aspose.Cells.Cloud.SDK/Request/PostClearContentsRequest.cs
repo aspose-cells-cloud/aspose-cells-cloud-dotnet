@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PostClearContentsRequest.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,15 +47,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostClearContentsRequest"/> class.
         /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="range">Represents the range to which the specified cells applies.</param>
-        /// <param name="startRow">The start row index.</param>
-        /// <param name="startColumn">The start column index.</param>
-        /// <param name="endRow">The end row index.</param>
-        /// <param name="endColumn">The end column index.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
+        /// <param name="name"></param>
+        /// <param name="sheetName"></param>
+        /// <param name="range"></param>
+        /// <param name="startRow"></param>
+        /// <param name="startColumn"></param>
+        /// <param name="endRow"></param>
+        /// <param name="endColumn"></param>
+        /// <param name="folder"></param>
+        /// <param name="storageName"></param>
         public PostClearContentsRequest(string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -70,47 +70,47 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// The file name.
+        /// Gets or sets name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// The worksheet name.
+        /// Gets or sets sheetName.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Represents the range to which the specified cells applies.
+        /// Gets or sets range.
         /// </summary>
         public string range { get; set; }
 
         /// <summary>
-        /// The start row index.
+        /// Gets or sets startRow.
         /// </summary>
         public int? startRow { get; set; }
 
         /// <summary>
-        /// The start column index.
+        /// Gets or sets startColumn.
         /// </summary>
         public int? startColumn { get; set; }
 
         /// <summary>
-        /// The end row index.
+        /// Gets or sets endRow.
         /// </summary>
         public int? endRow { get; set; }
 
         /// <summary>
-        /// The end column index.
+        /// Gets or sets endColumn.
         /// </summary>
         public int? endColumn { get; set; }
 
         /// <summary>
-        /// The folder where the file is situated.
+        /// Gets or sets folder.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// The storage name where the file is situated.
+        /// Gets or sets storageName.
         /// </summary>
         public string storageName { get; set; }
 

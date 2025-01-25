@@ -15,7 +15,7 @@ this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
 var filter = new PivotFilter()
 {
-    FieldIndex = 1,
+    FieldIndex = 0,
     FilterType = "Count"
 };
 var request = new PutWorksheetPivotTableFilterRequest(

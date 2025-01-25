@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="Worksheet.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -41,7 +41,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Worksheet
     {
         /// <summary>
-        /// 
+        /// Gets or sets Links.
         /// </summary>
         public virtual IList<Link> Links { get; set; }
 

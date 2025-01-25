@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ColorFilter.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -46,7 +46,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? FilterByFillColor { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets Pattern.
         /// </summary>
         public virtual string Pattern { get; set; }
 

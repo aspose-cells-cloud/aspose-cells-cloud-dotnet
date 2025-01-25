@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PostExportRequest.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -48,11 +48,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="PostExportRequest"/> class.
         /// </summary>
         /// <param name="file">File to upload</param>
-        /// <param name="objectType">Exported object type:workbook/worksheet/chart/comment/picture/shape/listobject/oleobject.</param>
-        /// <param name="format">The conversion format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).</param>
-        /// <param name="password">The password needed to open an Excel file.</param>
-        /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
-        /// <param name="region">The regional settings for workbook.</param>
+        /// <param name="objectType"></param>
+        /// <param name="format"></param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction"></param>
+        /// <param name="region"></param>
         public PostExportRequest(IDictionary<string, System.IO.Stream> file, string objectType = null, string format = null, string password = null, bool? checkExcelRestriction = null, string region = null)
         {
             this.File = file;
@@ -69,27 +69,27 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public IDictionary<string, System.IO.Stream> File { get; set; }
 
         /// <summary>
-        /// Exported object type:workbook/worksheet/chart/comment/picture/shape/listobject/oleobject.
+        /// Gets or sets objectType.
         /// </summary>
         public string objectType { get; set; }
 
         /// <summary>
-        /// The conversion format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).
+        /// Gets or sets format.
         /// </summary>
         public string format { get; set; }
 
         /// <summary>
-        /// The password needed to open an Excel file.
+        /// Gets or sets password.
         /// </summary>
         public string password { get; set; }
 
         /// <summary>
-        /// Whether check restriction of excel file when user modify cells related objects.
+        /// Gets or sets checkExcelRestriction.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
 
         /// <summary>
-        /// The regional settings for workbook.
+        /// Gets or sets region.
         /// </summary>
         public string region { get; set; }
 

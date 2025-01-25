@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PostAnalyzeExcelRequest.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,14 +47,14 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostAnalyzeExcelRequest"/> class.
         /// </summary>
-        /// <param name="analyzeExcelRequest">Excel files and analysis output requirements</param>
+        /// <param name="analyzeExcelRequest"></param>
         public PostAnalyzeExcelRequest(AnalyzeExcelRequest analyzeExcelRequest)
         {
             this.analyzeExcelRequest = analyzeExcelRequest;
         }
 
         /// <summary>
-        /// Excel files and analysis output requirements
+        /// Gets or sets analyzeExcelRequest.
         /// </summary>
         public AnalyzeExcelRequest analyzeExcelRequest { get; set; }
 

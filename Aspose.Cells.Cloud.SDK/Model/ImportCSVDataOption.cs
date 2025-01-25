@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ImportCSVDataOption.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// ImportCSVDataOption.
     /// </summary>
     public class ImportCSVDataOption : ImportOption
     {
         /// <summary>
-        /// 
+        /// Gets or sets SeparatorString.
         /// </summary>
         public virtual string SeparatorString { get; set; }
 

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PostBatchConvertRequest.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,14 +47,14 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="PostBatchConvertRequest"/> class.
         /// </summary>
-        /// <param name="batchConvertRequest">BatchConvertRequest Batch conversion file request. </param>
+        /// <param name="batchConvertRequest"></param>
         public PostBatchConvertRequest(BatchConvertRequest batchConvertRequest)
         {
             this.batchConvertRequest = batchConvertRequest;
         }
 
         /// <summary>
-        /// BatchConvertRequest Batch conversion file request. 
+        /// Gets or sets batchConvertRequest.
         /// </summary>
         public BatchConvertRequest batchConvertRequest { get; set; }
 

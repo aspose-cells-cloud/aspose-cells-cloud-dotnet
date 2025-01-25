@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="OleObjects.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class OleObjects : LinkElement
     {
         /// <summary>
-        /// 
+        /// Gets or sets OleObjectList.
         /// </summary>
         public virtual IList<LinkElement> OleObjectList { get; set; }
 

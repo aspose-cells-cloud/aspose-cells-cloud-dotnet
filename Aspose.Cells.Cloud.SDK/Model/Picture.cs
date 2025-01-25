@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="Picture.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -60,7 +60,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual int? OriginalWidth { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets ImageFormat.
         /// </summary>
         public virtual string ImageFormat { get; set; }
 

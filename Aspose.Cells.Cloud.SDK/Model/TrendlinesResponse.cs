@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="TrendlinesResponse.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class TrendlinesResponse : CellsCloudResponse
     {
         /// <summary>
-        /// 
+        /// Gets or sets Trendlines.
         /// </summary>
         public virtual Trendlines Trendlines { get; set; }
 

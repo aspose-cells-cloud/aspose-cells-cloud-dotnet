@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="AnalyzedColumnDescription.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -50,7 +50,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual int? ColumnIndex { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets Title.
         /// </summary>
         public virtual string Title { get; set; }
 

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PivotTablesControllerTests.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -133,9 +133,8 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
         /// <summary>
         /// Test for GetWorksheetPivotTableFilter of PivotTablesController.
         /// </summary>
-     /*   [TestCategory(ProductName)]
+        [TestCategory(ProductName)]
         [TestMethod]
-        [Ignore]
         public void TestGetWorksheetPivotTableFilter()
         {
             string localName = "TestCase.xlsx";
@@ -153,7 +152,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             );
             var actual =  this.CellsApi.GetWorksheetPivotTableFilter(request);
             Assert.AreEqual(200, actual.Code);
-        }*/
+        }
 
         /// <summary>
         /// Test for PutWorksheetPivotTable of PivotTablesController.
@@ -214,24 +213,42 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             var actual =  this.CellsApi.PutPivotTableField(request);
             Assert.AreEqual(200, actual.Code);
         }
-/*
-        /// <summary>
+
+         /// <summary>
         /// Test for PutWorksheetPivotTableFilter of PivotTablesController.
         /// </summary>
         [TestCategory(ProductName)]
         [TestMethod]
-        [Ignore]
         public void TestPutWorksheetPivotTableFilter()
         {
             string localName = "TestCase.xlsx";
             string remoteName = "TestCase.xlsx";
-
             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
+            Top10Filter top10Filter = new Top10Filter
+            {
+                Items = 1,
+                IsTop = true,
+                IsPercent = true
+            };
+            FilterColumn filterColumn = new FilterColumn
+            {
+                FilterType = "Top10Filter",
+                FieldIndex = 0,
+                Top10Filter = top10Filter
+            };
+            List<FilterColumn> filterColumns = new List<FilterColumn> { filterColumn };
+
+            AutoFilter autoFilter = new AutoFilter
+            {
+                FilterColumns = filterColumns
+            };
             var filter = new PivotFilter()
             {
                 FieldIndex = 1,
-                FilterType = "Count"
+                FilterType = "Count",
+                AutoFilter = autoFilter
+
             };
             var request = new PutWorksheetPivotTableFilterRequest(
                 name: remoteName,
@@ -245,7 +262,6 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             var actual =  this.CellsApi.PutWorksheetPivotTableFilter(request);
             Assert.AreEqual(200, actual.Code);
         }
-        */
 
         /// <summary>
         /// Test for PostPivotTableFieldHideItem of PivotTablesController.

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="AutoShapesResponse.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class AutoShapesResponse : CellsCloudResponse
     {
         /// <summary>
-        /// 
+        /// Gets or sets AutoShapes.
         /// </summary>
         public virtual AutoShapes AutoShapes { get; set; }
 

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="FilterColumn.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string FilterType { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets MultipleFilters.
         /// </summary>
         public virtual MultipleFilters MultipleFilters { get; set; }
 

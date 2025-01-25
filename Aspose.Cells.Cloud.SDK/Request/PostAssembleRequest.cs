@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="PostAssembleRequest.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -49,10 +49,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         /// <param name="file">File to upload</param>
         /// <param name="datasource"></param>
-        /// <param name="outFormat">The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
-        /// <param name="password">The password needed to open an Excel file.</param>
-        /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
-        /// <param name="region">The regional settings for workbook.</param>
+        /// <param name="outFormat"></param>
+        /// <param name="password"></param>
+        /// <param name="checkExcelRestriction"></param>
+        /// <param name="region"></param>
         public PostAssembleRequest(IDictionary<string, System.IO.Stream> file, string datasource, string outFormat = null, string password = null, bool? checkExcelRestriction = null, string region = null)
         {
             this.File = file;
@@ -74,22 +74,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string datasource { get; set; }
 
         /// <summary>
-        /// The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)
+        /// Gets or sets outFormat.
         /// </summary>
         public string outFormat { get; set; }
 
         /// <summary>
-        /// The password needed to open an Excel file.
+        /// Gets or sets password.
         /// </summary>
         public string password { get; set; }
 
         /// <summary>
-        /// Whether check restriction of excel file when user modify cells related objects.
+        /// Gets or sets checkExcelRestriction.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
 
         /// <summary>
-        /// The regional settings for workbook.
+        /// Gets or sets region.
         /// </summary>
         public string region { get; set; }
 

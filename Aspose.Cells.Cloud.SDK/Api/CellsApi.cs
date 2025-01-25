@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="CellsApi.cs">
-//   Copyright (c) 2024 Aspose.Cells Cloud
+//   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -66,7 +66,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
         /// <summary>
-        /// Perform business analysis of data in Excel files.
         /// </summary>
         /// <param name="request">Request. <see cref="PostAnalyzeExcelRequest" /></param>
         public   IList<AnalyzedResult>  PostAnalyzeExcel(PostAnalyzeExcelRequest request)
@@ -90,7 +89,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve the description of auto filters from a worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetAutoFilterRequest" /></param>
         public   AutoFilterResponse  GetWorksheetAutoFilter(GetWorksheetAutoFilterRequest request)
@@ -402,7 +400,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Get autoshapes description in worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetAutoshapesRequest" /></param>
         public   AutoShapesResponse  GetWorksheetAutoshapes(GetWorksheetAutoshapesRequest request)
@@ -450,7 +447,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Batch converting files that meet specific matching conditions.
         /// </summary>
         /// <param name="request">Request. <see cref="PostBatchConvertRequest" /></param>
         public   Stream  PostBatchConvert(PostBatchConvertRequest request)
@@ -594,7 +590,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Clear cell area contents in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PostClearContentsRequest" /></param>
         public   CellsCloudResponse  PostClearContents(PostClearContentsRequest request)
@@ -978,7 +973,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve descriptions of worksheet columns.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetColumnsRequest" /></param>
         public   ColumnsResponse  GetWorksheetColumns(GetWorksheetColumnsRequest request)
@@ -1242,7 +1236,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve descriptions of rows in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetRowsRequest" /></param>
         public   RowsResponse  GetWorksheetRows(GetWorksheetRowsRequest request)
@@ -1602,7 +1595,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve chart area description in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetChartAreaRequest" /></param>
         public   ChartAreaResponse  GetChartArea(GetChartAreaRequest request)
@@ -1674,7 +1666,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve descriptions of charts in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetChartsRequest" /></param>
         public   ChartsResponse  GetWorksheetCharts(GetWorksheetChartsRequest request)
@@ -2250,7 +2241,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve descriptions of conditional formattings in a worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetConditionalFormattingsRequest" /></param>
         public   ConditionalFormattingsResponse  GetWorksheetConditionalFormattings(GetWorksheetConditionalFormattingsRequest request)
@@ -2466,7 +2456,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve workbooks in various formats.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorkbookRequest" /></param>
         public   Stream  GetWorkbook(GetWorkbookRequest request)
@@ -2754,7 +2743,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Export Excel internal elements or the workbook itself to various format files.
         /// </summary>
         /// <param name="request">Request. <see cref="PostExportRequest" /></param>
         public   FilesResult  PostExport(PostExportRequest request)
@@ -3067,7 +3055,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve descriptions of hyperlinks in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetHyperlinksRequest" /></param>
         public   HyperlinksResponse  GetWorksheetHyperlinks(GetWorksheetHyperlinksRequest request)
@@ -3211,7 +3198,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Assemble data files with template files to generate files in various formats.
         /// </summary>
         /// <param name="request">Request. <see cref="PostAssembleRequest" /></param>
         public   FilesResult  PostAssemble(PostAssembleRequest request)
@@ -3571,7 +3557,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve descriptions of ListObjects in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetListObjectsRequest" /></param>
         public   ListObjectsResponse  GetWorksheetListObjects(GetWorksheetListObjectsRequest request)
@@ -3883,7 +3868,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve descriptions of OLE objects in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetOleObjectsRequest" /></param>
         public   OleObjectsResponse  GetWorksheetOleObjects(GetWorksheetOleObjectsRequest request)
@@ -4027,7 +4011,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve descriptions of vertical page breaks in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetVerticalPageBreaksRequest" /></param>
         public   VerticalPageBreaksResponse  GetVerticalPageBreaks(GetVerticalPageBreaksRequest request)
@@ -4267,7 +4250,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve page setup description in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetPageSetupRequest" /></param>
         public   PageSetupResponse  GetPageSetup(GetPageSetupRequest request)
@@ -4483,7 +4465,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve descriptions of pictures in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetPicturesRequest" /></param>
         public   PicturesResponse  GetWorksheetPictures(GetWorksheetPicturesRequest request)
@@ -4627,7 +4608,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve descriptions of pivottables  in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetPivotTablesRequest" /></param>
         public   PivotTablesResponse  GetWorksheetPivotTables(GetWorksheetPivotTablesRequest request)
@@ -5131,7 +5111,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve descriptions of Excel file properties.
         /// </summary>
         /// <param name="request">Request. <see cref="GetDocumentPropertiesRequest" /></param>
         public   CellsDocumentPropertiesResponse  GetDocumentProperties(GetDocumentPropertiesRequest request)
@@ -5251,7 +5230,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Excel file digital signature.
         /// </summary>
         /// <param name="request">Request. <see cref="PostDigitalSignatureRequest" /></param>
         public   CellsCloudResponse  PostDigitalSignature(PostDigitalSignatureRequest request)
@@ -5491,7 +5469,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Copy content from the source range to the destination range in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="PostWorksheetCellsRangesCopyRequest" /></param>
         public   CellsCloudResponse  PostWorksheetCellsRangesCopy(PostWorksheetCellsRangesCopyRequest request)
@@ -5803,7 +5780,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve descriptions of shapes in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetShapesRequest" /></param>
         public   ShapesResponse  GetWorksheetShapes(GetWorksheetShapesRequest request)
@@ -5995,7 +5971,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve descriptions of sparkline groups in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetSparklineGroupsRequest" /></param>
         public   SparklineGroupsResponse  GetWorksheetSparklineGroups(GetWorksheetSparklineGroupsRequest request)
@@ -6324,7 +6299,29 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve the description of the default style for the workbook .
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostSplitTextRequest" /></param>
+        public   FileInfo  PostSplitText(PostSplitTextRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostSplitTextAsync(PostSplitTextRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        /// <summary>
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorkbookDefaultStyleRequest" /></param>
         public   StyleResponse  GetWorkbookDefaultStyle(GetWorkbookDefaultStyleRequest request)
@@ -6900,7 +6897,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve the description of worksheets from a workbook.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetsRequest" /></param>
         public   WorksheetsResponse  GetWorksheets(GetWorksheetsRequest request)
@@ -7836,7 +7832,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Retrieve descriptions of validations in the worksheet.
         /// </summary>
         /// <param name="request">Request. <see cref="GetWorksheetValidationsRequest" /></param>
         public   ValidationsResponse  GetWorksheetValidations(GetWorksheetValidationsRequest request)
