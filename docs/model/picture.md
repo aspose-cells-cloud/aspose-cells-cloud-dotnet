@@ -10,7 +10,7 @@ Encapsulates the object that represents a single picture in a spreadsheet.
 |BorderWeight|Floating|true|false |  |Gets or sets the weight of the border line of a picture in units of pt.|
 |OriginalHeight|Integer|true|false |  |Gets the original height of the picture.|
 |OriginalWidth|Integer|true|false |  |Gets the original width of the picture.|
-|ImageFormat|String|true|false |  ||
+|ImageFormat|String|true|false |  |This class has a property called "ImageFormat" that allows getting and setting a string value.|
 |SourceFullName|String|true|false |  |Gets or sets the path and name of the source file for the linked image.|
 |Name|String|true|false |  ||
 |MsoDrawingType|String|true|false |  ||

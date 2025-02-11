@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Comments : LinkElement
     {
         /// <summary>
-        /// Gets or sets CommentList.
+        /// Property Summary: The CommentList property is annotated to be serialized as XML elements under the tag "comment" and holds a collection of LinkElement objects.
         /// </summary>
         public virtual IList<LinkElement> CommentList { get; set; }
 

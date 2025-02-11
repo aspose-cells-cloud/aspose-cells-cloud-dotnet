@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string FilterType { get; set; }
 
         /// <summary>
-        /// Gets or sets MultipleFilters.
+        /// This class contains a property named "MultipleFilters" of type "MultipleFilters" that can be both read and written.
         /// </summary>
         public virtual MultipleFilters MultipleFilters { get; set; }
 

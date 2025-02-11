@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class LegendResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Legend.
+        /// This class has a public property called "Legend" of type "Legend" which has both a getter and a setter.
         /// </summary>
         public virtual Legend Legend { get; set; }
 

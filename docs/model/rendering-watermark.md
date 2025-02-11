@@ -6,7 +6,7 @@ Watermark for rendering.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|Rotation|Floating|true|false |  ||
+|Rotation|Floating|true|false |  |Gets or sets roation of the watermark in degrees.|
 |ScaleToPagePercent|Integer|true|false |  ||
 |Opacity|Floating|true|false |  ||
 |IsBackground|Boolean|true|false |  ||

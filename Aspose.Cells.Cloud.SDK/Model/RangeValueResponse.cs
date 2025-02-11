@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class RangeValueResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets CellsList.
+        /// Property Summary: Contains a list of elements labeled as "Cell".
         /// </summary>
         public virtual IList<Cell> CellsList { get; set; }
 

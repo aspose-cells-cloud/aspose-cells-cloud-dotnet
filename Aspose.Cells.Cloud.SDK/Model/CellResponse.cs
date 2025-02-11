@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class CellResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Cell.
+        /// A property named "Cell" of type "Cell" that has both a getter and a setter.
         /// </summary>
         public virtual Cell Cell { get; set; }
 

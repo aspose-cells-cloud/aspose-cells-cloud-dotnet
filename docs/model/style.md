@@ -26,7 +26,7 @@
 |TextDirection|String|true|false |  |Represents text reading order. |
 |VerticalAlignment|String|true|false |  |Gets or sets the vertical alignment type of the text in a cell. |
 |HorizontalAlignment|String|true|false |  |Gets or sets the horizontal alignment type of the text in a cell. |
-|BorderCollection|Container|true|false |  ||
+|BorderCollection|Container|true|false |  |A public property named `BorderCollection` that is a list of `Border` objects.|
 |BackgroundThemeColor|Class|true|false |  |Gets and sets the background theme color. |
 |ForegroundThemeColor|Class|true|false |  |Gets and sets the foreground theme color. |
 

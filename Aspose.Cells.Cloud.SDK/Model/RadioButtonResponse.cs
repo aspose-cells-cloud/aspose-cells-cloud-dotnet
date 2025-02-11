@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class RadioButtonResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shape.
+        /// This class has a public property named "Shape" of type RadioButton with both getter and setter.
         /// </summary>
         public virtual RadioButton Shape { get; set; }
 

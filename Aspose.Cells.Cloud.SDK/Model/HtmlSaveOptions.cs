@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class HtmlSaveOptions : SaveOptions
     {
         /// <summary>
-        /// Gets or sets ExportPageHeaders.
+        /// Indicates whether exporting page headers.
         /// </summary>
         public virtual bool? ExportPageHeaders { get; set; }
 

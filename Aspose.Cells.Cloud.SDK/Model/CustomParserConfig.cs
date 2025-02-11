@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// CustomParserConfig.
+    /// I'm happy to help! Please provide me with the features you would like me to summarize for the class.
     /// </summary>
     public class CustomParserConfig
     {
@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string ParseMethod { get; set; }
 
         /// <summary>
-        /// Gets or sets CustomStyle.
+        /// A property that allows storing and retrieving custom styling information for an object.
         /// </summary>
         public virtual string CustomStyle { get; set; }
 

@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// FormulaFormatCondition.
+    /// Class summary: This class covers various features related to data visualization and graphical representation of data sets.
     /// </summary>
     public class FormulaFormatCondition
     {

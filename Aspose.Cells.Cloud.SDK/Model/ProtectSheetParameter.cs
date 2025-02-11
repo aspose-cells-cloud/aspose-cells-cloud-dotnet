@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ProtectSheetParameter.
+    /// Class Summary: The features discussed include natural language processing, image recognition, data visualization, clustering, regression, classification, and recommendation systems.
     /// </summary>
     public class ProtectSheetParameter
     {
         /// <summary>
-        /// Gets or sets ProtectionType.
+        /// Property Summary: Defines a public string property for the ProtectionType.
         /// </summary>
         public virtual string ProtectionType { get; set; }
 

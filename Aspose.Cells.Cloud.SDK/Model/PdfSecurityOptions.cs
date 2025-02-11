@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PdfSecurityOptions
     {
         /// <summary>
-        /// Gets or sets AnnotationsPermission.
+        /// Indicates whether to allow to add or modify text annotations, fill in interactive form fields.
         /// </summary>
         public virtual bool? AnnotationsPermission { get; set; }
 

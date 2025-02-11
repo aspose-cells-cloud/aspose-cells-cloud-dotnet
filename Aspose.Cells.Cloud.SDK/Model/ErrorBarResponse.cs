@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ErrorBarResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets ErrorBar.
+        /// The class has a public property named ErrorBar of type ErrorBar with a getter and setter.
         /// </summary>
         public virtual ErrorBar ErrorBar { get; set; }
 

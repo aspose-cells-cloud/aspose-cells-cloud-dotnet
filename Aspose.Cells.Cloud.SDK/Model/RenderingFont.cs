@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class RenderingFont
     {
         /// <summary>
-        /// Gets or sets Name.
+        /// Gets name of the font.
         /// </summary>
         public virtual string Name { get; set; }
 

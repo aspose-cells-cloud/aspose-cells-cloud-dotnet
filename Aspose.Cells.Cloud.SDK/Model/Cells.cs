@@ -51,7 +51,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual int? MaxColumn { get; set; }
 
         /// <summary>
-        /// Gets or sets CellCount.
+        /// The class has a public property "CellCount" of type integer that can be read and modified.
         /// </summary>
         public virtual int? CellCount { get; set; }
 

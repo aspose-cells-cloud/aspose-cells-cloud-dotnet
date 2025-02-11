@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Link.
+    /// I'm glad to help! Please provide me with the features you would like me to summarize.
     /// </summary>
     public class Link
     {
         /// <summary>
-        /// Gets or sets Href.
+        /// Has a property named Href with the attribute ElementName set to "href".
         /// </summary>
         public virtual string Href { get; set; }
 

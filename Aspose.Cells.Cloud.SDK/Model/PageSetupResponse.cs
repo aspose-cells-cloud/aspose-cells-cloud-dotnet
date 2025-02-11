@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PageSetupResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets PageSetup.
+        /// Property Summary: The class has a public property named PageSetup of type PageSetup that can be accessed and modified.
         /// </summary>
         public virtual PageSetup PageSetup { get; set; }
 

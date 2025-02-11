@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ValidationsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Validations.
+        /// This class has a public property named "Validations" of type "Validations" that includes both a getter and a setter.
         /// </summary>
         public virtual Validations Validations { get; set; }
 

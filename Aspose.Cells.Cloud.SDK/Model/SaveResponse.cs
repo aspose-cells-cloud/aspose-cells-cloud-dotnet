@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class SaveResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets SaveResult.
+        /// This class property represents a "SaveResult" XML element.
         /// </summary>
         public virtual SaveResult SaveResult { get; set; }
 

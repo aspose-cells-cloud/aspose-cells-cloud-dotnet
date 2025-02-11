@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class SeriesResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Series.
+        /// A public property named "Series" of type Series with both getter and setter methods.
         /// </summary>
         public virtual Series Series { get; set; }
 

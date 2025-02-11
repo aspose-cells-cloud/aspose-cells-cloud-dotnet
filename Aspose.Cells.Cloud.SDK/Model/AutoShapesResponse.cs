@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class AutoShapesResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets AutoShapes.
+        /// The class has a property named "AutoShapes" decorated with the XmlElement attribute "shapes".
         /// </summary>
         public virtual AutoShapes AutoShapes { get; set; }
 

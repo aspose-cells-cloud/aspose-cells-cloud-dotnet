@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ChartsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Charts.
+        /// Property Summary: Includes an XML element named "charts" that contains a property of type Charts.Charts.
         /// </summary>
         public virtual Charts Charts { get; set; }
 

@@ -46,7 +46,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string Comment { get; set; }
 
         /// <summary>
-        /// Gets or sets WorksheetIndex.
+        /// Property Summary: WorksheetIndex is an optional integer property marked with the XmlElement attribute "worksheetindex".
         /// </summary>
         public virtual int? WorksheetIndex { get; set; }
 

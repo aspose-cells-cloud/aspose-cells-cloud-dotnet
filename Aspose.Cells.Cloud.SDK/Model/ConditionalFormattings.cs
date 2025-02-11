@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ConditionalFormattings : LinkElement
     {
         /// <summary>
-        /// Gets or sets Count.
+        /// The property "Count" is decorated with [XmlElement("count")] attribute for XML serialization.
         /// </summary>
         public virtual int? Count { get; set; }
 

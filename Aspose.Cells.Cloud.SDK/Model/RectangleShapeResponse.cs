@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class RectangleShapeResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shape.
+        /// A public property named "Shape" that is of type RectangleShape and can be both accessed and modified.
         /// </summary>
         public virtual RectangleShape Shape { get; set; }
 

@@ -6,7 +6,7 @@
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|AutoShowCount|Integer|true|false |  ||
+|AutoShowCount|Integer|true|false |  |Represent the number of top or bottom items            that are automatically shown in the specified PivotTable field.|
 |AutoShowField|Integer|true|false |  ||
 |AutoSortField|Integer|true|false |  ||
 |BaseField|Integer|true|false |  ||

@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ShapesResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shapes.
+        /// The class has a property called "Shapes" with XML serialization attribute "XmlElement" for specifying the element name in the XML representation.
         /// </summary>
         public virtual Shapes Shapes { get; set; }
 

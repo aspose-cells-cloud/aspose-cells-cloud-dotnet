@@ -13,7 +13,7 @@ Indicates batch convert file request
 |OutFolder|String|true|false |  |The directory that stores files whose format conversion was successful.|
 |OutStorage|String|true|false |  |Aspose Cloud storage name.|
 |Region|String|true|false |  |The regional settings for workbook.|
-|PageWideFitOnPerSheet|Boolean|true|false |  ||
+|PageWideFitOnPerSheet|Boolean|true|false |  |A nullable Boolean property that determines whether the content should be fit to the entire page width on each sheet.|
 |PageTallFitOnPerSheet|Boolean|true|false |  ||
 |SaveOptions|Class|true|false |  |Indicates save options.|
 

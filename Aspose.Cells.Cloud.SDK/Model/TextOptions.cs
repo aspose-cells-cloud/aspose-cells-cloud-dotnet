@@ -105,7 +105,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override bool? IsSuperscript { get; set; }
 
         /// <summary>
-        /// Gets or sets Name.
+        /// The class has a public property named "Name" with a getter and setter method.
         /// </summary>
         public override string Name { get; set; }
 

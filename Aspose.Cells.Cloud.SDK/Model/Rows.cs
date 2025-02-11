@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Rows : LinkElement
     {
         /// <summary>
-        /// Gets or sets MaxRow.
+        /// This property allows access to set and retrieve the maximum row value in the class.
         /// </summary>
         public virtual int? MaxRow { get; set; }
 

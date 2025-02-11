@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ListBoxResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shape.
+        /// A property "Shape" of type ListBox with read and write access is available for the class.
         /// </summary>
         public virtual ListBox Shape { get; set; }
 

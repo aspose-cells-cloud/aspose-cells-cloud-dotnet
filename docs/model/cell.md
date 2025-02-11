@@ -20,7 +20,7 @@ Encapsulates the object that represents a single Workbook cell.
 |IsInTable|Boolean|true|false |  |Indicates whether this cell is part of table formula.|
 |IsStyleSet|Boolean|true|false |  |Indicates if the cell's style is set. If return false, it means this cell has a default cell format.|
 |HtmlString|String|true|false |  |Gets and sets the html string which contains data and some formats in this cell.|
-|Style|Class|true|false |  ||
+|Style|Class|true|false |  |This class property represents a style element with the specified XML element name.|
 |Worksheet|String|true|false |  |Gets the parent worksheet.|
 |link|Class|true|false |  ||
 

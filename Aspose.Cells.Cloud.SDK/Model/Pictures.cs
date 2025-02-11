@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Pictures : LinkElement
     {
         /// <summary>
-        /// Gets or sets PictureList.
+        /// Property Summary: Contains a list of elements with the XML element name "picture."
         /// </summary>
         public virtual IList<LinkElement> PictureList { get; set; }
 

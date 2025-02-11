@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ConditionalFormattingsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets ConditionalFormattings.
+        /// A property named ConditionalFormattings of type ConditionalFormattings is defined with both getter and setter methods in the class.
         /// </summary>
         public virtual ConditionalFormattings ConditionalFormattings { get; set; }
 

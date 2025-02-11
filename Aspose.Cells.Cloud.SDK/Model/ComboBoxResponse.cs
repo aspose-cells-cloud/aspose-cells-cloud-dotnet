@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ComboBoxResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shape.
+        /// A public property of type ComboBox named Shape with get and set accessors.
         /// </summary>
         public virtual ComboBox Shape { get; set; }
 

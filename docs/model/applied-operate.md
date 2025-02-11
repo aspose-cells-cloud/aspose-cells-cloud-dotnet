@@ -6,5 +6,5 @@ A data operation that is used to obtain a query of data.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|AppliedOperateType|String|true|false |  ||
+|AppliedOperateType|String|true|false |  |Property summary: Utilizes a custom JSON converter to serialize and deserialize an enum property.|
 

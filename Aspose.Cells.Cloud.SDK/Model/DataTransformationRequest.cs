@@ -60,7 +60,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual IList<AppliedStep> AppliedSteps { get; set; }
 
         /// <summary>
-        /// Gets or sets Region.
+        /// This class has a property named "Region" of type string with both a getter and a setter.
         /// </summary>
         public virtual string Region { get; set; }
 

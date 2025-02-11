@@ -7,7 +7,7 @@ Encapsulates the object that represents the title of chart or axis.
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
 |IsVisible|Boolean|true|false |  |Represents whether the title is visible.|
-|LinkedSource|String|true|false |  ||
+|LinkedSource|String|true|false |  |A property named LinkedSource with both set and get accessors is defined.|
 |RotationAngle|Integer|true|false |  ||
 |Text|String|true|false |  |Gets or sets the text of display unit label.|
 |TextDirection|String|true|false |  ||

@@ -6,7 +6,7 @@ Represents the display unit label.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|LinkedSource|String|true|false |  ||
+|LinkedSource|String|true|false |  |A public property named "LinkedSource" with a string data type can be set and accessed.|
 |RotationAngle|Integer|true|false |  ||
 |Text|String|true|false |  |Gets or sets the text of display unit label.|
 |TextHorizontalAlignment|String|true|false |  ||

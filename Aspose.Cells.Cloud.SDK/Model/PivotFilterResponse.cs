@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PivotFilterResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets PivotFilter.
+        /// Property Summary: Contains a pivot filter for data manipulation.
         /// </summary>
         public virtual PivotFilter PivotFilter { get; set; }
 

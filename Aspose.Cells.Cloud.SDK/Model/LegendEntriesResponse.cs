@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class LegendEntriesResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets LegendEntries.
+        /// Property Summary: The class includes a property for managing legend entries.
         /// </summary>
         public virtual LegendEntries LegendEntries { get; set; }
 

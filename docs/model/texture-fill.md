@@ -11,5 +11,5 @@
 |Scale|Floating|true|false |  |Gets and sets the picture format scale. |
 |TilePicOption|Class|true|false |  |Gets or sets tile picture option. |
 |PicFormatOption|Class|true|false |  |Gets or sets picture format option. |
-|Image|Class|true|false |  ||
+|Image|Class|true|false |  |The class has a public property named "Image" of type LinkElement that can be accessed and set.|
 

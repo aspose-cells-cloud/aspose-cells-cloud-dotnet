@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class WorkbookSettingsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets settings.
+        /// The class has a public property called "settings" of type WorkbookSettings that can be accessed and modified.
         /// </summary>
         public virtual WorkbookSettings settings { get; set; }
 

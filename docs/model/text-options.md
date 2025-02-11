@@ -19,7 +19,7 @@ Represents the text options.
 |IsStrikeout|Boolean|true|false |  ||
 |IsSubscript|Boolean|true|false |  ||
 |IsSuperscript|Boolean|true|false |  ||
-|Name|String|true|false |  ||
+|Name|String|true|false |  |The class has a public property named "Name" with a getter and setter method.|
 |Size|Integer|true|false |  ||
 |Underline|String|true|false |  ||
 

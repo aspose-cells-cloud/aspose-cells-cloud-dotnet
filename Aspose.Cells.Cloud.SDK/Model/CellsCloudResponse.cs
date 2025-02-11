@@ -41,7 +41,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Code.
+        /// The property "Code" allows for accessing and modifying the HTTP status code of the response.
         /// </summary>
         public virtual int? Code { get; set; }
 

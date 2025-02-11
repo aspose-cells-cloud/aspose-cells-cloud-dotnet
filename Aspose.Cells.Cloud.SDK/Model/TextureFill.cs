@@ -71,7 +71,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual PicFormatOption PicFormatOption { get; set; }
 
         /// <summary>
-        /// Gets or sets Image.
+        /// The class has a public property named "Image" of type LinkElement that can be accessed and set.
         /// </summary>
         public virtual LinkElement Image { get; set; }
 

@@ -6,7 +6,7 @@ Encapsulates the object that represents a cell comment.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|CellName|String|true|false |  ||
+|CellName|String|true|false |  |Property: CellName attribute with XmlElement tag in the class.|
 |Author|String|true|false |  |Gets and sets Name of the original comment author|
 |HtmlNote|String|true|false |  |Gets and sets the html string which contains data and some formats in this comment.|
 |Note|String|true|false |  |Represents the content of comment.|

@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class WorksheetReplaceResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Matches.
+        /// "An integer property named Matches decorated with the XmlElement attribute."
         /// </summary>
         public virtual int? Matches { get; set; }
 

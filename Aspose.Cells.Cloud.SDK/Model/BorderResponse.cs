@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class BorderResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Border.
+        /// This class has a public property named Border of type Border that can be both read from and written to.
         /// </summary>
         public virtual Border Border { get; set; }
 

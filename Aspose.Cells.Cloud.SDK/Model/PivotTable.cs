@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PivotTable : LinkElement
     {
         /// <summary>
-        /// Gets or sets AltTextDescription.
+        /// Gets the description of the alt text
         /// </summary>
         public virtual string AltTextDescription { get; set; }
 

@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class OleObjectsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets OleObjects.
+        /// Property `OleObjects` of type `OleObjects` that can be accessed and modified publicly within the class.
         /// </summary>
         public virtual OleObjects OleObjects { get; set; }
 

@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ImportStringArrayOption.
+    /// I'm happy to help! Could you please provide me with the features you would like me to summarize for the class?
     /// </summary>
     public class ImportStringArrayOption : ImportOption
     {
         /// <summary>
-        /// Gets or sets FirstRow.
+        /// A property named "FirstRow" of type integer with both a getter and a setter is defined in the class.
         /// </summary>
         public virtual int? FirstRow { get; set; }
 

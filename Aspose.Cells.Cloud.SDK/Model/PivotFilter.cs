@@ -89,7 +89,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string Value2 { get; set; }
 
         /// <summary>
-        /// Gets or sets Top10Filter.
+        /// A property that allows for setting and getting a Top10Filter object for filtering data.
         /// </summary>
         public virtual Top10Filter Top10Filter { get; set; }
 

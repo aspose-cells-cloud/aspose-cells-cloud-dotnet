@@ -8,7 +8,7 @@ Allows to specify options when rendering worksheet to images, printing worksheet
 | :- | :- | :- |:- |  :- | :- |
 |TextCrossType|String|true|false |  |TextCrossType|
 |GridlineType|String|true|false |  |GridlineType|
-|OutputBlankPageWhenNothingToPrint|Boolean|true|false |  ||
+|OutputBlankPageWhenNothingToPrint|Boolean|true|false |  |Indicates whether to output a blank page when there is nothing to print.|
 |CheckWorkbookDefaultFont|Boolean|true|false |  ||
 |DefaultFont|String|true|false |  ||
 |IsOptimized|Boolean|true|false |  ||

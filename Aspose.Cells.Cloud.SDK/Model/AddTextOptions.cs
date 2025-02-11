@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// AddTextOptions.
+    /// Class summary: The features of this class include hands-on learning activities, group projects, interactive discussions, guest speakers, and field trips to real-world applications.
     /// </summary>
     public class AddTextOptions : BaseOperateOptions
     {
         /// <summary>
-        /// Gets or sets Name.
+        /// The class has a public property named "Name" with a getter and setter method.
         /// </summary>
         public override string Name { get; set; }
 

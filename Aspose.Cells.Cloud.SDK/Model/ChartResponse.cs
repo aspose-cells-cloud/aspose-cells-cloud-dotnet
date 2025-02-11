@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ChartResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Chart.
+        /// A property named "Chart" of type Chart is defined with a getter and setter in the class.
         /// </summary>
         public virtual Chart Chart { get; set; }
 

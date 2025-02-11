@@ -1,12 +1,12 @@
 # **extractTextOptions**
 
- 
+I'm happy to help! Could you please provide me with the features you would like me to summarize for you? 
 
 ## **Properties**
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|Name|String|true|false |  ||
+|Name|String|true|false |  |This class has a public property for storing and retrieving a name value.|
 |DataSource|Class|true|false |  ||
 |FileInfo|Class|true|false |  ||
 |Worksheet|String|true|false |  ||

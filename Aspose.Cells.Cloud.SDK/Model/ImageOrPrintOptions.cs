@@ -50,7 +50,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string GridlineType { get; set; }
 
         /// <summary>
-        /// Gets or sets OutputBlankPageWhenNothingToPrint.
+        /// Indicates whether to output a blank page when there is nothing to print.
         /// </summary>
         public virtual bool? OutputBlankPageWhenNothingToPrint { get; set; }
 

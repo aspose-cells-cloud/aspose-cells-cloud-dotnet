@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PivotTables : LinkElement
     {
         /// <summary>
-        /// Gets or sets PivotTableList.
+        /// Xml property "PivotTableList" of the class contains a list of "LinkElement" objects with the element name "PivotTable".
         /// </summary>
         public virtual IList<LinkElement> PivotTableList { get; set; }
 

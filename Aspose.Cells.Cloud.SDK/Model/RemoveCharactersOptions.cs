@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// RemoveCharactersOptions.
+    /// Class summary: The class features discussing effective communication strategies, developing problem-solving skills, and increasing self-awareness for personal growth.
     /// </summary>
     public class RemoveCharactersOptions : BaseOperateOptions
     {
         /// <summary>
-        /// Gets or sets Name.
+        /// Name property with a getter and setter override that returns a string.
         /// </summary>
         public override string Name { get; set; }
 

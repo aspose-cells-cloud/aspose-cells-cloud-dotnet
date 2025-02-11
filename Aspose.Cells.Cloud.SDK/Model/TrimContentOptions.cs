@@ -35,12 +35,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// TrimContentOptions.
+    /// I'm sorry, but you haven't provided any specific content for me to summarize. Please provide the features you would like to be summarized.
+    ///             
     /// </summary>
     public class TrimContentOptions
     {
         /// <summary>
-        /// Gets or sets DataSource.
+        /// This class has a public property named DataSource of type DataSource that has both a getter and a setter method.
+        ///             
         /// </summary>
         public virtual DataSource DataSource { get; set; }
 

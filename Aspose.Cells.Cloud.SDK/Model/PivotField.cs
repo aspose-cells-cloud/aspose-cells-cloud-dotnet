@@ -41,7 +41,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PivotField
     {
         /// <summary>
-        /// Gets or sets AutoShowCount.
+        /// Represent the number of top or bottom items            that are automatically shown in the specified PivotTable field.
         /// </summary>
         public virtual int? AutoShowCount { get; set; }
 

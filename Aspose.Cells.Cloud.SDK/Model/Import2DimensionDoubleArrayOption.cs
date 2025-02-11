@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Import2DimensionDoubleArrayOption.
+    /// I can help summarize features, please provide the details you'd like me to summarize.
     /// </summary>
     public class Import2DimensionDoubleArrayOption : ImportOption
     {
         /// <summary>
-        /// Gets or sets FirstRow.
+        /// The class has a property named "FirstRow" of type integer with get and set accessors.
         /// </summary>
         public virtual int? FirstRow { get; set; }
 

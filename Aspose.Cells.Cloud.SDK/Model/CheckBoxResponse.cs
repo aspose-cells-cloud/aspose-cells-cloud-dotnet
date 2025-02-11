@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class CheckBoxResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shape.
+        /// A public property named Shape of type CheckBox is defined with both get and set accessors.
         /// </summary>
         public virtual CheckBox Shape { get; set; }
 

@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PlotAreaResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets PlotArea.
+        /// A property that allows getting and setting the PlotArea for the class.
         /// </summary>
         public virtual PlotArea PlotArea { get; set; }
 

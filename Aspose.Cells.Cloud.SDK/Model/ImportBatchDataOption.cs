@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ImportBatchDataOption.
+    /// I'm sorry, but it seems like you haven't provided any features for me to summarize. Could you please share the features you'd like me to summarize into a single sentence for your class?
     /// </summary>
     public class ImportBatchDataOption : ImportOption
     {
         /// <summary>
-        /// Gets or sets BatchData.
+        /// The class has a property named BatchData which is a list of CellValue objects and can be both read and written.
         /// </summary>
         public virtual IList<CellValue> BatchData { get; set; }
 

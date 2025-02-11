@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class RenderingWatermark
     {
         /// <summary>
-        /// Gets or sets Rotation.
+        /// Gets or sets roation of the watermark in degrees.
         /// </summary>
         public virtual double? Rotation { get; set; }
 

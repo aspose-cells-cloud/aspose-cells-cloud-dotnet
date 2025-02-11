@@ -15,5 +15,5 @@ Represents a PivotFilter in PivotFilter Collection.
 |Name|String|true|false |  |Gets the name of the pivot filter.|
 |Value1|String|true|false |  |Gets the string value1 of the label pivot filter.            |
 |Value2|String|true|false |  |Gets the string value2 of the label pivot filter.            |
-|Top10Filter|Class|true|false |  ||
+|Top10Filter|Class|true|false |  |A property that allows for setting and getting a Top10Filter object for filtering data.|
 

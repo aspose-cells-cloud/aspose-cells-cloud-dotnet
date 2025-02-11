@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public abstract class AppliedOperate
     {
         /// <summary>
-        /// Gets or sets AppliedOperateType.
+        /// Property summary: Utilizes a custom JSON converter to serialize and deserialize an enum property.
         /// </summary>
         public virtual string AppliedOperateType { get; set; }
 

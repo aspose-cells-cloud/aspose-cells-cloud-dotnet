@@ -45,7 +45,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? IsVisible { get; set; }
 
         /// <summary>
-        /// Gets or sets LinkedSource.
+        /// A property named LinkedSource with both set and get accessors is defined.
         /// </summary>
         public virtual string LinkedSource { get; set; }
 

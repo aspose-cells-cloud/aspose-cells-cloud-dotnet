@@ -1,12 +1,12 @@
 # **form**
 
- 
+I'm happy to help! Please provide the features you would like me to summarize into one sentence for the class. 
 
 ## **Properties**
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|FormType|String|true|false |  ||
+|FormType|String|true|false |  |A property named "FormType" of type string which can be both accessed and modified.|
 |CheckedValue|String|true|false |  ||
 |Shadow|Boolean|true|false |  ||
 |InputRange|String|true|false |  ||

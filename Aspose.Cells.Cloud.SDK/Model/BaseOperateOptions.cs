@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// BaseOperateOptions.
+    /// 
     /// </summary>
     public abstract class BaseOperateOptions
     {
         /// <summary>
-        /// Gets or sets Name.
+        /// The property "Name" is a virtual string type with a public access modifier and a default value of an empty string.
         /// </summary>
         public virtual string Name { get; set; }
 

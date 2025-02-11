@@ -55,6 +55,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual Range Target { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public virtual string TargetWorkbook { get; set; }
+
+        /// <summary>
         /// Represents the paste special options.
         ///             
         /// </summary>
@@ -71,6 +76,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  Operate: ").Append(this.Operate).Append("\n");
             sb.Append("  Source: ").Append(this.Source).Append("\n");
             sb.Append("  Target: ").Append(this.Target).Append("\n");
+            sb.Append("  TargetWorkbook: ").Append(this.TargetWorkbook).Append("\n");
             sb.Append("  PasteOptions: ").Append(this.PasteOptions).Append("\n");
             sb.Append("}\n");
             return sb.ToString();

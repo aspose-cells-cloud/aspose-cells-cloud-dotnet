@@ -41,7 +41,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Ranges
     {
         /// <summary>
-        /// Gets or sets RangeList.
+        /// Property Summary: Contains a list of ranges specified by the XmlElement "Range".
         /// </summary>
         public virtual IList<Range> RangeList { get; set; }
 

@@ -60,7 +60,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual int? OriginalWidth { get; set; }
 
         /// <summary>
-        /// Gets or sets ImageFormat.
+        /// This class has a property called "ImageFormat" that allows getting and setting a string value.
         /// </summary>
         public virtual string ImageFormat { get; set; }
 

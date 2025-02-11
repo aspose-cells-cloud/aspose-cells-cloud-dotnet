@@ -8,7 +8,7 @@ Encapsulates a collection of cell relevant objects, such as Aspose.Cells.Cell, A
 | :- | :- | :- |:- |  :- | :- |
 |MaxRow|Integer|true|false |  |Maximum row index of cell which contains data or style.|
 |MaxColumn|Integer|true|false |  |Maximum column index of those cells that have been instantiated in the collection(does not include the column                        where style is defined for the whole column but no cell has been instantiated in it).|
-|CellCount|Integer|true|false |  ||
+|CellCount|Integer|true|false |  |The class has a public property "CellCount" of type integer that can be read and modified.|
 |Rows|Class|true|false |  |Gets the collection of  objects that represents the individual rows in this worksheet.|
 |Columns|Class|true|false |  |Gets the collection of  objects that represents the individual columns in this worksheet.|
 |CellList|Container|true|false |  ||

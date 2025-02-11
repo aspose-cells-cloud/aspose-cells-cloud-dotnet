@@ -1,12 +1,12 @@
 # **protectSheetParameter**
 
- 
+Class Summary: The features discussed include natural language processing, image recognition, data visualization, clustering, regression, classification, and recommendation systems. 
 
 ## **Properties**
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|ProtectionType|String|true|false |  ||
+|ProtectionType|String|true|false |  |Property Summary: Defines a public string property for the ProtectionType.|
 |Password|String|true|false |  ||
 |AllowEditArea|Container|true|false |  ||
 |AllowDeletingColumn|String|true|false |  ||

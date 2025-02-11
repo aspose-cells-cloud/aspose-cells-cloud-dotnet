@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ListBox : Shape
     {
         /// <summary>
-        /// Gets or sets InputRange.
+        /// This property stores the input range for the class.
         /// </summary>
         public virtual string InputRange { get; set; }
 

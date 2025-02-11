@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class AutoShapeResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets AutoShape.
+        /// A public property named "AutoShape" of type "AutoShape" with both getter and setter methods.
         /// </summary>
         public virtual AutoShape AutoShape { get; set; }
 

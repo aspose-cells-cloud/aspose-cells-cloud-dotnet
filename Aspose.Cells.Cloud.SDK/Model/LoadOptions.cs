@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class LoadOptions
     {
         /// <summary>
-        /// Gets or sets ConvertNumericData.
+        /// This class has a public property named "ConvertNumericData" of type string that can be read from and written to.
         /// </summary>
         public virtual string ConvertNumericData { get; set; }
 

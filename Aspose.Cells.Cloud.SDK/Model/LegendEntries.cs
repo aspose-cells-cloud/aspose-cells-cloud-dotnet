@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// LegendEntries.
+    /// Sure, please provide me with the features you would like me to summarize in one sentence for the class summary.
     /// </summary>
     public class LegendEntries : LinkElement
     {
         /// <summary>
-        /// Gets or sets legendEntryList.
+        /// Property: Utilizes XML element "LengendEntry" to represent a list of LinkElement items in the class.
         /// </summary>
         public virtual IList<LinkElement> legendEntryList { get; set; }
 

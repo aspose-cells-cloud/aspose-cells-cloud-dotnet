@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class DataLabelsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets DataLabels.
+        /// This class has a property named DataLabels of type DataLabels that can be accessed and modified.
         /// </summary>
         public virtual DataLabels DataLabels { get; set; }
 

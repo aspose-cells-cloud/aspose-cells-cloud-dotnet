@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// AutoShapes.
+    /// Sure! Just provide me with the features you would like me to summarize into one sentence.
     /// </summary>
     public class AutoShapes : LinkElement
     {
         /// <summary>
-        /// Gets or sets AutoShapeList.
+        /// Property Summary: Contains a list of LinkElement objects identified by the XML element "autoshape".
         /// </summary>
         public virtual IList<LinkElement> AutoShapeList { get; set; }
 

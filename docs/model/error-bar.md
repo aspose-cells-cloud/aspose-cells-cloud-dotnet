@@ -6,7 +6,7 @@ Represents error bar of data series.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|Link|Class|true|false |  ||
+|Link|Class|true|false |  |A property named "Link" of type "Link" that can be accessed and modified.|
 |Amount|Floating|true|false |  |Represents amount of error bar.                         The amount must be greater than or equal to zero.|
 |DisplayType|String|true|false |  |Represents error bar display type.|
 |MinusValue|String|true|false |  |Represents negative error amount when error bar type is Custom.|

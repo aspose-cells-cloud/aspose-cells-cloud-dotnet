@@ -6,7 +6,7 @@ Represents the Validation Response.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|Validation|Class|true|false |  ||
+|Validation|Class|true|false |  |The class has a public property for Validation.|
 |Code|Integer|true|false |  ||
 |Status|String|true|false |  ||
 

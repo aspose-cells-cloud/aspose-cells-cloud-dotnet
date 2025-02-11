@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class CellsDocumentPropertyResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets DocumentProperty.
+        /// A property named DocumentProperty of type CellsDocumentProperty is defined with get and set accessors.
         /// </summary>
         public virtual CellsDocumentProperty DocumentProperty { get; set; }
 

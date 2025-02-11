@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// MergedCells.
+    /// Sure, could you please provide me with the features you would like me to summarize?
     /// </summary>
     public class MergedCells : LinkElement
     {
         /// <summary>
-        /// Gets or sets Count.
+        /// An integer property labeled as "count" and marked as an XML element in the class.
         /// </summary>
         public virtual int? Count { get; set; }
 

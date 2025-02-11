@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class TextWaterMarkerRequest
     {
         /// <summary>
-        /// Gets or sets Text.
+        /// A property named Text of type string that can be accessed and modified.
         /// </summary>
         public virtual string Text { get; set; }
 

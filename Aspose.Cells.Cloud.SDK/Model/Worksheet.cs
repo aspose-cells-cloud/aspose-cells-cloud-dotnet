@@ -41,7 +41,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Worksheet
     {
         /// <summary>
-        /// Gets or sets Links.
+        /// Property Summary: Contains a list of links represented by the class link.
         /// </summary>
         public virtual IList<Link> Links { get; set; }
 

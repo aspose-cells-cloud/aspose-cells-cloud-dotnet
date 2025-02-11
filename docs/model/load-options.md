@@ -6,7 +6,7 @@ Represents the options of loading the file.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|ConvertNumericData|String|true|false |  ||
+|ConvertNumericData|String|true|false |  |This class has a public property named "ConvertNumericData" of type string that can be read from and written to.|
 |InterruptMonitor|String|true|false |  |Gets and sets the interrupt monitor.|
 |LanguageCode|String|true|false |  |Gets or sets the user interface language of the Workbook version based on CountryCode that has saved the file.|
 |LoadDataOptions|String|true|false |  ||

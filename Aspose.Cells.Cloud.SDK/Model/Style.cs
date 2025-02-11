@@ -164,7 +164,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string HorizontalAlignment { get; set; }
 
         /// <summary>
-        /// Gets or sets BorderCollection.
+        /// A public property named `BorderCollection` that is a list of `Border` objects.
         /// </summary>
         public virtual IList<Border> BorderCollection { get; set; }
 

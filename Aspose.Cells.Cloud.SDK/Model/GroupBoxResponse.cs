@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class GroupBoxResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shape.
+        /// The class has a property named "Shape" of type GroupBox that can be accessed and modified.
         /// </summary>
         public virtual GroupBox Shape { get; set; }
 

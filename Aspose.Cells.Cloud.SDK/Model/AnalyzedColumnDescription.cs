@@ -50,7 +50,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual int? ColumnIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets Title.
+        /// This class has a public property "Title" of type string with a default value of an empty string.
         /// </summary>
         public virtual string Title { get; set; }
 

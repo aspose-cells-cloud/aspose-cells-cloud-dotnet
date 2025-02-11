@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class WorksheetResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Worksheet.
+        /// The class has a property called "Worksheet" of type "Worksheet" that can be accessed and modified.
         /// </summary>
         public virtual Worksheet Worksheet { get; set; }
 

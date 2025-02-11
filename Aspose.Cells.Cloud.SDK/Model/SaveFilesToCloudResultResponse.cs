@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class SaveFilesToCloudResultResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets SaveFilesToCloudResult.
+        /// Property: SaveFilesToCloudResult that allows getting and setting an object of type SaveFilesToCloudResult.
         /// </summary>
         public virtual SaveFilesToCloudResult SaveFilesToCloudResult { get; set; }
 

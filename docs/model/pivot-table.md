@@ -6,7 +6,7 @@ Summary description for PivotTable.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|AltTextDescription|String|true|false |  ||
+|AltTextDescription|String|true|false |  |Gets the description of the alt text|
 |AltTextTitle|String|true|false |  ||
 |AutoFormatType|String|true|false |  ||
 |BaseFields|Container|true|false |  ||

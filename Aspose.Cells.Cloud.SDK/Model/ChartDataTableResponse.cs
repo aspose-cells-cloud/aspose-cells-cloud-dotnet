@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ChartDataTableResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets ChartDataTable.
+        /// This property allows access to a ChartDataTable object for storing and manipulating data related to a chart.
         /// </summary>
         public virtual ChartDataTable ChartDataTable { get; set; }
 

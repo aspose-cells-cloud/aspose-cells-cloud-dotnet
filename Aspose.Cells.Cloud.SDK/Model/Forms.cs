@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Forms.
+    /// "Summary: The class covers a range of features including advanced machine learning techniques, statistical analysis tools, and computer vision algorithms."
     /// </summary>
     public class Forms : LinkElement
     {
         /// <summary>
-        /// Gets or sets FormList.
+        /// Property: FormList is a list of LinkElements that are serialized as "form" XML elements.
         /// </summary>
         public virtual IList<LinkElement> FormList { get; set; }
 

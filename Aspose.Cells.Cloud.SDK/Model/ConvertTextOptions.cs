@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ConvertTextOptions.
+    /// Class summary: The features of the new smartphone include a high-resolution display, multiple camera lenses for versatile photography, a fast processor for seamless performance, and a larger battery for extended usage time.
     /// </summary>
     public class ConvertTextOptions : BaseOperateOptions
     {
         /// <summary>
-        /// Gets or sets Name.
+        /// The class has a public property called "Name" of type string that can be accessed and modified.
         /// </summary>
         public override string Name { get; set; }
 

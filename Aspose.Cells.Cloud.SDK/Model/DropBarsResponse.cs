@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class DropBarsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets DropBars.
+        /// The class has a property named `DropBars` of type `DropBars` with both getter and setter methods.
         /// </summary>
         public virtual DropBars DropBars { get; set; }
 

@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Trendline : Line
     {
         /// <summary>
-        /// Gets or sets link.
+        /// The class has a property named "link" of type "Link" that can be accessed and modified.
         /// </summary>
         public virtual Link link { get; set; }
 

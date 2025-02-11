@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class TitleResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Title.
+        /// This class has a property called "Title" of type "Title" with both a getter and a setter.
         /// </summary>
         public virtual Title Title { get; set; }
 

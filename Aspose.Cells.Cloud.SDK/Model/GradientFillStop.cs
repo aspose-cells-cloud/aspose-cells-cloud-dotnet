@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// GradientFillStop.
+    /// Class summary: Understanding the various features and tools available in Adobe Illustrator to create dynamic and professional vector graphics, including shapes, text, brushes, gradients, and layers.
     /// </summary>
     public class GradientFillStop
     {
         /// <summary>
-        /// Gets or sets Color.
+        /// Color property of type DTO.Color that has a getter and a setter.
         /// </summary>
         public virtual Color Color { get; set; }
 

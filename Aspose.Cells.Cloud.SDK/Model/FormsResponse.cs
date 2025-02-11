@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class FormsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Forms.
+        /// This class has a property named Forms of type Forms that has both a getter and setter.
         /// </summary>
         public virtual Forms Forms { get; set; }
 

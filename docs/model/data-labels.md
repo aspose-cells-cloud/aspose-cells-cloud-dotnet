@@ -7,7 +7,7 @@ Encapsulates a collection of all the DataLabel objects for the specified Series.
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
 |IsAutoText|Boolean|true|false |  |Indicates the text is auto generated.|
-|IsDeleted|Boolean|true|false |  ||
+|IsDeleted|Boolean|true|false |  |A nullable boolean property "IsDeleted" indicating whether an object has been deleted.|
 |LinkedSource|String|true|false |  ||
 |Number|Integer|true|false |  |Gets and sets the built-in number format.|
 |NumberFormat|String|true|false |  |Represents the format string for the DataLabels object.|

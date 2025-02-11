@@ -45,7 +45,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual int? DropDownLines { get; set; }
 
         /// <summary>
-        /// Gets or sets InputRange.
+        /// Property Summary: Contains a public string property named "InputRange" with both get and set accessors.
         /// </summary>
         public virtual string InputRange { get; set; }
 

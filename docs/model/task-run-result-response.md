@@ -6,7 +6,7 @@ Represents the TaskRunResult Response.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|TaskRunResult|Class|true|false |  ||
+|TaskRunResult|Class|true|false |  |This class has a property named "TaskRunResult" of type "TaskRunResult" that can be both accessed and modified.|
 |Code|Integer|true|false |  ||
 |Status|String|true|false |  ||
 

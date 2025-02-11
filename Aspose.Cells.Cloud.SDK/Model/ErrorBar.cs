@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ErrorBar : Line
     {
         /// <summary>
-        /// Gets or sets Link.
+        /// A property named "Link" of type "Link" that can be accessed and modified.
         /// </summary>
         public virtual Link Link { get; set; }
 

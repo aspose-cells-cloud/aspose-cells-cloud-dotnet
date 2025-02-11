@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class LineShapeResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shape.
+        /// The class has a public property called Shape of type LineShape that can be both accessed and modified.
         /// </summary>
         public virtual LineShape Shape { get; set; }
 

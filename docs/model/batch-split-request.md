@@ -1,6 +1,6 @@
 # **batchSplitRequest**
 
- 
+Class summary: Identifying key features of a statistical dataset and methods for data analysis. 
 
 ## **Properties**
 

@@ -50,7 +50,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string SortOrder { get; set; }
 
         /// <summary>
-        /// Gets or sets CustomList.
+        /// This class includes a property named CustomList that is an array of strings with both getter and setter methods.
         /// </summary>
         public virtual List<string> CustomList { get; set; }
 

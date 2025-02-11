@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class LabelResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shape.
+        /// The property "Shape" is of type Label and has both a getter and a setter.
         /// </summary>
         public virtual Label Shape { get; set; }
 

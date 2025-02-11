@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ImportOption.
+    /// Class Summary: This class covers the features of artificial intelligence, machine learning, deep learning, and natural language processing.
     /// </summary>
     public class ImportOption
     {
@@ -45,7 +45,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string DestinationWorksheet { get; set; }
 
         /// <summary>
-        /// Gets or sets IsInsert.
+        /// A boolean property `IsInsert` that can be both read and written.
         /// </summary>
         public virtual bool? IsInsert { get; set; }
 

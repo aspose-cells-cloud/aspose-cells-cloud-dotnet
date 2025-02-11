@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class SpinnerResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shape.
+        /// A property named Shape of type Spinner, with both get and set accessors.
         /// </summary>
         public virtual Spinner Shape { get; set; }
 

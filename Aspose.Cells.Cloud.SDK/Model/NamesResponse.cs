@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class NamesResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Names.
+        /// Property: This property represents an XML element named "names" and holds a Names object.
         /// </summary>
         public virtual Names Names { get; set; }
 

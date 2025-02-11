@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ChartPointsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets ChartPoints.
+        /// This class has a property named `ChartPoints` of type `ChartPoints` that can be accessed and modified.
         /// </summary>
         public virtual ChartPoints ChartPoints { get; set; }
 

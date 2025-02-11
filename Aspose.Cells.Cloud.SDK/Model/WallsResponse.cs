@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class WallsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Walls.
+        /// The class has a public property named `Walls` of type `Walls`.
         /// </summary>
         public virtual Walls Walls { get; set; }
 

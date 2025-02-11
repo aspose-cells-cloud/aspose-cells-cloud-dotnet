@@ -6,7 +6,7 @@ Represents the MergedCells Response.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|MergedCells|Class|true|false |  ||
+|MergedCells|Class|true|false |  |Property Summary: Contains information about merged cells within a spreadsheet.|
 |Code|Integer|true|false |  ||
 |Status|String|true|false |  ||
 

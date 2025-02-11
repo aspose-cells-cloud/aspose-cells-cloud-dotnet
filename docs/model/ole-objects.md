@@ -6,6 +6,6 @@ Represents embedded OLE objects.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|OleObjectList|Container|true|false |  ||
+|OleObjectList|Container|true|false |  |Property Summary: Contains a list of elements identified as "oleobject" within XML data.|
 |link|Class|true|false |  ||
 

@@ -75,7 +75,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string Region { get; set; }
 
         /// <summary>
-        /// Gets or sets PageWideFitOnPerSheet.
+        /// A nullable Boolean property that determines whether the content should be fit to the entire page width on each sheet.
         /// </summary>
         public virtual bool? PageWideFitOnPerSheet { get; set; }
 

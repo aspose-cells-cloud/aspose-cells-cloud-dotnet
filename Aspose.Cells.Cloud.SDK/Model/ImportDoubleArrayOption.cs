@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ImportDoubleArrayOption.
+    /// Class summary: The features include grammar and spell check, word count, readability analysis, and style suggestions for improving writing.
     /// </summary>
     public class ImportDoubleArrayOption : ImportOption
     {
         /// <summary>
-        /// Gets or sets FirstRow.
+        /// This class has a public property named FirstRow of type integer with both get and set accessors.
         /// </summary>
         public virtual int? FirstRow { get; set; }
 

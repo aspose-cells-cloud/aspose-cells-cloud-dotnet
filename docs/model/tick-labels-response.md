@@ -6,7 +6,7 @@ Represents the TickLabels Response.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|TickLabels|Class|true|false |  ||
+|TickLabels|Class|true|false |  |Property that represents tick labels for a class.|
 |Code|Integer|true|false |  ||
 |Status|String|true|false |  ||
 

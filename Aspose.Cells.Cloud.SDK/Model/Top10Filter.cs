@@ -41,7 +41,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Top10Filter
     {
         /// <summary>
-        /// Gets or sets FieldIndex.
+        /// An integer property named FieldIndex that can be accessed and modified.
+        ///             
         /// </summary>
         public virtual int? FieldIndex { get; set; }
 

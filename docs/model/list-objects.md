@@ -6,6 +6,6 @@ Represents a collection of  objects in the worksheet.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|ListObjectList|Container|true|false |  ||
+|ListObjectList|Container|true|false |  |A property named ListObjectList that is a list of LinkElement objects.|
 |link|Class|true|false |  ||
 

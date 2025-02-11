@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class LineResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Line.
+        /// A public property named "Line" of type Line with both getter and setter methods.
         /// </summary>
         public virtual Line Line { get; set; }
 

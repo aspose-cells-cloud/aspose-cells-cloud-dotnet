@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class TickLabelsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets TickLabels.
+        /// Property that represents tick labels for a class.
         /// </summary>
         public virtual TickLabels TickLabels { get; set; }
 

@@ -1,6 +1,6 @@
 # **postAddTextContent API**
 
- 
+Adds text content to a workbook at specified positions within cells based on provided options using ASP.NET Core Web API. 
 
 ```bash
 

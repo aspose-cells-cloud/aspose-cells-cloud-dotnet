@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class CellsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Cells.
+        /// Property Summary: The class has a property called "Cells" which is annotated with the [XmlElement("cells")] attribute.
         /// </summary>
         public virtual Cells Cells { get; set; }
 

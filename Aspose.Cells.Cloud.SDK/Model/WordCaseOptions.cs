@@ -35,12 +35,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// WordCaseOptions.
+    /// I'm here to assist you. Please provide the features you would like me to summarize for the class.
+    ///             
     /// </summary>
     public class WordCaseOptions
     {
         /// <summary>
-        /// Gets or sets DataSource.
+        /// This class has a public property named "DataSource" of type DataSource that has both a getter and a setter.
+        ///             
         /// </summary>
         public virtual DataSource DataSource { get; set; }
 

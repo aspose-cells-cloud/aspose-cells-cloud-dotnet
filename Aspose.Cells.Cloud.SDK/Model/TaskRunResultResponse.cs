@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class TaskRunResultResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets TaskRunResult.
+        /// This class has a property named "TaskRunResult" of type "TaskRunResult" that can be both accessed and modified.
         /// </summary>
         public virtual TaskRunResult TaskRunResult { get; set; }
 

@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// FilesResult.
+    /// Class features: Weekly lectures, group projects, midterm and final exams, and participation in class discussions.
     /// </summary>
     public class FilesResult
     {

@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ButtonResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shape.
+        /// The class has a property named "Shape" of type Button that can be both read and written.
         /// </summary>
         public virtual Button Shape { get; set; }
 

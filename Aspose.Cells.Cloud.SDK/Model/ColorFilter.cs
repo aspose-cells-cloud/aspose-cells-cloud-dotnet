@@ -46,7 +46,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? FilterByFillColor { get; set; }
 
         /// <summary>
-        /// Gets or sets Pattern.
+        /// A property "Pattern" of type string with a getter and setter is defined.
         /// </summary>
         public virtual string Pattern { get; set; }
 

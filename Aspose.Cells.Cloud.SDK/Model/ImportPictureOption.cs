@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ImportPictureOption.
+    /// Class summary: The features of the topic were explored, discussing its components, patterns, and significance.
     /// </summary>
     public class ImportPictureOption : ImportOption
     {
         /// <summary>
-        /// Gets or sets UpperLeftRow.
+        /// A property "UpperLeftRow" of type integer with a public getter and setter is defined.
         /// </summary>
         public virtual int? UpperLeftRow { get; set; }
 

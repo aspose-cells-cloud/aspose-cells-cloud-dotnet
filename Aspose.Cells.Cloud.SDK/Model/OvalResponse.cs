@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class OvalResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shape.
+        /// The class has a public property called "Shape" of type "Oval" with both get and set accessors.
         /// </summary>
         public virtual Oval Shape { get; set; }
 

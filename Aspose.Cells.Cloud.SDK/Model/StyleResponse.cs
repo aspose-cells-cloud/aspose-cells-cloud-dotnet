@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class StyleResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Style.
+        /// A property named "Style" of type "Style" is defined with both getter and setter methods.
         /// </summary>
         public virtual Style Style { get; set; }
 

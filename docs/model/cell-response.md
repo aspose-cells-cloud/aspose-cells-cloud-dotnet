@@ -6,7 +6,7 @@ Represents the Cell Response.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|Cell|Class|true|false |  ||
+|Cell|Class|true|false |  |A property named "Cell" of type "Cell" that has both a getter and a setter.|
 |Code|Integer|true|false |  ||
 |Status|String|true|false |  ||
 

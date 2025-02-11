@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class FindResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Count.
+        /// Property Summary: This property is annotated with the XML element name "count" and represents an integer value.
         /// </summary>
         public virtual int? Count { get; set; }
 

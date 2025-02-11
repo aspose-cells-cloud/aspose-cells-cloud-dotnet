@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class FormResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Form.
+        /// Property summary: A public property named "Form" with both get and set accessors, allowing access to a Form object.
         /// </summary>
         public virtual Form Form { get; set; }
 

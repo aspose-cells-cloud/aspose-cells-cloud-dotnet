@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ConvertParameter
     {
         /// <summary>
-        /// Gets or sets Name.
+        /// A property "Name" of type string with a getter and setter is declared in the class.
         /// </summary>
         public virtual string Name { get; set; }
 

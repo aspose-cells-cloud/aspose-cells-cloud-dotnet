@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PicturesResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Pictures.
+        /// This class has a property called "Pictures" with the feature of being serialized as "pictures" in XML elements.
         /// </summary>
         public virtual Pictures Pictures { get; set; }
 

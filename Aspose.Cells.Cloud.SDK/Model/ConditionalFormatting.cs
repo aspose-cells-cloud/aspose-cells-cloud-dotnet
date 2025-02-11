@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ConditionalFormatting.
+    /// I'm here to help! Please provide me with the features that need to be summarized.
     /// </summary>
     public class ConditionalFormatting : LinkElement
     {
         /// <summary>
-        /// Gets or sets sqref.
+        /// A public property called "sqref" of type string with a getter and a setter is defined in the class.
         /// </summary>
         public virtual string sqref { get; set; }
 

@@ -8,7 +8,7 @@
 | :- | :- | :- |:- |  :- | :- |
 |FieldIndex|Integer|true|false |  |Gets and sets the column offset in the range. |
 |FilterType|String|true|false |  |Gets and sets the type fo filtering data. |
-|MultipleFilters|Class|true|false |  ||
+|MultipleFilters|Class|true|false |  |This class contains a property named "MultipleFilters" of type "MultipleFilters" that can be both read and written.|
 |ColorFilter|Class|true|false |  ||
 |CustomFilters|Container|true|false |  ||
 |DynamicFilter|Class|true|false |  ||

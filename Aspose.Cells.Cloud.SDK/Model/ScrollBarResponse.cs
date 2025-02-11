@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ScrollBarResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shape.
+        /// The class has a public property named `Shape` of type `ScrollBar` that can be both read and written.
         /// </summary>
         public virtual ScrollBar Shape { get; set; }
 

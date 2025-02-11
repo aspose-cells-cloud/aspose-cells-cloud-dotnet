@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class HyperlinkResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Hyperlink.
+        /// A public property named "Hyperlink" of type Hyperlink with both getter and setter methods.
         /// </summary>
         public virtual Hyperlink Hyperlink { get; set; }
 

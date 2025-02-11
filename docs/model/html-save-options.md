@@ -6,7 +6,7 @@ Represents options of saving .html file.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|ExportPageHeaders|Boolean|true|false |  ||
+|ExportPageHeaders|Boolean|true|false |  |Indicates whether exporting page headers.|
 |ExportPageFooters|Boolean|true|false |  ||
 |ExportRowColumnHeadings|Boolean|true|false |  ||
 |ShowAllSheets|Boolean|true|false |  ||

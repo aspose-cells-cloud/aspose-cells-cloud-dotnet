@@ -6138,6 +6138,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Adds text content to a workbook at specified positions within cells based on provided options using ASP.NET Core Web API.
         /// </summary>
         /// <param name="request">Request. <see cref="PostAddTextContentRequest" /></param>
         public   FileInfo  PostAddTextContent(PostAddTextContentRequest request)

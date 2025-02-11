@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Validations : LinkElement
     {
         /// <summary>
-        /// Gets or sets Count.
+        /// Property summary: The property "Count" with an XML element name "count" returns the number of items in the "ValidationList".
         /// </summary>
         public virtual int? Count { get; set; }
 

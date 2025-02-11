@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ImportPosition.
+    /// I can help with that. Just provide me with the features you'd like me to summarize.
     /// </summary>
     public class ImportPosition
     {
         /// <summary>
-        /// Gets or sets SheetName.
+        /// "Property SheetName of type string with a public get and set accessor."
         /// </summary>
         public virtual string SheetName { get; set; }
 

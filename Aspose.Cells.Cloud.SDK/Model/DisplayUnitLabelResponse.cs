@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class DisplayUnitLabelResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets DisplayUnitLabel.
+        /// This property allows access to the display unit label for the class.
         /// </summary>
         public virtual DisplayUnitLabel DisplayUnitLabel { get; set; }
 

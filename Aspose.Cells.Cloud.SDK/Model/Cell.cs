@@ -111,7 +111,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string HtmlString { get; set; }
 
         /// <summary>
-        /// Gets or sets Style.
+        /// This class property represents a style element with the specified XML element name.
         /// </summary>
         public virtual LinkElement Style { get; set; }
 

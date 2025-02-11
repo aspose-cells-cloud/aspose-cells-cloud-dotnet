@@ -6,7 +6,7 @@ Represents a list box object.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|InputRange|String|true|false |  ||
+|InputRange|String|true|false |  |This property stores the input range for the class.|
 |ItemCount|Integer|true|false |  |Gets the number of items in the list box.|
 |PageChange|Integer|true|false |  |Specifies the amount by which the control's value is changed                         when the user clicks on the scrollbar's page up or page down region.|
 |SelectedCells|Container|true|false |  |Gets the selected cells.                        Returns null if the input range is not set or no item is selected|

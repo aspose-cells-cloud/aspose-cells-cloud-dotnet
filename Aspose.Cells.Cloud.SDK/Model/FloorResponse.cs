@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class FloorResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Floor.
+        /// This class has a public property "Floor" of type "Floor" with both a getter and a setter.
         /// </summary>
         public virtual Floor Floor { get; set; }
 

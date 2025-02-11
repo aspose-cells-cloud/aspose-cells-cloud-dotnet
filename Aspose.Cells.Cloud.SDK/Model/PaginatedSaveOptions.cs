@@ -110,7 +110,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string DefaultEditLanguage { get; set; }
 
         /// <summary>
-        /// Gets or sets EmfRenderSetting.
+        /// Setting for rendering Emf metafile.
         /// </summary>
         public virtual string EmfRenderSetting { get; set; }
 

@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// SplitTextOptions.
+    /// Appliance features: 1. Automatic defrost system 2. Energy-efficient LED lighting 3. Adjustable glass shelves 4. Ice and water dispenser with filtration system
     /// </summary>
     public class SplitTextOptions : BaseOperateOptions
     {
         /// <summary>
-        /// Gets or sets Name.
+        /// The property "Name" is a publicly accessible and overridable property of type string in the class.
         /// </summary>
         public override string Name { get; set; }
 

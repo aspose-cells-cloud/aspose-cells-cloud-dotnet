@@ -35,12 +35,13 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// SeriesItems.
+    /// Class Summary: 
+    ///             - Features: Active class participation, group projects, quizzes, and final exam.
     /// </summary>
     public class SeriesItems : LinkElement
     {
         /// <summary>
-        /// Gets or sets CategoryData.
+        /// This property allows setting and getting data for the category.
         /// </summary>
         public virtual string CategoryData { get; set; }
 

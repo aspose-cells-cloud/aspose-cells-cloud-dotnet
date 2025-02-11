@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class CellsDrawingResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shape.
+        /// This class has a public property named Shape of type CellsDrawing.
         /// </summary>
         public virtual CellsDrawing Shape { get; set; }
 

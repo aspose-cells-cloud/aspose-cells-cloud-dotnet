@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class DisplayUnitLabel : ChartFrame
     {
         /// <summary>
-        /// Gets or sets LinkedSource.
+        /// A public property named "LinkedSource" with a string data type can be set and accessed.
         /// </summary>
         public virtual string LinkedSource { get; set; }
 

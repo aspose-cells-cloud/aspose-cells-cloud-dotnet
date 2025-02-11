@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class CommentsResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Comments.
+        /// Property Summary: "The Comments property represents an XML element named 'comments' within the class."
         /// </summary>
         public virtual Comments Comments { get; set; }
 

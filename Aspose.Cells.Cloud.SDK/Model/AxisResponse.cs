@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class AxisResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Axis.
+        /// A property named "Axis" of type "Axis" with both getter and setter methods is present in the class.
         /// </summary>
         public virtual Axis Axis { get; set; }
 

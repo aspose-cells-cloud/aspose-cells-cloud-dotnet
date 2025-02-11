@@ -6,7 +6,7 @@ Represents the CellsCloudFileInfo Response.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|FileInfo|Class|true|false |  ||
+|FileInfo|Class|true|false |  |A property named `FileInfo` of type `CellsCloudFileInfo` is defined for the class.|
 |Code|Integer|true|false |  ||
 |Status|String|true|false |  ||
 

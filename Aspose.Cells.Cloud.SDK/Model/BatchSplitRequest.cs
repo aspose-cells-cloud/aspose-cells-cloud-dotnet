@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// BatchSplitRequest.
+    /// Class summary: Identifying key features of a statistical dataset and methods for data analysis.
     /// </summary>
     public class BatchSplitRequest
     {

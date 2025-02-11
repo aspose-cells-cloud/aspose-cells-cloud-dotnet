@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class CommentShapeResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Comment.
+        /// The class has a public property named Comment of type CommentShape that can be accessed and modified.
         /// </summary>
         public virtual CommentShape Comment { get; set; }
 

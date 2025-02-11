@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ImportCSVDataOption.
+    /// I'm happy to help! Could you please provide me with the features you would like me to summarize into a class summary?
     /// </summary>
     public class ImportCSVDataOption : ImportOption
     {
         /// <summary>
-        /// Gets or sets SeparatorString.
+        /// A property named SeparatorString of type string that can be accessed and modified publicly.
         /// </summary>
         public virtual string SeparatorString { get; set; }
 

@@ -35,12 +35,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ScopeOptions.
+    /// Here is the class summary: "The features discussed include real-time collaboration, templates for various projects, task assignment and tracking, deadline reminders, and file storage and sharing."
+    ///             
     /// </summary>
     public class ScopeOptions
     {
         /// <summary>
-        /// Gets or sets Scope.
+        /// Property Summary: The Scope property in the class is decorated with a JsonConverter attribute using StringEnumConverter.
+        ///             
         /// </summary>
         public virtual string Scope { get; set; }
 

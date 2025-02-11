@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ExtractTextOptions.
+    /// I'm happy to help! Could you please provide me with the features you would like me to summarize for you?
     /// </summary>
     public class ExtractTextOptions : BaseOperateOptions
     {
         /// <summary>
-        /// Gets or sets Name.
+        /// This class has a public property for storing and retrieving a name value.
         /// </summary>
         public override string Name { get; set; }
 

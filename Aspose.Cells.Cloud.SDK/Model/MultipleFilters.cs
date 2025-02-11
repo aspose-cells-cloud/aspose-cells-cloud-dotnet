@@ -41,7 +41,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class MultipleFilters
     {
         /// <summary>
-        /// Gets or sets MatchBlank.
+        /// A nullable boolean property that determines if a blank space should be matched.
         /// </summary>
         public virtual bool? MatchBlank { get; set; }
 

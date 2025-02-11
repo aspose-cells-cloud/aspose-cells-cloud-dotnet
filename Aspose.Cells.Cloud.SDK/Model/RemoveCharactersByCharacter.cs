@@ -35,12 +35,13 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// RemoveCharactersByCharacter.
+    /// Class summary: The features include fast and reliable performance, high-quality camera with portrait mode, long-lasting battery life, and a durable water-resistant design.
+    ///             
     /// </summary>
     public class RemoveCharactersByCharacter
     {
         /// <summary>
-        /// Gets or sets RemoveTextMethod.
+        /// Property: "RemoveTextMethod" is serialized using a string representation of the enum value.
         /// </summary>
         public virtual string RemoveTextMethod { get; set; }
 

@@ -41,7 +41,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PivotItem
     {
         /// <summary>
-        /// Gets or sets Index.
+        /// Gets the index of the pivot item in cache field.
         /// </summary>
         public virtual int? Index { get; set; }
 

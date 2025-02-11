@@ -15,17 +15,17 @@ this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
 var rangeOperateSource = new Range()
 {
-    ColumnCount = 1,
-    ColumnWidth = 10.0f,
-    FirstRow = 1,
-    RowCount = 10
+    ColumnCount = 3,
+    FirstColumn = 8,
+    FirstRow = 3,
+    RowCount = 2
 };
 var rangeOperateTarget = new Range()
 {
-    ColumnCount = 1,
-    ColumnWidth = 10.0f,
-    FirstRow = 10,
-    RowCount = 10
+    ColumnCount = 3,
+    FirstColumn = 8,
+    FirstRow = 13,
+    RowCount = 2
 };
 var rangeOperate = new RangeCopyRequest()
 {

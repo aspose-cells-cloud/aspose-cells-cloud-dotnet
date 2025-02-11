@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// FileSource.
+    /// I'm sorry, I just realized you didn't provide any features for me to summarize. Please provide the features you'd like me to summarize for the class.
     /// </summary>
     public class FileSource
     {
         /// <summary>
-        /// Gets or sets FileSourceType.
+        /// A property named FileSourceType of type FileSourceType that can be accessed and modified.
         /// </summary>
         public virtual string FileSourceType { get; set; }
 

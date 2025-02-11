@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual Color Color { get; set; }
 
         /// <summary>
-        /// Gets or sets BorderType.
+        /// This class has a property called "BorderType" of type string that can be both get and set.
         /// </summary>
         public virtual string BorderType { get; set; }
 

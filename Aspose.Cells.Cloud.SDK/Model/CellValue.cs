@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class CellValue
     {
         /// <summary>
-        /// Gets or sets rowIndex.
+        /// A public integer property called "rowIndex" with both getter and setter.
         /// </summary>
         public virtual int? rowIndex { get; set; }
 

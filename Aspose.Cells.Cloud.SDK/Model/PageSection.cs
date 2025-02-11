@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// PageSection.
+    /// Class summary: Includes interactive discussions, group projects, guest speakers, and practical applications of course material.
     /// </summary>
     public class PageSection
     {
@@ -51,7 +51,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string Context { get; set; }
 
         /// <summary>
-        /// Gets or sets Picture.
+        /// A property named "Picture" with both getter and setter methods of type string is defined.
         /// </summary>
         public virtual string Picture { get; set; }
 

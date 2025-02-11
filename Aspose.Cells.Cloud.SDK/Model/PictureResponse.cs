@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class PictureResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Picture.
+        /// Property Summary: This class has a public property named "Picture" of type "Picture" that has both getter and setter methods.
         /// </summary>
         public virtual Picture Picture { get; set; }
 

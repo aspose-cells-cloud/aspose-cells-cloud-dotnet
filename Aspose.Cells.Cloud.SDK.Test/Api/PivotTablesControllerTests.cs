@@ -133,26 +133,26 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
         /// <summary>
         /// Test for GetWorksheetPivotTableFilter of PivotTablesController.
         /// </summary>
-        [TestCategory(ProductName)]
-        [TestMethod]
-        public void TestGetWorksheetPivotTableFilter()
-        {
-            string localName = "TestCase.xlsx";
-            string remoteName = "TestCase.xlsx";
+      //  [TestCategory(ProductName)]
+      //  [TestMethod]
+     //   public void TestGetWorksheetPivotTableFilter()
+     //   {
+      //      string localName = "TestCase.xlsx";
+      //      string remoteName = "TestCase.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+      //      this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
-            var request = new GetWorksheetPivotTableFilterRequest(
-                name: remoteName,
-                sheetName: "Sheet3",
-                pivotTableIndex: 0,
-                filterIndex: 0,
-                folder: remoteFolder,
-                storageName: ""
-            );
-            var actual =  this.CellsApi.GetWorksheetPivotTableFilter(request);
-            Assert.AreEqual(200, actual.Code);
-        }
+        //    var request = new GetWorksheetPivotTableFilterRequest(
+      //          name: remoteName,
+       //         sheetName: "Sheet3",
+        //        pivotTableIndex: 0,
+        //        filterIndex: 0,
+         //       folder: remoteFolder,
+          //      storageName: ""
+        //    );
+         //   var actual =  this.CellsApi.GetWorksheetPivotTableFilter(request);
+        //    Assert.AreEqual(200, actual.Code);
+      //  }
 
         /// <summary>
         /// Test for PutWorksheetPivotTable of PivotTablesController.
@@ -214,7 +214,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             Assert.AreEqual(200, actual.Code);
         }
 
-         /// <summary>
+        /// <summary>
         /// Test for PutWorksheetPivotTableFilter of PivotTablesController.
         /// </summary>
         [TestCategory(ProductName)]

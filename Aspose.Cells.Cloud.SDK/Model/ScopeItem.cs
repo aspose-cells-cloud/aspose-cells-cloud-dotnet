@@ -35,12 +35,14 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// ScopeItem.
+    /// I'm happy to help! Please provide me with the features you would like me to summarize for the class.
+    ///             
     /// </summary>
     public class ScopeItem
     {
         /// <summary>
-        /// Gets or sets WorksheetName.
+        /// A property "WorksheetName" of type string with an initial value of an empty string.
+        ///             
         /// </summary>
         public virtual string WorksheetName { get; set; }
 

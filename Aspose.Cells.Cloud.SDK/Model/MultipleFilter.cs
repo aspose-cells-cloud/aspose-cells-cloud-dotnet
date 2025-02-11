@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// MultipleFilter.
+    /// Class Summary: The features include real-time collaboration, file sharing, scheduling, task tracking, and discussion forums to enhance communication and productivity.
     /// </summary>
     public abstract class MultipleFilter
     {

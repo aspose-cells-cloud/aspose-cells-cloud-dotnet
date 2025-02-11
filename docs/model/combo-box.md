@@ -7,7 +7,7 @@ Represents the control form ComboBox.
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
 |DropDownLines|Integer|true|false |  |Gets or sets the number of list lines displayed in the drop-down portion of a combo box.|
-|InputRange|String|true|false |  ||
+|InputRange|String|true|false |  |Property Summary: Contains a public string property named "InputRange" with both get and set accessors.|
 |SelectedCell|Class|true|false |  |Gets the selected cell in the input range of the combo box.|
 |SelectedIndex|Integer|true|false |  |Gets or sets the index number of the currently selected item in a list box or combo box.                        Zero-based.|
 |SelectedValue|String|true|false |  |Gets the selected value of the combox box.|

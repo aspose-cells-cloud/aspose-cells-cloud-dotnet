@@ -45,7 +45,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? IsAutoText { get; set; }
 
         /// <summary>
-        /// Gets or sets IsDeleted.
+        /// A nullable boolean property "IsDeleted" indicating whether an object has been deleted.
         /// </summary>
         public virtual bool? IsDeleted { get; set; }
 

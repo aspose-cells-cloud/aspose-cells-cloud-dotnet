@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// DeleteIncompleteRowsRequest.
+    /// I'm here to help! Could you please provide the features you would like me to summarize?
     /// </summary>
     public class DeleteIncompleteRowsRequest
     {
@@ -60,7 +60,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string Region { get; set; }
 
         /// <summary>
-        /// Gets or sets Ranges.
+        /// A property named "Ranges" of type IList of Range, with a default value of an empty List of Range.
         /// </summary>
         public virtual IList<Range> Ranges { get; set; }
 

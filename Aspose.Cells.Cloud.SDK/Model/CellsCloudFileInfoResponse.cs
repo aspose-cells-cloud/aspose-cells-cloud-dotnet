@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class CellsCloudFileInfoResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets FileInfo.
+        /// A property named `FileInfo` of type `CellsCloudFileInfo` is defined for the class.
         /// </summary>
         public virtual CellsCloudFileInfo FileInfo { get; set; }
 

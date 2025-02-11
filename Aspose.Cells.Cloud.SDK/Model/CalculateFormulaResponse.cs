@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class CalculateFormulaResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Result.
+        /// A public property "Result" that can be accessed and modified with a string data type.
         /// </summary>
         public virtual string Result { get; set; }
 

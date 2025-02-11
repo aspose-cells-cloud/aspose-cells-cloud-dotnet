@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class TextBoxResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shape.
+        /// A public property named "Shape" of type TextBox is defined with both get and set accessors.
         /// </summary>
         public virtual TextBox Shape { get; set; }
 

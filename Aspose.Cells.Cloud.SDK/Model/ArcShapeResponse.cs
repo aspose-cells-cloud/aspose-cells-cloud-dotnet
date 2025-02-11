@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ArcShapeResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Shape.
+        /// A public property Shape of type ArcShape that can be accessed and modified.
         /// </summary>
         public virtual ArcShape Shape { get; set; }
 

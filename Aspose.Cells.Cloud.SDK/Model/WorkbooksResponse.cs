@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class WorkbooksResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Workbooks.
+        /// Property Summary: Contains a list of "Workbook" elements under the "Workbooks" array in XML format.
         /// </summary>
         public virtual IList<LinkElement> Workbooks { get; set; }
 

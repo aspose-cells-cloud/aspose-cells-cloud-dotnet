@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// RemoveDuplicatesOptions.
+    /// I'm here to help! Just let me know the features you would like me to summarize for you.
     /// </summary>
     public class RemoveDuplicatesOptions : BaseOperateOptions
     {
         /// <summary>
-        /// Gets or sets Name.
+        /// The class has a public property "Name" of type string that can be both read and written.
         /// </summary>
         public override string Name { get; set; }
 

@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class VerticalPageBreakResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets VerticalPageBreak.
+        /// The class has a property that represents a vertical page break.
         /// </summary>
         public virtual VerticalPageBreak VerticalPageBreak { get; set; }
 

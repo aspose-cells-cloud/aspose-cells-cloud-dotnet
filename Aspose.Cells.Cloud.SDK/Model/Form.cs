@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Form.
+    /// I'm happy to help! Please provide the features you would like me to summarize into one sentence for the class.
     /// </summary>
     public class Form : Shape
     {
         /// <summary>
-        /// Gets or sets FormType.
+        /// A property named "FormType" of type string which can be both accessed and modified.
         /// </summary>
         public virtual string FormType { get; set; }
 

@@ -1,6 +1,6 @@
 # **formulaFormatCondition**
 
- 
+Class summary: This class covers various features related to data visualization and graphical representation of data sets. 
 
 ## **Properties**
 

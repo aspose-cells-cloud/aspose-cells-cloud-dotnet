@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Comment : LinkElement
     {
         /// <summary>
-        /// Gets or sets CellName.
+        /// Property: CellName attribute with XmlElement tag in the class.
         /// </summary>
         public virtual string CellName { get; set; }
 

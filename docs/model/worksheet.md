@@ -6,7 +6,7 @@
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|Links|Container|true|false |  ||
+|Links|Container|true|false |  |Property Summary: Contains a list of links represented by the class link.|
 |DisplayRightToLeft|Boolean|true|false |  |Indicates if the specified worksheet is displayed from right to left instead of from left to right.            Default is false. |
 |DisplayZeros|Boolean|true|false |  |True if zero values are displayed. |
 |FirstVisibleColumn|Integer|true|false |  |Represents first visible column index. |

@@ -59,7 +59,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual Color ForegroundColor { get; set; }
 
         /// <summary>
-        /// Gets or sets Format.
+        /// This class has a property named "Format" of type string with both getter and setter methods.
         /// </summary>
         public virtual string Format { get; set; }
 

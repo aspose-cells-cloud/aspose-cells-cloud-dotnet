@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class TrendlinesResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Trendlines.
+        /// This property allows access to the Trendlines feature and set new values for it.
         /// </summary>
         public virtual Trendlines Trendlines { get; set; }
 

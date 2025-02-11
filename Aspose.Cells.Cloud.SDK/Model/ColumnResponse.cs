@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ColumnResponse : CellsCloudResponse
     {
         /// <summary>
-        /// Gets or sets Column.
+        /// This class has a public property called "Column" of type "Column" with both getter and setter methods.
         /// </summary>
         public virtual Column Column { get; set; }
 

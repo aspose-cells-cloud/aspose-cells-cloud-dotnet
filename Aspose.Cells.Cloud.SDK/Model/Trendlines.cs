@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Trendlines : LinkElement
     {
         /// <summary>
-        /// Gets or sets TrendlineList.
+        /// This property allows for a list of Trendline objects to be stored under the XmlElement "TrendLine".
         /// </summary>
         public virtual IList<Trendline> TrendlineList { get; set; }
 

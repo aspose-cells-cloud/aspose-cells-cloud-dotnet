@@ -7,7 +7,7 @@ Represents a defined name for a range of cells.
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
 |Comment|String|true|false |  |Gets and sets the comment of the name.                        Only applies for Excel 2007.|
-|WorksheetIndex|Integer|true|false |  ||
+|WorksheetIndex|Integer|true|false |  |Property Summary: WorksheetIndex is an optional integer property marked with the XmlElement attribute "worksheetindex".|
 |IsReferred|Boolean|true|false |  |Indicates whether this name is referred by other formulas.|
 |IsVisible|Boolean|true|false |  |Indicates whether the name is visible.|
 |R1C1RefersTo|String|true|false |  |Gets or sets a R1C1 reference of the .|

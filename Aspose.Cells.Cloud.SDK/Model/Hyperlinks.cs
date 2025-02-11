@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Hyperlinks : LinkElement
     {
         /// <summary>
-        /// Gets or sets Count.
+        /// Property Summary: An integer property named Count with an XML element name "count."
         /// </summary>
         public virtual int? Count { get; set; }
 
