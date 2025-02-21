@@ -44,6 +44,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         private readonly string ClientSecrent;
         private readonly string Version;        
         private readonly List<Invoker.IRequestHandler> requestHandlers;
+        public bool IsLocalCloud { get; set; } = false;
 
         /// <summary>
         /// 
@@ -60,7 +61,12 @@ namespace Aspose.Cells.Cloud.SDK.Api
             this.BaseUri = baseUrl;
             this.requestHandlers = new List<Invoker.IRequestHandler>();
             this.requestHandlers.Add(new Invoker.ApiExceptionRequestHandler());
-            this.requestHandlers.Add(new Invoker.JwtTokenRequestHandler(baseUrl, clientId, clientSecrent));
+            if (!IsLocalCloud)
+            {
+                this.requestHandlers.Add(new Invoker.JwtTokenRequestHandler(baseUrl, clientId, clientSecrent));
+            };
+            
+
             invoker = new Invoker.ApiInvoker(requestHandlers);
             ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
         }

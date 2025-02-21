@@ -63,6 +63,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests
         public CellsTestCommon()
         {
             this.CellsApi = new CellsApi(this.ClientId, this.ClientSecret, this.BaseUri,this.ApiVersion);
+          //  this.CellsApi.IsLocalCloud = true;
         }
 
         public void UploadFile(string filename , string remotepath , string storageName)
