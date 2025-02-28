@@ -1,4 +1,4 @@
-![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/25.1.2)
+![Nuget](https://img.shields.io/nuget/v/Aspose.Cells-Cloud) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells-Cloud) ![](https://img.shields.io/badge/REST%20API-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-dotnet)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/aspose-cells-cloud/aspose-cells-cloud-dotnet/25.2.0)
 
 # .NET package for Aspose.Cells Cloud
 
@@ -17,11 +17,17 @@ Enhance your .NET applications with the [Aspose.Cells Cloud](https://products.as
 - Import/Export: Facilitates importing data from various sources into spreadsheets and exporting spreadsheet data to other formats.
 - Security Management: Offers a range of security features like data encryption, access control, and permission management to safeguard the security and integrity of spreadsheet data.
 
-## Feature & Enhancements in Version 25.1.2
+## Feature & Enhancements in Version 25.2.0
 
 Full list of issues covering all changes in this release:
 
-- Support for Aspose.Cells Cloud Docker
+- Support copying a range from one workbook to another workbook.
+- Add query parameters for image and print options to enhance the Get Worksheet API.
+- Added an API to count the number of Excel characters for cells cloud.
+- Added an API to count the number of Excel words for cells cloud.
+- Added an API to count the number of occurrences of a specified word in Excel for cells cloud
+- Add a new feature to support converting range to images.
+- Add a new feature to support converting worksheets to images
 
 
 ## Support file format
@@ -93,6 +99,10 @@ var response = cellsApi.CellsWorksheetsPutAddNewWorksheet(name, sheetName, posit
 
 
 # Release history version
+
+## Feature & Enhancements in Version 25.1.2
+
+- Support for Aspose.Cells Cloud Docker
 
 ## Feature & Enhancements in Version 25.1.1
 

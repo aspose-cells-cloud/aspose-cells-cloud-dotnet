@@ -1,6 +1,6 @@
 # **imageOrPrintOptions**
 
-Allows to specify options when rendering worksheet to images, printing worksheet or rendering chart to image. 
+           Allows to specify options when rendering worksheet to images, printing worksheet or rendering chart to image.            
 
 ## **Properties**
 

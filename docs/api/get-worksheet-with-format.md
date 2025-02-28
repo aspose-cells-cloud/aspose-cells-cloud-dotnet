@@ -19,6 +19,8 @@ GET http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}
 |horizontalResolution|Integer|Query|Image horizontal resolution.|
 |area|String|Query|Represents the range to be printed.|
 |pageIndex|Integer|Query|Represents the page to be printed|
+|onePagePerSheet|Boolean|Query||
+|printHeadings|Boolean|Query||
 |folder|String|Query|The folder where the file is situated.|
 |storageName|String|Query|The storage name where the file is situated.|
 

@@ -63,7 +63,6 @@ namespace Aspose.Cells.Cloud.SDK.Tests
         public CellsTestCommon()
         {
             this.CellsApi = new CellsApi(this.ClientId, this.ClientSecret, this.BaseUri,this.ApiVersion);
-          //  this.CellsApi.IsLocalCloud = true;
         }
 
         public void UploadFile(string filename , string remotepath , string storageName)
@@ -113,7 +112,8 @@ namespace Aspose.Cells.Cloud.SDK.Tests
                 int pos = localFolder.IndexOf("bin");
                 if(pos >0)
                 {
-                    localFolder = Path.Combine( localFolder.Substring(0, pos),"./../TestData","CellsCloud");
+                    //localFolder = Path.Combine( localFolder.Substring(0, pos),"./../TestData","CellsCloud");
+                    localFolder = Path.Combine( localFolder.Substring(0, pos),"./../TestData");
                 }
             }
 

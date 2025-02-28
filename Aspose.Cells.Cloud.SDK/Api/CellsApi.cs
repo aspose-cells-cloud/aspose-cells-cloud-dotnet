@@ -9,10 +9,10 @@
 //  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 //  copies of the Software, and to permit persons to whom the Software is
 //  furnished to do so, subject to the following conditions:
-// 
+//
 //  The above copyright notice and this permission notice shall be included in all
 //  copies or substantial portions of the Software.
-// 
+//
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 //  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 //  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -42,18 +42,18 @@ namespace Aspose.Cells.Cloud.SDK.Api
         private readonly string BaseUri;
         private readonly string ClientId;
         private readonly string ClientSecrent;
-        private readonly string Version;        
+        private readonly string Version;
         private readonly List<Invoker.IRequestHandler> requestHandlers;
         public bool IsLocalCloud { get; set; } = false;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="clientId"></param>
         /// <param name="clientSecrent"></param>
         /// <param name="baseUrl"></param>
         /// <param name="version"></param>
-        public CellsApi(string clientId, string clientSecrent,string baseUrl = "https://api.aspose.cloud", string version ="v3.0")    
+        public CellsApi(string clientId, string clientSecrent,string baseUrl = "https://api.aspose.cloud", string version ="v3.0")
         {
             this.Version = version;
             this.ClientSecrent = clientSecrent;
@@ -61,11 +61,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
             this.BaseUri = baseUrl;
             this.requestHandlers = new List<Invoker.IRequestHandler>();
             this.requestHandlers.Add(new Invoker.ApiExceptionRequestHandler());
-            if (!IsLocalCloud)
+             if (!IsLocalCloud)
             {
                 this.requestHandlers.Add(new Invoker.JwtTokenRequestHandler(baseUrl, clientId, clientSecrent));
             };
-            
 
             invoker = new Invoker.ApiInvoker(requestHandlers);
             ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
@@ -2740,6 +2739,29 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </summary>
 
         public async Task<   FileInfo  > PostConvertWorkbookToCSVAsync(PostConvertWorkbookToCSVRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostConvertWorksheetToImageRequest" /></param>
+        public   FileInfo  PostConvertWorksheetToImage(PostConvertWorksheetToImageRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   FileInfo  > PostConvertWorksheetToImageAsync(PostConvertWorksheetToImageRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    FileInfo  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -5738,6 +5760,29 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostWorksheetCellsRangeToImageRequest" /></param>
+        public   CellsCloudResponse  PostWorksheetCellsRangeToImage(PostWorksheetCellsRangeToImageRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CellsCloudResponse  > PostWorksheetCellsRangeToImageAsync(PostWorksheetCellsRangeToImageRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        /// <summary>
         /// Insert a range of cells and shift existing cells based on the specified shift option.
         /// </summary>
         /// <param name="request">Request. <see cref="PutWorksheetCellsRangeRequest" /></param>
@@ -6114,6 +6159,75 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostCharacterCountRequest" /></param>
+        public   string  PostCharacterCount(PostCharacterCountRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   string  > PostCharacterCountAsync(PostCharacterCountRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostWordsCountRequest" /></param>
+        public   string  PostWordsCount(PostWordsCountRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   string  > PostWordsCountAsync(PostWordsCountRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="PostSpecifyWordsCountRequest" /></param>
+        public   string  PostSpecifyWordsCount(PostSpecifyWordsCountRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   string  > PostSpecifyWordsCountAsync(PostSpecifyWordsCountRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -6887,7 +7001,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
-            return System.Convert.ToInt32( result); 
+            return System.Convert.ToInt32( result);
         }
 
         /// <summary>
@@ -6898,7 +7012,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
-            return System.Convert.ToInt32( result); 
+            return System.Convert.ToInt32( result);
         }
 
 
@@ -7822,7 +7936,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
-            return System.Convert.ToInt32( result); 
+            return System.Convert.ToInt32( result);
         }
 
         /// <summary>
@@ -7833,7 +7947,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
-            return System.Convert.ToInt32( result); 
+            return System.Convert.ToInt32( result);
         }
 
 

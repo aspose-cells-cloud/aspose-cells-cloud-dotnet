@@ -54,9 +54,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="horizontalResolution">Image horizontal resolution.</param>
         /// <param name="area">Represents the range to be printed.</param>
         /// <param name="pageIndex">Represents the page to be printed</param>
+        /// <param name="onePagePerSheet"></param>
+        /// <param name="printHeadings"></param>
         /// <param name="folder">The folder where the file is situated.</param>
         /// <param name="storageName">The storage name where the file is situated.</param>
-        public GetWorksheetWithFormatRequest(string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string area = null, int? pageIndex = null, string folder = null, string storageName = null)
+        public GetWorksheetWithFormatRequest(string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string area = null, int? pageIndex = null, bool? onePagePerSheet = null, bool? printHeadings = null, string folder = null, string storageName = null)
         {
             this.name = name;
             this.sheetName = sheetName;
@@ -65,6 +67,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.horizontalResolution = horizontalResolution;
             this.area = area;
             this.pageIndex = pageIndex;
+            this.onePagePerSheet = onePagePerSheet;
+            this.printHeadings = printHeadings;
             this.folder = folder;
             this.storageName = storageName;
         }
@@ -103,6 +107,16 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Represents the page to be printed
         /// </summary>
         public int? pageIndex { get; set; }
+
+        /// <summary>
+        /// Gets or sets onePagePerSheet.
+        /// </summary>
+        public bool? onePagePerSheet { get; set; }
+
+        /// <summary>
+        /// Gets or sets printHeadings.
+        /// </summary>
+        public bool? printHeadings { get; set; }
 
         /// <summary>
         /// The folder where the file is situated.
@@ -156,6 +170,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             if(this.horizontalResolution != null)  path = UrlHelper.AddQueryParameterToUrl(path, "horizontalResolution", this.horizontalResolution);
             if (!string.IsNullOrEmpty(this.area))  path = UrlHelper.AddQueryParameterToUrl(path, "area", this.area);
             if(this.pageIndex != null)  path = UrlHelper.AddQueryParameterToUrl(path, "pageIndex", this.pageIndex);
+            if(this.onePagePerSheet != null)  path = UrlHelper.AddQueryParameterToUrl(path, "onePagePerSheet", this.onePagePerSheet);
+            if(this.printHeadings != null)  path = UrlHelper.AddQueryParameterToUrl(path, "printHeadings", this.printHeadings);
             if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
             if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
             if (this.extendQueryParameterMap != null)

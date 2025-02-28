@@ -82,6 +82,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? ReferToSheetWithSameName { get; set; }
 
         /// <summary>
+        /// Gets or sets CopyTheme.
+        /// </summary>
+        public virtual bool? CopyTheme { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object.
         /// </summary>
         /// <returns>String presentation of the object.</returns>
@@ -95,6 +100,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  ExtendToAdjacentRange: ").Append(this.ExtendToAdjacentRange).Append("\n");
             sb.Append("  ReferToDestinationSheet: ").Append(this.ReferToDestinationSheet).Append("\n");
             sb.Append("  ReferToSheetWithSameName: ").Append(this.ReferToSheetWithSameName).Append("\n");
+            sb.Append("  CopyTheme: ").Append(this.CopyTheme).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
