@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Shapes : LinkElement
     {
         /// <summary>
-        /// Gets or sets ShapeList.
+        /// A public property named "ShapeList" of type List LinkElement for storing a collection of link elements.
         /// </summary>
         public virtual IList<LinkElement> ShapeList { get; set; }
 

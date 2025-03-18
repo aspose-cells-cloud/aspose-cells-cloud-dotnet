@@ -6,6 +6,8 @@ Represents the options of saving .xlsb file.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
+|ExportAllColumnIndexes|Boolean|true|false |  ||
+|CompressionType|String|true|false |  ||
 |SaveFormat|String|true|false |  ||
 |CachedFileFolder|String|true|false |  ||
 |ClearData|Boolean|true|false |  ||
@@ -14,4 +16,9 @@ Represents the options of saving .xlsb file.
 |RefreshChartCache|Boolean|true|false |  ||
 |SortNames|Boolean|true|false |  ||
 |ValidateMergedAreas|Boolean|true|false |  ||
+|MergeAreas|Boolean|true|false |  ||
+|SortExternalNames|Boolean|true|false |  ||
+|CheckExcelRestriction|Boolean|true|false |  ||
+|UpdateSmartArt|Boolean|true|false |  ||
+|EncryptDocumentProperties|Boolean|true|false |  ||
 

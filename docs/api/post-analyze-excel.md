@@ -1,6 +1,6 @@
 # **postAnalyzeExcel API**
 
- 
+Perform business analysis of data in Excel files. 
 
 ```bash
 
@@ -12,7 +12,7 @@ POST http://api.aspose.cloud/v3.0//cells/analyze
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|analyzeExcelRequest|Class|Body||
+|analyzeExcelRequest|Class|Body|Excel files and analysis output requirements|
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/AnalyseController/PostAnalyzeExcel) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

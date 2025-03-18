@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class Charts : LinkElement
     {
         /// <summary>
-        /// Gets or sets ChartList.
+        /// A property named ChartList of type List LinkElement  that is publicly accessible with both read and write capabilities.
         /// </summary>
         public virtual IList<LinkElement> ChartList { get; set; }
 

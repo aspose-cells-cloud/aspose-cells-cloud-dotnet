@@ -46,6 +46,75 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual int? SheetIndex { get; set; }
 
         /// <summary>
+        /// Indicate the chart imagetype when converting.
+        /// </summary>
+        public virtual string ChartImageType { get; set; }
+
+        /// <summary>
+        /// Indicate the filename of embeded image in svg. This should be full path with directory like "c:\\xpsEmbeded"
+        /// </summary>
+        public virtual string EmbededImageNameInSvg { get; set; }
+
+        /// <summary>
+        /// Gets or sets the horizontal resolution for generated images, in dots per inch.  
+        ///                Applies generating image method except Emf format images.
+        ///                The default value is 96.
+        /// </summary>
+        public virtual int? HorizontalResolution { get; set; }
+
+        /// <summary>
+        /// Gets or sets the format of the generated images.  Don't apply the method that returns a Bitmap object.
+        ///              The default value is ImageFormat.Bmp.  Don't apply the method that returns a Bitmap object.
+        /// </summary>
+        public virtual string ImageFormat { get; set; }
+
+        /// <summary>
+        /// Indicates whether the width and height of the cells is automatically fitted by cell value. The default value is false.
+        /// </summary>
+        public virtual bool? IsCellAutoFit { get; set; }
+
+        /// <summary>
+        /// If OnePagePerSheet is true , all content of one sheet will output to only
+        ///                 one page in result. The paper size of pagesetup will be invalid, and the
+        ///                 other settings of pagesetup will still take effect.
+        /// </summary>
+        public virtual bool? OnePagePerSheet { get; set; }
+
+        /// <summary>
+        /// If this property is true , onle Area will be output, and no scale will take effect.
+        /// </summary>
+        public virtual bool? OnlyArea { get; set; }
+
+        /// <summary>
+        /// Indicates which pages will not be printed.
+        /// </summary>
+        public virtual string PrintingPage { get; set; }
+
+        /// <summary>
+        /// If PrintWithStatusDialog = true , there will be a dialog that shows current print status.  else no such dialog will show.
+        /// </summary>
+        public virtual bool? PrintWithStatusDialog { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value determining the quality of the generated images to apply only when saving pages to the Jpeg format.
+        ///             Has effect only when saving to JPEG.  The value must be between 0 and 100. The default value is 100.
+        /// </summary>
+        public virtual int? Quality { get; set; }
+
+        /// <summary>
+        /// Gets or sets the type of compression to apply only when saving pages to the Tiff format.
+        ///             Has effect only when saving to TIFF.  The default value is Lzw.
+        /// </summary>
+        public virtual string TiffCompression { get; set; }
+
+        /// <summary>
+        /// Gets or sets the vertical resolution for generated images, in dots per inch.
+        ///             Applies generating image method except Emf format image.
+        ///             The default value is 96.
+        /// </summary>
+        public virtual int? VerticalResolution { get; set; }
+
+        /// <summary>
         /// Gets or sets SaveFormat.
         /// </summary>
         public override string SaveFormat { get; set; }
@@ -86,6 +155,31 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override bool? ValidateMergedAreas { get; set; }
 
         /// <summary>
+        /// Gets or sets MergeAreas.
+        /// </summary>
+        public override bool? MergeAreas { get; set; }
+
+        /// <summary>
+        /// Gets or sets SortExternalNames.
+        /// </summary>
+        public override bool? SortExternalNames { get; set; }
+
+        /// <summary>
+        /// Gets or sets CheckExcelRestriction.
+        /// </summary>
+        public override bool? CheckExcelRestriction { get; set; }
+
+        /// <summary>
+        /// Gets or sets UpdateSmartArt.
+        /// </summary>
+        public override bool? UpdateSmartArt { get; set; }
+
+        /// <summary>
+        /// Gets or sets EncryptDocumentProperties.
+        /// </summary>
+        public override bool? EncryptDocumentProperties { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object.
         /// </summary>
         /// <returns>String presentation of the object.</returns>
@@ -94,6 +188,18 @@ namespace Aspose.Cells.Cloud.SDK.Model
             var sb = new StringBuilder();
             sb.Append("class SvgSaveOptions {\n");
             sb.Append("  SheetIndex: ").Append(this.SheetIndex).Append("\n");
+            sb.Append("  ChartImageType: ").Append(this.ChartImageType).Append("\n");
+            sb.Append("  EmbededImageNameInSvg: ").Append(this.EmbededImageNameInSvg).Append("\n");
+            sb.Append("  HorizontalResolution: ").Append(this.HorizontalResolution).Append("\n");
+            sb.Append("  ImageFormat: ").Append(this.ImageFormat).Append("\n");
+            sb.Append("  IsCellAutoFit: ").Append(this.IsCellAutoFit).Append("\n");
+            sb.Append("  OnePagePerSheet: ").Append(this.OnePagePerSheet).Append("\n");
+            sb.Append("  OnlyArea: ").Append(this.OnlyArea).Append("\n");
+            sb.Append("  PrintingPage: ").Append(this.PrintingPage).Append("\n");
+            sb.Append("  PrintWithStatusDialog: ").Append(this.PrintWithStatusDialog).Append("\n");
+            sb.Append("  Quality: ").Append(this.Quality).Append("\n");
+            sb.Append("  TiffCompression: ").Append(this.TiffCompression).Append("\n");
+            sb.Append("  VerticalResolution: ").Append(this.VerticalResolution).Append("\n");
             sb.Append("  SaveFormat: ").Append(this.SaveFormat).Append("\n");
             sb.Append("  CachedFileFolder: ").Append(this.CachedFileFolder).Append("\n");
             sb.Append("  ClearData: ").Append(this.ClearData).Append("\n");
@@ -102,6 +208,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  RefreshChartCache: ").Append(this.RefreshChartCache).Append("\n");
             sb.Append("  SortNames: ").Append(this.SortNames).Append("\n");
             sb.Append("  ValidateMergedAreas: ").Append(this.ValidateMergedAreas).Append("\n");
+            sb.Append("  MergeAreas: ").Append(this.MergeAreas).Append("\n");
+            sb.Append("  SortExternalNames: ").Append(this.SortExternalNames).Append("\n");
+            sb.Append("  CheckExcelRestriction: ").Append(this.CheckExcelRestriction).Append("\n");
+            sb.Append("  UpdateSmartArt: ").Append(this.UpdateSmartArt).Append("\n");
+            sb.Append("  EncryptDocumentProperties: ").Append(this.EncryptDocumentProperties).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

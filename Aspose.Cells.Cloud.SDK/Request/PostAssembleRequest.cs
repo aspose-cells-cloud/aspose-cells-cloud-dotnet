@@ -49,10 +49,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         /// <param name="file">File to upload</param>
         /// <param name="datasource"></param>
-        /// <param name="outFormat"></param>
-        /// <param name="password"></param>
-        /// <param name="checkExcelRestriction"></param>
-        /// <param name="region"></param>
+        /// <param name="outFormat">The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
+        /// <param name="password">The password needed to open an Excel file.</param>
+        /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
+        /// <param name="region">The regional settings for workbook.</param>
         public PostAssembleRequest(IDictionary<string, System.IO.Stream> file, string datasource, string outFormat = null, string password = null, bool? checkExcelRestriction = null, string region = null)
         {
             this.File = file;
@@ -74,22 +74,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string datasource { get; set; }
 
         /// <summary>
-        /// Gets or sets outFormat.
+        /// The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)
         /// </summary>
         public string outFormat { get; set; }
 
         /// <summary>
-        /// Gets or sets password.
+        /// The password needed to open an Excel file.
         /// </summary>
         public string password { get; set; }
 
         /// <summary>
-        /// Gets or sets checkExcelRestriction.
+        /// Whether check restriction of excel file when user modify cells related objects.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
 
         /// <summary>
-        /// Gets or sets region.
+        /// The regional settings for workbook.
         /// </summary>
         public string region { get; set; }
 

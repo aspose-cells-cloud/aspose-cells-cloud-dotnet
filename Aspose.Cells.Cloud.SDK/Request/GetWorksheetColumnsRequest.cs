@@ -47,12 +47,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetColumnsRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="offset"></param>
+        /// <param name="name">The file name.</param>
+        /// <param name="sheetName">The worksheet name.</param>
+        /// <param name="offset">The workdook folder.</param>
         /// <param name="count"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public GetWorksheetColumnsRequest(string name = null, string sheetName = null, int? offset = null, int? count = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -64,17 +64,17 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The file name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
 
         /// <summary>
-        /// Gets or sets offset.
+        /// The workdook folder.
         /// </summary>
         public int? offset { get; set; }
 
@@ -84,12 +84,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public int? count { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

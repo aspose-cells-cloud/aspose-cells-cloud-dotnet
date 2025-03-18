@@ -35,4 +35,6 @@ Represents the options of saving pptx file.
 |RefreshChartCache|Boolean|true|false |  ||
 |SortNames|Boolean|true|false |  ||
 |ValidateMergedAreas|Boolean|true|false |  ||
+|CheckExcelRestriction|Boolean|true|false |  ||
+|EncryptDocumentProperties|Boolean|true|false |  ||
 

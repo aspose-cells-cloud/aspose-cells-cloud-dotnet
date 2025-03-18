@@ -47,10 +47,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDocumentPropertiesRequest"/> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="type"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
+        /// <param name="name">The workbook name.</param>
+        /// <param name="type">Excel property type.</param>
+        /// <param name="folder">The folder where the file is situated.</param>
+        /// <param name="storageName">The storage name where the file is situated.</param>
         public GetDocumentPropertiesRequest(string name, string type = null, string folder = null, string storageName = null)
         {
             this.name = name;
@@ -60,22 +60,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
         }
 
         /// <summary>
-        /// Gets or sets name.
+        /// The workbook name.
         /// </summary>
         public string name { get; set; }
 
         /// <summary>
-        /// Gets or sets type.
+        /// Excel property type.
         /// </summary>
         public string type { get; set; }
 
         /// <summary>
-        /// Gets or sets folder.
+        /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName.
+        /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 

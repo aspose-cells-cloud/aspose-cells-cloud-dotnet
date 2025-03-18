@@ -6,6 +6,6 @@ Encapsulates a collection of  objects.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|ChartList|Container|true|false |  ||
+|ChartList|Container|true|false |  |A property named ChartList of type List LinkElement  that is publicly accessible with both read and write capabilities.|
 |link|Class|true|false |  ||
 

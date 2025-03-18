@@ -14,4 +14,9 @@ Represents the options of saving dif file.
 |RefreshChartCache|Boolean|true|false |  ||
 |SortNames|Boolean|true|false |  ||
 |ValidateMergedAreas|Boolean|true|false |  ||
+|MergeAreas|Boolean|true|false |  ||
+|SortExternalNames|Boolean|true|false |  ||
+|CheckExcelRestriction|Boolean|true|false |  ||
+|UpdateSmartArt|Boolean|true|false |  ||
+|EncryptDocumentProperties|Boolean|true|false |  ||
 

@@ -40,6 +40,152 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class MHtmlSaveOptions : SaveOptions
     {
         /// <summary>
+        /// Gets or sets ExportPageHeaders.
+        /// </summary>
+        public virtual bool? ExportPageHeaders { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual bool? ExportPageFooters { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual bool? ExportRowColumnHeadings { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual bool? ShowAllSheets { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual ImageOrPrintOptions ImageOptions { get; set; }
+
+        /// <summary>
+        /// Indicates whether save the html as single file. The default value is false.
+        /// </summary>
+        public virtual bool? SaveAsSingleFile { get; set; }
+
+        /// <summary>
+        /// Indicates whether save the html as single file. The default value is false.
+        /// </summary>
+        public virtual bool? ExportHiddenWorksheet { get; set; }
+
+        /// <summary>
+        /// Indicating whether exporting the gridlines.The default value is false.
+        /// </summary>
+        public virtual bool? ExportGridLines { get; set; }
+
+        /// <summary>
+        /// Indicating if html or mht file is presentation preference.The default value is
+        ///              false.if you want to get more beautiful presentation,please set the value to
+        ///                 true.
+        /// </summary>
+        public virtual bool? PresentationPreference { get; set; }
+
+        /// <summary>
+        /// Gets and sets the prefix of the css name,the default value is "".
+        /// </summary>
+        public virtual string CellCssPrefix { get; set; }
+
+        /// <summary>
+        /// Gets and sets the prefix of the type css name such as tr,col,td and so on, they
+        ///                 are contained in the table element which has the specific TableCssId attribute.
+        ///                 The default value is "".
+        /// </summary>
+        public virtual string TableCssId { get; set; }
+
+        /// <summary>
+        /// Indicating whether using full path link in sheet00x.htm,filelist.xml and tabstrip.htm.
+        ///                 The default value is false.
+        /// </summary>
+        public virtual bool? IsFullPathLink { get; set; }
+
+        /// <summary>
+        /// Indicating whether export the worksheet css separately.The default value is false.
+        /// </summary>
+        public virtual bool? ExportWorksheetCSSSeparately { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual bool? ExportSimilarBorderStyle { get; set; }
+
+        /// <summary>
+        /// Indicates whether merging empty TD element forcely when exporting file to html.
+        ///                 The size of html file will be reduced significantly after setting value to true.
+        ///                 The default value is false. If you want to import the html file to excel or export
+        ///                 perfect grid lines when saving file to html, please keep the default value.
+        /// </summary>
+        public virtual bool? MergeEmptyTdForcely { get; set; }
+
+        /// <summary>
+        /// Indicates whether exporting excel coordinate of nonblank cells when saving file
+        ///                 to html. The default value is false. If you want to import the output html to
+        ///                 excel, please keep the default value.
+        /// </summary>
+        public virtual bool? ExportCellCoordinate { get; set; }
+
+        /// <summary>
+        /// Indicates whether exporting extra headings when the length of text is longer
+        ///                 than max display column. The default value is false. If you want to import the
+        ///                 html file to excel, please keep the default value.
+        /// </summary>
+        public virtual bool? ExportExtraHeadings { get; set; }
+
+        /// <summary>
+        /// Indicates whether exporting headings when saving file to html.The default value
+        ///                 is false. If you want to import the html file to excel, please keep the default
+        ///                 value.
+        /// </summary>
+        public virtual bool? ExportHeadings { get; set; }
+
+        /// <summary>
+        /// Indicates whether exporting formula when saving file to html. The default value
+        ///                 is true. If you want to import the output html to excel, please keep the default
+        ///                 value
+        /// </summary>
+        public virtual bool? ExportFormula { get; set; }
+
+        /// <summary>
+        /// Indicates whether adding tooltip text when the data can't be fully displayed.
+        /// </summary>
+        public virtual bool? AddTooltipText { get; set; }
+
+        /// <summary>
+        /// Indicating whether exporting bogus bottom row data. The default value is true.If you want to import the html or mht file to excel, please keep the default value.
+        /// </summary>
+        public virtual bool? ExportBogusRowData { get; set; }
+
+        /// <summary>
+        /// Indicating whether excluding unused styles.The default value is false.If you  want to import the html or mht file to excel, please keep the default value.
+        /// </summary>
+        public virtual bool? ExcludeUnusedStyles { get; set; }
+
+        /// <summary>
+        /// Indicating whether exporting document properties.The default value is true.If  you want to import the html or mht file to excel, please keep the default value.
+        /// </summary>
+        public virtual bool? ExportDocumentProperties { get; set; }
+
+        /// <summary>
+        /// Indicating whether exporting worksheet properties.The default value is true.If  you want to import the html or mht file to excel, please keep the default value.
+        /// </summary>
+        public virtual bool? ExportWorksheetProperties { get; set; }
+
+        /// <summary>
+        /// Indicating whether exporting workbook properties.The default value is true.If  you want to import the html or mht file to excel, please keep the default value.
+        /// </summary>
+        public virtual bool? ExportWorkbookProperties { get; set; }
+
+        /// <summary>
+        /// Indicating whether exporting frame scripts and document properties. The default  value is true.If you want to import the html or mht file to excel, please keep the default value.
+        /// </summary>
+        public virtual bool? ExportFrameScriptsAndProperties { get; set; }
+
+        /// <summary>
         /// The directory that the attached files will be saved to.  Only for saving to html stream.
         /// </summary>
         public virtual string AttachedFilesDirectory { get; set; }
@@ -50,7 +196,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string AttachedFilesUrlPrefix { get; set; }
 
         /// <summary>
-        /// If not set,use Encoding.UTF8 as default enconding type.
+        /// 
         /// </summary>
         public virtual string Encoding { get; set; }
 
@@ -65,19 +211,19 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string ExportChartImageFormat { get; set; }
 
         /// <summary>
-        /// Specifies whether images are saved in Base64 format to HTML, MHTML or EPUB.
+        /// 
         /// </summary>
         public virtual bool? ExportImagesAsBase64 { get; set; }
 
         /// <summary>
-        /// Hidden column(the width of this column is 0) in excel,before save this into 
+        /// Hidden column(the width of this column is 0) in excel,before save this into
         ///                html format, if HtmlHiddenColDisplayType is "Remove",the hidden column would
         ///                ont been output, if the value is "Hidden", the column would been output,but was hidden,the default value is "Hidden"
         /// </summary>
         public virtual string HiddenColDisplayType { get; set; }
 
         /// <summary>
-        /// Hidden row(the height of this row is 0) in excel,before save this into html 
+        /// Hidden row(the height of this row is 0) in excel,before save this into html
         ///                format, if HtmlHiddenRowDisplayType is "Remove",the hidden row would ont
         ///                been output, if the value is "Hidden", the row would been output,but was
         ///                hidden,the default value is "Hidden"
@@ -108,6 +254,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// Parse html tag in cell,like ,as cell value,or as html tag,default is true
         /// </summary>
         public virtual bool? ParseHtmlTagInCell { get; set; }
+
+        /// <summary>
+        /// Gets or sets CellNameAttribute.
+        /// </summary>
+        public virtual string CellNameAttribute { get; set; }
 
         /// <summary>
         /// Gets or sets SaveFormat.
@@ -150,6 +301,31 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override bool? ValidateMergedAreas { get; set; }
 
         /// <summary>
+        /// Gets or sets MergeAreas.
+        /// </summary>
+        public override bool? MergeAreas { get; set; }
+
+        /// <summary>
+        /// Gets or sets SortExternalNames.
+        /// </summary>
+        public override bool? SortExternalNames { get; set; }
+
+        /// <summary>
+        /// Gets or sets CheckExcelRestriction.
+        /// </summary>
+        public override bool? CheckExcelRestriction { get; set; }
+
+        /// <summary>
+        /// Gets or sets UpdateSmartArt.
+        /// </summary>
+        public override bool? UpdateSmartArt { get; set; }
+
+        /// <summary>
+        /// Gets or sets EncryptDocumentProperties.
+        /// </summary>
+        public override bool? EncryptDocumentProperties { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object.
         /// </summary>
         /// <returns>String presentation of the object.</returns>
@@ -157,6 +333,32 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
             var sb = new StringBuilder();
             sb.Append("class MHtmlSaveOptions {\n");
+            sb.Append("  ExportPageHeaders: ").Append(this.ExportPageHeaders).Append("\n");
+            sb.Append("  ExportPageFooters: ").Append(this.ExportPageFooters).Append("\n");
+            sb.Append("  ExportRowColumnHeadings: ").Append(this.ExportRowColumnHeadings).Append("\n");
+            sb.Append("  ShowAllSheets: ").Append(this.ShowAllSheets).Append("\n");
+            sb.Append("  ImageOptions: ").Append(this.ImageOptions).Append("\n");
+            sb.Append("  SaveAsSingleFile: ").Append(this.SaveAsSingleFile).Append("\n");
+            sb.Append("  ExportHiddenWorksheet: ").Append(this.ExportHiddenWorksheet).Append("\n");
+            sb.Append("  ExportGridLines: ").Append(this.ExportGridLines).Append("\n");
+            sb.Append("  PresentationPreference: ").Append(this.PresentationPreference).Append("\n");
+            sb.Append("  CellCssPrefix: ").Append(this.CellCssPrefix).Append("\n");
+            sb.Append("  TableCssId: ").Append(this.TableCssId).Append("\n");
+            sb.Append("  IsFullPathLink: ").Append(this.IsFullPathLink).Append("\n");
+            sb.Append("  ExportWorksheetCSSSeparately: ").Append(this.ExportWorksheetCSSSeparately).Append("\n");
+            sb.Append("  ExportSimilarBorderStyle: ").Append(this.ExportSimilarBorderStyle).Append("\n");
+            sb.Append("  MergeEmptyTdForcely: ").Append(this.MergeEmptyTdForcely).Append("\n");
+            sb.Append("  ExportCellCoordinate: ").Append(this.ExportCellCoordinate).Append("\n");
+            sb.Append("  ExportExtraHeadings: ").Append(this.ExportExtraHeadings).Append("\n");
+            sb.Append("  ExportHeadings: ").Append(this.ExportHeadings).Append("\n");
+            sb.Append("  ExportFormula: ").Append(this.ExportFormula).Append("\n");
+            sb.Append("  AddTooltipText: ").Append(this.AddTooltipText).Append("\n");
+            sb.Append("  ExportBogusRowData: ").Append(this.ExportBogusRowData).Append("\n");
+            sb.Append("  ExcludeUnusedStyles: ").Append(this.ExcludeUnusedStyles).Append("\n");
+            sb.Append("  ExportDocumentProperties: ").Append(this.ExportDocumentProperties).Append("\n");
+            sb.Append("  ExportWorksheetProperties: ").Append(this.ExportWorksheetProperties).Append("\n");
+            sb.Append("  ExportWorkbookProperties: ").Append(this.ExportWorkbookProperties).Append("\n");
+            sb.Append("  ExportFrameScriptsAndProperties: ").Append(this.ExportFrameScriptsAndProperties).Append("\n");
             sb.Append("  AttachedFilesDirectory: ").Append(this.AttachedFilesDirectory).Append("\n");
             sb.Append("  AttachedFilesUrlPrefix: ").Append(this.AttachedFilesUrlPrefix).Append("\n");
             sb.Append("  Encoding: ").Append(this.Encoding).Append("\n");
@@ -169,6 +371,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  IsExpImageToTempDir: ").Append(this.IsExpImageToTempDir).Append("\n");
             sb.Append("  PageTitle: ").Append(this.PageTitle).Append("\n");
             sb.Append("  ParseHtmlTagInCell: ").Append(this.ParseHtmlTagInCell).Append("\n");
+            sb.Append("  CellNameAttribute: ").Append(this.CellNameAttribute).Append("\n");
             sb.Append("  SaveFormat: ").Append(this.SaveFormat).Append("\n");
             sb.Append("  CachedFileFolder: ").Append(this.CachedFileFolder).Append("\n");
             sb.Append("  ClearData: ").Append(this.ClearData).Append("\n");
@@ -177,6 +380,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  RefreshChartCache: ").Append(this.RefreshChartCache).Append("\n");
             sb.Append("  SortNames: ").Append(this.SortNames).Append("\n");
             sb.Append("  ValidateMergedAreas: ").Append(this.ValidateMergedAreas).Append("\n");
+            sb.Append("  MergeAreas: ").Append(this.MergeAreas).Append("\n");
+            sb.Append("  SortExternalNames: ").Append(this.SortExternalNames).Append("\n");
+            sb.Append("  CheckExcelRestriction: ").Append(this.CheckExcelRestriction).Append("\n");
+            sb.Append("  UpdateSmartArt: ").Append(this.UpdateSmartArt).Append("\n");
+            sb.Append("  EncryptDocumentProperties: ").Append(this.EncryptDocumentProperties).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

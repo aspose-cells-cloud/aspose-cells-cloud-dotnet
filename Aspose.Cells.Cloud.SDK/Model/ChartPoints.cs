@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class ChartPoints : LinkElement
     {
         /// <summary>
-        /// Gets or sets ChartPointList.
+        /// This class has a property named ChartPointList of type List ChartPoint  with an XmlElement attribute "ChartPoint".
         /// </summary>
         public virtual IList<ChartPoint> ChartPointList { get; set; }
 

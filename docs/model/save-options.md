@@ -14,4 +14,9 @@ Represents all save options
 |RefreshChartCache|Boolean|true|false |  |Indicates whether refreshing chart cache data|
 |SortNames|Boolean|true|false |  |Indicates whether sorting defined names before saving file.|
 |ValidateMergedAreas|Boolean|true|false |  |Indicates whether validate merged areas before saving the file.The default value is false.            |
+|MergeAreas|Boolean|true|false |  ||
+|SortExternalNames|Boolean|true|false |  ||
+|CheckExcelRestriction|Boolean|true|false |  ||
+|UpdateSmartArt|Boolean|true|false |  ||
+|EncryptDocumentProperties|Boolean|true|false |  ||
 

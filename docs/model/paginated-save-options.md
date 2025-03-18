@@ -32,4 +32,6 @@ Represents the options for pagination.
 |RefreshChartCache|Boolean|true|false |  ||
 |SortNames|Boolean|true|false |  ||
 |ValidateMergedAreas|Boolean|true|false |  ||
+|CheckExcelRestriction|Boolean|true|false |  ||
+|EncryptDocumentProperties|Boolean|true|false |  ||
 

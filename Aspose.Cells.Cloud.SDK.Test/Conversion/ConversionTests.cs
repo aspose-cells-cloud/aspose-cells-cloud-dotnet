@@ -9,10 +9,10 @@
 //  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 //  copies of the Software, and to permit persons to whom the Software is
 //  furnished to do so, subject to the following conditions:
-// 
+//
 //  The above copyright notice and this permission notice shall be included in all
 //  copies or substantial portions of the Software.
-// 
+//
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 //  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 //  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -25,7 +25,7 @@
 
 namespace Aspose.Cells.Cloud.SDK.Tests.Api.Conversion
 {
-    using Microsoft.VisualStudio.TestTools.UnitTesting;    
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Aspose.Cells.Cloud.SDK.Model;
     using Aspose.Cells.Cloud.SDK.Request;
     using System.Collections.Generic;
@@ -54,7 +54,6 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Conversion
         [DataRow("xps","OutResult/PostExcelSaveAs.xps")]
         [DataRow("png","OutResult/PostExcelSaveAs.png")]
         [DataRow("md","OutResult/PostExcelSaveAs.md")]
-        [DataRow("numbers","OutResult/PostExcelSaveAs.numbers")]
         [DataRow("svg","OutResult/PostExcelSaveAs.svg")]
         [DataRow("docx","OutResult/PostExcelSaveAs.docx")]
         [DataRow("pptx","OutResult/PostExcelSaveAs.pptx")]
@@ -97,7 +96,6 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Conversion
         [DataRow("xps")]
         [DataRow("png")]
         [DataRow("md")]
-        [DataRow("numbers")]
         [DataRow("svg")]
         [DataRow("docx")]
         [DataRow("pptx")]
@@ -137,7 +135,6 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Conversion
         [DataRow("xps")]
         [DataRow("png")]
         [DataRow("md")]
-        [DataRow("numbers")]
         [DataRow("wmf")]
         [DataRow("svg")]
         [DataRow("docx")]
@@ -151,8 +148,8 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Conversion
 
             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
-            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
-            AddFileParameter(localName,mapFiles);       
+            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>();
+            AddFileParameter(localName,mapFiles);
             var request = new PutConvertWorkbookRequest(
                 file: mapFiles,
                 format: format
@@ -180,7 +177,6 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Conversion
         [DataRow("xps","OutResult/ConvertWorkbook.xps")]
         [DataRow("png","OutResult/ConvertWorkbook.png")]
         [DataRow("md","OutResult/ConvertWorkbook.md")]
-        [DataRow("numbers","OutResult/ConvertWorkbook.numbers")]
         [DataRow("svg","OutResult/ConvertWorkbook.svg")]
         [DataRow("docx","OutResult/ConvertWorkbook.docx")]
         [DataRow("pptx","OutResult/ConvertWorkbook.pptx")]
@@ -193,8 +189,8 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Conversion
 
             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
-            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
-            AddFileParameter(localName,mapFiles);       
+            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>();
+            AddFileParameter(localName,mapFiles);
             var request = new PutConvertWorkbookRequest(
                 file: mapFiles,
                 format: format,

@@ -42,7 +42,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         /// <summary>
         /// This property contains a list of elements with the tag "style".
         /// </summary>
-        public virtual IList<LinkElement> StyleList { get; set; }
+        public virtual IList<Style> StyleList { get; set; }
 
         /// <summary>
         /// Gets or sets link.

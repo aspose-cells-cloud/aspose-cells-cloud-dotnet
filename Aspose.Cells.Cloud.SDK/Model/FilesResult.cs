@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class FilesResult
     {
         /// <summary>
-        /// Gets or sets Files.
+        /// A property named **Files** of type **IList FileInfo ** containing a collection of file information objects.
         /// </summary>
         public virtual IList<FileInfo> Files { get; set; }
 

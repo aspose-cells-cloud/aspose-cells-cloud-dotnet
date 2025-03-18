@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class SaveFilesToCloudResult : TaskRunResult
     {
         /// <summary>
-        /// Gets or sets SavedFiles.
+        /// This class has a property named SavedFiles of type List Link.
         /// </summary>
         public virtual IList<Link> SavedFiles { get; set; }
 

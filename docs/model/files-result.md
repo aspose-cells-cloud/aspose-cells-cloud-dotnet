@@ -6,5 +6,5 @@ Class features: Weekly lectures, group projects, midterm and final exams, and pa
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|Files|Container|true|false |  ||
+|Files|Container|true|false |  |A property named **Files** of type **IList FileInfo ** containing a collection of file information objects.|
 

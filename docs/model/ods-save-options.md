@@ -6,6 +6,9 @@ Represents options of saving .ods file.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
+|GeneratorType|String|true|false |  ||
+|OdfStrictVersion|String|true|false |  ||
+|IgnorePivotTables|Boolean|true|false |  ||
 |SaveFormat|String|true|false |  ||
 |CachedFileFolder|String|true|false |  ||
 |ClearData|Boolean|true|false |  ||
@@ -14,4 +17,9 @@ Represents options of saving .ods file.
 |RefreshChartCache|Boolean|true|false |  ||
 |SortNames|Boolean|true|false |  ||
 |ValidateMergedAreas|Boolean|true|false |  ||
+|MergeAreas|Boolean|true|false |  ||
+|SortExternalNames|Boolean|true|false |  ||
+|CheckExcelRestriction|Boolean|true|false |  ||
+|UpdateSmartArt|Boolean|true|false |  ||
+|EncryptDocumentProperties|Boolean|true|false |  ||
 

@@ -40,7 +40,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class DataCleansing
     {
         /// <summary>
-        /// Gets or sets Ranges.
+        /// A property named "Ranges" of type IList Range with a default value of an empty List of Range objects.
         /// </summary>
         public virtual IList<Range> Ranges { get; set; }
 

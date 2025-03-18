@@ -108,6 +108,31 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override bool? ValidateMergedAreas { get; set; }
 
         /// <summary>
+        /// Gets or sets MergeAreas.
+        /// </summary>
+        public override bool? MergeAreas { get; set; }
+
+        /// <summary>
+        /// Gets or sets SortExternalNames.
+        /// </summary>
+        public override bool? SortExternalNames { get; set; }
+
+        /// <summary>
+        /// Gets or sets CheckExcelRestriction.
+        /// </summary>
+        public override bool? CheckExcelRestriction { get; set; }
+
+        /// <summary>
+        /// Gets or sets UpdateSmartArt.
+        /// </summary>
+        public override bool? UpdateSmartArt { get; set; }
+
+        /// <summary>
+        /// Gets or sets EncryptDocumentProperties.
+        /// </summary>
+        public override bool? EncryptDocumentProperties { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object.
         /// </summary>
         /// <returns>String presentation of the object.</returns>
@@ -128,6 +153,11 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  RefreshChartCache: ").Append(this.RefreshChartCache).Append("\n");
             sb.Append("  SortNames: ").Append(this.SortNames).Append("\n");
             sb.Append("  ValidateMergedAreas: ").Append(this.ValidateMergedAreas).Append("\n");
+            sb.Append("  MergeAreas: ").Append(this.MergeAreas).Append("\n");
+            sb.Append("  SortExternalNames: ").Append(this.SortExternalNames).Append("\n");
+            sb.Append("  CheckExcelRestriction: ").Append(this.CheckExcelRestriction).Append("\n");
+            sb.Append("  UpdateSmartArt: ").Append(this.UpdateSmartArt).Append("\n");
+            sb.Append("  EncryptDocumentProperties: ").Append(this.EncryptDocumentProperties).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

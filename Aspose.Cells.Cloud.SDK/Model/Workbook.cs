@@ -47,7 +47,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string FileName { get; set; }
 
         /// <summary>
-        /// Gets or sets Links.
+        /// A property of type List Link  named Links is specified to be serialized as an XmlElement with the tag "link".
         /// </summary>
         public virtual IList<Link> Links { get; set; }
 
