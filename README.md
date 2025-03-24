@@ -74,16 +74,30 @@ To get started with Aspose.Cells Cloud for .NET, follow these steps:
 
 1. Create an account at  [Aspose for Cloud](https://dashboard.aspose.cloud/#/apps) and obtain your application information.
 2. execute `Install-Package Aspose.Cells-Cloud` from the Package Manager Console in Visual Studio to fetch & reference Aspose.Cells Cloud SDK assembly in your project.If you already have Aspose.Cells Cloud for .NET and want to upgrade it, please execute `Update-Package Aspose.Cells-Cloud` to get the latest version.
+3. You need to set your CellsCloudClientId and CellsCloudClientSecret in the environment variables.
 
 ```csharp
-CellsApi cellsApi =CellsApi(clientId, clientSecret);
-string name = "Input.xlsx";
-string sheetName = "Sheet1";
-int? position = 1;
-string sheettype = "VB";
-string folder = null;
-UpdateDataFile(folder, name);
-var response = cellsApi.CellsWorksheetsPutAddNewWorksheet(name, sheetName, position, sheettype, folder);
+    namespace Aspose.Cells.Cloud.SDK.Example
+    {
+        using Aspose.Cells.Cloud.SDK.Api;
+        using Aspose.Cells.Cloud.SDK.Request;
+        using System;
+        using System.Collections.Generic;
+        using System.IO;
+
+        public partial class CellsApiExample
+        {
+            public void PutConvertWorkbookHtmlExample()
+            {
+                CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("CellsCloudTestClientId"), Environment.GetEnvironmentVariable("CellsCloudTestClientSecret"));
+                IDictionary<string, Stream> mapFiles = new Dictionary<string, Stream>();
+                mapFiles.Add("Book1.xlsx", File.OpenRead(@"TestData\Book1.xlsx"));
+                PutConvertWorkbookRequest request = new PutConvertWorkbookRequest { File = mapFiles, format = "html" };
+                cellsApi.PutConvertWorkbook(request);
+            }
+        }
+
+    }
 ```
 
 ## Aspose.Cells Cloud SDKs in Popular Languages
