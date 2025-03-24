@@ -66,7 +66,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Conversion
 
             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
-            var saveOptions = new PdfSaveOptions()
+            var saveOptions = new SaveOptions()
             {
                 SaveFormat = format
             };
