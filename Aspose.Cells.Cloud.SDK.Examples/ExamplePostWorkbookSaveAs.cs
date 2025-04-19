@@ -13,7 +13,7 @@ string remoteName = "Book1.xlsx";
 
 this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
-var saveOptions = new PdfSaveOptions()
+var saveOptions = new SaveOptions()
 {
     SaveFormat = format
 };

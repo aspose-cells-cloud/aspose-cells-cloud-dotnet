@@ -47,7 +47,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetDocumentPropertiesRequest(
                 name: remoteName,
@@ -69,7 +69,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetDocumentPropertyRequest(
                 name: remoteName,
@@ -91,7 +91,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var property = new CellsDocumentProperty()
             {
@@ -118,7 +118,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new DeleteDocumentPropertyRequest(
                 name: remoteName,
@@ -141,7 +141,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new DeleteDocumentPropertiesRequest(
                 name: remoteName,

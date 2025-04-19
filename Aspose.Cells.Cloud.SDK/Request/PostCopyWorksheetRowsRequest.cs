@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostCopyWorksheetRowsRequest"/> class.
         /// </summary>
@@ -72,40 +71,48 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// Source row index
         /// </summary>
         public int? sourceRowIndex { get; set; }
 
+
         /// <summary>
         /// Destination row index
         /// </summary>
         public int? destinationRowIndex { get; set; }
+
 
         /// <summary>
         /// The copied row number
         /// </summary>
         public int? rowNumber { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string worksheet { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostAutofitWorksheetRowsRequest"/> class.
         /// </summary>
@@ -70,35 +69,42 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// The start row index.
         /// </summary>
         public int? startRow { get; set; }
 
+
         /// <summary>
         /// The end row index.
         /// </summary>
         public int? endRow { get; set; }
+
 
         /// <summary>
         /// Autofits all rows in this worksheet.
         /// </summary>
         public bool? onlyAuto { get; set; }
 
+
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

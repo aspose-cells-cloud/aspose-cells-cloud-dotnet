@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string roywangPFX = "roywang.pfx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
             this.UploadFile( roywangPFX, remoteFolder + "/roywang.pfx", "");
 
             var request = new PostDigitalSignatureRequest(
@@ -72,7 +72,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var encryption = new WorkbookEncryptionRequest()
             {
@@ -100,7 +100,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var encryption = new WorkbookEncryptionRequest()
             {
@@ -128,7 +128,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var protectWorkbookRequest = new ProtectWorkbookRequest()
             {
@@ -155,7 +155,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new DeleteUnProtectWorkbookRequest(
                 name: remoteName,
@@ -177,7 +177,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetWorkbookDefaultStyleRequest(
                 name: remoteName,
@@ -198,7 +198,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetWorkbookTextItemsRequest(
                 name: remoteName,
@@ -219,7 +219,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetWorkbookNamesRequest(
                 name: remoteName,
@@ -240,7 +240,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var newName = new Name()
             {
@@ -268,7 +268,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetWorkbookNameRequest(
                 name: remoteName,
@@ -290,7 +290,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var newName = new Name()
             {
@@ -319,7 +319,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetWorkbookNameValueRequest(
                 name: remoteName,
@@ -341,7 +341,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new DeleteWorkbookNamesRequest(
                 name: remoteName,
@@ -362,7 +362,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new DeleteWorkbookNameRequest(
                 name: remoteName,
@@ -384,7 +384,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var password = new PasswordRequest()
             {
@@ -410,7 +410,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new DeleteDocumentUnProtectFromChangesRequest(
                 name: remoteName,
@@ -432,7 +432,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string myDocumentXLSX = "myDocument.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
             this.UploadFile( myDocumentXLSX, remoteFolder + "/myDocument.xlsx", "");
 
             var request = new PostWorkbooksMergeRequest(
@@ -456,7 +456,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostWorkbooksTextSearchRequest(
                 name: remoteName,
@@ -478,7 +478,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostWorkbookTextReplaceRequest(
                 name: remoteName,
@@ -502,7 +502,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string reportDataXML = "ReportData.xml";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
             this.UploadFile( reportDataXML, remoteFolder + "/ReportData.xml", "");
 
             var request = new PostWorkbookGetSmartMarkerResultRequest(
@@ -528,7 +528,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string reportDataXML = "ReportData.xml";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
             this.UploadFile( reportDataXML, remoteFolder + "/ReportData.xml", "");
 
             var request = new PutWorkbookCreateRequest(
@@ -554,7 +554,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostWorkbookSplitRequest(
                 name: remoteName,
@@ -583,7 +583,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var importOptionData = new List<int?>()
             {
@@ -622,7 +622,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var options = new CalculationOptions()
             {
@@ -650,7 +650,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostAutofitWorkbookRowsRequest(
                 name: remoteName,
@@ -674,7 +674,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostAutofitWorkbookColumnsRequest(
                 name: remoteName,
@@ -697,7 +697,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetWorkbookSettingsRequest(
                 name: remoteName,
@@ -718,7 +718,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var settings = new WorkbookSettings()
             {
@@ -746,7 +746,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string waterMarkPNG = "WaterMark.png";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
             this.UploadFile( waterMarkPNG, remoteFolder + "/WaterMark.png", "");
 
             var request = new PutWorkbookBackgroundRequest(
@@ -769,7 +769,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new DeleteWorkbookBackgroundRequest(
                 name: remoteName,
@@ -790,7 +790,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var textWaterMarkerRequest = new TextWaterMarkerRequest()
             {
@@ -817,7 +817,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetPageCountRequest(
                 name: remoteName,

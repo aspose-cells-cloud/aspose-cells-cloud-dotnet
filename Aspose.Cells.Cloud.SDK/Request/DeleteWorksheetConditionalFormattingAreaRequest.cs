@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteWorksheetConditionalFormattingAreaRequest"/> class.
         /// </summary>
@@ -72,40 +71,48 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// The start row of the range.
         /// </summary>
         public int? startRow { get; set; }
 
+
         /// <summary>
         /// The start column of the range.
         /// </summary>
         public int? startColumn { get; set; }
+
 
         /// <summary>
         /// The number of rows of the range.
         /// </summary>
         public int? totalRows { get; set; }
 
+
         /// <summary>
         /// The number of columns of the range.
         /// </summary>
         public int? totalColumns { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

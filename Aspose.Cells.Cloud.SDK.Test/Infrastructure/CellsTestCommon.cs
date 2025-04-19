@@ -35,25 +35,25 @@ namespace Aspose.Cells.Cloud.SDK.Tests
     {
         private string BaseUri
         {
-            get { return Environment.GetEnvironmentVariable("CellsCloudApiBaseUrl"); }
+            get { return Environment.GetEnvironmentVariable("CellsCloudTestApiBaseUrl"); }
         }
 
         private string ApiVersion
         {
             get
             {
-                string apiVersion = Environment.GetEnvironmentVariable("CellsCloudApiBaseUrl");
+                string apiVersion = Environment.GetEnvironmentVariable("CellsCloudTestApiBaseUrl");
                 return string.IsNullOrEmpty(apiVersion)?apiVersion:"v3.0";
             }            
         } 
 
         private string ClientId
         {
-            get { return Environment.GetEnvironmentVariable("CellsCloudClientId"); }
+            get { return Environment.GetEnvironmentVariable("CellsCloudTestClientId"); }
         }
         private string ClientSecret
         {
-            get { return Environment.GetEnvironmentVariable("CellsCloudClientSecret"); }
+            get { return Environment.GetEnvironmentVariable("CellsCloudTestClientSecret"); }
         }
 
         protected const string ProductName = "Cells";
@@ -74,7 +74,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests
                 FileInfo fileInfo = new FileInfo(localPath);
                 uploadFileRequest.path = remotepath;
                 uploadFileRequest.storageName = storageName;
-                uploadFileRequest.UploadFiles = new Dictionary<string, Stream>() { { fileInfo.Name, File.OpenRead(localPath) } };
+                uploadFileRequest.UploadFile =localPath;
                 this.CellsApi.UploadFile(uploadFileRequest);
             }
         }
@@ -112,8 +112,8 @@ namespace Aspose.Cells.Cloud.SDK.Tests
                 int pos = localFolder.IndexOf("bin");
                 if(pos >0)
                 {
-                    localFolder = Path.Combine( localFolder.Substring(0, pos),"./../TestData","CellsCloud");
-                    //localFolder = Path.Combine( localFolder.Substring(0, pos),"./../TestData");
+                    //localFolder = Path.Combine( localFolder.Substring(0, pos),"./../TestData","CellsCloud");
+                    localFolder = Path.Combine( localFolder.Substring(0, pos),"./../TestData");
                 }
             }
 

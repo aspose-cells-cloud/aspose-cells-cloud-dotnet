@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetBackgroundRequest"/> class.
         /// </summary>
@@ -70,35 +69,42 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// picture full filename.
         /// </summary>
         public string picPath { get; set; }
 
+
         /// <summary>
         /// Gets or sets imageAdaptOption.
         /// </summary>
         public string imageAdaptOption { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 
+
         /// <summary>
         /// File to upload
         /// </summary>
         public IDictionary<string, System.IO.Stream> File { get; set; }
+
 
 
         /// <summary>

@@ -47,7 +47,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "BookCsvDuplicateData.csv";
             string remoteName = "BookCsvDuplicateData.csv";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var dataCleansingDataFillDataFillDefaultValue = new DataFillValue()
             {
@@ -84,7 +84,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "BookCsvDuplicateData.csv";
             string remoteName = "BookCsvDuplicateData.csv";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var deduplicationRegionRanges = new List<Range>()
             {
@@ -113,7 +113,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "BookCsvDuplicateData.csv";
             string remoteName = "BookCsvDuplicateData.csv";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var dataFillDataFillDefaultValue = new DataFillValue()
             {
@@ -145,7 +145,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "BookTableL2W.xlsx";
             string remoteName = "BookTableL2W.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var dataTransformationRequestLoadDataLoadTo = new LoadTo()
             {
@@ -160,8 +160,8 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             };
             var dataTransformationRequestLoadDataDataQueryDataSource = new DataSource()
             {
-                DataSourceType = "CloudFileSystem",
-                DataPath = remoteFolder + "/" + remoteName
+                DataSourceType = remoteFolder + "/" + remoteName,
+                DataPath = "BookTableL2W.xlsx"
             };
             var dataTransformationRequestLoadDataDataQuery = new DataQuery()
             {

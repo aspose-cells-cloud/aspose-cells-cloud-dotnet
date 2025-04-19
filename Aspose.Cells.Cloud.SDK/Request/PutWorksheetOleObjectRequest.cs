@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetOleObjectRequest"/> class.
         /// </summary>
@@ -76,50 +75,60 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worsheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// Upper left row index
         /// </summary>
         public int? upperLeftRow { get; set; }
 
+
         /// <summary>
         /// Upper left column index
         /// </summary>
         public int? upperLeftColumn { get; set; }
+
 
         /// <summary>
         /// Height of oleObject, in unit of pixel
         /// </summary>
         public int? height { get; set; }
 
+
         /// <summary>
         /// Width of oleObject, in unit of pixel
         /// </summary>
         public int? width { get; set; }
+
 
         /// <summary>
         /// OLE filename path(full file name).
         /// </summary>
         public string oleFile { get; set; }
 
+
         /// <summary>
         /// Image filename path(full file name).
         /// </summary>
         public string imageFile { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

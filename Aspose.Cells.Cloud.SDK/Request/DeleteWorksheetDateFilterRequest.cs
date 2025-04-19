@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteWorksheetDateFilterRequest"/> class.
         /// </summary>
@@ -80,60 +79,72 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0).
         /// </summary>
         public int? fieldIndex { get; set; }
 
+
         /// <summary>
         /// Specifies how to group dateTime values.
         /// </summary>
         public string dateTimeGroupingType { get; set; }
+
 
         /// <summary>
         /// The year.
         /// </summary>
         public int? year { get; set; }
 
+
         /// <summary>
         /// The month.
         /// </summary>
         public int? month { get; set; }
+
 
         /// <summary>
         /// The day.
         /// </summary>
         public int? day { get; set; }
 
+
         /// <summary>
         /// The hour.
         /// </summary>
         public int? hour { get; set; }
+
 
         /// <summary>
         /// The minute.
         /// </summary>
         public int? minute { get; set; }
 
+
         /// <summary>
         /// The second.
         /// </summary>
         public int? second { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

@@ -47,7 +47,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetPageSetupRequest(
                 name: remoteName,
@@ -69,7 +69,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var pageSetup = new PageSetup()
             {
@@ -98,7 +98,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new DeleteHeaderFooterRequest(
                 name: remoteName,
@@ -120,7 +120,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetHeaderRequest(
                 name: remoteName,
@@ -142,7 +142,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostHeaderRequest(
                 name: remoteName,
@@ -167,7 +167,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetFooterRequest(
                 name: remoteName,
@@ -189,7 +189,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostFooterRequest(
                 name: remoteName,
@@ -214,7 +214,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostFitWideToPagesRequest(
                 name: remoteName,
@@ -236,7 +236,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostFitTallToPagesRequest(
                 name: remoteName,

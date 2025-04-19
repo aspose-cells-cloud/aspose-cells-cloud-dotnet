@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetCellsRangeMoveToRequest"/> class.
         /// </summary>
@@ -70,35 +69,42 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// range in worksheet 
         /// </summary>
         public Range range { get; set; }
 
+
         /// <summary>
         /// The start row of the dest range.
         /// </summary>
         public int? destRow { get; set; }
+
 
         /// <summary>
         /// The start column of the dest range.
         /// </summary>
         public int? destColumn { get; set; }
 
+
         /// <summary>
         /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// Storage name.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

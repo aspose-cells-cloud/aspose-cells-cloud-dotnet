@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetChartRequest"/> class.
         /// </summary>
@@ -68,30 +67,36 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// The chart number.
         /// </summary>
         public int? chartNumber { get; set; }
 
+
         /// <summary>
         /// Chart conversion format.(PNG/TIFF/JPEG/GIF/EMF/BMP)
         /// </summary>
         public string format { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

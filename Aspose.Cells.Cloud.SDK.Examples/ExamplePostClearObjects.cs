@@ -7,13 +7,10 @@ using System.Collections.Generic;
 
 CellsApi cellsApi = new CellsApi("xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
 string book1Xlsx = "Book1.xlsx";
-string dataSourceXlsx = "datasource.xlsx";
 
 IDictionary<string, Stream> mapFiles =new Dictionary<string,Stream>(); 
-AddFileParameter(book1Xlsx,mapFiles);       
-AddFileParameter(dataSourceXlsx,mapFiles);       
 var request = new PostClearObjectsRequest(
-    file: mapFiles,
+    file:    this.GetLocalFilePath(book1Xlsx) ,
     objecttype: objecttype
 );
 this.CellsApi.PostClearObjects(request);

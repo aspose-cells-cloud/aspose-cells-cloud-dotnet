@@ -13,7 +13,7 @@ IDictionary<string, Stream> mapFiles =new Dictionary<string,Stream>();
 AddFileParameter(assemblyTestXlsx,mapFiles);       
 AddFileParameter(dataSourceXlsx,mapFiles);       
 var request = new PostAssembleRequest(
-    file: mapFiles,
+    file:   mapFiles ,
     datasource: "ds",
     outFormat: format
 );

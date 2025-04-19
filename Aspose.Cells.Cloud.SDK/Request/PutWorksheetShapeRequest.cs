@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetShapeRequest"/> class.
         /// </summary>
@@ -80,60 +79,72 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// Gets or sets shapeDTO.
         /// </summary>
         public Shape shapeDTO { get; set; }
 
+
         /// <summary>
         /// Shape object type
         /// </summary>
         public string DrawingType { get; set; }
+
 
         /// <summary>
         /// Upper left row index.
         /// </summary>
         public int? upperLeftRow { get; set; }
 
+
         /// <summary>
         /// Upper left column index.
         /// </summary>
         public int? upperLeftColumn { get; set; }
+
 
         /// <summary>
         /// Represents the vertical offset of Spinner from its left row, in unit of pixel.
         /// </summary>
         public int? top { get; set; }
 
+
         /// <summary>
         /// Represents the horizontal offset of Spinner from its left column, in unit of pixel.
         /// </summary>
         public int? left { get; set; }
+
 
         /// <summary>
         /// Represents the height of Spinner, in unit of pixel.
         /// </summary>
         public int? width { get; set; }
 
+
         /// <summary>
         /// Represents the width of Spinner, in unit of pixel.
         /// </summary>
         public int? height { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

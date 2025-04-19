@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetMergeRequest"/> class.
         /// </summary>
@@ -72,40 +71,48 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// The start row index.
         /// </summary>
         public int? startRow { get; set; }
 
+
         /// <summary>
         /// The start column index.
         /// </summary>
         public int? startColumn { get; set; }
+
 
         /// <summary>
         /// The total rows number.
         /// </summary>
         public int? totalRows { get; set; }
 
+
         /// <summary>
         /// The total columns number.
         /// </summary>
         public int? totalColumns { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

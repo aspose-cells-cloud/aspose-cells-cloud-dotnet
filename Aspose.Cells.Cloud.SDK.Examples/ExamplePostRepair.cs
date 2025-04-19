@@ -9,9 +9,8 @@ CellsApi cellsApi = new CellsApi("xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", "xxxxxx
 string book1Xlsx = "Book1.xlsx";
 
 IDictionary<string, Stream> mapFiles =new Dictionary<string,Stream>(); 
-AddFileParameter(book1Xlsx,mapFiles);       
 var request = new PostRepairRequest(
-    file: mapFiles,
+    file:    this.GetLocalFilePath(book1Xlsx) ,
     outFormat: format
 );
 this.CellsApi.PostRepair(request);

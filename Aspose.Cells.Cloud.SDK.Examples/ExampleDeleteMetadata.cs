@@ -9,9 +9,8 @@ CellsApi cellsApi = new CellsApi("xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", "xxxxxx
 string book1Xlsx = "Book1.xlsx";
 
 IDictionary<string, Stream> mapFiles =new Dictionary<string,Stream>(); 
-AddFileParameter(book1Xlsx,mapFiles);       
 var request = new DeleteMetadataRequest(
-    file: mapFiles,
+    file:    this.GetLocalFilePath(book1Xlsx) ,
     type: "all"
 );
 this.CellsApi.DeleteMetadata(request);

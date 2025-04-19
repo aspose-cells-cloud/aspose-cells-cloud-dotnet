@@ -43,34 +43,45 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="UploadFileRequest"/> class.
         /// </summary>
         /// <param name="uploadFiles">Upload files to cloud storage.</param>
         /// <param name="path"></param>
         /// <param name="storageName"></param>
+        public UploadFileRequest(string uploadFile ,  string path  ,  string storageName   = null)
+        {
+            this.UploadFile = uploadFile ;
+            this.path = path;
+            this.storageName = storageName;
+        }
+
+        [System.Obsolete]
         public UploadFileRequest(IDictionary<string, System.IO.Stream> uploadFiles, string path, string storageName = null)
         {
             this.UploadFiles = uploadFiles;
             this.path = path;
             this.storageName = storageName;
         }
-
         /// <summary>
         /// Upload files to cloud storage.
         /// </summary>
+        public string UploadFile { get; set; }
+        [System.Obsolete]
         public IDictionary<string, System.IO.Stream> UploadFiles { get; set; }
+
 
         /// <summary>
         /// Gets or sets path.
         /// </summary>
         public string path { get; set; }
 
+
         /// <summary>
         /// Gets or sets storageName.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>
@@ -90,7 +101,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
             // verify the required parameter 'uploadFiles' is set
-            if ( this.UploadFiles == null)
+            if ( this.UploadFiles == null && this.UploadFile ==null )
             {
                 throw new ApiException(400, "Missing required parameter 'uploadFiles' when calling UploadFile");
             }
@@ -122,6 +133,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 {
                     localVarFileParams.Add(keyValueFileParam.Key, UrlHelper.ToFileInfo(keyValueFileParam.Value, keyValueFileParam.Key));
                 }
+            }
+            if (!string.IsNullOrEmpty(UploadFile) && System.IO.File.Exists(UploadFile))
+            {
+                System.IO.FileInfo fileInfo = new System.IO.FileInfo(UploadFile);
+                localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(UploadFile), fileInfo.Name));
             }
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

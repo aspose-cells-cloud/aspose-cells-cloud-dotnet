@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetSparklineGroupRequest"/> class.
         /// </summary>
@@ -72,40 +71,48 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// Represents the sparkline types(Line/Column/Stacked).
         /// </summary>
         public string type { get; set; }
 
+
         /// <summary>
         /// Specifies the data range of the sparkline group.
         /// </summary>
         public string dataRange { get; set; }
+
 
         /// <summary>
         /// Specifies whether to plot the sparklines from the data range by row or by column.
         /// </summary>
         public bool? isVertical { get; set; }
 
+
         /// <summary>
         /// Specifies where the sparklines to be placed.
         /// </summary>
         public string locationRange { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

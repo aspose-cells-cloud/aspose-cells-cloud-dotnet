@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostRemoveDuplicatesRequest"/> class.
         /// </summary>
@@ -57,6 +56,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Gets or sets removeDuplicatesOptions.
         /// </summary>
         public RemoveDuplicatesOptions removeDuplicatesOptions { get; set; }
+
 
 
         /// <summary>

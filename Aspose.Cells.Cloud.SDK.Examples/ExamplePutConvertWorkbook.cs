@@ -14,9 +14,8 @@ string remoteName = "Book1.xlsx";
 this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
 IDictionary<string, Stream> mapFiles =new Dictionary<string,Stream>(); 
-AddFileParameter(localName,mapFiles);       
 var request = new PutConvertWorkbookRequest(
-    file: mapFiles,
+    file:    this.GetLocalFilePath(localName) ,
     format: format
 );
 this.CellsApi.PutConvertWorkbook(request);

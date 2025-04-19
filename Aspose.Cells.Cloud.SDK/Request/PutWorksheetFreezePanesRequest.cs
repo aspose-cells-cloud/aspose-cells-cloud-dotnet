@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetFreezePanesRequest"/> class.
         /// </summary>
@@ -72,40 +71,48 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// Row index.
         /// </summary>
         public int? row { get; set; }
 
+
         /// <summary>
         /// Column index.
         /// </summary>
         public int? column { get; set; }
+
 
         /// <summary>
         /// Number of visible rows in top pane, no more than row index.
         /// </summary>
         public int? freezedRows { get; set; }
 
+
         /// <summary>
         /// Number of visible columns in left pane, no more than column index.
         /// </summary>
         public int? freezedColumns { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

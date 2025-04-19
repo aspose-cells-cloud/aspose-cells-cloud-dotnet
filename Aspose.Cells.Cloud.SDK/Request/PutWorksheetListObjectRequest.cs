@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetListObjectRequest"/> class.
         /// </summary>
@@ -78,55 +77,66 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// The start row of the list range.
         /// </summary>
         public int? startRow { get; set; }
 
+
         /// <summary>
         /// The start column of the list range.
         /// </summary>
         public int? startColumn { get; set; }
+
 
         /// <summary>
         /// The start row of the list range.
         /// </summary>
         public int? endRow { get; set; }
 
+
         /// <summary>
         /// The start column of the list range.
         /// </summary>
         public int? endColumn { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// Indicate whether the range has headers.
         /// </summary>
         public bool? hasHeaders { get; set; }
+
 
         /// <summary>
         /// Indicate whether display name.
         /// </summary>
         public string displayName { get; set; }
 
+
         /// <summary>
         /// Indicate whether show totals.
         /// </summary>
         public bool? showTotals { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

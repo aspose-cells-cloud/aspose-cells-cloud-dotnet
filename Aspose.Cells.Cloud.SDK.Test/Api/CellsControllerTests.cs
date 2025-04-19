@@ -47,7 +47,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostClearContentsRequest(
                 name: remoteName,
@@ -74,7 +74,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostClearFormatsRequest(
                 name: remoteName,
@@ -101,7 +101,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var styleFont = new Font()
             {
@@ -133,7 +133,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostWorksheetMergeRequest(
                 name: remoteName,
@@ -159,7 +159,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostWorksheetUnmergeRequest(
                 name: remoteName,
@@ -185,7 +185,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetWorksheetCellsRequest(
                 name: remoteName,
@@ -209,7 +209,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetWorksheetCellRequest(
                 name: remoteName,
@@ -232,7 +232,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetWorksheetCellStyleRequest(
                 name: remoteName,
@@ -255,7 +255,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostWorksheetCellSetValueRequest(
                 name: remoteName,
@@ -280,7 +280,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var styleFont = new Font()
             {
@@ -312,7 +312,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostSetCellRangeValueRequest(
                 name: remoteName,
@@ -337,7 +337,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostCopyCellIntoCellRequest(
                 name: remoteName,
@@ -364,7 +364,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetCellHtmlStringRequest(
                 name: remoteName,
@@ -387,7 +387,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostSetCellHtmlStringRequest(
                 name: remoteName,
@@ -410,7 +410,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var options = new CalculationOptions()
             {
@@ -439,7 +439,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var optionsvalue0Font = new Font()
             {
@@ -478,7 +478,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetWorksheetColumnsRequest(
                 name: remoteName,
@@ -502,7 +502,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostSetWorksheetColumnWidthRequest(
                 name: remoteName,
@@ -527,7 +527,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetWorksheetColumnRequest(
                 name: remoteName,
@@ -550,7 +550,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PutInsertWorksheetColumnsRequest(
                 name: remoteName,
@@ -575,7 +575,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new DeleteWorksheetColumnsRequest(
                 name: remoteName,
@@ -600,7 +600,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostHideWorksheetColumnsRequest(
                 name: remoteName,
@@ -624,7 +624,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostUnhideWorksheetColumnsRequest(
                 name: remoteName,
@@ -649,7 +649,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostGroupWorksheetColumnsRequest(
                 name: remoteName,
@@ -674,7 +674,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostUngroupWorksheetColumnsRequest(
                 name: remoteName,
@@ -698,7 +698,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostCopyWorksheetColumnsRequest(
                 name: remoteName,
@@ -724,7 +724,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var styleFont = new Font()
             {
@@ -756,7 +756,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetWorksheetRowsRequest(
                 name: remoteName,
@@ -780,7 +780,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetWorksheetRowRequest(
                 name: remoteName,
@@ -803,7 +803,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new DeleteWorksheetRowRequest(
                 name: remoteName,
@@ -826,7 +826,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new DeleteWorksheetRowsRequest(
                 name: remoteName,
@@ -851,7 +851,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PutInsertWorksheetRowsRequest(
                 name: remoteName,
@@ -876,7 +876,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PutInsertWorksheetRowRequest(
                 name: remoteName,
@@ -899,7 +899,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostUpdateWorksheetRowRequest(
                 name: remoteName,
@@ -924,7 +924,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostHideWorksheetRowsRequest(
                 name: remoteName,
@@ -948,7 +948,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostUnhideWorksheetRowsRequest(
                 name: remoteName,
@@ -973,7 +973,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostGroupWorksheetRowsRequest(
                 name: remoteName,
@@ -998,7 +998,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostUngroupWorksheetRowsRequest(
                 name: remoteName,
@@ -1023,7 +1023,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PostCopyWorksheetRowsRequest(
                 name: remoteName,
@@ -1049,7 +1049,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var styleFont = new Font()
             {

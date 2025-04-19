@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostRunTaskRequest"/> class.
         /// </summary>
@@ -57,6 +56,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Task Data Descrition
         /// </summary>
         public TaskData TaskData { get; set; }
+
 
 
         /// <summary>

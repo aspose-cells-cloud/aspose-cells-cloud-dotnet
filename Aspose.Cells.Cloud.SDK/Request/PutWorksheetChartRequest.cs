@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetChartRequest"/> class.
         /// </summary>
@@ -92,90 +91,108 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// Chart type, please refer property Type in chart resource.
         /// </summary>
         public string chartType { get; set; }
 
+
         /// <summary>
         /// Upper-left row for the new chart.
         /// </summary>
         public int? upperLeftRow { get; set; }
+
 
         /// <summary>
         /// Upper-left column for the new chart.
         /// </summary>
         public int? upperLeftColumn { get; set; }
 
+
         /// <summary>
         /// Lower-left row for the new chart.
         /// </summary>
         public int? lowerRightRow { get; set; }
+
 
         /// <summary>
         /// Lower-left column for the new chart.
         /// </summary>
         public int? lowerRightColumn { get; set; }
 
+
         /// <summary>
         /// Specify the values from which to plot the data series.
         /// </summary>
         public string area { get; set; }
+
 
         /// <summary>
         /// Specify whether to plot the series from a range of cell values by row or by column. 
         /// </summary>
         public bool? isVertical { get; set; }
 
+
         /// <summary>
         /// Get or set the range of category axis values. It can be a range of cells (e.g., "D1:E10").
         /// </summary>
         public string categoryData { get; set; }
+
 
         /// <summary>
         /// Specify whether to auto-update the serial name.
         /// </summary>
         public bool? isAutoGetSerialName { get; set; }
 
+
         /// <summary>
         /// Specify the chart title name.
         /// </summary>
         public string title { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// Represents the specified chart's data label values display behavior. True to display the values, False to hide them.
         /// </summary>
         public bool? dataLabels { get; set; }
+
 
         /// <summary>
         /// Represents data label position (Center/InsideBase/InsideEnd/OutsideEnd/Above/Below/Left/Right/BestFit/Moved).
         /// </summary>
         public string dataLabelsPosition { get; set; }
 
+
         /// <summary>
         /// The source is the data of the pivotTable. If PivotSource is not empty, the chart is a PivotChart.
         /// </summary>
         public string pivotTableSheet { get; set; }
+
 
         /// <summary>
         /// The pivot table name.
         /// </summary>
         public string pivotTableName { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="CopyFolderRequest"/> class.
         /// </summary>
@@ -64,20 +63,24 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string srcPath { get; set; }
 
+
         /// <summary>
         /// Gets or sets destPath.
         /// </summary>
         public string destPath { get; set; }
+
 
         /// <summary>
         /// Gets or sets srcStorageName.
         /// </summary>
         public string srcStorageName { get; set; }
 
+
         /// <summary>
         /// Gets or sets destStorageName.
         /// </summary>
         public string destStorageName { get; set; }
+
 
 
         /// <summary>

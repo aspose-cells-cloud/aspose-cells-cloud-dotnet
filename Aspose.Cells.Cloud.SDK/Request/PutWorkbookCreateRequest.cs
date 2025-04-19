@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorkbookCreateRequest"/> class.
         /// </summary>
@@ -70,35 +69,42 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The template file, if the data not provided default workbook is created.
         /// </summary>
         public string templateFile { get; set; }
+
 
         /// <summary>
         /// Smart marker data file, if the data not provided the request content is checked for the data.
         /// </summary>
         public string dataFile { get; set; }
 
+
         /// <summary>
         /// Specifies whether to write over targer file.
         /// </summary>
         public bool? isWriteOver { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 
+
         /// <summary>
         /// Gets or sets checkExcelRestriction.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
+
 
 
         /// <summary>

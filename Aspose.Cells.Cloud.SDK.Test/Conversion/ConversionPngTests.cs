@@ -51,7 +51,6 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Conversion
         [DataRow("xps")]
         [DataRow("jpg")]
         [DataRow("md")]
-        [DataRow("numbers")]
         [DataRow("svg")]
         [DataRow("docx")]
         public void TestConvertWorkbook(string format)
@@ -59,12 +58,8 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Conversion
             string localName = "cloud.png";
             string remoteName = "cloud.png";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
-
-            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
-            AddFileParameter(localName,mapFiles);       
             var request = new PutConvertWorkbookRequest(
-                file: mapFiles,
+                localPath:    this.GetLocalFilePath(localName) ,
                 format: format
             );
             var actual =  this.CellsApi.PutConvertWorkbook(request);

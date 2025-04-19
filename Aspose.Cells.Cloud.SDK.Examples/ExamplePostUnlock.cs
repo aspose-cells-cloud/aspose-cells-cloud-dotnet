@@ -9,9 +9,8 @@ CellsApi cellsApi = new CellsApi("xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", "xxxxxx
 string needUnlockXlsx = "needUnlock.xlsx";
 
 IDictionary<string, Stream> mapFiles =new Dictionary<string,Stream>(); 
-AddFileParameter(needUnlockXlsx,mapFiles);       
 var request = new PostUnlockRequest(
-    file: mapFiles,
+    file:    this.GetLocalFilePath(needUnlockXlsx) ,
     password: "123456"
 );
 this.CellsApi.PostUnlock(request);

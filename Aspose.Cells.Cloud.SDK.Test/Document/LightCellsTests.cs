@@ -55,7 +55,6 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         [DataRow("png")]
         [DataRow("jpg")]
         [DataRow("md")]
-        [DataRow("numbers")]
         [DataRow("svg")]
         [DataRow("docx")]
         [DataRow("pptx")]
@@ -63,14 +62,10 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         [DataRow("sql")]
         public void TestPostSplit(string outFormat)
         {
-            string assemblyTestXlsx = "assemblytest.xlsx";
-            string dataSourceXlsx = "datasource.xlsx";
+            string book1Xlsx = "Book1.xlsx";
 
-            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
-            AddFileParameter(assemblyTestXlsx,mapFiles);       
-            AddFileParameter(dataSourceXlsx,mapFiles);       
             var request = new PostSplitRequest(
-                file: mapFiles,
+                localPath:    this.GetLocalFilePath(book1Xlsx) ,
                 outFormat: outFormat
             );
             var actual =  this.CellsApi.PostSplit(request);
@@ -101,10 +96,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         [DataRow("jpg")]
         [DataRow("gif")]
         [DataRow("emf")]
-        [DataRow("bmp")]
         [DataRow("md")]
-        [DataRow("numbers")]
-        [DataRow("wmf")]
         [DataRow("svg")]
         [DataRow("docx")]
         [DataRow("pptx")]
@@ -119,7 +111,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
             AddFileParameter(assemblyTestXlsx,mapFiles);       
             AddFileParameter(dataSourceXlsx,mapFiles);       
             var request = new PostAssembleRequest(
-                file: mapFiles,
+                file:   mapFiles ,
                 datasource: "ds",
                 outFormat: format
             );
@@ -151,10 +143,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         [DataRow("jpg","workbook")]
         [DataRow("gif","workbook")]
         [DataRow("emf","workbook")]
-        [DataRow("bmp","workbook")]
         [DataRow("md","workbook")]
-        [DataRow("numbers","workbook")]
-        [DataRow("wmf","workbook")]
         [DataRow("svg","workbook")]
         [DataRow("docx","workbook")]
         [DataRow("pptx","workbook")]
@@ -181,8 +170,6 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         [DataRow("emf","worksheet")]
         [DataRow("bmp","worksheet")]
         [DataRow("md","worksheet")]
-        [DataRow("numbers","worksheet")]
-        [DataRow("wmf","worksheet")]
         [DataRow("svg","worksheet")]
         [DataRow("docx","worksheet")]
         [DataRow("pptx","worksheet")]
@@ -221,8 +208,6 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         [DataRow("emf","listobject")]
         [DataRow("bmp","listobject")]
         [DataRow("md","listobject")]
-        [DataRow("numbers","listobject")]
-        [DataRow("wmf","listobject")]
         [DataRow("svg","listobject")]
         [DataRow("docx","listobject")]
         [DataRow("pptx","listobject")]
@@ -235,14 +220,10 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         [DataRow("bmp","oleobject")]
         public void TestPostExport(string format,string objectType)
         {
-            string assemblyTestXlsx = "assemblytest.xlsx";
             string book1Xlsx = "Book1.xlsx";
 
-            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
-            AddFileParameter(assemblyTestXlsx,mapFiles);       
-            AddFileParameter(book1Xlsx,mapFiles);       
             var request = new PostExportRequest(
-                file: mapFiles,
+                localPath:    this.GetLocalFilePath(book1Xlsx) ,
                 objectType: objectType,
                 format: format
             );
@@ -259,14 +240,10 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         [DataRow(90)]
         public void TestPostCompress(int? compressLevel)
         {
-            string assemblyTestXlsx = "assemblytest.xlsx";
             string dataSourceXlsx = "datasource.xlsx";
 
-            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
-            AddFileParameter(assemblyTestXlsx,mapFiles);       
-            AddFileParameter(dataSourceXlsx,mapFiles);       
             var request = new PostCompressRequest(
-                file: mapFiles,
+                localPath:    this.GetLocalFilePath(dataSourceXlsx) ,
                 compressLevel: compressLevel
             );
             var actual =  this.CellsApi.PostCompress(request);
@@ -299,8 +276,6 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         [DataRow("emf",true)]
         [DataRow("bmp",true)]
         [DataRow("md",true)]
-        [DataRow("numbers",true)]
-        [DataRow("wmf",true)]
         [DataRow("svg",true)]
         [DataRow("docx",false)]
         [DataRow("pptx",false)]
@@ -315,7 +290,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
             AddFileParameter(assemblyTestXlsx,mapFiles);       
             AddFileParameter(dataSourceXlsx,mapFiles);       
             var request = new PostMergeRequest(
-                file: mapFiles,
+                file:   mapFiles ,
                 outFormat: format,
                 mergeToOneSheet: mergeToOneSheet
             );
@@ -332,13 +307,28 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         {
             string needUnlockXlsx = "needUnlock.xlsx";
 
-            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
-            AddFileParameter(needUnlockXlsx,mapFiles);       
             var request = new PostUnlockRequest(
-                file: mapFiles,
+                localPath:    this.GetLocalFilePath(needUnlockXlsx) ,
                 password: "123456"
             );
             var actual =  this.CellsApi.PostUnlock(request);
+            Assert.IsNotNull(actual.Files);
+        }
+
+        /// <summary>
+        /// Test for lock an Excel file.
+        /// </summary>
+        [TestCategory(ProductName)]
+        [TestMethod]
+        public void TestPostLock()
+        {
+            string needlockXlsx = "needlock.xlsx";
+
+            var request = new PostLockRequest(
+                localPath:    this.GetLocalFilePath(needlockXlsx) ,
+                password: "123456"
+            );
+            var actual =  this.CellsApi.PostLock(request);
             Assert.IsNotNull(actual.Files);
         }
 
@@ -350,18 +340,15 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         public void TestPostProtect()
         {
             string assemblyTestXlsx = "assemblytest.xlsx";
-            string dataSourceXlsx = "datasource.xlsx";
 
-            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
             var protectWorkbookRequest = new ProtectWorkbookRequest()
             {
                 AwaysOpenReadOnly = true,
                 EncryptWithPassword = "123456"
             };
-            AddFileParameter(assemblyTestXlsx,mapFiles);       
-            AddFileParameter(dataSourceXlsx,mapFiles);       
+
             var request = new PostProtectRequest(
-                file: mapFiles,
+                localPath:    this.GetLocalFilePath(assemblyTestXlsx) ,
                 protectWorkbookRequest: protectWorkbookRequest,
                 password: "123456"
             );
@@ -376,19 +363,16 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         [TestMethod]
         public void TestPostProtect_ProtectWorkbookRequest()
         {
-            string assemblyTestXlsx = "assemblytest.xlsx";
             string dataSourceXlsx = "datasource.xlsx";
 
-            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
             var protectWorkbookRequest = new ProtectWorkbookRequest()
             {
                 AwaysOpenReadOnly = true,
                 EncryptWithPassword = "123456"
             };
-            AddFileParameter(assemblyTestXlsx,mapFiles);       
-            AddFileParameter(dataSourceXlsx,mapFiles);       
+
             var request = new PostProtectRequest(
-                file: mapFiles,
+                localPath:    this.GetLocalFilePath(dataSourceXlsx) ,
                 protectWorkbookRequest: protectWorkbookRequest
             );
             var actual =  this.CellsApi.PostProtect(request);
@@ -402,14 +386,10 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         [TestMethod]
         public void TestPostSearch()
         {
-            string assemblyTestXlsx = "assemblytest.xlsx";
             string dataSourceXlsx = "datasource.xlsx";
 
-            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
-            AddFileParameter(assemblyTestXlsx,mapFiles);       
-            AddFileParameter(dataSourceXlsx,mapFiles);       
             var request = new PostSearchRequest(
-                file: mapFiles,
+                localPath:    this.GetLocalFilePath(dataSourceXlsx) ,
                 text: "12"
             );
             var actual =  this.CellsApi.PostSearch(request);
@@ -423,14 +403,10 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         [TestMethod]
         public void TestPostReplace()
         {
-            string assemblyTestXlsx = "assemblytest.xlsx";
             string dataSourceXlsx = "datasource.xlsx";
 
-            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
-            AddFileParameter(assemblyTestXlsx,mapFiles);       
-            AddFileParameter(dataSourceXlsx,mapFiles);       
             var request = new PostReplaceRequest(
-                file: mapFiles,
+                localPath:    this.GetLocalFilePath(dataSourceXlsx) ,
                 text: "12",
                 newtext: "newtext"
             );
@@ -445,14 +421,10 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         [TestMethod]
         public void TestPostReplaceOnlySheetname()
         {
-            string assemblyTestXlsx = "assemblytest.xlsx";
             string dataSourceXlsx = "datasource.xlsx";
 
-            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
-            AddFileParameter(assemblyTestXlsx,mapFiles);       
-            AddFileParameter(dataSourceXlsx,mapFiles);       
             var request = new PostReplaceRequest(
-                file: mapFiles,
+                localPath:    this.GetLocalFilePath(dataSourceXlsx) ,
                 text: "12",
                 newtext: "newtext",
                 sheetname: "Sheet1"
@@ -468,14 +440,10 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         [TestMethod]
         public void TestPostWatermark()
         {
-            string assemblyTestXlsx = "assemblytest.xlsx";
             string dataSourceXlsx = "datasource.xlsx";
 
-            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
-            AddFileParameter(assemblyTestXlsx,mapFiles);       
-            AddFileParameter(dataSourceXlsx,mapFiles);       
             var request = new PostWatermarkRequest(
-                file: mapFiles,
+                localPath:    this.GetLocalFilePath(dataSourceXlsx) ,
                 text: "aspose.cells cloud sdk",
                 color: "#773322"
             );
@@ -501,13 +469,9 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         public void TestPostClearObjects(string objecttype)
         {
             string book1Xlsx = "Book1.xlsx";
-            string dataSourceXlsx = "datasource.xlsx";
 
-            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
-            AddFileParameter(book1Xlsx,mapFiles);       
-            AddFileParameter(dataSourceXlsx,mapFiles);       
             var request = new PostClearObjectsRequest(
-                file: mapFiles,
+                localPath:    this.GetLocalFilePath(book1Xlsx) ,
                 objecttype: objecttype
             );
             var actual =  this.CellsApi.PostClearObjects(request);
@@ -527,10 +491,8 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         {
             string book1Xlsx = "Book1.xlsx";
 
-            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
-            AddFileParameter(book1Xlsx,mapFiles);       
             var request = new PostRepairRequest(
-                file: mapFiles,
+                localPath:    this.GetLocalFilePath(book1Xlsx) ,
                 outFormat: format
             );
             var actual =  this.CellsApi.PostRepair(request);
@@ -552,10 +514,8 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         {
             string book1Xlsx = "Book1.xlsx";
 
-            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
-            AddFileParameter(book1Xlsx,mapFiles);       
             var request = new PostReverseRequest(
-                file: mapFiles,
+                localPath:    this.GetLocalFilePath(book1Xlsx) ,
                 rotateType: rotateType,
                 outFormat: format
             );
@@ -572,10 +532,8 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         {
             string book1Xlsx = "Book1.xlsx";
 
-            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
-            AddFileParameter(book1Xlsx,mapFiles);       
             var request = new GetMetadataRequest(
-                file: mapFiles,
+                localPath:    this.GetLocalFilePath(book1Xlsx) ,
                 type: "all"
             );
             var actual =  this.CellsApi.GetMetadata(request);
@@ -591,10 +549,8 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         {
             string book1Xlsx = "Book1.xlsx";
 
-            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
-            AddFileParameter(book1Xlsx,mapFiles);       
             var request = new DeleteMetadataRequest(
-                file: mapFiles,
+                localPath:    this.GetLocalFilePath(book1Xlsx) ,
                 type: "all"
             );
             var actual =  this.CellsApi.DeleteMetadata(request);
@@ -610,7 +566,6 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
         {
             string book1Xlsx = "Book1.xlsx";
 
-            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
             var cellsDocumentscellsDocument0 = new CellsDocumentProperty()
             {
                 Name = "Author",
@@ -620,9 +575,9 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Document
             {
                 cellsDocumentscellsDocument0
             };
-            AddFileParameter(book1Xlsx,mapFiles);       
+
             var request = new PostMetadataRequest(
-                file: mapFiles,
+                localPath:    this.GetLocalFilePath(book1Xlsx) ,
                 cellsDocuments: cellsDocuments
             );
             var actual =  this.CellsApi.PostMetadata(request);

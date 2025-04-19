@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostAnalyzeExcelRequest"/> class.
         /// </summary>
@@ -57,6 +56,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Excel files and analysis output requirements
         /// </summary>
         public AnalyzeExcelRequest analyzeExcelRequest { get; set; }
+
 
 
         /// <summary>

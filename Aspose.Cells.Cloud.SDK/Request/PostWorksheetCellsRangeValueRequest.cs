@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetCellsRangeValueRequest"/> class.
         /// </summary>
@@ -72,40 +71,48 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// The range in worksheet. 
         /// </summary>
         public Range range { get; set; }
 
+
         /// <summary>
         /// Input value.
         /// </summary>
         public string Value { get; set; }
+
 
         /// <summary>
         /// True: converted to other data type if appropriate.
         /// </summary>
         public bool? isConverted { get; set; }
 
+
         /// <summary>
         /// True: set the number format to cell's style when converting to other data type.
         /// </summary>
         public bool? setStyle { get; set; }
+
 
         /// <summary>
         /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// Storage name.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

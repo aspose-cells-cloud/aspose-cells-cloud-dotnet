@@ -43,34 +43,45 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostProtectRequest"/> class.
         /// </summary>
         /// <param name="file">File to upload</param>
         /// <param name="protectWorkbookRequest"></param>
         /// <param name="password">The password needed to open an Excel file.</param>
+        public PostProtectRequest(string localPath ,  ProtectWorkbookRequest protectWorkbookRequest  ,  string password   = null)
+        {
+            this.LocalPath = localPath ;
+            this.protectWorkbookRequest = protectWorkbookRequest;
+            this.password = password;
+        }
+
+        [System.Obsolete]
         public PostProtectRequest(IDictionary<string, System.IO.Stream> file, ProtectWorkbookRequest protectWorkbookRequest, string password = null)
         {
             this.File = file;
             this.protectWorkbookRequest = protectWorkbookRequest;
             this.password = password;
         }
-
         /// <summary>
         /// File to upload
         /// </summary>
+        public string LocalPath { get; set; }
+        [System.Obsolete]
         public IDictionary<string, System.IO.Stream> File { get; set; }
+
 
         /// <summary>
         /// Gets or sets protectWorkbookRequest.
         /// </summary>
         public ProtectWorkbookRequest protectWorkbookRequest { get; set; }
 
+
         /// <summary>
         /// The password needed to open an Excel file.
         /// </summary>
         public string password { get; set; }
+
 
 
         /// <summary>
@@ -90,7 +101,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
             // verify the required parameter 'file' is set
-            if ( this.File == null)
+            if ( this.File == null && this.LocalPath ==null )
             {
                 throw new ApiException(400, "Missing required parameter 'file' when calling PostProtect");
             }

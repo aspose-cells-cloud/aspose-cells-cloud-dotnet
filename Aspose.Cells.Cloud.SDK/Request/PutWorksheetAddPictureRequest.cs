@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetAddPictureRequest"/> class.
         /// </summary>
@@ -76,50 +75,60 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worsheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// Pictute object
         /// </summary>
         public Picture picture { get; set; }
 
+
         /// <summary>
         /// The image upper left row.
         /// </summary>
         public int? upperLeftRow { get; set; }
+
 
         /// <summary>
         /// The image upper left column.
         /// </summary>
         public int? upperLeftColumn { get; set; }
 
+
         /// <summary>
         /// The image low right row.
         /// </summary>
         public int? lowerRightRow { get; set; }
+
 
         /// <summary>
         /// The image low right column.
         /// </summary>
         public int? lowerRightColumn { get; set; }
 
+
         /// <summary>
         /// The picture path, if not provided the picture data is inspected in the request body.
         /// </summary>
         public string picturePath { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

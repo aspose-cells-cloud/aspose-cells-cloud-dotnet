@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetHyperlinkRequest"/> class.
         /// </summary>
@@ -74,45 +73,54 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// First row of the hyperlink range.
         /// </summary>
         public int? firstRow { get; set; }
 
+
         /// <summary>
         /// First column of the hyperlink range.
         /// </summary>
         public int? firstColumn { get; set; }
+
 
         /// <summary>
         /// Number of rows in this hyperlink range.
         /// </summary>
         public int? totalRows { get; set; }
 
+
         /// <summary>
         /// Number of columns of this hyperlink range.
         /// </summary>
         public int? totalColumns { get; set; }
+
 
         /// <summary>
         /// Address of the hyperlink.
         /// </summary>
         public string address { get; set; }
 
+
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

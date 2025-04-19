@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorkbookDataCleansingRequest"/> class.
         /// </summary>
@@ -70,35 +69,42 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// data cleansing content.
         /// </summary>
         public DataCleansing dataCleansing { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
         /// <summary>
         /// The file password. 
         /// </summary>
         public string password { get; set; }
 
+
         /// <summary>
         /// The regional settings for workbook.
         /// </summary>
         public string region { get; set; }
 
+
         /// <summary>
         /// Gets or sets checkExcelRestriction.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
+
 
 
         /// <summary>

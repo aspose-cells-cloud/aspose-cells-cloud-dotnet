@@ -43,20 +43,28 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostConvertWorksheetToImageRequest"/> class.
         /// </summary>
         /// <param name="convertWorksheetOptions"></param>
-        public PostConvertWorksheetToImageRequest(ConvertWorksheetOptions convertWorksheetOptions)
+        /// <param name="fontsLocation">Use Custom fonts.</param>
+        public PostConvertWorksheetToImageRequest(ConvertWorksheetOptions convertWorksheetOptions, string fontsLocation = null)
         {
             this.convertWorksheetOptions = convertWorksheetOptions;
+            this.FontsLocation = fontsLocation;
         }
 
         /// <summary>
         /// Gets or sets convertWorksheetOptions.
         /// </summary>
         public ConvertWorksheetOptions convertWorksheetOptions { get; set; }
+
+
+        /// <summary>
+        /// Use Custom fonts.
+        /// </summary>
+        public string FontsLocation { get; set; }
+
 
 
         /// <summary>
@@ -87,6 +95,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
+            if (!string.IsNullOrEmpty(this.FontsLocation))  path = UrlHelper.AddQueryParameterToUrl(path, "fontsLocation", this.FontsLocation);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)

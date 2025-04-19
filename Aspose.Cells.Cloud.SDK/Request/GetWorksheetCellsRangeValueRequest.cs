@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetCellsRangeValueRequest"/> class.
         /// </summary>
@@ -74,45 +73,54 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// The range name.
         /// </summary>
         public string namerange { get; set; }
 
+
         /// <summary>
         /// Gets the index of the first row of the range.
         /// </summary>
         public int? firstRow { get; set; }
+
 
         /// <summary>
         /// Gets the index of the first columnn of the range.
         /// </summary>
         public int? firstColumn { get; set; }
 
+
         /// <summary>
         /// Gets the count of rows in the range.
         /// </summary>
         public int? rowCount { get; set; }
+
 
         /// <summary>
         /// Gets the count of columns in the range.
         /// </summary>
         public int? columnCount { get; set; }
 
+
         /// <summary>
         /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// Storage name.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

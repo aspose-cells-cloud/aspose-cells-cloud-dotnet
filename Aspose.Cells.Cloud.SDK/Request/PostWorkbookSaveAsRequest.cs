@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorkbookSaveAsRequest"/> class.
         /// </summary>
@@ -59,7 +58,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="region">The regional settings for workbook.</param>
         /// <param name="pageWideFitOnPerSheet">The page wide fit on worksheet.</param>
         /// <param name="pageTallFitOnPerSheet">The page tall fit on worksheet.</param>
-        public PostWorkbookSaveAsRequest(string name, string newfilename, SaveOptions saveOptions = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, bool? checkExcelRestriction = null, string region = null, bool? pageWideFitOnPerSheet = null, bool? pageTallFitOnPerSheet = null)
+        /// <param name="fontsLocation">Use Custom fonts.</param>
+        public PostWorkbookSaveAsRequest(string name, string newfilename, SaveOptions saveOptions = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, bool? checkExcelRestriction = null, string region = null, bool? pageWideFitOnPerSheet = null, bool? pageTallFitOnPerSheet = null, string fontsLocation = null)
         {
             this.name = name;
             this.newfilename = newfilename;
@@ -73,6 +73,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.region = region;
             this.pageWideFitOnPerSheet = pageWideFitOnPerSheet;
             this.pageTallFitOnPerSheet = pageTallFitOnPerSheet;
+            this.FontsLocation = fontsLocation;
         }
 
         /// <summary>
@@ -80,60 +81,78 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// newfilename to save the result.The `newfilename` should encompass both the filename and extension.
         /// </summary>
         public string newfilename { get; set; }
+
 
         /// <summary>
         /// Gets or sets saveOptions.
         /// </summary>
         public SaveOptions saveOptions { get; set; }
 
+
         /// <summary>
         /// Indicates if Autofit rows in workbook.
         /// </summary>
         public bool? isAutoFitRows { get; set; }
+
 
         /// <summary>
         /// Indicates if Autofit columns in workbook.
         /// </summary>
         public bool? isAutoFitColumns { get; set; }
 
+
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
+
 
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 
+
         /// <summary>
         /// The storage name where the output file is situated.
         /// </summary>
         public string outStorageName { get; set; }
+
 
         /// <summary>
         /// Whether check restriction of excel file when user modify cells related objects.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
 
+
         /// <summary>
         /// The regional settings for workbook.
         /// </summary>
         public string region { get; set; }
+
 
         /// <summary>
         /// The page wide fit on worksheet.
         /// </summary>
         public bool? pageWideFitOnPerSheet { get; set; }
 
+
         /// <summary>
         /// The page tall fit on worksheet.
         /// </summary>
         public bool? pageTallFitOnPerSheet { get; set; }
+
+
+        /// <summary>
+        /// Use Custom fonts.
+        /// </summary>
+        public string FontsLocation { get; set; }
+
 
 
         /// <summary>
@@ -181,6 +200,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if(this.pageWideFitOnPerSheet != null)  path = UrlHelper.AddQueryParameterToUrl(path, "pageWideFitOnPerSheet", this.pageWideFitOnPerSheet);
             if(this.pageTallFitOnPerSheet != null)  path = UrlHelper.AddQueryParameterToUrl(path, "pageTallFitOnPerSheet", this.pageTallFitOnPerSheet);
+            if (!string.IsNullOrEmpty(this.FontsLocation))  path = UrlHelper.AddQueryParameterToUrl(path, "fontsLocation", this.FontsLocation);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)

@@ -24,6 +24,7 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/SaveAs
 |region|String|Query|The regional settings for workbook.|
 |pageWideFitOnPerSheet|Boolean|Query|The page wide fit on worksheet.|
 |pageTallFitOnPerSheet|Boolean|Query|The page tall fit on worksheet.|
+|FontsLocation|String|Query|Use Custom fonts.|
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/PostWorkbookSaveAs) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

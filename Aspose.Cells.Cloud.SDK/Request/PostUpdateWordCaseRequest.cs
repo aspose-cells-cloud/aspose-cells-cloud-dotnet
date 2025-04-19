@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostUpdateWordCaseRequest"/> class.
         /// </summary>
@@ -57,6 +56,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Gets or sets wordCaseOptions.
         /// </summary>
         public WordCaseOptions wordCaseOptions { get; set; }
+
 
 
         /// <summary>

@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetListObjectInsertSlicerRequest"/> class.
         /// </summary>
@@ -70,35 +69,42 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// List object index.
         /// </summary>
         public int? listObjectIndex { get; set; }
 
+
         /// <summary>
         /// The index of ListColumn in ListObject.ListColumns 
         /// </summary>
         public int? columnIndex { get; set; }
+
 
         /// <summary>
         /// The cell in the upper-left corner of the Slicer range. 
         /// </summary>
         public string destCellName { get; set; }
 
+
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

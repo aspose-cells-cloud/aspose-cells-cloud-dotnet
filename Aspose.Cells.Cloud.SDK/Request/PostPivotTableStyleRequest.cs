@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostPivotTableStyleRequest"/> class.
         /// </summary>
@@ -70,35 +69,42 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// The PivotTable index.
         /// </summary>
         public int? pivotTableIndex { get; set; }
 
+
         /// <summary>
         /// StyleStyle description in request body.
         /// </summary>
         public Style style { get; set; }
+
 
         /// <summary>
         /// Whether the specific PivotTable calculate(true/false).
         /// </summary>
         public bool? needReCalculate { get; set; }
 
+
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

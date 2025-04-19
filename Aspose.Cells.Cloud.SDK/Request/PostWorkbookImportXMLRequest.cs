@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorkbookImportXMLRequest"/> class.
         /// </summary>
@@ -74,45 +73,54 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// Import XML request.
         /// </summary>
         public ImportXMLRequest importXMLRequest { get; set; }
+
 
         /// <summary>
         /// The password needed to open an Excel file.
         /// </summary>
         public string password { get; set; }
 
+
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
+
 
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 
+
         /// <summary>
         /// Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder.
         /// </summary>
         public string outPath { get; set; }
+
 
         /// <summary>
         /// The storage name where the output file is situated.
         /// </summary>
         public string outStorageName { get; set; }
 
+
         /// <summary>
         /// Whether check restriction of excel file when user modify cells related objects.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
 
+
         /// <summary>
         /// The regional settings for workbook.
         /// </summary>
         public string region { get; set; }
+
 
 
         /// <summary>

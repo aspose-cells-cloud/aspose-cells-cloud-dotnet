@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostUpdateWorksheetOleObjectRequest"/> class.
         /// </summary>
@@ -68,30 +67,36 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worsheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// Ole object index.
         /// </summary>
         public int? oleObjectIndex { get; set; }
 
+
         /// <summary>
         /// Ole Object description.
         /// </summary>
         public OleObject ole { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

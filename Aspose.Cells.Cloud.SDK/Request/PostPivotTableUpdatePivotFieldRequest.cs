@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostPivotTableUpdatePivotFieldRequest"/> class.
         /// </summary>
@@ -74,45 +73,54 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// The PivotTable index.
         /// </summary>
         public int? pivotTableIndex { get; set; }
 
+
         /// <summary>
         /// The pivot field index.
         /// </summary>
         public int? pivotFieldIndex { get; set; }
+
 
         /// <summary>
         /// Represents PivotTable field type(Undefined/Row/Column/Page/Data).
         /// </summary>
         public string pivotFieldType { get; set; }
 
+
         /// <summary>
         /// Represents pivot field.
         /// </summary>
         public PivotField pivotField { get; set; }
+
 
         /// <summary>
         /// Whether the specific PivotTable calculate(true/false).
         /// </summary>
         public bool? needReCalculate { get; set; }
 
+
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

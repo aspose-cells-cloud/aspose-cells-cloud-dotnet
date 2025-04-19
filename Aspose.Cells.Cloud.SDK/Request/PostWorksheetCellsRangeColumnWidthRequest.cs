@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetCellsRangeColumnWidthRequest"/> class.
         /// </summary>
@@ -68,30 +67,36 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// Range The range object.
         /// </summary>
         public Range range { get; set; }
 
+
         /// <summary>
         /// Sets the column width of this range.
         /// </summary>
         public double? value { get; set; }
+
 
         /// <summary>
         /// Original workbook folder.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// Storage name.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

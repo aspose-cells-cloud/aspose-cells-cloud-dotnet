@@ -13,7 +13,7 @@ IDictionary<string, Stream> mapFiles =new Dictionary<string,Stream>();
 AddFileParameter(assemblyTestXlsx,mapFiles);       
 AddFileParameter(dataSourceXlsx,mapFiles);       
 var request = new PostMergeRequest(
-    file: mapFiles,
+    file:   mapFiles ,
     outFormat: format,
     mergeToOneSheet: mergeToOneSheet
 );

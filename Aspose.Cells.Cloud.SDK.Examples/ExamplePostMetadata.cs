@@ -18,9 +18,9 @@ var cellsDocuments = new List<CellsDocumentProperty>()
 {
     cellsDocumentscellsDocument0
 };
-AddFileParameter(book1Xlsx,mapFiles);       
+
 var request = new PostMetadataRequest(
-    file: mapFiles,
+    file:    this.GetLocalFilePath(book1Xlsx) ,
     cellsDocuments: cellsDocuments
 );
 this.CellsApi.PostMetadata(request);

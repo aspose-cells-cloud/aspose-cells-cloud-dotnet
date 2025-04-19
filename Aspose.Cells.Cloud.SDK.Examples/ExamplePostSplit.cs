@@ -6,14 +6,11 @@ using System.IO;
 using System.Collections.Generic;
 
 CellsApi cellsApi = new CellsApi("xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-string assemblyTestXlsx = "assemblytest.xlsx";
-string dataSourceXlsx = "datasource.xlsx";
+string book1Xlsx = "Book1.xlsx";
 
 IDictionary<string, Stream> mapFiles =new Dictionary<string,Stream>(); 
-AddFileParameter(assemblyTestXlsx,mapFiles);       
-AddFileParameter(dataSourceXlsx,mapFiles);       
 var request = new PostSplitRequest(
-    file: mapFiles,
+    file:    this.GetLocalFilePath(book1Xlsx) ,
     outFormat: outFormat
 );
 this.CellsApi.PostSplit(request);

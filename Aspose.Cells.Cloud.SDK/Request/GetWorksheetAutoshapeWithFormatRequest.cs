@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetAutoshapeWithFormatRequest"/> class.
         /// </summary>
@@ -68,30 +67,36 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// Worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// The autoshape number.
         /// </summary>
         public int? autoshapeNumber { get; set; }
 
+
         /// <summary>
         /// Autoshape conversion format.
         /// </summary>
         public string format { get; set; }
+
 
         /// <summary>
         /// The document folder.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// Storage name.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

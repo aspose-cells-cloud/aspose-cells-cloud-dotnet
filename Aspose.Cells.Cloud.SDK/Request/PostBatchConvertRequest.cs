@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostBatchConvertRequest"/> class.
         /// </summary>
@@ -57,6 +56,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// BatchConvertRequest Batch conversion file request. 
         /// </summary>
         public BatchConvertRequest batchConvertRequest { get; set; }
+
 
 
         /// <summary>

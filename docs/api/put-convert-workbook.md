@@ -24,6 +24,7 @@ PUT http://api.aspose.cloud/v3.0//cells/convert
 |pageTallFitOnPerSheet|Boolean|Query|The page tall fit on worksheet.|
 |sheetName|String|Query||
 |pageIndex|Integer|Query||
+|FontsLocation|String|Query|Use Custom fonts.|
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/PutConvertWorkbook) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

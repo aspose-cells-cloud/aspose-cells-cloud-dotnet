@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorkbookGetSmartMarkerResultRequest"/> class.
         /// </summary>
@@ -68,30 +67,36 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The xml file full path, if empty the data is read from request body.
         /// </summary>
         public string xmlFile { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The path to save result
         /// </summary>
         public string outPath { get; set; }
+
 
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 
+
         /// <summary>
         /// The storage name where the result file is situated.
         /// </summary>
         public string outStorageName { get; set; }
+
 
 
         /// <summary>

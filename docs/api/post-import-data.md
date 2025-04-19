@@ -17,6 +17,7 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/importdata
 |folder|String|Query|The folder where the file is situated.|
 |storageName|String|Query|The storage name where the file is situated.|
 |region|String|Query|The regional settings for workbook.|
+|FontsLocation|String|Query|Use Custom fonts.|
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/PostImportData) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetWithFormatRequest"/> class.
         /// </summary>
@@ -78,55 +77,66 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// Export format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).
         /// </summary>
         public string format { get; set; }
 
+
         /// <summary>
         /// Image vertical resolution.
         /// </summary>
         public int? verticalResolution { get; set; }
+
 
         /// <summary>
         /// Image horizontal resolution.
         /// </summary>
         public int? horizontalResolution { get; set; }
 
+
         /// <summary>
         /// Represents the range to be printed.
         /// </summary>
         public string area { get; set; }
+
 
         /// <summary>
         /// Represents the page to be printed
         /// </summary>
         public int? pageIndex { get; set; }
 
+
         /// <summary>
         /// Gets or sets onePagePerSheet.
         /// </summary>
         public bool? onePagePerSheet { get; set; }
+
 
         /// <summary>
         /// Gets or sets printHeadings.
         /// </summary>
         public bool? printHeadings { get; set; }
 
+
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

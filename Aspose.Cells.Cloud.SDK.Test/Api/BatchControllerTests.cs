@@ -49,7 +49,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localMyDoc = "myDocument.xlsx";
             string remoteMyDoc = "myDocument.xlsx";
 
-            this.UploadFile( localBook1, remoteFolder + "/" + remoteBook1, "");
+             this.UploadFile( localBook1, remoteFolder + "/" + remoteBook1, "");
             this.UploadFile( localMyDoc, remoteFolder + "/" + remoteMyDoc, "");
 
             var batchConvertRequestMatchCondition = new MatchConditionRequest()
@@ -82,7 +82,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localMyDoc = "myDocument.xlsx";
             string remoteMyDoc = "myDocument.xlsx";
 
-            this.UploadFile( localBook1, remoteFolder + "/" + remoteBook1, "");
+             this.UploadFile( localBook1, remoteFolder + "/" + remoteBook1, "");
             this.UploadFile( localMyDoc, remoteFolder + "/" + remoteMyDoc, "");
 
             var batchProtectRequestMatchCondition = new MatchConditionRequest()
@@ -116,7 +116,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localMyDoc = "myDocument.xlsx";
             string remoteMyDoc = "myDocument.xlsx";
 
-            this.UploadFile( localBook1, remoteFolder + "/" + remoteBook1, "");
+             this.UploadFile( localBook1, remoteFolder + "/" + remoteBook1, "");
             this.UploadFile( localMyDoc, remoteFolder + "/" + remoteMyDoc, "");
 
             var batchLockRequestMatchCondition = new MatchConditionRequest()
@@ -149,7 +149,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localMyDoc = "myDocument.xlsx";
             string remoteMyDoc = "myDocument.xlsx";
 
-            this.UploadFile( localBook1, remoteFolder + "/" + remoteBook1, "");
+             this.UploadFile( localBook1, remoteFolder + "/" + remoteBook1, "");
             this.UploadFile( localMyDoc, remoteFolder + "/" + remoteMyDoc, "");
 
             var batchLockRequestMatchCondition = new MatchConditionRequest()
@@ -167,6 +167,39 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
                 batchLockRequest: batchLockRequest
             );
             var actual =  this.CellsApi.PostBatchUnlock(request);
+            Assert.IsNotNull(actual);
+        }
+
+        /// <summary>
+        /// Test for PostBatchSplit of BatchController.
+        /// </summary>
+        [TestCategory(ProductName)]
+        [TestMethod]
+        public void TestPostBatchSplit()
+        {
+            string localBook1 = "Book1.xlsx";
+            string remoteBook1 = "Book1.xlsx";
+            string localMyDoc = "myDocument.xlsx";
+            string remoteMyDoc = "myDocument.xlsx";
+
+             this.UploadFile( localBook1, remoteFolder + "/" + remoteBook1, "");
+            this.UploadFile( localMyDoc, remoteFolder + "/" + remoteMyDoc, "");
+
+            var batchSplitRequestMatchCondition = new MatchConditionRequest()
+            {
+                RegexPattern = "(^Book)(.+)(xlsx$)"
+            };
+            var batchSplitRequest = new BatchSplitRequest()
+            {
+                SourceFolder = remoteFolder,
+                Format = "Pdf",
+                OutFolder = "OutResult",
+                MatchCondition = batchSplitRequestMatchCondition
+            };
+            var request = new PostBatchSplitRequest(
+                batchSplitRequest: batchSplitRequest
+            );
+            var actual =  this.CellsApi.PostBatchSplit(request);
             Assert.IsNotNull(actual);
         }
     }

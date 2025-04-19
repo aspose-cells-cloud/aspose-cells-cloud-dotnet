@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PutVerticalPageBreakRequest"/> class.
         /// </summary>
@@ -74,45 +73,54 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// Cell name
         /// </summary>
         public string cellname { get; set; }
 
+
         /// <summary>
         /// Column index, zero based.
         /// </summary>
         public int? column { get; set; }
+
 
         /// <summary>
         /// Row index, zero based.
         /// </summary>
         public int? row { get; set; }
 
+
         /// <summary>
         /// Start row index, zero based.
         /// </summary>
         public int? startRow { get; set; }
+
 
         /// <summary>
         /// End row index, zero based.
         /// </summary>
         public int? endRow { get; set; }
 
+
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

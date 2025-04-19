@@ -47,7 +47,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new DownloadFileRequest(
                 path: remoteFolder + "/" + remoteName,
@@ -68,12 +68,8 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
-
-            System.Collections.Generic.IDictionary<string, System.IO.Stream> mapFiles =new System.Collections.Generic.Dictionary<string, System.IO.Stream>(); 
-            AddFileParameter(localName,mapFiles);       
             var request = new UploadFileRequest(
-                uploadFiles: mapFiles,
+                uploadFile:    this.GetLocalFilePath(localName) ,
                 path: remoteFolder + "/" + remoteName,
                 storageName: ""
             );
@@ -91,7 +87,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "Book1.xlsx";
             string remoteName = "Book1.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new CopyFileRequest(
                 srcPath: remoteFolder + "/" + remoteName,

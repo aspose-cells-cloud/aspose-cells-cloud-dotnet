@@ -14,9 +14,8 @@ string remoteName = "Book1.xlsx";
 this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
 IDictionary<string, Stream> mapFiles =new Dictionary<string,Stream>(); 
-AddFileParameter(localName,mapFiles);       
 var request = new UploadFileRequest(
-    uploadFiles: mapFiles,
+    uploadFiles:    this.GetLocalFilePath(localName) ,
     path: remoteFolder + "/" + remoteName,
     storageName: ""
 );

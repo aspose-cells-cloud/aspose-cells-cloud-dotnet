@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PutConvertWorkbookRequest"/> class.
         /// </summary>
@@ -59,7 +58,26 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="pageTallFitOnPerSheet">The page tall fit on worksheet.</param>
         /// <param name="sheetName"></param>
         /// <param name="pageIndex"></param>
-        public PutConvertWorkbookRequest(IDictionary<string, System.IO.Stream> file, string format = null, string password = null, string outPath = null, string storageName = null, bool? checkExcelRestriction = null, string streamFormat = null, string region = null, bool? pageWideFitOnPerSheet = null, bool? pageTallFitOnPerSheet = null, string sheetName = null, int? pageIndex = null)
+        /// <param name="fontsLocation">Use Custom fonts.</param>
+        public PutConvertWorkbookRequest(string localPath ,  string format  ,  string password   = null,  string outPath   = null,  string storageName   = null,  bool? checkExcelRestriction   = null,  string streamFormat   = null,  string region   = null,  bool? pageWideFitOnPerSheet   = null,  bool? pageTallFitOnPerSheet   = null,  string sheetName   = null,  int? pageIndex   = null,  string fontsLocation   = null)
+        {
+            this.LocalPath = localPath ;
+            this.format = format;
+            this.password = password;
+            this.outPath = outPath;
+            this.storageName = storageName;
+            this.checkExcelRestriction = checkExcelRestriction;
+            this.streamFormat = streamFormat;
+            this.region = region;
+            this.pageWideFitOnPerSheet = pageWideFitOnPerSheet;
+            this.pageTallFitOnPerSheet = pageTallFitOnPerSheet;
+            this.sheetName = sheetName;
+            this.pageIndex = pageIndex;
+            this.FontsLocation = fontsLocation;
+        }
+
+        [System.Obsolete]
+        public PutConvertWorkbookRequest(IDictionary<string, System.IO.Stream> file, string format, string password = null, string outPath = null, string storageName = null, bool? checkExcelRestriction = null, string streamFormat = null, string region = null, bool? pageWideFitOnPerSheet = null, bool? pageTallFitOnPerSheet = null, string sheetName = null, int? pageIndex = null, string fontsLocation = null)
         {
             this.File = file;
             this.format = format;
@@ -73,67 +91,87 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.pageTallFitOnPerSheet = pageTallFitOnPerSheet;
             this.sheetName = sheetName;
             this.pageIndex = pageIndex;
+            this.FontsLocation = fontsLocation;
         }
-
         /// <summary>
         /// File to upload
         /// </summary>
+        public string LocalPath { get; set; }
+        [System.Obsolete]
         public IDictionary<string, System.IO.Stream> File { get; set; }
+
 
         /// <summary>
         /// The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).
         /// </summary>
         public string format { get; set; }
 
+
         /// <summary>
         /// The password needed to open an Excel file.
         /// </summary>
         public string password { get; set; }
+
 
         /// <summary>
         /// Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder.
         /// </summary>
         public string outPath { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
         /// <summary>
         /// Whether check restriction of excel file when user modify cells related objects.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
 
+
         /// <summary>
         /// The format of the input file stream. 
         /// </summary>
         public string streamFormat { get; set; }
+
 
         /// <summary>
         /// The regional settings for workbook.
         /// </summary>
         public string region { get; set; }
 
+
         /// <summary>
         /// The page wide fit on worksheet.
         /// </summary>
         public bool? pageWideFitOnPerSheet { get; set; }
+
 
         /// <summary>
         /// The page tall fit on worksheet.
         /// </summary>
         public bool? pageTallFitOnPerSheet { get; set; }
 
+
         /// <summary>
         /// Gets or sets sheetName.
         /// </summary>
         public string sheetName { get; set; }
 
+
         /// <summary>
         /// Gets or sets pageIndex.
         /// </summary>
         public int? pageIndex { get; set; }
+
+
+        /// <summary>
+        /// Use Custom fonts.
+        /// </summary>
+        public string FontsLocation { get; set; }
+
 
 
         /// <summary>
@@ -153,9 +191,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
             // verify the required parameter 'file' is set
-            if ( this.File == null)
+            if ( this.File == null && this.LocalPath ==null )
             {
                 throw new ApiException(400, "Missing required parameter 'file' when calling PutConvertWorkbook");
+            }
+
+            // verify the required parameter 'format' is set
+            if (string.IsNullOrEmpty (this.format ))
+            {
+                throw new ApiException(400, "Missing required parameter 'format' when calling PutConvertWorkbook");
             }
 
             var path = baseUri + "/cells/convert";
@@ -164,7 +208,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            if (!string.IsNullOrEmpty(this.format))  path = UrlHelper.AddQueryParameterToUrl(path, "format", this.format);
+            path = UrlHelper.AddQueryParameterToUrl(path, "format", this.format);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
             if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
@@ -175,6 +219,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             if(this.pageTallFitOnPerSheet != null)  path = UrlHelper.AddQueryParameterToUrl(path, "pageTallFitOnPerSheet", this.pageTallFitOnPerSheet);
             if (!string.IsNullOrEmpty(this.sheetName))  path = UrlHelper.AddQueryParameterToUrl(path, "sheetName", this.sheetName);
             if(this.pageIndex != null)  path = UrlHelper.AddQueryParameterToUrl(path, "pageIndex", this.pageIndex);
+            if (!string.IsNullOrEmpty(this.FontsLocation))  path = UrlHelper.AddQueryParameterToUrl(path, "fontsLocation", this.FontsLocation);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)
@@ -188,6 +233,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 {
                     localVarFileParams.Add(keyValueFileParam.Key, UrlHelper.ToFileInfo(keyValueFileParam.Value, keyValueFileParam.Key));
                 }
+            }
+            if (!string.IsNullOrEmpty(LocalPath) && System.IO.File.Exists(LocalPath))
+            {
+                System.IO.FileInfo fileInfo = new System.IO.FileInfo(LocalPath);
+                localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(LocalPath), fileInfo.Name));
             }
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

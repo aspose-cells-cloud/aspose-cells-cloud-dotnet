@@ -2802,6 +2802,53 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <summary>
         /// Export Excel internal elements or the workbook itself to various format files.
         /// </summary>
+        /// <param name="request">Request. <see cref="CheckWrokbookExternalReferenceRequest" /></param>
+        public   CheckedExternalReferenceResponse  CheckWrokbookExternalReference(CheckWrokbookExternalReferenceRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    CheckedExternalReferenceResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CheckedExternalReferenceResponse  > CheckWrokbookExternalReferenceAsync(CheckWrokbookExternalReferenceRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CheckedExternalReferenceResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="CheckWorkbookFormulaErrorsRequest" /></param>
+        public   CheckedFormulaErrorsResponse  CheckWorkbookFormulaErrors(CheckWorkbookFormulaErrorsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    CheckedFormulaErrorsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   CheckedFormulaErrorsResponse  > CheckWorkbookFormulaErrorsAsync(CheckWorkbookFormulaErrorsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    CheckedFormulaErrorsResponse  >(request.CreateHttpRequest(BaseUri +"/" +Version, this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// Export Excel internal elements or the workbook itself to various format files.
+        /// </summary>
         /// <param name="request">Request. <see cref="PostExportRequest" /></param>
         public   FilesResult  PostExport(PostExportRequest request)
         {

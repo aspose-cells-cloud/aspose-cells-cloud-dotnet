@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="GetAllStylesRequest"/> class.
         /// </summary>
@@ -62,15 +61,18 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// Gets or sets folder.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// Gets or sets storageName.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

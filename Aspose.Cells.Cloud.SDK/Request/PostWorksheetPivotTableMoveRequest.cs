@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetPivotTableMoveRequest"/> class.
         /// </summary>
@@ -72,40 +71,48 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// Gets the PivotTable report by index.
         /// </summary>
         public int? pivotTableIndex { get; set; }
 
+
         /// <summary>
         /// Row index.
         /// </summary>
         public int? row { get; set; }
+
 
         /// <summary>
         /// Column index.
         /// </summary>
         public int? column { get; set; }
 
+
         /// <summary>
         /// The dest cell name.
         /// </summary>
         public string destCellName { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

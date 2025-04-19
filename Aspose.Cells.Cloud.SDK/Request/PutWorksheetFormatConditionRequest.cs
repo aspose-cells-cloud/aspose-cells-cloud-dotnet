@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetFormatConditionRequest"/> class.
         /// </summary>
@@ -76,50 +75,60 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// Gets the Conditional Formatting element at the specified index.
         /// </summary>
         public int? index { get; set; }
 
+
         /// <summary>
         /// Adds a conditional formatted cell range.
         /// </summary>
         public string cellArea { get; set; }
+
 
         /// <summary>
         /// Format condition type(CellValue/Expression/ColorScale/DataBar/IconSet/Top10/UniqueValues/DuplicateValues/ContainsText/NotContainsText/BeginsWith/EndsWith/ContainsBlanks/NotContainsBlanks/ContainsErrors/NotContainsErrors/TimePeriod/AboveAverage).
         /// </summary>
         public string type { get; set; }
 
+
         /// <summary>
         /// Represents the operator type of conditional format and data validation(Between/Equal/GreaterThan/GreaterOrEqual/LessThan/None/NotBetween/NotEqual).
         /// </summary>
         public string operatorType { get; set; }
+
 
         /// <summary>
         /// The value or expression associated with conditional formatting.
         /// </summary>
         public string formula1 { get; set; }
 
+
         /// <summary>
         /// The value or expression associated with conditional formatting.
         /// </summary>
         public string formula2 { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

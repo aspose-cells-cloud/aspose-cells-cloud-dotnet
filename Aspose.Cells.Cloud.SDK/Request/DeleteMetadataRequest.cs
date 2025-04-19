@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteMetadataRequest"/> class.
         /// </summary>
@@ -52,6 +51,16 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="outFormat">The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
         /// <param name="password">The password needed to open an Excel file.</param>
         /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
+        public DeleteMetadataRequest(string localPath ,  string type   = null,  string outFormat   = null,  string password   = null,  bool? checkExcelRestriction   = null)
+        {
+            this.LocalPath = localPath ;
+            this.type = type;
+            this.outFormat = outFormat;
+            this.password = password;
+            this.checkExcelRestriction = checkExcelRestriction;
+        }
+
+        [System.Obsolete]
         public DeleteMetadataRequest(IDictionary<string, System.IO.Stream> file, string type = null, string outFormat = null, string password = null, bool? checkExcelRestriction = null)
         {
             this.File = file;
@@ -60,31 +69,37 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.password = password;
             this.checkExcelRestriction = checkExcelRestriction;
         }
-
         /// <summary>
         /// File to upload
         /// </summary>
+        public string LocalPath { get; set; }
+        [System.Obsolete]
         public IDictionary<string, System.IO.Stream> File { get; set; }
+
 
         /// <summary>
         /// Cells document property name.
         /// </summary>
         public string type { get; set; }
 
+
         /// <summary>
         /// The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)
         /// </summary>
         public string outFormat { get; set; }
+
 
         /// <summary>
         /// The password needed to open an Excel file.
         /// </summary>
         public string password { get; set; }
 
+
         /// <summary>
         /// Whether check restriction of excel file when user modify cells related objects.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
+
 
 
         /// <summary>
@@ -104,7 +119,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
             // verify the required parameter 'file' is set
-            if ( this.File == null)
+            if ( this.File == null && this.LocalPath ==null )
             {
                 throw new ApiException(400, "Missing required parameter 'file' when calling DeleteMetadata");
             }
@@ -132,6 +147,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 {
                     localVarFileParams.Add(keyValueFileParam.Key, UrlHelper.ToFileInfo(keyValueFileParam.Value, keyValueFileParam.Key));
                 }
+            }
+            if (!string.IsNullOrEmpty(LocalPath) && System.IO.File.Exists(LocalPath))
+            {
+                System.IO.FileInfo fileInfo = new System.IO.FileInfo(LocalPath);
+                localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(LocalPath), fileInfo.Name));
             }
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

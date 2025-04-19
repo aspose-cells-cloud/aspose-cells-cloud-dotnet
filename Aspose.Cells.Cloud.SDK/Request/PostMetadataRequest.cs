@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostMetadataRequest"/> class.
         /// </summary>
@@ -53,6 +52,17 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
         /// <param name="outFormat">The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
         /// <param name="region">The regional settings for workbook.</param>
+        public PostMetadataRequest(string localPath ,  IList<CellsDocumentProperty> cellsDocuments  ,  string password   = null,  bool? checkExcelRestriction   = null,  string outFormat   = null,  string region   = null)
+        {
+            this.LocalPath = localPath ;
+            this.cellsDocuments = cellsDocuments;
+            this.password = password;
+            this.checkExcelRestriction = checkExcelRestriction;
+            this.outFormat = outFormat;
+            this.region = region;
+        }
+
+        [System.Obsolete]
         public PostMetadataRequest(IDictionary<string, System.IO.Stream> file, IList<CellsDocumentProperty> cellsDocuments, string password = null, bool? checkExcelRestriction = null, string outFormat = null, string region = null)
         {
             this.File = file;
@@ -62,36 +72,43 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.outFormat = outFormat;
             this.region = region;
         }
-
         /// <summary>
         /// File to upload
         /// </summary>
+        public string LocalPath { get; set; }
+        [System.Obsolete]
         public IDictionary<string, System.IO.Stream> File { get; set; }
+
 
         /// <summary>
         /// document properties
         /// </summary>
         public IList<CellsDocumentProperty> cellsDocuments { get; set; }
 
+
         /// <summary>
         /// The password needed to open an Excel file.
         /// </summary>
         public string password { get; set; }
+
 
         /// <summary>
         /// Whether check restriction of excel file when user modify cells related objects.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
 
+
         /// <summary>
         /// The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)
         /// </summary>
         public string outFormat { get; set; }
 
+
         /// <summary>
         /// The regional settings for workbook.
         /// </summary>
         public string region { get; set; }
+
 
 
         /// <summary>
@@ -111,7 +128,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
             // verify the required parameter 'file' is set
-            if ( this.File == null)
+            if ( this.File == null && this.LocalPath ==null )
             {
                 throw new ApiException(400, "Missing required parameter 'file' when calling PostMetadata");
             }

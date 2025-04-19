@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetPivotTableRequest"/> class.
         /// </summary>
@@ -72,40 +71,48 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The worksheet name.
         /// </summary>
         public string sheetName { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The data for the new PivotTable cache.
         /// </summary>
         public string sourceData { get; set; }
+
 
         /// <summary>
         /// The cell in the upper-left corner of the destination range for the PivotTable report.
         /// </summary>
         public string destCellName { get; set; }
 
+
         /// <summary>
         /// The name of the new PivotTable.
         /// </summary>
         public string tableName { get; set; }
+
 
         /// <summary>
         /// Indicates whether using same data source when another existing PivotTable has used this data source. If the property is true, it will save memory.
         /// </summary>
         public bool? useSameSource { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
 
         /// <summary>

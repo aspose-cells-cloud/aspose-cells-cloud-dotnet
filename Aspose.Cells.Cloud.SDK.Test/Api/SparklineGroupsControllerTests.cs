@@ -47,7 +47,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "TestCase.xlsx";
             string remoteName = "TestCase.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetWorksheetSparklineGroupsRequest(
                 name: remoteName,
@@ -69,7 +69,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "TestCase.xlsx";
             string remoteName = "TestCase.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new GetWorksheetSparklineGroupRequest(
                 name: remoteName,
@@ -92,7 +92,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "TestCase.xlsx";
             string remoteName = "TestCase.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new DeleteWorksheetSparklineGroupsRequest(
                 name: remoteName,
@@ -114,7 +114,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "TestCase.xlsx";
             string remoteName = "TestCase.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new DeleteWorksheetSparklineGroupRequest(
                 name: remoteName,
@@ -137,7 +137,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "TestCase.xlsx";
             string remoteName = "TestCase.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var request = new PutWorksheetSparklineGroupRequest(
                 name: remoteName,
@@ -163,7 +163,7 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Api
             string localName = "TestCase.xlsx";
             string remoteName = "TestCase.xlsx";
 
-            this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
+             this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
             var sparklineGroup = new SparklineGroup()
             {

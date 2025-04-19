@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostImportDataRequest"/> class.
         /// </summary>
@@ -52,13 +51,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="folder">The folder where the file is situated.</param>
         /// <param name="storageName">The storage name where the file is situated.</param>
         /// <param name="region">The regional settings for workbook.</param>
-        public PostImportDataRequest(string name, ImportOption importOption = null, string folder = null, string storageName = null, string region = null)
+        /// <param name="fontsLocation">Use Custom fonts.</param>
+        public PostImportDataRequest(string name, ImportOption importOption = null, string folder = null, string storageName = null, string region = null, string fontsLocation = null)
         {
             this.name = name;
             this.importOption = importOption;
             this.folder = folder;
             this.storageName = storageName;
             this.region = region;
+            this.FontsLocation = fontsLocation;
         }
 
         /// <summary>
@@ -66,25 +67,36 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// Import option. They are include of ImportCSVDataOption, ImportBatchDataOption, ImportPictureOption, ImportStringArrayOption, Import2DimensionStringArrayOption, and so on.  
         /// </summary>
         public ImportOption importOption { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 
+
         /// <summary>
         /// The regional settings for workbook.
         /// </summary>
         public string region { get; set; }
+
+
+        /// <summary>
+        /// Use Custom fonts.
+        /// </summary>
+        public string FontsLocation { get; set; }
+
 
 
         /// <summary>
@@ -119,6 +131,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
             if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
+            if (!string.IsNullOrEmpty(this.FontsLocation))  path = UrlHelper.AddQueryParameterToUrl(path, "fontsLocation", this.FontsLocation);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)

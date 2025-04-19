@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorkbookRequest"/> class.
         /// </summary>
@@ -60,7 +59,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="region">The regional settings for workbook.</param>
         /// <param name="pageWideFitOnPerSheet">The page wide fit on worksheet.</param>
         /// <param name="pageTallFitOnPerSheet">The page tall fit on worksheet.</param>
-        public GetWorkbookRequest(string name, string format = null, string password = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string outPath = null, string storageName = null, string outStorageName = null, bool? checkExcelRestriction = null, string region = null, bool? pageWideFitOnPerSheet = null, bool? pageTallFitOnPerSheet = null)
+        /// <param name="fontsLocation">Use Custom fonts.</param>
+        public GetWorkbookRequest(string name, string format = null, string password = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string outPath = null, string storageName = null, string outStorageName = null, bool? checkExcelRestriction = null, string region = null, bool? pageWideFitOnPerSheet = null, bool? pageTallFitOnPerSheet = null, string fontsLocation = null)
         {
             this.name = name;
             this.format = format;
@@ -75,6 +75,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.region = region;
             this.pageWideFitOnPerSheet = pageWideFitOnPerSheet;
             this.pageTallFitOnPerSheet = pageTallFitOnPerSheet;
+            this.FontsLocation = fontsLocation;
         }
 
         /// <summary>
@@ -82,65 +83,84 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// The conversion format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).
         /// </summary>
         public string format { get; set; }
+
 
         /// <summary>
         /// The password needed to open an Excel file.
         /// </summary>
         public string password { get; set; }
 
+
         /// <summary>
         /// Specifies whether set workbook rows to be autofit.
         /// </summary>
         public bool? isAutoFit { get; set; }
+
 
         /// <summary>
         /// Specifies whether only save table data.Only use pdf to excel.
         /// </summary>
         public bool? onlySaveTable { get; set; }
 
+
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
+
 
         /// <summary>
         /// Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder.
         /// </summary>
         public string outPath { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
+
 
         /// <summary>
         /// The storage name where the output file is situated.
         /// </summary>
         public string outStorageName { get; set; }
 
+
         /// <summary>
         /// Whether check restriction of excel file when user modify cells related objects.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
+
 
         /// <summary>
         /// The regional settings for workbook.
         /// </summary>
         public string region { get; set; }
 
+
         /// <summary>
         /// The page wide fit on worksheet.
         /// </summary>
         public bool? pageWideFitOnPerSheet { get; set; }
 
+
         /// <summary>
         /// The page tall fit on worksheet.
         /// </summary>
         public bool? pageTallFitOnPerSheet { get; set; }
+
+
+        /// <summary>
+        /// Use Custom fonts.
+        /// </summary>
+        public string FontsLocation { get; set; }
+
 
 
         /// <summary>
@@ -184,6 +204,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if(this.pageWideFitOnPerSheet != null)  path = UrlHelper.AddQueryParameterToUrl(path, "pageWideFitOnPerSheet", this.pageWideFitOnPerSheet);
             if(this.pageTallFitOnPerSheet != null)  path = UrlHelper.AddQueryParameterToUrl(path, "pageTallFitOnPerSheet", this.pageTallFitOnPerSheet);
+            if (!string.IsNullOrEmpty(this.FontsLocation))  path = UrlHelper.AddQueryParameterToUrl(path, "fontsLocation", this.FontsLocation);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)

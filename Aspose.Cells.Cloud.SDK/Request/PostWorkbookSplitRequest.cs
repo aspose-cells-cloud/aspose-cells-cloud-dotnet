@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorkbookSplitRequest"/> class.
         /// </summary>
@@ -78,55 +77,66 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         public string name { get; set; }
 
+
         /// <summary>
         /// Split format.
         /// </summary>
         public string format { get; set; }
+
 
         /// <summary>
         /// Gets or sets outFolder.
         /// </summary>
         public string outFolder { get; set; }
 
+
         /// <summary>
         /// Start worksheet index.
         /// </summary>
         public int? from { get; set; }
+
 
         /// <summary>
         /// End worksheet index.
         /// </summary>
         public int? to { get; set; }
 
+
         /// <summary>
         /// Image horizontal resolution.
         /// </summary>
         public int? horizontalResolution { get; set; }
+
 
         /// <summary>
         /// Image vertical resolution.
         /// </summary>
         public int? verticalResolution { get; set; }
 
+
         /// <summary>
         /// rule name : sheetname  newguid 
         /// </summary>
         public string splitNameRule { get; set; }
+
 
         /// <summary>
         /// The folder where the file is situated.
         /// </summary>
         public string folder { get; set; }
 
+
         /// <summary>
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
 
+
         /// <summary>
         /// Gets or sets outStorageName.
         /// </summary>
         public string outStorageName { get; set; }
+
 
 
         /// <summary>

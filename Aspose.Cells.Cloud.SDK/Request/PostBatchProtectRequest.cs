@@ -43,7 +43,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="PostBatchProtectRequest"/> class.
         /// </summary>
@@ -57,6 +56,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// BatchProtectRequest Batch protection file request.  
         /// </summary>
         public BatchProtectRequest batchProtectRequest { get; set; }
+
 
 
         /// <summary>
