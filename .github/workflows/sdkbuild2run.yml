@@ -18,7 +18,7 @@ jobs:
       ProductClientSecret: ${{ secrets.PRODUCTCLIENTSECRET }}
     steps:
     - uses: actions/checkout@v4
-    
+
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
@@ -29,5 +29,5 @@ jobs:
       run: dotnet build --no-restore
     - name: Run Examples
       run: |
-        cd Aspose.Cells.Cloud.SDK.Examples
+        cd examples
         dotnet test .\Example_QuickStart.cs
