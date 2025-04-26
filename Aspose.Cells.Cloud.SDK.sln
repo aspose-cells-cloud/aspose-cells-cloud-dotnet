@@ -5,8 +5,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Cells.Cloud.SDK", "Aspose.Cells.Cloud.Sdk\Aspose.Cells.Cloud.SDK.csproj", "{13284D1A-8B08-469A-A58B-5C94B92C68E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Cells.Cloud.SDK.Tests", "Aspose.Cells.Cloud.Sdk.Test\Aspose.Cells.Cloud.SDK.Test.csproj", "{FCFE1F60-DB73-4F3F-853A-FBADCC5E994B}"
-EndProject
+
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{98322D5D-AC84-4BA5-94DC-5FB1B651046F}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
