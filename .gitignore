@@ -118,3 +118,4 @@ SDKs/servercreds.json
 nupkgs
 aspose.pfx
 Aspose.Cells.Cloud.SDK.Test/
+.nuget
