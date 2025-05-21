@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostUpdateWorksheetRangeStyleRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostUpdateWorksheetRangeStyleRequest"/> class.
         /// </summary>
@@ -43,25 +44,25 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostUpdateWorksheetRangeStyleRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="range">Represents the range to which the specified cells applies.</param>
-        /// <param name="style">Style with update style settings.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PostUpdateWorksheetRangeStyleRequest(string name, string sheetName, string range, Style style, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.range = range;
-            this.style = style;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostUpdateWorksheetRangeStyleRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="range">Represents the range to which the specified cells applies.</param>
+            /// <param name="style">Style with update style settings.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PostUpdateWorksheetRangeStyleRequest(string name, string sheetName, string range, Style style, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.range = range;
+                this.style = style;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -96,8 +97,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -159,6 +159,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.style != null ? JsonConvert.SerializeObject(this.style) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

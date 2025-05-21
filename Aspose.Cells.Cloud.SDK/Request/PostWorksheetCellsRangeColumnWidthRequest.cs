@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostWorksheetCellsRangeColumnWidthRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetCellsRangeColumnWidthRequest"/> class.
         /// </summary>
@@ -43,25 +44,25 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostWorksheetCellsRangeColumnWidthRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="range">Range The range object.</param>
-        /// <param name="value">Sets the column width of this range.</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
-        public PostWorksheetCellsRangeColumnWidthRequest(string name, string sheetName, Range range, double? value, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.range = range;
-            this.value = value;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostWorksheetCellsRangeColumnWidthRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="range">Range The range object.</param>
+            /// <param name="value">Sets the column width of this range.</param>
+            /// <param name="folder">Original workbook folder.</param>
+            /// <param name="storageName">Storage name.</param>
+            public PostWorksheetCellsRangeColumnWidthRequest(string name, string sheetName, Range range, double? value, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.range = range;
+                this.value = value;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -96,8 +97,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Storage name.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -159,6 +159,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.range != null ? JsonConvert.SerializeObject(this.range) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PutWorkbookNameRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorkbookNameRequest"/> class.
         /// </summary>
@@ -43,21 +44,21 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PutWorkbookNameRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="newName">Name</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PutWorkbookNameRequest(string name, Name newName, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.newName = newName;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PutWorkbookNameRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="newName">Name</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PutWorkbookNameRequest(string name, Name newName, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.newName = newName;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -80,8 +81,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -129,6 +129,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.newName != null ? JsonConvert.SerializeObject(this.newName) : null);
+
+
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

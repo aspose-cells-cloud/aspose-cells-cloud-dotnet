@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostCopyWorksheetRowsRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostCopyWorksheetRowsRequest"/> class.
         /// </summary>
@@ -43,29 +44,29 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostCopyWorksheetRowsRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="sourceRowIndex">Source row index</param>
-        /// <param name="destinationRowIndex">Destination row index</param>
-        /// <param name="rowNumber">The copied row number</param>
-        /// <param name="worksheet">The worksheet name.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PostCopyWorksheetRowsRequest(string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.sourceRowIndex = sourceRowIndex;
-            this.destinationRowIndex = destinationRowIndex;
-            this.rowNumber = rowNumber;
-            this.worksheet = worksheet;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostCopyWorksheetRowsRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="sourceRowIndex">Source row index</param>
+            /// <param name="destinationRowIndex">Destination row index</param>
+            /// <param name="rowNumber">The copied row number</param>
+            /// <param name="worksheet">The worksheet name.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PostCopyWorksheetRowsRequest(string name, string sheetName, int? sourceRowIndex, int? destinationRowIndex, int? rowNumber, string worksheet = null, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.sourceRowIndex = sourceRowIndex;
+                this.destinationRowIndex = destinationRowIndex;
+                this.rowNumber = rowNumber;
+                this.worksheet = worksheet;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -112,8 +113,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -182,6 +182,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

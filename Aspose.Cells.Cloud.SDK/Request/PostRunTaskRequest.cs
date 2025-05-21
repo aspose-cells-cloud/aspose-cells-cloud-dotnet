@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostRunTaskRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostRunTaskRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostRunTaskRequest"/> class.
-        /// </summary>
-        /// <param name="taskData">Task Data Descrition</param>
-        public PostRunTaskRequest(TaskData taskData)
-        {
-            this.TaskData = taskData;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostRunTaskRequest"/> class.
+            /// </summary>
+            /// <param name="taskData">Task Data Descrition</param>
+            public PostRunTaskRequest(TaskData taskData)
+            {
+                this.TaskData = taskData;
+            }
+        
         /// <summary>
         /// Task Data Descrition
         /// </summary>
         public TaskData TaskData { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.TaskData != null ? JsonConvert.SerializeObject(this.TaskData) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

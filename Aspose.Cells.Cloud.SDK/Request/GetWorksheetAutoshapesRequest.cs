@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class GetWorksheetAutoshapesRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetAutoshapesRequest"/> class.
         /// </summary>
@@ -43,21 +44,21 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="GetWorksheetAutoshapesRequest"/> class.
-        /// </summary>
-        /// <param name="name">The workbook name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="folder">Document's folder.</param>
-        /// <param name="storageName">Storage name.</param>
-        public GetWorksheetAutoshapesRequest(string name, string sheetName, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="GetWorksheetAutoshapesRequest"/> class.
+            /// </summary>
+            /// <param name="name">The workbook name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="folder">Document's folder.</param>
+            /// <param name="storageName">Storage name.</param>
+            public GetWorksheetAutoshapesRequest(string name, string sheetName, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The workbook name.
         /// </summary>
@@ -80,8 +81,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Storage name.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -128,6 +128,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "GET", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

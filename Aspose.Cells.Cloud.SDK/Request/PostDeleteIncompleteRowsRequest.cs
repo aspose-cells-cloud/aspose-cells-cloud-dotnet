@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostDeleteIncompleteRowsRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostDeleteIncompleteRowsRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostDeleteIncompleteRowsRequest"/> class.
-        /// </summary>
-        /// <param name="deleteIncompleteRowsRequest"></param>
-        public PostDeleteIncompleteRowsRequest(DeleteIncompleteRowsRequest deleteIncompleteRowsRequest)
-        {
-            this.deleteIncompleteRowsRequest = deleteIncompleteRowsRequest;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostDeleteIncompleteRowsRequest"/> class.
+            /// </summary>
+            /// <param name="deleteIncompleteRowsRequest"></param>
+            public PostDeleteIncompleteRowsRequest(DeleteIncompleteRowsRequest deleteIncompleteRowsRequest)
+            {
+                this.deleteIncompleteRowsRequest = deleteIncompleteRowsRequest;
+            }
+        
         /// <summary>
         /// Gets or sets deleteIncompleteRowsRequest.
         /// </summary>
         public DeleteIncompleteRowsRequest deleteIncompleteRowsRequest { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.deleteIncompleteRowsRequest != null ? JsonConvert.SerializeObject(this.deleteIncompleteRowsRequest) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

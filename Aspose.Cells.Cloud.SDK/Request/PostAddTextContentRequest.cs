@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostAddTextContentRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostAddTextContentRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostAddTextContentRequest"/> class.
-        /// </summary>
-        /// <param name="addTextOptions"></param>
-        public PostAddTextContentRequest(AddTextOptions addTextOptions)
-        {
-            this.addTextOptions = addTextOptions;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostAddTextContentRequest"/> class.
+            /// </summary>
+            /// <param name="addTextOptions"></param>
+            public PostAddTextContentRequest(AddTextOptions addTextOptions)
+            {
+                this.addTextOptions = addTextOptions;
+            }
+        
         /// <summary>
         /// Gets or sets addTextOptions.
         /// </summary>
         public AddTextOptions addTextOptions { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.addTextOptions != null ? JsonConvert.SerializeObject(this.addTextOptions) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

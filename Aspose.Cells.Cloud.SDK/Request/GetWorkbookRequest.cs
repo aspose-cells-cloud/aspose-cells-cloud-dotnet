@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class GetWorkbookRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorkbookRequest"/> class.
         /// </summary>
@@ -43,41 +44,45 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="GetWorkbookRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="format">The conversion format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).</param>
-        /// <param name="password">The password needed to open an Excel file.</param>
-        /// <param name="isAutoFit">Specifies whether set workbook rows to be autofit.</param>
-        /// <param name="onlySaveTable">Specifies whether only save table data.Only use pdf to excel.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="outPath">Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        /// <param name="outStorageName">The storage name where the output file is situated.</param>
-        /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
-        /// <param name="region">The regional settings for workbook.</param>
-        /// <param name="pageWideFitOnPerSheet">The page wide fit on worksheet.</param>
-        /// <param name="pageTallFitOnPerSheet">The page tall fit on worksheet.</param>
-        /// <param name="fontsLocation">Use Custom fonts.</param>
-        public GetWorkbookRequest(string name, string format = null, string password = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string outPath = null, string storageName = null, string outStorageName = null, bool? checkExcelRestriction = null, string region = null, bool? pageWideFitOnPerSheet = null, bool? pageTallFitOnPerSheet = null, string fontsLocation = null)
-        {
-            this.name = name;
-            this.format = format;
-            this.password = password;
-            this.isAutoFit = isAutoFit;
-            this.onlySaveTable = onlySaveTable;
-            this.folder = folder;
-            this.outPath = outPath;
-            this.storageName = storageName;
-            this.outStorageName = outStorageName;
-            this.checkExcelRestriction = checkExcelRestriction;
-            this.region = region;
-            this.pageWideFitOnPerSheet = pageWideFitOnPerSheet;
-            this.pageTallFitOnPerSheet = pageTallFitOnPerSheet;
-            this.FontsLocation = fontsLocation;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="GetWorkbookRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="format">The conversion format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).</param>
+            /// <param name="password">The password needed to open an Excel file.</param>
+            /// <param name="isAutoFit">Specifies whether set workbook rows to be autofit.</param>
+            /// <param name="onlySaveTable">Specifies whether only save table data.Only use pdf to excel.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="outPath">Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            /// <param name="outStorageName">The storage name where the output file is situated.</param>
+            /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
+            /// <param name="region">The regional settings for workbook.</param>
+            /// <param name="pageWideFitOnPerSheet">The page wide fit on worksheet.</param>
+            /// <param name="pageTallFitOnPerSheet">The page tall fit on worksheet.</param>
+            /// <param name="onePagePerSheet"></param>
+            /// <param name="onlyAutofitTable"></param>
+            /// <param name="fontsLocation">Use Custom fonts.</param>
+            public GetWorkbookRequest(string name, string format = null, string password = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string outPath = null, string storageName = null, string outStorageName = null, bool? checkExcelRestriction = null, string region = null, bool? pageWideFitOnPerSheet = null, bool? pageTallFitOnPerSheet = null, bool? onePagePerSheet = null, bool? onlyAutofitTable = null, string fontsLocation = null)
+            {
+                this.name = name;
+                this.format = format;
+                this.password = password;
+                this.isAutoFit = isAutoFit;
+                this.onlySaveTable = onlySaveTable;
+                this.folder = folder;
+                this.outPath = outPath;
+                this.storageName = storageName;
+                this.outStorageName = outStorageName;
+                this.checkExcelRestriction = checkExcelRestriction;
+                this.region = region;
+                this.pageWideFitOnPerSheet = pageWideFitOnPerSheet;
+                this.pageTallFitOnPerSheet = pageTallFitOnPerSheet;
+                this.onePagePerSheet = onePagePerSheet;
+                this.onlyAutofitTable = onlyAutofitTable;
+                this.FontsLocation = fontsLocation;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -157,11 +162,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
+        /// Gets or sets onePagePerSheet.
+        /// </summary>
+        public bool? onePagePerSheet { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets onlyAutofitTable.
+        /// </summary>
+        public bool? onlyAutofitTable { get; set; }
+
+
+        /// <summary>
         /// Use Custom fonts.
         /// </summary>
         public string FontsLocation { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -204,6 +220,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if(this.pageWideFitOnPerSheet != null)  path = UrlHelper.AddQueryParameterToUrl(path, "pageWideFitOnPerSheet", this.pageWideFitOnPerSheet);
             if(this.pageTallFitOnPerSheet != null)  path = UrlHelper.AddQueryParameterToUrl(path, "pageTallFitOnPerSheet", this.pageTallFitOnPerSheet);
+            if(this.onePagePerSheet != null)  path = UrlHelper.AddQueryParameterToUrl(path, "onePagePerSheet", this.onePagePerSheet);
+            if(this.onlyAutofitTable != null)  path = UrlHelper.AddQueryParameterToUrl(path, "onlyAutofitTable", this.onlyAutofitTable);
             if (!string.IsNullOrEmpty(this.FontsLocation))  path = UrlHelper.AddQueryParameterToUrl(path, "fontsLocation", this.FontsLocation);
             if (this.extendQueryParameterMap != null)
             {
@@ -212,6 +230,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "GET", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

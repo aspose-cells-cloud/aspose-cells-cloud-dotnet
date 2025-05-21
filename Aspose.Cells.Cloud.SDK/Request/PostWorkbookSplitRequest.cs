@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostWorkbookSplitRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorkbookSplitRequest"/> class.
         /// </summary>
@@ -43,35 +44,35 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostWorkbookSplitRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="format">Split format.</param>
-        /// <param name="outFolder"></param>
-        /// <param name="from">Start worksheet index.</param>
-        /// <param name="to">End worksheet index.</param>
-        /// <param name="horizontalResolution">Image horizontal resolution.</param>
-        /// <param name="verticalResolution">Image vertical resolution.</param>
-        /// <param name="splitNameRule">rule name : sheetname  newguid </param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        /// <param name="outStorageName"></param>
-        public PostWorkbookSplitRequest(string name, string format = null, string outFolder = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string splitNameRule = null, string folder = null, string storageName = null, string outStorageName = null)
-        {
-            this.name = name;
-            this.format = format;
-            this.outFolder = outFolder;
-            this.from = from;
-            this.to = to;
-            this.horizontalResolution = horizontalResolution;
-            this.verticalResolution = verticalResolution;
-            this.splitNameRule = splitNameRule;
-            this.folder = folder;
-            this.storageName = storageName;
-            this.outStorageName = outStorageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostWorkbookSplitRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="format">Split format.</param>
+            /// <param name="outFolder"></param>
+            /// <param name="from">Start worksheet index.</param>
+            /// <param name="to">End worksheet index.</param>
+            /// <param name="horizontalResolution">Image horizontal resolution.</param>
+            /// <param name="verticalResolution">Image vertical resolution.</param>
+            /// <param name="splitNameRule">rule name : sheetname  newguid </param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            /// <param name="outStorageName"></param>
+            public PostWorkbookSplitRequest(string name, string format = null, string outFolder = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string splitNameRule = null, string folder = null, string storageName = null, string outStorageName = null)
+            {
+                this.name = name;
+                this.format = format;
+                this.outFolder = outFolder;
+                this.from = from;
+                this.to = to;
+                this.horizontalResolution = horizontalResolution;
+                this.verticalResolution = verticalResolution;
+                this.splitNameRule = splitNameRule;
+                this.folder = folder;
+                this.storageName = storageName;
+                this.outStorageName = outStorageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -136,8 +137,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Gets or sets outStorageName.
         /// </summary>
         public string outStorageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -185,6 +185,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

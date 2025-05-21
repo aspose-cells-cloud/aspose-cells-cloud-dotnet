@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostCharacterCountRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostCharacterCountRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostCharacterCountRequest"/> class.
-        /// </summary>
-        /// <param name="characterCountOptions"></param>
-        public PostCharacterCountRequest(CharacterCountOptions characterCountOptions)
-        {
-            this.characterCountOptions = characterCountOptions;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostCharacterCountRequest"/> class.
+            /// </summary>
+            /// <param name="characterCountOptions"></param>
+            public PostCharacterCountRequest(CharacterCountOptions characterCountOptions)
+            {
+                this.characterCountOptions = characterCountOptions;
+            }
+        
         /// <summary>
         /// Gets or sets characterCountOptions.
         /// </summary>
         public CharacterCountOptions characterCountOptions { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.characterCountOptions != null ? JsonConvert.SerializeObject(this.characterCountOptions) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostUpdateWorksheetOleObjectRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostUpdateWorksheetOleObjectRequest"/> class.
         /// </summary>
@@ -43,25 +44,25 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostUpdateWorksheetOleObjectRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worsheet name.</param>
-        /// <param name="oleObjectIndex">Ole object index.</param>
-        /// <param name="ole">Ole Object description.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PostUpdateWorksheetOleObjectRequest(string name, string sheetName, int? oleObjectIndex, OleObject ole, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.oleObjectIndex = oleObjectIndex;
-            this.ole = ole;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostUpdateWorksheetOleObjectRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worsheet name.</param>
+            /// <param name="oleObjectIndex">Ole object index.</param>
+            /// <param name="ole">Ole Object description.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PostUpdateWorksheetOleObjectRequest(string name, string sheetName, int? oleObjectIndex, OleObject ole, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.oleObjectIndex = oleObjectIndex;
+                this.ole = ole;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -96,8 +97,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -159,6 +159,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.ole != null ? JsonConvert.SerializeObject(this.ole) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

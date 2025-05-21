@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostSpecifyWordsCountRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostSpecifyWordsCountRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostSpecifyWordsCountRequest"/> class.
-        /// </summary>
-        /// <param name="specifyWordsCountOptions"></param>
-        public PostSpecifyWordsCountRequest(SpecifyWordsCountOptions specifyWordsCountOptions)
-        {
-            this.specifyWordsCountOptions = specifyWordsCountOptions;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostSpecifyWordsCountRequest"/> class.
+            /// </summary>
+            /// <param name="specifyWordsCountOptions"></param>
+            public PostSpecifyWordsCountRequest(SpecifyWordsCountOptions specifyWordsCountOptions)
+            {
+                this.specifyWordsCountOptions = specifyWordsCountOptions;
+            }
+        
         /// <summary>
         /// Gets or sets specifyWordsCountOptions.
         /// </summary>
         public SpecifyWordsCountOptions specifyWordsCountOptions { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.specifyWordsCountOptions != null ? JsonConvert.SerializeObject(this.specifyWordsCountOptions) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

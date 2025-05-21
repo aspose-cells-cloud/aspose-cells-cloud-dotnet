@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostWorkbookDataCleansingRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorkbookDataCleansingRequest"/> class.
         /// </summary>
@@ -43,27 +44,27 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostWorkbookDataCleansingRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="dataCleansing">data cleansing content.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        /// <param name="password">The file password. </param>
-        /// <param name="region">The regional settings for workbook.</param>
-        /// <param name="checkExcelRestriction"></param>
-        public PostWorkbookDataCleansingRequest(string name, DataCleansing dataCleansing, string folder = null, string storageName = null, string password = null, string region = null, bool? checkExcelRestriction = null)
-        {
-            this.name = name;
-            this.dataCleansing = dataCleansing;
-            this.folder = folder;
-            this.storageName = storageName;
-            this.password = password;
-            this.region = region;
-            this.checkExcelRestriction = checkExcelRestriction;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostWorkbookDataCleansingRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="dataCleansing">data cleansing content.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            /// <param name="password">The file password. </param>
+            /// <param name="region">The regional settings for workbook.</param>
+            /// <param name="checkExcelRestriction"></param>
+            public PostWorkbookDataCleansingRequest(string name, DataCleansing dataCleansing, string folder = null, string storageName = null, string password = null, string region = null, bool? checkExcelRestriction = null)
+            {
+                this.name = name;
+                this.dataCleansing = dataCleansing;
+                this.folder = folder;
+                this.storageName = storageName;
+                this.password = password;
+                this.region = region;
+                this.checkExcelRestriction = checkExcelRestriction;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -104,8 +105,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Gets or sets checkExcelRestriction.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -156,6 +156,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.dataCleansing != null ? JsonConvert.SerializeObject(this.dataCleansing) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

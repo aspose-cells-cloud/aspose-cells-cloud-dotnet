@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PutWorksheetChartRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetChartRequest"/> class.
         /// </summary>
@@ -43,49 +44,49 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PutWorksheetChartRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="chartType">Chart type, please refer property Type in chart resource.</param>
-        /// <param name="upperLeftRow">Upper-left row for the new chart.</param>
-        /// <param name="upperLeftColumn">Upper-left column for the new chart.</param>
-        /// <param name="lowerRightRow">Lower-left row for the new chart.</param>
-        /// <param name="lowerRightColumn">Lower-left column for the new chart.</param>
-        /// <param name="area">Specify the values from which to plot the data series.</param>
-        /// <param name="isVertical">Specify whether to plot the series from a range of cell values by row or by column. </param>
-        /// <param name="categoryData">Get or set the range of category axis values. It can be a range of cells (e.g., "D1:E10").</param>
-        /// <param name="isAutoGetSerialName">Specify whether to auto-update the serial name.</param>
-        /// <param name="title">Specify the chart title name.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="dataLabels">Represents the specified chart's data label values display behavior. True to display the values, False to hide them.</param>
-        /// <param name="dataLabelsPosition">Represents data label position (Center/InsideBase/InsideEnd/OutsideEnd/Above/Below/Left/Right/BestFit/Moved).</param>
-        /// <param name="pivotTableSheet">The source is the data of the pivotTable. If PivotSource is not empty, the chart is a PivotChart.</param>
-        /// <param name="pivotTableName">The pivot table name.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PutWorksheetChartRequest(string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, bool? dataLabels = null, string dataLabelsPosition = null, string pivotTableSheet = null, string pivotTableName = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.chartType = chartType;
-            this.upperLeftRow = upperLeftRow;
-            this.upperLeftColumn = upperLeftColumn;
-            this.lowerRightRow = lowerRightRow;
-            this.lowerRightColumn = lowerRightColumn;
-            this.area = area;
-            this.isVertical = isVertical;
-            this.categoryData = categoryData;
-            this.isAutoGetSerialName = isAutoGetSerialName;
-            this.title = title;
-            this.folder = folder;
-            this.dataLabels = dataLabels;
-            this.dataLabelsPosition = dataLabelsPosition;
-            this.pivotTableSheet = pivotTableSheet;
-            this.pivotTableName = pivotTableName;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PutWorksheetChartRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="chartType">Chart type, please refer property Type in chart resource.</param>
+            /// <param name="upperLeftRow">Upper-left row for the new chart.</param>
+            /// <param name="upperLeftColumn">Upper-left column for the new chart.</param>
+            /// <param name="lowerRightRow">Lower-left row for the new chart.</param>
+            /// <param name="lowerRightColumn">Lower-left column for the new chart.</param>
+            /// <param name="area">Specify the values from which to plot the data series.</param>
+            /// <param name="isVertical">Specify whether to plot the series from a range of cell values by row or by column. </param>
+            /// <param name="categoryData">Get or set the range of category axis values. It can be a range of cells (e.g., "D1:E10").</param>
+            /// <param name="isAutoGetSerialName">Specify whether to auto-update the serial name.</param>
+            /// <param name="title">Specify the chart title name.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="dataLabels">Represents the specified chart's data label values display behavior. True to display the values, False to hide them.</param>
+            /// <param name="dataLabelsPosition">Represents data label position (Center/InsideBase/InsideEnd/OutsideEnd/Above/Below/Left/Right/BestFit/Moved).</param>
+            /// <param name="pivotTableSheet">The source is the data of the pivotTable. If PivotSource is not empty, the chart is a PivotChart.</param>
+            /// <param name="pivotTableName">The pivot table name.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PutWorksheetChartRequest(string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, bool? dataLabels = null, string dataLabelsPosition = null, string pivotTableSheet = null, string pivotTableName = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.chartType = chartType;
+                this.upperLeftRow = upperLeftRow;
+                this.upperLeftColumn = upperLeftColumn;
+                this.lowerRightRow = lowerRightRow;
+                this.lowerRightColumn = lowerRightColumn;
+                this.area = area;
+                this.isVertical = isVertical;
+                this.categoryData = categoryData;
+                this.isAutoGetSerialName = isAutoGetSerialName;
+                this.title = title;
+                this.folder = folder;
+                this.dataLabels = dataLabels;
+                this.dataLabelsPosition = dataLabelsPosition;
+                this.pivotTableSheet = pivotTableSheet;
+                this.pivotTableName = pivotTableName;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -192,8 +193,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -260,6 +260,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

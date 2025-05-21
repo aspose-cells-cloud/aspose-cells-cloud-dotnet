@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostConvertTextRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostConvertTextRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostConvertTextRequest"/> class.
-        /// </summary>
-        /// <param name="convertTextOptions"></param>
-        public PostConvertTextRequest(ConvertTextOptions convertTextOptions)
-        {
-            this.convertTextOptions = convertTextOptions;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostConvertTextRequest"/> class.
+            /// </summary>
+            /// <param name="convertTextOptions"></param>
+            public PostConvertTextRequest(ConvertTextOptions convertTextOptions)
+            {
+                this.convertTextOptions = convertTextOptions;
+            }
+        
         /// <summary>
         /// Gets or sets convertTextOptions.
         /// </summary>
         public ConvertTextOptions convertTextOptions { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.convertTextOptions != null ? JsonConvert.SerializeObject(this.convertTextOptions) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

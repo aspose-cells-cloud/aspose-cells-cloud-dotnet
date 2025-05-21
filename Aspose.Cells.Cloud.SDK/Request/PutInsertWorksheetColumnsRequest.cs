@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PutInsertWorksheetColumnsRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PutInsertWorksheetColumnsRequest"/> class.
         /// </summary>
@@ -43,27 +44,27 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PutInsertWorksheetColumnsRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="columnIndex">The column index.</param>
-        /// <param name="columns">The number of columns.</param>
-        /// <param name="updateReference">Indicates if references in other worksheets will be updated.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PutInsertWorksheetColumnsRequest(string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.columnIndex = columnIndex;
-            this.columns = columns;
-            this.updateReference = updateReference;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PutInsertWorksheetColumnsRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="columnIndex">The column index.</param>
+            /// <param name="columns">The number of columns.</param>
+            /// <param name="updateReference">Indicates if references in other worksheets will be updated.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PutInsertWorksheetColumnsRequest(string name, string sheetName, int? columnIndex, int? columns, bool? updateReference = null, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.columnIndex = columnIndex;
+                this.columns = columns;
+                this.updateReference = updateReference;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -104,8 +105,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -167,6 +167,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

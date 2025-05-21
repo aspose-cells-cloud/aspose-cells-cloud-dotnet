@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostWorkbookGetSmartMarkerResultRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorkbookGetSmartMarkerResultRequest"/> class.
         /// </summary>
@@ -43,25 +44,25 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostWorkbookGetSmartMarkerResultRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="xmlFile">The xml file full path, if empty the data is read from request body.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="outPath">The path to save result</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        /// <param name="outStorageName">The storage name where the result file is situated.</param>
-        public PostWorkbookGetSmartMarkerResultRequest(string name, string xmlFile = null, string folder = null, string outPath = null, string storageName = null, string outStorageName = null)
-        {
-            this.name = name;
-            this.xmlFile = xmlFile;
-            this.folder = folder;
-            this.outPath = outPath;
-            this.storageName = storageName;
-            this.outStorageName = outStorageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostWorkbookGetSmartMarkerResultRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="xmlFile">The xml file full path, if empty the data is read from request body.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="outPath">The path to save result</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            /// <param name="outStorageName">The storage name where the result file is situated.</param>
+            public PostWorkbookGetSmartMarkerResultRequest(string name, string xmlFile = null, string folder = null, string outPath = null, string storageName = null, string outStorageName = null)
+            {
+                this.name = name;
+                this.xmlFile = xmlFile;
+                this.folder = folder;
+                this.outPath = outPath;
+                this.storageName = storageName;
+                this.outStorageName = outStorageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -96,8 +97,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the result file is situated.
         /// </summary>
         public string outStorageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -140,6 +140,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class CheckWorkbookFormulaErrorsRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="CheckWorkbookFormulaErrorsRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="CheckWorkbookFormulaErrorsRequest"/> class.
-        /// </summary>
-        /// <param name="formulaErrorOptions"></param>
-        public CheckWorkbookFormulaErrorsRequest(CheckFormulaErrorOptions formulaErrorOptions)
-        {
-            this.formulaErrorOptions = formulaErrorOptions;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="CheckWorkbookFormulaErrorsRequest"/> class.
+            /// </summary>
+            /// <param name="formulaErrorOptions"></param>
+            public CheckWorkbookFormulaErrorsRequest(CheckFormulaErrorOptions formulaErrorOptions)
+            {
+                this.formulaErrorOptions = formulaErrorOptions;
+            }
+        
         /// <summary>
         /// Gets or sets formulaErrorOptions.
         /// </summary>
         public CheckFormulaErrorOptions formulaErrorOptions { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.formulaErrorOptions != null ? JsonConvert.SerializeObject(this.formulaErrorOptions) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

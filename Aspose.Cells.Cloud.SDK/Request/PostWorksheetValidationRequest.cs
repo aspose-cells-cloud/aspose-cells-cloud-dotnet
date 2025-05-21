@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostWorksheetValidationRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetValidationRequest"/> class.
         /// </summary>
@@ -43,25 +44,25 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostWorksheetValidationRequest"/> class.
-        /// </summary>
-        /// <param name="name">The workbook name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="validationIndex">The validation index.</param>
-        /// <param name="validation">Validation description.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PostWorksheetValidationRequest(string name, string sheetName, int? validationIndex, Validation validation, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.validationIndex = validationIndex;
-            this.validation = validation;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostWorksheetValidationRequest"/> class.
+            /// </summary>
+            /// <param name="name">The workbook name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="validationIndex">The validation index.</param>
+            /// <param name="validation">Validation description.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PostWorksheetValidationRequest(string name, string sheetName, int? validationIndex, Validation validation, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.validationIndex = validationIndex;
+                this.validation = validation;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The workbook name.
         /// </summary>
@@ -96,8 +97,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -159,6 +159,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.validation != null ? JsonConvert.SerializeObject(this.validation) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

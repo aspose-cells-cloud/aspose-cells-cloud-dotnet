@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostPivotTableCellStyleRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostPivotTableCellStyleRequest"/> class.
         /// </summary>
@@ -43,31 +44,31 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostPivotTableCellStyleRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="pivotTableIndex">The PivotTable index.</param>
-        /// <param name="column">The column index of the cell.</param>
-        /// <param name="row">The row index of the cell.</param>
-        /// <param name="style">Style Style description in request body.</param>
-        /// <param name="needReCalculate">Whether the specific PivotTable calculate(true/false).</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PostPivotTableCellStyleRequest(string name, string sheetName, int? pivotTableIndex, int? column, int? row, Style style, bool? needReCalculate = null, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.pivotTableIndex = pivotTableIndex;
-            this.column = column;
-            this.row = row;
-            this.style = style;
-            this.needReCalculate = needReCalculate;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostPivotTableCellStyleRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="pivotTableIndex">The PivotTable index.</param>
+            /// <param name="column">The column index of the cell.</param>
+            /// <param name="row">The row index of the cell.</param>
+            /// <param name="style">Style Style description in request body.</param>
+            /// <param name="needReCalculate">Whether the specific PivotTable calculate(true/false).</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PostPivotTableCellStyleRequest(string name, string sheetName, int? pivotTableIndex, int? column, int? row, Style style, bool? needReCalculate = null, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.pivotTableIndex = pivotTableIndex;
+                this.column = column;
+                this.row = row;
+                this.style = style;
+                this.needReCalculate = needReCalculate;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -120,8 +121,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -198,6 +198,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.style != null ? JsonConvert.SerializeObject(this.style) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

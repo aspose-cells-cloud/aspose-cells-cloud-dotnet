@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostWorksheetCellsRangeSortRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetCellsRangeSortRequest"/> class.
         /// </summary>
@@ -43,23 +44,23 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostWorksheetCellsRangeSortRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="rangeSortRequest">RangeSortRequest Range Sort Request </param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
-        public PostWorksheetCellsRangeSortRequest(string name, string sheetName, RangeSortRequest rangeSortRequest, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.rangeSortRequest = rangeSortRequest;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostWorksheetCellsRangeSortRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="rangeSortRequest">RangeSortRequest Range Sort Request </param>
+            /// <param name="folder">Original workbook folder.</param>
+            /// <param name="storageName">Storage name.</param>
+            public PostWorksheetCellsRangeSortRequest(string name, string sheetName, RangeSortRequest rangeSortRequest, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.rangeSortRequest = rangeSortRequest;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -88,8 +89,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Storage name.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -144,6 +144,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.rangeSortRequest != null ? JsonConvert.SerializeObject(this.rangeSortRequest) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

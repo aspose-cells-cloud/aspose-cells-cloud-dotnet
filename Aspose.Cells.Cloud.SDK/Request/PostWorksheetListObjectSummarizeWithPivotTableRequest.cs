@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostWorksheetListObjectSummarizeWithPivotTableRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetListObjectSummarizeWithPivotTableRequest"/> class.
         /// </summary>
@@ -43,27 +44,27 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostWorksheetListObjectSummarizeWithPivotTableRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="listObjectIndex">The list object index.</param>
-        /// <param name="destsheetName">The target worksheet name.</param>
-        /// <param name="createPivotTableRequest">Create pivot table request.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PostWorksheetListObjectSummarizeWithPivotTableRequest(string name, string sheetName, int? listObjectIndex, string destsheetName, CreatePivotTableRequest createPivotTableRequest, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.listObjectIndex = listObjectIndex;
-            this.destsheetName = destsheetName;
-            this.createPivotTableRequest = createPivotTableRequest;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostWorksheetListObjectSummarizeWithPivotTableRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="listObjectIndex">The list object index.</param>
+            /// <param name="destsheetName">The target worksheet name.</param>
+            /// <param name="createPivotTableRequest">Create pivot table request.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PostWorksheetListObjectSummarizeWithPivotTableRequest(string name, string sheetName, int? listObjectIndex, string destsheetName, CreatePivotTableRequest createPivotTableRequest, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.listObjectIndex = listObjectIndex;
+                this.destsheetName = destsheetName;
+                this.createPivotTableRequest = createPivotTableRequest;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -104,8 +105,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -174,6 +174,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.createPivotTableRequest != null ? JsonConvert.SerializeObject(this.createPivotTableRequest) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

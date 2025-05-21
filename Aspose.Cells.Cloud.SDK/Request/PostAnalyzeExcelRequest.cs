@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostAnalyzeExcelRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostAnalyzeExcelRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostAnalyzeExcelRequest"/> class.
-        /// </summary>
-        /// <param name="analyzeExcelRequest">Excel files and analysis output requirements</param>
-        public PostAnalyzeExcelRequest(AnalyzeExcelRequest analyzeExcelRequest)
-        {
-            this.analyzeExcelRequest = analyzeExcelRequest;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostAnalyzeExcelRequest"/> class.
+            /// </summary>
+            /// <param name="analyzeExcelRequest">Excel files and analysis output requirements</param>
+            public PostAnalyzeExcelRequest(AnalyzeExcelRequest analyzeExcelRequest)
+            {
+                this.analyzeExcelRequest = analyzeExcelRequest;
+            }
+        
         /// <summary>
         /// Excel files and analysis output requirements
         /// </summary>
         public AnalyzeExcelRequest analyzeExcelRequest { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.analyzeExcelRequest != null ? JsonConvert.SerializeObject(this.analyzeExcelRequest) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

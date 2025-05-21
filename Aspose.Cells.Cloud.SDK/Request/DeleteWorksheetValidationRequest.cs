@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class DeleteWorksheetValidationRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteWorksheetValidationRequest"/> class.
         /// </summary>
@@ -43,23 +44,23 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="DeleteWorksheetValidationRequest"/> class.
-        /// </summary>
-        /// <param name="name">The workbook name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="validationIndex">The validation index.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public DeleteWorksheetValidationRequest(string name, string sheetName, int? validationIndex, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.validationIndex = validationIndex;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="DeleteWorksheetValidationRequest"/> class.
+            /// </summary>
+            /// <param name="name">The workbook name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="validationIndex">The validation index.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public DeleteWorksheetValidationRequest(string name, string sheetName, int? validationIndex, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.validationIndex = validationIndex;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The workbook name.
         /// </summary>
@@ -88,8 +89,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -143,6 +143,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "DELETE", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

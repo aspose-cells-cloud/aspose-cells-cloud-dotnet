@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class CheckWrokbookExternalReferenceRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="CheckWrokbookExternalReferenceRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="CheckWrokbookExternalReferenceRequest"/> class.
-        /// </summary>
-        /// <param name="checkExternalReferenceOptions"></param>
-        public CheckWrokbookExternalReferenceRequest(CheckExternalReferenceOptions checkExternalReferenceOptions)
-        {
-            this.checkExternalReferenceOptions = checkExternalReferenceOptions;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="CheckWrokbookExternalReferenceRequest"/> class.
+            /// </summary>
+            /// <param name="checkExternalReferenceOptions"></param>
+            public CheckWrokbookExternalReferenceRequest(CheckExternalReferenceOptions checkExternalReferenceOptions)
+            {
+                this.checkExternalReferenceOptions = checkExternalReferenceOptions;
+            }
+        
         /// <summary>
         /// Gets or sets checkExternalReferenceOptions.
         /// </summary>
         public CheckExternalReferenceOptions checkExternalReferenceOptions { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.checkExternalReferenceOptions != null ? JsonConvert.SerializeObject(this.checkExternalReferenceOptions) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

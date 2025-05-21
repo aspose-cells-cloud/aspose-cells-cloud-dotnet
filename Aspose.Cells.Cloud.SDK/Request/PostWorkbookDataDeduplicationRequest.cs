@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostWorkbookDataDeduplicationRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorkbookDataDeduplicationRequest"/> class.
         /// </summary>
@@ -43,27 +44,27 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostWorkbookDataDeduplicationRequest"/> class.
-        /// </summary>
-        /// <param name="name"></param>
-        /// <param name="deduplicationRegion"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
-        /// <param name="password"></param>
-        /// <param name="region"></param>
-        /// <param name="checkExcelRestriction"></param>
-        public PostWorkbookDataDeduplicationRequest(string name, DeduplicationRegion deduplicationRegion, string folder = null, string storageName = null, string password = null, string region = null, bool? checkExcelRestriction = null)
-        {
-            this.name = name;
-            this.deduplicationRegion = deduplicationRegion;
-            this.folder = folder;
-            this.storageName = storageName;
-            this.password = password;
-            this.region = region;
-            this.checkExcelRestriction = checkExcelRestriction;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostWorkbookDataDeduplicationRequest"/> class.
+            /// </summary>
+            /// <param name="name"></param>
+            /// <param name="deduplicationRegion"></param>
+            /// <param name="folder"></param>
+            /// <param name="storageName"></param>
+            /// <param name="password"></param>
+            /// <param name="region"></param>
+            /// <param name="checkExcelRestriction"></param>
+            public PostWorkbookDataDeduplicationRequest(string name, DeduplicationRegion deduplicationRegion, string folder = null, string storageName = null, string password = null, string region = null, bool? checkExcelRestriction = null)
+            {
+                this.name = name;
+                this.deduplicationRegion = deduplicationRegion;
+                this.folder = folder;
+                this.storageName = storageName;
+                this.password = password;
+                this.region = region;
+                this.checkExcelRestriction = checkExcelRestriction;
+            }
+        
         /// <summary>
         /// Gets or sets name.
         /// </summary>
@@ -104,8 +105,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Gets or sets checkExcelRestriction.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -156,6 +156,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.deduplicationRegion != null ? JsonConvert.SerializeObject(this.deduplicationRegion) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

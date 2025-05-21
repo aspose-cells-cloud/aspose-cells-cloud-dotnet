@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostClearContentsRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostClearContentsRequest"/> class.
         /// </summary>
@@ -43,31 +44,31 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostClearContentsRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="range">Represents the range to which the specified cells applies.</param>
-        /// <param name="startRow">The start row index.</param>
-        /// <param name="startColumn">The start column index.</param>
-        /// <param name="endRow">The end row index.</param>
-        /// <param name="endColumn">The end column index.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PostClearContentsRequest(string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.range = range;
-            this.startRow = startRow;
-            this.startColumn = startColumn;
-            this.endRow = endRow;
-            this.endColumn = endColumn;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostClearContentsRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="range">Represents the range to which the specified cells applies.</param>
+            /// <param name="startRow">The start row index.</param>
+            /// <param name="startColumn">The start column index.</param>
+            /// <param name="endRow">The end row index.</param>
+            /// <param name="endColumn">The end column index.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PostClearContentsRequest(string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.range = range;
+                this.startRow = startRow;
+                this.startColumn = startColumn;
+                this.endRow = endRow;
+                this.endColumn = endColumn;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -120,8 +121,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -173,6 +173,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

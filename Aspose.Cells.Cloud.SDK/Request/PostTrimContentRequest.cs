@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostTrimContentRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostTrimContentRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostTrimContentRequest"/> class.
-        /// </summary>
-        /// <param name="trimContentOptions"></param>
-        public PostTrimContentRequest(TrimContentOptions trimContentOptions)
-        {
-            this.trimContentOptions = trimContentOptions;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostTrimContentRequest"/> class.
+            /// </summary>
+            /// <param name="trimContentOptions"></param>
+            public PostTrimContentRequest(TrimContentOptions trimContentOptions)
+            {
+                this.trimContentOptions = trimContentOptions;
+            }
+        
         /// <summary>
         /// Gets or sets trimContentOptions.
         /// </summary>
         public TrimContentOptions trimContentOptions { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.trimContentOptions != null ? JsonConvert.SerializeObject(this.trimContentOptions) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

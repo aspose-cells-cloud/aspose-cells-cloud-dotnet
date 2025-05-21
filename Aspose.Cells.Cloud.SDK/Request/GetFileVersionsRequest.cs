@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class GetFileVersionsRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="GetFileVersionsRequest"/> class.
         /// </summary>
@@ -43,17 +44,17 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="GetFileVersionsRequest"/> class.
-        /// </summary>
-        /// <param name="path"></param>
-        /// <param name="storageName"></param>
-        public GetFileVersionsRequest(string path, string storageName = null)
-        {
-            this.path = path;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="GetFileVersionsRequest"/> class.
+            /// </summary>
+            /// <param name="path"></param>
+            /// <param name="storageName"></param>
+            public GetFileVersionsRequest(string path, string storageName = null)
+            {
+                this.path = path;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// Gets or sets path.
         /// </summary>
@@ -64,8 +65,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Gets or sets storageName.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -104,6 +104,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "GET", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

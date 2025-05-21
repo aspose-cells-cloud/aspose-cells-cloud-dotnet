@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostBatchConvertRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostBatchConvertRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostBatchConvertRequest"/> class.
-        /// </summary>
-        /// <param name="batchConvertRequest">BatchConvertRequest Batch conversion file request. </param>
-        public PostBatchConvertRequest(BatchConvertRequest batchConvertRequest)
-        {
-            this.batchConvertRequest = batchConvertRequest;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostBatchConvertRequest"/> class.
+            /// </summary>
+            /// <param name="batchConvertRequest">BatchConvertRequest Batch conversion file request. </param>
+            public PostBatchConvertRequest(BatchConvertRequest batchConvertRequest)
+            {
+                this.batchConvertRequest = batchConvertRequest;
+            }
+        
         /// <summary>
         /// BatchConvertRequest Batch conversion file request. 
         /// </summary>
         public BatchConvertRequest batchConvertRequest { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.batchConvertRequest != null ? JsonConvert.SerializeObject(this.batchConvertRequest) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

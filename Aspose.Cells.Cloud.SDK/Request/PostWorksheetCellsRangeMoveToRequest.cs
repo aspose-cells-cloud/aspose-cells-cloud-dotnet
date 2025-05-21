@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostWorksheetCellsRangeMoveToRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetCellsRangeMoveToRequest"/> class.
         /// </summary>
@@ -43,27 +44,27 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostWorksheetCellsRangeMoveToRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="range">range in worksheet </param>
-        /// <param name="destRow">The start row of the dest range.</param>
-        /// <param name="destColumn">The start column of the dest range.</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
-        public PostWorksheetCellsRangeMoveToRequest(string name, string sheetName, Range range, int? destRow, int? destColumn, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.range = range;
-            this.destRow = destRow;
-            this.destColumn = destColumn;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostWorksheetCellsRangeMoveToRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="range">range in worksheet </param>
+            /// <param name="destRow">The start row of the dest range.</param>
+            /// <param name="destColumn">The start column of the dest range.</param>
+            /// <param name="folder">Original workbook folder.</param>
+            /// <param name="storageName">Storage name.</param>
+            public PostWorksheetCellsRangeMoveToRequest(string name, string sheetName, Range range, int? destRow, int? destColumn, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.range = range;
+                this.destRow = destRow;
+                this.destColumn = destColumn;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -104,8 +105,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Storage name.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -174,6 +174,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.range != null ? JsonConvert.SerializeObject(this.range) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

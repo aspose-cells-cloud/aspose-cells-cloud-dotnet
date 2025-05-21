@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PutWorkbookCreateRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorkbookCreateRequest"/> class.
         /// </summary>
@@ -43,27 +44,27 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PutWorkbookCreateRequest"/> class.
-        /// </summary>
-        /// <param name="name">The new document name.</param>
-        /// <param name="templateFile">The template file, if the data not provided default workbook is created.</param>
-        /// <param name="dataFile">Smart marker data file, if the data not provided the request content is checked for the data.</param>
-        /// <param name="isWriteOver">Specifies whether to write over targer file.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        /// <param name="checkExcelRestriction"></param>
-        public PutWorkbookCreateRequest(string name, string templateFile = null, string dataFile = null, bool? isWriteOver = null, string folder = null, string storageName = null, bool? checkExcelRestriction = null)
-        {
-            this.name = name;
-            this.templateFile = templateFile;
-            this.dataFile = dataFile;
-            this.isWriteOver = isWriteOver;
-            this.folder = folder;
-            this.storageName = storageName;
-            this.checkExcelRestriction = checkExcelRestriction;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PutWorkbookCreateRequest"/> class.
+            /// </summary>
+            /// <param name="name">The new document name.</param>
+            /// <param name="templateFile">The template file, if the data not provided default workbook is created.</param>
+            /// <param name="dataFile">Smart marker data file, if the data not provided the request content is checked for the data.</param>
+            /// <param name="isWriteOver">Specifies whether to write over targer file.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            /// <param name="checkExcelRestriction"></param>
+            public PutWorkbookCreateRequest(string name, string templateFile = null, string dataFile = null, bool? isWriteOver = null, string folder = null, string storageName = null, bool? checkExcelRestriction = null)
+            {
+                this.name = name;
+                this.templateFile = templateFile;
+                this.dataFile = dataFile;
+                this.isWriteOver = isWriteOver;
+                this.folder = folder;
+                this.storageName = storageName;
+                this.checkExcelRestriction = checkExcelRestriction;
+            }
+        
         /// <summary>
         /// The new document name.
         /// </summary>
@@ -104,8 +105,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Gets or sets checkExcelRestriction.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -149,6 +149,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

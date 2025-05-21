@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostProtectRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostProtectRequest"/> class.
         /// </summary>
@@ -49,26 +50,26 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="file">File to upload</param>
         /// <param name="protectWorkbookRequest"></param>
         /// <param name="password">The password needed to open an Excel file.</param>
+                
         public PostProtectRequest(string localPath ,  ProtectWorkbookRequest protectWorkbookRequest  ,  string password   = null)
         {
             this.LocalPath = localPath ;
             this.protectWorkbookRequest = protectWorkbookRequest;
             this.password = password;
         }
-
         [System.Obsolete]
         public PostProtectRequest(IDictionary<string, System.IO.Stream> file, ProtectWorkbookRequest protectWorkbookRequest, string password = null)
         {
             this.File = file;
             this.protectWorkbookRequest = protectWorkbookRequest;
             this.password = password;
-        }
+        }           
+        
         /// <summary>
         /// File to upload
         /// </summary>
-        public string LocalPath { get; set; }
-        [System.Obsolete]
         public IDictionary<string, System.IO.Stream> File { get; set; }
+        public string LocalPath { get; set; }
 
 
         /// <summary>
@@ -81,8 +82,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The password needed to open an Excel file.
         /// </summary>
         public string password { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -101,7 +101,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
             // verify the required parameter 'file' is set
-            if ( this.File == null && this.LocalPath ==null )
+            if (  this.File == null  && string.IsNullOrEmpty(this.LocalPath)   )
             {
                 throw new ApiException(400, "Missing required parameter 'file' when calling PostProtect");
             }
@@ -127,13 +127,19 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 }
             }
 
-            if(  File !=null ){
-                foreach (KeyValuePair<string, System.IO.Stream> keyValueFileParam in File )
-                {
-                    localVarFileParams.Add(keyValueFileParam.Key, UrlHelper.ToFileInfo(keyValueFileParam.Value, keyValueFileParam.Key));
+             if (!string.IsNullOrEmpty(LocalPath ) && System.IO.File.Exists(LocalPath )) {
+                        System.IO.FileInfo fileInfo = new System.IO.FileInfo(LocalPath);
+                        localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(LocalPath), fileInfo.Name));
                 }
+            if (File != null){
+                    foreach (KeyValuePair<string, System.IO.Stream> keyValueFileParam in File )
+                    {
+                        localVarFileParams.Add(keyValueFileParam.Key, UrlHelper.ToFileInfo(keyValueFileParam.Value, keyValueFileParam.Key));
+                    }
             }
-            localVarFileParams.Add("Body", UrlHelper.ToFileInfo( new System.IO.MemoryStream(System.Text.Encoding.ASCII.GetBytes(JsonConvert.SerializeObject(this.protectWorkbookRequest))),"protectWorkbookRequest"));
+            localVarPostBody = ( this.protectWorkbookRequest != null ? JsonConvert.SerializeObject(this.protectWorkbookRequest) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

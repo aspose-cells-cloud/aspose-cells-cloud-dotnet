@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostDataDeduplicationRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostDataDeduplicationRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostDataDeduplicationRequest"/> class.
-        /// </summary>
-        /// <param name="dataDeduplicationRequest"></param>
-        public PostDataDeduplicationRequest(DataDeduplicationRequest dataDeduplicationRequest)
-        {
-            this.dataDeduplicationRequest = dataDeduplicationRequest;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostDataDeduplicationRequest"/> class.
+            /// </summary>
+            /// <param name="dataDeduplicationRequest"></param>
+            public PostDataDeduplicationRequest(DataDeduplicationRequest dataDeduplicationRequest)
+            {
+                this.dataDeduplicationRequest = dataDeduplicationRequest;
+            }
+        
         /// <summary>
         /// Gets or sets dataDeduplicationRequest.
         /// </summary>
         public DataDeduplicationRequest dataDeduplicationRequest { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.dataDeduplicationRequest != null ? JsonConvert.SerializeObject(this.dataDeduplicationRequest) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

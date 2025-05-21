@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PutWorksheetPivotTableRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetPivotTableRequest"/> class.
         /// </summary>
@@ -43,29 +44,29 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PutWorksheetPivotTableRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="sourceData">The data for the new PivotTable cache.</param>
-        /// <param name="destCellName">The cell in the upper-left corner of the destination range for the PivotTable report.</param>
-        /// <param name="tableName">The name of the new PivotTable.</param>
-        /// <param name="useSameSource">Indicates whether using same data source when another existing PivotTable has used this data source. If the property is true, it will save memory.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PutWorksheetPivotTableRequest(string name, string sheetName, string folder = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.folder = folder;
-            this.sourceData = sourceData;
-            this.destCellName = destCellName;
-            this.tableName = tableName;
-            this.useSameSource = useSameSource;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PutWorksheetPivotTableRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="sourceData">The data for the new PivotTable cache.</param>
+            /// <param name="destCellName">The cell in the upper-left corner of the destination range for the PivotTable report.</param>
+            /// <param name="tableName">The name of the new PivotTable.</param>
+            /// <param name="useSameSource">Indicates whether using same data source when another existing PivotTable has used this data source. If the property is true, it will save memory.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PutWorksheetPivotTableRequest(string name, string sheetName, string folder = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.folder = folder;
+                this.sourceData = sourceData;
+                this.destCellName = destCellName;
+                this.tableName = tableName;
+                this.useSameSource = useSameSource;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -112,8 +113,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -164,6 +164,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

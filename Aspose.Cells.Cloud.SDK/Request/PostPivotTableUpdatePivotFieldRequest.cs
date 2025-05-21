@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostPivotTableUpdatePivotFieldRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostPivotTableUpdatePivotFieldRequest"/> class.
         /// </summary>
@@ -43,31 +44,31 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostPivotTableUpdatePivotFieldRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="pivotTableIndex">The PivotTable index.</param>
-        /// <param name="pivotFieldIndex">The pivot field index.</param>
-        /// <param name="pivotFieldType">Represents PivotTable field type(Undefined/Row/Column/Page/Data).</param>
-        /// <param name="pivotField">Represents pivot field.</param>
-        /// <param name="needReCalculate">Whether the specific PivotTable calculate(true/false).</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PostPivotTableUpdatePivotFieldRequest(string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, PivotField pivotField, bool? needReCalculate = null, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.pivotTableIndex = pivotTableIndex;
-            this.pivotFieldIndex = pivotFieldIndex;
-            this.pivotFieldType = pivotFieldType;
-            this.pivotField = pivotField;
-            this.needReCalculate = needReCalculate;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostPivotTableUpdatePivotFieldRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="pivotTableIndex">The PivotTable index.</param>
+            /// <param name="pivotFieldIndex">The pivot field index.</param>
+            /// <param name="pivotFieldType">Represents PivotTable field type(Undefined/Row/Column/Page/Data).</param>
+            /// <param name="pivotField">Represents pivot field.</param>
+            /// <param name="needReCalculate">Whether the specific PivotTable calculate(true/false).</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PostPivotTableUpdatePivotFieldRequest(string name, string sheetName, int? pivotTableIndex, int? pivotFieldIndex, string pivotFieldType, PivotField pivotField, bool? needReCalculate = null, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.pivotTableIndex = pivotTableIndex;
+                this.pivotFieldIndex = pivotFieldIndex;
+                this.pivotFieldType = pivotFieldType;
+                this.pivotField = pivotField;
+                this.needReCalculate = needReCalculate;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -120,8 +121,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -198,6 +198,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.pivotField != null ? JsonConvert.SerializeObject(this.pivotField) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

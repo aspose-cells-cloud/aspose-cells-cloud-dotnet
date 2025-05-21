@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PutWorksheetAddPictureRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetAddPictureRequest"/> class.
         /// </summary>
@@ -43,33 +44,33 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PutWorksheetAddPictureRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worsheet name.</param>
-        /// <param name="picture">Pictute object</param>
-        /// <param name="upperLeftRow">The image upper left row.</param>
-        /// <param name="upperLeftColumn">The image upper left column.</param>
-        /// <param name="lowerRightRow">The image low right row.</param>
-        /// <param name="lowerRightColumn">The image low right column.</param>
-        /// <param name="picturePath">The picture path, if not provided the picture data is inspected in the request body.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PutWorksheetAddPictureRequest(string name, string sheetName, Picture picture = null, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string picturePath = null, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.picture = picture;
-            this.upperLeftRow = upperLeftRow;
-            this.upperLeftColumn = upperLeftColumn;
-            this.lowerRightRow = lowerRightRow;
-            this.lowerRightColumn = lowerRightColumn;
-            this.picturePath = picturePath;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PutWorksheetAddPictureRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worsheet name.</param>
+            /// <param name="picture">Pictute object</param>
+            /// <param name="upperLeftRow">The image upper left row.</param>
+            /// <param name="upperLeftColumn">The image upper left column.</param>
+            /// <param name="lowerRightRow">The image low right row.</param>
+            /// <param name="lowerRightColumn">The image low right column.</param>
+            /// <param name="picturePath">The picture path, if not provided the picture data is inspected in the request body.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PutWorksheetAddPictureRequest(string name, string sheetName, Picture picture = null, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string picturePath = null, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.picture = picture;
+                this.upperLeftRow = upperLeftRow;
+                this.upperLeftColumn = upperLeftColumn;
+                this.lowerRightRow = lowerRightRow;
+                this.lowerRightColumn = lowerRightColumn;
+                this.picturePath = picturePath;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -128,8 +129,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -183,6 +183,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.picture != null ? JsonConvert.SerializeObject(this.picture) : null);
+
+
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class GetWorksheetCellsRangeValueRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetCellsRangeValueRequest"/> class.
         /// </summary>
@@ -43,31 +44,31 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="GetWorksheetCellsRangeValueRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="namerange">The range name.</param>
-        /// <param name="firstRow">Gets the index of the first row of the range.</param>
-        /// <param name="firstColumn">Gets the index of the first columnn of the range.</param>
-        /// <param name="rowCount">Gets the count of rows in the range.</param>
-        /// <param name="columnCount">Gets the count of columns in the range.</param>
-        /// <param name="folder">Original workbook folder.</param>
-        /// <param name="storageName">Storage name.</param>
-        public GetWorksheetCellsRangeValueRequest(string name, string sheetName, string namerange = null, int? firstRow = null, int? firstColumn = null, int? rowCount = null, int? columnCount = null, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.namerange = namerange;
-            this.firstRow = firstRow;
-            this.firstColumn = firstColumn;
-            this.rowCount = rowCount;
-            this.columnCount = columnCount;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="GetWorksheetCellsRangeValueRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="namerange">The range name.</param>
+            /// <param name="firstRow">Gets the index of the first row of the range.</param>
+            /// <param name="firstColumn">Gets the index of the first columnn of the range.</param>
+            /// <param name="rowCount">Gets the count of rows in the range.</param>
+            /// <param name="columnCount">Gets the count of columns in the range.</param>
+            /// <param name="folder">Original workbook folder.</param>
+            /// <param name="storageName">Storage name.</param>
+            public GetWorksheetCellsRangeValueRequest(string name, string sheetName, string namerange = null, int? firstRow = null, int? firstColumn = null, int? rowCount = null, int? columnCount = null, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.namerange = namerange;
+                this.firstRow = firstRow;
+                this.firstColumn = firstColumn;
+                this.rowCount = rowCount;
+                this.columnCount = columnCount;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -120,8 +121,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Storage name.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -173,6 +173,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "GET", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

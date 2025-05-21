@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostWorksheetListObjectInsertSlicerRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetListObjectInsertSlicerRequest"/> class.
         /// </summary>
@@ -43,27 +44,27 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostWorksheetListObjectInsertSlicerRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="listObjectIndex">List object index.</param>
-        /// <param name="columnIndex">The index of ListColumn in ListObject.ListColumns </param>
-        /// <param name="destCellName">The cell in the upper-left corner of the Slicer range. </param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PostWorksheetListObjectInsertSlicerRequest(string name, string sheetName, int? listObjectIndex, int? columnIndex, string destCellName, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.listObjectIndex = listObjectIndex;
-            this.columnIndex = columnIndex;
-            this.destCellName = destCellName;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostWorksheetListObjectInsertSlicerRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="listObjectIndex">List object index.</param>
+            /// <param name="columnIndex">The index of ListColumn in ListObject.ListColumns </param>
+            /// <param name="destCellName">The cell in the upper-left corner of the Slicer range. </param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PostWorksheetListObjectInsertSlicerRequest(string name, string sheetName, int? listObjectIndex, int? columnIndex, string destCellName, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.listObjectIndex = listObjectIndex;
+                this.columnIndex = columnIndex;
+                this.destCellName = destCellName;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -104,8 +105,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -173,6 +173,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

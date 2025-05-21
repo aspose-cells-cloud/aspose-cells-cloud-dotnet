@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostRepairRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostRepairRequest"/> class.
         /// </summary>
@@ -48,32 +49,31 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         /// <param name="file">File to upload</param>
         /// <param name="outFormat">The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)</param>
+                
         public PostRepairRequest(string localPath ,  string outFormat   = null)
         {
             this.LocalPath = localPath ;
             this.outFormat = outFormat;
         }
-
         [System.Obsolete]
         public PostRepairRequest(IDictionary<string, System.IO.Stream> file, string outFormat = null)
         {
             this.File = file;
             this.outFormat = outFormat;
-        }
+        }           
+        
         /// <summary>
         /// File to upload
         /// </summary>
-        public string LocalPath { get; set; }
-        [System.Obsolete]
         public IDictionary<string, System.IO.Stream> File { get; set; }
+        public string LocalPath { get; set; }
 
 
         /// <summary>
         /// The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)
         /// </summary>
         public string outFormat { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -92,7 +92,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
             // verify the required parameter 'file' is set
-            if ( this.File == null && this.LocalPath ==null )
+            if (  this.File == null  && string.IsNullOrEmpty(this.LocalPath)   )
             {
                 throw new ApiException(400, "Missing required parameter 'file' when calling PostRepair");
             }
@@ -112,17 +112,17 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 }
             }
 
-            if(  File !=null ){
-                foreach (KeyValuePair<string, System.IO.Stream> keyValueFileParam in File )
-                {
-                    localVarFileParams.Add(keyValueFileParam.Key, UrlHelper.ToFileInfo(keyValueFileParam.Value, keyValueFileParam.Key));
+             if (!string.IsNullOrEmpty(LocalPath ) && System.IO.File.Exists(LocalPath )) {
+                        System.IO.FileInfo fileInfo = new System.IO.FileInfo(LocalPath);
+                        localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(LocalPath), fileInfo.Name));
                 }
+            if (File != null){
+                    foreach (KeyValuePair<string, System.IO.Stream> keyValueFileParam in File )
+                    {
+                        localVarFileParams.Add(keyValueFileParam.Key, UrlHelper.ToFileInfo(keyValueFileParam.Value, keyValueFileParam.Key));
+                    }
             }
-            if (!string.IsNullOrEmpty(LocalPath) && System.IO.File.Exists(LocalPath))
-            {
-                System.IO.FileInfo fileInfo = new System.IO.FileInfo(LocalPath);
-                localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(LocalPath), fileInfo.Name));
-            }
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

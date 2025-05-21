@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PutDocumentPropertyRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PutDocumentPropertyRequest"/> class.
         /// </summary>
@@ -43,21 +44,21 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PutDocumentPropertyRequest"/> class.
-        /// </summary>
-        /// <param name="name">The workbook name.</param>
-        /// <param name="property">Get or set the value of the property.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PutDocumentPropertyRequest(string name, CellsDocumentProperty property, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.property = property;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PutDocumentPropertyRequest"/> class.
+            /// </summary>
+            /// <param name="name">The workbook name.</param>
+            /// <param name="property">Get or set the value of the property.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PutDocumentPropertyRequest(string name, CellsDocumentProperty property, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.property = property;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The workbook name.
         /// </summary>
@@ -80,8 +81,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -129,6 +129,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.property != null ? JsonConvert.SerializeObject(this.property) : null);
+
+
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

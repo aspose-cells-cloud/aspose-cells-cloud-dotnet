@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class DeleteWorksheetsRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteWorksheetsRequest"/> class.
         /// </summary>
@@ -43,21 +44,21 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="DeleteWorksheetsRequest"/> class.
-        /// </summary>
-        /// <param name="name"></param>
-        /// <param name="matchCondition"></param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public DeleteWorksheetsRequest(string name, MatchConditionRequest matchCondition = null, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.matchCondition = matchCondition;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="DeleteWorksheetsRequest"/> class.
+            /// </summary>
+            /// <param name="name"></param>
+            /// <param name="matchCondition"></param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public DeleteWorksheetsRequest(string name, MatchConditionRequest matchCondition = null, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.matchCondition = matchCondition;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// Gets or sets name.
         /// </summary>
@@ -80,8 +81,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -123,6 +123,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.matchCondition != null ? JsonConvert.SerializeObject(this.matchCondition) : null);
+
+
             return UrlHelper.PrepareRequest(path, "DELETE", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

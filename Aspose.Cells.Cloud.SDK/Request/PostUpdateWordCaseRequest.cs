@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostUpdateWordCaseRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostUpdateWordCaseRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostUpdateWordCaseRequest"/> class.
-        /// </summary>
-        /// <param name="wordCaseOptions"></param>
-        public PostUpdateWordCaseRequest(WordCaseOptions wordCaseOptions)
-        {
-            this.wordCaseOptions = wordCaseOptions;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostUpdateWordCaseRequest"/> class.
+            /// </summary>
+            /// <param name="wordCaseOptions"></param>
+            public PostUpdateWordCaseRequest(WordCaseOptions wordCaseOptions)
+            {
+                this.wordCaseOptions = wordCaseOptions;
+            }
+        
         /// <summary>
         /// Gets or sets wordCaseOptions.
         /// </summary>
         public WordCaseOptions wordCaseOptions { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.wordCaseOptions != null ? JsonConvert.SerializeObject(this.wordCaseOptions) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

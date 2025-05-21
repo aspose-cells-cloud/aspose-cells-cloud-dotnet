@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PutWorksheetSparklineGroupRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetSparklineGroupRequest"/> class.
         /// </summary>
@@ -43,29 +44,29 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PutWorksheetSparklineGroupRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="type">Represents the sparkline types(Line/Column/Stacked).</param>
-        /// <param name="dataRange">Specifies the data range of the sparkline group.</param>
-        /// <param name="isVertical">Specifies whether to plot the sparklines from the data range by row or by column.</param>
-        /// <param name="locationRange">Specifies where the sparklines to be placed.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PutWorksheetSparklineGroupRequest(string name, string sheetName, string type, string dataRange, bool? isVertical, string locationRange, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.type = type;
-            this.dataRange = dataRange;
-            this.isVertical = isVertical;
-            this.locationRange = locationRange;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PutWorksheetSparklineGroupRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="type">Represents the sparkline types(Line/Column/Stacked).</param>
+            /// <param name="dataRange">Specifies the data range of the sparkline group.</param>
+            /// <param name="isVertical">Specifies whether to plot the sparklines from the data range by row or by column.</param>
+            /// <param name="locationRange">Specifies where the sparklines to be placed.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PutWorksheetSparklineGroupRequest(string name, string sheetName, string type, string dataRange, bool? isVertical, string locationRange, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.type = type;
+                this.dataRange = dataRange;
+                this.isVertical = isVertical;
+                this.locationRange = locationRange;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -112,8 +113,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -188,6 +188,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

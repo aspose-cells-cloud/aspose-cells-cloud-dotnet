@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class GetWorksheetWithFormatRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetWithFormatRequest"/> class.
         /// </summary>
@@ -43,35 +44,35 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="GetWorksheetWithFormatRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="format">Export format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).</param>
-        /// <param name="verticalResolution">Image vertical resolution.</param>
-        /// <param name="horizontalResolution">Image horizontal resolution.</param>
-        /// <param name="area">Represents the range to be printed.</param>
-        /// <param name="pageIndex">Represents the page to be printed</param>
-        /// <param name="onePagePerSheet"></param>
-        /// <param name="printHeadings"></param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public GetWorksheetWithFormatRequest(string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string area = null, int? pageIndex = null, bool? onePagePerSheet = null, bool? printHeadings = null, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.format = format;
-            this.verticalResolution = verticalResolution;
-            this.horizontalResolution = horizontalResolution;
-            this.area = area;
-            this.pageIndex = pageIndex;
-            this.onePagePerSheet = onePagePerSheet;
-            this.printHeadings = printHeadings;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="GetWorksheetWithFormatRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="format">Export format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).</param>
+            /// <param name="verticalResolution">Image vertical resolution.</param>
+            /// <param name="horizontalResolution">Image horizontal resolution.</param>
+            /// <param name="area">Represents the range to be printed.</param>
+            /// <param name="pageIndex">Represents the page to be printed</param>
+            /// <param name="onePagePerSheet"></param>
+            /// <param name="printHeadings"></param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public GetWorksheetWithFormatRequest(string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string area = null, int? pageIndex = null, bool? onePagePerSheet = null, bool? printHeadings = null, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.format = format;
+                this.verticalResolution = verticalResolution;
+                this.horizontalResolution = horizontalResolution;
+                this.area = area;
+                this.pageIndex = pageIndex;
+                this.onePagePerSheet = onePagePerSheet;
+                this.printHeadings = printHeadings;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -136,8 +137,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -191,6 +191,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "GET", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostWorkbookImportXMLRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorkbookImportXMLRequest"/> class.
         /// </summary>
@@ -43,31 +44,31 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostWorkbookImportXMLRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="importXMLRequest">Import XML request.</param>
-        /// <param name="password">The password needed to open an Excel file.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        /// <param name="outPath">Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder.</param>
-        /// <param name="outStorageName">The storage name where the output file is situated.</param>
-        /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
-        /// <param name="region">The regional settings for workbook.</param>
-        public PostWorkbookImportXMLRequest(string name, ImportXMLRequest importXMLRequest, string password = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null, bool? checkExcelRestriction = null, string region = null)
-        {
-            this.name = name;
-            this.importXMLRequest = importXMLRequest;
-            this.password = password;
-            this.folder = folder;
-            this.storageName = storageName;
-            this.outPath = outPath;
-            this.outStorageName = outStorageName;
-            this.checkExcelRestriction = checkExcelRestriction;
-            this.region = region;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostWorkbookImportXMLRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="importXMLRequest">Import XML request.</param>
+            /// <param name="password">The password needed to open an Excel file.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            /// <param name="outPath">Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder.</param>
+            /// <param name="outStorageName">The storage name where the output file is situated.</param>
+            /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
+            /// <param name="region">The regional settings for workbook.</param>
+            public PostWorkbookImportXMLRequest(string name, ImportXMLRequest importXMLRequest, string password = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null, bool? checkExcelRestriction = null, string region = null)
+            {
+                this.name = name;
+                this.importXMLRequest = importXMLRequest;
+                this.password = password;
+                this.folder = folder;
+                this.storageName = storageName;
+                this.outPath = outPath;
+                this.outStorageName = outStorageName;
+                this.checkExcelRestriction = checkExcelRestriction;
+                this.region = region;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -120,8 +121,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The regional settings for workbook.
         /// </summary>
         public string region { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -174,6 +174,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.importXMLRequest != null ? JsonConvert.SerializeObject(this.importXMLRequest) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

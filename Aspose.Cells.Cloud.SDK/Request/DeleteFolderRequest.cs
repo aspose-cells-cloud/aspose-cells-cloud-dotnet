@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class DeleteFolderRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteFolderRequest"/> class.
         /// </summary>
@@ -43,19 +44,19 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="DeleteFolderRequest"/> class.
-        /// </summary>
-        /// <param name="path"></param>
-        /// <param name="storageName"></param>
-        /// <param name="recursive"></param>
-        public DeleteFolderRequest(string path, string storageName = null, bool? recursive = null)
-        {
-            this.path = path;
-            this.storageName = storageName;
-            this.recursive = recursive;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="DeleteFolderRequest"/> class.
+            /// </summary>
+            /// <param name="path"></param>
+            /// <param name="storageName"></param>
+            /// <param name="recursive"></param>
+            public DeleteFolderRequest(string path, string storageName = null, bool? recursive = null)
+            {
+                this.path = path;
+                this.storageName = storageName;
+                this.recursive = recursive;
+            }
+        
         /// <summary>
         /// Gets or sets path.
         /// </summary>
@@ -72,8 +73,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Gets or sets recursive.
         /// </summary>
         public bool? recursive { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -113,6 +113,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "DELETE", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

@@ -38,6 +38,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
     {
 
         /// <summary>
+        /// Initializes a new instance of the <see cref="GetCellsCloudServiceStatusRequest"/> class.
+        /// </summary>
+        public GetCellsCloudServiceStatusRequest()
+        {
+
+        }
+        /// <summary>
         /// Gets or sets extendQueryParameterMap.
         /// </summary>
         public IDictionary<string, string> extendQueryParameterMap ;
@@ -66,6 +73,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "GET", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

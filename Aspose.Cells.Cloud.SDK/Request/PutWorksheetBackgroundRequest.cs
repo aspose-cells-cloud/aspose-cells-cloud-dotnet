@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PutWorksheetBackgroundRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetBackgroundRequest"/> class.
         /// </summary>
@@ -53,6 +54,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="folder">The folder where the file is situated.</param>
         /// <param name="storageName">The storage name where the file is situated.</param>
         /// <param name="file">File to upload</param>
+                
         public PutWorksheetBackgroundRequest(string name, string sheetName, string picPath = null, string imageAdaptOption = null, string folder = null, string storageName = null, IDictionary<string, System.IO.Stream> file = null)
         {
             this.name = name;
@@ -62,8 +64,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.folder = folder;
             this.storageName = storageName;
             this.File = file;
-        }
-
+        }           
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -104,8 +106,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// File to upload
         /// </summary>
         public IDictionary<string, System.IO.Stream> File { get; set; }
-
-
+        public string LocalPath { get; set; }
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -155,12 +157,17 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 }
             }
 
-            if(  File !=null ){
-                foreach (KeyValuePair<string, System.IO.Stream> keyValueFileParam in File )
-                {
-                    localVarFileParams.Add(keyValueFileParam.Key, UrlHelper.ToFileInfo(keyValueFileParam.Value, keyValueFileParam.Key));
+             if (!string.IsNullOrEmpty(LocalPath ) && System.IO.File.Exists(LocalPath )) {
+                        System.IO.FileInfo fileInfo = new System.IO.FileInfo(LocalPath);
+                        localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(LocalPath), fileInfo.Name));
                 }
+            if (File != null){
+                    foreach (KeyValuePair<string, System.IO.Stream> keyValueFileParam in File )
+                    {
+                        localVarFileParams.Add(keyValueFileParam.Key, UrlHelper.ToFileInfo(keyValueFileParam.Value, keyValueFileParam.Key));
+                    }
             }
+
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

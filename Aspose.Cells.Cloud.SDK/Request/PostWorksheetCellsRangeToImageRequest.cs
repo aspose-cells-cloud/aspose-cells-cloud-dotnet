@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostWorksheetCellsRangeToImageRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorksheetCellsRangeToImageRequest"/> class.
         /// </summary>
@@ -43,23 +44,23 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostWorksheetCellsRangeToImageRequest"/> class.
-        /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="rangeConvertRequest"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
-        public PostWorksheetCellsRangeToImageRequest(string name, string sheetName, RangeConvertRequest rangeConvertRequest, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.rangeConvertRequest = rangeConvertRequest;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostWorksheetCellsRangeToImageRequest"/> class.
+            /// </summary>
+            /// <param name="name"></param>
+            /// <param name="sheetName"></param>
+            /// <param name="rangeConvertRequest"></param>
+            /// <param name="folder"></param>
+            /// <param name="storageName"></param>
+            public PostWorksheetCellsRangeToImageRequest(string name, string sheetName, RangeConvertRequest rangeConvertRequest, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.rangeConvertRequest = rangeConvertRequest;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// Gets or sets name.
         /// </summary>
@@ -88,8 +89,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Gets or sets storageName.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -144,6 +144,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.rangeConvertRequest != null ? JsonConvert.SerializeObject(this.rangeConvertRequest) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostDataTransformationRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostDataTransformationRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostDataTransformationRequest"/> class.
-        /// </summary>
-        /// <param name="dataTransformationRequest"></param>
-        public PostDataTransformationRequest(DataTransformationRequest dataTransformationRequest)
-        {
-            this.dataTransformationRequest = dataTransformationRequest;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostDataTransformationRequest"/> class.
+            /// </summary>
+            /// <param name="dataTransformationRequest"></param>
+            public PostDataTransformationRequest(DataTransformationRequest dataTransformationRequest)
+            {
+                this.dataTransformationRequest = dataTransformationRequest;
+            }
+        
         /// <summary>
         /// Gets or sets dataTransformationRequest.
         /// </summary>
         public DataTransformationRequest dataTransformationRequest { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.dataTransformationRequest != null ? JsonConvert.SerializeObject(this.dataTransformationRequest) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

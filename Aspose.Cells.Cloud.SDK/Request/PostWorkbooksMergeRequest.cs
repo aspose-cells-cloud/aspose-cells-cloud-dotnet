@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostWorkbooksMergeRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostWorkbooksMergeRequest"/> class.
         /// </summary>
@@ -43,23 +44,23 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostWorkbooksMergeRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="mergeWith">The workbook to merge with.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        /// <param name="mergedStorageName">Storage name.</param>
-        public PostWorkbooksMergeRequest(string name, string mergeWith, string folder = null, string storageName = null, string mergedStorageName = null)
-        {
-            this.name = name;
-            this.mergeWith = mergeWith;
-            this.folder = folder;
-            this.storageName = storageName;
-            this.mergedStorageName = mergedStorageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostWorkbooksMergeRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="mergeWith">The workbook to merge with.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            /// <param name="mergedStorageName">Storage name.</param>
+            public PostWorkbooksMergeRequest(string name, string mergeWith, string folder = null, string storageName = null, string mergedStorageName = null)
+            {
+                this.name = name;
+                this.mergeWith = mergeWith;
+                this.folder = folder;
+                this.storageName = storageName;
+                this.mergedStorageName = mergedStorageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -88,8 +89,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Storage name.
         /// </summary>
         public string mergedStorageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -137,6 +137,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

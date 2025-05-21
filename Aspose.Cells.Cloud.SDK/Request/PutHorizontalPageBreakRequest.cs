@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PutHorizontalPageBreakRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PutHorizontalPageBreakRequest"/> class.
         /// </summary>
@@ -43,31 +44,31 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PutHorizontalPageBreakRequest"/> class.
-        /// </summary>
-        /// <param name="name">The workbook name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="cellname">Cell name</param>
-        /// <param name="row">Row index, zero based.</param>
-        /// <param name="column">Column index, zero based.</param>
-        /// <param name="startColumn">Start column index, zero based.</param>
-        /// <param name="endColumn">End column index, zero based.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PutHorizontalPageBreakRequest(string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.cellname = cellname;
-            this.row = row;
-            this.column = column;
-            this.startColumn = startColumn;
-            this.endColumn = endColumn;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PutHorizontalPageBreakRequest"/> class.
+            /// </summary>
+            /// <param name="name">The workbook name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="cellname">Cell name</param>
+            /// <param name="row">Row index, zero based.</param>
+            /// <param name="column">Column index, zero based.</param>
+            /// <param name="startColumn">Start column index, zero based.</param>
+            /// <param name="endColumn">End column index, zero based.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PutHorizontalPageBreakRequest(string name, string sheetName, string cellname = null, int? row = null, int? column = null, int? startColumn = null, int? endColumn = null, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.cellname = cellname;
+                this.row = row;
+                this.column = column;
+                this.startColumn = startColumn;
+                this.endColumn = endColumn;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The workbook name.
         /// </summary>
@@ -120,8 +121,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -173,6 +173,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

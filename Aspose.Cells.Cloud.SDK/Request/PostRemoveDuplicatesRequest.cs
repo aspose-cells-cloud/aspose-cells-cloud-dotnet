@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostRemoveDuplicatesRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostRemoveDuplicatesRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostRemoveDuplicatesRequest"/> class.
-        /// </summary>
-        /// <param name="removeDuplicatesOptions"></param>
-        public PostRemoveDuplicatesRequest(RemoveDuplicatesOptions removeDuplicatesOptions)
-        {
-            this.removeDuplicatesOptions = removeDuplicatesOptions;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostRemoveDuplicatesRequest"/> class.
+            /// </summary>
+            /// <param name="removeDuplicatesOptions"></param>
+            public PostRemoveDuplicatesRequest(RemoveDuplicatesOptions removeDuplicatesOptions)
+            {
+                this.removeDuplicatesOptions = removeDuplicatesOptions;
+            }
+        
         /// <summary>
         /// Gets or sets removeDuplicatesOptions.
         /// </summary>
         public RemoveDuplicatesOptions removeDuplicatesOptions { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.removeDuplicatesOptions != null ? JsonConvert.SerializeObject(this.removeDuplicatesOptions) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostSplitTextRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostSplitTextRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostSplitTextRequest"/> class.
-        /// </summary>
-        /// <param name="splitTextOptions"></param>
-        public PostSplitTextRequest(SplitTextOptions splitTextOptions)
-        {
-            this.splitTextOptions = splitTextOptions;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostSplitTextRequest"/> class.
+            /// </summary>
+            /// <param name="splitTextOptions"></param>
+            public PostSplitTextRequest(SplitTextOptions splitTextOptions)
+            {
+                this.splitTextOptions = splitTextOptions;
+            }
+        
         /// <summary>
         /// Gets or sets splitTextOptions.
         /// </summary>
         public SplitTextOptions splitTextOptions { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.splitTextOptions != null ? JsonConvert.SerializeObject(this.splitTextOptions) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class ObjectExistsRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="ObjectExistsRequest"/> class.
         /// </summary>
@@ -43,19 +44,19 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ObjectExistsRequest"/> class.
-        /// </summary>
-        /// <param name="path"></param>
-        /// <param name="storageName"></param>
-        /// <param name="versionId"></param>
-        public ObjectExistsRequest(string path, string storageName = null, string versionId = null)
-        {
-            this.path = path;
-            this.storageName = storageName;
-            this.versionId = versionId;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="ObjectExistsRequest"/> class.
+            /// </summary>
+            /// <param name="path"></param>
+            /// <param name="storageName"></param>
+            /// <param name="versionId"></param>
+            public ObjectExistsRequest(string path, string storageName = null, string versionId = null)
+            {
+                this.path = path;
+                this.storageName = storageName;
+                this.versionId = versionId;
+            }
+        
         /// <summary>
         /// Gets or sets path.
         /// </summary>
@@ -72,8 +73,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Gets or sets versionId.
         /// </summary>
         public string versionId { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -113,6 +113,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "GET", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

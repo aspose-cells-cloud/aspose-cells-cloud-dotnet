@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostAutofitWorkbookRowsRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostAutofitWorkbookRowsRequest"/> class.
         /// </summary>
@@ -43,25 +44,29 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostAutofitWorkbookRowsRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="startRow">Start row.</param>
-        /// <param name="endRow">End row.</param>
-        /// <param name="onlyAuto">Only auto.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PostAutofitWorkbookRowsRequest(string name, int? startRow = null, int? endRow = null, bool? onlyAuto = null, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.startRow = startRow;
-            this.endRow = endRow;
-            this.onlyAuto = onlyAuto;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostAutofitWorkbookRowsRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="startRow">Start row.</param>
+            /// <param name="endRow">End row.</param>
+            /// <param name="onlyAuto">Only auto.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            /// <param name="firstColumn"></param>
+            /// <param name="lastColumn"></param>
+            public PostAutofitWorkbookRowsRequest(string name, int? startRow = null, int? endRow = null, bool? onlyAuto = null, string folder = null, string storageName = null, int? firstColumn = null, int? lastColumn = null)
+            {
+                this.name = name;
+                this.startRow = startRow;
+                this.endRow = endRow;
+                this.onlyAuto = onlyAuto;
+                this.folder = folder;
+                this.storageName = storageName;
+                this.firstColumn = firstColumn;
+                this.lastColumn = lastColumn;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -98,6 +103,17 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string storageName { get; set; }
 
 
+        /// <summary>
+        /// Gets or sets firstColumn.
+        /// </summary>
+        public int? firstColumn { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets lastColumn.
+        /// </summary>
+        public int? lastColumn { get; set; }
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -133,6 +149,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             if(this.onlyAuto != null)  path = UrlHelper.AddQueryParameterToUrl(path, "onlyAuto", this.onlyAuto);
             if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
             if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
+            if(this.firstColumn != null)  path = UrlHelper.AddQueryParameterToUrl(path, "firstColumn", this.firstColumn);
+            if(this.lastColumn != null)  path = UrlHelper.AddQueryParameterToUrl(path, "lastColumn", this.lastColumn);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)
@@ -140,6 +158,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

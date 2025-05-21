@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostBatchProtectRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostBatchProtectRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostBatchProtectRequest"/> class.
-        /// </summary>
-        /// <param name="batchProtectRequest">BatchProtectRequest Batch protection file request.  </param>
-        public PostBatchProtectRequest(BatchProtectRequest batchProtectRequest)
-        {
-            this.batchProtectRequest = batchProtectRequest;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostBatchProtectRequest"/> class.
+            /// </summary>
+            /// <param name="batchProtectRequest">BatchProtectRequest Batch protection file request.  </param>
+            public PostBatchProtectRequest(BatchProtectRequest batchProtectRequest)
+            {
+                this.batchProtectRequest = batchProtectRequest;
+            }
+        
         /// <summary>
         /// BatchProtectRequest Batch protection file request.  
         /// </summary>
         public BatchProtectRequest batchProtectRequest { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.batchProtectRequest != null ? JsonConvert.SerializeObject(this.batchProtectRequest) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

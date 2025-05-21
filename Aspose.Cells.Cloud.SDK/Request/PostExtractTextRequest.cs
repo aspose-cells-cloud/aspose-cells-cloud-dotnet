@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostExtractTextRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostExtractTextRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostExtractTextRequest"/> class.
-        /// </summary>
-        /// <param name="extractTextOptions"></param>
-        public PostExtractTextRequest(ExtractTextOptions extractTextOptions)
-        {
-            this.extractTextOptions = extractTextOptions;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostExtractTextRequest"/> class.
+            /// </summary>
+            /// <param name="extractTextOptions"></param>
+            public PostExtractTextRequest(ExtractTextOptions extractTextOptions)
+            {
+                this.extractTextOptions = extractTextOptions;
+            }
+        
         /// <summary>
         /// Gets or sets extractTextOptions.
         /// </summary>
         public ExtractTextOptions extractTextOptions { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.extractTextOptions != null ? JsonConvert.SerializeObject(this.extractTextOptions) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

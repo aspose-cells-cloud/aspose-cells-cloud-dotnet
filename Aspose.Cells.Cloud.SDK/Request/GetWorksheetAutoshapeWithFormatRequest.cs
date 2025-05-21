@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class GetWorksheetAutoshapeWithFormatRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="GetWorksheetAutoshapeWithFormatRequest"/> class.
         /// </summary>
@@ -43,25 +44,25 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="GetWorksheetAutoshapeWithFormatRequest"/> class.
-        /// </summary>
-        /// <param name="name">The workbook name.</param>
-        /// <param name="sheetName">Worksheet name.</param>
-        /// <param name="autoshapeNumber">The autoshape number.</param>
-        /// <param name="format">Autoshape conversion format.</param>
-        /// <param name="folder">The document folder.</param>
-        /// <param name="storageName">Storage name.</param>
-        public GetWorksheetAutoshapeWithFormatRequest(string name, string sheetName, int? autoshapeNumber, string format = null, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.autoshapeNumber = autoshapeNumber;
-            this.format = format;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="GetWorksheetAutoshapeWithFormatRequest"/> class.
+            /// </summary>
+            /// <param name="name">The workbook name.</param>
+            /// <param name="sheetName">Worksheet name.</param>
+            /// <param name="autoshapeNumber">The autoshape number.</param>
+            /// <param name="format">Autoshape conversion format.</param>
+            /// <param name="folder">The document folder.</param>
+            /// <param name="storageName">Storage name.</param>
+            public GetWorksheetAutoshapeWithFormatRequest(string name, string sheetName, int? autoshapeNumber, string format = null, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.autoshapeNumber = autoshapeNumber;
+                this.format = format;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The workbook name.
         /// </summary>
@@ -96,8 +97,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Storage name.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -152,6 +152,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "GET", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

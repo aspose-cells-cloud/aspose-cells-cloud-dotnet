@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostCopyWorksheetRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostCopyWorksheetRequest"/> class.
         /// </summary>
@@ -43,29 +44,29 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostCopyWorksheetRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="sourceSheet">Source worksheet.</param>
-        /// <param name="options">Represents the copy options.</param>
-        /// <param name="sourceWorkbook">source Workbook.</param>
-        /// <param name="sourceFolder">Original workbook folder.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PostCopyWorksheetRequest(string name, string sheetName, string sourceSheet, CopyOptions options, string sourceWorkbook = null, string sourceFolder = null, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.sourceSheet = sourceSheet;
-            this.options = options;
-            this.sourceWorkbook = sourceWorkbook;
-            this.sourceFolder = sourceFolder;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostCopyWorksheetRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="sourceSheet">Source worksheet.</param>
+            /// <param name="options">Represents the copy options.</param>
+            /// <param name="sourceWorkbook">source Workbook.</param>
+            /// <param name="sourceFolder">Original workbook folder.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PostCopyWorksheetRequest(string name, string sheetName, string sourceSheet, CopyOptions options, string sourceWorkbook = null, string sourceFolder = null, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.sourceSheet = sourceSheet;
+                this.options = options;
+                this.sourceWorkbook = sourceWorkbook;
+                this.sourceFolder = sourceFolder;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -112,8 +113,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -177,6 +177,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.options != null ? JsonConvert.SerializeObject(this.options) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

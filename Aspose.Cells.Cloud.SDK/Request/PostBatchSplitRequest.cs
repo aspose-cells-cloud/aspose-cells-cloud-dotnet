@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostBatchSplitRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostBatchSplitRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostBatchSplitRequest"/> class.
-        /// </summary>
-        /// <param name="batchSplitRequest">BatchSplitRequest Batch splitting file request.  </param>
-        public PostBatchSplitRequest(BatchSplitRequest batchSplitRequest)
-        {
-            this.batchSplitRequest = batchSplitRequest;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostBatchSplitRequest"/> class.
+            /// </summary>
+            /// <param name="batchSplitRequest">BatchSplitRequest Batch splitting file request.  </param>
+            public PostBatchSplitRequest(BatchSplitRequest batchSplitRequest)
+            {
+                this.batchSplitRequest = batchSplitRequest;
+            }
+        
         /// <summary>
         /// BatchSplitRequest Batch splitting file request.  
         /// </summary>
         public BatchSplitRequest batchSplitRequest { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.batchSplitRequest != null ? JsonConvert.SerializeObject(this.batchSplitRequest) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

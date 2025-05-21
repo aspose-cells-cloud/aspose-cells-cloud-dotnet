@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostAutofitWorksheetRowRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostAutofitWorksheetRowRequest"/> class.
         /// </summary>
@@ -43,27 +44,29 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostAutofitWorksheetRowRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="rowIndex">The row index.</param>
-        /// <param name="firstColumn">The first column index.</param>
-        /// <param name="lastColumn">The last column index.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PostAutofitWorksheetRowRequest(string name, string sheetName, int? rowIndex, int? firstColumn, int? lastColumn, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.rowIndex = rowIndex;
-            this.firstColumn = firstColumn;
-            this.lastColumn = lastColumn;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostAutofitWorksheetRowRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="rowIndex">The row index.</param>
+            /// <param name="firstColumn">The first column index.</param>
+            /// <param name="lastColumn">The last column index.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            /// <param name="rowCount"></param>
+            public PostAutofitWorksheetRowRequest(string name, string sheetName, int? rowIndex, int? firstColumn = null, int? lastColumn = null, string folder = null, string storageName = null, int? rowCount = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.rowIndex = rowIndex;
+                this.firstColumn = firstColumn;
+                this.lastColumn = lastColumn;
+                this.folder = folder;
+                this.storageName = storageName;
+                this.rowCount = rowCount;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -106,6 +109,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
         public string storageName { get; set; }
 
 
+        /// <summary>
+        /// Gets or sets rowCount.
+        /// </summary>
+        public int? rowCount { get; set; }
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -141,18 +149,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 throw new ApiException(400, "Missing required parameter 'rowIndex' when calling PostAutofitWorksheetRow");
             }
 
-            // verify the required parameter 'firstColumn' is set
-            if ( this.firstColumn == null)
-            {
-                throw new ApiException(400, "Missing required parameter 'firstColumn' when calling PostAutofitWorksheetRow");
-            }
-
-            // verify the required parameter 'lastColumn' is set
-            if ( this.lastColumn == null)
-            {
-                throw new ApiException(400, "Missing required parameter 'lastColumn' when calling PostAutofitWorksheetRow");
-            }
-
             var path = baseUri + "/cells/{name}/worksheets/{sheetName}/autofitrow";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
@@ -162,10 +158,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
             path = UrlHelper.AddPathParameter(path, "name", this.name);
             path = UrlHelper.AddPathParameter(path, "sheetName", this.sheetName);
             path = UrlHelper.AddQueryParameterToUrl(path, "rowIndex", this.rowIndex);
-            path = UrlHelper.AddQueryParameterToUrl(path, "firstColumn", this.firstColumn);
-            path = UrlHelper.AddQueryParameterToUrl(path, "lastColumn", this.lastColumn);
+            if(this.firstColumn != null)  path = UrlHelper.AddQueryParameterToUrl(path, "firstColumn", this.firstColumn);
+            if(this.lastColumn != null)  path = UrlHelper.AddQueryParameterToUrl(path, "lastColumn", this.lastColumn);
             if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
             if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
+            if(this.rowCount != null)  path = UrlHelper.AddQueryParameterToUrl(path, "rowCount", this.rowCount);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)
@@ -173,6 +170,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PutWorksheetFormatConditionRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetFormatConditionRequest"/> class.
         /// </summary>
@@ -43,33 +44,33 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PutWorksheetFormatConditionRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="index">Gets the Conditional Formatting element at the specified index.</param>
-        /// <param name="cellArea">Adds a conditional formatted cell range.</param>
-        /// <param name="type">Format condition type(CellValue/Expression/ColorScale/DataBar/IconSet/Top10/UniqueValues/DuplicateValues/ContainsText/NotContainsText/BeginsWith/EndsWith/ContainsBlanks/NotContainsBlanks/ContainsErrors/NotContainsErrors/TimePeriod/AboveAverage).</param>
-        /// <param name="operatorType">Represents the operator type of conditional format and data validation(Between/Equal/GreaterThan/GreaterOrEqual/LessThan/None/NotBetween/NotEqual).</param>
-        /// <param name="formula1">The value or expression associated with conditional formatting.</param>
-        /// <param name="formula2">The value or expression associated with conditional formatting.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PutWorksheetFormatConditionRequest(string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.index = index;
-            this.cellArea = cellArea;
-            this.type = type;
-            this.operatorType = operatorType;
-            this.formula1 = formula1;
-            this.formula2 = formula2;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PutWorksheetFormatConditionRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="index">Gets the Conditional Formatting element at the specified index.</param>
+            /// <param name="cellArea">Adds a conditional formatted cell range.</param>
+            /// <param name="type">Format condition type(CellValue/Expression/ColorScale/DataBar/IconSet/Top10/UniqueValues/DuplicateValues/ContainsText/NotContainsText/BeginsWith/EndsWith/ContainsBlanks/NotContainsBlanks/ContainsErrors/NotContainsErrors/TimePeriod/AboveAverage).</param>
+            /// <param name="operatorType">Represents the operator type of conditional format and data validation(Between/Equal/GreaterThan/GreaterOrEqual/LessThan/None/NotBetween/NotEqual).</param>
+            /// <param name="formula1">The value or expression associated with conditional formatting.</param>
+            /// <param name="formula2">The value or expression associated with conditional formatting.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PutWorksheetFormatConditionRequest(string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.index = index;
+                this.cellArea = cellArea;
+                this.type = type;
+                this.operatorType = operatorType;
+                this.formula1 = formula1;
+                this.formula2 = formula2;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -128,8 +129,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -218,6 +218,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

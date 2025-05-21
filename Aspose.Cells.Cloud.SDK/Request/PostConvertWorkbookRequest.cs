@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostConvertWorkbookRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostConvertWorkbookRequest"/> class.
         /// </summary>
@@ -43,17 +44,17 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostConvertWorkbookRequest"/> class.
-        /// </summary>
-        /// <param name="convertWorkbookOptions"></param>
-        /// <param name="fontsLocation">Use Custom fonts.</param>
-        public PostConvertWorkbookRequest(ConvertWorkbookOptions convertWorkbookOptions, string fontsLocation = null)
-        {
-            this.convertWorkbookOptions = convertWorkbookOptions;
-            this.FontsLocation = fontsLocation;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostConvertWorkbookRequest"/> class.
+            /// </summary>
+            /// <param name="convertWorkbookOptions"></param>
+            /// <param name="fontsLocation">Use Custom fonts.</param>
+            public PostConvertWorkbookRequest(ConvertWorkbookOptions convertWorkbookOptions, string fontsLocation = null)
+            {
+                this.convertWorkbookOptions = convertWorkbookOptions;
+                this.FontsLocation = fontsLocation;
+            }
+        
         /// <summary>
         /// Gets or sets convertWorkbookOptions.
         /// </summary>
@@ -64,8 +65,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Use Custom fonts.
         /// </summary>
         public string FontsLocation { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -105,6 +105,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.convertWorkbookOptions != null ? JsonConvert.SerializeObject(this.convertWorkbookOptions) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

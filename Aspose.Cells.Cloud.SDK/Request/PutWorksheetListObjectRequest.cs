@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PutWorksheetListObjectRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetListObjectRequest"/> class.
         /// </summary>
@@ -43,35 +44,35 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PutWorksheetListObjectRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="startRow">The start row of the list range.</param>
-        /// <param name="startColumn">The start column of the list range.</param>
-        /// <param name="endRow">The start row of the list range.</param>
-        /// <param name="endColumn">The start column of the list range.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="hasHeaders">Indicate whether the range has headers.</param>
-        /// <param name="displayName">Indicate whether display name.</param>
-        /// <param name="showTotals">Indicate whether show totals.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PutWorksheetListObjectRequest(string name, string sheetName, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, bool? hasHeaders = null, string displayName = null, bool? showTotals = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.startRow = startRow;
-            this.startColumn = startColumn;
-            this.endRow = endRow;
-            this.endColumn = endColumn;
-            this.folder = folder;
-            this.hasHeaders = hasHeaders;
-            this.displayName = displayName;
-            this.showTotals = showTotals;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PutWorksheetListObjectRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="startRow">The start row of the list range.</param>
+            /// <param name="startColumn">The start column of the list range.</param>
+            /// <param name="endRow">The start row of the list range.</param>
+            /// <param name="endColumn">The start column of the list range.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="hasHeaders">Indicate whether the range has headers.</param>
+            /// <param name="displayName">Indicate whether display name.</param>
+            /// <param name="showTotals">Indicate whether show totals.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PutWorksheetListObjectRequest(string name, string sheetName, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, bool? hasHeaders = null, string displayName = null, bool? showTotals = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.startRow = startRow;
+                this.startColumn = startColumn;
+                this.endRow = endRow;
+                this.endColumn = endColumn;
+                this.folder = folder;
+                this.hasHeaders = hasHeaders;
+                this.displayName = displayName;
+                this.showTotals = showTotals;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -136,8 +137,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -191,6 +191,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

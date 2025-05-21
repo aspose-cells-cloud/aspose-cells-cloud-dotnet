@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostImportDataRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostImportDataRequest"/> class.
         /// </summary>
@@ -43,25 +44,25 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostImportDataRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="importOption">Import option. They are include of ImportCSVDataOption, ImportBatchDataOption, ImportPictureOption, ImportStringArrayOption, Import2DimensionStringArrayOption, and so on.  </param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        /// <param name="region">The regional settings for workbook.</param>
-        /// <param name="fontsLocation">Use Custom fonts.</param>
-        public PostImportDataRequest(string name, ImportOption importOption = null, string folder = null, string storageName = null, string region = null, string fontsLocation = null)
-        {
-            this.name = name;
-            this.importOption = importOption;
-            this.folder = folder;
-            this.storageName = storageName;
-            this.region = region;
-            this.FontsLocation = fontsLocation;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostImportDataRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="importOption">Import option. They are include of ImportCSVDataOption, ImportBatchDataOption, ImportPictureOption, ImportStringArrayOption, Import2DimensionStringArrayOption, and so on.  </param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            /// <param name="region">The regional settings for workbook.</param>
+            /// <param name="fontsLocation">Use Custom fonts.</param>
+            public PostImportDataRequest(string name, ImportOption importOption = null, string folder = null, string storageName = null, string region = null, string fontsLocation = null)
+            {
+                this.name = name;
+                this.importOption = importOption;
+                this.folder = folder;
+                this.storageName = storageName;
+                this.region = region;
+                this.FontsLocation = fontsLocation;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -96,8 +97,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Use Custom fonts.
         /// </summary>
         public string FontsLocation { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -141,6 +141,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.importOption != null ? JsonConvert.SerializeObject(this.importOption) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PutWorksheetShapeRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PutWorksheetShapeRequest"/> class.
         /// </summary>
@@ -43,37 +44,37 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PutWorksheetShapeRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="shapeDTO"></param>
-        /// <param name="drawingType">Shape object type</param>
-        /// <param name="upperLeftRow">Upper left row index.</param>
-        /// <param name="upperLeftColumn">Upper left column index.</param>
-        /// <param name="top">Represents the vertical offset of Spinner from its left row, in unit of pixel.</param>
-        /// <param name="left">Represents the horizontal offset of Spinner from its left column, in unit of pixel.</param>
-        /// <param name="width">Represents the height of Spinner, in unit of pixel.</param>
-        /// <param name="height">Represents the width of Spinner, in unit of pixel.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PutWorksheetShapeRequest(string name, string sheetName, Shape shapeDTO = null, string drawingType = null, int? upperLeftRow = null, int? upperLeftColumn = null, int? top = null, int? left = null, int? width = null, int? height = null, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.shapeDTO = shapeDTO;
-            this.DrawingType = drawingType;
-            this.upperLeftRow = upperLeftRow;
-            this.upperLeftColumn = upperLeftColumn;
-            this.top = top;
-            this.left = left;
-            this.width = width;
-            this.height = height;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PutWorksheetShapeRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="shapeDTO"></param>
+            /// <param name="drawingType">Shape object type</param>
+            /// <param name="upperLeftRow">Upper left row index.</param>
+            /// <param name="upperLeftColumn">Upper left column index.</param>
+            /// <param name="top">Represents the vertical offset of Spinner from its left row, in unit of pixel.</param>
+            /// <param name="left">Represents the horizontal offset of Spinner from its left column, in unit of pixel.</param>
+            /// <param name="width">Represents the height of Spinner, in unit of pixel.</param>
+            /// <param name="height">Represents the width of Spinner, in unit of pixel.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PutWorksheetShapeRequest(string name, string sheetName, Shape shapeDTO = null, string drawingType = null, int? upperLeftRow = null, int? upperLeftColumn = null, int? top = null, int? left = null, int? width = null, int? height = null, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.shapeDTO = shapeDTO;
+                this.DrawingType = drawingType;
+                this.upperLeftRow = upperLeftRow;
+                this.upperLeftColumn = upperLeftColumn;
+                this.top = top;
+                this.left = left;
+                this.width = width;
+                this.height = height;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -144,8 +145,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -201,6 +201,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.shapeDTO != null ? JsonConvert.SerializeObject(this.shapeDTO) : null);
+
+
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

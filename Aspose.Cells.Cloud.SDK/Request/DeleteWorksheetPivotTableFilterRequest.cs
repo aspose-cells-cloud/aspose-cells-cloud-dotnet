@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class DeleteWorksheetPivotTableFilterRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteWorksheetPivotTableFilterRequest"/> class.
         /// </summary>
@@ -43,27 +44,27 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="DeleteWorksheetPivotTableFilterRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="pivotTableIndex">Gets the PivotTable report by index.</param>
-        /// <param name="fieldIndex">Gets the PivotField Object at the specific index.</param>
-        /// <param name="needReCalculate">Whether the specific PivotTable calculate(true/false).</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public DeleteWorksheetPivotTableFilterRequest(string name, string sheetName, int? pivotTableIndex, int? fieldIndex, bool? needReCalculate = null, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.pivotTableIndex = pivotTableIndex;
-            this.fieldIndex = fieldIndex;
-            this.needReCalculate = needReCalculate;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="DeleteWorksheetPivotTableFilterRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="pivotTableIndex">Gets the PivotTable report by index.</param>
+            /// <param name="fieldIndex">Gets the PivotField Object at the specific index.</param>
+            /// <param name="needReCalculate">Whether the specific PivotTable calculate(true/false).</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public DeleteWorksheetPivotTableFilterRequest(string name, string sheetName, int? pivotTableIndex, int? fieldIndex, bool? needReCalculate = null, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.pivotTableIndex = pivotTableIndex;
+                this.fieldIndex = fieldIndex;
+                this.needReCalculate = needReCalculate;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -104,8 +105,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -167,6 +167,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "DELETE", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

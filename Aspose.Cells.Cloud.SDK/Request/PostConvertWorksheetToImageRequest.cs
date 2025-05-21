@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostConvertWorksheetToImageRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostConvertWorksheetToImageRequest"/> class.
         /// </summary>
@@ -43,17 +44,17 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostConvertWorksheetToImageRequest"/> class.
-        /// </summary>
-        /// <param name="convertWorksheetOptions"></param>
-        /// <param name="fontsLocation">Use Custom fonts.</param>
-        public PostConvertWorksheetToImageRequest(ConvertWorksheetOptions convertWorksheetOptions, string fontsLocation = null)
-        {
-            this.convertWorksheetOptions = convertWorksheetOptions;
-            this.FontsLocation = fontsLocation;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostConvertWorksheetToImageRequest"/> class.
+            /// </summary>
+            /// <param name="convertWorksheetOptions"></param>
+            /// <param name="fontsLocation">Use Custom fonts.</param>
+            public PostConvertWorksheetToImageRequest(ConvertWorksheetOptions convertWorksheetOptions, string fontsLocation = null)
+            {
+                this.convertWorksheetOptions = convertWorksheetOptions;
+                this.FontsLocation = fontsLocation;
+            }
+        
         /// <summary>
         /// Gets or sets convertWorksheetOptions.
         /// </summary>
@@ -64,8 +65,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Use Custom fonts.
         /// </summary>
         public string FontsLocation { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -105,6 +105,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.convertWorksheetOptions != null ? JsonConvert.SerializeObject(this.convertWorksheetOptions) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

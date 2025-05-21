@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostCompressRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostCompressRequest"/> class.
         /// </summary>
@@ -50,6 +51,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="compressLevel">Compress level. The compression ratio 1-100.</param>
         /// <param name="password">The password needed to open an Excel file.</param>
         /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
+                
         public PostCompressRequest(string localPath ,  int? compressLevel   = null,  string password   = null,  bool? checkExcelRestriction   = null)
         {
             this.LocalPath = localPath ;
@@ -57,7 +59,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.password = password;
             this.checkExcelRestriction = checkExcelRestriction;
         }
-
         [System.Obsolete]
         public PostCompressRequest(IDictionary<string, System.IO.Stream> file, int? compressLevel = null, string password = null, bool? checkExcelRestriction = null)
         {
@@ -65,13 +66,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.CompressLevel = compressLevel;
             this.password = password;
             this.checkExcelRestriction = checkExcelRestriction;
-        }
+        }           
+        
         /// <summary>
         /// File to upload
         /// </summary>
-        public string LocalPath { get; set; }
-        [System.Obsolete]
         public IDictionary<string, System.IO.Stream> File { get; set; }
+        public string LocalPath { get; set; }
 
 
         /// <summary>
@@ -90,8 +91,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Whether check restriction of excel file when user modify cells related objects.
         /// </summary>
         public bool? checkExcelRestriction { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -110,7 +110,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
             // verify the required parameter 'file' is set
-            if ( this.File == null && this.LocalPath ==null )
+            if (  this.File == null  && string.IsNullOrEmpty(this.LocalPath)   )
             {
                 throw new ApiException(400, "Missing required parameter 'file' when calling PostCompress");
             }
@@ -132,17 +132,17 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 }
             }
 
-            if(  File !=null ){
-                foreach (KeyValuePair<string, System.IO.Stream> keyValueFileParam in File )
-                {
-                    localVarFileParams.Add(keyValueFileParam.Key, UrlHelper.ToFileInfo(keyValueFileParam.Value, keyValueFileParam.Key));
+             if (!string.IsNullOrEmpty(LocalPath ) && System.IO.File.Exists(LocalPath )) {
+                        System.IO.FileInfo fileInfo = new System.IO.FileInfo(LocalPath);
+                        localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(LocalPath), fileInfo.Name));
                 }
+            if (File != null){
+                    foreach (KeyValuePair<string, System.IO.Stream> keyValueFileParam in File )
+                    {
+                        localVarFileParams.Add(keyValueFileParam.Key, UrlHelper.ToFileInfo(keyValueFileParam.Value, keyValueFileParam.Key));
+                    }
             }
-            if (!string.IsNullOrEmpty(LocalPath) && System.IO.File.Exists(LocalPath))
-            {
-                System.IO.FileInfo fileInfo = new System.IO.FileInfo(LocalPath);
-                localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(LocalPath), fileInfo.Name));
-            }
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

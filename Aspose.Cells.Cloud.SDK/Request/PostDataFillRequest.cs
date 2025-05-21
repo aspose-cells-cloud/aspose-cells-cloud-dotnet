@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostDataFillRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostDataFillRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostDataFillRequest"/> class.
-        /// </summary>
-        /// <param name="dataFillRequest"></param>
-        public PostDataFillRequest(DataFillRequest dataFillRequest)
-        {
-            this.dataFillRequest = dataFillRequest;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostDataFillRequest"/> class.
+            /// </summary>
+            /// <param name="dataFillRequest"></param>
+            public PostDataFillRequest(DataFillRequest dataFillRequest)
+            {
+                this.dataFillRequest = dataFillRequest;
+            }
+        
         /// <summary>
         /// Gets or sets dataFillRequest.
         /// </summary>
         public DataFillRequest dataFillRequest { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.dataFillRequest != null ? JsonConvert.SerializeObject(this.dataFillRequest) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

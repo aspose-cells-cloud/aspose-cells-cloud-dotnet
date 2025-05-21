@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostDataCleansingRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostDataCleansingRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostDataCleansingRequest"/> class.
-        /// </summary>
-        /// <param name="dataCleansingRequest"></param>
-        public PostDataCleansingRequest(DataCleansingRequest dataCleansingRequest)
-        {
-            this.dataCleansingRequest = dataCleansingRequest;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostDataCleansingRequest"/> class.
+            /// </summary>
+            /// <param name="dataCleansingRequest"></param>
+            public PostDataCleansingRequest(DataCleansingRequest dataCleansingRequest)
+            {
+                this.dataCleansingRequest = dataCleansingRequest;
+            }
+        
         /// <summary>
         /// Gets or sets dataCleansingRequest.
         /// </summary>
         public DataCleansingRequest dataCleansingRequest { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.dataCleansingRequest != null ? JsonConvert.SerializeObject(this.dataCleansingRequest) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostRemoveCharactersRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostRemoveCharactersRequest"/> class.
         /// </summary>
@@ -43,21 +44,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostRemoveCharactersRequest"/> class.
-        /// </summary>
-        /// <param name="removeCharactersOptions"></param>
-        public PostRemoveCharactersRequest(RemoveCharactersOptions removeCharactersOptions)
-        {
-            this.removeCharactersOptions = removeCharactersOptions;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostRemoveCharactersRequest"/> class.
+            /// </summary>
+            /// <param name="removeCharactersOptions"></param>
+            public PostRemoveCharactersRequest(RemoveCharactersOptions removeCharactersOptions)
+            {
+                this.removeCharactersOptions = removeCharactersOptions;
+            }
+        
         /// <summary>
         /// Gets or sets removeCharactersOptions.
         /// </summary>
         public RemoveCharactersOptions removeCharactersOptions { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -96,6 +96,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             localVarPostBody = ( this.removeCharactersOptions != null ? JsonConvert.SerializeObject(this.removeCharactersOptions) : null);
+
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostCopyWorksheetColumnsRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostCopyWorksheetColumnsRequest"/> class.
         /// </summary>
@@ -43,29 +44,29 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PostCopyWorksheetColumnsRequest"/> class.
-        /// </summary>
-        /// <param name="name">The file name.</param>
-        /// <param name="sheetName">The worksheet name.</param>
-        /// <param name="sourceColumnIndex">Source column index</param>
-        /// <param name="destinationColumnIndex">Destination column index</param>
-        /// <param name="columnNumber">The copied column number</param>
-        /// <param name="worksheet">The destination worksheet name.</param>
-        /// <param name="folder">The folder where the file is situated.</param>
-        /// <param name="storageName">The storage name where the file is situated.</param>
-        public PostCopyWorksheetColumnsRequest(string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.sourceColumnIndex = sourceColumnIndex;
-            this.destinationColumnIndex = destinationColumnIndex;
-            this.columnNumber = columnNumber;
-            this.worksheet = worksheet;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PostCopyWorksheetColumnsRequest"/> class.
+            /// </summary>
+            /// <param name="name">The file name.</param>
+            /// <param name="sheetName">The worksheet name.</param>
+            /// <param name="sourceColumnIndex">Source column index</param>
+            /// <param name="destinationColumnIndex">Destination column index</param>
+            /// <param name="columnNumber">The copied column number</param>
+            /// <param name="worksheet">The destination worksheet name.</param>
+            /// <param name="folder">The folder where the file is situated.</param>
+            /// <param name="storageName">The storage name where the file is situated.</param>
+            public PostCopyWorksheetColumnsRequest(string name, string sheetName, int? sourceColumnIndex, int? destinationColumnIndex, int? columnNumber, string worksheet = null, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.sourceColumnIndex = sourceColumnIndex;
+                this.destinationColumnIndex = destinationColumnIndex;
+                this.columnNumber = columnNumber;
+                this.worksheet = worksheet;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// The file name.
         /// </summary>
@@ -112,8 +113,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The storage name where the file is situated.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -182,6 +182,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

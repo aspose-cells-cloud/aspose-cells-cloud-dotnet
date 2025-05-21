@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class CopyFolderRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="CopyFolderRequest"/> class.
         /// </summary>
@@ -43,21 +44,21 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="CopyFolderRequest"/> class.
-        /// </summary>
-        /// <param name="srcPath"></param>
-        /// <param name="destPath"></param>
-        /// <param name="srcStorageName"></param>
-        /// <param name="destStorageName"></param>
-        public CopyFolderRequest(string srcPath, string destPath, string srcStorageName = null, string destStorageName = null)
-        {
-            this.srcPath = srcPath;
-            this.destPath = destPath;
-            this.srcStorageName = srcStorageName;
-            this.destStorageName = destStorageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="CopyFolderRequest"/> class.
+            /// </summary>
+            /// <param name="srcPath"></param>
+            /// <param name="destPath"></param>
+            /// <param name="srcStorageName"></param>
+            /// <param name="destStorageName"></param>
+            public CopyFolderRequest(string srcPath, string destPath, string srcStorageName = null, string destStorageName = null)
+            {
+                this.srcPath = srcPath;
+                this.destPath = destPath;
+                this.srcStorageName = srcStorageName;
+                this.destStorageName = destStorageName;
+            }
+        
         /// <summary>
         /// Gets or sets srcPath.
         /// </summary>
@@ -80,8 +81,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Gets or sets destStorageName.
         /// </summary>
         public string destStorageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -128,6 +128,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

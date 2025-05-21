@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class PostRotateRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="PostRotateRequest"/> class.
         /// </summary>
@@ -52,6 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="password">The password needed to open an Excel file.</param>
         /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
         /// <param name="region">The regional settings for workbook.</param>
+                
         public PostRotateRequest(string localPath ,  string rotateType  ,  string outFormat   = null,  string password   = null,  bool? checkExcelRestriction   = null,  string region   = null)
         {
             this.LocalPath = localPath ;
@@ -61,7 +63,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.checkExcelRestriction = checkExcelRestriction;
             this.region = region;
         }
-
         [System.Obsolete]
         public PostRotateRequest(IDictionary<string, System.IO.Stream> file, string rotateType, string outFormat = null, string password = null, bool? checkExcelRestriction = null, string region = null)
         {
@@ -71,13 +72,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.password = password;
             this.checkExcelRestriction = checkExcelRestriction;
             this.region = region;
-        }
+        }           
+        
         /// <summary>
         /// File to upload
         /// </summary>
-        public string LocalPath { get; set; }
-        [System.Obsolete]
         public IDictionary<string, System.IO.Stream> File { get; set; }
+        public string LocalPath { get; set; }
 
 
         /// <summary>
@@ -108,8 +109,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The regional settings for workbook.
         /// </summary>
         public string region { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -128,7 +128,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
             // verify the required parameter 'file' is set
-            if ( this.File == null && this.LocalPath ==null )
+            if (  this.File == null  && string.IsNullOrEmpty(this.LocalPath)   )
             {
                 throw new ApiException(400, "Missing required parameter 'file' when calling PostRotate");
             }
@@ -158,17 +158,17 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 }
             }
 
-            if(  File !=null ){
-                foreach (KeyValuePair<string, System.IO.Stream> keyValueFileParam in File )
-                {
-                    localVarFileParams.Add(keyValueFileParam.Key, UrlHelper.ToFileInfo(keyValueFileParam.Value, keyValueFileParam.Key));
+             if (!string.IsNullOrEmpty(LocalPath ) && System.IO.File.Exists(LocalPath )) {
+                        System.IO.FileInfo fileInfo = new System.IO.FileInfo(LocalPath);
+                        localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(LocalPath), fileInfo.Name));
                 }
+            if (File != null){
+                    foreach (KeyValuePair<string, System.IO.Stream> keyValueFileParam in File )
+                    {
+                        localVarFileParams.Add(keyValueFileParam.Key, UrlHelper.ToFileInfo(keyValueFileParam.Value, keyValueFileParam.Key));
+                    }
             }
-            if (!string.IsNullOrEmpty(LocalPath) && System.IO.File.Exists(LocalPath))
-            {
-                System.IO.FileInfo fileInfo = new System.IO.FileInfo(LocalPath);
-                localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(LocalPath), fileInfo.Name));
-            }
+
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }

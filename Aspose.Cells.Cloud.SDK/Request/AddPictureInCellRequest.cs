@@ -36,6 +36,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
     /// </summary>
     public class AddPictureInCellRequest : IRequestModel
     {
+
         /// <summary>
         /// Initializes a new instance of the <see cref="AddPictureInCellRequest"/> class.
         /// </summary>
@@ -43,25 +44,25 @@ namespace Aspose.Cells.Cloud.SDK.Request
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="AddPictureInCellRequest"/> class.
-        /// </summary>
-        /// <param name="name"></param>
-        /// <param name="sheetName"></param>
-        /// <param name="cellName"></param>
-        /// <param name="picturePath"></param>
-        /// <param name="folder"></param>
-        /// <param name="storageName"></param>
-        public AddPictureInCellRequest(string name, string sheetName, string cellName, string picturePath, string folder = null, string storageName = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.cellName = cellName;
-            this.picturePath = picturePath;
-            this.folder = folder;
-            this.storageName = storageName;
-        }
-
+            /// <summary>
+            /// Initializes a new instance of the <see cref="AddPictureInCellRequest"/> class.
+            /// </summary>
+            /// <param name="name"></param>
+            /// <param name="sheetName"></param>
+            /// <param name="cellName"></param>
+            /// <param name="picturePath"></param>
+            /// <param name="folder"></param>
+            /// <param name="storageName"></param>
+            public AddPictureInCellRequest(string name, string sheetName, string cellName, string picturePath, string folder = null, string storageName = null)
+            {
+                this.name = name;
+                this.sheetName = sheetName;
+                this.cellName = cellName;
+                this.picturePath = picturePath;
+                this.folder = folder;
+                this.storageName = storageName;
+            }
+        
         /// <summary>
         /// Gets or sets name.
         /// </summary>
@@ -96,8 +97,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Gets or sets storageName.
         /// </summary>
         public string storageName { get; set; }
-
-
+        
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -158,6 +158,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
 
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
