@@ -54,7 +54,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="updateReference">Indicates if references in other worksheets will be updated.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public DeleteWorksheetColumnsRequest(string name, string sheetName, int? columnIndex, int? columns, bool? updateReference, string folder = null, string storageName = null)
+            public DeleteWorksheetColumnsRequest(string  name, string  sheetName, int?  columnIndex, int?  columns, bool?  updateReference, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

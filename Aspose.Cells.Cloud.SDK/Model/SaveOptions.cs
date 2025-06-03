@@ -35,60 +35,57 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents all save options
+    /// SaveOptions.
     /// </summary>
     public class SaveOptions
     {
         /// <summary>
-        /// Save format name
+        /// Gets or sets SaveFormat.
         /// </summary>
         public virtual string SaveFormat { get; set; }
 
         /// <summary>
-        /// The cached file folder is used to store some large data.
+        /// Gets or sets CachedFileFolder.
         /// </summary>
         public virtual string CachedFileFolder { get; set; }
 
         /// <summary>
-        /// Make the workbook empty after saving the file.
+        /// Gets or sets ClearData.
         /// </summary>
         public virtual bool? ClearData { get; set; }
 
         /// <summary>
-        /// If true and the directory does not exist, the directory will be automatically created before saving the file.
-        ///             
+        /// Gets or sets CreateDirectory.
         /// </summary>
         public virtual bool? CreateDirectory { get; set; }
 
         /// <summary>
-        /// whether http compression is to be used.
+        /// Gets or sets EnableHTTPCompression.
         /// </summary>
         public virtual bool? EnableHTTPCompression { get; set; }
 
         /// <summary>
-        /// Indicates whether refreshing chart cache data
+        /// Gets or sets RefreshChartCache.
         /// </summary>
         public virtual bool? RefreshChartCache { get; set; }
 
         /// <summary>
-        /// Indicates whether sorting defined names before saving file.
+        /// Gets or sets SortNames.
         /// </summary>
         public virtual bool? SortNames { get; set; }
 
         /// <summary>
-        /// Indicates whether validate merged areas before saving the file.
-        /// The default value is false.
-        ///             
+        /// Gets or sets ValidateMergedAreas.
         /// </summary>
         public virtual bool? ValidateMergedAreas { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets MergeAreas.
         /// </summary>
         public virtual bool? MergeAreas { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets SortExternalNames.
         /// </summary>
         public virtual bool? SortExternalNames { get; set; }
 
@@ -98,7 +95,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? CheckExcelRestriction { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets UpdateSmartArt.
         /// </summary>
         public virtual bool? UpdateSmartArt { get; set; }
 

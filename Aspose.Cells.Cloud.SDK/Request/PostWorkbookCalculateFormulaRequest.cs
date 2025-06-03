@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="ignoreError">ignore Error.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostWorkbookCalculateFormulaRequest(string name, CalculationOptions options = null, bool? ignoreError = null, string folder = null, string storageName = null)
+            public PostWorkbookCalculateFormulaRequest(string  name, CalculationOptions  options = null, bool?  ignoreError = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.options = options;

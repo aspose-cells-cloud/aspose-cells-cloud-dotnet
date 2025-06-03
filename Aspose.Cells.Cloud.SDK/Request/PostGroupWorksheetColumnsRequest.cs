@@ -54,7 +54,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="hide">columns visible state</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostGroupWorksheetColumnsRequest(string name, string sheetName, int? firstIndex, int? lastIndex, bool? hide = null, string folder = null, string storageName = null)
+            public PostGroupWorksheetColumnsRequest(string  name, string  sheetName, int?  firstIndex, int?  lastIndex, bool?  hide = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

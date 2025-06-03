@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="rowIndex">The row index.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public DeleteWorksheetRowRequest(string name, string sheetName, int? rowIndex, string folder = null, string storageName = null)
+            public DeleteWorksheetRowRequest(string  name, string  sheetName, int?  rowIndex, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

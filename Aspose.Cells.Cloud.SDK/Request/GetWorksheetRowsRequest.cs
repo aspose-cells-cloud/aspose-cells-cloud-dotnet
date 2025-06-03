@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="count">Display rows number.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public GetWorksheetRowsRequest(string name, string sheetName, int? offset = null, int? count = null, string folder = null, string storageName = null)
+            public GetWorksheetRowsRequest(string  name, string  sheetName, int?  offset = null, int?  count = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

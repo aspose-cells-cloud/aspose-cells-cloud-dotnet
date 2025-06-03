@@ -55,7 +55,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="destCellName">The dest cell name.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostWorksheetPivotTableMoveRequest(string name, string sheetName, int? pivotTableIndex, int? row = null, int? column = null, string destCellName = null, string folder = null, string storageName = null)
+            public PostWorksheetPivotTableMoveRequest(string  name, string  sheetName, int?  pivotTableIndex, int?  row = null, int?  column = null, string  destCellName = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

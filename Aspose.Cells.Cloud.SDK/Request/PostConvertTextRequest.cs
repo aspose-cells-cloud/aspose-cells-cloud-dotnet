@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="PostConvertTextRequest"/> class.
             /// </summary>
             /// <param name="convertTextOptions"></param>
-            public PostConvertTextRequest(ConvertTextOptions convertTextOptions)
+            public PostConvertTextRequest(ConvertTextOptions  convertTextOptions)
             {
                 this.convertTextOptions = convertTextOptions;
             }

@@ -51,7 +51,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="encryption">WorkbookEncryptionRequestEncryption parameters.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostEncryptWorkbookRequest(string name, WorkbookEncryptionRequest encryption, string folder = null, string storageName = null)
+            public PostEncryptWorkbookRequest(string  name, WorkbookEncryptionRequest  encryption, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.encryption = encryption;

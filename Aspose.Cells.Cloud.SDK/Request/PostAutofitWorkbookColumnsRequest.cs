@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="endColumn">The end column index.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostAutofitWorkbookColumnsRequest(string name, int? startColumn = null, int? endColumn = null, string folder = null, string storageName = null)
+            public PostAutofitWorkbookColumnsRequest(string  name, int?  startColumn = null, int?  endColumn = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.startColumn = startColumn;

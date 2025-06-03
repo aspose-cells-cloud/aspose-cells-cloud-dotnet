@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="PostUpdateWordCaseRequest"/> class.
             /// </summary>
             /// <param name="wordCaseOptions"></param>
-            public PostUpdateWordCaseRequest(WordCaseOptions wordCaseOptions)
+            public PostUpdateWordCaseRequest(WordCaseOptions  wordCaseOptions)
             {
                 this.wordCaseOptions = wordCaseOptions;
             }

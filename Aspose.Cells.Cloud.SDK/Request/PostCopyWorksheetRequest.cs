@@ -55,7 +55,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="sourceFolder">Original workbook folder.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostCopyWorksheetRequest(string name, string sheetName, string sourceSheet, CopyOptions options, string sourceWorkbook = null, string sourceFolder = null, string folder = null, string storageName = null)
+            public PostCopyWorksheetRequest(string  name, string  sheetName, string  sourceSheet, CopyOptions  options, string  sourceWorkbook = null, string  sourceFolder = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

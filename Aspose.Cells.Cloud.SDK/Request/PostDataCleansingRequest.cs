@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="PostDataCleansingRequest"/> class.
             /// </summary>
             /// <param name="dataCleansingRequest"></param>
-            public PostDataCleansingRequest(DataCleansingRequest dataCleansingRequest)
+            public PostDataCleansingRequest(DataCleansingRequest  dataCleansingRequest)
             {
                 this.dataCleansingRequest = dataCleansingRequest;
             }

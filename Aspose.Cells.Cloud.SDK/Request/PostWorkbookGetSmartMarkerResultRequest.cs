@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="outPath">The path to save result</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
             /// <param name="outStorageName">The storage name where the result file is situated.</param>
-            public PostWorkbookGetSmartMarkerResultRequest(string name, string xmlFile = null, string folder = null, string outPath = null, string storageName = null, string outStorageName = null)
+            public PostWorkbookGetSmartMarkerResultRequest(string  name, string  xmlFile = null, string  folder = null, string  outPath = null, string  storageName = null, string  outStorageName = null)
             {
                 this.name = name;
                 this.xmlFile = xmlFile;

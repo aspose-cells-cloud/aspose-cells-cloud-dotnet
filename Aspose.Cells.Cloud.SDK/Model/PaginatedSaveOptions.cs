@@ -35,97 +35,97 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the options for pagination.
+    /// PaginatedSaveOptions.
     /// </summary>
     public class PaginatedSaveOptions : SaveOptions
     {
         /// <summary>
-        /// When characters in the Excel are Unicode and not be set with correct font in cell style,They may appear as block in pdf,image.Set the DefaultFont such as MingLiu or MS Gothic to show these characters. If this property is not set, Aspose.Cells will use system default font to show these unicode characters.
+        /// Gets or sets DefaultFont.
         /// </summary>
         public virtual string DefaultFont { get; set; }
 
         /// <summary>
-        /// When characters in the Excel are Unicode and not be set with correct font in cell style,They may appear as block in pdf,image.Set this to true to try to use workbook's default font to show these characters first.
+        /// Gets or sets CheckWorkbookDefaultFont.
         /// </summary>
         public virtual bool? CheckWorkbookDefaultFont { get; set; }
 
         /// <summary>
-        /// Indicates whether to check font compatibility for every character in text.
+        /// Gets or sets CheckFontCompatibility.
         /// </summary>
         public virtual bool? CheckFontCompatibility { get; set; }
 
         /// <summary>
-        /// Indicates whether to only substitute the font of character when the cell font is not compatibility for it.
+        /// Gets or sets IsFontSubstitutionCharGranularity.
         /// </summary>
         public virtual bool? IsFontSubstitutionCharGranularity { get; set; }
 
         /// <summary>
-        /// If OnePagePerSheet is true , all content of one sheet will output to only one page in result.The paper size of pagesetup will be invalid, and the other settings of pagesetup will still take effect.
+        /// Gets or sets OnePagePerSheet.
         /// </summary>
         public virtual bool? OnePagePerSheet { get; set; }
 
         /// <summary>
-        /// If AllColumnsInOnePagePerSheet is true , all column content of one sheet will output to only one page in result.The width of paper size of pagesetup will be ignored, and the other settings of pagesetup will still take effect.
+        /// Gets or sets AllColumnsInOnePagePerSheet.
         /// </summary>
         public virtual bool? AllColumnsInOnePagePerSheet { get; set; }
 
         /// <summary>
-        /// Indicates if you need to hide the error while rendering.The error can be error in shape, image, chart rendering, etc.
+        /// Gets or sets IgnoreError.
         /// </summary>
         public virtual bool? IgnoreError { get; set; }
 
         /// <summary>
-        /// Indicates whether to output a blank page when there is nothing to print.
+        /// Gets or sets OutputBlankPageWhenNothingToPrint.
         /// </summary>
         public virtual bool? OutputBlankPageWhenNothingToPrint { get; set; }
 
         /// <summary>
-        /// Gets or sets the 0-based index of the first page to save.
+        /// Gets or sets PageIndex.
         /// </summary>
         public virtual int? PageIndex { get; set; }
 
         /// <summary>
-        /// Gets or sets the number of pages to save.
+        /// Gets or sets PageCount.
         /// </summary>
         public virtual int? PageCount { get; set; }
 
         /// <summary>
-        /// Indicates which pages will not be printed.
+        /// Gets or sets PrintingPageType.
         /// </summary>
         public virtual string PrintingPageType { get; set; }
 
         /// <summary>
-        /// Gets or sets gridline type.
+        /// Gets or sets GridlineType.
         /// </summary>
         public virtual string GridlineType { get; set; }
 
         /// <summary>
-        /// Gets or sets displaying text type when the text width is larger than cell width.
+        /// Gets or sets TextCrossType.
         /// </summary>
         public virtual string TextCrossType { get; set; }
 
         /// <summary>
-        /// Gets or sets default edit language.
+        /// Gets or sets DefaultEditLanguage.
         /// </summary>
         public virtual string DefaultEditLanguage { get; set; }
 
         /// <summary>
-        /// Setting for rendering Emf metafile.
+        /// Gets or sets EmfRenderSetting.
         /// </summary>
         public virtual string EmfRenderSetting { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets MergeAreas.
         /// </summary>
         public override bool? MergeAreas { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets SortExternalNames.
         /// </summary>
         public override bool? SortExternalNames { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets UpdateSmartArt.
         /// </summary>
         public override bool? UpdateSmartArt { get; set; }
 

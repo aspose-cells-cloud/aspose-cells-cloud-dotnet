@@ -35,22 +35,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the options of saving .xml file.
+    /// SpreadsheetML2003SaveOptions.
     /// </summary>
     public class SpreadsheetML2003SaveOptions : SaveOptions
     {
         /// <summary>
-        /// The default value is false, it means that column index will be ignored if the cell is contiguous to the previous cell.
+        /// Gets or sets ExportColumnIndexOfCell.
         /// </summary>
         public virtual bool? ExportColumnIndexOfCell { get; set; }
 
         /// <summary>
-        /// Causes child elements to be indented.The default value is true.  If the value is false, it will reduce the size of the xml file
+        /// Gets or sets IsIndentedFormatting.
         /// </summary>
         public virtual bool? IsIndentedFormatting { get; set; }
 
         /// <summary>
-        /// Limit as xls, the max row index is 65535 and the max column index is 255.
+        /// Gets or sets LimitAsXls.
         /// </summary>
         public virtual bool? LimitAsXls { get; set; }
 

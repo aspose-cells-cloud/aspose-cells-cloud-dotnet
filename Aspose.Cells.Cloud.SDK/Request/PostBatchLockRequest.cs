@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="PostBatchLockRequest"/> class.
             /// </summary>
             /// <param name="batchLockRequest">BatchLockRequest Batch locking file request.  </param>
-            public PostBatchLockRequest(BatchLockRequest batchLockRequest)
+            public PostBatchLockRequest(BatchLockRequest  batchLockRequest)
             {
                 this.batchLockRequest = batchLockRequest;
             }

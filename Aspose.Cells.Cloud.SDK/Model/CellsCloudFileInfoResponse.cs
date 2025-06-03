@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the CellsCloudFileInfo Response.
+    /// CellsCloudFileInfoResponse.
     /// </summary>
     public class CellsCloudFileInfoResponse : CellsCloudResponse
     {
         /// <summary>
-        /// A property named `FileInfo` of type `CellsCloudFileInfo` is defined for the class.
+        /// Gets or sets FileInfo.
         /// </summary>
         public virtual CellsCloudFileInfo FileInfo { get; set; }
 

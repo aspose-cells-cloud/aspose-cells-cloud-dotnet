@@ -35,35 +35,32 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents options of saving ooxml file.
+    /// OoxmlSaveOptions.
     /// </summary>
     public class OoxmlSaveOptions : SaveOptions
     {
         /// <summary>
-        /// Indicates if export cell name to Excel2007 .xlsx (.xlsm, .xltx, .xltm) file.
-        ///                If the output file may be accessed by SQL Server DTS, this value must be
-        ///                true.  Setting the value to false will highly increase the performance and
-        ///                reduce the file size when creating large file.  Default value is false.
+        /// Gets or sets ExportCellName.
         /// </summary>
         public virtual bool? ExportCellName { get; set; }
 
         /// <summary>
-        /// Indicates whether update scaling factor before saving the file if the PageSetup.FitToPagesWide and PageSetup.FitToPagesTall properties control how the worksheet is scaled.
+        /// Gets or sets UpdateZoom.
         /// </summary>
         public virtual bool? UpdateZoom { get; set; }
 
         /// <summary>
-        /// Always use ZIP64 extensions when writing zip archives, even when unnecessary.
+        /// Gets or sets EnableZip64.
         /// </summary>
         public virtual bool? EnableZip64 { get; set; }
 
         /// <summary>
-        /// Indicates whether embedding Ooxml files of OleObject as ole object.
+        /// Gets or sets EmbedOoxmlAsOleObject.
         /// </summary>
         public virtual bool? EmbedOoxmlAsOleObject { get; set; }
 
         /// <summary>
-        /// Gets and sets the compression type for ooxml file.
+        /// Gets or sets CompressionType.
         /// </summary>
         public virtual string CompressionType { get; set; }
 

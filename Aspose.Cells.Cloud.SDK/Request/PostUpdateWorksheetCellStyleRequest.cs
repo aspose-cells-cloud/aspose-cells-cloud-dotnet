@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="style">Style with update style settings.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostUpdateWorksheetCellStyleRequest(string name, string sheetName, string cellName, Style style, string folder = null, string storageName = null)
+            public PostUpdateWorksheetCellStyleRequest(string  name, string  sheetName, string  cellName, Style  style, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

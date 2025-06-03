@@ -35,77 +35,77 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the options of saving .sql file.
+    /// SqlScriptSaveOptions.
     /// </summary>
     public class SqlScriptSaveOptions : SaveOptions
     {
         /// <summary>
-        /// Check if the table name exists before creating
+        /// Gets or sets CheckIfTableExists.
         /// </summary>
         public virtual bool? CheckIfTableExists { get; set; }
 
         /// <summary>
-        /// Gets and sets the map of column type for different database.
+        /// Gets or sets ColumnTypeMap.
         /// </summary>
         public virtual string ColumnTypeMap { get; set; }
 
         /// <summary>
-        /// Check all data to find columns' data type.
+        /// Gets or sets CheckAllDataForColumnType.
         /// </summary>
         public virtual bool? CheckAllDataForColumnType { get; set; }
 
         /// <summary>
-        /// Insert blank line between each data.
+        /// Gets or sets AddBlankLineBetweenRows.
         /// </summary>
         public virtual bool? AddBlankLineBetweenRows { get; set; }
 
         /// <summary>
-        /// Gets and sets character separator of sql script.
+        /// Gets or sets Separator.
         /// </summary>
         public virtual string Separator { get; set; }
 
         /// <summary>
-        /// Gets and sets the operator type of sql.
+        /// Gets or sets OperatorType.
         /// </summary>
         public virtual string OperatorType { get; set; }
 
         /// <summary>
-        /// Represents which column is primary key of the data table.
+        /// Gets or sets PrimaryKey.
         /// </summary>
         public virtual int? PrimaryKey { get; set; }
 
         /// <summary>
-        /// Indicates whether exporting sql of creating table.
+        /// Gets or sets CreateTable.
         /// </summary>
         public virtual bool? CreateTable { get; set; }
 
         /// <summary>
-        /// Gets and sets the name of id column.
+        /// Gets or sets IdName.
         /// </summary>
         public virtual string IdName { get; set; }
 
         /// <summary>
-        /// Gets and sets the start id.
+        /// Gets or sets StartId.
         /// </summary>
         public virtual int? StartId { get; set; }
 
         /// <summary>
-        /// Gets and sets the table name.
+        /// Gets or sets TableName.
         /// </summary>
         public virtual string TableName { get; set; }
 
         /// <summary>
-        /// Indicates whether exporting all data as string value.
+        /// Gets or sets ExportAsString.
         /// </summary>
         public virtual bool? ExportAsString { get; set; }
 
         /// <summary>
-        /// Gets or sets the exporting range.
+        /// Gets or sets ExportArea.
         /// </summary>
         public virtual CellArea ExportArea { get; set; }
 
         /// <summary>
-        /// Indicates whether the range contains header row.
+        /// Gets or sets HasHeaderRow.
         /// </summary>
         public virtual bool? HasHeaderRow { get; set; }
 

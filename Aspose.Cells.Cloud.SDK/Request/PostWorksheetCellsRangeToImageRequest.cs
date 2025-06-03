@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="rangeConvertRequest"></param>
             /// <param name="folder"></param>
             /// <param name="storageName"></param>
-            public PostWorksheetCellsRangeToImageRequest(string name, string sheetName, RangeConvertRequest rangeConvertRequest, string folder = null, string storageName = null)
+            public PostWorksheetCellsRangeToImageRequest(string  name, string  sheetName, RangeConvertRequest  rangeConvertRequest, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

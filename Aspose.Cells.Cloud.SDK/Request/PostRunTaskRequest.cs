@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="PostRunTaskRequest"/> class.
             /// </summary>
             /// <param name="taskData">Task Data Descrition</param>
-            public PostRunTaskRequest(TaskData taskData)
+            public PostRunTaskRequest(TaskData  taskData)
             {
                 this.TaskData = taskData;
             }

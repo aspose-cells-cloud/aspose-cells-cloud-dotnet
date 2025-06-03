@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="range">Range range description.</param>
             /// <param name="folder">Original workbook folder.</param>
             /// <param name="storageName">Storage name.</param>
-            public PostWorksheetCellsRangeUnMergeRequest(string name, string sheetName, Range range, string folder = null, string storageName = null)
+            public PostWorksheetCellsRangeUnMergeRequest(string  name, string  sheetName, Range  range, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

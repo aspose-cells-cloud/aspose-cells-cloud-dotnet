@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="PostDeleteIncompleteRowsRequest"/> class.
             /// </summary>
             /// <param name="deleteIncompleteRowsRequest"></param>
-            public PostDeleteIncompleteRowsRequest(DeleteIncompleteRowsRequest deleteIncompleteRowsRequest)
+            public PostDeleteIncompleteRowsRequest(DeleteIncompleteRowsRequest  deleteIncompleteRowsRequest)
             {
                 this.deleteIncompleteRowsRequest = deleteIncompleteRowsRequest;
             }

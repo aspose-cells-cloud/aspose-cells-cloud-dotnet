@@ -49,7 +49,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// </summary>
             /// <param name="convertWorkbookOptions"></param>
             /// <param name="fontsLocation">Use Custom fonts.</param>
-            public PostConvertWorkbookRequest(ConvertWorkbookOptions convertWorkbookOptions, string fontsLocation = null)
+            public PostConvertWorkbookRequest(ConvertWorkbookOptions  convertWorkbookOptions, string  fontsLocation = null)
             {
                 this.convertWorkbookOptions = convertWorkbookOptions;
                 this.FontsLocation = fontsLocation;

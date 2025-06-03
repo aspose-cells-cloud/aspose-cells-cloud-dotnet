@@ -35,62 +35,52 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    ///            Encapsulates the object that represents a range of cells within a spreadsheet.
-    ///            
+    /// Range.
     /// </summary>
     public class Range
     {
         /// <summary>
-        /// Gets the count of columns in the range.
-        ///  
+        /// Gets or sets ColumnCount.
         /// </summary>
         public virtual int? ColumnCount { get; set; }
 
         /// <summary>
-        /// Sets or gets the column width of this range
-        ///  
+        /// Gets or sets ColumnWidth.
         /// </summary>
         public virtual double? ColumnWidth { get; set; }
 
         /// <summary>
-        /// Gets the index of the first column of the range.
-        ///  
+        /// Gets or sets FirstColumn.
         /// </summary>
         public virtual int? FirstColumn { get; set; }
 
         /// <summary>
-        /// Gets the index of the first row of the range.
-        ///  
+        /// Gets or sets FirstRow.
         /// </summary>
         public virtual int? FirstRow { get; set; }
 
         /// <summary>
-        /// Gets or sets the name of the range.
-        ///  
+        /// Gets or sets Name.
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Gets the range's refers to.
-        ///  
+        /// Gets or sets RefersTo.
         /// </summary>
         public virtual string RefersTo { get; set; }
 
         /// <summary>
-        /// Gets the count of rows in the range.
-        ///  
+        /// Gets or sets RowCount.
         /// </summary>
         public virtual int? RowCount { get; set; }
 
         /// <summary>
-        /// Sets or gets the height of rows in this range
-        ///  
+        /// Gets or sets RowHeight.
         /// </summary>
         public virtual double? RowHeight { get; set; }
 
         /// <summary>
-        /// Gets the object which contains this range.
-        ///  
+        /// Gets or sets Worksheet.
         /// </summary>
         public virtual string Worksheet { get; set; }
 

@@ -51,7 +51,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="settings">Workbook Setting description.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostWorkbookSettingsRequest(string name, WorkbookSettings settings, string folder = null, string storageName = null)
+            public PostWorkbookSettingsRequest(string  name, WorkbookSettings  settings, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.settings = settings;

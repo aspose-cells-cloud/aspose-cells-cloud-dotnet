@@ -35,37 +35,37 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the options of saving dbf file.
+    /// XmlSaveOptions.
     /// </summary>
     public class XmlSaveOptions : SaveOptions
     {
         /// <summary>
-        /// Represents the indexes of exported sheets.
+        /// Gets or sets SheetIndexes.
         /// </summary>
         public virtual List<int?> SheetIndexes { get; set; }
 
         /// <summary>
-        /// Gets or sets the exporting range.
+        /// Gets or sets ExportArea.
         /// </summary>
         public virtual CellArea ExportArea { get; set; }
 
         /// <summary>
-        /// Indicates whether the range contains header row.
+        /// Gets or sets HasHeaderRow.
         /// </summary>
         public virtual bool? HasHeaderRow { get; set; }
 
         /// <summary>
-        /// Indicates whether exporting xml map in the file.
+        /// Gets or sets XmlMapName.
         /// </summary>
         public virtual string XmlMapName { get; set; }
 
         /// <summary>
-        /// Indicates whether exporting sheet's name as the name of the element.
+        /// Gets or sets SheetNameAsElementName.
         /// </summary>
         public virtual bool? SheetNameAsElementName { get; set; }
 
         /// <summary>
-        /// Indicates whether exporting data as attributes of element.
+        /// Gets or sets DataAsAttribute.
         /// </summary>
         public virtual bool? DataAsAttribute { get; set; }
 

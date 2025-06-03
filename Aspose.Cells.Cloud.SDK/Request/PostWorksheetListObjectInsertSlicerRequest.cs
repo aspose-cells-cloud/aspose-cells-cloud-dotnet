@@ -54,7 +54,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="destCellName">The cell in the upper-left corner of the Slicer range. </param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostWorksheetListObjectInsertSlicerRequest(string name, string sheetName, int? listObjectIndex, int? columnIndex, string destCellName, string folder = null, string storageName = null)
+            public PostWorksheetListObjectInsertSlicerRequest(string  name, string  sheetName, int?  listObjectIndex, int?  columnIndex, string  destCellName, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

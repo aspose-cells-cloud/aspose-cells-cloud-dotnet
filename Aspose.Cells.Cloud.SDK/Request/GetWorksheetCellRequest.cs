@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="cellOrMethodName">The cell's or method name. (Method name like firstcell, endcell etc.)</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public GetWorksheetCellRequest(string name, string sheetName, string cellOrMethodName, string folder = null, string storageName = null)
+            public GetWorksheetCellRequest(string  name, string  sheetName, string  cellOrMethodName, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

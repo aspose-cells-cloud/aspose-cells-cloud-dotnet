@@ -58,7 +58,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="displayName">Indicate whether display name.</param>
             /// <param name="showTotals">Indicate whether show totals.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PutWorksheetListObjectRequest(string name, string sheetName, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, bool? hasHeaders = null, string displayName = null, bool? showTotals = null, string storageName = null)
+            public PutWorksheetListObjectRequest(string  name, string  sheetName, int?  startRow = null, int?  startColumn = null, int?  endRow = null, int?  endColumn = null, string  folder = null, bool?  hasHeaders = null, string  displayName = null, bool?  showTotals = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

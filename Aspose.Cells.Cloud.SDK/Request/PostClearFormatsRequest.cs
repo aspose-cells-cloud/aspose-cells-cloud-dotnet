@@ -56,7 +56,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="endColumn">The end column index.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostClearFormatsRequest(string name, string sheetName, string range = null, int? startRow = null, int? startColumn = null, int? endRow = null, int? endColumn = null, string folder = null, string storageName = null)
+            public PostClearFormatsRequest(string  name, string  sheetName, string  range = null, int?  startRow = null, int?  startColumn = null, int?  endRow = null, int?  endColumn = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

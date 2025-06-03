@@ -54,7 +54,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="password">The password needed to open an Excel file.</param>
         /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
         /// <param name="region">The regional settings for workbook.</param>
-                
         public PostWatermarkRequest(string localPath ,  string text  ,  string color  ,  string outFormat   = null,  string password   = null,  bool? checkExcelRestriction   = null,  string region   = null)
         {
             this.LocalPath = localPath ;
@@ -66,7 +65,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.region = region;
         }
         [System.Obsolete]
-        public PostWatermarkRequest(IDictionary<string, System.IO.Stream> file, string text, string color, string outFormat = null, string password = null, bool? checkExcelRestriction = null, string region = null)
+        public PostWatermarkRequest(IDictionary<string, System.IO.Stream>  file, string  text, string  color, string  outFormat = null, string  password = null, bool?  checkExcelRestriction = null, string  region = null)
         {
             this.File = file;
             this.text = text;
@@ -75,13 +74,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.password = password;
             this.checkExcelRestriction = checkExcelRestriction;
             this.region = region;
-        }           
+        }
         
         /// <summary>
         /// File to upload
         /// </summary>
-        public IDictionary<string, System.IO.Stream> File { get; set; }
-        public string LocalPath { get; set; }
+            public string LocalPath { get; set; }
+            public IDictionary<string, System.IO.Stream> File { get; set; }      
 
 
         /// <summary>
@@ -137,7 +136,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
             // verify the required parameter 'file' is set
-            if (  this.File == null  && string.IsNullOrEmpty(this.LocalPath)   )
+            if (   string.IsNullOrEmpty(this.LocalPath) ||  this.File == null    )
             {
                 throw new ApiException(400, "Missing required parameter 'file' when calling PostWatermark");
             }
@@ -174,16 +173,18 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 }
             }
 
-             if (!string.IsNullOrEmpty(LocalPath ) && System.IO.File.Exists(LocalPath )) {
+            if (!string.IsNullOrEmpty(LocalPath ) && System.IO.File.Exists(LocalPath )) {
                         System.IO.FileInfo fileInfo = new System.IO.FileInfo(LocalPath);
                         localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(LocalPath), fileInfo.Name));
-                }
+               }
+
             if (File != null){
                     foreach (KeyValuePair<string, System.IO.Stream> keyValueFileParam in File )
                     {
                         localVarFileParams.Add(keyValueFileParam.Key, UrlHelper.ToFileInfo(keyValueFileParam.Value, keyValueFileParam.Key));
                     }
             }
+
 
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

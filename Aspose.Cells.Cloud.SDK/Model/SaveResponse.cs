@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the Save Response.
+    /// SaveResponse.
     /// </summary>
     public class SaveResponse : CellsCloudResponse
     {
         /// <summary>
-        /// This class property represents a "SaveResult" XML element.
+        /// Gets or sets SaveResult.
         /// </summary>
         public virtual SaveResult SaveResult { get; set; }
 

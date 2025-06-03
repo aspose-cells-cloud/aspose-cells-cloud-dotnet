@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="rangeSortRequest">RangeSortRequest Range Sort Request </param>
             /// <param name="folder">Original workbook folder.</param>
             /// <param name="storageName">Storage name.</param>
-            public PostWorksheetCellsRangeSortRequest(string name, string sheetName, RangeSortRequest rangeSortRequest, string folder = null, string storageName = null)
+            public PostWorksheetCellsRangeSortRequest(string  name, string  sheetName, RangeSortRequest  rangeSortRequest, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

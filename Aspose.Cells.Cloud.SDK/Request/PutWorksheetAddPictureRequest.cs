@@ -57,7 +57,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="picturePath">The picture path, if not provided the picture data is inspected in the request body.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PutWorksheetAddPictureRequest(string name, string sheetName, Picture picture = null, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string picturePath = null, string folder = null, string storageName = null)
+            public PutWorksheetAddPictureRequest(string  name, string  sheetName, Picture  picture = null, int?  upperLeftRow = null, int?  upperLeftColumn = null, int?  lowerRightRow = null, int?  lowerRightColumn = null, string  picturePath = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="column">Column index, zero based.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public DeleteVerticalPageBreaksRequest(string name, string sheetName, int? column = null, string folder = null, string storageName = null)
+            public DeleteVerticalPageBreaksRequest(string  name, string  sheetName, int?  column = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

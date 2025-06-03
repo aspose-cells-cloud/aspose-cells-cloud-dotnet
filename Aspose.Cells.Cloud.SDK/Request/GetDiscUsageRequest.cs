@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="GetDiscUsageRequest"/> class.
             /// </summary>
             /// <param name="storageName"></param>
-            public GetDiscUsageRequest(string storageName = null)
+            public GetDiscUsageRequest(string  storageName = null)
             {
                 this.storageName = storageName;
             }

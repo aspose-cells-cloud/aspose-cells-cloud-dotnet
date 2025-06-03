@@ -58,7 +58,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="printHeadings"></param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public GetWorksheetWithFormatRequest(string name, string sheetName, string format = null, int? verticalResolution = null, int? horizontalResolution = null, string area = null, int? pageIndex = null, bool? onePagePerSheet = null, bool? printHeadings = null, string folder = null, string storageName = null)
+            public GetWorksheetWithFormatRequest(string  name, string  sheetName, string  format = null, int?  verticalResolution = null, int?  horizontalResolution = null, string  area = null, int?  pageIndex = null, bool?  onePagePerSheet = null, bool?  printHeadings = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

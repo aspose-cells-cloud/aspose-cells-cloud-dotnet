@@ -51,7 +51,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="protectWorkbookRequest">The protection settings.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostProtectWorkbookRequest(string name, ProtectWorkbookRequest protectWorkbookRequest, string folder = null, string storageName = null)
+            public PostProtectWorkbookRequest(string  name, ProtectWorkbookRequest  protectWorkbookRequest, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.protectWorkbookRequest = protectWorkbookRequest;

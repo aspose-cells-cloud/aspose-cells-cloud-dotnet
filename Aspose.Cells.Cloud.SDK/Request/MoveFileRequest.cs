@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="srcStorageName"></param>
             /// <param name="destStorageName"></param>
             /// <param name="versionId"></param>
-            public MoveFileRequest(string srcPath, string destPath, string srcStorageName = null, string destStorageName = null, string versionId = null)
+            public MoveFileRequest(string  srcPath, string  destPath, string  srcStorageName = null, string  destStorageName = null, string  versionId = null)
             {
                 this.srcPath = srcPath;
                 this.destPath = destPath;

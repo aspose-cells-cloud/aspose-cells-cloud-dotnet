@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="style">Style description.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostRowStyleRequest(string name, string sheetName, int? rowIndex, Style style, string folder = null, string storageName = null)
+            public PostRowStyleRequest(string  name, string  sheetName, int?  rowIndex, Style  style, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

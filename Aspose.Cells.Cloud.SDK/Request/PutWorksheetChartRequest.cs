@@ -65,7 +65,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="pivotTableSheet">The source is the data of the pivotTable. If PivotSource is not empty, the chart is a PivotChart.</param>
             /// <param name="pivotTableName">The pivot table name.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PutWorksheetChartRequest(string name, string sheetName, string chartType, int? upperLeftRow = null, int? upperLeftColumn = null, int? lowerRightRow = null, int? lowerRightColumn = null, string area = null, bool? isVertical = null, string categoryData = null, bool? isAutoGetSerialName = null, string title = null, string folder = null, bool? dataLabels = null, string dataLabelsPosition = null, string pivotTableSheet = null, string pivotTableName = null, string storageName = null)
+            public PutWorksheetChartRequest(string  name, string  sheetName, string  chartType, int?  upperLeftRow = null, int?  upperLeftColumn = null, int?  lowerRightRow = null, int?  lowerRightColumn = null, string  area = null, bool?  isVertical = null, string  categoryData = null, bool?  isAutoGetSerialName = null, string  title = null, string  folder = null, bool?  dataLabels = null, string  dataLabelsPosition = null, string  pivotTableSheet = null, string  pivotTableName = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

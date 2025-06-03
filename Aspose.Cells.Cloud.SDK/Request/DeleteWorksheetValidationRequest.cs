@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="validationIndex">The validation index.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public DeleteWorksheetValidationRequest(string name, string sheetName, int? validationIndex, string folder = null, string storageName = null)
+            public DeleteWorksheetValidationRequest(string  name, string  sheetName, int?  validationIndex, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

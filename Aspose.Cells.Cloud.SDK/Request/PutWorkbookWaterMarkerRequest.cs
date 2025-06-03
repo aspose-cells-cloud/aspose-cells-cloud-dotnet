@@ -51,7 +51,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="textWaterMarkerRequest">Text water marker request</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PutWorkbookWaterMarkerRequest(string name, TextWaterMarkerRequest textWaterMarkerRequest, string folder = null, string storageName = null)
+            public PutWorkbookWaterMarkerRequest(string  name, TextWaterMarkerRequest  textWaterMarkerRequest, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.textWaterMarkerRequest = textWaterMarkerRequest;

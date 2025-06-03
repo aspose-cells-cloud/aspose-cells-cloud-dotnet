@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="count">Maximum amount of cells in the response.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public GetWorksheetCellsRequest(string name, string sheetName, int? offest = null, int? count = null, string folder = null, string storageName = null)
+            public GetWorksheetCellsRequest(string  name, string  sheetName, int?  offest = null, int?  count = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

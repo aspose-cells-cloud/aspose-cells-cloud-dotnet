@@ -59,7 +59,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="height">Represents the width of Spinner, in unit of pixel.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PutWorksheetShapeRequest(string name, string sheetName, Shape shapeDTO = null, string drawingType = null, int? upperLeftRow = null, int? upperLeftColumn = null, int? top = null, int? left = null, int? width = null, int? height = null, string folder = null, string storageName = null)
+            public PutWorksheetShapeRequest(string  name, string  sheetName, Shape  shapeDTO = null, string  drawingType = null, int?  upperLeftRow = null, int?  upperLeftColumn = null, int?  top = null, int?  left = null, int?  width = null, int?  height = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

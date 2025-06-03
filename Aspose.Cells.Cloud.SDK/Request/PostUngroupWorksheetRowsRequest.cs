@@ -54,7 +54,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="isAll">Is all row to be operated</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostUngroupWorksheetRowsRequest(string name, string sheetName, int? firstIndex, int? lastIndex, bool? isAll = null, string folder = null, string storageName = null)
+            public PostUngroupWorksheetRowsRequest(string  name, string  sheetName, int?  firstIndex, int?  lastIndex, bool?  isAll = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

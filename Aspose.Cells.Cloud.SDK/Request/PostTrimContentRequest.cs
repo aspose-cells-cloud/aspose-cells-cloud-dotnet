@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="PostTrimContentRequest"/> class.
             /// </summary>
             /// <param name="trimContentOptions"></param>
-            public PostTrimContentRequest(TrimContentOptions trimContentOptions)
+            public PostTrimContentRequest(TrimContentOptions  trimContentOptions)
             {
                 this.trimContentOptions = trimContentOptions;
             }

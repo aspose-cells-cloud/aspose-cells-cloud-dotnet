@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="rangeOperate">RangeSetOutlineBorderRequest Range Set OutlineBorder Request.</param>
             /// <param name="folder">Original workbook folder.</param>
             /// <param name="storageName">Storage name.</param>
-            public PostWorksheetCellsRangeOutlineBorderRequest(string name, string sheetName, RangeSetOutlineBorderRequest rangeOperate, string folder = null, string storageName = null)
+            public PostWorksheetCellsRangeOutlineBorderRequest(string  name, string  sheetName, RangeSetOutlineBorderRequest  rangeOperate, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="rangeOperate">RangeCopyRequestcopydata,copystyle,copyto,copyvalue</param>
             /// <param name="folder">Original workbook folder.</param>
             /// <param name="storageName">Storage name.</param>
-            public PostWorksheetCellsRangesCopyRequest(string name, string sheetName, RangeCopyRequest rangeOperate, string folder = null, string storageName = null)
+            public PostWorksheetCellsRangesCopyRequest(string  name, string  sheetName, RangeCopyRequest  rangeOperate, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

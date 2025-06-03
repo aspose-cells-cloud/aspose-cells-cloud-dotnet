@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="dto">The shape description.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostWorksheetShapeRequest(string name, string sheetName, int? shapeindex, Shape dto, string folder = null, string storageName = null)
+            public PostWorksheetShapeRequest(string  name, string  sheetName, int?  shapeindex, Shape  dto, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

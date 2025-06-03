@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="PostBatchConvertRequest"/> class.
             /// </summary>
             /// <param name="batchConvertRequest">BatchConvertRequest Batch conversion file request. </param>
-            public PostBatchConvertRequest(BatchConvertRequest batchConvertRequest)
+            public PostBatchConvertRequest(BatchConvertRequest  batchConvertRequest)
             {
                 this.batchConvertRequest = batchConvertRequest;
             }

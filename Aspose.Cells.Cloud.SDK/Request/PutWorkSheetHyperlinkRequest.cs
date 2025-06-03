@@ -56,7 +56,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="address">Address of the hyperlink.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PutWorksheetHyperlinkRequest(string name, string sheetName, int? firstRow, int? firstColumn, int? totalRows, int? totalColumns, string address, string folder = null, string storageName = null)
+            public PutWorksheetHyperlinkRequest(string  name, string  sheetName, int?  firstRow, int?  firstColumn, int?  totalRows, int?  totalColumns, string  address, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

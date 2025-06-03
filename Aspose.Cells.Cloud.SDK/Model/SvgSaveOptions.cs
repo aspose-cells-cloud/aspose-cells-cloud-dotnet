@@ -35,82 +35,72 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the options of saving .svg file.
+    /// SvgSaveOptions.
     /// </summary>
     public class SvgSaveOptions : SaveOptions
     {
         /// <summary>
-        /// Gets and sets which worksheet should be exported.  If the value is -1, the
-        ///                 active worksheet will be exported.
+        /// Gets or sets SheetIndex.
         /// </summary>
         public virtual int? SheetIndex { get; set; }
 
         /// <summary>
-        /// Indicate the chart imagetype when converting.
+        /// Gets or sets ChartImageType.
         /// </summary>
         public virtual string ChartImageType { get; set; }
 
         /// <summary>
-        /// Indicate the filename of embeded image in svg. This should be full path with directory like "c:\\xpsEmbeded"
+        /// Gets or sets EmbededImageNameInSvg.
         /// </summary>
         public virtual string EmbededImageNameInSvg { get; set; }
 
         /// <summary>
-        /// Gets or sets the horizontal resolution for generated images, in dots per inch.  
-        ///                Applies generating image method except Emf format images.
-        ///                The default value is 96.
+        /// Gets or sets HorizontalResolution.
         /// </summary>
         public virtual int? HorizontalResolution { get; set; }
 
         /// <summary>
-        /// Gets or sets the format of the generated images.  Don't apply the method that returns a Bitmap object.
-        ///              The default value is ImageFormat.Bmp.  Don't apply the method that returns a Bitmap object.
+        /// Gets or sets ImageFormat.
         /// </summary>
         public virtual string ImageFormat { get; set; }
 
         /// <summary>
-        /// Indicates whether the width and height of the cells is automatically fitted by cell value. The default value is false.
+        /// Gets or sets IsCellAutoFit.
         /// </summary>
         public virtual bool? IsCellAutoFit { get; set; }
 
         /// <summary>
-        /// If OnePagePerSheet is true , all content of one sheet will output to only
-        ///                 one page in result. The paper size of pagesetup will be invalid, and the
-        ///                 other settings of pagesetup will still take effect.
+        /// Gets or sets OnePagePerSheet.
         /// </summary>
         public virtual bool? OnePagePerSheet { get; set; }
 
         /// <summary>
-        /// If this property is true , onle Area will be output, and no scale will take effect.
+        /// Gets or sets OnlyArea.
         /// </summary>
         public virtual bool? OnlyArea { get; set; }
 
         /// <summary>
-        /// Indicates which pages will not be printed.
+        /// Gets or sets PrintingPage.
         /// </summary>
         public virtual string PrintingPage { get; set; }
 
         /// <summary>
-        /// If PrintWithStatusDialog = true , there will be a dialog that shows current print status.  else no such dialog will show.
+        /// Gets or sets PrintWithStatusDialog.
         /// </summary>
         public virtual bool? PrintWithStatusDialog { get; set; }
 
         /// <summary>
-        /// Gets or sets a value determining the quality of the generated images to apply only when saving pages to the Jpeg format.
-        ///             Has effect only when saving to JPEG.  The value must be between 0 and 100. The default value is 100.
+        /// Gets or sets Quality.
         /// </summary>
         public virtual int? Quality { get; set; }
 
         /// <summary>
-        /// Gets or sets the type of compression to apply only when saving pages to the Tiff format.
-        ///             Has effect only when saving to TIFF.  The default value is Lzw.
+        /// Gets or sets TiffCompression.
         /// </summary>
         public virtual string TiffCompression { get; set; }
 
         /// <summary>
-        /// Gets or sets the vertical resolution for generated images, in dots per inch.
-        ///             Applies generating image method except Emf format image.
-        ///             The default value is 96.
+        /// Gets or sets VerticalResolution.
         /// </summary>
         public virtual int? VerticalResolution { get; set; }
 

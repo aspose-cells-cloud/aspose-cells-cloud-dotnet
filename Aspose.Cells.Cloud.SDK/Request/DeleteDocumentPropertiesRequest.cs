@@ -50,7 +50,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="name">The workbook name.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public DeleteDocumentPropertiesRequest(string name, string folder = null, string storageName = null)
+            public DeleteDocumentPropertiesRequest(string  name, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.folder = folder;

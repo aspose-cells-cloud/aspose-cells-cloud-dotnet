@@ -51,7 +51,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="property">Get or set the value of the property.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PutDocumentPropertyRequest(string name, CellsDocumentProperty property, string folder = null, string storageName = null)
+            public PutDocumentPropertyRequest(string  name, CellsDocumentProperty  property, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.property = property;

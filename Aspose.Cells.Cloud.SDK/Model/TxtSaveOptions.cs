@@ -35,27 +35,27 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the options of saving .txt file.
+    /// TxtSaveOptions.
     /// </summary>
     public class TxtSaveOptions : SaveOptions
     {
         /// <summary>
-        /// Gets or sets how to quote values in the exported text file.
+        /// Gets or sets QuoteType.
         /// </summary>
         public virtual string QuoteType { get; set; }
 
         /// <summary>
-        /// Gets and sets char Delimiter of text file.
+        /// Gets or sets Separator.
         /// </summary>
         public virtual string Separator { get; set; }
 
         /// <summary>
-        /// Gets and sets the a string value as separator.
+        /// Gets or sets SeparatorString.
         /// </summary>
         public virtual string SeparatorString { get; set; }
 
         /// <summary>
-        /// Indicates whether always adding '"' for each field. If true then all values will be quoted; If false then values will only be quoted when needed(for example, when values contain special characters such as '"' , '\n' or separator character). Default is false.
+        /// Gets or sets AlwaysQuoted.
         /// </summary>
         public virtual bool? AlwaysQuoted { get; set; }
 

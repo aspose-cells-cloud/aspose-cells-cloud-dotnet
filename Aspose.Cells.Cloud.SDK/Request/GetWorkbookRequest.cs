@@ -63,7 +63,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="onePagePerSheet"></param>
             /// <param name="onlyAutofitTable"></param>
             /// <param name="fontsLocation">Use Custom fonts.</param>
-            public GetWorkbookRequest(string name, string format = null, string password = null, bool? isAutoFit = null, bool? onlySaveTable = null, string folder = null, string outPath = null, string storageName = null, string outStorageName = null, bool? checkExcelRestriction = null, string region = null, bool? pageWideFitOnPerSheet = null, bool? pageTallFitOnPerSheet = null, bool? onePagePerSheet = null, bool? onlyAutofitTable = null, string fontsLocation = null)
+            public GetWorkbookRequest(string  name, string  format = null, string  password = null, bool?  isAutoFit = null, bool?  onlySaveTable = null, string  folder = null, string  outPath = null, string  storageName = null, string  outStorageName = null, bool?  checkExcelRestriction = null, string  region = null, bool?  pageWideFitOnPerSheet = null, bool?  pageTallFitOnPerSheet = null, bool?  onePagePerSheet = null, bool?  onlyAutofitTable = null, string  fontsLocation = null)
             {
                 this.name = name;
                 this.format = format;

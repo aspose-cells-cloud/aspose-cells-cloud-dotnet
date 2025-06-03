@@ -49,7 +49,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// </summary>
             /// <param name="convertWorksheetOptions"></param>
             /// <param name="fontsLocation">Use Custom fonts.</param>
-            public PostConvertWorksheetToImageRequest(ConvertWorksheetOptions convertWorksheetOptions, string fontsLocation = null)
+            public PostConvertWorksheetToImageRequest(ConvertWorksheetOptions  convertWorksheetOptions, string  fontsLocation = null)
             {
                 this.convertWorksheetOptions = convertWorksheetOptions;
                 this.FontsLocation = fontsLocation;

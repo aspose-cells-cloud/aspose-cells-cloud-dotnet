@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="value">Sets the column width of this range.</param>
             /// <param name="folder">Original workbook folder.</param>
             /// <param name="storageName">Storage name.</param>
-            public PostWorksheetCellsRangeColumnWidthRequest(string name, string sheetName, Range range, double? value, string folder = null, string storageName = null)
+            public PostWorksheetCellsRangeColumnWidthRequest(string  name, string  sheetName, Range  range, double?  value, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

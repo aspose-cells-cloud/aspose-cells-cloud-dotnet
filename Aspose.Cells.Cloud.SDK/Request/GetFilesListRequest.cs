@@ -49,7 +49,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// </summary>
             /// <param name="path"></param>
             /// <param name="storageName"></param>
-            public GetFilesListRequest(string path = null, string storageName = null)
+            public GetFilesListRequest(string  path = null, string  storageName = null)
             {
                 this.path = path;
                 this.storageName = storageName;

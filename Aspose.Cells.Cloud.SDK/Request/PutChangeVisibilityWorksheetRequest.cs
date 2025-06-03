@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="isVisible">New worksheet visibility value.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PutChangeVisibilityWorksheetRequest(string name, string sheetName, bool? isVisible, string folder = null, string storageName = null)
+            public PutChangeVisibilityWorksheetRequest(string  name, string  sheetName, bool?  isVisible, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

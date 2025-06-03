@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="newName">Namenew name.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostWorkbookNameRequest(string name, string nameName, Name newName, string folder = null, string storageName = null)
+            public PostWorkbookNameRequest(string  name, string  nameName, Name  newName, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.nameName = nameName;

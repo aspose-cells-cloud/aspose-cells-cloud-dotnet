@@ -60,7 +60,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="refresh">Refresh auto filters to hide or unhide the rows.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PutWorksheetCustomFilterRequest(string name, string sheetName, string range, int? fieldIndex, string operatorType1, string criteria1, bool? isAnd = null, string operatorType2 = null, string criteria2 = null, bool? matchBlanks = null, bool? refresh = null, string folder = null, string storageName = null)
+            public PutWorksheetCustomFilterRequest(string  name, string  sheetName, string  range, int?  fieldIndex, string  operatorType1, string  criteria1, bool?  isAnd = null, string  operatorType2 = null, string  criteria2 = null, bool?  matchBlanks = null, bool?  refresh = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="sheet">The worksheet description.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostUpdateWorksheetPropertyRequest(string name, string sheetName, Worksheet sheet, string folder = null, string storageName = null)
+            public PostUpdateWorksheetPropertyRequest(string  name, string  sheetName, Worksheet  sheet, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

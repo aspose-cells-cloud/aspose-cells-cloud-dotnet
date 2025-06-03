@@ -54,7 +54,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="password">The file password. </param>
             /// <param name="region">The regional settings for workbook.</param>
             /// <param name="checkExcelRestriction"></param>
-            public PostWorkbookDataCleansingRequest(string name, DataCleansing dataCleansing, string folder = null, string storageName = null, string password = null, string region = null, bool? checkExcelRestriction = null)
+            public PostWorkbookDataCleansingRequest(string  name, DataCleansing  dataCleansing, string  folder = null, string  storageName = null, string  password = null, string  region = null, bool?  checkExcelRestriction = null)
             {
                 this.name = name;
                 this.dataCleansing = dataCleansing;

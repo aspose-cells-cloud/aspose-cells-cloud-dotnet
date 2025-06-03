@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="mergedCellIndex">Merged cell index.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public GetWorksheetMergedCellRequest(string name, string sheetName, int? mergedCellIndex, string folder = null, string storageName = null)
+            public GetWorksheetMergedCellRequest(string  name, string  sheetName, int?  mergedCellIndex, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

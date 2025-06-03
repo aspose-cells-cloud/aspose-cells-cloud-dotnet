@@ -55,7 +55,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="freezedColumns">Number of visible columns in left pane, no more than column index.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public DeleteWorksheetFreezePanesRequest(string name, string sheetName, int? row, int? column, int? freezedRows, int? freezedColumns, string folder = null, string storageName = null)
+            public DeleteWorksheetFreezePanesRequest(string  name, string  sheetName, int?  row, int?  column, int?  freezedRows, int?  freezedColumns, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

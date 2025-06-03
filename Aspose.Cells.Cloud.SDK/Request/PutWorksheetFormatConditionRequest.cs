@@ -57,7 +57,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="formula2">The value or expression associated with conditional formatting.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PutWorksheetFormatConditionRequest(string name, string sheetName, int? index, string cellArea, string type, string operatorType, string formula1, string formula2, string folder = null, string storageName = null)
+            public PutWorksheetFormatConditionRequest(string  name, string  sheetName, int?  index, string  cellArea, string  type, string  operatorType, string  formula1, string  formula2, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

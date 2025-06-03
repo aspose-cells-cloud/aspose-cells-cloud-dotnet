@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
             /// <param name="mergedStorageName">Storage name.</param>
-            public PostWorkbooksMergeRequest(string name, string mergeWith, string folder = null, string storageName = null, string mergedStorageName = null)
+            public PostWorkbooksMergeRequest(string  name, string  mergeWith, string  folder = null, string  storageName = null, string  mergedStorageName = null)
             {
                 this.name = name;
                 this.mergeWith = mergeWith;

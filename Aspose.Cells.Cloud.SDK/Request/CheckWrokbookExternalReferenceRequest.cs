@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="CheckWrokbookExternalReferenceRequest"/> class.
             /// </summary>
             /// <param name="checkExternalReferenceOptions"></param>
-            public CheckWrokbookExternalReferenceRequest(CheckExternalReferenceOptions checkExternalReferenceOptions)
+            public CheckWrokbookExternalReferenceRequest(CheckExternalReferenceOptions  checkExternalReferenceOptions)
             {
                 this.checkExternalReferenceOptions = checkExternalReferenceOptions;
             }

@@ -51,7 +51,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="type">Excel property type.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public GetDocumentPropertiesRequest(string name, string type = null, string folder = null, string storageName = null)
+            public GetDocumentPropertiesRequest(string  name, string  type = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.type = type;

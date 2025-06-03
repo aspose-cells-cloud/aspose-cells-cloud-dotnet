@@ -35,12 +35,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the options of saving dbf file.
+    /// DbfSaveOptions.
     /// </summary>
     public class DbfSaveOptions : SaveOptions
     {
         /// <summary>
-        /// 
+        /// Gets or sets ExportAsString.
         /// </summary>
         public virtual bool? ExportAsString { get; set; }
 

@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="sparklineIndex">The zero based index of the element.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public GetWorksheetSparklineGroupRequest(string name, string sheetName, int? sparklineIndex, string folder = null, string storageName = null)
+            public GetWorksheetSparklineGroupRequest(string  name, string  sheetName, int?  sparklineIndex, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

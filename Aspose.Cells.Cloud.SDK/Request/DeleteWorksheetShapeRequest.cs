@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="shapeindex">shape index in worksheet shapes.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public DeleteWorksheetShapeRequest(string name, string sheetName, int? shapeindex, string folder = null, string storageName = null)
+            public DeleteWorksheetShapeRequest(string  name, string  sheetName, int?  shapeindex, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

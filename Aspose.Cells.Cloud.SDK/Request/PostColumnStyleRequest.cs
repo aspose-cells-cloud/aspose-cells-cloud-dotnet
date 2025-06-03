@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="style">Represents display style of excel document,such as font,color,alignment,border,etc.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostColumnStyleRequest(string name, string sheetName, int? columnIndex, Style style, string folder = null, string storageName = null)
+            public PostColumnStyleRequest(string  name, string  sheetName, int?  columnIndex, Style  style, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

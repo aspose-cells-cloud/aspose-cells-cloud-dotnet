@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="PostExtractTextRequest"/> class.
             /// </summary>
             /// <param name="extractTextOptions"></param>
-            public PostExtractTextRequest(ExtractTextOptions extractTextOptions)
+            public PostExtractTextRequest(ExtractTextOptions  extractTextOptions)
             {
                 this.extractTextOptions = extractTextOptions;
             }

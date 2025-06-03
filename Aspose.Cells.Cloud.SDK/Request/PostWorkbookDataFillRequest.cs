@@ -54,7 +54,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="password"></param>
             /// <param name="region"></param>
             /// <param name="checkExcelRestriction"></param>
-            public PostWorkbookDataFillRequest(string name, DataFill dataFill, string folder = null, string storageName = null, string password = null, string region = null, bool? checkExcelRestriction = null)
+            public PostWorkbookDataFillRequest(string  name, DataFill  dataFill, string  folder = null, string  storageName = null, string  password = null, string  region = null, bool?  checkExcelRestriction = null)
             {
                 this.name = name;
                 this.dataFill = dataFill;

@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="PostSpecifyWordsCountRequest"/> class.
             /// </summary>
             /// <param name="specifyWordsCountOptions"></param>
-            public PostSpecifyWordsCountRequest(SpecifyWordsCountOptions specifyWordsCountOptions)
+            public PostSpecifyWordsCountRequest(SpecifyWordsCountOptions  specifyWordsCountOptions)
             {
                 this.specifyWordsCountOptions = specifyWordsCountOptions;
             }

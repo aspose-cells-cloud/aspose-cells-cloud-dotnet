@@ -51,7 +51,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="text">Text sample.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostWorkbooksTextSearchRequest(string name, string text, string folder = null, string storageName = null)
+            public PostWorkbooksTextSearchRequest(string  name, string  text, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.text = text;

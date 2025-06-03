@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="format">Autoshape conversion format.</param>
             /// <param name="folder">The document folder.</param>
             /// <param name="storageName">Storage name.</param>
-            public GetWorksheetAutoshapeWithFormatRequest(string name, string sheetName, int? autoshapeNumber, string format = null, string folder = null, string storageName = null)
+            public GetWorksheetAutoshapeWithFormatRequest(string  name, string  sheetName, int?  autoshapeNumber, string  format = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

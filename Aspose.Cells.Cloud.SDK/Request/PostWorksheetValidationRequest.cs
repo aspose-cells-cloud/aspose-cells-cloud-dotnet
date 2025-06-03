@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="validation">Validation description.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostWorksheetValidationRequest(string name, string sheetName, int? validationIndex, Validation validation, string folder = null, string storageName = null)
+            public PostWorksheetValidationRequest(string  name, string  sheetName, int?  validationIndex, Validation  validation, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

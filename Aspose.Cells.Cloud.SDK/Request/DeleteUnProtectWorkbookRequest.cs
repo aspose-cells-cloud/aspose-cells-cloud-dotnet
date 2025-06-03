@@ -51,7 +51,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="password">Protection settings, only password can be specified.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public DeleteUnProtectWorkbookRequest(string name, string password, string folder = null, string storageName = null)
+            public DeleteUnProtectWorkbookRequest(string  name, string  password, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.password = password;

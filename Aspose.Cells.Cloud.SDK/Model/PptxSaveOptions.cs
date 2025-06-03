@@ -35,22 +35,22 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the options of saving pptx file.
+    /// PptxSaveOptions.
     /// </summary>
     public class PptxSaveOptions : PaginatedSaveOptions
     {
         /// <summary>
-        /// Ignore hidden rows
+        /// Gets or sets IgnoreHiddenRows.
         /// </summary>
         public virtual bool? IgnoreHiddenRows { get; set; }
 
         /// <summary>
-        /// Adjust font size for row type
+        /// Gets or sets AdjustFontSizeForRowType.
         /// </summary>
         public virtual string AdjustFontSizeForRowType { get; set; }
 
         /// <summary>
-        /// Gets and sets the display type when exporting to PowerPoint. The default exporting type is working as printing.
+        /// Gets or sets ExportViewType.
         /// </summary>
         public virtual string ExportViewType { get; set; }
 

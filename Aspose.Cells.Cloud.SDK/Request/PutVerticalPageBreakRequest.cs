@@ -56,7 +56,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="endRow">End row index, zero based.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PutVerticalPageBreakRequest(string name, string sheetName, string cellname = null, int? column = null, int? row = null, int? startRow = null, int? endRow = null, string folder = null, string storageName = null)
+            public PutVerticalPageBreakRequest(string  name, string  sheetName, string  cellname = null, int?  column = null, int?  row = null, int?  startRow = null, int?  endRow = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

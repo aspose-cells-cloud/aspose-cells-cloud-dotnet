@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="totalColumns">Number of columns to be operated.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostHideWorksheetColumnsRequest(string name, string sheetName, int? startColumn, int? totalColumns, string folder = null, string storageName = null)
+            public PostHideWorksheetColumnsRequest(string  name, string  sheetName, int?  startColumn, int?  totalColumns, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

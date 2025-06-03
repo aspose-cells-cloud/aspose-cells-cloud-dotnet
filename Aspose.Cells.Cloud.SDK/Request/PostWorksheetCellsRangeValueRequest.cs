@@ -55,7 +55,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="setStyle">True: set the number format to cell's style when converting to other data type.</param>
             /// <param name="folder">Original workbook folder.</param>
             /// <param name="storageName">Storage name.</param>
-            public PostWorksheetCellsRangeValueRequest(string name, string sheetName, Range range, string value, bool? isConverted = null, bool? setStyle = null, string folder = null, string storageName = null)
+            public PostWorksheetCellsRangeValueRequest(string  name, string  sheetName, Range  range, string  value, bool?  isConverted = null, bool?  setStyle = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

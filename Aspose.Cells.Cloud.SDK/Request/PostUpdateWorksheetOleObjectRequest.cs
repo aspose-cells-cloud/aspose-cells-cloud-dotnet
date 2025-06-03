@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="ole">Ole Object description.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostUpdateWorksheetOleObjectRequest(string name, string sheetName, int? oleObjectIndex, OleObject ole, string folder = null, string storageName = null)
+            public PostUpdateWorksheetOleObjectRequest(string  name, string  sheetName, int?  oleObjectIndex, OleObject  ole, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

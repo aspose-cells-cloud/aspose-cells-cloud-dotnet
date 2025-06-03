@@ -54,7 +54,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="newsheetname"></param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PutInsertNewWorksheetRequest(string name, string sheetName, int? index, string sheettype, string newsheetname = null, string folder = null, string storageName = null)
+            public PutInsertNewWorksheetRequest(string  name, string  sheetName, int?  index, string  sheettype, string  newsheetname = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

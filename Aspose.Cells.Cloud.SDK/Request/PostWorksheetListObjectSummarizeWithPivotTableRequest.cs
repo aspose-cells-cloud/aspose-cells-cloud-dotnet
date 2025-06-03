@@ -54,7 +54,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="createPivotTableRequest">Create pivot table request.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostWorksheetListObjectSummarizeWithPivotTableRequest(string name, string sheetName, int? listObjectIndex, string destsheetName, CreatePivotTableRequest createPivotTableRequest, string folder = null, string storageName = null)
+            public PostWorksheetListObjectSummarizeWithPivotTableRequest(string  name, string  sheetName, int?  listObjectIndex, string  destsheetName, CreatePivotTableRequest  createPivotTableRequest, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

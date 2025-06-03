@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="PostDataTransformationRequest"/> class.
             /// </summary>
             /// <param name="dataTransformationRequest"></param>
-            public PostDataTransformationRequest(DataTransformationRequest dataTransformationRequest)
+            public PostDataTransformationRequest(DataTransformationRequest  dataTransformationRequest)
             {
                 this.dataTransformationRequest = dataTransformationRequest;
             }

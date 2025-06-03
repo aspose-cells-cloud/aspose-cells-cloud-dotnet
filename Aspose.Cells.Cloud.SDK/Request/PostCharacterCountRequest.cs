@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="PostCharacterCountRequest"/> class.
             /// </summary>
             /// <param name="characterCountOptions"></param>
-            public PostCharacterCountRequest(CharacterCountOptions characterCountOptions)
+            public PostCharacterCountRequest(CharacterCountOptions  characterCountOptions)
             {
                 this.characterCountOptions = characterCountOptions;
             }

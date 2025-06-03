@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="PostBatchSplitRequest"/> class.
             /// </summary>
             /// <param name="batchSplitRequest">BatchSplitRequest Batch splitting file request.  </param>
-            public PostBatchSplitRequest(BatchSplitRequest batchSplitRequest)
+            public PostBatchSplitRequest(BatchSplitRequest  batchSplitRequest)
             {
                 this.batchSplitRequest = batchSplitRequest;
             }

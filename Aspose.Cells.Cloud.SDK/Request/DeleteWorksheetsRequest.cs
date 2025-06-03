@@ -51,7 +51,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="matchCondition"></param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public DeleteWorksheetsRequest(string name, MatchConditionRequest matchCondition = null, string folder = null, string storageName = null)
+            public DeleteWorksheetsRequest(string  name, MatchConditionRequest  matchCondition = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.matchCondition = matchCondition;

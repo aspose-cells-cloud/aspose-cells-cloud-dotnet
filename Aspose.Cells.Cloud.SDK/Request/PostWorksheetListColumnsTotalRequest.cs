@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="tableTotalRequests">Represents table column description.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostWorksheetListColumnsTotalRequest(string name, string sheetName, int? listObjectIndex, IList<TableTotalRequest> tableTotalRequests, string folder = null, string storageName = null)
+            public PostWorksheetListColumnsTotalRequest(string  name, string  sheetName, int?  listObjectIndex, IList<TableTotalRequest>  tableTotalRequests, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

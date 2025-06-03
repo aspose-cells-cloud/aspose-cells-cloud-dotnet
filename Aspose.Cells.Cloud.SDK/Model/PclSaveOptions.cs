@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents the options of saving dbf file.
+    /// PclSaveOptions.
     /// </summary>
     public class PclSaveOptions : SaveOptions
     {
         /// <summary>
-        /// 
+        /// Gets or sets fontFullName.
         /// </summary>
         public virtual string fontFullName { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets fontPclName.
         /// </summary>
         public virtual string fontPclName { get; set; }
 

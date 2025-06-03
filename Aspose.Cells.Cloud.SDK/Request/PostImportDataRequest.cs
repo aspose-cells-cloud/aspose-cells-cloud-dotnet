@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="storageName">The storage name where the file is situated.</param>
             /// <param name="region">The regional settings for workbook.</param>
             /// <param name="fontsLocation">Use Custom fonts.</param>
-            public PostImportDataRequest(string name, ImportOption importOption = null, string folder = null, string storageName = null, string region = null, string fontsLocation = null)
+            public PostImportDataRequest(string  name, ImportOption  importOption = null, string  folder = null, string  storageName = null, string  region = null, string  fontsLocation = null)
             {
                 this.name = name;
                 this.importOption = importOption;

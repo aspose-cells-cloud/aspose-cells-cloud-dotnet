@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="options">Calculation Options</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostCellCalculateRequest(string name, string sheetName, string cellName, CalculationOptions options = null, string folder = null, string storageName = null)
+            public PostCellCalculateRequest(string  name, string  sheetName, string  cellName, CalculationOptions  options = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

@@ -49,24 +49,23 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         /// <param name="file">File to upload</param>
         /// <param name="password">The password needed to open an Excel file.</param>
-                
         public PostUnlockRequest(string localPath ,  string password  )
         {
             this.LocalPath = localPath ;
             this.password = password;
         }
         [System.Obsolete]
-        public PostUnlockRequest(IDictionary<string, System.IO.Stream> file, string password)
+        public PostUnlockRequest(IDictionary<string, System.IO.Stream>  file, string  password)
         {
             this.File = file;
             this.password = password;
-        }           
+        }
         
         /// <summary>
         /// File to upload
         /// </summary>
-        public IDictionary<string, System.IO.Stream> File { get; set; }
-        public string LocalPath { get; set; }
+            public string LocalPath { get; set; }
+            public IDictionary<string, System.IO.Stream> File { get; set; }      
 
 
         /// <summary>
@@ -92,7 +91,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
             // verify the required parameter 'file' is set
-            if (  this.File == null  && string.IsNullOrEmpty(this.LocalPath)   )
+            if (   string.IsNullOrEmpty(this.LocalPath) ||  this.File == null    )
             {
                 throw new ApiException(400, "Missing required parameter 'file' when calling PostUnlock");
             }
@@ -118,16 +117,18 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 }
             }
 
-             if (!string.IsNullOrEmpty(LocalPath ) && System.IO.File.Exists(LocalPath )) {
+            if (!string.IsNullOrEmpty(LocalPath ) && System.IO.File.Exists(LocalPath )) {
                         System.IO.FileInfo fileInfo = new System.IO.FileInfo(LocalPath);
                         localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(LocalPath), fileInfo.Name));
-                }
+               }
+
             if (File != null){
                     foreach (KeyValuePair<string, System.IO.Stream> keyValueFileParam in File )
                     {
                         localVarFileParams.Add(keyValueFileParam.Key, UrlHelper.ToFileInfo(keyValueFileParam.Value, keyValueFileParam.Key));
                     }
             }
+
 
             return UrlHelper.PrepareRequest(path, "POST", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

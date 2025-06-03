@@ -51,7 +51,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="sheetName">The worksheet name.</param>
             /// <param name="folder">Document's folder.</param>
             /// <param name="storageName">Storage name.</param>
-            public GetWorksheetAutoshapesRequest(string name, string sheetName, string folder = null, string storageName = null)
+            public GetWorksheetAutoshapesRequest(string  name, string  sheetName, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

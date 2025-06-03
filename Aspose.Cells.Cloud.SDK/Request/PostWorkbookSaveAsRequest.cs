@@ -61,7 +61,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="pageTallFitOnPerSheet">The page tall fit on worksheet.</param>
             /// <param name="onePagePerSheet"></param>
             /// <param name="fontsLocation">Use Custom fonts.</param>
-            public PostWorkbookSaveAsRequest(string name, string newfilename, SaveOptions saveOptions = null, bool? isAutoFitRows = null, bool? isAutoFitColumns = null, string folder = null, string storageName = null, string outStorageName = null, bool? checkExcelRestriction = null, string region = null, bool? pageWideFitOnPerSheet = null, bool? pageTallFitOnPerSheet = null, bool? onePagePerSheet = null, string fontsLocation = null)
+            public PostWorkbookSaveAsRequest(string  name, string  newfilename, SaveOptions  saveOptions = null, bool?  isAutoFitRows = null, bool?  isAutoFitColumns = null, string  folder = null, string  storageName = null, string  outStorageName = null, bool?  checkExcelRestriction = null, string  region = null, bool?  pageWideFitOnPerSheet = null, bool?  pageTallFitOnPerSheet = null, bool?  onePagePerSheet = null, string  fontsLocation = null)
             {
                 this.name = name;
                 this.newfilename = newfilename;

@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="shift">Represent the shift options when deleting a range of cells(Down/Left/None/Right/Up).</param>
             /// <param name="folder">Original workbook folder.</param>
             /// <param name="storageName">Storage name.</param>
-            public PutWorksheetCellsRangeRequest(string name, string sheetName, string range, string shift, string folder = null, string storageName = null)
+            public PutWorksheetCellsRangeRequest(string  name, string  sheetName, string  range, string  shift, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

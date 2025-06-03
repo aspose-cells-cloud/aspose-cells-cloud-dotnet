@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="index">Removes the vertical page break element at a specified name. Element index, zero based.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public DeleteVerticalPageBreakRequest(string name, string sheetName, int? index, string folder = null, string storageName = null)
+            public DeleteVerticalPageBreakRequest(string  name, string  sheetName, int?  index, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

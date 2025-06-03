@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="pageSetup">PageSetup Page Setup description.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostPageSetupRequest(string name, string sheetName, PageSetup pageSetup, string folder = null, string storageName = null)
+            public PostPageSetupRequest(string  name, string  sheetName, PageSetup  pageSetup, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

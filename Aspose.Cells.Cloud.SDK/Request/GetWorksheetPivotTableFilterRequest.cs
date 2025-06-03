@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="filterIndex">The pivot filter index of PivotTable.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public GetWorksheetPivotTableFilterRequest(string name, string sheetName, int? pivotTableIndex, int? filterIndex, string folder = null, string storageName = null)
+            public GetWorksheetPivotTableFilterRequest(string  name, string  sheetName, int?  pivotTableIndex, int?  filterIndex, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

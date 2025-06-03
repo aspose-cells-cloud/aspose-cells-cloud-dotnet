@@ -58,7 +58,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
             /// <param name="outStorageName"></param>
-            public PostWorkbookSplitRequest(string name, string format = null, string outFolder = null, int? from = null, int? to = null, int? horizontalResolution = null, int? verticalResolution = null, string splitNameRule = null, string folder = null, string storageName = null, string outStorageName = null)
+            public PostWorkbookSplitRequest(string  name, string  format = null, string  outFolder = null, int?  from = null, int?  to = null, int?  horizontalResolution = null, int?  verticalResolution = null, string  splitNameRule = null, string  folder = null, string  storageName = null, string  outStorageName = null)
             {
                 this.name = name;
                 this.format = format;

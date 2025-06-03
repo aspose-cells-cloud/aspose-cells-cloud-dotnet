@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="PostRemoveDuplicatesRequest"/> class.
             /// </summary>
             /// <param name="removeDuplicatesOptions"></param>
-            public PostRemoveDuplicatesRequest(RemoveDuplicatesOptions removeDuplicatesOptions)
+            public PostRemoveDuplicatesRequest(RemoveDuplicatesOptions  removeDuplicatesOptions)
             {
                 this.removeDuplicatesOptions = removeDuplicatesOptions;
             }

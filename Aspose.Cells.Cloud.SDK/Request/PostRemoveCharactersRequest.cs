@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="PostRemoveCharactersRequest"/> class.
             /// </summary>
             /// <param name="removeCharactersOptions"></param>
-            public PostRemoveCharactersRequest(RemoveCharactersOptions removeCharactersOptions)
+            public PostRemoveCharactersRequest(RemoveCharactersOptions  removeCharactersOptions)
             {
                 this.removeCharactersOptions = removeCharactersOptions;
             }

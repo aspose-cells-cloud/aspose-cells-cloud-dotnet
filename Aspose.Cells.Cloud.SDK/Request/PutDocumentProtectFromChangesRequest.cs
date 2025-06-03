@@ -51,7 +51,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="password">The password needed to open an Excel file.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PutDocumentProtectFromChangesRequest(string name, PasswordRequest password, string folder = null, string storageName = null)
+            public PutDocumentProtectFromChangesRequest(string  name, PasswordRequest  password, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.password = password;

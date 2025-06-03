@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="StorageExistsRequest"/> class.
             /// </summary>
             /// <param name="storageName"></param>
-            public StorageExistsRequest(string storageName)
+            public StorageExistsRequest(string  storageName)
             {
                 this.storageName = storageName;
             }

@@ -35,27 +35,27 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents options of saving .json file.
+    /// JsonSaveOptions.
     /// </summary>
     public class JsonSaveOptions : SaveOptions
     {
         /// <summary>
-        /// Gets or sets the exporting range.
+        /// Gets or sets ExportArea.
         /// </summary>
         public virtual CellArea ExportArea { get; set; }
 
         /// <summary>
-        /// Indicates whether the range contains header row.
+        /// Gets or sets HasHeaderRow.
         /// </summary>
         public virtual bool? HasHeaderRow { get; set; }
 
         /// <summary>
-        /// Exports the string value of the cells to json.
+        /// Gets or sets ExportAsString.
         /// </summary>
         public virtual bool? ExportAsString { get; set; }
 
         /// <summary>
-        /// Indicates the indent.
+        /// Gets or sets Indent.
         /// </summary>
         public virtual string Indent { get; set; }
 

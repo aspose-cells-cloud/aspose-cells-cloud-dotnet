@@ -35,28 +35,27 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    ///            Represent an area of cells.
-    ///            
+    /// CellArea.
     /// </summary>
     public class CellArea
     {
         /// <summary>
-        /// The end column index.
+        /// Gets or sets EndColumn.
         /// </summary>
         public virtual int? EndColumn { get; set; }
 
         /// <summary>
-        /// The end row index.
+        /// Gets or sets EndRow.
         /// </summary>
         public virtual int? EndRow { get; set; }
 
         /// <summary>
-        /// The start column index.
+        /// Gets or sets StartColumn.
         /// </summary>
         public virtual int? StartColumn { get; set; }
 
         /// <summary>
-        /// The start row index.
+        /// Gets or sets StartRow.
         /// </summary>
         public virtual int? StartRow { get; set; }
 

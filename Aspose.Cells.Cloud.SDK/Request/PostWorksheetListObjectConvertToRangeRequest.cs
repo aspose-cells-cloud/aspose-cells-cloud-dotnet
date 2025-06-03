@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="listObjectIndex">List object index.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostWorksheetListObjectConvertToRangeRequest(string name, string sheetName, int? listObjectIndex, string folder = null, string storageName = null)
+            public PostWorksheetListObjectConvertToRangeRequest(string  name, string  sheetName, int?  listObjectIndex, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

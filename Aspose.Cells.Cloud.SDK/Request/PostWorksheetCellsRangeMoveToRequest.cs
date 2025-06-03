@@ -54,7 +54,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="destColumn">The start column of the dest range.</param>
             /// <param name="folder">Original workbook folder.</param>
             /// <param name="storageName">Storage name.</param>
-            public PostWorksheetCellsRangeMoveToRequest(string name, string sheetName, Range range, int? destRow, int? destColumn, string folder = null, string storageName = null)
+            public PostWorksheetCellsRangeMoveToRequest(string  name, string  sheetName, Range  range, int?  destRow, int?  destColumn, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

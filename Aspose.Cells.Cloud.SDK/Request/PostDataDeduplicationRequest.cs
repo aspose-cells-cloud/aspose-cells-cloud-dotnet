@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="PostDataDeduplicationRequest"/> class.
             /// </summary>
             /// <param name="dataDeduplicationRequest"></param>
-            public PostDataDeduplicationRequest(DataDeduplicationRequest dataDeduplicationRequest)
+            public PostDataDeduplicationRequest(DataDeduplicationRequest  dataDeduplicationRequest)
             {
                 this.dataDeduplicationRequest = dataDeduplicationRequest;
             }

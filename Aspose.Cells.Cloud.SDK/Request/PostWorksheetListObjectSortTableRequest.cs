@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="dataSorter">Represents sort order for the data range.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostWorksheetListObjectSortTableRequest(string name, string sheetName, int? listObjectIndex, DataSorter dataSorter, string folder = null, string storageName = null)
+            public PostWorksheetListObjectSortTableRequest(string  name, string  sheetName, int?  listObjectIndex, DataSorter  dataSorter, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

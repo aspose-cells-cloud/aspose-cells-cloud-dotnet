@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="PostDataFillRequest"/> class.
             /// </summary>
             /// <param name="dataFillRequest"></param>
-            public PostDataFillRequest(DataFillRequest dataFillRequest)
+            public PostDataFillRequest(DataFillRequest  dataFillRequest)
             {
                 this.dataFillRequest = dataFillRequest;
             }

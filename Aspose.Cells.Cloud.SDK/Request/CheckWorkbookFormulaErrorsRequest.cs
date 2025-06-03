@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="CheckWorkbookFormulaErrorsRequest"/> class.
             /// </summary>
             /// <param name="formulaErrorOptions"></param>
-            public CheckWorkbookFormulaErrorsRequest(CheckFormulaErrorOptions formulaErrorOptions)
+            public CheckWorkbookFormulaErrorsRequest(CheckFormulaErrorOptions  formulaErrorOptions)
             {
                 this.formulaErrorOptions = formulaErrorOptions;
             }

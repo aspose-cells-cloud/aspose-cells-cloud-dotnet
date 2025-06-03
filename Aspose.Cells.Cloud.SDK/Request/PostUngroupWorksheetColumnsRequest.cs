@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="lastIndex">The last column index to be operated.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostUngroupWorksheetColumnsRequest(string name, string sheetName, int? firstIndex, int? lastIndex, string folder = null, string storageName = null)
+            public PostUngroupWorksheetColumnsRequest(string  name, string  sheetName, int?  firstIndex, int?  lastIndex, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

@@ -54,7 +54,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="width">Gets and sets the column width in unit of characters.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostUnhideWorksheetColumnsRequest(string name, string sheetName, int? startColumn, int? totalColumns, double? width = null, string folder = null, string storageName = null)
+            public PostUnhideWorksheetColumnsRequest(string  name, string  sheetName, int?  startColumn, int?  totalColumns, double?  width = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

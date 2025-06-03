@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="criteria">The custom criteria.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public DeleteWorksheetFilterRequest(string name, string sheetName, int? fieldIndex, string criteria = null, string folder = null, string storageName = null)
+            public DeleteWorksheetFilterRequest(string  name, string  sheetName, int?  fieldIndex, string  criteria = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

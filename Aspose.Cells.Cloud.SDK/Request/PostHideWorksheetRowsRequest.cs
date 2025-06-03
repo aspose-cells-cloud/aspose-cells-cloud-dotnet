@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="totalRows">Number of rows to be operated.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostHideWorksheetRowsRequest(string name, string sheetName, int? startrow, int? totalRows, string folder = null, string storageName = null)
+            public PostHideWorksheetRowsRequest(string  name, string  sheetName, int?  startrow, int?  totalRows, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

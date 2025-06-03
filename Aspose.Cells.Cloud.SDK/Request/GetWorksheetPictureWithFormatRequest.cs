@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="format">Picture conversion format(PNG/TIFF/JPEG/GIF/EMF/BMP).</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public GetWorksheetPictureWithFormatRequest(string name, string sheetName, int? pictureNumber, string format, string folder = null, string storageName = null)
+            public GetWorksheetPictureWithFormatRequest(string  name, string  sheetName, int?  pictureNumber, string  format, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

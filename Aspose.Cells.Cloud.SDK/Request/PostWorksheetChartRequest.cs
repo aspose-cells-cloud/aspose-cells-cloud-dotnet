@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="chart">Chart Represents a specified chart.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostWorksheetChartRequest(string name, string sheetName, int? chartIndex, Chart chart, string folder = null, string storageName = null)
+            public PostWorksheetChartRequest(string  name, string  sheetName, int?  chartIndex, Chart  chart, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

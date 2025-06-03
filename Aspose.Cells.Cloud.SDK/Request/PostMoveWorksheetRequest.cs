@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="moving">WorksheetMovingRequest with moving parameters.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostMoveWorksheetRequest(string name, string sheetName, WorksheetMovingRequest moving, string folder = null, string storageName = null)
+            public PostMoveWorksheetRequest(string  name, string  sheetName, WorksheetMovingRequest  moving, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

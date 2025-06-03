@@ -35,7 +35,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents options of saving .ods file.
+    /// OdsSaveOptions.
     /// </summary>
     public class OdsSaveOptions : SaveOptions
     {

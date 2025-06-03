@@ -56,7 +56,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="columnCount">Gets the count of columns in the range.</param>
             /// <param name="folder">Original workbook folder.</param>
             /// <param name="storageName">Storage name.</param>
-            public GetWorksheetCellsRangeValueRequest(string name, string sheetName, string namerange = null, int? firstRow = null, int? firstColumn = null, int? rowCount = null, int? columnCount = null, string folder = null, string storageName = null)
+            public GetWorksheetCellsRangeValueRequest(string  name, string  sheetName, string  namerange = null, int?  firstRow = null, int?  firstColumn = null, int?  rowCount = null, int?  columnCount = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

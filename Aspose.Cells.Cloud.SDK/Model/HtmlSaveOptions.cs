@@ -35,223 +35,197 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents options of saving .html file.
+    /// HtmlSaveOptions.
     /// </summary>
     public class HtmlSaveOptions : SaveOptions
     {
         /// <summary>
-        /// Indicates whether exporting page headers.
+        /// Gets or sets ExportPageHeaders.
         /// </summary>
         public virtual bool? ExportPageHeaders { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets ExportPageFooters.
         /// </summary>
         public virtual bool? ExportPageFooters { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets ExportRowColumnHeadings.
         /// </summary>
         public virtual bool? ExportRowColumnHeadings { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets ShowAllSheets.
         /// </summary>
         public virtual bool? ShowAllSheets { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets ImageOptions.
         /// </summary>
         public virtual ImageOrPrintOptions ImageOptions { get; set; }
 
         /// <summary>
-        /// Indicates whether save the html as single file. The default value is false.
+        /// Gets or sets SaveAsSingleFile.
         /// </summary>
         public virtual bool? SaveAsSingleFile { get; set; }
 
         /// <summary>
-        /// Indicates whether save the html as single file. The default value is false.
+        /// Gets or sets ExportHiddenWorksheet.
         /// </summary>
         public virtual bool? ExportHiddenWorksheet { get; set; }
 
         /// <summary>
-        /// Indicating whether exporting the gridlines.The default value is false.
+        /// Gets or sets ExportGridLines.
         /// </summary>
         public virtual bool? ExportGridLines { get; set; }
 
         /// <summary>
-        /// Indicating if html or mht file is presentation preference.The default value is
-        ///              false.if you want to get more beautiful presentation,please set the value to
-        ///                 true.
+        /// Gets or sets PresentationPreference.
         /// </summary>
         public virtual bool? PresentationPreference { get; set; }
 
         /// <summary>
-        /// Gets and sets the prefix of the css name,the default value is "".
+        /// Gets or sets CellCssPrefix.
         /// </summary>
         public virtual string CellCssPrefix { get; set; }
 
         /// <summary>
-        /// Gets and sets the prefix of the type css name such as tr,col,td and so on, they
-        ///                 are contained in the table element which has the specific TableCssId attribute.
-        ///                 The default value is "".
+        /// Gets or sets TableCssId.
         /// </summary>
         public virtual string TableCssId { get; set; }
 
         /// <summary>
-        /// Indicating whether using full path link in sheet00x.htm,filelist.xml and tabstrip.htm.
-        ///                 The default value is false.
+        /// Gets or sets IsFullPathLink.
         /// </summary>
         public virtual bool? IsFullPathLink { get; set; }
 
         /// <summary>
-        /// Indicating whether export the worksheet css separately.The default value is false.
+        /// Gets or sets ExportWorksheetCSSSeparately.
         /// </summary>
         public virtual bool? ExportWorksheetCSSSeparately { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets ExportSimilarBorderStyle.
         /// </summary>
         public virtual bool? ExportSimilarBorderStyle { get; set; }
 
         /// <summary>
-        /// Indicates whether merging empty TD element forcely when exporting file to html.
-        ///                 The size of html file will be reduced significantly after setting value to true.
-        ///                 The default value is false. If you want to import the html file to excel or export
-        ///                 perfect grid lines when saving file to html, please keep the default value.
+        /// Gets or sets MergeEmptyTdForcely.
         /// </summary>
         public virtual bool? MergeEmptyTdForcely { get; set; }
 
         /// <summary>
-        /// Indicates whether exporting excel coordinate of nonblank cells when saving file
-        ///                 to html. The default value is false. If you want to import the output html to
-        ///                 excel, please keep the default value.
+        /// Gets or sets ExportCellCoordinate.
         /// </summary>
         public virtual bool? ExportCellCoordinate { get; set; }
 
         /// <summary>
-        /// Indicates whether exporting extra headings when the length of text is longer
-        ///                 than max display column. The default value is false. If you want to import the
-        ///                 html file to excel, please keep the default value.
+        /// Gets or sets ExportExtraHeadings.
         /// </summary>
         public virtual bool? ExportExtraHeadings { get; set; }
 
         /// <summary>
-        /// Indicates whether exporting headings when saving file to html.The default value
-        ///                 is false. If you want to import the html file to excel, please keep the default
-        ///                 value.
+        /// Gets or sets ExportHeadings.
         /// </summary>
         public virtual bool? ExportHeadings { get; set; }
 
         /// <summary>
-        /// Indicates whether exporting formula when saving file to html. The default value
-        ///                 is true. If you want to import the output html to excel, please keep the default
-        ///                 value
+        /// Gets or sets ExportFormula.
         /// </summary>
         public virtual bool? ExportFormula { get; set; }
 
         /// <summary>
-        /// Indicates whether adding tooltip text when the data can't be fully displayed.
+        /// Gets or sets AddTooltipText.
         /// </summary>
         public virtual bool? AddTooltipText { get; set; }
 
         /// <summary>
-        /// Indicating whether exporting bogus bottom row data. The default value is true.If you want to import the html or mht file to excel, please keep the default value.
+        /// Gets or sets ExportBogusRowData.
         /// </summary>
         public virtual bool? ExportBogusRowData { get; set; }
 
         /// <summary>
-        /// Indicating whether excluding unused styles.The default value is false.If you  want to import the html or mht file to excel, please keep the default value.
+        /// Gets or sets ExcludeUnusedStyles.
         /// </summary>
         public virtual bool? ExcludeUnusedStyles { get; set; }
 
         /// <summary>
-        /// Indicating whether exporting document properties.The default value is true.If  you want to import the html or mht file to excel, please keep the default value.
+        /// Gets or sets ExportDocumentProperties.
         /// </summary>
         public virtual bool? ExportDocumentProperties { get; set; }
 
         /// <summary>
-        /// Indicating whether exporting worksheet properties.The default value is true.If  you want to import the html or mht file to excel, please keep the default value.
+        /// Gets or sets ExportWorksheetProperties.
         /// </summary>
         public virtual bool? ExportWorksheetProperties { get; set; }
 
         /// <summary>
-        /// Indicating whether exporting workbook properties.The default value is true.If  you want to import the html or mht file to excel, please keep the default value.
+        /// Gets or sets ExportWorkbookProperties.
         /// </summary>
         public virtual bool? ExportWorkbookProperties { get; set; }
 
         /// <summary>
-        /// Indicating whether exporting frame scripts and document properties. The default  value is true.If you want to import the html or mht file to excel, please keep the default value.
+        /// Gets or sets ExportFrameScriptsAndProperties.
         /// </summary>
         public virtual bool? ExportFrameScriptsAndProperties { get; set; }
 
         /// <summary>
-        /// The directory that the attached files will be saved to.  Only for saving to html stream.
+        /// Gets or sets AttachedFilesDirectory.
         /// </summary>
         public virtual string AttachedFilesDirectory { get; set; }
 
         /// <summary>
-        /// Specify the Url prefix of attached files such as image in the html file. Only for saving to html stream.
+        /// Gets or sets AttachedFilesUrlPrefix.
         /// </summary>
         public virtual string AttachedFilesUrlPrefix { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets Encoding.
         /// </summary>
         public virtual string Encoding { get; set; }
 
         /// <summary>
-        /// Indicates if exporting the whole workbook to html file.
+        /// Gets or sets ExportActiveWorksheetOnly.
         /// </summary>
         public virtual bool? ExportActiveWorksheetOnly { get; set; }
 
         /// <summary>
-        /// Get or set the format of chart image before exporting
+        /// Gets or sets ExportChartImageFormat.
         /// </summary>
         public virtual string ExportChartImageFormat { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets ExportImagesAsBase64.
         /// </summary>
         public virtual bool? ExportImagesAsBase64 { get; set; }
 
         /// <summary>
-        /// Hidden column(the width of this column is 0) in excel,before save this into
-        ///                html format, if HtmlHiddenColDisplayType is "Remove",the hidden column would
-        ///                ont been output, if the value is "Hidden", the column would been output,but was hidden,the default value is "Hidden"
+        /// Gets or sets HiddenColDisplayType.
         /// </summary>
         public virtual string HiddenColDisplayType { get; set; }
 
         /// <summary>
-        /// Hidden row(the height of this row is 0) in excel,before save this into html
-        ///                format, if HtmlHiddenRowDisplayType is "Remove",the hidden row would ont
-        ///                been output, if the value is "Hidden", the row would been output,but was
-        ///                hidden,the default value is "Hidden"
+        /// Gets or sets HiddenRowDisplayType.
         /// </summary>
         public virtual string HiddenRowDisplayType { get; set; }
 
         /// <summary>
-        /// Indicates if a cross-cell string will be displayed in the same way as MS
-        ///                Excel when saving an Excel file in html format.  By default the value is
-        ///                Default, so, for cross-cell strings, there is little difference between the
-        ///                html files created by Aspose.Cells and MS Excel. But the performance for
-        ///                creating large html files,setting the value to Cross would be several times
-        ///                faster than setting it to Default or Fit2Cell.
+        /// Gets or sets HtmlCrossStringType.
         /// </summary>
         public virtual string HtmlCrossStringType { get; set; }
 
         /// <summary>
-        /// Indicates if export image files to temp directory.  Only for saving to html  stream.
+        /// Gets or sets IsExpImageToTempDir.
         /// </summary>
         public virtual bool? IsExpImageToTempDir { get; set; }
 
         /// <summary>
-        /// The title of the html page.  Only for saving to html stream.
+        /// Gets or sets PageTitle.
         /// </summary>
         public virtual string PageTitle { get; set; }
 
         /// <summary>
-        /// Parse html tag in cell,like ,as cell value,or as html tag,default is true
+        /// Gets or sets ParseHtmlTagInCell.
         /// </summary>
         public virtual bool? ParseHtmlTagInCell { get; set; }
 

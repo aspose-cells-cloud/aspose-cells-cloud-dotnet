@@ -55,7 +55,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
             /// <param name="rowCount"></param>
-            public PostAutofitWorksheetRowRequest(string name, string sheetName, int? rowIndex, int? firstColumn = null, int? lastColumn = null, string folder = null, string storageName = null, int? rowCount = null)
+            public PostAutofitWorksheetRowRequest(string  name, string  sheetName, int?  rowIndex, int?  firstColumn = null, int?  lastColumn = null, string  folder = null, string  storageName = null, int?  rowCount = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

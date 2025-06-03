@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="axis">Axis </param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostChartCategoryAxisRequest(string name, string sheetName, int? chartIndex, Axis axis, string folder = null, string storageName = null)
+            public PostChartCategoryAxisRequest(string  name, string  sheetName, int?  chartIndex, Axis  axis, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

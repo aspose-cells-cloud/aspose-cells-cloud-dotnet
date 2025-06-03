@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="protectParameter">WorksheetResponse with protection settings. Only password is used here.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public DeleteUnprotectWorksheetRequest(string name, string sheetName, ProtectSheetParameter protectParameter, string folder = null, string storageName = null)
+            public DeleteUnprotectWorksheetRequest(string  name, string  sheetName, ProtectSheetParameter  protectParameter, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

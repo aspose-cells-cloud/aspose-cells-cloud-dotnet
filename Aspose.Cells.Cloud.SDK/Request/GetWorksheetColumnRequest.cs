@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="columnIndex">The column index.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public GetWorksheetColumnRequest(string name, string sheetName, int? columnIndex, string folder = null, string storageName = null)
+            public GetWorksheetColumnRequest(string  name, string  sheetName, int?  columnIndex, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

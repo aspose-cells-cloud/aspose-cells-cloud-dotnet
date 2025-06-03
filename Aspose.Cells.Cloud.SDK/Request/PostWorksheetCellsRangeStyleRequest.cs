@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="rangeOperate">RangeSetStyleRequest Range Set Style Request </param>
             /// <param name="folder">Original workbook folder.</param>
             /// <param name="storageName">Storage name.</param>
-            public PostWorksheetCellsRangeStyleRequest(string name, string sheetName, RangeSetStyleRequest rangeOperate, string folder = null, string storageName = null)
+            public PostWorksheetCellsRangeStyleRequest(string  name, string  sheetName, RangeSetStyleRequest  rangeOperate, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

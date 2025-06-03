@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="pivotTableIndex">Gets the PivotTable report by index.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostWorksheetPivotTableCalculateRequest(string name, string sheetName, int? pivotTableIndex, string folder = null, string storageName = null)
+            public PostWorksheetPivotTableCalculateRequest(string  name, string  sheetName, int?  pivotTableIndex, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="cellArea">Adds a conditional formatted cell range.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PutWorksheetConditionalFormattingRequest(string name, string sheetName, FormatCondition formatcondition, string cellArea, string folder = null, string storageName = null)
+            public PutWorksheetConditionalFormattingRequest(string  name, string  sheetName, FormatCondition  formatcondition, string  cellArea, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

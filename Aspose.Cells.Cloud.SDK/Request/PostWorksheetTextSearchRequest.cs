@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="text">Text to search.</param>
             /// <param name="folder">Original workbook folder.</param>
             /// <param name="storageName">Storage name.</param>
-            public PostWorksheetTextSearchRequest(string name, string sheetName, string text, string folder = null, string storageName = null)
+            public PostWorksheetTextSearchRequest(string  name, string  sheetName, string  text, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

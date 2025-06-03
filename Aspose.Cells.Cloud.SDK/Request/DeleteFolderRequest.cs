@@ -50,7 +50,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="path"></param>
             /// <param name="storageName"></param>
             /// <param name="recursive"></param>
-            public DeleteFolderRequest(string path, string storageName = null, bool? recursive = null)
+            public DeleteFolderRequest(string  path, string  storageName = null, bool?  recursive = null)
             {
                 this.path = path;
                 this.storageName = storageName;

@@ -55,7 +55,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="totalColumns">The total columns number.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostWorksheetUnmergeRequest(string name, string sheetName, int? startRow, int? startColumn, int? totalRows, int? totalColumns, string folder = null, string storageName = null)
+            public PostWorksheetUnmergeRequest(string  name, string  sheetName, int?  startRow, int?  startColumn, int?  totalRows, int?  totalColumns, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

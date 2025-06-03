@@ -50,7 +50,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="path"></param>
             /// <param name="storageName"></param>
             /// <param name="versionId"></param>
-            public ObjectExistsRequest(string path, string storageName = null, string versionId = null)
+            public ObjectExistsRequest(string  path, string  storageName = null, string  versionId = null)
             {
                 this.path = path;
                 this.storageName = storageName;

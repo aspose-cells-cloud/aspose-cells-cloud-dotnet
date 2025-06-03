@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="picturePath"></param>
             /// <param name="folder"></param>
             /// <param name="storageName"></param>
-            public AddPictureInCellRequest(string name, string sheetName, string cellName, string picturePath, string folder = null, string storageName = null)
+            public AddPictureInCellRequest(string  name, string  sheetName, string  cellName, string  picturePath, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

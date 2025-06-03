@@ -56,7 +56,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="column">The source column index.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostCopyCellIntoCellRequest(string name, string destCellName, string sheetName, string worksheet, string cellname = null, int? row = null, int? column = null, string folder = null, string storageName = null)
+            public PostCopyCellIntoCellRequest(string  name, string  destCellName, string  sheetName, string  worksheet, string  cellname = null, int?  row = null, int?  column = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.destCellName = destCellName;

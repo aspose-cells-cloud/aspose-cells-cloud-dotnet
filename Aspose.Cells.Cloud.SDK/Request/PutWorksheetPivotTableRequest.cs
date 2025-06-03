@@ -55,7 +55,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="tableName">The name of the new PivotTable.</param>
             /// <param name="useSameSource">Indicates whether using same data source when another existing PivotTable has used this data source. If the property is true, it will save memory.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PutWorksheetPivotTableRequest(string name, string sheetName, string folder = null, string sourceData = null, string destCellName = null, string tableName = null, bool? useSameSource = null, string storageName = null)
+            public PutWorksheetPivotTableRequest(string  name, string  sheetName, string  folder = null, string  sourceData = null, string  destCellName = null, string  tableName = null, bool?  useSameSource = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

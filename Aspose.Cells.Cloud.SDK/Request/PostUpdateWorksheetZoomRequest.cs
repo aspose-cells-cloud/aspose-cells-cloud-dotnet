@@ -52,7 +52,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="value">Represents the scaling factor in percentage. It should be between 10 and 400.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostUpdateWorksheetZoomRequest(string name, string sheetName, int? value, string folder = null, string storageName = null)
+            public PostUpdateWorksheetZoomRequest(string  name, string  sheetName, int?  value, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

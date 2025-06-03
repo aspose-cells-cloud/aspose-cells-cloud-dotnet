@@ -50,7 +50,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="name"></param>
             /// <param name="folder"></param>
             /// <param name="storageName"></param>
-            public GetAllStylesRequest(string name, string folder = null, string storageName = null)
+            public GetAllStylesRequest(string  name, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.folder = folder;

@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="legend"></param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PostWorksheetChartLegendRequest(string name, string sheetName, int? chartIndex, Legend legend, string folder = null, string storageName = null)
+            public PostWorksheetChartLegendRequest(string  name, string  sheetName, int?  chartIndex, Legend  legend, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

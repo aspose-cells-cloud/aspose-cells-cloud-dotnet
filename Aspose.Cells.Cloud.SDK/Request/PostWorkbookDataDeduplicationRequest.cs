@@ -54,7 +54,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="password"></param>
             /// <param name="region"></param>
             /// <param name="checkExcelRestriction"></param>
-            public PostWorkbookDataDeduplicationRequest(string name, DeduplicationRegion deduplicationRegion, string folder = null, string storageName = null, string password = null, string region = null, bool? checkExcelRestriction = null)
+            public PostWorkbookDataDeduplicationRequest(string  name, DeduplicationRegion  deduplicationRegion, string  folder = null, string  storageName = null, string  password = null, string  region = null, bool?  checkExcelRestriction = null)
             {
                 this.name = name;
                 this.deduplicationRegion = deduplicationRegion;

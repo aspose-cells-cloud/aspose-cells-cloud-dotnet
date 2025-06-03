@@ -53,7 +53,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="sheettype">Specifies the worksheet type(VB/Worksheet/Chart/BIFF4Macro/InternationalMacro/Other/Dialog).</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PutAddNewWorksheetRequest(string name, string sheetName, int? position = null, string sheettype = null, string folder = null, string storageName = null)
+            public PutAddNewWorksheetRequest(string  name, string  sheetName, int?  position = null, string  sheettype = null, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

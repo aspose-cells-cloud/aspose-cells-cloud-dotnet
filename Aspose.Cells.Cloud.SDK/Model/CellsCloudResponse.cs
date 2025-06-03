@@ -35,18 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    ///            Represents the CellsCloud Response.
-    ///            
+    /// CellsCloudResponse.
     /// </summary>
     public class CellsCloudResponse
     {
         /// <summary>
-        /// The property "Code" allows for accessing and modifying the HTTP status code of the response.
+        /// Gets or sets Code.
         /// </summary>
         public virtual int? Code { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets Status.
         /// </summary>
         public virtual string Status { get; set; }
 

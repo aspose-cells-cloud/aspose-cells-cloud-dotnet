@@ -48,7 +48,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// Initializes a new instance of the <see cref="PostSplitTextRequest"/> class.
             /// </summary>
             /// <param name="splitTextOptions"></param>
-            public PostSplitTextRequest(SplitTextOptions splitTextOptions)
+            public PostSplitTextRequest(SplitTextOptions  splitTextOptions)
             {
                 this.splitTextOptions = splitTextOptions;
             }

@@ -56,7 +56,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="outStorageName">The storage name where the output file is situated.</param>
             /// <param name="checkExcelRestriction">Whether check restriction of excel file when user modify cells related objects.</param>
             /// <param name="region">The regional settings for workbook.</param>
-            public PostWorkbookImportXMLRequest(string name, ImportXMLRequest importXMLRequest, string password = null, string folder = null, string storageName = null, string outPath = null, string outStorageName = null, bool? checkExcelRestriction = null, string region = null)
+            public PostWorkbookImportXMLRequest(string  name, ImportXMLRequest  importXMLRequest, string  password = null, string  folder = null, string  storageName = null, string  outPath = null, string  outStorageName = null, bool?  checkExcelRestriction = null, string  region = null)
             {
                 this.name = name;
                 this.importXMLRequest = importXMLRequest;

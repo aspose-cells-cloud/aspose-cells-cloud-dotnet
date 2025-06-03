@@ -51,7 +51,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="nameName">the Aspose.Cells.Name element name.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public GetWorkbookNameValueRequest(string name, string nameName, string folder = null, string storageName = null)
+            public GetWorkbookNameValueRequest(string  name, string  nameName, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.nameName = nameName;

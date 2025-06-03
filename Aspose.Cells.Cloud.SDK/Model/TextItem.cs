@@ -35,19 +35,29 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Represents text item.
+    /// TextItem.
     /// </summary>
-    public class TextItem : LinkElement
+    public class TextItem
     {
         /// <summary>
-        /// Represents text content.
+        /// Gets or sets Filename.
         /// </summary>
-        public virtual string Text { get; set; }
+        public virtual string Filename { get; set; }
 
         /// <summary>
-        /// Gets or sets link.
+        /// Gets or sets Worksheet.
         /// </summary>
-        public override Link link { get; set; }
+        public virtual string Worksheet { get; set; }
+
+        /// <summary>
+        /// Gets or sets Position.
+        /// </summary>
+        public virtual string Position { get; set; }
+
+        /// <summary>
+        /// Gets or sets Content.
+        /// </summary>
+        public virtual string Content { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object.
@@ -57,8 +67,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
             var sb = new StringBuilder();
             sb.Append("class TextItem {\n");
-            sb.Append("  Text: ").Append(this.Text).Append("\n");
-            sb.Append("  link: ").Append(this.link).Append("\n");
+            sb.Append("  Filename: ").Append(this.Filename).Append("\n");
+            sb.Append("  Worksheet: ").Append(this.Worksheet).Append("\n");
+            sb.Append("  Position: ").Append(this.Position).Append("\n");
+            sb.Append("  Content: ").Append(this.Content).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

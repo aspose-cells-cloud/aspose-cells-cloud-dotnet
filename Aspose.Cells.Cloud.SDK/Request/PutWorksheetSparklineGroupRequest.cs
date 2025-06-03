@@ -55,7 +55,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="locationRange">Specifies where the sparklines to be placed.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public PutWorksheetSparklineGroupRequest(string name, string sheetName, string type, string dataRange, bool? isVertical, string locationRange, string folder = null, string storageName = null)
+            public PutWorksheetSparklineGroupRequest(string  name, string  sheetName, string  type, string  dataRange, bool?  isVertical, string  locationRange, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;

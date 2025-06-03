@@ -51,7 +51,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="sheetName">The worksheet name.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            public GetWorksheetAutoFilterRequest(string name, string sheetName, string folder = null, string storageName = null)
+            public GetWorksheetAutoFilterRequest(string  name, string  sheetName, string  folder = null, string  storageName = null)
             {
                 this.name = name;
                 this.sheetName = sheetName;
