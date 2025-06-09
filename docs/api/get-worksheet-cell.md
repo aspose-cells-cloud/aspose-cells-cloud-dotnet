@@ -7,6 +7,7 @@ Retrieve cell data using either cell reference or method name in the worksheet.
 GET http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}
 
 ```
+Retrieve cell data using either cell reference or method name in the worksheet.
 
 ## The request parameters of **getWorksheetCell** API are: 
 
@@ -20,3 +21,6 @@ GET http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/cells/{cel
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/CellsController/GetWorksheetCell) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_GetWorksheetCell.cs">
+

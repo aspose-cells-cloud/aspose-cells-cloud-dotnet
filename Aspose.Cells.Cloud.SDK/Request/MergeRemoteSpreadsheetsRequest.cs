@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="MergeFilesRequest.cs">
+// <copyright company="Aspose" file="MergeRemoteSpreadsheetsRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,45 +32,55 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.MergeFiles" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.MergeRemoteSpreadsheets" /> operation.
     /// </summary>
-    public class MergeFilesRequest : IRequestModel
+    public class MergeRemoteSpreadsheetsRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="MergeFilesRequest"/> class.
+        /// Initializes a new instance of the <see cref="MergeRemoteSpreadsheetsRequest"/> class.
         /// </summary>
-        public MergeFilesRequest()
+        public MergeRemoteSpreadsheetsRequest()
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="MergeFilesRequest"/> class.
-        /// </summary>
-        /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="outFormat">The out file format.</param>
-        /// <param name="mergeInOneSheet">Whether to combine all data into a single worksheet.</param>
-        /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
-        /// <param name="outStorageName">Output file Storage Name.</param>
-        /// <param name="fontsLocation">Use Custom fonts.</param>
-        /// <param name="regoin">The spreadsheet region setting.</param>
-        /// <param name="password">The password for opening spreadsheet file.</param>
-        public MergeFilesRequest(IDictionary<string, System.IO.Stream>  spreadsheet, string  outFormat = null, bool?  mergeInOneSheet = null, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  regoin = null, string  password = null)
-        {
-            this.Spreadsheet = spreadsheet;
-            this.outFormat = outFormat;
-            this.mergeInOneSheet = mergeInOneSheet;
-            this.outPath = outPath;
-            this.outStorageName = outStorageName;
-            this.fontsLocation = fontsLocation;
-            this.regoin = regoin;
-            this.password = password;
-        }
+            /// <summary>
+            /// Initializes a new instance of the <see cref="MergeRemoteSpreadsheetsRequest"/> class.
+            /// </summary>
+            /// <param name="folder">The folder used to store the merged files.</param>
+            /// <param name="fileMatchExpression"></param>
+            /// <param name="outFormat">The out file format.</param>
+            /// <param name="mergeInOneSheet">Whether to combine all data into a single worksheet.</param>
+            /// <param name="storageName">(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.</param>
+            /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
+            /// <param name="outStorageName">Output file Storage Name.</param>
+            /// <param name="fontsLocation">Use Custom fonts.</param>
+            /// <param name="regoin">The spreadsheet region setting.</param>
+            /// <param name="password">The password for opening spreadsheet file.</param>
+            public MergeRemoteSpreadsheetsRequest(string  folder, string  fileMatchExpression = null, string  outFormat = null, bool?  mergeInOneSheet = null, string  storageName = null, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  regoin = null, string  password = null)
+            {
+                this.folder = folder;
+                this.fileMatchExpression = fileMatchExpression;
+                this.outFormat = outFormat;
+                this.mergeInOneSheet = mergeInOneSheet;
+                this.storageName = storageName;
+                this.outPath = outPath;
+                this.outStorageName = outStorageName;
+                this.fontsLocation = fontsLocation;
+                this.regoin = regoin;
+                this.password = password;
+            }
         
         /// <summary>
-        /// Upload spreadsheet file.
+        /// The folder used to store the merged files.
         /// </summary>
-            public IDictionary<string, System.IO.Stream> Spreadsheet { get; set; }
+        public string folder { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets fileMatchExpression.
+        /// </summary>
+        public string fileMatchExpression { get; set; }
 
 
         /// <summary>
@@ -83,6 +93,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Whether to combine all data into a single worksheet.
         /// </summary>
         public bool? mergeInOneSheet { get; set; }
+
+
+        /// <summary>
+        /// (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.
+        /// </summary>
+        public string storageName { get; set; }
 
 
         /// <summary>
@@ -131,20 +147,23 @@ namespace Aspose.Cells.Cloud.SDK.Request
             var localVarFileParams = new Dictionary<string, object>();
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
-            // verify the required parameter 'spreadsheet' is set
-            if ( this.Spreadsheet == null   )
+            // verify the required parameter 'folder' is set
+            if (string.IsNullOrEmpty (this.folder ))
             {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling MergeFiles");
+                throw new ApiException(400, "Missing required parameter 'folder' when calling MergeRemoteSpreadsheets");
             }
 
-            var path = baseUri + "/cells/merge";
+            var path = baseUri + "/cells/merge/remote-spreadsheets";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
+            path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
+            if (!string.IsNullOrEmpty(this.fileMatchExpression))  path = UrlHelper.AddQueryParameterToUrl(path, "fileMatchExpression", this.fileMatchExpression);
             if (!string.IsNullOrEmpty(this.outFormat))  path = UrlHelper.AddQueryParameterToUrl(path, "outFormat", this.outFormat);
             if(this.mergeInOneSheet != null)  path = UrlHelper.AddQueryParameterToUrl(path, "mergeInOneSheet", this.mergeInOneSheet);
+            if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
             if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
             if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
             if (!string.IsNullOrEmpty(this.fontsLocation))  path = UrlHelper.AddQueryParameterToUrl(path, "fontsLocation", this.fontsLocation);
@@ -158,13 +177,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 }
             }
 
-             
-            if (Spreadsheet != null){
-                    foreach (KeyValuePair<string, System.IO.Stream> keyValueFileParam in Spreadsheet )
-                    {
-                        localVarFileParams.Add(keyValueFileParam.Key, UrlHelper.ToFileInfo(keyValueFileParam.Value, keyValueFileParam.Key));
-                    }
-            }
 
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }

@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="SearchTextRequest.cs">
+// <copyright company="Aspose" file="MergeSpreadsheetsRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,35 +32,37 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.SearchText" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.MergeSpreadsheets" /> operation.
     /// </summary>
-    public class SearchTextRequest : IRequestModel
+    public class MergeSpreadsheetsRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SearchTextRequest"/> class.
+        /// Initializes a new instance of the <see cref="MergeSpreadsheetsRequest"/> class.
         /// </summary>
-        public SearchTextRequest()
+        public MergeSpreadsheetsRequest()
         {
 
         }
         /// <summary>
-        /// Initializes a new instance of the <see cref="SearchTextRequest"/> class.
+        /// Initializes a new instance of the <see cref="MergeSpreadsheetsRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="searchText">The searched text.</param>
-        /// <param name="ignoringCase">Ignore the text of the search.</param>
-        /// <param name="sheetname">Specify the worksheet for the lookup.</param>
-        /// <param name="cellarea">Specify the cell area for the lookup</param>
+        /// <param name="outFormat">The out file format.</param>
+        /// <param name="mergeInOneSheet">Whether to combine all data into a single worksheet.</param>
+        /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
+        /// <param name="outStorageName">Output file Storage Name.</param>
+        /// <param name="fontsLocation">Use Custom fonts.</param>
         /// <param name="regoin">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public SearchTextRequest(string  spreadsheet, string  searchText, bool?  ignoringCase = null, string  sheetname = null, string  cellarea = null, string  regoin = null, string  password = null)
+        public MergeSpreadsheetsRequest(string  spreadsheet, string  outFormat = null, bool?  mergeInOneSheet = null, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  regoin = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
-            this.searchText = searchText;
-            this.ignoringCase = ignoringCase;
-            this.sheetname = sheetname;
-            this.cellarea = cellarea;
+            this.outFormat = outFormat;
+            this.mergeInOneSheet = mergeInOneSheet;
+            this.outPath = outPath;
+            this.outStorageName = outStorageName;
+            this.fontsLocation = fontsLocation;
             this.regoin = regoin;
             this.password = password;
         }
@@ -72,27 +74,33 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// The searched text.
+        /// The out file format.
         /// </summary>
-        public string searchText { get; set; }
+        public string outFormat { get; set; }
 
 
         /// <summary>
-        /// Ignore the text of the search.
+        /// Whether to combine all data into a single worksheet.
         /// </summary>
-        public bool? ignoringCase { get; set; }
+        public bool? mergeInOneSheet { get; set; }
 
 
         /// <summary>
-        /// Specify the worksheet for the lookup.
+        /// (Optional) The folder path where the workbook is stored. The default is null.
         /// </summary>
-        public string sheetname { get; set; }
+        public string outPath { get; set; }
 
 
         /// <summary>
-        /// Specify the cell area for the lookup
+        /// Output file Storage Name.
         /// </summary>
-        public string cellarea { get; set; }
+        public string outStorageName { get; set; }
+
+
+        /// <summary>
+        /// Use Custom fonts.
+        /// </summary>
+        public string fontsLocation { get; set; }
 
 
         /// <summary>
@@ -126,25 +134,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'spreadsheet' is set
             if (    string.IsNullOrEmpty(this.Spreadsheet)    )
             {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling SearchText");
+                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling MergeSpreadsheets");
             }
 
-            // verify the required parameter 'searchText' is set
-            if (string.IsNullOrEmpty (this.searchText ))
-            {
-                throw new ApiException(400, "Missing required parameter 'searchText' when calling SearchText");
-            }
-
-            var path = baseUri + "/cells/search";
+            var path = baseUri + "/cells/merge";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            path = UrlHelper.AddQueryParameterToUrl(path, "searchText", this.searchText);
-            if(this.ignoringCase != null)  path = UrlHelper.AddQueryParameterToUrl(path, "ignoringCase", this.ignoringCase);
-            if (!string.IsNullOrEmpty(this.sheetname))  path = UrlHelper.AddQueryParameterToUrl(path, "sheetname", this.sheetname);
-            if (!string.IsNullOrEmpty(this.cellarea))  path = UrlHelper.AddQueryParameterToUrl(path, "cellarea", this.cellarea);
+            if (!string.IsNullOrEmpty(this.outFormat))  path = UrlHelper.AddQueryParameterToUrl(path, "outFormat", this.outFormat);
+            if(this.mergeInOneSheet != null)  path = UrlHelper.AddQueryParameterToUrl(path, "mergeInOneSheet", this.mergeInOneSheet);
+            if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
+            if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
+            if (!string.IsNullOrEmpty(this.fontsLocation))  path = UrlHelper.AddQueryParameterToUrl(path, "fontsLocation", this.fontsLocation);
             if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)

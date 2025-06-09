@@ -7,6 +7,7 @@ Autofit columns in the worksheet.
 POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/autofitcolumns
 
 ```
+Autofit columns in the worksheet.
 
 ## The request parameters of **postAutofitWorksheetColumns** API are: 
 
@@ -22,3 +23,6 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/autofitco
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/WorksheetsController/PostAutofitWorksheetColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PostAutofitWorksheetColumns.cs">
+

@@ -7,6 +7,7 @@ Import a JSON data file into the workbook. The JSON data file can either be a cl
 POST http://api.aspose.cloud/v3.0//cells/{name}/importjson
 
 ```
+Import a JSON data file into the workbook. The JSON data file can either be a cloud file or data from an HTTP URI.
 
 ## The request parameters of **postWorkbookImportJson** API are: 
 
@@ -24,3 +25,5 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/importjson
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/PostWorkbookImportJson) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+

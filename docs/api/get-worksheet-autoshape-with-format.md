@@ -7,6 +7,7 @@ Get autoshape description in some format.
 GET http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/autoshapes/{autoshapeNumber}
 
 ```
+Get autoshape description in some format.
 
 ## The request parameters of **getWorksheetAutoshapeWithFormat** API are: 
 
@@ -21,3 +22,5 @@ GET http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/autoshapes
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/AutoshapesController/GetWorksheetAutoshapeWithFormat) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+

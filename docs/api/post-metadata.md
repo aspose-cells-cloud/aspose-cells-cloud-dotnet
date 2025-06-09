@@ -7,6 +7,7 @@ Update document properties in Excel file, and save them is various formats.
 POST http://api.aspose.cloud/v3.0//cells/metadata/update
 
 ```
+Update document properties in Excel file, and save them is various formats.
 
 ## The request parameters of **postMetadata** API are: 
 
@@ -21,3 +22,6 @@ POST http://api.aspose.cloud/v3.0//cells/metadata/update
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/LightCellsController/PostMetadata) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PostMetadata.cs">
+

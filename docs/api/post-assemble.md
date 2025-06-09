@@ -7,6 +7,7 @@ Assemble data files with template files to generate files in various formats.
 POST http://api.aspose.cloud/v3.0//cells/assemble
 
 ```
+Assemble data files with template files to generate files in various formats.
 
 ## The request parameters of **postAssemble** API are: 
 
@@ -21,3 +22,6 @@ POST http://api.aspose.cloud/v3.0//cells/assemble
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/LightCellsController/PostAssemble) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PostAssemble.cs">
+

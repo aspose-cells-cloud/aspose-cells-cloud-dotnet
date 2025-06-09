@@ -7,6 +7,7 @@ Update hyperlink by index in the worksheet.
 POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}
 
 ```
+Update hyperlink by index in the worksheet.
 
 ## The request parameters of **postWorksheetHyperlink** API are: 
 
@@ -21,3 +22,6 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/hyperlink
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/HypelinksController/PostWorksheetHyperlink) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PostWorksheetHyperlink.cs">
+

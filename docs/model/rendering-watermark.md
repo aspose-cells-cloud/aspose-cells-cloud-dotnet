@@ -1,12 +1,12 @@
 # **renderingWatermark**
 
-Watermark for rendering. 
+ 
 
 ## **Properties**
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|Rotation|Floating|true|false |  |Gets or sets roation of the watermark in degrees.|
+|Rotation|Floating|true|false |  ||
 |ScaleToPagePercent|Integer|true|false |  ||
 |Opacity|Floating|true|false |  ||
 |IsBackground|Boolean|true|false |  ||

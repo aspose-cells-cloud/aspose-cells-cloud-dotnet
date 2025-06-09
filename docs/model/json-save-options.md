@@ -1,15 +1,15 @@
 # **jsonSaveOptions**
 
-Represents options of saving .json file. 
+ 
 
 ## **Properties**
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|ExportArea|Class|true|false |  |Gets or sets the exporting range.|
-|HasHeaderRow|Boolean|true|false |  |Indicates whether the range contains header row.|
-|ExportAsString|Boolean|true|false |  |Exports the string value of the cells to json.|
-|Indent|String|true|false |  |Indicates the indent.|
+|ExportArea|Class|true|false |  ||
+|HasHeaderRow|Boolean|true|false |  ||
+|ExportAsString|Boolean|true|false |  ||
+|Indent|String|true|false |  ||
 |SaveFormat|String|true|false |  ||
 |CachedFileFolder|String|true|false |  ||
 |ClearData|Boolean|true|false |  ||

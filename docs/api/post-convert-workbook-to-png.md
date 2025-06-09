@@ -7,6 +7,7 @@ Convert Excel file to PNG files.
 POST http://api.aspose.cloud/v3.0//cells/convert/png
 
 ```
+Convert Excel file to PNG files.
 
 ## The request parameters of **postConvertWorkbookToPNG** API are: 
 
@@ -19,3 +20,5 @@ POST http://api.aspose.cloud/v3.0//cells/convert/png
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/PostConvertWorkbookToPNG) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+

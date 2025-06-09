@@ -7,6 +7,7 @@ Import an XML data file into an Excel file. The XML data file can either be a cl
 POST http://api.aspose.cloud/v3.0//cells/{name}/importxml
 
 ```
+Import an XML data file into an Excel file. The XML data file can either be a cloud file or data from an HTTP URI.
 
 ## The request parameters of **postWorkbookImportXML** API are: 
 
@@ -24,3 +25,6 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/importxml
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/PostWorkbookImportXML) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PostWorkbookImportXML.cs">
+

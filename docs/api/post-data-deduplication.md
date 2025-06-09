@@ -7,6 +7,7 @@ Data deduplication of spreadsheet files is mainly used to eliminate duplicate da
 POST http://api.aspose.cloud/v3.0//cells/datadeduplication
 
 ```
+Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges.
 
 ## The request parameters of **postDataDeduplication** API are: 
 
@@ -16,3 +17,5 @@ POST http://api.aspose.cloud/v3.0//cells/datadeduplication
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/PostDataDeduplication) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+

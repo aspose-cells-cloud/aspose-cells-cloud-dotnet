@@ -7,6 +7,7 @@ Import data into an Excel file and generate output files in various formats.
 POST http://api.aspose.cloud/v3.0//cells/import
 
 ```
+Import data into an Excel file and generate output files in various formats.
 
 ## The request parameters of **postImport** API are: 
 
@@ -20,3 +21,5 @@ POST http://api.aspose.cloud/v3.0//cells/import
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/LightCellsController/PostImport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+

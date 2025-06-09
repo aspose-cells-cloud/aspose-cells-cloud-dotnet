@@ -7,6 +7,7 @@ Calculate formula in the worksheet.
 GET http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/formulaResult
 
 ```
+Calculate formula in the worksheet.
 
 ## The request parameters of **getWorksheetCalculateFormula** API are: 
 
@@ -20,3 +21,6 @@ GET http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/formulaRes
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/WorksheetsController/GetWorksheetCalculateFormula) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_GetWorksheetCalculateFormula.cs">
+

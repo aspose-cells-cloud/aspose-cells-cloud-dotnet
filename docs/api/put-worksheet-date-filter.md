@@ -7,6 +7,7 @@ Apply a date filter in the worksheet.
 PUT http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
 
 ```
+Apply a date filter in the worksheet.
 
 ## The request parameters of **putWorksheetDateFilter** API are: 
 
@@ -30,3 +31,6 @@ PUT http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/autoFilter
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/AutoFilterController/PutWorksheetDateFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PutWorksheetDateFilter.cs">
+

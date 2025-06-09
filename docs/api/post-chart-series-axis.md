@@ -7,6 +7,7 @@ Update chart series axis in the chart.
 POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/seriesaxis
 
 ```
+Update chart series axis in the chart.
 
 ## The request parameters of **postChartSeriesAxis** API are: 
 
@@ -21,3 +22,5 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/charts/{c
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ChartsController/PostChartSeriesAxis) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+

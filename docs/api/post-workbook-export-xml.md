@@ -7,6 +7,7 @@ Export XML data from an Excel file.When there are XML Maps in an Excel file, exp
 POST http://api.aspose.cloud/v3.0//cells/{name}/exportxml
 
 ```
+Export XML data from an Excel file.When there are XML Maps in an Excel file, export XML data. When there is no XML map in the Excel file, convert the Excel file to an XML file.
 
 ## The request parameters of **postWorkbookExportXML** API are: 
 
@@ -23,3 +24,6 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/exportxml
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/PostWorkbookExportXML) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PostWorkbookExportXML.cs">
+

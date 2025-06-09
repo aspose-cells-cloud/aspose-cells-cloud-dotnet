@@ -7,6 +7,7 @@ Reverse rows or columns in Excel files and create output files in various format
 POST http://api.aspose.cloud/v3.0//cells/reverse
 
 ```
+Reverse rows or columns in Excel files and create output files in various formats.
 
 ## The request parameters of **postReverse** API are: 
 
@@ -21,3 +22,6 @@ POST http://api.aspose.cloud/v3.0//cells/reverse
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/LightCellsController/PostReverse) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PostReverse.cs">
+

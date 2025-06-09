@@ -7,6 +7,7 @@ Merge cells in the worksheet.
 POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/cells/merge
 
 ```
+Merge cells in the worksheet.
 
 ## The request parameters of **postWorksheetMerge** API are: 
 
@@ -23,3 +24,6 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/cells/mer
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/CellsController/PostWorksheetMerge) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PostWorksheetMerge.cs">
+

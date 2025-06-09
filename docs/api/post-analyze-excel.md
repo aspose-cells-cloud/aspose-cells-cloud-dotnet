@@ -7,6 +7,7 @@ Perform business analysis of data in Excel files.
 POST http://api.aspose.cloud/v3.0//cells/analyze
 
 ```
+Perform business analysis of data in Excel files.
 
 ## The request parameters of **postAnalyzeExcel** API are: 
 
@@ -16,3 +17,5 @@ POST http://api.aspose.cloud/v3.0//cells/analyze
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/AnalyseController/PostAnalyzeExcel) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+

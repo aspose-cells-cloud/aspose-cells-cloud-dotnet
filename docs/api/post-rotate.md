@@ -7,6 +7,7 @@ Rotate rows, columns, or other objects in Excel files and save them in various f
 POST http://api.aspose.cloud/v3.0//cells/rotate
 
 ```
+Rotate rows, columns, or other objects in Excel files and save them in various formats.
 
 ## The request parameters of **postRotate** API are: 
 
@@ -21,3 +22,5 @@ POST http://api.aspose.cloud/v3.0//cells/rotate
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/LightCellsController/PostRotate) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+

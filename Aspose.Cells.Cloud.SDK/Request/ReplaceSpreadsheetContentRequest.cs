@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ReplaceTextInRemoteRequest.cs">
+// <copyright company="Aspose" file="ReplaceSpreadsheetContentRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,47 +32,43 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.ReplaceTextInRemote" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.ReplaceSpreadsheetContent" /> operation.
     /// </summary>
-    public class ReplaceTextInRemoteRequest : IRequestModel
+    public class ReplaceSpreadsheetContentRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ReplaceTextInRemoteRequest"/> class.
+        /// Initializes a new instance of the <see cref="ReplaceSpreadsheetContentRequest"/> class.
         /// </summary>
-        public ReplaceTextInRemoteRequest()
+        public ReplaceSpreadsheetContentRequest()
         {
 
         }
-            /// <summary>
-            /// Initializes a new instance of the <see cref="ReplaceTextInRemoteRequest"/> class.
-            /// </summary>
-            /// <param name="name">The name of the workbook file to be replace.</param>
-            /// <param name="searchText">The searched text.</param>
-            /// <param name="replaceText">The replaced text.</param>
-            /// <param name="sheetname">Specify the worksheet for the replace.</param>
-            /// <param name="cellarea">Specify the cell area for the replace.</param>
-            /// <param name="folder">The folder path where the workbook is stored.</param>
-            /// <param name="storageName">(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.</param>
-            /// <param name="regoin">The spreadsheet region setting.</param>
-            /// <param name="password">The password for opening spreadsheet file.</param>
-            public ReplaceTextInRemoteRequest(string  name, string  searchText, string  replaceText, string  sheetname = null, string  cellarea = null, string  folder = null, string  storageName = null, string  regoin = null, string  password = null)
-            {
-                this.name = name;
-                this.searchText = searchText;
-                this.replaceText = replaceText;
-                this.sheetname = sheetname;
-                this.cellarea = cellarea;
-                this.folder = folder;
-                this.storageName = storageName;
-                this.regoin = regoin;
-                this.password = password;
-            }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ReplaceSpreadsheetContentRequest"/> class.
+        /// </summary>
+        /// <param name="spreadsheet">Upload spreadsheet file.</param>
+        /// <param name="searchText">The searched text.</param>
+        /// <param name="replaceText">The replaced text.</param>
+        /// <param name="sheetname">Specify the worksheet for the replace.</param>
+        /// <param name="cellarea">Specify the cell area for the replace.</param>
+        /// <param name="regoin">The spreadsheet region setting.</param>
+        /// <param name="password">The password for opening spreadsheet file.</param>
+        public ReplaceSpreadsheetContentRequest(string  spreadsheet, string  searchText, string  replaceText, string  sheetname = null, string  cellarea = null, string  regoin = null, string  password = null)
+        {
+            this.Spreadsheet = spreadsheet;
+            this.searchText = searchText;
+            this.replaceText = replaceText;
+            this.sheetname = sheetname;
+            this.cellarea = cellarea;
+            this.regoin = regoin;
+            this.password = password;
+        }
         
         /// <summary>
-        /// The name of the workbook file to be replace.
+        /// Upload spreadsheet file.
         /// </summary>
-        public string name { get; set; }
+            public string Spreadsheet { get; set; }
 
 
         /// <summary>
@@ -97,18 +93,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Specify the cell area for the replace.
         /// </summary>
         public string cellarea { get; set; }
-
-
-        /// <summary>
-        /// The folder path where the workbook is stored.
-        /// </summary>
-        public string folder { get; set; }
-
-
-        /// <summary>
-        /// (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.
-        /// </summary>
-        public string storageName { get; set; }
 
 
         /// <summary>
@@ -139,37 +123,34 @@ namespace Aspose.Cells.Cloud.SDK.Request
             var localVarFileParams = new Dictionary<string, object>();
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
-            // verify the required parameter 'name' is set
-            if (string.IsNullOrEmpty (this.name ))
+            // verify the required parameter 'spreadsheet' is set
+            if (    string.IsNullOrEmpty(this.Spreadsheet)    )
             {
-                throw new ApiException(400, "Missing required parameter 'name' when calling ReplaceTextInRemote");
+                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling ReplaceSpreadsheetContent");
             }
 
             // verify the required parameter 'searchText' is set
             if (string.IsNullOrEmpty (this.searchText ))
             {
-                throw new ApiException(400, "Missing required parameter 'searchText' when calling ReplaceTextInRemote");
+                throw new ApiException(400, "Missing required parameter 'searchText' when calling ReplaceSpreadsheetContent");
             }
 
             // verify the required parameter 'replaceText' is set
             if (string.IsNullOrEmpty (this.replaceText ))
             {
-                throw new ApiException(400, "Missing required parameter 'replaceText' when calling ReplaceTextInRemote");
+                throw new ApiException(400, "Missing required parameter 'replaceText' when calling ReplaceSpreadsheetContent");
             }
 
-            var path = baseUri + "/cells/{name}/replace";
+            var path = baseUri + "/cells/replace/content";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            path = UrlHelper.AddPathParameter(path, "name", this.name);
             path = UrlHelper.AddQueryParameterToUrl(path, "searchText", this.searchText);
             path = UrlHelper.AddQueryParameterToUrl(path, "replaceText", this.replaceText);
             if (!string.IsNullOrEmpty(this.sheetname))  path = UrlHelper.AddQueryParameterToUrl(path, "sheetname", this.sheetname);
             if (!string.IsNullOrEmpty(this.cellarea))  path = UrlHelper.AddQueryParameterToUrl(path, "cellarea", this.cellarea);
-            if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
-            if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
             if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
@@ -179,6 +160,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
+            if (!string.IsNullOrEmpty(Spreadsheet ) && System.IO.File.Exists(Spreadsheet )) {
+                        System.IO.FileInfo fileInfo = new System.IO.FileInfo(Spreadsheet);
+                        localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(Spreadsheet), fileInfo.Name));
+               }
+
 
 
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);

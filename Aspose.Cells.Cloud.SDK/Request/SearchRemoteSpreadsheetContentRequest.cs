@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="MergeFilesInRemoteFolderRequest.cs">
+// <copyright company="Aspose" file="SearchRemoteSpreadsheetContentRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,91 +32,83 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.MergeFilesInRemoteFolder" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.SearchRemoteSpreadsheetContent" /> operation.
     /// </summary>
-    public class MergeFilesInRemoteFolderRequest : IRequestModel
+    public class SearchRemoteSpreadsheetContentRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="MergeFilesInRemoteFolderRequest"/> class.
+        /// Initializes a new instance of the <see cref="SearchRemoteSpreadsheetContentRequest"/> class.
         /// </summary>
-        public MergeFilesInRemoteFolderRequest()
+        public SearchRemoteSpreadsheetContentRequest()
         {
 
         }
             /// <summary>
-            /// Initializes a new instance of the <see cref="MergeFilesInRemoteFolderRequest"/> class.
+            /// Initializes a new instance of the <see cref="SearchRemoteSpreadsheetContentRequest"/> class.
             /// </summary>
-            /// <param name="folder">The folder used to store the merged files.</param>
-            /// <param name="fileMatchExpression"></param>
-            /// <param name="outFormat">The out file format.</param>
-            /// <param name="mergeInOneSheet">Whether to combine all data into a single worksheet.</param>
+            /// <param name="name">The name of the workbook file to be search.</param>
+            /// <param name="searchText">The searched text.</param>
+            /// <param name="ignoringCase">Ignore the text of the search.</param>
+            /// <param name="sheetname">Specify the worksheet for the lookup.</param>
+            /// <param name="cellarea">Specify the cell area for the lookup</param>
+            /// <param name="folder">The folder path where the workbook is stored.</param>
             /// <param name="storageName">(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.</param>
-            /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
-            /// <param name="outStorageName">Output file Storage Name.</param>
-            /// <param name="fontsLocation">Use Custom fonts.</param>
             /// <param name="regoin">The spreadsheet region setting.</param>
             /// <param name="password">The password for opening spreadsheet file.</param>
-            public MergeFilesInRemoteFolderRequest(string  folder, string  fileMatchExpression = null, string  outFormat = null, bool?  mergeInOneSheet = null, string  storageName = null, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  regoin = null, string  password = null)
+            public SearchRemoteSpreadsheetContentRequest(string  name, string  searchText, bool?  ignoringCase = null, string  sheetname = null, string  cellarea = null, string  folder = null, string  storageName = null, string  regoin = null, string  password = null)
             {
+                this.name = name;
+                this.searchText = searchText;
+                this.ignoringCase = ignoringCase;
+                this.sheetname = sheetname;
+                this.cellarea = cellarea;
                 this.folder = folder;
-                this.fileMatchExpression = fileMatchExpression;
-                this.outFormat = outFormat;
-                this.mergeInOneSheet = mergeInOneSheet;
                 this.storageName = storageName;
-                this.outPath = outPath;
-                this.outStorageName = outStorageName;
-                this.fontsLocation = fontsLocation;
                 this.regoin = regoin;
                 this.password = password;
             }
         
         /// <summary>
-        /// The folder used to store the merged files.
+        /// The name of the workbook file to be search.
+        /// </summary>
+        public string name { get; set; }
+
+
+        /// <summary>
+        /// The searched text.
+        /// </summary>
+        public string searchText { get; set; }
+
+
+        /// <summary>
+        /// Ignore the text of the search.
+        /// </summary>
+        public bool? ignoringCase { get; set; }
+
+
+        /// <summary>
+        /// Specify the worksheet for the lookup.
+        /// </summary>
+        public string sheetname { get; set; }
+
+
+        /// <summary>
+        /// Specify the cell area for the lookup
+        /// </summary>
+        public string cellarea { get; set; }
+
+
+        /// <summary>
+        /// The folder path where the workbook is stored.
         /// </summary>
         public string folder { get; set; }
-
-
-        /// <summary>
-        /// Gets or sets fileMatchExpression.
-        /// </summary>
-        public string fileMatchExpression { get; set; }
-
-
-        /// <summary>
-        /// The out file format.
-        /// </summary>
-        public string outFormat { get; set; }
-
-
-        /// <summary>
-        /// Whether to combine all data into a single worksheet.
-        /// </summary>
-        public bool? mergeInOneSheet { get; set; }
 
 
         /// <summary>
         /// (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.
         /// </summary>
         public string storageName { get; set; }
-
-
-        /// <summary>
-        /// (Optional) The folder path where the workbook is stored. The default is null.
-        /// </summary>
-        public string outPath { get; set; }
-
-
-        /// <summary>
-        /// Output file Storage Name.
-        /// </summary>
-        public string outStorageName { get; set; }
-
-
-        /// <summary>
-        /// Use Custom fonts.
-        /// </summary>
-        public string fontsLocation { get; set; }
 
 
         /// <summary>
@@ -147,26 +139,31 @@ namespace Aspose.Cells.Cloud.SDK.Request
             var localVarFileParams = new Dictionary<string, object>();
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
-            // verify the required parameter 'folder' is set
-            if (string.IsNullOrEmpty (this.folder ))
+            // verify the required parameter 'name' is set
+            if (string.IsNullOrEmpty (this.name ))
             {
-                throw new ApiException(400, "Missing required parameter 'folder' when calling MergeFilesInRemoteFolder");
+                throw new ApiException(400, "Missing required parameter 'name' when calling SearchRemoteSpreadsheetContent");
             }
 
-            var path = baseUri + "/cells/mergeFilesInFolder";
+            // verify the required parameter 'searchText' is set
+            if (string.IsNullOrEmpty (this.searchText ))
+            {
+                throw new ApiException(400, "Missing required parameter 'searchText' when calling SearchRemoteSpreadsheetContent");
+            }
+
+            var path = baseUri + "/cells/{name}/search/content";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
-            if (!string.IsNullOrEmpty(this.fileMatchExpression))  path = UrlHelper.AddQueryParameterToUrl(path, "fileMatchExpression", this.fileMatchExpression);
-            if (!string.IsNullOrEmpty(this.outFormat))  path = UrlHelper.AddQueryParameterToUrl(path, "outFormat", this.outFormat);
-            if(this.mergeInOneSheet != null)  path = UrlHelper.AddQueryParameterToUrl(path, "mergeInOneSheet", this.mergeInOneSheet);
+            path = UrlHelper.AddPathParameter(path, "name", this.name);
+            path = UrlHelper.AddQueryParameterToUrl(path, "searchText", this.searchText);
+            if(this.ignoringCase != null)  path = UrlHelper.AddQueryParameterToUrl(path, "ignoringCase", this.ignoringCase);
+            if (!string.IsNullOrEmpty(this.sheetname))  path = UrlHelper.AddQueryParameterToUrl(path, "sheetname", this.sheetname);
+            if (!string.IsNullOrEmpty(this.cellarea))  path = UrlHelper.AddQueryParameterToUrl(path, "cellarea", this.cellarea);
+            if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
             if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
-            if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
-            if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
-            if (!string.IsNullOrEmpty(this.fontsLocation))  path = UrlHelper.AddQueryParameterToUrl(path, "fontsLocation", this.fontsLocation);
             if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)

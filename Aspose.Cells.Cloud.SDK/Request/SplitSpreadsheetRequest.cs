@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="SearchBrokenLinksInRemoteRequest.cs">
+// <copyright company="Aspose" file="SplitSpreadsheetRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,67 +32,83 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.SearchBrokenLinksInRemote" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.SplitSpreadsheet" /> operation.
     /// </summary>
-    public class SearchBrokenLinksInRemoteRequest : IRequestModel
+    public class SplitSpreadsheetRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SearchBrokenLinksInRemoteRequest"/> class.
+        /// Initializes a new instance of the <see cref="SplitSpreadsheetRequest"/> class.
         /// </summary>
-        public SearchBrokenLinksInRemoteRequest()
+        public SplitSpreadsheetRequest()
         {
 
         }
-            /// <summary>
-            /// Initializes a new instance of the <see cref="SearchBrokenLinksInRemoteRequest"/> class.
-            /// </summary>
-            /// <param name="name">The name of the workbook file to be search.</param>
-            /// <param name="sheetname">Specify the worksheet for the lookup.</param>
-            /// <param name="cellarea">Specify the cell area for the lookup</param>
-            /// <param name="folder">The folder path where the workbook is stored.</param>
-            /// <param name="storageName">(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.</param>
-            /// <param name="regoin">The spreadsheet region setting.</param>
-            /// <param name="password">The password for opening spreadsheet file.</param>
-            public SearchBrokenLinksInRemoteRequest(string  name, string  sheetname = null, string  cellarea = null, string  folder = null, string  storageName = null, string  regoin = null, string  password = null)
-            {
-                this.name = name;
-                this.sheetname = sheetname;
-                this.cellarea = cellarea;
-                this.folder = folder;
-                this.storageName = storageName;
-                this.regoin = regoin;
-                this.password = password;
-            }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SplitSpreadsheetRequest"/> class.
+        /// </summary>
+        /// <param name="spreadsheet">Upload spreadsheet file.</param>
+        /// <param name="from">Begin worksheet index.</param>
+        /// <param name="to">End worksheet index.</param>
+        /// <param name="outFormat">The out file format.</param>
+        /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
+        /// <param name="outStorageName">Output file Storage Name.</param>
+        /// <param name="fontsLocation">Use Custom fonts.</param>
+        /// <param name="regoin">The spreadsheet region setting.</param>
+        /// <param name="password">The password for opening spreadsheet file.</param>
+        public SplitSpreadsheetRequest(string  spreadsheet, int?  from = null, int?  to = null, string  outFormat = null, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  regoin = null, string  password = null)
+        {
+            this.Spreadsheet = spreadsheet;
+            this.from = from;
+            this.to = to;
+            this.outFormat = outFormat;
+            this.outPath = outPath;
+            this.outStorageName = outStorageName;
+            this.fontsLocation = fontsLocation;
+            this.regoin = regoin;
+            this.password = password;
+        }
         
         /// <summary>
-        /// The name of the workbook file to be search.
+        /// Upload spreadsheet file.
         /// </summary>
-        public string name { get; set; }
+            public string Spreadsheet { get; set; }
 
 
         /// <summary>
-        /// Specify the worksheet for the lookup.
+        /// Begin worksheet index.
         /// </summary>
-        public string sheetname { get; set; }
+        public int? from { get; set; }
 
 
         /// <summary>
-        /// Specify the cell area for the lookup
+        /// End worksheet index.
         /// </summary>
-        public string cellarea { get; set; }
+        public int? to { get; set; }
 
 
         /// <summary>
-        /// The folder path where the workbook is stored.
+        /// The out file format.
         /// </summary>
-        public string folder { get; set; }
+        public string outFormat { get; set; }
 
 
         /// <summary>
-        /// (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.
+        /// (Optional) The folder path where the workbook is stored. The default is null.
         /// </summary>
-        public string storageName { get; set; }
+        public string outPath { get; set; }
+
+
+        /// <summary>
+        /// Output file Storage Name.
+        /// </summary>
+        public string outStorageName { get; set; }
+
+
+        /// <summary>
+        /// Use Custom fonts.
+        /// </summary>
+        public string fontsLocation { get; set; }
 
 
         /// <summary>
@@ -123,23 +139,24 @@ namespace Aspose.Cells.Cloud.SDK.Request
             var localVarFileParams = new Dictionary<string, object>();
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
-            // verify the required parameter 'name' is set
-            if (string.IsNullOrEmpty (this.name ))
+            // verify the required parameter 'spreadsheet' is set
+            if (    string.IsNullOrEmpty(this.Spreadsheet)    )
             {
-                throw new ApiException(400, "Missing required parameter 'name' when calling SearchBrokenLinksInRemote");
+                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling SplitSpreadsheet");
             }
 
-            var path = baseUri + "/cells/{name}/searchBrokenLinks";
+            var path = baseUri + "/cells/split";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            path = UrlHelper.AddPathParameter(path, "name", this.name);
-            if (!string.IsNullOrEmpty(this.sheetname))  path = UrlHelper.AddQueryParameterToUrl(path, "sheetname", this.sheetname);
-            if (!string.IsNullOrEmpty(this.cellarea))  path = UrlHelper.AddQueryParameterToUrl(path, "cellarea", this.cellarea);
-            if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
-            if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
+            if(this.from != null)  path = UrlHelper.AddQueryParameterToUrl(path, "from", this.from);
+            if(this.to != null)  path = UrlHelper.AddQueryParameterToUrl(path, "to", this.to);
+            if (!string.IsNullOrEmpty(this.outFormat))  path = UrlHelper.AddQueryParameterToUrl(path, "outFormat", this.outFormat);
+            if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
+            if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
+            if (!string.IsNullOrEmpty(this.fontsLocation))  path = UrlHelper.AddQueryParameterToUrl(path, "fontsLocation", this.fontsLocation);
             if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
@@ -149,6 +166,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
+            if (!string.IsNullOrEmpty(Spreadsheet ) && System.IO.File.Exists(Spreadsheet )) {
+                        System.IO.FileInfo fileInfo = new System.IO.FileInfo(Spreadsheet);
+                        localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(Spreadsheet), fileInfo.Name));
+               }
+
 
 
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);

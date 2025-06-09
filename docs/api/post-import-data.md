@@ -7,6 +7,7 @@ Import data into the Excel file.
 POST http://api.aspose.cloud/v3.0//cells/{name}/importdata
 
 ```
+Import data into the Excel file.
 
 ## The request parameters of **postImportData** API are: 
 
@@ -21,3 +22,6 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/importdata
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/PostImportData) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PostImportData.cs">
+

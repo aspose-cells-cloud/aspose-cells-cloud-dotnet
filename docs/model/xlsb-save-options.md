@@ -1,6 +1,6 @@
 # **xlsbSaveOptions**
 
-Represents the options of saving .xlsb file. 
+ 
 
 ## **Properties**
 

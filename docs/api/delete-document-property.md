@@ -7,6 +7,7 @@ Delete an Excel property.
 DELETE http://api.aspose.cloud/v3.0//cells/{name}/documentproperties/{propertyName}
 
 ```
+Delete an Excel property.
 
 ## The request parameters of **deleteDocumentProperty** API are: 
 
@@ -20,3 +21,6 @@ DELETE http://api.aspose.cloud/v3.0//cells/{name}/documentproperties/{propertyNa
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/PropertiesController/DeleteDocumentProperty) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DeleteDocumentProperty.cs">
+

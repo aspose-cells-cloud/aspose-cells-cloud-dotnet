@@ -7,6 +7,7 @@ Convert the workbook from the requested content into files in different formats.
 PUT http://api.aspose.cloud/v3.0//cells/convert
 
 ```
+Convert the workbook from the requested content into files in different formats.
 
 ## The request parameters of **putConvertWorkbook** API are: 
 
@@ -24,7 +25,13 @@ PUT http://api.aspose.cloud/v3.0//cells/convert
 |pageTallFitOnPerSheet|Boolean|Query|The page tall fit on worksheet.|
 |sheetName|String|Query||
 |pageIndex|Integer|Query||
+|onePagePerSheet|Boolean|Query||
+|AutoRowsFit|Boolean|Query||
+|AutoColumnsFit|Boolean|Query||
 |FontsLocation|String|Query|Use Custom fonts.|
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/PutConvertWorkbook) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertWorkbook.cs">
+

@@ -7,6 +7,7 @@ Data cleansing of spreadsheet files is a data management process used to identif
 POST http://api.aspose.cloud/v3.0//cells/datacleansing
 
 ```
+Data cleansing of spreadsheet files is a data management process used to identify, correct, and remove errors, incompleteness, duplicates, or inaccuracies in tables and ranges.
 
 ## The request parameters of **postDataCleansing** API are: 
 
@@ -16,3 +17,5 @@ POST http://api.aspose.cloud/v3.0//cells/datacleansing
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/PostDataCleansing) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+

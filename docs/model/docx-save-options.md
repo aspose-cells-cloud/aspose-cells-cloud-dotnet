@@ -1,6 +1,6 @@
 # **docxSaveOptions**
 
-Represents options of saving .docx file. 
+ 
 
 ## **Properties**
 

@@ -134,8 +134,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
-        public void GetWorkbookWithFormat(GetWorkbookWithFormatRequest request, string LocalOutPath){
-            var result = GetWorkbookWithFormat(request);
+        public void ExportSpreadsheetAsFormat(ExportSpreadsheetAsFormatRequest request, string LocalOutPath){
+            var result = ExportSpreadsheetAsFormat(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
             { 
                 result.CopyTo(stream);
@@ -145,8 +145,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }/// <summary>
         /// Converts a spreadsheet in cloud storage to the specified format.
         /// </summary>
-        /// <param name="request">Request. <see cref="GetWorkbookWithFormatRequest" /></param>
-        public   Stream  GetWorkbookWithFormat(GetWorkbookWithFormatRequest request)
+        /// <param name="request">Request. <see cref="ExportSpreadsheetAsFormatRequest" /></param>
+        public   Stream  ExportSpreadsheetAsFormat(ExportSpreadsheetAsFormatRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -157,7 +157,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   Stream  > GetWorkbookWithFormatAsync(GetWorkbookWithFormatRequest request)
+        public async Task<   Stream  > ExportSpreadsheetAsFormatAsync(ExportSpreadsheetAsFormatRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -166,8 +166,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
-        public void ConvertWorkbook(ConvertWorkbookRequest request, string LocalOutPath){
-            var result = ConvertWorkbook(request);
+        public void ConvertSpreadsheet(ConvertSpreadsheetRequest request, string LocalOutPath){
+            var result = ConvertSpreadsheet(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
             { 
                 result.CopyTo(stream);
@@ -177,8 +177,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }/// <summary>
         /// Converts a spreadsheet on a local drive to the specified format.
         /// </summary>
-        /// <param name="request">Request. <see cref="ConvertWorkbookRequest" /></param>
-        public   Stream  ConvertWorkbook(ConvertWorkbookRequest request)
+        /// <param name="request">Request. <see cref="ConvertSpreadsheetRequest" /></param>
+        public   Stream  ConvertSpreadsheet(ConvertSpreadsheetRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -189,7 +189,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   Stream  > ConvertWorkbookAsync(ConvertWorkbookRequest request)
+        public async Task<   Stream  > ConvertSpreadsheetAsync(ConvertSpreadsheetRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -200,8 +200,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <summary>
         /// Converts a spreadsheet in cloud storage to the specified format.
         /// </summary>
-        /// <param name="request">Request. <see cref="WorkbookSaveAsRequest" /></param>
-        public   CellsCloudResponse  WorkbookSaveAs(WorkbookSaveAsRequest request)
+        /// <param name="request">Request. <see cref="SaveSpreadsheetAsRequest" /></param>
+        public   CellsCloudResponse  SaveSpreadsheetAs(SaveSpreadsheetAsRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -212,7 +212,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   CellsCloudResponse  > WorkbookSaveAsAsync(WorkbookSaveAsRequest request)
+        public async Task<   CellsCloudResponse  > SaveSpreadsheetAsAsync(SaveSpreadsheetAsRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -221,8 +221,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
-        public void MergeFiles(MergeFilesRequest request, string LocalOutPath){
-            var result = MergeFiles(request);
+        public void MergeSpreadsheets(MergeSpreadsheetsRequest request, string LocalOutPath){
+            var result = MergeSpreadsheets(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
             { 
                 result.CopyTo(stream);
@@ -232,8 +232,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }/// <summary>
         /// Merge local spreadsheet files into a specified format file.
         /// </summary>
-        /// <param name="request">Request. <see cref="MergeFilesRequest" /></param>
-        public   Stream  MergeFiles(MergeFilesRequest request)
+        /// <param name="request">Request. <see cref="MergeSpreadsheetsRequest" /></param>
+        public   Stream  MergeSpreadsheets(MergeSpreadsheetsRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -244,7 +244,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   Stream  > MergeFilesAsync(MergeFilesRequest request)
+        public async Task<   Stream  > MergeSpreadsheetsAsync(MergeSpreadsheetsRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -253,8 +253,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
-        public void MergeFilesInRemoteFolder(MergeFilesInRemoteFolderRequest request, string LocalOutPath){
-            var result = MergeFilesInRemoteFolder(request);
+        public void MergeRemoteSpreadsheets(MergeRemoteSpreadsheetsRequest request, string LocalOutPath){
+            var result = MergeRemoteSpreadsheets(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
             { 
                 result.CopyTo(stream);
@@ -264,8 +264,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }/// <summary>
         /// Merge spreadsheet files in cloud storage into a specified format file.
         /// </summary>
-        /// <param name="request">Request. <see cref="MergeFilesInRemoteFolderRequest" /></param>
-        public   Stream  MergeFilesInRemoteFolder(MergeFilesInRemoteFolderRequest request)
+        /// <param name="request">Request. <see cref="MergeRemoteSpreadsheetsRequest" /></param>
+        public   Stream  MergeRemoteSpreadsheets(MergeRemoteSpreadsheetsRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -276,7 +276,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   Stream  > MergeFilesInRemoteFolderAsync(MergeFilesInRemoteFolderRequest request)
+        public async Task<   Stream  > MergeRemoteSpreadsheetsAsync(MergeRemoteSpreadsheetsRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -285,8 +285,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
-        public void SplitFile(SplitFileRequest request, string LocalOutPath){
-            var result = SplitFile(request);
+        public void SplitSpreadsheet(SplitSpreadsheetRequest request, string LocalOutPath){
+            var result = SplitSpreadsheet(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
             { 
                 result.CopyTo(stream);
@@ -296,8 +296,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }/// <summary>
         /// Split a local spreadsheet into the specified format, multi-file.
         /// </summary>
-        /// <param name="request">Request. <see cref="SplitFileRequest" /></param>
-        public   Stream  SplitFile(SplitFileRequest request)
+        /// <param name="request">Request. <see cref="SplitSpreadsheetRequest" /></param>
+        public   Stream  SplitSpreadsheet(SplitSpreadsheetRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -308,7 +308,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   Stream  > SplitFileAsync(SplitFileRequest request)
+        public async Task<   Stream  > SplitSpreadsheetAsync(SplitSpreadsheetRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -317,8 +317,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
-        public void SplitFileInRemote(SplitFileInRemoteRequest request, string LocalOutPath){
-            var result = SplitFileInRemote(request);
+        public void SplitRemoteSpreadsheet(SplitRemoteSpreadsheetRequest request, string LocalOutPath){
+            var result = SplitRemoteSpreadsheet(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
             { 
                 result.CopyTo(stream);
@@ -328,8 +328,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }/// <summary>
         /// Split a spreadsheet in cloud storage into the specified format, multi-file.
         /// </summary>
-        /// <param name="request">Request. <see cref="SplitFileInRemoteRequest" /></param>
-        public   Stream  SplitFileInRemote(SplitFileInRemoteRequest request)
+        /// <param name="request">Request. <see cref="SplitRemoteSpreadsheetRequest" /></param>
+        public   Stream  SplitRemoteSpreadsheet(SplitRemoteSpreadsheetRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -340,7 +340,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   Stream  > SplitFileInRemoteAsync(SplitFileInRemoteRequest request)
+        public async Task<   Stream  > SplitRemoteSpreadsheetAsync(SplitRemoteSpreadsheetRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -349,7 +349,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Get publi key.
+        /// Get an asymmetric public key.
         /// </summary>
         /// <param name="request">Request. <see cref="GetPublicKeyRequest" /></param>
         public   CellsCloudPublicKeyResponse  GetPublicKey(GetPublicKeyRequest request)
@@ -374,8 +374,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <summary>
         /// Search text in the local spreadsheet.
         /// </summary>
-        /// <param name="request">Request. <see cref="SearchTextRequest" /></param>
-        public   SearchResponse  SearchText(SearchTextRequest request)
+        /// <param name="request">Request. <see cref="SearchSpreadsheetContentRequest" /></param>
+        public   SearchResponse  SearchSpreadsheetContent(SearchSpreadsheetContentRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    SearchResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -386,7 +386,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   SearchResponse  > SearchTextAsync(SearchTextRequest request)
+        public async Task<   SearchResponse  > SearchSpreadsheetContentAsync(SearchSpreadsheetContentRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    SearchResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -397,8 +397,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <summary>
         /// Search text in the remoted spreadsheet.
         /// </summary>
-        /// <param name="request">Request. <see cref="SearchTextInRemoteRequest" /></param>
-        public   SearchResponse  SearchTextInRemote(SearchTextInRemoteRequest request)
+        /// <param name="request">Request. <see cref="SearchRemoteSpreadsheetContentRequest" /></param>
+        public   SearchResponse  SearchRemoteSpreadsheetContent(SearchRemoteSpreadsheetContentRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    SearchResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -409,7 +409,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   SearchResponse  > SearchTextInRemoteAsync(SearchTextInRemoteRequest request)
+        public async Task<   SearchResponse  > SearchRemoteSpreadsheetContentAsync(SearchRemoteSpreadsheetContentRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    SearchResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -418,8 +418,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
-        public void ReplaceText(ReplaceTextRequest request, string LocalOutPath){
-            var result = ReplaceText(request);
+        public void ReplaceSpreadsheetContent(ReplaceSpreadsheetContentRequest request, string LocalOutPath){
+            var result = ReplaceSpreadsheetContent(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
             { 
                 result.CopyTo(stream);
@@ -429,8 +429,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }/// <summary>
         /// Replace text in the local spreadsheet.
         /// </summary>
-        /// <param name="request">Request. <see cref="ReplaceTextRequest" /></param>
-        public   Stream  ReplaceText(ReplaceTextRequest request)
+        /// <param name="request">Request. <see cref="ReplaceSpreadsheetContentRequest" /></param>
+        public   Stream  ReplaceSpreadsheetContent(ReplaceSpreadsheetContentRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -441,7 +441,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   Stream  > ReplaceTextAsync(ReplaceTextRequest request)
+        public async Task<   Stream  > ReplaceSpreadsheetContentAsync(ReplaceSpreadsheetContentRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -452,8 +452,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <summary>
         /// Replace text in the remoted spreadsheet.
         /// </summary>
-        /// <param name="request">Request. <see cref="ReplaceTextInRemoteRequest" /></param>
-        public   CellsCloudResponse  ReplaceTextInRemote(ReplaceTextInRemoteRequest request)
+        /// <param name="request">Request. <see cref="ReplaceRemoteSpreadsheetContentRequest" /></param>
+        public   CellsCloudResponse  ReplaceRemoteSpreadsheetContent(ReplaceRemoteSpreadsheetContentRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -464,7 +464,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   CellsCloudResponse  > ReplaceTextInRemoteAsync(ReplaceTextInRemoteRequest request)
+        public async Task<   CellsCloudResponse  > ReplaceRemoteSpreadsheetContentAsync(ReplaceRemoteSpreadsheetContentRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    CellsCloudResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -475,8 +475,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <summary>
         /// Search broken links in the local spreadsheet.
         /// </summary>
-        /// <param name="request">Request. <see cref="SearchBrokenLinksRequest" /></param>
-        public   BrokenLinksReponse  SearchBrokenLinks(SearchBrokenLinksRequest request)
+        /// <param name="request">Request. <see cref="SearchSpreadsheetBrokenLinksRequest" /></param>
+        public   BrokenLinksReponse  SearchSpreadsheetBrokenLinks(SearchSpreadsheetBrokenLinksRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    BrokenLinksReponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -487,7 +487,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   BrokenLinksReponse  > SearchBrokenLinksAsync(SearchBrokenLinksRequest request)
+        public async Task<   BrokenLinksReponse  > SearchSpreadsheetBrokenLinksAsync(SearchSpreadsheetBrokenLinksRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    BrokenLinksReponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -498,8 +498,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// <summary>
         /// Search broken links in the remoted spreadsheet.
         /// </summary>
-        /// <param name="request">Request. <see cref="SearchBrokenLinksInRemoteRequest" /></param>
-        public   BrokenLinksReponse  SearchBrokenLinksInRemote(SearchBrokenLinksInRemoteRequest request)
+        /// <param name="request">Request. <see cref="SearchRemoteSpreadsheetBrokenLinksRequest" /></param>
+        public   BrokenLinksReponse  SearchRemoteSpreadsheetBrokenLinks(SearchRemoteSpreadsheetBrokenLinksRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    BrokenLinksReponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -510,7 +510,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   BrokenLinksReponse  > SearchBrokenLinksInRemoteAsync(SearchBrokenLinksInRemoteRequest request)
+        public async Task<   BrokenLinksReponse  > SearchRemoteSpreadsheetBrokenLinksAsync(SearchRemoteSpreadsheetBrokenLinksRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    BrokenLinksReponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));

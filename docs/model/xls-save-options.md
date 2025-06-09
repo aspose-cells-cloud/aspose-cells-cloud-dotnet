@@ -1,6 +1,6 @@
 # **xlsSaveOptions**
 
-Represents the options of saving .xls file. 
+ 
 
 ## **Properties**
 

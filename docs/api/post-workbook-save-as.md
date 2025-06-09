@@ -7,6 +7,7 @@ Save an Excel file in various formats.
 POST http://api.aspose.cloud/v3.0//cells/{name}/SaveAs
 
 ```
+Save an Excel file in various formats.
 
 ## The request parameters of **postWorkbookSaveAs** API are: 
 
@@ -24,7 +25,11 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/SaveAs
 |region|String|Query|The regional settings for workbook.|
 |pageWideFitOnPerSheet|Boolean|Query|The page wide fit on worksheet.|
 |pageTallFitOnPerSheet|Boolean|Query|The page tall fit on worksheet.|
+|onePagePerSheet|Boolean|Query||
 |FontsLocation|String|Query|Use Custom fonts.|
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/PostWorkbookSaveAs) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_WorkbookSaveAs.cs">
+

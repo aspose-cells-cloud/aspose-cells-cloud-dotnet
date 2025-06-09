@@ -7,6 +7,7 @@ Get all style in the workbook.
 GET http://api.aspose.cloud/v3.0//cells/{name}/allstyles
 
 ```
+Get all style in the workbook.
 
 ## The request parameters of **getAllStyles** API are: 
 
@@ -18,3 +19,5 @@ GET http://api.aspose.cloud/v3.0//cells/{name}/allstyles
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/WorkbookController/GetAllStyles) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+

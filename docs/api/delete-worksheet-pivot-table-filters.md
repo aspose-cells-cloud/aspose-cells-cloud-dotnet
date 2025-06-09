@@ -7,6 +7,7 @@ Delete all pivot filters in the PivotTable.
 DELETE http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFilters
 
 ```
+Delete all pivot filters in the PivotTable.
 
 ## The request parameters of **deleteWorksheetPivotTableFilters** API are: 
 
@@ -21,3 +22,6 @@ DELETE http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/pivotta
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/PivotTablesController/DeleteWorksheetPivotTableFilters) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DeleteWorksheetPivotTableFilters.cs">
+

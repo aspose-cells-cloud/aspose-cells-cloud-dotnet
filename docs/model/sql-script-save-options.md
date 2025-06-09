@@ -1,25 +1,25 @@
 # **sqlScriptSaveOptions**
 
-Represents the options of saving .sql file. 
+ 
 
 ## **Properties**
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|CheckIfTableExists|Boolean|true|false |  |Check if the table name exists before creating|
-|ColumnTypeMap|String|true|false |  |Gets and sets the map of column type for different database.|
-|CheckAllDataForColumnType|Boolean|true|false |  |Check all data to find columns' data type.|
-|AddBlankLineBetweenRows|Boolean|true|false |  |Insert blank line between each data.|
-|Separator|String|true|false |  |Gets and sets character separator of sql script.|
-|OperatorType|String|true|false |  |Gets and sets the operator type of sql.|
-|PrimaryKey|Integer|true|false |  |Represents which column is primary key of the data table.|
-|CreateTable|Boolean|true|false |  |Indicates whether exporting sql of creating table.|
-|IdName|String|true|false |  |Gets and sets the name of id column.|
-|StartId|Integer|true|false |  |Gets and sets the start id.|
-|TableName|String|true|false |  |Gets and sets the table name.|
-|ExportAsString|Boolean|true|false |  |Indicates whether exporting all data as string value.|
-|ExportArea|Class|true|false |  |Gets or sets the exporting range.|
-|HasHeaderRow|Boolean|true|false |  |Indicates whether the range contains header row.|
+|CheckIfTableExists|Boolean|true|false |  ||
+|ColumnTypeMap|String|true|false |  ||
+|CheckAllDataForColumnType|Boolean|true|false |  ||
+|AddBlankLineBetweenRows|Boolean|true|false |  ||
+|Separator|String|true|false |  ||
+|OperatorType|String|true|false |  ||
+|PrimaryKey|Integer|true|false |  ||
+|CreateTable|Boolean|true|false |  ||
+|IdName|String|true|false |  ||
+|StartId|Integer|true|false |  ||
+|TableName|String|true|false |  ||
+|ExportAsString|Boolean|true|false |  ||
+|ExportArea|Class|true|false |  ||
+|HasHeaderRow|Boolean|true|false |  ||
 |SaveFormat|String|true|false |  ||
 |CachedFileFolder|String|true|false |  ||
 |ClearData|Boolean|true|false |  ||

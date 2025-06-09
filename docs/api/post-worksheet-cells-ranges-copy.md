@@ -7,6 +7,7 @@ Copy content from the source range to the destination range in the worksheet.
 POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/ranges/copy
 
 ```
+Copy content from the source range to the destination range in the worksheet.
 
 ## The request parameters of **postWorksheetCellsRangesCopy** API are: 
 
@@ -20,3 +21,6 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/ranges/co
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/RangesController/PostWorksheetCellsRangesCopy) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PostWorksheetCellsRangesCopy.cs">
+

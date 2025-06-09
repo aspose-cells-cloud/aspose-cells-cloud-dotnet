@@ -7,6 +7,7 @@ Add a format condition in the worksheet.
 PUT http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
 
 ```
+Add a format condition in the worksheet.
 
 ## The request parameters of **putWorksheetFormatCondition** API are: 
 
@@ -25,3 +26,6 @@ PUT http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/conditiona
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConditionalFormattingsController/PutWorksheetFormatCondition) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PutWorksheetFormatCondition.cs">
+

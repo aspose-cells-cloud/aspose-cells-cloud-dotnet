@@ -7,6 +7,7 @@ Retrieve description of a sparkline group in the worksheet.
 GET http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/sparklineGroups/{sparklineIndex}
 
 ```
+Retrieve description of a sparkline group in the worksheet.
 
 ## The request parameters of **getWorksheetSparklineGroup** API are: 
 
@@ -20,3 +21,6 @@ GET http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/sparklineG
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SparklineGroupsController/GetWorksheetSparklineGroup) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_GetWorksheetSparklineGroup.cs">
+

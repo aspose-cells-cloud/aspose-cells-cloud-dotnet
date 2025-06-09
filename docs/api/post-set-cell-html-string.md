@@ -7,6 +7,7 @@ Set the HTML string containing data and specific formats in this cell.
 POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/cells/{cellName}/htmlstring
 
 ```
+Set the HTML string containing data and specific formats in this cell.
 
 ## The request parameters of **postSetCellHtmlString** API are: 
 
@@ -20,3 +21,6 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/cells/{ce
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/CellsController/PostSetCellHtmlString) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PostSetCellHtmlString.cs">
+

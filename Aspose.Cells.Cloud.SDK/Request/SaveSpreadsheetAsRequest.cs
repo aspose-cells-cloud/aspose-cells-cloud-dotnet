@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="GetWorkbookWithFormatRequest.cs">
+// <copyright company="Aspose" file="SaveSpreadsheetAsRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,23 +32,24 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.GetWorkbookWithFormat" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.SaveSpreadsheetAs" /> operation.
     /// </summary>
-    public class GetWorkbookWithFormatRequest : IRequestModel
+    public class SaveSpreadsheetAsRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetWorkbookWithFormatRequest"/> class.
+        /// Initializes a new instance of the <see cref="SaveSpreadsheetAsRequest"/> class.
         /// </summary>
-        public GetWorkbookWithFormatRequest()
+        public SaveSpreadsheetAsRequest()
         {
 
         }
             /// <summary>
-            /// Initializes a new instance of the <see cref="GetWorkbookWithFormatRequest"/> class.
+            /// Initializes a new instance of the <see cref="SaveSpreadsheetAsRequest"/> class.
             /// </summary>
-            /// <param name="name">(Required) The name of the workbook file to be retrieved.</param>
+            /// <param name="name">(Required) The name of the workbook file to be converted.</param>
             /// <param name="format">(Required) The desired output format (e.g., "Xlsx", "Pdf", "Csv").</param>
+            /// <param name="saveOptionsData">(Optional) Save options data. The default is null.</param>
             /// <param name="folder">(Optional) The folder path where the workbook is stored. The default is null.</param>
             /// <param name="storageName">(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.</param>
             /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
@@ -56,10 +57,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="fontsLocation">Use Custom fonts.</param>
             /// <param name="regoin">The spreadsheet region setting.</param>
             /// <param name="password">The password for opening spreadsheet file.</param>
-            public GetWorkbookWithFormatRequest(string  name, string  format, string  folder = null, string  storageName = null, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  regoin = null, string  password = null)
+            public SaveSpreadsheetAsRequest(string  name, string  format, SaveOptionsData  saveOptionsData = null, string  folder = null, string  storageName = null, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  regoin = null, string  password = null)
             {
                 this.name = name;
                 this.format = format;
+                this.saveOptionsData = saveOptionsData;
                 this.folder = folder;
                 this.storageName = storageName;
                 this.outPath = outPath;
@@ -70,7 +72,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
         
         /// <summary>
-        /// (Required) The name of the workbook file to be retrieved.
+        /// (Required) The name of the workbook file to be converted.
         /// </summary>
         public string name { get; set; }
 
@@ -79,6 +81,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// (Required) The desired output format (e.g., "Xlsx", "Pdf", "Csv").
         /// </summary>
         public string format { get; set; }
+
+
+        /// <summary>
+        /// (Optional) Save options data. The default is null.
+        /// </summary>
+        public SaveOptionsData saveOptionsData { get; set; }
 
 
         /// <summary>
@@ -142,16 +150,16 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'name' is set
             if (string.IsNullOrEmpty (this.name ))
             {
-                throw new ApiException(400, "Missing required parameter 'name' when calling GetWorkbookWithFormat");
+                throw new ApiException(400, "Missing required parameter 'name' when calling SaveSpreadsheetAs");
             }
 
             // verify the required parameter 'format' is set
             if (string.IsNullOrEmpty (this.format ))
             {
-                throw new ApiException(400, "Missing required parameter 'format' when calling GetWorkbookWithFormat");
+                throw new ApiException(400, "Missing required parameter 'format' when calling SaveSpreadsheetAs");
             }
 
-            var path = baseUri + "/cells/{name}";
+            var path = baseUri + "/cells/{name}/SaveAs";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
@@ -174,8 +182,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 }
             }
 
+            localVarPostBody = ( this.saveOptionsData != null ? JsonConvert.SerializeObject(this.saveOptionsData) : null);
 
-            return UrlHelper.PrepareRequest(path, "GET", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
+
+            return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }
 }

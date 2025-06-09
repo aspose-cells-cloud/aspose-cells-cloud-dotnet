@@ -1,6 +1,6 @@
 # **xpsSaveOptions**
 
-Represents the options of saving .xps file. 
+ 
 
 ## **Properties**
 

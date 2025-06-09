@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="SearchTextInRemoteRequest.cs">
+// <copyright company="Aspose" file="SearchSpreadsheetContentRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,47 +32,43 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.SearchTextInRemote" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.SearchSpreadsheetContent" /> operation.
     /// </summary>
-    public class SearchTextInRemoteRequest : IRequestModel
+    public class SearchSpreadsheetContentRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SearchTextInRemoteRequest"/> class.
+        /// Initializes a new instance of the <see cref="SearchSpreadsheetContentRequest"/> class.
         /// </summary>
-        public SearchTextInRemoteRequest()
+        public SearchSpreadsheetContentRequest()
         {
 
         }
-            /// <summary>
-            /// Initializes a new instance of the <see cref="SearchTextInRemoteRequest"/> class.
-            /// </summary>
-            /// <param name="name">The name of the workbook file to be search.</param>
-            /// <param name="searchText">The searched text.</param>
-            /// <param name="ignoringCase">Ignore the text of the search.</param>
-            /// <param name="sheetname">Specify the worksheet for the lookup.</param>
-            /// <param name="cellarea">Specify the cell area for the lookup</param>
-            /// <param name="folder">The folder path where the workbook is stored.</param>
-            /// <param name="storageName">(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.</param>
-            /// <param name="regoin">The spreadsheet region setting.</param>
-            /// <param name="password">The password for opening spreadsheet file.</param>
-            public SearchTextInRemoteRequest(string  name, string  searchText, bool?  ignoringCase = null, string  sheetname = null, string  cellarea = null, string  folder = null, string  storageName = null, string  regoin = null, string  password = null)
-            {
-                this.name = name;
-                this.searchText = searchText;
-                this.ignoringCase = ignoringCase;
-                this.sheetname = sheetname;
-                this.cellarea = cellarea;
-                this.folder = folder;
-                this.storageName = storageName;
-                this.regoin = regoin;
-                this.password = password;
-            }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SearchSpreadsheetContentRequest"/> class.
+        /// </summary>
+        /// <param name="spreadsheet">Upload spreadsheet file.</param>
+        /// <param name="searchText">The searched text.</param>
+        /// <param name="ignoringCase">Ignore the text of the search.</param>
+        /// <param name="sheetname">Specify the worksheet for the lookup.</param>
+        /// <param name="cellarea">Specify the cell area for the lookup</param>
+        /// <param name="regoin">The spreadsheet region setting.</param>
+        /// <param name="password">The password for opening spreadsheet file.</param>
+        public SearchSpreadsheetContentRequest(string  spreadsheet, string  searchText, bool?  ignoringCase = null, string  sheetname = null, string  cellarea = null, string  regoin = null, string  password = null)
+        {
+            this.Spreadsheet = spreadsheet;
+            this.searchText = searchText;
+            this.ignoringCase = ignoringCase;
+            this.sheetname = sheetname;
+            this.cellarea = cellarea;
+            this.regoin = regoin;
+            this.password = password;
+        }
         
         /// <summary>
-        /// The name of the workbook file to be search.
+        /// Upload spreadsheet file.
         /// </summary>
-        public string name { get; set; }
+            public string Spreadsheet { get; set; }
 
 
         /// <summary>
@@ -97,18 +93,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Specify the cell area for the lookup
         /// </summary>
         public string cellarea { get; set; }
-
-
-        /// <summary>
-        /// The folder path where the workbook is stored.
-        /// </summary>
-        public string folder { get; set; }
-
-
-        /// <summary>
-        /// (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.
-        /// </summary>
-        public string storageName { get; set; }
 
 
         /// <summary>
@@ -139,31 +123,28 @@ namespace Aspose.Cells.Cloud.SDK.Request
             var localVarFileParams = new Dictionary<string, object>();
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
-            // verify the required parameter 'name' is set
-            if (string.IsNullOrEmpty (this.name ))
+            // verify the required parameter 'spreadsheet' is set
+            if (    string.IsNullOrEmpty(this.Spreadsheet)    )
             {
-                throw new ApiException(400, "Missing required parameter 'name' when calling SearchTextInRemote");
+                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling SearchSpreadsheetContent");
             }
 
             // verify the required parameter 'searchText' is set
             if (string.IsNullOrEmpty (this.searchText ))
             {
-                throw new ApiException(400, "Missing required parameter 'searchText' when calling SearchTextInRemote");
+                throw new ApiException(400, "Missing required parameter 'searchText' when calling SearchSpreadsheetContent");
             }
 
-            var path = baseUri + "/cells/{name}/search";
+            var path = baseUri + "/cells/search/content";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            path = UrlHelper.AddPathParameter(path, "name", this.name);
             path = UrlHelper.AddQueryParameterToUrl(path, "searchText", this.searchText);
             if(this.ignoringCase != null)  path = UrlHelper.AddQueryParameterToUrl(path, "ignoringCase", this.ignoringCase);
             if (!string.IsNullOrEmpty(this.sheetname))  path = UrlHelper.AddQueryParameterToUrl(path, "sheetname", this.sheetname);
             if (!string.IsNullOrEmpty(this.cellarea))  path = UrlHelper.AddQueryParameterToUrl(path, "cellarea", this.cellarea);
-            if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
-            if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
             if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
@@ -173,6 +154,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
+            if (!string.IsNullOrEmpty(Spreadsheet ) && System.IO.File.Exists(Spreadsheet )) {
+                        System.IO.FileInfo fileInfo = new System.IO.FileInfo(Spreadsheet);
+                        localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(Spreadsheet), fileInfo.Name));
+               }
+
 
 
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);

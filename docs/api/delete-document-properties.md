@@ -7,6 +7,7 @@ Delete all custom document properties and reset built-in ones.
 DELETE http://api.aspose.cloud/v3.0//cells/{name}/documentproperties
 
 ```
+Delete all custom document properties and reset built-in ones.
 
 ## The request parameters of **deleteDocumentProperties** API are: 
 
@@ -18,3 +19,6 @@ DELETE http://api.aspose.cloud/v3.0//cells/{name}/documentproperties
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/PropertiesController/DeleteDocumentProperties) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DeleteDocumentProperties.cs">
+

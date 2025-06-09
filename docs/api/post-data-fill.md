@@ -7,6 +7,7 @@ Data filling for spreadsheet files is primarily used to fill empty data in table
 POST http://api.aspose.cloud/v3.0//cells/datafill
 
 ```
+Data filling for spreadsheet files is primarily used to fill empty data in tables and ranges.
 
 ## The request parameters of **postDataFill** API are: 
 
@@ -16,3 +17,5 @@ POST http://api.aspose.cloud/v3.0//cells/datafill
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/PostDataFill) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+

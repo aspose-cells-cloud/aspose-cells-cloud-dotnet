@@ -7,6 +7,7 @@ Retrieve descriptions of chart seriesaxis in the chart.
 GET http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/seriesaxis
 
 ```
+Retrieve descriptions of chart seriesaxis in the chart.
 
 ## The request parameters of **getChartSeriesAxis** API are: 
 
@@ -20,3 +21,5 @@ GET http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/charts/{ch
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ChartsController/GetChartSeriesAxis) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+

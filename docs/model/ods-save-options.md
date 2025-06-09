@@ -1,6 +1,6 @@
 # **odsSaveOptions**
 
-Represents options of saving .ods file. 
+ 
 
 ## **Properties**
 

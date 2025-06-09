@@ -1,6 +1,6 @@
 # **difSaveOptions**
 
-Represents the options of saving dif file. 
+ 
 
 ## **Properties**
 

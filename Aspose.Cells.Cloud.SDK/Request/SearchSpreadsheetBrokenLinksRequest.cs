@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ReplaceTextRequest.cs">
+// <copyright company="Aspose" file="SearchSpreadsheetBrokenLinksRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,33 +32,29 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.ReplaceText" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.SearchSpreadsheetBrokenLinks" /> operation.
     /// </summary>
-    public class ReplaceTextRequest : IRequestModel
+    public class SearchSpreadsheetBrokenLinksRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ReplaceTextRequest"/> class.
+        /// Initializes a new instance of the <see cref="SearchSpreadsheetBrokenLinksRequest"/> class.
         /// </summary>
-        public ReplaceTextRequest()
+        public SearchSpreadsheetBrokenLinksRequest()
         {
 
         }
         /// <summary>
-        /// Initializes a new instance of the <see cref="ReplaceTextRequest"/> class.
+        /// Initializes a new instance of the <see cref="SearchSpreadsheetBrokenLinksRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="searchText">The searched text.</param>
-        /// <param name="replaceText">The replaced text.</param>
         /// <param name="sheetname">Specify the worksheet for the replace.</param>
         /// <param name="cellarea">Specify the cell area for the replace.</param>
         /// <param name="regoin">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public ReplaceTextRequest(string  spreadsheet, string  searchText, string  replaceText, string  sheetname = null, string  cellarea = null, string  regoin = null, string  password = null)
+        public SearchSpreadsheetBrokenLinksRequest(string  spreadsheet, string  sheetname = null, string  cellarea = null, string  regoin = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
-            this.searchText = searchText;
-            this.replaceText = replaceText;
             this.sheetname = sheetname;
             this.cellarea = cellarea;
             this.regoin = regoin;
@@ -69,18 +65,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Upload spreadsheet file.
         /// </summary>
             public string Spreadsheet { get; set; }
-
-
-        /// <summary>
-        /// The searched text.
-        /// </summary>
-        public string searchText { get; set; }
-
-
-        /// <summary>
-        /// The replaced text.
-        /// </summary>
-        public string replaceText { get; set; }
 
 
         /// <summary>
@@ -126,29 +110,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'spreadsheet' is set
             if (    string.IsNullOrEmpty(this.Spreadsheet)    )
             {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling ReplaceText");
+                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling SearchSpreadsheetBrokenLinks");
             }
 
-            // verify the required parameter 'searchText' is set
-            if (string.IsNullOrEmpty (this.searchText ))
-            {
-                throw new ApiException(400, "Missing required parameter 'searchText' when calling ReplaceText");
-            }
-
-            // verify the required parameter 'replaceText' is set
-            if (string.IsNullOrEmpty (this.replaceText ))
-            {
-                throw new ApiException(400, "Missing required parameter 'replaceText' when calling ReplaceText");
-            }
-
-            var path = baseUri + "/cells/replace";
+            var path = baseUri + "/cells/search/broken-links";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            path = UrlHelper.AddQueryParameterToUrl(path, "searchText", this.searchText);
-            path = UrlHelper.AddQueryParameterToUrl(path, "replaceText", this.replaceText);
             if (!string.IsNullOrEmpty(this.sheetname))  path = UrlHelper.AddQueryParameterToUrl(path, "sheetname", this.sheetname);
             if (!string.IsNullOrEmpty(this.cellarea))  path = UrlHelper.AddQueryParameterToUrl(path, "cellarea", this.cellarea);
             if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);
@@ -164,7 +134,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
             if (!string.IsNullOrEmpty(Spreadsheet ) && System.IO.File.Exists(Spreadsheet )) {
                         System.IO.FileInfo fileInfo = new System.IO.FileInfo(Spreadsheet);
                         localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(Spreadsheet), fileInfo.Name));
-                localVarHttpContentType = "multipart/form-data";
                }
 
 

@@ -7,6 +7,7 @@ Copy data from a source cell to a destination cell in the worksheet.
 POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/cells/{destCellName}/copy
 
 ```
+Copy data from a source cell to a destination cell in the worksheet.
 
 ## The request parameters of **postCopyCellIntoCell** API are: 
 
@@ -24,3 +25,6 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/cells/{de
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/CellsController/PostCopyCellIntoCell) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PostCopyCellIntoCell.cs">
+

@@ -7,6 +7,7 @@ add new picture in the cells.
 POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/pictures/addPictureInCell
 
 ```
+add new picture in the cells.
 
 ## The request parameters of **addPictureInCell** API are: 
 
@@ -21,3 +22,5 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/pictures/
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/PicturesController/AddPictureInCell) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+

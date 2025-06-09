@@ -7,6 +7,7 @@ Clear the charts in the worksheets.
 DELETE http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/charts
 
 ```
+Clear the charts in the worksheets.
 
 ## The request parameters of **deleteWorksheetCharts** API are: 
 
@@ -19,3 +20,6 @@ DELETE http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/charts
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ChartsController/DeleteWorksheetCharts) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DeleteWorksheetCharts.cs">
+
