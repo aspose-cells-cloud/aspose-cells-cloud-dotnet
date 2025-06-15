@@ -2,14 +2,25 @@
 
 Retrieve workbooks in various formats. 
 
-```bash
+## **Quick Start**
 
-GET http://api.aspose.cloud/v3.0//cells/{name}
+- **Base URL**: `http://api.aspose.cloud/v3.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_GetWorkbookFormat.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
-Retrieve workbooks in various formats.
+GET http://api.aspose.cloud/v3.0/cells/{name}
+```
 
-## The request parameters of **getWorkbook** API are: 
+### **Function Description**
+PageTitle: Retrieve workbooks in various formats.PageDescription: Aspose.Cells Cloud provides robust support for Excel file format conversion, a process known for its intricacy. Aspose.Cells Cloud supports 30+ file formats, including Excel, Pdf, Markdown, Json, XML, Csv, Html, and so on.HeadTitle: Get files in various formats from Excel.HeadSummary: Aspose.Cells Cloud provides robust support for Excel file format conversion, a process known for its intricacy. Aspose.Cells Cloud supports 30+ file formats, including Excel, Pdf, Markdown, Json, XML, Csv, Html, and so on.HeadContent: Aspose.Cells Cloud provides  REST API which supports getting the workbook in various formats from an Excel file and offers SDKs for multiple programming languages. These programming languages are include of Net, Java, Go, NodeJS, Python, and so on.
+
+### The request parameters of **getWorkbook** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -26,12 +37,19 @@ Retrieve workbooks in various formats.
 |region|String|Query|The regional settings for workbook.|
 |pageWideFitOnPerSheet|Boolean|Query|The page wide fit on worksheet.|
 |pageTallFitOnPerSheet|Boolean|Query|The page tall fit on worksheet.|
-|onePagePerSheet|Boolean|Query||
+|onePagePerSheet|Boolean|Query|When converting to PDF format, one page per sheet.|
 |onlyAutofitTable|Boolean|Query||
 |FontsLocation|String|Query|Use Custom fonts.|
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/GetWorkbook) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+File
+}
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_GetWorkbookFormat.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/GetWorkbook) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

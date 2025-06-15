@@ -137,7 +137,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling MergeSpreadsheets");
             }
 
-            var path = baseUri + "/cells/merge";
+            var path = baseUri + "/cells/merge/spreadsheet";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")

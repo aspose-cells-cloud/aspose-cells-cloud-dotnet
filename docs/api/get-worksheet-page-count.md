@@ -2,14 +2,25 @@
 
 Get page count in the worksheet. 
 
-```bash
+## **Quick Start**
 
-GET http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/pagecount
+- **Base URL**: `http://api.aspose.cloud/v3.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_GetWorksheetPageCount.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
-Get page count in the worksheet.
+GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagecount
+```
 
-## The request parameters of **getWorksheetPageCount** API are: 
+### **Function Description**
+PageTitle:Get page count in the worksheet.PageDescription: Aspose.Cells Cloud provides robust support for getting page count in the worksheet, a process known for its intricacy.HeadTitle: Get page count in the worksheet.HeadSummary: Aspose.Cells Cloud provides robust support for getting page count in the worksheet, a process known for its intricacy.HeadContent: Aspose.Cells Cloud provides REST API which supports getting page count in the worksheet and offers SDKs for multiple programming languages. These programming languages are include of Net, Java, Go, NodeJS, Python, and so on.
+
+### The request parameters of **getWorksheetPageCount** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -19,7 +30,14 @@ Get page count in the worksheet.
 |storageName|String|Query|The storage name where the file is situated.|
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/WorksheetsController/GetWorksheetPageCount) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+Integer
+}
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_GetWorksheetPageCount.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/WorksheetsController/GetWorksheetPageCount) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

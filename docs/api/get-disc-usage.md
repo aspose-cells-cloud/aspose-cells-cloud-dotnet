@@ -2,20 +2,71 @@
 
  
 
-```bash
+## **Quick Start**
 
-GET http://api.aspose.cloud/v3.0//cells/storage/disc
+- **Base URL**: `http://api.aspose.cloud/v4.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_GetDiscUsage.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
+GET http://api.aspose.cloud/v4.0/cells/storage/disc
+```
 
-## The request parameters of **getDiscUsage** API are: 
+### **Function Description**
+
+### The request parameters of **getDiscUsage** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
 |storageName|String|Query||
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/StorageController/GetDiscUsage) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+  "Name": "DiscUsage",
+  "Description": [
+    "Class for disc space information."
+  ],
+  "Type": "Class",
+  "IsAbstract": false,
+  "Properties": [
+    {
+      "Name": "UsedSize",
+      "Description": [
+        "Application used disc space."
+      ],
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "Long",
+        "Name": "long"
+      }
+    },
+    {
+      "Name": "TotalSize",
+      "Description": [
+        "Total disc space."
+      ],
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "Long",
+        "Name": "long"
+      }
+    }
+  ]
+}
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_GetDiscUsage.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/StorageController/GetDiscUsage) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

@@ -2,14 +2,25 @@
 
 Import an XML data file into an Excel file. The XML data file can either be a cloud file or data from an HTTP URI. 
 
-```bash
+## **Quick Start**
 
-POST http://api.aspose.cloud/v3.0//cells/{name}/importxml
+- **Base URL**: `http://api.aspose.cloud/v3.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_PostWorkbookImportXML.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
-Import an XML data file into an Excel file. The XML data file can either be a cloud file or data from an HTTP URI.
+POST http://api.aspose.cloud/v3.0/cells/{name}/importxml
+```
 
-## The request parameters of **postWorkbookImportXML** API are: 
+### **Function Description**
+PageTitle: Import XML data into an Excel file.PageDescription: Aspose.Cells Cloud provides robust support for importing XML data into an Excel file, a process known for its intricacy.HeadTitle: Import Json data into an Excel file.HeadSummary: Aspose.Cells Cloud provides robust support for importing XML data into an Excel file, a process known for its intricacy.HeadContent: Aspose.Cells Cloud provides REST API which supports importing XML data into an Excel file and offers SDKs for multiple programming languages. These programming languages are include of Net, Java, Go, NodeJS, Python, and so on.
+
+### The request parameters of **postWorkbookImportXML** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -24,7 +35,14 @@ Import an XML data file into an Excel file. The XML data file can either be a cl
 |region|String|Query|The regional settings for workbook.|
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/PostWorkbookImportXML) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+File
+}
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PostWorkbookImportXML.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/PostWorkbookImportXML) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

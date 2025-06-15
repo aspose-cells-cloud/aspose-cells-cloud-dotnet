@@ -159,7 +159,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 throw new ApiException(400, "Missing required parameter 'format' when calling SaveSpreadsheetAs");
             }
 
-            var path = baseUri + "/cells/{name}/SaveAs";
+            var path = baseUri + "/cells/{name}/saveas";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")

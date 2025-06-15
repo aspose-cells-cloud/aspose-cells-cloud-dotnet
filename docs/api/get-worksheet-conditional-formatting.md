@@ -2,14 +2,25 @@
 
 Retrieve conditional formatting descriptions in the worksheet. 
 
-```bash
+## **Quick Start**
 
-GET http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
+- **Base URL**: `http://api.aspose.cloud/v3.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_GetWorksheetConditionalFormatting.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
-Retrieve conditional formatting descriptions in the worksheet.
+GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
+```
 
-## The request parameters of **getWorksheetConditionalFormatting** API are: 
+### **Function Description**
+PageTitle:  Retrieve conditional formatting descriptions from a worksheet.PageDescription: Aspose.Cells Cloud provides robust support for obtaining conditional formatting descriptions in a worksheet, a process known for its intricacy.HeadTitle: Retrieve conditional formatting descriptions from a worksheet.HeadSummary: Aspose.Cells Cloud provides robust support for obtaining conditional formatting descriptions in a worksheet, a process known for its intricacy.HeadContent: Aspose.Cells Cloud provides REST API which supports obtaining conditional formatting descriptions in a worksheet and offers SDKs for multiple programming languages. These programming languages are include of Net, Java, Go, NodeJS, Python, and so on.
+
+### The request parameters of **getWorksheetConditionalFormatting** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -20,7 +31,56 @@ Retrieve conditional formatting descriptions in the worksheet.
 |storageName|String|Query|The storage name where the file is situated.|
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConditionalFormattingsController/GetWorksheetConditionalFormatting) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+  "Name": "ConditionalFormattingResponse",
+  "Description": [
+    "Represents the ConditionalFormatting Response."
+  ],
+  "Type": "Class",
+  "ParentName": "CellsCloudResponse",
+  "IsAbstract": false,
+  "Properties": [
+    {
+      "Name": "ConditionalFormatting",
+      "Description": [
+        "This class has a property named ConditionalFormatting of type ConditionalFormatting that can be accessed and modified."
+      ],
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "Class",
+        "Reference": "ConditionalFormatting",
+        "Name": "class:conditionalformatting"
+      }
+    },
+    {
+      "Name": "Code",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": true,
+      "DataType": {
+        "Identifier": "Integer",
+        "Name": "integer"
+      }
+    },
+    {
+      "Name": "Status",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": true,
+      "DataType": {
+        "Identifier": "String",
+        "Name": "string"
+      }
+    }
+  ]
+}
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_GetWorksheetConditionalFormatting.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConditionalFormattingsController/GetWorksheetConditionalFormatting) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

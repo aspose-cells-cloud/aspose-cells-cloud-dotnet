@@ -2,14 +2,25 @@
 
 Set background in the workbook. 
 
-```bash
+## **Quick Start**
 
-PUT http://api.aspose.cloud/v3.0//cells/{name}/background
+- **Base URL**: `http://api.aspose.cloud/v3.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_PutWorkbookBackground.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
-Set background in the workbook.
+PUT http://api.aspose.cloud/v3.0/cells/{name}/background
+```
 
-## The request parameters of **putWorkbookBackground** API are: 
+### **Function Description**
+PageTitle: Set background in the workbook.PageDescription: Aspose.Cells Cloud provides robust support for setting background in the workbook, a process known for its intricacy.HeadTitle: Set background in the workbook.HeadSummary: Aspose.Cells Cloud provides robust support for setting background in the workbook, a process known for its intricacy.HeadContent: Aspose.Cells Cloud provides REST API which supports setting background in the workbook and offers SDKs for multiple programming languages. These programming languages are include of Net, Java, Go, NodeJS, Python, and so on.
+
+### The request parameters of **putWorkbookBackground** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -21,7 +32,38 @@ Set background in the workbook.
 |File|File|FormData|File to upload|
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/WorkbookController/PutWorkbookBackground) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+  "Name": "CellsCloudResponse",
+  "Type": "Class",
+  "IsAbstract": false,
+  "Properties": [
+    {
+      "Name": "Code",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "Integer",
+        "Name": "integer"
+      }
+    },
+    {
+      "Name": "Status",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "String",
+        "Name": "string"
+      }
+    }
+  ]
+}
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PutWorkbookBackground.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/WorkbookController/PutWorkbookBackground) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

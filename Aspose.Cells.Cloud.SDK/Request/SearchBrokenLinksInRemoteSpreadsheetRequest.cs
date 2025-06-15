@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="SearchRemoteSpreadsheetBrokenLinksRequest.cs">
+// <copyright company="Aspose" file="SearchBrokenLinksInRemoteSpreadsheetRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,33 +32,33 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.SearchRemoteSpreadsheetBrokenLinks" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.SearchBrokenLinksInRemoteSpreadsheet" /> operation.
     /// </summary>
-    public class SearchRemoteSpreadsheetBrokenLinksRequest : IRequestModel
+    public class SearchBrokenLinksInRemoteSpreadsheetRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SearchRemoteSpreadsheetBrokenLinksRequest"/> class.
+        /// Initializes a new instance of the <see cref="SearchBrokenLinksInRemoteSpreadsheetRequest"/> class.
         /// </summary>
-        public SearchRemoteSpreadsheetBrokenLinksRequest()
+        public SearchBrokenLinksInRemoteSpreadsheetRequest()
         {
 
         }
             /// <summary>
-            /// Initializes a new instance of the <see cref="SearchRemoteSpreadsheetBrokenLinksRequest"/> class.
+            /// Initializes a new instance of the <see cref="SearchBrokenLinksInRemoteSpreadsheetRequest"/> class.
             /// </summary>
             /// <param name="name">The name of the workbook file to be search.</param>
-            /// <param name="sheetname">Specify the worksheet for the lookup.</param>
-            /// <param name="cellarea">Specify the cell area for the lookup</param>
+            /// <param name="worksheet">Specify the worksheet for the lookup.</param>
+            /// <param name="cellArea">Specify the cell area for the lookup</param>
             /// <param name="folder">The folder path where the workbook is stored.</param>
             /// <param name="storageName">(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.</param>
             /// <param name="regoin">The spreadsheet region setting.</param>
             /// <param name="password">The password for opening spreadsheet file.</param>
-            public SearchRemoteSpreadsheetBrokenLinksRequest(string  name, string  sheetname = null, string  cellarea = null, string  folder = null, string  storageName = null, string  regoin = null, string  password = null)
+            public SearchBrokenLinksInRemoteSpreadsheetRequest(string  name, string  worksheet = null, string  cellArea = null, string  folder = null, string  storageName = null, string  regoin = null, string  password = null)
             {
                 this.name = name;
-                this.sheetname = sheetname;
-                this.cellarea = cellarea;
+                this.worksheet = worksheet;
+                this.cellArea = cellArea;
                 this.folder = folder;
                 this.storageName = storageName;
                 this.regoin = regoin;
@@ -74,13 +74,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Specify the worksheet for the lookup.
         /// </summary>
-        public string sheetname { get; set; }
+        public string worksheet { get; set; }
 
 
         /// <summary>
         /// Specify the cell area for the lookup
         /// </summary>
-        public string cellarea { get; set; }
+        public string cellArea { get; set; }
 
 
         /// <summary>
@@ -126,7 +126,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'name' is set
             if (string.IsNullOrEmpty (this.name ))
             {
-                throw new ApiException(400, "Missing required parameter 'name' when calling SearchRemoteSpreadsheetBrokenLinks");
+                throw new ApiException(400, "Missing required parameter 'name' when calling SearchBrokenLinksInRemoteSpreadsheet");
             }
 
             var path = baseUri + "/cells/{name}/search/broken-links";
@@ -136,8 +136,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     .Replace("/?", "?");
 
             path = UrlHelper.AddPathParameter(path, "name", this.name);
-            if (!string.IsNullOrEmpty(this.sheetname))  path = UrlHelper.AddQueryParameterToUrl(path, "sheetname", this.sheetname);
-            if (!string.IsNullOrEmpty(this.cellarea))  path = UrlHelper.AddQueryParameterToUrl(path, "cellarea", this.cellarea);
+            if (!string.IsNullOrEmpty(this.worksheet))  path = UrlHelper.AddQueryParameterToUrl(path, "worksheet", this.worksheet);
+            if (!string.IsNullOrEmpty(this.cellArea))  path = UrlHelper.AddQueryParameterToUrl(path, "cellArea", this.cellArea);
             if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
             if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
             if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);

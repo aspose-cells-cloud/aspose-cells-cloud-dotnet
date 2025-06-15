@@ -2,14 +2,25 @@
 
 Split the workbook with a specific format. 
 
-```bash
+## **Quick Start**
 
-POST http://api.aspose.cloud/v3.0//cells/{name}/split
+- **Base URL**: `http://api.aspose.cloud/v3.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_PostWorkbookSplit.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
-Split the workbook with a specific format.
+POST http://api.aspose.cloud/v3.0/cells/{name}/split
+```
 
-## The request parameters of **postWorkbookSplit** API are: 
+### **Function Description**
+PageTitle: Split the workbook with a specific format.PageDescription: Aspose.Cells Cloud provides robust support for splitting the workbook with a specific format, a process known for its intricacy.HeadTitle: Split the workbook with a specific format.HeadSummary: Aspose.Cells Cloud provides robust support for splitting the workbook with a specific format, a process known for its intricacy.HeadContent: Aspose.Cells Cloud provides REST API which supports splitting the workbook with a specific format and offers SDKs for multiple programming languages. These programming languages are include of Net, Java, Go, NodeJS, Python, and so on.
+
+### The request parameters of **postWorkbookSplit** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -26,7 +37,56 @@ Split the workbook with a specific format.
 |outStorageName|String|Query||
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/WorkbookController/PostWorkbookSplit) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+  "Name": "SplitResultResponse",
+  "Description": [
+    "Represents the SplitResult Response."
+  ],
+  "Type": "Class",
+  "ParentName": "CellsCloudResponse",
+  "IsAbstract": false,
+  "Properties": [
+    {
+      "Name": "Result",
+      "Description": [
+        "Gets or sets the splitting result."
+      ],
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "Class",
+        "Reference": "SplitResult",
+        "Name": "class:splitresult"
+      }
+    },
+    {
+      "Name": "Code",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": true,
+      "DataType": {
+        "Identifier": "Integer",
+        "Name": "integer"
+      }
+    },
+    {
+      "Name": "Status",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": true,
+      "DataType": {
+        "Identifier": "String",
+        "Name": "string"
+      }
+    }
+  ]
+}
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PostWorkbookSplit.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/WorkbookController/PostWorkbookSplit) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

@@ -161,7 +161,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 throw new ApiException(400, "Missing required parameter 'name' when calling SplitRemoteSpreadsheet");
             }
 
-            var path = baseUri + "/cells/{name}/split";
+            var path = baseUri + "/cells/{name}/split/spreadsheet";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")

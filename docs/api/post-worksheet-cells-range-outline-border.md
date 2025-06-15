@@ -2,14 +2,25 @@
 
 Apply an outline border around a range of cells. 
 
-```bash
+## **Quick Start**
 
-POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/ranges/outlineBorder
+- **Base URL**: `http://api.aspose.cloud/v3.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_PostWorksheetCellsRangeOutlineBorder.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
-Apply an outline border around a range of cells.
+POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/outlineBorder
+```
 
-## The request parameters of **postWorksheetCellsRangeOutlineBorder** API are: 
+### **Function Description**
+PageTitle: Apply an outline border around a range of cellsPageDescription: Aspose.Cells Cloud provides robust support for applying an outline border around a range of cells in the worksheet, a process known for its intricacy.HeadTitle: Apply an outline border around a range of cellsHeadSummary: Aspose.Cells Cloud provides robust support for applying an outline border around a range of cells in the worksheet, a process known for its intricacy.HeadContent: Aspose.Cells Cloud provides REST API which supports applying an outline border around a range of cells in the worksheet and offers SDKs for multiple programming languages. These programming languages are include of Net, Java, Go, NodeJS, Python, and so on.
+
+### The request parameters of **postWorksheetCellsRangeOutlineBorder** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -20,7 +31,38 @@ Apply an outline border around a range of cells.
 |storageName|String|Query|Storage name.|
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/RangesController/PostWorksheetCellsRangeOutlineBorder) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+  "Name": "CellsCloudResponse",
+  "Type": "Class",
+  "IsAbstract": false,
+  "Properties": [
+    {
+      "Name": "Code",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "Integer",
+        "Name": "integer"
+      }
+    },
+    {
+      "Name": "Status",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "String",
+        "Name": "string"
+      }
+    }
+  ]
+}
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PostWorksheetCellsRangeOutlineBorder.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/RangesController/PostWorksheetCellsRangeOutlineBorder) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

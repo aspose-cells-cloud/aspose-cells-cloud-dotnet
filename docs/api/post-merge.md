@@ -2,14 +2,25 @@
 
 Merge cells in the worksheet. 
 
-```bash
+## **Quick Start**
 
-POST http://api.aspose.cloud/v3.0//cells/merge
+- **Base URL**: `http://api.aspose.cloud/v3.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_PostMerge.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
-Merge cells in the worksheet.
+POST http://api.aspose.cloud/v3.0/cells/merge
+```
 
-## The request parameters of **postMerge** API are: 
+### **Function Description**
+PageTitle: Merge cells in the worksheet.PageDescription: Aspose.Cells Cloud provides robust support for merging cells in the worksheet, a process known for its intricacy.HeadTitle: Merge cells in the worksheet.HeadSummary: Aspose.Cells Cloud provides robust support for merging cells in the worksheet, a process known for its intricacy.HeadContent: Aspose.Cells Cloud provides REST API which supports merging cells in the worksheet and offers SDKs for multiple programming languages. These programming languages are include of Net, Java, Go, NodeJS, Python, and so on.
+
+### The request parameters of **postMerge** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -21,7 +32,60 @@ Merge cells in the worksheet.
 |region|String|Query|The regional settings for workbook.|
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/LightCellsController/PostMerge) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+  "Name": "FileInfo",
+  "Description": [
+    "Represents file information."
+  ],
+  "Type": "Class",
+  "IsAbstract": false,
+  "Properties": [
+    {
+      "Name": "Filename",
+      "Description": [
+        "Represents filename. "
+      ],
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "String",
+        "Name": "string"
+      }
+    },
+    {
+      "Name": "FileSize",
+      "Description": [
+        "Represents file size."
+      ],
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "Long",
+        "Name": "long"
+      }
+    },
+    {
+      "Name": "FileContent",
+      "Description": [
+        "Represents file content,  byte to base64 string."
+      ],
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "String",
+        "Name": "string"
+      }
+    }
+  ]
+}
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PostMerge.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/LightCellsController/PostMerge) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

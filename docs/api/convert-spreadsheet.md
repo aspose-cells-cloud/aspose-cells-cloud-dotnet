@@ -2,14 +2,25 @@
 
 Converts a spreadsheet on a local drive to the specified format. 
 
-```bash
+## **Quick Start**
 
-PUT http://api.aspose.cloud/v3.0//cells/convert
+- **Base URL**: `http://api.aspose.cloud/v4.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_ConvertWorkbook.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
-Converts a spreadsheet on a local drive to the specified format.
+PUT http://api.aspose.cloud/v4.0/cells/convert/spreadsheet
+```
 
-## The request parameters of **convertSpreadsheet** API are: 
+### **Function Description**
+This method reads a spreadsheet file from the local file system, converts it into the desired output format (e.g., XLSX, PDF, CSV), and returns the converted result.The source file path and target format must be specified correctly.Ensure that the necessary permissions are in place to read the source file and write the converted file if applicable.The conversion process occurs entirely on the cloud server, eliminating the need for any cloud storage or external downloads.If the source file does not exist, is inaccessible, or if an error occurs during the conversion process, an appropriate exception will be thrown.Supported formats for conversion depend on the available libraries and their capabilities.
+
+### The request parameters of **convertSpreadsheet** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -22,7 +33,14 @@ Converts a spreadsheet on a local drive to the specified format.
 |password|String|Query|The password for opening spreadsheet file.|
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertSpreadsheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+File
+}
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertWorkbook.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertSpreadsheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

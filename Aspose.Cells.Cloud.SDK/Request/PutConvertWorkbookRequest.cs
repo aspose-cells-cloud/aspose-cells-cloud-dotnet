@@ -57,11 +57,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="region">The regional settings for workbook.</param>
         /// <param name="pageWideFitOnPerSheet">The page wide fit on worksheet.</param>
         /// <param name="pageTallFitOnPerSheet">The page tall fit on worksheet.</param>
-        /// <param name="sheetName"></param>
-        /// <param name="pageIndex"></param>
-        /// <param name="onePagePerSheet"></param>
-        /// <param name="autoRowsFit"></param>
-        /// <param name="autoColumnsFit"></param>
+        /// <param name="sheetName">Convert the specified worksheet. </param>
+        /// <param name="pageIndex">Convert the specified page  of worksheet, sheetName is required. </param>
+        /// <param name="onePagePerSheet">When converting to PDF format, one page per sheet. </param>
+        /// <param name="autoRowsFit">Auto-fits all rows in this workbook.</param>
+        /// <param name="autoColumnsFit">Auto-fits the columns width in this workbook.</param>
         /// <param name="fontsLocation">Use Custom fonts.</param>
         public PutConvertWorkbookRequest(string localPath ,  string format  ,  string password   = null,  string outPath   = null,  string storageName   = null,  bool? checkExcelRestriction   = null,  string streamFormat   = null,  string region   = null,  bool? pageWideFitOnPerSheet   = null,  bool? pageTallFitOnPerSheet   = null,  string sheetName   = null,  int? pageIndex   = null,  bool? onePagePerSheet   = null,  bool? autoRowsFit   = null,  bool? autoColumnsFit   = null,  string fontsLocation   = null)
         {
@@ -165,31 +165,31 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Gets or sets sheetName.
+        /// Convert the specified worksheet. 
         /// </summary>
         public string sheetName { get; set; }
 
 
         /// <summary>
-        /// Gets or sets pageIndex.
+        /// Convert the specified page  of worksheet, sheetName is required. 
         /// </summary>
         public int? pageIndex { get; set; }
 
 
         /// <summary>
-        /// Gets or sets onePagePerSheet.
+        /// When converting to PDF format, one page per sheet. 
         /// </summary>
         public bool? onePagePerSheet { get; set; }
 
 
         /// <summary>
-        /// Gets or sets AutoRowsFit.
+        /// Auto-fits all rows in this workbook.
         /// </summary>
         public bool? AutoRowsFit { get; set; }
 
 
         /// <summary>
-        /// Gets or sets AutoColumnsFit.
+        /// Auto-fits the columns width in this workbook.
         /// </summary>
         public bool? AutoColumnsFit { get; set; }
 
@@ -217,7 +217,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
             // verify the required parameter 'file' is set
-            if (   string.IsNullOrEmpty(this.LocalPath) ||  this.File == null    )
+            if (   string.IsNullOrEmpty(this.LocalPath) &&  this.File == null    )
             {
                 throw new ApiException(400, "Missing required parameter 'file' when calling PutConvertWorkbook");
             }

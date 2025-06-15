@@ -50,17 +50,17 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
         /// <param name="searchText">The searched text.</param>
         /// <param name="replaceText">The replaced text.</param>
-        /// <param name="sheetname">Specify the worksheet for the replace.</param>
-        /// <param name="cellarea">Specify the cell area for the replace.</param>
+        /// <param name="worksheet">Specify the worksheet for the replace.</param>
+        /// <param name="cellArea">Specify the cell area for the replace.</param>
         /// <param name="regoin">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public ReplaceSpreadsheetContentRequest(string  spreadsheet, string  searchText, string  replaceText, string  sheetname = null, string  cellarea = null, string  regoin = null, string  password = null)
+        public ReplaceSpreadsheetContentRequest(string  spreadsheet, string  searchText, string  replaceText, string  worksheet = null, string  cellArea = null, string  regoin = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
             this.searchText = searchText;
             this.replaceText = replaceText;
-            this.sheetname = sheetname;
-            this.cellarea = cellarea;
+            this.worksheet = worksheet;
+            this.cellArea = cellArea;
             this.regoin = regoin;
             this.password = password;
         }
@@ -86,13 +86,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Specify the worksheet for the replace.
         /// </summary>
-        public string sheetname { get; set; }
+        public string worksheet { get; set; }
 
 
         /// <summary>
         /// Specify the cell area for the replace.
         /// </summary>
-        public string cellarea { get; set; }
+        public string cellArea { get; set; }
 
 
         /// <summary>
@@ -149,8 +149,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
             path = UrlHelper.AddQueryParameterToUrl(path, "searchText", this.searchText);
             path = UrlHelper.AddQueryParameterToUrl(path, "replaceText", this.replaceText);
-            if (!string.IsNullOrEmpty(this.sheetname))  path = UrlHelper.AddQueryParameterToUrl(path, "sheetname", this.sheetname);
-            if (!string.IsNullOrEmpty(this.cellarea))  path = UrlHelper.AddQueryParameterToUrl(path, "cellarea", this.cellarea);
+            if (!string.IsNullOrEmpty(this.worksheet))  path = UrlHelper.AddQueryParameterToUrl(path, "worksheet", this.worksheet);
+            if (!string.IsNullOrEmpty(this.cellArea))  path = UrlHelper.AddQueryParameterToUrl(path, "cellArea", this.cellArea);
             if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)

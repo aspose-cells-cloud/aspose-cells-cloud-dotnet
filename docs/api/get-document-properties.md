@@ -2,14 +2,25 @@
 
 Retrieve descriptions of Excel file properties. 
 
-```bash
+## **Quick Start**
 
-GET http://api.aspose.cloud/v3.0//cells/{name}/documentproperties
+- **Base URL**: `http://api.aspose.cloud/v3.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_GetDocumentProperties.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
-Retrieve descriptions of Excel file properties.
+GET http://api.aspose.cloud/v3.0/cells/{name}/documentproperties
+```
 
-## The request parameters of **getDocumentProperties** API are: 
+### **Function Description**
+PageTitle:  Retrieve descriptions of Excel file properties.PageDescription: Aspose.Cells Cloud provides robust support for obtaining descriptions of Excel file properties, a process known for its intricacy.HeadTitle: Retrieve descriptions of Excel file properties.HeadSummary: Aspose.Cells Cloud provides robust support for obtaining descriptions of Excel file properties, a process known for its intricacy.HeadContent: Aspose.Cells Cloud provides REST API which supports obtaining descriptions of Excel file properties and offers SDKs for multiple programming languages. These programming languages are include of Net, Java, Go, NodeJS, Python, and so on.
+
+### The request parameters of **getDocumentProperties** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -19,7 +30,56 @@ Retrieve descriptions of Excel file properties.
 |storageName|String|Query|The storage name where the file is situated.|
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/PropertiesController/GetDocumentProperties) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+  "Name": "CellsDocumentPropertiesResponse",
+  "Description": [
+    "Represents the CellsDocumentProperties Response."
+  ],
+  "Type": "Class",
+  "ParentName": "CellsCloudResponse",
+  "IsAbstract": false,
+  "Properties": [
+    {
+      "Name": "DocumentProperties",
+      "Description": [
+        "The class has a property that represents the document properties of cells."
+      ],
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "Class",
+        "Reference": "CellsDocumentProperties",
+        "Name": "class:cellsdocumentproperties"
+      }
+    },
+    {
+      "Name": "Code",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": true,
+      "DataType": {
+        "Identifier": "Integer",
+        "Name": "integer"
+      }
+    },
+    {
+      "Name": "Status",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": true,
+      "DataType": {
+        "Identifier": "String",
+        "Name": "string"
+      }
+    }
+  ]
+}
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_GetDocumentProperties.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/PropertiesController/GetDocumentProperties) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

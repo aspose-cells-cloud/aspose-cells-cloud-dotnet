@@ -2,14 +2,25 @@
 
 Converts a spreadsheet in cloud storage to the specified format. 
 
-```bash
+## **Quick Start**
 
-PUT http://api.aspose.cloud/v3.0//cells/{name}/SaveAs
+- **Base URL**: `http://api.aspose.cloud/v4.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_WorkbookSaveAs.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
-Converts a spreadsheet in cloud storage to the specified format.
+PUT http://api.aspose.cloud/v4.0/cells/{name}/saveas
+```
 
-## The request parameters of **saveSpreadsheetAs** API are: 
+### **Function Description**
+This method accesses a spreadsheet file directly from cloud storage, converts it into the desired output format (e.g., XLSX, PDF, CSV), and returns the converted result without downloading the file to the local system.Ensure that the cloud storage configuration (such as access credentials and file path) is correctly set up.The conversion process happens entirely within the cloud environment, minimizing data transfer overhead and enhancing security by keeping sensitive data within the cloud infrastructure.If the source file does not exist, or if an error occurs during the conversion process, an appropriate exception will be thrown.Supported output formats depend on the underlying conversion service capabilities.
+
+### The request parameters of **saveSpreadsheetAs** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -25,7 +36,38 @@ Converts a spreadsheet in cloud storage to the specified format.
 |password|String|Query|The password for opening spreadsheet file.|
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/SaveSpreadsheetAs) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+  "Name": "CellsCloudResponse",
+  "Type": "Class",
+  "IsAbstract": false,
+  "Properties": [
+    {
+      "Name": "Code",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "Integer",
+        "Name": "integer"
+      }
+    },
+    {
+      "Name": "Status",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "String",
+        "Name": "string"
+      }
+    }
+  ]
+}
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_WorkbookSaveAs.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/SaveSpreadsheetAs) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

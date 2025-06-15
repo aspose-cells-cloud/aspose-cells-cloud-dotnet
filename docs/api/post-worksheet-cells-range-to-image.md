@@ -2,13 +2,21 @@
 
  
 
-```bash
+## **Quick Start**
 
-POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/ranges/convertToImage
+- **Base URL**: `http://api.aspose.cloud/v3.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
+POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/convertToImage
+```
 
-## The request parameters of **postWorksheetCellsRangeToImage** API are: 
+### **Function Description**
+
+### The request parameters of **postWorksheetCellsRangeToImage** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -19,6 +27,14 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/ranges/co
 |storageName|String|Query||
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/RangesController/PostWorksheetCellsRangeToImage) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+File
+}
+```
 
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/RangesController/PostWorksheetCellsRangeToImage) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

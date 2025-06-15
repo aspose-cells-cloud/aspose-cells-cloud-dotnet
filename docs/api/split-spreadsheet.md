@@ -2,14 +2,25 @@
 
 Split a local spreadsheet into the specified format, multi-file. 
 
-```bash
+## **Quick Start**
 
-PUT http://api.aspose.cloud/v3.0//cells/split
+- **Base URL**: `http://api.aspose.cloud/v4.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_SplitLocalFile.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
-Split a local spreadsheet into the specified format, multi-file.
+PUT http://api.aspose.cloud/v4.0/cells/split/spreadsheet
+```
 
-## The request parameters of **splitSpreadsheet** API are: 
+### **Function Description**
+This method splits a single local spreadsheet file into multiple output files in the specified format (e.g., XLSX, CSV, PDF).Each split file may represent different sheets, sections, or segments of the original document based on user-defined criteria.The operation is performed cloudly, requiring no cloud storage.Ensure that you have the necessary permissions to read the source file and write the resulting files.If the source file cannot be accessed or if an error occurs during the splitting process, an appropriate exception will be thrown.Supported formats for output depend on the available libraries and their capabilities.Users should specify clear criteria for how the input file should be divided to ensure accurate results.
+
+### The request parameters of **splitSpreadsheet** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -24,7 +35,14 @@ Split a local spreadsheet into the specified format, multi-file.
 |password|String|Query|The password for opening spreadsheet file.|
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/SplitSpreadsheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+File
+}
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SplitLocalFile.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/SplitSpreadsheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

@@ -2,14 +2,25 @@
 
 Converts a spreadsheet in cloud storage to the specified format. 
 
-```bash
+## **Quick Start**
 
-GET http://api.aspose.cloud/v3.0//cells/{name}
+- **Base URL**: `http://api.aspose.cloud/v4.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_GetWorkbookWithFormat.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
-Converts a spreadsheet in cloud storage to the specified format.
+GET http://api.aspose.cloud/v4.0/cells/{name}
+```
 
-## The request parameters of **exportSpreadsheetAsFormat** API are: 
+### **Function Description**
+This method processes a spreadsheet directly in cloud storage, converting it to the requested output format (e.g., XLSX, PDF, CSV) without requiring the file to be downloaded to the local machine.The operation relies on valid cloud storage credentials and an accessible file path or identifier.The conversion is performed remotely, reducing data transfer and improving performance for large files.If the source file is not found, access is denied, or an error occurs during conversion, an appropriate exception will be thrown.Supported output formats are determined by the capabilities of the underlying cloud conversion service.
+
+### The request parameters of **exportSpreadsheetAsFormat** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -24,7 +35,14 @@ Converts a spreadsheet in cloud storage to the specified format.
 |password|String|Query|The password for opening spreadsheet file.|
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ExportSpreadsheetAsFormat) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+File
+}
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_GetWorkbookWithFormat.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ExportSpreadsheetAsFormat) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

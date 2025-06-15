@@ -2,14 +2,25 @@
 
 Retrieve descriptions of workbook settings. 
 
-```bash
+## **Quick Start**
 
-GET http://api.aspose.cloud/v3.0//cells/{name}/settings
+- **Base URL**: `http://api.aspose.cloud/v3.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_GetWorkbookSettings.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
-Retrieve descriptions of workbook settings.
+GET http://api.aspose.cloud/v3.0/cells/{name}/settings
+```
 
-## The request parameters of **getWorkbookSettings** API are: 
+### **Function Description**
+PageTitle: Retrieve descriptions of workbook settings.PageDescription: Aspose.Cells Cloud provides robust support for obtaining descriptions of workbook settings in the workbook, a process known for its intricacy.HeadTitle: Retrieve descriptions of workbook settings.HeadSummary: Aspose.Cells Cloud provides robust support for obtaining descriptions of workbook settings in the workbook, a process known for its intricacy.HeadContent: Aspose.Cells Cloud provides REST API which supports obtaining descriptions of workbook settings in the workbook and offers SDKs for multiple programming languages. These programming languages are include of Net, Java, Go, NodeJS, Python, and so on.
+
+### The request parameters of **getWorkbookSettings** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -18,7 +29,56 @@ Retrieve descriptions of workbook settings.
 |storageName|String|Query|The storage name where the file is situated.|
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/WorkbookController/GetWorkbookSettings) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+  "Name": "WorkbookSettingsResponse",
+  "Description": [
+    "Represents the WorkbookSettings Response."
+  ],
+  "Type": "Class",
+  "ParentName": "CellsCloudResponse",
+  "IsAbstract": false,
+  "Properties": [
+    {
+      "Name": "settings",
+      "Description": [
+        "The class has a public property called \"settings\" of type WorkbookSettings that can be accessed and modified."
+      ],
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "Class",
+        "Reference": "WorkbookSettings",
+        "Name": "class:workbooksettings"
+      }
+    },
+    {
+      "Name": "Code",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": true,
+      "DataType": {
+        "Identifier": "Integer",
+        "Name": "integer"
+      }
+    },
+    {
+      "Name": "Status",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": true,
+      "DataType": {
+        "Identifier": "String",
+        "Name": "string"
+      }
+    }
+  ]
+}
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_GetWorkbookSettings.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/WorkbookController/GetWorkbookSettings) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

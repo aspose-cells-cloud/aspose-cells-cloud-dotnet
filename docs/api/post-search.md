@@ -2,14 +2,25 @@
 
 Search for specified text within Excel files. 
 
-```bash
+## **Quick Start**
 
-POST http://api.aspose.cloud/v3.0//cells/search
+- **Base URL**: `http://api.aspose.cloud/v3.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_PostSearch.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
-Search for specified text within Excel files.
+POST http://api.aspose.cloud/v3.0/cells/search
+```
 
-## The request parameters of **postSearch** API are: 
+### **Function Description**
+PageTitle: Search for specified text within Excel files.PageDescription: Indeed, Aspose.Cells Cloud offers strong support for searching specified text within Excel files.HeadTitle:  Search for specified text within Excel files.HeadSummary: Indeed, Aspose.Cells Cloud offers strong support for searching specified text within Excel files.HeadContent: Aspose.Cells Cloud provides REST API which supports searching specified text within Excel files and offers SDKs for multiple programming languages. These programming languages are include of Net, Java, Go, NodeJS, Python, and so on.
+
+### The request parameters of **postSearch** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -20,7 +31,60 @@ Search for specified text within Excel files.
 |checkExcelRestriction|Boolean|Query|Whether check restriction of excel file when user modify cells related objects.|
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/LightCellsController/PostSearch) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+[
+{
+  "Name": "TextItem",
+  "Type": "Class",
+  "IsAbstract": false,
+  "Properties": [
+    {
+      "Name": "Filename",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "String",
+        "Name": "string"
+      }
+    },
+    {
+      "Name": "Worksheet",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "String",
+        "Name": "string"
+      }
+    },
+    {
+      "Name": "Position",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "String",
+        "Name": "string"
+      }
+    },
+    {
+      "Name": "Content",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "String",
+        "Name": "string"
+      }
+    }
+  ]
+}
+]
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PostSearch.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/LightCellsController/PostSearch) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

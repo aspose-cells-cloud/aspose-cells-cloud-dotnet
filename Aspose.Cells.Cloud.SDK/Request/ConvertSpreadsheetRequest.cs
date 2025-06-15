@@ -135,7 +135,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 throw new ApiException(400, "Missing required parameter 'format' when calling ConvertSpreadsheet");
             }
 
-            var path = baseUri + "/cells/convert";
+            var path = baseUri + "/cells/convert/spreadsheet";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")

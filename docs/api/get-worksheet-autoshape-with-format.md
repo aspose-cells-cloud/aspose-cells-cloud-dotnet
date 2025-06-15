@@ -2,14 +2,21 @@
 
 Get autoshape description in some format. 
 
-```bash
+## **Quick Start**
 
-GET http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/autoshapes/{autoshapeNumber}
+- **Base URL**: `http://api.aspose.cloud/v3.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
-Get autoshape description in some format.
+GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoshapes/{autoshapeNumber}
+```
 
-## The request parameters of **getWorksheetAutoshapeWithFormat** API are: 
+### **Function Description**
+
+### The request parameters of **getWorksheetAutoshapeWithFormat** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -21,6 +28,14 @@ Get autoshape description in some format.
 |storageName|String|Query|Storage name.|
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/AutoshapesController/GetWorksheetAutoshapeWithFormat) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+File
+}
+```
 
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/AutoshapesController/GetWorksheetAutoshapeWithFormat) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

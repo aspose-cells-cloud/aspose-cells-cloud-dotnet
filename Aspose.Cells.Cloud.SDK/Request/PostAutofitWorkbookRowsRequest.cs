@@ -53,8 +53,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="onlyAuto">Only auto.</param>
             /// <param name="folder">The folder where the file is situated.</param>
             /// <param name="storageName">The storage name where the file is situated.</param>
-            /// <param name="firstColumn"></param>
-            /// <param name="lastColumn"></param>
+            /// <param name="firstColumn">First column index.</param>
+            /// <param name="lastColumn">Last column index.</param>
             public PostAutofitWorkbookRowsRequest(string  name, int?  startRow = null, int?  endRow = null, bool?  onlyAuto = null, string  folder = null, string  storageName = null, int?  firstColumn = null, int?  lastColumn = null)
             {
                 this.name = name;
@@ -104,13 +104,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Gets or sets firstColumn.
+        /// First column index.
         /// </summary>
         public int? firstColumn { get; set; }
 
 
         /// <summary>
-        /// Gets or sets lastColumn.
+        /// Last column index.
         /// </summary>
         public int? lastColumn { get; set; }
         

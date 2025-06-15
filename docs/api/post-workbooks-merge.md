@@ -2,14 +2,25 @@
 
 Merge a workbook into the existing workbook. 
 
-```bash
+## **Quick Start**
 
-POST http://api.aspose.cloud/v3.0//cells/{name}/merge
+- **Base URL**: `http://api.aspose.cloud/v3.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_PostWorkbooksMerge.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
-Merge a workbook into the existing workbook.
+POST http://api.aspose.cloud/v3.0/cells/{name}/merge
+```
 
-## The request parameters of **postWorkbooksMerge** API are: 
+### **Function Description**
+PageTitle: Merge a workbook into the existing workbook.PageDescription: Aspose.Cells Cloud provides robust support for merging a workbook into the existing workbook, a process known for its intricacy.HeadTitle:  Merge a workbook into the existing workbook.HeadSummary: Aspose.Cells Cloud provides robust support for merging a workbook into the existing workbook, a process known for its intricacy.HeadContent: Aspose.Cells Cloud provides REST API which supports merging a workbook into the existing workbook and offers SDKs for multiple programming languages. These programming languages are include of Net, Java, Go, NodeJS, Python, and so on.
+
+### The request parameters of **postWorkbooksMerge** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -20,7 +31,56 @@ Merge a workbook into the existing workbook.
 |mergedStorageName|String|Query|Storage name.|
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/WorkbookController/PostWorkbooksMerge) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+  "Name": "WorkbookResponse",
+  "Description": [
+    "Represents the Workbook Response."
+  ],
+  "Type": "Class",
+  "ParentName": "CellsCloudResponse",
+  "IsAbstract": false,
+  "Properties": [
+    {
+      "Name": "Workbook",
+      "Description": [
+        "Workbook property of the class allows access to and modification of a Workbook object."
+      ],
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "Class",
+        "Reference": "Workbook",
+        "Name": "class:workbook"
+      }
+    },
+    {
+      "Name": "Code",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": true,
+      "DataType": {
+        "Identifier": "Integer",
+        "Name": "integer"
+      }
+    },
+    {
+      "Name": "Status",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": true,
+      "DataType": {
+        "Identifier": "String",
+        "Name": "string"
+      }
+    }
+  ]
+}
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PostWorkbooksMerge.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/WorkbookController/PostWorkbooksMerge) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

@@ -2,13 +2,24 @@
 
  
 
-```bash
+## **Quick Start**
 
-GET http://api.aspose.cloud/v3.0//cells/storage/file/{path}
+- **Base URL**: `http://api.aspose.cloud/v4.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_DownloadFile.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
+GET http://api.aspose.cloud/v4.0/cells/storage/file/{path}
+```
 
-## The request parameters of **downloadFile** API are: 
+### **Function Description**
+
+### The request parameters of **downloadFile** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -17,7 +28,14 @@ GET http://api.aspose.cloud/v3.0//cells/storage/file/{path}
 |versionId|String|Query||
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FileController/DownloadFile) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+File
+}
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DownloadFile.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FileController/DownloadFile) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

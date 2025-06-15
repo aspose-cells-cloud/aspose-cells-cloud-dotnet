@@ -2,14 +2,25 @@
 
 Match all not blank cells in the list. 
 
-```bash
+## **Quick Start**
 
-POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/autoFilter/matchNonBlanks
+- **Base URL**: `http://api.aspose.cloud/v3.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_PostWorksheetMatchNonBlanks.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
-Match all not blank cells in the list.
+POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/matchNonBlanks
+```
 
-## The request parameters of **postWorksheetMatchNonBlanks** API are: 
+### **Function Description**
+PageTitle:Match all not blank cells in the list.PageDescription: Aspose.Cells Cloud provides robust support for matching all not blank cells in the list, a process known for its intricacy.HeadTitle:Match all not blank cells in the list.HeadSummary: Aspose.Cells Cloud provides robust support for matching all not blank cells in the list, a process known for its intricacy.HeadContent: Aspose.Cells Cloud provides REST API which supports matching all not blank cells in the list and offers SDKs for multiple programming languages. These programming languages are include of Net, Java, Go, NodeJS, Python, and so on.
+
+### The request parameters of **postWorksheetMatchNonBlanks** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -20,7 +31,38 @@ Match all not blank cells in the list.
 |storageName|String|Query|The storage name where the file is situated.|
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/AutoFilterController/PostWorksheetMatchNonBlanks) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+  "Name": "CellsCloudResponse",
+  "Type": "Class",
+  "IsAbstract": false,
+  "Properties": [
+    {
+      "Name": "Code",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "Integer",
+        "Name": "integer"
+      }
+    },
+    {
+      "Name": "Status",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "String",
+        "Name": "string"
+      }
+    }
+  ]
+}
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PostWorksheetMatchNonBlanks.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/AutoFilterController/PostWorksheetMatchNonBlanks) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="SearchRemoteSpreadsheetContentRequest.cs">
+// <copyright company="Aspose" file="ReplaceContentInRemoteWorksheetRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,37 +32,35 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.SearchRemoteSpreadsheetContent" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.ReplaceContentInRemoteWorksheet" /> operation.
     /// </summary>
-    public class SearchRemoteSpreadsheetContentRequest : IRequestModel
+    public class ReplaceContentInRemoteWorksheetRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SearchRemoteSpreadsheetContentRequest"/> class.
+        /// Initializes a new instance of the <see cref="ReplaceContentInRemoteWorksheetRequest"/> class.
         /// </summary>
-        public SearchRemoteSpreadsheetContentRequest()
+        public ReplaceContentInRemoteWorksheetRequest()
         {
 
         }
             /// <summary>
-            /// Initializes a new instance of the <see cref="SearchRemoteSpreadsheetContentRequest"/> class.
+            /// Initializes a new instance of the <see cref="ReplaceContentInRemoteWorksheetRequest"/> class.
             /// </summary>
-            /// <param name="name">The name of the workbook file to be search.</param>
+            /// <param name="name">The name of the workbook file to be replace.</param>
+            /// <param name="worksheet">Specify the worksheet for the replace.</param>
             /// <param name="searchText">The searched text.</param>
-            /// <param name="ignoringCase">Ignore the text of the search.</param>
-            /// <param name="sheetname">Specify the worksheet for the lookup.</param>
-            /// <param name="cellarea">Specify the cell area for the lookup</param>
+            /// <param name="replaceText">The replaced text.</param>
             /// <param name="folder">The folder path where the workbook is stored.</param>
             /// <param name="storageName">(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.</param>
             /// <param name="regoin">The spreadsheet region setting.</param>
             /// <param name="password">The password for opening spreadsheet file.</param>
-            public SearchRemoteSpreadsheetContentRequest(string  name, string  searchText, bool?  ignoringCase = null, string  sheetname = null, string  cellarea = null, string  folder = null, string  storageName = null, string  regoin = null, string  password = null)
+            public ReplaceContentInRemoteWorksheetRequest(string  name, string  worksheet, string  searchText, string  replaceText, string  folder = null, string  storageName = null, string  regoin = null, string  password = null)
             {
                 this.name = name;
+                this.worksheet = worksheet;
                 this.searchText = searchText;
-                this.ignoringCase = ignoringCase;
-                this.sheetname = sheetname;
-                this.cellarea = cellarea;
+                this.replaceText = replaceText;
                 this.folder = folder;
                 this.storageName = storageName;
                 this.regoin = regoin;
@@ -70,9 +68,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
         
         /// <summary>
-        /// The name of the workbook file to be search.
+        /// The name of the workbook file to be replace.
         /// </summary>
         public string name { get; set; }
+
+
+        /// <summary>
+        /// Specify the worksheet for the replace.
+        /// </summary>
+        public string worksheet { get; set; }
 
 
         /// <summary>
@@ -82,21 +86,9 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Ignore the text of the search.
+        /// The replaced text.
         /// </summary>
-        public bool? ignoringCase { get; set; }
-
-
-        /// <summary>
-        /// Specify the worksheet for the lookup.
-        /// </summary>
-        public string sheetname { get; set; }
-
-
-        /// <summary>
-        /// Specify the cell area for the lookup
-        /// </summary>
-        public string cellarea { get; set; }
+        public string replaceText { get; set; }
 
 
         /// <summary>
@@ -142,26 +134,37 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'name' is set
             if (string.IsNullOrEmpty (this.name ))
             {
-                throw new ApiException(400, "Missing required parameter 'name' when calling SearchRemoteSpreadsheetContent");
+                throw new ApiException(400, "Missing required parameter 'name' when calling ReplaceContentInRemoteWorksheet");
+            }
+
+            // verify the required parameter 'worksheet' is set
+            if (string.IsNullOrEmpty (this.worksheet ))
+            {
+                throw new ApiException(400, "Missing required parameter 'worksheet' when calling ReplaceContentInRemoteWorksheet");
             }
 
             // verify the required parameter 'searchText' is set
             if (string.IsNullOrEmpty (this.searchText ))
             {
-                throw new ApiException(400, "Missing required parameter 'searchText' when calling SearchRemoteSpreadsheetContent");
+                throw new ApiException(400, "Missing required parameter 'searchText' when calling ReplaceContentInRemoteWorksheet");
             }
 
-            var path = baseUri + "/cells/{name}/search/content";
+            // verify the required parameter 'replaceText' is set
+            if (string.IsNullOrEmpty (this.replaceText ))
+            {
+                throw new ApiException(400, "Missing required parameter 'replaceText' when calling ReplaceContentInRemoteWorksheet");
+            }
+
+            var path = baseUri + "/cells/{name}/worksheets/{worksheet}/replace/content";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
             path = UrlHelper.AddPathParameter(path, "name", this.name);
+            path = UrlHelper.AddPathParameter(path, "worksheet", this.worksheet);
             path = UrlHelper.AddQueryParameterToUrl(path, "searchText", this.searchText);
-            if(this.ignoringCase != null)  path = UrlHelper.AddQueryParameterToUrl(path, "ignoringCase", this.ignoringCase);
-            if (!string.IsNullOrEmpty(this.sheetname))  path = UrlHelper.AddQueryParameterToUrl(path, "sheetname", this.sheetname);
-            if (!string.IsNullOrEmpty(this.cellarea))  path = UrlHelper.AddQueryParameterToUrl(path, "cellarea", this.cellarea);
+            path = UrlHelper.AddQueryParameterToUrl(path, "replaceText", this.replaceText);
             if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
             if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
             if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);

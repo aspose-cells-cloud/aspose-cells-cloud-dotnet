@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="SpecRequest.cs">
+// <copyright company="Aspose" file="DeleteSpreadsheetBlankRowsRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,35 +32,51 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.Spec" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.DeleteSpreadsheetBlankRows" /> operation.
     /// </summary>
-    public class SpecRequest : IRequestModel
+    public class DeleteSpreadsheetBlankRowsRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SpecRequest"/> class.
+        /// Initializes a new instance of the <see cref="DeleteSpreadsheetBlankRowsRequest"/> class.
         /// </summary>
-        public SpecRequest()
+        public DeleteSpreadsheetBlankRowsRequest()
         {
 
         }
-            /// <summary>
-            /// Initializes a new instance of the <see cref="SpecRequest"/> class.
-            /// </summary>
-            /// <param name="version"></param>
-            /// <param name="regoin">The spreadsheet region setting.</param>
-            /// <param name="password">The password for opening spreadsheet file.</param>
-            public SpecRequest(string  version, string  regoin = null, string  password = null)
-            {
-                this.version = version;
-                this.regoin = regoin;
-                this.password = password;
-            }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DeleteSpreadsheetBlankRowsRequest"/> class.
+        /// </summary>
+        /// <param name="spreadsheet">Upload spreadsheet file.</param>
+        /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
+        /// <param name="outStorageName">Output file Storage Name.</param>
+        /// <param name="regoin">The spreadsheet region setting.</param>
+        /// <param name="password">The password for opening spreadsheet file.</param>
+        public DeleteSpreadsheetBlankRowsRequest(string  spreadsheet, string  outPath = null, string  outStorageName = null, string  regoin = null, string  password = null)
+        {
+            this.Spreadsheet = spreadsheet;
+            this.outPath = outPath;
+            this.outStorageName = outStorageName;
+            this.regoin = regoin;
+            this.password = password;
+        }
         
         /// <summary>
-        /// Gets or sets version.
+        /// Upload spreadsheet file.
         /// </summary>
-        public string version { get; set; }
+            public string Spreadsheet { get; set; }
+
+
+        /// <summary>
+        /// (Optional) The folder path where the workbook is stored. The default is null.
+        /// </summary>
+        public string outPath { get; set; }
+
+
+        /// <summary>
+        /// Output file Storage Name.
+        /// </summary>
+        public string outStorageName { get; set; }
 
 
         /// <summary>
@@ -91,19 +107,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
             var localVarFileParams = new Dictionary<string, object>();
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
-            // verify the required parameter 'version' is set
-            if (string.IsNullOrEmpty (this.version ))
+            // verify the required parameter 'spreadsheet' is set
+            if (    string.IsNullOrEmpty(this.Spreadsheet)    )
             {
-                throw new ApiException(400, "Missing required parameter 'version' when calling Spec");
+                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling DeleteSpreadsheetBlankRows");
             }
 
-            var path = baseUri + "/cells/swagger/spec";
+            var path = baseUri + "/cells/delete/blank-rows";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            path = UrlHelper.AddQueryParameterToUrl(path, "version", this.version);
+            if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
+            if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
             if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
@@ -114,8 +131,14 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 }
             }
 
+            if (!string.IsNullOrEmpty(Spreadsheet ) && System.IO.File.Exists(Spreadsheet )) {
+                        System.IO.FileInfo fileInfo = new System.IO.FileInfo(Spreadsheet);
+                        localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(Spreadsheet), fileInfo.Name));
+               }
 
-            return UrlHelper.PrepareRequest(path, "GET", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
+
+
+            return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }
 }

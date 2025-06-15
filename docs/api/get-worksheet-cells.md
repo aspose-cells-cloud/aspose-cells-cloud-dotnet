@@ -2,14 +2,25 @@
 
 Retrieve cell descriptions in a specified format. 
 
-```bash
+## **Quick Start**
 
-GET http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/cells
+- **Base URL**: `http://api.aspose.cloud/v3.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_GetWorksheetCells.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
-Retrieve cell descriptions in a specified format.
+GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells
+```
 
-## The request parameters of **getWorksheetCells** API are: 
+### **Function Description**
+PageTitle: Unmerge cells in the worksheet.PageDescription: Aspose.Cells Cloud provides robust support for unmerging cells in the worksheet, a process known for its intricacy.HeadTitle: Unmerge cells in the worksheet.HeadSummary: Aspose.Cells Cloud provides robust support for unmerging cells in the worksheet, a process known for its intricacy.HeadContent: Aspose.Cells Cloud provides REST API which supports unmerging cells in the worksheet and offers SDKs for multiple programming languages. These programming languages are include of Net, Java, Go, NodeJS, Python, and so on.
+
+### The request parameters of **getWorksheetCells** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -21,7 +32,56 @@ Retrieve cell descriptions in a specified format.
 |storageName|String|Query|The storage name where the file is situated.|
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/CellsController/GetWorksheetCells) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+  "Name": "CellsResponse",
+  "Description": [
+    "Represents the Cells Response."
+  ],
+  "Type": "Class",
+  "ParentName": "CellsCloudResponse",
+  "IsAbstract": false,
+  "Properties": [
+    {
+      "Name": "Cells",
+      "Description": [
+        "Property Summary: The class has a property called \"Cells\" which is annotated with the [XmlElement(\"cells\")] attribute."
+      ],
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "Class",
+        "Reference": "Cells",
+        "Name": "class:cells"
+      }
+    },
+    {
+      "Name": "Code",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": true,
+      "DataType": {
+        "Identifier": "Integer",
+        "Name": "integer"
+      }
+    },
+    {
+      "Name": "Status",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": true,
+      "DataType": {
+        "Identifier": "String",
+        "Name": "string"
+      }
+    }
+  ]
+}
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_GetWorksheetCells.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/CellsController/GetWorksheetCells) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

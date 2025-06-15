@@ -2,14 +2,25 @@
 
 Define a new name in the workbook. 
 
-```bash
+## **Quick Start**
 
-PUT http://api.aspose.cloud/v3.0//cells/{name}/names
+- **Base URL**: `http://api.aspose.cloud/v3.0`
+- **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example Request** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_PutWorkbookName.cs"></script>
+
+## **Interface Details**
+
+### **Endpoint** 
 
 ```
-Define a new name in the workbook.
+PUT http://api.aspose.cloud/v3.0/cells/{name}/names
+```
 
-## The request parameters of **putWorkbookName** API are: 
+### **Function Description**
+PageTitle: Define a new name in the workbook.PageDescription: Aspose.Cells Cloud provides robust support for defining a new name in the workbook, a process known for its intricacy.HeadTitle: Define a new name in the workbook.HeadSummary: Aspose.Cells Cloud provides robust support for defining a new name in the workbook, a process known for its intricacy.HeadContent: Aspose.Cells Cloud provides REST API which supports defining a new name in the workbook and offers SDKs for multiple programming languages. These programming languages are include of Net, Java, Go, NodeJS, Python, and so on.
+
+### The request parameters of **putWorkbookName** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -19,7 +30,38 @@ Define a new name in the workbook.
 |storageName|String|Query|The storage name where the file is situated.|
 
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/WorkbookController/PutWorkbookName) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response Description**
+```json
+{
+  "Name": "CellsCloudResponse",
+  "Type": "Class",
+  "IsAbstract": false,
+  "Properties": [
+    {
+      "Name": "Code",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "Integer",
+        "Name": "integer"
+      }
+    },
+    {
+      "Name": "Status",
+      "Nullable": true,
+      "ReadOnly": false,
+      "IsInherit": false,
+      "DataType": {
+        "Identifier": "String",
+        "Name": "string"
+      }
+    }
+  ]
+}
+```
 
-<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_PutWorkbookName.cs">
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/WorkbookController/PutWorkbookName) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

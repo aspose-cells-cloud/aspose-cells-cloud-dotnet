@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="CodegenSpecRequest.cs">
+// <copyright company="Aspose" file="SearchContentInRemoteSpreadsheetRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,29 +32,69 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.CodegenSpec" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.SearchContentInRemoteSpreadsheet" /> operation.
     /// </summary>
-    public class CodegenSpecRequest : IRequestModel
+    public class SearchContentInRemoteSpreadsheetRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="CodegenSpecRequest"/> class.
+        /// Initializes a new instance of the <see cref="SearchContentInRemoteSpreadsheetRequest"/> class.
         /// </summary>
-        public CodegenSpecRequest()
+        public SearchContentInRemoteSpreadsheetRequest()
         {
 
         }
             /// <summary>
-            /// Initializes a new instance of the <see cref="CodegenSpecRequest"/> class.
+            /// Initializes a new instance of the <see cref="SearchContentInRemoteSpreadsheetRequest"/> class.
             /// </summary>
+            /// <param name="name">The name of the workbook file to be search.</param>
+            /// <param name="searchText">The searched text.</param>
+            /// <param name="ignoringCase">Ignore the text of the search.</param>
+            /// <param name="folder">The folder path where the workbook is stored.</param>
+            /// <param name="storageName">(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.</param>
             /// <param name="regoin">The spreadsheet region setting.</param>
             /// <param name="password">The password for opening spreadsheet file.</param>
-            public CodegenSpecRequest(string  regoin = null, string  password = null)
+            public SearchContentInRemoteSpreadsheetRequest(string  name, string  searchText, bool?  ignoringCase = null, string  folder = null, string  storageName = null, string  regoin = null, string  password = null)
             {
+                this.name = name;
+                this.searchText = searchText;
+                this.ignoringCase = ignoringCase;
+                this.folder = folder;
+                this.storageName = storageName;
                 this.regoin = regoin;
                 this.password = password;
             }
         
+        /// <summary>
+        /// The name of the workbook file to be search.
+        /// </summary>
+        public string name { get; set; }
+
+
+        /// <summary>
+        /// The searched text.
+        /// </summary>
+        public string searchText { get; set; }
+
+
+        /// <summary>
+        /// Ignore the text of the search.
+        /// </summary>
+        public bool? ignoringCase { get; set; }
+
+
+        /// <summary>
+        /// The folder path where the workbook is stored.
+        /// </summary>
+        public string folder { get; set; }
+
+
+        /// <summary>
+        /// (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.
+        /// </summary>
+        public string storageName { get; set; }
+
+
         /// <summary>
         /// The spreadsheet region setting.
         /// </summary>
@@ -83,12 +123,29 @@ namespace Aspose.Cells.Cloud.SDK.Request
             var localVarFileParams = new Dictionary<string, object>();
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
-            var path = baseUri + "/cells/codegen/spec";
+            // verify the required parameter 'name' is set
+            if (string.IsNullOrEmpty (this.name ))
+            {
+                throw new ApiException(400, "Missing required parameter 'name' when calling SearchContentInRemoteSpreadsheet");
+            }
+
+            // verify the required parameter 'searchText' is set
+            if (string.IsNullOrEmpty (this.searchText ))
+            {
+                throw new ApiException(400, "Missing required parameter 'searchText' when calling SearchContentInRemoteSpreadsheet");
+            }
+
+            var path = baseUri + "/cells/{name}/search/content";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
+            path = UrlHelper.AddPathParameter(path, "name", this.name);
+            path = UrlHelper.AddQueryParameterToUrl(path, "searchText", this.searchText);
+            if(this.ignoringCase != null)  path = UrlHelper.AddQueryParameterToUrl(path, "ignoringCase", this.ignoringCase);
+            if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
+            if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
             if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
@@ -100,7 +157,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
 
-            return UrlHelper.PrepareRequest(path, "GET", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
+            return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }
 }

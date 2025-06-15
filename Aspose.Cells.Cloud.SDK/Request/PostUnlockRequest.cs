@@ -91,7 +91,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
             // verify the required parameter 'file' is set
-            if (   string.IsNullOrEmpty(this.LocalPath) ||  this.File == null    )
+            if (   string.IsNullOrEmpty(this.LocalPath) &&  this.File == null    )
             {
                 throw new ApiException(400, "Missing required parameter 'file' when calling PostUnlock");
             }
