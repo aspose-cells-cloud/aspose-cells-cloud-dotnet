@@ -55,7 +55,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="fontsLocation">Use Custom fonts.</param>
         /// <param name="regoin">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public MergeSpreadsheetsRequest(string  spreadsheet, string  outFormat = null, bool?  mergeInOneSheet = null, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  regoin = null, string  password = null)
+        public MergeSpreadsheetsRequest(IDictionary<string, System.IO.Stream>  spreadsheet, string  outFormat = null, bool?  mergeInOneSheet = null, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  regoin = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
             this.outFormat = outFormat;
@@ -70,7 +70,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Upload spreadsheet file.
         /// </summary>
-            public string Spreadsheet { get; set; }
+            public IDictionary<string, System.IO.Stream> Spreadsheet { get; set; }
 
 
         /// <summary>
@@ -132,7 +132,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
             // verify the required parameter 'spreadsheet' is set
-            if (    string.IsNullOrEmpty(this.Spreadsheet)    )
+            if ( this.Spreadsheet == null   )
             {
                 throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling MergeSpreadsheets");
             }
@@ -158,12 +158,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 }
             }
 
-            if (!string.IsNullOrEmpty(Spreadsheet ) && System.IO.File.Exists(Spreadsheet )) {
-                        System.IO.FileInfo fileInfo = new System.IO.FileInfo(Spreadsheet);
-                        localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(Spreadsheet), fileInfo.Name));
-               }
-
-
+             
+            if (Spreadsheet != null){
+                    foreach (KeyValuePair<string, System.IO.Stream> keyValueFileParam in Spreadsheet )
+                    {
+                        localVarFileParams.Add(keyValueFileParam.Key, UrlHelper.ToFileInfo(keyValueFileParam.Value, keyValueFileParam.Key));
+                    }
+            }
 
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
