@@ -1,4 +1,4 @@
-# **postSplitText API**
+# **Spreadsheet Cloud API: postSplitText**
 
  
 

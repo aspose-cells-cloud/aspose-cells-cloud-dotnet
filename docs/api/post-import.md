@@ -1,4 +1,4 @@
-# **postImport API**
+# **Spreadsheet Cloud API: postImport**
 
 Import data into an Excel file and generate output files in various formats. 
 

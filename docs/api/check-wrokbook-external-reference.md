@@ -1,4 +1,4 @@
-# **checkWrokbookExternalReference API**
+# **Spreadsheet Cloud API: checkWrokbookExternalReference**
 
 Export Excel internal elements or the workbook itself to various format files. 
 

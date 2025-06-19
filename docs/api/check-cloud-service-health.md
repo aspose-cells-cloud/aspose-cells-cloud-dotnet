@@ -1,4 +1,4 @@
-# **checkCloudServiceHealth API**
+# **Spreadsheet Cloud API: checkCloudServiceHealth**
 
 Check the Health Status of Aspose.Cells Cloud Service. 
 

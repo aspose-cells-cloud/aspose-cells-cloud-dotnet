@@ -1,4 +1,4 @@
-# **replaceContentInRemoteSpreadsheet API**
+# **Spreadsheet Cloud API: replaceContentInRemoteSpreadsheet**
 
 Replace text in the remoted spreadsheet. 
 

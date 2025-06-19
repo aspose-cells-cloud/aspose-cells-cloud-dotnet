@@ -1,4 +1,4 @@
-# **getChartValueAxis API**
+# **Spreadsheet Cloud API: getChartValueAxis**
 
 Retrieve chart value axis in the chart. 
 

@@ -1,4 +1,4 @@
-# **postSpecifyWordsCount API**
+# **Spreadsheet Cloud API: postSpecifyWordsCount**
 
  
 

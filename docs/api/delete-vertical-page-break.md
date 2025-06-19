@@ -1,4 +1,4 @@
-# **deleteVerticalPageBreak API**
+# **Spreadsheet Cloud API: deleteVerticalPageBreak**
 
 Delete a vertical page break in the worksheet. 
 
@@ -6,7 +6,7 @@ Delete a vertical page break in the worksheet.
 
 - **Base URL**: `http://api.aspose.cloud/v3.0`
 - **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
-- **Example Request** 
+- **Example** 
 <script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_DeleteVerticalPageBreak.cs"></script>
 
 ## **Interface Details**

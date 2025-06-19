@@ -1,4 +1,4 @@
-# **getChartSecondCategoryAxis API**
+# **Spreadsheet Cloud API: getChartSecondCategoryAxis**
 
 Retrieve chart second category axis in the chart 
 

@@ -1,4 +1,4 @@
-# **postAccessToken API**
+# **Spreadsheet Cloud API: postAccessToken**
 
 Get Access Token Result: The Cells Cloud Get Token API acts as a proxy service,forwarding user requests to the Aspose Cloud authentication server and returning the resulting access token to the client. 
 

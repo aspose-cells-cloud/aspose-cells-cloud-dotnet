@@ -1,4 +1,4 @@
-# **postConvertWorkbookToHtml API**
+# **Spreadsheet Cloud API: postConvertWorkbookToHtml**
 
 Convert Excel file to HTML files. 
 

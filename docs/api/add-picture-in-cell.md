@@ -1,4 +1,4 @@
-# **addPictureInCell API**
+# **Spreadsheet Cloud API: addPictureInCell**
 
 add new picture in the cells. 
 

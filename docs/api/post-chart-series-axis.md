@@ -1,4 +1,4 @@
-# **postChartSeriesAxis API**
+# **Spreadsheet Cloud API: postChartSeriesAxis**
 
 Update chart series axis in the chart. 
 

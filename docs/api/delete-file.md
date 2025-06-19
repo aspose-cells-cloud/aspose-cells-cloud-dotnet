@@ -1,4 +1,4 @@
-# **deleteFile API**
+# **Spreadsheet Cloud API: deleteFile**
 
  
 

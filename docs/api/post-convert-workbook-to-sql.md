@@ -1,4 +1,4 @@
-# **postConvertWorkbookToSQL API**
+# **Spreadsheet Cloud API: postConvertWorkbookToSQL**
 
 Convert Excel file to SQL Script files. 
 

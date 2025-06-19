@@ -1,4 +1,4 @@
-# **postAnalyzeExcel API**
+# **Spreadsheet Cloud API: postAnalyzeExcel**
 
 Perform business analysis of data in Excel files. 
 

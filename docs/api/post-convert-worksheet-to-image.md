@@ -1,4 +1,4 @@
-# **postConvertWorksheetToImage API**
+# **Spreadsheet Cloud API: postConvertWorksheetToImage**
 
  
 

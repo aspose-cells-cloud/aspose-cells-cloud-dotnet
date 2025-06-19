@@ -1,4 +1,4 @@
-# **postConvertWorkbookToPDF API**
+# **Spreadsheet Cloud API: postConvertWorkbookToPDF**
 
 Convert Excel file to PDF files. 
 

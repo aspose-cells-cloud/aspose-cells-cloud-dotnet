@@ -1,4 +1,4 @@
-# **postDataDeduplication API**
+# **Spreadsheet Cloud API: postDataDeduplication**
 
 Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges. 
 

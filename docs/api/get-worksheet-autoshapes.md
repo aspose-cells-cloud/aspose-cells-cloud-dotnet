@@ -1,4 +1,4 @@
-# **getWorksheetAutoshapes API**
+# **Spreadsheet Cloud API: getWorksheetAutoshapes**
 
 Get autoshapes description in worksheet. 
 

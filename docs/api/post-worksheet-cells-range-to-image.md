@@ -1,4 +1,4 @@
-# **postWorksheetCellsRangeToImage API**
+# **Spreadsheet Cloud API: postWorksheetCellsRangeToImage**
 
  
 

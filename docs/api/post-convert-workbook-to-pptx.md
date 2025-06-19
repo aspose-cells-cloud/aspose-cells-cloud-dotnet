@@ -1,4 +1,4 @@
-# **postConvertWorkbookToPptx API**
+# **Spreadsheet Cloud API: postConvertWorkbookToPptx**
 
 Convert Excel file to Pptx files. 
 

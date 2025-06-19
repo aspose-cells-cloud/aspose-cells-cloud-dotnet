@@ -1,4 +1,4 @@
-# **postChartSecondCategoryAxis API**
+# **Spreadsheet Cloud API: postChartSecondCategoryAxis**
 
 Update chart sencond category axis in the chart. 
 

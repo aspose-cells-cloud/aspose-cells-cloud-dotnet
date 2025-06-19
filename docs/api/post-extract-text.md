@@ -1,4 +1,4 @@
-# **postExtractText API**
+# **Spreadsheet Cloud API: postExtractText**
 
  
 

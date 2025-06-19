@@ -1,4 +1,4 @@
-# **postChartValueAxis API**
+# **Spreadsheet Cloud API: postChartValueAxis**
 
 Update chart value axis in the chart. 
 

@@ -1,4 +1,4 @@
-# **searchContentInRemoteWorksheet API**
+# **Spreadsheet Cloud API: searchContentInRemoteWorksheet**
 
 Search text in the worksheet of remoted spreadsheet. 
 

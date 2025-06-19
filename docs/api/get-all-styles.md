@@ -1,4 +1,4 @@
-# **getAllStyles API**
+# **Spreadsheet Cloud API: getAllStyles**
 
 Get all style in the workbook. 
 

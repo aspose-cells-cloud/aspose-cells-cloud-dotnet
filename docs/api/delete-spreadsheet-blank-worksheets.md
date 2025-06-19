@@ -1,4 +1,4 @@
-# **deleteSpreadsheetBlankWorksheets API**
+# **Spreadsheet Cloud API: deleteSpreadsheetBlankWorksheets**
 
 Delete all blank worksheets which do not contain any data or other object. 
 

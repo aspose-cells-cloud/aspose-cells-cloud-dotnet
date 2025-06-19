@@ -783,6 +783,53 @@ namespace Aspose.Cells.Cloud.SDK.Api
             return result;
         }
 
+
+        /// <summary>
+        /// Get the specifications
+        /// </summary>
+        /// <param name="request">Request. <see cref="SpecRequest" /></param>
+        public  void  Spec(SpecRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return ;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+        public async Task SpecAsync(SpecRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return ;
+        }
+
+
+
+        /// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="CodegenSpecRequest" /></param>
+        public  void  CodegenSpec(CodegenSpecRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return ;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+        public async Task CodegenSpecAsync(CodegenSpecRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return ;
+        }
+
+
+
+
         public void DeleteSpreadsheetBlankRows(DeleteSpreadsheetBlankRowsRequest request, string LocalOutPath){
             var result = DeleteSpreadsheetBlankRows(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))

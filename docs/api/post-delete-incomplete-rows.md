@@ -1,4 +1,4 @@
-# **postDeleteIncompleteRows API**
+# **Spreadsheet Cloud API: postDeleteIncompleteRows**
 
 Deleting incomplete rows of spreadsheet files is mainly used to eliminate incomplete rows in tables and ranges. 
 

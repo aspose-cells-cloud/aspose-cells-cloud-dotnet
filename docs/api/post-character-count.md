@@ -1,4 +1,4 @@
-# **postCharacterCount API**
+# **Spreadsheet Cloud API: postCharacterCount**
 
  
 

@@ -1,4 +1,4 @@
-# **postChartSecondValueAxis API**
+# **Spreadsheet Cloud API: postChartSecondValueAxis**
 
 Update chart sencond value axis in the chart. 
 

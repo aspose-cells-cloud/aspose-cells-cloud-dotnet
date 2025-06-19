@@ -1,4 +1,4 @@
-# **checkWorkbookFormulaErrors API**
+# **Spreadsheet Cloud API: checkWorkbookFormulaErrors**
 
  
 

@@ -1,4 +1,4 @@
-# **getChartSeriesAxis API**
+# **Spreadsheet Cloud API: getChartSeriesAxis**
 
 Retrieve descriptions of chart seriesaxis in the chart. 
 

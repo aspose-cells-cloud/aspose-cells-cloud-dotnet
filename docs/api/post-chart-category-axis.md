@@ -1,4 +1,4 @@
-# **postChartCategoryAxis API**
+# **Spreadsheet Cloud API: postChartCategoryAxis**
 
 Update chart category axis in the chart. 
 

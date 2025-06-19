@@ -1,4 +1,4 @@
-# **getPublicKey API**
+# **Spreadsheet Cloud API: getPublicKey**
 
 Get an asymmetric public key. 
 

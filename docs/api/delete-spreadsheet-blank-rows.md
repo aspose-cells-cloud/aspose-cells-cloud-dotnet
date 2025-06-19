@@ -1,4 +1,4 @@
-# **deleteSpreadsheetBlankRows API**
+# **Spreadsheet Cloud API: deleteSpreadsheetBlankRows**
 
 Delete all blank rows which do not contain any data or other object. 
 

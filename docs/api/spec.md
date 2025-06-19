@@ -1,4 +1,4 @@
-# **spec API**
+# **Spreadsheet Cloud API: spec**
 
 Get the specifications 
 

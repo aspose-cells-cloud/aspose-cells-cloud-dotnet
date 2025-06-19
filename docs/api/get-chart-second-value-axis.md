@@ -1,4 +1,4 @@
-# **getChartSecondValueAxis API**
+# **Spreadsheet Cloud API: getChartSecondValueAxis**
 
 Retrieve chart second value axis in the chart. 
 

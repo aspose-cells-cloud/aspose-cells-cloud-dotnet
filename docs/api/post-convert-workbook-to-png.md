@@ -1,4 +1,4 @@
-# **postConvertWorkbookToPNG API**
+# **Spreadsheet Cloud API: postConvertWorkbookToPNG**
 
 Convert Excel file to PNG files. 
 

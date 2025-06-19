@@ -1,4 +1,4 @@
-# **postConvertWorkbookToMarkdown API**
+# **Spreadsheet Cloud API: postConvertWorkbookToMarkdown**
 
 Convert Excel file to Markdown files. 
 

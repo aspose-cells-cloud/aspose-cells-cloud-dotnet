@@ -1,4 +1,4 @@
-# **deleteSpreadsheetBlankColumns API**
+# **Spreadsheet Cloud API: deleteSpreadsheetBlankColumns**
 
 Delete all blank columns which do not contain any data. 
 

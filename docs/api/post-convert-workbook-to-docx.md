@@ -1,4 +1,4 @@
-# **postConvertWorkbookToDocx API**
+# **Spreadsheet Cloud API: postConvertWorkbookToDocx**
 
 Convert Excel file to Docx files. 
 

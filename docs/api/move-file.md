@@ -1,4 +1,4 @@
-# **moveFile API**
+# **Spreadsheet Cloud API: moveFile**
 
  
 

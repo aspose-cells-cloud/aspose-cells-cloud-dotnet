@@ -1,4 +1,4 @@
-# **postWorkbookImportXML API**
+# **Spreadsheet Cloud API: postWorkbookImportXML**
 
 Import an XML data file into an Excel file. The XML data file can either be a cloud file or data from an HTTP URI. 
 
@@ -6,7 +6,7 @@ Import an XML data file into an Excel file. The XML data file can either be a cl
 
 - **Base URL**: `http://api.aspose.cloud/v3.0`
 - **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
-- **Example Request** 
+- **Example** 
 <script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_PostWorkbookImportXML.cs"></script>
 
 ## **Interface Details**

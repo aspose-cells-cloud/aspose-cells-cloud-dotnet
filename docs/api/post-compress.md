@@ -1,4 +1,4 @@
-# **postCompress API**
+# **Spreadsheet Cloud API: postCompress**
 
 Compress files and generate target files in various formats, supported file formats are include Xls, Xlsx, Xlsm, Xlsb, Ods and more. 
 
@@ -6,7 +6,7 @@ Compress files and generate target files in various formats, supported file form
 
 - **Base URL**: `http://api.aspose.cloud/v3.0`
 - **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
-- **Example Request** 
+- **Example** 
 <script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_PostCompress.cs"></script>
 
 ## **Interface Details**

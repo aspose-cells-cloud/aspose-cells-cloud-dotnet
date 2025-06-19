@@ -1,4 +1,4 @@
-# **postDataCleansing API**
+# **Spreadsheet Cloud API: postDataCleansing**
 
 Data cleansing of spreadsheet files is a data management process used to identify, correct, and remove errors, incompleteness, duplicates, or inaccuracies in tables and ranges. 
 

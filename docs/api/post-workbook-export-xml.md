@@ -1,4 +1,4 @@
-# **postWorkbookExportXML API**
+# **Spreadsheet Cloud API: postWorkbookExportXML**
 
 Export XML data from an Excel file.When there are XML Maps in an Excel file, export XML data. When there is no XML map in the Excel file, convert the Excel file to an XML file. 
 
@@ -6,7 +6,7 @@ Export XML data from an Excel file.When there are XML Maps in an Excel file, exp
 
 - **Base URL**: `http://api.aspose.cloud/v3.0`
 - **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
-- **Example Request** 
+- **Example** 
 <script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example30_PostWorkbookExportXML.cs"></script>
 
 ## **Interface Details**

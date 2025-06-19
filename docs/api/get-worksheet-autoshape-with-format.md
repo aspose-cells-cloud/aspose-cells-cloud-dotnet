@@ -1,4 +1,4 @@
-# **getWorksheetAutoshapeWithFormat API**
+# **Spreadsheet Cloud API: getWorksheetAutoshapeWithFormat**
 
 Get autoshape description in some format. 
 

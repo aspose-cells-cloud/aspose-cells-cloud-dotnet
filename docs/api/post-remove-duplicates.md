@@ -1,4 +1,4 @@
-# **postRemoveDuplicates API**
+# **Spreadsheet Cloud API: postRemoveDuplicates**
 
  
 

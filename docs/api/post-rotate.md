@@ -1,4 +1,4 @@
-# **postRotate API**
+# **Spreadsheet Cloud API: postRotate**
 
 Rotate rows, columns, or other objects in Excel files and save them in various formats. 
 

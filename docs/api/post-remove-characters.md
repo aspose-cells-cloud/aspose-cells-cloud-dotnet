@@ -1,4 +1,4 @@
-# **postRemoveCharacters API**
+# **Spreadsheet Cloud API: postRemoveCharacters**
 
  
 

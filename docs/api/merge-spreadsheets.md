@@ -1,4 +1,4 @@
-# **mergeSpreadsheets API**
+# **Spreadsheet Cloud API: mergeSpreadsheets**
 
 Merge local spreadsheet files into a specified format file. 
 

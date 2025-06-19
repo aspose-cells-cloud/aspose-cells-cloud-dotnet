@@ -1,4 +1,4 @@
-# **mergeSpreadsheetsInRemoteFolder API**
+# **Spreadsheet Cloud API: mergeSpreadsheetsInRemoteFolder**
 
 Merge spreadsheet files in folder of cloud storage into a specified format file. 
 

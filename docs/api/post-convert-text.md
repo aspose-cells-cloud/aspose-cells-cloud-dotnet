@@ -1,4 +1,4 @@
-# **postConvertText API**
+# **Spreadsheet Cloud API: postConvertText**
 
  
 
