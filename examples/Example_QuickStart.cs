@@ -12,11 +12,13 @@ namespace Aspose.Cells.Cloud.SDK.Api.ExampleQuickstart
         CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("ProductClientId"), Environment.GetEnvironmentVariable("ProductClientSecret"));
         public void ExampleQuickstart()
         {
-            var request = new PutConvertWorkbookRequest { localPath = "EmployeeSalesSummary.xlsx", format = "pdf" };
+            var request = new PutConvertWorkbookRequest {  LocalPath = "EmployeeSalesSummary.xlsx", format = "pdf" };
             var response = cellsApi.PutConvertWorkbook(request);
             if (response != null && response.Length > 0)
             {
-                File.WriteAllBytes("EmployeeSalesSummary.pdf", response);
+                byte[] data = new byte[response.Length];
+                response.Read(data, 0, data.Length);
+                File.WriteAllBytes("EmployeeSalesSummary.pdf", data);
                 Console.WriteLine("File converted and saved.");
             }
         }

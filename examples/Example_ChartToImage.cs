@@ -11,12 +11,13 @@ namespace Aspose.Cells.Cloud.SDK.Tests.Api.Example
     {
         string CellsCloudClientId ="....";//get from https://dashboard.aspose.cloud/#/applications
         string CellsCloudClientSecret="...";//get from https://dashboard.aspose.cloud/#/applications
-        ExampleXlsx = "example.xlsx";
-        RemoteFolder = "NetSDK";
+       string ExampleXlsx = "example.xlsx";
+        string RemoteFolder = "NetSDK";
 
         public void Example()
-        {
-                var uploadRequest = new UploadFileRequest(ExampleXlsx, RemoteFolder + "/" + ExampleXlsx);
+		{
+			CellsApi cellsApi = new CellsApi("xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+			var uploadRequest = new UploadFileRequest(ExampleXlsx, RemoteFolder + "/" + ExampleXlsx);
                 cellsApi.UploadFile(uploadRequest);
                 var request = new GetWorksheetChartRequest(
                     name: ExampleXlsx,
