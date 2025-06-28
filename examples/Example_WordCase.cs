@@ -13,7 +13,7 @@ public static class ExampleBlog_TextProcessing_WordCase
                     Filename = "BookText.xlsx",
                     FileContent = System.Convert.ToBase64String(System.IO.File.ReadAllBytes("BookText.xlsx"))
                 },
-                WordCaseType ="",
+                WordCaseType = "ProperCase",
                 ScopeOptions = new Aspose.Cells.Cloud.SDK.Model.ScopeOptions
                 {
                     Scope = "SelectionOlny",
