@@ -1,4 +1,4 @@
-public static class ExampleBlog_TextProcessing_TrimContent
+public static class Example_TrimContent
 {
     public static void Run()
     {

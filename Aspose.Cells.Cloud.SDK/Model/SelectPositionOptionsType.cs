@@ -35,7 +35,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// 
+    /// Represents where text should be inserted or selected in the spreadsheet.
+    ///             
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
     public enum SelectPositionOptionsType

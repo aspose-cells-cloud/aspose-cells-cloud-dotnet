@@ -54,12 +54,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.LocalPath = localPath ;
             this.password = password;
         }
-        [System.Obsolete]
-        public PostUnlockRequest(IDictionary<string, System.IO.Stream>  file, string  password)
-        {
-            this.File = file;
-            this.password = password;
-        }
         
         /// <summary>
         /// File to upload

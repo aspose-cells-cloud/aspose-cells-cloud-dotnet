@@ -35,17 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// CharacterCountOptions.
+    /// Character Count Options.
     /// </summary>
     public class CharacterCountOptions
     {
         /// <summary>
-        /// Gets or sets DataSource.
+        /// Represents data source.  There are three types of data, they are CloudFileSystem, RequestFiles, HttpUri.
         /// </summary>
         public virtual DataSource DataSource { get; set; }
 
         /// <summary>
-        /// Gets or sets FileInfo.
+        /// Represents file information. Include of filename, filesize, and file content(base64String).
         /// </summary>
         public virtual FileInfo FileInfo { get; set; }
 

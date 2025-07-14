@@ -35,19 +35,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// I'm happy to help! Please provide me with the features you would like me to summarize for the class.
-    ///             
+    /// Define the specific range in your Excel worksheet where you want the spreadsheet operations to be performed. This ensures that only the cells within the selected range are processed, and any operations are confined to this area.
     /// </summary>
     public class ScopeItem
     {
         /// <summary>
-        /// A property "WorksheetName" of type string with an initial value of an empty string.
-        ///             
+        /// The specific worksheet of spreadsheet.
         /// </summary>
-        public virtual string WorksheetName { get; set; }
+        public virtual string Worksheet { get; set; }
 
         /// <summary>
-        /// 
+        /// The specific ranges of worksheet.
         /// </summary>
         public virtual List<string> Ranges { get; set; }
 
@@ -59,7 +57,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         {
             var sb = new StringBuilder();
             sb.Append("class ScopeItem {\n");
-            sb.Append("  WorksheetName: ").Append(this.WorksheetName).Append("\n");
+            sb.Append("  Worksheet: ").Append(this.Worksheet).Append("\n");
             sb.Append("  Ranges: ").Append(this.Ranges).Append("\n");
             sb.Append("}\n");
             return sb.ToString();

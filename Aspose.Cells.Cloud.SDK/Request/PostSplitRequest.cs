@@ -64,17 +64,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.checkExcelRestriction = checkExcelRestriction;
             this.region = region;
         }
-        [System.Obsolete]
-        public PostSplitRequest(IDictionary<string, System.IO.Stream>  file, string  outFormat, string  password = null, int?  from = null, int?  to = null, bool?  checkExcelRestriction = null, string  region = null)
-        {
-            this.File = file;
-            this.outFormat = outFormat;
-            this.password = password;
-            this.from = from;
-            this.to = to;
-            this.checkExcelRestriction = checkExcelRestriction;
-            this.region = region;
-        }
         
         /// <summary>
         /// File to upload

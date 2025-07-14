@@ -62,16 +62,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.outFormat = outFormat;
             this.region = region;
         }
-        [System.Obsolete]
-        public PostMetadataRequest(IDictionary<string, System.IO.Stream>  file, IList<CellsDocumentProperty>  cellsDocuments, string  password = null, bool?  checkExcelRestriction = null, string  outFormat = null, string  region = null)
-        {
-            this.File = file;
-            this.cellsDocuments = cellsDocuments;
-            this.password = password;
-            this.checkExcelRestriction = checkExcelRestriction;
-            this.outFormat = outFormat;
-            this.region = region;
-        }
         
         /// <summary>
         /// File to upload

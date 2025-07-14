@@ -64,17 +64,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.storageName = storageName;
             this.LocalPath = localPath ;
         }
-        [System.Obsolete]
-        public PutWorksheetBackgroundRequest(string  name, string  sheetName, string  picPath = null, string  imageAdaptOption = null, string  folder = null, string  storageName = null, IDictionary<string, System.IO.Stream>  file = null)
-        {
-            this.name = name;
-            this.sheetName = sheetName;
-            this.picPath = picPath;
-            this.imageAdaptOption = imageAdaptOption;
-            this.folder = folder;
-            this.storageName = storageName;
-            this.File = file;
-        }
         
         /// <summary>
         /// The file name.

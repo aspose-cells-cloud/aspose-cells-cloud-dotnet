@@ -82,26 +82,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.AutoColumnsFit = autoColumnsFit;
             this.FontsLocation = fontsLocation;
         }
-        [System.Obsolete]
-        public PutConvertWorkbookRequest(IDictionary<string, System.IO.Stream>  file, string  format, string  password = null, string  outPath = null, string  storageName = null, bool?  checkExcelRestriction = null, string  streamFormat = null, string  region = null, bool?  pageWideFitOnPerSheet = null, bool?  pageTallFitOnPerSheet = null, string  sheetName = null, int?  pageIndex = null, bool?  onePagePerSheet = null, bool?  autoRowsFit = null, bool?  autoColumnsFit = null, string  fontsLocation = null)
-        {
-            this.File = file;
-            this.format = format;
-            this.password = password;
-            this.outPath = outPath;
-            this.storageName = storageName;
-            this.checkExcelRestriction = checkExcelRestriction;
-            this.streamFormat = streamFormat;
-            this.region = region;
-            this.pageWideFitOnPerSheet = pageWideFitOnPerSheet;
-            this.pageTallFitOnPerSheet = pageTallFitOnPerSheet;
-            this.sheetName = sheetName;
-            this.pageIndex = pageIndex;
-            this.onePagePerSheet = onePagePerSheet;
-            this.AutoRowsFit = autoRowsFit;
-            this.AutoColumnsFit = autoColumnsFit;
-            this.FontsLocation = fontsLocation;
-        }
         
         /// <summary>
         /// File to upload

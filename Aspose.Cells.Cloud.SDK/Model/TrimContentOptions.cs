@@ -35,39 +35,37 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// I'm sorry, but you haven't provided any specific content for me to summarize. Please provide the features you would like to be summarized.
-    ///             
+    /// 
     /// </summary>
     public class TrimContentOptions
     {
         /// <summary>
-        /// This class has a public property named DataSource of type DataSource that has both a getter and a setter method.
-        ///             
+        /// Represents data source.  There are three types of data, they are CloudFileSystem, RequestFiles, HttpUri.
         /// </summary>
         public virtual DataSource DataSource { get; set; }
 
         /// <summary>
-        /// Gets or sets FileInfo.
+        /// Represents file information. Include of filename, filesize, and file content(base64String).
         /// </summary>
         public virtual FileInfo FileInfo { get; set; }
 
         /// <summary>
-        /// Gets or sets TrimContent.
+        /// Trim Content
         /// </summary>
         public virtual string TrimContent { get; set; }
 
         /// <summary>
-        /// Gets or sets TrimLeading.
+        /// If the trim leading value is true, the trim content before and after cell values will be deleted.
         /// </summary>
         public virtual bool? TrimLeading { get; set; }
 
         /// <summary>
-        /// Gets or sets TrimTrailing.
+        /// If the trim trailing value is true, the trim content before and after cell values will be deleted.
         /// </summary>
         public virtual bool? TrimTrailing { get; set; }
 
         /// <summary>
-        /// Gets or sets TrimSpaceBetweenWordTo1.
+        /// When the trim space between word to 1 parameter is true, it enables the removal of extra spaces between words within a cell, ensuring that only a single space is maintained between words.
         /// </summary>
         public virtual bool? TrimSpaceBetweenWordTo1 { get; set; }
 
@@ -77,17 +75,17 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual bool? TrimNonBreakingSpaces { get; set; }
 
         /// <summary>
-        /// Gets or sets RemoveExtraLineBreaks.
+        /// When this parameter is enabled (set to True), it deletes extra line breaks within the selected range, ensuring that only necessary line breaks are retained.
         /// </summary>
         public virtual bool? RemoveExtraLineBreaks { get; set; }
 
         /// <summary>
-        /// Gets or sets RemoveAllLineBreaks.
+        /// When this parameter is enabled (set to True), it removes all line breaks within the selected range, resulting in a continuous block of text without any line breaks.
         /// </summary>
         public virtual bool? RemoveAllLineBreaks { get; set; }
 
         /// <summary>
-        /// Gets or sets ScopeOptions.
+        /// Specifies the range of cells within the worksheet where the spreadsheet operations will be performed. This parameter allows users to define the exact area to be processed, ensuring that operations are applied only to the designated cells.
         /// </summary>
         public virtual ScopeOptions ScopeOptions { get; set; }
 

@@ -56,13 +56,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.protectWorkbookRequest = protectWorkbookRequest;
             this.password = password;
         }
-        [System.Obsolete]
-        public PostProtectRequest(IDictionary<string, System.IO.Stream>  file, ProtectWorkbookRequest  protectWorkbookRequest, string  password = null)
-        {
-            this.File = file;
-            this.protectWorkbookRequest = protectWorkbookRequest;
-            this.password = password;
-        }
         
         /// <summary>
         /// File to upload

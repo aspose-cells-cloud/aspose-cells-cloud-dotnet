@@ -60,15 +60,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.password = password;
             this.checkExcelRestriction = checkExcelRestriction;
         }
-        [System.Obsolete]
-        public DeleteMetadataRequest(IDictionary<string, System.IO.Stream>  file, string  type = null, string  outFormat = null, string  password = null, bool?  checkExcelRestriction = null)
-        {
-            this.File = file;
-            this.type = type;
-            this.outFormat = outFormat;
-            this.password = password;
-            this.checkExcelRestriction = checkExcelRestriction;
-        }
         
         /// <summary>
         /// File to upload

@@ -47,14 +47,14 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <summary>
             /// Initializes a new instance of the <see cref="PostAddTextContentRequest"/> class.
             /// </summary>
-            /// <param name="addTextOptions"></param>
+            /// <param name="addTextOptions">that specifies the text content and the position where the text should be added.</param>
             public PostAddTextContentRequest(AddTextOptions  addTextOptions)
             {
                 this.addTextOptions = addTextOptions;
             }
         
         /// <summary>
-        /// Gets or sets addTextOptions.
+        /// that specifies the text content and the position where the text should be added.
         /// </summary>
         public AddTextOptions addTextOptions { get; set; }
         

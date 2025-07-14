@@ -60,15 +60,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.sheetname = sheetname;
             this.checkExcelRestriction = checkExcelRestriction;
         }
-        [System.Obsolete]
-        public PostSearchRequest(IDictionary<string, System.IO.Stream>  file, string  text, string  password = null, string  sheetname = null, bool?  checkExcelRestriction = null)
-        {
-            this.File = file;
-            this.text = text;
-            this.password = password;
-            this.sheetname = sheetname;
-            this.checkExcelRestriction = checkExcelRestriction;
-        }
         
         /// <summary>
         /// File to upload

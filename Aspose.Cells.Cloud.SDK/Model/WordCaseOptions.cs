@@ -41,13 +41,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
     public class WordCaseOptions
     {
         /// <summary>
-        /// This class has a public property named "DataSource" of type DataSource that has both a getter and a setter.
-        ///             
+        /// Represents data source.  There are three types of data, they are CloudFileSystem, RequestFiles, HttpUri.
         /// </summary>
         public virtual DataSource DataSource { get; set; }
 
         /// <summary>
-        /// Gets or sets FileInfo.
+        /// Represents file information. Include of filename, filesize, and file content(base64String).
         /// </summary>
         public virtual FileInfo FileInfo { get; set; }
 

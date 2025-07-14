@@ -54,12 +54,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.LocalPath = localPath ;
             this.outFormat = outFormat;
         }
-        [System.Obsolete]
-        public PostRepairRequest(IDictionary<string, System.IO.Stream>  file, string  outFormat = null)
-        {
-            this.File = file;
-            this.outFormat = outFormat;
-        }
         
         /// <summary>
         /// File to upload

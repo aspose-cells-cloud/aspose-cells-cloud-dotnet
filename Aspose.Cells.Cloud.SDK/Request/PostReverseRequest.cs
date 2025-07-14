@@ -62,16 +62,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.checkExcelRestriction = checkExcelRestriction;
             this.region = region;
         }
-        [System.Obsolete]
-        public PostReverseRequest(IDictionary<string, System.IO.Stream>  file, string  rotateType, string  outFormat = null, string  password = null, bool?  checkExcelRestriction = null, string  region = null)
-        {
-            this.File = file;
-            this.rotateType = rotateType;
-            this.outFormat = outFormat;
-            this.password = password;
-            this.checkExcelRestriction = checkExcelRestriction;
-            this.region = region;
-        }
         
         /// <summary>
         /// File to upload

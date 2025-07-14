@@ -60,15 +60,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.checkExcelRestriction = checkExcelRestriction;
             this.region = region;
         }
-        [System.Obsolete]
-        public PostImportRequest(IDictionary<string, System.IO.Stream>  file, string  outFormat = null, string  password = null, bool?  checkExcelRestriction = null, string  region = null)
-        {
-            this.File = file;
-            this.outFormat = outFormat;
-            this.password = password;
-            this.checkExcelRestriction = checkExcelRestriction;
-            this.region = region;
-        }
         
         /// <summary>
         /// File to upload

@@ -166,6 +166,38 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
+        public void ExportWorksheetAsFormat(ExportWorksheetAsFormatRequest request, string LocalOutPath){
+            var result = ExportWorksheetAsFormat(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Converts a worksheet of spreadsheet in cloud storage to the specified format.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ExportWorksheetAsFormatRequest" /></param>
+        public   Stream  ExportWorksheetAsFormat(ExportWorksheetAsFormatRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ExportWorksheetAsFormatAsync(ExportWorksheetAsFormatRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
         public void ExportChartAsFormat(ExportChartAsFormatRequest request, string LocalOutPath){
             var result = ExportChartAsFormat(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
@@ -198,6 +230,70 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
+        public void ExportTableAsFormat(ExportTableAsFormatRequest request, string LocalOutPath){
+            var result = ExportTableAsFormat(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Converts a table of spreadsheet in cloud storage to the specified format.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ExportTableAsFormatRequest" /></param>
+        public   Stream  ExportTableAsFormat(ExportTableAsFormatRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ExportTableAsFormatAsync(ExportTableAsFormatRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ExportRangeAsFormat(ExportRangeAsFormatRequest request, string LocalOutPath){
+            var result = ExportRangeAsFormat(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Converts the range of spreadsheet in cloud storage to the specified format.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ExportRangeAsFormatRequest" /></param>
+        public   Stream  ExportRangeAsFormat(ExportRangeAsFormatRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ExportRangeAsFormatAsync(ExportRangeAsFormatRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
         public void ConvertSpreadsheet(ConvertSpreadsheetRequest request, string LocalOutPath){
             var result = ConvertSpreadsheet(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
@@ -222,6 +318,390 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </summary>
 
         public async Task<   Stream  > ConvertSpreadsheetAsync(ConvertSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ConvertWorksheetToImage(ConvertWorksheetToImageRequest request, string LocalOutPath){
+            var result = ConvertWorksheetToImage(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Converts a worksheet of spreadsheet on a local drive to the image format.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertWorksheetToImageRequest" /></param>
+        public   Stream  ConvertWorksheetToImage(ConvertWorksheetToImageRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ConvertWorksheetToImageAsync(ConvertWorksheetToImageRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ConvertWorksheetToPdf(ConvertWorksheetToPdfRequest request, string LocalOutPath){
+            var result = ConvertWorksheetToPdf(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Converts a worksheet of spreadsheet on a local drive to the pdf file.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertWorksheetToPdfRequest" /></param>
+        public   Stream  ConvertWorksheetToPdf(ConvertWorksheetToPdfRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ConvertWorksheetToPdfAsync(ConvertWorksheetToPdfRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ConvertTableToImage(ConvertTableToImageRequest request, string LocalOutPath){
+            var result = ConvertTableToImage(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Converts a table of spreadsheet on a local drive to the image file.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertTableToImageRequest" /></param>
+        public   Stream  ConvertTableToImage(ConvertTableToImageRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ConvertTableToImageAsync(ConvertTableToImageRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ConvertTableToPdf(ConvertTableToPdfRequest request, string LocalOutPath){
+            var result = ConvertTableToPdf(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Converts a table of spreadsheet on a local drive to the pdf file.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertTableToPdfRequest" /></param>
+        public   Stream  ConvertTableToPdf(ConvertTableToPdfRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ConvertTableToPdfAsync(ConvertTableToPdfRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ConvertTableToCsv(ConvertTableToCsvRequest request, string LocalOutPath){
+            var result = ConvertTableToCsv(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Converts a table of spreadsheet on a local drive to the csv file.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertTableToCsvRequest" /></param>
+        public   Stream  ConvertTableToCsv(ConvertTableToCsvRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ConvertTableToCsvAsync(ConvertTableToCsvRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ConvertTableToHtml(ConvertTableToHtmlRequest request, string LocalOutPath){
+            var result = ConvertTableToHtml(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Converts a table of spreadsheet on a local drive to the html file.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertTableToHtmlRequest" /></param>
+        public   Stream  ConvertTableToHtml(ConvertTableToHtmlRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ConvertTableToHtmlAsync(ConvertTableToHtmlRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ConvertTableToJson(ConvertTableToJsonRequest request, string LocalOutPath){
+            var result = ConvertTableToJson(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Converts a table of spreadsheet on a local drive to the json file.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertTableToJsonRequest" /></param>
+        public   Stream  ConvertTableToJson(ConvertTableToJsonRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ConvertTableToJsonAsync(ConvertTableToJsonRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ConvertRangeToImage(ConvertRangeToImageRequest request, string LocalOutPath){
+            var result = ConvertRangeToImage(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Converts a range of spreadsheet on a local drive to the image file.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertRangeToImageRequest" /></param>
+        public   Stream  ConvertRangeToImage(ConvertRangeToImageRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ConvertRangeToImageAsync(ConvertRangeToImageRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ConvertRangeToPdf(ConvertRangeToPdfRequest request, string LocalOutPath){
+            var result = ConvertRangeToPdf(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Converts a range of spreadsheet on a local drive to the pdf file.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertRangeToPdfRequest" /></param>
+        public   Stream  ConvertRangeToPdf(ConvertRangeToPdfRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ConvertRangeToPdfAsync(ConvertRangeToPdfRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ConvertRangeToCsv(ConvertRangeToCsvRequest request, string LocalOutPath){
+            var result = ConvertRangeToCsv(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Converts a range of spreadsheet on a local drive to the csv file.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertRangeToCsvRequest" /></param>
+        public   Stream  ConvertRangeToCsv(ConvertRangeToCsvRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ConvertRangeToCsvAsync(ConvertRangeToCsvRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ConvertRangeToHtml(ConvertRangeToHtmlRequest request, string LocalOutPath){
+            var result = ConvertRangeToHtml(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Converts a range of spreadsheet on a local drive to the html file.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertRangeToHtmlRequest" /></param>
+        public   Stream  ConvertRangeToHtml(ConvertRangeToHtmlRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ConvertRangeToHtmlAsync(ConvertRangeToHtmlRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ConvertRangeToJson(ConvertRangeToJsonRequest request, string LocalOutPath){
+            var result = ConvertRangeToJson(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Converts a range of spreadsheet on a local drive to the json file.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertRangeToJsonRequest" /></param>
+        public   Stream  ConvertRangeToJson(ConvertRangeToJsonRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ConvertRangeToJsonAsync(ConvertRangeToJsonRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -495,6 +975,70 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    CellsCloudPublicKeyResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ProtectSpreadsheet(ProtectSpreadsheetRequest request, string LocalOutPath){
+            var result = ProtectSpreadsheet(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Applies dual-layer password protection to Excel spreadsheets, supporting both open and modify passwords with encryption.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ProtectSpreadsheetRequest" /></param>
+        public   Stream  ProtectSpreadsheet(ProtectSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ProtectSpreadsheetAsync(ProtectSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void UnprotectSpreadsheet(UnprotectSpreadsheetRequest request, string LocalOutPath){
+            var result = UnprotectSpreadsheet(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Removes dual-layer password protection from Excel spreadsheets, supporting both open and modify passwords with encryption.
+        /// </summary>
+        /// <param name="request">Request. <see cref="UnprotectSpreadsheetRequest" /></param>
+        public   Stream  UnprotectSpreadsheet(UnprotectSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > UnprotectSpreadsheetAsync(UnprotectSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -7263,7 +7807,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
-        /// Adds text content to a workbook at specified positions within cells based on provided options using ASP.NET Core Web API.
+        /// Adds text content to a specified location within a document. It requires an object that defines the text to be added and the insertion location.
         /// </summary>
         /// <param name="request">Request. <see cref="PostAddTextContentRequest" /></param>
         public   FileInfo  PostAddTextContent(PostAddTextContentRequest request)
@@ -7286,6 +7830,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// The PostTrimContent API is designed to process and trim content within a specified range in a spreadsheet. This API allows users to remove extra spaces, line breaks, or other unnecessary characters from the content of selected cells. It is particularly useful for cleaning up data entries and ensuring consistency in spreadsheet formatting
         /// </summary>
         /// <param name="request">Request. <see cref="PostTrimContentRequest" /></param>
         public   FileInfo  PostTrimContent(PostTrimContentRequest request)
@@ -7308,6 +7853,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Managing inconsistent text case in spreadsheets (Excel, Google Sheets, CSV) can be frustrating, especially with large datasets. The PostUpdateWordCase WEB API solves this by automating text case conversions, ensuring clean and standardized data.
         /// </summary>
         /// <param name="request">Request. <see cref="PostUpdateWordCaseRequest" /></param>
         public   FileInfo  PostUpdateWordCase(PostUpdateWordCaseRequest request)
@@ -7330,6 +7876,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// A comprehensive set of tools for cleaning text content within selected cells. It allows users to remove specific characters, character sets, and substrings, ensuring that the text is standardized and free from unwanted symbols or sequences.
         /// </summary>
         /// <param name="request">Request. <see cref="PostRemoveCharactersRequest" /></param>
         public   FileInfo  PostRemoveCharacters(PostRemoveCharactersRequest request)
@@ -7352,6 +7899,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Enhance Excel data through essential text conversions: convert text to numbers, replace characters and line breaks, and remove accents.
         /// </summary>
         /// <param name="request">Request. <see cref="PostConvertTextRequest" /></param>
         public   FileInfo  PostConvertText(PostConvertTextRequest request)
@@ -7374,6 +7922,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Efficiently remove duplicate substrings from Excel cells. Select a range, specify delimiters, and apply options to eliminate repeated text segments.
         /// </summary>
         /// <param name="request">Request. <see cref="PostRemoveDuplicatesRequest" /></param>
         public   FileInfo  PostRemoveDuplicates(PostRemoveDuplicatesRequest request)
@@ -7396,6 +7945,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Effortlessly extract text and numbers from Excel cells with precise options. This API allows extraction of first/last characters, text between delimiters, and numbers from strings, with output as static values or formulas.
         /// </summary>
         /// <param name="request">Request. <see cref="PostExtractTextRequest" /></param>
         public   FileInfo  PostExtractText(PostExtractTextRequest request)
@@ -7418,6 +7968,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
         /// <summary>
+        /// Efficiently divides Excel cell content into columns or rows based on specified delimiters or patterns. Supports Character-based splitting, Custom string splitting, Mask and wildcard splitting for pattern-based division, Line break division, Column or row splitting, Delimiter removal or retention.
         /// </summary>
         /// <param name="request">Request. <see cref="PostSplitTextRequest" /></param>
         public   FileInfo  PostSplitText(PostSplitTextRequest request)

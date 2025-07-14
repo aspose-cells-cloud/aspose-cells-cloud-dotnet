@@ -60,15 +60,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.region = region;
             this.FontsLocation = fontsLocation;
         }
-        [System.Obsolete]
-        public PostConvertWorkbookToHtmlRequest(IDictionary<string, System.IO.Stream>  file, string  password = null, bool?  checkExcelRestriction = null, string  region = null, string  fontsLocation = null)
-        {
-            this.File = file;
-            this.password = password;
-            this.checkExcelRestriction = checkExcelRestriction;
-            this.region = region;
-            this.FontsLocation = fontsLocation;
-        }
         
         /// <summary>
         /// File to upload

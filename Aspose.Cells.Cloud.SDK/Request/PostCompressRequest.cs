@@ -58,14 +58,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.password = password;
             this.checkExcelRestriction = checkExcelRestriction;
         }
-        [System.Obsolete]
-        public PostCompressRequest(IDictionary<string, System.IO.Stream>  file, int?  compressLevel = null, string  password = null, bool?  checkExcelRestriction = null)
-        {
-            this.File = file;
-            this.CompressLevel = compressLevel;
-            this.password = password;
-            this.checkExcelRestriction = checkExcelRestriction;
-        }
         
         /// <summary>
         /// File to upload

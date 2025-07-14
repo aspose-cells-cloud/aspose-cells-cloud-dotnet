@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ReplaceContentInRemoteRangeRequest.cs">
+// <copyright company="Aspose" file="ExportTableAsFormatRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,75 +32,73 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.ReplaceContentInRemoteRange" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.ExportTableAsFormat" /> operation.
     /// </summary>
-    public class ReplaceContentInRemoteRangeRequest : IRequestModel
+    public class ExportTableAsFormatRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ReplaceContentInRemoteRangeRequest"/> class.
+        /// Initializes a new instance of the <see cref="ExportTableAsFormatRequest"/> class.
         /// </summary>
-        public ReplaceContentInRemoteRangeRequest()
+        public ExportTableAsFormatRequest()
         {
 
         }
             /// <summary>
-            /// Initializes a new instance of the <see cref="ReplaceContentInRemoteRangeRequest"/> class.
+            /// Initializes a new instance of the <see cref="ExportTableAsFormatRequest"/> class.
             /// </summary>
-            /// <param name="name">The name of the workbook file to be replace.</param>
-            /// <param name="searchText">The searched text.</param>
-            /// <param name="replaceText">The replaced text.</param>
-            /// <param name="worksheet">The worksheet name.</param>
-            /// <param name="cellArea">The cell area for the replace.</param>
-            /// <param name="folder">The folder path where the workbook is stored.</param>
+            /// <param name="name">(Required) The name of the workbook file to be retrieved.</param>
+            /// <param name="worksheet">worksheet name</param>
+            /// <param name="tableName">table name</param>
+            /// <param name="format">(Required) The desired format  (e.g., "png", "Pdf", "svg").</param>
+            /// <param name="folder">(Optional) The folder path where the workbook is stored. The default is null.</param>
             /// <param name="storageName">(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.</param>
+            /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
+            /// <param name="outStorageName">Output file Storage Name.</param>
+            /// <param name="fontsLocation">Use Custom fonts.</param>
             /// <param name="regoin">The spreadsheet region setting.</param>
             /// <param name="password">The password for opening spreadsheet file.</param>
-            public ReplaceContentInRemoteRangeRequest(string  name, string  searchText, string  replaceText, string  worksheet, string  cellArea, string  folder = null, string  storageName = null, string  regoin = null, string  password = null)
+            public ExportTableAsFormatRequest(string  name, string  worksheet, string  tableName, string  format, string  folder = null, string  storageName = null, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  regoin = null, string  password = null)
             {
                 this.name = name;
-                this.searchText = searchText;
-                this.replaceText = replaceText;
                 this.worksheet = worksheet;
-                this.cellArea = cellArea;
+                this.tableName = tableName;
+                this.format = format;
                 this.folder = folder;
                 this.storageName = storageName;
+                this.outPath = outPath;
+                this.outStorageName = outStorageName;
+                this.fontsLocation = fontsLocation;
                 this.regoin = regoin;
                 this.password = password;
             }
         
         /// <summary>
-        /// The name of the workbook file to be replace.
+        /// (Required) The name of the workbook file to be retrieved.
         /// </summary>
         public string name { get; set; }
 
 
         /// <summary>
-        /// The searched text.
-        /// </summary>
-        public string searchText { get; set; }
-
-
-        /// <summary>
-        /// The replaced text.
-        /// </summary>
-        public string replaceText { get; set; }
-
-
-        /// <summary>
-        /// The worksheet name.
+        /// worksheet name
         /// </summary>
         public string worksheet { get; set; }
 
 
         /// <summary>
-        /// The cell area for the replace.
+        /// table name
         /// </summary>
-        public string cellArea { get; set; }
+        public string tableName { get; set; }
 
 
         /// <summary>
-        /// The folder path where the workbook is stored.
+        /// (Required) The desired format  (e.g., "png", "Pdf", "svg").
+        /// </summary>
+        public string format { get; set; }
+
+
+        /// <summary>
+        /// (Optional) The folder path where the workbook is stored. The default is null.
         /// </summary>
         public string folder { get; set; }
 
@@ -109,6 +107,24 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.
         /// </summary>
         public string storageName { get; set; }
+
+
+        /// <summary>
+        /// (Optional) The folder path where the workbook is stored. The default is null.
+        /// </summary>
+        public string outPath { get; set; }
+
+
+        /// <summary>
+        /// Output file Storage Name.
+        /// </summary>
+        public string outStorageName { get; set; }
+
+
+        /// <summary>
+        /// Use Custom fonts.
+        /// </summary>
+        public string fontsLocation { get; set; }
 
 
         /// <summary>
@@ -142,34 +158,28 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'name' is set
             if (string.IsNullOrEmpty (this.name ))
             {
-                throw new ApiException(400, "Missing required parameter 'name' when calling ReplaceContentInRemoteRange");
-            }
-
-            // verify the required parameter 'searchText' is set
-            if (string.IsNullOrEmpty (this.searchText ))
-            {
-                throw new ApiException(400, "Missing required parameter 'searchText' when calling ReplaceContentInRemoteRange");
-            }
-
-            // verify the required parameter 'replaceText' is set
-            if (string.IsNullOrEmpty (this.replaceText ))
-            {
-                throw new ApiException(400, "Missing required parameter 'replaceText' when calling ReplaceContentInRemoteRange");
+                throw new ApiException(400, "Missing required parameter 'name' when calling ExportTableAsFormat");
             }
 
             // verify the required parameter 'worksheet' is set
             if (string.IsNullOrEmpty (this.worksheet ))
             {
-                throw new ApiException(400, "Missing required parameter 'worksheet' when calling ReplaceContentInRemoteRange");
+                throw new ApiException(400, "Missing required parameter 'worksheet' when calling ExportTableAsFormat");
             }
 
-            // verify the required parameter 'cellArea' is set
-            if (string.IsNullOrEmpty (this.cellArea ))
+            // verify the required parameter 'tableName' is set
+            if (string.IsNullOrEmpty (this.tableName ))
             {
-                throw new ApiException(400, "Missing required parameter 'cellArea' when calling ReplaceContentInRemoteRange");
+                throw new ApiException(400, "Missing required parameter 'tableName' when calling ExportTableAsFormat");
             }
 
-            var path = baseUri + "/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/replace/content";
+            // verify the required parameter 'format' is set
+            if (string.IsNullOrEmpty (this.format ))
+            {
+                throw new ApiException(400, "Missing required parameter 'format' when calling ExportTableAsFormat");
+            }
+
+            var path = baseUri + "/cells/{name}/worksheets/{worksheet}/tables/{tableName}";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
@@ -177,11 +187,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
             path = UrlHelper.AddPathParameter(path, "name", this.name);
             path = UrlHelper.AddPathParameter(path, "worksheet", this.worksheet);
-            path = UrlHelper.AddPathParameter(path, "cellArea", this.cellArea);
-            path = UrlHelper.AddQueryParameterToUrl(path, "searchText", this.searchText);
-            path = UrlHelper.AddQueryParameterToUrl(path, "replaceText", this.replaceText);
+            path = UrlHelper.AddPathParameter(path, "tableName", this.tableName);
+            path = UrlHelper.AddQueryParameterToUrl(path, "format", this.format);
             if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
             if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
+            if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
+            if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
+            if (!string.IsNullOrEmpty(this.fontsLocation))  path = UrlHelper.AddQueryParameterToUrl(path, "fontsLocation", this.fontsLocation);
             if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
@@ -193,7 +205,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
 
-            return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
+            return UrlHelper.PrepareRequest(path, "GET", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }
 }

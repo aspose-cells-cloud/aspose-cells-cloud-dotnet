@@ -45,12 +45,12 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string Name { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents data source.  There are three types of data, they are CloudFileSystem, RequestFiles, HttpUri.
         /// </summary>
         public virtual DataSource DataSource { get; set; }
 
         /// <summary>
-        /// 
+        /// Represents file information. Include of filename, filesize, and file content(base64String).
         /// </summary>
         public virtual FileInfo FileInfo { get; set; }
 
@@ -65,32 +65,32 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual string Range { get; set; }
 
         /// <summary>
-        /// Gets or sets ExtractTextType.
+        /// 
         /// </summary>
         public virtual string ExtractTextType { get; set; }
 
         /// <summary>
-        /// Gets or sets BeforeText.
+        /// 
         /// </summary>
         public virtual string BeforeText { get; set; }
 
         /// <summary>
-        /// Gets or sets AfterText.
+        /// 
         /// </summary>
         public virtual string AfterText { get; set; }
 
         /// <summary>
-        /// Gets or sets BeforePosition.
+        /// 
         /// </summary>
         public virtual int? BeforePosition { get; set; }
 
         /// <summary>
-        /// Gets or sets AfterPosition.
+        /// 
         /// </summary>
         public virtual int? AfterPosition { get; set; }
 
         /// <summary>
-        /// Gets or sets OutPositionRange.
+        /// 
         /// </summary>
         public virtual string OutPositionRange { get; set; }
 

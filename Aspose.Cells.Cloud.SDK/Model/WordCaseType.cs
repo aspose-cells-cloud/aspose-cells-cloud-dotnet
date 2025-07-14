@@ -35,7 +35,8 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// WordCaseType.
+    /// Defines the types of word case transformations.
+    ///             
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
     public enum WordCaseType

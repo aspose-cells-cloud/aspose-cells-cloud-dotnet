@@ -1,4 +1,4 @@
-public static class ExampleBlog_TextProcessing_WordCase
+public static class Example_WordCase
 {
     public static void Run()
     {
