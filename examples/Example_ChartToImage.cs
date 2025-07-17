@@ -1,11 +1,7 @@
 namespace Aspose.Cells.Cloud.SDK.Tests.Api.Example
 {
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Aspose.Cells.Cloud.SDK.Request;
-    using System.Collections.Generic;
     using Aspose.Cells.Cloud.SDK.Api;
-    using System;
-    using System.IO;
 
     public class CellsApiExample
     {
