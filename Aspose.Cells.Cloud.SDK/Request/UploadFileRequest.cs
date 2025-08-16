@@ -119,10 +119,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 }
             }
 
-            if (!string.IsNullOrEmpty(UploadFiles ) && System.IO.File.Exists(UploadFiles )) {
-                        System.IO.FileInfo fileInfo = new System.IO.FileInfo(UploadFiles);
-                        localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(UploadFiles), fileInfo.Name));
-               }
+             if (!string.IsNullOrEmpty(UploadFiles ) && System.IO.File.Exists(UploadFiles )) {
+                 System.IO.FileInfo fileInfo = new System.IO.FileInfo(UploadFiles);
+                 localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(UploadFiles), fileInfo.Name));
+             } 
 
 
 

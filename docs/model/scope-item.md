@@ -1,11 +1,11 @@
 # **scopeItem**
 
-I'm happy to help! Please provide me with the features you would like me to summarize for the class.             
+Define the specific range in your Excel worksheet where you want the spreadsheet operations to be performed. This ensures that only the cells within the selected range are processed, and any operations are confined to this area. 
 
 ## **Properties**
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-|WorksheetName|String|true|false |  |A property "WorksheetName" of type string with an initial value of an empty string.            |
-|Ranges|Array|true|false |  ||
+|Worksheet|String|true|false |  |The specific worksheet of spreadsheet.|
+|Ranges|Array|true|false |  |The specific ranges of worksheet.|
 

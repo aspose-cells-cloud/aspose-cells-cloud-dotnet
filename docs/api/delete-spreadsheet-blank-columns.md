@@ -6,6 +6,9 @@ Delete all blank columns which do not contain any data.
 
 - **Base URL**: `http://api.aspose.cloud/v4.0`
 - **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example40_DeleteSpreadsheetBlankColumns.cs"></script>
+
 ## **Interface Details**
 
 ### **Endpoint** 
@@ -15,6 +18,7 @@ PUT http://api.aspose.cloud/v4.0/cells/delete/blank-columns
 ```
 
 ### **Function Description**
+- **Blank Column Identification**: This function identifies columns that do not contain any data or objects, ensuring thorough removal of unnecessary blank columns.- **Data Integrity**: By removing only truly empty columns, it maintains the integrity of your dataset, preventing accidental data loss.- **Usage**:- Ideal for cleaning large datasets where blank columns may interfere with data analysis or processing.- Enhances the readability and usability of spreadsheets by eliminating extraneous blank columns.
 
 ### The request parameters of **deleteSpreadsheetBlankColumns** API are: 
 

@@ -1,6 +1,6 @@
 # **wordCaseType**
 
- 
+Defines the types of word case transformations.             
 
 ## **Properties**
 
