@@ -1,5 +1,26 @@
 # Release History Version
 
+
+## Feature & Enhancements in Version 25.7
+
+- Optimize the operation scope options for Text Processing Controller.
+- Add protect/unprotect spreadsheet APIs.
+- Add convert worksheet/table/range to other formats.
+
+## Feature & Enhancements in Version 25.6
+
+- Optimize the upload file API. Improvement
+- Support deletes blank rows, columns, and worksheets.
+- Optimize search context for remote spreadsheet features by splitting them into independent APIs, each dedicated to a specific operational area.
+- Optimize search broken links for remote spreadsheet features by splitting them into independent APIs, each dedicated to a specific operational area.
+- Optimize replace context for remote spreadsheet features by splitting them into independent APIs, each dedicated to a specific operational area.
+
+## Feature & Enhancements in Version 25.4
+
+- New API for Comprehensive Formula Error Checks in Excel Workbooks.
+- New API for External Reference Checks in Excel Workbooks.
+
+
 ## Feature & Enhancements in Version 25.4
 
 - New API for Comprehensive Formula Error Checks in Excel Workbooks.
