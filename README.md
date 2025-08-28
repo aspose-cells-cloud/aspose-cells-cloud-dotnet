@@ -8,7 +8,7 @@ Enhance your .NET applications with the [Aspose.Cells Cloud](https://products.as
 
 To get started with Aspose.Cells Cloud for .NET, follow these steps:
 
-1. Create an account at  [Aspose for Cloud](https://dashboard.aspose.cloud/#/apps) and obtain your application information.
+1. Create an account at [Aspose for Cloud](https://dashboard.aspose.cloud/#/apps) and obtain your CellsCloudClientId and CellsCloudClientSecret.
 2. execute `Install-Package Aspose.Cells-Cloud` from the Package Manager Console in Visual Studio to fetch & reference Aspose.Cells Cloud SDK assembly in your project.If you already have Aspose.Cells Cloud for .NET and want to upgrade it, please execute `Update-Package Aspose.Cells-Cloud` to get the latest version.
 
 ```csharp
