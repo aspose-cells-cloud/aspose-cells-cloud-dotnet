@@ -51,15 +51,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="level">Specifies the compression level to be applied to the spreadsheet. The level should be within a valid range (e.g., 0-9 for most compression algorithms, where 0 is no compression and 9 is maximum compression).</param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
-        /// <param name="regoin">The spreadsheet region setting.</param>
+        /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public CompressSpreadsheetRequest(string  spreadsheet, int?  level, string  outPath = null, string  outStorageName = null, string  regoin = null, string  password = null)
+        public CompressSpreadsheetRequest(string  spreadsheet, int?  level, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
             this.level = level;
             this.outPath = outPath;
             this.outStorageName = outStorageName;
-            this.regoin = regoin;
+            this.region = region;
             this.password = password;
         }
         
@@ -90,7 +90,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// The spreadsheet region setting.
         /// </summary>
-        public string regoin { get; set; }
+        public string region { get; set; }
 
 
         /// <summary>
@@ -136,7 +136,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             path = UrlHelper.AddQueryParameterToUrl(path, "level", this.level);
             if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
             if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
-            if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);
+            if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
             {

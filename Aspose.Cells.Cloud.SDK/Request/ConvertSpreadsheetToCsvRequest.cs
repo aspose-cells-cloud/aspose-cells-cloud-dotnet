@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="SplitSpreadsheetRequest.cs">
+// <copyright company="Aspose" file="ConvertSpreadsheetToCsvRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,36 +32,30 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.SplitSpreadsheet" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.ConvertSpreadsheetToCsv" /> operation.
     /// </summary>
-    public class SplitSpreadsheetRequest : IRequestModel
+    public class ConvertSpreadsheetToCsvRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SplitSpreadsheetRequest"/> class.
+        /// Initializes a new instance of the <see cref="ConvertSpreadsheetToCsvRequest"/> class.
         /// </summary>
-        public SplitSpreadsheetRequest()
+        public ConvertSpreadsheetToCsvRequest()
         {
 
         }
         /// <summary>
-        /// Initializes a new instance of the <see cref="SplitSpreadsheetRequest"/> class.
+        /// Initializes a new instance of the <see cref="ConvertSpreadsheetToCsvRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="from">Begin worksheet index.</param>
-        /// <param name="to">End worksheet index.</param>
-        /// <param name="outFormat">The out file format.</param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="fontsLocation">Use Custom fonts.</param>
         /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public SplitSpreadsheetRequest(string  spreadsheet, int?  from = null, int?  to = null, string  outFormat = null, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  region = null, string  password = null)
+        public ConvertSpreadsheetToCsvRequest(string  spreadsheet, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  region = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
-            this.from = from;
-            this.to = to;
-            this.outFormat = outFormat;
             this.outPath = outPath;
             this.outStorageName = outStorageName;
             this.fontsLocation = fontsLocation;
@@ -73,24 +67,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Upload spreadsheet file.
         /// </summary>
             public string Spreadsheet { get; set; }
-
-
-        /// <summary>
-        /// Begin worksheet index.
-        /// </summary>
-        public int? from { get; set; }
-
-
-        /// <summary>
-        /// End worksheet index.
-        /// </summary>
-        public int? to { get; set; }
-
-
-        /// <summary>
-        /// The out file format.
-        /// </summary>
-        public string outFormat { get; set; }
 
 
         /// <summary>
@@ -142,18 +118,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'spreadsheet' is set
             if (    string.IsNullOrEmpty(this.Spreadsheet)    )
             {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling SplitSpreadsheet");
+                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling ConvertSpreadsheetToCsv");
             }
 
-            var path = baseUri + "/cells/split/spreadsheet";
+            var path = baseUri + "/cells/convert/spreadsheet/csv";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            if(this.from != null)  path = UrlHelper.AddQueryParameterToUrl(path, "from", this.from);
-            if(this.to != null)  path = UrlHelper.AddQueryParameterToUrl(path, "to", this.to);
-            if (!string.IsNullOrEmpty(this.outFormat))  path = UrlHelper.AddQueryParameterToUrl(path, "outFormat", this.outFormat);
             if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
             if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
             if (!string.IsNullOrEmpty(this.fontsLocation))  path = UrlHelper.AddQueryParameterToUrl(path, "fontsLocation", this.fontsLocation);

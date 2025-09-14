@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="BrokenLinksReponse.cs">
+// <copyright company="Aspose" file="BrokenLinksResponse.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,9 +35,9 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// BrokenLinksReponse.
+    /// BrokenLinksResponse.
     /// </summary>
-    public class BrokenLinksReponse : CellsCloudResponse
+    public class BrokenLinksResponse : CellsCloudResponse
     {
         /// <summary>
         /// Gets or sets BrokenLinks.
@@ -61,7 +61,7 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class BrokenLinksReponse {\n");
+            sb.Append("class BrokenLinksResponse {\n");
             sb.Append("  BrokenLinks: ").Append(this.BrokenLinks).Append("\n");
             sb.Append("  Code: ").Append(this.Code).Append("\n");
             sb.Append("  Status: ").Append(this.Status).Append("\n");

@@ -48,20 +48,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="AggregateCellsByColorRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="worksheet"></param>
-        /// <param name="range"></param>
-        /// <param name="operation"></param>
-        /// <param name="colorPosition"></param>
-        /// <param name="regoin">The spreadsheet region setting.</param>
+        /// <param name="worksheet">Specified worksheet.</param>
+        /// <param name="range">Specified range.</param>
+        /// <param name="operation">Specify calculation operation methods, including Sum, Count, Average, Min, and Max.</param>
+        /// <param name="colorPosition">Indicates the content to sum and count based on background color and/or font color.</param>
+        /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public AggregateCellsByColorRequest(string  spreadsheet, string  worksheet = null, string  range = null, string  operation = null, string  colorPosition = null, string  regoin = null, string  password = null)
+        public AggregateCellsByColorRequest(string  spreadsheet, string  worksheet = null, string  range = null, string  operation = null, string  colorPosition = null, string  region = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
             this.worksheet = worksheet;
             this.range = range;
             this.operation = operation;
             this.colorPosition = colorPosition;
-            this.regoin = regoin;
+            this.region = region;
             this.password = password;
         }
         
@@ -72,25 +72,25 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Gets or sets worksheet.
+        /// Specified worksheet.
         /// </summary>
         public string worksheet { get; set; }
 
 
         /// <summary>
-        /// Gets or sets range.
+        /// Specified range.
         /// </summary>
         public string range { get; set; }
 
 
         /// <summary>
-        /// Gets or sets operation.
+        /// Specify calculation operation methods, including Sum, Count, Average, Min, and Max.
         /// </summary>
         public string operation { get; set; }
 
 
         /// <summary>
-        /// Gets or sets colorPosition.
+        /// Indicates the content to sum and count based on background color and/or font color.
         /// </summary>
         public string colorPosition { get; set; }
 
@@ -98,7 +98,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// The spreadsheet region setting.
         /// </summary>
-        public string regoin { get; set; }
+        public string region { get; set; }
 
 
         /// <summary>
@@ -139,7 +139,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             if (!string.IsNullOrEmpty(this.range))  path = UrlHelper.AddQueryParameterToUrl(path, "range", this.range);
             if (!string.IsNullOrEmpty(this.operation))  path = UrlHelper.AddQueryParameterToUrl(path, "operation", this.operation);
             if (!string.IsNullOrEmpty(this.colorPosition))  path = UrlHelper.AddQueryParameterToUrl(path, "colorPosition", this.colorPosition);
-            if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);
+            if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
             {

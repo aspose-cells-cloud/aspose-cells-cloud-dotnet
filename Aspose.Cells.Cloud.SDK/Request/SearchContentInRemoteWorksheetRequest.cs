@@ -47,15 +47,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <summary>
             /// Initializes a new instance of the <see cref="SearchContentInRemoteWorksheetRequest"/> class.
             /// </summary>
-            /// <param name="name">The name of the workbook file to be search.</param>
-            /// <param name="worksheet">The name of worksheet</param>
-            /// <param name="searchText">The searched text.</param>
+            /// <param name="name">Specify the search workbook file name.</param>
+            /// <param name="worksheet">Specify the search worksheet name.</param>
+            /// <param name="searchText">Specify the search content.</param>
             /// <param name="ignoringCase">Ignore the text of the search.</param>
             /// <param name="folder">The folder path where the workbook is stored.</param>
             /// <param name="storageName">(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.</param>
-            /// <param name="regoin">The spreadsheet region setting.</param>
+            /// <param name="region">The spreadsheet region setting.</param>
             /// <param name="password">The password for opening spreadsheet file.</param>
-            public SearchContentInRemoteWorksheetRequest(string  name, string  worksheet, string  searchText, bool?  ignoringCase = null, string  folder = null, string  storageName = null, string  regoin = null, string  password = null)
+            public SearchContentInRemoteWorksheetRequest(string  name, string  worksheet, string  searchText, bool?  ignoringCase = null, string  folder = null, string  storageName = null, string  region = null, string  password = null)
             {
                 this.name = name;
                 this.worksheet = worksheet;
@@ -63,24 +63,24 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 this.ignoringCase = ignoringCase;
                 this.folder = folder;
                 this.storageName = storageName;
-                this.regoin = regoin;
+                this.region = region;
                 this.password = password;
             }
         
         /// <summary>
-        /// The name of the workbook file to be search.
+        /// Specify the search workbook file name.
         /// </summary>
         public string name { get; set; }
 
 
         /// <summary>
-        /// The name of worksheet
+        /// Specify the search worksheet name.
         /// </summary>
         public string worksheet { get; set; }
 
 
         /// <summary>
-        /// The searched text.
+        /// Specify the search content.
         /// </summary>
         public string searchText { get; set; }
 
@@ -106,7 +106,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// The spreadsheet region setting.
         /// </summary>
-        public string regoin { get; set; }
+        public string region { get; set; }
 
 
         /// <summary>
@@ -161,7 +161,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             if(this.ignoringCase != null)  path = UrlHelper.AddQueryParameterToUrl(path, "ignoringCase", this.ignoringCase);
             if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
             if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
-            if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);
+            if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
             {

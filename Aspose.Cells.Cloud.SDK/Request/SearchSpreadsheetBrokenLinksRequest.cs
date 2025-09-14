@@ -50,14 +50,14 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
         /// <param name="worksheet">Specify the worksheet for the replace.</param>
         /// <param name="cellArea">Specify the cell area for the replace.</param>
-        /// <param name="regoin">The spreadsheet region setting.</param>
+        /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public SearchSpreadsheetBrokenLinksRequest(string  spreadsheet, string  worksheet = null, string  cellArea = null, string  regoin = null, string  password = null)
+        public SearchSpreadsheetBrokenLinksRequest(string  spreadsheet, string  worksheet = null, string  cellArea = null, string  region = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
             this.worksheet = worksheet;
             this.cellArea = cellArea;
-            this.regoin = regoin;
+            this.region = region;
             this.password = password;
         }
         
@@ -82,7 +82,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// The spreadsheet region setting.
         /// </summary>
-        public string regoin { get; set; }
+        public string region { get; set; }
 
 
         /// <summary>
@@ -121,7 +121,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
             if (!string.IsNullOrEmpty(this.worksheet))  path = UrlHelper.AddQueryParameterToUrl(path, "worksheet", this.worksheet);
             if (!string.IsNullOrEmpty(this.cellArea))  path = UrlHelper.AddQueryParameterToUrl(path, "cellArea", this.cellArea);
-            if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);
+            if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
             {

@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="SplitSpreadsheetRequest.cs">
+// <copyright company="Aspose" file="TrimSpreadsheetContentRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,39 +32,45 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.SplitSpreadsheet" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.TrimSpreadsheetContent" /> operation.
     /// </summary>
-    public class SplitSpreadsheetRequest : IRequestModel
+    public class TrimSpreadsheetContentRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SplitSpreadsheetRequest"/> class.
+        /// Initializes a new instance of the <see cref="TrimSpreadsheetContentRequest"/> class.
         /// </summary>
-        public SplitSpreadsheetRequest()
+        public TrimSpreadsheetContentRequest()
         {
 
         }
         /// <summary>
-        /// Initializes a new instance of the <see cref="SplitSpreadsheetRequest"/> class.
+        /// Initializes a new instance of the <see cref="TrimSpreadsheetContentRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="from">Begin worksheet index.</param>
-        /// <param name="to">End worksheet index.</param>
-        /// <param name="outFormat">The out file format.</param>
+        /// <param name="trimContent"></param>
+        /// <param name="trimLeading"></param>
+        /// <param name="trimTrailing"></param>
+        /// <param name="trimSpaceBetweenWordTo1"></param>
+        /// <param name="trimNonBreakingSpaces"></param>
+        /// <param name="removeExtraLineBreaks"></param>
+        /// <param name="removeAllLineBreaks"></param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
-        /// <param name="fontsLocation">Use Custom fonts.</param>
         /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public SplitSpreadsheetRequest(string  spreadsheet, int?  from = null, int?  to = null, string  outFormat = null, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  region = null, string  password = null)
+        public TrimSpreadsheetContentRequest(string  spreadsheet, string  trimContent = null, bool?  trimLeading = null, bool?  trimTrailing = null, bool?  trimSpaceBetweenWordTo1 = null, bool?  trimNonBreakingSpaces = null, bool?  removeExtraLineBreaks = null, bool?  removeAllLineBreaks = null, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
-            this.from = from;
-            this.to = to;
-            this.outFormat = outFormat;
+            this.trimContent = trimContent;
+            this.trimLeading = trimLeading;
+            this.trimTrailing = trimTrailing;
+            this.trimSpaceBetweenWordTo1 = trimSpaceBetweenWordTo1;
+            this.trimNonBreakingSpaces = trimNonBreakingSpaces;
+            this.removeExtraLineBreaks = removeExtraLineBreaks;
+            this.removeAllLineBreaks = removeAllLineBreaks;
             this.outPath = outPath;
             this.outStorageName = outStorageName;
-            this.fontsLocation = fontsLocation;
             this.region = region;
             this.password = password;
         }
@@ -76,21 +82,45 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Begin worksheet index.
+        /// Gets or sets trimContent.
         /// </summary>
-        public int? from { get; set; }
+        public string trimContent { get; set; }
 
 
         /// <summary>
-        /// End worksheet index.
+        /// Gets or sets trimLeading.
         /// </summary>
-        public int? to { get; set; }
+        public bool? trimLeading { get; set; }
 
 
         /// <summary>
-        /// The out file format.
+        /// Gets or sets trimTrailing.
         /// </summary>
-        public string outFormat { get; set; }
+        public bool? trimTrailing { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets trimSpaceBetweenWordTo1.
+        /// </summary>
+        public bool? trimSpaceBetweenWordTo1 { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets trimNonBreakingSpaces.
+        /// </summary>
+        public bool? trimNonBreakingSpaces { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets removeExtraLineBreaks.
+        /// </summary>
+        public bool? removeExtraLineBreaks { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets removeAllLineBreaks.
+        /// </summary>
+        public bool? removeAllLineBreaks { get; set; }
 
 
         /// <summary>
@@ -103,12 +133,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Output file Storage Name.
         /// </summary>
         public string outStorageName { get; set; }
-
-
-        /// <summary>
-        /// Use Custom fonts.
-        /// </summary>
-        public string fontsLocation { get; set; }
 
 
         /// <summary>
@@ -142,21 +166,24 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'spreadsheet' is set
             if (    string.IsNullOrEmpty(this.Spreadsheet)    )
             {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling SplitSpreadsheet");
+                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling TrimSpreadsheetContent");
             }
 
-            var path = baseUri + "/cells/split/spreadsheet";
+            var path = baseUri + "/cells/content/trim";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            if(this.from != null)  path = UrlHelper.AddQueryParameterToUrl(path, "from", this.from);
-            if(this.to != null)  path = UrlHelper.AddQueryParameterToUrl(path, "to", this.to);
-            if (!string.IsNullOrEmpty(this.outFormat))  path = UrlHelper.AddQueryParameterToUrl(path, "outFormat", this.outFormat);
+            if (!string.IsNullOrEmpty(this.trimContent))  path = UrlHelper.AddQueryParameterToUrl(path, "trimContent", this.trimContent);
+            if(this.trimLeading != null)  path = UrlHelper.AddQueryParameterToUrl(path, "trimLeading", this.trimLeading);
+            if(this.trimTrailing != null)  path = UrlHelper.AddQueryParameterToUrl(path, "trimTrailing", this.trimTrailing);
+            if(this.trimSpaceBetweenWordTo1 != null)  path = UrlHelper.AddQueryParameterToUrl(path, "trimSpaceBetweenWordTo1", this.trimSpaceBetweenWordTo1);
+            if(this.trimNonBreakingSpaces != null)  path = UrlHelper.AddQueryParameterToUrl(path, "trimNonBreakingSpaces", this.trimNonBreakingSpaces);
+            if(this.removeExtraLineBreaks != null)  path = UrlHelper.AddQueryParameterToUrl(path, "removeExtraLineBreaks", this.removeExtraLineBreaks);
+            if(this.removeAllLineBreaks != null)  path = UrlHelper.AddQueryParameterToUrl(path, "removeAllLineBreaks", this.removeAllLineBreaks);
             if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
             if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
-            if (!string.IsNullOrEmpty(this.fontsLocation))  path = UrlHelper.AddQueryParameterToUrl(path, "fontsLocation", this.fontsLocation);
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)

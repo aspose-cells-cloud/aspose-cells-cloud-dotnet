@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="SawpRangeRequest.cs">
+// <copyright company="Aspose" file="TrimWorksheetRangeRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,40 +32,50 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.SawpRange" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.TrimWorksheetRange" /> operation.
     /// </summary>
-    public class SawpRangeRequest : IRequestModel
+    public class TrimWorksheetRangeRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SawpRangeRequest"/> class.
+        /// Initializes a new instance of the <see cref="TrimWorksheetRangeRequest"/> class.
         /// </summary>
-        public SawpRangeRequest()
+        public TrimWorksheetRangeRequest()
         {
 
         }
         /// <summary>
-        /// Initializes a new instance of the <see cref="SawpRangeRequest"/> class.
+        /// Initializes a new instance of the <see cref="TrimWorksheetRangeRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="worksheet1"></param>
-        /// <param name="range1"></param>
-        /// <param name="worksheet2"></param>
-        /// <param name="range2"></param>
+        /// <param name="worksheet"></param>
+        /// <param name="range"></param>
+        /// <param name="trimContent"></param>
+        /// <param name="trimLeading"></param>
+        /// <param name="trimTrailing"></param>
+        /// <param name="trimSpaceBetweenWordTo1"></param>
+        /// <param name="trimNonBreakingSpaces"></param>
+        /// <param name="removeExtraLineBreaks"></param>
+        /// <param name="removeAllLineBreaks"></param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
-        /// <param name="regoin">The spreadsheet region setting.</param>
+        /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public SawpRangeRequest(string  spreadsheet, string  worksheet1, string  range1, string  worksheet2, string  range2, string  outPath = null, string  outStorageName = null, string  regoin = null, string  password = null)
+        public TrimWorksheetRangeRequest(string  spreadsheet, string  worksheet, string  range = null, string  trimContent = null, bool?  trimLeading = null, bool?  trimTrailing = null, bool?  trimSpaceBetweenWordTo1 = null, bool?  trimNonBreakingSpaces = null, bool?  removeExtraLineBreaks = null, bool?  removeAllLineBreaks = null, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
-            this.worksheet1 = worksheet1;
-            this.range1 = range1;
-            this.worksheet2 = worksheet2;
-            this.range2 = range2;
+            this.worksheet = worksheet;
+            this.range = range;
+            this.trimContent = trimContent;
+            this.trimLeading = trimLeading;
+            this.trimTrailing = trimTrailing;
+            this.trimSpaceBetweenWordTo1 = trimSpaceBetweenWordTo1;
+            this.trimNonBreakingSpaces = trimNonBreakingSpaces;
+            this.removeExtraLineBreaks = removeExtraLineBreaks;
+            this.removeAllLineBreaks = removeAllLineBreaks;
             this.outPath = outPath;
             this.outStorageName = outStorageName;
-            this.regoin = regoin;
+            this.region = region;
             this.password = password;
         }
         
@@ -76,27 +86,57 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Gets or sets worksheet1.
+        /// Gets or sets worksheet.
         /// </summary>
-        public string worksheet1 { get; set; }
+        public string worksheet { get; set; }
 
 
         /// <summary>
-        /// Gets or sets range1.
+        /// Gets or sets range.
         /// </summary>
-        public string range1 { get; set; }
+        public string range { get; set; }
 
 
         /// <summary>
-        /// Gets or sets worksheet2.
+        /// Gets or sets trimContent.
         /// </summary>
-        public string worksheet2 { get; set; }
+        public string trimContent { get; set; }
 
 
         /// <summary>
-        /// Gets or sets range2.
+        /// Gets or sets trimLeading.
         /// </summary>
-        public string range2 { get; set; }
+        public bool? trimLeading { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets trimTrailing.
+        /// </summary>
+        public bool? trimTrailing { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets trimSpaceBetweenWordTo1.
+        /// </summary>
+        public bool? trimSpaceBetweenWordTo1 { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets trimNonBreakingSpaces.
+        /// </summary>
+        public bool? trimNonBreakingSpaces { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets removeExtraLineBreaks.
+        /// </summary>
+        public bool? removeExtraLineBreaks { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets removeAllLineBreaks.
+        /// </summary>
+        public bool? removeAllLineBreaks { get; set; }
 
 
         /// <summary>
@@ -114,7 +154,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// The spreadsheet region setting.
         /// </summary>
-        public string regoin { get; set; }
+        public string region { get; set; }
 
 
         /// <summary>
@@ -142,46 +182,33 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'spreadsheet' is set
             if (    string.IsNullOrEmpty(this.Spreadsheet)    )
             {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling SawpRange");
+                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling TrimWorksheetRange");
             }
 
-            // verify the required parameter 'worksheet1' is set
-            if (string.IsNullOrEmpty (this.worksheet1 ))
+            // verify the required parameter 'worksheet' is set
+            if (string.IsNullOrEmpty (this.worksheet ))
             {
-                throw new ApiException(400, "Missing required parameter 'worksheet1' when calling SawpRange");
+                throw new ApiException(400, "Missing required parameter 'worksheet' when calling TrimWorksheetRange");
             }
 
-            // verify the required parameter 'range1' is set
-            if (string.IsNullOrEmpty (this.range1 ))
-            {
-                throw new ApiException(400, "Missing required parameter 'range1' when calling SawpRange");
-            }
-
-            // verify the required parameter 'worksheet2' is set
-            if (string.IsNullOrEmpty (this.worksheet2 ))
-            {
-                throw new ApiException(400, "Missing required parameter 'worksheet2' when calling SawpRange");
-            }
-
-            // verify the required parameter 'range2' is set
-            if (string.IsNullOrEmpty (this.range2 ))
-            {
-                throw new ApiException(400, "Missing required parameter 'range2' when calling SawpRange");
-            }
-
-            var path = baseUri + "/cells/swap/range";
+            var path = baseUri + "/cells/content/trim/worksheet";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            path = UrlHelper.AddQueryParameterToUrl(path, "worksheet1", this.worksheet1);
-            path = UrlHelper.AddQueryParameterToUrl(path, "range1", this.range1);
-            path = UrlHelper.AddQueryParameterToUrl(path, "worksheet2", this.worksheet2);
-            path = UrlHelper.AddQueryParameterToUrl(path, "range2", this.range2);
+            path = UrlHelper.AddQueryParameterToUrl(path, "worksheet", this.worksheet);
+            if (!string.IsNullOrEmpty(this.range))  path = UrlHelper.AddQueryParameterToUrl(path, "range", this.range);
+            if (!string.IsNullOrEmpty(this.trimContent))  path = UrlHelper.AddQueryParameterToUrl(path, "trimContent", this.trimContent);
+            if(this.trimLeading != null)  path = UrlHelper.AddQueryParameterToUrl(path, "trimLeading", this.trimLeading);
+            if(this.trimTrailing != null)  path = UrlHelper.AddQueryParameterToUrl(path, "trimTrailing", this.trimTrailing);
+            if(this.trimSpaceBetweenWordTo1 != null)  path = UrlHelper.AddQueryParameterToUrl(path, "trimSpaceBetweenWordTo1", this.trimSpaceBetweenWordTo1);
+            if(this.trimNonBreakingSpaces != null)  path = UrlHelper.AddQueryParameterToUrl(path, "trimNonBreakingSpaces", this.trimNonBreakingSpaces);
+            if(this.removeExtraLineBreaks != null)  path = UrlHelper.AddQueryParameterToUrl(path, "removeExtraLineBreaks", this.removeExtraLineBreaks);
+            if(this.removeAllLineBreaks != null)  path = UrlHelper.AddQueryParameterToUrl(path, "removeAllLineBreaks", this.removeAllLineBreaks);
             if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
             if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
-            if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);
+            if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
             {

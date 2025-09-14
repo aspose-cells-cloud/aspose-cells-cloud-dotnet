@@ -47,16 +47,16 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <summary>
             /// Initializes a new instance of the <see cref="SearchContentInRemoteRangeRequest"/> class.
             /// </summary>
-            /// <param name="name"></param>
-            /// <param name="worksheet"></param>
-            /// <param name="cellArea"></param>
-            /// <param name="searchText"></param>
-            /// <param name="ignoringCase"></param>
-            /// <param name="folder"></param>
+            /// <param name="name">Specify the search workbook file name.</param>
+            /// <param name="worksheet">Specify the search worksheet name.</param>
+            /// <param name="cellArea">Specify the search cell area.</param>
+            /// <param name="searchText">Specify the search content.</param>
+            /// <param name="ignoringCase">Ignore the text of the search.</param>
+            /// <param name="folder">The folder path where the workbook is stored.</param>
             /// <param name="storageName">(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.</param>
-            /// <param name="regoin">The spreadsheet region setting.</param>
+            /// <param name="region">The spreadsheet region setting.</param>
             /// <param name="password">The password for opening spreadsheet file.</param>
-            public SearchContentInRemoteRangeRequest(string  name, string  worksheet, string  cellArea, string  searchText, bool?  ignoringCase = null, string  folder = null, string  storageName = null, string  regoin = null, string  password = null)
+            public SearchContentInRemoteRangeRequest(string  name, string  worksheet, string  cellArea, string  searchText, bool?  ignoringCase = null, string  folder = null, string  storageName = null, string  region = null, string  password = null)
             {
                 this.name = name;
                 this.worksheet = worksheet;
@@ -65,42 +65,42 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 this.ignoringCase = ignoringCase;
                 this.folder = folder;
                 this.storageName = storageName;
-                this.regoin = regoin;
+                this.region = region;
                 this.password = password;
             }
         
         /// <summary>
-        /// Gets or sets name.
+        /// Specify the search workbook file name.
         /// </summary>
         public string name { get; set; }
 
 
         /// <summary>
-        /// Gets or sets worksheet.
+        /// Specify the search worksheet name.
         /// </summary>
         public string worksheet { get; set; }
 
 
         /// <summary>
-        /// Gets or sets cellArea.
+        /// Specify the search cell area.
         /// </summary>
         public string cellArea { get; set; }
 
 
         /// <summary>
-        /// Gets or sets searchText.
+        /// Specify the search content.
         /// </summary>
         public string searchText { get; set; }
 
 
         /// <summary>
-        /// Gets or sets ignoringCase.
+        /// Ignore the text of the search.
         /// </summary>
         public bool? ignoringCase { get; set; }
 
 
         /// <summary>
-        /// Gets or sets folder.
+        /// The folder path where the workbook is stored.
         /// </summary>
         public string folder { get; set; }
 
@@ -114,7 +114,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// The spreadsheet region setting.
         /// </summary>
-        public string regoin { get; set; }
+        public string region { get; set; }
 
 
         /// <summary>
@@ -176,7 +176,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             if(this.ignoringCase != null)  path = UrlHelper.AddQueryParameterToUrl(path, "ignoringCase", this.ignoringCase);
             if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
             if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
-            if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);
+            if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
             {

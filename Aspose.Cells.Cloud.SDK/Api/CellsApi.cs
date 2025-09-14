@@ -96,7 +96,6 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
-        /// The Math Calculate API enables you to perform a variety of mathematical operations on a selected range of cells. You can add or subtract a specific number from all selected cells, as well as multiply or divide individual cells and entire columns. This API simplifies complex calculations and enhances data manipulation capabilities.
         /// </summary>
         /// <param name="request">Request. <see cref="MathCalculateRequest" /></param>
         public   Stream  MathCalculate(MathCalculateRequest request)
@@ -373,6 +372,70 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </summary>
 
         public async Task<   Stream  > ConvertSpreadsheetAsync(ConvertSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ConvertSpreadsheetToPdf(ConvertSpreadsheetToPdfRequest request, string LocalOutPath){
+            var result = ConvertSpreadsheetToPdf(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Converts a spreadsheet on a local drive to the pdf file.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertSpreadsheetToPdfRequest" /></param>
+        public   Stream  ConvertSpreadsheetToPdf(ConvertSpreadsheetToPdfRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ConvertSpreadsheetToPdfAsync(ConvertSpreadsheetToPdfRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ConvertSpreadsheetToCsv(ConvertSpreadsheetToCsvRequest request, string LocalOutPath){
+            var result = ConvertSpreadsheetToCsv(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Converts a spreadsheet on a local drive to the csv file.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertSpreadsheetToCsvRequest" /></param>
+        public   Stream  ConvertSpreadsheetToCsv(ConvertSpreadsheetToCsvRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ConvertSpreadsheetToCsvAsync(ConvertSpreadsheetToCsvRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -1021,6 +1084,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
+        /// Import data into a spreadsheet from a supported data file format.
         /// </summary>
         /// <param name="request">Request. <see cref="ImportDataIntoSpreadsheetRequest" /></param>
         public   Stream  ImportDataIntoSpreadsheet(ImportDataIntoSpreadsheetRequest request)
@@ -1518,10 +1582,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// Search broken links in the local spreadsheet.
         /// </summary>
         /// <param name="request">Request. <see cref="SearchSpreadsheetBrokenLinksRequest" /></param>
-        public   BrokenLinksReponse  SearchSpreadsheetBrokenLinks(SearchSpreadsheetBrokenLinksRequest request)
+        public   BrokenLinksResponse  SearchSpreadsheetBrokenLinks(SearchSpreadsheetBrokenLinksRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
-            var result = invoker.InvokeApiAsync<    BrokenLinksReponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            var result = invoker.InvokeApiAsync<    BrokenLinksResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
             return result;
         }
 
@@ -1529,10 +1593,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   BrokenLinksReponse  > SearchSpreadsheetBrokenLinksAsync(SearchSpreadsheetBrokenLinksRequest request)
+        public async Task<   BrokenLinksResponse  > SearchSpreadsheetBrokenLinksAsync(SearchSpreadsheetBrokenLinksRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
-            var result = await invoker.InvokeApiAsync<    BrokenLinksReponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            var result = await invoker.InvokeApiAsync<    BrokenLinksResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1541,10 +1605,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// Search broken links in the remoted spreadsheet.
         /// </summary>
         /// <param name="request">Request. <see cref="SearchBrokenLinksInRemoteSpreadsheetRequest" /></param>
-        public   BrokenLinksReponse  SearchBrokenLinksInRemoteSpreadsheet(SearchBrokenLinksInRemoteSpreadsheetRequest request)
+        public   BrokenLinksResponse  SearchBrokenLinksInRemoteSpreadsheet(SearchBrokenLinksInRemoteSpreadsheetRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
-            var result = invoker.InvokeApiAsync<    BrokenLinksReponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            var result = invoker.InvokeApiAsync<    BrokenLinksResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
             return result;
         }
 
@@ -1552,10 +1616,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   BrokenLinksReponse  > SearchBrokenLinksInRemoteSpreadsheetAsync(SearchBrokenLinksInRemoteSpreadsheetRequest request)
+        public async Task<   BrokenLinksResponse  > SearchBrokenLinksInRemoteSpreadsheetAsync(SearchBrokenLinksInRemoteSpreadsheetRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
-            var result = await invoker.InvokeApiAsync<    BrokenLinksReponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            var result = await invoker.InvokeApiAsync<    BrokenLinksResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1564,10 +1628,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// Search broken links in the worksheet of remoted spreadsheet.
         /// </summary>
         /// <param name="request">Request. <see cref="SearchBrokenLinksInRemoteWorksheetRequest" /></param>
-        public   BrokenLinksReponse  SearchBrokenLinksInRemoteWorksheet(SearchBrokenLinksInRemoteWorksheetRequest request)
+        public   BrokenLinksResponse  SearchBrokenLinksInRemoteWorksheet(SearchBrokenLinksInRemoteWorksheetRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
-            var result = invoker.InvokeApiAsync<    BrokenLinksReponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            var result = invoker.InvokeApiAsync<    BrokenLinksResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
             return result;
         }
 
@@ -1575,10 +1639,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   BrokenLinksReponse  > SearchBrokenLinksInRemoteWorksheetAsync(SearchBrokenLinksInRemoteWorksheetRequest request)
+        public async Task<   BrokenLinksResponse  > SearchBrokenLinksInRemoteWorksheetAsync(SearchBrokenLinksInRemoteWorksheetRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
-            var result = await invoker.InvokeApiAsync<    BrokenLinksReponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            var result = await invoker.InvokeApiAsync<    BrokenLinksResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1587,10 +1651,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// Search broken links in the range of remoted spreadsheet.
         /// </summary>
         /// <param name="request">Request. <see cref="SearchBrokenLinksInRemoteRangeRequest" /></param>
-        public   BrokenLinksReponse  SearchBrokenLinksInRemoteRange(SearchBrokenLinksInRemoteRangeRequest request)
+        public   BrokenLinksResponse  SearchBrokenLinksInRemoteRange(SearchBrokenLinksInRemoteRangeRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
-            var result = invoker.InvokeApiAsync<    BrokenLinksReponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            var result = invoker.InvokeApiAsync<    BrokenLinksResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
             return result;
         }
 
@@ -1598,10 +1662,10 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   BrokenLinksReponse  > SearchBrokenLinksInRemoteRangeAsync(SearchBrokenLinksInRemoteRangeRequest request)
+        public async Task<   BrokenLinksResponse  > SearchBrokenLinksInRemoteRangeAsync(SearchBrokenLinksInRemoteRangeRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
-            var result = await invoker.InvokeApiAsync<    BrokenLinksReponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            var result = await invoker.InvokeApiAsync<    BrokenLinksResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1652,6 +1716,69 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
+        public void TrimSpreadsheetContent(TrimSpreadsheetContentRequest request, string LocalOutPath){
+            var result = TrimSpreadsheetContent(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// The TrimSpreadsheetContent API is designed to process and trim content within a spreadsheet. This API allows users to remove extra spaces, line breaks, or other unnecessary characters from the content of selected cells. It is particularly useful for cleaning up data entries and ensuring consistency in spreadsheet formatting
+        /// </summary>
+        /// <param name="request">Request. <see cref="TrimSpreadsheetContentRequest" /></param>
+        public   Stream  TrimSpreadsheetContent(TrimSpreadsheetContentRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > TrimSpreadsheetContentAsync(TrimSpreadsheetContentRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void TrimWorksheetRange(TrimWorksheetRangeRequest request, string LocalOutPath){
+            var result = TrimWorksheetRange(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="TrimWorksheetRangeRequest" /></param>
+        public   Stream  TrimWorksheetRange(TrimWorksheetRangeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > TrimWorksheetRangeAsync(TrimWorksheetRangeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
         public void DeleteSpreadsheetBlankRows(DeleteSpreadsheetBlankRowsRequest request, string LocalOutPath){
             var result = DeleteSpreadsheetBlankRows(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
@@ -1661,7 +1788,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
-        /// Delete all blank rows which do not contain any data or other object.
+        /// Delete all blank rows that do not contain any data or other objects.
         /// </summary>
         /// <param name="request">Request. <see cref="DeleteSpreadsheetBlankRowsRequest" /></param>
         public   Stream  DeleteSpreadsheetBlankRows(DeleteSpreadsheetBlankRowsRequest request)
@@ -1693,7 +1820,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
-        /// Delete all blank columns which do not contain any data.
+        /// Delete all blank rows that do not contain any data or other objects.
         /// </summary>
         /// <param name="request">Request. <see cref="DeleteSpreadsheetBlankColumnsRequest" /></param>
         public   Stream  DeleteSpreadsheetBlankColumns(DeleteSpreadsheetBlankColumnsRequest request)
@@ -1725,7 +1852,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
-        /// Delete all blank worksheets which do not contain any data or other object.
+        /// Delete all blank rows that do not contain any data or other objects.
         /// </summary>
         /// <param name="request">Request. <see cref="DeleteSpreadsheetBlankWorksheetsRequest" /></param>
         public   Stream  DeleteSpreadsheetBlankWorksheets(DeleteSpreadsheetBlankWorksheetsRequest request)
@@ -1748,8 +1875,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
-        public void SawpRange(SawpRangeRequest request, string LocalOutPath){
-            var result = SawpRange(request);
+        public void SwapRange(SwapRangeRequest request, string LocalOutPath){
+            var result = SwapRange(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
             { 
                 result.CopyTo(stream);
@@ -1759,8 +1886,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }/// <summary>
         /// The Swap Ranges for Excel API provides a powerful tool to move any two columns, rows, ranges, or individual cells within an Excel file. This API allows users to re-arrange their tables quickly and efficiently, ensuring that the original data formatting is preserved and all existing formulas continue to function correctly. By leveraging this API, users can streamline their data manipulation tasks and maintain the integrity of their spreadsheets.
         /// </summary>
-        /// <param name="request">Request. <see cref="SawpRangeRequest" /></param>
-        public   Stream  SawpRange(SawpRangeRequest request)
+        /// <param name="request">Request. <see cref="SwapRangeRequest" /></param>
+        public   Stream  SwapRange(SwapRangeRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -1771,7 +1898,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   Stream  > SawpRangeAsync(SawpRangeRequest request)
+        public async Task<   Stream  > SwapRangeAsync(SwapRangeRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));

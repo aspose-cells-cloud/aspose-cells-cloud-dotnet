@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="SplitSpreadsheetRequest.cs">
+// <copyright company="Aspose" file="SwapRangeRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,39 +32,39 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.SplitSpreadsheet" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.SwapRange" /> operation.
     /// </summary>
-    public class SplitSpreadsheetRequest : IRequestModel
+    public class SwapRangeRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SplitSpreadsheetRequest"/> class.
+        /// Initializes a new instance of the <see cref="SwapRangeRequest"/> class.
         /// </summary>
-        public SplitSpreadsheetRequest()
+        public SwapRangeRequest()
         {
 
         }
         /// <summary>
-        /// Initializes a new instance of the <see cref="SplitSpreadsheetRequest"/> class.
+        /// Initializes a new instance of the <see cref="SwapRangeRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="from">Begin worksheet index.</param>
-        /// <param name="to">End worksheet index.</param>
-        /// <param name="outFormat">The out file format.</param>
+        /// <param name="worksheet1">Specify the worksheet that is the source of the exchange data area.</param>
+        /// <param name="range1">Specify exchange data source.</param>
+        /// <param name="worksheet2">Specify the worksheet that is the target of the exchange data area.</param>
+        /// <param name="range2">Specify exchange data target.</param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
-        /// <param name="fontsLocation">Use Custom fonts.</param>
         /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public SplitSpreadsheetRequest(string  spreadsheet, int?  from = null, int?  to = null, string  outFormat = null, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  region = null, string  password = null)
+        public SwapRangeRequest(string  spreadsheet, string  worksheet1, string  range1, string  worksheet2, string  range2, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
-            this.from = from;
-            this.to = to;
-            this.outFormat = outFormat;
+            this.worksheet1 = worksheet1;
+            this.range1 = range1;
+            this.worksheet2 = worksheet2;
+            this.range2 = range2;
             this.outPath = outPath;
             this.outStorageName = outStorageName;
-            this.fontsLocation = fontsLocation;
             this.region = region;
             this.password = password;
         }
@@ -76,21 +76,27 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Begin worksheet index.
+        /// Specify the worksheet that is the source of the exchange data area.
         /// </summary>
-        public int? from { get; set; }
+        public string worksheet1 { get; set; }
 
 
         /// <summary>
-        /// End worksheet index.
+        /// Specify exchange data source.
         /// </summary>
-        public int? to { get; set; }
+        public string range1 { get; set; }
 
 
         /// <summary>
-        /// The out file format.
+        /// Specify the worksheet that is the target of the exchange data area.
         /// </summary>
-        public string outFormat { get; set; }
+        public string worksheet2 { get; set; }
+
+
+        /// <summary>
+        /// Specify exchange data target.
+        /// </summary>
+        public string range2 { get; set; }
 
 
         /// <summary>
@@ -103,12 +109,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Output file Storage Name.
         /// </summary>
         public string outStorageName { get; set; }
-
-
-        /// <summary>
-        /// Use Custom fonts.
-        /// </summary>
-        public string fontsLocation { get; set; }
 
 
         /// <summary>
@@ -142,21 +142,45 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'spreadsheet' is set
             if (    string.IsNullOrEmpty(this.Spreadsheet)    )
             {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling SplitSpreadsheet");
+                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling SwapRange");
             }
 
-            var path = baseUri + "/cells/split/spreadsheet";
+            // verify the required parameter 'worksheet1' is set
+            if (string.IsNullOrEmpty (this.worksheet1 ))
+            {
+                throw new ApiException(400, "Missing required parameter 'worksheet1' when calling SwapRange");
+            }
+
+            // verify the required parameter 'range1' is set
+            if (string.IsNullOrEmpty (this.range1 ))
+            {
+                throw new ApiException(400, "Missing required parameter 'range1' when calling SwapRange");
+            }
+
+            // verify the required parameter 'worksheet2' is set
+            if (string.IsNullOrEmpty (this.worksheet2 ))
+            {
+                throw new ApiException(400, "Missing required parameter 'worksheet2' when calling SwapRange");
+            }
+
+            // verify the required parameter 'range2' is set
+            if (string.IsNullOrEmpty (this.range2 ))
+            {
+                throw new ApiException(400, "Missing required parameter 'range2' when calling SwapRange");
+            }
+
+            var path = baseUri + "/cells/swap/range";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            if(this.from != null)  path = UrlHelper.AddQueryParameterToUrl(path, "from", this.from);
-            if(this.to != null)  path = UrlHelper.AddQueryParameterToUrl(path, "to", this.to);
-            if (!string.IsNullOrEmpty(this.outFormat))  path = UrlHelper.AddQueryParameterToUrl(path, "outFormat", this.outFormat);
+            path = UrlHelper.AddQueryParameterToUrl(path, "worksheet1", this.worksheet1);
+            path = UrlHelper.AddQueryParameterToUrl(path, "range1", this.range1);
+            path = UrlHelper.AddQueryParameterToUrl(path, "worksheet2", this.worksheet2);
+            path = UrlHelper.AddQueryParameterToUrl(path, "range2", this.range2);
             if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
             if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
-            if (!string.IsNullOrEmpty(this.fontsLocation))  path = UrlHelper.AddQueryParameterToUrl(path, "fontsLocation", this.fontsLocation);
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)

@@ -75,11 +75,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
         public virtual double? AverageValue { get; set; }
 
         /// <summary>
-        /// Gets or sets Value.
-        /// </summary>
-        public virtual double? Value { get; set; }
-
-        /// <summary>
         /// Get the string presentation of the object.
         /// </summary>
         /// <returns>String presentation of the object.</returns>
@@ -94,7 +89,6 @@ namespace Aspose.Cells.Cloud.SDK.Model
             sb.Append("  MaxValue: ").Append(this.MaxValue).Append("\n");
             sb.Append("  MinValue: ").Append(this.MinValue).Append("\n");
             sb.Append("  AverageValue: ").Append(this.AverageValue).Append("\n");
-            sb.Append("  Value: ").Append(this.Value).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

@@ -56,9 +56,9 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
             /// <param name="outStorageName">Output file Storage Name.</param>
             /// <param name="fontsLocation">Use Custom fonts.</param>
-            /// <param name="regoin">The spreadsheet region setting.</param>
+            /// <param name="region">The spreadsheet region setting.</param>
             /// <param name="password">The password for opening spreadsheet file.</param>
-            public ExportChartAsFormatRequest(string  name, string  worksheet, int?  chartIndex, string  format, string  folder = null, string  storageName = null, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  regoin = null, string  password = null)
+            public ExportChartAsFormatRequest(string  name, string  worksheet, int?  chartIndex, string  format, string  folder = null, string  storageName = null, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  region = null, string  password = null)
             {
                 this.name = name;
                 this.worksheet = worksheet;
@@ -69,7 +69,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 this.outPath = outPath;
                 this.outStorageName = outStorageName;
                 this.fontsLocation = fontsLocation;
-                this.regoin = regoin;
+                this.region = region;
                 this.password = password;
             }
         
@@ -130,7 +130,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// The spreadsheet region setting.
         /// </summary>
-        public string regoin { get; set; }
+        public string region { get; set; }
 
 
         /// <summary>
@@ -194,7 +194,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
             if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
             if (!string.IsNullOrEmpty(this.fontsLocation))  path = UrlHelper.AddQueryParameterToUrl(path, "fontsLocation", this.fontsLocation);
-            if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);
+            if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
             {

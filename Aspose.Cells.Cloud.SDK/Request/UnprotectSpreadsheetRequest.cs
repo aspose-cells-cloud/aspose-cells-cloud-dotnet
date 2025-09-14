@@ -52,15 +52,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="modifyPassword">Sets the protected password to modify the file.</param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
-        /// <param name="regoin">The spreadsheet region setting.</param>
-        public UnprotectSpreadsheetRequest(string  spreadsheet, string  password, string  modifyPassword, string  outPath = null, string  outStorageName = null, string  regoin = null)
+        /// <param name="region">The spreadsheet region setting.</param>
+        public UnprotectSpreadsheetRequest(string  spreadsheet, string  password, string  modifyPassword, string  outPath = null, string  outStorageName = null, string  region = null)
         {
             this.Spreadsheet = spreadsheet;
             this.password = password;
             this.modifyPassword = modifyPassword;
             this.outPath = outPath;
             this.outStorageName = outStorageName;
-            this.regoin = regoin;
+            this.region = region;
         }
         
         /// <summary>
@@ -96,7 +96,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// The spreadsheet region setting.
         /// </summary>
-        public string regoin { get; set; }
+        public string region { get; set; }
         
 
         /// <summary>
@@ -143,7 +143,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             path = UrlHelper.AddQueryParameterToUrl(path, "modifyPassword", this.modifyPassword);
             if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
             if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
-            if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);
+            if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)

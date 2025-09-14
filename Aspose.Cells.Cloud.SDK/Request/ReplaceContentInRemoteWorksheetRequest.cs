@@ -53,9 +53,9 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <param name="replaceText">The replaced text.</param>
             /// <param name="folder">The folder path where the workbook is stored.</param>
             /// <param name="storageName">(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.</param>
-            /// <param name="regoin">The spreadsheet region setting.</param>
+            /// <param name="region">The spreadsheet region setting.</param>
             /// <param name="password">The password for opening spreadsheet file.</param>
-            public ReplaceContentInRemoteWorksheetRequest(string  name, string  worksheet, string  searchText, string  replaceText, string  folder = null, string  storageName = null, string  regoin = null, string  password = null)
+            public ReplaceContentInRemoteWorksheetRequest(string  name, string  worksheet, string  searchText, string  replaceText, string  folder = null, string  storageName = null, string  region = null, string  password = null)
             {
                 this.name = name;
                 this.worksheet = worksheet;
@@ -63,7 +63,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 this.replaceText = replaceText;
                 this.folder = folder;
                 this.storageName = storageName;
-                this.regoin = regoin;
+                this.region = region;
                 this.password = password;
             }
         
@@ -106,7 +106,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// The spreadsheet region setting.
         /// </summary>
-        public string regoin { get; set; }
+        public string region { get; set; }
 
 
         /// <summary>
@@ -167,7 +167,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             path = UrlHelper.AddQueryParameterToUrl(path, "replaceText", this.replaceText);
             if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
             if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
-            if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);
+            if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
             {

@@ -48,20 +48,20 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="ReplaceSpreadsheetContentRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="searchText">The searched text.</param>
-        /// <param name="replaceText">The replaced text.</param>
+        /// <param name="searchText">Specify the search content.</param>
+        /// <param name="replaceText">Specify the replace content.</param>
         /// <param name="worksheet">Specify the worksheet for the replace.</param>
         /// <param name="cellArea">Specify the cell area for the replace.</param>
-        /// <param name="regoin">The spreadsheet region setting.</param>
+        /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public ReplaceSpreadsheetContentRequest(string  spreadsheet, string  searchText, string  replaceText, string  worksheet = null, string  cellArea = null, string  regoin = null, string  password = null)
+        public ReplaceSpreadsheetContentRequest(string  spreadsheet, string  searchText, string  replaceText, string  worksheet = null, string  cellArea = null, string  region = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
             this.searchText = searchText;
             this.replaceText = replaceText;
             this.worksheet = worksheet;
             this.cellArea = cellArea;
-            this.regoin = regoin;
+            this.region = region;
             this.password = password;
         }
         
@@ -72,13 +72,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// The searched text.
+        /// Specify the search content.
         /// </summary>
         public string searchText { get; set; }
 
 
         /// <summary>
-        /// The replaced text.
+        /// Specify the replace content.
         /// </summary>
         public string replaceText { get; set; }
 
@@ -98,7 +98,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// The spreadsheet region setting.
         /// </summary>
-        public string regoin { get; set; }
+        public string region { get; set; }
 
 
         /// <summary>
@@ -151,7 +151,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             path = UrlHelper.AddQueryParameterToUrl(path, "replaceText", this.replaceText);
             if (!string.IsNullOrEmpty(this.worksheet))  path = UrlHelper.AddQueryParameterToUrl(path, "worksheet", this.worksheet);
             if (!string.IsNullOrEmpty(this.cellArea))  path = UrlHelper.AddQueryParameterToUrl(path, "cellArea", this.cellArea);
-            if (!string.IsNullOrEmpty(this.regoin))  path = UrlHelper.AddQueryParameterToUrl(path, "regoin", this.regoin);
+            if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
             {
