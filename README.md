@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/aspose.cells%20Cloud%20SDK-v25.8.0-blue?style=for-the-badge&logo=dotnet) [![Product Page](https://img.shields.io/badge/Product-0288d1?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://products.aspose.cloud/cells/net/) [![Documentation](https://img.shields.io/badge/Documentation-388e3c?style=for-the-badge&logo=Hugo&logoColor=white)](https://docs.aspose.cloud/cells/) [![API Ref](https://img.shields.io/badge/Reference-f39c12?style=for-the-badge&logo=html5&logoColor=white)](https://reference.aspose.cloud/cells/) [![Examples](https://img.shields.io/badge/Examples-1565c0?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/main/examples) [![Blog](https://img.shields.io/badge/Blog-d32f2f?style=for-the-badge&logo=WordPress&logoColor=white)](https://blog.aspose.cloud/categories/aspose.cells-cloud-product-family/) [![Support](https://img.shields.io/badge/Support-7b1fa2?style=for-the-badge&logo=Discourse&logoColor=white)](https://forum.aspose.cloud/c/cells/7) [![License](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-go?style=for-the-badge&logo=rocket&logoColor=white)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE)
+![](https://img.shields.io/badge/aspose.cells%20Cloud%20SDK-v25.8.1-blue?style=for-the-badge&logo=dotnet) [![Product Page](https://img.shields.io/badge/Product-0288d1?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://products.aspose.cloud/cells/net/) [![Documentation](https://img.shields.io/badge/Documentation-388e3c?style=for-the-badge&logo=Hugo&logoColor=white)](https://docs.aspose.cloud/cells/) [![API Ref](https://img.shields.io/badge/Reference-f39c12?style=for-the-badge&logo=html5&logoColor=white)](https://reference.aspose.cloud/cells/) [![Examples](https://img.shields.io/badge/Examples-1565c0?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/main/examples) [![Blog](https://img.shields.io/badge/Blog-d32f2f?style=for-the-badge&logo=WordPress&logoColor=white)](https://blog.aspose.cloud/categories/aspose.cells-cloud-product-family/) [![Support](https://img.shields.io/badge/Support-7b1fa2?style=for-the-badge&logo=Discourse&logoColor=white)](https://forum.aspose.cloud/c/cells/7) [![License](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-go?style=for-the-badge&logo=rocket&logoColor=white)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE)
 
 # .NET package for Aspose.Cells Cloud
 
@@ -7,10 +7,8 @@ Enhance your .NET applications with the [Aspose.Cells Cloud](https://products.as
 ## Quick Start Guide
 
 To get started with Aspose.Cells Cloud for .NET, follow these steps:
-
-1. Create an account at  [Aspose for Cloud](https://dashboard.aspose.cloud/#/apps) and obtain your application information.
+1. Create an account at [Aspose for Cloud](https://dashboard.aspose.cloud/#/apps) and obtain your ”Client Id" and "Client Secret".
 2. execute `Install-Package Aspose.Cells-Cloud` from the Package Manager Console in Visual Studio to fetch & reference Aspose.Cells Cloud SDK assembly in your project.If you already have Aspose.Cells Cloud for .NET and want to upgrade it, please execute `Update-Package Aspose.Cells-Cloud` to get the latest version.
-3. You need to set your CellsCloudClientId and CellsCloudClientSecret in the environment variables.
 
 ```csharp
     namespace Aspose.Cells.Cloud.SDK.Example
@@ -18,16 +16,15 @@ To get started with Aspose.Cells Cloud for .NET, follow these steps:
         using Aspose.Cells.Cloud.SDK.Api;
         using Aspose.Cells.Cloud.SDK.Request;
         using System;
-        using System.Collections.Generic;
-        using System.IO;
 
         public partial class CellsApiExample
         {
-            public void PutConvertWorkbookHtmlExample()
+            public void ConvertSpreadsheetPDFExample()
             {
-                CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("CellsCloudTestClientId"), Environment.GetEnvironmentVariable("CellsCloudTestClientSecret"));
-                PutConvertWorkbookRequest request = new PutConvertWorkbookRequest { LocalPath  = "Book1.xlsx", format = "html" };
-                cellsApi.PutConvertWorkbook(request);
+                string clientId = ""; //your client id;
+                string clientSecret=""; //your client secret;
+                CellsApi cellsApi = new CellsApi(clientId, clientSecret);
+                cellsApi.ConvertSpreadsheet(new ConvertSpreadsheetRequest { Spreadsheet = "EmployeeSalesSummary.xlsx", format = "pdf" }, "EmployeeSalesSummary.pdf");
             }
         }
 
