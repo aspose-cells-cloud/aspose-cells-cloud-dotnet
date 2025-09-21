@@ -12,7 +12,7 @@ jobs:
     env:
       ProductClientId: ${{ secrets.PRODUCTCLIENTID }}
       ProductClientSecret: ${{ secrets.PRODUCTCLIENTSECRET }}
-    
+
     steps:
     - uses: actions/checkout@v4
 
@@ -20,13 +20,13 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.300
-    
+
     - name: Restore dependencies
-      # run: dotnet restore Aspose.Cells.Cloud.SDK/Aspose.Cells.Cloud.SDK.csproj
-    
+      run: dotnet restore Aspose.Cells.Cloud.SDK/Aspose.Cells.Cloud.SDK.csproj
+
     - name: Build
       run: dotnet build --no-restore -p:Configuration=Release
-    
+
     - name: Run Examples
       run: |
         cd examples
