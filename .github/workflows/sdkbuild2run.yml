@@ -21,8 +21,11 @@ jobs:
       with:
         dotnet-version: 8.0.300
 
-    - name: Restore dependencies
+    - name: Restore dependencies for SDK
       run: dotnet restore Aspose.Cells.Cloud.SDK/Aspose.Cells.Cloud.SDK.csproj
+
+    - name: Restore dependencies for examples
+      run: dotnet restore examples/Aspose.Cells.Cloud.SDK.Examples.csproj
 
     - name: Build
       run: dotnet build --no-restore -p:Configuration=Release
