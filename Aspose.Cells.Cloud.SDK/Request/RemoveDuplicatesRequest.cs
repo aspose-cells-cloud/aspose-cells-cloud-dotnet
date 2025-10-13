@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="DeleteSpreadsheetBlankColumnsRequest.cs">
+// <copyright company="Aspose" file="RemoveDuplicatesRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,29 +32,35 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.DeleteSpreadsheetBlankColumns" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.RemoveDuplicates" /> operation.
     /// </summary>
-    public class DeleteSpreadsheetBlankColumnsRequest : IRequestModel
+    public class RemoveDuplicatesRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DeleteSpreadsheetBlankColumnsRequest"/> class.
+        /// Initializes a new instance of the <see cref="RemoveDuplicatesRequest"/> class.
         /// </summary>
-        public DeleteSpreadsheetBlankColumnsRequest()
+        public RemoveDuplicatesRequest()
         {
 
         }
         /// <summary>
-        /// Initializes a new instance of the <see cref="DeleteSpreadsheetBlankColumnsRequest"/> class.
+        /// Initializes a new instance of the <see cref="RemoveDuplicatesRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
+        /// <param name="worksheet"></param>
+        /// <param name="range"></param>
+        /// <param name="table"></param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public DeleteSpreadsheetBlankColumnsRequest(string  spreadsheet, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
+        public RemoveDuplicatesRequest(string  spreadsheet, string  worksheet = null, string  range = null, string  table = null, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
+            this.worksheet = worksheet;
+            this.range = range;
+            this.table = table;
             this.outPath = outPath;
             this.outStorageName = outStorageName;
             this.region = region;
@@ -65,6 +71,24 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Upload spreadsheet file.
         /// </summary>
             public string Spreadsheet { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets worksheet.
+        /// </summary>
+        public string worksheet { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets range.
+        /// </summary>
+        public string range { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets table.
+        /// </summary>
+        public string table { get; set; }
 
 
         /// <summary>
@@ -110,15 +134,18 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'spreadsheet' is set
             if (    string.IsNullOrEmpty(this.Spreadsheet)    )
             {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling DeleteSpreadsheetBlankColumns");
+                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling RemoveDuplicates");
             }
 
-            var path = baseUri + "/cells/delete/blank-columns";
+            var path = baseUri + "/cells/remove/duplicates";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
+            if (!string.IsNullOrEmpty(this.worksheet))  path = UrlHelper.AddQueryParameterToUrl(path, "worksheet", this.worksheet);
+            if (!string.IsNullOrEmpty(this.range))  path = UrlHelper.AddQueryParameterToUrl(path, "range", this.range);
+            if (!string.IsNullOrEmpty(this.table))  path = UrlHelper.AddQueryParameterToUrl(path, "table", this.table);
             if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
             if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);

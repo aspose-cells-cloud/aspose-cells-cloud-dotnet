@@ -1322,6 +1322,37 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
+        public void RepairSpreadsheet(RepairSpreadsheetRequest request, string LocalOutPath){
+            var result = RepairSpreadsheet(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="RepairSpreadsheetRequest" /></param>
+        public   Stream  RepairSpreadsheet(RepairSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > RepairSpreadsheetAsync(RepairSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
         public void ProtectSpreadsheet(ProtectSpreadsheetRequest request, string LocalOutPath){
             var result = ProtectSpreadsheet(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
@@ -1378,6 +1409,37 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </summary>
 
         public async Task<   Stream  > UnprotectSpreadsheetAsync(UnprotectSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void SpreadsheetDigitalsignature(SpreadsheetDigitalsignatureRequest request, string LocalOutPath){
+            var result = SpreadsheetDigitalsignature(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="SpreadsheetDigitalsignatureRequest" /></param>
+        public   Stream  SpreadsheetDigitalsignature(SpreadsheetDigitalsignatureRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > SpreadsheetDigitalsignatureAsync(SpreadsheetDigitalsignatureRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -1716,8 +1778,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
-        public void TrimSpreadsheetContent(TrimSpreadsheetContentRequest request, string LocalOutPath){
-            var result = TrimSpreadsheetContent(request);
+        public void TrimCharacter(TrimCharacterRequest request, string LocalOutPath){
+            var result = TrimCharacter(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
             { 
                 result.CopyTo(stream);
@@ -1727,8 +1789,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }/// <summary>
         /// The TrimSpreadsheetContent API is designed to process and trim content within a spreadsheet. This API allows users to remove extra spaces, line breaks, or other unnecessary characters from the content of selected cells. It is particularly useful for cleaning up data entries and ensuring consistency in spreadsheet formatting
         /// </summary>
-        /// <param name="request">Request. <see cref="TrimSpreadsheetContentRequest" /></param>
-        public   Stream  TrimSpreadsheetContent(TrimSpreadsheetContentRequest request)
+        /// <param name="request">Request. <see cref="TrimCharacterRequest" /></param>
+        public   Stream  TrimCharacter(TrimCharacterRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -1739,7 +1801,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   Stream  > TrimSpreadsheetContentAsync(TrimSpreadsheetContentRequest request)
+        public async Task<   Stream  > TrimCharacterAsync(TrimCharacterRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -1748,8 +1810,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
-        public void TrimWorksheetRange(TrimWorksheetRangeRequest request, string LocalOutPath){
-            var result = TrimWorksheetRange(request);
+        public void UpdateWordCase(UpdateWordCaseRequest request, string LocalOutPath){
+            var result = UpdateWordCase(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
             { 
                 result.CopyTo(stream);
@@ -1758,8 +1820,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
             }
         }/// <summary>
         /// </summary>
-        /// <param name="request">Request. <see cref="TrimWorksheetRangeRequest" /></param>
-        public   Stream  TrimWorksheetRange(TrimWorksheetRangeRequest request)
+        /// <param name="request">Request. <see cref="UpdateWordCaseRequest" /></param>
+        public   Stream  UpdateWordCase(UpdateWordCaseRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -1770,7 +1832,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   Stream  > TrimWorksheetRangeAsync(TrimWorksheetRangeRequest request)
+        public async Task<   Stream  > UpdateWordCaseAsync(UpdateWordCaseRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -1779,8 +1841,163 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
-        public void DeleteSpreadsheetBlankRows(DeleteSpreadsheetBlankRowsRequest request, string LocalOutPath){
-            var result = DeleteSpreadsheetBlankRows(request);
+        public void RemoveCharacters(RemoveCharactersRequest request, string LocalOutPath){
+            var result = RemoveCharacters(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="RemoveCharactersRequest" /></param>
+        public   Stream  RemoveCharacters(RemoveCharactersRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > RemoveCharactersAsync(RemoveCharactersRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void AddText(AddTextRequest request, string LocalOutPath){
+            var result = AddText(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="AddTextRequest" /></param>
+        public   Stream  AddText(AddTextRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > AddTextAsync(AddTextRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ConvertText(ConvertTextRequest request, string LocalOutPath){
+            var result = ConvertText(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertTextRequest" /></param>
+        public   Stream  ConvertText(ConvertTextRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ConvertTextAsync(ConvertTextRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ExtractText(ExtractTextRequest request, string LocalOutPath){
+            var result = ExtractText(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="ExtractTextRequest" /></param>
+        public   Stream  ExtractText(ExtractTextRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ExtractTextAsync(ExtractTextRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void SplitText(SplitTextRequest request, string LocalOutPath){
+            var result = SplitText(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="SplitTextRequest" /></param>
+        public   Stream  SplitText(SplitTextRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > SplitTextAsync(SplitTextRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void RemoveSpreadsheetBlankRows(RemoveSpreadsheetBlankRowsRequest request, string LocalOutPath){
+            var result = RemoveSpreadsheetBlankRows(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
             { 
                 result.CopyTo(stream);
@@ -1790,8 +2007,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }/// <summary>
         /// Delete all blank rows that do not contain any data or other objects.
         /// </summary>
-        /// <param name="request">Request. <see cref="DeleteSpreadsheetBlankRowsRequest" /></param>
-        public   Stream  DeleteSpreadsheetBlankRows(DeleteSpreadsheetBlankRowsRequest request)
+        /// <param name="request">Request. <see cref="RemoveSpreadsheetBlankRowsRequest" /></param>
+        public   Stream  RemoveSpreadsheetBlankRows(RemoveSpreadsheetBlankRowsRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -1802,7 +2019,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   Stream  > DeleteSpreadsheetBlankRowsAsync(DeleteSpreadsheetBlankRowsRequest request)
+        public async Task<   Stream  > RemoveSpreadsheetBlankRowsAsync(RemoveSpreadsheetBlankRowsRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -1811,8 +2028,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
-        public void DeleteSpreadsheetBlankColumns(DeleteSpreadsheetBlankColumnsRequest request, string LocalOutPath){
-            var result = DeleteSpreadsheetBlankColumns(request);
+        public void RemoveSpreadsheetBlankColumns(RemoveSpreadsheetBlankColumnsRequest request, string LocalOutPath){
+            var result = RemoveSpreadsheetBlankColumns(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
             { 
                 result.CopyTo(stream);
@@ -1822,8 +2039,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }/// <summary>
         /// Delete all blank rows that do not contain any data or other objects.
         /// </summary>
-        /// <param name="request">Request. <see cref="DeleteSpreadsheetBlankColumnsRequest" /></param>
-        public   Stream  DeleteSpreadsheetBlankColumns(DeleteSpreadsheetBlankColumnsRequest request)
+        /// <param name="request">Request. <see cref="RemoveSpreadsheetBlankColumnsRequest" /></param>
+        public   Stream  RemoveSpreadsheetBlankColumns(RemoveSpreadsheetBlankColumnsRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -1834,7 +2051,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   Stream  > DeleteSpreadsheetBlankColumnsAsync(DeleteSpreadsheetBlankColumnsRequest request)
+        public async Task<   Stream  > RemoveSpreadsheetBlankColumnsAsync(RemoveSpreadsheetBlankColumnsRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -1843,8 +2060,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
-        public void DeleteSpreadsheetBlankWorksheets(DeleteSpreadsheetBlankWorksheetsRequest request, string LocalOutPath){
-            var result = DeleteSpreadsheetBlankWorksheets(request);
+        public void RemoveSpreadsheetBlankWorksheets(RemoveSpreadsheetBlankWorksheetsRequest request, string LocalOutPath){
+            var result = RemoveSpreadsheetBlankWorksheets(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
             { 
                 result.CopyTo(stream);
@@ -1854,8 +2071,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }/// <summary>
         /// Delete all blank rows that do not contain any data or other objects.
         /// </summary>
-        /// <param name="request">Request. <see cref="DeleteSpreadsheetBlankWorksheetsRequest" /></param>
-        public   Stream  DeleteSpreadsheetBlankWorksheets(DeleteSpreadsheetBlankWorksheetsRequest request)
+        /// <param name="request">Request. <see cref="RemoveSpreadsheetBlankWorksheetsRequest" /></param>
+        public   Stream  RemoveSpreadsheetBlankWorksheets(RemoveSpreadsheetBlankWorksheetsRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -1866,7 +2083,38 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   Stream  > DeleteSpreadsheetBlankWorksheetsAsync(DeleteSpreadsheetBlankWorksheetsRequest request)
+        public async Task<   Stream  > RemoveSpreadsheetBlankWorksheetsAsync(RemoveSpreadsheetBlankWorksheetsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void RemoveDuplicates(RemoveDuplicatesRequest request, string LocalOutPath){
+            var result = RemoveDuplicates(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="RemoveDuplicatesRequest" /></param>
+        public   Stream  RemoveDuplicates(RemoveDuplicatesRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > RemoveDuplicatesAsync(RemoveDuplicatesRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));

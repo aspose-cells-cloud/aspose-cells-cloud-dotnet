@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="WordCaseType.cs">
+// <copyright company="Aspose" file="PositionOptionsType.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -35,10 +35,10 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// WordCaseType.
+    /// PositionOptionsType.
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum WordCaseType
+    public enum PositionOptionsType
     {
     }
 }

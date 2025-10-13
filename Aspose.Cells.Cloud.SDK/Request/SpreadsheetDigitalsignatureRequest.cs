@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="DeleteSpreadsheetBlankWorksheetsRequest.cs">
+// <copyright company="Aspose" file="SpreadsheetDigitalsignatureRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,39 +32,45 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.DeleteSpreadsheetBlankWorksheets" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.SpreadsheetDigitalsignature" /> operation.
     /// </summary>
-    public class DeleteSpreadsheetBlankWorksheetsRequest : IRequestModel
+    public class SpreadsheetDigitalsignatureRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DeleteSpreadsheetBlankWorksheetsRequest"/> class.
+        /// Initializes a new instance of the <see cref="SpreadsheetDigitalsignatureRequest"/> class.
         /// </summary>
-        public DeleteSpreadsheetBlankWorksheetsRequest()
+        public SpreadsheetDigitalsignatureRequest()
         {
 
         }
         /// <summary>
-        /// Initializes a new instance of the <see cref="DeleteSpreadsheetBlankWorksheetsRequest"/> class.
+        /// Initializes a new instance of the <see cref="SpreadsheetDigitalsignatureRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
+        /// <param name="password"></param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="region">The spreadsheet region setting.</param>
-        /// <param name="password">The password for opening spreadsheet file.</param>
-        public DeleteSpreadsheetBlankWorksheetsRequest(string  spreadsheet, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
+        public SpreadsheetDigitalsignatureRequest(string  spreadsheet, string  password, string  outPath = null, string  outStorageName = null, string  region = null)
         {
             this.Spreadsheet = spreadsheet;
+            this.password = password;
             this.outPath = outPath;
             this.outStorageName = outStorageName;
             this.region = region;
-            this.password = password;
         }
         
         /// <summary>
         /// Upload spreadsheet file.
         /// </summary>
             public string Spreadsheet { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets password.
+        /// </summary>
+        public string password { get; set; }
 
 
         /// <summary>
@@ -83,12 +89,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The spreadsheet region setting.
         /// </summary>
         public string region { get; set; }
-
-
-        /// <summary>
-        /// The password for opening spreadsheet file.
-        /// </summary>
-        public string password { get; set; }
         
 
         /// <summary>
@@ -110,19 +110,25 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'spreadsheet' is set
             if (    string.IsNullOrEmpty(this.Spreadsheet)    )
             {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling DeleteSpreadsheetBlankWorksheets");
+                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling SpreadsheetDigitalsignature");
             }
 
-            var path = baseUri + "/cells/delete/blank-worksheets";
+            // verify the required parameter 'password' is set
+            if (string.IsNullOrEmpty (this.password ))
+            {
+                throw new ApiException(400, "Missing required parameter 'password' when calling SpreadsheetDigitalsignature");
+            }
+
+            var path = baseUri + "/cells/digitalsignature/spreadsheet";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
+            path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
             if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
-            if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
             {
                 foreach (KeyValuePair<string, string> kvp in extendQueryParameterMap)

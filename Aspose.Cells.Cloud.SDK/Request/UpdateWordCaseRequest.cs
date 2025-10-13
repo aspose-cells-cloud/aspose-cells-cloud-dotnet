@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="DeleteSpreadsheetBlankRowsRequest.cs">
+// <copyright company="Aspose" file="UpdateWordCaseRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,29 +32,35 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.DeleteSpreadsheetBlankRows" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.UpdateWordCase" /> operation.
     /// </summary>
-    public class DeleteSpreadsheetBlankRowsRequest : IRequestModel
+    public class UpdateWordCaseRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DeleteSpreadsheetBlankRowsRequest"/> class.
+        /// Initializes a new instance of the <see cref="UpdateWordCaseRequest"/> class.
         /// </summary>
-        public DeleteSpreadsheetBlankRowsRequest()
+        public UpdateWordCaseRequest()
         {
 
         }
         /// <summary>
-        /// Initializes a new instance of the <see cref="DeleteSpreadsheetBlankRowsRequest"/> class.
+        /// Initializes a new instance of the <see cref="UpdateWordCaseRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
+        /// <param name="wordCaseType"></param>
+        /// <param name="worksheet"></param>
+        /// <param name="range"></param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public DeleteSpreadsheetBlankRowsRequest(string  spreadsheet, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
+        public UpdateWordCaseRequest(string  spreadsheet, string  wordCaseType, string  worksheet = null, string  range = null, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
+            this.wordCaseType = wordCaseType;
+            this.worksheet = worksheet;
+            this.range = range;
             this.outPath = outPath;
             this.outStorageName = outStorageName;
             this.region = region;
@@ -65,6 +71,24 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Upload spreadsheet file.
         /// </summary>
             public string Spreadsheet { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets wordCaseType.
+        /// </summary>
+        public string wordCaseType { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets worksheet.
+        /// </summary>
+        public string worksheet { get; set; }
+
+
+        /// <summary>
+        /// Gets or sets range.
+        /// </summary>
+        public string range { get; set; }
 
 
         /// <summary>
@@ -110,15 +134,24 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'spreadsheet' is set
             if (    string.IsNullOrEmpty(this.Spreadsheet)    )
             {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling DeleteSpreadsheetBlankRows");
+                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling UpdateWordCase");
             }
 
-            var path = baseUri + "/cells/delete/blank-rows";
+            // verify the required parameter 'wordCaseType' is set
+            if (string.IsNullOrEmpty (this.wordCaseType ))
+            {
+                throw new ApiException(400, "Missing required parameter 'wordCaseType' when calling UpdateWordCase");
+            }
+
+            var path = baseUri + "/cells/content/wordcase";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
+            path = UrlHelper.AddQueryParameterToUrl(path, "wordCaseType", this.wordCaseType);
+            if (!string.IsNullOrEmpty(this.worksheet))  path = UrlHelper.AddQueryParameterToUrl(path, "worksheet", this.worksheet);
+            if (!string.IsNullOrEmpty(this.range))  path = UrlHelper.AddQueryParameterToUrl(path, "range", this.range);
             if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
             if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);

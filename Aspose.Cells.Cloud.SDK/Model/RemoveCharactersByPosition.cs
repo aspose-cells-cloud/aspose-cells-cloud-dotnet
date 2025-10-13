@@ -35,28 +35,27 @@ namespace Aspose.Cells.Cloud.SDK.Model
     using Newtonsoft.Json.Converters;
 
     /// <summary>
-    /// Class summary: Important features to consider when designing a new website include user-friendly navigation, responsive design for different devices, visually appealing layouts, and fast loading speed.
-    ///             
+    /// RemoveCharactersByPosition.
     /// </summary>
     public class RemoveCharactersByPosition
     {
         /// <summary>
-        /// This property allows access to a public integer named "TheFirstNCharacters" for getting and setting its value.
+        /// Gets or sets TheFirstNCharacters.
         /// </summary>
         public virtual int? TheFirstNCharacters { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets TheLastNCharacters.
         /// </summary>
         public virtual int? TheLastNCharacters { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets AllCharactersBeforeText.
         /// </summary>
         public virtual string AllCharactersBeforeText { get; set; }
 
         /// <summary>
-        /// 
+        /// Gets or sets AllCharactersAfterText.
         /// </summary>
         public virtual string AllCharactersAfterText { get; set; }
 
