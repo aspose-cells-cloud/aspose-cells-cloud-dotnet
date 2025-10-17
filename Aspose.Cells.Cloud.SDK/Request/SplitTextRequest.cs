@@ -59,7 +59,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public SplitTextRequest(string spreadsheet,string splitDelimitersType, string customDelimiter, bool? keepDelimitersInResultingCells =false, string keepDelimitersPosition = null, string HowToSplit = null, string worksheet = null, string range = null)
+        public SplitTextRequest(string spreadsheet,string splitDelimitersType, string customDelimiter, bool? keepDelimitersInResultingCells =false, string keepDelimitersPosition = null, string howToSplit = null, string worksheet = null, string range = null)
         {
             this.Spreadsheet = spreadsheet;
             this.splitDelimitersType = splitDelimitersType;
