@@ -9,10 +9,10 @@
 //  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 //  copies of the Software, and to permit persons to whom the Software is
 //  furnished to do so, subject to the following conditions:
-// 
+//
 //  The above copyright notice and this permission notice shall be included in all
 //  copies or substantial portions of the Software.
-// 
+//
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 //  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 //  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -57,7 +57,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public ConvertTextRequest(string  spreadsheet, string  convertTextType, string  sourceCharacters, string  targetCharacters, string  worksheet = null, string  range = null, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
+        public ConvertTextRequest(string spreadsheet,string convertTextType, string sourceCharacters =null , string targetCharacters = null, string worksheet = null, string range = null)
         {
             this.Spreadsheet = spreadsheet;
             this.convertTextType = convertTextType;
@@ -70,7 +70,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.region = region;
             this.password = password;
         }
-        
+
         /// <summary>
         /// Upload spreadsheet file.
         /// </summary>
@@ -129,7 +129,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The password for opening spreadsheet file.
         /// </summary>
         public string password { get; set; }
-        
+
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -148,10 +148,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
             // verify the required parameter 'spreadsheet' is set
-            if (    string.IsNullOrEmpty(this.Spreadsheet)    )
-            {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling ConvertText");
-            }
+            // if (    string.IsNullOrEmpty(this.Spreadsheet)    )
+            // {
+            //     throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling ConvertText");
+            // }
 
             // verify the required parameter 'convertTextType' is set
             if (string.IsNullOrEmpty (this.convertTextType ))
@@ -160,16 +160,16 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             // verify the required parameter 'sourceCharacters' is set
-            if (string.IsNullOrEmpty (this.sourceCharacters ))
-            {
-                throw new ApiException(400, "Missing required parameter 'sourceCharacters' when calling ConvertText");
-            }
+            // if (string.IsNullOrEmpty (this.sourceCharacters ))
+            // {
+            //     throw new ApiException(400, "Missing required parameter 'sourceCharacters' when calling ConvertText");
+            // }
 
             // verify the required parameter 'targetCharacters' is set
-            if (string.IsNullOrEmpty (this.targetCharacters ))
-            {
-                throw new ApiException(400, "Missing required parameter 'targetCharacters' when calling ConvertText");
-            }
+            // if (string.IsNullOrEmpty (this.targetCharacters ))
+            // {
+            //     throw new ApiException(400, "Missing required parameter 'targetCharacters' when calling ConvertText");
+            // }
 
             var path = baseUri + "/cells/content/convert/text";
             path = Regex
@@ -197,7 +197,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
              if (!string.IsNullOrEmpty(Spreadsheet ) && System.IO.File.Exists(Spreadsheet )) {
                  System.IO.FileInfo fileInfo = new System.IO.FileInfo(Spreadsheet);
                  localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(Spreadsheet), fileInfo.Name));
-             } 
+             }
 
 
 

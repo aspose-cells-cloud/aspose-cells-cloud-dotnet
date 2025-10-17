@@ -9,10 +9,10 @@
 //  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 //  copies of the Software, and to permit persons to whom the Software is
 //  furnished to do so, subject to the following conditions:
-// 
+//
 //  The above copyright notice and this permission notice shall be included in all
 //  copies or substantial portions of the Software.
-// 
+//
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 //  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 //  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -58,7 +58,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public AddTextRequest(string  spreadsheet, string  text, string  position, string  selectText, bool?  skipEmptyCells = null, string  worksheet = null, string  range = null, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
+        public AddTextRequest(string spreadsheet,string text, string position, string selectText = null, bool skipEmptyCells = true, string worksheet =null , string range = null)
         {
             this.Spreadsheet = spreadsheet;
             this.text = text;
@@ -72,7 +72,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.region = region;
             this.password = password;
         }
-        
+
         /// <summary>
         /// Upload spreadsheet file.
         /// </summary>
@@ -137,7 +137,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The password for opening spreadsheet file.
         /// </summary>
         public string password { get; set; }
-        
+
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -156,10 +156,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
             // verify the required parameter 'spreadsheet' is set
-            if (    string.IsNullOrEmpty(this.Spreadsheet)    )
-            {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling AddText");
-            }
+            // if (    string.IsNullOrEmpty(this.Spreadsheet)    )
+            // {
+            //     throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling AddText");
+            // }
 
             // verify the required parameter 'text' is set
             if (string.IsNullOrEmpty (this.text ))
@@ -174,10 +174,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             // verify the required parameter 'selectText' is set
-            if (string.IsNullOrEmpty (this.selectText ))
-            {
-                throw new ApiException(400, "Missing required parameter 'selectText' when calling AddText");
-            }
+            // if (string.IsNullOrEmpty (this.selectText ))
+            // {
+            //     throw new ApiException(400, "Missing required parameter 'selectText' when calling AddText");
+            // }
 
             var path = baseUri + "/cells/content/add/text";
             path = Regex
@@ -206,7 +206,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
              if (!string.IsNullOrEmpty(Spreadsheet ) && System.IO.File.Exists(Spreadsheet )) {
                  System.IO.FileInfo fileInfo = new System.IO.FileInfo(Spreadsheet);
                  localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(Spreadsheet), fileInfo.Name));
-             } 
+             }
 
 
 

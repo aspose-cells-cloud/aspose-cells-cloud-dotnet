@@ -9,10 +9,10 @@
 //  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 //  copies of the Software, and to permit persons to whom the Software is
 //  furnished to do so, subject to the following conditions:
-// 
+//
 //  The above copyright notice and this permission notice shall be included in all
 //  copies or substantial portions of the Software.
-// 
+//
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 //  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 //  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -59,7 +59,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public SplitTextRequest(string  spreadsheet, string  splitDelimitersType, string  customDelimiter, bool?  keepDelimitersInResultingCells, string  keepDelimitersPosition, string  howToSplit, string  worksheet = null, string  range = null, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
+        public SplitTextRequest(string spreadsheet,string splitDelimitersType, string customDelimiter, bool? keepDelimitersInResultingCells =false, string keepDelimitersPosition = null, string HowToSplit = null, string worksheet = null, string range = null)
         {
             this.Spreadsheet = spreadsheet;
             this.splitDelimitersType = splitDelimitersType;
@@ -74,7 +74,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.region = region;
             this.password = password;
         }
-        
+
         /// <summary>
         /// Upload spreadsheet file.
         /// </summary>
@@ -145,7 +145,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The password for opening spreadsheet file.
         /// </summary>
         public string password { get; set; }
-        
+
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -164,10 +164,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
             // verify the required parameter 'spreadsheet' is set
-            if (    string.IsNullOrEmpty(this.Spreadsheet)    )
-            {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling SplitText");
-            }
+            // if (    string.IsNullOrEmpty(this.Spreadsheet)    )
+            // {
+            //     throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling SplitText");
+            // }
 
             // verify the required parameter 'splitDelimitersType' is set
             if (string.IsNullOrEmpty (this.splitDelimitersType ))
@@ -182,22 +182,22 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             // verify the required parameter 'keepDelimitersInResultingCells' is set
-            if ( this.keepDelimitersInResultingCells == null)
-            {
-                throw new ApiException(400, "Missing required parameter 'keepDelimitersInResultingCells' when calling SplitText");
-            }
+            // if ( this.keepDelimitersInResultingCells == null)
+            // {
+            //     throw new ApiException(400, "Missing required parameter 'keepDelimitersInResultingCells' when calling SplitText");
+            // }
 
             // verify the required parameter 'keepDelimitersPosition' is set
-            if (string.IsNullOrEmpty (this.keepDelimitersPosition ))
-            {
-                throw new ApiException(400, "Missing required parameter 'keepDelimitersPosition' when calling SplitText");
-            }
+            // if (string.IsNullOrEmpty (this.keepDelimitersPosition ))
+            // {
+            //     throw new ApiException(400, "Missing required parameter 'keepDelimitersPosition' when calling SplitText");
+            // }
 
             // verify the required parameter 'howToSplit' is set
-            if (string.IsNullOrEmpty (this.HowToSplit ))
-            {
-                throw new ApiException(400, "Missing required parameter 'howToSplit' when calling SplitText");
-            }
+            // if (string.IsNullOrEmpty (this.HowToSplit ))
+            // {
+            //     throw new ApiException(400, "Missing required parameter 'howToSplit' when calling SplitText");
+            // }
 
             var path = baseUri + "/cells/content/split/text";
             path = Regex
@@ -227,7 +227,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
              if (!string.IsNullOrEmpty(Spreadsheet ) && System.IO.File.Exists(Spreadsheet )) {
                  System.IO.FileInfo fileInfo = new System.IO.FileInfo(Spreadsheet);
                  localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(Spreadsheet), fileInfo.Name));
-             } 
+             }
 
 
 

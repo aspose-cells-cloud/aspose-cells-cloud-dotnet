@@ -9,10 +9,10 @@
 //  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 //  copies of the Software, and to permit persons to whom the Software is
 //  furnished to do so, subject to the following conditions:
-// 
+//
 //  The above copyright notice and this permission notice shall be included in all
 //  copies or substantial portions of the Software.
-// 
+//
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 //  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 //  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -60,7 +60,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public ExtractTextRequest(string  spreadsheet, string  extractTextType, string  beforeText, string  afterText, int?  beforePosition, int?  afterPosition, string  outPositionRange, string  worksheet = null, string  range = null, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
+        public ExtractTextRequest(string spreadsheet,string extractTextType, string outPositionRange, string beforeText =null ,string afterText = null, int? beforePosition = null, int? afterPosition = null,  string worksheet = null, string range = null)
         {
             this.Spreadsheet = spreadsheet;
             this.extractTextType = extractTextType;
@@ -76,7 +76,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             this.region = region;
             this.password = password;
         }
-        
+
         /// <summary>
         /// Upload spreadsheet file.
         /// </summary>
@@ -153,7 +153,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// The password for opening spreadsheet file.
         /// </summary>
         public string password { get; set; }
-        
+
 
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
@@ -172,10 +172,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
             // verify the required parameter 'spreadsheet' is set
-            if (    string.IsNullOrEmpty(this.Spreadsheet)    )
-            {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling ExtractText");
-            }
+            // if (    string.IsNullOrEmpty(this.Spreadsheet)    )
+            // {
+            //     throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling ExtractText");
+            // }
 
             // verify the required parameter 'extractTextType' is set
             if (string.IsNullOrEmpty (this.extractTextType ))
@@ -184,28 +184,28 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
 
             // verify the required parameter 'beforeText' is set
-            if (string.IsNullOrEmpty (this.beforeText ))
-            {
-                throw new ApiException(400, "Missing required parameter 'beforeText' when calling ExtractText");
-            }
+            // if (string.IsNullOrEmpty (this.beforeText ))
+            // {
+            //     throw new ApiException(400, "Missing required parameter 'beforeText' when calling ExtractText");
+            // }
 
             // verify the required parameter 'afterText' is set
-            if (string.IsNullOrEmpty (this.afterText ))
-            {
-                throw new ApiException(400, "Missing required parameter 'afterText' when calling ExtractText");
-            }
+            // if (string.IsNullOrEmpty (this.afterText ))
+            // {
+            //     throw new ApiException(400, "Missing required parameter 'afterText' when calling ExtractText");
+            // }
 
             // verify the required parameter 'beforePosition' is set
-            if ( this.beforePosition == null)
-            {
-                throw new ApiException(400, "Missing required parameter 'beforePosition' when calling ExtractText");
-            }
+            // if ( this.beforePosition == null)
+            // {
+            //     throw new ApiException(400, "Missing required parameter 'beforePosition' when calling ExtractText");
+            // }
 
             // verify the required parameter 'afterPosition' is set
-            if ( this.afterPosition == null)
-            {
-                throw new ApiException(400, "Missing required parameter 'afterPosition' when calling ExtractText");
-            }
+            // if ( this.afterPosition == null)
+            // {
+            //     throw new ApiException(400, "Missing required parameter 'afterPosition' when calling ExtractText");
+            // }
 
             // verify the required parameter 'outPositionRange' is set
             if (string.IsNullOrEmpty (this.outPositionRange ))
@@ -242,7 +242,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
              if (!string.IsNullOrEmpty(Spreadsheet ) && System.IO.File.Exists(Spreadsheet )) {
                  System.IO.FileInfo fileInfo = new System.IO.FileInfo(Spreadsheet);
                  localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(Spreadsheet), fileInfo.Name));
-             } 
+             }
 
 
 
