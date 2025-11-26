@@ -79,8 +79,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
         /// </summary>
-        public IDictionary<string, string> extendQueryParameterMap ;
+        public IDictionary<string, string> extendQueryParameterMap = new Dictionary<string, string>{};
 
+        public void AddExtendQueryParameter(string name ,string value)
+        {
+            extendQueryParameterMap.Add(name,value);
+        }
         /// <summary>
         /// Creates the http request based on this request.
         /// </summary>

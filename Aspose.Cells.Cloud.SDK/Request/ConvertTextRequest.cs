@@ -48,16 +48,16 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="ConvertTextRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="convertTextType"></param>
-        /// <param name="sourceCharacters"></param>
-        /// <param name="targetCharacters"></param>
-        /// <param name="worksheet"></param>
-        /// <param name="range"></param>
+        /// <param name="convertTextType">Indicates the conversion of text type.</param>
+        /// <param name="sourceCharacters">Indicates the source characters.</param>
+        /// <param name="targetCharacters">Indicates the target characters.</param>
+        /// <param name="worksheet">Specify the worksheet of spreadsheet.</param>
+        /// <param name="range">Specify the worksheet range of spreadsheet.</param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public ConvertTextRequest(string  spreadsheet, string  convertTextType, string  sourceCharacters, string  targetCharacters, string  worksheet = null, string  range = null, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
+        public ConvertTextRequest(string  spreadsheet, string  convertTextType, string  sourceCharacters = null, string  targetCharacters = null, string  worksheet = null, string  range = null, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
             this.convertTextType = convertTextType;
@@ -78,31 +78,31 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Gets or sets convertTextType.
+        /// Indicates the conversion of text type.
         /// </summary>
         public string convertTextType { get; set; }
 
 
         /// <summary>
-        /// Gets or sets sourceCharacters.
+        /// Indicates the source characters.
         /// </summary>
         public string sourceCharacters { get; set; }
 
 
         /// <summary>
-        /// Gets or sets targetCharacters.
+        /// Indicates the target characters.
         /// </summary>
         public string targetCharacters { get; set; }
 
 
         /// <summary>
-        /// Gets or sets worksheet.
+        /// Specify the worksheet of spreadsheet.
         /// </summary>
         public string worksheet { get; set; }
 
 
         /// <summary>
-        /// Gets or sets range.
+        /// Specify the worksheet range of spreadsheet.
         /// </summary>
         public string range { get; set; }
 
@@ -134,8 +134,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
         /// </summary>
-        public IDictionary<string, string> extendQueryParameterMap ;
+        public IDictionary<string, string> extendQueryParameterMap = new Dictionary<string, string>{};
 
+        public void AddExtendQueryParameter(string name ,string value)
+        {
+            extendQueryParameterMap.Add(name,value);
+        }
         /// <summary>
         /// Creates the http request based on this request.
         /// </summary>
@@ -159,18 +163,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 throw new ApiException(400, "Missing required parameter 'convertTextType' when calling ConvertText");
             }
 
-            // verify the required parameter 'sourceCharacters' is set
-            if (string.IsNullOrEmpty (this.sourceCharacters ))
-            {
-                throw new ApiException(400, "Missing required parameter 'sourceCharacters' when calling ConvertText");
-            }
-
-            // verify the required parameter 'targetCharacters' is set
-            if (string.IsNullOrEmpty (this.targetCharacters ))
-            {
-                throw new ApiException(400, "Missing required parameter 'targetCharacters' when calling ConvertText");
-            }
-
             var path = baseUri + "/cells/content/convert/text";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
@@ -178,8 +170,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     .Replace("/?", "?");
 
             path = UrlHelper.AddQueryParameterToUrl(path, "convertTextType", this.convertTextType);
-            path = UrlHelper.AddQueryParameterToUrl(path, "sourceCharacters", this.sourceCharacters);
-            path = UrlHelper.AddQueryParameterToUrl(path, "targetCharacters", this.targetCharacters);
+            if (!string.IsNullOrEmpty(this.sourceCharacters))  path = UrlHelper.AddQueryParameterToUrl(path, "sourceCharacters", this.sourceCharacters);
+            if (!string.IsNullOrEmpty(this.targetCharacters))  path = UrlHelper.AddQueryParameterToUrl(path, "targetCharacters", this.targetCharacters);
             if (!string.IsNullOrEmpty(this.worksheet))  path = UrlHelper.AddQueryParameterToUrl(path, "worksheet", this.worksheet);
             if (!string.IsNullOrEmpty(this.range))  path = UrlHelper.AddQueryParameterToUrl(path, "range", this.range);
             if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);

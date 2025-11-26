@@ -48,27 +48,27 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="ExtractTextRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="extractTextType"></param>
-        /// <param name="beforeText"></param>
-        /// <param name="afterText"></param>
-        /// <param name="beforePosition"></param>
-        /// <param name="afterPosition"></param>
-        /// <param name="outPositionRange"></param>
-        /// <param name="worksheet"></param>
-        /// <param name="range"></param>
+        /// <param name="extractTextType">Indicates extract text type.</param>
+        /// <param name="outPositionRange">Indicates the output location for the extracted text.</param>
+        /// <param name="beforeText">Indicates extracting the text before the specified characters or substrings.</param>
+        /// <param name="afterText">Indicates extracting the text after the specified characters or substrings.</param>
+        /// <param name="beforePosition">Indicates retrieving the first character or a specified number of characters from the left side of the selected cell.</param>
+        /// <param name="afterPosition">Indicates retrieving the first character or a specified number of characters from the right side of the selected cell.</param>
+        /// <param name="worksheet">Specify the worksheet of spreadsheet.</param>
+        /// <param name="range">Specify the worksheet range of spreadsheet.</param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public ExtractTextRequest(string  spreadsheet, string  extractTextType, string  beforeText, string  afterText, int?  beforePosition, int?  afterPosition, string  outPositionRange, string  worksheet = null, string  range = null, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
+        public ExtractTextRequest(string  spreadsheet, string  extractTextType, string  outPositionRange, string  beforeText = null, string  afterText = null, int?  beforePosition = null, int?  afterPosition = null, string  worksheet = null, string  range = null, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
             this.extractTextType = extractTextType;
+            this.outPositionRange = outPositionRange;
             this.beforeText = beforeText;
             this.afterText = afterText;
             this.beforePosition = beforePosition;
             this.afterPosition = afterPosition;
-            this.outPositionRange = outPositionRange;
             this.worksheet = worksheet;
             this.range = range;
             this.outPath = outPath;
@@ -84,49 +84,49 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Gets or sets extractTextType.
+        /// Indicates extract text type.
         /// </summary>
         public string extractTextType { get; set; }
 
 
         /// <summary>
-        /// Gets or sets beforeText.
-        /// </summary>
-        public string beforeText { get; set; }
-
-
-        /// <summary>
-        /// Gets or sets afterText.
-        /// </summary>
-        public string afterText { get; set; }
-
-
-        /// <summary>
-        /// Gets or sets beforePosition.
-        /// </summary>
-        public int? beforePosition { get; set; }
-
-
-        /// <summary>
-        /// Gets or sets afterPosition.
-        /// </summary>
-        public int? afterPosition { get; set; }
-
-
-        /// <summary>
-        /// Gets or sets outPositionRange.
+        /// Indicates the output location for the extracted text.
         /// </summary>
         public string outPositionRange { get; set; }
 
 
         /// <summary>
-        /// Gets or sets worksheet.
+        /// Indicates extracting the text before the specified characters or substrings.
+        /// </summary>
+        public string beforeText { get; set; }
+
+
+        /// <summary>
+        /// Indicates extracting the text after the specified characters or substrings.
+        /// </summary>
+        public string afterText { get; set; }
+
+
+        /// <summary>
+        /// Indicates retrieving the first character or a specified number of characters from the left side of the selected cell.
+        /// </summary>
+        public int? beforePosition { get; set; }
+
+
+        /// <summary>
+        /// Indicates retrieving the first character or a specified number of characters from the right side of the selected cell.
+        /// </summary>
+        public int? afterPosition { get; set; }
+
+
+        /// <summary>
+        /// Specify the worksheet of spreadsheet.
         /// </summary>
         public string worksheet { get; set; }
 
 
         /// <summary>
-        /// Gets or sets range.
+        /// Specify the worksheet range of spreadsheet.
         /// </summary>
         public string range { get; set; }
 
@@ -158,8 +158,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
         /// </summary>
-        public IDictionary<string, string> extendQueryParameterMap ;
+        public IDictionary<string, string> extendQueryParameterMap = new Dictionary<string, string>{};
 
+        public void AddExtendQueryParameter(string name ,string value)
+        {
+            extendQueryParameterMap.Add(name,value);
+        }
         /// <summary>
         /// Creates the http request based on this request.
         /// </summary>
@@ -183,30 +187,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 throw new ApiException(400, "Missing required parameter 'extractTextType' when calling ExtractText");
             }
 
-            // verify the required parameter 'beforeText' is set
-            if (string.IsNullOrEmpty (this.beforeText ))
-            {
-                throw new ApiException(400, "Missing required parameter 'beforeText' when calling ExtractText");
-            }
-
-            // verify the required parameter 'afterText' is set
-            if (string.IsNullOrEmpty (this.afterText ))
-            {
-                throw new ApiException(400, "Missing required parameter 'afterText' when calling ExtractText");
-            }
-
-            // verify the required parameter 'beforePosition' is set
-            if ( this.beforePosition == null)
-            {
-                throw new ApiException(400, "Missing required parameter 'beforePosition' when calling ExtractText");
-            }
-
-            // verify the required parameter 'afterPosition' is set
-            if ( this.afterPosition == null)
-            {
-                throw new ApiException(400, "Missing required parameter 'afterPosition' when calling ExtractText");
-            }
-
             // verify the required parameter 'outPositionRange' is set
             if (string.IsNullOrEmpty (this.outPositionRange ))
             {
@@ -220,11 +200,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     .Replace("/?", "?");
 
             path = UrlHelper.AddQueryParameterToUrl(path, "extractTextType", this.extractTextType);
-            path = UrlHelper.AddQueryParameterToUrl(path, "beforeText", this.beforeText);
-            path = UrlHelper.AddQueryParameterToUrl(path, "afterText", this.afterText);
-            path = UrlHelper.AddQueryParameterToUrl(path, "beforePosition", this.beforePosition);
-            path = UrlHelper.AddQueryParameterToUrl(path, "afterPosition", this.afterPosition);
             path = UrlHelper.AddQueryParameterToUrl(path, "outPositionRange", this.outPositionRange);
+            if (!string.IsNullOrEmpty(this.beforeText))  path = UrlHelper.AddQueryParameterToUrl(path, "beforeText", this.beforeText);
+            if (!string.IsNullOrEmpty(this.afterText))  path = UrlHelper.AddQueryParameterToUrl(path, "afterText", this.afterText);
+            if(this.beforePosition != null)  path = UrlHelper.AddQueryParameterToUrl(path, "beforePosition", this.beforePosition);
+            if(this.afterPosition != null)  path = UrlHelper.AddQueryParameterToUrl(path, "afterPosition", this.afterPosition);
             if (!string.IsNullOrEmpty(this.worksheet))  path = UrlHelper.AddQueryParameterToUrl(path, "worksheet", this.worksheet);
             if (!string.IsNullOrEmpty(this.range))  path = UrlHelper.AddQueryParameterToUrl(path, "range", this.range);
             if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);

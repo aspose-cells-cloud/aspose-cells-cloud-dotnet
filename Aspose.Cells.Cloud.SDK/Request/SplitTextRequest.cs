@@ -48,25 +48,25 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="SplitTextRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="splitDelimitersType"></param>
-        /// <param name="customDelimiter"></param>
-        /// <param name="keepDelimitersInResultingCells"></param>
-        /// <param name="keepDelimitersPosition"></param>
-        /// <param name="howToSplit"></param>
-        /// <param name="worksheet"></param>
-        /// <param name="range"></param>
+        /// <param name="delimiters">Indicates the custom delimiter.</param>
+        /// <param name="keepDelimitersInResultingCells">Indicates keep delimiters in resulting cells.</param>
+        /// <param name="keepDelimitersPosition">Indicates keep delimiters position.</param>
+        /// <param name="howToSplit">Indicates</param>
+        /// <param name="outPositionRange">Indicates split delimiters type.</param>
+        /// <param name="worksheet">Specify the worksheet of spreadsheet.</param>
+        /// <param name="range">Specify the worksheet range of spreadsheet.</param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public SplitTextRequest(string  spreadsheet, string  splitDelimitersType, string  customDelimiter, bool?  keepDelimitersInResultingCells, string  keepDelimitersPosition, string  howToSplit, string  worksheet = null, string  range = null, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
+        public SplitTextRequest(string  spreadsheet, string  delimiters, bool?  keepDelimitersInResultingCells = null, string  keepDelimitersPosition = null, string  howToSplit = null, string  outPositionRange = null, string  worksheet = null, string  range = null, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
-            this.splitDelimitersType = splitDelimitersType;
-            this.customDelimiter = customDelimiter;
+            this.delimiters = delimiters;
             this.keepDelimitersInResultingCells = keepDelimitersInResultingCells;
             this.keepDelimitersPosition = keepDelimitersPosition;
             this.HowToSplit = howToSplit;
+            this.outPositionRange = outPositionRange;
             this.worksheet = worksheet;
             this.range = range;
             this.outPath = outPath;
@@ -82,43 +82,43 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Gets or sets splitDelimitersType.
+        /// Indicates the custom delimiter.
         /// </summary>
-        public string splitDelimitersType { get; set; }
+        public string delimiters { get; set; }
 
 
         /// <summary>
-        /// Gets or sets customDelimiter.
-        /// </summary>
-        public string customDelimiter { get; set; }
-
-
-        /// <summary>
-        /// Gets or sets keepDelimitersInResultingCells.
+        /// Indicates keep delimiters in resulting cells.
         /// </summary>
         public bool? keepDelimitersInResultingCells { get; set; }
 
 
         /// <summary>
-        /// Gets or sets keepDelimitersPosition.
+        /// Indicates keep delimiters position.
         /// </summary>
         public string keepDelimitersPosition { get; set; }
 
 
         /// <summary>
-        /// Gets or sets HowToSplit.
+        /// Indicates
         /// </summary>
         public string HowToSplit { get; set; }
 
 
         /// <summary>
-        /// Gets or sets worksheet.
+        /// Indicates split delimiters type.
+        /// </summary>
+        public string outPositionRange { get; set; }
+
+
+        /// <summary>
+        /// Specify the worksheet of spreadsheet.
         /// </summary>
         public string worksheet { get; set; }
 
 
         /// <summary>
-        /// Gets or sets range.
+        /// Specify the worksheet range of spreadsheet.
         /// </summary>
         public string range { get; set; }
 
@@ -150,8 +150,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
         /// </summary>
-        public IDictionary<string, string> extendQueryParameterMap ;
+        public IDictionary<string, string> extendQueryParameterMap = new Dictionary<string, string>{};
 
+        public void AddExtendQueryParameter(string name ,string value)
+        {
+            extendQueryParameterMap.Add(name,value);
+        }
         /// <summary>
         /// Creates the http request based on this request.
         /// </summary>
@@ -169,34 +173,10 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling SplitText");
             }
 
-            // verify the required parameter 'splitDelimitersType' is set
-            if (string.IsNullOrEmpty (this.splitDelimitersType ))
+            // verify the required parameter 'delimiters' is set
+            if (string.IsNullOrEmpty (this.delimiters ))
             {
-                throw new ApiException(400, "Missing required parameter 'splitDelimitersType' when calling SplitText");
-            }
-
-            // verify the required parameter 'customDelimiter' is set
-            if (string.IsNullOrEmpty (this.customDelimiter ))
-            {
-                throw new ApiException(400, "Missing required parameter 'customDelimiter' when calling SplitText");
-            }
-
-            // verify the required parameter 'keepDelimitersInResultingCells' is set
-            if ( this.keepDelimitersInResultingCells == null)
-            {
-                throw new ApiException(400, "Missing required parameter 'keepDelimitersInResultingCells' when calling SplitText");
-            }
-
-            // verify the required parameter 'keepDelimitersPosition' is set
-            if (string.IsNullOrEmpty (this.keepDelimitersPosition ))
-            {
-                throw new ApiException(400, "Missing required parameter 'keepDelimitersPosition' when calling SplitText");
-            }
-
-            // verify the required parameter 'howToSplit' is set
-            if (string.IsNullOrEmpty (this.HowToSplit ))
-            {
-                throw new ApiException(400, "Missing required parameter 'howToSplit' when calling SplitText");
+                throw new ApiException(400, "Missing required parameter 'delimiters' when calling SplitText");
             }
 
             var path = baseUri + "/cells/content/split/text";
@@ -205,11 +185,11 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            path = UrlHelper.AddQueryParameterToUrl(path, "splitDelimitersType", this.splitDelimitersType);
-            path = UrlHelper.AddQueryParameterToUrl(path, "customDelimiter", this.customDelimiter);
-            path = UrlHelper.AddQueryParameterToUrl(path, "keepDelimitersInResultingCells", this.keepDelimitersInResultingCells);
-            path = UrlHelper.AddQueryParameterToUrl(path, "keepDelimitersPosition", this.keepDelimitersPosition);
-            path = UrlHelper.AddQueryParameterToUrl(path, "howToSplit", this.HowToSplit);
+            path = UrlHelper.AddQueryParameterToUrl(path, "delimiters", this.delimiters);
+            if(this.keepDelimitersInResultingCells != null)  path = UrlHelper.AddQueryParameterToUrl(path, "keepDelimitersInResultingCells", this.keepDelimitersInResultingCells);
+            if (!string.IsNullOrEmpty(this.keepDelimitersPosition))  path = UrlHelper.AddQueryParameterToUrl(path, "keepDelimitersPosition", this.keepDelimitersPosition);
+            if (!string.IsNullOrEmpty(this.HowToSplit))  path = UrlHelper.AddQueryParameterToUrl(path, "howToSplit", this.HowToSplit);
+            if (!string.IsNullOrEmpty(this.outPositionRange))  path = UrlHelper.AddQueryParameterToUrl(path, "outPositionRange", this.outPositionRange);
             if (!string.IsNullOrEmpty(this.worksheet))  path = UrlHelper.AddQueryParameterToUrl(path, "worksheet", this.worksheet);
             if (!string.IsNullOrEmpty(this.range))  path = UrlHelper.AddQueryParameterToUrl(path, "range", this.range);
             if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);

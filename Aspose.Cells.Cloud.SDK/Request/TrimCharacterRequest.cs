@@ -48,15 +48,15 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="TrimCharacterRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="trimContent"></param>
-        /// <param name="trimLeading"></param>
-        /// <param name="trimTrailing"></param>
-        /// <param name="trimSpaceBetweenWordTo1"></param>
-        /// <param name="trimNonBreakingSpaces"></param>
-        /// <param name="removeExtraLineBreaks"></param>
-        /// <param name="removeAllLineBreaks"></param>
-        /// <param name="worksheet"></param>
-        /// <param name="range"></param>
+        /// <param name="trimContent">Specify the trim content.</param>
+        /// <param name="trimLeading">Specify to trim content from the beginning.</param>
+        /// <param name="trimTrailing">Specify to trim content from the end.</param>
+        /// <param name="trimSpaceBetweenWordTo1">Remove excess spaces between words within a cell.</param>
+        /// <param name="trimNonBreakingSpaces">Remove non-breaking spaces.</param>
+        /// <param name="removeExtraLineBreaks">Remove extra line breaks.</param>
+        /// <param name="removeAllLineBreaks">Remove all line breaks.</param>
+        /// <param name="worksheet">Specify the worksheet of spreadsheet.</param>
+        /// <param name="range">Specify the worksheet range of spreadsheet.</param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="region">The spreadsheet region setting.</param>
@@ -86,55 +86,55 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Gets or sets trimContent.
+        /// Specify the trim content.
         /// </summary>
         public string trimContent { get; set; }
 
 
         /// <summary>
-        /// Gets or sets trimLeading.
+        /// Specify to trim content from the beginning.
         /// </summary>
         public bool? trimLeading { get; set; }
 
 
         /// <summary>
-        /// Gets or sets trimTrailing.
+        /// Specify to trim content from the end.
         /// </summary>
         public bool? trimTrailing { get; set; }
 
 
         /// <summary>
-        /// Gets or sets trimSpaceBetweenWordTo1.
+        /// Remove excess spaces between words within a cell.
         /// </summary>
         public bool? trimSpaceBetweenWordTo1 { get; set; }
 
 
         /// <summary>
-        /// Gets or sets trimNonBreakingSpaces.
+        /// Remove non-breaking spaces.
         /// </summary>
         public bool? trimNonBreakingSpaces { get; set; }
 
 
         /// <summary>
-        /// Gets or sets removeExtraLineBreaks.
+        /// Remove extra line breaks.
         /// </summary>
         public bool? removeExtraLineBreaks { get; set; }
 
 
         /// <summary>
-        /// Gets or sets removeAllLineBreaks.
+        /// Remove all line breaks.
         /// </summary>
         public bool? removeAllLineBreaks { get; set; }
 
 
         /// <summary>
-        /// Gets or sets worksheet.
+        /// Specify the worksheet of spreadsheet.
         /// </summary>
         public string worksheet { get; set; }
 
 
         /// <summary>
-        /// Gets or sets range.
+        /// Specify the worksheet range of spreadsheet.
         /// </summary>
         public string range { get; set; }
 
@@ -166,8 +166,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
         /// </summary>
-        public IDictionary<string, string> extendQueryParameterMap ;
+        public IDictionary<string, string> extendQueryParameterMap = new Dictionary<string, string>{};
 
+        public void AddExtendQueryParameter(string name ,string value)
+        {
+            extendQueryParameterMap.Add(name,value);
+        }
         /// <summary>
         /// Creates the http request based on this request.
         /// </summary>

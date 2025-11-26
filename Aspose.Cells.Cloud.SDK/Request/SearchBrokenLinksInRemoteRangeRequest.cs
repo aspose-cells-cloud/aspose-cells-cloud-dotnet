@@ -110,8 +110,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
         /// </summary>
-        public IDictionary<string, string> extendQueryParameterMap ;
+        public IDictionary<string, string> extendQueryParameterMap = new Dictionary<string, string>{};
 
+        public void AddExtendQueryParameter(string name ,string value)
+        {
+            extendQueryParameterMap.Add(name,value);
+        }
         /// <summary>
         /// Creates the http request based on this request.
         /// </summary>
@@ -141,7 +145,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 throw new ApiException(400, "Missing required parameter 'cellArea' when calling SearchBrokenLinksInRemoteRange");
             }
 
-            var path = baseUri + "/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}search/broken-links";
+            var path = baseUri + "/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/broken-links";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")

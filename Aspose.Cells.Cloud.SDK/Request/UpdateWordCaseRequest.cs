@@ -48,9 +48,9 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="UpdateWordCaseRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="wordCaseType"></param>
-        /// <param name="worksheet"></param>
-        /// <param name="range"></param>
+        /// <param name="wordCaseType">Specify text case: Upper Case, Lower Case, Proper Case, Sentence Case.</param>
+        /// <param name="worksheet">Specify the worksheet of spreadsheet.</param>
+        /// <param name="range">Specify the worksheet range of spreadsheet.</param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="region">The spreadsheet region setting.</param>
@@ -74,19 +74,19 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Gets or sets wordCaseType.
+        /// Specify text case: Upper Case, Lower Case, Proper Case, Sentence Case.
         /// </summary>
         public string wordCaseType { get; set; }
 
 
         /// <summary>
-        /// Gets or sets worksheet.
+        /// Specify the worksheet of spreadsheet.
         /// </summary>
         public string worksheet { get; set; }
 
 
         /// <summary>
-        /// Gets or sets range.
+        /// Specify the worksheet range of spreadsheet.
         /// </summary>
         public string range { get; set; }
 
@@ -118,8 +118,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
         /// </summary>
-        public IDictionary<string, string> extendQueryParameterMap ;
+        public IDictionary<string, string> extendQueryParameterMap = new Dictionary<string, string>{};
 
+        public void AddExtendQueryParameter(string name ,string value)
+        {
+            extendQueryParameterMap.Add(name,value);
+        }
         /// <summary>
         /// Creates the http request based on this request.
         /// </summary>

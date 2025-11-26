@@ -48,29 +48,23 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="RemoveCharactersRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="theFirstNCharacters"></param>
-        /// <param name="theLastNCharacters"></param>
-        /// <param name="allCharactersBeforeText"></param>
-        /// <param name="allCharactersAfterText"></param>
-        /// <param name="removeTextMethod"></param>
-        /// <param name="characterSets"></param>
-        /// <param name="removeCustomValue"></param>
-        /// <param name="worksheet"></param>
-        /// <param name="range"></param>
+        /// <param name="removeTextMethod">Specify the removal of text method type.</param>
+        /// <param name="characterSets">Specify the character sets.</param>
+        /// <param name="removeCustomValue">Specify the remove custom value.</param>
+        /// <param name="caseSensitive"></param>
+        /// <param name="worksheet">Specify the worksheet of spreadsheet.</param>
+        /// <param name="range">Specify the worksheet range of spreadsheet.</param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public RemoveCharactersRequest(string  spreadsheet, int?  theFirstNCharacters, int?  theLastNCharacters, string  allCharactersBeforeText, string  allCharactersAfterText, string  removeTextMethod, string  characterSets, string  removeCustomValue, string  worksheet, string  range, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
+        public RemoveCharactersRequest(string  spreadsheet, string  removeTextMethod = null, string  characterSets = null, string  removeCustomValue = null, bool?  caseSensitive = null, string  worksheet = null, string  range = null, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
-            this.theFirstNCharacters = theFirstNCharacters;
-            this.theLastNCharacters = theLastNCharacters;
-            this.allCharactersBeforeText = allCharactersBeforeText;
-            this.allCharactersAfterText = allCharactersAfterText;
             this.removeTextMethod = removeTextMethod;
             this.characterSets = characterSets;
             this.removeCustomValue = removeCustomValue;
+            this.caseSensitive = caseSensitive;
             this.worksheet = worksheet;
             this.range = range;
             this.outPath = outPath;
@@ -86,55 +80,37 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Gets or sets theFirstNCharacters.
-        /// </summary>
-        public int? theFirstNCharacters { get; set; }
-
-
-        /// <summary>
-        /// Gets or sets theLastNCharacters.
-        /// </summary>
-        public int? theLastNCharacters { get; set; }
-
-
-        /// <summary>
-        /// Gets or sets allCharactersBeforeText.
-        /// </summary>
-        public string allCharactersBeforeText { get; set; }
-
-
-        /// <summary>
-        /// Gets or sets allCharactersAfterText.
-        /// </summary>
-        public string allCharactersAfterText { get; set; }
-
-
-        /// <summary>
-        /// Gets or sets removeTextMethod.
+        /// Specify the removal of text method type.
         /// </summary>
         public string removeTextMethod { get; set; }
 
 
         /// <summary>
-        /// Gets or sets characterSets.
+        /// Specify the character sets.
         /// </summary>
         public string characterSets { get; set; }
 
 
         /// <summary>
-        /// Gets or sets removeCustomValue.
+        /// Specify the remove custom value.
         /// </summary>
         public string removeCustomValue { get; set; }
 
 
         /// <summary>
-        /// Gets or sets worksheet.
+        /// Gets or sets caseSensitive.
+        /// </summary>
+        public bool? caseSensitive { get; set; }
+
+
+        /// <summary>
+        /// Specify the worksheet of spreadsheet.
         /// </summary>
         public string worksheet { get; set; }
 
 
         /// <summary>
-        /// Gets or sets range.
+        /// Specify the worksheet range of spreadsheet.
         /// </summary>
         public string range { get; set; }
 
@@ -166,8 +142,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// <summary>
         /// Gets or sets extendQueryParameterMap.
         /// </summary>
-        public IDictionary<string, string> extendQueryParameterMap ;
+        public IDictionary<string, string> extendQueryParameterMap = new Dictionary<string, string>{};
 
+        public void AddExtendQueryParameter(string name ,string value)
+        {
+            extendQueryParameterMap.Add(name,value);
+        }
         /// <summary>
         /// Creates the http request based on this request.
         /// </summary>
@@ -185,75 +165,18 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling RemoveCharacters");
             }
 
-            // verify the required parameter 'theFirstNCharacters' is set
-            if ( this.theFirstNCharacters == null)
-            {
-                throw new ApiException(400, "Missing required parameter 'theFirstNCharacters' when calling RemoveCharacters");
-            }
-
-            // verify the required parameter 'theLastNCharacters' is set
-            if ( this.theLastNCharacters == null)
-            {
-                throw new ApiException(400, "Missing required parameter 'theLastNCharacters' when calling RemoveCharacters");
-            }
-
-            // verify the required parameter 'allCharactersBeforeText' is set
-            if (string.IsNullOrEmpty (this.allCharactersBeforeText ))
-            {
-                throw new ApiException(400, "Missing required parameter 'allCharactersBeforeText' when calling RemoveCharacters");
-            }
-
-            // verify the required parameter 'allCharactersAfterText' is set
-            if (string.IsNullOrEmpty (this.allCharactersAfterText ))
-            {
-                throw new ApiException(400, "Missing required parameter 'allCharactersAfterText' when calling RemoveCharacters");
-            }
-
-            // verify the required parameter 'removeTextMethod' is set
-            if (string.IsNullOrEmpty (this.removeTextMethod ))
-            {
-                throw new ApiException(400, "Missing required parameter 'removeTextMethod' when calling RemoveCharacters");
-            }
-
-            // verify the required parameter 'characterSets' is set
-            if (string.IsNullOrEmpty (this.characterSets ))
-            {
-                throw new ApiException(400, "Missing required parameter 'characterSets' when calling RemoveCharacters");
-            }
-
-            // verify the required parameter 'removeCustomValue' is set
-            if (string.IsNullOrEmpty (this.removeCustomValue ))
-            {
-                throw new ApiException(400, "Missing required parameter 'removeCustomValue' when calling RemoveCharacters");
-            }
-
-            // verify the required parameter 'worksheet' is set
-            if (string.IsNullOrEmpty (this.worksheet ))
-            {
-                throw new ApiException(400, "Missing required parameter 'worksheet' when calling RemoveCharacters");
-            }
-
-            // verify the required parameter 'range' is set
-            if (string.IsNullOrEmpty (this.range ))
-            {
-                throw new ApiException(400, "Missing required parameter 'range' when calling RemoveCharacters");
-            }
-
             var path = baseUri + "/cells/content/remove/characters";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            path = UrlHelper.AddQueryParameterToUrl(path, "theFirstNCharacters", this.theFirstNCharacters);
-            path = UrlHelper.AddQueryParameterToUrl(path, "theLastNCharacters", this.theLastNCharacters);
-            path = UrlHelper.AddQueryParameterToUrl(path, "allCharactersBeforeText", this.allCharactersBeforeText);
-            path = UrlHelper.AddQueryParameterToUrl(path, "allCharactersAfterText", this.allCharactersAfterText);
-            path = UrlHelper.AddQueryParameterToUrl(path, "removeTextMethod", this.removeTextMethod);
-            path = UrlHelper.AddQueryParameterToUrl(path, "characterSets", this.characterSets);
-            path = UrlHelper.AddQueryParameterToUrl(path, "removeCustomValue", this.removeCustomValue);
-            path = UrlHelper.AddQueryParameterToUrl(path, "worksheet", this.worksheet);
-            path = UrlHelper.AddQueryParameterToUrl(path, "range", this.range);
+            if (!string.IsNullOrEmpty(this.removeTextMethod))  path = UrlHelper.AddQueryParameterToUrl(path, "removeTextMethod", this.removeTextMethod);
+            if (!string.IsNullOrEmpty(this.characterSets))  path = UrlHelper.AddQueryParameterToUrl(path, "characterSets", this.characterSets);
+            if (!string.IsNullOrEmpty(this.removeCustomValue))  path = UrlHelper.AddQueryParameterToUrl(path, "removeCustomValue", this.removeCustomValue);
+            if(this.caseSensitive != null)  path = UrlHelper.AddQueryParameterToUrl(path, "caseSensitive", this.caseSensitive);
+            if (!string.IsNullOrEmpty(this.worksheet))  path = UrlHelper.AddQueryParameterToUrl(path, "worksheet", this.worksheet);
+            if (!string.IsNullOrEmpty(this.range))  path = UrlHelper.AddQueryParameterToUrl(path, "range", this.range);
             if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
             if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);

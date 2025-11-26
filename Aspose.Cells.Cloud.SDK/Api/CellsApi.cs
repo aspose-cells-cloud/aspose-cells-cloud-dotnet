@@ -63,6 +63,68 @@ namespace Aspose.Cells.Cloud.SDK.Api
             ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
         }
 
+        public void TranslationSpreadsheet(TranslationSpreadsheetRequest request, string LocalOutPath){
+            var result = TranslationSpreadsheet(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Translates the entire spreadsheet to the specified target language.
+        /// </summary>
+        /// <param name="request">Request. <see cref="TranslationSpreadsheetRequest" /></param>
+        public   Stream  TranslationSpreadsheet(TranslationSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > TranslationSpreadsheetAsync(TranslationSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void TranslateTextFile(TranslateTextFileRequest request, string LocalOutPath){
+            var result = TranslateTextFile(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="TranslateTextFileRequest" /></param>
+        public   Stream  TranslateTextFile(TranslateTextFileRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > TranslateTextFileAsync(TranslateTextFileRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
         /// <summary>
         /// The Aggregate by Color API provides a convenient way to perform calculations on cells that share the same fill or font color. This API supports a range of aggregate operations, including count, sum, maximum value, minimum value, and average value, enabling you to analyze and summarize data based on color distinctions.
         /// </summary>
@@ -404,6 +466,37 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </summary>
 
         public async Task<   Stream  > ConvertSpreadsheetToPdfAsync(ConvertSpreadsheetToPdfRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ConvertSpreadsheetToJson(ConvertSpreadsheetToJsonRequest request, string LocalOutPath){
+            var result = ConvertSpreadsheetToJson(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertSpreadsheetToJsonRequest" /></param>
+        public   Stream  ConvertSpreadsheetToJson(ConvertSpreadsheetToJsonRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ConvertSpreadsheetToJsonAsync(ConvertSpreadsheetToJsonRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -1819,6 +1912,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
+        /// Specify changing the text case in a spreadsheet to switch between uppercase, lowercase, capitalizing the first letter of each word, or capitalizing the first letter of a sentence, and adjust the text according to specific needs.
         /// </summary>
         /// <param name="request">Request. <see cref="UpdateWordCaseRequest" /></param>
         public   Stream  UpdateWordCase(UpdateWordCaseRequest request)
@@ -1850,6 +1944,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
+        /// Deletes user-defined characters, predefined symbol sets, or any substring from every cell in the chosen range while preserving formulas, formatting and data-validation.
         /// </summary>
         /// <param name="request">Request. <see cref="RemoveCharactersRequest" /></param>
         public   Stream  RemoveCharacters(RemoveCharactersRequest request)
@@ -1872,6 +1967,70 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
+        public void RemoveCharactersByPosition(RemoveCharactersByPositionRequest request, string LocalOutPath){
+            var result = RemoveCharactersByPosition(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Deletes characters from every cell in the target range by position (first/last N, before/after a substring, or between two delimiters) while preserving formulas, formatting and data-validation.
+        /// </summary>
+        /// <param name="request">Request. <see cref="RemoveCharactersByPositionRequest" /></param>
+        public   Stream  RemoveCharactersByPosition(RemoveCharactersByPositionRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > RemoveCharactersByPositionAsync(RemoveCharactersByPositionRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void RemoveDuplicateSubstrings(RemoveDuplicateSubstringsRequest request, string LocalOutPath){
+            var result = RemoveDuplicateSubstrings(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Finds and removes repeated substrings inside every cell of the chosen range, using user-defined or preset delimiters, while preserving formulas, formatting and data-validation.
+        /// </summary>
+        /// <param name="request">Request. <see cref="RemoveDuplicateSubstringsRequest" /></param>
+        public   Stream  RemoveDuplicateSubstrings(RemoveDuplicateSubstringsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > RemoveDuplicateSubstringsAsync(RemoveDuplicateSubstringsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
         public void AddText(AddTextRequest request, string LocalOutPath){
             var result = AddText(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
@@ -1881,6 +2040,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
+        /// Specify appending text to multiple cells at once, allowing you to add prefixes, suffixes, labels, or any specific characters. You can choose the exact position of the text—in the beginning, at the end, or before or after certain characters in the cell.
         /// </summary>
         /// <param name="request">Request. <see cref="AddTextRequest" /></param>
         public   Stream  AddText(AddTextRequest request)
@@ -1912,6 +2072,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
+        /// Indicates converting the numbers stored as text into the correct number format, replacing unwanted characters and line breaks with the desired characters, and converting accented characters to their equivalent characters without accents.
         /// </summary>
         /// <param name="request">Request. <see cref="ConvertTextRequest" /></param>
         public   Stream  ConvertText(ConvertTextRequest request)
@@ -1943,6 +2104,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
+        /// Indicates extracting substrings, text characters, and numbers from a spreadsheet cell into another cell without having to use complex FIND, MIN, LEFT, or RIGHT formulas.
         /// </summary>
         /// <param name="request">Request. <see cref="ExtractTextRequest" /></param>
         public   Stream  ExtractText(ExtractTextRequest request)
@@ -1974,6 +2136,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
+        /// Indicates performing text segmentation on the specified area according to the segmentation method, and outputting to the designated interval.
         /// </summary>
         /// <param name="request">Request. <see cref="SplitTextRequest" /></param>
         public   Stream  SplitText(SplitTextRequest request)
