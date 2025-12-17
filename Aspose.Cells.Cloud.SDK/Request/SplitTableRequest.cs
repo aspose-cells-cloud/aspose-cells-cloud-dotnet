@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="RemoveDuplicateSubstringsRequest.cs">
+// <copyright company="Aspose" file="SplitTableRequest.cs">
 //   Copyright (c) 2025 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,41 +32,45 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.RemoveDuplicateSubstrings" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.SplitTable" /> operation.
     /// </summary>
-    public class RemoveDuplicateSubstringsRequest : IRequestModel
+    public class SplitTableRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="RemoveDuplicateSubstringsRequest"/> class.
+        /// Initializes a new instance of the <see cref="SplitTableRequest"/> class.
         /// </summary>
-        public RemoveDuplicateSubstringsRequest()
+        public SplitTableRequest()
         {
 
         }
         /// <summary>
-        /// Initializes a new instance of the <see cref="RemoveDuplicateSubstringsRequest"/> class.
+        /// Initializes a new instance of the <see cref="SplitTableRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="delimiters">comma, semicolon, space, tab, line-break </param>
-        /// <param name="treatConsecutiveDelimitersAsOne">collapse adjacent delimiters into a single separator.</param>
-        /// <param name="caseSensitive"></param>
-        /// <param name="worksheet"></param>
-        /// <param name="range"></param>
+        /// <param name="worksheet">Worksheet containing the table.</param>
+        /// <param name="tableName">Data table that needs to be split.</param>
+        /// <param name="splitColumnName">Column name to split by.</param>
+        /// <param name="saveSplitColumn">Whether to keep the data in the split column.</param>
+        /// <param name="toNewWorkbook">Export destination control: true - Creates new workbook files containing the split data; false - Adds a new worksheet to the current workbook.</param>
+        /// <param name="toMultipleFiles">true - Exports table data as **multiple separate files** (returned as ZIP archive);false - Stores all data in a **single file** with multiple sheets. Default: false.</param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
+        /// <param name="fontsLocation">Use Custom fonts.</param>
         /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public RemoveDuplicateSubstringsRequest(string  spreadsheet, string  delimiters, bool?  treatConsecutiveDelimitersAsOne = null, bool?  caseSensitive = null, string  worksheet = null, string  range = null, string  outPath = null, string  outStorageName = null, string  region = null, string  password = null)
+        public SplitTableRequest(string  spreadsheet, string  worksheet, string  tableName, string  splitColumnName, bool?  saveSplitColumn, bool?  toNewWorkbook, bool?  toMultipleFiles, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  region = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
-            this.delimiters = delimiters;
-            this.treatConsecutiveDelimitersAsOne = treatConsecutiveDelimitersAsOne;
-            this.caseSensitive = caseSensitive;
             this.worksheet = worksheet;
-            this.range = range;
+            this.tableName = tableName;
+            this.splitColumnName = splitColumnName;
+            this.saveSplitColumn = saveSplitColumn;
+            this.toNewWorkbook = toNewWorkbook;
+            this.toMultipleFiles = toMultipleFiles;
             this.outPath = outPath;
             this.outStorageName = outStorageName;
+            this.fontsLocation = fontsLocation;
             this.region = region;
             this.password = password;
         }
@@ -78,33 +82,39 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// comma, semicolon, space, tab, line-break 
-        /// </summary>
-        public string delimiters { get; set; }
-
-
-        /// <summary>
-        /// collapse adjacent delimiters into a single separator.
-        /// </summary>
-        public bool? treatConsecutiveDelimitersAsOne { get; set; }
-
-
-        /// <summary>
-        /// Gets or sets caseSensitive.
-        /// </summary>
-        public bool? caseSensitive { get; set; }
-
-
-        /// <summary>
-        /// Gets or sets worksheet.
+        /// Worksheet containing the table.
         /// </summary>
         public string worksheet { get; set; }
 
 
         /// <summary>
-        /// Gets or sets range.
+        /// Data table that needs to be split.
         /// </summary>
-        public string range { get; set; }
+        public string tableName { get; set; }
+
+
+        /// <summary>
+        /// Column name to split by.
+        /// </summary>
+        public string splitColumnName { get; set; }
+
+
+        /// <summary>
+        /// Whether to keep the data in the split column.
+        /// </summary>
+        public bool? saveSplitColumn { get; set; }
+
+
+        /// <summary>
+        /// Export destination control: true - Creates new workbook files containing the split data; false - Adds a new worksheet to the current workbook.
+        /// </summary>
+        public bool? toNewWorkbook { get; set; }
+
+
+        /// <summary>
+        /// true - Exports table data as **multiple separate files** (returned as ZIP archive);false - Stores all data in a **single file** with multiple sheets. Default: false.
+        /// </summary>
+        public bool? toMultipleFiles { get; set; }
 
 
         /// <summary>
@@ -117,6 +127,12 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Output file Storage Name.
         /// </summary>
         public string outStorageName { get; set; }
+
+
+        /// <summary>
+        /// Use Custom fonts.
+        /// </summary>
+        public string fontsLocation { get; set; }
 
 
         /// <summary>
@@ -154,28 +170,60 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'spreadsheet' is set
             if (    string.IsNullOrEmpty(this.Spreadsheet)    )
             {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling RemoveDuplicateSubstrings");
+                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling SplitTable");
             }
 
-            // verify the required parameter 'delimiters' is set
-            if (string.IsNullOrEmpty (this.delimiters ))
+            // verify the required parameter 'worksheet' is set
+            if (string.IsNullOrEmpty (this.worksheet ))
             {
-                throw new ApiException(400, "Missing required parameter 'delimiters' when calling RemoveDuplicateSubstrings");
+                throw new ApiException(400, "Missing required parameter 'worksheet' when calling SplitTable");
             }
 
-            var path = baseUri + "/cells/content/remove/duplicate-substrings";
+            // verify the required parameter 'tableName' is set
+            if (string.IsNullOrEmpty (this.tableName ))
+            {
+                throw new ApiException(400, "Missing required parameter 'tableName' when calling SplitTable");
+            }
+
+            // verify the required parameter 'splitColumnName' is set
+            if (string.IsNullOrEmpty (this.splitColumnName ))
+            {
+                throw new ApiException(400, "Missing required parameter 'splitColumnName' when calling SplitTable");
+            }
+
+            // verify the required parameter 'saveSplitColumn' is set
+            if ( this.saveSplitColumn == null)
+            {
+                throw new ApiException(400, "Missing required parameter 'saveSplitColumn' when calling SplitTable");
+            }
+
+            // verify the required parameter 'toNewWorkbook' is set
+            if ( this.toNewWorkbook == null)
+            {
+                throw new ApiException(400, "Missing required parameter 'toNewWorkbook' when calling SplitTable");
+            }
+
+            // verify the required parameter 'toMultipleFiles' is set
+            if ( this.toMultipleFiles == null)
+            {
+                throw new ApiException(400, "Missing required parameter 'toMultipleFiles' when calling SplitTable");
+            }
+
+            var path = baseUri + "/cells/split/table";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            path = UrlHelper.AddQueryParameterToUrl(path, "delimiters", this.delimiters);
-            if(this.treatConsecutiveDelimitersAsOne != null)  path = UrlHelper.AddQueryParameterToUrl(path, "treatConsecutiveDelimitersAsOne", this.treatConsecutiveDelimitersAsOne);
-            if(this.caseSensitive != null)  path = UrlHelper.AddQueryParameterToUrl(path, "caseSensitive", this.caseSensitive);
-            if (!string.IsNullOrEmpty(this.worksheet))  path = UrlHelper.AddQueryParameterToUrl(path, "worksheet", this.worksheet);
-            if (!string.IsNullOrEmpty(this.range))  path = UrlHelper.AddQueryParameterToUrl(path, "range", this.range);
+            path = UrlHelper.AddQueryParameterToUrl(path, "worksheet", this.worksheet);
+            path = UrlHelper.AddQueryParameterToUrl(path, "tableName", this.tableName);
+            path = UrlHelper.AddQueryParameterToUrl(path, "splitColumnName", this.splitColumnName);
+            path = UrlHelper.AddQueryParameterToUrl(path, "saveSplitColumn", this.saveSplitColumn);
+            path = UrlHelper.AddQueryParameterToUrl(path, "toNewWorkbook", this.toNewWorkbook);
+            path = UrlHelper.AddQueryParameterToUrl(path, "toMultipleFiles", this.toMultipleFiles);
             if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
             if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
+            if (!string.IsNullOrEmpty(this.fontsLocation))  path = UrlHelper.AddQueryParameterToUrl(path, "fontsLocation", this.fontsLocation);
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)

@@ -1136,6 +1136,38 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
+        public void SplitTable(SplitTableRequest request, string LocalOutPath){
+            var result = SplitTable(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Split an Excel worksheet into multiple sheets by column value.
+        /// </summary>
+        /// <param name="request">Request. <see cref="SplitTableRequest" /></param>
+        public   Stream  SplitTable(SplitTableRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > SplitTableAsync(SplitTableRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
         public void SplitRemoteSpreadsheet(SplitRemoteSpreadsheetRequest request, string LocalOutPath){
             var result = SplitRemoteSpreadsheet(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
