@@ -13,5 +13,4 @@
 |MaxValue|Floating|true|false |  ||
 |MinValue|Floating|true|false |  ||
 |AverageValue|Floating|true|false |  ||
-|Value|Floating|true|false |  ||
 

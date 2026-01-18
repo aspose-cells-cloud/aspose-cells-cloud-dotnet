@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="TranslateTextFileRequest.cs">
-//   Copyright (c) 2025 Aspose.Cells Cloud
+//   Copyright (c) 2026 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -115,7 +115,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 throw new ApiException(400, "Missing required parameter 'targetLanguage' when calling TranslateTextFile");
             }
 
-            var path = baseUri + "/cells/translate/text";
+            var path = baseUri + "/cells/ai/translate/text";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")

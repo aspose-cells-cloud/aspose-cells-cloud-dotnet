@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="CellsApi.cs">
-//   Copyright (c) 2025 Aspose.Cells Cloud
+//   Copyright (c) 2026 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -62,6 +62,38 @@ namespace Aspose.Cells.Cloud.SDK.Api
             invoker = new Invoker.ApiInvoker(requestHandlers);
             ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
         }
+
+        public void DecomposeUserTask(DecomposeUserTaskRequest request, string LocalOutPath){
+            var result = DecomposeUserTask(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Translates the entire spreadsheet to the specified target language.
+        /// </summary>
+        /// <param name="request">Request. <see cref="DecomposeUserTaskRequest" /></param>
+        public   Stream  DecomposeUserTask(DecomposeUserTaskRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > DecomposeUserTaskAsync(DecomposeUserTaskRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
 
         public void TranslationSpreadsheet(TranslationSpreadsheetRequest request, string LocalOutPath){
             var result = TranslationSpreadsheet(request);
@@ -593,6 +625,69 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </summary>
 
         public async Task<   Stream  > ConvertWorksheetToPdfAsync(ConvertWorksheetToPdfRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ConvertWorksheetToHtml(ConvertWorksheetToHtmlRequest request, string LocalOutPath){
+            var result = ConvertWorksheetToHtml(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Converts a worksheet of spreadsheet on a local drive to the html file.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertWorksheetToHtmlRequest" /></param>
+        public   Stream  ConvertWorksheetToHtml(ConvertWorksheetToHtmlRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ConvertWorksheetToHtmlAsync(ConvertWorksheetToHtmlRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ConvertWorksheetToHtmlTable(ConvertWorksheetToHtmlTableRequest request, string LocalOutPath){
+            var result = ConvertWorksheetToHtmlTable(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertWorksheetToHtmlTableRequest" /></param>
+        public   Stream  ConvertWorksheetToHtmlTable(ConvertWorksheetToHtmlTableRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ConvertWorksheetToHtmlTableAsync(ConvertWorksheetToHtmlTableRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -1224,6 +1319,99 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </summary>
 
         public async Task<   Stream  > ImportDataIntoSpreadsheetAsync(ImportDataIntoSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ImportJSONDataIntoSpreadsheet(ImportJSONDataIntoSpreadsheetRequest request, string LocalOutPath){
+            var result = ImportJSONDataIntoSpreadsheet(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="ImportJSONDataIntoSpreadsheetRequest" /></param>
+        public   Stream  ImportJSONDataIntoSpreadsheet(ImportJSONDataIntoSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ImportJSONDataIntoSpreadsheetAsync(ImportJSONDataIntoSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ImportXMLDataIntoSpreadsheet(ImportXMLDataIntoSpreadsheetRequest request, string LocalOutPath){
+            var result = ImportXMLDataIntoSpreadsheet(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="ImportXMLDataIntoSpreadsheetRequest" /></param>
+        public   Stream  ImportXMLDataIntoSpreadsheet(ImportXMLDataIntoSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ImportXMLDataIntoSpreadsheetAsync(ImportXMLDataIntoSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ImportCSVDataIntoSpreadsheet(ImportCSVDataIntoSpreadsheetRequest request, string LocalOutPath){
+            var result = ImportCSVDataIntoSpreadsheet(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="ImportCSVDataIntoSpreadsheetRequest" /></param>
+        public   Stream  ImportCSVDataIntoSpreadsheet(ImportCSVDataIntoSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ImportCSVDataIntoSpreadsheetAsync(ImportCSVDataIntoSpreadsheetRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -2342,6 +2530,37 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// </summary>
 
         public async Task<   Stream  > SwapRangeAsync(SwapRangeRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void FlipData(FlipDataRequest request, string LocalOutPath){
+            var result = FlipData(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// </summary>
+        /// <param name="request">Request. <see cref="FlipDataRequest" /></param>
+        public   Stream  FlipData(FlipDataRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > FlipDataAsync(FlipDataRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));

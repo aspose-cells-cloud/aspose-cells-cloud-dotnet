@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="TranslationSpreadsheetRequest.cs">
-//   Copyright (c) 2025 Aspose.Cells Cloud
+//   Copyright (c) 2026 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -115,7 +115,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 throw new ApiException(400, "Missing required parameter 'targetLanguage' when calling TranslationSpreadsheet");
             }
 
-            var path = baseUri + "/cells/translate/spreadsheet";
+            var path = baseUri + "/cells/ai/translate/spreadsheet";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")

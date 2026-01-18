@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="AddTextRequest.cs">
-//   Copyright (c) 2025 Aspose.Cells Cloud
+//   Copyright (c) 2026 Aspose.Cells Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -49,7 +49,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
         /// <param name="text">Specify the added text content.</param>
-        /// <param name="position">Indicates the specific location for adding text content.None, AtTheBeginning, AtTheEnd, BeforeText, AfterText.  </param>
+        /// <param name="position">Indicates the specific location for adding text content.None, AtTheBeginning, AtTheEnd, BeforeText, AfterText.</param>
         /// <param name="selectText">Indicates selecting the specific position to add text based on the content of the text.</param>
         /// <param name="skipEmptyCells">Indicates skip empty cells.</param>
         /// <param name="worksheet">Specify the worksheet of spreadsheet.</param>
@@ -86,7 +86,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Indicates the specific location for adding text content.None, AtTheBeginning, AtTheEnd, BeforeText, AfterText.  
+        /// Indicates the specific location for adding text content.None, AtTheBeginning, AtTheEnd, BeforeText, AfterText.
         /// </summary>
         public string position { get; set; }
 
