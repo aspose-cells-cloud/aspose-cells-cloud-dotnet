@@ -34,4 +34,4 @@ jobs:
     - name: Run Examples
       run: |
         cd examples
-        dotnet test Example_QuickStart.csproj --verbosity normal
+        dotnet test Aspose.Cells.Cloud.SDK.Examples.csproj --verbosity normal
