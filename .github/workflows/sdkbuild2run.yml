@@ -28,7 +28,8 @@ jobs:
       run: dotnet restore examples/Aspose.Cells.Cloud.SDK.Examples.csproj
 
     - name: Build
-      run: dotnet build --no-restore -p:Configuration=Release
+      run: dotnet build examples/Aspose.Cells.Cloud.SDK.Examples.csproj --no-restore -p:Configuration=Release
+      
 
     - name: Run Examples
       run: |
