@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/aspose.cells%20Cloud%20SDK-v25.12.0-blue?style=for-the-badge&logo=dotnet) [![Product Page](https://img.shields.io/badge/Product-0288d1?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://products.aspose.cloud/cells/net/) [![Documentation](https://img.shields.io/badge/Documentation-388e3c?style=for-the-badge&logo=Hugo&logoColor=white)](https://docs.aspose.cloud/cells/) [![API Ref](https://img.shields.io/badge/Reference-f39c12?style=for-the-badge&logo=html5&logoColor=white)](https://reference.aspose.cloud/cells/) [![Examples](https://img.shields.io/badge/Examples-1565c0?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/main/examples) [![Blog](https://img.shields.io/badge/Blog-d32f2f?style=for-the-badge&logo=WordPress&logoColor=white)](https://blog.aspose.cloud/categories/aspose.cells-cloud-product-family/) [![Support](https://img.shields.io/badge/Support-7b1fa2?style=for-the-badge&logo=Discourse&logoColor=white)](https://forum.aspose.cloud/c/cells/7) [![License](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-go?style=for-the-badge&logo=rocket&logoColor=white)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE)
+![](https://img.shields.io/badge/aspose.cells%20Cloud%20SDK-v26.1.0-blue?style=for-the-badge&logo=dotnet) [![Product Page](https://img.shields.io/badge/Product-0288d1?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://products.aspose.cloud/cells/net/) [![Documentation](https://img.shields.io/badge/Documentation-388e3c?style=for-the-badge&logo=Hugo&logoColor=white)](https://docs.aspose.cloud/cells/) [![API Ref](https://img.shields.io/badge/Reference-f39c12?style=for-the-badge&logo=html5&logoColor=white)](https://reference.aspose.cloud/cells/) [![Examples](https://img.shields.io/badge/Examples-1565c0?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/main/examples) [![Blog](https://img.shields.io/badge/Blog-d32f2f?style=for-the-badge&logo=WordPress&logoColor=white)](https://blog.aspose.cloud/categories/aspose.cells-cloud-product-family/) [![Support](https://img.shields.io/badge/Support-7b1fa2?style=for-the-badge&logo=Discourse&logoColor=white)](https://forum.aspose.cloud/c/cells/7) [![License](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-go?style=for-the-badge&logo=rocket&logoColor=white)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE)
 
 
 Aspose.Cells Cloud SDK for .NET empowers developers to programmatically manage Excel files with precision. This comprehensive .NET library supports advanced Excel operations like cell data formatting, dynamic formulas, pivot tables, conditional styling, charts, hyperlinks, comments, and data validation. It also enables seamless Excel file conversion (XLSX, CSV, PDF, ODS), document splitting/merging, and file repair. Designed for cloud integration, this API-first solution accelerates spreadsheet automation while ensuring data integrity across platforms like AWS, Azure, and Google Cloud.
@@ -96,13 +96,17 @@ To get started with Aspose.Cells Cloud for .NET, follow these steps:
 - Import/Export: Facilitates importing data from various sources into spreadsheets and exporting spreadsheet data to other formats.
 - Security Management: Offers a range of security features like data encryption, access control, and permission management to safeguard the security and integrity of spreadsheet data.
 
-## Feature & Enhancements in Version v25.12.0
+## Feature & Enhancements in Version v26.1
 
 Full list of issues covering all changes in this release:
 
-|**Summary**|**Category**|
-| :- | :- |
-| Support split table of spreadsheet. | New Feature  |
+| **Summary**                                                                              | **Category** |
+| :--------------------------------------------------------------------------------------- | :----------- |
+| Support to AI decompose user task                                                        | New Feature  |
+| Aspose.Cells Cloud python plugin for markitdown.                                         | New Feature  |
+| Optimization of the data import API: adding support for importing individual data types. | New Feature  |
+| Support to convert worksheet to html table.                                              | New Feature  |
+| Support to flip data in worksheet.                                                       | New Feature  |
 
 ## Available SDKs
 
