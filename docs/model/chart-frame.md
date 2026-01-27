@@ -19,3 +19,5 @@
 |X|Integer|true|false |  |Gets or sets the x coordinate of the upper left corner in units of 1/4000 of the chart area. |
 |Y|Integer|true|false |  |Gets or sets the y coordinate of the upper left corner in units of 1/4000 of the chart area. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

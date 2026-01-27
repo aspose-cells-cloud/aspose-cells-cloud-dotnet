@@ -22,3 +22,5 @@ Represents conditional formatting condition.
 |Top10|Class|true|false |  |Get the conditional formatting's "Top10" instance.                        The default instance's rule highlights cells whose                        values fall in the top 10 bracket.                        Valid only for type is Top10.|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

@@ -13,3 +13,5 @@
 |AlignmentType|String|true|false |  |Gets or sets the alignment for tiling. |
 |MirrorType|String|true|false |  |Gets or sets the mirror type for tiling. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

@@ -24,3 +24,5 @@ Encapsulates the object that represents a single Workbook cell.
 |Worksheet|String|true|false |  |Gets the parent worksheet.|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

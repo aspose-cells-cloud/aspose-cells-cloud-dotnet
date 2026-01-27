@@ -12,3 +12,5 @@
 |TextOptions|Class|true|false |  |Returns the text options. |
 |Type|String|true|false |  |Gets the type of text node. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

@@ -14,3 +14,5 @@ Represents the datetime's group setting.
 |Second|Integer|true|false |  |Gets and sets the second of the grouped date time.|
 |Year|Integer|true|false |  |Gets and sets the year of the grouped date time.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

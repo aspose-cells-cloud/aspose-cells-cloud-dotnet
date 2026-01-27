@@ -11,3 +11,5 @@ Represents the color settings of the data bars for negative values that are   de
 |Color|Class|true|false |  |Gets or sets a FormatColor object that you can use to specify the fill color for negative data bars. |
 |ColorType|String|true|false |  |Gets or sets whether to use the same fill color as positive data bars. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

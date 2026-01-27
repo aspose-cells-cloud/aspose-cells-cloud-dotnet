@@ -12,3 +12,5 @@ Represents results of analyzed data.
 |Results|Container|true|false |  |Represents analyzed table description.|
 |SuggestedFile|String|true|false |  |base64String Excel file|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

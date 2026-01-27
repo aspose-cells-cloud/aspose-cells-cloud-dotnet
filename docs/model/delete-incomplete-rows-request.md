@@ -12,3 +12,5 @@ I'm here to help! Could you please provide the features you would like me to sum
 |Region|String|true|false |  |The regional settings for workbook.|
 |Ranges|Container|true|false |  |A property named "Ranges" of type IList of Range, with a default value of an empty List of Range.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

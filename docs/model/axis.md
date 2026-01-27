@@ -42,3 +42,5 @@ Encapsulates the object that represents an axis of chart.
 |Title|Class|true|false |  |Gets the axis' title.|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

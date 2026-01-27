@@ -19,3 +19,5 @@ Encapsulates the object that represents a cell comment.
 |TextVerticalAlignment|String|true|false |  |Gets and sets the text vertical alignment type of the comment.|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

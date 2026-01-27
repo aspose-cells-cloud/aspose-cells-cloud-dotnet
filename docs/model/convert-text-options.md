@@ -14,3 +14,5 @@ Class summary: The features of the new smartphone include a high-resolution disp
 |SourceCharacters|String|true|false |  ||
 |TargetCharacters|String|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

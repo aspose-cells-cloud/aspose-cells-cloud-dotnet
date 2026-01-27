@@ -17,3 +17,5 @@ Appliance features: 1. Automatic defrost system 2. Energy-efficient LED lighting
 |KeepDelimitersPosition|String|true|false |  ||
 |HowToSplit|String|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

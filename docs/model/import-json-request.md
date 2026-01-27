@@ -10,3 +10,5 @@ Indicates import xml data request
 |ImportPosition|Class|true|false |  |Import position description.|
 |JsonContent|String|true|false |  |Base64String default is null|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

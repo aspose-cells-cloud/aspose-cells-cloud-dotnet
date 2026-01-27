@@ -39,3 +39,5 @@
 |ConditionalFormattings|Class|true|false |  |Gets the ConditionalFormattings in the worksheet. |
 |Hyperlinks|Class|true|false |  |Gets the  collection. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

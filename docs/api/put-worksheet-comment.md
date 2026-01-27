@@ -85,3 +85,5 @@ PageTitle: Add cell comment in the worksheet.PageDescription: Aspose.Cells Cloud
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/WorksheetsController/PutWorksheetComment) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
+[[Back to API list]](../DeveloperGuide.md#api-reference)  
+[[Back to README]](../../README.md)

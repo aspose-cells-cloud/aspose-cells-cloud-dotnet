@@ -14,3 +14,5 @@
 |CalculationMonitor|Class|true|false |  |The monitor for user to track the progress of formula calculation. |
 |LinkedDataSources|Array|true|false |  |Specifies the data sources for external links used in formulas. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

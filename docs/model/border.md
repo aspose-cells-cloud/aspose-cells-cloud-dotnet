@@ -12,3 +12,5 @@
 |ThemeColor|Class|true|false |  |Gets and sets the theme color of the border. |
 |ArgbColor|Integer|true|false |  |Gets and sets the color with a 32-bit ARGB value. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

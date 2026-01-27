@@ -13,3 +13,5 @@
 |InvertIfNegative|Boolean|true|false |  |If the property is true and the value of chart point is a negative number,            the foreground color and background color will be exchanged. |
 |Transparency|Floating|true|false |  |Returns or sets the degree of transparency of the area as a value from 0.0 (opaque) through 1.0 (clear). |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

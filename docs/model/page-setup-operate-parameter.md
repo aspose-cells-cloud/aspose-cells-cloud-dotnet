@@ -9,3 +9,5 @@ Represents page setup operate parameter.
 |PageSetup|Class|true|false |  |Represents worksheet page setup.|
 |OperateType|String|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

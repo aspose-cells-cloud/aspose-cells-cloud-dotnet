@@ -17,3 +17,5 @@ Represents a PivotFilter in PivotFilter Collection.
 |Value2|String|true|false |  |Gets the string value2 of the label pivot filter.            |
 |Top10Filter|Class|true|false |  |A property that allows for setting and getting a Top10Filter object for filtering data.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

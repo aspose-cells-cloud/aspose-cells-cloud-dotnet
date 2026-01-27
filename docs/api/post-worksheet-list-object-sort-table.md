@@ -67,3 +67,5 @@ PageTitle: Sort list object in the worksheet.PageDescription: Aspose.Cells Cloud
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ListObjectsController/PostWorksheetListObjectSortTable) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
+[[Back to API list]](../DeveloperGuide.md#api-reference)  
+[[Back to README]](../../README.md)

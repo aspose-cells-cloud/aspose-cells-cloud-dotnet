@@ -12,3 +12,5 @@ Represents import data task parameter.
 |TargetDataSource|Class|true|false |  |Represents destination data source.|
 |DestinationWorkbook|Class|true|false |  |Represents destination data source.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

@@ -12,3 +12,5 @@ File or folder information
 |Size|Long|true|false |  |File or folder size.|
 |Path|String|true|false |  |File or folder path.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

@@ -10,3 +10,5 @@
 |MaxValue|Class|true|false |  |Gets and sets the dynamic filter max value. |
 |Value|Class|true|false |  |Gets and sets the dynamic filter value. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

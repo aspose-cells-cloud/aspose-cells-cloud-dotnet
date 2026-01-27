@@ -70,3 +70,5 @@ PageTitle: Add a vertical page break in the worksheet.PageDescription: Aspose.Ce
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/PageBreaksController/PutVerticalPageBreak) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
+[[Back to API list]](../DeveloperGuide.md#api-reference)  
+[[Back to README]](../../README.md)

@@ -26,3 +26,5 @@ Encapsulates the object that represents the line format.
 |Weight|String|true|false |  |Gets or sets the  of the line. |
 |WeightPt|Floating|true|false |  |Gets or sets the weight of the line in unit of points. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

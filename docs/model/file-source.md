@@ -9,3 +9,5 @@ I'm sorry, I just realized you didn't provide any features for me to summarize. 
 |FileSourceType|String|true|false |  |A property named FileSourceType of type FileSourceType that can be accessed and modified.|
 |FilePath|String|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

@@ -70,3 +70,5 @@ PageTitle: Clear cell area formats in the worksheet.PageDescription: Aspose.Cell
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/CellsController/PostClearFormats) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
+[[Back to API list]](../DeveloperGuide.md#api-reference)  
+[[Back to README]](../../README.md)

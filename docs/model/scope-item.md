@@ -9,3 +9,5 @@ Define the specific range in your Excel worksheet where you want the spreadsheet
 |Worksheet|String|true|false |  |The specific worksheet of spreadsheet.|
 |Ranges|Array|true|false |  |The specific ranges of worksheet.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

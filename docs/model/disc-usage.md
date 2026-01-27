@@ -9,3 +9,5 @@ Class for disc space information.
 |UsedSize|Long|true|false |  |Application used disc space.|
 |TotalSize|Long|true|false |  |Total disc space.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

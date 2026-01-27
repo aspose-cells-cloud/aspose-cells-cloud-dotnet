@@ -9,3 +9,5 @@ Sure, please provide me with the features you would like me to summarize in one 
 |legendEntryList|Container|true|false |  |Property: Utilizes XML element "LengendEntry" to represent a list of LinkElement items in the class.|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

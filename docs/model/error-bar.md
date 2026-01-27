@@ -33,3 +33,5 @@ Represents error bar of data series.
 |Weight|String|true|false |  ||
 |WeightPt|Floating|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

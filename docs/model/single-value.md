@@ -9,3 +9,5 @@ Represents single value.
 |Value|String|true|false |  |Represents value.|
 |ValueType|Class|true|false |  |Represents value type.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

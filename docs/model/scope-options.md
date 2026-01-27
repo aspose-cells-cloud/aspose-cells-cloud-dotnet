@@ -9,3 +9,5 @@ Specifies the range of cells within the worksheet where the spreadsheet operatio
 |Scope|String|true|false |  |ScopeOptionsType is a type that represents options or settings that are specific to a particular scope.|
 |ScopeItems|Array|true|false |  |Specifies the designated work area within the worksheet where operations are to be performed. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

@@ -17,3 +17,5 @@ Represents worksheet data statistics.
 |CellsCountInTable|Integer|true|false |  |Represents cell number.|
 |CellsCountIsFormula|Integer|true|false |  |Represents formula number.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

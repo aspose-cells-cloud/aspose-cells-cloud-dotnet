@@ -23,3 +23,5 @@ Represents the text options.
 |Size|Integer|true|false |  ||
 |Underline|String|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

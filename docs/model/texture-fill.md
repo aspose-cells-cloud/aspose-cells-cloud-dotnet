@@ -13,3 +13,5 @@
 |PicFormatOption|Class|true|false |  |Gets or sets picture format option. |
 |Image|Class|true|false |  |The class has a public property named "Image" of type LinkElement that can be accessed and set.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

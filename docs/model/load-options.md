@@ -18,3 +18,5 @@ Represents the options of loading the file.
 |StandardFont|String|true|false |  |Sets the default standard font name|
 |StandardFontSize|Floating|true|false |  |Sets the default standard font size.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

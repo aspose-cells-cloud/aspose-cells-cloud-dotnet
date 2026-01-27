@@ -85,3 +85,5 @@ This method searches for specified text within a spreadsheet file stored in remo
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchController/SearchContentInRemoteSpreadsheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
+[[Back to API list]](../DeveloperGuide.md#api-reference)  
+[[Back to README]](../../README.md)

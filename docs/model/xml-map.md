@@ -10,3 +10,5 @@ Represents Xml map information.
 |RootElementName|String|true|false |  |Gets root element name. |
 |DataBinding|Class|true|false |  |Gets an  of this map. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

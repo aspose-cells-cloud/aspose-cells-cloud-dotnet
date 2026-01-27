@@ -14,3 +14,5 @@ Indicates batch protect file request
 |OutFolder|String|true|false |  |The directory that stores files whose format conversion was successful.|
 |OutStorage|String|true|false |  |Aspose Cloud storage name.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

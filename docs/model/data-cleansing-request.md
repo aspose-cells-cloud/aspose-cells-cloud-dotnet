@@ -12,3 +12,5 @@ A data cleansing request for an Spreadsheet file.
 |OutFileFormat|String|true|false |  |finish to data cleansing, outfile`s file format.|
 |DataCleansing|Class|true|false |  |Data cleansing content|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

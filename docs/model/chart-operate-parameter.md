@@ -19,3 +19,5 @@ Represents chart operate parameter.
 |Title|String|true|false |  |Represents chart title.|
 |OperateType|String|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

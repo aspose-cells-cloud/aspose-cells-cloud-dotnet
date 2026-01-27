@@ -8,3 +8,5 @@ Represents operate parameter.
 | :- | :- | :- |:- |  :- | :- |
 |OperateType|String|true|false |  |Represents task operate type.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

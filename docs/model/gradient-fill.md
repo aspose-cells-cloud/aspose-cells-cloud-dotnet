@@ -11,3 +11,5 @@
 |Angle|Floating|true|false |  |The angle of linear fill. |
 |GradientStops|Container|true|false |  |Represents the gradient stop collection. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

@@ -10,3 +10,5 @@ Indicates table total request
 |TotalsCalculation|String|true|false |  |Indicates totals calculation.|
 |CustomFormula|String|true|false |  |Indicates custom formula.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

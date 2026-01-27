@@ -13,3 +13,5 @@ Represents the key of the data sorter.
 |IconId|Integer|true|false |  |Represents the id of the icon set type. |
 |Color|Class|true|false |  |Gets the sorted color. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

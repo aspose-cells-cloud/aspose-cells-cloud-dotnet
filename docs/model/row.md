@@ -15,3 +15,5 @@ Represents a single row in a worksheet.
 |Style|Class|true|false |  |Represents the style of this row.|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

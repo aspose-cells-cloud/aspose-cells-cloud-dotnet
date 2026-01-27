@@ -9,3 +9,5 @@ Represents save result task parameter.
 |ResultSource|String|true|false |  |Represents result data source.|
 |ResultDestination|Class|true|false |  |Represents result destination data.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

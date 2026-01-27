@@ -16,3 +16,5 @@ Represents description of analyzed column.
 |StyleNumber|Integer|true|false |  ||
 |columnDataExceptionDescription|String|true|false |  |Column data exception description.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

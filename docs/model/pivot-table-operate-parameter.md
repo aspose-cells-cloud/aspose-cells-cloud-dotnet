@@ -16,3 +16,5 @@ Represents pivot table operate parameter.
 |PivotFieldData|Array|true|false |  |Represents pivot data field.|
 |OperateType|String|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

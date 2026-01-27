@@ -9,3 +9,5 @@ Encapsulates a collection of  objects.
 |PictureList|Container|true|false |  |Property Summary: Contains a list of elements with the XML element name "picture."|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

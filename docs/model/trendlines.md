@@ -9,3 +9,5 @@ Represents a collection of all the  objects for the specified data series.
 |TrendlineList|Container|true|false |  |This property allows for a list of Trendline objects to be stored under the XmlElement "TrendLine".|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

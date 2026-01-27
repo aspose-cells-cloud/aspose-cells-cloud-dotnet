@@ -13,3 +13,5 @@ Describe the ColorScale conditional formatting rule. This conditional formatting
 |MinCfvo|Class|true|false |  |Get or set this ColorScale's min value object.            Cannot set null or CFValueObject with type FormatConditionValueType.Max to it. |
 |MinColor|Class|true|false |  |Get or set the gradient color for the minimum value in the range. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

@@ -23,3 +23,5 @@ Class Summary: The features discussed include natural language processing, image
 |AllowSorting|String|true|false |  ||
 |AllowUsingPivotTable|String|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

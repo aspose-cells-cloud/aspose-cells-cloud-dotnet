@@ -54,3 +54,5 @@ Encapsulates the object that represents a single data series in a chart.
 |YErrorBar|Class|true|false |  |Represents Y direction error bar of the series.|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

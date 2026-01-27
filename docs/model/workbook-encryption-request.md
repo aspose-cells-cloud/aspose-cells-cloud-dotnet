@@ -10,3 +10,5 @@ Used by workbook encryption/decryption requests.
 |KeyLength|Integer|true|false |  |Encription key length.|
 |Password|String|true|false |  |Encription password.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

@@ -17,3 +17,5 @@ Class summary: Identifying key features of a statistical dataset and methods for
 |Region|String|true|false |  |The regional settings for workbook.|
 |SaveOptions|Class|true|false |  |Indicates save options.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

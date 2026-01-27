@@ -13,3 +13,5 @@
 |GradientFill|Class|true|false |  |Gets  object. |
 |ImageData|String|true|false |  |Gets and sets the picture image data. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

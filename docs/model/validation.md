@@ -24,3 +24,5 @@ Represents data validation.settings.
 |Value2|String|true|false |  |Represents the second value associated with the data validation.|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

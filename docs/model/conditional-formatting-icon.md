@@ -10,3 +10,5 @@
 |Index|Integer|true|false |  |Gets and sets the icon's index in the icon set. |
 |Type|String|true|false |  |Gets and sets the icon set type. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

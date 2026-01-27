@@ -14,3 +14,5 @@ Indicates create pivot table request
 |PivotFieldColumns|Array|true|false |  |Represents column fields in a PivotTable report.|
 |PivotFieldData|Array|true|false |  |Represents data fields in a PivotTable report.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

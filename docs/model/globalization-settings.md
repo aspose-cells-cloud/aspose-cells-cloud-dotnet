@@ -12,3 +12,5 @@ Represents the globalization settings.
 |RowSeparatorOfFormulaArray|String|true|false |  |Gets the separator for rows in array data in formula. |
 |ColumnSeparatorOfFormulaArray|String|true|false |  |Gets the separator for the items in array's row data in formula. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

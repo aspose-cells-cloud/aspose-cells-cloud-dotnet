@@ -9,3 +9,5 @@ Indicates range sort request
 |DataSorter|Class|true|false |  |Summary description for DataSorter.|
 |CellArea|Class|true|false |  |Encapsulates the object that represents a range of cells within a spreadsheet.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

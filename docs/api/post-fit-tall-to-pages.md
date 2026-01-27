@@ -65,3 +65,5 @@ PageTitle: Set the scale at which the page will fit tall when printed on the she
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/PageSetupController/PostFitTallToPages) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
+[[Back to API list]](../DeveloperGuide.md#api-reference)  
+[[Back to README]](../../README.md)

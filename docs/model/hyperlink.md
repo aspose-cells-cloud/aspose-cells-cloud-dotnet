@@ -13,3 +13,5 @@ Encapsulates the object that represents a hyperlink.
 |LinkType|String|true|false |  |Gets the link type.|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

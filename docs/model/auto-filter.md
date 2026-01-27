@@ -12,3 +12,5 @@ Represents autofiltering for the specified worksheet.
 |ShowFilterButton|Boolean|true|false |  |Indicates whether the AutoFilter button for this column is visible.|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

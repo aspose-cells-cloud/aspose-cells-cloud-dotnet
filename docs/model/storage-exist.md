@@ -8,3 +8,5 @@ Storage exists
 | :- | :- | :- |:- |  :- | :- |
 |Exists|Boolean|true|false |  |Shows that the storage exists.            |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

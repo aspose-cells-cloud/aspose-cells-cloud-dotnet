@@ -9,3 +9,5 @@
 |Criteria|Class|true|false |  |Gets and sets the criteria. |
 |FilterOperatorType|String|true|false |  |Gets and sets the filter operator type. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

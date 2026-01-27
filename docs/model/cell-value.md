@@ -13,3 +13,5 @@ Represents the cell value and corresponding type.
 |formula|String|true|false |  ||
 |style|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

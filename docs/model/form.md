@@ -62,3 +62,5 @@ I'm happy to help! Please provide the features you would like me to summarize in
 |Hyperlink|String|true|false |  ||
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

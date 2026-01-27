@@ -12,3 +12,5 @@ Represents a legend entry in a chart legend.
 |IsDeleted|Boolean|true|false |  |Gets and sets whether the legend entry is deleted.|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

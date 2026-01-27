@@ -10,3 +10,5 @@ Class summary: Understanding the various features and tools available in Adobe I
 |Position|Floating|true|false |  ||
 |Transparency|Floating|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

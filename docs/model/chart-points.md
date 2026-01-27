@@ -9,3 +9,5 @@ Represents a collection that contains all the points in one series.
 |ChartPointList|Container|true|false |  |This class has a property named ChartPointList of type List ChartPoint  with an XmlElement attribute "ChartPoint".|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

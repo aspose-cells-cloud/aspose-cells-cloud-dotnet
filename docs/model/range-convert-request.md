@@ -11,3 +11,5 @@ Indicates range copy request
 |ImageOrPrintOptions|Class|true|false |  |Represents the paste special options.            |
 |PageSetup|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

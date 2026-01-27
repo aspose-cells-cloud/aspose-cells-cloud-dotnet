@@ -10,3 +10,5 @@ Monitor for user to track the progress of formula calculation.
 |ValueChanged|Boolean|true|false |  |Whether the cell's value has been changed after the calculation.  Should be used only in .        |
 |CalculatedValue|Class|true|false |  |Gets the newly calculated value of the cell. Should be used only in .        |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

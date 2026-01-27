@@ -30,3 +30,5 @@
 |BackgroundThemeColor|Class|true|false |  |Gets and sets the background theme color. |
 |ForegroundThemeColor|Class|true|false |  |Gets and sets the foreground theme color. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

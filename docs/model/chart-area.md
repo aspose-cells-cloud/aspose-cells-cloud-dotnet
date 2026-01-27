@@ -19,3 +19,5 @@ Encapsulates the object that represents the chart area in the worksheet.
 |X|Integer|true|false |  ||
 |Y|Integer|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

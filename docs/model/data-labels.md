@@ -38,3 +38,5 @@ Encapsulates a collection of all the DataLabel objects for the specified Series.
 |X|Integer|true|false |  ||
 |Y|Integer|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

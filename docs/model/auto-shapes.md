@@ -9,3 +9,5 @@ Sure! Just provide me with the features you would like me to summarize into one 
 |AutoShapeList|Container|true|false |  |Property Summary: Contains a list of LinkElement objects identified by the XML element "autoshape".|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

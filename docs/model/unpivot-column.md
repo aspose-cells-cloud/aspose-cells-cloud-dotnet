@@ -11,3 +11,5 @@ Unpivot column.
 |ValueMapName|String|true|false |  |Indicates the column is used to store the value of unpivot columns.|
 |AppliedOperateType|String|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

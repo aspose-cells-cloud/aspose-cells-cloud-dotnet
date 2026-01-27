@@ -10,3 +10,5 @@ Indicates color filter request
 |ForegroundColor|Class|true|false |  |Foreground color|
 |BackgroundColor|Class|true|false |  |Background color|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

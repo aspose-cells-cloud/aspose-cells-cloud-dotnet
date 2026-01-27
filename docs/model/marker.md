@@ -11,3 +11,5 @@
 |MarkerSize|Integer|true|false |  |Represents the marker size in unit of points. Applies to line chart, scatter chart, or radar chart. |
 |MarkerStyle|String|true|false |  |Represents the marker style. Applies to line chart, scatter chart, or radar chart. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

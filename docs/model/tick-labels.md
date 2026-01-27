@@ -19,3 +19,5 @@ Represents the tick-mark labels associated with tick marks on a chart axis.
 |DirectionType|String|true|false |  |Gets and sets the direction of text.|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

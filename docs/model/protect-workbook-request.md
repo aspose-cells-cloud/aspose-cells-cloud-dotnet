@@ -14,3 +14,5 @@ Indicates protect workbook request
 |DigitalSignature|Class|true|false |  |Indicates signature in file.|
 |MarkAsFinal|Boolean|true|false |  |Indicates mark as final.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

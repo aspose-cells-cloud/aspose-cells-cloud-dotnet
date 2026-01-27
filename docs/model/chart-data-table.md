@@ -16,3 +16,5 @@ Represents a chart data table.
 |ShowLegendKey|Boolean|true|false |  |True if the data label legend key is visible.|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

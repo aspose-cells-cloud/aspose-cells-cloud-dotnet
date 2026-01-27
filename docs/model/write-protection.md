@@ -11,3 +11,5 @@ Specifies write protection settings for a workbook.
 |IsWriteProtected|Boolean|true|false |  |Indicates whether this workbook is write protected. |
 |Password|String|true|false |  |Sets the protected password to modify the file. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

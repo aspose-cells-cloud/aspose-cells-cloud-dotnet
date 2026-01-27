@@ -15,3 +15,5 @@ Represents split workbook task parameter.
 |VerticalResolution|Integer|true|false |  |When destination file format is image , vertical resolution can not be null.|
 |HorizontalResolution|Integer|true|false |  |When destination file format is image , horizontal resolution can not be null.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

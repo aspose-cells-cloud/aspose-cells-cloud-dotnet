@@ -15,3 +15,5 @@ Represents all auto fitter options.
 |FormatStrategy|String|true|false |  |Gets and sets the formatted strategy.|
 |ForRendering|Boolean|true|false |  |Indicates whether fit for rendering purpose.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

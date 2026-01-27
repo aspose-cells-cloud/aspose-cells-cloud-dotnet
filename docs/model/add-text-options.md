@@ -15,3 +15,5 @@ Class summary: The features of this class include hands-on learning activities, 
 |SelectText|String|true|false |  |Selected text of cell where text should be inserted or selected in the spreadsheet.|
 |SkipEmptyCells|Boolean|true|false |  |Indicates whether empty cells should be skipped during processing.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

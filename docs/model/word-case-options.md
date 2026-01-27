@@ -11,3 +11,5 @@ I'm here to assist you. Please provide the features you would like me to summari
 |WordCaseType|String|true|false |  ||
 |ScopeOptions|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

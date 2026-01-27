@@ -10,3 +10,5 @@ Can you please provide the features that you would like me to summarize for the 
 |NeedThumbnail|Boolean|true|false |  ||
 |BuildSuggestoinSheet|Boolean|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

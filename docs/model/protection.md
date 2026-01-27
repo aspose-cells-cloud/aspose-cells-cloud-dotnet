@@ -24,3 +24,5 @@ Represents the various types of protection options available for a worksheet.
 |AllowSelectingLockedCell|Boolean|true|false |  |Represents if the user is allowed to select locked cells on a protected worksheet. |
 |AllowSelectingUnlockedCell|Boolean|true|false |  |Represents if the user is allowed to select unlocked cells on a protected worksheet. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

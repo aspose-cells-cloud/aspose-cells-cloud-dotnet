@@ -29,3 +29,5 @@ Represents a list object on a worksheet.            The ListObject object is a m
 |AlternativeDescription|String|true|false |  |Gets and sets the alternative description.|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

@@ -15,3 +15,5 @@ Represents a defined name for a range of cells.
 |Text|String|true|false |  |Gets the name text of the object.|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

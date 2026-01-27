@@ -14,3 +14,5 @@
 |BackTransparency|Floating|true|false |  |Gets or sets the transparency of background color. |
 |ForeTransparency|Floating|true|false |  |Gets or sets the transparency of foreground color. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

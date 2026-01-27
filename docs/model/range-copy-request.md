@@ -12,3 +12,5 @@ Indicates range copy request
 |TargetWorkbook|String|true|false |  ||
 |PasteOptions|Class|true|false |  |Represents the paste special options.            |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

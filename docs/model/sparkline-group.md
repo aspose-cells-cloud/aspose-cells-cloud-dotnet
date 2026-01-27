@@ -34,3 +34,5 @@
 |VerticalAxisMinValue|Floating|true|false |  |Gets and sets the custom minimum value for the vertical axis. |
 |VerticalAxisMinValueType|String|true|false |  |Represents the vertical axis minimum value type. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

@@ -16,3 +16,5 @@
 |Top10Filter|Class|true|false |  ||
 |Visibledropdown|String|true|false |  |Indicates whether the AutoFilter button for this column is visible. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

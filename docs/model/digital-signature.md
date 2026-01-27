@@ -15,3 +15,5 @@ Signature in file.
 |IsValid|Boolean|true|false |  |If this digital signature is valid and the document has not been tampered with, this value will be true.|
 |XAdESType|String|true|false |  |XAdES type. Default value is None(XAdES is off).|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

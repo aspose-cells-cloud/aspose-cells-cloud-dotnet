@@ -15,3 +15,5 @@ I can help summarize features, please provide the details you'd like me to summa
 |DataSource|Class|true|false |  ||
 |Source|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

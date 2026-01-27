@@ -17,3 +17,5 @@ Represents a single point in a series in a chart.
 |IsInSecondaryPlot|Boolean|true|false |  |Gets or sets a value indicates whether this data points is in the second pie or bar on a pie of pie or bar of pie chart.|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

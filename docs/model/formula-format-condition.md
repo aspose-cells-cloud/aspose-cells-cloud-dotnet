@@ -10,3 +10,5 @@ Class summary: This class covers various features related to data visualization 
 |Formula2|String|true|false |  |Gets and sets the value or expression associated with conditional formatting.|
 |Operator|String|true|false |  |Gets and sets the conditional format operator type.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

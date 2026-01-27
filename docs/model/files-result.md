@@ -8,3 +8,5 @@ Class features: Weekly lectures, group projects, midterm and final exams, and pa
 | :- | :- | :- |:- |  :- | :- |
 |Files|Container|true|false |  |A property named **Files** of type **IList FileInfo ** containing a collection of file information objects.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

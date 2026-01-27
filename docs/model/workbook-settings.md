@@ -69,3 +69,5 @@
 |FormulaSettings|Class|true|false |  |Gets the settings for formula-related features. |
 |ForceFullCalculate|Boolean|true|false |  |Fully calculates every time when a calculation is triggered. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

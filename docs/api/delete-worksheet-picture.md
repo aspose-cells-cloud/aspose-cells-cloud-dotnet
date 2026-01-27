@@ -66,3 +66,5 @@ PageTitle: Update a picture by index in the worksheet.PageDescription: Aspose.Ce
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/PicturesController/DeleteWorksheetPicture) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
+[[Back to API list]](../DeveloperGuide.md#api-reference)  
+[[Back to README]](../../README.md)

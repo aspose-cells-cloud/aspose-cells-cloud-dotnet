@@ -14,3 +14,5 @@ Encapsulates the object that represents the floor of a 3-D chart.
 |InvertIfNegative|Boolean|true|false |  ||
 |Transparency|Floating|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

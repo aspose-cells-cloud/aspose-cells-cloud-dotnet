@@ -15,3 +15,5 @@
 |Type|String|true|false |  |The color type. |
 |Transparency|Floating|true|false |  |Gets and sets transparency as a value from 0.0 (opaque) through 1.0 (clear). |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

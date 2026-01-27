@@ -18,3 +18,5 @@ Settings of formulas and calculation.
 |EnableCalculationChain|Boolean|true|false |  |Whether enable calculation chain for formulas. Default is false. |
 |PreservePaddingSpaces|Boolean|true|false |  |Indicates whether preserve those spaces and line breaks that are padded between formula tokens            while getting and setting formulas.            Default value is false. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

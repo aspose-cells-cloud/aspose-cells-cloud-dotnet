@@ -14,3 +14,5 @@ Represents a pivot table, which is a pivot table created based on data analysis 
 |PivotFieldData|Array|true|false |  |Represents data fields in a PivotTable report.|
 |Thumbnail|String|true|false |  |Represents pivot table thumbnail. Base64String|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

@@ -12,3 +12,5 @@
 |IsTop|Boolean|true|false |  |Indicates whether it's top filter. |
 |Items|Integer|true|false |  |Gets and sets the items of the filter. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

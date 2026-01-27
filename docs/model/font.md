@@ -17,3 +17,5 @@
 |Size|Integer|true|false |  |Gets or sets the size of the font. |
 |Underline|String|true|false |  |Gets or sets the font underline type. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

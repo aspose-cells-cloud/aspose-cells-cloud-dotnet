@@ -23,3 +23,5 @@ Represents analyzed table description.
 |DiscoverCharts|Container|true|false |  |Represents a collection of charts, which is a collection of charts created based on data analysis of a table.|
 |DiscoverPivotTables|Container|true|false |  |Represents a collection of pivot tables, which is a collection of pivot tables created based on data analysis of a table.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

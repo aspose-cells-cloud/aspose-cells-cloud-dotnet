@@ -10,3 +10,5 @@ Represents pivot column for data table.
 |ValueColumnNames|Container|true|false |  |Represents column name that sets the column's value to the value of the pivot column.|
 |AppliedOperateType|String|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

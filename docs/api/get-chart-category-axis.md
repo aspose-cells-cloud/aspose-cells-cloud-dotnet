@@ -81,3 +81,5 @@ PageTitle: Retrieve descriptions of chart series axis in the chart.PageDescripti
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ChartsController/GetChartCategoryAxis) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
+[[Back to API list]](../DeveloperGuide.md#api-reference)  
+[[Back to README]](../../README.md)

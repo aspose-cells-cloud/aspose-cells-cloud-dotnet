@@ -1,11 +1,16 @@
 ![](https://img.shields.io/badge/aspose.cells%20Cloud%20SDK-v26.1.0-blue?style=for-the-badge&logo=dotnet) [![Product Page](https://img.shields.io/badge/Product-0288d1?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://products.aspose.cloud/cells/net/) [![Documentation](https://img.shields.io/badge/Documentation-388e3c?style=for-the-badge&logo=Hugo&logoColor=white)](https://docs.aspose.cloud/cells/) [![API Ref](https://img.shields.io/badge/Reference-f39c12?style=for-the-badge&logo=html5&logoColor=white)](https://reference.aspose.cloud/cells/) [![Examples](https://img.shields.io/badge/Examples-1565c0?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/main/examples) [![Blog](https://img.shields.io/badge/Blog-d32f2f?style=for-the-badge&logo=WordPress&logoColor=white)](https://blog.aspose.cloud/categories/aspose.cells-cloud-product-family/) [![Support](https://img.shields.io/badge/Support-7b1fa2?style=for-the-badge&logo=Discourse&logoColor=white)](https://forum.aspose.cloud/c/cells/7) [![License](https://img.shields.io/github/license/aspose-cells-cloud/aspose-cells-cloud-go?style=for-the-badge&logo=rocket&logoColor=white)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/LICENSE)
 
+[Aspose.Cells Cloud SDK for Net](https://products.aspose.cloud/cells/net) is a cloud-native REST API that enables Net developers to **create**, **read**, **edit**, **convert**, and **repair** spreadsheet files—including **Excel** (**XLS**, **XLSX**, **XLSB**, **XLSM**), **OpenDocument Spreadsheet (ODS**), **CSV**, **TSV**, **JSON**, **HTML**, **PDF**, and **more—without requiring Microsoft Excel or Office to be installed**.
 
-Aspose.Cells Cloud SDK for .NET empowers developers to programmatically manage Excel files with precision. This comprehensive .NET library supports advanced Excel operations like cell data formatting, dynamic formulas, pivot tables, conditional styling, charts, hyperlinks, comments, and data validation. It also enables seamless Excel file conversion (XLSX, CSV, PDF, ODS), document splitting/merging, and file repair. Designed for cloud integration, this API-first solution accelerates spreadsheet automation while ensuring data integrity across platforms like AWS, Azure, and Google Cloud.
+Built on the **Aspose.Cells Cloud Web API**, this MIT-licensed SDK supports advanced spreadsheet operations such as:
 
-# .NET package for Aspose.Cells Cloud
+- Cell formatting, formulas, and data validation
+- Pivot tables, charts, hyperlinks, and comments
+- Conditional formatting and smart markers
+- Worksheet merging, splitting, and protection
+- Batch processing and background removal
 
-Enhance your .NET applications with [Aspose.Cells Cloud](https://products.aspose.cloud/cells/net) – a powerful, cloud-based SDK that enables seamless integration with [Excel, ODS, CSV, Json and other spreadsheet document formats](https://docs.aspose.cloud/cells/supported-file-formats/). Leveraging its robust REST API, developers can effortlessly create, read, edit, convert, and manipulate spreadsheet content programmatically—without requiring any local office software.
+It seamlessly integrates with **AWS**, **Microsoft Azure**, and **Google Cloud**, ensuring **high availability**, **scalability**, and **data integrity**. Ideal for serverless apps, microservices, and cloud automation workflows.
 
 ## Quick Start Guide
 
@@ -83,7 +88,40 @@ To get started with Aspose.Cells Cloud for .NET, follow these steps:
 |[EPUB](https://docs.fileformat.com/database/dbf/)|database file| |&radic;|
 |[XHTML](https://docs.fileformat.com/web/xhtml/)|XHTML File Format| |&radic;|
 
-## Manipulate Excel and other spreadsheet files in the Cloud
+## Architecture
+
+```mermaid
+graph TB
+
+    subgraph "Client Layer"
+        C1[Web Application]
+        C2[Mobile Application]
+        C3[Desktop Application]
+    end
+    
+    subgraph "API Gateway Layer"
+        G1[Gateway Service]
+        G2[Authentication Services]
+        G3[Load Balancing]
+    end
+    
+    subgraph "Cloud Microservices layer"
+        S1[User Application]
+        S2[Product Services]
+    end
+ 
+    C1 & C2 & C3 --> G1
+    G1 --> S1 & S2
+    
+    style C1 fill:#e1f5fe
+    style G1 fill:#f3e5f5
+    style S1 fill:#e8f5e8
+```
+
+## [Developer Reference](docs/DeveloperGuide.md#overview)
+
+### Manipulate Excel and other spreadsheet files in the Cloud
+
 
 - File Manipulation: Users can upload, download, delete, and manage Excel files stored in the cloud.
 - Formatting: Supports formatting of cells, fonts, colors, and alignment modes in Excel files to cater to users' specific requirements.

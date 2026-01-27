@@ -16,3 +16,5 @@ Class summary: The features include grammar and spell check, word count, readabi
 |DataSource|Class|true|false |  ||
 |Source|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

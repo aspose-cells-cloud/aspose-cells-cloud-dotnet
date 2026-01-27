@@ -10,3 +10,5 @@ I'm happy to help! Please provide me with the features you would like me to summ
 |ParseMethod|String|true|false |  |data parser method.             ToDateTime            ToString|
 |CustomStyle|String|true|false |  |A property that allows storing and retrieving custom styling information for an object.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

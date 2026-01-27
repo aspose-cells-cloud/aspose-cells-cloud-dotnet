@@ -14,3 +14,5 @@
 |Size|Floating|true|false |  |Gets and sets the size of the shadow. Range from 0 to 2.0.             Meaningless in inner shadow. |
 |Transparency|Floating|true|false |  |Gets and sets the degree of transparency of the shadow. Range from 0.0 (opaque) to 1.0 (clear). |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

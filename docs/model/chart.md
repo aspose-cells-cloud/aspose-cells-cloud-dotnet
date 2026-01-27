@@ -51,3 +51,5 @@ Encapsulates the object that represents a single Excel chart.
 |WallsAndGridlines2D|Boolean|true|false |  |True if gridlines are drawn two-dimensionally on a 3-D chart.|
 |link|Class|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

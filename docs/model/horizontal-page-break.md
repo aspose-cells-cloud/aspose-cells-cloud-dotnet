@@ -10,3 +10,5 @@
 |EndColumn|Integer|true|false |  |Gets the end column index of this horizontal page break. |
 |StartColumn|Integer|true|false |  |Gets the start column index of this horizontal page break. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

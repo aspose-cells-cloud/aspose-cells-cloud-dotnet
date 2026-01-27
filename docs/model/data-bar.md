@@ -19,3 +19,5 @@ Describe the DataBar conditional formatting rule. This conditional formatting   
 |NegativeBarFormat|Class|true|false |  |Gets the NegativeBarFormat object associated with a data bar conditional formatting rule. |
 |ShowValue|Boolean|true|false |  |Get or set the flag indicating whether to show the values of the cells on which this data bar is applied.            Default value is true. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

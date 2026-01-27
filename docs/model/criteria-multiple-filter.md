@@ -8,3 +8,5 @@
 | :- | :- | :- |:- |  :- | :- |
 |Criteria|String|true|false |  |A property named "Criteria" of type string, allowing both getting and setting its value.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

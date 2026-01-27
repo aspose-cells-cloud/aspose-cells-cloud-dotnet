@@ -10,3 +10,5 @@ A sparkline represents a tiny chart or graphic in a worksheet cell that provides
 |DataRange|String|true|false |  |Represents the data range of the sparkline. |
 |Row|Integer|true|false |  |Gets the row index of the sparkline. |
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

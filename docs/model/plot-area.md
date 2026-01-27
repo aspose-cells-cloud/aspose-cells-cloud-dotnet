@@ -23,3 +23,5 @@ Encapsulates the object that represents the plot area in a chart.
 |X|Integer|true|false |  ||
 |Y|Integer|true|false |  ||
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

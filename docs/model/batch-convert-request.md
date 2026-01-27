@@ -17,3 +17,5 @@ Indicates batch convert file request
 |PageTallFitOnPerSheet|Boolean|true|false |  ||
 |SaveOptions|Class|true|false |  |Indicates save options.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)

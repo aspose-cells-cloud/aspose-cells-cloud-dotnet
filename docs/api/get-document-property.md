@@ -83,3 +83,5 @@ PageTitle: Get Excel property by name.PageDescription: Aspose.Cells Cloud provid
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/PropertiesController/GetDocumentProperty) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
+[[Back to API list]](../DeveloperGuide.md#api-reference)  
+[[Back to README]](../../README.md)

@@ -11,3 +11,5 @@ Indicates range set outline border request.
 |borderStyle|String|true|false |  |None, Thin, Medium, Dashed, Dotted, Thick, Double, Hair, MediumDashed, DashDot, MediumDashDot, DashDotDot, MediumDashDotDot and SlantedDashDot.|
 |borderColor|Class|true|false |  |Border color.|
 
+[[Back to Model list]](../DeveloperGuide.md#model-reference)  
+[[Back to README]](../../README.md)
