@@ -72,7 +72,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
-        /// Translates the entire spreadsheet to the specified target language.
+        /// AI task decomposition: Convert user objectives to sequential action plans with formatted file export.
         /// </summary>
         /// <param name="request">Request. <see cref="DecomposeUserTaskRequest" /></param>
         public   Stream  DecomposeUserTask(DecomposeUserTaskRequest request)
@@ -95,8 +95,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
-        public void TranslationSpreadsheet(TranslationSpreadsheetRequest request, string LocalOutPath){
-            var result = TranslationSpreadsheet(request);
+        public void TranslateSpreadsheet(TranslateSpreadsheetRequest request, string LocalOutPath){
+            var result = TranslateSpreadsheet(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
             { 
                 result.CopyTo(stream);
@@ -106,8 +106,8 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }/// <summary>
         /// Translates the entire spreadsheet to the specified target language.
         /// </summary>
-        /// <param name="request">Request. <see cref="TranslationSpreadsheetRequest" /></param>
-        public   Stream  TranslationSpreadsheet(TranslationSpreadsheetRequest request)
+        /// <param name="request">Request. <see cref="TranslateSpreadsheetRequest" /></param>
+        public   Stream  TranslateSpreadsheet(TranslateSpreadsheetRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
@@ -118,7 +118,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
         /// async/await syntax calling method
         /// </summary>
 
-        public async Task<   Stream  > TranslationSpreadsheetAsync(TranslationSpreadsheetRequest request)
+        public async Task<   Stream  > TranslateSpreadsheetAsync(TranslateSpreadsheetRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
@@ -126,35 +126,27 @@ namespace Aspose.Cells.Cloud.SDK.Api
         }
 
 
-
-        public void TranslateTextFile(TranslateTextFileRequest request, string LocalOutPath){
-            var result = TranslateTextFile(request);
-            using (Stream stream = File.OpenWrite(LocalOutPath))
-            { 
-                result.CopyTo(stream);
-                result.Close();
-                stream.Close();
-            }
-        }/// <summary>
+        /// <summary>
+        /// Translates text file content to the specified target language.
         /// </summary>
         /// <param name="request">Request. <see cref="TranslateTextFileRequest" /></param>
-        public   Stream  TranslateTextFile(TranslateTextFileRequest request)
+        public  void  TranslateTextFile(TranslateTextFileRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
-            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
-            return result;
+            var result = invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return ;
         }
 
         /// <summary>
         /// async/await syntax calling method
         /// </summary>
-
-        public async Task<   Stream  > TranslateTextFileAsync(TranslateTextFileRequest request)
+        public async Task TranslateTextFileAsync(TranslateTextFileRequest request)
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
-            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
-            return result;
+            var result = await invoker.InvokeApiAsync<  string  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return ;
         }
+
 
 
         /// <summary>
@@ -515,6 +507,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
+        /// Converts a spreadsheet on a local drive to the JSON file.
         /// </summary>
         /// <param name="request">Request. <see cref="ConvertSpreadsheetToJsonRequest" /></param>
         public   Stream  ConvertSpreadsheetToJson(ConvertSpreadsheetToJsonRequest request)
@@ -633,6 +626,70 @@ namespace Aspose.Cells.Cloud.SDK.Api
 
 
 
+        public void ConvertWorksheetToJson(ConvertWorksheetToJsonRequest request, string LocalOutPath){
+            var result = ConvertWorksheetToJson(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Converts a worksheet of spreadsheet on a local drive to the JSON file.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertWorksheetToJsonRequest" /></param>
+        public   Stream  ConvertWorksheetToJson(ConvertWorksheetToJsonRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ConvertWorksheetToJsonAsync(ConvertWorksheetToJsonRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
+        public void ConvertWorksheetToCsv(ConvertWorksheetToCsvRequest request, string LocalOutPath){
+            var result = ConvertWorksheetToCsv(request);
+            using (Stream stream = File.OpenWrite(LocalOutPath))
+            { 
+                result.CopyTo(stream);
+                result.Close();
+                stream.Close();
+            }
+        }/// <summary>
+        /// Converts a worksheet of spreadsheet on a local drive to the CSV file.
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertWorksheetToCsvRequest" /></param>
+        public   Stream  ConvertWorksheetToCsv(ConvertWorksheetToCsvRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   Stream  > ConvertWorksheetToCsvAsync(ConvertWorksheetToCsvRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+
         public void ConvertWorksheetToHtml(ConvertWorksheetToHtmlRequest request, string LocalOutPath){
             var result = ConvertWorksheetToHtml(request);
             using (Stream stream = File.OpenWrite(LocalOutPath))
@@ -674,6 +731,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
+        /// Converts a worksheet of spreadsheet on a local drive to the HTML table file.
         /// </summary>
         /// <param name="request">Request. <see cref="ConvertWorksheetToHtmlTableRequest" /></param>
         public   Stream  ConvertWorksheetToHtmlTable(ConvertWorksheetToHtmlTableRequest request)
@@ -1240,7 +1298,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
-        /// Split an Excel worksheet into multiple sheets by column value.
+        /// Split an Excel worksheet tale into multiple sheets by column value.
         /// </summary>
         /// <param name="request">Request. <see cref="SplitTableRequest" /></param>
         public   Stream  SplitTable(SplitTableRequest request)
@@ -1336,6 +1394,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
+        /// Import JSON data file into the local spreadsheet.
         /// </summary>
         /// <param name="request">Request. <see cref="ImportJSONDataIntoSpreadsheetRequest" /></param>
         public   Stream  ImportJSONDataIntoSpreadsheet(ImportJSONDataIntoSpreadsheetRequest request)
@@ -1367,6 +1426,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
+        /// Import XML data file into the local spreadsheet.
         /// </summary>
         /// <param name="request">Request. <see cref="ImportXMLDataIntoSpreadsheetRequest" /></param>
         public   Stream  ImportXMLDataIntoSpreadsheet(ImportXMLDataIntoSpreadsheetRequest request)
@@ -1398,6 +1458,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
+        /// Import CSV data file into the local spreadsheet.
         /// </summary>
         /// <param name="request">Request. <see cref="ImportCSVDataIntoSpreadsheetRequest" /></param>
         public   Stream  ImportCSVDataIntoSpreadsheet(ImportCSVDataIntoSpreadsheetRequest request)
@@ -1470,6 +1531,29 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+        /// <summary>
+        /// Fetches a complete list of worksheets from the currently active local spreadsheet.
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetWorksheetsWithLocalSpreadsheetRequest" /></param>
+        public   string  GetWorksheetsWithLocalSpreadsheet(GetWorksheetsWithLocalSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    string  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   string  > GetWorksheetsWithLocalSpreadsheetAsync(GetWorksheetsWithLocalSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    string  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1644,6 +1728,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
+        /// The Web API endpoint allows users to repair a spreadsheet.
         /// </summary>
         /// <param name="request">Request. <see cref="RepairSpreadsheetRequest" /></param>
         public   Stream  RepairSpreadsheet(RepairSpreadsheetRequest request)
@@ -1661,6 +1746,52 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+        /// <summary>
+        /// Get all merged cell area form a remote spreadsheet worksheet.
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetMergedCellsInRemotedWorksheetRequest" /></param>
+        public   List<CellArea>  GetMergedCellsInRemotedWorksheet(GetMergedCellsInRemotedWorksheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    List<CellArea>  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   List<CellArea>  > GetMergedCellsInRemotedWorksheetAsync(GetMergedCellsInRemotedWorksheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    List<CellArea>  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+        /// <summary>
+        /// Get all merged cell area form a local spreadsheet worksheet.
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetMergedCellsInWorksheetRequest" /></param>
+        public   List<CellArea>  GetMergedCellsInWorksheet(GetMergedCellsInWorksheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    List<CellArea>  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   List<CellArea>  > GetMergedCellsInWorksheetAsync(GetMergedCellsInWorksheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    List<CellArea>  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -1756,6 +1887,52 @@ namespace Aspose.Cells.Cloud.SDK.Api
         {
             requestHandlers.ForEach(p => p.ProcessUrl(""));
             var result = await invoker.InvokeApiAsync<    Stream  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+        /// <summary>
+        /// Get all text items in the remote spreadsheet.
+        /// </summary>
+        /// <param name="request">Request. <see cref="SearchAllTextItemsInRemoteSpreadsheetRequest" /></param>
+        public   SearchResponse  SearchAllTextItemsInRemoteSpreadsheet(SearchAllTextItemsInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    SearchResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   SearchResponse  > SearchAllTextItemsInRemoteSpreadsheetAsync(SearchAllTextItemsInRemoteSpreadsheetRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    SearchResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
+            return result;
+        }
+
+
+        /// <summary>
+        /// Get all text items in the remote spreadsheet.
+        /// </summary>
+        /// <param name="request">Request. <see cref="SearchSpreadsheetAllTextItemsRequest" /></param>
+        public   SearchResponse  SearchSpreadsheetAllTextItems(SearchSpreadsheetAllTextItemsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = invoker.InvokeApiAsync<    SearchResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0" , this.invoker.DefaultHeaderMap, this.requestHandlers)).Result;
+            return result;
+        }
+
+        /// <summary>
+        /// async/await syntax calling method
+        /// </summary>
+
+        public async Task<   SearchResponse  > SearchSpreadsheetAllTextItemsAsync(SearchSpreadsheetAllTextItemsRequest request)
+        {
+            requestHandlers.ForEach(p => p.ProcessUrl(""));
+            var result = await invoker.InvokeApiAsync<    SearchResponse  >(request.CreateHttpRequest(BaseUri +"/v4.0", this.invoker.DefaultHeaderMap, this.requestHandlers));
             return result;
         }
 
@@ -2484,6 +2661,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
+        /// Removes duplicate values in the worksheet/range/table.
         /// </summary>
         /// <param name="request">Request. <see cref="RemoveDuplicatesRequest" /></param>
         public   Stream  RemoveDuplicates(RemoveDuplicatesRequest request)
@@ -2547,6 +2725,7 @@ namespace Aspose.Cells.Cloud.SDK.Api
                 stream.Close();
             }
         }/// <summary>
+        /// Transposes a specified data range (rows become columns, columns become rows).
         /// </summary>
         /// <param name="request">Request. <see cref="FlipDataRequest" /></param>
         public   Stream  FlipData(FlipDataRequest request)

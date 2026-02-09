@@ -115,7 +115,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 throw new ApiException(400, "Missing required parameter 'targetLanguage' when calling TranslateTextFile");
             }
 
-            var path = baseUri + "/cells/ai/translate/text";
+            var path = baseUri + "/cells/ai/translate/text-file";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")

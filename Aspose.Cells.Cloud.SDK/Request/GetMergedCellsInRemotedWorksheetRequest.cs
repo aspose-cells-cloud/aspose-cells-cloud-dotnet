@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ConvertWorksheetToHtmlTableRequest.cs">
+// <copyright company="Aspose" file="GetMergedCellsInRemotedWorksheetRequest.cs">
 //   Copyright (c) 2026 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,43 +32,59 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.ConvertWorksheetToHtmlTable" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.GetMergedCellsInRemotedWorksheet" /> operation.
     /// </summary>
-    public class ConvertWorksheetToHtmlTableRequest : IRequestModel
+    public class GetMergedCellsInRemotedWorksheetRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ConvertWorksheetToHtmlTableRequest"/> class.
+        /// Initializes a new instance of the <see cref="GetMergedCellsInRemotedWorksheetRequest"/> class.
         /// </summary>
-        public ConvertWorksheetToHtmlTableRequest()
+        public GetMergedCellsInRemotedWorksheetRequest()
         {
 
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ConvertWorksheetToHtmlTableRequest"/> class.
-        /// </summary>
-        /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="worksheet">worksheet name of spreadsheet.</param>
-        /// <param name="region">The spreadsheet region setting.</param>
-        /// <param name="password">The password for opening spreadsheet file.</param>
-        public ConvertWorksheetToHtmlTableRequest(string  spreadsheet, string  worksheet, string  region = null, string  password = null)
-        {
-            this.Spreadsheet = spreadsheet;
-            this.worksheet = worksheet;
-            this.region = region;
-            this.password = password;
-        }
+            /// <summary>
+            /// Initializes a new instance of the <see cref="GetMergedCellsInRemotedWorksheetRequest"/> class.
+            /// </summary>
+            /// <param name="name">spreadsheet name</param>
+            /// <param name="worksheet">worksheet name</param>
+            /// <param name="folder">The cloud storage path of the spreadsheet.</param>
+            /// <param name="storageName">(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.</param>
+            /// <param name="region">The spreadsheet region setting.</param>
+            /// <param name="password">The password for opening spreadsheet file.</param>
+            public GetMergedCellsInRemotedWorksheetRequest(string  name, string  worksheet, string  folder = null, string  storageName = null, string  region = null, string  password = null)
+            {
+                this.name = name;
+                this.worksheet = worksheet;
+                this.folder = folder;
+                this.storageName = storageName;
+                this.region = region;
+                this.password = password;
+            }
         
         /// <summary>
-        /// Upload spreadsheet file.
+        /// spreadsheet name
         /// </summary>
-            public string Spreadsheet { get; set; }
+        public string name { get; set; }
 
 
         /// <summary>
-        /// worksheet name of spreadsheet.
+        /// worksheet name
         /// </summary>
         public string worksheet { get; set; }
+
+
+        /// <summary>
+        /// The cloud storage path of the spreadsheet.
+        /// </summary>
+        public string folder { get; set; }
+
+
+        /// <summary>
+        /// (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.
+        /// </summary>
+        public string storageName { get; set; }
 
 
         /// <summary>
@@ -103,25 +119,28 @@ namespace Aspose.Cells.Cloud.SDK.Request
             var localVarFileParams = new Dictionary<string, object>();
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
-            // verify the required parameter 'spreadsheet' is set
-            if (    string.IsNullOrEmpty(this.Spreadsheet)    )
+            // verify the required parameter 'name' is set
+            if (string.IsNullOrEmpty (this.name ))
             {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling ConvertWorksheetToHtmlTable");
+                throw new ApiException(400, "Missing required parameter 'name' when calling GetMergedCellsInRemotedWorksheet");
             }
 
             // verify the required parameter 'worksheet' is set
             if (string.IsNullOrEmpty (this.worksheet ))
             {
-                throw new ApiException(400, "Missing required parameter 'worksheet' when calling ConvertWorksheetToHtmlTable");
+                throw new ApiException(400, "Missing required parameter 'worksheet' when calling GetMergedCellsInRemotedWorksheet");
             }
 
-            var path = baseUri + "/cells/convert/worksheet/html-table";
+            var path = baseUri + "/cells/{name}/worksheets/{worksheet}/mergedcells";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            path = UrlHelper.AddQueryParameterToUrl(path, "worksheet", this.worksheet);
+            path = UrlHelper.AddPathParameter(path, "name", this.name);
+            path = UrlHelper.AddPathParameter(path, "worksheet", this.worksheet);
+            if (!string.IsNullOrEmpty(this.folder))  path = UrlHelper.AddQueryParameterToUrl(path, "folder", this.folder);
+            if (!string.IsNullOrEmpty(this.storageName))  path = UrlHelper.AddQueryParameterToUrl(path, "storageName", this.storageName);
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
@@ -132,14 +151,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 }
             }
 
-             if (!string.IsNullOrEmpty(Spreadsheet ) && System.IO.File.Exists(Spreadsheet )) {
-                 System.IO.FileInfo fileInfo = new System.IO.FileInfo(Spreadsheet);
-                 localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(Spreadsheet), fileInfo.Name));
-             } 
 
-
-
-            return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
+            return UrlHelper.PrepareRequest(path, "GET", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);
         }
     }
 }

@@ -47,7 +47,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             /// <summary>
             /// Initializes a new instance of the <see cref="DecomposeUserTaskRequest"/> class.
             /// </summary>
-            /// <param name="taskDescription"></param>
+            /// <param name="taskDescription">Decompose user task description.</param>
             /// <param name="region">The spreadsheet region setting.</param>
             /// <param name="password">The password for opening spreadsheet file.</param>
             public DecomposeUserTaskRequest(string  taskDescription, string  region = null, string  password = null)
@@ -58,7 +58,7 @@ namespace Aspose.Cells.Cloud.SDK.Request
             }
         
         /// <summary>
-        /// Gets or sets TaskDescription.
+        /// Decompose user task description.
         /// </summary>
         public string TaskDescription { get; set; }
 
@@ -107,7 +107,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            path = UrlHelper.AddQueryParameterToUrl(path, "taskDescription", this.TaskDescription);
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
@@ -117,6 +116,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
                     path = UrlHelper.AddQueryParameterToUrl(path, kvp.Key, kvp.Value);
                 }
             }
+
+            localVarPostBody = ( this.TaskDescription != null ? JsonConvert.SerializeObject(this.TaskDescription) : null);
 
 
             return UrlHelper.PrepareRequest(path, "PUT", localVarFileParams, localVarHeaderParams, localVarPostBody, localVarHttpContentType, defaultHeaderMap, requestHandlers);

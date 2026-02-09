@@ -48,9 +48,9 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="FlipDataRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="worksheet"></param>
-        /// <param name="cellArea"></param>
-        /// <param name="horizontal"></param>
+        /// <param name="worksheet">The worksheet name.</param>
+        /// <param name="cellArea">A specified data range</param>
+        /// <param name="horizontal">Horizontal/Vertical Flip.</param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="region">The spreadsheet region setting.</param>
@@ -74,19 +74,19 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Gets or sets worksheet.
+        /// The worksheet name.
         /// </summary>
         public string worksheet { get; set; }
 
 
         /// <summary>
-        /// Gets or sets cellArea.
+        /// A specified data range
         /// </summary>
         public string cellArea { get; set; }
 
 
         /// <summary>
-        /// Gets or sets Horizontal.
+        /// Horizontal/Vertical Flip.
         /// </summary>
         public bool? Horizontal { get; set; }
 

@@ -49,9 +49,9 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// </summary>
         /// <param name="datafile">Upload data file.</param>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="worksheet"></param>
-        /// <param name="startcell"></param>
-        /// <param name="insert"></param>
+        /// <param name="worksheet">Need to import JSON data into the worksheet.</param>
+        /// <param name="startcell">Starting position for data import</param>
+        /// <param name="insert">Controls the insertion behavior. true: inserts data; false: overwrites existing data.</param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="fontsLocation">Use Custom fonts.</param>
@@ -84,19 +84,19 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Gets or sets worksheet.
+        /// Need to import JSON data into the worksheet.
         /// </summary>
         public string worksheet { get; set; }
 
 
         /// <summary>
-        /// Gets or sets startcell.
+        /// Starting position for data import
         /// </summary>
         public string startcell { get; set; }
 
 
         /// <summary>
-        /// Gets or sets insert.
+        /// Controls the insertion behavior. true: inserts data; false: overwrites existing data.
         /// </summary>
         public bool? insert { get; set; }
 

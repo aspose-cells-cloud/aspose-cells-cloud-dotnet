@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ImportXMLDataIntoSpreadsheetRequest.cs">
+// <copyright company="Aspose" file="GetMergedCellsInWorksheetRequest.cs">
 //   Copyright (c) 2026 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,51 +32,33 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.ImportXMLDataIntoSpreadsheet" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.GetMergedCellsInWorksheet" /> operation.
     /// </summary>
-    public class ImportXMLDataIntoSpreadsheetRequest : IRequestModel
+    public class GetMergedCellsInWorksheetRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ImportXMLDataIntoSpreadsheetRequest"/> class.
+        /// Initializes a new instance of the <see cref="GetMergedCellsInWorksheetRequest"/> class.
         /// </summary>
-        public ImportXMLDataIntoSpreadsheetRequest()
+        public GetMergedCellsInWorksheetRequest()
         {
 
         }
         /// <summary>
-        /// Initializes a new instance of the <see cref="ImportXMLDataIntoSpreadsheetRequest"/> class.
+        /// Initializes a new instance of the <see cref="GetMergedCellsInWorksheetRequest"/> class.
         /// </summary>
-        /// <param name="datafile">Upload data file.</param>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="worksheet">Need to import XML data into the worksheet.</param>
-        /// <param name="startcell">Starting position for data import</param>
-        /// <param name="insert">Controls the insertion behavior. true: inserts data; false: overwrites existing data.</param>
-        /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
-        /// <param name="outStorageName">Output file Storage Name.</param>
-        /// <param name="fontsLocation">Use Custom fonts.</param>
+        /// <param name="worksheet"></param>
         /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public ImportXMLDataIntoSpreadsheetRequest(string  datafile, string  spreadsheet, string  worksheet, string  startcell, bool?  insert = null, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  region = null, string  password = null)
+        public GetMergedCellsInWorksheetRequest(string  spreadsheet, string  worksheet, string  region = null, string  password = null)
         {
-            this.datafile = datafile;
             this.Spreadsheet = spreadsheet;
             this.worksheet = worksheet;
-            this.startcell = startcell;
-            this.insert = insert;
-            this.outPath = outPath;
-            this.outStorageName = outStorageName;
-            this.fontsLocation = fontsLocation;
             this.region = region;
             this.password = password;
         }
         
-        /// <summary>
-        /// Upload data file.
-        /// </summary>
-            public string datafile { get; set; }
-
-
         /// <summary>
         /// Upload spreadsheet file.
         /// </summary>
@@ -84,39 +66,9 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Need to import XML data into the worksheet.
+        /// Gets or sets worksheet.
         /// </summary>
         public string worksheet { get; set; }
-
-
-        /// <summary>
-        /// Starting position for data import
-        /// </summary>
-        public string startcell { get; set; }
-
-
-        /// <summary>
-        /// Controls the insertion behavior. true: inserts data; false: overwrites existing data.
-        /// </summary>
-        public bool? insert { get; set; }
-
-
-        /// <summary>
-        /// (Optional) The folder path where the workbook is stored. The default is null.
-        /// </summary>
-        public string outPath { get; set; }
-
-
-        /// <summary>
-        /// Output file Storage Name.
-        /// </summary>
-        public string outStorageName { get; set; }
-
-
-        /// <summary>
-        /// Use Custom fonts.
-        /// </summary>
-        public string fontsLocation { get; set; }
 
 
         /// <summary>
@@ -151,42 +103,25 @@ namespace Aspose.Cells.Cloud.SDK.Request
             var localVarFileParams = new Dictionary<string, object>();
             string localVarPostBody ="";
             string localVarHttpContentType = "application/json";
-            // verify the required parameter 'datafile' is set
-            if (    string.IsNullOrEmpty(this.datafile)    )
-            {
-                throw new ApiException(400, "Missing required parameter 'datafile' when calling ImportXMLDataIntoSpreadsheet");
-            }
-
             // verify the required parameter 'spreadsheet' is set
             if (    string.IsNullOrEmpty(this.Spreadsheet)    )
             {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling ImportXMLDataIntoSpreadsheet");
+                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling GetMergedCellsInWorksheet");
             }
 
             // verify the required parameter 'worksheet' is set
             if (string.IsNullOrEmpty (this.worksheet ))
             {
-                throw new ApiException(400, "Missing required parameter 'worksheet' when calling ImportXMLDataIntoSpreadsheet");
+                throw new ApiException(400, "Missing required parameter 'worksheet' when calling GetMergedCellsInWorksheet");
             }
 
-            // verify the required parameter 'startcell' is set
-            if (string.IsNullOrEmpty (this.startcell ))
-            {
-                throw new ApiException(400, "Missing required parameter 'startcell' when calling ImportXMLDataIntoSpreadsheet");
-            }
-
-            var path = baseUri + "/cells/import/data/xml";
+            var path = baseUri + "/cells/spreadsheet/mergedcells";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
             path = UrlHelper.AddQueryParameterToUrl(path, "worksheet", this.worksheet);
-            path = UrlHelper.AddQueryParameterToUrl(path, "startcell", this.startcell);
-            if(this.insert != null)  path = UrlHelper.AddQueryParameterToUrl(path, "insert", this.insert);
-            if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
-            if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
-            if (!string.IsNullOrEmpty(this.fontsLocation))  path = UrlHelper.AddQueryParameterToUrl(path, "fontsLocation", this.fontsLocation);
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)
@@ -197,10 +132,6 @@ namespace Aspose.Cells.Cloud.SDK.Request
                 }
             }
 
-             if (!string.IsNullOrEmpty(datafile ) && System.IO.File.Exists(datafile )) {
-                 System.IO.FileInfo fileInfo = new System.IO.FileInfo(datafile);
-                 localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(datafile), fileInfo.Name));
-             } 
              if (!string.IsNullOrEmpty(Spreadsheet ) && System.IO.File.Exists(Spreadsheet )) {
                  System.IO.FileInfo fileInfo = new System.IO.FileInfo(Spreadsheet);
                  localVarFileParams.Add(fileInfo.Name, UrlHelper.ToFileInfo(System.IO.File.OpenRead(Spreadsheet), fileInfo.Name));

@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="TranslationSpreadsheetRequest.cs">
+// <copyright company="Aspose" file="ConvertWorksheetToJsonRequest.cs">
 //   Copyright (c) 2026 Aspose.Cells Cloud
 // </copyright>
 // <summary>
@@ -32,29 +32,35 @@ namespace Aspose.Cells.Cloud.SDK.Request
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.TranslationSpreadsheet" /> operation.
+    /// Request model for <see cref="Aspose.Cells.Cloud.SDK.Api.CellsApi.ConvertWorksheetToJson" /> operation.
     /// </summary>
-    public class TranslationSpreadsheetRequest : IRequestModel
+    public class ConvertWorksheetToJsonRequest : IRequestModel
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="TranslationSpreadsheetRequest"/> class.
+        /// Initializes a new instance of the <see cref="ConvertWorksheetToJsonRequest"/> class.
         /// </summary>
-        public TranslationSpreadsheetRequest()
+        public ConvertWorksheetToJsonRequest()
         {
 
         }
         /// <summary>
-        /// Initializes a new instance of the <see cref="TranslationSpreadsheetRequest"/> class.
+        /// Initializes a new instance of the <see cref="ConvertWorksheetToJsonRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="targetLanguage">The target language code for translation (e.g., "es", "fr", "de").</param>
+        /// <param name="worksheet">worksheet name of spreadsheet.</param>
+        /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
+        /// <param name="outStorageName">Output file Storage Name.</param>
+        /// <param name="fontsLocation">Use Custom fonts.</param>
         /// <param name="region">The spreadsheet region setting.</param>
         /// <param name="password">The password for opening spreadsheet file.</param>
-        public TranslationSpreadsheetRequest(string  spreadsheet, string  targetLanguage, string  region = null, string  password = null)
+        public ConvertWorksheetToJsonRequest(string  spreadsheet, string  worksheet, string  outPath = null, string  outStorageName = null, string  fontsLocation = null, string  region = null, string  password = null)
         {
             this.Spreadsheet = spreadsheet;
-            this.targetLanguage = targetLanguage;
+            this.worksheet = worksheet;
+            this.outPath = outPath;
+            this.outStorageName = outStorageName;
+            this.fontsLocation = fontsLocation;
             this.region = region;
             this.password = password;
         }
@@ -66,9 +72,27 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// The target language code for translation (e.g., "es", "fr", "de").
+        /// worksheet name of spreadsheet.
         /// </summary>
-        public string targetLanguage { get; set; }
+        public string worksheet { get; set; }
+
+
+        /// <summary>
+        /// (Optional) The folder path where the workbook is stored. The default is null.
+        /// </summary>
+        public string outPath { get; set; }
+
+
+        /// <summary>
+        /// Output file Storage Name.
+        /// </summary>
+        public string outStorageName { get; set; }
+
+
+        /// <summary>
+        /// Use Custom fonts.
+        /// </summary>
+        public string fontsLocation { get; set; }
 
 
         /// <summary>
@@ -106,22 +130,25 @@ namespace Aspose.Cells.Cloud.SDK.Request
             // verify the required parameter 'spreadsheet' is set
             if (    string.IsNullOrEmpty(this.Spreadsheet)    )
             {
-                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling TranslationSpreadsheet");
+                throw new ApiException(400, "Missing required parameter 'spreadsheet' when calling ConvertWorksheetToJson");
             }
 
-            // verify the required parameter 'targetLanguage' is set
-            if (string.IsNullOrEmpty (this.targetLanguage ))
+            // verify the required parameter 'worksheet' is set
+            if (string.IsNullOrEmpty (this.worksheet ))
             {
-                throw new ApiException(400, "Missing required parameter 'targetLanguage' when calling TranslationSpreadsheet");
+                throw new ApiException(400, "Missing required parameter 'worksheet' when calling ConvertWorksheetToJson");
             }
 
-            var path = baseUri + "/cells/ai/translate/spreadsheet";
+            var path = baseUri + "/cells/convert/worksheet/json";
             path = Regex
                     .Replace(path, "\\*", string.Empty)
                     .Replace("&amp;", "&")
                     .Replace("/?", "?");
 
-            path = UrlHelper.AddQueryParameterToUrl(path, "targetLanguage", this.targetLanguage);
+            path = UrlHelper.AddQueryParameterToUrl(path, "worksheet", this.worksheet);
+            if (!string.IsNullOrEmpty(this.outPath))  path = UrlHelper.AddQueryParameterToUrl(path, "outPath", this.outPath);
+            if (!string.IsNullOrEmpty(this.outStorageName))  path = UrlHelper.AddQueryParameterToUrl(path, "outStorageName", this.outStorageName);
+            if (!string.IsNullOrEmpty(this.fontsLocation))  path = UrlHelper.AddQueryParameterToUrl(path, "fontsLocation", this.fontsLocation);
             if (!string.IsNullOrEmpty(this.region))  path = UrlHelper.AddQueryParameterToUrl(path, "region", this.region);
             if (!string.IsNullOrEmpty(this.password))  path = UrlHelper.AddQueryParameterToUrl(path, "password", this.password);
             if (this.extendQueryParameterMap != null)

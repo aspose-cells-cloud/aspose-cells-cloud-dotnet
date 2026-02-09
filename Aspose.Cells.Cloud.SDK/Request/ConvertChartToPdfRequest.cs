@@ -48,8 +48,8 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="ConvertChartToPdfRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="worksheet"></param>
-        /// <param name="chartIndex"></param>
+        /// <param name="worksheet">worksheet name of spreadsheet.</param>
+        /// <param name="chartIndex">chart index of worksheet.</param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="fontsLocation">Use Custom fonts.</param>
@@ -74,13 +74,13 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Gets or sets worksheet.
+        /// worksheet name of spreadsheet.
         /// </summary>
         public string worksheet { get; set; }
 
 
         /// <summary>
-        /// Gets or sets chartIndex.
+        /// chart index of worksheet.
         /// </summary>
         public int? chartIndex { get; set; }
 

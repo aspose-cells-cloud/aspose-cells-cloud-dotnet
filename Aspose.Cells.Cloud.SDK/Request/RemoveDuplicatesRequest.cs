@@ -48,9 +48,9 @@ namespace Aspose.Cells.Cloud.SDK.Request
         /// Initializes a new instance of the <see cref="RemoveDuplicatesRequest"/> class.
         /// </summary>
         /// <param name="spreadsheet">Upload spreadsheet file.</param>
-        /// <param name="worksheet"></param>
-        /// <param name="range"></param>
-        /// <param name="table"></param>
+        /// <param name="worksheet">The worksheet name.</param>
+        /// <param name="range">Range name that need deduplication.</param>
+        /// <param name="table">Table name that need deduplication.</param>
         /// <param name="outPath">(Optional) The folder path where the workbook is stored. The default is null.</param>
         /// <param name="outStorageName">Output file Storage Name.</param>
         /// <param name="region">The spreadsheet region setting.</param>
@@ -74,19 +74,19 @@ namespace Aspose.Cells.Cloud.SDK.Request
 
 
         /// <summary>
-        /// Gets or sets worksheet.
+        /// The worksheet name.
         /// </summary>
         public string worksheet { get; set; }
 
 
         /// <summary>
-        /// Gets or sets range.
+        /// Range name that need deduplication.
         /// </summary>
         public string range { get; set; }
 
 
         /// <summary>
-        /// Gets or sets table.
+        /// Table name that need deduplication.
         /// </summary>
         public string table { get; set; }
 
