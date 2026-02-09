@@ -6,6 +6,9 @@ Converts a worksheet of spreadsheet on a local drive to the html file.
 
 - **Base URL**: `http://api.aspose.cloud/v4.0`
 - **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example40_ConvertWorksheetToHtml.cs"></script>
+
 ## **Interface Details**
 
 ### **Endpoint** 

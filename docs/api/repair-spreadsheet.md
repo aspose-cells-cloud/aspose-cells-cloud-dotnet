@@ -1,11 +1,14 @@
 # **Spreadsheet Cloud API: repairSpreadsheet**
 
- 
+The Web API endpoint allows users to repair a spreadsheet. 
 
 ## **Quick Start**
 
 - **Base URL**: `http://api.aspose.cloud/v4.0`
 - **Authentication Method**: `JWT (OAuth2, application)`  **Token URL**: `https://api.aspose.cloud/connect/token`
+- **Example** 
+<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example40_RepairSpreadsheet.cs"></script>
+
 ## **Interface Details**
 
 ### **Endpoint** 
@@ -15,6 +18,7 @@ PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/repair
 ```
 
 ### **Function Description**
+Fixes corrupted Excel files that cannot be opened, allowing them to be accessed and used normally.## **Error Handling**- **400 Bad Request**: Invalid url.- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.- **404 Not Found**: Source file not accessible.- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining data.
 
 ### The request parameters of **repairSpreadsheet** API are: 
 
